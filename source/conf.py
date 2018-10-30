@@ -110,7 +110,8 @@ html_theme_options = {
     'analytics_id': 'UA-34321400-6',
     #'sidebar_collapse': 'true',
     'show_powered_by': 'false',
-    #'show_relbars': 'true',
+    #'show_relbars': 'true', # doesn't work. not sure why.
+    #'show_related': 'true',
     'font_size': '11pt',
 }
 
