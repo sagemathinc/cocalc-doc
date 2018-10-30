@@ -18,7 +18,10 @@ This explains in depth how you can work productively on `CoCalc`_!
    :maxdepth: 2
    :caption: Features:
 
+   jupyter
    latex
+   sagews
+   terminal
 
 
 Indices and tables
