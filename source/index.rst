@@ -1,10 +1,10 @@
-.. CoCalc Documentation documentation master file, created by
-   sphinx-quickstart on Tue Oct 30 10:39:09 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. CoCalc User Manual master file.
+   Main purpose is the root `toctree` directive.
 
-Welcome to CoCalc Documentation's documentation!
+Welcome to CoCalc's User Manual!
 ================================================
+
+This explains in depth how you can work productively on `CoCalc`_!
 
 .. toctree::
    :maxdepth: 2
@@ -18,5 +18,10 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
+
+.. disabled
+   * :ref:`modindex`
+
+
+.. _CoCalc: https://cocalc.com/
