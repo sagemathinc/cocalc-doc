@@ -13,9 +13,10 @@ script: "make html"
 
 deploy:
   provider: pages
+  local-dir: build/html/
   skip-cleanup: true
   github-token: $DOC_COCALC_TOKEN
-  keep-history: true
+  keep-history: false
   fqdn: doc.cocalc.com
   target-branch: gh-pages
   on:
