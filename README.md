@@ -23,9 +23,12 @@ Hence even small details like a broken URL link will cause a failed build.
 
 - In the root directory, run `make html`
 - Before submitting a PR, make sure it works by cleaning up first: `make clean`
+- With `inotifywait` installed, `make watch` should automatically build the html files upon changes.
 
 ## Legal
 
 - License: [GNU Free Documentation License](LICENSE.md)
 
 - "CoCalc" is a [registered trademark](http://tsdr.uspto.gov/#caseNumber=87155974&caseType=SERIAL_NO&searchType=statusSearch).
+
+- Book graphic attribution: https://commons.wikimedia.org/wiki/File:Book_text.svg

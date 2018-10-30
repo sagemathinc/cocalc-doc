@@ -6,11 +6,18 @@ Welcome to CoCalc's User Manual!
 
 This explains in depth how you can work productively on `CoCalc`_!
 
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Teaching:
 
-   teaching
+   teaching-instructors
+   teaching-students
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Features:
+
    latex
 
 

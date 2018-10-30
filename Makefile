@@ -12,7 +12,7 @@ BUILDDIR      = build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-watch:
+watch: html
 	while inotifywait -e close_write,moved_to,create source; do make html; done
 
 .PHONY: help Makefile watch
