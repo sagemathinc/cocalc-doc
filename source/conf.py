@@ -113,6 +113,9 @@ html_theme_options = {
     #'show_relbars': 'true', # doesn't work. not sure why.
     #'show_related': 'true',
     'font_size': '11pt',
+    'extra_nav_links': {
+        'CoCalc': 'https://cocalc.com/'
+    }
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
