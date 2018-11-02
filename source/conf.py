@@ -97,7 +97,6 @@ html_theme = 'alabaster'
 show_source = 'false'
 html_favicon = 'img/favicon-32x32.png'
 html_logo = 'img/cocalc-doc-logo.svg'
-theme_logo_name = 'false'
 
 # https://alabaster.readthedocs.io/en/latest/customization.html
 html_theme_options = {
