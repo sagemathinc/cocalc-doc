@@ -111,6 +111,7 @@ html_theme_options = {
     'show_powered_by': 'false',
     #'show_relbars': 'true', # doesn't work. not sure why.
     #'show_related': 'true',
+    #'sidebar_collapse': 'true', # doesn't work, editing navigation.html directly
     'font_size': '11pt',
     'extra_nav_links': {
         'CoCalc': 'https://cocalc.com/',

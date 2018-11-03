@@ -9,3 +9,5 @@ How to conduct a course on CoCalc.
 
    teaching-create-course
    teaching-course-management
+   teaching-interactions
+   teaching-tips_and_tricks
