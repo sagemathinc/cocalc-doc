@@ -113,7 +113,8 @@ html_theme_options = {
     #'show_related': 'true',
     'font_size': '11pt',
     'extra_nav_links': {
-        'CoCalc': 'https://cocalc.com/'
+        'CoCalc': 'https://cocalc.com/',
+        'Wiki': 'https://github.com/sagemathinc/cocalc/wiki'
     }
 }
 
