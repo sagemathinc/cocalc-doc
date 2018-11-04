@@ -4,7 +4,6 @@ Tips and tricks
 
 In this section we will present some CoCalc features and useful tricks that will make the management of your project easier.
 
-
 .. contents:: Table of Contents
    :depth: 2
 
@@ -21,7 +20,9 @@ which renders as
 
 ![after image](./assets/after_latex_render.png)
 
-## Making multiple assignment folders quickly
+Making multiple assignment folders quickly
+==========================================================
+
 So far we have shown how to create folders and files by using the **New** button every time. ->![New Button](./assets/new.png)
 
 However, such a method could be quite time consuming when you need to create multiple folders, subfolders, and documents. If you are a terminal fan you could create a shell script in your preferred programming language and run it from the terminal.
@@ -62,6 +63,8 @@ To solve this, you can stop every instance using the stop button (for both Jupyt
 Alternatively, you can restart the entire project, which will clean everything. You just need to go to your project settings and click on **Restart project**.
 
 ![Restart project](./assets/restart_project.png)
+
+.. _teaching-using-git:
 
 Using Git
 ==========================================================

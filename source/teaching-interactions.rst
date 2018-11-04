@@ -70,7 +70,7 @@ Group Projects
 There are various ways in which you can facilitate students' group projects in CoCalc.
 A couple of options are:
 
-*One project per team*
+One project per team
 -------------------------------
 
 Have someone in each group make a project with all the group members as collaborators.
@@ -81,4 +81,10 @@ You should note, however, that by using this approach you cannot automatically c
 Using Git
 -----------------------------
 
-Students can collaborate from within their individual course projects using git via the terminal in CoCalc. See "Using Git" in this tutorial in [Other useful features and tricks](../tips_and_tricks/tips_and_tricks.html).
+Students can collaborate from within their individual course projects using Git_ via the terminal in CoCalc.
+See :ref:`Using Git <teaching-using-git>` in
+:doc:`Tips and tricks <teaching-tips_and_tricks>`.
+
+.. _Git: https://www.git-scm.org
+
+
