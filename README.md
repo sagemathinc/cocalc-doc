@@ -27,6 +27,6 @@ Hence even small details like a broken URL link will cause a failed build.
 
 ## Legal
 
-- License: [GNU Free Documentation License](LICENSE.md)
+- License: [CC BY 4.0](LICENSE.txt)
 
 - "CoCalc" is a [registered trademark](http://tsdr.uspto.gov/#caseNumber=87155974&caseType=SERIAL_NO&searchType=statusSearch).
