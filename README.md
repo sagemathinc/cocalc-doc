@@ -29,4 +29,4 @@ Hence even small details like a broken URL link will cause a failed build.
 
 - License: [CC BY 4.0](LICENSE.txt)
 
-- "CoCalc" is a [registered trademark](http://tsdr.uspto.gov/#caseNumber=87155974&caseType=SERIAL_NO&searchType=statusSearch).
+- "CoCalc" is a [registered trademark](http://tsdr.uspto.gov/#caseNumber=87155974&caseType=SERIAL_NO&searchType=statusSearch). Usage of the term "CoCalc" refers to the online service CoCalc hosted at `https://cocalc.com` only.
