@@ -10,15 +10,20 @@ In this section we will present some CoCalc features and useful tricks that will
 Text fields generally support markdown and LaTeX
 ==========================================================
 
-CoCalc not only facilitates the creation of LaTeX documents, but most input areas in CoCalc support and render LaTeX and markdown  (specifically  [GitHub Flavored Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)).
+CoCalc not only facilitates the creation of LaTeX documents, but most input areas in CoCalc support and render LaTeX and markdown  (specifically  `GitHub Flavored Markdown`_).
 
 For example, you can use LaTeX math formulas in the chat rooms:
 
-![before image](./assets/before_latex_render.png)
+.. image:: img/teaching/before_latex_render.png
+     :width: 66%
 
 which renders as
 
-![after image](./assets/after_latex_render.png)
+.. image:: img/teaching/after_latex_render.png
+     :width: 100%
+
+
+.. _GitHub Flavored Markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 Making multiple assignment folders quickly
 ==========================================================
@@ -30,11 +35,13 @@ However, such a method could be quite time consuming when you need to create mul
 
 Alternatively, in the files menu of your project, you can enter paths such as `assignments/assignment1/directions.md` then hit **enter** or **ctrl+enter** to create `directions.md` inside the folder `assignment1` within `assignments`. Hitting **enter** will open up the new file while **ctrl+enter** will silently create the necessary files and folders in the path.
 
-![search bar file creation](./assets/file.png)
+.. image:: img/teaching/file.png
+     :width: 100%
 
 You can also create folders here just by ending with a `/`
 
-![search bar folder creation](./assets/folder.png)
+.. image:: img/teaching/folder.png
+     :width: 100%
 
 Starting up everyone's project before class
 ==========================================================
@@ -44,11 +51,13 @@ By default, projects have an idle time of 24 hours before they spin down and nee
 You can easily do this from your course manager:
 first, open the course configuration tab:
 
-![course settings](./assets/settings.png)
+.. image:: img/teaching/settings.png
+     :width: 100%
 
 Then scroll down to find and click on the `Start all...` button
 
-![after click](./assets/start_all_clicked.png)
+.. image:: img/teaching/start_all_clicked.png
+     :width: 100%
 
 
 Restarting a project
@@ -58,11 +67,13 @@ Every time you open a Jupyter notebook or a Sage Worksheet, its state is stored 
 
 To solve this, you can stop every instance using the stop button (for both Jupyter notebooks and Sage worksheets) once you are done with your marking.
 
-![Stop notebook](./assets/stop_notebook.png)
+.. image:: img/teaching/stop_notebook.png
+     :width: 100%
 
 Alternatively, you can restart the entire project, which will clean everything. You just need to go to your project settings and click on **Restart project**.
 
-![Restart project](./assets/restart_project.png)
+.. image:: img/teaching/restart_project.png
+     :width: 60%
 
 .. _teaching-using-git:
 
@@ -74,7 +85,8 @@ CoCalc support for the terminal enables students (and instructors) to collaborat
 If you already have a project or some files allocated in GitHub you can add them to your project.
 Click on the **New** button and add/paste the link to your repository in the appropriate text box. Click on the **Download from Internet** button.
 
-![Download from Internet](./assets/download.png)
+.. image:: img/teaching/download.png
+     :width: 100%
 
 (*Obvious note*: You need to have internet access enabled in your project.)
 
@@ -87,10 +99,12 @@ The editor based documents (e.g. Python code, LaTeX documents, markdown files, e
 
 Open up **Time travel** from any document:
 
-![Time travel](./assets/time_travel.png)
+.. image:: img/teaching/time_travel.png
+     :width: 100%
 
 then click on changes and drag the sliders to see the document in a given time interval.
 
-![TT sliders](./assets/time_travel_sliders.png)
+.. image:: img/teaching/time_travel_sliders.png
+     :width: 100%
 
 If you need to revert the document to a previous state, drag the slider to the desired revision and click on **Revert live version to this**. Doing so reverts the document contents to that specific version. If you have checked the **Changes** box to compare two revisions and click on **Revert live version to this**, contents are reverted to the latter of the two revisions being compared. Note that reverting a file simply creates a new version of the file equal to the old file at that point in time; in particular, no work is lost!

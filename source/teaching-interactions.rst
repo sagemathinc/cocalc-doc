@@ -16,21 +16,25 @@ You can create a project chat room by clicking on the **New** button, this will 
 
 In addition, every file in CoCalc has a separate chat that can be found on the upper left corner of your screen.
 
-![The chat button](./assets/chat_button.png)
+.. image:: img/teaching/chat_button.png
+     :width: 30%
 
 Every time one of your students writes something into a chat on any one of their files,
 you will get a notification displayed on the top bar.
 
-![The notification](./assets/instructor_notification.png)
+.. image:: img/teaching/instructor_notification.png
+     :width: 66%
 
 Clicking on the notification button (bell icon on the top of the screen) displays a notification menu with the latest chats and modifications in the project or specific files.
 
-![Notification Bar](./assets/notification_highlighted.png)
+.. image:: img/teaching/notification_highlighted.png
+     :width: 100%
 
 The chat notifications are always presented at the top of the menu, followed by any updates you or your collaborators have done to the project. Clicking on a chat notification will take you to **the student's copy** of the file inside **his/her project**.
 From there, you can both reply to their questions and look at their work simultaneously.
 
-![TA assistance example](./assets/student_question.png)
+.. image:: img/teaching/student_question.png
+     :width: 66%
 
 Once you have replied to the student's question (s)he will receive a notification.
 
@@ -50,17 +54,20 @@ You can create a common shared project for your course. Think of a shared projec
 
 To create a shared project you need to go to your **.course** file and click on the **Shared Project** button.
 
-![Create shared](./assets/shared1.png)
+.. image:: img/teaching/shared1.png
+     :width: 100%
 
 If you create a **.sage-chat** file here, all students will receive automatic notifications when questions are posted on the chat.
 
 If you want to make a file or an assignment **read only** so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type `chmod a-w filename` (in this example the filename is `Assignment1`).
 
-![Read only files](./assets/read_only.png)
+.. image:: img/teaching/read_only.png
+     :width: 100%
 
 If you want to check the access permissions of all the files contained in a given directory, use the command `ls -l` on the terminal.
 
-![Access check](./assets/ls_assignment.png)
+.. image:: img/teaching/ls_assignment.png
+     :width: 100%
 
 In case you want to change a read only file into a read and write, type `chmod a+w filename` on the terminal.
 
