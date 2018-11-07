@@ -20,7 +20,7 @@ Hence even small details like a broken URL link will cause a failed build.
 - Knowledge about [ReST Doc](http://www.sphinx-doc.org/en/1.8/rest.html)
 
 ### Build
-
+()
 - In the root directory, run `make html`
 - Before submitting a PR, make sure it works by cleaning up first: `make clean`
 - With `inotifywait` installed, `make watch` should automatically build the html files upon changes.

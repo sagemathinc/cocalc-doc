@@ -24,6 +24,13 @@ This explains in depth how you can work productively on `CoCalc`_!
    terminal
    frame-editor
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Platform:
+
+   upgrade-guide
+   project-settings
+
 
 Indices and tables
 ==================
