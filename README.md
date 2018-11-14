@@ -16,7 +16,7 @@ Hence even small details like a broken URL link will cause a failed build.
 
 ### Prerequisites
 
-- Sphinx 1.6+ (aiming for 1.8+)
+- Sphinx 1.8+
 - Knowledge about [ReST Doc](http://www.sphinx-doc.org/en/1.8/rest.html)
 
 ### Build
