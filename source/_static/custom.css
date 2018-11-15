@@ -6,3 +6,11 @@ div.sphinxsidebar p.caption,
 div.body p.caption {
     margin: 20px 0 -10px 0;
 }
+
+div.document {
+    width: 1040px;
+}
+
+div.body {
+    max-width: 900px;
+}
