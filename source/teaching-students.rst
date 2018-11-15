@@ -10,7 +10,7 @@ Hello and welcome to CoCalc! You are part of a course ... now what?
 What is CoCalc?
 ===============
 
-CoCalc is a cloud service that provides support for courses based on interactive resources such as the `Jupyter Notebooks <http://jupyter.org>`_ , `SageMath Worksheets <_http://sagemath.org>`_, LaTeX documents, etc.
+CoCalc is a cloud service that provides support for courses based on interactive resources such as the `Jupyter Notebooks <http://jupyter.org>`_ , `SageMath Worksheets <_http://sagemath.org>`_, :doc:`LaTeX documents <latex>`, etc.
 
 Why CoCalc?
 ------------------------------------------
