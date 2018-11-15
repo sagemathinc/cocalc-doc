@@ -4,8 +4,13 @@
 Welcome to CoCalc's User Manual!
 ================================================
 
-This explains in depth how you can work productively on `CoCalc`_!
+This explains in depth how you can work productively on `CoCalc`_.
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Introduction:
+
+   getting-started
 
 .. toctree::
    :maxdepth: 2
