@@ -1,3 +1,4 @@
+============
 Frame editor
 ============
 
@@ -9,5 +10,4 @@ Therefore, you can not only view the same Python source code file in two places,
 
 .. image:: img/frame-editor-python.png
     :width: 100%
-    
-    
+

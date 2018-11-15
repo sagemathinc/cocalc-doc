@@ -2,7 +2,7 @@
 LaTeX Editor
 ======================
 
-`LaTeX`_ is a sophisticated markup language and processor for typesetting documents.
+[LaTeX]_ is a sophisticated markup language and processor for typesetting documents.
 For a general introduction, read this `LaTeX wiki book`_ or any other resource.
 
 .. contents:: Table of Contents
@@ -233,9 +233,15 @@ In general, multifile LaTeX editing is on our radar, but we haven't got to that 
 
 
 
+An error says that the PDF cannot be built. How can I find the problem?
+-----------------------------------------------------------------------------------
+
+* Use :doc:`TimeTravel <time-travel>` to go back to a working version. In the TimeTravel view, you can use ``Changes`` to see exactly what changed between revisions.
+* Another tip is to click the format button, since sometimes formatting properly can give you a good sense of what you might have messed up.
+* More general, you can also use revision control like [Git]_ to track your changes. Just create a :doc:`Terminal <terminal>` file or :doc:`frame in the latex editor <frame-editor>` and go ahead and work on the command-line as usual.
+* If you need more detailed help, make sure to open the ``.tex`` file and make a support request by clicking the ``Help`` button at the top right.
 
 
-.. _LaTeX: https://www.latex-project.org/
 .. _LaTeX wiki book: https://en.wikibooks.org/wiki/LaTeX
 .. _LatexMK: https://www.ctan.org/pkg/latexmk/
 .. _subfiles: https://www.ctan.org/pkg/subfiles?lang=en

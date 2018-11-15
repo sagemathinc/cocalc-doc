@@ -88,10 +88,9 @@ You should note, however, that by using this approach you cannot automatically c
 Using Git
 -----------------------------
 
-Students can collaborate from within their individual course projects using Git_ via the terminal in CoCalc.
+Students can collaborate from within their individual course projects using [Git] via the terminal in CoCalc.
 See :ref:`Using Git <teaching-using-git>` in
 :doc:`Tips and tricks <teaching-tips_and_tricks>`.
 
-.. _Git: https://www.git-scm.org
 
 

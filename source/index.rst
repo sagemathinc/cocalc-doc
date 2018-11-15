@@ -23,6 +23,7 @@ This explains in depth how you can work productively on `CoCalc`_!
    sagews
    terminal
    frame-editor
+   time-travel
 
 .. toctree::
    :maxdepth: 1
@@ -32,8 +33,11 @@ This explains in depth how you can work productively on `CoCalc`_!
    project-settings
 
 
-Indices and tables
-==================
+Indices, references and tables
+==============================
+
+.. toctree::
+    references
 
 * :ref:`genindex`
 * :ref:`search`
