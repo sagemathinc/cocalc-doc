@@ -13,7 +13,7 @@ Then you can see the underlying history, e.g. here for exactly this ``time-trave
 
 * **(1)** is the control knob of the slider
 * **(2)** to view changes between two revisions
-* **(3)** to revert the file back to the given revision. This is added as a **new** history entry at the end, such that nothing is getting lost.
+* **(3)** to revert the file back to the given revision. This doesn't undo the history, but adds a **new** entry at the end. No changes get lost.
 
 For very long histories, another button will show up to load the entire history.
 
