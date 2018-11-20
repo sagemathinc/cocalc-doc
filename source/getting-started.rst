@@ -5,6 +5,7 @@ Getting Started
 A guide for your first CoCalc session.
 
 .. contents:: Table of Contents
+   :local:
    :depth: 2
 
 Creating an Account

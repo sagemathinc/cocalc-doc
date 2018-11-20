@@ -6,6 +6,7 @@ In this section we will learn how to create a course project,
 how to populate it with a course management file and how to invite all of your students to join the course.
 
 .. contents:: Table of Contents
+   :local:
    :depth: 2
 
 Creating the course project

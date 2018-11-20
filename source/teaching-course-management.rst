@@ -5,6 +5,7 @@ Course Management
 No matter what you've added in the instructor's view of the course, the students will not see any files until you explicitly assign them.
 
 .. contents:: Table of Contents
+   :local:
    :depth: 2
 
 Creating a new assignment

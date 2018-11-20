@@ -5,6 +5,7 @@ Student Guide
 Hello and welcome to CoCalc! You are part of a course ... now what?
 
 .. contents:: Table of Contents
+   :local:
    :depth: 3
 
 What is CoCalc?

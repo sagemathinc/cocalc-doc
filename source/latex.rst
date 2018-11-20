@@ -6,6 +6,7 @@ LaTeX Editor
 For a general introduction, read this `LaTeX wiki book`_ or any other resource.
 
 .. contents:: Table of Contents
+   :local:
    :depth: 3
 
 Getting started

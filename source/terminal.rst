@@ -9,6 +9,7 @@ To get started, create a **"Terminal"** file in the "Files" listing or in "+ New
 This runs one or more shell sessions in a :doc:`frame-editor`.
 
 .. contents:: Table of Contents
+   :local:
    :depth: 3
 
 Tips and tricks
