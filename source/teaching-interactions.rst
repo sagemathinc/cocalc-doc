@@ -43,7 +43,7 @@ Live collaborative editing
 ===================================
 
 Multiple users can collaborate on a project.
-As soon as a collaborator is added to a a project (see [Creating a Course](./creating_a_course/creating_course.md)) they share both the project and the associated files.
+As soon as a collaborator is added to a a project (see :doc:`teaching-create-course`) they share both the project and the associated files.
 
 Live collaborative editing is possible in CoCalc.
 If one of your collaborators updates a notebook, the rest can see the changes as they are being made (similar to Google Docs).

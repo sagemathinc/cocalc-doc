@@ -29,7 +29,10 @@ which renders as
 Making multiple assignment folders quickly
 ==========================================================
 
-So far we have shown how to create folders and files by using the **New** button every time. ->![New Button](./assets/new.png)
+So far we have shown how to create folders and files by using the **New** button every time. → |NEW_BUTTON|
+
+.. |NEW_BUTTON| image:: img/teaching/new.png
+                  :height: 20pt
 
 However, such a method could be quite time consuming when you need to create multiple folders, subfolders, and documents. If you are a terminal fan you could create a shell script in your preferred programming language and run it from the terminal.
 
