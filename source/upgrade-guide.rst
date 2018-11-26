@@ -1,5 +1,5 @@
 =====================
-Purchasing Upgrades
+Project Upgrades
 =====================
 
 .. contents:: Table of Contents
