@@ -1,10 +1,8 @@
-==============================
-🔧Project settings
-==============================
+================
+Project Settings
+================
 
 An overview of the **Project Settings** tab.
-
-.. index:: project upgrades
 
 .. _project-upgrades:
 
