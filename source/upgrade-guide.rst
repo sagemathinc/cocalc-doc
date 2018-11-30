@@ -1,8 +1,8 @@
 =====================
-Purchasing Upgrades
+Project Upgrades
 =====================
 
-.. contents:: Table of Contents
+.. contents::
    :local:
    :depth: 2
 

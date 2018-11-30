@@ -5,7 +5,7 @@ LaTeX Editor
 [LaTeX]_ is a sophisticated markup language and processor for typesetting documents.
 For a general introduction, read this `LaTeX wiki book`_ or any other resource.
 
-.. contents:: Table of Contents
+.. contents::
    :local:
    :depth: 3
 

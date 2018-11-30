@@ -5,7 +5,7 @@ Collaboration
 There are multiple ways in which you can interact with your students or collaborators, in this section we will present some features that you might find useful when managing a course.
 
 
-.. contents:: Table of Contents
+.. contents::
    :local:
    :depth: 2
 
