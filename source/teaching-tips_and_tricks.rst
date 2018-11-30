@@ -4,7 +4,7 @@ Tips and tricks
 
 In this section we will present some CoCalc features and useful tricks that will make the management of your project easier.
 
-.. contents:: Table of Contents
+.. contents::
    :local:
    :depth: 2
 

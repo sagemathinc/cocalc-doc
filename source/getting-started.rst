@@ -4,7 +4,7 @@ Getting Started
 
 A guide for your first CoCalc session.
 
-.. contents:: Table of Contents
+.. contents::
    :local:
    :depth: 2
 

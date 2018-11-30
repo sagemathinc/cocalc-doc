@@ -36,6 +36,7 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    upgrade-guide
    project-settings
+   account-settings
 
 
 Indices, references and tables
