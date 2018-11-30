@@ -2,11 +2,10 @@
 Project Settings
 ================
 
-An overview of the **Project Settings** tab.
+All about the **Project Settings** tab.
 
-.. _project-upgrades:
-
-.. contents:: Table of Contents
+.. contents::
+   :local:
    :depth: 2
 
 
@@ -24,14 +23,14 @@ for topics you want to return to quickly.
 
 .. figure:: img/project-settings/project-match.png
      :width: 60%
-     
+
      *searching for "astro" in project title & description*
 
 Project usage and quotas
 ------------------------
 
-Upgrades
-^^^^^^^^
+Why Add Upgrades?
+"""""""""""""""""
 
 There are many reasons that you might want to have an upgraded project.
 
