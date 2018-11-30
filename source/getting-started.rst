@@ -4,6 +4,8 @@ Getting Started
 
 A guide for your first CoCalc session.
 
+.. index:: getting started
+
 .. contents:: Table of Contents
    :local:
    :depth: 2
@@ -119,7 +121,7 @@ Going from left to right:
     * Open projects - a button will appear for each project you have open.
     * |info-circle| **CoCalc** - Information about CoCalc. Includes links to tutorials, examples, lists of available languages, libraries, and packages, and real-time stats for the platform.
     * |medkit| **Help** - **Use this button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
-    * **Account** - Click here to update your profile, sign out, order subscriptions, view your upgrades, add SSH keys, and check on support tickets.
+    * **Account** - Click here to update your profile, sign out, order subscriptions, view your upgrades, add `SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets.
     * |bell| **Notifications** - A count is displayed over the bell if there are chat updates or file edits in projects you own or collaborate on.
     * |wifi| **Connection Status**. The number to the right of the icon is the round-trip time for data between your computer and CoCalc.
     * |expand| **Fullscreen Mode** - Clicking here will toggle fullscreen mode, in which the project and file toolbars are shown or hidden.
@@ -177,6 +179,8 @@ exceptions: the program will stop if any of the following occurs:
 Signing Out
 -----------
 
+.. index:: signing out
+
 You sign out by using **Account** → **Preferences** → **Sign Out...**
 
 Next steps
@@ -198,13 +202,13 @@ Next steps
 
    upgrade-guide
 
-.. |cocalc-logo| image:: img/getting-started/cocalc-logo.svg
+.. |cocalc-logo| image:: img/icons/cocalc-logo.svg
     :height: 20px
 .. |info-circle| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/info-circle.png
 .. |medkit| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/medkit.png
 .. |bell| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/bell-o.png
 .. |wifi| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/wifi.png
-.. |expand| image:: img/getting-started/expand.png
+.. |expand| image:: img/icons/expand.png
     :height: 20px
 .. |folder-open| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/folder-open-o.png
 .. |plus-circle| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/plus-circle.png
