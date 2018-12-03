@@ -93,6 +93,76 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
 Hide or delete project
 ----------------------
 
+Next in the Project Settings window is the section for hidden and deleted projects,
+which do not appear in the normal project list
+(the list you get when you click `Projects` at upper left).
+
+If the current project is neither hidden nor deleted, you will see this:
+
+.. image:: img/project-settings/hide-or-delete.png
+     :width: 60%
+
+Hidden vs. Deleted projects
+"""""""""""""""""""""""""""
+
+If you delete a project, then you delete it for everyone---for all your collaborators. The good news is that this can be undone.
+
+Alternatively, if you hide a project, then you will not see it in your projects listing, but your collaborators are unaffected.
+
+Hiding a project
+""""""""""""""""
+
+If you click `Hide Project`, the button changes:
+
+.. image:: img/project-settings/hidden.png
+     :width: 60%
+
+And now if you click the `Projects` button at upper left, you will have a checkbox
+that lets you view hidden projects. The checkbox only appears if there are hidden projects.
+
+.. image:: img/project-settings/show-hidden.png
+     :width: 60%
+
+Clicking `Unhide Project` instantly makes the project visible in the normal project list again.
+
+Deleting a project
+""""""""""""""""""
+
+*Note: No files are actually deleted by this operation.
+Only visibility of the project in the project list is changed.
+If you need to permanently delete information that you
+accidentally copied into a project, contact help@sagemath.com*
+
+If you click `Delete Project`, the button changes:
+
+.. image:: img/project-settings/delproj1.png
+     :width: 60%
+
+Click `Yes, please delete this project` to confirm, and the screen changes again:
+
+.. image:: img/project-settings/delproj2.png
+     :width: 60%
+
+Note the warning banner that appears at the top.
+
+The project will not appear in the normal project list for you and all collaborators on the project.
+
+And now if you click the `Projects` button at upper left, you will have a checkbox
+that lets you view deleted projects. The checkbox only appears if there are hidden projects.
+
+.. image:: img/project-settings/show-deleted.png
+     :width: 60%
+
+Clicking `Undelete Project` instantly makes the project visible in the normal project list again
+for you and all collaborators on the project.
+
+Hidden and Deleted projects
+"""""""""""""""""""""""""""
+
+A project can be both hidden and deleted. In that case, you will need to check both
+`Deleted` and `Hidden` boxes in the `Projects` list to see the project.
+
+
 SSH Keys
 --------
 
