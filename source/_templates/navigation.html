@@ -5,12 +5,12 @@
 
 {{ toctree(includehidden=theme_sidebar_includehidden, collapse="true") }}
 {% if theme_extra_nav_links %}
-<br/>
-<hr/>
+
 <p class="caption">Links:</p>
 <ul>
     {% for text, uri in theme_extra_nav_links.items() %}
     <li class="toctree-l1"><a href="{{ uri }}">{{ text }}</a></li>
     {% endfor %}
 </ul>
+
 {% endif %}

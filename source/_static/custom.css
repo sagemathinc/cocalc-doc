@@ -7,6 +7,10 @@ div.body p.caption {
     margin: 20px 0 -10px 0;
 }
 
+div.sphinxsidebar h3 {
+    font-size: 18px;
+}
+
 div.document {
     width: 1040px;
 }
