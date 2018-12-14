@@ -31,18 +31,13 @@ This explains in depth how you can work productively on `CoCalc`_.
    time-travel
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Platform:
 
    upgrade-guide
    project-settings
    account-settings
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Examples:
-   
-   google-api
+   examples/index
 
 
 Indices, references and tables

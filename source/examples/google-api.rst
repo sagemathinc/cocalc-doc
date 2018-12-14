@@ -20,7 +20,7 @@ This example runs a short program to read two columns from a spreadsheet in Goog
 
 You don't need to open the sample data in Google Sheets to run the program, but if you're curious, you can view it at `Example Spreadsheet`_.
 
-.. image:: img/examples/example-spreadsheet.png
+.. image:: img/example-spreadsheet.png
      :width: 50%
 
 The python program is provided by Google and runs under Python 2 and Python 3.
@@ -32,22 +32,22 @@ To get started, you will need a Google account. You will have one already if you
 
 Now that you have a Google account, browse to the `Python Quickstart`_ page at Google and click ``ENABLE THE GOOGLE SHEETS API``:
 
-.. image:: img/examples/enable-sheets-api.png
+.. image:: img/enable-sheets-api.png
      :width: 50%
 
 In the pop-up dialog, select ``+ Create a new project``:
 
-.. image:: img/examples/create-project.png
+.. image:: img/create-project.png
      :width: 50%
 
 Give the project a name:
 
-.. image:: img/examples/project-name.png
+.. image:: img/project-name.png
      :width: 50%
 
 Click DOWNLOAD CLIENT CONFIGURATION to copy file `credentials.json` to your computer.
 
-.. image:: img/examples/download-config.png
+.. image:: img/download-config.png
      :width: 50%
 
 Upload Python script and credentials to CoCalc
@@ -57,7 +57,7 @@ Log into your CoCalc account. Make a new folder called `Sheets API` or such.
 
 You can create a folder by typing its name in the Files search box, appending a slash, and pressing Enter:
 
-.. image:: img/examples/create-folder.png
+.. image:: img/create-folder.png
      :width: 50%
 
 Click ``(+) New`` (upper left) or ``Upload`` (upper right)to upload the `credentials.json` file from your computer into the new folder.
@@ -68,19 +68,19 @@ https://raw.githubusercontent.com/gsuitedevs/python-samples/master/sheets/quicks
 
 Paste the above link into the ``(+) New`` dialog in the CoCalc Files screen:
 
-.. image:: img/examples/upload-py.png
+.. image:: img/upload-py.png
      :width: 50%
 
 Open the .py file.
 Split the view vertically.
 Note that the two panes can be scrolled separately.
 
-.. image:: img/examples/split-py.png
+.. image:: img/split-py.png
      :width: 50%
 
 Change the second pane to a command line terminal and do ``ls`` to list files in the folder:
 
-.. image:: img/examples/split-ls.png
+.. image:: img/split-ls.png
      :width: 50%
 
 First run: OAuth2 authentication
@@ -88,25 +88,26 @@ First run: OAuth2 authentication
 
 In the terminal file, run the following command. Note the command line option so that OAuth2 does not open a browser inside CoCalc.
 
-```
-python quickstart.py --noauth_local_webserver
-```
+.. code-block:: python
+
+    python quickstart.py --noauth_local_webserver
+
 
 The program will print a message saying **Go to the following link...**:
 
-.. image:: img/examples/go-to-link.png
+.. image:: img/go-to-link.png
      :width: 50%
 
 Copy that link from the terminal output. Open a new browser tab and paste it in, and visit that link. If you have more than one Google account, choose the same account you used when creating your `credentials.json` file.
 Log into your Google account. You will see a ``Sign in`` confirmation message with a code to be copied:
 
-.. image:: img/examples/oauth-sign-in.png
+.. image:: img/oauth-sign-in.png
      :width: 50%
 
 Click the icon to copy the code to your clipboard. Then paste it into the CoCalc terminal session that is waiting for it and hit Enter.
 After a few seconds, you will see the selected columns of sample data:
 
-.. image:: img/examples/verify.png
+.. image:: img/verify.png
      :width: 40%
 
 Second and later runs
@@ -114,11 +115,11 @@ Second and later runs
 
 In the terminal pane, again type ``ls`` and see that there is now a `token.json` file in your folder. That token saves your authorization. Subsequent runs of the program won't need the OAuth2 detour through an external browser window. Run the Python script again. This time, you don't need the added command line switch:
 
-```
-python quickstart.py
-```
+.. code-block:: python
 
-.. image:: img/examples/second-run.png
+    python quickstart.py
+
+.. image:: img/second-run.png
      :width: 50%
 
 Python 3 compatibility
