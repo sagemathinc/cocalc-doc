@@ -38,6 +38,12 @@ This explains in depth how you can work productively on `CoCalc`_.
    project-settings
    account-settings
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Examples:
+   
+   google-api
+
 
 Indices, references and tables
 ==============================
