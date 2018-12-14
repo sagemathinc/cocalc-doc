@@ -126,7 +126,7 @@ Python 3 compatibility
 
 The script provided by Google is compatible with current versions of both Python 2 and Python 3. 
 The default ``python`` command in the CoCalc terminal runs Python 2.
-Use ``python3`` at the command line to run quickstart.py with code with Python 3 compatible versions of the imported modules.
+Use ``python3`` at the command line to run quickstart.py with Python 3 compatible versions of the imported modules.
 
 .. _Python Quickstart: https://developers.google.com/sheets/api/quickstart/python
 .. _OAuth2 authentication: https://developers.google.com/identity/protocols/OAuth2
