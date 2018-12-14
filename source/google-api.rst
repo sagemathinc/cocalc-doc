@@ -1,6 +1,6 @@
-=================
-Google Sheets API
-=================
+======================
+Google Sheets API Demo
+======================
 
 This example illustrates:
 
@@ -30,7 +30,7 @@ Get credentials file
 
 To get started, you will need a Google account. You will have one already if you use Gmail or Google Drive. If not, browse to `drive.google.com`_ and follow the steps to create an account.
 
-Browse to the `Python Quickstart`_ page at Google and click ``ENABLE THE GOOGLE SHEETS API``:
+Now that you have a Google account, browse to the `Python Quickstart`_ page at Google and click ``ENABLE THE GOOGLE SHEETS API``:
 
 .. image:: img/examples/enable-sheets-api.png
      :width: 50%
@@ -60,7 +60,7 @@ You can create a folder by typing its name in the Files search box, appending a 
 .. image:: img/examples/create-folder.png
      :width: 50%
 
-Click `(+) New` (upper left) or `Upload` (upper right)to upload the `credentials.json` file from your computer into the new folder.
+Click ``(+) New`` (upper left) or ``Upload`` (upper right)to upload the `credentials.json` file from your computer into the new folder.
 
 Also upload python source from the GitHub repository for the Google sample program to the same CoCalc folder. The quickstart page has a link to the repo. We want the raw
 link to file quickstart.py: 
@@ -78,7 +78,7 @@ Note that the two panes can be scrolled separately.
 .. image:: img/examples/split-py.png
      :width: 50%
 
-Change the second pane to a command line terminal and do `ls` to list files in the folder:
+Change the second pane to a command line terminal and do ``ls`` to list files in the folder:
 
 .. image:: img/examples/split-ls.png
      :width: 50%
@@ -112,7 +112,7 @@ After a few seconds, you will see the selected columns of sample data:
 Second and later runs
 ---------------------
 
-In the terminal pane, again type `ls` and see that there is now a `token.json` file in your folder. That token saves your authorization. Subsequent runs of the program won't need the OAuth2 detour through an external browser window. Run the Python script again. This time, you don't need the added command line switch:
+In the terminal pane, again type ``ls`` and see that there is now a `token.json` file in your folder. That token saves your authorization. Subsequent runs of the program won't need the OAuth2 detour through an external browser window. Run the Python script again. This time, you don't need the added command line switch:
 
 ```
 python quickstart.py
