@@ -16,12 +16,12 @@ This example illustrates:
 What the program does
 ---------------------
 
-This example runs a short program to read two columns from a spreadsheet in Google Sheets and write them to the user's terminal.
+This example runs a short program to read two columns, "Student Name" and "Major", from a spreadsheet in Google Sheets and writes them to the user's terminal.
 
 You don't need to open the sample data in Google Sheets to run the program, but if you're curious, you can view it at `Example Spreadsheet`_.
 
 .. image:: img/example-spreadsheet.png
-     :width: 50%
+     :width: 60%
 
 The python program is provided by Google and runs under Python 2 and Python 3.
 
@@ -45,7 +45,7 @@ Give the project a name:
 .. image:: img/project-name.png
      :width: 50%
 
-Click DOWNLOAD CLIENT CONFIGURATION to copy file `credentials.json` to your computer.
+Click ``DOWNLOAD CLIENT CONFIGURATION`` to copy file `credentials.json` to your computer.
 
 .. image:: img/download-config.png
      :width: 50%
@@ -60,7 +60,7 @@ You can create a folder by typing its name in the Files search box, appending a 
 .. image:: img/create-folder.png
      :width: 50%
 
-Click ``(+) New`` (upper left) or ``Upload`` (upper right)to upload the `credentials.json` file from your computer into the new folder.
+Click ``(+) New`` (upper left) or ``Upload`` (upper right) to upload the `credentials.json` file from your computer into the new folder.
 
 Also upload python source from the GitHub repository for the Google sample program to the same CoCalc folder. The quickstart page has a link to the repo. We want the raw
 link to file quickstart.py: 
@@ -76,12 +76,12 @@ Split the view vertically.
 Note that the two panes can be scrolled separately.
 
 .. image:: img/split-py.png
-     :width: 50%
+     :width: 70%
 
 Change the second pane to a command line terminal and do ``ls`` to list files in the folder:
 
 .. image:: img/split-ls.png
-     :width: 50%
+     :width: 70%
 
 First run: OAuth2 authentication
 --------------------------------
@@ -99,7 +99,7 @@ The program will print a message saying **Go to the following link...**:
      :width: 50%
 
 Copy that link from the terminal output. Open a new browser tab and paste it in, and visit that link. If you have more than one Google account, choose the same account you used when creating your `credentials.json` file.
-Log into your Google account. You will see a ``Sign in`` confirmation message with a code to be copied:
+Log into your Google account when you are prompted to do so. You will see a ``Sign in`` confirmation message with a code to be copied:
 
 .. image:: img/oauth-sign-in.png
      :width: 50%
@@ -129,7 +129,14 @@ The script provided by Google is compatible with current versions of both Python
 The default ``python`` command in the CoCalc terminal runs Python 2.
 Use ``python3`` at the command line to run quickstart.py with Python 3 compatible versions of the imported modules.
 
+For further study
+-----------------
+
+The Google Sheets API can do much more than download selected columns of a spreadsheet. To learn more, see the documentation
+for `Google Sheets API v4`_.
+
 .. _Python Quickstart: https://developers.google.com/sheets/api/quickstart/python
 .. _OAuth2 authentication: https://developers.google.com/identity/protocols/OAuth2
 .. _Example Spreadsheet: https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit#gid=0
 .. _drive.google.com: https://drive.google.com/
+.. _`Google Sheets API v4`: https://developers.google.com/sheets/api/
