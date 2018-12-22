@@ -1,4 +1,4 @@
-.. index:: account settings
+.. index:: Account Settings
 
 ==============================
 Account Settings

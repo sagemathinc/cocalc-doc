@@ -177,7 +177,7 @@ exceptions: the program will stop if any of the following occurs:
 Signing Out
 -----------
 
-.. index:: signing out
+.. index:: Signing Out
 
 You sign out by using **Account** → **Preferences** → **Sign Out...**
 

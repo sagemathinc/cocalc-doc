@@ -9,7 +9,7 @@ Project Upgrades
 Overview
 ========================
 
-.. index:: purchase a plan
+.. index:: Purchase a Plan
 
 Select your plan
 ===============================
@@ -22,7 +22,7 @@ The example shows a 1-year personal "Standard Plan" subscription.
 .. image:: img/upgrades-plan-selection.png
     :width: 100%
 
-.. index:: credit card
+.. index:: Credit Card
 
 Credit card information
 ===============================
@@ -34,7 +34,7 @@ If you got a coupon, you can also add it here.
 .. image:: img/upgrades-payment-info.png
     :width: 100%
 
-.. index:: invoice, receipt
+.. index:: Invoice, Receipt
 
 Active subscriptions
 ============================
@@ -51,7 +51,7 @@ Below that part, you also find "Invoices and receipts".
 .. image:: img/upgrades-download-receipts.png
     :width: 100%
 
-.. index:: applied upgrades
+.. index:: Applied Upgrades
 
 Applied Upgrades
 ==============================

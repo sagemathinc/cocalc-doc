@@ -9,6 +9,8 @@ For a general introduction, read this `LaTeX wiki book`_ or any other resource.
    :local:
    :depth: 3
 
+.. index:: LaTeX
+
 Getting started
 ===============
 
@@ -188,6 +190,8 @@ There is an extended example demonstrating how this works in the CoCalc Library.
 .. _described here: https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles
 .. _cloud-examples/latex/multiple-files: https://github.com/sagemath/cloud-examples/tree/master/latex/multiple-files
 
+.. index:: PSTricks
+
 How to use PSTricks macros?
 -----------------------------------------
 
@@ -203,6 +207,8 @@ The main thing to remember when using PSTricks is to set ``Engine`` in the CoCal
 
 .. image:: img/latex-pstricks-demo4.png
     :width: 40%
+
+.. index:: texmf
 
 Setup ``texmf`` in a project?
 -----------------------------------------
