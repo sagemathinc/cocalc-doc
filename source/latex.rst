@@ -160,6 +160,8 @@ How to insert an image?
 
 .. _these instructions: https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
 
+
+
 How to insert a backslash or dollar sign?
 --------------------------------------------
 
@@ -168,6 +170,8 @@ It signals a LaTeX command or is used as an escape character.
 To enter a backslash, escape its meaning by entering it twice: ``\\``.
 
 A dollar sign is entered as ``\$``, which escapes the meaning of "formula-start".
+
+
 
 What to do if the preview does not update
 -----------------------------------------
@@ -179,6 +183,8 @@ Possible reasons:
 3. Similarly, computational-heavy "SageTeX" computations could lead to excessive compilation times.
    You can pre-compute results or split the document into smaller parts.
 
+
+
 How to deal with large documents across multiple source files?
 ----------------------------------------------------------------------------------
 
@@ -189,6 +195,9 @@ There is an extended example demonstrating how this works in the CoCalc Library.
 
 .. _described here: https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles
 .. _cloud-examples/latex/multiple-files: https://github.com/sagemath/cloud-examples/tree/master/latex/multiple-files
+
+
+
 
 .. index:: PSTricks
 
@@ -207,6 +216,46 @@ The main thing to remember when using PSTricks is to set ``Engine`` in the CoCal
 
 .. image:: img/latex-pstricks-demo4.png
     :width: 40%
+
+
+
+
+.. index:: Asymptote
+
+How can I draw via Asymptote?
+--------------------------------------
+
+`Asymptote <http://asymptote.sourceforge.net/>`_ is a
+
+    powerful descriptive vector graphics language
+    that provides a natural coordinate-based framework for technical drawing.
+    Labels and equations are typeset with LaTeX, for high-quality PostScript output.
+
+In order to tell `LatexMK`_
+– which CoCalc's LaTeX editor is using by default under the hood –
+to process the generated ``*.asy`` files,
+you need to setup your ``~/.latexmkrc`` file in your home directory.
+In order to do that, open up the ``Files`` tab in your project
+and click on the home-icon to make sure you're in your home directory.
+Then, click on `Create` to create a new file and enter the filename ``.latexmkrc``.
+Don't overlook that leading dot in the filename, which is used for hidden files in Linux.
+Then, enter these lines in the text editor and save the file::
+
+    sub asy {return system("asy \"$_[0]\"");}
+    add_cus_dep("asy","eps",0,"asy");
+    add_cus_dep("asy","pdf",0,"asy");
+    add_cus_dep("asy","tex",0,"asy");
+
+These additional rules tell LatexMK to essentially run ``asy <basename>-*.asy``
+on each file during the build process.
+In case there are problems, you can run that command-line in a :doc:`terminal`
+to see all details about any possible errors.
+
+More information: `Asymptote LaTeX Usage <http://asymptote.sourceforge.net/doc/LaTeX-usage.html>`_.
+
+.. image:: img/latex-asymptote.png
+    :width: 100%
+
 
 .. index:: texmf
 
