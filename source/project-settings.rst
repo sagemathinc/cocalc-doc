@@ -162,9 +162,72 @@ Hidden and Deleted projects
 A project can be both hidden and deleted. In that case, you will need to check both
 `Deleted` and `Hidden` boxes in the `Projects` list to see the project.
 
+.. image:: img/project-settings/deleted-and-hidden-a.png
+     :width: 60%
+
 
 SSH Keys
 --------
+
+For addtional detail, see the blog posting `Using SSH with CoCalc <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_.
+
+You can connect to a CoCalc project from your local desktop using `SSH`_ (Secure Shell) and you can upload/download files between your computer and CoCalc using the SSH protocol, with ``scp`` and ``rsync`` command line tools. You must have owner or collaborator status on a project for SSH access to be permitted.
+
+When logging into a project with ssh, make sure the project is running. If the project is stopped, or has been restarted within the last 20 seconds or so, you may get a message of 'Permission denied'.
+
+SSH authentication uses a pair of keys, a private key and a public key. Each key is stored in a separate file. For example, a private key might be in the file ``id_ed25519`` and the matching public key in ``id_ed25519.pub``. In general, private keys are not distributed, while public keys are uploaded to remote systems.
+
+On OS X, and Linux, key pairs are stored in ``~/.ssh``, where ``~`` indicates your user's home directory. Use the ``ssh-keygen`` command to generate a key pair. (You can do ``man ssh-keygen`` from a terminal for details on the command.)
+
+*NOTE: CoCalc does not support manual editing of the authorized_keys file server for SSH authentication.*
+
+Configuring SSH Keys for a Single Project
+"""""""""""""""""""""""""""""""""""""""""
+
+This section assumes you have created an SSH key pair as described above.
+
+#. Open the project Settings tab (wrench icon) for the project you want to access.
+#. Look for the section "SSH Keys" at lower left.
+
+   .. image:: img/project-settings/usernameathost.png
+        :width: 50%
+
+#. Click "Add an SSH Key".
+#. Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example "Sample Key for TESTPROJ".
+#. Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file::
+
+      cat ~/.ssh/id_ed25519.pub
+
+   Use your mouse to highlight the contents of the key file, then copy and paste it into the Key area.
+#. Click "Add SSH Key". Your key is now saved for that project.
+
+   .. image:: img/project-settings/addingprojkey.png
+        :width: 50%
+
+#. The user for the SSH connection is the project id *without the hyphens* (why? because the project id is not a valid Linux username). The hostname is ``ssh.cocalc.com``. Look for "Use the following username@host:" in the "SSH Keys" section of project status for a string you can copy and paste. For example, if the Project id is::
+
+      2507078b-6e5b-43da-809a-0073f1196181
+
+   then the SSH username@host will be::
+
+      2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
+
+#. To login from your local computer, use a command equivalent to the following::
+
+      ssh 2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
+
+#. On macOS or Linux, you can specify a host alias in ``~/.ssh/config`` to avoid having to explicitly pass the project id as above. For example, the following lines in ``~/.ssh/config``::
+
+      Host CCPROJ
+          Hostname ssh.cocalc.com
+          User 2507078b6e5b43da809a0073f1196181
+          IdentityFile ~/.ssh/id_ed25519
+
+will allow you to log into the your project from your local computer with the command::
+
+      ssh CCPROJ
+
+You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
 
 Current collaborators
 ---------------------
@@ -186,3 +249,5 @@ JupyterLab server
 
 
 .. |header| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/header.png
+
+.. _ssh: https://help.ubuntu.com/community/SSH
