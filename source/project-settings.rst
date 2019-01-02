@@ -184,6 +184,8 @@ On OS X, and Linux, key pairs are stored in ``~/.ssh``, where ``~`` indicates yo
 Configuring SSH Keys for a Single Project
 """""""""""""""""""""""""""""""""""""""""
 
+.. highlight:: none
+
 This section assumes you have created an SSH key pair as described above.
 
 #. Open the project Settings tab (wrench icon) for the project you want to access.
@@ -198,7 +200,7 @@ This section assumes you have created an SSH key pair as described above.
 
       cat ~/.ssh/id_ed25519.pub
 
-   Use your mouse to highlight the contents of the key file, then copy and paste it into the Key area.
+   Use your mouse to select the contents of the key file, then copy and paste it into the Key area.
 #. Click "Add SSH Key". Your key is now saved for that project.
 
    .. image:: img/project-settings/addingprojkey.png
@@ -228,6 +230,8 @@ will allow you to log into the your project from your local computer with the co
       ssh CCPROJ
 
 You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
+
+.. highlight:: default
 
 Current collaborators
 ---------------------
