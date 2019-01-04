@@ -265,7 +265,14 @@ Setup ``texmf`` in a project?
 A CoCalc project is equivalent to a linux user account.
 Therefore, the texmf discovery mechanism works the same as on a local machine.
 By default, you should be able to put your own packages and styles into ``~/texmf``.
-Afterwards, you might have to run run ``texhash ~/texmf`` in a terminal or the little "Terminal command" textbox in "Files".
+
+In case you just want to add a styles-file with common commands
+for the `tex` processor available to all your ``.tex`` files,
+you have to put them into the ``~/texmf/tex/latex/local`` sub-directory.
+That way they're always found by the latex processor.
+(see `stackexchange discussion <https://tex.stackexchange.com/questions/1137/where-do-i-place-my-own-sty-or-cls-files-to-make-them-available-to-all-my-te>`_)
+
+Otherwise, you might have to run run ``texhash ~/texmf`` in a terminal or the little "Terminal command" textbox in "Files".
 
 Note: the ``~`` stands for the ``HOME`` directory, which is the root directory you see in the "Files"-listing.
 You can click the home icon to jump into the home directory.
