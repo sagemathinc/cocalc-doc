@@ -225,11 +225,11 @@ This section assumes you have created an SSH key pair as described above.
           User 2507078b6e5b43da809a0073f1196181
           IdentityFile ~/.ssh/id_ed25519
 
-will allow you to log into the your project from your local computer with the command::
+   will allow you to log into the your project from your local computer with the command::
 
       ssh CCPROJ
 
-You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
+   You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
 
 .. highlight:: default
 
