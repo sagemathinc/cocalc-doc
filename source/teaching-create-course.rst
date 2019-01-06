@@ -29,6 +29,8 @@ The new project will appear at the top of the project list. Click on its  title 
 .. image:: img/teaching/course_list.png
      :width: 100%
 
+.. _teaching-add-ta:
+
 Adding teaching assistants to the course
 -----------------------------------------
 

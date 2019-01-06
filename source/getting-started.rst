@@ -137,27 +137,47 @@ When you select a file in the toolbar, its contents are displayed in the browser
 
 From left to right:
 
+       .. _ft-files:
+
     * |folder-open| **Files** - If you don't have a file open, clicking here will show you a list of files
       in the project's home directory. If you are working on a file, clicking **Files** will show a list of
       files in the directory containing the currently selected file. You can enter search characters to
       filter the file list for filenames containing the search text.
+
+       .. _ft-new:
+
     * |plus-circle| **New** - click to create or upload new files. **New** also lets you
       browse the `CoCalc Library <http://blog.sagemath.com/cocalc/2018/03/06/cocalc-library.html>`_, which contains code examples and entire books about various toolsets
       and science topics, ready to copy into your project.
+
+       .. _ft-history:
+
     * |history| **Log** - The **Project Activity Log** shows recent activity in your project:
       logins, files opened and uploaded, etc. If you click on a filename in the log, it will open
       that file. This is often the quickest way to resume work on a file that was recently closed.
+
+       .. _ft-search:
+
     * |search| **Find** - Search  for files containing the specified text in the directory that contains
       the currently selected file, or the project home directory if no file is selected. There are options
       to for searching subdirectories, case sensitive search, including hidden files, and restricting search
       to files in a git repository.
+
+       .. _ft-settings:
+
     * |wrench| **Settings** - This tab is where you can set a description for your project, add or remove
       upgrades, hide or delete the project, add a project-specific `SSH Key <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, view and add collaborators, stop and restart the project and the Sage worksheet server,
       and launch the Plain Jupyter and JupyterLab servers.
       *Hint: Adding hashtags to the description can make it easy to find a subject with the Project button if you have a large number of projects.*
     * Open Files - a button will appear for each file you have open.
+
+       .. _ft-share:
+
     * |share-square| **Share** - If a file is selected, this button allows you to share it. Files shared publicly
       can be viewed by people without a CoCalc login.
+
+       .. _ft-comment:
+
     * |comment| **Chat** - If a file is selected, you can click here to start text or video chat.
       Collaborators on the project will get a notification when chat is opened or updated.
 

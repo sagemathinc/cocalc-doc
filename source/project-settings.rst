@@ -169,6 +169,9 @@ A project can be both hidden and deleted. In that case, you will need to check b
 SSH Keys
 --------
 
+Using SSH
+"""""""""
+
 For addtional detail, see the blog posting `Using SSH with CoCalc <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_.
 
 You can connect to a CoCalc project from your local desktop using `SSH`_ (Secure Shell) and you can upload/download files between your computer and CoCalc using the SSH protocol, with ``scp`` and ``rsync`` command line tools. You must have owner or collaborator status on a project for SSH access to be permitted.
@@ -233,11 +236,43 @@ This section assumes you have created an SSH key pair as described above.
 
 .. highlight:: default
 
+About collaborators
+-------------------
+
+Each CoCalc project has an owner and zero or more collaborators.
+Owner and collaborators all appear in a project under the identity of "user" and home directory of ``/home/user``.
+There is no difference in the Linux identity,
+regardless of the CoCalc account that is signed in.
+Owner and collaborators can read anything in the project, and write, delete, and modify anything except backups. They can add and remove other collaborators, but cannot remove the owner.
+
+Although the owner and all collaborators appear in a project with the same
+Linux user id, there are two ways to see *which CoCalc account* was used for certain actions in a project:
+
+* The project activity log.
+* Time travel for files edited using the CoCalc frame editor.
+
 Current collaborators
 ---------------------
 
+The "Current collaborators" section of the *Project Settings* page shows the names of the owner and all collaborators. Here you can remove collaborators, including yourself. It does not allow you to remove the owner.
+
+Current collaborators are also shown in the *Projects* list. You can use the latter to remove yourself as collaborator from several projects at once.
+
+.. image:: img/project-settings/current-collabs.png
+     :width: 60%
+
+Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :ref:`share <ft-share>` for how to share a file.
+
+Caution: if you are using CoCalc for course management with a .course file, add students under the **Students** tab of the .course file, and *NOT* as collaborators. That way, they get their own projects, separate from the instructor project. On the other hand, it is common practice to :ref:`add teaching assistants <teaching-add-ta>` as collaborators in the instructor project.
+
+
+
+
 Add new collaborators
 ---------------------
+.. image:: img/project-settings/add-collabs.png
+     :width: 60%
+
 
 Project control
 ---------------
