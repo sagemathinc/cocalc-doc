@@ -112,3 +112,19 @@ then click on changes and drag the sliders to see the document in a given time i
      :width: 100%
 
 If you need to revert the document to a previous state, drag the slider to the desired revision and click on **Revert live version to this**. Doing so reverts the document contents to that specific version. If you have checked the **Changes** box to compare two revisions and click on **Revert live version to this**, contents are reverted to the latter of the two revisions being compared. Note that reverting a file simply creates a new version of the file equal to the old file at that point in time; in particular, no work is lost!
+
+Run Terminal command in all student projects
+============================================
+
+If you are managing a course, there may be a time when you want to
+run a shell command in every student project. The following
+feature allows you to do that, if you are using a .course file
+for the course.
+
+In the ``Configuration`` tab of the course there is a
+panel called ``Run Terminal command in all student projects``.  You
+can use it to run a command (e.g., to create a file or whatever) in
+*all* projects in a course...  It's a single arbitrary bash command.
+
+.. image:: img/teaching/term_command_course.png
+     :width: 60%
