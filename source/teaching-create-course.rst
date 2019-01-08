@@ -34,9 +34,9 @@ The new project will appear at the top of the project list. Click on its  title 
 Adding teaching assistants to the course
 -----------------------------------------
 
-To add teaching assistants or other teachers to the course, open the course project, click on the settings tab and look down to see "Add people to project" in the project settings.
+To add teaching assistants or other teachers to the course, open the course project, click on the settings tab and look down to see "Add new collaborators" in the project settings.
 
-Under **Add people to project**, you can find or add collaborators by name or email address.
+Under **Add new collaborators**, you can find or add collaborators by name or email address.
 These collaborators will also have access to all associated student projects orchestrated by that project.
 Do **not** add any students of yours as project collaborators!
 
