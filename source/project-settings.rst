@@ -259,19 +259,33 @@ The "Current collaborators" section of the *Project Settings* page shows the nam
 Current collaborators are also shown in the *Projects* list. You can use the latter to remove yourself as collaborator from several projects at once.
 
 .. image:: img/project-settings/current-collabs.png
-     :width: 60%
+     :width: 70%
+
+Add new collaborators
+---------------------
+
+At the **Add new collaborators** dialog, you can type in a person's name or email address. CoCalc will search its database of known users and show you possible matches.
+
+#. After you select a name, don't forget to click "Invite User."
+#. The user must accept the invitation to be added as a collaborator.
+
+It is generally better to use an email address. The reason is that some CoCalc users have multiple accounts.
+
+.. image:: img/project-settings/add-collabs.png
+     :width: 70%
+
+If there are no matches for an email address, then you can send an invitation for the user to start using CoCalc. You can modify the standard email. The default invitation has useful links to make it easier for the other person to start using CoCalc.
+
+.. figure:: img/project-settings/email-invitation.png
+     :width: 70%
+
+     *customizing email invitation to new user*
 
 Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :ref:`share <ft-share>` for how to share a file.
 
 Caution: if you are using CoCalc for course management with a .course file, add students under the **Students** tab of the .course file, and *NOT* as collaborators. That way, they get their own projects, separate from the instructor project. On the other hand, it is common practice to :ref:`add teaching assistants <teaching-add-ta>` as collaborators in the instructor project.
 
 
-
-
-Add new collaborators
----------------------
-.. image:: img/project-settings/add-collabs.png
-     :width: 60%
 
 
 Project control
