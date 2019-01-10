@@ -47,7 +47,7 @@ To get started, we suggest to launch a simple text editor like `Gedit`_ or `Libr
 In the screenshot below, you can see that ``gedit`` was typed into the :doc:`terminal`.
 After hitting the return key, the application was launched and the window is shown.
 The characters "asdf" were typed in and then the "Save"-Button at the top right inside the Gedit windows was pressed.
-This opened up a *overlay dialog* window.
+This opened up an *overlay dialog* window.
 There, type in the filename and click "Save" at the bottom again.
 
 .. image:: img/x11-gedit-save.png
@@ -60,10 +60,19 @@ Go ahead and open it up inside of CoCalc!
 Overlay Dialogs
 -----------------
 
+Modal dialogs open up as almost-maximized windows on top of the current window of the application.
+
 .. note::
 
     An *overlay dialog* window without a ``Close``, ``Ok``, or ``Cancel`` button can be closed
     by clicking on the application visible in the background; i.e. the surrounding area of the dialog.
+
+.. image:: img/x11-inkscape-dialog.png
+    :width: 75%
+
+
+Window Tabs
+-----------------
 
 When you open up *multiple applications* (or a single application opens multiple windows),
 they appear as *tabs* at the top of the X11 view area.
@@ -96,6 +105,18 @@ keyboard layout in Account preferences:
 .. note::
 
     Many languages like "German" will only work well with the variant "no dead keys".
+
+
+Zoom
+--------
+
+CoCalc tries to match its virtual desktop size to the size of the frame inside your browser window.
+It will also calculate an appropriate zoom level based on the resolution of your screen.
+However, this might not always work.
+
+At the top of the X11 area are zoom controls, which allow you to change the resolution.
+Sometimes, it might also be necessary to change some settings within the application itself (some zoom related ones in its preferences), or to change the size of the panel or browser window itself.
+CoCalc dynamically resizes the desktop and the application will redraw accordingly.
 
 
 Technical Status
