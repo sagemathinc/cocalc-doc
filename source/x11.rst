@@ -69,6 +69,7 @@ Modal dialogs open up as almost-maximized windows on top of the current window o
 
 .. image:: img/x11-inkscape-dialog.png
     :width: 75%
+    :align: center
 
 
 Window Tabs
