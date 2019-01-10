@@ -27,6 +27,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    latex
    sagews
    terminal
+   x11
    frame-editor
    time-travel
 

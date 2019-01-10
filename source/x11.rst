@@ -1,0 +1,243 @@
+.. index:: X11
+
+======================
+Graphical Applications
+======================
+
+.. contents::
+   :local:
+   :depth: 2
+
+CoCalc is a modern web-application, but there are many already existing desktop applications.
+This aspect of CoCalc brings such applications to the web,
+by running them inside a minimal graphical environment and presenting them to you via the browser.
+It is even possible to collaboratively work on the same application
+– although be warned that this is quite confusing!
+
+See `this blog post <http://blog.sagemath.com/cocalc/2018/11/05/x11.html>`_ for more screenshot and further explanations.
+
+.. image:: img/x11-maxima.png
+    :alt: Maxima in CoCalc
+    :width: 100%
+
+
+Getting started
+===============
+
+
+In your project, create an **X11 Desktop**-file (which has the ending ``*.x11``),
+or use the corresponding button when creating a new file.
+You should see a :doc:`split frame editor <frame-editor>` with
+
+* on one left side:
+
+  * a :doc:`terminal` and
+  * *launcher buttons* for starting applications
+
+* On the right hand side, there is the *view area for X11 windows*
+
+Initially, that X11 area is empty and you have to start an application.
+To get started, we suggest to launch a simple text editor like `Gedit`_ or `LibreOffice Writer`_.
+
+.. note::
+
+    You need to click *once* on the X11 window in order to focus it.
+    This tells it to process any input (mouse clicks, keyboard characters, ...)
+
+In the screenshot below, you can see that ``gedit`` was typed into the :doc:`terminal`.
+After hitting the return key, the application was launched and the window is shown.
+The characters "asdf" were typed in and then the "Save"-Button at the top right inside the Gedit windows was pressed.
+This opened up a *overlay dialog* window.
+There, type in the filename and click "Save" at the bottom again.
+
+.. image:: img/x11-gedit-save.png
+    :width: 100%
+
+Afterwards, this did create a file named ``file1.txt`` in the current directory.
+Go ahead and open it up inside of CoCalc!
+
+
+Overlay Dialogs
+-----------------
+
+.. note::
+
+    An *overlay dialog* window without a ``Close``, ``Ok``, or ``Cancel`` button can be closed
+    by clicking on the application visible in the background; i.e. the surrounding area of the dialog.
+
+When you open up *multiple applications* (or a single application opens multiple windows),
+they appear as *tabs* at the top of the X11 view area.
+In the screenshot below, you can see that the text file was also opened up in `LibreOffice Writer`_:
+
+.. image:: img/x11-libreoffice-tabs.png
+    :width: 75%
+    :align: center
+
+.. note::
+
+    Sometimes, applications open up additional dialog windows,
+    which show up as tabs at the top.
+    In order to respond to the application's dialog window,
+    you have to click on the appropriate tab to open it up and take appropriate actions.
+    (e.g. confirming a certain operation, etc.)
+
+
+Keyboard Layout
+-----------------
+
+CoCalc will try (badly) to guess your keyboard layout based on your browser's default
+language settings.  This does NOT work well.  Instead, you should explicitly select your
+keyboard layout in Account preferences:
+
+  1. Open up your :doc:`Account Settings <account-settings>`
+  2. In the tab "Preferences", look for the panel "Editor settings"
+  3. Inside "Editor Settings", look for **Keyboard layout (for X11 Desktop)**
+
+.. note::
+
+    Many languages like "German" will only work well with the variant "no dead keys".
+
+
+Technical Status
+-----------------
+
+- **Desktop (works well):**
+
+  - Chrome version 66+ is fully supported
+  - Copy does not work on Firefox or Safari
+
+- **Mobile (does NOT work):**
+
+  - Viewing the desktop should mostly work
+  - Touch events barely work at all.
+  - Even an external keyboard will NOT work on an iPad (keys will be stuck, etc.).
+
+
+Installed Applications
+======================
+
+.. note: options about CSV tables are explained here: http://docutils.sourceforge.net/docs/ref/rst/directives.html#id4
+
+.. note::
+
+    Unless otherwise noted, the application's name is also the command to start the executable.
+    For most applications you can find a launcher button:
+
+    .. image::  img/x11-launcher-buttons.png
+        :width: 50%
+        :align: center
+
+.. csv-table::
+   :header: "Name", "Description", "Category", "Status"
+   :widths: 20, 50, 20, 10
+
+   ``auctex``, , latex, ?
+    `avogadro`_ , "Advanced molecule editor and visualizer",  chem, OK
+    `blender`_,3D graphics (to visualize wireframes), graphics, OK
+    `code`_,  Visual Studio code , code  , OK
+    `darktable`_, "photography workflow application and raw developer", paint, OK
+    ``google-chrome``, Chrome Web-browser , web  , Randomly crashes due to Docker security requirements
+    ``dia`` , Drawing graphics, graphics, Mostly OK
+    ``emacs``, "Powerful text editor, code, and everything else",  "code, text", OK
+    ``firefox``, Web-browser, web, Crashes
+    `gchempaint`_,  "Draw chemical formulas (no single-window mode, though)", chem, ?
+    `gedit`_, "", text, OK
+    ``gitk``, "Explore a Git repository (in current directory)", git, OK
+    ``gitg``, "Simplified interface for working with Git", git, OK
+    `gimp`_, "Draw and edit images. (make sure to switch to ""single window mode"" in the ""Window"" menu)", paint, OK
+    ``gnome-calculator``, Classical calculator, math, OK
+    `gnumeric`_, Spreadsheet calculations and statistics, stats, OK
+    ``gschem``, schematic capture program/tool part of gEDA, physics, OK
+    `gvim`_, Graphical version of the famous VIM editor , text, OK
+    `idle`_, Minimalistic Python IDE, code, OK
+    `inkscape`_, Professional vector graphics editor, graphics, OK
+    `jedit`, Java-based text editor,  text, ?
+    `kexi-3.1`_, "Microsoft Access for Linux", db, OK
+    `kile`_, "LaTeX editor, but probably use ``texmaker`` instead ...", latex, OK
+    `krita`_,  Painting tool designed for concept artists,  paint, OK
+    `latexdraw`_, "Draw PSTricks, etc.",  "latex, graphics", flickers :-(
+    `libreoffice`_, "Office suite consisting of: ``localc``, ``lowriter``, ``loimpress``, ``lobase``, ...", office, OK
+    `lyx`_, "LyX combines the power and flexibility of TeX/LaTeX with the ease of use of a graphical interface.", latex, OK
+    `meld`_, "a visual diff and merge tool targeted at developers", code, OK
+    `nteract`_, "Jupyter Notebook compatible UI", calc, OK
+    `okular`_,  "PDF reader and annotator (Tools → Review)", pdf, OK
+    `OpenModelica`_ , "Modeling and simulation environment. Command: ``OMEdit`` & co.", physics, OK
+    `pcb-gtk`_, "printed circuit board editor", physics, OK
+    `pinta`_,  "simple paint app for images", paint, OK
+    ``psppire``, "`PSPP`_ is an open-source version of SPSS", stats, OK
+    `RCommander`_, "graphical UI for R: start by ``require(Rcmdr)``", stats, OK
+    `rstudio`_,  "Open source R IDE. On high resolution displays set Tools → Global Options → Appearance → Zoom → 200%",  stats,  OK
+    `scribus`_ , a page layout program, office, OK
+    `SnapPy in Sage`_ , "Run via ``sage -python -m snappy.app``", math, Arrow keys
+    `spyder3`_, "a powerful scientific environment for Python", math, OK
+    `texmacs`_, LaTeX editor, latex, OK
+    `texmaker`_, "Powerful, easy to use and elegant LaTeX editor", latex, OK
+    `texstudio`_, "Make writing LaTeX as easy and comfortable as possible", latex, OK
+    `thunderbird`_,  Email client, office, OK
+    `tikzit`_, A super simple GUI editor for graphs and string diagrams, "latex, graphics", ?
+    `tuxpaint`_, Children's paint program , paint, OK
+    `wxmaxima`_, Computer algebra system Maxima, math, OK
+    `xedit`_, Old graphical text editor in X , edit, OK
+    `xournal`_, Draw notes or annotate a PDF , pdf, OK
+    `xpaint`_, Old paint program , paint, OK
+
+
+.. _avogadro: https://avogadro.cc/
+.. _blender: https://www.blender.org/
+.. _code: https://code.visualstudio.com/
+.. _darktable: https://www.darktable.org/
+.. _gedit: https://wiki.gnome.org/Apps/Gedit
+.. _gimp: https://www.gimp.org/
+.. _gnumeric: http://www.gnumeric.org/
+.. _gchempaint: https://www.nongnu.org/gchempaint/
+.. _gschem: http://wiki.geda-project.org/geda:gschem_ug
+.. _gvim: https://www.vim.org/
+.. _idle: https://docs.python.org/3/library/idle.html
+.. _inkscape: https://inkscape.org/
+.. _kexi-3.1: http://www.kexi-project.org/
+.. _kile: https://kile.sourceforge.io/
+.. _krita: https://krita.org/en/
+.. _latexdraw: http://latexdraw.sourceforge.net/
+.. _lyx: https://www.lyx.org
+.. _libreoffice: https://www.libreoffice.org
+.. _LibreOffice Writer: https://www.libreoffice.org/discover/writer/
+.. _meld: http://meldmerge.org/
+.. _nteract: https://nteract.io/
+.. _okular: https://okular.kde.org/
+.. _OpenModelica: https://www.openmodelica.org/
+.. _pcb-gtk: http://pcb.geda-project.org/
+.. _pinta: https://pinta-project.com/pintaproject/pinta/
+.. _PSPP: https://www.gnu.org/software/pspp/
+.. _RCommander: https://www.rcommander.com/
+.. _rstudio: https://www.rstudio.com/
+.. _scribus: https://www.scribus.net/
+.. _Snappy in Sage: https://www.math.uic.edu/t3m/SnapPy/installing.html
+.. _spyder3: https://www.spyder-ide.org/
+.. _texmacs: http://www.texmacs.org
+.. _texmaker: http://www.xm1math.net/texmaker/
+.. _texstudio: https://www.texstudio.org/
+.. _thunderbird: https://www.thunderbird.net/
+.. _tikzit: https://tikzit.github.io/
+.. _tuxpaint: http://www.tuxpaint.org
+.. _wxmaxima: https://wxmaxima-developers.github.io/wxmaxima/
+.. _xedit: https://en.wikipedia.org/wiki/XEDIT
+.. _xournal: http://xournal.sourceforge.net/
+.. _xpaint: https://en.wikipedia.org/wiki/XPaint
+
+.. csv-table:: Categories
+   :header: "Category", "Description"
+   :widths: 20, 80
+
+   **math**     , "mathematics"
+   **chem**     , "chemistry applications"
+   **stats**    , "statistics, data analysis, ..."
+   **physics**  , "tools for physics, engineering, modeling, etc."
+   **office**   , "productivity apps for authoring text, presentations, spreadsheets, etc. (doc, docx, odt, ppt, xml, xmlx, ods, ..."
+   **latex**    , "editor for working with LaTeX documents"
+   **text**     , "general purpose text editors"
+   **code**     , "tools for software development (IDE, etc.)"
+   **git**      , "working with Git"
+   **db**       , "graphical database interfaces"
+   **paint**    , "raster graphics editor"
+   **graphics** , "vector graphics editor"
+   **pdf**      , "for reading, editing, annotating PDFs"
