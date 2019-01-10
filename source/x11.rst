@@ -173,7 +173,7 @@ Installed Applications
     `gvim`_, Graphical version of the famous VIM editor , text, OK
     `idle`_, Minimalistic Python IDE, code, OK
     `inkscape`_, Professional vector graphics editor, graphics, OK
-    `jedit`, Java-based text editor,  text, ?
+    `jedit`_, Java-based text editor,  text, ?
     `kexi-3.1`_, "Microsoft Access for Linux", db, OK
     `kile`_, "LaTeX editor, but probably use ``texmaker`` instead ...", latex, OK
     `krita`_,  Painting tool designed for concept artists,  paint, OK
@@ -216,6 +216,7 @@ Installed Applications
 .. _gvim: https://www.vim.org/
 .. _idle: https://docs.python.org/3/library/idle.html
 .. _inkscape: https://inkscape.org/
+.. _jedit: http://www.jedit.org/
 .. _kexi-3.1: http://www.kexi-project.org/
 .. _kile: https://kile.sourceforge.io/
 .. _krita: https://krita.org/en/
