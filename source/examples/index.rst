@@ -9,3 +9,4 @@ Examples of what you can do on CoCalc:
    :maxdepth: 1
 
    google-api
+   gsl
