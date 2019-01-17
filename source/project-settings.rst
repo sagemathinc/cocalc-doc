@@ -285,11 +285,66 @@ Sometimes, you'd rather give someone read-only access. In CoCalc, this is called
 
 Caution: if you are using CoCalc for course management with a .course file, add students under the **Students** tab of the .course file, and *NOT* as collaborators. That way, they get their own projects, separate from the instructor project. On the other hand, it is common practice to :ref:`add teaching assistants <teaching-add-ta>` as collaborators in the instructor project.
 
-
-
-
 Project control
 ---------------
+
+Here is a screen capture of the Project control section. Along with project statistics, it has two buttons and a menu, discussed below.
+
+    .. image:: img/project-settings/project-control.png
+         :width: 70%
+
+Restart Project and Stop Project
+""""""""""""""""""""""""""""""""
+
+What happens when a project restarts?
+
+* All computations will be stopped.
+* **Good News:** You don't lose unsaved files.
+* You do lose any information (state of variables/processes) in **RAM**.
+* However, anything in files, as long as it's moved from the browser to the web servers (in most cases, at most a few seconds of information), is permanently saved to disk already in the database, and will not be lost.
+* When the project starts back up, even if the files on disk are in an older state, the files you see yourself editing in your browser are new with nothing lost. Those files will then be updated on disc very shortly.
+* On the other hand, project code, i.e. the CoCalc software environment, is updated.
+
+To make all this happen, click "Restart Project...". Another button appears, to confirm the choice.
+
+    .. image:: img/project-settings/project-restart-confirm.png
+         :width: 70%
+
+Click "Restart Project Server", and restart initiates.
+
+    .. image:: img/project-settings/project-restarting.png
+         :width: 70%
+
+It normally takes about 30 seconds to restart a project. It may take another 10 seconds or so after the Files list is visible for terminal processes, etc. to be available.
+
+You can also stop and restart a project in two separate steps. Why would you stop a project and then restart it?
+
+* If you want CoCalc to move the project to another server, stopping it first and then restarting it allows CoCalc to select a different, possibly less-loaded server.
+* If you don't wany any of your project's processes to run until you explicitly restart the project, you have to stop the project.
+
+Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to confirm your choice:
+
+    .. image:: img/project-settings/stop-project-confirm.png
+         :width: 70%
+
+Selected image
+""""""""""""""
+
+The CoCalc software environment is updated frequently. The collection of installed utilities, compilers, libraries, packages, etc. is called the *compute image*.
+
+You can see a list of installed software at `Available Software  <https://cocalc.com/doc/software.html>`_ and in our `Help page <https://cocalc.com/help>`_ under "Software and Programming Libraries Details".
+
+A running log of major updates to the environment is maintained on the CoCalc Wiki at `SoftwareUpgrades <https://github.com/sagemathinc/cocalc/wiki/SoftwareUpgrades>`_.
+
+You may want to revert to an older environment, or try a new environment that is about to be released. To change the software environment to a different compute image, use the "Selected Image" menu.
+The exact list of available images will change from time to time.
+
+Once you have selected an image, click "Save and Restart".
+
+.. image:: img/project-settings/selected-image-experimental.png
+     :width: 70%
+
+*Note: Don't forget to reset your image to "Default" after you are finished working with an alternate image.*
 
 Sage worksheet server
 ---------------------
