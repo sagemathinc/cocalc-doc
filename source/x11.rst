@@ -156,6 +156,7 @@ Installed Applications
    ``auctex``, , latex, ?
     `avogadro`_ , "Advanced molecule editor and visualizer",  chem, OK
     `blender`_,3D graphics (to visualize wireframes), graphics, OK
+    `cadabra2-gtk`_, A field-theory motivated approach to computer algebra, physics, OK
     `code`_,  Visual Studio code , code  , OK
     `darktable`_, "photography workflow application and raw developer", paint, OK
     ``google-chrome``, Chrome Web-browser , web  , Randomly crashes due to Docker security requirements
@@ -206,6 +207,7 @@ Installed Applications
 
 .. _avogadro: https://avogadro.cc/
 .. _blender: https://www.blender.org/
+.. _cadabra2-gtk: https://cadabra.science
 .. _code: https://code.visualstudio.com/
 .. _darktable: https://www.darktable.org/
 .. _gedit: https://wiki.gnome.org/Apps/Gedit
