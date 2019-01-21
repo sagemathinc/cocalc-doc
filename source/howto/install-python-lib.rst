@@ -49,7 +49,7 @@ Install Python packages as a user
 pip
 ^^^^^^^^^^^^
 
-Pip is the "Python package manager".
+Pip is the "Python package manager". It installs packages hosted at `PyPI.org <https://pypi.org/>`_.
 
 If your package can be installed via ``pip``, then run in a  `CoCalc Terminal file <../terminal>`_:
 
