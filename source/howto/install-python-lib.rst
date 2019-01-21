@@ -51,21 +51,21 @@ pip
 
 Pip is the "Python package manager".
 
-.. warning::
+If your package can be installed via ``pip``, then run in a  `CoCalc Terminal file <../terminal>`_:
 
-    **Regarding Python 2 vs. Python 3:**
-
-    * Python 2: use ``pip2`` or ``python2`` -- ``pip`` and ``python`` should default to these variants.
-    * Python 3: use ``pip3`` or ``python3`` below.
-
-    Note: ``pip`` and ``python`` commands below should be entered in a `CoCalc Terminal file <../terminal>`_.
-
-
-If your package can be installed with ``pip``, then use ``pip install --user [package-name]``.
+* Python2: ``pip2 install --user [package-name]``
+* Python3: ``pip3 install --user [package-name]``
 
 .. note::
 
-    Your project **must** have the "Internet access" upgrade in order to download software from the pip repository to your project.  The Python pip command will not work unless you `upgrade your project <https://cocalc.com/policies/pricing.html>`_ to have internet access.
+    **Regarding Python 2 vs. Python 3:**
+
+    * Python 2: use ``pip2`` and ``python2``/``ipython2`` -- ``pip`` and ``python`` should default to these variants.
+    * Python 3: use ``pip3`` and ``python3``/``ipython3``.
+
+.. warning::
+
+    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from the pip repository to your project.  The Python pip command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
 
 setup.py
 ^^^^^^^^^^^^^

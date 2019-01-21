@@ -47,8 +47,11 @@ There are many reasons that you might want to have an upgraded project.
 
 You can share upgrades with any project that you are a collaborator on. You must be a collaborator (or owner) to update a project.
 
-For details on paid subscriptions, see `Subscription and Pricing Information <https://cocalc.com/policies/pricing.html>`_.
-Paid subscriptions start at \$14 per month.
+
+.. note::
+
+    For details on paid subscriptions, see `Subscription and Pricing Information <https://cocalc.com/policies/pricing.html>`_.
+    Paid subscriptions start at \$14 per month.
 
 View Current Resources
 """"""""""""""""""""""
