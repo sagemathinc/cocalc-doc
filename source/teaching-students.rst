@@ -19,9 +19,19 @@ Why CoCalc?
 As you are all aware technology is moving at an incredible speed, so it is only fair that education catches up!
 CoCalc is a platform that provides a high amount of versatility when it comes to course material handling and distribution.
 
-Also, being this a cloud service, you can access it from any computer you need to as long as you have internet access on it. Meaning that you do not need to install anything.
+Also, being this a cloud service, you can access it from any computer you need to as long as you have internet access on it. Meaning that you do not need to install anything. Plus, it is an OpenSource project.
 
-Plus it is an OpenSource project.
+* **Software is already installed:** Dozens of programming languages and thousands of libraries and packages are available. There is no need to install them on your computer!
+* **Unified place of work:** witch computers without pausing to install software or move your work to another system.
+* **Consistent coding environment:** Your teacher and you work on CoCalc with the very same software stack.
+* **Interactive notebooks:** Use :doc:`sagews` and :doc:`Jupyter Notebooks <jupyter>` to create an executable record of each study session. Make the most of your time when reviewing your work later.
+* **Your personal study archive:** Your work remains accessible and usable in CoCalc long after the course is over. (Except, when your teacher explicitly removes you)
+* **Extras:**
+   * :doc:`time-travel` (a detailed edit history)
+   * Backups: consistent snapshots of all your files in a project
+   * Real time collaboration & chat
+   * Online publishing (make selected files public)
+
 
 What happens when I finish the course/my degree?
 ---------------------------------------------------------
