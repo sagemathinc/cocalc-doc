@@ -6,3 +6,4 @@ References
 .. [SageMath] https://www.sagemath.org
 .. [CoCalc] https://cocalc.com
 .. [LaTeX] https://www.latex-project.org/
+.. [SymPy] https://www.sympy.org/

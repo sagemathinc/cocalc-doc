@@ -188,13 +188,126 @@ Possible reasons:
 How to deal with large documents across multiple source files?
 ----------------------------------------------------------------------------------
 
-The best way is to use the `subfiles`_ package as
-`described here`_.
-There is an extended example demonstrating how this works in the CoCalc Library. Click (+)New and look for Library in the middle of the page, then under ``LaTeX templates`` select ``Multiple source files in CoCalc``. The same example is also available at
-`cloud-examples/latex/multiple-files`.
+The best way is to use the `subfiles`_ package as `described here`_.
+There is an extended example demonstrating how this works in the CoCalc Library.
+Click (+)New and look for Library in the middle of the page,
+then under ``LaTeX templates`` select ``Multiple source files in CoCalc``.
+The same example is also available at `cloud-examples/latex/multiple-files`_.
 
 .. _described here: https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles
 .. _cloud-examples/latex/multiple-files: https://github.com/sagemath/cloud-examples/tree/master/latex/multiple-files
+
+
+
+.. index:: SageTeX
+
+How to work with Knitr, SageTeX or PythonTeX?
+------------------------------------------------
+
+CoCalc supports several ways to embedd code within a document.
+Such code is automatically processed and evaluated during generating the document
+and any output appears as part of the PDF output itself.
+In particular, you can insert small calculations and formulas (Sage, SymPy, ...), Python code, R calculations, plots, data tables, etc.
+This is frequently used as part of `reproducible research <https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research>`_.
+
+SageTeX
+^^^^^^^^^^
+
+Any ``.tex`` file loading the ``sagetex`` package is automatically processed via [[SageMath]].
+First, Sage code is extracted into a ``.sage`` file, then ``sage ...`` evaluates that file, and finally the LaTeX engine creates the PDF document by replacing all snippets of Sage code by their evaluated result.
+CoCalc handles all details for you!
+
+To get going, you just have to insert ``\usepackage{sagetex}`` into the `preamble`_ of your document.
+Calculations are done like that: ``$\frac{2}{3.5} = \sage{n(2/17)}$``, which results in |SAGETEX|.
+
+See `SageTeX documentation <https://ctan.org/tex-archive/macros/latex/contrib/sagetex>`_ for more details and examples.
+There is also a SageTeX example in the CoCalc Library.
+Besides that, the `SageMath Documentation <http://doc.sagemath.org/html/en/>`_ could also be of help!
+
+.. |SAGETEX| image:: img/latex-sagetex.png
+                  :height: 17pt
+
+
+.. index:: PythonTeX
+
+PythonTeX
+^^^^^^^^^^^^^^
+
+`PythonTeX <cran_pythontex>`_ follows the same spirit as SageTeX.
+Embedded Python commands and blocks of code are extracted into a ``.py`` file,
+Python 3 evaluates them,
+and at the end the LaTeX engine merges the generated output snippets into the final document and renders the PDF file.
+CoCalc handles all details for you!
+
+To get going, insert ``\usepackage{pythontex}`` into the `preamble`_ of your document.
+Then, you can insert inline code snippets via ``\py{}`` and blocks of code inside of ``\begin{pyblock}`` and ``\end{pyblock}``.
+There is also support for [SymPy]_ code via ``\sympy{}`` or plots via Pylab using ``\pylab{}``.
+
+For example, code like this::
+
+    Python code: $2+3 = \py{2+3}$
+
+    \begin{sympyblock}
+    x = Symbol('x')
+    f = x**2 * cos(x)
+    fi = integrate(f, x)
+    \end{sympyblock}
+
+    The integral of $\sympy{f}$ is $\sympy{fi.simplify()}$
+
+produces:
+
+.. image:: img/latex-pythontex.png
+    :width: 75%
+    :align: center
+
+
+You can read more in the `PythonTeX Documentation <cran_pythontex>`_.
+Also note, that sometimes it is necessary to run "Build" again to properly re-process all code snippets.
+There is also a PythonTeX example document in the CoCalc Library.
+
+.. _preamble: https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Preamble
+.. cran_pythontex: https://ctan.org/pkg/pythontex
+
+
+.. index:: Knitr
+.. index:: Sweave
+
+Knitr
+^^^^^^^^^^^^^^^^
+
+`Knitr LaTeX documents <knitr>`_ are different from SageTeX and PythonTeX.
+They have their own filename extension (CoCalc supports ``.rnw`` and ``.Rtex``) and instead of calling LaTeX commands of a package, they feature their own syntax for embedded blocks and statements.
+Historically, at first `Sweave <sweave_wiki>`_ was added to R,
+but Knitr is a much more modern variant with more features
+(see `Transition from Sweave to Knitr <sweave2knitr>`_).
+
+In general, the compilation works by first processing the input file via Knitr,
+which runs R and generates a ``.tex`` document.
+Then, the Latex engine processes that ``.tex`` file as usual.
+CoCalc handles all details for you.
+
+To get started, create a file ending with ``.rnw`` (Rweave/Sweave syntax) or ``.Rtex`` (code is in comment blocks).
+Both will initialize the file with a template explaining you how to work with it.
+For example, a block like::
+
+    <<histogram-plot4, dev='tikz', fig.height=4, fig.width=10>>=
+    data <- rnorm(1000)
+    hist(data)
+    @
+
+produces a plot of a histogram, drawn using `TikZ`_.
+
+.. image:: img/latex-knitr.png
+    :width: 75%
+    :align: center
+
+Note, that `latex-forward-inverse`_ will work as well as reporting errors.
+
+.. _knitr: https://yihui.name/knitr/
+.. _sweave_wiki: https://en.wikipedia.org/wiki/Sweave
+.. _sweave2knitr: https://yihui.name/knitr/demo/sweave/
+.. _TikZ: https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ
 
 
 
