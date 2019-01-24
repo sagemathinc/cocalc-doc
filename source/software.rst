@@ -40,18 +40,18 @@ Recent updates to CoCalc's software stack available in the `"Default" environmen
 -------------------------------
 
 * (new) `SageMath`_ version 8.6 (`sage-8.6`) + Jupyter Kernel available (not the default yet!)
-* (new) `Cadabra2`_ _"a field-theory motivated approach to computer algebra"_ available via `cadabra2` or in an `X11 desktop <https://doc.cocalc.com/x11.html>`_ as `cadabra2-gtk` (`screenshot <https://storage.googleapis.com/cocalc-extra/2019-01-19-cadabra2.png>`_)
+* (new) `Cadabra2`_ _"a field-theory motivated approach to computer algebra"_ available via ``cadabra2`` or in an `X11 desktop <https://doc.cocalc.com/x11.html>`_ as ``cadabra2-gtk`` (`screenshot <https://storage.googleapis.com/cocalc-extra/2019-01-19-cadabra2.png>`_)
 * (chg) As announced previously, **Julia version 1** is the **default** now. Symlink ``~/bin/julia`` to ``julia-0.7`` if you need to switch back.
 * (new): Julia 1 packages: SymPy, Combinatorics, UnicodePlots, Bokeh and Nemo
 * (py3):
 
-   - new:
- 
+   - **new**:
+
       - `surprise <http://surpriselib.com/>`_ 1.0.6
       - `python-twitter <https://github.com/bear/python-twitter>`_ 3.5
       - `mlrose 1.0 <https://mlrose.readthedocs.io>`_: Machine Learning, Randomized Optimization and SEarch. `example <https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/py3-mlrose.ipynb?viewer=share>`_
 
-    - updates:
+   - **updates**:
 
       - `sphinx <http://www.sphinx-doc.org/en/master/>`_ 1.8.3
       - `statsmodels <https://www.statsmodels.org/stable/index.html>`_ 0.9.0 + `patsy <https://patsy.readthedocs.io/en/latest/>`_ 0.5.1 fixing some problems with formulas
