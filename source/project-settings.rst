@@ -330,14 +330,17 @@ Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to
     .. image:: img/project-settings/stop-project-confirm.png
          :width: 70%
 
-Selected image
-""""""""""""""
+.. index:: Software Environment
+.. _software-environment:
+
+Software Environment
+""""""""""""""""""""""""
 
 The CoCalc software environment is updated frequently. The collection of installed utilities, compilers, libraries, packages, etc. is called the *compute image*.
 
-You can see a list of installed software at `Available Software  <https://cocalc.com/doc/software.html>`_ and in our `Help page <https://cocalc.com/help>`_ under "Software and Programming Libraries Details".
+You can see a recent list of installed software at `Available Software  <https://cocalc.com/doc/software.html>`_ and in our `Help page <https://cocalc.com/help>`_ under "Software and Programming Libraries Details".
 
-A running log of major updates to the environment is maintained on the CoCalc Wiki at `SoftwareUpgrades <https://github.com/sagemathinc/cocalc/wiki/SoftwareUpgrades>`_.
+A running log of regular updates to the environment is the :ref:`software-updates` list.
 
 You may want to revert to an older environment, or try a new environment that is about to be released. To change the software environment to a different compute image, use the "Selected Image" menu.
 The exact list of available images will change from time to time.
