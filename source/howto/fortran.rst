@@ -38,7 +38,7 @@ In a Jupyter Notebook running Python 3, there is also the `fortranmagic <https:/
 3. Use that new function ``f1`` in Python, e.g. ``f1(2.2, -1)`` gives ``-0.8305184841156006``.
 
 
-Here is an `example worksheet <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/r-marima.ipynb?viewer=share>`_:
+Here is an `example worksheet <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/fortranmagic.ipynb?viewer=share>`_:
 
 1. Defining the function ``f1``
 
