@@ -6,14 +6,12 @@ Fortran support
 Command-line
 -------------------------
 
-CoCalc supports various ways to run `Fortran code <fortran-wiki>`_.
+CoCalc supports various ways to run `Fortran code <https://en.wikipedia.org/wiki/Fortran>`_.
 They're provided by GNU ``gfortran`` (``f95``) in the :doc:`../terminal`.
 You can also view an ``.f90`` file next to a terminal, 
 by splitting the editor window and switching to a Terminal in a :doc:`../frame-editor`.
 
 Read more in the `GFortran doc page <https://gcc.gnu.org/fortran/>`_.
-
-.. _fortran-wiki: https://en.wikipedia.org/wiki/Fortran
 
 Jupyter Notebook
 -------------------------
