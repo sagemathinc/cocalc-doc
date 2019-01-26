@@ -35,6 +35,45 @@ Software Updates
 
 Recent updates to CoCalc's software stack available in the `"Default" environment <software-environment>`_.
 
+2019-01-26
+-------------------------
+
+- (sage): **Sage 8.6** is the default! (use ``sage_select 8.4`` to switch back). Enjoy the shorter startup time, which also speeds up compiling :ref:`latex-sagetex` documents!
+    - A Python3 version of Sage 8.6 is also available: ``sage-8.6-py3`` or in a Jupyter Notebook: `sagemath-8.6-python3.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/smc-build/sagemath-8.6-python3.ipynb?viewer=share>`_. (this is experimental)
+
+- (py3):
+   - new:
+      - `ipyvolume <https://github.com/maartenbreddels/ipyvolume#ipyvolume>`_ 0.5.1 (`demo notebook <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ipyvolume-demo.ipynb?viewer=share>`_, requires the plain jupyter server!)
+      - `qiskit-chemistry <https://github.com/Qiskit/qiskit-chemistry>`_ 0.4.2 – a set of tools, algorithms and software to use for quantum chemistry research
+      - `PySCF <https://sunqm.github.io/pyscf/>`_ – a simple, light-weight, and efficient platform for quantum chemistry calculations
+
+   - updated:
+      - ``pip3`` 19.0.1
+      - `qiskit`_ 0.7.2, qiskit-aqua 0.4.1
+      - `scikit-bio <http://scikit-bio.org/>`_ 0.5.5
+      - `dask`_ 1.1.0
+      - nbgrader 0.5.5
+      - ipython 6.5.0
+      - Cython 0.29.2
+      - setuptools 40.6.3
+      - tensorboard 1.12.2
+      - tmuxp 1.4.2
+      - `axelrod <https://axelrod.readthedocs.io/en/stable/>`_ 4.4.0
+
+- (R):
+   - new:
+      - `styler <http://styler.r-lib.org>`_ 1.1.0 – will be used soon to format R code; `tidyverse styleguide <https://style.tidyverse.org>`_
+      - `usethis <https://usethis.r-lib.org>`_ 1.4.0
+      - `tidytransit <https://cran.r-project.org/web/packages/tidytransit/index.html>`_
+
+   - updated: knitr 1.21, ggplot 3.1.0, data.table 1.20.0, dplyr 0.7.8, Rcpp 1.0, rlang 0.3.1, forecast 8.5, psych 1.8.12, plotly 4.8, yaml 2.2
+
+- (Julia): new: `D4M package <https://github.com/Accla/D4M.jl.git>`_ – *Dynamic Distributed Dimensional Data Model*
+- (node/upd): **npm 6.6.0**, TypeScript 3.2.4, tslint 5.12.1, forever 0.15.3, CoffeeScript 2.3.2, reveal-md 2.4.1, prettier 1.16.0, tldr 3.2.6, docsify-cli 4.3.0, chromedriver 2.45.0
+- (Linux) various system packages, noteworthy: xpra 2.4.3
+
+
+
 
 2019-01-20
 -------------------------------
@@ -93,7 +132,7 @@ Recent updates to CoCalc's software stack available in the `"Default" environmen
   - `numdifftool <https://github.com/pbrod/numdifftools>`_
   - `xgboost <https://xgboost.readthedocs.io>`_ 0.8.1
   - `joblib <https://joblib.readthedocs.io>`_
-  - `qiskit <https://qiskit.org/>`_ (`demo qiskit.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/quiskit.ipynb?viewer=share>`_)
+  - `qiskit`_ (`demo qiskit.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/quiskit.ipynb?viewer=share>`_)
 
 2018-12-22
 -------------------------------
@@ -184,7 +223,7 @@ Note about future updates:
   * `blender <https://www.blender.org/>`_
   * `pcb-gtk <http://pcb.geda-project.org/>`_
   * `gschem <http://www.geda-project.org/>`_
-* (Py/upd) `dask <https://docs.dask.org/en/latest/>`_ 0.20.1, `distributed <http://distributed.dask.org/en/latest/>`_ 1.24.1
+* (Py/upd) `dask`_ 0.20.1, `distributed <http://distributed.dask.org/en/latest/>`_ 1.24.1
 * (Py+Sage/new) `Automatic Differentiation "ad" <https://pythonhosted.org/ad/>`_ 1.3.2 → `Demo pythonhosted <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ad.ipynb?viewer=share>`_
 * (R/new) `hablar <https://cran.r-project.org/web/packages/hablar/index.html>`_
 
@@ -330,3 +369,7 @@ Note about future updates:
 
 .. _SageMath: https://sagemath.org
 .. _Cadabra2: https://cadabra.science
+.. _qiskit:  https://qiskit.org
+.. _dask: https://dask.org
+
+
