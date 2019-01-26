@@ -199,8 +199,6 @@ The same example is also available at `cloud-examples/latex/multiple-files`_.
 
 
 
-.. index:: SageTeX
-
 How to work with Knitr, SageTeX or PythonTeX?
 ------------------------------------------------
 
@@ -209,6 +207,9 @@ Such code is automatically processed and evaluated during generating the documen
 and any output appears as part of the PDF output itself.
 In particular, you can insert small calculations and formulas (Sage, SymPy, ...), Python code, R calculations, plots, data tables, etc.
 This is frequently used as part of `reproducible research <https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research>`_.
+
+.. index:: SageTeX
+.. _latex-sagetex:
 
 SageTeX
 ^^^^^^^^^^
@@ -229,6 +230,7 @@ Besides that, the `SageMath Documentation <http://doc.sagemath.org/html/en/>`_ c
 
 
 .. index:: PythonTeX
+.. _latex-pythontex:
 
 PythonTeX
 ^^^^^^^^^^^^^^
@@ -272,6 +274,7 @@ There is also a PythonTeX example document in the CoCalc Library.
 
 .. index:: Knitr
 .. index:: Sweave
+.. _latex-knitr:
 
 Knitr
 ^^^^^^^^^^^^^^^^
