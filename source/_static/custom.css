@@ -18,3 +18,8 @@ div.document {
 div.body {
     max-width: 900px;
 }
+
+/* https://github.com/sagemathinc/cocalc-doc/issues/4 */
+dl dd {
+    margin-left: 0px;
+}
