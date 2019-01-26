@@ -35,6 +35,8 @@ Software Updates
 
 Recent updates to CoCalc's software stack available in the `"Default" environment <software-environment>`_.
 
+.. _update-2019-01-26:
+
 2019-01-26
 -------------------------
 
@@ -73,7 +75,7 @@ Recent updates to CoCalc's software stack available in the `"Default" environmen
 - (Linux) various system packages, noteworthy: xpra 2.4.3
 
 
-
+.. _update-2019-01-20:
 
 2019-01-20
 -------------------------------
@@ -104,6 +106,8 @@ Recent updates to CoCalc's software stack available in the `"Default" environmen
       - `apache-libcloud <https://libcloud.apache.org/>`_ 2.4.0
       - `black <https://github.com/ambv/black>`_ 18.9b0
 
+.. _update-2019-01-12:
+
 2019-01-12
 -------------------------------
 
@@ -115,11 +119,16 @@ Recent updates to CoCalc's software stack available in the `"Default" environmen
 * Linux updates, notably bazel 0.21
 * Fonts: ocr-a, ocr-b, `opendyslexic <https://gumroad.com/l/OpenDyslexic>`__, mononoki, comic-neue, linex, roboto, vollkorn, tuffy. `Testing some fonts in LuaTeX <https://share.cocalc.com/share/8baad8828430618da0446ee80d6ebcacb83bba14/fonts-luatex/fonts-in-luatex.pdf?viewer=share>`_ (`tex source <https://share.cocalc.com/share/8baad8828430618da0446ee80d6ebcacb83bba14/fonts-luatex/fonts-in-luatex.tex?viewer=share>`_)
 
+
+.. _update-2019-01-06:
+
 2019-01-06
 -------------------------------
 
 * Julia 1.0.3: comes with packages PyPlot, Plots, DifferentialEquations, Compat, LinearAlgebra, GLM, etc. now!
 * Sage development version 8.6.rc0
+
+.. _update-2018-12-30:
 
 2018-12-30
 -------------------------------
@@ -133,6 +142,8 @@ Recent updates to CoCalc's software stack available in the `"Default" environmen
   - `xgboost <https://xgboost.readthedocs.io>`_ 0.8.1
   - `joblib <https://joblib.readthedocs.io>`_
   - `qiskit`_ (`demo qiskit.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/quiskit.ipynb?viewer=share>`_)
+
+.. _update-2018-12-22:
 
 2018-12-22
 -------------------------------
@@ -150,6 +161,8 @@ Recent updates to CoCalc's software stack available in the `"Default" environmen
 * (node/upd): npm 6.50, TypeScript 3.2.2, `prettier <https://prettier.io/blog/2018/11/07/1.15.0.html>`_ from 1.11 to 1.15.3, ...
 * (julia): removing deprecated 0.6 Jupyter kernel
 
+
+.. _update-2018-12-16:
 
 2018-12-16
 -------------------------------
@@ -172,6 +185,7 @@ Note about future updates:
 * We will remove Julia 0.6.x (0.7 and 1.0 remains for now)
 * Make the ``python2`` jupyter kernel choice more explicit (System's global version vs. SageMath's)
 
+.. _update-2018-12-08:
 
 2018-12-08
 -------------------------------
@@ -185,10 +199,14 @@ Note about future updates:
 * (Library) new entry `Scikit Image Tutorial <https://github.com/scikit-image/skimage-tutorials>`_ and updates of several entries
 
 
+.. _update-2018-12-03:
+
 2018-12-03
 -------------------------------
 
 * (Sage/upd) Sage Development updated to 8.5.beta6
+
+.. _update-2018-12-01:
 
 2018-12-01
 -------------------------------
@@ -196,6 +214,8 @@ Note about future updates:
 * (Py3/new+fix) dask 1.0, distributed 1.25, dask-glm 0.2, dask-ml 0.11 -- `CoCalc example <https://share.cocalc.com/share/20e4a191-73ea-4921-80e9-0a5d792fc511/dask.ipynb?viewer=share>`_ -- `Wiki page <https://github.com/sagemathinc/cocalc/wiki/Dask>`_
 * (Py3/new) `Scikit-Optimize <https://scikit-optimize.github.io/>`_ -- `see CoCalc example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/skopt.ipynb?viewer=share>`_
 
+
+.. _update-2018-11-28:
 
 2018-11-28
 -------------------------------
@@ -205,6 +225,8 @@ Note about future updates:
 * (Py3/new) `NOAA SDK <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/noaa-sdk.ipynb?viewer=share>`_
 * (Py3/upd) yapf 0.25, tensorflow 1.12, tensorboard 1.12, tensorflow-probability 0.5, scikit-learn 0.20.1, numba 0.40.1, arctic 1.73 (also Py2)
 
+.. _update-2018-11-13:
+
 2018-11-13
 -------------------------------
 
@@ -212,6 +234,8 @@ Note about future updates:
 * (C/new) `MLV-2 library <http://www-igm.univ-mlv.fr/~boussica/mlv/api/French/html/index.html>`_ and `test on CoCalc <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/mlv-2/?viewer=share/>`_
 * (Gap/upd) `GAP 4.10.0 <https://mail.gap-system.org/pipermail/forum/2018/005826.html>`_
 
+
+.. _update-2018-11-10:
 
 2018-11-10
 -------------------------------
@@ -227,6 +251,7 @@ Note about future updates:
 * (Py+Sage/new) `Automatic Differentiation "ad" <https://pythonhosted.org/ad/>`_ 1.3.2 → `Demo pythonhosted <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ad.ipynb?viewer=share>`_
 * (R/new) `hablar <https://cran.r-project.org/web/packages/hablar/index.html>`_
 
+.. _update-2018-11-03:
 
 2018-11-03
 -------------------------------
@@ -248,6 +273,8 @@ Note about future updates:
     > swirl_options(swirl_data_dir = "/home/user/swirl")
     > swirl()
 
+.. _update-2018-10-27:
+
 2018-10-27
 -------------------------------
 
@@ -261,6 +288,8 @@ Note about future updates:
 * (py2/py3) `monty library <http://guide.materialsvirtuallab.org/monty/>`_ and `pivottablejs <https://pypi.org/project/pivottablejs/>`_
 
 
+.. _update-2018-10-18:
+
 2018-10-18
 -------------------------------
 
@@ -272,6 +301,8 @@ Note about future updates:
 * (new) xpra/websockify
 * (new) couple of `X11 related software <x11-help>`_, like PSPP, Gimp, LibreOffice, ...
 * (fix) relaxing policies for ImageMagick to be able to run `convert` on PDF files.
+
+.. _update-2018-10-06:
 
 2018-10-06
 -------------------------------
@@ -291,6 +322,8 @@ Note about future updates:
 * (upd/py3) jupyter nbconvert (just 5.3.1 to 5.4.0, but there could be `noticeable changes <https://nbconvert.readthedocs.io/en/latest/changelog.html#id1>`_)
 * (bug/py) there are known issues with ``mpl_toolkits/Basemap`` -- please use Ubuntu's Python 3 environment.
 
+.. _update-2018-09-29:
+
 2018-09-29
 -------------------------------
 
@@ -299,6 +332,8 @@ Note about future updates:
 * (upd/py2) "pip2" 18.0, seaborn 0.9.0, tensorflow 1.10.1
 * (rem/ac5) removing broken `pandas-datareader` from anaconda5 (no update available yet, use Ubuntu's Python 3)
 * (new/npm) `tldr pages <https://tldr.sh/>`_
+
+.. _update-2018-09-23:
 
 2018-09-23
 -------------------------------
@@ -314,7 +349,7 @@ Note about future updates:
 * (new) C++ 17 Jupyter kernel via `xeus-cling <https://github.com/QuantStack/xeus-cling/>`_
 * (upd) `SageMath`_  `release 8.4.beta6 2018-09-22 <https://groups.google.com/d/topic/sage-release/lKuxjPFGWVw/discussion>`_
 
-
+.. _update-2018-09-15:
 
 2018-09-15
 -------------------------------
@@ -329,11 +364,15 @@ Note about future updates:
 * (new) first iteration to support `LEAN <https://leanprover.github.io/>`_
 * (upd) SageMath 8.4.beta5 (released on 2018-07-16)
 
+.. _update-2018-09-11:
+
 2018-09-11
 -------------------------------
 
 * (upd) `GAP 4.9.3 <https://www.gap-system.org/>`_
 * (new/py3) Python 3 `RTree Spatial indexing <http://toblerity.org/rtree/>`_ used in `geopandas <http://geopandas.org/>`_
+
+.. _update-2018-09-08:
 
 2018-09-08
 -------------------------------
@@ -347,6 +386,8 @@ Note about future updates:
 * (upd/anaconda) broad package upgrade of Anaconda5 environment
 * (chg) Jupyter plots done via R in Sage output SVG by default
 
+
+.. _update-2018-09-01:
 
 2018-09-01
 -------------------------------
