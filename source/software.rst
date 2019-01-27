@@ -33,7 +33,7 @@ Besides that, there is a `more detailed and fairly up-to-date list <https://coca
 Software Updates
 ======================================
 
-Recent updates to CoCalc's software stack available in the `"Default" environment <software-environment>`_.
+Recent updates to CoCalc's software stack available in the :ref:`"Default" environment <software-environment>`.
 
 .. _update-2019-01-26:
 
