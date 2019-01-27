@@ -23,3 +23,7 @@ div.body {
 dl dd {
     margin-left: 0px;
 }
+
+img.img.section {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
