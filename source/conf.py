@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CoCalc Manual'
-copyright = u'2018, Sagemath, Inc.'
+copyright = u'{}, Sagemath, Inc.'.format(date.today().year)
 author = u'Sagemath, Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
