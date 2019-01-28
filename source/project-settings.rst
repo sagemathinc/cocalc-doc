@@ -320,10 +320,10 @@ Click "Restart Project Server", and restart initiates.
 
 It normally takes about 30 seconds to restart a project. It may take another 10 seconds or so after the Files list is visible for terminal processes, etc. to be available.
 
-You can also stop and restart a project in two separate steps. Why would you stop a project and then restart it?
+You can also stop and restart a project in two separate steps. Why would you stop a project and then restart it, rather than simply restarting it in a single step?
 
 * If you want CoCalc to move the project to another server, stopping it first and then restarting it allows CoCalc to select a different, possibly less-loaded server.
-* If you don't wany any of your project's processes to run until you explicitly restart the project, you have to stop the project.
+* If you don't want any of your project's processes to run until you explicitly restart the project, you have to stop the project.
 
 Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to confirm your choice:
 
@@ -355,11 +355,43 @@ Once you have selected an image, click "Save and Restart".
 Sage worksheet server
 ---------------------
 
+Any time you run a Sage worksheet (.sagews file) there are two processes involved in your project:
+
+* the Sage worksheet server process - one of these is enough to serve any number of running worksheets
+* the Sage worksheet client process - there will be one of these for each worksheet that is running in the project
+
+It can be helpful to restart the Sage worksheet server if you have changed the default version of Sage, for example with ``sage_select``.
+Note that restarting the Sage worksheet server will not affect worksheets that are already running.
+
+Occasionally, it may be useful to restart the Sage worksheet server if worksheets are not executing properly, followed by restarting individual Sage worksheet(s). You might do this as a less drastic step than restarting the entire project.
+
+
+.. image:: img/project-settings/restart-sagews-a.png
+     :width: 70%
+
+Alternate Jupyter Servers in CoCalc
+-----------------------------------
+
+CoCalc by default provides an interface to Jupyter notebooks that has been rewritten to support multiple users, TimeTravel, and other enhancements. For more information, see the CoCalc blog `article on the Jupyter rewrite <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html>`_. There may be occasions when you may want to run the Classical Jupyter server. The most common reason is to use interactive widgets, which are not supported in the CoCalc Jupyter notebook.
+
+The "Project Settings" page offers two ways to run the Classical Jupyter server code, shown below.
+For more information and some important caveats, see :doc:`Classical versus CoCalc <jupyter>`.
+
 Plain Jupyter server
---------------------
+""""""""""""""""""""
+
+Starting the Plain Jupyter server opens a new browser tab with usual files listing. Opening a notebook from the Jupyter server tab opens another browser tab.
+
+.. image:: img/project-settings/jupyter-server-a.png
+     :width: 70%
 
 JupyterLab server
------------------
+"""""""""""""""""
+
+Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_ opens a new browser tab with the JupyterLab GUI.
+
+.. image:: img/project-settings/jupyterlab-server-a.png
+     :width: 70%
 
 
 .. |header| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/header.png
