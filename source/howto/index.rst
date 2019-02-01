@@ -12,5 +12,6 @@ Explanations about how you can accomplish a certain task on CoCalc:
    fortran
    overleaf
    install-python-lib
+   postgresql
    remarkjs-slideshow
    webserver
