@@ -6,7 +6,7 @@ All about the **Project Settings** tab.
 
 .. contents::
    :local:
-   :depth: 2
+   :depth: 1
 
 
 Title and description

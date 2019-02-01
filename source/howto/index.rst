@@ -10,6 +10,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
 
    attach-sage-file-to-sagews
    fortran
+   git
    gsl
    google-api
    overleaf

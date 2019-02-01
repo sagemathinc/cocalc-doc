@@ -27,3 +27,9 @@ dl dd {
 img.img.section {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+/* adjust spacing in lists, default 1.4em */
+div.body li {
+    line-height: 1.6em;
+}
