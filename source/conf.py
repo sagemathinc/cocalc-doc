@@ -105,7 +105,7 @@ html_theme_options = {
     'description': 'CoCalc User Manual',
     'fixed_sidebar': 'false',
     #'logo': ,
-    'github_banner': 'true',
+    'github_banner': 'false', # we extend the theme's layout.html
     'github_user': 'sagemathinc',
     'github_repo': 'cocalc-doc',
     'analytics_id': 'UA-34321400-6',

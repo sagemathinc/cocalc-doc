@@ -1,0 +1,11 @@
+{# https://github.com/bitprophet/alabaster/blob/master/alabaster/layout.html #}
+{% extends "!layout.html" %}
+{% block footer %}
+  {{ super() }}
+  <a class="github" href="https://cocalc.com/app">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: absolute; top: 0; right: 0; border: 0; height: 100px; width: 100px">
+  </a>
+{% endblock %}
