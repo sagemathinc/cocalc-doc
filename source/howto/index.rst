@@ -10,5 +10,6 @@ Explanations about how you can accomplish a certain task on CoCalc:
 
    attach-sage-file-to-sagews
    fortran
+   overleaf
    install-python-lib
    webserver
