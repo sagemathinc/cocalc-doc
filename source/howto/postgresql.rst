@@ -5,7 +5,7 @@ PostgreSQL Server
 ===============================
 
 
-You can easily run your own `PostgreSQL` server inside any CoCalc project to manage data (or just learn about SQL and databases).
+You can easily run your own `PostgreSQL`_ server inside any CoCalc project to manage data (or just learn about SQL and databases).
 
 .. _PostgreSQL: https://www.postgresql.org/
 
