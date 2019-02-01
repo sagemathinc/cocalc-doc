@@ -1,8 +1,16 @@
+.. index:: C code
+.. index:: GCC Compiler
+
 =========================
-Compile GSL code
+Compile GSL C Code
 =========================
 
-GSL is the `GNU Scientific Library <https://www.gnu.org/software/gsl/doc/html/index.html>`_.
+This example explains how to compile some `C code`_ via `GCC`_ using the
+GSL, the `GNU Scientific Library`_.
+
+.. _C code: https://en.wikipedia.org/wiki/C_(programming_language)
+.. _GCC: https://en.wikipedia.org/wiki/GNU_Compiler_Collection
+.. _GNU Scientific Library: https://www.gnu.org/software/gsl/doc/html/index.html
 
 This example shows how to compile and run code from their documentation on CoCalc.
 We take their `Monte Carlo Integration <https://www.gnu.org/software/gsl/manual/html_node/Monte-Carlo-Examples.html>`_ example, which you can also see `here <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/test.c?viewer=share>`_.

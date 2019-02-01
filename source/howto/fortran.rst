@@ -1,6 +1,6 @@
 .. index:: Fortran
 
-Fortran support
+Fortran Programming
 =========================
 
 Command-line
