@@ -2,7 +2,7 @@
 Howto
 ===============================
 
-Explanations about how you can accomplish a certain task on CoCalc:
+Explanations about how you can accomplish a certain task or run a specific example on CoCalc:
 
 
 .. toctree::
@@ -10,8 +10,11 @@ Explanations about how you can accomplish a certain task on CoCalc:
 
    attach-sage-file-to-sagews
    fortran
+   gsl
+   google-api
    overleaf
    install-python-lib
+   nbgrader
    postgresql
    remarkjs-slideshow
    webserver

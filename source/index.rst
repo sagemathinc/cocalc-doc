@@ -40,7 +40,6 @@ This explains in depth how you can work productively on `CoCalc`_.
    account-settings
    software
    howto/index
-   examples/index
 
 
 Indices, references and tables
