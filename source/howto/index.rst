@@ -18,4 +18,5 @@ Explanations about how you can accomplish a certain task or run a specific examp
    nbgrader
    postgresql
    remarkjs-slideshow
+   upload
    webserver

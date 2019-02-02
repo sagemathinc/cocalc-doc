@@ -169,8 +169,11 @@ A project can be both hidden and deleted. In that case, you will need to check b
      :width: 60%
 
 
-SSH Keys
---------
+.. index:: SSH Keys
+.. _ssh-keys:
+
+Setup SSH Keys
+-----------------
 
 Using SSH
 """""""""
