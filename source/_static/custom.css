@@ -11,8 +11,12 @@ div.sphinxsidebar h3 {
     font-size: 18px;
 }
 
-div.document {
+@media screen and (min-width: 875px) div.document {
     width: 1040px;
+}
+
+@media screen and (max-width: 875px) div.document {
+    width: 100%;
 }
 
 div.body {
@@ -27,7 +31,6 @@ dl dd {
 img.img.section {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 /* adjust spacing in lists, default 1.4em */
 div.body li {
