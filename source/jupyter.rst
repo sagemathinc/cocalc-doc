@@ -1,3 +1,6 @@
+.. index:: Jupyter Notebook
+.. _Jupyter Notebook:
+
 =================
 Jupyter Notebooks
 =================
