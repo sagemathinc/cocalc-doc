@@ -10,9 +10,6 @@ There are several reasons why you should consider conducting a course on CoCalc:
 * **Open source:** CoCalc itself and every software it offers is open-source. Say good-bye to vendor lock-in, hidden licensing fees, and proprietary black boxes.
 
 
-Table of Content
-==================
-
 .. toctree::
    :maxdepth: 2
 
