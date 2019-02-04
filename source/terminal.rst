@@ -75,10 +75,11 @@ Tips and tricks
 Terminal Environment in Split Frame with File Editor
 ------------------------------------------------------
 
-If you open a source code file in CoCalc for editing, for example an .sh, .py, .R, or .rb file, you can :doc:`split the editor frame <frame-editor>` and add a command session. That way, you can easily move between editing and running the code.
+If you open a source code file in CoCalc for editing, for example an ``.sh``, ``.py``, ``.R``, or ``.rb`` file, you can :doc:`split the editor frame <frame-editor>` and add a command session. That way, you can easily move between editing and running the code.
 
 .. image:: img/edit-terminal-split.png
     :width: 100%
+    :align: center
 
 
 Customize font
@@ -87,16 +88,17 @@ Customize font
 To change the **size** of the font, click the plus and minus magnification glass icons at the top of a focused terminal frame.
 
 In order to change the appearance of the **font family** of the terminal, adjust the font settings of your web browser.
-For example, in *Google Chrome* this is done in **Settings** → **Appearace** → **Customize Fonts**: 
-
+For example, in *Google Chrome* this is done in **Settings** → **Appearace** → **Customize Fonts**:
 
 .. image:: img/terminal/chrome-customize-fonts.png
     :width: 75%
+    :align: center
 
 Then select a different **fixed-width** font:
 
 .. image:: img/terminal/chrome-fixed-width-font.png
     :width: 75%
+    :align: center
 
 ---------------------------
 
