@@ -31,6 +31,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    tasks
    frame-editor
    time-travel
+   share
 
 .. toctree::
    :maxdepth: 2

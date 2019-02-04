@@ -267,6 +267,8 @@ Current collaborators are also shown in the *Projects* list. You can use the lat
 .. image:: img/project-settings/current-collabs.png
      :width: 70%
 
+.. _add-collaborators:
+
 Add new collaborators
 ---------------------
 
