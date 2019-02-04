@@ -36,3 +36,15 @@ img.img.section {
 div.body li {
     line-height: 1.6em;
 }
+
+div.contents ul ul {
+    margin-top: 0;
+}
+
+div.section > a.internal > img {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+}
+
+div.section > a.internal > img:hover {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.22);
+}

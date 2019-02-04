@@ -20,6 +20,7 @@ To use the LaTeX editor, open or create a file whose name ends in ``.tex``. By d
 
 .. image:: img/latex-ui.png
     :width: 100%
+    :align: center
 
 
 
@@ -101,7 +102,8 @@ Spellcheck
 Spell checking during LaTeX editing is available for several languages. You can enable/disable Spellcheck and change the language *for a particular file* by opening the ``Settings`` frame as shown:
 
 .. image:: img/latex-spellcheck123.jpg
-     :width: 50%
+    :width: 50%
+    :align: center
 
 Note that the Spellcheck feature is also available in Markdown and HTML editors.
 
@@ -116,6 +118,7 @@ Select **"Word Count"** as shown below:
 
 .. image:: img/latex-word-count.png
     :width: 50%
+    :align: center
 
 .. _texcount: http://app.uio.no/ifi/texcount/whatitdoes.html
 
@@ -331,9 +334,11 @@ The main thing to remember when using PSTricks is to set ``Engine`` in the CoCal
 
 .. image:: img/latex-pstricks-demo3.png
     :width: 40%
+    :align: center
 
 .. image:: img/latex-pstricks-demo4.png
     :width: 40%
+    :align: center
 
 
 
