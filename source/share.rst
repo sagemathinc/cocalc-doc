@@ -2,7 +2,7 @@
 .. _sharing-files:
 
 ==========================
-Sharing files
+Sharing Files
 ==========================
 
 Use sharing to make a file or directory publicly visible to the world.
