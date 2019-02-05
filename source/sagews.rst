@@ -1,5 +1,5 @@
 .. index:: Sage Worksheet
-.. _Sage Worksheet:
+.. _sage-worksheet:
 
 
 ===============

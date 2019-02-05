@@ -1,4 +1,5 @@
-.. _LaTeX Editor:
+.. index:: LaTeX Editor
+.. _latex-editor:
 
 ======================
 LaTeX Editor
@@ -11,7 +12,6 @@ For a general introduction, read this `LaTeX wiki book`_ or any other resource.
    :local:
    :depth: 3
 
-.. index:: LaTeX
 
 Getting started
 ===============

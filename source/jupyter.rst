@@ -1,5 +1,5 @@
 .. index:: Jupyter Notebook
-.. _Jupyter Notebook:
+.. _jupyter-notebook:
 
 =================
 Jupyter Notebooks
@@ -41,6 +41,9 @@ Above the main area is a menu bar and a button row:
 * The **output of code cells** is below the input cell. For example, ``Out [7]:`` is the output of cell ``In [7]:``. In the right hand corner of the input cell is some information about how long it took to calculate the result.
 * **Text cells** are slightly different. Select "Markdown" in the ``[ Code ]`` dropdown menu in the button bar to change a code cell to such a markdown text cell. There, you can use `Markdown`_ to format the text. Similar to code-cells, either *Run* these text cells to see the processed Markdown code or press Shift+Return. To edit a text cell, either double click it or press your Return key.
 * **Saving**: more general, the nice things about Jupyter Notebooks is that they save all your intput and output in one single file. This means you can download or publish the notebook as it is, and everyone else sees it in exactly the same way.
+
+.. :index: Jupyter Classical vs. CoCalc
+.. _jupyter-classical-vs-cocalc:
 
 Classical versus CoCalc
 =========================

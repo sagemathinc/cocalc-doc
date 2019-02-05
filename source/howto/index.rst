@@ -13,6 +13,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    git
    gsl
    google-api
+   jupyter-extension
    overleaf
    install-python-lib
    nbgrader
