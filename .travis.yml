@@ -7,6 +7,10 @@ python:
 
 sudo: false
 
+
+git:
+  depth: 2
+
 cache: pip
 install:
   - pip install -r requirements.txt
