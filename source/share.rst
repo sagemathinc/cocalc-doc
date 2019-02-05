@@ -19,16 +19,25 @@ First, do either of the following:
 .. |info| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/info-circle.png
 .. |square| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/share-square-o.png
 
-After either of these steps, you may enter a description for the file being shared,
+After either of these steps, you can see the "Share" dialog.
+You may enter a description for the file being shared,
 then click ``Make item public`` and your file is shared.
+
+.. image:: img/share-dialog.png
+    :width: 100%
+
 
 Using the Share Server
 ==========================
 
-After clicking ``Make item public`` as above, a URL will be displayed under ``Shared publicly``.
+After clicking ``Make item public`` as above, the **public URL** will be displayed under ``Shared publicly``.
+You can click the |external| button to open it at the share server.
+
+.. |external| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/external-link.png
+
 With that link, your file is available read-only on the CoCalc lightweight `share server`_.
 A CoCalc login is not needed to access files on the share server.
-Files on the share server are `indexed by Google <https://www.google.com/search?q=site%3Acocalc.com%2Fshare>`_ unless you click the checkbox next to "Unlisted: Only allow those with a link to view this."
+Files on the share server are `indexed by Google <https://www.google.com/search?q=site%3Acocalc.com%2Fshare>`_ unless you click the checkbox next to "Unlisted: Only allow those with a link to view this.".
 
 Directly sharing files from your project
 ===========================================
