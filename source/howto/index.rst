@@ -14,6 +14,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    gsl
    google-api
    jupyter-extension
+   custom-jupyter-kernel
    overleaf
    install-python-lib
    nbgrader
