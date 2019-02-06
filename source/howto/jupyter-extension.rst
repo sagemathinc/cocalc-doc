@@ -1,7 +1,8 @@
 .. :index: Jupyter Extension
+.. _jupyter-extensions:
 
 =============================
-Enable Jupyter Extensions
+Setup Jupyter Extensions
 =============================
 
 Besides :doc:`CoCalc's own implementation <../jupyter>` of the `Jupyter Notebook <https://jupyter.org>`_, there is also the possibility of running the Classical Server or Jupyter Lab inside your project.

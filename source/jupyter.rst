@@ -60,7 +60,7 @@ To switch:
 As of October 2017, the main reasons to use the classical notebook are:
   - interactive widget support
   - reading interactive input at least 3 times
-  - need certain extensions.
+  - need certain extensions (:ref:`Howto setup Jupyter Extensions <jupyter-extensions>`).
 
 See our `list of Jupyter related issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aissue+is%3Aopen+label%3AA-jupyter>`_ for more details.
 
