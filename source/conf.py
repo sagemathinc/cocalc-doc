@@ -20,6 +20,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import os
 from datetime import date
 
 # -- General configuration ------------------------------------------------
@@ -89,7 +90,11 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+
+if os.environ.get('THEME') == 'rtd':
+    html_theme = 'sphinx_rtd_theme'
+else:
+    html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -100,26 +105,48 @@ show_source = 'false'
 html_favicon = 'img/favicon-32x32.png'
 html_logo = 'img/cocalc-doc-logo.svg'
 
-# https://alabaster.readthedocs.io/en/latest/customization.html
-html_theme_options = {
-    'description': 'CoCalc User Manual',
-    'fixed_sidebar': 'false',
-    #'logo': ,
-    'github_banner': 'false', # we extend the theme's layout.html
-    'github_user': 'sagemathinc',
-    'github_repo': 'cocalc-doc',
-    'analytics_id': 'UA-34321400-6',
-    #'sidebar_collapse': 'true',
-    'show_powered_by': 'false',
-    #'show_relbars': 'true', # doesn't work. not sure why.
-    #'show_related': 'true', # doesn't make much sense, and also always points out the getting started page
-    #'sidebar_collapse': 'true', # doesn't work, editing navigation.html directly
-    'font_size': '11pt',
-    'extra_nav_links': {
-        'CoCalc': 'https://cocalc.com/',
-        'Wiki': 'https://github.com/sagemathinc/cocalc/wiki'
+if html_theme == 'alabaster':
+
+    # https://alabaster.readthedocs.io/en/latest/customization.html
+    html_theme_options = {
+        'description': 'CoCalc User Manual',
+        'fixed_sidebar': 'false',
+        #'logo': ,
+        'github_banner': 'false',  # we extend the theme's layout.html
+        'github_user': 'sagemathinc',
+        'github_repo': 'cocalc-doc',
+        'analytics_id': 'UA-34321400-6',
+        #'sidebar_collapse': 'true',
+        'show_powered_by': 'false',
+        #'show_relbars': 'true', # doesn't work. not sure why.
+        #'show_related': 'true', # doesn't make much sense, and also always points out the getting started page
+        #'sidebar_collapse': 'true', # doesn't work, editing navigation.html directly
+        'font_size': '11pt',
+        'extra_nav_links': {
+            'CoCalc': 'https://cocalc.com/',
+            'Wiki': 'https://github.com/sagemathinc/cocalc/wiki'
+        }
     }
-}
+
+elif html_theme == 'sphinx_rtd_theme':
+
+    html_theme_options = {
+        'canonical_url': 'https://doc.cocalc.com/',
+        'analytics_id': 'UA-34321400-6',
+        'logo_only': False,
+        'display_version': False,
+        'prev_next_buttons_location': 'bottom',
+        'style_external_links': False,
+        # Toc options
+        'collapse_navigation': True,
+        'sticky_navigation': True,
+        'navigation_depth': 4,
+        'includehidden': True,
+        'titles_only': False,
+    }
+
+else:
+    raise AssertionError(f'Unknown theme "{html_theme}"')
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
