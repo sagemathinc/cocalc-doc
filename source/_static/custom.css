@@ -49,6 +49,9 @@ div.section a.internal.image-reference > img:hover {
     div:not(.rst-content) > div.document {
         width: 100%;
     }
+    a.cocalcbanner {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 875px) {
