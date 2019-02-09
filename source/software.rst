@@ -35,6 +35,28 @@ Software Updates
 
 Recent updates to CoCalc's software stack available in the :ref:`"Default" environment <software-environment>`.
 
+.. _update-2019-02-09:
+
+2019-02-09
+------------------------
+
+- (Linux)
+   - new: `Cantera <https://cantera.org/>`_ 2.4.0 for Python 2 and Python 3
+   - updates: `macaulay2 <http://www2.macaulay2.com/Macaulay2/>`_ 1.13, bazel 0.22, chrome and firefox, and various other packages
+
+- (Python3)
+   - new: pyfftw 0.11.1, pymp-pypi 0.4.2
+   - updates: dask-1.1.1
+
+- (Node): npm 6.7.0
+
+- (Julia): making **Julia 1.1.0 the default** (`v1.1.0 release notes <https://github.com/JuliaLang/julia/blob/v1.1.0/NEWS.md#julia-v11-release-notes>`_) and removing older, no longer maintained versions. Maybe cleanup the build cache, by running ``rm -rf ~/.julia`` in the Terminal/Miniterm.
+
+- (Anaconda 5): various updates to packages
+
+- (Sage) Development version 8.7 beta 3 (Python 3)
+
+
 .. _update-2019-01-26:
 
 2019-01-26
