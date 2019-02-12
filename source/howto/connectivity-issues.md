@@ -10,7 +10,7 @@ This FAQ/Help page consists of
   - I can access some of my files/projects in my CoCalc account but not others in that same account. What's wrong?
   - I see the error message "Timeout while loading CoCalc" instead of the CoCalc landing page.]
 
-**Remember:** if you don't find what you need, or if you'd like to ask a question, then please email [help@sagemath.com](mailto://help@sagemath.com) at any time. We'd love to hear from you! Please include a link (the URL address in your browser) to any relevant project or document, as part of your email.
+**Remember:** if you don't find what you need, or if you'd like to ask a question, then please email <a href="mailto:help@cocalc.com">help@cocalc.com</a> at any time. We'd love to hear from you! Please include a link (the URL address in your browser) to any relevant project or document, as part of your email.
 
 ## The 12-Step Process for Debugging Connectivity
 

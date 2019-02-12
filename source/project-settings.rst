@@ -134,7 +134,7 @@ Deleting a project
 *Note: No files are actually deleted by this operation.
 Only visibility of the project in the project list is changed.
 If you need to permanently delete information that you
-accidentally copied into a project, contact help@sagemath.com*
+accidentally copied into a project, contact help@cocalc.com*
 
 If you click `Delete Project`, the button changes:
 
