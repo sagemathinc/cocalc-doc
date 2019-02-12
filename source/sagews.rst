@@ -25,9 +25,11 @@ Sage Worksheets
 SageMath specific
 -------------------
 
+* **Quickstart:** read the `documentation <https://doc.sagemath.org/html/en/>`_, in particular the `Tutorial <https://doc.sagemath.org/html/en/tutorial/index.html>`_.
 * `The Top Mathematical Syntax Errors in Sage <https://github.com/sagemathinc/cocalc/wiki/MathematicalSyntaxErrors>`_
 * `I have a question about SageMath <https://github.com/sagemathinc/cocalc/wiki/SageQuestion>`_ -- how to get help working with Sage
 * `Sage Bugreport <https://github.com/sagemathinc/cocalc/wiki/SageBug>`_ -- I am using Sage and think I have found a bug
+
 
 Conversion utilities
 ----------------------
