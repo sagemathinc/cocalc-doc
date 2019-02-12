@@ -8,20 +8,20 @@ This explains in depth how you can work productively on `CoCalc`_.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Introduction:
+   :caption: Introduction
 
    getting-started
 
 .. toctree::
    :maxdepth: 2
-   :caption: Teaching:
+   :caption: Teaching
 
    teaching-instructors
    teaching-students
 
 .. toctree::
    :maxdepth: 2
-   :caption: Features:
+   :caption: Features
 
    jupyter
    latex
@@ -35,7 +35,7 @@ This explains in depth how you can work productively on `CoCalc`_.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Platform:
+   :caption: Platform
 
    upgrade-guide
    project-settings
