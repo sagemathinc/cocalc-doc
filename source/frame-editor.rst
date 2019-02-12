@@ -11,3 +11,32 @@ Therefore, you can not only view the same Python source code file in two places,
 .. image:: img/frame-editor-python.png
     :width: 100%
 
+Supported file types
+=======================
+
+.. index:: HTML editor
+.. _edit-html:
+
+HTML
+-----
+
+Open a ``*.html`` file and you'll see the rendered output on the right hand side. You can switch the rendered view between "Preview" (which is faster) or "iframe" (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.
+
+.. index:: RMarkdown
+.. _edit-rmd:
+
+RMarkdown
+---------------
+
+Open a ``*.rmd`` file to work with `RMarkdown`_.
+Depending on the configuration in the preamble, you either produce an HTML or PDF output.
+Do not forget to switch the panel for the rendered output accordingly.
+(In case you produce PDF and HTML output, you can even see both after splitting the panel.)
+
+.. _RMarkdown: https://rmarkdown.rstudio.com/
+
+LaTeX
+--------
+
+See :doc:`latex`.
+

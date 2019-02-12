@@ -428,6 +428,21 @@ An error says that the PDF cannot be built. How can I find the problem?
 * If you need more detailed help, make sure to open the ``.tex`` file and make a support request by clicking the ``Help`` button at the top right.
 
 
+
+Spell check my LaTeX document
+--------------------------------------------
+
+Whenever you save the LaTeX document, it will run a spell checker and underline the words that are not spelled correctly.  By default, it uses the language you've set in your web browser.
+
+You can change the autosave interval to be very short in account settings (under editor) if you need the spell checking to update frequently.
+
+Seeing a list of alternative words (correct spellings) isn't supported directly in the editor yet `Issue #3461 <https://github.com/sagemathinc/cocalc/issues/3461>`_.
+For now, a workaround is to run LaTeX-aware ``aspell``, e.g.
+
+    1. Open a :doc:`./terminal`
+    2. ``aspell -t -c <filename.tex>``
+
+
 .. _LaTeX wiki book: https://en.wikibooks.org/wiki/LaTeX
 .. _LatexMK: https://www.ctan.org/pkg/latexmk/
 .. _subfiles: https://www.ctan.org/pkg/subfiles?lang=en
