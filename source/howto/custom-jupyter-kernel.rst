@@ -13,26 +13,14 @@ If you do not already have one, you can create a terminal in Files, as a "Termin
 
     /usr/local/share$ jupyter kernelspec list
     Available kernels:
-      anaconda3         /ext/jupyter/kernels/anaconda3
       bash              /ext/jupyter/kernels/bash
-      calysto_prolog    /ext/jupyter/kernels/calysto_prolog
-      gap               /ext/jupyter/kernels/gap
       ir                /ext/jupyter/kernels/ir
-      ir-sage           /ext/jupyter/kernels/ir-sage
       julia             /ext/jupyter/kernels/julia
       octave            /ext/jupyter/kernels/octave
-      pari_jupyter      /ext/jupyter/kernels/pari_jupyter
-      postgres          /ext/jupyter/kernels/postgres
       python2           /ext/jupyter/kernels/python2
-      python2-ubuntu    /ext/jupyter/kernels/python2-ubuntu
       python3           /ext/jupyter/kernels/python3
-      sage-8.0          /ext/jupyter/kernels/sage-8.0
-      sage-8.1          /ext/jupyter/kernels/sage-8.1
-      sage-develop      /ext/jupyter/kernels/sage-develop
       sagemath          /ext/jupyter/kernels/sagemath
-      scala211          /ext/jupyter/kernels/scala211
-      singular          /ext/jupyter/kernels/singular
-      vpython           /ext/jupyter/kernels/vpython
+      [...]
 
 2. Copy one of the above over that is closest to the kernel you want to create into your project's ``~/.local/share/jupyter/kernels/<kernel_name>`` directory, e.g.,
 
