@@ -15,12 +15,10 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
 
 import os
+import sys
+sys.path.insert(0, os.path.abspath('_ext'))  # or just '.'
 from datetime import date
 
 # -- General configuration ------------------------------------------------
@@ -39,10 +37,15 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
+    # 'edit_on_github',  # in _ext, but disabled/removed!
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+
+# edit_on_github custom extension config
+edit_on_github_project = 'sagemathinc/cocalc-doc'
+edit_on_github_branch = 'master'
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -103,7 +106,8 @@ html_theme = os.environ.get('THEME', 'sphinx_rtd_theme')
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the documentation.
 
-show_source = 'false'
+show_source = 'true'
+html_show_sourcelink = False
 html_favicon = 'img/favicon-32x32.png'
 html_logo = 'img/cocalc-doc-logo.svg'
 GA_TAG = 'UA-34321400-6'
@@ -146,6 +150,17 @@ elif html_theme == 'sphinx_rtd_theme':
         'navigation_depth': 4,
         'includehidden': True,
         'titles_only': False,
+    }
+
+    html_context = {
+        # Add 'Edit on Github' link instead of 'View page source'
+        # see https://github.com/rtfd/sphinx_rtd_theme/blob/master/sphinx_rtd_theme/breadcrumbs.html
+        "display_github": True,
+        'github_user': 'sagemathinc',
+        'github_repo': 'cocalc-doc',
+        'theme_vcs_pageview_mode': 'edit',
+        'github_version': 'master',
+        'conf_py_path': '/source/',
     }
 
     def setup(app):
@@ -210,8 +225,13 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'CoCalc-Manual.tex', u'CoCalc Manual', u'Sagemath, Inc.',
-     'manual'),
+    (
+        master_doc,
+        'CoCalc-Manual.tex',
+        u'CoCalc Manual',
+        u'Sagemath, Inc.',
+        'manual',
+    ),
 ]
 
 # -- Options for manual page output ---------------------------------------
@@ -226,8 +246,15 @@ man_pages = [(master_doc, 'cocalc_doc', u'CoCalc Manual', [author], 1)]
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'CoCalcManual', u'CoCalc Manual', author, 'CoCalcManual',
-     'Manual for CoCalc', 'Manual'),
+    (
+        master_doc,
+        'CoCalcManual',
+        u'CoCalc Manual',
+        author,
+        'CoCalcManual',
+        'Manual for CoCalc',
+        'Manual',
+    ),
 ]
 
 # -- Options for Epub output ----------------------------------------------
