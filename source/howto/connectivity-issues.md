@@ -1,13 +1,14 @@
-# Debugging connectivity issues in CoCalc
+# Debugging connectivity issues
 
 There are numerous reasons why you could experience a problematic connection when accessing [CoCalc](https://cocalc.com).
 
 This FAQ/Help page consists of
 
 - The 12-Step Process for Debugging Connectivity
-- Question: [I don't see any icons, but everything else works.](#no-icons)
-- Question: [I can access some of my files/projects in my CoCalc account but not others in that same account. What's wrong?](#some-files-not-others)
-- Question: [I see the error message "Timeout while loading CoCalc" instead of the CoCalc landing page.](#load-timeout)
+- An FAQ at the bottom:
+  - I don't see any icons, but everything else works.]
+  - I can access some of my files/projects in my CoCalc account but not others in that same account. What's wrong?
+  - I see the error message "Timeout while loading CoCalc" instead of the CoCalc landing page.]
 
 **Remember:** if you don't find what you need, or if you'd like to ask a question, then please email [help@sagemath.com](mailto://help@sagemath.com) at any time. We'd love to hear from you! Please include a link (the URL address in your browser) to any relevant project or document, as part of your email.
 
@@ -17,12 +18,12 @@ Below are some ideas on what to check to diagnose the problem on your side, and 
 
 ### Step 0: Make sure you are running a very recent version of Google Chrome, Safari, Firefox, or Edge.
 
-**We do NOT support old versions of web browsers!!** For example, there's zero chance CoCalc will work at all
-with a web browser from 2016 (say).
+**We do NOT support old versions of web browsers!!**
+For example, there's zero chance CoCalc will work at all with a web browser from e.g. 2016.
 
-You should be able to determine whether the web browser you are using is recent using Google. For example, check the version you have installed and Google that version (e.g., "Chrome 54") and see when it was released.
+When CoCalc starts, it checks your browser version and will report this to you.
 
-Overall, CoCalc works best with Google Chrome.
+Overall, CoCalc works best with the most recent version of Google Chrome.
 
 ### Step 1: Double check if are you connected at all.
 
@@ -101,9 +102,14 @@ https://cocalc.com/stats
 
 However, if that link were to time out, or if there is nothing to see, then there is a problem with either your internet connectivity or the CoCalc website. If your browser tells you about any issues while loading that link, then the problem is likely to be on your end.
 
+Maybe also check **other** websites:
+
+- If a page like https://google.com are also down, it is an indicator that your internet connection is broken.
+- You can also check CoCalc's status indirectly via services like https://down.com/
+
 ### Step 8: Is your computer infected with malware?
 
-If you experience issues like frequent reloads, see strange advertising banners across the page, or additional odd banners around the page, then you might be a victim of some tool or virus injecting additional html code into webpages in your browser. Such malicious software can serve several purposes (e.g. tracking you, showing you ads, just disrupting your connectivity), and is almost always considered highly undesirable.
+If you experience issues like frequent reloads, see strange advertising banners across the page, or additional odd banners around the page, then you might be a victim of some tool or virus injecting additional HTML code into webpages in your browser. Such malicious software can serve several purposes (e.g. tracking you, showing you ads, just disrupting your connectivity), and is almost always considered highly undesirable.
 
 For Google Chrome there is the [Chrome Cleanup Tool](https://www.google.com/chrome/cleanup-tool/) which might help you fix this.
 
@@ -114,7 +120,7 @@ the [disable add-ons](https://support.mozilla.org/en-US/kb/disable-or-remove-add
 
 It is possible that you might be a victim of some malicious software changing your DNS server and re-routing you through a bad proxy server. This is not always the result of hacking. It can be a bad configuration on your computer, the result of an over-zealous employer, or hotel.
 
-Check your DNS settings and try setting [`8.8.8.8`](https://developers.google.com/speed/public-dns/docs/using) as your only DNS server to see if this helps. That's a free DNS service provided by Google.
+Check your DNS settings and try setting [`8.8.8.8`](https://developers.google.com/speed/public-dns/docs/using) as your only DNS server to see if this helps. That's a free DNS service provided by Google. Alternatively (or additionally) you can setup [`1.1.1.1`](https://1.1.1.1/) by Cloudflare.
 
 ### Step 10: Is your browser out of date or otherwise incompatible with CoCalc?
 
@@ -125,25 +131,27 @@ The problem may be solved by using another browser, in particular Google Chrome,
 The following test page checks if WebSockets do work for you.
 They're necessary to "Connect" with CoCalc.
 
-1. open this page: https://www.websocket.org/echo.html
+1. Open this page: https://www.websocket.org/echo.html
 2. Enable "secure websocket TLS"
 3. Then click "Connect" and finally,
 4. Send yourself a test message.
 
 On the right hand side in the output box, the same message should come back and hence confirm that encrypted websocket connections work for you.
 
-### <a name="no-icons"/>Question: I don't see any icons, but everything else works.
+A broken router configuration (e.g. in a larger organization like a university) or some firewall software trying to inspect your traffic might cause troubles.
+
+### Question: I don't see any icons, but everything else works.
 
 You are most likely using a customized font or an extension to customize fonts via CSS (Cascading Style Sheets), in your web browser. This interferes with the font displaying the images for the icons.
 
 The best solution is to disable the extension, in your browser.
 
-### <a name="some-files-not-others"/>Question: I can access some of my files/projects in my CoCalc account but not others in that same account. What's wrong?
+### Question: I can access some of my files/projects in my CoCalc account but not others in that same account. What's wrong?
 
 Sometimes this can happen if you are using multiple CoCalc accounts in the same browser. This can happen even if you are not using two different accounts simultaneously.
 
 We have a short help page, [Tips for using more than one CoCalc account](https://github.com/sagemathinc/cocalc/wiki/TipsForMoreThanOneAccount) which discusses this. The suggestions there will make it work very smoothly for you.
 
-### <a name="load-timeout"/>Question: I see the error message "Timeout while loading CoCalc" instead of the CoCalc landing page.
+### Question: I see the error message "Timeout while loading CoCalc" instead of the CoCalc landing page.
 
 See [Connection Timeout](https://github.com/sagemathinc/cocalc/wiki/Connection-Timeout).
