@@ -48,6 +48,21 @@ Type exactly the following in a :doc:`../terminal` (+New → Terminal)::
 It lists all processes and the bottom line shows the total sum.
 The last ``RSS`` column is probably the most interesting one, for more consult ``man smem``.   The total used memory is also listed under "Project usage and quotas" in :doc:`../project-settings` (based on Linux' cgroup management).
 
+::
+
+    ~$ smem -tk
+      PID User     Command                         Swap      USS      PSS      RSS 
+        1 user     /cocalc/bin/dumb-init -- sh        0    16.0K    19.0K    72.0K 
+       12 user     sh -c env -i /cocalc/init/i        0    88.0K   136.0K     1.7M 
+       24 user     /usr/sbin/sshd -D -p 2222 -        0   756.0K     1.1M     6.3M 
+       58 user     /bin/bash                          0     2.4M     2.5M     5.8M 
+       52 user     /bin/bash                          0     2.4M     2.5M     5.8M 
+       54 user     /bin/bash                          0     2.4M     2.5M     5.8M 
+     1397 user     /usr/bin/python /usr/bin/sm        0     8.2M     8.3M    10.6M 
+       13 user     node /cocalc/src/smc-projec        0    89.2M    91.6M   114.6M 
+    -------------------------------------------------------------------------------
+        8 1                                           0   105.4M   108.6M   150.7M 
+
 Even more utilities …
 =======================
 
@@ -88,7 +103,7 @@ An all-time classic is ``ps aux``. Run ``man ps`` to learn more about that utili
 
 ::
 
-    $ ps aux
+    ~$ ps aux
     USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
     user           1  0.0  0.0    212     4 ?        Ss   21:29   0:00 /cocalc/bin/dumb-init -- sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID
     user          12  0.0  0.0   4628   876 ?        Ss   21:29   0:00 sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID
