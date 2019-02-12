@@ -4,6 +4,11 @@ Howto
 
 Explanations about how you can accomplish a certain task or run a specific example on CoCalc:
 
+.. toctree::
+    :caption: Troubleshooting
+    :maxdepth: 1
+
+    connectivity-issues
 
 .. toctree::
    :caption: Sage Worksheets
