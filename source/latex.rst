@@ -195,12 +195,32 @@ How to deal with large documents across multiple source files?
 
 The best way is to use the `subfiles`_ package as `described here`_.
 There is an extended example demonstrating how this works in the CoCalc Library.
-Click (+)New and look for Library in the middle of the page,
-then under ``LaTeX templates`` select ``Multiple source files in CoCalc``.
+Click "Files" and open the Library. Then select  ``Multiple source files in CoCalc`` in the ``LaTeX templates`` section.
 The same example is also available at `cloud-examples/latex/multiple-files`_.
 
 .. _described here: https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles
 .. _cloud-examples/latex/multiple-files: https://github.com/sagemath/cloud-examples/tree/master/latex/multiple-files
+
+To do this for your existing document,
+let's suppose your LaTeX project is composed of one ``master.tex`` file and several ``chapter-1.tex``, ``chapter-2.tex``, etc.
+CoCalc's LaTeX editor only knows about the currently opened file,
+and using ``\import{}`` doesn't work, because the ``chapter-*.tex`` parts are not proper documents.
+
+The subfiles package does not only collect the partial documents into one,
+but also extracts the preamble of the ``master.tex`` file for each ``chapter-*.tex`` in order to create valid subdocuments.
+
+Following the `subfiles documentation <http://tug.ctan.org/macros/latex/contrib/subfiles/subfiles.pdf>`_, do this:
+
+1. ``\usepackage{subfiles}`` in ``master.tex``
+2. ``\subfile{⟨subfile name ⟩}`` for each subfile in ``master.tex``'s ``document`` environment (i.e. instead of ``\include`` or ``\import``).
+3. For each ``chapter-*.tex`` subfile::
+
+     \documentclass[⟨master.tex file-name⟩]{subfiles}
+     \begin{document}
+     ⟨text, graphics, etc.⟩
+     \end{document}
+
+After that, all ``*.tex`` files can be compiled and all other features like forward/inverse search work, too.
 
 
 
@@ -426,6 +446,21 @@ An error says that the PDF cannot be built. How can I find the problem?
 * Another tip is to click the format button, since sometimes formatting properly can give you a good sense of what you might have messed up.
 * More general, you can also use revision control like [Git]_ to track your changes. Just create a :doc:`Terminal <terminal>` file or :doc:`frame in the latex editor <frame-editor>` and go ahead and work on the command-line as usual.
 * If you need more detailed help, make sure to open the ``.tex`` file and make a support request by clicking the ``Help`` button at the top right.
+
+
+
+Spell check my LaTeX document
+--------------------------------------------
+
+Whenever you save the LaTeX document, it will run a spell checker and underline the words that are not spelled correctly.  By default, it uses the language you've set in your web browser.
+
+You can change the autosave interval to be very short in account settings (under editor) if you need the spell checking to update frequently.
+
+Seeing a list of alternative words (correct spellings) isn't supported directly in the editor yet `Issue #3461 <https://github.com/sagemathinc/cocalc/issues/3461>`_.
+For now, a workaround is to run LaTeX-aware ``aspell``, e.g.
+
+    1. Open a :doc:`./terminal`
+    2. ``aspell -t -c <filename.tex>``
 
 
 .. _LaTeX wiki book: https://en.wikibooks.org/wiki/LaTeX

@@ -34,7 +34,9 @@ Explanations about how you can accomplish a certain task or run a specific examp
    :caption: CoCalc platform
    :maxdepth: 1
 
+   software-development
    install-python-lib
+   running-processes
    upload
    webserver
 
