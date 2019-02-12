@@ -43,8 +43,25 @@ Software must be installed into user-writeable parts of the filesystem, which ar
     Executables will install into ``~/.local/bin`` and will work right away,
     because projects already include that path in their ``$PATH`` variable.
 
+
+
+
 Install Python packages as a user
 ------------------------------------
+
+.. note::
+
+    In the case of Python 2, ``$HOME/.local/lib/python2.7/site-packages/`` will contain the package you've installed.
+    Similarly, this path will contain ``python3.5`` for a Python 3.5 executable.
+
+    In case your Python environment can't find the package,
+    you might have to add your ``~/.local/...`` directory dynamically during runtime like that::
+
+        import sys, os
+        sys.path.insert(0, os.path.expanduser('~/.local/lib/python2.7/site-packages'))
+
+    Make sure, the path is correct.
+    I.e. for Python 3 this could be one of ``python3.4``, ``python3.5``, ``python3.6``...
 
 pip
 ^^^^^^^^^^^^
@@ -107,6 +124,15 @@ There are also other managers, which might fit your needs:
 
 * `pyenv <https://github.com/pyenv/pyenv>`_
 
+
+Sage Worksheets
+=====================
+
+.. note::
+
+    In case you run a CoCalc worksheet, you need to restart the worksheet server (in the project's settings) and then the worksheet itself via the "restart" button.
+
+
 .. _anaconda-install:
 
 Anaconda
@@ -150,6 +176,7 @@ To get it installed in Anaconda as a user, do this:
     <module 'plotly' from '/projects/20e4a191-73ea-4921-80e9-0a5d792fc511/.local/lib/python2.7/site-packages/plotly/__init__.pyc'>
 
 Note that since I'm still in my own "myconda" overlay environment, the ``--user`` switch in ``pip install`` wasn't necessary. (Otherwise, it would be necessary.)
+
 
 
 .. _anaconda-jupyter:
