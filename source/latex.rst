@@ -195,12 +195,32 @@ How to deal with large documents across multiple source files?
 
 The best way is to use the `subfiles`_ package as `described here`_.
 There is an extended example demonstrating how this works in the CoCalc Library.
-Click (+)New and look for Library in the middle of the page,
-then under ``LaTeX templates`` select ``Multiple source files in CoCalc``.
+Click "Files" and open the Library. Then select  ``Multiple source files in CoCalc`` in the ``LaTeX templates`` section.
 The same example is also available at `cloud-examples/latex/multiple-files`_.
 
 .. _described here: https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles
 .. _cloud-examples/latex/multiple-files: https://github.com/sagemath/cloud-examples/tree/master/latex/multiple-files
+
+To do this for your existing document,
+let's suppose your LaTeX project is composed of one ``master.tex`` file and several ``chapter-1.tex``, ``chapter-2.tex``, etc.
+CoCalc's LaTeX editor only knows about the currently opened file,
+and using ``\import{}`` doesn't work, because the ``chapter-*.tex`` parts are not proper documents.
+
+The subfiles package does not only collect the partial documents into one,
+but also extracts the preamble of the ``master.tex`` file for each ``chapter-*.tex`` in order to create valid subdocuments.
+
+Following the `subfiles documentation <http://tug.ctan.org/macros/latex/contrib/subfiles/subfiles.pdf>`_, do this:
+
+1. ``\usepackage{subfiles}`` in ``master.tex``
+2. ``\subfile{⟨subfile name ⟩}`` for each subfile in ``master.tex``'s ``document`` environment (i.e. instead of ``\include`` or ``\import``).
+3. For each ``chapter-*.tex`` subfile::
+
+     \documentclass[⟨master.tex file-name⟩]{subfiles}
+     \begin{document}
+     ⟨text, graphics, etc.⟩
+     \end{document}
+
+After that, all ``*.tex`` files can be compiled and all other features like forward/inverse search work, too.
 
 
 

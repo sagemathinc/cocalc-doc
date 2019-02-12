@@ -11,7 +11,7 @@ There is also a separate page about :doc:``../jupyter`` and :doc:``../sagews``.
 
 .. note::
 
-    If you don't find what you need, or if you'd like to ask a question, then please email ``help@cocalc.com <mailto:help@cocalc.com>`_ at any time. We'd love to hear from you! Please include a link to any relevant project or document (copy and paste the URL address in your browser) as part of your email.
+    If you don't find what you need, or if you'd like to ask a question, then please email `help@cocalc.com <mailto:help@cocalc.com>`_ at any time. We'd love to hear from you! Please include a link to any relevant project or document (copy and paste the URL address in your browser) as part of your email.
 
 .. contents::
    :local:
@@ -20,60 +20,84 @@ There is also a separate page about :doc:``../jupyter`` and :doc:``../sagews``.
 General
 ===============================================================
 
-Create, compile and run a C program
-------------------------------------------------
+
+Will my code keep running if I disconnect?
+-------------------------------------------------
+
+Even if my computer is put to sleep? Or do I need to have a machine open in order for the  process to run?
+
+You definitely do not need to have your computer awake, or a window open, for your project to keep working. However, this is controlled by something called an "idle timeout," described in the next question.
 
 
-1. Click +New, type a filename ending in ".c", e.g., ``foo.c``, and click "Create File" (or just press return).
+.. index:: Idle Timeout
+.. _idle-timeout:
 
-2. Paste this code into the file::
+What is an "idle timeout?"
+-------------------------------
 
-    #include<stdio.h>
-    int main(void) {
-        printf("Hello World\n");
-        printf("this is CoCalc!\n");
-    }
+Under project settings (that's the wrench icon) there is an entry under "Project Usage and
+Quotas" (left-hand side), which
+will tell you how long the process will run "in the background." There is an idle timeout
+for each project, and it will be completely stopped (the technical term in UNIX is
+"killed") if you don't actively edit a file for that amount of time.
 
-3. Open a :doc:`../terminal` by clicking +New, clicking "Command Line Terminal" (or typing a filename ending in .term), and type ``gcc foo.c -o foo``.   Finally, run the program by typing ```./foo``.
+The default for free projects is 1 hour. You can increase this to 24 hours for only
+$14 per month. This means that if you use your project a little bit once per day, then it
+will *never* timeout.
 
-Create, compile and run a Fortran F90 program
-------------------------------------------------
-
-See :doc:`./fortran`
-
-Create, compile and run a Java program
-------------------------------------------------
+However, free projects have another limitation. A free project can be "killed" (stopped)
+at any time, whatsoever. This will happen at least once per day. You have to keep this
+in mind when designing your project. (For example, use checkpointing.) In contrast, all
+paid projects are immune to this issue. See also :doc:`../upgrade-guide`.
 
 
-1. Create a file ``HelloWorld.java`` containing
+Timeout/Killed calculations
+---------------------------------
 
-::
+If I have code that has been running for a  while, and it times out or is otherwise "killed" (see previous question), what happens to the output?
 
-    public class HelloWorld {
-        public static void main (String[] args) {
-            System.out.println ("Hello World!");
-        }
-    }
+If you are using a classical Jupyter notebook, then all output that is printed will be lost if no
+browser is viewing it. This is a major design flaw in Jupyter. :doc:`CoCalc's Jupyter implemenetation <../jupyter>` behaves much better!
 
-2. Create a terminal and run ``javac HelloWorld.java`` to compile your program.
+In contrast, Sage Worksheets will capture output even if no browser is observing them.
 
-3. Run ``java HelloWorld`` to see the output.
+You can also (of course) write to a file on disk, which might be preferable in some cases.
+
+See all processes running in my project
+-------------------------------------------
+
+Type exactly the following in a full terminal (+New--> Terminal) to see all processes running in a project::
+
+    htop
+
+You can kill things, etc.  See <http://linux.die.net/man/1/htop>.
+
+See Memory Usage
+----------------------
+
+Type exactly the following in a full terminal (+New--> Terminal):
+
+    smem -tk
+
+It lists all processes and the bottom line shows the total sum.
+The last ``RSS`` column is probably the most interesting one, for more consult ``man smem``.   The total used memory is also listed under "Project usage and quotas" in :doc:`../project-settings`.
+
+
+
+Is ```.bashrc`` or ```.bash_profile`` called on startup?
+-------------------------------------------------------------
+
+``~/.bashrc`` **is** run on startup and ``~/.bash_profile`` is **not**!
+Hence, use ``~/.bashrc`` to customize your setup,
+and you can also use ``~/.bash_aliases`` for your aliases (see ``~/.bashrc``).
+
+
+
 
 See edited code and command line terminal side-by-side
 ==========================================================
 
 You can open up a terminal next to a code editor panel: :ref:`terminal-editor-panel`.
-
-Octave
-=================
-
-I've put an example Octave Jupyter notebook and an Octave CoCalc worksheet here:
-
-https://cocalc.com/projects/4a5f0542-5873-4eed-a85c-a18c706e8bcd/files/cloud-examples/octave/
-
-Besides Jupyter and CoCalc worksheets, you can also work in a :doc:`../terminal`:
-Click "+New", click Terminal, and type "octave" on the command line, and this should work well.
-You can type "+New", enter a filename that ends with .m, and edit it, then load it into the command line (by typing the filename without the extension).
 
 Sage Worksheets
 =====================
@@ -117,6 +141,113 @@ then it will be cut off somewhere in the middle of printing 152, because you nee
 By the way, it isn't just the case that the output is truncated at this point. The computation is halted as well. (The technical term for this is that "the process is killed.")
 
 
+Fix an exception related to Sage's Integer(...) vs. Python ints?
+---------------------------------------------------------------------
+
+By default, Sage parses the input commands and replaces some elements with its own parts and also adds some syntactic sugar. For example, an integer like ``234`` is translated to ``Integer(234)`` in order to be more powerful and live as a part of Sage. To avoid this behaviour, either append an ``r`` to the number, like ``234r`` (the extra ``r`` tells Sage to consider this as "raw" input) or change the mode of the cell to Python by adding ``%python`` at the top. You can also switch to pure Python mode by default via ``%default_mode python``.   Alternatively, you can type ``Integer=int`` and possibly also ``RealNumber=float``.
+
+
+Raise the limit on the number of output messages per cell
+-------------------------------------------------------------
+
+::
+
+    import sage_server
+    sage_server.MAX_OUTPUT_MESSAGES=100000
+
+See `this published worksheet <https://cocalc.com/share/4a5f0542-5873-4eed-a85c-a18c706e8bcd/support/2014-11-01-155354-too-many-messages.sagews?viewer=share>`_ for more details.
+
+Also, type ``sage_server.[tab key]`` to see information about other limitations.
+
+
+
+Custom Modules
+-------------------
+
+Put an executable file with this content in $HOME/bin/sage:
+
+First, check where the global Sage install is by running ``which sage``. Most likely, it is at ``/ext/bin/sage``. Then create the file with the content:
+
+    #!/usr/bin/env bash
+    SAGE_PATH=$HOME/NEW_MODULE /ext/bin/sage "$@"
+
+You could do this by making a new directory called bin, then a new
+file in there called "sage".  Then in the terminal type the following
+to make "sage" executable.
+
+      cd; cd bin; chmod +x sage
+
+This is also the file "sage" attached to this message.
+
+Then restart the worksheet server by going project settings and
+clicking "Restart --> Worksheet server".
+
+Now any newly (re-)started worksheet will run with the above modified
+SAGE_PATH.  Since SAGE_PATH is added to PYTHONPATH when Sage starts,
+this does what you want.
+
+Obviously, I plan to add a simple way to do something equivalent to the above, by filling in some settings box in the UI.  I'll update this FAQ entry once I do that.
+
+(From Nathan Dunfield) Another approach, which also works now and doesn't require the custom "$HOME/bin/sage", is to use <http://docs.python.org/2/install/#alternate-installation-the-user-scheme>
+
+That is, one installs a module with ``sage -python setup.py install --user`` and it's dumped into
+
+    $HOME/.local/lib/python2.7/site-packages
+
+This location is searched automatically by Sage's Python without any intervention on the part of the user.  (However, I did have to restart the worksheet server to access newly installed modules from a worksheet.)  One can also put modules into the user's site-packages by hand and Sage will find them.
+
+
+
+### <a name="sagews-var"/> Question: How can I tell if my code is running in a CoCalc worksheet (a .sagews file)?
+
+If your code is running in a CoCalc worksheet, then the global variable ``__SAGEWS__`` will be defined.
+
+### <a name="sagews-functions"/> Question: How do I access functionality specific to CoCalc worksheets (.sagews files)?
+
+Type ``salvus.[tab key]``.
+
+Run Sage locally, on my own machine
+--------------------------------------
+
+There is a lovely tutorial on the web to help you do exactly that:
+
+`Sage Installation Guide <https://doc.sagemath.org/html/en/installation/index.html>`_
+
+### <a name="own-sage-binary"/> Question: I want to use my own custom built Sage binaries on CoCalc
+
+See the instructions, immediately below, on using a custom built-from-scratch copy of Sage. Just substitute your own .tar.gz file for the official build of Sage.
+
+### <a name="own-sage"/> Question: I want to use my own custom built-from-source copy of Sage (**Warning:** this takes *hours*.)
+
+Open a terminal.  Grab the source tarball (requires network access).  You can browse <http://sage.math.washington.edu/home/release/> to find recent releases and testing versions.
+
+To build, do the following in your terminal (no need to worry about screen or tmux, of course, since sessions are persistent even if your browser leaves), and check back in a **few hours**::
+
+    tar xvf sage-6.10.tar.gz && cd sage-6.10 && make
+
+**WARNING:** Building can easily take more than 2 hours. By default CoCalc projects have an idle timeout that is smaller. (see :ref:`idle-timeout`) If you aren't editing files in the project, your build will get killed part of the way through.   If you're doing legit Sage development, email THE LINK TO YOUR PROJECT to help@sagemath.com and we will increase the idle timeout, disk space, RAM, etc, so you can contribute to Sage.
+
+After doing that, do something like this in the terminal::
+
+    cd; mkdir -p bin; cd bin; ln -s ~/sage-6.10/sage .
+
+Then restart your worksheet server (in project settings).  Then for that project, you'll have your own 100% customizable copy of Sage; and moreover, when the system-wide Sage is upgraded, your project isn't impacted at all -- that sort of stability is a major win for some people.   This also uses little extra disk space in backups/snapshots, because of de-duplication.   You can of course also install any custom packages you want into this copy of Sage.   You can also help improve Sage: <http://www.sagemath.org/doc/developer/>
+
+If you want to do Sage development see http://mathandhats.blogspot.com/2014/06/how-to-develop-for-sage-using-sage-math.html.
+
+**Important:** Whenever you change Python code installed in that copy of Sage, you may have to restart the worksheet server and any running worksheets.  This is inconvenient, but is necessary because the worksheet server starts one copy of Sage, then *forks* off additional copies each time you open a new worksheet, which greatly reduces the time from when you open a worksheet until it actually starts computing things.
+
+**Also Important:** If your copy of Sage is messed up in some way, then the worksheet server *can't* start, hence worksheets won't open.  To debug this, open a terminal and do this::
+
+    ~$ cd .smc
+    ~/.smc$ sage sage_server.py
+    you should see an error here, e.g.,
+
+and fix whatever error you see.  Also look at log files in ``~/.smc/sage_server/``
+
+
+
+
 Python
 ==========
 
@@ -143,15 +274,10 @@ Last line sets a symlink to make it your default!
     pip3 install tornado
     ln -s ~/bin/python3 ~/bin/python
 
-Fix an exception related to Sage's Integer(...) vs. Python ints?
----------------------------------------------------------------------
-
-By default, Sage parses the input commands and replaces some elements with its own parts and also adds some syntactic sugar. For example, an integer like ``234`` is translated to ``Integer(234)`` in order to be more powerful and live as a part of Sage. To avoid this behaviour, either append an ``r`` to the number, like ``234r`` (the extra ``r`` tells Sage to consider this as "raw" input) or change the mode of the cell to Python by adding ``%python`` at the top. You can also switch to pure Python mode by default via ``%default_mode python``.   Alternatively, you can type ``Integer=int`` and possibly also ``RealNumber=float``.
-
 How can I install Python packages from PyPI using pip?
 ----------------------------------------------------------
 
-WARNING: Due to people launching attacks from CoCalc, access to the internet from within a free project is disabled and hence using ``pip install --user`` will not work. A small :doc:`subscription <./upgrade-guide>` enables internet access for your project.
+WARNING: Due to people launching attacks from CoCalc, access to the internet from within a free project is disabled and hence using ``pip install --user`` will not work. A small :doc:`subscription <../upgrade-guide>` enables internet access for your project.
 
 First, you need to know if it is Python 2 or 3. Let's suppose the package is called ``ggplot``.  Create a new terminal in a project (+New-->Terminal) and type
 
@@ -167,7 +293,7 @@ The ``$HOME/.local/`` path is the "canonical" root for some overlay directories
 of Linux's standard directory layout.
 In the case of Python 2, ``$HOME/.local/lib/python2.7/site-packages/`` will contain the package you've installed.
 
-To use binaries installed by pip add ``export PATH=~/.local/bin:$PATH`` to ``~/.bashrc`` and run ``source ~/.bashrc`
+To use binaries installed by pip add ``export PATH=~/.local/bin:$PATH`` to ``~/.bashrc`` and run ``source ~/.bashrc``.
 
 In case your Python environment can't find the package,
 you might have to add your ``~/.local/...`` directory dynamically during runtime like that::
@@ -191,6 +317,19 @@ For more information, see the :ref:`Jupyter Classic / Modern page <jupyter-class
 
 Another option is to use the Plotly `Dash framework <https://plot.ly/products/dash/>`_:
 here is a `working example running Dash from a CoCalc terminal <https://share.cocalc.com/share/db982efa-e439-4e2d-933b-7c7011c6b21a/DASH/dash-demo.py?viewer=share>`_
+
+
+
+Install some software into my own Anaconda environment
+-----------------------------------------------------------
+
+see https://doc.cocalc.com/howto/install-python-lib.html#anaconda-install
+
+Configure a Jupyter kernel for my custom Anaconda environment
+--------------------------------------------------------------------
+
+see https://doc.cocalc.com/howto/install-python-lib.html#anaconda-jupyter
+
 
 R Statistical Software
 =============================
@@ -242,218 +381,67 @@ If you have set default_mode to r, then enter the command in a sage mode cell::
 
 You can change it by typing it again.
 
-
-
-
-### <a name="latex-multidocument"/> Question: How can I properly work with multi-document LaTeX projects?
-
-Suppose your LaTeX project is composed of one ``master.tex`` file and several ``chapter-1.tex``, ``chapter-2.tex``, etc. CoCalc's LaTeX editor only knows about the currently opened file, and using ``\import{}`` doesn't work, because the ``chapter-*.tex`` parts are not proper documents.
-
-To solve this, **use the [subfiles](http://www.ctan.org/tex-archive/macros/latex/contrib/subfiles) package** instead. It does not only collect the partial documents into one, but also extracts the preamble of the ``master.tex`` file for each ``chapter-*.tex`` in order to create valid subdocuments.
-
-Following the [documentation](http://tug.ctan.org/macros/latex/contrib/subfiles/subfiles.pdf), do this:
-
-1. ``\usepackage{subfiles}`` in ``master.tex`
-2. ``\subfile{⟨subfile name ⟩}`` for each subfile in ``master.tex`'s ``document`` environment (i.e. instead of ``\include`` or ``\import`).
-3. For each ``chapter-*.tex`` subfile:
-
-         \documentclass[⟨master.tex file-name⟩]{subfiles}
-         \begin{document}
-         ⟨text, graphics, etc.⟩
-         \end{document}
-
-After that, all ``*.tex`` files can be compiled and all other features like forward/inverse search work, too.
-
-### <a name="#browse-all-files"/> Question: I want to browse and view (or edit) files outside of my project's home directory.
-
-You can make a symbolic link to the root of the filesystem by typing
-
-     ln -s / root
-
-Now you can explore the complete filesystem.  Note that there many files that you can only read and not write.
-
-### <a name="bashrc" /> Question: Is ```.bashrc`` or ```.bash_profile`` called on startup?
-
-`~/.bashrc`` **is** run on startup and ``~/.bash_profile`` is **not**!
-Hence, use ``~/.bashrc`` to customize your setup,
-and you can also use ``~/.bash_aliases`` for your aliases (see ``~/.bashrc`).
-
-Make sure you have at least 6GB disk space (look at quotas in project settings -- if you don't, don't want to upgrade, and are just playing around, cd to ``/tmp`` instead), then type
-
-     install-latest-sage-release
-
-Then type this, assuming the name of the install you just got is sage-6.7:
-
-    cd; mkdir -p bin; cd bin; ln -sf ~/sage-6.7/sage .
-
-See the discussion about worksheet servers in the next FAQ question below.  Also, now that you have your own copy of Sage, you can change anything in Sage!  Do so, send us patches, etc.  See  <http://www.sagemath.org/doc/developer/> for step-by-step instructions.
-
-### <a name="key-repetition" /> Question: How to turn off the character accent selector and re-enable key repetition on Mac OS X ?
-launch a Terminal and run the command
-
-     defaults write -g ApplePressAndHoldEnabled -bool false
-
-### <a name="own-module"/> Question: I would like that all of my worksheets know where to find a given module that I write or install.
-
-Put an executable file with this content in $HOME/bin/sage:
-
-First, check where the global Sage install is by running ``which sage``. Most likely, it is at ``/ext/bin/sage``. Then create the file with the content:
-
-    #!/usr/bin/env bash
-    SAGE_PATH=$HOME/NEW_MODULE /ext/bin/sage "$@"
-
-You could do this by making a new directory called bin, then a new
-file in there called "sage".  Then in the terminal type the following
-to make "sage" executable.
-
-      cd; cd bin; chmod +x sage
-
-This is also the file "sage" attached to this message.
-
-Then restart the worksheet server by going project settings and
-clicking "Restart --> Worksheet server".
-
-Now any newly (re-)started worksheet will run with the above modified
-SAGE_PATH.  Since SAGE_PATH is added to PYTHONPATH when Sage starts,
-this does what you want.
-
-Obviously, I plan to add a simple way to do something equivalent to the above, by filling in some settings box in the UI.  I'll update this FAQ entry once I do that.
-
-(From Nathan Dunfield) Another approach, which also works now and doesn't require the custom "$HOME/bin/sage", is to use <http://docs.python.org/2/install/#alternate-installation-the-user-scheme>
-
-That is, one installs a module with ``sage -python setup.py install --user`` and it's dumped into
-
-    $HOME/.local/lib/python2.7/site-packages
-
-This location is searched automatically by Sage's Python without any intervention on the part of the user.  (However, I did have to restart the worksheet server to access newly installed modules from a worksheet.)  One can also put modules into the user's site-packages by hand and Sage will find them.
-
-### <a name="sagews-var"/> Question: How can I tell if my code is running in a CoCalc worksheet (a .sagews file)?
-
-If your code is running in a CoCalc worksheet, then the global variable ``__SAGEWS__`` will be defined.
-
-### <a name="sagews-functions"/> Question: How do I access functionality specific to CoCalc worksheets (.sagews files)?
-
-Type ``salvus.[tab key]``.
-
-### <a name="local-sage"/> Question: I want to run Sage locally, on my own machine. How do I do that?
-
-There is a lovely tutorial on the web to help you do exactly that:
-
-<http://doc.sagemath.org/html/en/installation/index.html>
-
-### <a name="own-sage-binary"/> Question: I want to use my own custom built Sage binaries on CoCalc
-
-See the instructions, immediately below, on using a custom built-from-scratch copy of Sage. Just substitute your own .tar.gz file for the official build of Sage.
-
-### <a name="own-sage"/> Question: I want to use my own custom built-from-source copy of Sage (**Warning:** this takes *hours*.)
-
-Open a terminal.  Grab the source tarball (requires network access).  You can browse <http://sage.math.washington.edu/home/release/> to find recent releases and testing versions.
-
-To build, do the following in your terminal (no need to worry about screen or tmux, of course, since sessions are persistent even if your browser leaves), and check back in a **few hours**:
-
-    tar xvf sage-6.10.tar.gz && cd sage-6.10 && make
-
-**WARNING:** Building can easily take more than 2 hours. By default CoCalc projects have an idle timeout that is smaller. (See [What is an "idle timeout?"](#idle-timeout).) If you aren't editing files in the project, your build will get killed part of the way through.   If you're doing legit Sage development, email THE LINK TO YOUR PROJECT to help@sagemath.com and we will increase the idle timeout, disk space, RAM, etc, so you can contribute to Sage.
-
-After doing that, do something like this in the terminal:
-
-    cd; mkdir -p bin; cd bin; ln -s ~/sage-6.10/sage .
-
-Then restart your worksheet server (in project settings).  Then for that project, you'll have your own 100% customizable copy of Sage; and moreover, when the system-wide Sage is upgraded, your project isn't impacted at all -- that sort of stability is a major win for some people.   This also uses little extra disk space in backups/snapshots, because of de-duplication.   You can of course also install any custom packages you want into this copy of Sage.   You can also help improve Sage: <http://www.sagemath.org/doc/developer/>
-
-If you want to do Sage development see <http://mathandhats.blogspot.com/2014/06/how-to-develop-for-sage-using-sage-math.html>.
-
-**Important:** Whenever you change Python code installed in that copy of Sage, you may have to restart the worksheet server and any running worksheets.  This is inconvenient, but is necessary because the worksheet server starts one copy of Sage, then *forks* off additional copies each time you open a new worksheet, which greatly reduces the time from when you open a worksheet until it actually starts computing things.
-
-**Also Important:** If your copy of Sage is messed up in some way, then the worksheet server *can't* start, hence worksheets won't open.  To debug this, open a terminal and do this:
-
-    ~$ cd .smc
-    ~/.smc$ sage sage_server.py
-    you should see an error here, e.g.,
-
-and fix whatever error you see.  Also look at log files in ``~/.smc/sage_server/`
-
-### <a name="anaconda-sage"/> Question: How do I install some software into my own Anaconda environment in CoCalc?
-
-see https://doc.cocalc.com/howto/install-python-lib.html#anaconda-install
-
-### <a name="anaconda-jupyter"/> Question: How do I configure a Jupyter kernel for my custom Anaconda environment?
-
-see https://doc.cocalc.com/howto/install-python-lib.html#anaconda-jupyter
-
-### <a name="limits"/>Question: I want to start long-running numerically intensive computations on CoCalc.  What are the current limitations?
+Limitations of long-running computations
+---------------------------------------------------
 
 Open your project and click on Settings.  The default limitations are listed under "Quotas" in the lower left.  These can be raised, as mentioned there.  Notes:
 
 1. Projects without "member hosting" upgrade can get restarted regularly (these are hosted on Google preemptible instances).  You can check if a VM rebooted by typing "uptime".   crontab files are persistent.
 
 3. If a project isn't used (via the web-based UI) for the idle timeout (as listed in quotas), then all processes in that project are terminated and the user is removed (so ssh into the project also is not possible).  You can [pay to raise](https://cocalc.com/policies/pricing.html) the idle timeout.
-See also, [What is an "idle timeout?"](#idle-timeout).
+See also :ref:`idle-timeout`.
 
-### <a name="scratch"/>Question: I want some scratch space
+Octave
+=================
 
-Use /tmp.  Files in /tmp may be deleted at any time, and aren't backed up.
+I've put an example Octave Jupyter notebook and an Octave CoCalc worksheet here:
 
-### <a name="kill-on-disconnect" /> Question: Will my code keep running if I disconnect? Even if my computer is put to sleep? Or do I need to have a machine open in order for the  process to run?
+https://cocalc.com/projects/4a5f0542-5873-4eed-a85c-a18c706e8bcd/files/cloud-examples/octave/
 
-You definitely do not need to have your computer awake, or a window open, for your project to keep working. However, this is controlled by something called an "idle timeout," described in the next question.
+Besides Jupyter and CoCalc worksheets, you can also work in a :doc:`../terminal`:
+Click "+New", click Terminal, and type "octave" on the command line, and this should work well.
+You can type "+New", enter a filename that ends with .m, and edit it, then load it into the command line (by typing the filename without the extension).
 
-### <a name="idle-timeout"/> Question: What is an "idle timeout?"
+Other Languages
+====================
 
-Under project settings (that's the wrench icon) there is an entry under "Project Usage and
-Quotas" (left-hand side), which
-will tell you how long the process will run "in the background." There is an idle timeout
-for each project, and it will be completely stopped (the technical term in UNIX is
-"killed") if you don't actively edit a file for that amount of time.
 
-The default for free projects is 1 hour. You can increase this to 24 hours for only
-$14 per month. This means that if you use your project a little bit once per day, then it
-will *never* timeout.
+Create, compile and run a C program
+------------------------------------------------
 
-However, free projects have another limitation. A free project can be "killed" (stopped)
-at any time, whatsoever. This will happen at least once per day. You have to keep this
-in mind when designing your project. (For example, use checkpointing.) In contrast, all
-paid projects are immune to this issue. See also [Subscription and Pricing Information](https://cocalc.com/policies/pricing.html).
 
-The next question will discuss the output of your processes.
+1. Click +New, type a filename ending in ".c", e.g., ``foo.c``, and click "Create File" (or just press return).
 
-### <a name="kill-and-output" /> Question: If I have code that has been running for a  while, and it times out or is otherwise "killed" (see previous question), what happens to the output?
+2. Paste this code into the file::
 
-If you are using a Jupyter notebook, then all output that is printed will be lost if no
-browser is viewing it. This is a major design flaw in Jupyter.
+    #include<stdio.h>
+    int main(void) {
+        printf("Hello World\n");
+        printf("this is CoCalc!\n");
+    }
 
-In contrast, CoCalc worksheets will capture output even if no browser is observing them.
+3. Open a :doc:`../terminal` by clicking +New, clicking "Command Line Terminal" (or typing a filename ending in .term), and type ``gcc foo.c -o foo``.   Finally, run the program by typing ```./foo``.
 
-You can also (of course) write to a file on disk, which might be preferable in some cases.
+Create, compile and run a Fortran F90 program
+------------------------------------------------
 
-### <a name="top"/>Question: I want to see all processes running in my project
+See :doc:`./fortran`
 
-Type exactly the following in a full terminal (+New--> Terminal) to see all processes running in a project::
+Create, compile and run a Java program
+------------------------------------------------
 
-    htop
 
-You can kill things, etc.  See <http://linux.die.net/man/1/htop>.
+1. Create a file ``HelloWorld.java`` containing
 
-### <a name="smem"/>Question: I want to know how much memory I am using
+::
 
-Type exactly the following in a full terminal (+New--> Terminal):
+    public class HelloWorld {
+        public static void main (String[] args) {
+            System.out.println ("Hello World!");
+        }
+    }
 
-    smem -tk
+2. Create a terminal and run ``javac HelloWorld.java`` to compile your program.
 
-It lists all processes and the bottom line shows the total sum.
-The last ``RSS`` column is probably the most interesting one, for more consult ``man smem``.   The total used memory is also listed under 'Project usage and quotas" in project settings.
+3. Run ``java HelloWorld`` to see the output.
 
-### <a name="mesglimit"/>Question: How do I raise the limit on the number of output messages per cell in a CoCalc worksheet?
-
-    import sage_server
-    sage_server.MAX_OUTPUT_MESSAGES=100000
-
-See [this published worksheet](https://cocalc.com/projects/4a5f0542-5873-4eed-a85c-a18c706e8bcd/files/support/2014-11-01-155354-too-many-messages.sagews) for more details.
-
-Also, type ``sage_server.[tab key]`` to see information about other limitations.
-
-### <a name="fundamental-theorem"/> Question: I want to XXX, but I don't see XXX above.
-
-Do not hesitate to request support, either by using the "Help" button at the top right of any CoCalc window, or by sending an email (be sure to include a LINK TO THE CoCalc PROJECT where you need help) to help@sagemath.com. You can also ask questions on the [CoCalc mailing list](https://groups.google.com/forum/#!forum/cocalc).
-
-[![Analytics](https://ga-beacon.appspot.com/UA-34321400-3/wiki/Programming)](https://github.com/igrigorik/ga-beacon)
