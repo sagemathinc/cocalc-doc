@@ -97,15 +97,11 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 
-if os.environ.get('THEME') == 'rtd':
-    html_theme = 'sphinx_rtd_theme'
-else:
-    html_theme = 'alabaster'
+# 'alabaster' also works!
+html_theme = os.environ.get('THEME', 'sphinx_rtd_theme')
 
 # Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#
+# further.  For a list of options available for each theme, see the documentation.
 
 show_source = 'false'
 html_favicon = 'img/favicon-32x32.png'
