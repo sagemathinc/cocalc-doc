@@ -106,6 +106,7 @@ html_theme = os.environ.get('THEME', 'sphinx_rtd_theme')
 show_source = 'false'
 html_favicon = 'img/favicon-32x32.png'
 html_logo = 'img/cocalc-doc-logo.svg'
+GA_TAG = 'UA-34321400-6'
 
 if html_theme == 'alabaster':
 
@@ -134,7 +135,7 @@ elif html_theme == 'sphinx_rtd_theme':
 
     html_theme_options = {
         'canonical_url': 'https://doc.cocalc.com/',
-        'analytics_id': 'UA-34321400-6',
+        'analytics_id': GA_TAG,  # this only works with the online version
         'logo_only': False,
         'display_version': False,
         'prev_next_buttons_location': 'bottom',
@@ -146,6 +147,17 @@ elif html_theme == 'sphinx_rtd_theme':
         'includehidden': True,
         'titles_only': False,
     }
+
+    def setup(app):
+        """
+        Insert Google Analytics tracker
+        Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
+        """
+        app.add_javascript(
+            "https://www.googletagmanager.com/gtag/js?id={}".format(GA_TAG))
+        # this file is _static/google_analytics_tracker.js
+        # it also contains the GA_TAG !
+        app.add_javascript("google_analytics_tracker.js")
 
 else:
     raise AssertionError(f'Unknown theme "{html_theme}"')
