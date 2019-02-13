@@ -47,9 +47,11 @@ Indices, references and tables
 ==============================
 
 .. toctree::
-    references
+    :caption: Appendix
 
-* :ref:`genindex`
+    references
+    genindex
+
 * :ref:`search`
 
 .. disabled
