@@ -426,7 +426,7 @@ Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_
 
 
 .. |header|
-    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/header.png
-    :width: 14pt
+    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/header.png
+    :width: 16px
 
 .. _ssh: https://help.ubuntu.com/community/SSH

@@ -35,8 +35,8 @@ After clicking ``Make item public`` as above, the **public URL** will be display
 You can click the |external| button to open it at the share server.
 
 .. |external|
-    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/external-link.png
-    :width: 14pt
+    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/external-link.png
+    :width: 16px
 
 With that link, your file is available read-only on the CoCalc lightweight `share server`_.
 A CoCalc login is not needed to access files on the share server.

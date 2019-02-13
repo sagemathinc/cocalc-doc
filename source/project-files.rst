@@ -20,5 +20,5 @@ Click on the "|life-ring| Backup" button to switch to a directory containing con
 Use this in case you have deleted a whole set of files, or just want to restore them from a while ago.
 
 .. |life-ring|
-    image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/32/life-ring.png
-    :width: 14pt
+    image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/life-ring.png
+    :width: 16px

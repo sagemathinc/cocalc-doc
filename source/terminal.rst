@@ -70,8 +70,8 @@ a hidden file – which is tied to that specific terminal – is created.
 It contains further instructions about how to configure commands that are run when it starts.
 
 .. |rocket|
-    image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/32/rocket.png
-    :width: 14pt
+    image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/rocket.png
+    :width: 16px
 
 
 Anaconda Environment

@@ -223,37 +223,37 @@ Next steps
 .. |cocalc-logo| image:: img/icons/cocalc-logo.svg
     :height: 20px
 .. |info-circle|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/info-circle.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/info-circle.png
+     :width: 16px
 .. |medkit|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/medkit.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png
+     :width: 16px
 .. |bell|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/bell-o.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bell-o.png
+     :width: 16px
 .. |wifi|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/wifi.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png
+     :width: 16px
 .. |expand| image:: img/icons/expand.png
     :height: 20px
 .. |folder-open|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/folder-open-o.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/folder-open-o.png
+     :width: 16px
 .. |plus-circle|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/plus-circle.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/plus-circle.png
+     :width: 16px
 .. |history|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/history.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
+     :width: 16px
 .. |search|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/search.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/search.png
+     :width: 16px
 .. |wrench|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/wrench.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wrench.png
+     :width: 16px
 .. |share-square|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/share-square-o.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/share-square-o.png
+     :width: 16px
 .. |comment|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/comment-o.png
-     :width: 14pt
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/comment-o.png
+     :width: 16px
