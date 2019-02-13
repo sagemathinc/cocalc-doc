@@ -11,10 +11,16 @@ Explanations about how you can accomplish a certain task or run a specific examp
     connectivity-issues
 
 .. toctree::
-   :caption: Sage Worksheets
+   :caption: CoCalc platform
    :maxdepth: 1
 
-   attach-sage-file-to-sagews
+   software-development
+   external-tools
+   install-python-lib
+   running-processes
+   upload
+   webserver
+
 
 .. toctree::
    :caption: Jupyter Notebook
@@ -30,15 +36,6 @@ Explanations about how you can accomplish a certain task or run a specific examp
 
    overleaf
 
-.. toctree::
-   :caption: CoCalc platform
-   :maxdepth: 1
-
-   software-development
-   install-python-lib
-   running-processes
-   upload
-   webserver
 
 .. toctree::
    :caption: Miscellaneous

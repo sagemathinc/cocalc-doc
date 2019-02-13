@@ -59,6 +59,9 @@ Multiple Terminals in a Single Browser Tab
 Terminals open up in a :doc:`frame-editor`. This means you can use buttons at upper right to split the terminal frame vertically or horizontally. The split defaults to the middle of the frame, but the dividing line can be dragged to give more space to one of the new frames and less to the other. You can continue splitting to get even more frames in a single browser tab. Click the `x` icon at upper left to close a frame.
 
 
+.. index:: Terminal startup files
+.. _terminal-startup-files:
+
 Startup files
 --------------------
 
@@ -96,7 +99,6 @@ If you open a source code file in CoCalc for editing, for example an ``.sh``, ``
 
 
 
-
 Customize font
 -----------------
 
@@ -124,11 +126,13 @@ If you have a browser extension that uses the vim keys it may intercept the 'Esc
 Either remap 'Esc' to a different key for the browser extension or disable the extension on the cocalc.com domain.
 
 
+.. index:: Fish shell
 
 Setup fish shell
 -----------------------------------------------------
 
-You can automatically span a process replacing of the default bash shell while it starts.
+You can automatically span a process replacing of the default bash shell while it starts
+via a :ref:`startup file <terminal-startup-files>`.
 In order to avoid having broken Home/End keys in the fish shell,
 you have to set the ``TERM`` environment variable correctly to use xterm! I.e.
 
@@ -142,9 +146,4 @@ you have to set the ``TERM`` environment variable correctly to use xterm! I.e.
 Next time you launch this terminal, or restart it via typing in ``exit`` and pressing the return-key, this setup file will be evaluated and you'll end up in the fish shell with the correct TERM environment variable set.
 
 
-
----------------------------
-
-Are you experiencing any problems or is something missing? Click the ``[ Help ]`` button at upper right while you are logged into CoCalc
-to open a help request, or send email to ``help@cocalc.com``.
 
