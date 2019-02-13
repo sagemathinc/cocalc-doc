@@ -28,7 +28,9 @@ Moving tasks
 
 In custom order (the default) click and drag |bars| to change the order of the tasks.
 
-.. |bars| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/bars.png
+.. |bars|
+    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/bars.png
+    :width: 14pt
 
 Due date
 ==========

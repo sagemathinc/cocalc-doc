@@ -96,7 +96,7 @@ Now enter a line of python code in the first cell of the notebook:
 
 .. image:: img/getting-started/file-7.png
      :width: 90%
-     
+
 And click Run or press Shift-Enter to run the code.
 
 .. image:: img/getting-started/file-8-a.png
@@ -222,16 +222,38 @@ Next steps
 
 .. |cocalc-logo| image:: img/icons/cocalc-logo.svg
     :height: 20px
-.. |info-circle| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/info-circle.png
-.. |medkit| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/medkit.png
-.. |bell| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/bell-o.png
-.. |wifi| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/wifi.png
+.. |info-circle|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/info-circle.png
+     :width: 14pt
+.. |medkit|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/medkit.png
+     :width: 14pt
+.. |bell|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/bell-o.png
+     :width: 14pt
+.. |wifi|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/wifi.png
+     :width: 14pt
 .. |expand| image:: img/icons/expand.png
     :height: 20px
-.. |folder-open| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/folder-open-o.png
-.. |plus-circle| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/plus-circle.png
-.. |history| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/history.png
-.. |search| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/search.png
-.. |wrench| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/wrench.png
-.. |share-square| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/share-square-o.png
-.. |comment| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/comment-o.png
+.. |folder-open|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/folder-open-o.png
+     :width: 14pt
+.. |plus-circle|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/plus-circle.png
+     :width: 14pt
+.. |history|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/history.png
+     :width: 14pt
+.. |search|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/search.png
+     :width: 14pt
+.. |wrench|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/wrench.png
+     :width: 14pt
+.. |share-square|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/share-square-o.png
+     :width: 14pt
+.. |comment|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/comment-o.png
+     :width: 14pt

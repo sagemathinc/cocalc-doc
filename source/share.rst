@@ -24,7 +24,8 @@ You may enter a description for the file being shared,
 then click ``Make item public`` and your file is shared.
 
 .. image:: img/share-dialog.png
-    :width: 100%
+     :width: 100%
+     :align: center
 
 
 Using the Share Server
@@ -33,7 +34,9 @@ Using the Share Server
 After clicking ``Make item public`` as above, the **public URL** will be displayed under ``Shared publicly``.
 You can click the |external| button to open it at the share server.
 
-.. |external| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/external-link.png
+.. |external|
+    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/external-link.png
+    :width: 14pt
 
 With that link, your file is available read-only on the CoCalc lightweight `share server`_.
 A CoCalc login is not needed to access files on the share server.

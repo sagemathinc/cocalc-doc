@@ -16,6 +16,7 @@ The text for **Title and description** for a project can be changed at any time.
 
 .. image:: img/project-settings/title-and-desc-a.png
      :width: 50%
+     :align: center
 
 Title and Description fields are both used when searching for matching text under **Projects**.
 If you have several projects, it can help to add hashtags to your project descriptions
@@ -23,6 +24,7 @@ for topics you want to return to quickly.
 
 .. figure:: img/project-settings/project-match.png
      :width: 60%
+     :align: center
 
      *searching for "astro" in project title & description*
 
@@ -62,6 +64,7 @@ appears if the project does not have Member Hosting or Internet Access):
 
 .. image:: img/project-settings/before-upgrade.png
      :width: 60%
+     :align: center
 
 Adjust Quotas
 """""""""""""
@@ -73,6 +76,7 @@ have not applied any upgrades yet:
 
 .. image:: img/project-settings/add-upgrades-standard.png
      :width: 60%
+     :align: center
 
 You can enter any values that do not exceed available upgrades. This example continues
 by adding as much in the way of resources as possible to the current project.
@@ -85,6 +89,7 @@ Clicking `Max All Upgrades` will add as much as possible from available upgrades
 
 .. image:: img/project-settings/apply-max.png
      :width: 60%
+     :align: center
 
 Save Changes
 """"""""""""
@@ -92,6 +97,7 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
 
 .. image:: img/project-settings/max-added.png
      :width: 60%
+     :align: center
 
 Hide or delete project
 ----------------------
@@ -104,6 +110,7 @@ If the current project is neither hidden nor deleted, you will see this:
 
 .. image:: img/project-settings/hide-or-delete.png
      :width: 60%
+     :align: center
 
 Hidden vs. Deleted projects
 """""""""""""""""""""""""""
@@ -119,12 +126,14 @@ If you click `Hide Project`, the button changes:
 
 .. image:: img/project-settings/hidden.png
      :width: 60%
+     :align: center
 
 And now if you click the `Projects` button at upper left, you will have a checkbox
 that lets you view hidden projects. The checkbox only appears if there are hidden projects.
 
 .. image:: img/project-settings/show-hidden.png
      :width: 60%
+     :align: center
 
 Clicking `Unhide Project` instantly makes the project visible in the normal project list again.
 
@@ -140,11 +149,13 @@ If you click `Delete Project`, the button changes:
 
 .. image:: img/project-settings/delproj1.png
      :width: 60%
+     :align: center
 
 Click `Yes, please delete this project` to confirm, and the screen changes again:
 
 .. image:: img/project-settings/delproj2.png
      :width: 60%
+     :align: center
 
 Note the warning banner that appears at the top.
 
@@ -155,6 +166,7 @@ that lets you view deleted projects. The checkbox only appears if there are hidd
 
 .. image:: img/project-settings/show-deleted.png
      :width: 60%
+     :align: center
 
 Clicking `Undelete Project` instantly makes the project visible in the normal project list again
 for you and all collaborators on the project.
@@ -167,6 +179,7 @@ A project can be both hidden and deleted. In that case, you will need to check b
 
 .. image:: img/project-settings/deleted-and-hidden-a.png
      :width: 60%
+     :align: center
 
 
 .. index:: SSH Keys
@@ -202,6 +215,7 @@ This section assumes you have created an SSH key pair as described above.
 
    .. image:: img/project-settings/usernameathost.png
         :width: 50%
+        :align: center
 
 #. Click "Add an SSH Key".
 #. Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example "Sample Key for TESTPROJ".
@@ -214,6 +228,7 @@ This section assumes you have created an SSH key pair as described above.
 
    .. image:: img/project-settings/addingprojkey.png
         :width: 50%
+        :align: center
 
 #. The user for the SSH connection is the project id *without the hyphens*. (Why? Because the project id is not a valid Linux username.) The hostname is ``ssh.cocalc.com``. Look for "Use the following username@host:" in the "SSH Keys" section of project status for a string you can copy and paste. For example, if the Project id is::
 
@@ -266,6 +281,7 @@ Current collaborators are also shown in the *Projects* list. You can use the lat
 
 .. image:: img/project-settings/current-collabs.png
      :width: 70%
+     :align: center
 
 .. _add-collaborators:
 
@@ -281,11 +297,13 @@ It is generally better to use an email address. The reason is that some CoCalc u
 
 .. image:: img/project-settings/add-collabs.png
      :width: 70%
+     :align: center
 
 If there are no matches for an email address, then you can send an invitation for the user to start using CoCalc. You can modify the standard email. The default invitation has useful links to make it easier for the other person to start using CoCalc.
 
 .. figure:: img/project-settings/email-invitation.png
      :width: 70%
+     :align: center
 
      *customizing email invitation to new user*
 
@@ -300,6 +318,7 @@ Here is a screen capture of the Project control section. Along with project stat
 
     .. image:: img/project-settings/project-control.png
          :width: 70%
+         :align: center
 
 Restart Project and Stop Project
 """"""""""""""""""""""""""""""""
@@ -317,11 +336,13 @@ To make all this happen, click "Restart Project...". Another button appears, to 
 
     .. image:: img/project-settings/project-restart-confirm.png
          :width: 70%
+         :align: center
 
 Click "Restart Project Server", and restart initiates.
 
     .. image:: img/project-settings/project-restarting.png
          :width: 70%
+         :align: center
 
 It normally takes about 30 seconds to restart a project. It may take another 10 seconds or so after the Files list is visible for terminal processes, etc. to be available.
 
@@ -334,6 +355,7 @@ Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to
 
     .. image:: img/project-settings/stop-project-confirm.png
          :width: 70%
+         :align: center
 
 .. index:: Software Environment
 .. _software-environment:
@@ -354,6 +376,7 @@ Once you have selected an image, click "Save and Restart".
 
 .. image:: img/project-settings/selected-image-experimental.png
      :width: 70%
+     :align: center
 
 *Note: Don't forget to reset your image to "Default" after you are finished working with an alternate image.*
 
@@ -373,6 +396,7 @@ Occasionally, it may be useful to restart the Sage worksheet server if worksheet
 
 .. image:: img/project-settings/restart-sagews-a.png
      :width: 70%
+     :align: center
 
 Alternate Jupyter Servers in CoCalc
 -----------------------------------
@@ -389,6 +413,7 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
 
 .. image:: img/project-settings/jupyter-server-a.png
      :width: 70%
+     :align: center
 
 JupyterLab server
 """""""""""""""""
@@ -397,8 +422,11 @@ Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_
 
 .. image:: img/project-settings/jupyterlab-server-a.png
      :width: 70%
+     :align: center
 
 
-.. |header| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/header.png
+.. |header|
+    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/32/header.png
+    :width: 14pt
 
 .. _ssh: https://help.ubuntu.com/community/SSH

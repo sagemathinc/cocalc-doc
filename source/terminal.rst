@@ -58,6 +58,19 @@ Multiple Terminals in a Single Browser Tab
 
 Terminals open up in a :doc:`frame-editor`. This means you can use buttons at upper right to split the terminal frame vertically or horizontally. The split defaults to the middle of the frame, but the dividing line can be dragged to give more space to one of the new frames and less to the other. You can continue splitting to get even more frames in a single browser tab. Click the `x` icon at upper left to close a frame.
 
+
+Startup files
+--------------------
+
+When you click on the "rocket" icon (|rocket|),
+a hidden file – which is tied to that specific terminal – is created.
+It contains further instructions about how to configure commands that are run when it starts.
+
+.. |rocket|
+    image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/32/rocket.png
+    :width: 14pt
+
+
 Anaconda Environment
 ------------------------
 
@@ -82,6 +95,8 @@ If you open a source code file in CoCalc for editing, for example an ``.sh``, ``
     :align: center
 
 
+
+
 Customize font
 -----------------
 
@@ -99,6 +114,34 @@ Then select a different **fixed-width** font:
 .. image:: img/terminal/chrome-fixed-width-font.png
     :width: 75%
     :align: center
+
+
+
+Broken VIM key bindings
+--------------------------------
+
+If you have a browser extension that uses the vim keys it may intercept the 'Esc' character, preventing you from switching to command mode in CoCalc.
+Either remap 'Esc' to a different key for the browser extension or disable the extension on the cocalc.com domain.
+
+
+
+Setup fish shell
+-----------------------------------------------------
+
+You can automatically span a process replacing of the default bash shell while it starts.
+In order to avoid having broken Home/End keys in the fish shell,
+you have to set the ``TERM`` environment variable correctly to use xterm! I.e.
+
+1. Click on the rocket-icon in a terminal
+2. Add this to the setup file::
+
+       source ~/.bashrc
+       export TERM=xterm-256color
+       exec fish
+
+Next time you launch this terminal, or restart it via typing in ``exit`` and pressing the return-key, this setup file will be evaluated and you'll end up in the fish shell with the correct TERM environment variable set.
+
+
 
 ---------------------------
 
