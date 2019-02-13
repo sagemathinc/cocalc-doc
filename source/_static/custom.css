@@ -1,3 +1,12 @@
+/* theme cocalc */
+div.wy-side-nav-search {
+    background-color: #4375c1;
+}
+
+nav.wy-nav-top {
+    background: #4375c1;
+}
+
 p.blurb {
     font-weight: bold;
 }
