@@ -161,6 +161,7 @@ elif html_theme == 'sphinx_rtd_theme':
         'theme_vcs_pageview_mode': 'edit',
         'github_version': 'master',
         'conf_py_path': '/source/',
+        'show_sphinx': False,
     }
 
     def setup(app):
