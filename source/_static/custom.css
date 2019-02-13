@@ -7,6 +7,11 @@ nav.wy-nav-top {
     background: #4375c1;
 }
 
+/* role: strike and :strike:`...` */
+span.strike {
+    text-decoration: line-through;
+}
+
 p.blurb {
     font-weight: bold;
 }

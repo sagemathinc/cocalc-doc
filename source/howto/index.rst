@@ -42,6 +42,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    :caption: Miscellaneous
    :maxdepth: 1
 
+   bash-fortunes
    fortran
    git
    gsl
