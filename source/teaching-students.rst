@@ -62,6 +62,7 @@ Click on the project of your course to open it.
 
 .. image:: img/student/projects.png
     :width: 75%
+    :align: center
 
 Once you open the project you will be redirected to your course-specific file directory.
 
@@ -70,6 +71,7 @@ They're organized in several directories, or sub-directories, and can correspond
 
 .. image:: img/student/content.png
     :width: 75%
+    :align: center
 
 Your assignments
 ------------------------------------------
@@ -93,16 +95,20 @@ There are multiple ways to do it:
 * **Upload**:  If you have the files in your local computer navigate to your assignment folder. Then click on the "Upload" button at the top right. It will ask you for your local file(s) and after confirming the dialog it shows you the upload progress.
 
 .. image:: img/student/upload.png
+    :width: 100%
+    :align: center
 
 * **Drag and drop**: If you have the files in your local computer navigate to your assignment folder. Once there click on the **New** button on the upper banner. Drag and drop the files in the corresponding box.
 
 .. image:: img/student/drag.png
     :width: 50%
+    :align: center
 
 * **Content in the internet**: If you have your files in a GitHub repository or hosted on a publicly accessible web-server, click on the **New** button. On the file name box paste/write the UTL to the resource and click on the **Download from the internet** button.
 
 .. image:: img/student/download.png
     :width: 100%
+    :align: center
 
 * **Terminal**: if you have your files in a GitHub repository you can create a so called :doc:`"Terminal file" <terminal>` and copy the contents using::
 
@@ -119,11 +125,13 @@ One of the best features of CoCalc is the time travel diff feature. You will not
 
 .. image:: img/student/time_diff.png
     :width: 25%
+    :align: center
 
 If you click on this button you will see two sliders that you can move to see previous versions of the file:
 
 .. image:: img/student/control.png
     :width: 100%
+    :align: center
 
 This is extremely handy if you want to see a previously saved version of the document or revert to it.
 
@@ -141,14 +149,16 @@ Alternatively, you can restart the entire project, which will cleanup all runnin
 
 .. image:: img/teaching/restart_project.png
     :width: 50%
+    :align: center
 
 Contacting your lecturer or TA
 ------------------------------------------
 
-If you need assistance with a piece of coursework you can contact the using the real-chat features.  
+If you need assistance with a piece of coursework you can contact the using the real-chat features.
 
 .. image:: img/teaching/student_question.png
     :width: 50%
+    :align: center
 
 Just click on the speech-bubble icon button located on the upper right hand corner of the piece of work you need help with and start typing straight away.
 
