@@ -64,7 +64,10 @@ You can review your usage of CoCalc upgrades and where they are currently applie
 You can even adjust upgrades right from there, or remove all of them from all projects in order to redistribute them.
 For adjusting per project, click on the upgrade information on the right hand side of the "Upgrades you have applied to projects" table. Then make your changes and confirm it.
 
-This dialog is identical to the :ref:`upgrade adjustment dialog <project-upgrades>` in the :doc:`project-settings`.
+.. note::
+
+    This dialog is identical to the :ref:`upgrade adjustment dialog <project-upgrades>`
+    in the :doc:`project-settings`.
 
 .. image:: img/upgrades-adjust.png
     :width: 100%
