@@ -17,16 +17,36 @@ Supported file types
 .. index:: HTML editor
 .. _edit-html:
 
+.. index:: Markdown
+
+Markdown
+-----------
+
+If you open/create a file ending with ``*.md``, you're presented by default with a split view of `Markdown <https://www.markdowntutorial.com/>`_ code on the left and HTML rendered output on the right hand side.
+You can also write `LaTeX formulas <https://en.wikibooks.org/wiki/LaTeX/Mathematics>`_ between ``$`` signs, e.g. ``$\frac{1}{1+x^2}$``.
+
+.. index:: Source Code files
+
+Plaintext / Source Code
+--------------------------
+
+A file ending in ``*.txt`` is a plaintext file, which does not have any formatting.
+Similarly, you can also edit plaintext files with a special purpose, e.g. ``*.csv`` for CSV data,
+``*.yaml`` for structured data, and for source-code of software programs, there is
+``*.c``, ``*.c++``, ``*.sage``, ``*.java``, ``*.py``, ``*.adb`` and many more!
+
+.. index:: HTML
+
 HTML
 -----
 
-Open a ``*.html`` file and you'll see the rendered output on the right hand side. You can switch the rendered view between "Preview" (which is faster) or "iframe" (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.
+Open/create a ``*.html`` file and you'll see the rendered output on the right hand side. You can switch the rendered view between "Preview" (which is faster) or "iframe" (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.
 
 .. index:: RMarkdown
 .. _edit-rmd:
 
 RMarkdown
----------------
+----------------
 
 Open a ``*.rmd`` file to work with `RMarkdown`_.
 Depending on the configuration in the preamble, you either produce an HTML or PDF output.
@@ -39,4 +59,10 @@ LaTeX
 --------
 
 See :doc:`latex`.
+
+Text
+-----------
+
+
+
 
