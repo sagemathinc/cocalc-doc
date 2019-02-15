@@ -38,7 +38,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
     # 'edit_on_github',  # in _ext, but disabled/removed!
+    'sphinx_sitemap',  # https://pypi.org/project/sphinx-sitemap/
 ]
+
+html_baseurl = 'https://doc.cocalc.com/'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
