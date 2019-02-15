@@ -6,7 +6,7 @@ Developing Software
 ======================================
 
 This page is all about programming your own software (C, Fortran, Java, Julia, Octave, R, etc.) from CoCalc.
-A highly related page is the FAQ for `Utilizing External Tools from CoCalc <https://github.com/sagemathinc/cocalc/wiki/UtilizingExternalTools>`_.
+A highly related page is the FAQ for :doc:`Utilizing External Tools from CoCalc <external-tools>`.
 There is also a separate page about :doc:`../jupyter` and :doc:`../sagews`.
 
 .. note::

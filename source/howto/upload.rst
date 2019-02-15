@@ -1,4 +1,5 @@
 .. index:: Upload Files
+.. _upload-files:
 
 ======================
 Upload Files

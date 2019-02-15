@@ -71,10 +71,7 @@ you should see an updated PDF preview.
 * **Formulas**: They're either between ``$`` or ``$$``, or in ``\begin{equation}...\end{equation}`` environments.
 
 You can also **import your existing documents** by
-`uploading in "Files"`_ or `importing from ShareLatex/Overleaf`_.
-
-.. _uploading in "Files": https://github.com/sagemathinc/cocalc/wiki/upload
-.. _importing from ShareLatex/Overleaf: https://github.com/sagemathinc/cocalc/wiki/Importing-Files-from-ShareLaTeX
+:ref:`uploading in "Files" <upload-files>` or :doc:`importing from ShareLatex/Overleaf <howto/overleaf>`.
 
 Features
 ===============
