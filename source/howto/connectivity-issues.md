@@ -73,7 +73,7 @@ Browser caches are an important way of speeding up your internet connection. How
 
 ### Step 5: Does the problem relate to stale cookies?
 
-This situation can happen to users who are attempting to use two different CoCalc accounts, even if they are not attempting to do so simultaneously. We have an [entire page](https://github.com/sagemathinc/cocalc/wiki/TipsForMoreThanOneAccount) devoted to strategies to make it easy to painlessly operate with multiple CoCalc accounts.
+This situation can happen to users who are attempting to use two different CoCalc accounts, even if they are not attempting to do so simultaneously. We have an entire page devoted to strategies to make it easy to [painlessly operate with multiple CoCalc accounts](./multiple-accounts).
 
 For a quick fix, try to connect to CoCalc by opening up a "new private browsing window" or "new incognito window." While inside those special windows, your old cookies will not be active and any new cookies you are given will not affect the main browser.
 
