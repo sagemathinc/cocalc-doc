@@ -45,7 +45,7 @@ There are many reasons that you might want to have an upgraded project.
    * To connect to your project with SSH.
 * To get extra storage space (both RAM and disk space).
 * To get more compute resources.
-* To have a higher idle timeout threshold. (See `What is an idle timeout? <https://github.com/sagemathinc/cocalc/wiki/AllAboutProjects#idle-timeout>`_.)
+* To have a higher idle timeout threshold. (See :ref:`idle-timeout`.)
 
 You can share upgrades with any project that you are a collaborator on. You must be a collaborator (or owner) to update a project.
 

@@ -142,15 +142,18 @@ A broken router configuration (e.g. in a larger organization like a university) 
 
 ### Question: I don't see any icons, but everything else works.
 
-You are most likely using a customized font or an extension to customize fonts via CSS (Cascading Style Sheets), in your web browser. This interferes with the font displaying the images for the icons.
+You are most likely using a customized font or an extension to customize fonts via CSS (Cascading Style Sheets), in your web browser.
+This interferes with the font displaying the images for the icons.
 
 The best solution is to disable the extension, in your browser.
 
 ### Question: I can access some of my files/projects in my CoCalc account but not others in that same account. What's wrong?
 
-Sometimes this can happen if you are using multiple CoCalc accounts in the same browser. This can happen even if you are not using two different accounts simultaneously.
+Sometimes this can happen if you are using multiple CoCalc accounts in the same browser.
+This can happen even if you are not using two different accounts simultaneously.
 
-We have a short help page, [Tips for using more than one CoCalc account](https://github.com/sagemathinc/cocalc/wiki/TipsForMoreThanOneAccount) which discusses this. The suggestions there will make it work very smoothly for you.
+We have a short help page, :doc:`multiple-accounts` which discusses this.
+The suggestions there will make it work very smoothly for you.
 
 ### Question: I see the error message "Timeout while loading CoCalc" instead of the CoCalc landing page.
 
