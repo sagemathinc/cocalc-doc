@@ -70,7 +70,10 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 - Sage's Python2: pip-19.0.2, PySingular-0.9.7, soupsieve-1.7.3, and a couple of dependencies
 
-- R: `ggmap 3.0.0 <https://cran.r-project.org/web/packages/ggmap/>`_
+- R:
+    - `ggmap 3.0.0 <https://cran.r-project.org/web/packages/ggmap/>`_
+    - `conjoint 1.41 <https://cran.r-project.org/web/packages/conjoint/index.html>`_
+    - `ggfortify 0.4.5 <https://cran.r-project.org/web/packages/ggfortify/index.html>`_
 
 - Linux: `PyPy 7.0.0 <https://pypy.org/>`_ and a set of minor linux package updates
 
