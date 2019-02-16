@@ -30,8 +30,8 @@ Install will happen faster if you include as much as possible of the following i
 
 .. _python-pkg-install-user:
 
-User installs
-==================
+Python "user" installs
+===================================
 
 
 .. warning::
@@ -55,7 +55,7 @@ Software must be installed into user-writeable parts of the filesystem, which ar
     because projects already include that path in their ``$PATH`` variable.
 
 
-Install Python packages as a user
+Install location and ``sys.path``
 ------------------------------------
 
 .. note::
@@ -73,7 +73,7 @@ Install Python packages as a user
     I.e. for Python 3 this could be one of ``python3.4``, ``python3.5``, ``python3.6``...
 
 pip
-^^^^^^^^^^^^
+------------------------------------
 
 Pip is the "Python package manager". It installs packages hosted at `PyPI.org <https://pypi.org/>`_.
 
@@ -92,7 +92,7 @@ If your package can be installed via ``pip``, then run in a  `CoCalc Terminal fi
 
 
 setup.py
-^^^^^^^^^^^^^
+------------------------------------
 
 If your package is in a folder inside your project (e.g., you uploaded it) with a ``setup.py`` folder, you can do either ``python setup.py install --user`` or ``pip install --user --upgrade ./``
 
@@ -103,16 +103,18 @@ If pip requires that any external dependencies be downloaded, then your project 
 
 
 Virtualenv
-^^^^^^^^^^^^^^^
+------------------------------------
 
 You can avoid the need for ``--user`` flags if you work inside a Python virtual environment.
 See  `Virtualenv`_ for more information.
 
 
+
+
 .. _sage-install-python-pkg:
 
 Sage
-^^^^^^^^^^^^^^^^^^
+------------------------------------
 
 A special case is [SageMath]_, which is a fully integrated environment built on top of Python.
 To install a Python package in Sage, it needs to also install into your local home directory.
@@ -136,7 +138,7 @@ If it happens that Sage doesn't recognize packages in your local path, prepend t
 
 
 Sage Worksheets
-^^^^^^^^^^^^^^^^^^^^^
+------------------------------------
 
 .. note::
 
@@ -144,7 +146,7 @@ Sage Worksheets
 
 
 Other
-^^^^^^^^^^^^^^^^^
+------------------------------------
 
 There are also other managers, which might fit your needs:
 
@@ -154,8 +156,18 @@ There are also other managers, which might fit your needs:
 
 .. _anaconda-install:
 
-Anaconda
-====================
+Anaconda Environment
+=======================
+
+`Conda <https://conda.io/en/latest/>`_ is an alternative packaging system by `Anaconda <https://anaconda.org/>`_.
+It is mostly used for Python packages, but it can manage and deliver almost any kind of software.
+
+CoCalc provides a global environmet, which you can start by running ``anaconda5`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
+To get going with your own setup for your own CoCalc project,
+you have to :ref:`create your own environment <anaconda-install-own-env>`
+and your ref:`own kernel <anaconda-jupyter>`.
+
+.. _anaconda-install-own-env:
 
 Install some software into my own Anaconda environment
 ------------------------------------------------------------
