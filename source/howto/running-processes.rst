@@ -28,7 +28,7 @@ Via the F9 key you can terminate or kill a process, etc.
 If supported, mouse-clicks should also work.
 
 See `htop manpage <http://linux.die.net/man/1/htop>`_ for more information
-or click the letter ``h`` for help after starting it up;  and ``q`` for quit.
+or click the letter ``h`` for help after starting it up;  and ``q`` to quit the application.
 
 .. image:: img/htop.png
     :width: 75%
@@ -73,7 +73,7 @@ top
 -------
 
 The "classic" version ``htop``, similar layout.
-Press key ``h`` for help after starting it; and ``q`` for quit.
+Press key ``h`` for help after starting it; and ``q`` to quit the application.
 
 .. image:: img/top.png
     :width: 75%
@@ -88,7 +88,7 @@ Start it the following way if you're using a white terminal background and want 
 
      glances --theme-white --tree
 
-Again, ``q`` for quit and ``h`` for help.
+Again, press key ``h`` for more help and ``q`` to quit.
 
 You can see more command-line switches via ``glances --help``.
 
