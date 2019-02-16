@@ -84,6 +84,8 @@ If your package can be installed via ``pip``, then run in a  `CoCalc Terminal fi
 
     Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from the pip repository to your project.  The Python pip command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
 
+
+
 setup.py
 ^^^^^^^^^^^^^
 
@@ -93,11 +95,16 @@ If your package is in a folder inside your project (e.g., you uploaded it) with 
 
 If pip requires that any external dependencies be downloaded, then your project must have internet access.
 
+
+
 Virtualenv
 ^^^^^^^^^^^^^^^
 
 You can avoid the need for ``--user`` flags if you work inside a Python virtual environment.
 See  `Virtualenv`_ for more information.
+
+
+.. _sage-install-python-pkg:
 
 Sage
 ^^^^^^^^^^^^^^^^^^
@@ -116,6 +123,20 @@ If it happens that Sage doesn't recognize packages in your local path, prepend t
     import site, sys
     sys.path.insert(0, site.USER_SITE)
 
+.. note::
+
+    Inside that ``sage -sh`` environment, you can also run ``R`` to install additional R packages in Sage. This also works for other programming libraries.
+
+    You can also combine step (1) and (2) via ``sage --pip install --user ...``
+
+
+Sage Worksheets
+^^^^^^^^^^^^^^^^^^^^^
+
+.. note::
+
+    In case you run a Sage Worksheet, you need to restart the worksheet server (:ref:`in the project settings <sage-worksheet-server>`) and then the worksheet itself via the `Restart` button.
+
 
 Other
 ^^^^^^^^^^^^^^^^^
@@ -124,13 +145,6 @@ There are also other managers, which might fit your needs:
 
 * `pyenv <https://github.com/pyenv/pyenv>`_
 
-
-Sage Worksheets
-=====================
-
-.. note::
-
-    In case you run a CoCalc worksheet, you need to restart the worksheet server (in the project's settings) and then the worksheet itself via the "restart" button.
 
 
 .. _anaconda-install:
@@ -192,7 +206,7 @@ Suppose you want to create a custom Anaconda environment with the ``mdtraj`` pac
 1. Follow these steps in `a .term file in CoCalc <../terminal>`_. In the last step, the display name of the new kernel is changed so that it does not duplicate the name of kernel installed by CoCalc::
 
         ~$ mkdir -p ~/.local/share/jupyter/kernels
-        ~$ anaconda3
+        ~$ anaconda5
         (root) ~$ conda create --name mymdtraj mdtraj
         (root) ~$ source activate mymdtraj
         (mymdtraj) ~$ conda install ipykernel

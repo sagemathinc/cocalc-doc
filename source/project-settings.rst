@@ -380,6 +380,11 @@ Once you have selected an image, click "Save and Restart".
 
 *Note: Don't forget to reset your image to "Default" after you are finished working with an alternate image.*
 
+
+
+.. index:: Sage Worksheet Server
+.. _sage-worksheet-server:
+
 Sage worksheet server
 ---------------------
 
