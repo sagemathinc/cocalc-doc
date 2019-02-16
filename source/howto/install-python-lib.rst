@@ -4,7 +4,7 @@
 Install Python Packages
 ============================
 
-This page decribes how to install a Python package in a CoCalc project.
+This page describes how to install a Python package in a CoCalc project.
 
 CoCalc already includes `hundreds of packages for several Python development environments <https://cocalc.com/doc/software-python.html>`_.
 
@@ -16,7 +16,8 @@ CoCalc already includes `hundreds of packages for several Python development env
 Install requests
 ===================
 
-If a package may have general use but is not already installed in CoCalc, you can open a support request to install it.
+If a package may have general use but is not already installed in CoCalc,
+please open a support request to tell us to install it globally for everyone.
 Uncomplicated install requests are typically handled within 1 business day for paying customers.
 Install will happen faster if you include as much as possible of the following information:
 
@@ -26,8 +27,17 @@ Install will happen faster if you include as much as possible of the following i
 * Special requirements and dependencies to build & install
 * A short but complete example, such that we can verify that we properly installed the software. This example might be included in internal tests, to make sure future updates do not break that library.
 
+
+
 User installs
 ==================
+
+
+.. warning::
+
+    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
+    The install command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
+
 
 You can install additional packages yourself, but only at user-permission level.
 CoCalc accounts do not have superuser (root) privileges.
@@ -79,10 +89,6 @@ If your package can be installed via ``pip``, then run in a  `CoCalc Terminal fi
 
     * Python 2: use ``pip2`` and ``python2``/``ipython2`` -- ``pip`` and ``python`` should default to these variants.
     * Python 3: use ``pip3`` and ``python3``/``ipython3``.
-
-.. warning::
-
-    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from the pip repository to your project.  The Python pip command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
 
 
 
