@@ -35,6 +35,40 @@ Software Updates
 
 Recent updates to CoCalc's software stack available in the :ref:`"Default" environment <software-environment>`.
 
+
+.. _update-2019-02-16:
+
+2019-02-16
+------------------
+
+- New `SPARQL kernel <https://github.com/paulovn/sparql-kernel>`_: see `issue #3573 <https://github.com/sagemathinc/cocalc/issues/3573>`_. You can query remote endpoints. Make sure your project has :doc:`internet access <upgrade-guide>` enabled! (`SPARQL demo notebook <https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/sparql-vanGogh.ipynb?viewer=share>`_)
+
+- `LEAN 3.4.2 <https://github.com/leanprover/lean/releases/tag/v3.4.2>`_, with a precompiled mathlib in ``/ext/lean/lean/mathlib``.
+
+- Python 3 changes:
+    - `JAX <https://github.com/google/jax>`_ (`jax demo worksheet <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/jax.ipynb?viewer=share>`_)
+    - tornado 5.1.1, distributed 1.25.3
+    - `mypy 0.6.7.0 <https://mypy-lang.blogspot.com/2019/02/mypy-0670-released.html>`_
+    - `cython-0.29.5 <https://github.com/cython/cython/blob/master/CHANGES.rst#0295-2019-02-09>`_
+    - pylint-2.2.2
+    - requests-2.21.0
+    - scipy-1.2.1 (see `1.2.0 <https://scipy.github.io/devdocs/release.1.2.0.html>`_ and `1.2.1 <https://scipy.github.io/devdocs/release.1.2.1.html>`_ notes)
+    - `mesa-0.8.5 <https://github.com/projectmesa/mesa>`_
+    - Sphinx-1.8.4 (update) and commonmark 0.8.1 and recommonmark-0.5.0 for developing `sphinx-rtd-theme-0.4.3 <https://sphinx-rtd-theme.readthedocs.io/en/latest/>`_ out of the box!
+    - cookiecutter-1.6.0
+    - `wordcloud-1.5.0 <https://amueller.github.io/word_cloud/>`_
+
+- Python 2 changes: scipy-1.2.1, decorator-4.3.2, networkx-2.2, keras-applications-1.0.7, keras-preprocessing-1.0.9, tensorflow-1.12.0
+
+- Sage's Python2: pip-19.0.2, PySingular-0.9.7, soupsieve-1.7.3, and a couple of dependencies
+
+- R: `ggmap 3.0.0 <https://cran.r-project.org/web/packages/ggmap/>`_
+
+- Linux: `PyPy 7.0.0 <https://pypy.org/>`_ and a set of minor linux package updates
+
+- Node: `npm 6.8.0 <https://github.com/npm/cli/releases/tag/v6.8.0>`_
+
+
 .. _update-2019-02-09:
 
 2019-02-09
