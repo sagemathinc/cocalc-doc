@@ -28,6 +28,7 @@ Install will happen faster if you include as much as possible of the following i
 * A short but complete example, such that we can verify that we properly installed the software. This example might be included in internal tests, to make sure future updates do not break that library.
 
 
+.. _python-pkg-install-user:
 
 User installs
 ==================
@@ -53,8 +54,6 @@ Software must be installed into user-writeable parts of the filesystem, which ar
     Executables will install into ``~/.local/bin`` and will work right away,
     because projects already include that path in their ``$PATH`` variable.
 
-
-.. _python-pkg-install-user:
 
 Install Python packages as a user
 ------------------------------------
