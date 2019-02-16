@@ -14,6 +14,8 @@ New to Linux? Find out more about the Linux command line at the
 `Linux Tutorial <http://ryanstutorials.net/linuxtutorial/>`_, which
 is one of several introductory topics at `Ryan's Tutorials <http://ryanstutorials.net/>`_.
 
+Do you want to install certain **Python or Anaconda** packages,
+please consult :ref:`python-pkg-install-user`.
 
 
 .. contents::
@@ -73,12 +75,15 @@ It contains further instructions about how to configure commands that are run wh
     image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/rocket.png
     :width: 16px
 
+.. index:: Anaconda Environment
 
 Anaconda Environment
 ------------------------
 
 To use the `Anaconda data science platform <https://www.anaconda.com/>`_, enter the command ``anaconda5`` in a terminal session. The shell prompt will change to notify you that you're now working in the default ("base") anaconda environment. To exit the
 anaconda platform and continue your terminal session, use the command ``exit-anaconda``.
+
+Additionally, you can :ref:`setup your own Anaconda environment <anaconda-install>` inside your project, and even setup your own :ref:`customized Jupyter Kernel <anaconda-jupyter>` for it.
 
 **Note:** an older version of anaconda is temporarily available with the command ``anaconda3``. We recommend all new applications use ``anaconda5``.
 

@@ -44,7 +44,7 @@ Software must be installed into user-writeable parts of the filesystem, which ar
     because projects already include that path in their ``$PATH`` variable.
 
 
-
+.. _python-pkg-install-user:
 
 Install Python packages as a user
 ------------------------------------
