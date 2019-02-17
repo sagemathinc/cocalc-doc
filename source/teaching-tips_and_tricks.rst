@@ -1,14 +1,14 @@
-=================
-Tips and tricks
-=================
+=======================
+FAQ, Tips and Tricks
+=======================
 
-In this section we will present some CoCalc features and useful tricks that will make the management of your project easier.
+In this section we will present some CoCalc features and useful tricks that will make the management of your project easier and answer some common questions.
 
 .. contents::
    :local:
    :depth: 2
 
-Text fields generally support markdown and LaTeX
+Text fields generally support Markdown and LaTeX
 ==========================================================
 
 CoCalc not only facilitates the creation of LaTeX documents, but most input areas in CoCalc support and render LaTeX and markdown  (specifically  `GitHub Flavored Markdown`_).
@@ -89,12 +89,16 @@ CoCalc support for the terminal enables students (and instructors) to collaborat
 If you already have a project or some files allocated in GitHub you can add them to your project.
 Click on the **New** button and add/paste the link to your repository in the appropriate text box. Click on the **Download from Internet** button.
 
+Also you can use the terminal to commit and push changes to your repository in GitHub.
+(see howto: :doc:`howto/git`)
+
 .. image:: img/teaching/download.png
      :width: 100%
 
-(*Obvious note*: You need to have internet access enabled in your project.)
+.. note::
 
-Also you can use the terminal to commit and push changes to your repository in GitHub.
+    You need to have internet access enabled in your project.
+
 
 Time Travel Diffs
 ==========================================================
@@ -128,3 +132,89 @@ can use it to run a command (e.g., to create a file or whatever) in
 
 .. image:: img/teaching/term_command_course.png
      :width: 60%
+
+
+
+.. _course-copy-assignments:
+
+How exactly are Assignments copied to students?
+==================================================
+
+When you assign an assignment to your students,
+it is copied from your project to your students' projects.
+Behind the scenes, this copy is done with the command
+
+::
+
+    rsync -zaxs --update --backup [...] source/  dest/
+
+There are two important options here::
+
+    --update: do not copy over a file if a NEWER file (by timestamp)
+              exists in the destination
+
+and
+
+::
+
+    --backup: if the source file `foo` (say) is NEWER than the destination file
+              `foo` (e.g., you edit your homework assignment after students have worked
+              on it),  then `dest/foo` is moved to `dest/foo~` and `foo` is copied
+              to the destination.
+
+In particular, if the source files have an old timestamp and you've already assigned the assignment (and students may have worked on it), then nothing at all will happen on copy (due to the ``--update`` option).
+If one or more source files have a *newer* timestamp than a file in the target directory,
+then the target file is copied to a backup and the source is copied over.
+
+If you just want to add a new file to an assignment, you could ensure that all the other files are very old, e.g., by using the touch command in a :doc:`terminal`.  E.g.,
+
+
+::
+
+    touch -d 'Jan 1' *
+
+would make it so that everything appears to be from January 1.
+
+Alternatively, you could just remove the files from the assignment folder, then move them back later.
+
+Assigning an assignment never deletes missing files in the target,
+`unless` you explicitly clicked and confirmed the ``Replace student files!`` button.
+This button adds an additional flag::
+
+       --delete
+              This  tells  rsync to delete extraneous files from the receiving side
+              (ones that aren’t on the sending side), but only for the
+              directories that are being synchronized.
+
+Some tests below illustrate how rsync works::
+
+    $ mkdir tmp2
+    ~$ cd tmp2
+    ~/tmp2$ mkdir a b
+    ~/tmp2$ echo "0" > a/x
+    ~/tmp2$ rsync -zaxs --update --backup a/ b/
+    ~/tmp2$ ls a
+    x
+    ~/tmp2$ ls b
+    x
+    ~/tmp2$ rsync -zaxs --update --backup a/ b/
+    ~/tmp2$ vi b/x
+    ~/tmp2$ rsync -zaxs --update --backup a/ b/
+    ~/tmp2$ ls -lht b
+    total 1.5K
+    -rw------- 1 user user 4 Oct 13 16:27 x
+    ~/tmp2$ more b/x
+    0
+    1
+    ~/tmp2$ touch a/x
+    ~/tmp2$ rsync -zaxs --update --backup a/ b/
+    ~/tmp2$ ls b
+    x  x~
+    ~/tmp2$
+
+
+
+.. note::
+
+    We would like to add a new 3-way merge option, which would be more clever and instead of making a backup file of students modified work, would merge your changes into their file.  This is not done yet.
+
