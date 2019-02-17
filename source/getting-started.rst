@@ -112,16 +112,39 @@ Here's quick tour of the topmost toolbar in CoCalc, the **Project Toolbar**.
 
 Going from left to right:
 
+        .. _pt-cocalc:
+
     * |cocalc-logo| **Projects button** - click here to create a new project and see a list of your existing projects.
       Any text you type into the **Search for Projects** field will be used to select which projects
       are displayed. Any project with matching text in Title or Description will appear in the filtered list.
       If you have any hidden or deleted projects, a checkbox will appear to allow you to show those.
-    * Open projects - a button will appear for each project you have open.
+
+        .. _pt-projects:
+
+    * **Open projects** - a tab button will appear for each project you have open.
+
+        .. _pt-info:
+
     * |info-circle| **CoCalc** - Information about CoCalc. Includes links to tutorials, examples, lists of available languages, libraries, and packages, and real-time stats for the platform.
+
+        .. _pt-medkit:
+
     * |medkit| **Help** - **Use this button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
+
+        .. _pt-account:
+
     * **Account** - Click here to update your profile, sign out, order subscriptions, view your upgrades, add `SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets.
+
+        .. _pt-notifications:
+
     * |bell| **Notifications** - A count is displayed over the bell if there are chat updates or file edits in projects you own or collaborate on.
+
+        .. _pt-connection-status:
+
     * |wifi| **Connection Status**. The number to the right of the icon is the round-trip time for data between your computer and CoCalc.
+
+        .. _pt-fullscreen:
+
     * |expand| **Fullscreen Mode** - Clicking here will toggle fullscreen mode, in which the project and file toolbars are shown or hidden.
 
 The Files Toolbar
@@ -169,7 +192,10 @@ From left to right:
       upgrades, hide or delete the project, add a project-specific `SSH Key <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, view and add collaborators, stop and restart the project and the Sage worksheet server,
       and launch the Plain Jupyter and JupyterLab servers.
       *Hint: Adding hashtags to the description can make it easy to find a subject with the Project button if you have a large number of projects.*
-    * Open Files - a button will appear for each file you have open.
+
+       .. _ft-open-files:
+
+    * **Open Files** - a button will appear for each file you have open.
 
        .. _ft-share:
 
@@ -184,7 +210,7 @@ From left to right:
 Your CoCalc Session
 -------------------
 
-CoCalc will keep track of projects you have open and files that are open within those projects.
+CoCalc will keep track of projects you have open and files that are open fwithin those projects.
 When you return, you will see the same open projects and files.
 In addition, if you have a program running and disconnect, it will keep running, with a few
 exceptions: the program will stop if any of the following occurs:
@@ -222,6 +248,7 @@ Next steps
 
 .. |cocalc-logo| image:: img/icons/cocalc-logo.svg
     :height: 20px
+    :width: 20px
 .. |info-circle|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/info-circle.png
      :width: 16px
