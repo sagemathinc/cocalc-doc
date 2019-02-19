@@ -28,6 +28,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    :caption: Jupyter Notebook
    :maxdepth: 1
 
+   jupyter-kernel-selection
    jupyter-extension
    custom-jupyter-kernel
    fix-broken-jupyter-pdf
