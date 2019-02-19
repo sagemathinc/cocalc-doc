@@ -21,7 +21,11 @@ When you *run* a cell – which evaluates the piece of code in the cell via the 
 This combination of communicating back and forth with a kernel and adding descriptive text makes this form of document very attractive.
 
 There are many **Kernels** available, where you first have to choose which programming language you want to work with.
-A quite popular choice is `Python3`_, but there is also [SageMath], and many others.
+A quite popular choice is `Python3`_, but there is also [SageMath]_, and many others.
+
+.. note::
+
+    Make sure and double-check that you're working with :doc:`a suitable kernel <howto/jupyter-kernel-selection>` for your calculations!
 
 CoCalc Jupyter Notebook
 ==========================
