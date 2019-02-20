@@ -18,7 +18,6 @@ Explanations about how you can accomplish a certain task or run a specific examp
    external-tools
    install-python-lib
    install-r-package
-   multiple-accounts
    running-processes
    upload
    webserver

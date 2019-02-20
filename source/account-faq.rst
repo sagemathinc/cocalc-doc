@@ -1,7 +1,13 @@
+===============================
+Account FAQ, Tips & Tricks
+===============================
+
+
+
+
 .. index:: Multiple Accounts
 .. _multiple-accounts:
 
-=============================
 Multiple Accounts
 =============================
 
@@ -15,7 +21,7 @@ That approach works very well with CoCalc.
 
 
 What Can go Wrong?
-======================
+--------------------------
 
 One phenomenon is that you might be able to access some files from one account,
 but not other files from that account, even from the same browser tab!
@@ -25,7 +31,7 @@ For example, you might see the error message like "Opening ``'filename'`` public
 
 
 An Easy Fix when Things Get Weird
-========================================
+---------------------------------------------------------------
 
 Make sure you close all cocalc.com windows in a given browser,
 log out of cocalc.com entirely (Account Settings → Sign out…),
@@ -34,7 +40,7 @@ and then log in again with the account that you want to use.
 
 
 For Beginners, who wish to use more than one CoCalc account
-==============================================================
+---------------------------------------------------------------
 
 There are some easy ways to do this. For example, you might use one account in one browser, like FireFox, and the other account in a different browser, perhaps Google Chrome.
 
@@ -53,11 +59,24 @@ you can use four accounts simultaneously this way!
 
 
 For Advanced Users, who wish to use more than one CoCalc account
-===================================================================
+------------------------------------------------------------------
 
 **Google Chrome** refers to adding multiple identities as "Add a person or profile".
 Here is a link to some `Google Chrome Support Pages <https://support.google.com/chrome/answer/2364824?hl=en>`_ that discuss this.
 
 **Firefox** users can manage multiple identities via Contextual Identity Containers.
 Here is a `the Mozilla Wiki page about Containers <https://wiki.mozilla.org/Security/Contextual_Identity_Project/Containers>`_.
+
+
+
+
+
+.. _merging-accounts:
+
+Merging Accounts
+=======================
+
+Right now, we do not have a way to merge accounts and associated projects. However, adding your primary account as a collaborator for each project of the deprecated account is sufficient to have access to all projects by the primary account. Use the exact email address in the search box for collaborators to be sure to select the correct one. Then, you can access everything from your primary account, also distribute quota upgrades, etc.
+
+* `Ticket for merging accounts <https://github.com/sagemathinc/cocalc/issues/2880>`_
 

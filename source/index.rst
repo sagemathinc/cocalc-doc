@@ -38,7 +38,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    :caption: Platform
 
    project
-   account-settings
+   account
    software
    howto/index
 
