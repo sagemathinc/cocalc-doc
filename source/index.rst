@@ -52,9 +52,9 @@ Indices, references and tables
     references
     genindex
 
-* :ref:`search`
 
-.. disabled
+.. disabled (search is in the navbar and modindex makes no sense)
+   * :ref:`search`
    * :ref:`modindex`
 
 
