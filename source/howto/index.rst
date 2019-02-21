@@ -9,6 +9,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
     :maxdepth: 1
 
     connectivity-issues
+    missing-project
 
 .. toctree::
    :caption: CoCalc platform

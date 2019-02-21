@@ -1,4 +1,4 @@
-.. index:: Project Files
+.. index:: Projects; files
 .. _project_files:
 
 ==================================

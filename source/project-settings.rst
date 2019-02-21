@@ -28,7 +28,7 @@ for topics you want to return to quickly.
 
      *searching for "astro" in project title & description*
 
-.. index:: Project Upgrades
+.. index:: Projects; upgrades
 .. _project-upgrades:
 
 Project usage and quotas
