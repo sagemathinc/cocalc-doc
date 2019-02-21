@@ -1,4 +1,4 @@
-.. :index: Jupyter Extension
+.. index:: Jupyter Extension
 .. _jupyter-extensions:
 
 =============================
