@@ -62,7 +62,7 @@ Multiple Terminals in a Single Browser Tab
 Terminals open up in a :doc:`frame-editor`. This means you can use buttons at upper right to split the terminal frame vertically or horizontally. The split defaults to the middle of the frame, but the dividing line can be dragged to give more space to one of the new frames and less to the other. You can continue splitting to get even more frames in a single browser tab. Click the `x` icon at upper left to close a frame.
 
 
-.. index:: Terminal startup files
+.. index:: Terminal; startup files
 .. _terminal-startup-files:
 
 Startup files
@@ -152,7 +152,7 @@ you have to set the ``TERM`` environment variable correctly to use xterm! I.e.
 Next time you launch this terminal, or restart it via typing in ``exit`` and pressing the return-key, this setup file will be evaluated and you'll end up in the fish shell with the correct TERM environment variable set.
 
 
-.. index:: Terminal file, clean
+.. index:: Terminal; remove history
 
 Remove history from a terminal file
 -----------------------------------
