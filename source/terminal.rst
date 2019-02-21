@@ -152,4 +152,15 @@ you have to set the ``TERM`` environment variable correctly to use xterm! I.e.
 Next time you launch this terminal, or restart it via typing in ``exit`` and pressing the return-key, this setup file will be evaluated and you'll end up in the fish shell with the correct TERM environment variable set.
 
 
+.. index:: Terminal file, clean
 
+Remove history from a terminal file
+-----------------------------------
+
+Suppose you want to use a .term file, but want to remove previous history, comments, etc. In addition to deleting the contents of the .term file, you need to delete one or more hidden files. Click the little "hidden eye" icon in the upper right of the file listing to show hidden files. Then delete the hidden files that end in .term. They have the (recent) history of use of that terminal. If you delete them, then they are gone.
+
+.. image:: img/terminal/clean-terminal.png
+    :width: 75%
+    :align: center
+
+One reason this situation might arise is if you are an instructor in  a course and want to distribute a .term file to your students using the Handouts or :ref:`Assignments <create-assignment>` feature in CoCalc courses, but do not want to distribute command history that may have accumulated with the original terminal in the instructor's project.

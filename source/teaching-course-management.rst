@@ -8,6 +8,9 @@ No matter what you've added in the instructor's view of the course, the students
    :local:
    :depth: 2
 
+.. index:: Create assignment
+.. _create-assignment:
+
 Creating a new assignment
 ===============================
 
