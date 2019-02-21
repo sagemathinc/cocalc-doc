@@ -1,4 +1,5 @@
-.. :index: Sharing files
+.. index:: Sharing files
+.. index:: Publishing files
 .. _sharing-files:
 
 ==========================
