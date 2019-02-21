@@ -7,7 +7,7 @@ Recovering a Project That Was Accidentally Deleted
 
 ## I think I deleted my project! What do I do?
 
-First, relax -- there is currently (as of Feb 2019) no way for you to **permanently** delete a project in CoCalc (we do [plan to implement this](https://github.com/sagemathinc/cocalc/issues/262)). It is also almost impossible to delete data out of a project, too.
+First, relax -- there is currently (as of Feb 2019) no way for you to **permanently** delete a project in CoCalc (we do [plan to implement this](https://github.com/sagemathinc/cocalc/issues/262)). It is also almost impossible to delete data from a project, too.
 
 ## I clicked the x next to my project at the top, and now it is gone
 
