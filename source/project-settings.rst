@@ -28,6 +28,7 @@ for topics you want to return to quickly.
 
      *searching for "astro" in project title & description*
 
+.. index:: Project Upgrades
 .. _project-upgrades:
 
 Project usage and quotas
@@ -65,6 +66,8 @@ appears if the project does not have Member Hosting or Internet Access):
 .. image:: img/project-settings/before-upgrade.png
      :width: 60%
      :align: center
+
+.. _apply_project-upgrades:
 
 Adjust Quotas
 """""""""""""
