@@ -1,0 +1,76 @@
+.. index:: Projects; low memory
+.. index:: Memory; low
+.. _low-memory:
+
+==================================================
+Low Memory Problems
+==================================================
+
+How can you tell if your project is running out of memory?
+----------------------------------------------------------
+
+1. Use "top" in a terminal
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Currently the easiest way to test this is to open a terminal in your project, then type "top". Watch the processes listed there, especially the column labeled `RES`, which stands for "resident memory".
+If your project has 1,000 MB of RAM, which is the default in CoCalc, and the sum of the RES entries is close to 1,000,000, then you should definitely expect a memory allocation failure soon.
+
+You can type "M" into top to make it sort processes by memory, which will help in seeing how much is used.  You can also hit the space bar a lot to make it update frequently.  Type "q" when you are done.  If you want to kill a process in top, type "k" then the process id (PID), which is in the first column.
+
+2. Project settings
+^^^^^^^^^^^^^^^^^^^
+
+You can also look in the Settings (wrench) tab of your project under "Shared RAM", which will say how much is "currently" used.  This is only updated once every 30 seconds though, and may not show spikes in attempted memory allocation.
+
+3. Use "smem -ntk" in a terminal
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This command gives a useful breakdown of memory usage.
+
+You may be able to work around a low-memory situation temporarily by killing selected processes or restarting your project.
+
+But if you're hitting memory issues and just want more space, `upgrade your project <https://cocalc.com/settings/billing?session=default>`_.
+
+The subscription are `listed here <https://cocalc.com/policies/pricing.html>`_. For example, for $14/month, you can upgrade memory from 1 GB to 5 GB, and have a **lot** more elbow room!  If you're confused or have questions about upgrading, just ask at help@cocalc.com.
+
+
+OOM: out-of-memory events
+-------------------------
+
+In case the sum of all memory usages of your project's processes exceeds the allowed quota or hits the limit of the host machine, the Linux kernel will switch into "survival mode" and attempt to get rid of large processes. The selection is rather random, and will be recorded as part of the memory quota management of your project. In case this happens, the only information is about *how many* processes were killed -- not which one in particular.
+
+Usually this means you are running too many processes (too many worksheets, notebooks, etc.) at the same time, or you're running a single calculation that is using up too much memory (e.g. a large list, array or matrix, a heavy for-loop that appends data, etc.). Please check your code to understand why this is happening.
+
+Besides that, for Jupyter notebooks you have to use the :ref:`Halt button <jupyter-halt>` to close and terminate the kernel when you are finished working with a notebook. Just closing the tab does not stop it from running and it continues to be active in the background.
+
+Software specific
+-----------------
+
+Grading Jupyter Notebooks
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In case you're grading a bunch of Jupyter Notebooks, use the "Close and Halt" button to not only hide the worksheet, but also terminate the associated R session. Also, avoid opening many of them at once in the same project!
+
+Matplotlib
+^^^^^^^^^^
+
+When you produce many graphics in a row and use the usual *pyplot* API, the intermediate graphics are not cleaned up. Run the following to clear up the memory::
+
+   import matplotlib.pyplot as plt
+   plt.close('all')
+
+RSTAN
+^^^^^
+
+In case you're using *rstan* in R, you can try to switch the C++ compiler to clang++. Run the following in a cell to create appropriate config files in your project::
+
+    dir.create("~/.R", showWarnings = FALSE)
+    cat("CXX = clang++",
+        "CXXFLAGS = -g0 -Os -march=native -mtune=native",
+        file = "~/.R/Makevars",
+        sep = "\n")
+    Sys.setenv(R_MAKEVARS_USER = normalizePath("~/.R/Makevars"))
+
+
+Acknowledgment: `comment to CoCalc issue 2337 <https://github.com/sagemathinc/cocalc/issues/2337#issuecomment-355637033>`_ by @bgoodri.
+

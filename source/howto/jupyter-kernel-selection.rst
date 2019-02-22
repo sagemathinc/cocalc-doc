@@ -1,4 +1,4 @@
-.. index:: Jupyter; Kernel Selection
+.. index:: Jupyter Notebooks; kernel selection
 .. index:: Kernel (Jupyter)
 .. _jupyter-change-kernel:
 

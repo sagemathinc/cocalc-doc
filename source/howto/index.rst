@@ -9,7 +9,9 @@ Explanations about how you can accomplish a certain task or run a specific examp
     :maxdepth: 1
 
     connectivity-issues
+    low-memory
     missing-project
+    slow-worksheet
 
 .. toctree::
    :caption: CoCalc platform
