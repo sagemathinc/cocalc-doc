@@ -13,7 +13,7 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 watch: html
-	while inotifywait -e close_write,moved_to,create source; do make html; done
+	while inotifywait -re close_write,moved_to,create source; do make html; done
 
 .PHONY: help Makefile watch
 
