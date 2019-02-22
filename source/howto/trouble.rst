@@ -5,7 +5,7 @@ Troubleshooting
 ========================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    connectivity-issues.rst
    low-memory.rst
