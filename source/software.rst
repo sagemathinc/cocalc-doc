@@ -55,8 +55,8 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 
 - Python:
-    - [pygame 1.9.4](https://www.pygame.org/wiki/GettingStarted)  -- open an :doc:`../x11` environment and use the :doc:`../terminal` on the left to launch it
-    - [qiskit-0.7.3](https://qiskit.org/)
+    - `pygame 1.9.4 <https://www.pygame.org/wiki/GettingStarted>`_  -- open an :doc:`../x11` environment and use the :doc:`../terminal` on the left to launch it
+    - `qiskit-0.7.3 <https://qiskit.org/>`_
     - ``pip2`` and ``pip3`` 19.0.3
 
 - Fixing an inconsistency with nbgrader in Classical Jupyter
