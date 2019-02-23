@@ -44,6 +44,25 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
    software/software-updates-2018
 
 
+
+
+.. _update-2019-02-23:
+
+2019-02-23
+----------------------
+
+- Sage Development Version 8.7.beta4
+
+
+- Python:
+    - [pygame 1.9.4](https://www.pygame.org/wiki/GettingStarted)  -- open an :doc:`../x11` environment and use the :doc:`../terminal` on the left to launch it
+    - [qiskit-0.7.3](https://qiskit.org/)
+    - ``pip2`` and ``pip3`` 19.0.3
+
+- Fixing an inconsistency with nbgrader in Classical Jupyter
+
+
+
 .. _update-2019-02-16:
 
 2019-02-16
