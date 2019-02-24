@@ -11,3 +11,4 @@ Troubleshooting
    low-memory.rst
    missing-project.rst
    slow-worksheet.rst
+   jupyter-kernel-terminated

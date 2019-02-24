@@ -414,6 +414,11 @@ CoCalc by default provides an interface to Jupyter notebooks that has been rewri
 The "Project Settings" page offers two ways to run the Classical Jupyter server code, shown below.
 For more information and some important caveats, see :doc:`Classical versus CoCalc <jupyter>`.
 
+.. index:: Jupyter, plain server
+.. index:: Plain Jupyter Server
+.. _plain-jupyter-server:
+
+
 Plain Jupyter server
 """"""""""""""""""""
 
@@ -422,6 +427,9 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
 .. image:: img/project-settings/jupyter-server-a.png
      :width: 70%
      :align: center
+
+.. index:: JupyterLab Server
+.. _jupyterlab-server:
 
 JupyterLab server
 """""""""""""""""
