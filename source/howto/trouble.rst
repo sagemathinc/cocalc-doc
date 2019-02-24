@@ -8,7 +8,7 @@ Troubleshooting
    :maxdepth: 1
 
    connectivity-issues.rst
-   low-memory.rst
-   missing-project.rst
-   slow-worksheet.rst
    jupyter-kernel-terminated
+   low-memory.rst
+   slow-worksheet.rst
+   missing-project.rst
