@@ -97,14 +97,16 @@ You can also run a JupyterLab server by clicking on the "JupyterLab Server" link
 Tips and Tricks
 =====================
 
-Preserving Memory
--------------------
+Use the Halt Button to Preserve Memory
+---------------------------------------
 
 Each running Jupyter Notebook spawns a session in your project.
 This **uses up memory**, which could cause troubles running all your processes in your project.
 
-You can either *restart* the kernel to clean up its current memory (i.e. all variables are deleted), or if you've finished working on that notebook, click the ``[ Halt ]`` button to stop the kernel and close the notebook.
+You can either *restart* the kernel to clean up its current memory (i.e. all variables are deleted), or if you've finished working on that notebook, click the ``Halt`` button to stop the kernel and close the notebook.
 
+.. image:: img/jupyter/jupyter-halt-button.png
+    :width: 100%
 
 
 .. _Cocalc Jupyter Notebook: http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html

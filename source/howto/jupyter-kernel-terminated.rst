@@ -15,7 +15,7 @@ Is it caused by using up too much memory?
 
 Jupyter kernels terminating, and calculations failing that previously worked, can be a sign that your project is running low on memory.
 
-Currently in CoCalc, if you open several Jupyter notebooks, they just sit there using memory. You have to **select "Close and Halt" in the File menu** of Jupyter, or explicitly kill them with `top`, or restart your project in order for them to go away.  This can be a significant problem if you are grading a dozens of assignments.  You can see the cpu and memory usage of a Jupyter notebook in the upper right.
+Currently in CoCalc, if you open several Jupyter notebooks, they just sit there using memory. You have to explicitly :ref:`halt running notebooks <jupyter-halt>`, or kill them with ``top``, or restart your project in order for them to go away.  This can be a significant problem if you are grading a dozens of assignments.  You can see the cpu and memory usage of a Jupyter notebook in the upper right.
 
 See :ref:`Low Memory Problems <low-memory>` for more information on how to detect and deal with low-memory situations.
 
