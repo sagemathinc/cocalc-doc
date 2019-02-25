@@ -18,6 +18,6 @@ At any time, you can visit https://cocalc.com/settings/upgrades to see exactly h
 
 If you used up your upgrades, e.g., you are often using 3 or 4 projects, then you can always buy multiple subscription and you'll get more upgrades as a result.
 
-**In case you're teaching a course and bought a course package**: please read [Professor pays](prof-pay)
+**In case you're teaching a course and bought a course package**: please read :ref:`inst-pays`.
 
-If this doesn't completely answer your question, please don't hesitate to create a support request or email help@sagemath.com.
+If this doesn't completely answer your question, please don't hesitate to create a support request or email help@cocalc.com.

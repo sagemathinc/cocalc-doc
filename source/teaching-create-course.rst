@@ -107,7 +107,7 @@ Your course page will now look like this
 * The **! Free** warning next to each student shows that they are running this course on free servers.
   It is **strongly** recommended that you upgrade this to members-only servers for your students. 
   You can also require in the configuration page that your students pay a small one-time fee to upgrade their projects (see below).
-  Read more about how `how to pay for a course <https://github.com/sagemathinc/cocalc/wiki/prof-pay>`_ in the CoCalc Wiki.
+
 
 What do the students get?
 --------------------------
