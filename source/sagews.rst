@@ -22,14 +22,6 @@ Sage Worksheets
 * `Sage Worksheet UI and Help <https://github.com/sagemathinc/cocalc/wiki/sagews>`_
 * `Custom "Mode Commands" in Sage Worksheets <https://github.com/sagemathinc/cocalc/wiki/sagews-custom-modes>`_
 
-SageMath specific
--------------------
-
-* **Quickstart:** read the `documentation <https://doc.sagemath.org/html/en/>`_, in particular the `Tutorial <https://doc.sagemath.org/html/en/tutorial/index.html>`_.
-* `The Top Mathematical Syntax Errors in Sage <https://github.com/sagemathinc/cocalc/wiki/MathematicalSyntaxErrors>`_
-* `I have a question about SageMath <https://github.com/sagemathinc/cocalc/wiki/SageQuestion>`_ -- how to get help working with Sage
-* `Sage Bugreport <https://github.com/sagemathinc/cocalc/wiki/SageBug>`_ -- I am using Sage and think I have found a bug
-
 
 Conversion utilities
 ----------------------
@@ -39,6 +31,15 @@ Conversion utilities
 * Run ``smc-sagews2pdf --help`` in a :doc:`./terminal` for more information about converting to PDF
 * Similarly, ``smc-sagews2ipynb`` is a command-line utility to convert to ``*.ipynb``.
 
+SageMath specific
+====================
+
+Items relating strictly to SageMath, whether or not you are using CoCalc.
+
+* **Quickstart:** read the `documentation <https://doc.sagemath.org/html/en/>`_, in particular the `Tutorial <https://doc.sagemath.org/html/en/tutorial/index.html>`_.
+* `The Top Mathematical Syntax Errors in Sage <https://github.com/sagemathinc/cocalc/wiki/MathematicalSyntaxErrors>`_
+* :ref:`Questions about Sage <sage-question>` -- how to get help working with Sage.
+* `Sage Bugreport <https://github.com/sagemathinc/cocalc/wiki/SageBug>`_ -- I am using Sage and think I have found a bug
 
 Howto
 ==================

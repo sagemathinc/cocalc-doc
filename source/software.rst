@@ -8,6 +8,10 @@ The following software is used by CoCalc under the hood.
 It's either installed directly or slightly modified to fit into the infrastructure.
 Besides that, there is a `more detailed and fairly up-to-date list <https://cocalc.com/doc/software.html>`_ available.
 
+.. index::
+   single: SageMath
+   see: Sage; SageMath
+
 * `SageMath`_ – Sage is an open-source mathematics software system. It is the patron for CoCalc's former name "SageMathCloud".
    * Inside Sage, there are `a lot of components <http://sagemath.org/links-components.html>`_ bundled. Note, they maybe replace existing system-wide software like Python libraries and R. (i.e. there is a difference between ``sage -R`` vs. ``R``, ``sage -ipython`` vs. ``ipython``/``ipython3`` and of course, ``sage -python`` vs. ``python``/``python3``.)
 

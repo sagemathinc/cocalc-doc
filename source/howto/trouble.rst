@@ -10,5 +10,6 @@ Troubleshooting
    connectivity-issues.rst
    jupyter-kernel-terminated
    low-memory.rst
+   sage-question.rst
    slow-worksheet.rst
    missing-project.rst
