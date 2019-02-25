@@ -163,3 +163,70 @@ If you need assistance with a piece of coursework you can contact the using the 
 Just click on the speech-bubble icon button located on the upper right hand corner of the piece of work you need help with and start typing straight away.
 
 Your lecturer will be notified when this happens.
+
+
+.. _student-pay-for-course:
+
+Our teacher requires us students to pay. How?
+=====================================================
+
+**Background:** as an instructor, :ref:`you can require students to pay <course-students-pay>` for the course.
+
+As a student, you can/have to pay a one-time fee of $14 (for the whole course)
+to move your student project to an improved "Member Hosting" server and enable "Internet Access"
+(see :doc:`upgrade-guide`).
+This is shown in the screenshots below.
+
+**To use the option for the one-time fee, you must open your student project for the course you are taking.**
+
+Student projects are named with the student name followed by the course title,
+like this: ``Jane Doe - MATH 101``.
+If you don't see your course project listed under ``Projects`` (click the tab at the very top left) when you login to CoCalc,
+it's possible that the instructor created your project using a different login
+(i.e. different email or name) than you are using,
+or that one of you misspelled your email address ,
+or that you have not been added to the student list yet.
+
+The teacher sets a deadline for course payment by the student.
+The deadline visible below the top row when you open the project.
+
+In the warning you see below, **click on the "pay the course fee" link**.
+If you do NOT see this box, it is likely that your instructor has not checked the appropriate boxes in their course configuration file.
+Please let your instructor know that you're unable to see the student pay option.
+
+
+.. image:: img/student/cocalc-student-pays-1.png
+     :width: 75%
+     :align: center
+
+
+Enter your credit card details:
+
+
+.. image:: img/student/cocalc-student-pays-2.png
+     :width: 75%
+     :align: center
+
+Click the confirmation button to pay:
+
+
+.. image:: img/student/cocalc-student-pays-3.png
+     :width: 75%
+     :align: center
+
+If the course already started and the deadline passed,
+you are required to pay before you can access files in the student project.
+In that case, the dialog looks similar to the one below:
+
+.. image:: img/student/cocalc-student-pays-too-late.png
+     :width: 75%
+     :align: center
+
+
+.. note::
+
+    If you already have a subscription to CoCalc and have available upgrades,
+    it is not necessary to pay the $14 fee.
+    You can simply apply "Member Hosting" and "Internet Access" upgrades to your student project for the course in question.
+
+

@@ -18,16 +18,19 @@ Log into CoCalc and click on the **Projects** icon in the top left hand corner o
 
 .. image:: img/teaching/projects-cc.png
     :width: 100px
+    :align: center
 
 Click on **Create New Project**, fill out the **Title** and **Description** and click on **Create Project**
 
 .. image:: img/teaching/create_new_course_project.png
      :width: 100%
+     :align: center
 
 The new project will appear at the top of the project list. Click on its  title to open it.
 
 .. image:: img/teaching/course_list.png
      :width: 100%
+     :align: center
 
 .. _teaching-add-ta:
 
@@ -42,6 +45,7 @@ Do **not** add any students of yours as project collaborators!
 
 .. image:: img/teaching/collaborators.png
      :width: 50%
+     :align: center
 
 If the email address you add as a collaborator is not associated with a CoCalc account,
 an email will be sent to that address with instructions how to join.
@@ -58,11 +62,13 @@ Click on **Manage a Course** to create the course file.
 
 .. image:: img/teaching/new_managecourse.png
      :width: 100%
+     :align: center
 
 If you go to the root of the course project directory, you will see that a new file has been created with the extension **.course**. This is the course management file and most aspects of your course are controlled by it.
 
 .. image:: img/teaching/course_file.png
      :width: 100%
+     :align: center
 
 Adding students to the course
 --------------------------------
@@ -73,6 +79,7 @@ In the **Students** tab, add a comma separated list of students' emails addresse
 
 .. image:: img/teaching/student_list.png
      :width: 100%
+     :align: center
 
 If you have a particular large class, the above method may take a very long time. If you have your students' email addresses in an Excel spreadsheet (or Google Sheet) you can copy and paste them directly in the **Add student** box.
 
@@ -83,6 +90,7 @@ Next, the student projects will be created. Please be patient until all students
 
 .. image:: img/teaching/student_list2.png
      :width: 100%
+     :align: center
 
 All added students will be invited to join your course by email.
 Any student who does not have an account on CoCalc will be invited to create one.
@@ -91,6 +99,7 @@ Your course page will now look like this
 
 .. image:: img/teaching/student_list3.png
      :width: 100%
+     :align: center
 
 * Email addresses that are followed by **(invited)** do not have a CoCalc account yet.
   **(invited)** will disappear as soon as they sign up.
@@ -107,15 +116,25 @@ On being invited to a course, each student will have a project created for them 
 
 The student's course project will have its own individual quotas set for disk storage, internet access and so on (e.g. students get 1GB of RAM). These quotas will be the standard set of quotas that everybody gets with free CoCalc projects.
 
-Upgrading students
-------------------
+You can learn more about upgrades and quotas in the :doc:`upgrade-guide`.
+
+
+.. _course-upgrading-students:
+
+Upgrading student projects
+----------------------------
+
 
 The **Configuration** tab of a **.course** file allows you to upgrade students' course projects in two ways, indicated by the checkboxes in the image below:
 
 .. image:: img/teaching/upgrading_students.png
      :width: 75%
+     :align: center
 
-Upgrading students (option 1): Students pay
+
+.. _course-students-pay:
+
+(Option 1): Students pay for upgrades
 -------------------------------------------------
 
 You can request that the students pay a one-time fee of $14 for four months.
@@ -125,31 +144,66 @@ If you click "Students will pay for this course", another checkbox appears, "Req
 
 .. image:: img/teaching/students-pay-2.png
      :width: 50%
+     :align: center
 
 
 When you check that checkbox, a calendar form opens. The default is to require students to pay within one week, but you can change the deadline. Select a different date if you want, or leave it at the default, and click "Close".
 
 .. image:: img/teaching/students-pay-3.png
      :width: 50%
+     :align: center
 
-See the `CoCalc wiki page about the student pay option <https://github.com/sagemathinc/cocalc/wiki/student-pay>`_ for additional details on this approach.
+To continue from the perspective of your students,
+read the :ref:`instructions for students to pay for a course <student-pay-for-course>`.
+
+
+Can we mix free and upgraded student projects?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Yes.
+Just set the due date by which the students have to pay to be at the end of the course.
+Give them the opportunity to pay for an upgrade for the first few weeks (say),
+then just unclick the student pay checkbox and thus no longer requiring them to pay at all.
+In short, whether they have to pay or not is something you can change at any time,
+they have a grace period before being required to pay,
+and you can change any of these settings at any time.
+
+
+
 
 .. index:: Upgrading students, institution pays
 .. _inst-pays:
 
-Upgrading students (option 2): Teacher or institution pays
+(Option 2): Teacher or institution pays for upgrades
 ----------------------------------------------------------
 
-Alternatively, you can pay on your students' behalf.
+
+Assuming you are an instructor and want to setup everything for a course,
+here are the rough steps to **pay for upgrading your students' projects**.
+
+**Background:** The course purchase option provides you with upgrades for *your account*,
+but you then distribute these upgrades to all student projects in your course
+(these projects are automatically created for the course).
+The students then fully benefit from using these upgraded projects.
+
+In your account settings, next to the "upgrades" page,
+there is a tab `"Subscriptions/Course packages" <https://cocalc.com/settings/billing?session=>`_.
+In that tab, enter your payment information and purchase one or more course packages.
+`We can help you <mailto:help@cocalc.com>`_ if you are not sure which one to buy (it depends on the size of the class, your needs, etc) or if you need us to process a format purchase order (PO), etc.
+
+Once you purchase the course upgrades,
+go to the project where you created the course and **open the .course file**.
+In that interface, where you can add the students, etc. there is also **a tab called "Configurations"** (next to "Students", "Assignments", etc.).
+
 Current pricing is available at <https://cocalc.com/policies/pricing.html> which at the time of writing ranged from a **total** of about $7 to $14 per student for a 4 month course.
 The price per student varies according to the size of the student cohort. You get significant per-student discounts when you buy in bulk.
 
-
-... and after selecting that `you/your institution pays <https://github.com/sagemathinc/cocalc/wiki/prof-pay>`_,
+... and after selecting that "you/your institution pays",
 you can proceed to distribute the upgrades of the course package here:
 
 .. image:: img/teaching/upgrading_students2.png
      :width: 75%
+     :align: center
 
 Clicking "Adjust upgrades..." lets you allocate any available upgrades in your account.
 
@@ -163,6 +217,7 @@ After clicking `Adjust upgrades...` as shown above, this is what the instructor 
 
 .. image:: img/teaching/inst-pay-01-no-upgr.png
      :width: 50%
+     :align: center
 
 The instructor enters the usual upgrades *per student* for Standard subscriptions:
 
@@ -174,6 +229,7 @@ The instructor enters the usual upgrades *per student* for Standard subscription
 
 .. image:: img/teaching/inst-pay-02-add-upgr.png
      :width: 50%
+     :align: center
 
 After checking that everything looks right, the instructor clicks `Apply changes`.
 
@@ -186,6 +242,7 @@ Now suppose a third student arrives after the previous upgrades have been applie
 
 .. image:: img/teaching/inst-pay-06-before3rd.png
      :width: 50%
+     :align: center
 
 What the student sees
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -196,8 +253,10 @@ First, this is what is seen if the instructor has not yet applied upgrades for t
 
 .. image:: img/teaching/inst-pay-03-student-before.png
      :width: 50%
+     :align: center
 
 Second, this is what is seen if the instructor has added typical upgrades for a Standard course. The exact amounts added will vary for different plans. For example, Basic courses include upgrades for Member Hosting and Internet Access, but not for other resources. Note in the Projects toolbar at very top, that the project is restarting. That is because upgrades were applied by the instructor moments ago.
 
 .. image:: img/teaching/inst-pay-04-student-after.png
      :width: 50%
+     :align: center
