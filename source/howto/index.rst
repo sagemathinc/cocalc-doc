@@ -5,15 +5,6 @@ Howto
 Explanations about how you can accomplish a certain task or run a specific example on CoCalc:
 
 .. toctree::
-    :caption: Troubleshooting
-    :maxdepth: 1
-
-    connectivity-issues
-    low-memory
-    missing-project
-    slow-worksheet
-
-.. toctree::
    :caption: CoCalc platform
    :maxdepth: 1
 
