@@ -40,8 +40,8 @@ To begin work on a Sage Worksheet, create a file ending with ``*.sagews``.
      *example of a Sage Worksheet*
 
 
-How to Revert/Undo Changes
-==============================
+How to Revert/Undo Changes in a Sage Worksheet
+==============================================
 
 For tiny changes, control+Z (or command+Z on a mac) will give you an instantaneous undo.
 
@@ -76,6 +76,20 @@ Backups (snapshots)
 --------------------
 
 For a list of snapshots taken by CoCalc, use the ``Backups`` button from the TimeTravel view or the Files list. Note that these backups are read-only. If you want to continue working on a file from a snapshot in Backups, you will need to copy it into a writable folder in your project.
+
+Understanding Error Messages
+============================
+
+*Question: I did xyz and now I have this huge error message! Why?*
+
+Often when SageMath encounters an error, a long error message appears. This output is called a "stack trace" and it can be very useful to experienced programmers. However, often it is enough to **look at the last line of the error message** to understand what has gone wrong.
+
+
+.. figure:: img/sagews/sagews-stacktrace.png
+     :width: 80%
+     :align: center
+
+     *making sense of error messages*
 
 Wiki resources
 ==================
