@@ -13,7 +13,7 @@ Sage Worksheets
 Introduction
 ============
 
-Sage Worksheets were developed for collaborative, notebook-style computing with `SageMath <https://www.sagemath.org>`_ on the `CoCalc <https://cocalc.com>`_ platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments, including Python 3, R, and the Bash shell. More than one language environment can be used in the same Sage Worksheet.
+Sage Worksheets were developed for collaborative, notebook-style computing with `SageMath <https://www.sagemath.org>`_ on the `CoCalc <https://cocalc.com>`_ platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments. More than one language environment can be used in the same Sage Worksheet.
 
 Note: in the CoCalc User Manual, we will generally use the term *SageMath* to refer to the `open source mathematical system <https://www.sagemath.org>`_ that runs on CoCalc and in many other environments. Elsewhwere, you may see it referred to simply as *Sage*.
 
@@ -27,11 +27,11 @@ In CoCalc, there are at least three ways to run SageMath:
 What's a Sage Worksheet?
 ==============================
 
-A Sage Worksheet is a file ending in ``.sagews`` and is subdivided into cells. Each cell has an input region and an output region, which might be 0, 1, 2, or many lines long. The input can be mathematical, in the Sage syntax, or it could be in many other formats, including `Markdown <https://daringfireball.net/projects/markdown/syntax>`_, HTML, Python 2 or 3, R, and so forth.
+A Sage Worksheet is a file ending in ``.sagews`` and is subdivided into cells. Each cell has an input region and an output region, which might be 0, 1, 2, or many lines long. The input can be mathematical, in the Sage syntax, or it could be in many other formats, including `Markdown <https://daringfireball.net/projects/markdown/syntax>`_, HTML, Python 2 or 3, and R.
 
 When you *run* a cell, by clicking ``Run`` or typing ``Shift-Enter``, the input is executed (or formatted, for text processing). The result appears in the output after the calculation is done.
 
-To begin work on a Sage Worksheet, create a file ending with ``*.sagews``.
+To begin work on a Sage Worksheet, create a file ending with ``.sagews``.
 
 .. figure:: img/sagews/sagews-example.png
      :width: 90%
@@ -86,10 +86,58 @@ Often when SageMath encounters an error, a long error message appears. This outp
 
 
 .. figure:: img/sagews/sagews-stacktrace.png
-     :width: 80%
+     :width: 100%
      :align: center
 
      *making sense of error messages*
+
+Help for Programmers
+=====================
+
+Extended Documentation
+-----------------------
+
+To see verbose documentation for language features, including commands, methods, and attributes, use the ``help()`` function.
+
+.. figure:: img/sagews/sagews-help.png
+     :width: 70%
+     :align: center
+
+     ..
+
+
+Concise Documentation
+-----------------------
+
+To see concise documentation (docstrings) for language features, attributes, append a single question mark and run the cell. This information is similar to what you get with ``help()``.
+
+.. figure:: img/sagews/sagews-1q.png
+     :width: 70%
+     :align: center
+
+     ..
+
+Source Code
+-----------------------
+
+To see source code for language features, append two question marks and run the cell.
+
+.. figure:: img/sagews/sagews-2q.png
+     :width: 70%
+     :align: center
+
+     ..
+
+Tab Completion
+-----------------------
+
+To get a hint for possible completions of a function name, method argument, etc., type the beginning of what you are looking for then press the ``[tab]`` key. This is a quick way to browse through the methods for an object.
+
+.. figure:: img/sagews/sagews-tabc.jpg
+     :width: 20%
+     :align: center
+
+     ..
 
 Wiki resources
 ==================
@@ -97,7 +145,7 @@ Wiki resources
 Sage Worksheets
 -------------------
 
-* `Sage Worksheet UI and Help <https://github.com/sagemathinc/cocalc/wiki/sagews>`_
+* A previous version of this page is at `Sage Worksheet UI and Help <https://github.com/sagemathinc/cocalc/wiki/sagews>`_
 * `Custom "Mode Commands" in Sage Worksheets <https://github.com/sagemathinc/cocalc/wiki/sagews-custom-modes>`_
 
 
@@ -129,7 +177,7 @@ Howto
 Attach Sage files to Sage Worksheets
 ---------------------------------------------------------------
 
-**Is there a way to write functions in one worksheet, and then important them to another and use them there?**
+**Is there a way to write functions in one worksheet, and then import them to another and use them there?**
 
 Not exactly, but you can write code in a ``.sage`` file and then load it into another Sage Worksheet as illustrated at
 https://cocalc.com/share/4a5f0542-5873-4eed-a85c-a18c706e8bcd/support/2018-06-12-sage-code/?viewer=share
