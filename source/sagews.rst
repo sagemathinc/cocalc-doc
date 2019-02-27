@@ -6,15 +6,23 @@
 Sage Worksheets
 ===============
 
-Sage Worksheets were developed for collaborative, notebook-style computing with `SageMath <https://www.sagemath.org>`_ on the `CoCalc <https://cocalc.com>`_ platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments, including Python 3, R, and the Bash shell. More than one language environment can be used in the same Sage Worksheet.
-
-.. warning::
-
-    This page is work in progress
-
 .. contents::
    :local:
    :depth: 2
+
+Introduction
+============
+
+Sage Worksheets were developed for collaborative, notebook-style computing with `SageMath <https://www.sagemath.org>`_ on the `CoCalc <https://cocalc.com>`_ platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments, including Python 3, R, and the Bash shell. More than one language environment can be used in the same Sage Worksheet.
+
+Note: in the CoCalc User Manual, we will generally use the term *SageMath* to refer to the `open source mathematical system <https://www.sagemath.org>`_ that runs on CoCalc and in many other environments. Elsewhwere, you may see it referred to simply as *Sage*.
+
+In CoCalc, there are at least three ways to run SageMath:
+
+* in a Sage Worksheet
+* in a Jupyter Notebook
+* from the command line in a terminal
+
 
 What's a Sage Worksheet?
 ==============================
@@ -29,7 +37,7 @@ To begin work on a Sage Worksheet, create a file ending with ``*.sagews``.
      :width: 90%
      :align: center
 
-     *Example of a Sage Worksheet*
+     *example of a Sage Worksheet*
 
 
 How to Revert/Undo Changes
@@ -41,23 +49,33 @@ When it comes to undoing larger changes, one of the most useful things about CoC
 
 .. index:: TimeTravel; in Sage Worksheet
 
-From any worksheet, click on Timetravel.
+TimeTravel
+----------
 
-.. image:: img/sagews/sagews-example-tt.png
+
+From any worksheet, click on TimeTravel.
+
+.. figure:: img/sagews/sagews-example-tt.png
      :width: 30%
      :align: center
+
+     ..
 
 
 Using the slider, look at all the versions. Find the revision that you want and then click "Revert live version to this."
 
 .. figure:: img/sagews/sagews-timetravel-a.png
      :width: 100%
+     :align: center
 
      *looking at a Sage Worksheet with TimeTravel*
 
 .. index:: Backups; in TimeTravel view
 
-For a list of snapshots taken by CoCalc, use the ``Backups`` button from the TimeTravel view or the Files list. Note that these backups are read-only. If you want to continue working on a file from a snapshot in Backups, you will need to copy into a writable folder in your project.
+Backups (snapshots)
+--------------------
+
+For a list of snapshots taken by CoCalc, use the ``Backups`` button from the TimeTravel view or the Files list. Note that these backups are read-only. If you want to continue working on a file from a snapshot in Backups, you will need to copy it into a writable folder in your project.
 
 Wiki resources
 ==================
