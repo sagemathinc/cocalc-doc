@@ -32,6 +32,33 @@ To begin work on a Sage Worksheet, create a file ending with ``*.sagews``.
      *Example of a Sage Worksheet*
 
 
+How to Revert/Undo Changes
+==============================
+
+For tiny changes, control+Z (or command+Z on a mac) will give you an instantaneous undo.
+
+When it comes to undoing larger changes, one of the most useful things about CoCalc is that it will keep all versions of all of your files. This means that you can revert back to previous versions easily.
+
+.. index:: TimeTravel; in Sage Worksheet
+
+From any worksheet, click on Timetravel.
+
+.. image:: img/sagews/sagews-example-tt.png
+     :width: 30%
+     :align: center
+
+
+Using the slider, look at all the versions. Find the revision that you want and then click "Revert live version to this."
+
+.. figure:: img/sagews/sagews-timetravel-a.png
+     :width: 100%
+
+     *looking at a Sage Worksheet with TimeTravel*
+
+.. index:: Backups; in TimeTravel view
+
+For a list of snapshots taken by CoCalc, use the ``Backups`` button from the TimeTravel view or the Files list. Note that these backups are read-only. If you want to continue working on a file from a snapshot in Backups, you will need to copy into a writable folder in your project.
+
 Wiki resources
 ==================
 

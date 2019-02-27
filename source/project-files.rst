@@ -11,6 +11,7 @@ or select one or more files via the checkbox on the left to manipulate them (del
 
 
 
+.. index:: Backups; in Files list
 .. _project-snapshot:
 
 Snapshots
