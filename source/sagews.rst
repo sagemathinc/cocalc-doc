@@ -6,12 +6,31 @@
 Sage Worksheets
 ===============
 
-Create a "Sage Worksheet" file, ending with ``*.sagews``,
-in order to start working with [SageMath]_ on [CoCalc]_.
+Sage Worksheets were developed for collaborative, notebook-style computing with `SageMath <https://www.sagemath.org>`_ on the `CoCalc <https://cocalc.com>`_ platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments, including Python 3, R, and the Bash shell. More than one language environment can be used in the same Sage Worksheet.
 
 .. warning::
 
     This page is work in progress
+
+.. contents::
+   :local:
+   :depth: 2
+
+What's a Sage Worksheet?
+==============================
+
+A Sage Worksheet is a file ending in ``.sagews`` and is subdivided into cells. Each cell has an input region and an output region, which might be 0, 1, 2, or many lines long. The input can be mathematical, in the Sage syntax, or it could be in many other formats, including `Markdown <https://daringfireball.net/projects/markdown/syntax>`_, HTML, Python 2 or 3, R, and so forth.
+
+When you *run* a cell, by clicking ``Run`` or typing ``Shift-Enter``, the input is executed (or formatted, for text processing). The result appears in the output after the calculation is done.
+
+To begin work on a Sage Worksheet, create a file ending with ``*.sagews``.
+
+.. figure:: img/sagews/sagews-example.png
+     :width: 90%
+     :align: center
+
+     *Example of a Sage Worksheet*
+
 
 Wiki resources
 ==================
@@ -43,7 +62,6 @@ Items relating strictly to SageMath, whether or not you are using CoCalc.
 
 Howto
 ==================
-
 
 
 .. index:: Attach Sage files
