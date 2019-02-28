@@ -97,7 +97,7 @@ You can also run a JupyterLab server by clicking on the "JupyterLab Server" link
 Tips and Tricks
 =====================
 
-Use the Halt Button to Preserve Memory
+Use the Halt Button to Conserve Memory
 ---------------------------------------
 
 Each running Jupyter Notebook spawns a session in your project.

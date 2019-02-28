@@ -15,7 +15,7 @@ Introduction
 
 Sage Worksheets were developed for collaborative, notebook-style computing with `SageMath <https://www.sagemath.org>`_ on the `CoCalc <https://cocalc.com>`_ platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments. More than one language environment can be used in the same Sage Worksheet.
 
-Note: in the CoCalc User Manual, we will generally use the term *SageMath* to refer to the `open source mathematical system <https://www.sagemath.org>`_ that runs on CoCalc and in many other environments. Elsewhwere, you may see it referred to simply as *Sage*.
+Note: in the CoCalc User Manual, we will generally use the term *SageMath* to refer to the `open source mathematical system <https://www.sagemath.org>`_ that runs on CoCalc and in many other environments. Elsewhere, you may see it referred to simply as *Sage*.
 
 In CoCalc, there are at least three ways to run SageMath:
 
@@ -138,6 +138,18 @@ To get a hint for possible completions of a function name, method argument, etc.
      :align: center
 
      ..
+
+.. index:: Sage Worksheet; lifetime of definitions
+
+How Long are Definitions Stored in a Sage Worksheet?
+=====================================================
+
+Definitions (of variables, functions, etc.) are stored in the worksheet process and are retained until that process terminates. The worksheet process may end by itself, for example when ``Restart`` is clicked at the top of the worksheet. It is also terminated when the sage worksheet server terminates or is restarted, when the project is stopped or restarted, and when the host virtual machine restarts.
+
+Projects are stopped after some number of hours of non-interactive use (see :ref:`Idle Timeout <idle-timeout>`). If your project is on a free server, it will be stopped whenever the Google pre-emptible server instance restarts, typically once per 24 hours.
+
+SageMath built-in functions ``save``, ``load``, ``save_session`` and ``load_session`` are useful for saving and restoring state. See `Loading and saving sessions and listing all variables <http://doc.sagemath.org/html/en/reference/misc/sage/misc/session.html>`_.
+
 
 Wiki resources
 ==================
