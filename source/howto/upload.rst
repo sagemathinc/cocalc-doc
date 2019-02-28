@@ -5,11 +5,22 @@
 Upload Files
 ======================
 
-There are at least three ways how to upload a file from an external source to a CoCalc project.
+There several ways to upload a file from an external source to a CoCalc project.
 
 .. contents::
    :local:
    :depth: 1
+
+Upload Button in Files Tab
+===========================
+
+In the ``Files`` tab, there is a button for upload at upper right.
+
+.. figure:: img/files-upload.png
+     :width: 100%
+     :align: center
+
+     upload button in Files tab
 
 
 Drag and drop
