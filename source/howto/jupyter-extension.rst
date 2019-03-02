@@ -34,3 +34,5 @@ To issue these commands, first open up a :doc:`../terminal`. Then run::
     jupyter contrib nbextension install --user
     jupyter nbextensions_configurator enable --user
     jupyter nbextension enable equation-numbering/main
+
+Related: :doc:`install-python-lib` and  :doc:`install-r-package`
