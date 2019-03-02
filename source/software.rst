@@ -49,6 +49,37 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 
 
+.. _update-2019-03-02:
+
+2019-03-02
+--------------------------------
+
+* Software:
+   - Dr. Racket 7.2.0 -- https://racket-lang.org/ (Open/create an :doc:`../x11` file and run ``drracket`` in the Terminal)
+   - ``data`` command-line utility to work with https://datahub.io/ -- a service like GitHub but for data and also ``datapackage`` Python 3 library (`datapackage demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/datahub/datahub.ipynb?viewer=share>`_)
+   - ``reveal-md`` 3.0.1
+   - various linux package updates, e.g. ``qgis/libqgis`` 3.6.0, ``postgresql`` 11.2, ``git-lfs`` 2.7.0, ...
+
+* Python 3:
+    * new ``mlxtend 0.15``: `Mlxtend (machine learning extensions) <http://rasbt.github.io/mlxtend/>`_ *is a Python library of useful tools for the day-to-day data science tasks.* (also available in Anaconda 5), `mlxtend demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/mlxtend.ipynb?viewer=share>`_
+    * ``distributed 1.26``
+    * ``pefile-2018.8.8``  -- https://github.com/erocarrera/pefile
+    * ``Cython-0.29.6``
+    * ``turicreate-5.3.1`` -- https://github.com/apple/turicreate
+    * ``pyvis-0.1.5.0`` -- https://pyvis.readthedocs.io/en/latest
+    * ``scikit-learn-0.20.3`` -- https://scikit-learn.org/stable/
+    * ``pydicom 1.2.2`` -- https://pydicom.github.io/pydicom/stable/index.html
+    * ``pdfkit-0.6.1``
+
+* Python 2:
+    - ``pefile-2018.8.8`` -- https://github.com/erocarrera/pefile
+    - ``turicreate-5.3.1`` -- https://github.com/apple/turicreate (our MXNet is slightly too new)
+
+* Classical Jupyter: ``hide_code`` extension -- https://github.com/kirbs-/hide_code
+
+* SageMath Development Version 8.7.beta5
+
+
 
 .. _update-2019-02-23:
 
