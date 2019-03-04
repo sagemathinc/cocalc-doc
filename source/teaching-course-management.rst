@@ -8,11 +8,36 @@ No matter what you've added in the instructor's view of the course, the students
    :local:
    :depth: 2
 
+.. index:: Create Handout
+.. _create-handout:
+
+Create a new Handout
+===============================
+
+A handout consists of a folder that contains one or more files to be distributed to your students.
+
+Start off by creating a folder called **Handouts** in the root directory of your course project. Within this folder create a subfolder called, say, **Handout1** and populate it with one or more files for the handout. These files can be anything - text, Markdown, code, pdf, and may contain subfolders.
+
+Open the **.course** file and click on the **Handouts** tab
+
+.. image:: img/teaching/handout-course.png
+     :width: 100%
+
+Enter **Handout** in the search box on the right hand of the screen.
+
+The system will look for any folders with **Handout1** in their path name and  return a set of options. Highlight the one you want and click on **Add selected handout**.
+
+.. image:: img/teaching/find-handout.png
+     :width: 100%
+
+The new handout will be added to the list of handouts available for the course.
+
 .. index:: Create assignment
 .. _create-assignment:
 
-Creating a new assignment
+Create a new assignment
 ===============================
+
 
 An assignment consists of a folder that contains one or more files to be distributed to your students.
 
