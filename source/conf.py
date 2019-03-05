@@ -39,6 +39,7 @@ extensions = [
     'sphinx.ext.githubpages',
     # 'edit_on_github',  # in _ext, but disabled/removed!
     'sphinx_sitemap',  # https://pypi.org/project/sphinx-sitemap/
+    'm2r', # pip3 install m2r
 ]
 
 html_baseurl = 'https://doc.cocalc.com/'
@@ -52,13 +53,6 @@ edit_on_github_branch = 'master'
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-
-# pip3 install -U recommonmark
-from recommonmark.parser import CommonMarkParser
-
-source_parsers = {
-    '.md': CommonMarkParser,
-}
 
 source_suffix = ['.rst', '.md']
 
@@ -89,7 +83,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['**/_*']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'

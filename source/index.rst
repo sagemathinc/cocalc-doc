@@ -42,6 +42,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    software
    howto/index
    howto/trouble
+   api/index.rst
 
 Indices, references and tables
 ==============================
