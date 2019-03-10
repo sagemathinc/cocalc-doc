@@ -3,7 +3,6 @@
 # depends on api.json, which is exported via scripts/export-api-doc.ts in cocalc
 
 import json
-from pprint import pprint
 from os.path import join
 from os import makedirs
 
