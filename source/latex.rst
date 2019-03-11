@@ -386,7 +386,10 @@ due to security concerns. You'll see an error like that::
     could not be found.
     Maybe you need to enable the shell-escape feature? [...]
 
-You have to select the **PdfLaTeX (shell-escape)** engine from the selector in the :doc:`build panel <../frame-editor>` or modify the build command maually.
+.. note::
+
+    You have to select the **PdfLaTeX (shell-escape)** engine from the selector in the
+    :doc:`build panel <../frame-editor>` or modify the build command maually.
 
 As a result, Gnuplot will be run, the error vanishes, it creates the necessary temporary files for the PGF plot, and the PDF will show the plot.
 You can download the example :download:`gnuplot.tex <files/gnuplot.tex>` and see it in a screenshot below:
