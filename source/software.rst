@@ -49,6 +49,23 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 
 
+.. _update-2019-03-11:
+
+2019-03-11
+------------------------
+
+* Python:
+    * ``tzwhere-3.0.3`` (new for py2 and py3) -- https://github.com/pegler/pytzwhere
+    * ``typing-extensions-3.7.2`` (Py3) for `MyPy <http://mypy-lang.org/>`_
+
+* Software:
+    * ``ts-node`` to run TypeScript files from the command line more easily
+    * updating ``npm`` to version 6.9.0
+
+* Disabling jupyter lab drawio, because it didn't build correctly
+
+
+
 .. _update-2019-03-02:
 
 2019-03-02
