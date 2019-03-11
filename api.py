@@ -31,6 +31,8 @@ with open(join(outdir, 'index.md'), 'w') as out:
 
 # index
 index_tmpl = '''
+.. index:: API
+
 ====================
 API
 ====================
