@@ -358,6 +358,42 @@ The main thing to remember when using PSTricks is to set ``Engine`` in the CoCal
     :align: center
 
 
+.. index:: LaTeX Editor; Gnuplot
+.. index:: LaTeX Editor; shell-escape
+
+Enable ``shell-escape`` and plot using Gnuplot
+------------------------------------------------
+
+There are situations where the LaTeX document calls certain utilities to accomplish a task.
+One example is creating plots via `Gnuplot <http://www.gnuplot.info/>`_ right inside the document.
+
+For example, a snippet of tex code could look like this::
+
+    \begin{figure}
+      \begin{tikzpicture}
+         \begin{axis}[ ... ]
+           \addplot [...] gnuplot [raw gnuplot] {plot [-0.015:0.015] cos(380*x);};
+         \end{axis}
+      \end{tikzpicture}
+    \end{figure}
+
+In the middle, Gnuplot runs ``plot [-0.015:0.015] cos(380*x);`` to plot a cos function.
+
+The *problem* is that by default the PDF LaTeX Engine doesn't allow to run arbitrary commands
+due to security concerns. You'll see an error like that::
+
+    Package pgfplots Error: Sorry, the gnuplot-result file 'gnuplot.pgf-plot.table'
+    could not be found.
+    Maybe you need to enable the shell-escape feature? [...]
+
+You have to select the **PdfLaTeX (shell-escape)** engine from the selector in the :doc:`build panel <../frame-editor>` or modify the build command maually.
+
+As a result, Gnuplot will be run, the error vanishes, it creates the necessary temporary files for the PGF plot, and the PDF will show the plot.
+You can download the example :download:`gnuplot.tex <files/gnuplot.tex>` and see it in a screenshot below:
+
+.. image:: img/latex-gnuplot-shell-escape.png
+    :width: 100%
+
 
 
 .. index:: Asymptote
@@ -397,6 +433,8 @@ More information: `Asymptote LaTeX Usage <http://asymptote.sourceforge.net/doc/L
     :width: 100%
 
 
+
+
 .. index:: texmf
 
 Setup ``texmf`` in a project?
@@ -417,6 +455,8 @@ Otherwise, you might have to run run ``texhash ~/texmf`` in a terminal or the li
 Note: the ``~`` stands for the ``HOME`` directory, which is the root directory you see in the "Files"-listing.
 You can click the home icon to jump into the home directory.
 ``texmf`` is a subdirectory right there.
+
+
 
 Is there a way to turn off automatic build and PDF preview while I'm working on sub documents?
 -----------------------------------------------------------------------------------------------
