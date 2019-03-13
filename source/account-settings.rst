@@ -3,18 +3,37 @@
 Account Tab
 *****************
 
+The Account Tab is where you manage settings, subscriptions, and resources across your projects. There are 5 tabs under under Account Tab.
+
+.. figure:: img/account-settings/account-subtabs.png
+     :width: 80%
+     :align: center
+
+     ..
+
 .. index:: Account Tab
 
 .. contents::
    :local:
    :depth: 1
 
+
 ============
 Preferences
 ============
 
+.. index:: Account Settings
+.. _account-settings:
+
+
 Account settings
 ----------------
+
+.. figure:: img/account-settings/account-settings.png
+     :width: 80%
+     :align: center
+
+     ..
 
 First and Last Name
 ^^^^^^^^^^^^^^^^^^^^
@@ -31,8 +50,12 @@ Password
 API key
 ^^^^^^^^
 
+.. index:: Sign out of CoCalc, Log out of CoCalc
+
 Sign out
 ^^^^^^^^^^
+
+This is where you log out of your CoCalc session.
 
 Linked accounts
 ^^^^^^^^^^^^^^^^^
@@ -53,6 +76,18 @@ Terminal settings
 =============================
 Subscriptions/Course Packages
 =============================
+
+.. figure:: img/account-settings/subscr-select.png
+     :width: 80%
+     :align: center
+
+     *order form displays if no subscriptions are active*
+
+.. figure:: img/account-settings/subscr-display.png
+     :width: 80%
+     :align: center
+
+     *active subscriptions, if present, are displayed*
 
 Payment methods
 ----------------
