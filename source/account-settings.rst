@@ -1,65 +1,86 @@
-.. index:: Account Settings
 
-==============================
-Account Settings
-==============================
+*****************
+Account Tab
+*****************
 
-All about the **Account** tab.
+.. index:: Account Tab
 
 .. contents::
    :local:
    :depth: 1
 
-***********
+============
 Preferences
-***********
+============
 
 Account settings
-================
+----------------
+
+First and Last Name
+^^^^^^^^^^^^^^^^^^^^
+
+Email address
+^^^^^^^^^^^^^^^
+
+Newsletter
+^^^^^^^^^^^^^
+
+Password
+^^^^^^^^^^
+
+API key
+^^^^^^^^
+
+Sign out
+^^^^^^^^^^
+
+Linked accounts
+^^^^^^^^^^^^^^^^^
+
 
 Other settings
-==============
+----------------
 
 Profile
-==============
+----------------
 
 Editor settings
-===============
+----------------
 
 Terminal settings
-=================
+-------------------
 
-*****************************
+=============================
 Subscriptions/Course Packages
-*****************************
+=============================
 
 Payment methods
-===============
+----------------
 
 Subscriptions and course packages
-=================================
+----------------------------------
 
 Invoices and receipts
-=====================
+----------------------
 
-********
+========
 Upgrades
-********
+========
 
 All upgrades
-=============
+--------------
 
 ``Upgrades that you get from your subscriptions and course packages``
 
 Applied upgrades
-================
+-----------------
 
 ``Upgrades you have applied to projects``
 
 
-********
+========
 SSH keys
-********
+========
 
 This section assumes you have created an SSH key pair as described in :ref:`SSH Keys <ssh-keys>`.
 
@@ -74,18 +95,18 @@ Click Add SSH Key. Your key is now saved for that account and will work for all 
 As with the previous section, the user@hostname string needed for the ssh command consists of the project id with hyphens removed for the user, and 'ssh.cocalc.com' for the hostname, and can be found just below the caption Use the following username@host: in the 'SSH Keys' section of project status tab.
 
 SSH keys
-========
+---------
 
 ``SSH keys``
 
 Add an SSH key
-==============
+----------------
 
-*******
+========
 Support
-*******
+========
 
 Support tickets
-===============
+----------------
 
 

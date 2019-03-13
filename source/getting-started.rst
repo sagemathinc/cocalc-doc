@@ -232,7 +232,7 @@ Next steps
 
 .. toctree::
    :maxdepth: 1
-   :caption: To continue your tour of CoCalc, here are some topics to explore:
+   :caption: Continue your tour of CoCalc, with these topics:
 
    jupyter
    latex
@@ -242,9 +242,22 @@ Next steps
 
 .. toctree::
    :maxdepth: 1
-   :caption: To subscribe to CoCalc and upgrade your projects, see this topic:
+   :caption: Subscribe to CoCalc and upgrade your projects here:
 
    upgrade-guide
+
+Getting help
+-----------------------------
+
+In addition the :doc:`Index <genindex>` in this User Manual, if you have specific questions you can check the following:
+
+* CoCalc Wiki `search <https://github.com/sagemathinc/cocalc/search?utf8=%E2%9C%93&q=&type=Wikis>`_
+* CoCalc Wiki `index page <https://github.com/sagemathinc/cocalc/wiki/Home>`_
+
+*Note: we are in the process of migrating CoCalc Wiki documents into this User Manual.*
+
+
+
 
 .. |cocalc-logo| image:: img/icons/cocalc-logo.svg
     :height: 20px
