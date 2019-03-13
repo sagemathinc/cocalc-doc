@@ -344,27 +344,7 @@ R Statistical Software
 I would like to install new R packages
 --------------------------------------------
 
-Open a terminal windows and type
-
-::
-
-    R
-
-Then you can install packages as usual
-
-::
-
-    install.packages('packagename')
-
-The above will install R packages for use with CoCalc worksheets (``%r`` mode) and Jupyter notebooks using default R.
-The Sage binary may be built with a different release of R.
-Use ``R-sage`` instead of ``R`` to install packages for it.
-
-Note that you must also :doc:`upgrade your project <../upgrade-guide>` to have internet access (requires a subscription) and hence allow R to download the packages from the package server.
-
-Otherwise you have to download the tarball of the R package to your own machine,
-and :doc:`./upload` it to your project.
-Then, you can tell R to install the package directly from there as a local file.
+See :doc:`install-r-package`.
 
 
 

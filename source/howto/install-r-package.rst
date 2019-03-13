@@ -16,6 +16,11 @@ CoCalc already includes `hundreds of R packages <https://cocalc.com/doc/software
     Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (i.e. CRAN) to your project.
     The install command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
 
+    Otherwise you have to download the tarball of the R package to your own machine,
+    and :doc:`upload <./upload>` it to your project.
+    Then, you can tell R to install the package directly from there as a local file.
+
+
 In a nutshell, a :doc:`CoCalc project <../project>` is a Linux environment inside a Docker container.
 This means, almost everything you can do as a "normal" Linux user also works.
 In particular, you can install packages locally, such that R instances can pick them up.
@@ -81,3 +86,11 @@ Below is how such a session for installing `conjoint <https://cran.r-project.org
     > q()
     Save workspace image? [y/n/c]: n
 
+
+Aftermath
+===========
+
+The above will install R packages for use with CoCalc worksheets (``%r`` mode)
+and Jupyter notebooks using default R.
+The Sage binary may be built with a different release of R.
+Use ``R-sage`` instead of ``R`` to install packages for it.
