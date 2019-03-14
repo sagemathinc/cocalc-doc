@@ -14,8 +14,8 @@ Overview
 Select your plan
 ===============================
 
-In order to purchase a personal subscription or course package, go to the **Account** settings
-and click on **Subscriptions/Course Packages**.
+In order to purchase a `personal subscription or course package <https://cocalc.com/policies/pricing.html>`_,
+go to **Account** settings and click on **Subscriptions/Course Packages**.
 In the dialog visible below, continue your selecting by first selecting the type and then the specific plan.
 The example shows a 1-year personal "Standard Plan" subscription.
 
