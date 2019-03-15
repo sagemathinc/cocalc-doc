@@ -120,6 +120,29 @@ Sometimes, it might also be necessary to change some settings within the applica
 CoCalc dynamically resizes the desktop and the application will redraw accordingly.
 
 
+Terminal
+------------------
+
+Inside the small :doc:`terminal` on the side, you can run programs or your own scripts.
+For example, this could be a Python script,
+or even a full application: try this `matplotlib: Embedding In Wx5 <https://matplotlib.org/gallery/user_interfaces/embedding_in_wx5_sgskip.html>`_ example.
+
+Behind the scenes, after the X11 environment starts up,
+the ``$DISPLAY`` variable is set to tell the application where to show the graphical window.
+Please wait until it is initialized,
+which you can see after the connection indicator at the top right next to "X11" vanishes.
+Otherwise, you'll get this error message
+``Unable to access the X Display, is $DISPLAY set properly?``.
+
+Example script (you can also run it interactively in an ``ipython3`` shell)::
+
+    import matplotlib
+    matplotlib.use('wxAgg')
+    import numpy as np
+    import matplotlib.pyplot as plt
+    plt.plot(np.random.randn(1000).cumsum())
+    plt.show()
+
 Technical Status
 -----------------
 
