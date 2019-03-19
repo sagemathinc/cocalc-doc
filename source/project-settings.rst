@@ -406,6 +406,8 @@ Occasionally, it may be useful to restart the Sage worksheet server if worksheet
      :width: 70%
      :align: center
 
+.. _alt-jupyter-server:
+
 Alternate Jupyter Servers in CoCalc
 -----------------------------------
 
@@ -414,7 +416,7 @@ CoCalc by default provides an interface to Jupyter notebooks that has been rewri
 The "Project Settings" page offers two ways to run the Classical Jupyter server code, shown below.
 For more information and some important caveats, see :doc:`Classical versus CoCalc <jupyter>`.
 
-.. index:: Jupyter, plain server
+.. index:: Jupyter Server; Plain
 .. index:: Plain Jupyter Server
 .. _plain-jupyter-server:
 
@@ -428,7 +430,7 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
      :width: 70%
      :align: center
 
-.. index:: JupyterLab Server
+.. index:: Jupyter Server, JupyterLab
 .. _jupyterlab-server:
 
 JupyterLab server

@@ -5,10 +5,8 @@
 Project Files
 ==================================
 
-The "Files" listing gives you an overview about all your files.
-Click on a line to open the file,
+The project "Files" listing gives you an overview of your files in that project. Click on a line to open a file,
 or select one or more files via the checkbox on the left to manipulate them (deleting, moving, ...)
-
 
 
 .. index:: Backups; in Files list

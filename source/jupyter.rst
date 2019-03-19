@@ -78,18 +78,16 @@ Don't mix CoCalc and Classical!
     Switching back and forth **will** cause problems (you may need to use TimeTravel to recover).
     *Please avoid using classical notebook mode if you possibly can!*
 
+.. index:: Jupyter Server; alternatives
+.. _jupyter-server-alternatives:
+
 Alternatives: Plain Jupyter Server and JupyterLab Server
 -----------------------------------------------------------
 
-You can also just easily run the full classical Jupyter notebook server from a project.
-In your project's settings, click the link labeled "Plain Jupyter Server".
+You can also run the full classical Jupyter notebook server, using either **Plain Jupyter Server** or **JupyterHub Server**. These options are available under
+:ref:`Project settings <alt-jupyter-server>` and :ref:`(+) New <plusnew>`.
 
-.. image:: img/jupyter/plain-jupyter-server.png
-    :width: 60%
-
-Using this option has an advantage: it does not affect your "Jupyter classic" Editor setting, allowing you to keep CoCalc Jupyter notebook as the default for opening .ipynb files in the CoCalc main interface.
-
-You can also run a JupyterLab server by clicking on the "JupyterLab Server" link in your project.
+Using either of these options for the classical notebook has an advantage: it does not affect your "Jupyter classic" Editor setting, allowing you to keep CoCalc Jupyter notebook as the default for opening .ipynb files in the CoCalc main interface.
 
 .. index:: Jupyter Notebooks; halt
 .. _jupyter-halt:
