@@ -1,3 +1,5 @@
+.. index:: Project Upgrades
+
 =====================
 Project Upgrades
 =====================
@@ -8,6 +10,8 @@ Project Upgrades
 
 Overview
 ========================
+
+This page outlines the steps for upgrading projects from :doc:`trial projects <trial>`.
 
 .. index:: Purchase a Plan
 
