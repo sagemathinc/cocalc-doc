@@ -14,7 +14,7 @@ There several ways to upload a file from an external source to a CoCalc project.
 Upload Button in Files Tab
 ===========================
 
-In the ``Files`` tab, there is a button for upload at upper right.
+In the :doc:`Files tab <../project-files>`, there is a button for upload at upper right.
 
 .. figure:: img/files-upload.png
      :width: 100%
@@ -36,11 +36,11 @@ This method is convenient if you can select the file to be uploaded with a mouse
     The other upload methods described below do not have this limit.
     There is however an overall file size limit for each project, see :doc:`../upgrade-guide`.
 
-* Click ``+Create``, then scroll down to the box that says "Drop files to upload" and drag and drop there.
+* In the :doc:`(+) New tab <../plus-new>`, click |plus-circle| **Create**, then scroll down to the box that says "Drop files to upload" and drag and drop there.
 
 or
 
-* You can drag and drop right onto the Files listing. You have to drop the file onto some existing files in the listing (not below them).
+* You can drag and drop right onto the Files listing. You have to drop the file onto some existing files in the :doc:`Files listing <../project-files>` (not below them).
 
 Fetch from the Internet
 ============================
@@ -49,11 +49,11 @@ Fetch from the Internet
 
     Internet access must be enabled for your project for these methods to work.
 
-* Click ``+Create``, then paste a link where the filename would go and press return. This uses ``wget`` behind the scenes.
+* Open the :doc:`(+) New tab <../plus-new>`, then paste a link where the filename would go and press return. This uses ``wget`` behind the scenes.
 
 or
 
-* Type ``wget [url]`` or ``curl -LO [url]`` in a terminal or the mini-terminal.
+* Type ``wget [url]`` or ``curl -LO [url]`` in a terminal (.term file) or the mini-terminal (in :doc:`Files tab <../project-files>`).
 
 SSH File Transfer
 =====================
@@ -109,3 +109,7 @@ Extra steps may be needed if you're uploading a file from Google Drive.
 #. `Share the file on Google Drive <https://support.google.com/docs/answer/2494822?co=GENIE.Platform%3DDesktop&hl=en>`_ so CoCalc can access it.
 
 #. This `stackoverflow posting <https://stackoverflow.com/a/39225039>`_ explains that two GET requests are needed, and includes a Python script to make the requests.
+
+.. |plus-circle|
+    image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/plus-circle.png
+    :width: 16px

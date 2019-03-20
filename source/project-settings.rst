@@ -430,7 +430,7 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
      :width: 70%
      :align: center
 
-.. index:: Jupyter Server, JupyterLab
+.. index:: Jupyter Server; JupyterLab
 .. _jupyterlab-server:
 
 JupyterLab server
