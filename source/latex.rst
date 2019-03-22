@@ -257,7 +257,7 @@ Besides that, the `SageMath Documentation <http://doc.sagemath.org/html/en/>`_ c
 PythonTeX
 ^^^^^^^^^^^^^^
 
-`PythonTeX <cran_pythontex>`_ follows the same spirit as SageTeX.
+`PythonTeX <https://ctan.org/pkg/pythontex>`_ follows the same spirit as SageTeX.
 Embedded Python commands and blocks of code are extracted into a ``.py`` file,
 Python 3 evaluates them,
 and at the end the LaTeX engine merges the generated output snippets into the final document and renders the PDF file.
@@ -286,12 +286,11 @@ produces:
     :align: center
 
 
-You can read more in the `PythonTeX Documentation <cran_pythontex>`_.
+You can read more in the `PythonTeX Documentation <https://ctan.org/pkg/pythontex>`_.
 Also note, that sometimes it is necessary to run "Build" again to properly re-process all code snippets.
 There is also a PythonTeX example document in the CoCalc Library.
 
 .. _preamble: https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Preamble
-.. cran_pythontex: https://ctan.org/pkg/pythontex
 
 
 .. index:: Knitr
@@ -301,11 +300,11 @@ There is also a PythonTeX example document in the CoCalc Library.
 Knitr
 ^^^^^^^^^^^^^^^^
 
-`Knitr LaTeX documents <knitr>`_ are different from SageTeX and PythonTeX.
+`Knitr LaTeX documents`_ are different from SageTeX and PythonTeX.
 They have their own filename extension (CoCalc supports ``.rnw`` and ``.Rtex``) and instead of calling LaTeX commands of a package, they feature their own syntax for embedded blocks and statements.
-Historically, at first `Sweave <sweave_wiki>`_ was added to R,
+Historically, at first `Sweave`_ was added to R,
 but Knitr is a much more modern variant with more features
-(see `Transition from Sweave to Knitr <sweave2knitr>`_).
+(see `Transition from Sweave to Knitr`_). 
 
 In general, the compilation works by first processing the input file via Knitr,
 which runs R and generates a ``.tex`` document.
@@ -329,9 +328,9 @@ produces a plot of a histogram, drawn using `TikZ`_.
 
 Note, that `latex-forward-inverse`_ will work as well as reporting errors.
 
-.. _knitr: https://yihui.name/knitr/
-.. _sweave_wiki: https://en.wikipedia.org/wiki/Sweave
-.. _sweave2knitr: https://yihui.name/knitr/demo/sweave/
+.. _Knitr LaTeX documents: https://yihui.name/knitr/
+.. _Sweave: https://en.wikipedia.org/wiki/Sweave
+.. _Transition from Sweave to Knitr: https://yihui.name/knitr/demo/sweave/
 .. _TikZ: https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ
 
 
