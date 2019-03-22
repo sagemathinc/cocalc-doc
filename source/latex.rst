@@ -257,7 +257,7 @@ Besides that, the `SageMath Documentation <http://doc.sagemath.org/html/en/>`_ c
 PythonTeX
 ^^^^^^^^^^^^^^
 
-`PythonTeX <cran_pythontex>`_ follows the same spirit as SageTeX.
+`PythonTeX <https://ctan.org/pkg/pythontex>`_ follows the same spirit as SageTeX.
 Embedded Python commands and blocks of code are extracted into a ``.py`` file,
 Python 3 evaluates them,
 and at the end the LaTeX engine merges the generated output snippets into the final document and renders the PDF file.
@@ -286,12 +286,11 @@ produces:
     :align: center
 
 
-You can read more in the `PythonTeX Documentation <cran_pythontex>`_.
+You can read more in the `PythonTeX Documentation <https://ctan.org/pkg/pythontex>`_.
 Also note, that sometimes it is necessary to run "Build" again to properly re-process all code snippets.
 There is also a PythonTeX example document in the CoCalc Library.
 
 .. _preamble: https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Preamble
-.. cran_pythontex: https://ctan.org/pkg/pythontex
 
 
 .. index:: Knitr
