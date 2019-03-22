@@ -300,11 +300,11 @@ There is also a PythonTeX example document in the CoCalc Library.
 Knitr
 ^^^^^^^^^^^^^^^^
 
-`Knitr LaTeX documents <knitr>`_ are different from SageTeX and PythonTeX.
+`Knitr LaTeX documents`_ are different from SageTeX and PythonTeX.
 They have their own filename extension (CoCalc supports ``.rnw`` and ``.Rtex``) and instead of calling LaTeX commands of a package, they feature their own syntax for embedded blocks and statements.
-Historically, at first `Sweave <sweave_wiki>`_ was added to R,
+Historically, at first `Sweave`_ was added to R,
 but Knitr is a much more modern variant with more features
-(see `Transition from Sweave to Knitr <sweave2knitr>`_).
+(see `Transition from Sweave to Knitr`_). 
 
 In general, the compilation works by first processing the input file via Knitr,
 which runs R and generates a ``.tex`` document.
@@ -328,9 +328,9 @@ produces a plot of a histogram, drawn using `TikZ`_.
 
 Note, that `latex-forward-inverse`_ will work as well as reporting errors.
 
-.. _knitr: https://yihui.name/knitr/
-.. _sweave_wiki: https://en.wikipedia.org/wiki/Sweave
-.. _sweave2knitr: https://yihui.name/knitr/demo/sweave/
+.. _Knitr LaTeX documents: https://yihui.name/knitr/
+.. _Sweave: https://en.wikipedia.org/wiki/Sweave
+.. _Transition from Sweave to Knitr: https://yihui.name/knitr/demo/sweave/
 .. _TikZ: https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ
 
 
