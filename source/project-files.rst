@@ -30,8 +30,8 @@ By convention, a file whose name begins with a dot is a hidden file. It will not
 
      *files list showing hidden files*
 
-.. index:: Masked Files; in Files list
-.. index:: Temporary Files; in Files list
+.. index:: Masked files; hide temporary files
+.. index:: Temporary files; hiding
 .. _masked-files:
 
 =====================

@@ -48,8 +48,8 @@ As soon as a collaborator is added to a a project (see :doc:`teaching-create-cou
 Live collaborative editing is possible in CoCalc.
 If one of your collaborators updates a notebook, the rest can see the changes as they are being made (similar to Google Docs).
 
-.. index:: @Mentions; in chat
-.. index:: Mentions; in chat
+.. index:: @Mentions in chat
+.. index:: Mentions in chat
 
 @Mention collaborators in chat
 =================================
@@ -57,7 +57,7 @@ If one of your collaborators updates a notebook, the rest can see the changes as
 CoCalc chats support an ``@mentions`` feature, where you type ``@`` and a list appears of collaborators, which you can select from. Anybody mentioned there will get emailed (unless they are mentioned again in the next few hours, since we don't want to spam people). This helps ensure people know about chats. Any chat will cause the notification count to go up in the bell in the upper right, whether or not you are mentioned.
 
 .. figure:: img/teaching/tex-mentions.png
-     :width: 80%
+     :width: 90%
      :align: center
 
      *@mentioning names in course shared project chat*
