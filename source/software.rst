@@ -48,6 +48,32 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
    software/software-updates-2018
 
 
+.. _update-2019-03-23:
+
+2019-03-23
+----------------------
+
+* (UI/LaTeX) **LaTeX editor**: `"shell-escape" mode <https://doc.cocalc.com/latex.html#enable-shell-escape-and-plot-using-gnuplot>`_ to e.g. draw plots using Gnuplot
+
+* (UI/Chat) **@Mention** a project collaborator in a chat to ping her/him via email.
+
+* (new) **ROOT Kernel**: `ROOT is a modular scientific software toolkit <https://root.cern.ch/>`_. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualisation and storage. `ROOT example Jupyter worksheet <https://share.cocalc.com/share/d552e619-3c8e-4722-bda1-8f6a75f78443/cocalc-root.ipynb?viewer=share>`_
+
+* (new) **rclone** -- `rsync for cloud storage <https://rclone.org/>`_
+
+* **R**: installing `qdap <https://cran.r-project.org/web/packages/qdap/index.html>`_ library and updating a couple of other ones ...
+
+* **Python 3**: ``Sphinx`` 1.8.5
+
+* **Julia 1.1**: adding ``Images`` and updating various packages like `JuMP 0.19 <https://github.com/JuliaOpt/JuMP.jl/blob/master/NEWS.md>`_!
+
+* **Linux**: various package updates, in particular ``bazel`` 0.23.2, ``xpra`` 2.5, ``git-lfs`` 2.7.1, and ``code`` 1.32
+
+* (upd) **SageMath Development** version 8.7.rc0
+
+
+
+
 
 .. _update-2019-03-11:
 
