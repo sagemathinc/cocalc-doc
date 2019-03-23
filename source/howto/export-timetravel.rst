@@ -2,7 +2,7 @@
 .. _export_timetravel:
 
 =============================
-How to Export TimeTravel
+Export TimeTravel History
 =============================
 
 It may be useful to get the history of all edits to a given file. One example might be a project in which students collaborate, where individual contributions to a team effort need to be documented.
