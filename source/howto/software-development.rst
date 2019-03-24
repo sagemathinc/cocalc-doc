@@ -385,11 +385,11 @@ Octave
 
 You can work with `Octave <https://www.gnu.org/software/octave/>`_ in
 
-* Jupyter and CoCalc worksheets,
-* run its graphical front-end in the :doc:`../x11`,
+* Jupyter and CoCalc worksheets;
+* run its graphical front-end in the :doc:`../x11`;
 * work in a :doc:`../terminal`: add or use an existing "Terminal" file, ending in ``.term``,
-  and type "octave" on the command line.
-* You can create a file that ends with ``.m``, and edit it. 
+  and type ``octave-cli`` on the command line;
+* You can also create a file that ends with ``.m``, and edit it. 
   Then open an additional panel in the :doc:`../frame-editor` and change it to show a terminal and run the file right there.
 
 Here are example Octave Jupyter notebook and an Octave CoCalc worksheets:
