@@ -206,6 +206,7 @@ Installed Applications
     `lyx`_, "LyX combines the power and flexibility of TeX/LaTeX with the ease of use of a graphical interface.", latex, OK
     `meld`_, "a visual diff and merge tool targeted at developers", code, OK
     `nteract`_, "Jupyter Notebook compatible UI", calc, OK
+    `octave`_, "Octave", calc, OK
     `okular`_,  "PDF reader and annotator (Tools → Review)", pdf, OK
     `OpenModelica`_ , "Modeling and simulation environment. Command: ``OMEdit`` & co.", physics, OK
     `pcb-gtk`_, "printed circuit board editor", physics, OK
@@ -251,6 +252,7 @@ Installed Applications
 .. _LibreOffice Writer: https://www.libreoffice.org/discover/writer/
 .. _meld: http://meldmerge.org/
 .. _nteract: https://nteract.io/
+.. _octave: https://www.gnu.org/software/octave/
 .. _okular: https://okular.kde.org/
 .. _OpenModelica: https://www.openmodelica.org/
 .. _pcb-gtk: http://pcb.geda-project.org/
