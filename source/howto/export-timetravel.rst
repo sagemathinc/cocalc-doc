@@ -58,7 +58,6 @@ The hub API
 
 Use the hub API, which uses the `get_syncdoc_history` endpoint. (Details to follow.)
 
-=================================
 About exported TimeTravel data
 =================================
 
