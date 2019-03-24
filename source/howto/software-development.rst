@@ -378,6 +378,7 @@ If you have set default_mode to r, then enter the command in a sage mode cell::
 
 You can change it by typing it again.
 
+.. index:: Octave
 
 Octave
 =================
