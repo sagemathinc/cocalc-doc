@@ -360,7 +360,7 @@ The main thing to remember when using PSTricks is to set ``Engine`` in the CoCal
 .. index:: LaTeX Editor; Gnuplot
 .. index:: LaTeX Editor; shell-escape
 
-Enable ``shell-escape`` and plot using Gnuplot
+Enable ``shell-escape`` to plot using Gnuplot
 ------------------------------------------------
 
 There are situations where the LaTeX document calls certain utilities to accomplish a task.
