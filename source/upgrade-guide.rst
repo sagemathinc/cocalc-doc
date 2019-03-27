@@ -1,4 +1,5 @@
 .. index:: Project Upgrades
+.. _upgrade-guide:
 
 =====================
 Project Upgrades

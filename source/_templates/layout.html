@@ -10,6 +10,7 @@
   </a>
 {% endblock %}
 
+{# some extras in the head #}
 {%- block extrahead %}
   {{ super() }}
   <link rel="stylesheet" href="{{ pathto('_static/custom.css', 1) }}" type="text/css" />
@@ -19,4 +20,21 @@
   {% if theme_canonical_url %}
     <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html"/>
   {% endif %}
+{% endblock %}
+
+{# this customizes where the main logo links to (not pathto(master_doc)) #}
+{% block sidebartitle %}
+
+<a href="{{ pathto('index') }}" class="icon icon-home"> {{ project }}
+  <img src="{{ pathto('_static/' + logo, 1) }}" class="logo" alt="Logo"/>
+</a>
+
+{% include "searchbox.html" %}
+
+{% endblock %}
+
+{# and here is the same master_doc modification for mobile pages #}
+{% block mobile_nav %}
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="{{ pathto('index') }}">{{ project }}</a>
 {% endblock %}
