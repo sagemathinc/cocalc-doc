@@ -133,11 +133,11 @@ Tab Completion
 
 To get a hint for possible completions of a function name, method argument, etc., type the beginning of what you are looking for then press the ``[tab]`` key. This is a quick way to browse through the methods for an object.
 
-.. figure:: img/sagews/sagews-tabc.jpg
-     :width: 20%
+.. figure:: img/sagews/tabcomplete.png
+     :width: 40%
      :align: center
 
-     ..
+     ways to solve `differential equations in SageMath <http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html>`_
 
 .. index:: Sage Worksheet; lifetime of definitions
 
