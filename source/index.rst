@@ -3,20 +3,20 @@
 CoCalc
 =============
 
-Hello, and welcome to `CoCalc`_!
+Hello, and welcome to `CoCalc`_.
 CoCalc is a virtual online workspace for calculations, research, collaboration and authoring documents.
-Your web-browser is all you need to escape the confined space of your own desktop and move to the cloud.
-This guide explains all features of CoCalc in depth and how you can use them productively.
+Your web browser is all you need to escape the confined space of your desktop and move to the cloud.
+This guide explains the features of CoCalc in depth and shows how you can use them productively.
 
-The main building block for working on CoCalc are :doc:`Projects <project>`.
+The main building blocks for working on CoCalc are :doc:`Projects <project>`.
 Create one or more projects in order to partition your work into separate *workspaces*.
-Each project consists of files, which are only accessible to you and your
+Each project consists of files, accessible only to you and your
 :ref:`collaborators <add-collaborators>`.
 
-Certain types of files in a project allow you to accomplish a specific tasks.
-They open up in their associated online editors and you start to work interactively in CoCalc's environment.
-For example, a file ending in ``*.sagews`` is for working with [SageMath]_ in a :doc:`sagews`,
-an ``*.ipynb`` file starts a :doc:`Jupyter Notebook <jupyter>` and ``*.tex`` files open up an editor for :doc:`LaTeX documents <latex>`.
+Certain types of files in a project allow you to accomplish a specific task.
+They open up in their associated online editor and you start to work interactively in CoCalc's environment.
+For example, files ending in ``*.sagews`` are for working with [SageMath]_ in :doc:`sagews`,
+an ``*.ipynb`` file starts a :doc:`Jupyter Notebook <jupyter>`, and a ``*.tex`` file opens an editor for :doc:`LaTeX documents <latex>`.
 
 .. figure:: img/cocalc-intro-1.png
      :width: 75%
@@ -25,15 +25,15 @@ an ``*.ipynb`` file starts a :doc:`Jupyter Notebook <jupyter>` and ``*.tex`` fil
      *A SageMath Jupyter Notebook in a CoCalc project*
 
 
-First, go through the :doc:`getting-started` guide to create your account, your first project, and a worksheet.
+To try out CoCalc, you might do the following steps. First, go through the :doc:`getting-started` guide to create your account, your first project, and a worksheet.
 Next, check out more specific guides for  :doc:`Jupyter Notebooks <jupyter>`, :doc:`Sage Worksheets <sagews>`, and :doc:`LaTeX documents <latex>`.
 Beyond these, you can also work in a full :doc:`Linux Terminal <terminal>`,
-run some :doc:`graphical applications <x11>` in a virtual desktop, or edit plain-text files. 
-For the latter, look how the :doc:`frame-editor` helps you working with such files,
-and even makes it possible for you to :doc:`code in C, Python, or other languages <howto/software-development>`.
+run :doc:`graphical applications <x11>` in a virtual desktop, or edit plain text files. 
+For the latter, note how the :doc:`frame-editor` helps when working with such files,
+and offers syntax highlighting if you :doc:`code in C, Python, or other languages <howto/software-development>`.
 
-Beyond that, being online and in the cloud opens up opportunities to share files and collaborate.
-To coordinate with others, you can communicate in a chat-room or on the side of a file.
+Being online and in the cloud opens opportunities to share files and collaborate.
+You can communicate with others in a chat room or on the side of a file.
 This is especially useful :doc:`in the context of teaching <teaching-interactions>` to help students.
 Check out our :doc:`Instructor Guide <teaching-instructors>` for more details about conducting a course on CoCalc.
 
