@@ -1,7 +1,7 @@
 
-=============
-CoCalc
-=============
+==================
+What is CoCalc?
+==================
 
 Hello, and welcome to `CoCalc`_.
 CoCalc is a virtual online workspace for calculations, research, collaboration and authoring documents.
