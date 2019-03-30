@@ -210,7 +210,7 @@ How can I connect an HTML form with my Python code?
 
 To create a connection between your HTML form in a .sagews file created using HTML, CSS and JS, you need to use the ``worksheet.execute_code()`` function in your JS code.
 
-Because ``worksheet.execute_code` isn't a standard JS function, but special CoCalc function, you need to load your JS code with ``worksheet.execute_code()``.  In particular do NOT use
+Because ``worksheet.execute_code`` isn't a standard JS function, but special CoCalc function, you need to load your JS code with ``worksheet.execute_code()``.  In particular do NOT use
 
 ::
 
