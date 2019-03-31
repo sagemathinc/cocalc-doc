@@ -5,9 +5,10 @@
 Export TimeTravel History
 =============================
 
-It may be useful to get the history of all edits to a given file. One example might be a project in which students collaborate, where individual contributions to a team effort need to be documented.
+It may be useful to get the history of all edits to a given file shown in :doc:`TimeTravel <../time-travel>`.
+One example might be a project in which students collaborate, where individual contributions to a team effort need to be documented.
 
-There are three ways to export TimeTravel information.
+There are three ways to export :doc:`TimeTravel <../time-travel>` information.
 
 .. contents::
    :local:
@@ -16,7 +17,7 @@ There are three ways to export TimeTravel information.
 Export button in TimeTravel
 ===========================
 
-Click the Export button with TimeTravel open.
+Click the Export button with :doc:`TimeTravel <../time-travel>` open.
 
 
 .. figure:: img/tt-export-button.png
