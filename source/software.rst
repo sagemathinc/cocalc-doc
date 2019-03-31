@@ -56,16 +56,14 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 2019-03-31
 --------------------------
 
-* **CoCalc**:
-
-    * (chg) Jupyter Notebook related, **Python 2 Kernel changes**
-        * ``python2`` changes to use the system-wide Python 2 environment;
-        * ``python2-sagemath`` the Python environment of SageMath (formerly ``python2``);
-        * existing ``python2-ubuntu`` removed, use "Python 2 (Ubuntu Linux)"
-
+* CoCalc UI:
     * (new) **"TimeTravel export"**: https://doc.cocalc.com/howto/export-timetravel.html
     * (new) new Jupyter Notebooks explicitly ask for the Jupyter Kernel (i.e. no memorized default)
     * file listing speed improvements
+    * Jupyter Notebook related Python 2 Kernel changes:
+        * ``python2`` changes to use the system-wide Python 2 environment;
+        * ``python2-sagemath`` the Python environment of SageMath (formerly ``python2``);
+        * existing ``python2-ubuntu`` removed, use "Python 2 (Ubuntu Linux)"
 
 * Python 3:
    * (new) ``dit-1.2.3``: `discrete information theory <http://docs.dit.io/en/latest/>`_
