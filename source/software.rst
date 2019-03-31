@@ -48,6 +48,63 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
    software/software-updates-2018
 
 
+
+
+
+.. _update-2019-03-31:
+
+2019-03-31
+--------------------------
+
+* **CoCalc**:
+
+    * (chg) Jupyter Notebook related, **Python 2 Kernel changes**
+        * ``python2`` changes to use the system-wide Python 2 environment;
+        * ``python2-sagemath`` the Python environment of SageMath (formerly ``python2``);
+        * existing ``python2-ubuntu`` removed, use "Python 2 (Ubuntu Linux)"
+
+    * (new) **"TimeTravel export"**: https://doc.cocalc.com/howto/export-timetravel.html
+    * (new) new Jupyter Notebooks explicitly ask for the Jupyter Kernel (i.e. no memorized default)
+    * file listing speed improvements
+
+* Python 3:
+   * (new) ``dit-1.2.3``: `discrete information theory <http://docs.dit.io/en/latest/>`_
+   * (new) ``skyfield-1.10``: https://rhodesmill.org/skyfield/: *Elegant Astronomy for Python*:
+     Skyfield computes positions for the stars, planets, and satellites in orbit around the Earth. `Skyfield Demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/skyfield.ipynb?viewer=share>`_ –  deps: ``jplephem-2.9`` and ``sgp4-1.4``
+   * (upd) tensorflow related: ``tensorflow-1.13.1``,  ``tensorboard-1.13.1``,
+     ``tensorflow-estimator-1.13.0`` and ``tensorflow-probability-0.6.0``
+     – https://www.tensorflow.org/probability/overview
+
+   * (upd) ``numba-0.43.1`` and ``llvmlite-0.28.0``
+
+* Julia 1.1 (new/upd):
+    * `Images <https://juliaimages.org/latest/>`_
+    * `Primes <http://juliamath.github.io/Primes.jl/stable/>`_
+    * `LightGraphs <https://github.com/JuliaGraphs/LightGraphs.jl>`_
+    * `Flux <https://github.com/FluxML/Flux.jl>`_ – `The Elegant Machine Learning Stack <https://fluxml.ai/>`_
+    * and ``DiffEqFlux`` – https://julialang.org/blog/2019/01/fluxdiffeq
+    * `Knet <https://github.com/denizyuret/Knet.jl>`_
+    * `Turing <https://github.com/TuringLang/Turing.jl>`_ –
+      a language for `probabilistic programming <http://turing.ml/>`_
+    * `StatsPlots <https://github.com/JuliaPlots/StatsPlots.jl>`_,
+    * more from `JuliaOpt <http://www.juliaopt.org>`_, ``Convex``, ``BlackBoxOptim`` and ``NLsolve``
+    * and some more updates like ``IJulia`` for the notebook.
+    * There are also less issues installing custom packages in a notebook via ``Pkg.add()``,
+      because ``JULIA_PROJECT`` is set to ``/home/user/.julia/environment/v1.0`` or ``./v1.1`` (see `julia discourse 13922/27 <https://discourse.julialang.org/t/how-does-one-set-up-a-centralized-julia-installation/13922/27>`_)
+
+* SageMath:
+    * **Version 8.7**: initial deployment, still needs testing. Try it and give us feedback!
+      – `SageMath 8.7 demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/sage-8.7.ipynb?viewer=share>`_.
+    * (upd) Development version to **8.8 beta0** (Python 3)
+
+
+* Software, Linux package updates:
+    * ``rustc`` 1.31, ``cargo`` 0.32, ``bazel`` 0.24, ...
+
+
+
+
+
 .. _update-2019-03-23:
 
 2019-03-23
