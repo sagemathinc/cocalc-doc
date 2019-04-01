@@ -291,3 +291,22 @@ Installed Applications
    **paint**    , "raster graphics editor"
    **graphics** , "vector graphics editor"
    **pdf**      , "for reading, editing, annotating PDFs"
+
+
+
+Tips & Tricks
+======================
+
+High-resolution HDPI displays
+--------------------------------------
+
+If the visible buttons/controls are small, especially if you have a high-res display, and zooming alone doesn't really help much, enable **HDPI rendering**. That's available for some of the applications in their respective configuration dialogs.
+
+**Spyder**:  The "auto high DPI scaling" setting is in *Preferences*, accessible via the *Tools* menu or the wrench-icon. See screenshot below:
+
+.. image:: img/x11-spyder-hdpi.png
+    :align: center
+    :width: 75%
+
+**RStudio**: On high resolution displays set *Tools* → *Global Options* → *Appearance* → **Zoom** → **200%**.
+
