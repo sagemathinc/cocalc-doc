@@ -9,6 +9,8 @@ There are multiple ways in which you can interact with your students or collabor
    :local:
    :depth: 2
 
+.. _teaching-chatrooms:
+
 Real-time chatrooms
 =========================================================
 

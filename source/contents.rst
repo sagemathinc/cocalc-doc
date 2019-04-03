@@ -30,6 +30,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    sagews
    terminal
    x11
+   chat
    tasks
    frame-editor
    time-travel
