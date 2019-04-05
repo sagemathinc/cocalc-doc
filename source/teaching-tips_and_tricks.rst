@@ -1,3 +1,5 @@
+.. index:: Courses; FAQ
+
 =======================
 FAQ, Tips and Tricks
 =======================
@@ -26,6 +28,8 @@ which renders as
 
 .. _GitHub Flavored Markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
+.. index:: Courses; multiple assignment folders
+
 Making multiple assignment folders quickly
 ==========================================================
 
@@ -46,6 +50,8 @@ You can also create folders here just by ending with a `/`
 
 .. image:: img/teaching/folder.png
      :width: 100%
+
+.. index:: Courses; start all student projects
 
 Starting up everyone's project before class
 ==========================================================
@@ -117,6 +123,8 @@ then click on changes and drag the sliders to see the document in a given time i
 
 If you need to revert the document to a previous state, drag the slider to the desired revision and click on **Revert live version to this**. Doing so reverts the document contents to that specific version. If you have checked the **Changes** box to compare two revisions and click on **Revert live version to this**, contents are reverted to the latter of the two revisions being compared. Note that reverting a file simply creates a new version of the file equal to the old file at that point in time; in particular, no work is lost!
 
+.. index:: Courses; run a command in all student projects
+
 Run Terminal command in all student projects
 ============================================
 
@@ -134,7 +142,7 @@ can use it to run a command (e.g., to create a file or whatever) in
      :width: 60%
 
 
-
+.. index:: Courses; copying assignments to students
 .. _course-copy-assignments:
 
 How exactly are Assignments copied to students?
@@ -218,3 +226,21 @@ Some tests below illustrate how rsync works::
 
     We would like to add a new 3-way merge option, which would be more clever and instead of making a backup file of students modified work, would merge your changes into their file.  This is not done yet.
 
+.. index:: Courses; invite students without email
+
+Invite Students Without Having Their Email Addresses
+=====================================================
+
+**Question:** The course management software at my university makes it hard to get a list of student emails. Is there a way I can send them a generic invitation link that they can click to join the course?
+
+**Answer:** We don't support sending generic invitations yet (see `CoCalc issue #886 <https://github.com/sagemathinc/cocalc/issues/886)>`_). However, you can use the following workaround:
+
+Assign fake email addresses to all students in your class, e.g.::
+
+    student+<student_id>@your-university.edu
+
+Then tell the students to sign up for CoCalc using that "fake" email address. This assumes you have some way to communicate with your students, perhaps in class.
+
+Once students sign up, they will be added as collaborators to their project for the course. At that point, they can change their email address to anything they want, in order to ensure they get @mention notifications, can do password reset, etc.
+
+If student_id's are secret/sensitive, you could use something derived from them, e.g., the last two digits.
