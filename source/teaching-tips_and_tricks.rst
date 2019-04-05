@@ -235,7 +235,7 @@ Invite Students Without Having Their Email Addresses
 
 **Answer:** We don't support sending generic invitations yet (see `CoCalc issue #886 <https://github.com/sagemathinc/cocalc/issues/886)>`_). However, you can use the following workaround:
 
-Assign fake email addresses to all students in your class, e.g.::
+Assign fake email addresses to all students in your class, e.g.:: c
 
     student+<student_id>@your-university.edu
 
