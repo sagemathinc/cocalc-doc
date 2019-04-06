@@ -14,10 +14,10 @@ The project **List** gives you an overview of projects in your account.
 Introducing the Project List
 =============================
 
-The first time you sign into CoCalc, you won't not have any projects, unless some have already been created for you:
+The first time you sign into CoCalc, you won't have any projects, unless some have already been created for you:
 
 .. figure:: img/project-list/proj-01.png
-     :width: 80%
+     :width: 100%
      :align: center
 
      *new account with no projects created yet*
@@ -25,7 +25,7 @@ The first time you sign into CoCalc, you won't not have any projects, unless som
 After you have some projects, there's more to see:
 
 .. figure:: img/project-list/proj-02a.png
-     :width: 80% 
+     :width: 100% 
      :align: center
 
      ..
@@ -41,7 +41,7 @@ Filtering the Project List
 As your project list grows, you can save time finding projects by entering text into the ``Search for projects...`` box. As you type, the list of projects displayed is narrowed to only the projects whose Title or Description contains the search string. If you enter several words separated by spaces, the list will be limited to projects in which all the words in the search text appear in the project title or description.
 
 .. figure:: img/project-list/proj-03a.png
-     :width: 80%
+     :width: 100%
      :align: center
 
      *searching for projects with name or description containing "phy"*
@@ -62,7 +62,7 @@ Tagging Projects
 You can make it easy to find certain projects if you add a *hashtag*, i.e. text beginning with a pound sign (#), to the project title or description. Hashtag text may contain letters, digits, hyphens, and underscores. Hashtags appear as buttons to the right of project search text.
 
 .. figure:: img/project-list/proj-04a.png
-     :width: 80%
+     :width: 100%
      :align: center
 
      *hashtag "#boxplots" in project description*
