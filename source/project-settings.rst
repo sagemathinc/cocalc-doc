@@ -102,6 +102,9 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
      :width: 60%
      :align: center
 
+.. index:: Projects; hidden or deleted
+.. _project_hidden_deleted:
+
 Hide or delete project
 ----------------------
 
