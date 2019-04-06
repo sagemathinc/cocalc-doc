@@ -49,10 +49,18 @@ As your project list grows, you can save time finding projects by entering text 
 .. index:: Projects; batch operations
 .. _project_batch:
 
-Using the project filter also brings up a toolbar for **batch operations on projects**: each of the buttons allows you to do any of the following on all projects shown in a single operation:
+Batch Operations on Projects
+=============================
+
+Using the project filter also brings up a toolbar for **batch operations on projects** (see figure above). Each of the four buttons allows you to do one of the following on all projects shown, in a single operation:
 
 * remove yourself as collaborator
 * delete projects
+
+  * marks projects as deleted for owner and all collaborators
+  * removes upgrades added by you
+  * does *not* remove upgrades added by others
+
 * hide projects
 * remove all *your* upgrades from projects (does not remove upgrades added by others)
 
