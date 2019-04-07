@@ -51,6 +51,38 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 
 
+
+.. _update-2019-03-07:
+
+2019-03-07
+--------------------------
+
+* SageMath 8.7 is the **default** ``sage``.
+    * You can still use the previous one via ``sage-8.6``,
+      select the appropriate kernel,
+      or switch it in your project by running ``sage_select 8.6`` in a :doc:`../terminal`.
+    * `SnapPy <https://www.math.uic.edu/t3m/SnapPy/>`_ tests do not pass, I don't know why ...
+
+
+* R (R-Project):
+    * (upd) `bioconductor <https://www.bioconductor.org/>`_ packages,
+      in particular ``affy``, ``limma``, ``puma``, etc.
+
+
+* Python:
+    * (upd/py3) ``mypy-0.700`` -- `MyPy 0.700 release notes <http://mypy-lang.blogspot.com/2019/04/mypy-0700-released-up-to-4x-faster.html>`_
+    * (new) ``opencv-contrib-python`` -- https://pypi.org/project/opencv-contrib-python/
+
+
+* Software:
+    * `Spyder IDE 3.3.4 <https://www.spyder-ide.org/>`_ (:doc:`via X11 <../x11>`) and Python 3 deps:
+      ``PyQt5-sip-4.19.15``, ``pyqt5-5.12.1``, ``pyqtwebengine-5.12.1``, ``qtawesome-0.5.7``,
+      ``qtpy-1.7.0``, ``spyder-kernels-0.4.3``, and ``wurlitzer-1.0.2``.
+    * VS Code 1.33
+
+
+
+
 .. _update-2019-03-31:
 
 2019-03-31
