@@ -20,3 +20,4 @@ To start being productive, you have to create a :doc:`sagews`, :doc:`jupyter`, :
    plus-new
    project-settings
    upgrade-guide
+   project-library
