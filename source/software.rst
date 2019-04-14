@@ -50,11 +50,40 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 
 
+.. _update-2019-04-14:
+
+2019-04-14
+-------------------------------
+
+* SageMath 8.7
+    * (new) package ``plot3D`` in Sage's R, along with ``tidyverse`` and ``dplyr``
+
+.. image:: img/software/sage-R-plot3d.png
+     :align: center
+     :width: 50%
+
+* Anaconda 5:
+    * (new) additionally to `hoomod blue <http://glotzerlab.engin.umich.edu/hoomd-blue/>`_,
+      ``freud-1.0.0``, ``fresnel-0.8.0``, ``embree3-3.5.2``, and ``gsd-1.6.1``
+
+* Python 3:
+    * (upd) `SymPy 1.4 <https://github.com/sympy/sympy/wiki/Release-Notes-for-1.4>`_
+    * (new) `Orange 3 <https://orange.biolab.si/>`_: *Open source machine learning and data visualization for novice and expert.*
+    * (upd) `Qiskit`_ related: ``qiskit-0.8.0``, ``qiskit-aer-0.1.1``, ``qiskit-ignis-0.1.0``, ``qiskit-terra-0.7.1``
+
+* Library:
+    * all entries are updated to their latest upstream version
+    * adding `VQE Playground <https://github.com/JavaFXpert/vqe-playground>`_: *gaining intuition about Variational Quantum Eigensolver*
+
+* R:
+    * (upd) also updating ``tidyverse`` and ``dplyr``
 
 
-.. _update-2019-03-07:
 
-2019-03-07
+
+.. _update-2019-04-07:
+
+2019-04-07
 --------------------------
 
 * SageMath 8.7 is the **default** ``sage``.
@@ -381,7 +410,7 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 .. _SageMath: https://sagemath.org
 .. _Cadabra2: https://cadabra.science
-.. _qiskit:  https://qiskit.org
+.. _Qiskit:  https://qiskit.org
 .. _dask: https://dask.org
 
 
