@@ -108,6 +108,7 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
       ``PyQt5-sip-4.19.15``, ``pyqt5-5.12.1``, ``pyqtwebengine-5.12.1``, ``qtawesome-0.5.7``,
       ``qtpy-1.7.0``, ``spyder-kernels-0.4.3``, and ``wurlitzer-1.0.2``.
     * VS Code 1.33
+    * `Gyoto <https://gyoto.obspm.fr/>`_
 
 
 
