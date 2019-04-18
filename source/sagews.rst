@@ -159,6 +159,7 @@ Sage Worksheets
 
 * A previous version of this page is at `Sage Worksheet UI and Help <https://github.com/sagemathinc/cocalc/wiki/sagews>`_
 * `Custom "Mode Commands" in Sage Worksheets <https://github.com/sagemathinc/cocalc/wiki/sagews-custom-modes>`_
+* `Search the CoCalc wiki <https://github.com/sagemathinc/cocalc/search?utf8=%E2%9C%93&q=&type=Wikis>`_ Enter your search text in the "Search or jump to..." blank at the top.
 
 
 Conversion utilities
@@ -166,8 +167,8 @@ Conversion utilities
 
 * There are buttons in the UI to convert to PDF, a print-button or a Jupyter Notebook
 * `SageWS to HTML <https://github.com/sagemathinc/cocalc/wiki/sagews2html>`_ (including a utility to extract the sagews file from a generated HTML file)
-* Run ``smc-sagews2pdf --help`` in a :doc:`./terminal` for more information about converting to PDF
-* Similarly, ``smc-sagews2ipynb`` is a command-line utility to convert to ``*.ipynb``.
+* Run ``cc-sagews2pdf --help`` in a :doc:`./terminal` for more information about converting to PDF
+* Similarly, ``cc-sagews2ipynb`` is a command-line utility to convert Sage worksheet to Jupyter notebook, and ``cc-ipynb2sagews`` does the reverse conversion, from Jupyter notebook to Sage worksheet.
 
 SageMath specific
 ====================
