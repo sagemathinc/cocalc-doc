@@ -13,10 +13,13 @@ Create one or more projects in order to partition your work into separate *works
 Each project consists of files, accessible only to you and your
 :ref:`collaborators <add-collaborators>`.
 
-Certain types of files in a project allow you to accomplish a specific task.
+You and your collaborators can *edit these files at the same time*,
+which means your changes are synchronized among all of you in real-time!
+Depending on the type of the file, it allows you to accomplish a specific task.
 They open up in their associated online editor and you start to work interactively in CoCalc's environment.
 For example, files ending in ``*.sagews`` are for working with [SageMath]_ in :doc:`sagews`,
-an ``*.ipynb`` file starts a :doc:`Jupyter Notebook <jupyter>`, and a ``*.tex`` file opens an editor for :doc:`LaTeX documents <latex>`.
+an ``*.ipynb`` file starts CoCalc's implementations of the :doc:`Jupyter Notebook <jupyter>`,
+and a ``*.tex`` file opens an editor for :doc:`LaTeX documents <latex>`.
 
 .. figure:: img/cocalc-intro-1.png
      :width: 75%
@@ -25,12 +28,14 @@ an ``*.ipynb`` file starts a :doc:`Jupyter Notebook <jupyter>`, and a ``*.tex`` 
      *A SageMath Jupyter Notebook in a CoCalc project*
 
 
-To try out CoCalc, you might do the following steps. First, go through the :doc:`getting-started` guide to create your account, your first project, and a worksheet.
+To try out CoCalc, you might do the following steps.
+First, go through the :doc:`getting-started` guide to create your account, your first project, and a worksheet.
 Next, check out more specific guides for  :doc:`Jupyter Notebooks <jupyter>`, :doc:`Sage Worksheets <sagews>`, and :doc:`LaTeX documents <latex>`.
 Beyond these, you can also work in a full :doc:`Linux Terminal <terminal>`,
-run :doc:`graphical applications <x11>` in a virtual desktop, or edit plain text files. 
+run :doc:`graphical applications <x11>` in a virtual desktop, or edit plain text files.
 For the latter, note how the :doc:`frame-editor` helps when working with such files,
 and offers syntax highlighting if you :doc:`code in C, Python, or other languages <howto/software-development>`.
+You can also :doc:`./howto/upload` accompanying some existing notebooks, data files or :doc:`LaTeX documents <./howto/overleaf>`.
 
 Being online and in the cloud opens opportunities to share files and collaborate.
 You can communicate with others in a chat room or on the side of a file.
