@@ -48,6 +48,27 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
    software/software-updates-2018
 
 
+.. _update-2019-04-21:
+
+
+2019-04-21
+-------------------------
+
+* Python 3:
+    - (upd) **pandas 0.24.2**: check `pandas release notes <https://pandas.pydata.org/pandas-docs/stable/whatsnew/index.html#version-0-24>`_ for changes since 0.23.
+    - (new) `umap-learn <https://umap-learn.readthedocs.io/en/latest/>`_ (`UMAP example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/umap.ipynb?viewer=share>`_):
+      *Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction technique that can be used for visualisation similarly to t-SNE, but also for general non-linear dimension reduction.*
+
+* R:
+    * (new) `Seurat 3.0.0 <https://cran.r-project.org/package=Seurat>`_: *A toolkit for quality control, analysis, and exploration of single cell RNA sequencing data.* <https://satijalab.org/seurat/>
+    * (new) `bibliometrix <https://cran.r-project.org/package=bibliometrix>`: *An R-Tool for Comprehensive Science Mapping Analysis*
+
+* Software:
+    * (new) ``ttf-mscorefonts`` Linux package to provide more fonts, primarily for XeLaTeX.
+    * (upd) routine Linux package update, including ``xpra-2.5.1``.
+
+
+
 
 
 .. _update-2019-04-14:
