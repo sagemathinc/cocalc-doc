@@ -48,8 +48,26 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
    software/software-updates-2018
 
 
-.. _update-2019-04-21:
 
+
+
+.. _update-2019-04-27:
+
+2019-04-27
+--------------------------------
+
+* Software
+    * (upd) **Nodejs 10**, including all system-wide node packages
+    * (upd) `QGIS`_ 3.6.2
+    * (upd) `Gradle`_ 4.4.1
+    * ... and various Linux libraries
+
+* Python 3:
+    * (upd) `arctic`_ ``1.74.0`` to fix a pandas incompatibility
+
+
+
+.. _update-2019-04-21:
 
 2019-04-21
 -------------------------
@@ -434,5 +452,6 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 .. _Cadabra2: https://cadabra.science
 .. _Qiskit:  https://qiskit.org
 .. _dask: https://dask.org
-
-
+.. _QGIS: https://www.qgis.org
+.. _arctic: https://arctic.readthedocs.io/en/latest/
+.. _Gradle: https://gradle.org/
