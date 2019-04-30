@@ -219,6 +219,8 @@ After clicking `Adjust upgrades...` as shown above, this is what the instructor 
      :width: 50%
      :align: center
 
+.. index:: Member Hosting;student upgrades
+
 The instructor enters the usual upgrades *per student* for Standard subscriptions:
 
 * Member Hosting: ✓

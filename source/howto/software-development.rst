@@ -70,6 +70,8 @@ You can also (of course) write to a file on disk, which might be preferable in s
 Limitations of long-running computations
 ---------------------------------------------------
 
+.. index:: Member Hosting;long-running computations
+
 Open your project and click on Settings.
 The default limitations are listed under "Quotas" in the lower left.
 These can be raised, as mentioned there.  Notes:

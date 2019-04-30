@@ -210,7 +210,9 @@ From left to right:
 Your CoCalc Session
 -------------------
 
-CoCalc will keep track of projects you have open and files that are open fwithin those projects.
+.. index:: Member Hosting;compute session
+
+CoCalc will keep track of projects you have open and files that are open within those projects.
 When you return, you will see the same open projects and files.
 In addition, if you have a program running and disconnect, it will keep running, with a few
 exceptions: the program will stop if any of the following occurs:

@@ -172,6 +172,8 @@ Our teacher requires us students to pay. How?
 
 **Background:** as an instructor, :ref:`you can require students to pay <course-students-pay>` for the course.
 
+.. index:: Member Hosting;students-pay course
+
 As a student, you can/have to pay a one-time fee of $14 (for the whole course)
 to move your student project to an improved "Member Hosting" server and enable "Internet Access"
 (see :doc:`upgrade-guide`).

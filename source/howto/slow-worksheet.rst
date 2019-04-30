@@ -17,6 +17,8 @@ I'm not sure what else to try to get the server to work. It was working fine and
 
 **Answer:** There is no inherent problem. You can try several things.
 
+.. index:: Member Hosting;slow worksheet
+
 0. **Pay:** Use member hosting or dedicated CPU
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
