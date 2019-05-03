@@ -37,6 +37,27 @@ Extensive Command Set
 
 In addition to the usual commands available at user level in `Ubuntu Linux <https://www.ubuntu.com/>`_, there are command line programming interfaces for ``sage``, ``python2`` / ``ipython2``, ``python3`` / ``ipython3``, ``R``, ``gap``, ``java``, ``julia``, ``octave`` and many more. There is an extensive list of added executables at the `CoCalc installed software list <https://cocalc.com/doc/software.html>`_.
 
+CoCalc Terminal Commands
+-------------------------
+
+The Linux shell in CoCalc projects has access to commands specifically intended for the CoCalc project environment. These include:
+
+.. index:: Terminal; open a file
+
+* ``open <filename>``
+    The "open" command from a terminal will cause the CoCalc UI to open a tab for the file requested. If a tab is already open, browser focus will switch to that file. You can open multiple files with a single command, e.g. ````open file1 file2 file3````. The file is opened in an environment that matches the file type. For example, ``.ipynb`` files are opened as Jupyter notebooks, ``.sagews`` files are opened as Sage worksheets, and ``.py``, ``.R``, and ``.c`` files are opened in the frame editor.
+
+.. index:: Convert; Jupyter notebook to Sage worksheet
+
+* ``cc-ipynb2sagews``
+    Convert Jupyter notebook(s) to Sage worksheet(s). Enter the path(s) of one or more .ipynb files on the command line. Corresponding files with the same name, except with .sagews extension, will be created.
+
+.. index:: Convert; Sage worksheet to Jupyter notebook
+
+* ``cc-sagews2ipynb``
+    Convert Sage worksheet(s) to Jupyter notebook(s). Enter the path(s) of one or more .sagews files on the command line. Corresponding files with the same name, except with .ipynb extension, will be created.
+
+
 
 Collaboration and Side Chat
 ------------------------------
