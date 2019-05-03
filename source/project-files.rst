@@ -1,5 +1,5 @@
 .. index:: Projects; files
-.. _project_files:
+.. _project-files:
 
 ----------------------------------
 Project Files

@@ -157,6 +157,8 @@ Technical Status
   - Touch events barely work at all.
   - Even an external keyboard will NOT work on an iPad (keys will be stuck, etc.).
 
+.. index:: X11;installed applications
+.. _x11_installed_applications:
 
 Installed Applications
 ======================
