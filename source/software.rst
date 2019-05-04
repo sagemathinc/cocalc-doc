@@ -49,6 +49,29 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 
 
+.. _update-2019-05-04:
+
+2019-05-04
+----------------------------
+
+* Python 3:
+    * (upd) `PyGame`_ 1.9.4
+    * (upd) ``pip-19.1``
+    * (upd) `Dask`_ 1.2.0, ``dask-ml-0.12.0`` and ``distributed-1.27.0``
+    * (upd) `rpy2-2.8.6 <https://rpy2.readthedocs.io/>`_ (the latest release)
+    * (upd) ``selenium-3.141.0`` in combination with chromedriver
+
+* R:
+    * (new) `ggformula 0.9.1 <https://cran.r-project.org/package=ggformula>`_: *Provides a formula interface to 'ggplot2' graphics* + `ggstance <https://cran.r-project.org/package=ggstance>`_, ...
+    * (upd) `tidyverse 1.2.1 <https://cran.r-project.org/package=tidyverse>`_ and ``ggplot 3.1.1``
+
+* Node.js: (upd) ``chromedriver@74.0.0``
+
+* Linux package updates: ``fenics 1:2019.1.0``, ``gcc 8.3``, and ``gcc 7.4`` for ``g++`` and ``gfortran`` , ...
+
+
+
+
 
 
 .. _update-2019-04-27:
@@ -455,3 +478,4 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 .. _QGIS: https://www.qgis.org
 .. _arctic: https://arctic.readthedocs.io/en/latest/
 .. _Gradle: https://gradle.org/
+.. _PyGame: https://www.pygame.org/
