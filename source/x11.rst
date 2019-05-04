@@ -312,3 +312,18 @@ If the visible buttons/controls are small, especially if you have a high-res dis
 
 **RStudio**: On high resolution displays set *Tools* → *Global Options* → *Appearance* → **Zoom** → **200%**.
 
+
+
+.. index:: Scilab
+
+Is Scilab broken?
+-------------------------
+
+In theory, Scilab should work in this :doc:`../x11` editor,
+but there is a long standing `issue in Ubuntu Linux <https://bugs.launchpad.net/ubuntu/+source/scilab/+bug/1762999>`_ about this.
+
+As of May 2019, it works, but maybe it's broken again ``¯\_(ツ)_/¯`` ?
+
+.. image:: img/x11-scilab-2019-05-04.png
+    :align: center
+    :width: 75%
