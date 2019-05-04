@@ -88,11 +88,11 @@
       }
     },
     "read_text_file_from_project": {
-      "description": "Read a text file in the project whose id is supplied.\nUser must be owner or collaborator in the target project.\nArgument 'path' is relative to home directory in target project.\nUnix user in the target project must have permissions to read file\nand containing directories if they do not already exist.\n\nExample:\n\nRead a text file.\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d project_id=e49e86aa-192f-410b-8269-4b89fd934fba \\\n    -d path=Assignments/A1/h1.txt \\\n    https://cocalc.com/api/v1/read_text_file_from_project\n  ==> {\"event\":\"text_file_read_from_project\",\n       \"id\":\"481d6055-5609-450f-a229-480e518b2f84\",\n       \"content\":\"hello\"}\n```",
+      "description": "Read a text file in the project whose id is supplied.\nUser must be owner or collaborator in the target project.\nArgument 'path' is relative to home directory in target project.\nUnix user in the target project must have permissions to read file\nand containing directories if they do not already exist.\n\nYou can also read multiple project_id/path's at once by\nmaking project_id and path arrays (of the same length).\nIn that case, the result will be an array\nof {project_id, path, content} objects, in some\nrandom order.  If there is an error reading a particular\nfile, instead {project_id, path, error} is included.\n\nExample:\n\nRead a text file.\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d project_id=e49e86aa-192f-410b-8269-4b89fd934fba \\\n    -d path=Assignments/A1/h1.txt \\\n    https://cocalc.com/api/v1/read_text_file_from_project\n  ==> {\"event\":\"text_file_read_from_project\",\n       \"id\":\"481d6055-5609-450f-a229-480e518b2f84\",\n       \"content\":\"hello\"}\n```",
       "fields": {
         "id": "A unique UUID for the query",
-        "project_id": "id of project containing file to be read (required)",
-        "path": "path to file to be read in target project (required)"
+        "project_id": "id of project containing file to be read (or array of project_id's) (required)",
+        "path": "path to file to be read in target project (or array of paths) (required)"
       }
     },
     "write_text_file_to_project": {
@@ -119,12 +119,12 @@
         "id": "A unique UUID for the query",
         "query": "comma separated list of email addresses or strings such as 'foo bar' (required)",
         "admin": "if true and user is an admin, includes email addresses in result, and does more permissive search (default: false)",
-        "active": "only include users active for this interval of time (default: \"6 months\")",
+        "active": "only include users active for this interval of time (default: \"\")",
         "limit": "maximum number of results returned (default: 20)"
       }
     },
     "invite_collaborator": {
-      "description": "Invite a user who already has a CoCalc account to\nbecome a collaborator on a project. You must be owner\nor collaborator on the target project.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/invite_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
+      "description": "Invite a user who already has a CoCalc account to\nbecome a collaborator on a project. You must be owner\nor collaborator on the target project.  The user\nwill receive an email notification.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/invite_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
       "fields": {
         "id": "A unique UUID for the query",
         "project_id": "project_id of project into which user is invited (required)",
@@ -134,11 +134,19 @@
         "replyto": "Email address of user who is inviting someone",
         "replyto_name": "Name of user who is inviting someone",
         "email": "Body of email user is sending (plain text or HTML)",
-        "subject": "Subject line of invitiation email"
+        "subject": "Subject line of invitation email"
+      }
+    },
+    "add_collaborator": {
+      "description": "Directly add a user to a CoCalc project.\nYou must be owner or collaborator on the target project.\nYou cannot remove the project owner.\nThe user is NOT notified via email that they were added, and there\nis no confirmation process.  (Eventually, there will be\nan accept process, or this endpoint will only work\nwith a notion of \"managed accounts\".)\n\nYou can optionally add multiple user to multiple projects by padding\nan array of strings for project_id and account_id.  The arrays\nmust have the same length.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/add_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
+      "fields": {
+        "id": "A unique UUID for the query",
+        "project_id": "project_id of project to add user to (can be an array to add multiple users to multiple projects) (required)",
+        "account_id": "account_id of user (can be an array to add multiple users to multiple projects) (required)"
       }
     },
     "remove_collaborator": {
-      "description": "Remove a user from a CoCalc project.\nYou must be owner or collaborator on the target project.\nYou cannot remove the project owner.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/remove_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
+      "description": "Remove a user from a CoCalc project.\nYou must be owner or collaborator on the target project.\nYou cannot remove the project owner.\nThe user is NOT notified via email that they were removed.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/remove_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
       "fields": {
         "id": "A unique UUID for the query",
         "project_id": "project_id of project from which user is removed (required)",
@@ -294,6 +302,6 @@
     }
   },
   "root": "/api/v1/",
-  "timestamp": "2019-03-05T10:13:09.037Z",
-  "gitrev": "0ef9a0625d9e4e89da6a1be64c9ae469256425eb"
+  "timestamp": "2019-05-04T08:09:48.370Z",
+  "gitrev": "24605119472db2f97b3c4f02704fe36539600a8e"
 }
