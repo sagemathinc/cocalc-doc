@@ -47,7 +47,7 @@ Alternatively, if you're a student in a course, ask your instructor to enable th
 which makes available a special one-time \$14 fee for a four month subscription to you.
 
 In both cases, we are available to talk to the teacher/instructor directly and explain CoCalcs course functionality.
-Contact us at `help@sagemath.com <help@sagemath.com>`_ in order to establish the contact.
+For inquiries, contact us at `help@sagemath.com <help@sagemath.com>`_.
 
 **For more details, read the** :ref:`course-upgrading-students` **section in the teaching guide.**
 

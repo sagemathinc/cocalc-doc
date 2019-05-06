@@ -14,6 +14,8 @@ After you buy a subscription, the first thing you need to do is go to settings i
 
 At any time, you can visit https://cocalc.com/settings/upgrades to see exactly how all of your upgrades are allocated across your projects.
 
+.. index:: Member Hosting;subscriptions
+
 **The free servers really are massively overloaded, so it is well worth it to upgrade to member hosting, enable internet access, etc.**
 
 If you used up your upgrades, e.g., you are often using 3 or 4 projects, then you can always buy multiple subscription and you'll get more upgrades as a result.

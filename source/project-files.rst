@@ -1,11 +1,17 @@
 .. index:: Projects; files
-.. _project_files:
+.. _project-files:
 
-**********************************
+----------------------------------
 Project Files
-**********************************
+----------------------------------
 
-The project **Files** listing gives you an overview of your files in that project. Click on a line to open a file,
+The project **Files** listing gives you an overview of your files in that project.
+
+.. contents::
+   :local:
+   :depth: 1
+
+Click on a line to open a file,
 or select one or more files via the checkbox on the left to manipulate them (deleting, moving, ...)
 
 .. figure:: img/project-files/files-list.png
@@ -18,7 +24,6 @@ or select one or more files via the checkbox on the left to manipulate them (del
 .. index:: Hidden Files; in Files list
 .. _hidden-files:
 
-=====================
 Show Hidden Files
 =====================
 
@@ -30,11 +35,10 @@ By convention, a file whose name begins with a dot is a hidden file. It will not
 
      *files list showing hidden files*
 
-.. index:: Masked Files; in Files list
-.. index:: Temporary Files; in Files list
+.. index:: Masked files; hide temporary files
+.. index:: Temporary files; hiding
 .. _masked-files:
 
-=====================
 Hide Temporary Files
 =====================
 
@@ -56,7 +60,6 @@ Processing some programs, notably LaTeX source (e.g. ``.tex`` files) causes temp
 .. index:: Snapshots; in Files list
 .. _project-snapshot:
 
-=====================
 Snapshots
 =====================
 

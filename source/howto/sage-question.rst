@@ -5,7 +5,9 @@
 Question about Sage
 =============================================
 
-If you have a question about how Sage works, notice a **bug in Sage**, or need help with solving a problem using Sage, there are resources available:
+The official CoCalc support is only regarding the CoCalc platform and software installs.
+
+If you have **a question about Sage** itself, notice a **bug in Sage**, or need help with solving a problem using Sage, there are resources available:
 
 * `The ask.sagemath.org Question/Answer site <https://ask.sagemath.org/questions/>`_.
 
@@ -22,4 +24,17 @@ If you have a question about how Sage works, notice a **bug in Sage**, or need h
   * `Sage for Undergraduates <http://www.gregorybard.com/Sage.html>`_.
   * `Computational Mathematics with SageMath <http://sagebook.gforge.inria.fr/english.html>`_.
 
-**Note that CoCalc support is for questions regarding the CoCalc platform and requesting that software be installed.**
+
+.. note::
+
+    A full example greatly helps someone who is trying to help you!
+    For that, create a new Sage Worksheet, copy/paste the essential code for a minimal example,
+    and then make sure it runs fine top to bottom or clearly shows the error.
+    Maybe even add some comments in ``%md`` blocks!
+
+    Then click on the :doc:`Share Button <../share>` at the top right and publish that file
+    on the share server.
+    Make sure the content is visible there and paste the link pointing to that shared file
+    wherever you're asking your question.
+
+

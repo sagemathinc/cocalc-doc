@@ -1,16 +1,210 @@
+.. _software-updates-2019:
 
-.. _software-updates:
-
-Software Updates
+Software Updates 2019
 ======================================
 
-Recent updates to CoCalc's software stack available in the :ref:`"Default" environment <software-environment>`.
+.. _update-2019-05-04:
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Archive
+2019-05-04
+----------------------------
 
-   updates-2018
+* Python 3:
+    * (upd) `PyGame`_ 1.9.4
+    * (upd) ``pip-19.1``
+    * (upd) `Dask`_ 1.2.0, ``dask-ml-0.12.0`` and ``distributed-1.27.0``
+    * (upd) `rpy2-2.8.6 <https://rpy2.readthedocs.io/>`_ (the latest release)
+    * (upd) ``selenium-3.141.0`` in combination with chromedriver
+
+* R:
+    * (new) `ggformula 0.9.1 <https://cran.r-project.org/package=ggformula>`_: *Provides a formula interface to 'ggplot2' graphics* + `ggstance <https://cran.r-project.org/package=ggstance>`_, ...
+    * (upd) `tidyverse 1.2.1 <https://cran.r-project.org/package=tidyverse>`_ and ``ggplot 3.1.1``
+
+* Node.js: (upd) ``chromedriver@74.0.0``
+
+* Linux package updates: ``fenics 1:2019.1.0``, ``gcc 8.3``, and ``gcc 7.4`` for ``g++`` and ``gfortran`` , ...
+
+
+
+
+
+
+.. _update-2019-04-27:
+
+2019-04-27
+--------------------------------
+
+* Software
+    * (upd) **Nodejs 10**, including all system-wide node packages
+    * (upd) `QGIS`_ 3.6.2
+    * (upd) `Gradle`_ 4.4.1
+    * ... and various Linux libraries
+
+* Python 3:
+    * (upd) `arctic`_ ``1.74.0`` to fix a pandas incompatibility
+
+
+
+.. _update-2019-04-21:
+
+2019-04-21
+-------------------------
+
+* Python 3:
+    - (upd) **pandas 0.24.2**: check `pandas release notes <https://pandas.pydata.org/pandas-docs/stable/whatsnew/index.html#version-0-24>`_ for changes since 0.23.
+    - (new) `umap-learn <https://umap-learn.readthedocs.io/en/latest/>`_ (`UMAP example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/umap.ipynb?viewer=share>`_):
+      *Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction technique that can be used for visualisation similarly to t-SNE, but also for general non-linear dimension reduction.*
+
+* R:
+    * (new) `Seurat 3.0.0 <https://cran.r-project.org/package=Seurat>`_: *A toolkit for quality control, analysis, and exploration of single cell RNA sequencing data.* <https://satijalab.org/seurat/>
+    * (new) `bibliometrix <https://cran.r-project.org/package=bibliometrix>`: *An R-Tool for Comprehensive Science Mapping Analysis*
+
+* Software:
+    * (new) ``ttf-mscorefonts`` Linux package to provide more fonts, primarily for XeLaTeX.
+    * (upd) routine Linux package update, including ``xpra-2.5.1``.
+
+
+
+
+
+.. _update-2019-04-14:
+
+2019-04-14
+-------------------------------
+
+* SageMath 8.7
+    * (new) package ``plot3D`` in Sage's R, along with ``tidyverse`` and ``dplyr``
+
+.. image:: img/sage-R-plot3d.png
+     :align: center
+     :width: 50%
+
+* Anaconda 5:
+    * (new) additionally to `hoomod blue <http://glotzerlab.engin.umich.edu/hoomd-blue/>`_,
+      ``freud-1.0.0``, ``fresnel-0.8.0``, ``embree3-3.5.2``, and ``gsd-1.6.1``
+
+* Python 3:
+    * (upd) `SymPy 1.4 <https://github.com/sympy/sympy/wiki/Release-Notes-for-1.4>`_
+    * (new) `Orange 3 <https://orange.biolab.si/>`_: *Open source machine learning and data visualization for novice and expert.*
+    * (upd) `Qiskit`_ related: ``qiskit-0.8.0``, ``qiskit-aer-0.1.1``, ``qiskit-ignis-0.1.0``, ``qiskit-terra-0.7.1``
+
+* Library:
+    * all entries are updated to their latest upstream version
+    * adding `VQE Playground <https://github.com/JavaFXpert/vqe-playground>`_: *gaining intuition about Variational Quantum Eigensolver*
+
+* R:
+    * (upd) also updating ``tidyverse`` and ``dplyr``
+
+
+
+
+.. _update-2019-04-07:
+
+2019-04-07
+--------------------------
+
+* SageMath 8.7 is the **default** ``sage``.
+    * You can still use the previous one via ``sage-8.6``,
+      select the appropriate kernel,
+      or switch it in your project by running ``sage_select 8.6`` in a :doc:`../terminal`.
+    * `SnapPy <https://www.math.uic.edu/t3m/SnapPy/>`_ tests do not pass, I don't know why ...
+
+
+* R (R-Project):
+    * (upd) `bioconductor <https://www.bioconductor.org/>`_ packages,
+      in particular ``affy``, ``limma``, ``puma``, etc.
+
+
+* Python:
+    * (upd/py3) ``mypy-0.700`` -- `MyPy 0.700 release notes <http://mypy-lang.blogspot.com/2019/04/mypy-0700-released-up-to-4x-faster.html>`_
+    * (new) ``opencv-contrib-python`` -- https://pypi.org/project/opencv-contrib-python/
+
+
+* Software:
+    * `Spyder IDE 3.3.4 <https://www.spyder-ide.org/>`_ (:doc:`via X11 <../x11>`) and Python 3 deps:
+      ``PyQt5-sip-4.19.15``, ``pyqt5-5.12.1``, ``pyqtwebengine-5.12.1``, ``qtawesome-0.5.7``,
+      ``qtpy-1.7.0``, ``spyder-kernels-0.4.3``, and ``wurlitzer-1.0.2``.
+    * VS Code 1.33
+    * `Gyoto <https://gyoto.obspm.fr/>`_
+
+
+
+
+.. _update-2019-03-31:
+
+2019-03-31
+--------------------------
+
+* CoCalc UI:
+    * (new) **"TimeTravel export"**: https://doc.cocalc.com/howto/export-timetravel.html
+    * (new) new Jupyter Notebooks explicitly ask for the Jupyter Kernel (i.e. no memorized default)
+    * file listing speed improvements
+    * Jupyter Notebook related Python 2 Kernel changes:
+        * ``python2`` changes to use the system-wide Python 2 environment;
+        * ``python2-sagemath`` the Python environment of SageMath (formerly ``python2``);
+        * existing ``python2-ubuntu`` removed, use "Python 2 (Ubuntu Linux)"
+
+* Python 3:
+   * (new) ``dit-1.2.3``: `discrete information theory <http://docs.dit.io/en/latest/>`_
+   * (new) ``skyfield-1.10``: https://rhodesmill.org/skyfield/: *Elegant Astronomy for Python*:
+     Skyfield computes positions for the stars, planets, and satellites in orbit around the Earth. `Skyfield Demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/skyfield.ipynb?viewer=share>`_ –  deps: ``jplephem-2.9`` and ``sgp4-1.4``
+   * (upd) tensorflow related: ``tensorflow-1.13.1``,  ``tensorboard-1.13.1``,
+     ``tensorflow-estimator-1.13.0`` and ``tensorflow-probability-0.6.0``
+     – https://www.tensorflow.org/probability/overview
+
+   * (upd) ``numba-0.43.1`` and ``llvmlite-0.28.0``
+
+* Julia 1.1 (new/upd):
+    * `Images <https://juliaimages.org/latest/>`_
+    * `Primes <http://juliamath.github.io/Primes.jl/stable/>`_
+    * `LightGraphs <https://github.com/JuliaGraphs/LightGraphs.jl>`_
+    * `Flux <https://github.com/FluxML/Flux.jl>`_ – `The Elegant Machine Learning Stack <https://fluxml.ai/>`_
+    * and ``DiffEqFlux`` – https://julialang.org/blog/2019/01/fluxdiffeq
+    * `Knet <https://github.com/denizyuret/Knet.jl>`_
+    * `Turing <https://github.com/TuringLang/Turing.jl>`_ –
+      a language for `probabilistic programming <http://turing.ml/>`_
+    * `StatsPlots <https://github.com/JuliaPlots/StatsPlots.jl>`_,
+    * more from `JuliaOpt <http://www.juliaopt.org>`_, ``Convex``, ``BlackBoxOptim`` and ``NLsolve``
+    * and some more updates like ``IJulia`` for the notebook.
+    * There are also less issues installing custom packages in a notebook via ``Pkg.add()``,
+      because ``JULIA_PROJECT`` is set to ``/home/user/.julia/environment/v1.0`` or ``./v1.1`` (see `julia discourse 13922/27 <https://discourse.julialang.org/t/how-does-one-set-up-a-centralized-julia-installation/13922/27>`_)
+
+* SageMath:
+    * **Version 8.7**: initial deployment, still needs testing. Try it and give us feedback!
+      – `SageMath 8.7 demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/sage-8.7.ipynb?viewer=share>`_.
+    * (upd) Development version to **8.8 beta0** (Python 3)
+
+
+* Software, Linux package updates:
+    * ``rustc`` 1.31, ``cargo`` 0.32, ``bazel`` 0.24, ...
+
+
+
+
+
+.. _update-2019-03-23:
+
+2019-03-23
+----------------------
+
+* (UI/LaTeX) **LaTeX editor**: `"shell-escape" mode <https://doc.cocalc.com/latex.html#enable-shell-escape-and-plot-using-gnuplot>`_ to e.g. draw plots using Gnuplot
+
+* (UI/Chat) **@Mention** a project collaborator in a chat to ping her/him via email.
+
+* (new) **ROOT Kernel**: `ROOT is a modular scientific software toolkit <https://root.cern.ch/>`_. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualization and storage. `ROOT example Jupyter worksheet <https://share.cocalc.com/share/d552e619-3c8e-4722-bda1-8f6a75f78443/cocalc-root.ipynb?viewer=share>`_
+
+* (new) **rclone** -- `rsync for cloud storage <https://rclone.org/>`_
+
+* **R**: installing `qdap <https://cran.r-project.org/web/packages/qdap/index.html>`_ library and updating a couple of other ones ...
+
+* **Python 3**: ``Sphinx`` 1.8.5
+
+* **Julia 1.1**: adding ``Images`` and updating various packages like `JuMP 0.19 <https://github.com/JuliaOpt/JuMP.jl/blob/master/NEWS.md>`_!
+
+* **Linux**: various package updates, in particular ``bazel`` 0.23.2, ``xpra`` 2.5, ``git-lfs`` 2.7.1, and ``code`` 1.32
+
+* (upd) **SageMath Development** version 8.7.rc0
+
+
 
 
 
@@ -85,7 +279,7 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 2019-02-16
 ------------------
 
-- New `SPARQL kernel <https://github.com/paulovn/sparql-kernel>`_: see `issue #3573 <https://github.com/sagemathinc/cocalc/issues/3573>`_. You can query remote endpoints. Make sure your project has :doc:`internet access <../upgrade-guide>` enabled! (`SPARQL demo notebook <https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/sparql-vanGogh.ipynb?viewer=share>`_)
+- New `SPARQL kernel <https://github.com/paulovn/sparql-kernel>`_: see `issue #3573 <https://github.com/sagemathinc/cocalc/issues/3573>`_. You can query remote endpoints. Make sure your project has :doc:`internet access <upgrade-guide>` enabled! (`SPARQL demo notebook <https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/sparql-vanGogh.ipynb?viewer=share>`_)
 
 - `LEAN 3.4.2 <https://github.com/leanprover/lean/releases/tag/v3.4.2>`_, with a precompiled mathlib in ``/ext/lean/lean/mathlib``.
 
@@ -233,6 +427,10 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 .. _SageMath: https://sagemath.org
 .. _Cadabra2: https://cadabra.science
-.. _qiskit:  https://qiskit.org
+.. _Qiskit:  https://qiskit.org
 .. _dask: https://dask.org
+.. _QGIS: https://www.qgis.org
+.. _arctic: https://arctic.readthedocs.io/en/latest/
+.. _Gradle: https://gradle.org/
+.. _PyGame: https://www.pygame.org/
 

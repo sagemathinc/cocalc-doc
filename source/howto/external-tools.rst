@@ -144,16 +144,6 @@ Restart the Sage worksheet to make sure the new version of FriCAS is started.
 
 
 
-.. index:: Scilab
-
-Is Scilab broken?
--------------------------
-
-In theory, Scilab should work in a :doc:`../x11` editor,
-but there is a long standing `issue in Ubuntu Linux <https://bugs.launchpad.net/ubuntu/+source/scilab/+bug/1762999>`_ about this.
-
-
-
 
 .. index:: Pentadactyl plugin
 

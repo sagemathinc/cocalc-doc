@@ -157,6 +157,8 @@ Technical Status
   - Touch events barely work at all.
   - Even an external keyboard will NOT work on an iPad (keys will be stuck, etc.).
 
+.. index:: X11;installed applications
+.. _x11_installed_applications:
 
 Installed Applications
 ======================
@@ -206,6 +208,7 @@ Installed Applications
     `lyx`_, "LyX combines the power and flexibility of TeX/LaTeX with the ease of use of a graphical interface.", latex, OK
     `meld`_, "a visual diff and merge tool targeted at developers", code, OK
     `nteract`_, "Jupyter Notebook compatible UI", calc, OK
+    `octave`_, "Octave", calc, OK
     `okular`_,  "PDF reader and annotator (Tools → Review)", pdf, OK
     `OpenModelica`_ , "Modeling and simulation environment. Command: ``OMEdit`` & co.", physics, OK
     `pcb-gtk`_, "printed circuit board editor", physics, OK
@@ -251,6 +254,7 @@ Installed Applications
 .. _LibreOffice Writer: https://www.libreoffice.org/discover/writer/
 .. _meld: http://meldmerge.org/
 .. _nteract: https://nteract.io/
+.. _octave: https://www.gnu.org/software/octave/
 .. _okular: https://okular.kde.org/
 .. _OpenModelica: https://www.openmodelica.org/
 .. _pcb-gtk: http://pcb.geda-project.org/
@@ -289,3 +293,37 @@ Installed Applications
    **paint**    , "raster graphics editor"
    **graphics** , "vector graphics editor"
    **pdf**      , "for reading, editing, annotating PDFs"
+
+
+
+Tips & Tricks
+======================
+
+High-resolution HDPI displays
+--------------------------------------
+
+If the visible buttons/controls are small, especially if you have a high-res display, and zooming alone doesn't really help much, enable **HDPI rendering**. That's available for some of the applications in their respective configuration dialogs.
+
+**Spyder**:  The "auto high DPI scaling" setting is in *Preferences*, accessible via the *Tools* menu or the wrench-icon. See screenshot below:
+
+.. image:: img/x11-spyder-hdpi.png
+    :align: center
+    :width: 75%
+
+**RStudio**: On high resolution displays set *Tools* → *Global Options* → *Appearance* → **Zoom** → **200%**.
+
+
+
+.. index:: Scilab
+
+Is Scilab broken?
+-------------------------
+
+In theory, Scilab should work in this :doc:`../x11` editor,
+but there is a long standing `issue in Ubuntu Linux <https://bugs.launchpad.net/ubuntu/+source/scilab/+bug/1762999>`_ about this.
+
+As of May 2019, it works, but maybe it's broken again ``¯\_(ツ)_/¯`` ?
+
+.. image:: img/x11-scilab-2019-05-04.png
+    :align: center
+    :width: 75%

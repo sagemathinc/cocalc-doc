@@ -210,7 +210,9 @@ From left to right:
 Your CoCalc Session
 -------------------
 
-CoCalc will keep track of projects you have open and files that are open fwithin those projects.
+.. index:: Member Hosting;compute session
+
+CoCalc will keep track of projects you have open and files that are open within those projects.
 When you return, you will see the same open projects and files.
 In addition, if you have a program running and disconnect, it will keep running, with a few
 exceptions: the program will stop if any of the following occurs:
@@ -230,21 +232,17 @@ You sign out by using **Account** → **Preferences** → **Sign Out...**
 Next steps
 ----------
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Continue your tour of CoCalc, with these topics:
+Continue your tour of CoCalc, with these topics:
 
-   jupyter
-   latex
-   sagews
-   terminal
-   frame-editor
+* :doc:`jupyter`
+* :doc:`latex`
+* :doc:`sagews`
+* :doc:`terminal`
+* :doc:`frame-editor`
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Subscribe to CoCalc and upgrade your projects here:
+Subscribe to CoCalc and upgrade your projects here:
 
-   upgrade-guide
+* :doc:`upgrade-guide`
 
 Getting help
 -----------------------------

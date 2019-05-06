@@ -59,6 +59,8 @@ You can share upgrades with any project that you are a collaborator on. You must
 View Current Resources
 """"""""""""""""""""""
 
+.. index:: Member Hosting;project settings
+
 You can view allocated upgrades and current resource use under `Project usage and quotas`.
 Here's an example for a project with no upgrades added (note the warning banner that
 appears if the project does not have Member Hosting or Internet Access):
@@ -101,6 +103,9 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
 .. image:: img/project-settings/max-added.png
      :width: 60%
      :align: center
+
+.. index:: Projects; hidden or deleted
+.. _project_hidden_deleted:
 
 Hide or delete project
 ----------------------

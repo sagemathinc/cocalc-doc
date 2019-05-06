@@ -70,6 +70,8 @@ You can also (of course) write to a file on disk, which might be preferable in s
 Limitations of long-running computations
 ---------------------------------------------------
 
+.. index:: Member Hosting;long-running computations
+
 Open your project and click on Settings.
 The default limitations are listed under "Quotas" in the lower left.
 These can be raised, as mentioned there.  Notes:
@@ -378,17 +380,23 @@ If you have set default_mode to r, then enter the command in a sage mode cell::
 
 You can change it by typing it again.
 
+.. index:: Octave
 
 Octave
 =================
 
-I've put an example Octave Jupyter notebook and an Octave CoCalc worksheet here:
+You can work with `Octave <https://www.gnu.org/software/octave/>`_ in
 
-https://cocalc.com/projects/4a5f0542-5873-4eed-a85c-a18c706e8bcd/files/cloud-examples/octave/
+* Jupyter and CoCalc worksheets;
+* run its graphical front-end in the :doc:`../x11`;
+* work in a :doc:`../terminal`: add or use an existing "Terminal" file, ending in ``.term``,
+  and type ``octave-cli`` on the command line;
+* You can also create a file that ends with ``.m``, and edit it. 
+  Then open an additional panel in the :doc:`../frame-editor` and change it to show a terminal and run the file right there.
 
-Besides Jupyter and CoCalc worksheets, you can also work in a :doc:`../terminal`:
-Click "+New", click Terminal, and type "octave" on the command line, and this should work well.
-You can type "+New", enter a filename that ends with .m, and edit it, then load it into the command line (by typing the filename without the extension).
+Here are example Octave Jupyter notebook and an Octave CoCalc worksheets:
+
+https://github.com/sagemathinc/cocalc-example-files/tree/master/octave
 
 Other Languages
 ====================

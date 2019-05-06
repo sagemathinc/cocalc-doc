@@ -15,7 +15,9 @@ To start being productive, you have to create a :doc:`sagews`, :doc:`jupyter`, :
 .. toctree::
    :maxdepth: 2
 
+   project-list
    project-files
    plus-new
    project-settings
    upgrade-guide
+   project-library
