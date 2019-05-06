@@ -195,7 +195,14 @@ From left to right:
 
        .. _ft-open-files:
 
-    * **Open Files** - a button will appear for each file you have open.
+    * **Open Files** - a button will appear for each file you have open. There are several ways to open a file in CoCalc:
+
+        * Select the name of the file in :doc:`../project-files` list.
+
+        * Select the filename in an entry in the :ref:`Project Activity Log <ft-history>`.
+
+        * Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
+
 
        .. _ft-share:
 
