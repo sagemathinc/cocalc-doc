@@ -375,7 +375,8 @@ The CoCalc software environment is updated frequently. The collection of install
 
 You can see a recent list of installed software at `Available Software  <https://cocalc.com/doc/software.html>`_ and in our `Help page <https://cocalc.com/help>`_ under "Software and Programming Libraries Details".
 
-A running log of regular updates to the environment is the :ref:`software-updates` list.
+A running log of regular updates to the environment is the
+:ref:`legacy software updates list<legacy-software-environment>`.
 
 You may want to revert to an older environment, or try a new environment that is about to be released. To change the software environment to a different compute image, use the "Selected Image" menu.
 The exact list of available images will change from time to time.

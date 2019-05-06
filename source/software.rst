@@ -12,21 +12,15 @@ The :ref:`legacy environment <legacy-software-environment>` is very large,
 well tested, regularly maintained and matured over many years.
 This is what a project runs by default.
 
-Not all software and library install requests can be fulfilled, though.
-Especially conflicting requirements, requests for an exact version of a library,
-or cutting-edge development versions need a more specific and flexible way.
-A :ref:`custom environment <custom-software-environment>` are based on an exact definition of
+A :ref:`custom environment <custom-software-environment>` is based on an exact definition of
 the underlying software stack,
-to fulfill such specific purposes and also convey accompanying material.
+to fulfill specific purposes and to also convey accompanying material.
 
-.. contents::
-   :local:
-   :depth: 2
 
 
 .. _legacy-software-environment:
 
-Legacy software environment
+Legacy environment
 =================================
 
 .. note::
@@ -34,15 +28,18 @@ Legacy software environment
     and receives regular updates.
     There is a  `more detailed and fairly up-to-date list <https://cocalc.com/doc/software.html>`_ available.
 
+Software update summaries
+-----------------------------------
+
 .. toctree::
    :maxdepth: 1
-   :caption: Software update summaries
 
    software/updates-2019
    software/updates-2018
 
 
-The main supported software environments are the following:
+Main supported software environments
+-----------------------------------------------
 
 * `SageMath`_ – Sage is an open-source mathematics software system. It is the patron for CoCalc's former name "SageMathCloud".
    * Inside Sage, there are `a lot of components <http://sagemath.org/links-components.html>`_ bundled. Note, they maybe replace existing system-wide software like Python libraries and R. (i.e. there is a difference between ``sage -R`` vs. ``R``, ``sage -ipython`` vs. ``ipython``/``ipython3`` and of course, ``sage -python`` vs. ``python``/``python3``.)
@@ -68,7 +65,7 @@ The main supported software environments are the following:
 
 .. _custom-software-environment:
 
-Custom software environments
+Custom environments
 ==============================
 
 
@@ -77,10 +74,34 @@ Custom software environments
 
 
 *Custom software environments* provide a narrow stack of software and libraries for specific purposes.
-Besides the software, they also bundle accompanying material like the source code,
-Jupyter Notebook containing examples and tutorials, exercises, etc.
 
-Usually, they are pre-built `Binder <https://mybinder.readthedocs.io/en/latest/>`_ repositories
-and converted via `repo2docker <https://repo2docker.readthedocs.io/>`_,
-but these environments aren't limited to that.
+Not all software/library install requests can be fulfilled.
+Especially conflicting requirements, requests for an exact version of a library,
+or cutting-edge development versions require a more specific and flexible way.
+
+Besides the software, they also bundle accompanying material like the source code,
+Jupyter Notebooks containing examples and tutorials, exercises, etc.
+This combination makes sure that the material uses exactly the version of the software it was written for.
+
+Under the hood, they're usually pre-built `Binder <https://mybinder.readthedocs.io/en/latest/>`_ repositories,
+converted via `repo2docker <https://repo2docker.readthedocs.io/>`_,
+and then integrated into CoCalc's backend infrastructure.
+
+Getting Started
+----------------------
+
+In order to run such an environment,
+
+* Create a new project,
+* Click on "Advanced ...",
+* Select "Custom" as the type of software environment, and then
+* Select the one you want to have and confirm to create the project.
+
+
+
+.. note::
+
+    Please do not hesitate to `contact us <mailto:help@cocalc.com>`_,
+    if you want to have a specific  environment for your project on CoCalc available.
+
 
