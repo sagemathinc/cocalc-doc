@@ -53,7 +53,7 @@ Mount remote files via SSHFS
 
 If you really, really need sshfs support,
 feel free to write to us (help@sagemath.com),
-and we may consider implementing a workaround if their is sufficient interest.
+and we may consider implementing a workaround if there is sufficient interest.
 
 .. warning::
 
