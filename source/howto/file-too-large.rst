@@ -5,16 +5,7 @@
 File Too Large
 ================================================
 
-Here are notes on a two situations in which opening a file leads
-to a the "file too large" error.
-
-These errors can arise if you use CoCalc to open the file, i.e. if you do one of the following:
-
-* Select the name of the file in :doc:`../project-files` list. 
-
-* Select the filename in an entry in the :ref:`Project Activity Log <ft-history>`.
-
-* Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
+Here are suggestions for what to do if you get a file-too-large error when :ref:`opening a file <ft-open-files>` in CoCalc.
 
 .. index:: File too large; Jupyter notebook
 
@@ -29,7 +20,13 @@ You may see the following warning when opening a Jupyter notebook:
 
      Jupyter notebook *file too large* error
 
-A possible cause for this is creating an image file from a plot that exceeds the size limit. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
+A possible cause for a file-too-large error with a Jupyter notebook is creating an image file from a plot that exceeds the size limit. Here are some suggestions:
+
+1. If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with :ref:`the classical jupyter server or JupyterLab <jupyter-server-alternatives>`. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.
+
+2. You could revert the notebook to an earlier version, before the large plot was created. Click the :ref:`Backups button <project-snapshot>` in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.
+
+3. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
 
     options(jupyter.plot_mimetypes = c('text/plain', 'image/png'))
 
