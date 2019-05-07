@@ -46,8 +46,27 @@ Above the main area is a menu bar and a button row:
 * **Text cells** are slightly different. Select "Markdown" in the ``[ Code ]`` dropdown menu in the button bar to change a code cell to such a markdown text cell. There, you can use `Markdown`_ to format the text. Similar to code-cells, either *Run* these text cells to see the processed Markdown code or press Shift+Return. To edit a text cell, either double click it or press your Return key.
 * **Saving**: more general, the nice things about Jupyter Notebooks is that they save all your intput and output in one single file. This means you can download or publish the notebook as it is, and everyone else sees it in exactly the same way.
 
+.. index:: Jupyter Notebooks; interactive widgets
+.. _jupyter-interactive-widgets:
+
+Jupyter Widgets
+=========================
+
+`Jupyter Widgets`_ are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
+:ref:`real-time collaboration <multi-user-edit>`, :doc:`TimeTravel <time-travel>`, and :ref:`side chat <side-chat>`.
+
+A good way to get started using Jupyter widgets is to go through the `Widget List`_ in the main widgets documentation.
+
+.. figure:: img/jupyter/cocalc-widgets-a.png
+     :width: 100%
+     :align: center
+
+     CoCalc Jupyter notebook with Jupyter Widgets
+
+
 .. index:: Jupyter Notebooks; classical vs. CoCalc
 .. _jupyter-classical-vs-cocalc:
+
 
 Classical versus CoCalc
 =========================
@@ -61,8 +80,10 @@ To switch:
  - from within a CoCalc Jupyter notebook: select "File" → "Switch to Classical Notebook" in the menu, or
  - Click the checkbox labeled "Jupyter classic" in your :doc:`Editor settings in Account <account-settings>`.
 
+.. role:: strike
+
 As of October 2017, the main reasons to use the classical notebook are:
-  - interactive widget support
+  - :strike:`interactive widget support` *Note: as of April, 2019, CoCalc Jupyter notebooks support ipywidgets.*
   - reading interactive input at least 3 times
   - need certain extensions (:ref:`Howto setup Jupyter Extensions <jupyter-extensions>`).
 
@@ -111,5 +132,8 @@ You can either *restart* the kernel to clean up its current memory (i.e. all var
 .. _Jupyter Notebooks: https://www.jupyter.org
 .. _Python3: https://docs.python.org/3/
 .. _Markdown: https://www.markdownguide.org/basic-syntax
+.. _Jupyter Widgets: https://ipywidgets.readthedocs.io/en/stable/index.html
+.. _Widget List: https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html
+
 
 
