@@ -1,3 +1,6 @@
+.. index:: Collaboration
+.. _collaboration:
+
 =========================================================
 Collaboration
 =========================================================
@@ -9,6 +12,7 @@ There are multiple ways in which you can interact with your students or collabor
    :local:
    :depth: 2
 
+.. index:: Collaboration; chat rooms
 .. _teaching-chatrooms:
 
 Real-time chatrooms
@@ -41,6 +45,10 @@ From there, you can both reply to their questions and look at their work simulta
 
 Once you have replied to the student's question (s)he will receive a notification.
 
+
+.. index:: Collaboration; multi-user editing
+.. _multi-user-edit:
+
 Live collaborative editing
 ===================================
 
@@ -66,6 +74,7 @@ CoCalc chats support an ``@mentions`` feature, where you type ``@`` and a list a
 
 
 .. index:: Shared project; in course
+.. index:: Collaboration; shared project
 
 
 Creating a shared project

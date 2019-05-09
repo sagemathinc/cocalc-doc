@@ -1,4 +1,4 @@
-.. index:: Chatroom
+.. index:: Chat; chat rooms
 .. _chatroom:
 
 ======================
@@ -51,6 +51,8 @@ To start a new chat:
 3. Click the ``+ Add`` button and select the "Chatroom" filetype.
 
 .. index:: Side chat
+.. index:: Chat; side chat
+.. _side-chat:
 
 Side Chat
 ====================

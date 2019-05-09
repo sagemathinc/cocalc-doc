@@ -26,7 +26,7 @@ A possible cause for a file-too-large error with a Jupyter notebook is creating 
 
 2. You could revert the notebook to an earlier version, before the large plot was created. Click the :ref:`Backups button <project-snapshot>` in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.
 
-3. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
+3. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
 
     options(jupyter.plot_mimetypes = c('text/plain', 'image/png'))
 
