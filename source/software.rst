@@ -75,6 +75,9 @@ Custom environments
 
 *Custom software environments* provide a narrow stack of software and libraries for specific purposes.
 
+Motivation
+-------------
+
 Not all software/library install requests can be fulfilled.
 Especially conflicting requirements, requests for an exact version of a library,
 or cutting-edge development versions require a more specific and flexible way.
@@ -87,7 +90,7 @@ Under the hood, they're usually pre-built `Binder <https://mybinder.readthedocs.
 converted via `repo2docker <https://repo2docker.readthedocs.io/>`_,
 and then integrated into CoCalc's backend infrastructure.
 
-Getting Started
+Getting started
 ----------------------
 
 In order to run such an environment,
@@ -97,11 +100,42 @@ In order to run such an environment,
 * Select "Custom" as the type of software environment, and then
 * Select the one you want to have and confirm to create the project.
 
-
-
 .. note::
 
-    Please do not hesitate to `contact us <mailto:help@cocalc.com>`_,
-    if you want to have a specific  environment for your project on CoCalc available.
+    Please do not hesitate to `contact us`_,
+    if you want to have a specific environment for your project on CoCalc available.
+
+Current limitations
+-----------------------------
+
+Pre-built environments
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When you start a project with a custom software environment,
+there will never be an attempt to build the underlying image.
+Instead, *the project will always start without an additional delay*!
+
+If one of these environments is outdated, please `contact us`_ and we'll update them.
+Once they did build successfully and are distributed in CoCalc's cluster,
+your project will receive the update after the next project restart.
+
+You'll keep your files as they are, because only the underlying software is updated.
+Optionally, you can ask to ``Reset...`` your files (in the "Files" bar).
+Read the information text to learn more.
+
+Port forwarding
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Some services need specific proxy forwarding to make them work on CoCalc.
+In particular, that's Shiny, the web-based RStudio client, and Jupyter servers without specific command line parameters.
+This also means it is most likely not possible to run certain web-service extensions on top of Jupyter.
 
 
+Start file
+^^^^^^^^^^^^^^^^^^
+
+There is currently no support for so called ``start`` files.
+A possible workaround is to execute them in a terminal.
+
+
+.. _contact us: mailto:help@cocalc.com

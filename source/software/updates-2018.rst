@@ -8,6 +8,10 @@ Software Updates 2018
     This is an archive of older updates of the :ref:`legacy-software-environment`.
 
 
+.. contents::
+     :local:
+     :depth: 1
+
 .. _update-2018-12-30:
 
 2018-12-30
