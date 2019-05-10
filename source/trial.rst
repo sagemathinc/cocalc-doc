@@ -102,11 +102,11 @@ Internet Access
 **Outgoing internet connections.**
 A couple of users abused CoCalc to attack other servers on the internet. That triggered a complete shutdown of the CoCalc website by our hosting service provider. To avoid that from happening again, we had to disable outgoing connections to the internet. With such an "internet upgrade", you can again download files from other servers, install software packages that load from other servers, use ``git`` in a :doc:`terminal` to work with GitHub, etc.
 
-**Email from a project.**. Also due to abuse of trial projects, an Internet Access upgrade is required to do either of the following:
+**Email from a project.** Also due to abuse of trial projects, an Internet Access upgrade is required to do either of the following:
 
     * invite people via email without a CoCalc account to a project
 
-    * allow :ref:`@mentions <at-mention-chat>` in that project to send out emails
+    * allow :ref:`@mentions <at-mention-chat>` in a project to send out emails
 
 Essentially, if a project doesn't have Internet Access, then no emails are sent related to that project.
 
