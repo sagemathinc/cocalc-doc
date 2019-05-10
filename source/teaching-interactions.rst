@@ -60,6 +60,9 @@ If one of your collaborators updates a notebook, the rest can see the changes as
 
 .. index:: @Mentions in chat
 .. index:: Mentions in chat
+.. index:: Chat; @mentions
+.. _at-mention-chat:
+
 
 @Mention collaborators in chat
 =================================
