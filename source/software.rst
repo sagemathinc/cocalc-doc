@@ -49,6 +49,76 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 
 
+.. _update-2019-05-11:
+
+2019-05-11
+----------------------------
+
+* CoCalc:
+    * `ipywidgets`_ support in CoCalc's Jupyter notebooks.
+      This isn't 100% done, but suitable for all basic applications.
+      The coolest part? It syncs across all collaborators of the same notebook!
+
+      .. image:: img/cocalc-ipywidgets-sync-2019-05-08.gif
+          :align: center
+          :width: 75%
+
+* R:
+    * Due to blowups of image sizes, we switched the default graphics format to
+      `PNG <https://en.wikipedia.org/wiki/Portable_Network_Graphics>`_.
+      To continue plotting `SVG <https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`_ images,
+      please run
+
+      ::
+
+          options(jupyter.plot_mimetypes = c('image/svg+xml'))
+
+      in your notebook.
+
+* Python 3:
+
+    * (upd) `Qiskit`_ 0.10.1 and deps: ``fastdtw-0.3.2``, ``pyeda-0.28.0``, ``pylatexenc-1.4``,
+      ``qiskit-aer-0.2.0``, ``qiskit-aqua-0.5.0``, ``qiskit-chemistry-0.5.0``,
+      ``qiskit-ibmq-provider-0.2.2``, ``qiskit-ignis-0.1.1``, ``qiskit-terra-0.8.0``
+
+    * (upd) `VQE Playground`_ and PyGame 1.9.6
+
+
+* Anaconda 5 environment:
+
+    * Adding `RDKit`_, updating matplotlib, ...::
+
+          The following NEW packages will be INSTALLED:
+            lame               conda-forge/linux-64::lame-3.100-h14c3975_1001
+            matplotlib-base    conda-forge/linux-64::matplotlib-base-3.0.3-py36h5f35d83_1
+            pycairo            conda-forge/linux-64::pycairo-1.18.1-py36h438ddbb_0
+            rdkit              conda-forge/linux-64::rdkit-2019.03.1-py36h9c20d5c_0
+
+          The following packages will be UPDATED:
+            cairo                               1.14.12-h80bd089_1005 --> 1.16.0-ha4e643d_1000
+            dbus                    pkgs/main::dbus-1.13.2-h714fa37_1 --> conda-forge::dbus-1.13.6-he372182_0
+            ffmpeg                                   4.0.2-ha0c5888_2 --> 4.1.3-h167e202_0
+            glib                                 2.56.2-had28632_1001 --> 2.58.3-hf63aee3_1001
+            gnutls                                  3.5.19-h2a4e5f8_1 --> 3.6.5-hd3a4fd2_1002
+            gst-plugins-base   pkgs/main::gst-plugins-base-1.14.0-hb~ --> conda-forge::gst-plugins-base-1.14.4-hdf3bae2_1001
+            gstreamer          pkgs/main::gstreamer-1.14.0-hb453b48_1 --> conda-forge::gstreamer-1.14.4-h66beb1c_1001
+            harfbuzz                              1.9.0-he243708_1001 --> 2.4.0-h37c48d4_0
+            libxml2                                  2.9.8-h422b904_5 --> 2.9.9-h13577e0_0
+            matplotlib                           2.2.3-py36h8e2386c_0 --> 3.0.3-py36_1
+            nettle                                              3.3-0 --> 3.4.1-h1bed415_1002
+            opencv               3.4.4-py36_blas_openblashbbbf1d5_201 --> 3.4.4-py36_blas_openblash641cfe3_1205
+            pango                               1.40.14-hf0c64fd_1003 --> 1.40.14-h4ea9474_1004
+            pyqt                                 5.6.0-py36h8210e8a_7 --> 5.9.2-py36hcca6a23_0
+            qt                         pkgs/main::qt-5.6.3-h8bf5577_3 --> conda-forge::qt-5.9.7-h52cfd70_1
+            sip                                 4.18.1-py36hfc679d8_0 --> 4.19.8-py36hf484d3e_1000
+            x264                            1!152.20180717-h470a237_1 --> 1!152.20180806-h14c3975_0
+
+          The following packages will be DOWNGRADED:
+            poppler                              0.67.0-h2fc8fa2_1002 --> 0.67.0-h2ad7f00_6
+
+
+
+
 .. _update-2019-05-04:
 
 2019-05-04
@@ -135,7 +205,7 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 
 * Library:
     * all entries are updated to their latest upstream version
-    * adding `VQE Playground <https://github.com/JavaFXpert/vqe-playground>`_: *gaining intuition about Variational Quantum Eigensolver*
+    * adding `VQE Playground`_: *gaining intuition about Variational Quantum Eigensolver*
 
 * R:
     * (upd) also updating ``tidyverse`` and ``dplyr``
@@ -479,3 +549,7 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
 .. _arctic: https://arctic.readthedocs.io/en/latest/
 .. _Gradle: https://gradle.org/
 .. _PyGame: https://www.pygame.org/
+.. _ipywidgets: https://ipywidgets.readthedocs.io/en/stable/user_guide.html
+.. _VQE Playground: https://github.com/JavaFXpert/vqe-playground/
+.. _RDKit: http://www.rdkit.org/docs/index.html
+
