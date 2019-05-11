@@ -1,3 +1,7 @@
+.. warning::
+
+    We strongly recommend that the instructor of a course purchase at least a standard subscription for themselves, and upgrade the project where they manage the course. Some functionality that involves inviting students via email, notifications, etc., will only work with such an upgrade. We also pride ourselves on offering very good quality support to paying customers. If you're an instructor and need a free trial subscription, do not hesitate to contact us at help@cocalc.com.
+
 =====================
 Creating a new course
 =====================
