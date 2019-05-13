@@ -123,6 +123,18 @@ You'll keep your files as they are, because only the underlying software is upda
 Optionally, you can ask to ``Reset...`` your files (in the "Files" bar).
 Read the information text to learn more.
 
+
+Jupyter Classic/Lab vs. CoCalc's Jupyter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. warning::
+
+    Do not open the same Jupyter Notebook file in a legacy Jupyter server
+    and CoCalc's Jupyter editor.
+
+Please read about various pros/cons and warnings regarding :ref:`jupyter-classical-vs-cocalc` notebooks.
+
+
 Port forwarding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
