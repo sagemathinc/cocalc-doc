@@ -15,13 +15,13 @@ CoCalc offers several options for hosting running `Jupyter Notebooks`_ online.
 What's a Jupyter Notebook?
 ==============================
 
-They're a specific filetype with the ending ``.ipynb``, which records an interactive session with a **Kernel**.
+A Jupyter notebook is a specific filetype with the ending ``.ipynb``, which records an interactive session with a **Kernel**.
 It made up of *cells*, which can either store one or more lines of code or formatted text.
 When you *run* a cell – which evaluates the piece of code in the cell via the active kernel session – you can see its output after the calculation is done.
 This combination of communicating back and forth with a kernel and adding descriptive text makes this form of document very attractive.
 
-There are many **Kernels** available, where you first have to choose which programming language you want to work with.
-A quite popular choice is `Python3`_, but there is also [SageMath]_, and many others.
+There are many **Kernels** available, which allow you to choose the programming language and environment you want to work.
+A quite popular choice is `Python3`_, but there are also `SageMath`_ and many others.
 
 .. note::
 
@@ -30,15 +30,15 @@ A quite popular choice is `Python3`_, but there is also [SageMath]_, and many ot
 CoCalc Jupyter Notebook
 ==========================
 
-The default editor for Jupyter Notebooks on CoCalc is specific to this platform and has a couple of tightly integrated features (read more in our `blogpost <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html>`_). The basic user interface looks like the following:
+The default client for Jupyter Notebooks on CoCalc is specific to this platform. It supports CoCalc's advanced features, including real-time collaboration, side chat, and TimeTravel. Read more in our `blogpost <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html>`_. The basic user interface looks like the following:
+
+.. image:: img/jupyter/jupyter-notebook-cocalc-1.png
+    :width: 100%
 
 Above the main area is a menu bar and a button row:
 
 * The **menu bar** contains all commands, and in particular the **Kernel** menu is for changing it if necessary.
 * The **button row** gives you a one-click access to *Run* the current cell (otherwise press your Shift+Return keys), a way to restart the kernel (which clears the current session) and a Save button to make sure CoCalc has stored the file. The :doc:`time-travel` button allows you to see previous versions of that notebook, such that you can go back in time to recover from a bad change.
-
-.. image:: img/jupyter/jupyter-notebook-cocalc-1.png
-    :width: 100%
 
 * **Active cell**: in the screenshot above, the blue bar on the left and a blue border around a cell indicates that this is the currently active one. Actions like *Run*, *Delete Cell*, etc. operate on the currently selected cell. It is also possible to select more than one cell.
 * **Execution counter**: On the left of each cell, there is an execution counter ``In [ x ]``. The number ``x`` increases each time a cell is being run. After the kernel stopped and restarted, that counter starts again at *1*.
@@ -74,18 +74,32 @@ Classical versus CoCalc
 If you are having trouble with the `CoCalc Jupyter Notebook`_, you can switch to the Classical Jupyter Notebook.
 You can always switch back to CoCalc Jupyter easily later (and please let us know what is missing so we can add it!).
 
-To switch:
+*NOTE: The Classical Jupyter notebook is not supported in the Firefox browser. See Jupyter Server options below if you need to use Firefox and do not want to use the CoCalc Jupyter notebook.*
 
- - From within an existing classical Jupyter notebook: click the button "CoCalc Jupyter Notebook", or
- - from within a CoCalc Jupyter notebook: select "File" → "Switch to Classical Notebook" in the menu, or
- - Click the checkbox labeled "Jupyter classic" in your :doc:`Editor settings in Account <account-settings>`.
+You can change the default for opening a Jupyter notebook - CoCalc or Classical - by clicking the checkbox labeled "Jupyter classic ..." in your :ref:`Editor settings in Account Preferences <ed-settings-jupyter>`.
+
+To switch your notebook to Classical from within a CoCalc Jupyter notebook: select "File" → "Switch to Classical Notebook" in the menu.
+
+.. figure:: img/jupyter/switch-to-classical.png
+     :width: 100%
+     :align: center
+
+     switching to Classical from CoCalc Jupyter notebook
+
+
+To switch your notebook to CoCalc from within a Classical Jupyter notebook: select "File" → "Switch to Classical Notebook" in the menu.
+
+.. figure:: img/jupyter/switch-to-cocalc.png
+     :width: 100%
+     :align: center
+
+     switching to CoCalc from Classical Jupyter notebook
 
 .. role:: strike
 
-As of October 2017, the main reasons to use the classical notebook are:
+The main reasons to use the classical notebook are:
+  - need for certain extensions (:ref:`Howto setup Jupyter Extensions <jupyter-extensions>`).
   - :strike:`interactive widget support` *Note: as of April, 2019, CoCalc Jupyter notebooks support ipywidgets.*
-  - reading interactive input at least 3 times
-  - need certain extensions (:ref:`Howto setup Jupyter Extensions <jupyter-extensions>`).
 
 See our `list of Jupyter related issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aissue+is%3Aopen+label%3AA-jupyter>`_ for more details.
 
@@ -131,9 +145,8 @@ You can either *restart* the kernel to clean up its current memory (i.e. all var
 .. _Cocalc Jupyter Notebook: http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html
 .. _Jupyter Notebooks: https://www.jupyter.org
 .. _Python3: https://docs.python.org/3/
+.. _SageMath: https://www.sagemath.org/
 .. _Markdown: https://www.markdownguide.org/basic-syntax
 .. _Jupyter Widgets: https://ipywidgets.readthedocs.io/en/stable/index.html
 .. _Widget List: https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html
-
-
 

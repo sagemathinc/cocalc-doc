@@ -80,6 +80,7 @@ Most options under "Editor settings" are self-explanatory. Here are additional d
 
 
 .. index:: Editor settings; Jupyter classic
+.. _ed-settings-jupyter:
 
 * Enable ``Jupyter classic`` if you have a specific requirement for a Jupyter feature that isn't available under CoCalc Jupyter. With this box checked, the default for opening .ipynb files in the CoCalc interface will be Classic jupyter. See warnings regarding :ref:`jupyter-classical-vs-cocalc` notebooks before enabling this feature.
 
