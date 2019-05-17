@@ -6,9 +6,11 @@ Linux Terminal
 
 The CoCalc terminal allows you to run Linux programs on the command-line in your browser.
 
-To get started, create a **"Terminal"** file in the "Files" listing or in "+ New".
-Such files end in ``.term`` and open up in a :doc:`frame-editor`.
-Inside of each panel a terminal session starts up and you can issue commands.
+.. note::
+
+    To get started, create a **"Terminal"** file in the "Files" listing or in "+ New".
+    Such files end in ``.term`` and open up in a :doc:`frame-editor`.
+    Inside of each panel a terminal session starts up and you can issue commands.
 
 **New to Linux?** Find out more about the Linux command line at the
 `Linux Tutorial <http://ryanstutorials.net/linuxtutorial/>`_, which
