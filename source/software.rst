@@ -48,7 +48,7 @@ Recent updates to CoCalc's software stack available in the :ref:`"Default" envir
    software/software-updates-2018
 
 
-.. update-2019-05-18:
+.. _update-2019-05-18:
 
 2019-05-18
 ----------------------
