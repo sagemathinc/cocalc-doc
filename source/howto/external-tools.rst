@@ -55,45 +55,6 @@ If you really, really need sshfs support,
 feel free to write to us (help@sagemath.com),
 and we may consider implementing a workaround if there is sufficient interest.
 
-.. warning::
-
-    Again, the following instructions will not work no matter what
-
-.. note::
-    The following will only work if your project has outgoing network access, i.e.,
-    it says "Network access: true" under project settings.
-    See :doc:`../upgrade-guide`.
-
-Suppose you have an account on some computer that you can ssh to, e.g, so this works for you::
-
-    ssh user@my.uni.edu
-
-To temporarily make the files at user@my.uni.edu available in a cloud project, open a Terminal and type
-
-
-::
-
-    mkdir foo   # make any directory you want
-    sshfs user@my.uni.edu:path/to/files/ foo/
-
-and type your password to login to user@my.uni.edu.
-You'll find that you can now use the files at path/to/files in user@my.uni.edu as if they were in the directory foo in your project.
-You can edit files (with sync), open and output data files, etc.
-When you're done, type
-
-::
-
-    fusermount -u foo
-
-to unmount foo.
-Whenever the project server is restarted, ``foo/`` will also be unmounted.
-So you'll have to type ``sshfs user@my.uni.edu: foo/`` to mount foo every once in a while.
-
-**NOTE:** The files in ``foo/`` will *not* be included in :ref:`Snapshots <project-snapshot>`,
-because they are part of another filesystem,
-and the snapshot system is configured to not cross filesystem boundaries.
-
-
 
 .. index:: Emacs
 
