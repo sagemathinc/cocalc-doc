@@ -41,6 +41,7 @@ If you sign in, and your projects are all gone, then what really happened is tha
 
 If your project is empty, then again you may have signed in using the wrong account and probably are looking at a different project. Maybe you made another one with the same name.  See above.
 
+.. index:: Backups; recover missing files
 
 ##################################################################
 My files are really gone. Help!
