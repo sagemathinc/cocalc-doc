@@ -8,13 +8,13 @@ Each :doc:`Project <../project>` on CoCalc runs on top of a software environment
 Such an environment holds all the software and libraries, which are necessary to run
 code, notebooks and worksheets in your project. There are two types of environments available:
 
-The :ref:`default environment <default-software-environment>` is very large,
-well tested, regularly maintained and matured over many years.
-This is what a project runs by default.
+* The :ref:`default environment <default-software-environment>` is very large,
+  well tested, regularly maintained and matured over many years.
+  This is what a project runs by default.
 
-A :ref:`custom environment <custom-software-environment>` is based on an exact definition of
-the underlying software stack,
-to fulfill specific purposes and to also convey accompanying material.
+* A :ref:`custom environment <custom-software-environment>` is based on an exact definition of
+  the underlying software stack,
+  to fulfill specific purposes and to also convey accompanying material.
 
 
 
@@ -106,6 +106,16 @@ In order to run such an environment,
 
     Please do not hesitate to `contact us`_,
     if you want to have a specific environment for your project on CoCalc available.
+
+The screenshot below show how to instantiate a project
+to use the alpha version of `"Tensorflow 2" <https://www.tensorflow.org/alpha>`_ (as of May 2019).
+
+.. figure:: img/cocalc-custom-tensorflow2.png
+    :width: 100%
+    :align: center
+
+    *Selecting "Tensorflow 2" Custom Software Environment*
+
 
 Current limitations
 -----------------------------
