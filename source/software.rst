@@ -17,7 +17,7 @@ code, notebooks and worksheets in your project. There are two types of environme
   to fulfill specific purposes and to also convey accompanying material.
 
 
-
+.. index:: Software; Default environment
 .. _default-software-environment:
 
 Default environment
@@ -64,7 +64,7 @@ Main supported software environments
 .. _SageMath: https://sagemath.org
 
 
-
+.. index:: Software; Custom environment
 .. _custom-software-environment:
 
 Custom environments
@@ -88,9 +88,10 @@ Besides the software, they also bundle accompanying material like the source cod
 Jupyter Notebooks containing examples and tutorials, exercises, etc.
 This combination makes sure that the material uses exactly the version of the software it was written for.
 
-Under the hood, they're usually pre-built `Binder <https://mybinder.readthedocs.io/en/latest/>`_ repositories,
-converted via `repo2docker <https://repo2docker.readthedocs.io/>`_,
+Under the hood, they're usually pre-built `Binder`_ repositories,
+converted via `repo2docker`_,
 and then integrated into CoCalc's backend infrastructure.
+Simplified, you can think this as an alternative to `MyBinder`_ with a couple of differences.
 
 Getting started
 ----------------------
@@ -120,13 +121,18 @@ to use the alpha version of `"Tensorflow 2" <https://www.tensorflow.org/alpha>`_
 Key benefits
 ------------------------------
 
-1. A custom environment bundles software in a clean, well-specified way with accompanying material.
-   This mitigates slightly inconsistent versions, etc.
-2. Compared to the `MyBinder <https://mybinder.org/>`_ service:
-    1. Your **files are persistently stored across sessions**!
-    2. A project is completely private; explicit sharing with collaborators.
-    3. Projects always starts in about 15s.
-    4. The software images are prebuilt, which means you do not have to wait 10-minutes or more to open it.
+* Such a *custom software environment* bundles software –
+  which is defined in a clean, well-specified way –
+  with accompanying material (usually :doc:`../jupyter`).
+  This is useful for distributing interactive teaching material (tutorials, courses, ...)
+  or publications (reproducible science, ...).
+  This mitigates slightly inconsistent versions, etc.
+
+* Compared to the `MyBinder`_ service:
+    * Your **files are persistently stored across sessions**!
+    * A project is completely private; :ref:`explicit sharing with collaborators <project-collaborators>`.
+    * Projects always starts in about 15s.
+    * The software images are prebuilt, which means you do not have to wait 10-minutes or more to open it.
 
 
 Current limitations
@@ -174,3 +180,6 @@ There is currently no support for so called ``start`` files.
 A possible workaround is to execute them in a terminal.
 
 .. _contact us: mailto:help@cocalc.com
+.. _Binder: https://mybinder.readthedocs.io/en/latest/
+.. _MyBinder: https://mybinder.org/
+.. _repo2docker: https://repo2docker.readthedocs.io/
