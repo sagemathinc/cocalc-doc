@@ -117,6 +117,18 @@ to use the alpha version of `"Tensorflow 2" <https://www.tensorflow.org/alpha>`_
     *Selecting "Tensorflow 2" Custom Software Environment*
 
 
+Key benefits
+------------------------------
+
+1. A custom environment bundles software in a clean, well-specified way with accompanying material.
+   This mitigates slightly inconsistent versions, etc.
+2. Compared to the `MyBinder <https://mybinder.org/>`_ service:
+    1. Your **files are persistently stored across sessions**!
+    2. A project is completely private; explicit sharing with collaborators.
+    3. Projects always starts in about 15s.
+    4. The software images are prebuilt, which means you do not have to wait 10-minutes or more to open it.
+
+
 Current limitations
 -----------------------------
 
