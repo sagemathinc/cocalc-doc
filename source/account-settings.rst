@@ -17,6 +17,7 @@ The Account Tab is where you manage settings, subscriptions, and resources acros
    :local:
    :depth: 1
 
+.. index:: Account Tab; Preferences
 
 ============
 Preferences
@@ -25,6 +26,7 @@ Preferences
 .. index:: Account Settings
 .. _account-settings:
 
+.. index:: Account Tab; Account settings
 
 Account settings
 ----------------
@@ -35,31 +37,27 @@ Account settings
 
      ..
 
-First and Last Name
-^^^^^^^^^^^^^^^^^^^^
-
-Email address
-^^^^^^^^^^^^^^^
-
-Newsletter
-^^^^^^^^^^^^^
-
-Password
-^^^^^^^^^^
-
-API key
-^^^^^^^^
+Most of the entries under ``Account settings`` are self-explanatory. Here are a few additional notes.
 
 .. index:: Sign out of CoCalc, Log out of CoCalc
 
-Sign out
-^^^^^^^^^^
+* Your password is needed to change your email address.
 
-This is where you log out of your CoCalc session.
+* Your password is needed to create or change the API key for your account. See :doc:`CoCalc API documentation <api/index>` to learn about the API.
 
-Linked accounts
-^^^^^^^^^^^^^^^^^
+* The Newsletter checkbox doesn't do anything yet. We don't send out a newsletter.
 
+* **Sign Out of CoCalc** using one of the orange "Sign Out" buttons. You will be asked to confirm your selection.
+
+* Choosing the red ``Delete Account...`` button will cause a warning window to pop up. Confirmation is required before proceeding.
+
+.. figure:: img/account-settings/delete-account.png
+     :width: 50%
+     :align: center
+
+     *warning displayed when "Delete Account..." is clicked*
+
+* Use one or more of the options under ``Linked accounts`` if you want to sign in with Facebook, GitHub, Google, or Twitter. You can also unlink online accounts from CoCalc in this section. To sign in with a linked account, choose the icon for Facebook, GitHub, Google, or Twitter under the blanks for Email address & Password at upper right in the sign-in screen.
 
 Other settings
 ----------------
@@ -67,8 +65,24 @@ Other settings
 Profile
 ----------------
 
+.. index:: Account Tab; Editor settings
+
 Editor settings
 ----------------
+
+.. figure:: img/account-settings/editor-settings.png
+     :width: 80%
+     :align: center
+
+     *Editor settings*
+
+Most options under "Editor settings" are self-explanatory. Here are additional details.
+
+
+.. index:: Editor settings; Jupyter classic
+.. _ed-settings-jupyter:
+
+* Enable ``Jupyter classic`` if you have a specific requirement for a Jupyter feature that isn't available under CoCalc Jupyter. With this box checked, the default for opening .ipynb files in the CoCalc interface will be Classic jupyter. See warnings regarding :ref:`jupyter-classical-vs-cocalc` notebooks before enabling this feature.
 
 Terminal settings
 -------------------
@@ -143,5 +157,6 @@ Support
 
 Support tickets
 ----------------
+
 
 

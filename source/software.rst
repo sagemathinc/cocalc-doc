@@ -8,7 +8,7 @@ Each :doc:`Project <../project>` on CoCalc runs on top of a software environment
 Such an environment holds all the software and libraries, which are necessary to run
 code, notebooks and worksheets in your project. There are two types of environments available:
 
-The :ref:`legacy environment <legacy-software-environment>` is very large,
+The :ref:`default environment <default-software-environment>` is very large,
 well tested, regularly maintained and matured over many years.
 This is what a project runs by default.
 
@@ -18,9 +18,9 @@ to fulfill specific purposes and to also convey accompanying material.
 
 
 
-.. _legacy-software-environment:
+.. _default-software-environment:
 
-Legacy environment
+Default environment
 =================================
 
 .. note::
@@ -28,11 +28,13 @@ Legacy environment
     and receives regular updates.
     There is a  `more detailed and fairly up-to-date list <https://cocalc.com/doc/software.html>`_ available.
 
+
 Software update summaries
 -----------------------------------
 
 .. toctree::
    :maxdepth: 1
+   :caption: Archive
 
    software/updates-2019
    software/updates-2018
@@ -129,7 +131,7 @@ Jupyter Classic/Lab vs. CoCalc's Jupyter
 
 .. warning::
 
-    Do not open the same Jupyter Notebook file in a legacy Jupyter server
+    Do not open the same Jupyter Notebook file in a classical Jupyter server
     and CoCalc's Jupyter editor.
 
 Please read about various pros/cons and warnings regarding :ref:`jupyter-classical-vs-cocalc` notebooks.
@@ -148,6 +150,5 @@ Start file
 
 There is currently no support for so called ``start`` files.
 A possible workaround is to execute them in a terminal.
-
 
 .. _contact us: mailto:help@cocalc.com

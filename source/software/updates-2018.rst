@@ -5,7 +5,7 @@ Software Updates 2018
 
 .. note::
 
-    This is an archive of older updates of the :ref:`legacy-software-environment`.
+    This is an archive of older updates of the :ref:`default-software-environment`.
 
 
 .. contents::

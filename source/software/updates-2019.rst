@@ -535,4 +535,7 @@ Software Updates 2019
 .. _ipywidgets: https://ipywidgets.readthedocs.io/en/stable/user_guide.html
 .. _VQE Playground: https://github.com/JavaFXpert/vqe-playground/
 .. _RDKit: http://www.rdkit.org/docs/index.html
+.. _BibTeX: http://www.bibtex.org/
+.. _gspread: https://github.com/burnash/gspread
+.. _pygsheets: https://pygsheets.readthedocs.io/en/stable/
 

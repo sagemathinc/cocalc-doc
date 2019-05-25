@@ -29,7 +29,7 @@ If you do not already have one, you can create a terminal in Files, as a "Termin
 ::
 
     mkdir -p $HOME/.local/share/jupyter/kernels
-    cp -arv /ext/jupyter/kernels/sage-8.1 $HOME/.local/share/jupyter/kernels/sage_custom
+    cp -arv /ext/jupyter/kernels/sagemath $HOME/.local/share/jupyter/kernels/sage_custom
 
 3. Edit the ``kernel.json`` file copy of the kernel you made::
 

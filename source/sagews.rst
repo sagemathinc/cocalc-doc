@@ -70,7 +70,7 @@ Using the slider, look at all the versions. Find the revision that you want and 
 
      *looking at a Sage Worksheet with TimeTravel*
 
-.. index:: Backups; in TimeTravel view
+.. index:: Backups; Sage worksheet
 
 Backups (snapshots)
 --------------------

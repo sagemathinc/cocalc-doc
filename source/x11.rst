@@ -200,6 +200,7 @@ Installed Applications
     `idle`_, Minimalistic Python IDE, code, OK
     `inkscape`_, Professional vector graphics editor, graphics, OK
     `jedit`_, Java-based text editor,  text, ?
+    `kbibtex`_, Reference management software primarily for BibTeX, latex, OK
     `kexi-3.1`_, "Microsoft Access for Linux", db, OK
     `kile`_, "LaTeX editor, but probably use ``texmaker`` instead ...", latex, OK
     `krita`_,  Painting tool designed for concept artists,  paint, OK
@@ -245,6 +246,7 @@ Installed Applications
 .. _idle: https://docs.python.org/3/library/idle.html
 .. _inkscape: https://inkscape.org/
 .. _jedit: http://www.jedit.org/
+.. _kbibtex: https://userbase.kde.org/KBibTeX
 .. _kexi-3.1: http://www.kexi-project.org/
 .. _kile: https://kile.sourceforge.io/
 .. _krita: https://krita.org/en/
