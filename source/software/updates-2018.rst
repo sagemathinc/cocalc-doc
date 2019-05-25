@@ -5,8 +5,12 @@ Software Updates 2018
 
 .. note::
 
-    This is an archive of older :ref:`software-updates`.
+    This is an archive of older updates of the :ref:`default-software-environment`.
 
+
+.. contents::
+     :local:
+     :depth: 1
 
 .. _update-2018-12-30:
 
