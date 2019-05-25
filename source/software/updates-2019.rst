@@ -9,6 +9,27 @@ Software Updates 2019
 
 
 
+.. _update-2019-05-18:
+
+2019-05-18
+----------------------
+
+* Sage:
+    * updating development version to ``8.8.beta5``
+
+* Python 3:
+    * (new) Google Spreadsheet API libs: `gspread`_ and `pygsheets`_
+    * (new) `imbalanced learn <https://imbalanced-learn.readthedocs.io/en/stable/install.html>`_
+    * (new) `memory profiler <https://pypi.org/project/memory-profiler/>`_
+      for Jupyter Notebooks: `%memit example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/memory-profile.ipynb?viewer=share>`_
+    * (upd) ``geographiclib-1.49``, ``geopy-1.19.0``, ``geopandas-0.5.0``
+
+* Software
+    * (new) more `BibTeX`_ related packages: ``search-ccsb``, ``search-citeseer``,
+      ``bibtool``, ``kbibtex``, ``bibclean``, ``bibcursed``, ``bibtex2html``, and
+      ``bibtexconv``
+
+
 
 .. _update-2019-05-11:
 
