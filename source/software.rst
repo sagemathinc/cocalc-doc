@@ -121,18 +121,21 @@ to use the alpha version of `"Tensorflow 2" <https://www.tensorflow.org/alpha>`_
 Key benefits
 ------------------------------
 
-* Such a *custom software environment* bundles software –
-  which is defined in a clean, well-specified way –
-  with accompanying material (usually :doc:`../jupyter`).
+* A *custom software environment* **bundles software & libraries** –
+  which are defined in a well-specified way (compatible with `Binder`_) –
+  **with accompanying content to run** (usually :doc:`../jupyter`).
   This is useful for distributing interactive teaching material (tutorials, courses, ...)
   or publications (reproducible science, ...).
   This mitigates slightly inconsistent versions, etc.
 
 * Compared to the `MyBinder`_ service:
     * Your **files are persistently stored across sessions**!
-    * A project is completely private; :ref:`explicit sharing with collaborators <project-collaborators>`.
-    * Projects always starts in about 15s.
-    * The software images are prebuilt, which means you do not have to wait 10-minutes or more to open it.
+    * Your project is **completely private**.
+      You can explicitly :ref:`share it with collaborators <project-collaborators>` or
+      :doc:`make specific files public <./share>`.
+    * **Projects always start in about 15s**, because the software image was built ahead of time.
+      This means you do not have to wait 5 minutes or more to open it
+      and you'll never witness that building the image fails.
 
 
 Current limitations
@@ -145,13 +148,14 @@ When you start a project with a custom software environment,
 there will never be an attempt to build the underlying image.
 Instead, *the project will always start without an additional delay*!
 
+This implies that updates are not automatically taken into account.
 If one of these environments is outdated, please `contact us`_ and we'll update them.
 Once they did build successfully and are distributed in CoCalc's cluster,
 your project will receive the update after the next project restart.
 
-You'll keep your files as they are, because only the underlying software is updated.
+You'll keep your files as they are, because only the underlying software stack is updated.
 Optionally, you can ask to ``Reset...`` your files (in the "Files" bar).
-Read the information text to learn more.
+Read the revealed information text to learn more about that.
 
 
 Jupyter Classic/Lab vs. CoCalc's Jupyter
@@ -183,3 +187,4 @@ A possible workaround is to execute them in a terminal.
 .. _Binder: https://mybinder.readthedocs.io/en/latest/
 .. _MyBinder: https://mybinder.org/
 .. _repo2docker: https://repo2docker.readthedocs.io/
+
