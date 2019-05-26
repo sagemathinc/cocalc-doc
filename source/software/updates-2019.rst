@@ -8,6 +8,53 @@ Software Updates 2019
      :depth: 1
 
 
+.. _update-2019-05-26:
+
+2019-05-26
+----------------------
+
+* CoCalc
+    * (new/beta) :ref:`Custom Software Environments <custom-software-environment>`:
+      bundle software environment configurations (compatible with `Binder`_)
+      with accompanying content to run.
+
+* Julia:
+    * (upd) language ``1.0.4`` LTS and ``1.1.1``: `release notes julia 1.0.4 and 1.1.1 <https://discourse.julialang.org/t/julia-v1-0-4-and-v1-1-1-have-been-released/24298>`_
+
+* Python 3:
+    * (upd) `SciPy 1.3.0 <https://scipy.github.io/devdocs/release.1.3.0.html>`_
+    * (upd) `statsmodels`_ updated to recent development version, because of a `SciPy incompatibility <https://github.com/statsmodels/statsmodels/issues/5759>`_.
+    * (upd) `cvxpy`_ 1.0.23
+    * (upd) `scikit-learn 0.21.2 <https://scikit-learn.org/stable/whats_new.html#version-0-21-2>`_
+    * (upd) ``matplotlib 2.2.4``
+    * (upd) `Dask`_ ``1.2.2``, ``dask-ml 0.13.0``, and ``distributed 1.28.1``
+    * (upd) `OpenCV`_ ``4.1.0.25`` (incl ``opencv-contrib-python``)
+    * (upd) pip 19.1.1 (also for python 2)
+    * (upd) ``pytest-4.5.0``, ``pytest-arraydiff-0.3``, ``pytest-astropy-0.5.0``,
+      ``pytest-cov-2.7.1``, ``pytest-doctestplus-0.3.0``, ``pytest-forked-1.0.2``,
+      ``pytest-html-1.20.0``, ``pytest-ipynb-1.1.1``, ``pytest-metadata-1.8.0``,
+      ``pytest-mock-1.10.4``, ``pytest-openfiles-0.3.2``, ``pytest-remotedata-0.3.1``,
+      ``pytest-repeat-0.8.0``, ``pytest-selenium-1.16.0``, ``pytest-timeout-1.3.3``,
+      and ``pytest-xdist-1.28.0``
+    * (new) ``pytest-watch-4.2.0`` and ``pytest-testmon-0.9.16``
+    * (new) ``nest-asyncio-1.0.0``, ``osbot-aws-0.6.51``, ``osbot-browser-0.3.1``,
+      ``osbot-jupyter-0.4.2``, ``pyee-6.0.0``, `pyppeteer`_ ``0.0.25``,
+      and `syncer <https://github.com/notion/a_sync>`_  ``1.3.0``
+    * (upd/new) ``geopandas`` related: `contextily <https://github.com/darribas/contextily>`_ ``0.99.0``,
+      `pysal <https://pysal.org/>`_ ``2.0.0`` (major version update!),
+      ``esda-2.0.0``, ``libpysal-4.0.1``
+      ``mercantile-1.0.4`` and ``palettable-3.1.1``
+    * (new) `scikit-rf`_ ``0.14.9`` – *package for RF/Microwave engineering* (also for Anaconda 5).
+      `Scikit RF example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/scikit-rf.ipynb?viewer=share>`_
+
+* SageMath:
+    * (upd) development version ``8.8.beta6``
+
+* Linux Software Updates:
+    * ``rustc`` 1.32 / ``cargo`` 0.33
+    * ``bazel`` 0.25.3
+
+
 
 .. _update-2019-05-18:
 
@@ -491,7 +538,7 @@ Software Updates 2019
    - **updates**:
 
       - `sphinx <http://www.sphinx-doc.org/en/master/>`_ 1.8.3
-      - `statsmodels <https://www.statsmodels.org/stable/index.html>`_ 0.9.0 + `patsy <https://patsy.readthedocs.io/en/latest/>`_ 0.5.1 fixing some problems with formulas
+      - `statsmodels`_ 0.9.0 + `patsy <https://patsy.readthedocs.io/en/latest/>`_ 0.5.1 fixing some problems with formulas
       - `pymc3 <https://docs.pymc.io/>`_ 3.6
       - distributed 1.25.2
       - `Cython <https://cython.org>`_ 0.29.2
@@ -538,4 +585,10 @@ Software Updates 2019
 .. _BibTeX: http://www.bibtex.org/
 .. _gspread: https://github.com/burnash/gspread
 .. _pygsheets: https://pygsheets.readthedocs.io/en/stable/
+.. _statsmodels: https://www.statsmodels.org/
+.. _cvxpy: https://www.cvxpy.org/
+.. _OpenCV: https://github.com/skvark/opencv-python
+.. _pyppeteer: https://github.com/miyakogi/pyppeteer
+.. _scikit-rf: https://scikit-rf.readthedocs.io/
+.. _Binder: https://mybinder.readthedocs.io/en/latest/introduction.html
 
