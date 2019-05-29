@@ -43,6 +43,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    project
    account
    software
+   ipad
    howto/index
    howto/trouble
    api/index.rst
