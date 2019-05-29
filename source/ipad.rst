@@ -2,8 +2,12 @@
 .. _ipad:
 
 ================================================
-Using CoCalc on an iPad
+iPad
 ================================================
+
+Yes, you can use CoCalc on an Ipad!
+
+.. index:: iPad; in web browser
 
 CoCalc on Web Browser on iPad
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -11,9 +15,10 @@ CoCalc on Web Browser on iPad
 William Stein, who founded CoCalc, has an iPad Pro 10.5, and uses it extensively with CoCalc. It is thus possible to fully use CoCalc in Safari on an iPad.  That said, there are a `number of issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aissue+is%3Aopen+label%3AA-ipad>`_ that we are aware of, many of which have workarounds. 
 
 **Under heavy use sometimes CoCalc will crash mobile Safari.**
-The workaround is to use CoCalc in Google Chrome on iPad. Chrome does not exhibit the same behavior.
-Also, note that due to session support in CoCalc, when you refresh your browser after a crash, it returns to exactly where you left off, with all files open.
+First, note that due to session support in CoCalc, when you refresh your browser after a crash, it returns to exactly where you left off, with all files open.
+Second, a workaround is to use Google Chrome with CoCalc on iPad. Chrome does not exhibit the same behavior as Safari.
 
+.. index:: iPad; native application
 
 Native iPad Application for CoCalc
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
