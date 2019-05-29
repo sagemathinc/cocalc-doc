@@ -10,6 +10,8 @@ In this section we will present some CoCalc features and useful tricks that will
    :local:
    :depth: 2
 
+.. index:: Text fields; Markdown and LaTeX
+
 Text fields generally support Markdown and LaTeX
 ==========================================================
 
@@ -69,6 +71,7 @@ Then scroll down to find and click on the `Start all...` button
 .. image:: img/teaching/start_all_clicked.png
      :width: 100%
 
+.. index:: Courses; restarting a project
 
 Restarting a project
 ==========================================================
@@ -86,6 +89,8 @@ Alternatively, you can restart the entire project, which will clean everything. 
      :width: 60%
 
 .. _teaching-using-git:
+
+.. index:: Courses; teaching with Git
 
 Using Git
 ==========================================================
@@ -105,6 +110,7 @@ Also you can use the terminal to commit and push changes to your repository in G
 
     You need to have internet access enabled in your project.
 
+.. index:: Courses; TimeTravel diffs
 
 Time Travel Diffs
 ==========================================================
@@ -244,3 +250,18 @@ Then tell the students to sign up for CoCalc using that "fake" email address. Th
 Once students sign up, they will be added as collaborators to their project for the course. At that point, they can change their email address to anything they want, in order to ensure they get @mention notifications, can do password reset, etc.
 
 If student_id's are secret/sensitive, you could use something derived from them, e.g., the last two digits.
+
+.. index:: Courses; verifying student activity
+
+Verifing Student Activity
+=============================
+
+In some situations it may be useful to confirm when work was done in a student project.
+
+* If you open the activity log for a student project, you can see exactly when and who opened any file.
+
+* With any file open in a student project, you can see exactly what was done with it and when by clicking the :doc:`TimeTravel <../time-travel>` button, including the total number of edits made to the file (as recorded by TimeTravel) and time and date of the last change. You can click the "Changes" checkbox and see what happened for any range of dates.
+
+* It's impossible for users to delete or change something once it is recorded in TimeTravel (except by explicitly requesting deletion via a support request). However, it's conceivable maybe something got lost, since no software is perfect.
+
+* Folders under :ref:`Backups <project-snapshot>` are snapshots of the exact state of the filesystem, which are independent of TimeTravel, but provide a good double check.
