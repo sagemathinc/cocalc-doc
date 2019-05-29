@@ -5,11 +5,11 @@
 iPad
 ================================================
 
-Yes, you can use CoCalc on an Ipad!
+Yes, you can use CoCalc on an iPad!
 
 .. index:: iPad; in web browser
 
-CoCalc on Web Browser on iPad
+CoCalc in iPad Web Browser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 William Stein, who founded CoCalc, has an iPad Pro 10.5, and uses it extensively with CoCalc. It is thus possible to fully use CoCalc in Safari on an iPad.  That said, there are a `number of issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aissue+is%3Aopen+label%3AA-ipad>`_ that we are aware of, many of which have workarounds. 
@@ -20,7 +20,7 @@ Second, a workaround is to use Google Chrome with CoCalc on iPad. Chrome does no
 
 .. index:: iPad; native application
 
-Native iPad Application for CoCalc
+CoCalc Native iPad Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you would prefer to use CoCalc via a native application, not a web browser, you're in luck. There is a native Jupyter client for iPad called `Juno <https://juno.sh/>`_ that allows you to connect to your CoCalc projects.
