@@ -21,7 +21,7 @@ The project **Files** list gives you an overview of your files in that project.
 .. index:: Files list; mini-terminal
 .. _mini-terminal:
 
-The mini-terminal
+Mini-terminal
 =====================
 
 With the **mini-terminal**, you can enter a simple Linux command in the "Terminal command..." box at upper right. Current directory for the command will be whatever folder is open in the Files list. Output is limited to a few lines.
