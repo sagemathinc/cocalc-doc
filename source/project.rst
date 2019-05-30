@@ -8,7 +8,11 @@ The concept of a "Project" is the fundamental building block for running any cal
 It is an isolated, private working space, where you work with files organized in directories.
 (Under the hood, this is a Linux environment, running in a Docker container.)
 
-To start being productive, you have to create a :doc:`sagews`, :doc:`jupyter`, :doc:`terminal` or other files like :doc:`latex`.
+To start being productive, you have to create a
+:doc:`Sage Worksheet <sagews>`,
+:doc:`Jupyter Notebook <jupyter>`,
+:doc:`terminal`,
+:doc:`LaTeX document <latex>`, or other file.
 
 
 
