@@ -1,0 +1,81 @@
+.. index:: Projects; activity log
+.. index:: Project Activity Log
+
+.. _project-log:
+
+===============
+Project Log
+===============
+
+The **Project activity log** gives you quick access to a timeline of past project actions. Once you have a project open, you can view the log by clicking the |history| ("history") icon at upper left in the project toolbar.
+
+.. contents::
+   :local:
+   :depth: 1
+
+.. figure:: img/project-log.png
+     :width: 80%
+     :align: center
+
+     ..
+
+.. index:: Project Activity Log; opened files
+
+Recently opened files
+---------------------
+
+Opening a recently-updated file by clicking on its name in the project log is often the quickest way to get back to a file you were just working on.
+
+Each time a file is opened with the CoCalc editor, a log entry is created with the timestamp and the name of the user who opened the file. The name of the file is a link that lets you open the file in your session.
+
+.. index:: Project Activity Log; collaborator actions
+
+Collaborator actions
+---------------------
+
+Note that each event in the log has the name of the project owner or collaborator who caused that event. You can enter the name of a user in the log filter ("Search log..." - see below) to view the activities of a specific collaborator.
+
+.. index:: Project Activity Log; what is logged
+
+What is logged
+---------------------
+
+Here is a list of project activities that cause log entries to be created:
+
+    * changing project upgrades
+    * inviting CoCalc user to become a collaborator
+    * inviting person without a CoCalc account to become a collaborator
+    * loading code snippet from CoCalc Assistant
+    * loading documentation and sample code from CoCalc Library
+    * opening a file
+    * acting on file(s) selected in Files list: Download, Delete, Rename, Duplicate, Move, Copy, Share
+    * removing a collaborator
+    * requesting project restart
+    * requesting project stop
+    * running a command in the Files list mini-terminal
+    * setting the project title or description
+    * starting the project
+
+.. index:: Project Activity Log; filter log entries
+
+Filter log entries displayed
+-----------------------------
+
+By typing any string into the "Search log..." box, you can limit the log entries displayed to those that contain your search text. This way, you can search for events relating to a specific file, user, action, etc.
+
+.. figure:: img/project-log-filter.png
+     :width: 80%
+     :align: center
+
+     filtering log entries for the string "data"
+
+.. index:: Project Activity Log; load older entries
+
+Load older entries
+---------------------
+
+When you open the project log, you are shown the first page of up to 50 log entries. After awhile, the log can get quite large. To speed loading time, the first 6 pages are made available when you first open the log. To see the rest of the log, click either of the "Load older log entries" buttons. You will see the available page number change from "1/6" or such to "1/nnn" where "nnn" is the number of pages for the entire log. The maximum number of pages shown returns to 6 if you refresh your browser.
+
+.. |history|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
+     :width: 16px

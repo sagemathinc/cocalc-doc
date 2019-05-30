@@ -22,6 +22,7 @@ To start being productive, you have to create a
    project-list
    project-files
    plus-new
+   project-log
    project-settings
    upgrade-guide
    project-library
