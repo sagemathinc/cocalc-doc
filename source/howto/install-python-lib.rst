@@ -38,13 +38,18 @@ Python "user" installs
 
 .. warning::
 
-    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
-    The install command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
+    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>`
+    in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
+    The install command will not work unless you
+    :ref:`upgrade your project <project-upgrades>` to have internet access.
 
+A way to work around such a blocked internet access
+is to :doc:`upload the package files <./upload>` into your project.
 
 You can install additional packages yourself, but only at user-permission level.
 CoCalc accounts do not have superuser (root) privileges.
 Software must be installed into user-writeable parts of the filesystem, which are in ``/home/user`` (check the value of ``$HOME``).
+
 
 .. note::
 
@@ -77,9 +82,11 @@ Install location and ``sys.path``
 pip
 ------------------------------------
 
-Pip is the "Python package manager". It installs packages hosted at `PyPI.org <https://pypi.org/>`_.
+Pip is the "Python package manager".
+It installs packages hosted at `PyPI.org <https://pypi.org/>`_.
 
-If your package can be installed via ``pip``, then run in a  `CoCalc Terminal file <../terminal>`_:
+If your package can be installed via ``pip``,
+then run in a :doc:`CoCalc Terminal file <../terminal>`:
 
 * Python2: ``pip2 install --user [package-name]``
 * Python3: ``pip3 install --user [package-name]``
@@ -91,12 +98,16 @@ If your package can be installed via ``pip``, then run in a  `CoCalc Terminal fi
     * Python 2: use ``pip2`` and ``python2``/``ipython2`` -- ``pip`` and ``python`` should default to these variants.
     * Python 3: use ``pip3`` and ``python3``/``ipython3``.
 
+If you've :doc:`uploaded a zip/wheel file <./upload>`,
+change the ``[package-name]`` to the actual filename.
 
 
 setup.py
 ------------------------------------
 
-If your package is in a folder inside your project (e.g., you uploaded it) with a ``setup.py`` folder, you can do either ``python setup.py install --user`` or ``pip install --user --upgrade ./``
+If your package is in a folder inside your project
+(e.g., :doc:`you uploaded it <./upload>`) which includes a ``setup.py`` file,
+you can do either ``python setup.py install --user`` or ``pip install --user --upgrade ./``
 
 (Some setup instructions alternatively mention ``python setup.py install --home``)
 
