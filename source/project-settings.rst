@@ -8,6 +8,8 @@ All about the **Project Settings** tab.
    :local:
    :depth: 1
 
+.. index:: Projects; title and description
+.. _set-project-title:
 
 Title and description
 ---------------------
@@ -263,6 +265,8 @@ This section assumes you have created an SSH key pair as described above.
 
    You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
 
+.. index:: Project; collaborators
+.. index:: Collaborators
 .. _project-collaborators:
 .. highlight:: default
 
@@ -281,6 +285,9 @@ Linux user id, there are two ways to see *which CoCalc account* was used for cer
 * The project activity log.
 * Time travel for files edited using the CoCalc frame editor.
 
+.. index:: Collaborators; removing
+.. _remove-collaborators:
+
 Current collaborators
 ---------------------
 
@@ -292,6 +299,7 @@ Current collaborators are also shown in the *Projects* list. You can use the lat
      :width: 70%
      :align: center
 
+.. index:: Collaborators; adding
 .. _add-collaborators:
 
 Add new collaborators
@@ -319,6 +327,9 @@ If there are no matches for an email address, then you can send an invitation fo
 Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :ref:`share <ft-share>` for how to share a file.
 
 Caution: if you are using CoCalc for course management with a .course file, add students under the **Students** tab of the .course file, and *NOT* as collaborators. That way, they get their own projects, separate from the instructor project. On the other hand, it is common practice to :ref:`add teaching assistants <teaching-add-ta>` as collaborators in the instructor project.
+
+.. index:: Projects; control
+.. _project-control:
 
 Project control
 ---------------

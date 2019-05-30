@@ -1,5 +1,7 @@
-.. index:: Projects; activity log
-.. index:: Project Activity Log
+.. index::
+    Projects; activity log
+    Project Activity Log
+    Log; project activity
 
 .. _project-log:
 
@@ -42,19 +44,19 @@ What is logged
 
 Here is a list of project activities that cause log entries to be created:
 
-    * changing project upgrades
-    * inviting CoCalc user to become a collaborator
-    * inviting person without a CoCalc account to become a collaborator
+    * changing :ref:`project upgrades <project-upgrades>`
+    * :ref:`inviting <add-collaborators>` CoCalc user to become a collaborator
+    * :ref:`inviting <add-collaborators>` person without a CoCalc account to become a collaborator
     * loading code snippet from CoCalc Assistant
-    * loading documentation and sample code from CoCalc Library
-    * opening a file
-    * acting on file(s) selected in Files list: Download, Delete, Rename, Duplicate, Move, Copy, Share
-    * removing a collaborator
-    * requesting project restart
-    * requesting project stop
-    * running a command in the Files list mini-terminal
-    * setting the project title or description
-    * starting the project
+    * loading documentation and sample code from :doc:`CoCalc Library <project-library>`
+    * :ref:`opening a file <ft-open-files>`
+    * :ref:`acting on file(s) <file-actions>` selected in the Files list: Download, Delete, Rename, Duplicate, Move, Copy, Share
+    * :ref:`removing <remove-collaborators>` a collaborator
+    * requesting :ref:`project restart <project-control>`
+    * requesting :ref:`project stop <project-control>`
+    * running a command in the Files list :ref:`mini-terminal <mini-terminal>`
+    * setting the :ref:`project title and description <set-project-title>`
+    * :ref:`starting <project-control>` the project
 
 .. index:: Project Activity Log; filter log entries
 

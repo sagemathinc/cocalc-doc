@@ -12,14 +12,41 @@ The project **Files** list gives you an overview of your files in that project.
    :local:
    :depth: 1
 
-Click on a line to open a file,
-or select one or more files via the checkbox on the left to manipulate them (deleting, moving, ...)
-
 .. figure:: img/project-files/files-list.png
      :width: 80%
      :align: center
 
-     *files list*
+     files list
+
+.. index:: Files list; mini-terminal
+.. _mini-terminal:
+
+The mini-terminal
+=====================
+
+With the **mini-terminal**, you can enter a simple Linux command in the "Terminal command..." box at upper right. Current directory for the command will be whatever folder is open in the Files list. Output is limited to a few lines.
+
+.. figure:: img/project-files/mini-terminal.png
+     :width: 80%
+     :align: center
+
+     running a command in the mini-terminal
+
+
+.. index:: Files list; file actions
+.. _file-actions:
+
+File Actions
+=====================
+
+Click on a line to open a file,
+or select one or more files via the checkbox on the left to manipulate them (deleting, moving, ...)
+
+.. figure:: img/project-files/file-actions.png
+     :width: 80%
+     :align: center
+
+     file actions available when you select a file from the list
 
 
 .. index:: Files list; refresh
