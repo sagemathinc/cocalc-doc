@@ -258,7 +258,7 @@ Verifing Student Activity
 
 In some situations it may be useful to confirm when work was done in a student project.
 
-* If you open the activity log for a student project, you can see exactly when and who opened any file.
+* If you open the :doc:`activity log <project-log>` for a student project, you can see who opened any file and when.
 
 * With any file open in a student project, you can see exactly what was done with it and when by clicking the :doc:`TimeTravel <../time-travel>` button, including the total number of edits made to the file (as recorded by TimeTravel) and time and date of the last change. You can click the "Changes" checkbox and see what happened for any range of dates.
 

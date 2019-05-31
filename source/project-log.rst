@@ -16,7 +16,7 @@ The **Project activity log** gives you quick access to a timeline of past projec
    :depth: 1
 
 .. figure:: img/project-log.png
-     :width: 80%
+     :width: 95%
      :align: center
 
      ..
@@ -66,7 +66,7 @@ Filter log entries displayed
 By typing any string into the "Search log..." box, you can limit the log entries displayed to those that contain your search text. This way, you can search for events relating to a specific file, user, action, etc.
 
 .. figure:: img/project-log-filter.png
-     :width: 80%
+     :width: 95%
      :align: center
 
      filtering log entries for the string "data"
@@ -76,7 +76,7 @@ By typing any string into the "Search log..." box, you can limit the log entries
 Load older entries
 ---------------------
 
-When you open the project log, you are shown the first page of up to 50 log entries. After awhile, the log can get quite large. To speed loading time, the first 6 pages are made available when you first open the log. To see the rest of the log, click either of the "Load older log entries" buttons. You will see the available page number change from "1/6" or such to "1/nnn" where "nnn" is the number of pages for the entire log. The maximum number of pages shown returns to 6 if you refresh your browser.
+The initial project log shows at most 300 entries from the last 30 days. When you click "Load older..." it gets up 7500 log entries going back as long as you want. The display returns to the shorter list if you refresh your browser.
 
 .. |history|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
