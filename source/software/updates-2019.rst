@@ -8,6 +8,23 @@ Software Updates 2019
      :depth: 1
 
 
+
+.. _update-2019-06-02:
+
+2019-06-02
+----------------------
+
+* Python 3:
+    * `Cython`_ ``0.29.9``
+    * `pymc3`_ ``3.7`` &  `theano`_ ``1.0.4``
+
+* R:
+    * `IRkernel`_ 1.0.1, ``IRDisplay 0.7.0``, ``repr 1.0.1``, ``pillar 1.4.1``, and ``vctrs 0.1.0``
+      – this solves certain rich object `representation issues <https://github.com/IRkernel/IRkernel/issues/590>`_
+
+
+
+
 .. _update-2019-05-26:
 
 2019-05-26
@@ -591,4 +608,7 @@ Software Updates 2019
 .. _pyppeteer: https://github.com/miyakogi/pyppeteer
 .. _scikit-rf: https://scikit-rf.readthedocs.io/
 .. _Binder: https://mybinder.readthedocs.io/en/latest/introduction.html
+.. _pymc3: https://docs.pymc.io/
+.. _theano: http://deeplearning.net/software/theano/
+.. _IRkernel: https://irkernel.github.io/
 
