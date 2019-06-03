@@ -4,7 +4,11 @@
 Linux Terminal
 ==============
 
-The CoCalc terminal allows you to run Linux programs on the command-line in your browser.
+The CoCalc terminal let's you run programs online in a Linux environment.
+Everything runs remotely inside :doc:`a project <./project>`,
+the ongoing terminal session is synchronized with your collaborators,
+and all your files are backed up.
+
 
 .. note::
 
