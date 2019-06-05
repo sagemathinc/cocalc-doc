@@ -1,4 +1,4 @@
-.. index:: Sage Worksheet
+.. index:: Sage Worksheets
 .. _sage-worksheet:
 
 
@@ -70,7 +70,7 @@ Using the slider, look at all the versions. Find the revision that you want and 
 
      *looking at a Sage Worksheet with TimeTravel*
 
-.. index:: Backups; Sage worksheet
+.. index:: Backups; Sage worksheets
 
 Backups (snapshots)
 --------------------
@@ -139,7 +139,7 @@ To get a hint for possible completions of a function name, method argument, etc.
 
      ways to solve `differential equations in SageMath <http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html>`_
 
-.. index:: Sage Worksheet; lifetime of definitions
+.. index:: Sage Worksheets; lifetime of definitions
 
 How Long are Definitions Stored in a Sage Worksheet?
 =====================================================

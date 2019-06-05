@@ -34,6 +34,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    tasks
    frame-editor
    time-travel
+   snippets
    share
 
 .. toctree::
