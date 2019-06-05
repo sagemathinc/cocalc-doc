@@ -11,14 +11,21 @@ Snippets
 
 Snippets are short examples of working code.
 CoCalc offers curated, annotated snippets with Jupyter Notebooks and Sage Worksheets.
-They can save you time when you're exploring a new programming technique,
-or just need a reminder how to do something.
+They can save you time when you're learning a new programming technique
+or need a reminder how to do something.
+CoCalc offers code snippets in many programming languages, including Python, R, Sage, Bash, Julia, Octave, and GAP.
+
+.. figure:: img/snippets/snippets-langs.png
+     :width: 75%
+     :align: center
+
+     Snippets are available in many programming languages
 
 .. figure:: img/snippets/snippets.png
      :width: 95%
      :align: center
 
-     the Snippets pane
+     example of Python Snippet
 
 .. figure:: img/snippets/snippets-btn-ipynb.png
      :width: 95%
