@@ -3,9 +3,26 @@
 Software Updates 2019
 ======================================
 
-.. contents::
-     :local:
-     :depth: 1
+
+.. .. contents::
+..      :local:
+..      :depth: 1
+
+
+.. _update-2019-05-08:
+
+2019-05-08
+----------------------
+
+* Software:
+    * `pandoc`_ ``2.7.2``
+
+* Python 3:
+    - `psycopg2`_ ``2.8.2``
+    - `PyTorch`_ ``1.1.0`` and ``torchvision-0.3.0``
+
+* :ref:`Custom Software Environments <custom-software-environment>`:
+    * Updating *Tensorflow 2* to ``2.0.0-beta0``
 
 
 
@@ -611,4 +628,7 @@ Software Updates 2019
 .. _pymc3: https://docs.pymc.io/
 .. _theano: http://deeplearning.net/software/theano/
 .. _IRkernel: https://irkernel.github.io/
+.. _psycopg2: http://initd.org/psycopg/docs/
+.. _PyTorch: https://pytorch.org/
+.. _pandoc: https://pandoc.org/
 
