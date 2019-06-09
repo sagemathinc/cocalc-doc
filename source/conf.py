@@ -173,7 +173,7 @@ elif html_theme == 'sphinx_rtd_theme':
         # it also contains the GA_TAG !
         app.add_javascript("google_analytics_tracker.js")
         # cocalc's analytics
-        app.add_javascript("https://dev.cocalc.com/analytics.js")
+        app.add_javascript("https://cocalc.com/analytics.js")
 
 else:
     raise AssertionError(f'Unknown theme "{html_theme}"')
