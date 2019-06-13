@@ -93,6 +93,13 @@ converted via `repo2docker`_,
 and then integrated into CoCalc's backend infrastructure.
 Simplified, you can think this as an alternative to `MyBinder`_ with a couple of differences.
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Available Custom Environments
+
+   software/custom_software
+
 Getting started
 ----------------------
 
