@@ -3,9 +3,14 @@
 This is a collection of numpy exercises from numpy mailing list, stack overflow, and numpy documentation.
 
 
-## [allen downey think dsp](https://github.com/AllenDowney/ThinkDSP)
+## [Allen Downey Think Dsp](https://github.com/AllenDowney/ThinkDSP)
 
 Think DSP: Digital Signal Processing in Python, by Allen B. Downey. http://greenteapress.com/wp/think-dsp/
+
+
+## [Brittle Matrix Composite Structures (RWTH Aachen)](https://wiki.imb.rwth-aachen.de/do/view/IMB/Teaching/TeachCourseObj0000)
+
+The course is divided into three blocks related to detailed theoretical and experimental description of (1) bond, debonding process, anchorage, (2) crack initiation and propagation, and (3) multiple cracking, matrix fragmentation process under elementary loading conditions. Each of these aspects is first treated in an abstract way using theoretical and numerical methods.  The general part is followed with examples of particular types of material components and practical tasks  related to the either material development, design & dimensioning or safety assessment of structures.
 
 
 ## [CadQuery](https://github.com/dcowden/cadquery)
@@ -30,7 +35,7 @@ No description available
 This repository includes easy-to-run example notebooks for [Dask](https://dask.org/). They are intended to be educational and give users a start on common workflows.
 
 
-## [deep learning workshop](https://github.com/pacm/dl-workshop)
+## [Deep Learning Workshop](https://github.com/pacm/dl-workshop)
 
 No description available
 
@@ -38,7 +43,7 @@ No description available
 
 No description available
 
-## [geopandas tutorial](https://github.com/jorisvandenbossche/geopandas-tutorial)
+## [Geopandas Tutorial](https://github.com/jorisvandenbossche/geopandas-tutorial)
 
 No description available
 
@@ -47,11 +52,11 @@ No description available
 This project aims at teaching you the fundamentals of Machine Learning in python. It contains the example code and solutions to the exercises in the second edition of my O'Reilly book [Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/):
 
 
-## [ipython in depth](https://github.com/ipython/ipython-in-depth)
+## [Ipython In Depth](https://github.com/ipython/ipython-in-depth)
 
 IPython in-depth Tutorial, first presented at PyCon 2012
 
-## [jupyterlab demo](https://github.com/jupyterlab/jupyterlab-demo)
+## [Jupyterlab Demo](https://github.com/jupyterlab/jupyterlab-demo)
 
 This repository contains some demonstrations of [JupyterLab](https://github.com/jupyter/jupyterlab), the next generation user interface of Project Jupyter.
 
@@ -88,7 +93,7 @@ This is the Jupyter notebook version of the following book:
 Michael Beyeler: *"Machine Learning for OpenCV: Intelligent Image Processing with Python"*, 14 July 2017, *Packt Publishing Ltd., London, England*
 
 
-## [numba examples](https://github.com/numba/numba-examples)
+## [Numba Examples](https://github.com/numba/numba-examples)
 
 Example Numba implementations of functions
 
@@ -108,7 +113,7 @@ No description available
 PyOD is a comprehensive and scalable **Python toolkit** for **detecting outlying objects** in multivariate data. This exciting yet challenging field is commonly referred as [Outlier Detection](https://en.wikipedia.org/wiki/Anomaly_detection) or [Anomaly Detection](https://en.wikipedia.org/wiki/Anomaly_detection). Since 2017, PyOD has been successfully used in various academic researches and  commercial products. It is also well acknowledged by the machine learning community with various dedicated posts/tutorials
 
 
-## [qiskit tutorials](https://github.com/Qiskit/qiskit-tutorials)
+## [Qiskit Tutorials](https://github.com/Qiskit/qiskit-tutorials)
 
 A collection of Jupyter notebooks from the community and qiskit developers showing how to use [Qiskit](https://qiskit.org/).
 
