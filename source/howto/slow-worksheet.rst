@@ -1,4 +1,4 @@
-.. index:: Sage Worksheet; slow
+.. index:: Sage Worksheets; slow
 .. index:: Jupyter Notebooks; slow
 .. _slow-worksheet:
 

@@ -403,7 +403,7 @@ Once you have selected an image, click "Save and Restart".
 
 
 
-.. index:: Sage Worksheet Server
+.. index:: Sage Worksheets; server
 .. _sage-worksheet-server:
 
 Sage worksheet server
