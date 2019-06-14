@@ -441,3 +441,9 @@ Create, compile and run a Java program
 
 3. Run ``java HelloWorld`` to see the output.
 
+Create and run a Ruby program
+------------------------------------------------
+
+See :doc:`./ruby`
+
+
