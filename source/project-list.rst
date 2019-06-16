@@ -30,7 +30,7 @@ After you have some projects, there's more to see:
 
      ..
 
-If you have a large number of projects, the initial display will be limited to 50 projects, and projects active within the past 3 weeks. The list can be expanded as needed using "Load projects older than 3 weeks..." or "Load n More Matching Projects..." buttons at the bottom.
+If you have a large number of projects, the initial display will be limited to 50 projects, and projects active within the past 2 months. The list can be expanded as needed using "Show projects not used in the last few months..." or "Load n More Matching Projects..." buttons at the bottom.
 
 .. index:: Projects; search for
 .. _project_search:

@@ -76,7 +76,7 @@ By typing any string into the "Search log..." box, you can limit the log entries
 Load older entries
 ---------------------
 
-The initial project log shows at most 300 entries from the last 30 days. When you click "Load older..." it gets up 7500 log entries going back as long as you want. The display returns to the shorter list if you refresh your browser.
+The initial project log shows at most 300 entries from the last 2 months. When you click "Load older..." it gets up 7500 log entries going back as long as you want. The display returns to the shorter list if you refresh your browser.
 
 .. |history|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
