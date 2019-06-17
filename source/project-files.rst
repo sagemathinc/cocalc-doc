@@ -101,7 +101,7 @@ Processing some programs, notably LaTeX source (e.g. ``.tex`` files) causes temp
 
 .. _project-snapshot:
 
-Snapshots
+Snapshot Backups
 =====================
 
 Click on the "|life-ring| Backup" button to switch to a directory containing consistent point-in-time backups of all your files.
