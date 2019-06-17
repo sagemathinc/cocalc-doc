@@ -9,9 +9,32 @@ Software Updates 2019
 ..      :depth: 1
 
 
-.. _update-2019-05-08:
+.. _update-2019-06-17:
 
-2019-05-08
+2019-06-17
+----------------------
+
+* SageMath:
+    * (upd) Development Version ``8.8.rc0``
+
+* Python 3:
+    * (upd) ``dill-0.2.9``
+
+* Software:
+    * (upd) Python 3.6.8
+    * (upd) `xpra`_ ``2.5.2``
+    * (upd) Google Chrome 75
+    * (upd) `bazel`_ 0.26.1
+
+* :ref:`Library <project-library>`:
+    * (new) "Public Finance 2018/2019 UCSC"
+    * updating entries
+
+
+
+.. _update-2019-06-08:
+
+2019-06-08
 ----------------------
 
 * Software:
@@ -631,4 +654,5 @@ Software Updates 2019
 .. _psycopg2: http://initd.org/psycopg/docs/
 .. _PyTorch: https://pytorch.org/
 .. _pandoc: https://pandoc.org/
-
+.. _xpra: http://xpra.org/
+.. _bazel: https://bazel.build/
