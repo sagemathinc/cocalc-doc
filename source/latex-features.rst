@@ -2,8 +2,8 @@
 .. _latex-features:
 
 
-Features
-===============
+LaTeX editor features
+======================
 
 .. _latex-forward-inverse:
 

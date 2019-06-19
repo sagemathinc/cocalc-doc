@@ -1,8 +1,8 @@
 .. index:: LaTeX Editor; FAQ
 .. _latex-faq:
 
-FAQ
-======
+LaTeX FAQ
+==========
 
 How to insert an image?
 -----------------------------------------
