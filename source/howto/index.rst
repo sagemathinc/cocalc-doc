@@ -17,7 +17,6 @@ Explanations about how you can accomplish a certain task or run a specific examp
    upload
    webserver
 
-
 .. toctree::
    :caption: Jupyter Notebook
    :maxdepth: 1
@@ -26,13 +25,6 @@ Explanations about how you can accomplish a certain task or run a specific examp
    jupyter-extension
    custom-jupyter-kernel
    fix-broken-jupyter-pdf
-
-.. toctree::
-   :caption: LaTeX
-   :maxdepth: 1
-
-   overleaf
-
 
 .. toctree::
    :caption: Miscellaneous
