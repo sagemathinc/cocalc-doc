@@ -47,7 +47,7 @@ Here is a list of project activities that cause log entries to be created:
     * changing :ref:`project upgrades <project-upgrades>`
     * :ref:`inviting <add-collaborators>` a CoCalc user to become a collaborator
     * :ref:`inviting <add-collaborators>` a person without a CoCalc account to become a collaborator
-    * loading a code snippet from the CoCalc Assistant
+    * loading a code :doc:`snippet <snippets>`.
     * loading documentation and sample code from the :doc:`project library <project-library>`
     * :ref:`opening a file <ft-open-files>`
     * :ref:`acting on file(s) <file-actions>` selected in the Files list: Download, Delete, Rename, Duplicate, Move, Copy, Share
