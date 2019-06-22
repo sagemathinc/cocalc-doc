@@ -74,6 +74,21 @@ If you go to the root of the course project directory, you will see that a new f
      :width: 100%
      :align: center
 
+
+
+Split course into multiple groups
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Note:** If your course is large, it is possible to partition your class into several groups.
+To accomplish that, simply create more than one course file!
+For example, ``PHY001_A.course``, ``PHY001_B.course``, ``PHY001_C.course``, ...
+for groups ``A``, ``B``, ``C`` and so on.
+
+These course files are independent of each other,
+which allows to not only have different groups of students, but also different due dates, etc.
+
+
+
 Adding students to the course
 --------------------------------
 
