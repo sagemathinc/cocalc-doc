@@ -9,6 +9,25 @@ Software Updates 2019
 ..      :depth: 1
 
 
+
+.. _update-2019-06-24:
+
+2019-06-24
+----------------------
+
+* SageMath:
+    * (upd) Development Version ``8.8.rc0``
+
+* Python 3:
+    * (new) `jieba`_ ``0.39``: “结巴”中文分词：做最好的 Python 中文分词组件
+
+* Julia 1.1:
+    * (new) `Distributions <julia_distributions>`_
+    * (upd) all other global Julia packages, if applicable
+
+
+
+
 .. _update-2019-06-17:
 
 2019-06-17
@@ -656,3 +675,5 @@ Software Updates 2019
 .. _pandoc: https://pandoc.org/
 .. _xpra: http://xpra.org/
 .. _bazel: https://bazel.build/
+.. _jieba: https://github.com/fxsjy/jieba
+.. _julia_distributions: https://github.com/JuliaStats/Distributions.jl
