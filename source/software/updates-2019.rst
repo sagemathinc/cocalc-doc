@@ -10,6 +10,24 @@ Software Updates 2019
 
 
 
+
+.. _update-2019-06-30:
+
+2019-06-30
+----------------------
+
+* (new) **SageMath 8.8**: general available on CoCalc with various enhancements. When the testing phase passes, it'll be the default (in about a week). (`Sage 8.8 Notebook   <https://share.cocalc.com/share/20e4a191-73ea-4921-80e9-0a5d792fc511/sage-8.8.ipynb?viewer=share>`_)
+
+* Python 3:
+
+    * (upd): `Dask 2.0 <https://docs.dask.org/en/latest/changelog.html#id1>`_: ``dask-2.0.0`` ``distributed-2.0.1``, ``dask-jobqueue-0.5.0``, and ``dask-ml-1.0.0``
+    * (new) `tensorly`_ ``0.4.3`` (`TensorLy example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/tensorly.ipynb?viewer=share>`_)
+
+
+* Linux package update, including ``imagemagick-6 6.9.7.4``.
+
+
+
 .. _update-2019-06-24:
 
 2019-06-24
@@ -677,3 +695,5 @@ Software Updates 2019
 .. _bazel: https://bazel.build/
 .. _jieba: https://github.com/fxsjy/jieba
 .. _julia_distributions: https://github.com/JuliaStats/Distributions.jl
+.. _tensorly: http://tensorly.org/
+
