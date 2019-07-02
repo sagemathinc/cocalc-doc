@@ -265,7 +265,7 @@ This section assumes you have created an SSH key pair as described above.
 
    You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
 
-.. index:: Project; collaborators
+.. index:: Projects; collaborators
 .. index:: Collaborators
 .. _project-collaborators:
 .. highlight:: default

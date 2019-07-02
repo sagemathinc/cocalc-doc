@@ -266,7 +266,7 @@ Statements
 
 .. index:: GDPR
 
-You can find the GDPR Compliance Statement on our wiki at 
+You can find the CoCalc GDPR Compliance Statement on our wiki at 
 https://github.com/sagemathinc/cocalc/wiki/GDPR
 
 .. index:: Accessibility
