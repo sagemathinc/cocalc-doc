@@ -261,6 +261,18 @@ In addition the :doc:`Index <genindex>` in this User Manual, if you have specifi
 
 *Note: we are in the process of migrating CoCalc Wiki documents into this User Manual.*
 
+Statements
+-----------------------------
+
+.. index:: GDPR
+
+You can find the GDPR Compliance Statement on our wiki at 
+https://github.com/sagemathinc/cocalc/wiki/GDPR
+
+.. index:: Accessibility
+
+You can find the CoCalc Accessibility Statement on our wiki at https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement
+
 
 
 
