@@ -21,7 +21,7 @@ When you *run* a cell – which evaluates the piece of code in the cell via the 
 This combination of communicating back and forth with a kernel and adding descriptive text makes this form of document very attractive.
 
 There are many **Kernels** available, which allow you to choose the programming language and environment you want to work.
-A quite popular choice is `Python3`_, but there are also `SageMath`_ and many others.
+A uite popular choice is `Python3`_, but there are also `SageMath`_ and others. Our page on :doc:`howto/jupyter-kernel-selection` shows how to set the kernel.
 
 .. note::
 

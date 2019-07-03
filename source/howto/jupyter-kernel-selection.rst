@@ -14,6 +14,8 @@ The element which instantiates a session and runs the code of a cell is called *
 The **currently active kernel's** "display name" is visible at the top right of the working area listing the cells.
 In most cases, it also shows a logo, which helps you identifying it.
 
+When you start a new notebook, the default kernel will generally be whatever kernel you last explicitly selected.
+You can override this by creating your own :ref:`default notebook template <default-template>`.
 
 .. note::
 
@@ -25,6 +27,18 @@ In most cases, it also shows a logo, which helps you identifying it.
     Therefore, after uploading any of your notebooks to CoCalc,
     you have to double-check which kernel it starts to spin up.
 
+CoCalc's Jupyter Notebook
+=============================
+
+To select the kernel in a CoCalc Jupyter notebook, click the "Kernel" button (usually in the middle toolbar, depending on your configuration).
+In the menu that opens, scroll down past interrupt and restart commands to see the choices for available kernels.
+
+.. figure:: img/jupyter-kernel.png
+     :width: 100%
+     :align: center
+
+     selecting the kernel in a CoCalc Jupyter notebook
+
 
 Jupyter Classic
 =========================
@@ -32,8 +46,10 @@ Jupyter Classic
 Here is a sequence of steps depicted about how to change the Kernel in a notebook.
 The current selection is "SageMath", and it is about to be change to "Python 3 (Ubuntu Linux)".
 
-.. image:: img/jupyter-classic-change-kernel.png
+.. figure:: img/jupyter-classic-change-kernel.png
     :width: 100%
+
+    selecting the kernel in a Classical Jupyter notebook
 
 Jupyter Lab
 ======================
@@ -42,7 +58,3 @@ It works similar as above, but you have to use the main menu at the top.
 
 
 
-CoCalc's Jupyter Notebook
-=============================
-
-Look for the "Kernel" menu, in the row which is at the bottom, i.e. closest and hence most relevant to the notebook itself.
