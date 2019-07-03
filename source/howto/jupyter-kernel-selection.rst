@@ -6,13 +6,11 @@
 Jupyter Kernel Selection
 ================================
 
-The `Jupyter Notebook <https://jupyter.org/>`_ (also in the :doc:`variant of CoCalc <../jupyter>`)
-supports more than a single **programming language**.
-The element which instantiates a session and runs the code of a cell is called **"Kernel"**.
-(Note, CoCalc might some day rename that terminology to "Language", i.e. the "Programming Language")
+:doc:`variant of CoCalc <../jupyter>`) support more than a single programming language.
+The element which instantiates a session and runs the code of a cell is called "Kernel".
 
-The **currently active kernel's** "display name" is visible at the top right of the working area listing the cells.
-In most cases, it also shows a logo, which helps you identifying it.
+The currently active kernel's display name is visible at the top right of the working area.
+In most cases it also shows a logo, which helps identify it.
 
 When you start a new notebook, the default kernel will generally be whatever kernel you last explicitly selected.
 You can override this by creating your own :ref:`default notebook template <default-template>`.
@@ -47,14 +45,30 @@ Here is a sequence of steps depicted about how to change the Kernel in a noteboo
 The current selection is "SageMath", and it is about to be change to "Python 3 (Ubuntu Linux)".
 
 .. figure:: img/jupyter-classic-change-kernel.png
-    :width: 100%
+     :width: 100%
+     :align: center
 
-    selecting the kernel in a Classical Jupyter notebook
+     selecting the kernel in a Classical Jupyter notebook
 
 Jupyter Lab
 ======================
 
-It works similar as above, but you have to use the main menu at the top.
+When creating a new notebook in JupyterLab, the Launcher displays icons for the available kernels.
+
+.. figure:: img/jlab-launcher.png
+    :width: 60%
+    :align: center
+
+    kernel choices when creating a notebook with JupyterLab
+
+
+Once you have opened a notebook in JupyterLab, you can change the kernel using the "kernel" button in the top row.
+
+.. figure:: img/jlab-change-kernel.png
+    :width: 90%
+    :align: center
+
+    changing kernel of existing notebook with JupyterLab
 
 
 
