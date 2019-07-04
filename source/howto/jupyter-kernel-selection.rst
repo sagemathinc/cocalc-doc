@@ -6,8 +6,8 @@
 Jupyter Kernel Selection
 ================================
 
-:doc:`variant of CoCalc <../jupyter>`) support more than a single programming language.
-The element which instantiates a session and runs the code of a cell is called "Kernel".
+:doc:`Jupyter notebooks <../jupyter>` support more than a single programming language.
+The element which instantiates a session and runs the code of a cell is called the **kernel**.
 
 The currently active kernel's display name is visible at the top right of the working area.
 In most cases it also shows a logo, which helps identify it.
@@ -20,10 +20,10 @@ You can override this by creating your own :ref:`default notebook template <defa
     Kernels of *existing* notebooks are only identified by their name.
     The actual meaning of it can change between environments,
     because kernels with the same name could be configured differently.
-    There is no common scheme!
+    There is no common scheme.
 
     Therefore, after uploading any of your notebooks to CoCalc,
-    you have to double-check which kernel it starts to spin up.
+    you have to double-check which kernel it uses.
 
 CoCalc's Jupyter Notebook
 =============================
