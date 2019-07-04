@@ -21,6 +21,10 @@ Here's the complete example:
 
 .. code-block:: latex
 
+    \usepackage{graphicx}
+    ...
+    \begin{document}
+    ...
     \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{./images/filename.png}
