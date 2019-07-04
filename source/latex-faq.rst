@@ -4,17 +4,31 @@
 LaTeX FAQ
 ==========
 
-How to insert an image?
+.. index:: LaTeX Editor; add image
+
+LaTeX add image
 -----------------------------------------
 
 1. Upload a PNG or PDF file via CoCalc's "Files" interface.
    The uploaded image should be in the same directory as the ``.tex`` file
    Otherwise, use relative paths like ``./images/filename.png`` if it is in a subdirectory ``images``.
-2. Follow  `these instructions`_  about how to insert a graphic in a figure environment.
-   Do not forget ``\usepackage{graphicx}`` in the preamble declaration.
+2. Add ``\usepackage{graphicx}`` to the :ref:`preamble <latex-preamble>` of your file.
+3. At the place where you want the image, insert a ``figure`` environment.
+   Use ``includegraphics`` to include the file, with ``width`` to indicate image width, e.g. use ``0.9`` to take up 90% of document width.
+4. Add ``\centering`` to have your image and caption centered in the document, and use ``caption`` to add a caption.
 
-.. _these instructions: https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
+Here's the complete example:
 
+.. code-block:: latex
+
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/filename.png}
+    \caption{here is a picture}
+    \end{figure}
+
+5. There are many more options for image placement. See for example the Wikibooks LaTeX book section on 
+   `Floats, Figures and Captions <https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions>`_.
 
 
 How to insert a backslash or dollar sign?
