@@ -42,7 +42,11 @@ LaTeX 101
 It is very easy to start with LaTeX.
 CoCalc guides your first document with a small default template.
 You start working between the ``\begin{document} ... \end{document}`` instructions.
-Everything before ``\begin{document}`` is called the "preamble" and contains the configuration for the document.
+
+.. index:: LaTeX Editor; preamble
+.. _latex-preamble:
+
+Everything before ``\begin{document}`` is called the **preamble** and contains the configuration for the document.
 
 For example, remove the ``\maketitle`` instruction and replace it by
 
