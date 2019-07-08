@@ -9,6 +9,21 @@ Software Updates 2019
 ..      :depth: 1
 
 
+.. _update-2019-07-08:
+
+2019-07-08
+----------------------
+
+- SageMath:
+    - (new) **Version 8.8** becomes the default
+    - (upd) Development Version ``8.9.beta1``
+
+- Python 3:
+    * `pip-upgrader`_: helps managing custom package setups in virtual environments
+
+- Updating all :ref:`Custom Software Environments <custom-software-environment>`.
+
+
 
 
 .. _update-2019-06-30:
@@ -696,4 +711,4 @@ Software Updates 2019
 .. _jieba: https://github.com/fxsjy/jieba
 .. _julia_distributions: https://github.com/JuliaStats/Distributions.jl
 .. _tensorly: http://tensorly.org/
-
+.. _pip-upgrader: https://github.com/simion/pip-upgrader
