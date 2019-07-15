@@ -38,6 +38,14 @@ img.img.section {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* 4 space indented lines are blockquotes. we make them stick out a bit more */
+.rst-content blockquote {
+    border-left: 2px solid #d9d9d9;
+    padding-left: 10px;
+    font-style: italic;
+    color: #6d6d6d;
+}
+
 /* adjust spacing in lists, default 1.4em */
 div.body li {
     line-height: 1.6em;

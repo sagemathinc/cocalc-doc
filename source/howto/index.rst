@@ -36,6 +36,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    gsl
    google-api
    nbgrader
+   neuron
    postgresql
    remarkjs-slideshow
    ruby
