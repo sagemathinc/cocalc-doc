@@ -9,6 +9,39 @@ Software Updates 2019
 ..      :depth: 1
 
 
+.. _update-2019-07-15:
+
+2019-07-15
+----------------------
+
+* CoCalc Platform
+    - (new) **Jupyter NBGrading**: initial support for creating test cells via the NBGrader toolbar and running validation tests in the notebook.
+    - (new) **Dedicated VMs**: get your own node in CoCalc's cluster – `pricing info <https://cocalc.com/policies/pricing.html#dedicated>`_.
+    - (chg) Jupyter Kernels: renaming "Python 2/3 (Ubuntu Linux)" to **"Python 2/3 (system-wide)"**. There is no change except for the naming.
+    - :ref:`Library <project-library>` update, adding NBGrader examples
+
+* `R Statistical Software`_:
+    - (upd) **Version 3.6.1** and 4000+ packages
+
+      .. note::
+
+          Compiled packages in projects need to be reinstalled!
+
+* Python 3:
+    - (new) `NEURON`_ -- see :ref:`howto NEURON on CoCalc <howto-neuron>`
+    - (upd) `JAX`_ ``0.1.39``, ``jaxlib-0.1.21``
+    - (upd) ``mypy-0.720`` (`Mypy: New semantic analyzer <http://mypy-lang.blogspot.com/2019/07/mypy-0720-released.html>`_), ``typed-ast-1.4.0``, ``typing-extensions-3.7.4``
+
+* SageMath:
+    - (upd) Sage Development version ``8.9.beta2``
+
+* Software:
+    - (upd) ``npm 6.10.0`` and a couple of global npm packages, e.g. ``typescript 3.5.3``
+    - (upd) general Linux package update, including ``bazel 0.28`` and Rust ``1.34``
+
+
+
+
 .. _update-2019-07-08:
 
 2019-07-08
@@ -712,3 +745,6 @@ Software Updates 2019
 .. _julia_distributions: https://github.com/JuliaStats/Distributions.jl
 .. _tensorly: http://tensorly.org/
 .. _pip-upgrader: https://github.com/simion/pip-upgrader
+.. _jax: https://github.com/google/jax
+.. _R Statistical Software: https://www.r-project.org/
+.. _NEURON: https://www.neuron.yale.edu/neuron/
