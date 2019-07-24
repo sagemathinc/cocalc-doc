@@ -156,7 +156,29 @@ How exactly are Assignments copied to students?
 
 When you assign an assignment to your students,
 it is copied from your project to your students' projects.
-Behind the scenes, this copy is done with the command
+
+**What happens when you assign again.**
+
+* For files that have a *newer* timestamp than the corresponding file in the target directory, the target file is copied to a backup and the new source is copied over.
+
+* For files that have an old timestamp and you've already assigned the assignment (and students may have worked on it), nothing at all will happen on copy.
+
+**Adding a new file to an assignment.**
+
+If you just want to add a new file to an assignment, you could ensure that all the other files are very old, e.g., by using the touch command in a :doc:`terminal`.  E.g.,
+
+
+::
+
+    touch -d 'Jan 1' *
+
+would make it so that everything appears to be from January 1.
+
+Alternatively, you could just remove the files from the assignment folder, then move them back later.
+
+**Behind the scenes.**
+
+Assignments are copied with the command:
 
 ::
 
@@ -176,20 +198,7 @@ and
               on it),  then `dest/foo` is moved to `dest/foo~` and `foo` is copied
               to the destination.
 
-In particular, if the source files have an old timestamp and you've already assigned the assignment (and students may have worked on it), then nothing at all will happen on copy (due to the ``--update`` option).
-If one or more source files have a *newer* timestamp than a file in the target directory,
-then the target file is copied to a backup and the source is copied over.
 
-If you just want to add a new file to an assignment, you could ensure that all the other files are very old, e.g., by using the touch command in a :doc:`terminal`.  E.g.,
-
-
-::
-
-    touch -d 'Jan 1' *
-
-would make it so that everything appears to be from January 1.
-
-Alternatively, you could just remove the files from the assignment folder, then move them back later.
 
 Assigning an assignment never deletes missing files in the target,
 `unless` you explicitly clicked and confirmed the ``Replace student files!`` button.
