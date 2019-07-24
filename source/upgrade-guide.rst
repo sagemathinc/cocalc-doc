@@ -15,6 +15,7 @@ Overview
 This page outlines the steps for upgrading projects from :doc:`trial projects <trial>`.
 
 .. index:: Purchase a Plan
+.. index:: Subscription; purchasing
 
 Select your plan
 ===============================
@@ -40,6 +41,8 @@ If you got a coupon, you can also add it here.
     :width: 100%
 
 .. index:: Invoice, Receipt
+.. index:: Subscription; view active
+.. index:: Subscription; canceling
 
 Active subscriptions
 ============================
