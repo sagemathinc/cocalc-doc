@@ -93,6 +93,15 @@ This is the Jupyter notebook version of the following book:
 Michael Beyeler: *"Machine Learning for OpenCV: Intelligent Image Processing with Python"*, 14 July 2017, *Packt Publishing Ltd., London, England*
 
 
+## [ModSimPython: Modeling and Simulation in Python](https://github.com/AllenDowney/ModSimPy)
+
+*Modeling and Simulation in Python* is an introduction to physical modeling using a computational approach. It is organized in three parts:
+
+  -  The first part presents discrete models, including a bikeshare system and world population growth.
+  -  The second part introduces first-order systems, including models of infectious disease, thermal systems, and pharmacokinetics.
+  -  The third part is about second-order systems, including mechanical systems like projectiles, celestial mechanics, and rotating rigid bodies.
+
+
 ## [Numba Examples](https://github.com/numba/numba-examples)
 
 Example Numba implementations of functions
