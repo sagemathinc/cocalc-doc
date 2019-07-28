@@ -9,6 +9,32 @@ Software Updates 2019
 ..      :depth: 1
 
 
+
+
+.. _update-2019-07-28:
+
+2019-07-28
+----------------------
+
+* SageMath
+    * (del) removing packages ``meataxe`` and ``p_group_cohomology`` to avoid a bug.
+
+* Python 3:
+    * (new) **Anaconda 2019** – a fresh setup from scratch!
+      It provides Python 3.7 and replaces the Anaconda 5 environment.
+    * (rem) **Removal of Anaconda3** – it was deprecated and notebooks will tell you to switch the kernel to Anaconda 2019.
+    * (dep) Deprecation of Anaconda 5 starts now.
+    * (upd) `numba`_ ``0.44.1`` and ``llvmlite-0.29.0``
+    * (upd) ``plotly 4.0.0`` – `Plotly 4.0 release notes <https://medium.com/@plotlygraphs/plotly-py-4-0-is-here-offline-only-express-first-displayable-anywhere-fc444e5659ee>`_
+
+* Software:
+    * (upd) Linux package update, including some R packages
+    * (upd) `yapf`_ ``0.28``, ``git-lfs 2.8.0`` and ``xpra 2.5.3``
+
+
+
+
+
 .. _update-2019-07-15:
 
 2019-07-15
@@ -748,3 +774,4 @@ Software Updates 2019
 .. _jax: https://github.com/google/jax
 .. _R Statistical Software: https://www.r-project.org/
 .. _NEURON: https://www.neuron.yale.edu/neuron/
+.. _yapf: https://github.com/google/yapf
