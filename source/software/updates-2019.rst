@@ -16,8 +16,9 @@ Software Updates 2019
 ----------------------
 
 - Julia:
+   - (new) Package `Gen <https://probcomp.github.io/Gen/>`_ in Julia 1.1
 
-    - (new) Package `Gen <https://probcomp.github.io/Gen/>`_ in Julia 1.1 – *"A general-purpose probabilistic programming system with programmable inference."*
+      *"A general-purpose probabilistic programming system with programmable inference."*
 
 - Sagemath:
     - (new) ``TIDES`` package, providing `desolve_tides_mpfr <http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html#sage.calculus.desolvers.desolve_tides_mpfr>`_
