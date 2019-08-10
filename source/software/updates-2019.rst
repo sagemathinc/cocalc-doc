@@ -10,6 +10,28 @@ Software Updates 2019
 
 
 
+.. _update-2019-08-10:
+
+2019-08-10
+----------------------
+
+- Julia:
+
+    - (new) Package `Gen <https://probcomp.github.io/Gen/>`_ in Julia 1.1 – *"A general-purpose probabilistic programming system with programmable inference."*
+
+- Sagemath:
+    - (new) ``TIDES`` package, providing `desolve_tides_mpfr <http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html#sage.calculus.desolvers.desolve_tides_mpfr>`_
+    - (upd) Development version ``8.9.beta5``
+
+- Python
+    - (upd) ``pip-19.2.1``, ``dask-2.2.0``, ``distributed-2.2.0``, ``numba-0.45.1``
+
+- Software:
+    - (new) `GRASS GIS`_: ``grass 7.4.0``, ``grass-gui``, etc. + ``grass-session`` in Python 2
+    - (upd) ``npm@6.10.3``
+
+
+
 
 .. _update-2019-07-28:
 
@@ -775,3 +797,4 @@ Software Updates 2019
 .. _R Statistical Software: https://www.r-project.org/
 .. _NEURON: https://www.neuron.yale.edu/neuron/
 .. _yapf: https://github.com/google/yapf
+.. _GRASS GIS: https://grass.osgeo.org/
