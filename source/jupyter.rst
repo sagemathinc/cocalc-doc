@@ -124,7 +124,7 @@ You can also run the full classical Jupyter notebook server, using either **Plai
 
 Using either of these options for the classical notebook has an advantage: it does not affect your "Jupyter classic" Editor setting, allowing you to keep CoCalc Jupyter notebook as the default for opening .ipynb files in the CoCalc main interface.
 
-.. index:: Jupyter Notebooks; halt
+.. index:: pair: Jupyter Notebooks; Halt button
 .. _jupyter-halt:
 
 Tips and Tricks
