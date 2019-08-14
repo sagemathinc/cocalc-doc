@@ -1,4 +1,4 @@
-.. index:: nbgrader
+.. index:: nbgrader; R
 
 ===============
 NBgrader
