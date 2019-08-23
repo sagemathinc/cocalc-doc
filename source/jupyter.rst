@@ -70,7 +70,7 @@ These enhanced features are available in CoCalc Jupyter notebooks:
 
 .. index:: Jupyter Notebooks; table of contents
 
-* **table of contents**: Table of contents indentation level is the same as markdown heading level, i.e. "#" for top level, "##" for second level, etc. Click the "Contents" button in the "Notebook" menu at the top of a notebook, or select "File --> Table of Contents", or split the frame and change one of the resulting frames to "Table of Contents". Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.
+* **table of contents**: Table of contents level (indicated by font size) is the same as markdown heading level, i.e. "#" for top level, "##" for second level, etc. Click the "Contents" button in the "Notebook" menu at the top of a notebook, or select "File --> Table of Contents", or split the frame and change one of the resulting frames to "Table of Contents". Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.
 
 .. figure:: img/jupyter/jup-toc2.png
      :width: 80%
@@ -78,7 +78,7 @@ These enhanced features are available in CoCalc Jupyter notebooks:
 
      ..
 
-.. index:: Jupyter Notebooks; slide show
+.. index:: Jupyter Notebooks; slideshow
 
 * **slideshow** CoCalc notebooks offer you a shortcut for making a slideshow. Select "View" > "Cell Toolbar..." > "Slideshow" to add a ``Slide`` button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the "Slideshow" in the "Notebook" menu at the top of a notebook, or select "File" > "Slideshow", or split the frame and change one of the resulting frames to "Slideshow". The latter allows you to view the original notebook side-by-side with the slides.
 
