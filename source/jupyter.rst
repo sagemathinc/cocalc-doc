@@ -30,6 +30,9 @@ A uite popular choice is `Python3`_, but there are also `SageMath`_ and others. 
 CoCalc Jupyter Notebook
 ==========================
 
+Basic Features
+--------------
+
 The default client for Jupyter Notebooks on CoCalc is specific to this platform. It supports CoCalc's advanced features, including real-time collaboration, side chat, and TimeTravel. Read more in our `blogpost <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html>`_. The basic user interface looks like the following:
 
 .. image:: img/jupyter/jupyter-notebook-cocalc-1.png
@@ -45,6 +48,63 @@ Above the main area is a menu bar and a button row:
 * The **output of code cells** is below the input cell. For example, ``Out [7]:`` is the output of cell ``In [7]:``. In the right hand corner of the input cell is some information about how long it took to calculate the result.
 * **Text cells** are slightly different. Select "Markdown" in the ``[ Code ]`` dropdown menu in the button bar to change a code cell to such a markdown text cell. There, you can use `Markdown`_ to format the text. Similar to code-cells, either *Run* these text cells to see the processed Markdown code or press Shift+Return. To edit a text cell, either double click it or press your Return key.
 * **Saving**: more general, the nice things about Jupyter Notebooks is that they save all your intput and output in one single file. This means you can download or publish the notebook as it is, and everyone else sees it in exactly the same way.
+
+Enhancements
+------------
+
+These enhanced features are available in CoCalc Jupyter notebooks:
+
+.. index:: Jupyter Notebooks; cell numbers
+
+* **cell numbers**: Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don't change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.
+
+.. figure:: img/jupyter/jup-cell-num-timing.png
+     :width: 80%
+     :align: center
+
+     ..
+
+.. index:: Jupyter Notebooks; cell run time
+
+* **run time for compute cells**: When a compute cell is executed, the amount of time it takes is displayed at upper right. See preceding figure.
+
+.. index:: Jupyter Notebooks; table of contents
+
+* **table of contents**: Table of contents indentation level is the same as markdown heading level, i.e. "#" for top level, "##" for second level, etc. Click the "Contents" button in the "Notebook" menu at the top of a notebook, or select "File --> Table of Contents", or split the frame and change one of the resulting frames to "Table of Contents". Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.
+
+.. figure:: img/jupyter/jup-toc2.png
+     :width: 80%
+     :align: center
+
+     ..
+
+.. index:: Jupyter Notebooks; slide show
+
+* **slideshow** CoCalc notebooks offer you a shortcut for making a slideshow. Select "View" > "Cell Toolbar..." > "Slideshow" to add a ``Slide`` button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the "Slideshow" in the "Notebook" menu at the top of a notebook, or select "File" > "Slideshow", or split the frame and change one of the resulting frames to "Slideshow". The latter allows you to view the original notebook side-by-side with the slides.
+
+.. figure:: img/jupyter/slideshow-1.png
+     :width: 80%
+     :align: center
+
+     enabling "Slide" button in cell toolbar
+
+.. figure:: img/jupyter/slideshow-2.png
+     :width: 80%
+     :align: center
+
+     selecting slide type for each cell
+
+When presenting, the next slide is to the right, while the next subslide is below. Fragments are revealed within the present slide. Click in the slideshow and then click "?" to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking in the toolbar above the show and clicking "Build", or by clicking "File" in the toolbar above the notebook and again selecting "Slideshow".
+
+.. figure:: img/jupyter/slideshow-3.png
+     :width: 80%
+     :align: center
+
+     original notebook side by side with slideshow
+
+*Note: the legacy method of creating and presenting a slideshow by using a separate Linux terminal command and starting a small web server is still available by clicking "File" > "Slideshow via nbconvert...".*
+
+* **nbgrader integration**: CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See :doc:`nbgrader in CoCalc<teaching-nbgrader>` for more information.
 
 .. index:: Jupyter Notebooks; interactive widgets
 .. _jupyter-interactive-widgets:
@@ -124,7 +184,7 @@ You can also run the full classical Jupyter notebook server, using either **Plai
 
 Using either of these options for the classical notebook has an advantage: it does not affect your "Jupyter classic" Editor setting, allowing you to keep CoCalc Jupyter notebook as the default for opening .ipynb files in the CoCalc main interface.
 
-.. index:: pair: Jupyter Notebooks; Halt button
+.. index:: pair: Jupyter Notebooks; halt button
 .. _jupyter-halt:
 
 Tips and Tricks
