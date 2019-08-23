@@ -1,3 +1,5 @@
+.. index:: Frame Editor
+
 ============
 Frame Editor
 ============
@@ -63,6 +65,12 @@ See :doc:`latex`.
 Text
 -----------
 
+.. index:: Frame Editor; multiple cursors
 
+Multiple Cursors
+=======================
 
+You can get multiple cursors while editing any file in the frame editor using the mouse and ctrl+click (cmd+click on Mac).
+
+If you switch to Sublime keybindings in "Account" > "Preferences" > "Editor settings", you can select text and then use ctrl-D (cmd-D on Mac) to multi-select the next occurrence of the same text.
 
