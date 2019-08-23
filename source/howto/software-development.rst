@@ -318,7 +318,7 @@ I would like to develop a webserver in Python
 See :doc:`./webserver`.
 
 .. index:: Plotly
-.. index:: Jupyter;plotly
+.. index:: Jupyter Notebooks; plotly
 
 Run ``plotly`` in a Jupyter notebook
 --------------------------------------------

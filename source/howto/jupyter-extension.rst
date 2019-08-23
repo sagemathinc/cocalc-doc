@@ -1,4 +1,4 @@
-.. index:: Jupyter Extensions
+.. index:: Jupyter Notebooks; extensions
 .. _jupyter-extensions:
 
 =============================

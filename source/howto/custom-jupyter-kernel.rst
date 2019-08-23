@@ -1,4 +1,4 @@
-.. index:: Jupyter Custom Kernels
+.. index:: Jupyter Notebooks; custom kernels
 .. _jupyter-custom-kernel:
 
 ==========================
