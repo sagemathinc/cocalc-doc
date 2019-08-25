@@ -10,6 +10,58 @@ Software Updates 2019
 
 
 
+.. _update-2019-08-25:
+
+2019-08-25
+----------------------
+
+* CoCalc Platform
+    * (new) Jupyter Notebooks **Table of Contents** (initial release).
+      Structure large notebooks using headers in Markdown cells and then use the ToC to navigate more easily.
+    * (new) `Premium Course Plan <https://cocalc.com/policies/pricing.html#courses>`_ to upgrade your course beyond  "Basic" and Standard".
+
+* Anaconda 2019
+    * (upd) various package update, e.g. ``scipy 1.3.1``, ``scikit-image-0.15.0``, ``pandas 0.25.0``, ...
+
+* Python 3:
+    * (upd) `Tensorflow`_ ``1.14``
+    * (upd) Numpy ``1.16.4``
+    * (upd) `Scikit Image`_ ``0.15``
+    * (upd) `Astroalign`_ ``2.0``
+    * (upd) `Qiskit`_ related package updates
+    * (upd) `Keras`_ ``2.2.5``
+    * (new) AsyncIO related: ``aiohttp`` and ``curio``
+    * (upd) several other support libraries, .e.g ``jinja2-2.10.1``
+
+* SageMath
+    * (new) Package `admcycles <https://gitlab.com/jo314schmitt/admcycles>`_
+
+* Software
+    * (upd) `GAP`_ ``4.10.2``
+    * (upd) `Jupyter Lab`_ ``1.0.6``
+
+* Julia
+    * (new) `Julia 1.2 <https://docs.julialang.org/en/v1.2/NEWS/>`_
+    * (dep) deprecation of ``Julia 1.1.x``. Only ``1.0.x`` w/ LTS remains, ``1.1`` will be removed soon.
+    * (new) Julia 1.2: `HomotopyContinuation <https://www.juliahomotopycontinuation.org/>`_ (`quick julia 1.2 test <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/julia-1.2.ipynb?viewer=share>`_)
+
+* :ref:`Custom Software Environments <custom-software-environment>`:
+    * (upd) "Tensorflow 2" ``2.0.0-rc0``: the first release candidate for ``2.0.0``
+
+* :doc:`../api/index`:
+    * (enh) :doc:`Scheduled copy operations <../api/copy_path_between_projects>`
+    * (new) :doc:`../api/copy_path_status` and :doc:`../api/copy_path_delete`
+
+
+.. _Jupyter Lab: https://jupyterlab.readthedocs.io/en/stable/
+.. _Scikit Image: https://scikit-image.org/
+.. _Astroalign: https://astroalign.readthedocs.io/en/master/
+.. _Keras: https://keras.io/
+.. _GAP: https://www.gap-system.org/
+
+
+
+
 .. _update-2019-08-10:
 
 2019-08-10
@@ -799,3 +851,5 @@ Software Updates 2019
 .. _NEURON: https://www.neuron.yale.edu/neuron/
 .. _yapf: https://github.com/google/yapf
 .. _GRASS GIS: https://grass.osgeo.org/
+.. _Tensorflow: https://www.tensorflow.org/
+
