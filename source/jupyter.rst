@@ -12,8 +12,9 @@ CoCalc offers several options for hosting running `Jupyter Notebooks`_ online.
    :local:
    :depth: 2
 
+##########################
 What's a Jupyter Notebook?
-==============================
+##########################
 
 A Jupyter notebook is a specific filetype with the ending ``.ipynb``, which records an interactive session with a **Kernel**.
 It made up of *cells*, which can either store one or more lines of code or formatted text.
@@ -27,13 +28,12 @@ A uite popular choice is `Python3`_, but there are also `SageMath`_ and others. 
 
     Make sure and double-check that you're working with :doc:`a suitable kernel <howto/jupyter-kernel-selection>` for your calculations!
 
-CoCalc Jupyter Notebook
-==========================
+##########################################
+CoCalc Jupyter Notebook Basic Features
+##########################################
 
-Basic Features
---------------
-
-The default client for Jupyter Notebooks on CoCalc is specific to this platform. It supports CoCalc's advanced features, including real-time collaboration, side chat, and TimeTravel. Read more in our `blogpost <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html>`_. The basic user interface looks like the following:
+By default, a Jupyter notebook on CoCalc has all CoCalc's core features, including real-time collaboration, side chat, and TimeTravel.
+Read more in our `blogpost <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html>`_. The basic user interface looks like the following:
 
 .. image:: img/jupyter/jupyter-notebook-cocalc-1.png
     :width: 100%
@@ -49,8 +49,9 @@ Above the main area is a menu bar and a button row:
 * **Text cells** are slightly different. Select "Markdown" in the ``[ Code ]`` dropdown menu in the button bar to change a code cell to such a markdown text cell. There, you can use `Markdown`_ to format the text. Similar to code-cells, either *Run* these text cells to see the processed Markdown code or press Shift+Return. To edit a text cell, either double click it or press your Return key.
 * **Saving**: more general, the nice things about Jupyter Notebooks is that they save all your intput and output in one single file. This means you can download or publish the notebook as it is, and everyone else sees it in exactly the same way.
 
-Enhancements
-------------
+#######################################
+CoCalc Jupyter Notebook Enhancements
+#######################################
 
 These enhanced features are available in CoCalc Jupyter notebooks:
 
@@ -109,8 +110,9 @@ When presenting, the next slide is to the right, while the next subslide is belo
 .. index:: Jupyter Notebooks; interactive widgets
 .. _jupyter-interactive-widgets:
 
+###############
 Jupyter Widgets
-=========================
+###############
 
 `Jupyter Widgets`_ are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
 :ref:`real-time collaboration <multi-user-edit>`, :doc:`TimeTravel <time-travel>`, and :ref:`side chat <side-chat>`.
@@ -128,8 +130,9 @@ A good way to get started using Jupyter widgets is to go through the `Widget Lis
 .. _jupyter-classical-vs-cocalc:
 
 
+#######################
 Classical versus CoCalc
-=========================
+#######################
 
 If you are having trouble with the `CoCalc Jupyter Notebook`_, you can switch to the Classical Jupyter Notebook.
 You can always switch back to CoCalc Jupyter easily later (and please let us know what is missing so we can add it!).
@@ -163,8 +166,9 @@ The main reasons to use the classical notebook are:
 
 See our `list of Jupyter related issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aissue+is%3Aopen+label%3AA-jupyter>`_ for more details.
 
+*******************************
 Don't mix CoCalc and Classical!
----------------------------------
+*******************************
 
 .. warning::
 
@@ -176,8 +180,9 @@ Don't mix CoCalc and Classical!
 .. index:: Jupyter Server; alternatives
 .. _jupyter-server-alternatives:
 
+********************************************************
 Alternatives: Plain Jupyter Server and JupyterLab Server
------------------------------------------------------------
+********************************************************
 
 You can also run the full classical Jupyter notebook server, using either **Plain Jupyter Server** or **JupyterHub Server**. These options are available under
 :ref:`Project settings <alt-jupyter-server>` and :ref:`(+) New <plusnew>`.
@@ -187,11 +192,13 @@ Using either of these options for the classical notebook has an advantage: it do
 .. index:: pair: Jupyter Notebooks; halt button
 .. _jupyter-halt:
 
+###############
 Tips and Tricks
-=====================
+###############
 
+**************************************
 Use the Halt Button to Conserve Memory
----------------------------------------
+**************************************
 
 Each running Jupyter Notebook spawns a session in your project.
 This **uses up memory**, which could cause troubles running all your processes in your project.
