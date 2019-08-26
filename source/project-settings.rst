@@ -11,8 +11,9 @@ All about the **Project Settings** tab.
 .. index:: Projects; title and description
 .. _set-project-title:
 
+######################
 Title and description
----------------------
+######################
 
 The text for **Title and description** for a project can be changed at any time.
 
@@ -33,11 +34,13 @@ for topics you want to return to quickly.
 .. index:: Projects; upgrades
 .. _project-upgrades:
 
+########################
 Project usage and quotas
-------------------------
+########################
 
+*****************
 Why Add Upgrades?
-"""""""""""""""""
+*****************
 
 There are many reasons that you might want to have an upgraded project.
 
@@ -58,12 +61,11 @@ You can share upgrades with any project that you are a collaborator on. You must
     For details on paid subscriptions, see `Subscription and Pricing Information <https://cocalc.com/policies/pricing.html>`_.
     Paid subscriptions start at \$14 per month.
 
+**********************
 View Current Resources
-""""""""""""""""""""""
+**********************
 
-.. index:: Member Hosting;project settings
-
-You can view allocated upgrades and current resource use under `Project usage and quotas`.
+You can view upgrades for the current project and current resource use under `Project usage and quotas`.
 Here's an example for a project with no upgrades added (note the warning banner that
 appears if the project does not have Member Hosting or Internet Access):
 
@@ -73,8 +75,47 @@ appears if the project does not have Member Hosting or Internet Access):
 
 .. _apply_project-upgrades:
 
+*************
 Adjust Quotas
-"""""""""""""
+*************
+
+The "Adjust Quotas" dialog is where you add upgrades you have just purchased to your own project.
+
+*Note: If you want to upgrade student projects for a CoCalc managed course, that is done in the .course file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
+
+Here are the two most important upgrades.
+You will probably want to apply these to any project you are working on actively:
+
+.. index:: pair: Member Hosting;project settings
+
+Member Hosting
+==============
+
+Member hosting is added by checking the "Enable" box next to the upgrade.
+
+**What does "Member Hosting" mean?**
+
+There are two types of projects: "free projects" and "member projects". Free projects run on heavily loaded computers. Quite often, these computers will house over 150 simultaneously running projects! Member-hosted projects are moved to much less loaded machine, which are reserved only for paying customers.
+
+On member-hosted projects, commands execute more quickly, and CPU, memory and I/O heavy operations run more quickly.
+Projects on members-only servers are always "ready to start".
+Free projects that are not used for a few weeks are moved to "cold storage". It can take a while to move them back onto a free machine when you later start them.
+
+.. index:: pair: Internet Access;project settings
+
+Internet Access
+===============
+
+Internet access is added by checking the "Enable" box next to the upgrade.
+
+**What does the "Internet Access" upgrade do?**
+
+Processes running in a free project are not allowed to originate connections to external sites, for example to install packages from internet sites for Python and R, or to clone code from GitHub.
+When internet access was allowed for trial accounts, malicious users launched attacks on other computers from CoCalc.
+Add the Internet Access upgrade to a project to get this capability.
+
+The "Adjust Quotas" Dialog
+==========================
 
 When you click `Adjust Quotas...`, a dialog like the following appears. The screenshot shows numbers
 for a project that has not been upgraded.
@@ -89,8 +130,9 @@ You can enter any values that do not exceed available upgrades. This example con
 by adding as much in the way of resources as possible to the current project.
 You can remove upgrades at any time and apply them to other projects.
 
+****************
 Max All Upgrades
-""""""""""""""""
+****************
 
 Clicking `Max All Upgrades` will add as much as possible from available upgrades:
 
@@ -98,8 +140,9 @@ Clicking `Max All Upgrades` will add as much as possible from available upgrades
      :width: 60%
      :align: center
 
+************
 Save Changes
-""""""""""""
+************
 Then clicking `Save Changes` will apply the changes and restart the project if settings have changed:
 
 .. image:: img/project-settings/max-added.png
@@ -109,8 +152,9 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
 .. index:: Projects; hidden or deleted
 .. _project_hidden_deleted:
 
+######################
 Hide or delete project
-----------------------
+######################
 
 Next in the Project Settings window is the section for hidden and deleted projects,
 which do not appear in the normal project list
@@ -122,15 +166,17 @@ If the current project is neither hidden nor deleted, you will see this:
      :width: 60%
      :align: center
 
+***************************
 Hidden vs. Deleted projects
-"""""""""""""""""""""""""""
+***************************
 
 If you delete a project, then you delete it for everyone---for all your collaborators. The good news is that this can be undone.
 
 Alternatively, if you hide a project, then you will not see it in your projects listing, but your collaborators are unaffected.
 
+****************
 Hiding a project
-""""""""""""""""
+****************
 
 If you click `Hide Project`, the button changes:
 
@@ -147,8 +193,9 @@ that lets you view hidden projects. The checkbox only appears if there are hidde
 
 Clicking `Unhide Project` instantly makes the project visible in the normal project list again.
 
+******************
 Deleting a project
-""""""""""""""""""
+******************
 
 *Note: No files are actually deleted by this operation.
 Only visibility of the project in the project list is changed.
@@ -181,8 +228,9 @@ that lets you view deleted projects. The checkbox only appears if there are hidd
 Clicking `Undelete Project` instantly makes the project visible in the normal project list again
 for you and all collaborators on the project.
 
+***************************
 Hidden and Deleted projects
-"""""""""""""""""""""""""""
+***************************
 
 A project can be both hidden and deleted. In that case, you will need to check both
 `Deleted` and `Hidden` boxes in the `Projects` list to see the project.
@@ -195,11 +243,13 @@ A project can be both hidden and deleted. In that case, you will need to check b
 .. index:: SSH Keys
 .. _ssh-keys:
 
+##############
 Setup SSH Keys
------------------
+##############
 
+*********
 Using SSH
-"""""""""
+*********
 
 For addtional detail, see the blog posting `Using SSH with CoCalc <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_.
 
@@ -213,8 +263,9 @@ On OS X, and Linux, key pairs are stored in ``~/.ssh``, where ``~`` indicates yo
 
 *NOTE: CoCalc does not support manual editing of the authorized_keys file for SSH authentication.*
 
+*****************************************
 Configuring SSH Keys for a Single Project
-"""""""""""""""""""""""""""""""""""""""""
+*****************************************
 
 .. highlight:: none
 
@@ -270,8 +321,9 @@ This section assumes you have created an SSH key pair as described above.
 .. _project-collaborators:
 .. highlight:: default
 
+###################
 About collaborators
--------------------
+###################
 
 Each CoCalc project has an owner and zero or more collaborators.
 Owner and collaborators all appear in a project under the identity of "user" and home directory of ``/home/user``.
@@ -288,8 +340,9 @@ Linux user id, there are two ways to see *which CoCalc account* was used for cer
 .. index:: Collaborators; removing
 .. _remove-collaborators:
 
+######################
 Current collaborators
----------------------
+######################
 
 The "Current collaborators" section of the *Project Settings* page shows the names of the owner and all collaborators. Here you can remove collaborators, including yourself. It does not allow you to remove the owner.
 
@@ -302,8 +355,9 @@ Current collaborators are also shown in the *Projects* list. You can use the lat
 .. index:: Collaborators; adding
 .. _add-collaborators:
 
+######################
 Add new collaborators
----------------------
+######################
 
 At the **Add new collaborators** dialog, you can type in a person's name or email address. CoCalc will search its database of known users and show you possible matches.
 
@@ -331,8 +385,9 @@ Caution: if you are using CoCalc for course management with a .course file, add 
 .. index:: Projects; control
 .. _project-control:
 
+###############
 Project control
----------------
+###############
 
 Here is a screen capture of the Project control section. Along with project statistics, it has two buttons and a menu, discussed below.
 
@@ -340,8 +395,9 @@ Here is a screen capture of the Project control section. Along with project stat
          :width: 70%
          :align: center
 
+********************************
 Restart Project and Stop Project
-""""""""""""""""""""""""""""""""
+********************************
 
 What happens when a project restarts?
 
@@ -380,8 +436,9 @@ Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to
 .. index:: Software Environment
 .. _software-environment:
 
+********************
 Software Environment
-""""""""""""""""""""""""
+********************
 
 The CoCalc software environment is updated frequently. The collection of installed utilities, compilers, libraries, packages, etc. is called the *compute image*.
 
@@ -406,8 +463,9 @@ Once you have selected an image, click "Save and Restart".
 .. index:: Sage Worksheets; server
 .. _sage-worksheet-server:
 
+#####################
 Sage worksheet server
----------------------
+#####################
 
 Any time you run a Sage worksheet (.sagews file) there are two processes involved in your project:
 
@@ -426,8 +484,9 @@ Occasionally, it may be useful to restart the Sage worksheet server if worksheet
 
 .. _alt-jupyter-server:
 
+###################################
 Alternate Jupyter Servers in CoCalc
------------------------------------
+###################################
 
 CoCalc by default provides an interface to Jupyter notebooks that has been rewritten to support multiple users, TimeTravel, and other enhancements. For more information, see the CoCalc blog `article on the Jupyter rewrite <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html>`_. There may be occasions when you may want to run the Classical Jupyter server. The most common reason is to use interactive widgets, which are not supported in the CoCalc Jupyter notebook.
 
@@ -439,8 +498,9 @@ For more information and some important caveats, see :doc:`Classical versus CoCa
 .. _plain-jupyter-server:
 
 
+********************
 Plain Jupyter server
-""""""""""""""""""""
+********************
 
 Starting the Plain Jupyter server opens a new browser tab with usual files listing. Opening a notebook from the Jupyter server tab opens another browser tab.
 
@@ -451,8 +511,9 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
 .. index:: Jupyter Server; JupyterLab
 .. _jupyterlab-server:
 
+*****************
 JupyterLab server
-"""""""""""""""""
+*****************
 
 Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_ opens a new browser tab with the JupyterLab GUI.
 

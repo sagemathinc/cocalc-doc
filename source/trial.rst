@@ -117,7 +117,7 @@ Subscribers get higher priority on feature-requests and much more involved suppo
 
 .. index:: Upgrades; Member Hosting
 
-Members only hosting
+Member Hosting
 ---------------------
 
 The free servers are of lower hosting quality, sometimes overloaded and periodically restarted.
