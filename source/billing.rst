@@ -47,10 +47,17 @@ How do I get an **invoice** with a specific information?
 ------------------------------------------------------------
 
 After purchasing, please email us at help@cocalc.com, reference what you bought,
-and tell us the payer's name, contact information and any other specific
-instructions.
-We will then respond with a custom invoice for your purchase that
-satisfies your unique requirements.
+and tell us the payer's name, contact information and any other specific instructions.
+We will then respond with a custom invoice for your purchase
+that satisfies your unique requirements.
+
+
+Can I pay via wire transfer or PayPal?
+----------------------------------------
+
+For purchases **above $50** we support PayPal or wire transfers.
+In particular that might be a year-long personal subscription or a larger course plan.
+Please contact help@cocalc.com with all relevant details about your intended purchase.
 
 
 Quota upgrades
@@ -64,19 +71,20 @@ What is **"member hosting"**?
 ---------------------------------------------
 
 
-There are two types of projects: "free projects" and "member projects".
-Free projects run on heavily loaded computers.
-Quite often, these computers will house over 150 simultaneously running projects!
-Member-hosted projects are moved to much less loaded machine,
-which are reserved only for paying customers.
+There are two types of projects: "trial (free) projects" and "member projects".
+:doc:`Trial projects <trial>` run on heavily loaded computers
+sharing the same node with many other projects and system tasks.
+These nodes might also shutdown at any time,
+causing your currently running project to interrupt your work and restart.
+
+Member-hosted projects are moved to less loaded machines,
+which are reserved only for paying customers and aren't restarted on a daily basis.
+The cluster scales up dynamically to accommodate for a varying number of member-projects.
 
 Working in member-hosted projects feels much smoother because commands execute
 more quickly with lower latency,
 and CPU, memory and I/O heavy operations run more quickly.
-Additionally, members only projects are always "ready to start".
-Free projects that are not used for a few weeks are moved to "cold storage",
-and it can take a while to move them back onto a free machine when you
-later start them.
+
 
 
 .. _network-access:
