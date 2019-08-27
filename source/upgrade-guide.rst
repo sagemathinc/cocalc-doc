@@ -14,6 +14,8 @@ Overview
 
 This page outlines the steps for upgrading projects from :doc:`trial projects <trial>`.
 
+Questions about quotas, upgrades, and billing are answered in :doc:`billing`.
+
 .. index:: Purchase a Plan
 .. index:: Subscription; purchasing
 

@@ -59,6 +59,7 @@ and you can browse that history with a slider by clicking on the "Time Travel" b
 We care about your data, and also make offsite backups periodically to encrypted USB
 drives that are not physically connected to the internet.
 
+
 Can I close my web-browser at any time?
 ===========================================
 
@@ -68,7 +69,7 @@ When you close your web-browser, all your processes and running sessions continu
 You can start a computation, shut down your computer, go somewhere else,
 sign in on another computer, and continue working where you left off.
 
-The only reasons why a project or process stops are that it hits its :ref:`idle-timeout`,
+The only reasons why a project or process stops are that it hits its :ref:`idle timeout <idle-timeout>`,
 was killed after :doc:`using too much memory <howto/low-memory>`,
 crashed due to an exception, or the server had to reboot.
 

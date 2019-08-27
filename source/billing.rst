@@ -1,4 +1,4 @@
-.. index:
+.. index::
     Billing
     Upgrades
     Pricing
@@ -84,7 +84,7 @@ later start them.
     Quotas; Network access
 
 
-What exactly is the "internet access" quota?
+What exactly is the **"internet access"** quota?
 ------------------------------------------------
 
 Despite the fact that you are accessing CoCalc through the internet,
@@ -95,33 +95,34 @@ malicious users launched attacks on other computers from CoCalc.)
 Enable internet access by adding the "internet access" quota.
 
 
-.. _idle-timeout:
+.. _idle-timeout-quota:
 .. index:
     Idle timeout
 
-What exactly is the "idle timeout" quota?
+What exactly is the **"idle timeout"** quota?
 -------------------------------------------------
 
 
-By default, free projects stop running after {faq_idle_time_free_h} hour of idle time.
+By default, free projects stop running after about 30 minutes of idle time.
 This makes doing an overnight research computation –
 e.g., searching for special prime numbers – impossible.
+
 With an increased idle timeout, projects are allowed to run longer unattended.
-Processes might still stop if they use too much memory, crash due to an exception, or if the server they are
-running on is rebooted.
+Processes might still stop if they use too much memory, crash due to an exception, or if the server they are running on is rebooted.
 
 .. note::
 
     Projects do not stop if you are continuously using them,
     and there are no daily or monthly caps on how much you may use a CoCalc project, even a free one.
 
+See also: :ref:`Software development/idle timeout <idle-timeout>`.
 
 .. _cpu-shares:
 .. index:
     Quotas; CPU Shares
 
-What are "CPU shares" and "CPU cores"?
-------------------------------------------
+What are **"CPU shares"** and **"CPU cores"**?
+-----------------------------------------------------
 
 
 All projects on a single server share the underlying resources.
@@ -133,13 +134,8 @@ In particular, "shares" determines the amount of relative CPU time you get.
 Course packages
 ===========================
 
+.. include:: teaching-vfaq.inc
 
-I have a **course of 120 students**. Which plan should I purchase?
-----------------------------------------------------------------------
-
-You can combine and add up course subscriptions!
-By ordering two "medium course plans" for 70 students each,
-you will get 140 upgrades covering all your students.
 
 
 Am I **required to pay** for conducting a course?
@@ -163,13 +159,12 @@ and they can also download all files to their local computer.
 Do you offer **academic discounts**?
 ---------------------------------------
 
-Our course subscriptions are for academic use, and are already significantly discounted from the standard plans.
-Please compare our monthly plans with the 4 month course plans.
-For example, giving {faq_academic_students} students better member hosting and internet access
-would require subscribing to {faq_academic_nb_standard} "standard plans" for 4 months
-amounting to ${faq_academic_full}.
+Our course subscriptions are for academic use
+and are already significantly discounted from the standard plans.
+Please compare our monthly plans running for 4 months with a 4 month course plan.
 
-**How many upgrades** do I need for student courses?
+
+**Which upgrade scheme** do I need for student courses?
 -------------------------------------------------------
 
 Any upgrades you purchase and distribute to student projects are added on top of the "free quotas".
