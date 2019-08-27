@@ -8,7 +8,7 @@ When you first start using CoCalc, you will see a banner saying
 
     "Upgrade this project, since it is on an unpaid trial server and has no internet access."
 
-.. warning:
+.. warning::
 
     CoCalc costs us significant money to run.
     CoCalc receives no funding from charitable foundations and
@@ -30,8 +30,19 @@ Ways to remove the banner
 Purchase upgrades
 --------------------------------------------
 
-A \$14/month standard subscription can be used to :doc:`upgrade four projects, unlock internet access, etc <upgrade-guide>`. (`pricing page <https://cocalc.com/policies/pricing.html>`_).
-Go ahead and :doc:`apply your upgrades to the project <upgrade-guide>`.
+Starting with a \$14/month standard subscription,
+you get quotas to :doc:`upgrade four projects, unlock internet access, etc <upgrade-guide>`.
+(`pricing page <https://cocalc.com/policies/pricing.html>`_).
+
+
+.. note::
+
+    You have to explicitly apply your upgrades to your projects.
+    Open up *Project Settings* and click *Adjust your upgrade contributions...*
+    in the *Project usage and quotas* panel.
+    For more information read the :doc:`upgrade guide <upgrade-guide>`.
+
+
 You can easily change which projects you have upgraded at any time.
 Thank you for being a customer!
 
