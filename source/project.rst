@@ -30,3 +30,4 @@ To start being productive, you have to create a
    upgrade-guide
    project-library
    project-init
+   project-faq
