@@ -13,8 +13,27 @@ how to populate it with a course management file and how to invite all of your s
    :local:
    :depth: 2
 
+####
+VFAQ
+####
+
+**Very Frequently Asked Questions**. We're putting these here because we get them so often.
+
+**Can I**
+
+... combine course plans to provide upgrades for a single course?
+    YES. For example, if you expect 35 students in a course, you could buy one Extra Small plan for 10 students, and one Small plan for 25 students.
+
+... distribute upgrades from one course subscription over multiple courses?
+    YES. For example, if you are teaching one course with 30 students and another with 40 students, you could buy a single Medium plan for 70 students, and then allocate upgrades for student projects for the two courses accordingly.
+
+In general, upgrades of the same type, for example Member Hosting, are interchangeable. An upgrade can be applied to one project, removed from that, and applied to another project. This can be done as many times as desired until the upgrade expires.
+
+Both the above questions apply to :ref:`inst-pays`, described in detail below.
+
+###########################
 Creating the course project
----------------------------
+###########################
 
 In this section we are going to create a project containing a course.
 
@@ -38,8 +57,9 @@ The new project will appear at the top of the project list. Click on its  title 
 
 .. _teaching-add-ta:
 
+########################################
 Adding teaching assistants to the course
------------------------------------------
+########################################
 
 To add teaching assistants or other teachers to the course, open the course project, click on the settings tab and look down to see "Add new collaborators" in the project settings.
 
@@ -55,8 +75,9 @@ If the email address you add as a collaborator is not associated with a CoCalc a
 an email will be sent to that address with instructions how to join.
 Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.
 
+########################
 Creating the course file
--------------------------------
+########################
 
 Almost all aspects of a course, such as which students are enrolled and assignment management, are controlled by a **.course** file. We'll now create this file.
 
@@ -74,10 +95,9 @@ If you go to the root of the course project directory, you will see that a new f
      :width: 100%
      :align: center
 
-
-
+*********************************
 Split course into multiple groups
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*********************************
 
 **Note:** If your course is large, it is possible to partition your class into several groups.
 To accomplish that, simply create more than one course file!
@@ -88,9 +108,9 @@ These course files are independent of each other,
 which allows to not only have different groups of students, but also different due dates, etc.
 
 
-
+#############################
 Adding students to the course
---------------------------------
+#############################
 
 Open your course by clicking on the **.course** file.
 
@@ -127,9 +147,9 @@ Your course page will now look like this
   It is **strongly** recommended that you upgrade this to members-only servers for your students. 
   You can also require in the configuration page that your students pay a small one-time fee to upgrade their projects (see below).
 
-
+#########################
 What do the students get?
---------------------------
+#########################
 
 On being invited to a course, each student will have a project created for them in their CoCalc account that corresponds to that course. Each project will have you and the course Teaching assistants set as collaborators.
 
@@ -140,8 +160,9 @@ You can learn more about upgrades and quotas in the :doc:`upgrade-guide`.
 
 .. _course-upgrading-students:
 
+##########################
 Upgrading student projects
-----------------------------
+##########################
 
 
 The **Configuration** tab of a **.course** file allows you to upgrade students' course projects in two ways, indicated by the checkboxes in the image below:
@@ -153,8 +174,9 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
 
 .. _course-students-pay:
 
+*************************************
 (Option 1): Students pay for upgrades
--------------------------------------------------
+*************************************
 
 You can request that the students pay a one-time fee of $14 for four months.
 This will move their projects to members-only hosts and enable full internet access.
@@ -175,9 +197,9 @@ When you check that checkbox, a calendar form opens. The default is to require s
 To continue from the perspective of your students,
 read the :ref:`instructions for students to pay for a course <student-pay-for-course>`.
 
-
+**********************************************
 Can we mix free and upgraded student projects?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**********************************************
 
 Yes.
 Just set the due date by which the students have to pay to be at the end of the course.
@@ -193,8 +215,9 @@ and you can change any of these settings at any time.
 .. index:: Upgrading students, institution pays
 .. _inst-pays:
 
+****************************************************
 (Option 2): Teacher or institution pays for upgrades
-----------------------------------------------------------
+****************************************************
 
 
 Assuming you are an instructor and want to setup everything for a course,
@@ -227,7 +250,7 @@ you can proceed to distribute the upgrades of the course package here:
 Clicking "Adjust upgrades..." lets you allocate any available upgrades in your account.
 
 Entering initial student upgrades
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=================================
 
 The following screenshots assume the instructor has purchased a One Week Standard Extra Small subscription, with upgrades for 10 projects, and applied upgrades to the TEACHING project, leaving upgrades for 9 student projects.
 Two students have been added to the "MATH 101" .course file.
@@ -255,7 +278,7 @@ The instructor enters the usual upgrades *per student* for Standard subscription
 After checking that everything looks right, the instructor clicks `Apply changes`.
 
 Adding more student upgrades
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+============================
 
 Now suppose a third student arrives after the previous upgrades have been applied. The instructor again opens the .course file, selects Configuration, and clicks `Adjust upgrades...`. Note the message at the bottom of the dialog that only one of the student projects will be upgraded.
 
@@ -266,7 +289,7 @@ Now suppose a third student arrives after the previous upgrades have been applie
      :align: center
 
 What the student sees
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+============================
 
 Here is what a student will see upon opening his/her student project for the course.
 
