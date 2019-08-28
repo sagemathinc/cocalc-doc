@@ -39,7 +39,7 @@ have a **much** better quality experience (for a small fraction of the cost of
 their textbook).
 
 .. _invoice:
-.. index:
+.. index::
     Billing; Invoice
     Invoice
 
@@ -51,6 +51,10 @@ and tell us the payer's name, contact information and any other specific instruc
 We will then respond with a custom invoice for your purchase
 that satisfies your unique requirements.
 
+
+.. index::
+    PayPal
+    Wire transfer
 
 Can I pay via wire transfer or PayPal?
 ----------------------------------------
@@ -64,7 +68,7 @@ Quota upgrades
 ===========================
 
 .. _member_hosting:
-.. index:
+.. index::
     Quotas; Member hosting
 
 What is **"member hosting"**?
@@ -88,7 +92,7 @@ and CPU, memory and I/O heavy operations run more quickly.
 
 
 .. _network-access:
-.. index:
+.. index::
     Quotas; Network access
 
 
@@ -104,7 +108,8 @@ Enable internet access by adding the "internet access" quota.
 
 
 .. _idle-timeout-quota:
-.. index:
+.. index::
+    Quotas; Idle timeout
     Idle timeout
 
 What exactly is the **"idle timeout"** quota?
@@ -126,8 +131,8 @@ Processes might still stop if they use too much memory, crash due to an exceptio
 See also: :ref:`Software development/idle timeout <idle-timeout>`.
 
 .. _cpu-shares:
-.. index:
-    Quotas; CPU Shares
+.. index::
+    Quotas; CPU
 
 What are **"CPU shares"** and **"CPU cores"**?
 -----------------------------------------------------
@@ -138,6 +143,9 @@ These quotas determine how CPU resources are shared between projects.
 Increasing them increases the priority of a project compared to others on the same host computer.<br/>
 In particular, "shares" determines the amount of relative CPU time you get.
 
+
+.. index::
+    Course packages
 
 Course packages
 ===========================

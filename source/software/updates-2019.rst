@@ -10,6 +10,23 @@ Software Updates 2019
 
 
 
+
+.. _update-2019-08-28:
+
+2019-08-28
+----------------------
+
+- Python 3:
+    - (new) `pomegranate <https://pomegranate.readthedocs.io>`_: *implements fast and flexible probabilistic models ranging from individual probability distributions to compositional models such as Bayesian networks and hidden Markov models*
+    - (upd) `Cython`_ ``0.29.13``
+    - (upd) `RISE`_ ``5.5.1``
+
+- Julia 1.2:
+    - (upd) `JuMP`_ ``0.20.0``
+
+- Jupyter Classic: re-enabling ``nbextensions`` configurator
+
+
 .. _update-2019-08-25:
 
 2019-08-25
@@ -852,4 +869,5 @@ Software Updates 2019
 .. _yapf: https://github.com/google/yapf
 .. _GRASS GIS: https://grass.osgeo.org/
 .. _Tensorflow: https://www.tensorflow.org/
-
+.. _RISE: https://github.com/damianavila/RISE
+.. _JuMP: http://www.juliaopt.org/JuMP.jl/stable/
