@@ -24,7 +24,8 @@ Software Updates 2019
 - Julia 1.2:
     - (upd) `JuMP`_ ``0.20.0``
 
-- Jupyter Classic: re-enabling ``nbextensions`` configurator
+- Jupyter Classic:
+    - (fix) re-enabling ``nbextensions`` configurator
 
 
 .. _update-2019-08-25:
