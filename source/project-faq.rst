@@ -42,7 +42,7 @@ How can I download my files?
   - ZIP archive (Windows): ``zip -r9 "[filename].zip" [directory-name...]``
   - Tarball (Unix-like): ``tar cjvf "[filename].tar.bz2" [directory-name...]``
 
-  (Replace ``[filename]`` with the actual filename and``[directory-name]``
+  (Replace ``[filename]`` with the actual filename and ``[directory-name]``
   by one or more filenames or directory names.)
   Afterwards, download the archive as explained above.
 
