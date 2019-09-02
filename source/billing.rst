@@ -23,6 +23,37 @@ Questions about projects are covered in :doc:`project-faq`.
 General
 ===========================
 
+Subscriptions & Upgrades 101
+-------------------------------
+
+Purchasing a personal subscription or course package awards to with certain quota upgrades
+for the indicated period of time.
+
+Use these upgrades to improve hosting quality,
+enable internet access from within a project
+or increase quotas for CPU and RAM in order to work on larger problems
+and do more computations simultaneously.
+On top of that, your `support questions <mailto:help@cocalc.com>`_ are prioritized.
+
+You can upgrade the quotas up to the total amount given by your subscription(s)
+and the upper limits per project.
+
+Project collaborators can collectively contribute to the same project,
+in order to increase the quotas of their common project –
+these contributions add together to benefit all project collaborators equally.
+
+You can *remove* your contributions to any project *at any time*.
+
+You may also purchase any plans *more than once*,
+in order to increase the total amount of upgrades available to you.
+
+Right after the purchase the subscription becomes active.
+It *automatically renews* after the indicated period.
+
+You can *cancel* a subscription at any time and
+it will continue to run until the end of the current period and *not renew*.
+
+
 What is the difference between **free and paid plans**?
 ----------------------------------------------------------
 
