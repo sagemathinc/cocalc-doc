@@ -94,4 +94,4 @@ Somewhere in the output it says::
 
     debug1: Server host key: ssh-rsa MD5:b1:92:cc:67:ee:b8:ff:65:48:93:e6:f1:72:93:59:b0
 
-**Note:** this key could have changed due to technical reasons. Please contact us at help@cocalc.com if you suspect a discrapency. 
+**Note:** this key could have changed due to technical reasons. Please contact us at help@cocalc.com if you suspect a discrepancy. 
