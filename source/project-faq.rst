@@ -73,3 +73,25 @@ The only reasons why a project or process stops are that it hits its :ref:`idle 
 was killed after :doc:`using too much memory <howto/low-memory>`,
 crashed due to an exception, or the server had to reboot.
 
+.. index::
+    SSH host key
+    SSH fingerprint
+.. _ssh-host-key:
+
+What's the fingerprint of the SSH gateway's host key? 
+=========================================================
+
+How can I make sure to connect to CoCalc?
+As of September 2019, the SSH host key's fingerprint is::
+
+    2048 MD5:b1:92:cc:67:ee:b8:ff:65:48:93:e6:f1:72:93:59:b0 cocalc@kucalc-k3-ctl (RSA)
+
+You can see it when you try to connect via::
+
+    ssh -v -o FingerprintHash=md5 ssh.cocalc.com
+
+Somewhere in the output it says::
+
+    debug1: Server host key: ssh-rsa MD5:b1:92:cc:67:ee:b8:ff:65:48:93:e6:f1:72:93:59:b0
+
+**Note:** this key could have changed due to technical reasons. Please contact us at help@cocalc.com if you suspect a discrapency. 
