@@ -263,6 +263,8 @@ On OS X, and Linux, key pairs are stored in ``~/.ssh``, where ``~`` indicates yo
 
 *NOTE: CoCalc does not support manual editing of the authorized_keys file for SSH authentication.*
 
+To make sure you really connect to CoCalc, you can check the fingerprint of the :ref:`SSH Host Key <ssh-host-key>`.
+
 *****************************************
 Configuring SSH Keys for a Single Project
 *****************************************
