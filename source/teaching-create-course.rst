@@ -46,6 +46,7 @@ The new project will appear at the top of the project list. Click on its  title 
      :width: 100%
      :align: center
 
+.. index:: Course; adding teaching assistants
 .. _teaching-add-ta:
 
 ########################################
@@ -65,6 +66,8 @@ Do **not** add any students of yours as project collaborators!
 If the email address you add as a collaborator is not associated with a CoCalc account,
 an email will be sent to that address with instructions how to join.
 Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.
+
+.. index:: Course; course file
 
 ########################
 Creating the course file
@@ -86,17 +89,20 @@ If you go to the root of the course project directory, you will see that a new f
      :width: 100%
      :align: center
 
+.. index:: Course; split into sections
+
 Split course into multiple groups
 -------------------------------------
 
-**Note:** If your course is large, it is possible to partition your class into several groups.
-To accomplish that, simply create more than one course file!
+**Note:** If your course is large, it is possible to partition your class into several groups or sections.
+To accomplish that, simply create more than one course file.
 For example, ``PHY001_A.course``, ``PHY001_B.course``, ``PHY001_C.course``, ...
 for groups ``A``, ``B``, ``C`` and so on.
 
 These course files are independent of each other,
-which allows to not only have different groups of students, but also different due dates, etc.
+which allows not only different groups of students, but also different due dates, etc.
 
+.. index:: Course; adding students
 
 #############################
 Adding students to the course
@@ -137,6 +143,21 @@ Your course page will now look like this
   It is **strongly** recommended that you upgrade this to members-only servers for your students. 
   You can also require in the configuration page that your students pay a small one-time fee to upgrade their projects (see below).
 
+.. index:: Course; reconfigure student projects
+.. index:: Reconfigure student projects
+.. index:: Course; re-send email invitations
+.. index:: Re-send student email invitations
+
+**Reconfiguring student projects and re-issuing email invitations.**
+To ensure student projects have correct students and TA's, titles and descriptions, click `Reconfigure all projects`.
+Doing so will also resend email invitations to students who have not already signed up for CoCalc.
+
+.. figure:: img/teaching/course-reconfigure.png
+     :width: 60%
+     :align: center
+
+     "Reconfigure all projects" at lower right in Configuration
+
 #########################
 What do the students get?
 #########################
@@ -162,6 +183,7 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
      :align: center
 
 
+.. index:: Upgrading students, students pay
 .. _course-students-pay:
 
 
@@ -197,8 +219,6 @@ then just unclick the student pay checkbox and thus no longer requiring them to 
 In short, whether they have to pay or not is something you can change at any time,
 they have a grace period before being required to pay,
 and you can change any of these settings at any time.
-
-
 
 
 .. index:: Upgrading students, institution pays
