@@ -112,7 +112,7 @@ Internet Access
 ---------------------
 
 The Internet Access upgrade allows outgoing internet connections and outbound email from a project.
-See :ref:`Internet access <internet-access>` for details.
+See :ref:`Internet Access <internet-access>` for details.
 
 .. index:: pair: Trial Projects; Member Hosting
 
