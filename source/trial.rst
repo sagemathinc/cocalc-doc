@@ -106,34 +106,26 @@ collaboratively and to generate a stable revenue source to hire full-time develo
     This means the company behind CoCalc will eventually no longer be able to operate the service.
     See http://wstein.org/talks/2016-06-sage-bp/bp.pdf for more info about the challenges of funding SageMath development.
 
-.. index:: Upgrades; Internet Access
+.. index:: pair: Trial Projects; Internet Access
 
 Internet Access
 ---------------------
-**Outgoing internet connections.**
-A couple of users abused CoCalc to attack other servers on the internet. That triggered a complete shutdown of the CoCalc website by our hosting service provider. To avoid that from happening again, we had to disable outgoing connections to the internet. With such an "internet upgrade", you can again download files from other servers, install software packages that load from other servers, use ``git`` in a :doc:`terminal` to work with GitHub, etc.
 
-**Email from a project.** Also due to abuse of trial projects, an Internet Access upgrade is required to do either of the following:
+The Internet Access upgrade allows outgoing internet connections and outbound email from a project.
+See :ref:`Internet access <internet-access>` for details.
 
-    * invite people via email without a CoCalc account to a project
+.. index:: pair: Trial Projects; Member Hosting
 
-    * allow :ref:`@mentions <at-mention-chat>` in a project to send out emails
+Member Hosting
+---------------------
 
-Essentially, if a project doesn't have Internet Access, then no emails are sent related to that project.
+Servers hosting trial projects have fewer compute resources and a higher project load than members-only servers.
+See :ref:`Member Hosting <member-hosting>` for details.
 
 Better support
 ---------------------
 
 Subscribers get higher priority on feature-requests and much more involved support responses.
-
-.. index:: Upgrades; Member Hosting
-
-Member Hosting
----------------------
-
-The free servers are of lower hosting quality, sometimes overloaded and periodically restarted.
-They are cheap `Google preemptible instances <https://cloud.google.com/compute/docs/instances/preemptible>`_.
-A side effect of the cheapness is that the underlying server of your trial project is randomly restarted at least once every 24 hours.
 
 More resources
 ---------------------
