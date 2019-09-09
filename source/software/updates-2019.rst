@@ -11,6 +11,37 @@ Software Updates 2019
 
 
 
+
+
+.. _update-2019-09-09:
+
+2019-09-09
+----------------------
+
+- Software:
+    - (upd) `TypeScript`_ ``3.6.2``
+    - (upd) `prettier`_ ``1.18.2``
+    - (upd) Selenium ``4``, ChromeDriver ``76``, GeckoDriver ``1.16.2``
+    - (upd) `Spyder`_ ``3.3.6``
+    - (upd) various Linux package updates, including some R packages
+
+- Python 3:
+    - (new) `arch <https://arch.readthedocs.io/en/latest/>`_ ``4.9.1``: *Autoregressive Conditional Heteroskedasticity (ARCH) and other tools for financial econometrics, written in Python (with Cython and/or Numba used to improve performance)*
+    - (new) `linearmodels`_ ``4.13``: *Linear (regression) models for Python. Extends statsmodels with Panel regression, instrumental variable estimators, system estimators and models for estimating asset prices.*
+    - (upd) ``pip 19.2.3``
+    - (upd) `pandas`_ ``0.25.1`` and ``pandas-datareader-0.7.4``
+    - (upd) `psycopg2`_ ``2.8.3``
+    - (upd) `numpy`_ ``1.17.2``
+    - (upd) `matplotlib`_ ``3.1.1``
+    - (upd) `pytest`_ ``5.1.2`` + associated libraries
+    - (rem) ``axelrod`` blocks updates, use Anaconda 2019
+
+- Anaconda 2019:
+    - (new) ``contextily 1.0rc2`` + ``geopy 1.20.0``
+
+
+
+
 .. _update-2019-08-28:
 
 2019-08-28
@@ -872,3 +903,11 @@ Software Updates 2019
 .. _Tensorflow: https://www.tensorflow.org/
 .. _RISE: https://github.com/damianavila/RISE
 .. _JuMP: http://www.juliaopt.org/JuMP.jl/stable/
+.. _linearmodels: https://bashtage.github.io/linearmodels/
+.. _typescript: https://www.typescriptlang.org/
+.. _prettier: https://prettier.io/
+.. _pandas: https://pandas.pydata.org/
+.. _numpy: https://numpy.org/
+.. _matplotlib: https://matplotlib.org/
+.. _pytest: https://docs.pytest.org/en/latest/
+.. _spyder: https://www.spyder-ide.org/
