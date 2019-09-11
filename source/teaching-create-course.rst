@@ -127,7 +127,7 @@ Next, the student projects will be created. Please be patient until all students
      :width: 100%
      :align: center
 
-Any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course.
+If your project (the one with the .course file) has the :ref:`Internet Access upgrade <internet-access>`, any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course. 
 For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.
 
 Your course page will now look like this
