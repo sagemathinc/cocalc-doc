@@ -127,8 +127,8 @@ Next, the student projects will be created. Please be patient until all students
      :width: 100%
      :align: center
 
-All added students will be invited to join your course by email.
-Any student who does not have an account on CoCalc will be invited to create one.
+Any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course.
+For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.
 
 Your course page will now look like this
 
