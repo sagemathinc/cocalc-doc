@@ -386,3 +386,18 @@ The changes will take place the next time ``aspell`` is run on the document. You
 .. _PSTricks: http://tug.org/PSTricks/main.cgi
 
 
+.. _install-latex-packages:
+
+Install packages in a project
+---------------------------------
+
+You can install LaTeX packages in your project:
+
+#. Open a :doc:`terminal`
+#. Check by running ``kpsewhich -var-value TEXMFHOME`` where you can install packages locally. It should tell you ``/home/user/texm``.
+#. Create the target directory based on the name of the package. E.g. if the package is called ``webquiz``, run ``mkdir -p /home/user/texmf/tex/latex/webquiz``.
+#. Change your current directory to this one via ``cd /home/user/texmf/tex/latex/webquiz``.
+#. Either download the package via ``wget ...`` from CRAN and extract it via ``tar xf <downloaded tarball>`` or ``unzip ...``. Alternatively, run ``open .`` to open this path in CoCalc's file explorer and use it to put the files there.
+
+In any case, all files like ``*.sty`` and ``*.cls`` in that directory will be picked up when you load that package.
+

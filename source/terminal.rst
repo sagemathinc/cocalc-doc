@@ -4,11 +4,22 @@
 Linux Terminal
 ==============
 
-The CoCalc terminal let's you run programs online in a Linux environment.
+.. image:: img/terminals4.png
+    :width: 100%
+
+The **CoCalc Linux Terminal** let's you run programs online in a Linux environment.
 Everything runs remotely inside :doc:`a project <./project>`,
 the ongoing terminal session is synchronized with your collaborators,
 and all your files are backed up.
 
+
+.. contents::
+   :local:
+   :depth: 2
+
+
+Quickstart
+=================
 
 .. note::
 
@@ -16,27 +27,37 @@ and all your files are backed up.
     Such files end in ``.term`` and open up in a :doc:`frame-editor`.
     Inside of each panel a terminal session starts up and you can issue commands.
 
-**New to Linux?** Find out more about the Linux command line at the
+
+New to Linux?
+----------------------
+
+The terminal is a way to interactively communicate with the computer.
+You type in a so-called "``command``" and then hit the ``Return``-key to send your instruction.
+This causes `bash`_, the default interpreter, to process your command and most likely run a program.
+You then see the output of that program as the result.
+After it finished, you see the prompt again and you can type in the next command.
+
+You can interrupt a program being stuck by pressing ``Ctrl+c``:
+this sends an "interrupt" signal to the running process.
+
+Find out more about the Linux command line at the
 `Linux Tutorial <http://ryanstutorials.net/linuxtutorial/>`_, which
 is one of several introductory topics at `Ryan's Tutorials <http://ryanstutorials.net/>`_.
 
-Do you want to install certain **Python or Anaconda** packages,
-please consult :ref:`python-pkg-install-user`.
+.. _bash: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 
-Installing **R packages** locally in your project is covered here: :ref:`install-r-packages`.
 
-.. contents::
-   :local:
-   :depth: 2
+Installing software packages
+----------------------------------
+
+You can use the terminal to install software packages in your project.
+
+- To install certain **Python or Anaconda** packages, please consult :ref:`python-pkg-install-user`.
+- Installing **R packages** locally in your project is covered here: :ref:`install-r-packages`.
+- It is also possible to :ref:`install LaTeX packages <install-latex-packages>`.
 
 Features
 =============
-
-
-.. image:: img/terminals4.png
-    :width: 100%
-
-
 
 Extensive Command Set
 -------------------------
