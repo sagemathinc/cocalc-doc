@@ -208,6 +208,17 @@ You can either *restart* the kernel to clean up its current memory (i.e. all var
 .. image:: img/jupyter/jupyter-halt-button.png
     :width: 100%
 
+*********************************************
+Remove Local Files to Troubleshoot a Notebook
+*********************************************
+
+If you have a Jupyter notebook that suddenly stops working, especially with extensions or widgets, you can try removing local files in a :doc:`Linux Terminal <terminal>`, then restarting and running the notebook::
+
+    cd
+    rm -rf .sage .ipython/ .config/ .local/ .jupyter .cache/
+
+You will need to reinstall packages you added locally after doing the above.
+
 
 .. _Cocalc Jupyter Notebook: http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html
 .. _Jupyter Notebooks: https://www.jupyter.org
