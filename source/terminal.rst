@@ -7,7 +7,7 @@ Linux Terminal
 .. image:: img/terminals4.png
     :width: 100%
 
-The **CoCalc Linux Terminal** let's you run programs online in a Linux environment.
+The **CoCalc Linux Terminal** lets you run programs online in a Linux environment.
 Everything runs remotely inside :doc:`a project <./project>`,
 the ongoing terminal session is synchronized with your collaborators,
 and all your files are backed up.
