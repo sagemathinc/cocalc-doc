@@ -109,12 +109,17 @@ It contains further instructions about how to configure commands that are run wh
 Anaconda Environment
 ------------------------
 
-To use the `Anaconda data science platform <https://www.anaconda.com/>`_, enter the command ``anaconda5`` in a terminal session. The shell prompt will change to notify you that you're now working in the default ("base") anaconda environment. To exit the
-anaconda platform and continue your terminal session, use the command ``exit-anaconda``.
+To use the `Anaconda data science platform <https://www.anaconda.com/>`_,
+enter the command ``anacond2019`` in a terminal session.
+The shell prompt will change to notify you
+that you're now working in the default ("base") anaconda environment.
+To exit the anaconda platform and continue your terminal session,
+use the command ``exit-anaconda``.
 
 Additionally, you can :ref:`setup your own Anaconda environment <anaconda-install>` inside your project, and even setup your own :ref:`customized Jupyter Kernel <anaconda-jupyter>` for it.
 
-**Note:** an older version of anaconda is temporarily available with the command ``anaconda3``. We recommend all new applications use ``anaconda5``.
+**Note:** an older version of anaconda is temporarily available with the command ``anaconda5``.
+We recommend all new applications use ``anaconda2019``.
 
 
 Tips and tricks

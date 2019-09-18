@@ -175,7 +175,7 @@ Anaconda Environment
 `Conda <https://conda.io/en/latest/>`_ is an alternative packaging system by `Anaconda <https://anaconda.org/>`_.
 It is mostly used for Python packages, but it can manage and deliver almost any kind of software.
 
-CoCalc provides a global environmet, which you can start by running ``anaconda5`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
+CoCalc provides a global environmet, which you can start by running ``anaconda2019`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
 To get going with your own setup for your own CoCalc project,
 you have to :ref:`create your own environment <anaconda-install-own-env>`
 and your ref:`own kernel <anaconda-jupyter>`.
@@ -194,7 +194,7 @@ To get it installed in Anaconda as a user, do this:
 
 1. Open a terminal.
 
-2. Type ``anaconda5``
+2. Type ``anaconda2019``
 
 3. Type ``conda create -n myconda -c mro r`` This creates a new local environment called "myconda" (name it as you wish) with the package "r" as its source coming from the channel "mro" (Microsoft's Open R). Instead of that, you can add any other anaconda package in that spot. The example from the documentation is biopython, see http://conda.pydata.org/docs/using/envs.html#create-an-environment.
 
@@ -236,7 +236,7 @@ Suppose you want to create a custom Anaconda environment with the ``mdtraj`` pac
 1. Follow these steps in `a .term file in CoCalc <../terminal>`_. In the last step, the display name of the new kernel is changed so that it does not duplicate the name of kernel installed by CoCalc::
 
         ~$ mkdir -p ~/.local/share/jupyter/kernels
-        ~$ anaconda5
+        ~$ anaconda2019
         (root) ~$ conda create --name mymdtraj mdtraj
         (root) ~$ source activate mymdtraj
         (mymdtraj) ~$ conda install ipykernel
