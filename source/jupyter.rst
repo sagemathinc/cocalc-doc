@@ -208,6 +208,8 @@ You can either *restart* the kernel to clean up its current memory (i.e. all var
 .. image:: img/jupyter/jupyter-halt-button.png
     :width: 100%
 
+.. index:: Jupyter Notebooks; remove local files
+
 *********************************************
 Remove Local Files to Troubleshoot a Notebook
 *********************************************
