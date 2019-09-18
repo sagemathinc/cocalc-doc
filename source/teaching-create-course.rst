@@ -26,7 +26,7 @@ Further course plan/quotas related questions are answered in :doc:`billing`.
 Creating the course project
 ###########################
 
-In this section we are going to create a project containing a course.
+The first step is to create an instructor's project to contain the course.
 
 Log into CoCalc and click on the **Projects** icon in the top left hand corner of the screen.
 
@@ -88,6 +88,11 @@ If you go to the root of the course project directory, you will see that a new f
 .. image:: img/teaching/course_file.png
      :width: 100%
      :align: center
+
+.. index:: Course; multiple courses in same project
+.. note::
+
+    You may have more than one course file in a single project, as is explained in the next section. Be aware that that any account you add as a TA to the project will have access to course files and student work for **all** courses in that project.
 
 .. index:: Course; split into sections
 
