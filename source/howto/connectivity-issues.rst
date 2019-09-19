@@ -22,7 +22,7 @@ Process for Debugging Connectivity
 The following multi-step process will help you identify the problem. If you still have a problem and are contacting CoCalc support, it saves time if you let us know what you found out from following these steps:
 
 Step 1: Try connecting with the latest version of Google Chrome.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------
 
 If you are not using Google Chrome, or are using an outdated version of it, install the latest Chrome and test your connection again.
 
@@ -41,9 +41,15 @@ Step 3: Double check if are you connected at all.
 
 Look in the upper-right hand corner of any CoCalc web page. You will see there the "wifi symbol" and to the right of it, a number of milliseconds (e.g. 43 ms). This means that you are connected to CoCalc, with a latency of 43 ms. (For those unfamiliar with the idea of latency, after your computer sends some data packet, it will take 43 ms to arrive at the CoCalc server.)
 
-Many times, it can happen that your internet connection is cut off. For example, in a cafe or coffee shop, the internet access may be shutdown during peak hours. Alternatively, in a residence, a roommate might have inadverently unplugged the wireless router. When this happens, the wifi symbol and the latency indicator will be replaced by a red rectangle with the word "disconnected." If you restore your wireless connection, then you'll see a yellow rectangle with the word "connecting..."
+Many times, it can happen that your internet connection is cut off. For example, in a cafe or coffee shop, the internet access may be shutdown during peak hours. Alternatively, in a residence, a roommate might have inadvertently unplugged the wireless router. When this happens, the WiFi symbol and the latency indicator will be replaced by a red rectangle with the word "disconnected." If you restore your wireless connection, then you'll see a yellow rectangle with the word "connecting..."
 
 Once a broken connection is reestablished, your files will be saved and everything returns to normal. During the period of disconnection, the green "Save" button will be replaced by a red warning that says "NOT saved!" As you can see, you will always know whether or not your changes have reached the server.
+
+.. note::
+
+    Sometimes, it might be necessary to entirely close and restart your browser.
+    If that doesn't help, restart your computer.
+
 
 Step 4: Network congestion?
 -------------------------------------------------------------------------------------------------------
@@ -185,7 +191,18 @@ This can happen even if you are not using two different accounts simultaneously.
 We have a short help page, :ref:`multiple-accounts` which discusses this.
 The suggestions there will make it work very smoothly for you.
 
+.. index:: Timeout loading CoCalc
+.. index:: Connectivity Issues; Timeout
+.. _timeout-loading-cocalc:
+
 Question: I see the error message "Timeout while loading CoCalc" instead of the CoCalc landing page.
 -------------------------------------------------------------------------------------------------------
 
-See `Connection Timeout <https://github.com/sagemathinc/cocalc/wiki/Connection-Timeout>`_.
+If you see the error message **"Timeout while loading CoCalc."** when you try to connect to CoCalc, there are several things to try:
+
+* Hold down the ``shilft``-key and click your browser's Reload button. Sometimes this simple action resolves the problem. It loads the page bypassing your local cache.
+* Close your browser and open it again. Maybe even restart your computer!
+* You might be using an old, unsupported browser. Check for updates available to the browser you are using, or switch to the latest version of a different browser.
+* If you are on a very slow network, loading may succeed, but take more than 60 seconds. Try waiting. Loading may succeed after the timeout warning is displayed.
+
+If this doesn't help, try additional diagnostic steps mentioned above.
