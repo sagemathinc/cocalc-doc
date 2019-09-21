@@ -9,7 +9,29 @@ Software Updates 2019
 ..      :depth: 1
 
 
+.. _update-2019-09-21:
 
+2019-09-21
+----------------------
+
+* Python 3
+    - (new) `pandas-bokeh`_ ``0.3``
+
+      .. image:: https://storage.googleapis.com/cocalc-extra/cocalc-pandas-bokeh.gif
+             :width: 50%
+
+    - (new) `nglview <http://nglviewer.org/nglview/latest/#installation>`_, `pyberny <https://github.com/jhrmnn/pyberny>`_
+    - (new) `pyswarms <https://pyswarms.readthedocs.io/en/latest/>`_  – *an extensible research toolkit for particle swarm optimization (PSO) in Python*
+    - (upd) ``xlrd-1.2.0``, ``distributed-2.4.0``
+
+- R (system-wide)
+    - (upd) various packages, including `BioConductor`_
+    - (new) installing `oligo`_ ``1.48.0`` and some other BioConductor packages
+
+- Sage Development version ``8.9.rc0``
+
+- :ref:`Custom Software Environments <custom-software-environment>`:
+    - (upd) ``ModSimPy`` to enable ipynb to PDF exports
 
 
 
@@ -548,7 +570,7 @@ Software Updates 2019
 
 
 * R (R-Project):
-    * (upd) `bioconductor <https://www.bioconductor.org/>`_ packages,
+    * (upd) `bioconductor`_ packages,
       in particular ``affy``, ``limma``, ``puma``, etc.
 
 
@@ -911,3 +933,6 @@ Software Updates 2019
 .. _matplotlib: https://matplotlib.org/
 .. _pytest: https://docs.pytest.org/en/latest/
 .. _spyder: https://www.spyder-ide.org/
+.. _pandas-bokeh: https://github.com/PatrikHlobil/Pandas-Bokeh
+.. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
+.. _BioConductor: https://www.bioconductor.org
