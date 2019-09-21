@@ -22,6 +22,7 @@ Software Updates 2019
 
     - (new) `nglview <http://nglviewer.org/nglview/latest/#installation>`_, `pyberny <https://github.com/jhrmnn/pyberny>`_
     - (new) `pyswarms <https://pyswarms.readthedocs.io/en/latest/>`_  – *an extensible research toolkit for particle swarm optimization (PSO) in Python*
+    - (new) `music`_
     - (upd) ``xlrd-1.2.0``, ``distributed-2.4.0``
 
 - R (system-wide)
@@ -936,3 +937,4 @@ Software Updates 2019
 .. _pandas-bokeh: https://github.com/PatrikHlobil/Pandas-Bokeh
 .. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
 .. _BioConductor: https://www.bioconductor.org
+.. _music: https://github.com/ttm/music
