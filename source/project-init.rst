@@ -16,21 +16,12 @@ While crontab-based management of periodic tasks is not available in CoCalc proj
 Project Initialization
 ************************
 
-When a CoCalc project starts, an instance of `Supervisor <http://supervisord.org/>`_ is started and responsible for running:
+When a CoCalc project starts this is run:
 
 * an instance of **"local hub"**. It is used for managing the project, communication with the outside world, monitoring, etc.
 * **sshd**: the endpoint for remote SSH access.
-* **initialization file**: an optional bash script called ``project_init.sh``, located in your home directory.
+* **initialization file**: an *optional* bash script called ``project_init.sh``, located in your home directory. It is only started *once*!
 
-Initialization file management
-==================================
-
-Supervisor is configured to run this initialization file like background processes.
-This means it checks the exit value of the process and restarts it if this code is not `0` or `2`.
-Therefore, a script that runs without an error is **not** restarted.
-
-On the other hand, if the process is terminated, interrupted or crashes – therefore the exit code is e.g. `1` – the process is restarted.
-This adds some robustness to long running background jobs.
 
 .. highlight:: sh
 
@@ -38,11 +29,11 @@ Example 1: record project start time
 =====================================
 
 A very simple example is to record the project's start time.
-Go to your home directory and create a file `project_init.sh` with that content::
+Go to your home directory and create a file ``project_init.sh`` with that content::
 
     date > project-start
 
-This is a very simple bash script, which pipes the output of the `date` command into the file `project-start`.
+This is a very simple bash script, which pipes the output of the ``date`` command into the file ``project-start``.
 
 .. highlight:: none
 
@@ -56,8 +47,8 @@ After that (maybe click the refresh button in the file listing) you should see t
 Other languages besides Bash?
 ******************************
 
-You can run any language via bash's `exec`!
-For example, `project_init.sh` containing::
+You can run any language via bash's ``exec``!
+For example, ``project_init.sh`` containing::
 
     exec python3 project_init.py
 
@@ -70,7 +61,7 @@ Example 2: a periodic task in Python
 ========================================
 
 Here we write a small Python script,
-which runs an infinite loop (*make sure to use `time.sleep`!*)
+which runs an infinite loop (make sure to use ``time.sleep``!)
 and evaluates a function running a simple command every 10 minutes.
 This examples uses the library `schedule <https://schedule.readthedocs.io/en/stable/>`_.
 Feel free to choose any other solution.
@@ -117,7 +108,7 @@ Indeed, after restarting the project the output of `ps auxf` shows this task as 
     user          22  0.5  0.0  37836 14332 ?        S    09:18   0:00      \_ python3 project_init.py
      ...
 
-and the output file `task_output.log` contains entries for each run.
+and the output file ``task_output.log`` contains entries for each run.
 
 .. highlight:: python
 
@@ -127,7 +118,7 @@ Example 3: Periodic task in SageMath
 ``run.sage`` is similar to the Python script above.
 
 1. ``project_init.sh``: ``exec sage run.sage``
-2. This results in Sage running a small task every two minutes and appends outputs to `sage_output.log`::
+2. This results in Sage running a small task every two minutes and appends outputs to ``sage_output.log``::
 
     import time
     from random import random
@@ -151,10 +142,8 @@ Debugging
 
 To figure out why a script doesn't work as it should, there are two ways to debug it:
 
-1. Run it directly in a terminal (create a ``*.term`` file) and run ``bash project_init.sh`` or ``python3 project_init.py``.
-2. Check the logfile of Supervisor by running this in a terminal: ``cat /tmp/.cocalc/supervisord.log``.
-   Among its logging there are likely entries hinting for exit states (e.g. ``INFO exited: project_init_sh (exit status 0; expected)``) or they show ``stdout``/``stderr`` output of the failed commands.
-3. A common pitfall is to assume ``~/.bashrc`` is run.
+#. Run it directly in a terminal (create a ``*.term`` file) and run ``bash project_init.sh`` or ``python3 project_init.py``.
+#. A common pitfall is to assume ``~/.bashrc`` is run.
    Since this is a non-interactive session, you need to explicitly source any additional environment information.
 
 Note: much of this page is taken from the CoCalc blog article `Project Initialization Scripts <http://blog.sagemath.com/cocalc/2017/09/12/project-init.html>`_.
