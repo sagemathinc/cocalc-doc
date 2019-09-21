@@ -1,3 +1,5 @@
+.. index:: crontab alternative
+
 ================================
 Project Initialization Scripts
 ================================
@@ -62,11 +64,14 @@ For example, `project_init.sh` containing::
 will run a Python 3 initialization file named ``project_init.py``.
 
 
+.. index:: Periodic tasks
+
 Example 2: a periodic task in Python
 ========================================
 
 Here we write a small Python script,
-which runs an infinite loop (*make sure to use `time.sleep`!*) and evaluates a function every 5 minutes.
+which runs an infinite loop (*make sure to use `time.sleep`!*)
+and evaluates a function running a simple command every 10 minutes.
 This examples uses the library `schedule <https://schedule.readthedocs.io/en/stable/>`_.
 Feel free to choose any other solution.
 
@@ -77,39 +82,42 @@ Feel free to choose any other solution.
 
     import schedule
     import time
-    from random import random
     from datetime import datetime
+    from subprocess import run, PIPE
 
     i = 0
+    CMD = "date"
 
     def task():
+        global i
         with open('task_output.log', 'a') as fout:
             ts = str(datetime.utcnow())
-            fout.write("Task {}: {} value = {}\n".format(i, ts, random()))
+            status = run(CMD, stdout=PIPE, stderr=PIPE, shell=True)
+            out = f"{status.stdout.decode('utf8')}\n{status.stderr.decode('utf8')}"
+            fout.write("Task {}: {} output:\n{}\n".format(i, ts, out))
             i += 1
 
-    schedule.every(5).minutes.do(task)
+
+    schedule.every(10).minutes.do(task)
 
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(60)
+
 
 .. highlight:: none
 
-Indeed, after restarting the project the output of `ps auf` shows this "daemon" task as a child of supervisor::
+Indeed, after restarting the project the output of `ps auxf` shows this task as a child of the project hub::
 
-    PID TTY      STAT   TIME COMMAND
-      5 ?        Ss     0:01 /usr/bin/python /usr/bin/supervisord -c /cocalc/supervisor/supervisord.conf
-     15 ?        Sl     0:01  \_ node /cocalc/src/smc-project/local_hub.js ....
-     18 ?        S      0:00  \_ python3 /home/user/project_init.py
+    USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+    user           1  0.1  0.0   4520   756 ?        Ss   09:18   0:00 /cocalc/bin/tini -- sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID $KUCALC_IMAGE_NAME
+    user           8  0.0  0.0   4628   832 ?        S    09:18   0:00 sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID $KUCALC_IMAGE_NAME
+    user           9 10.7  0.4 978240 121400 ?       Sl   09:18   0:03  \_ node /cocalc/src/smc-project/local_hub.js --tcp_port 6000 --raw_port 6001 --kucalc
+    user          21  0.0  0.0  72296  5728 ?        S    09:18   0:00      \_ /usr/sbin/sshd -D -p 2222 -h /tmp/.cocalc/ssh_host_rsa_key -o PidFile=/tmp/.cocalc/sshd.pid -f /cocalc/init/sshd_config
+    user          22  0.5  0.0  37836 14332 ?        S    09:18   0:00      \_ python3 project_init.py
      ...
 
-and the output file `task_output.log` contains::
-
-    Task 0: 2017-09-12 12:02:22.636091 value = 0.12071154405652385
-    Task 1: 2017-09-12 12:07:22.761420 value = 0.6513792691945387
-    Task 2: 2017-09-12 12:12:22.891285 value = 0.5965113338132986
-    ...
+and the output file `task_output.log` contains entries for each run.
 
 .. highlight:: python
 
