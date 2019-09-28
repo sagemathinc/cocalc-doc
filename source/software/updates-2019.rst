@@ -9,6 +9,37 @@ Software Updates 2019
 ..      :depth: 1
 
 
+.. _update-2019-09-28:
+
+2019-09-28
+----------------------
+
+- CoCalc platform:
+    - CoCalc's Jupyter Notebook's **nbgrader toolbar** inserts templates for automatically graded answers and corresponding tests for Python, R and Julia. This makes creating new test cells for your course assignments much easier!
+
+- Software:
+    - (new) `IPOPT`_ interior point solver, stand-alone binary::
+
+         ~$ ipopt --version
+         Ipopt 3.12.12 (Linux x86_64), ASL(20160307)
+
+- Anaconda 2019:
+    - (new) tools for all your `SOAP`_ needs: `suds-jurko`_ and `zeep`_
+    - (new/upd) `IPOPT`_ ``3.12.12``, ``coincbc 2.10.3``, ``glpk 4.65``, and `pyomo`_
+    - (upd) wide range of package updates. from `dask`_ ``2.4.0``, over `matplotlib`_ ``3.1.1``, to `tensorflow`_ ``1.14``, and many more ...
+
+- Python 3:
+    - (new) Tools for all your `SOAP`_ needs: `suds-community`_ ``0.8.3`` and `zeep`_ ``3.4.0``
+    - (new) `IPOPT`_: interior point solver, see `ipopt examples`_ using `cyipopt`_ bindings – also available via `PyOMO`_ ``5.6.6``. This allows you to solve more types of optimization problems.
+    - (upd) `scikit-learn 0.21.3 <https://scikit-learn.org/stable/whats_new.html#version-0-21-3>`_, `scipy`_ ``1.3.1``, `mypy`_ ``0.730``
+    - (upd) Continuing from last update's introduction of `pandas-bokeh`_, also ``bokeh`_ got updated to ``1.3.4`` (`bokeh example notebook`_). This let's you create interactive plots of various types right inside CoCalc's Jupter Notebook.
+
+      .. image:: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/2019-09-28-bokeh-plot-cocalc.png?viewer=raw
+          :width: 50%
+
+
+
+
 .. _update-2019-09-21:
 
 2019-09-21
@@ -938,3 +969,14 @@ Software Updates 2019
 .. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
 .. _BioConductor: https://www.bioconductor.org
 .. _music: https://github.com/ttm/music
+.. _sckit-learn: https://scikit-learn.org/stable/
+.. _SOAP: https://en.wikipedia.org/wiki/SOAP
+.. _suds-jurko: https://bitbucket.org/jurko/suds/src/default/README.rst
+.. _zeep: https://python-zeep.readthedocs.io/
+.. _suds-community: https://github.com/suds-community/suds
+.. _IPOPT: https://coin-or.github.io/Ipopt/
+.. _ipopt examples: https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ipopt.ipynb?viewer=share
+.. _PyOMO: http://www.pyomo.org/
+.. _cyipopt: https://github.com/matthias-k/cyipopt
+.. _bokeh example notebook: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/bokeh-plots.ipynb?viewer=share
+.. _scipy: https://scipy.org/
