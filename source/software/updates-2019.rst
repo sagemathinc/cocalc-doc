@@ -32,7 +32,7 @@ Software Updates 2019
     - (new) Tools for all your `SOAP`_ needs: `suds-community`_ ``0.8.3`` and `zeep`_ ``3.4.0``
     - (new) `IPOPT`_: interior point solver, see `ipopt examples`_ using `cyipopt`_ bindings – also available via `PyOMO`_ ``5.6.6``. This allows you to solve more types of optimization problems.
     - (upd) `scikit-learn 0.21.3 <https://scikit-learn.org/stable/whats_new.html#version-0-21-3>`_, `scipy`_ ``1.3.1``, `mypy`_ ``0.730``
-    - (upd) Continuing from last update's introduction of `pandas-bokeh`_, also ``bokeh`_ got updated to ``1.3.4`` (`bokeh example notebook`_). This let's you create interactive plots of various types right inside CoCalc's Jupter Notebook.
+    - (upd) Continuing from last update's introduction of `pandas-bokeh`_, also `bokeh`_ got updated to ``1.3.4`` (`bokeh example notebook`_). This let's you create interactive plots of various types right inside CoCalc's Jupter Notebook.
 
       .. image:: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/2019-09-28-bokeh-plot-cocalc.png?viewer=raw
           :width: 50%
@@ -980,3 +980,5 @@ Software Updates 2019
 .. _cyipopt: https://github.com/matthias-k/cyipopt
 .. _bokeh example notebook: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/bokeh-plots.ipynb?viewer=share
 .. _scipy: https://scipy.org/
+.. _bokeh: https://bokeh.pydata.org/en/latest/
+
