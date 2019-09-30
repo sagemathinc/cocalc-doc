@@ -9,6 +9,24 @@ Software Updates 2019
 ..      :depth: 1
 
 
+
+
+.. _update-2019-09-30:
+
+2019-09-30
+----------------------
+
+
+- Software
+    - (upd) `Jupytext`_ ``1.2.4`` – a command-line tool to convert ipynb files to markdown, Rmarkdown, etc.
+    - (fix) Updating Jupyter Console, because the previous update broke it.
+
+- Julia:
+    - (upd) ``1.0.5`` Long Term Release
+    - (upd) various packages for ``1.2.0``
+
+
+
 .. _update-2019-09-28:
 
 2019-09-28
@@ -981,4 +999,5 @@ Software Updates 2019
 .. _bokeh example notebook: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/bokeh-plots.ipynb?viewer=share
 .. _scipy: https://scipy.org/
 .. _bokeh: https://bokeh.pydata.org/en/latest/
+.. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html
 
