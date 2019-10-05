@@ -9,6 +9,27 @@ Software Updates 2019
 ..      :depth: 1
 
 
+.. _update-2019-10-05:
+
+2019-10-05
+----------------------
+
+- Platform
+    - (new) The ``$MPLBACKEND`` environment variable is set for `matplotlib`_ based on the terminal type. This means you can plot to a file or to a graphical window in X11 without having to explicitly set it (`ticket #4120 <https://github.com/sagemathinc/cocalc/issues/4120>`_).
+
+- SageMath
+    - (new) `SageMath`_ ``8.9`` rollout on CoCalc, including additional packages and extensions. Try the "Sage 8.9" Jupyter Kernel! Soon, it will become the default version for running Sage. Sage Worksheets currently do not support Sage 8.9.
+
+- Anaconda Python 3:
+    - (new) `DEAP`_ ``1.3.0`` *a novel evolutionary computation framework for rapid prototyping and testing of ideas. It seeks to make algorithms explicit and data structures transparent.*
+    - (new) `simanneal`_ ``0.4.2`` *This module performs simulated annealing optimization to find the optimal state of a system.*
+
+- Python 3:
+    - (new) `DEAP`_ and `simanneal`_ as well.
+
+
+
+
 
 
 .. _update-2019-09-30:
@@ -1000,4 +1021,6 @@ Software Updates 2019
 .. _scipy: https://scipy.org/
 .. _bokeh: https://bokeh.pydata.org/en/latest/
 .. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html
+.. _DEAP: https://deap.readthedocs.io/en/master/
+.. _simanneal: https://github.com/perrygeo/simanneal
 
