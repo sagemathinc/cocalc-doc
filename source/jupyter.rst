@@ -166,6 +166,8 @@ The main reasons to use the classical notebook are:
 
 See our `list of Jupyter related issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aissue+is%3Aopen+label%3AA-jupyter>`_ for more details.
 
+.. _dont-mix-warning:
+
 *******************************
 Don't mix CoCalc and Classical!
 *******************************
@@ -188,6 +190,8 @@ You can also run the full classical Jupyter notebook server, using either **Plai
 :ref:`Project settings <alt-jupyter-server>` and :ref:`(+) New <plusnew>`.
 
 Using either of these options for the classical notebook has an advantage: it does not affect your "Jupyter classic" Editor setting, allowing you to keep CoCalc Jupyter notebook as the default for opening .ipynb files in the CoCalc main interface.
+
+Note that the same :ref:`warning <dont-mix-warning>` applies as above: you shouldn't open the same ipynb file in cocalc and in classical/lab servers.
 
 .. index:: pair: Jupyter Notebooks; halt button
 .. _jupyter-halt:
