@@ -9,13 +9,15 @@ Low Memory Problems
 How can you tell if your project is running out of memory?
 ----------------------------------------------------------
 
-1. Use "top" in a terminal
+1. Use "top"/"htop" in a terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Currently the easiest way to test this is to open a terminal in your project, then type "top". Watch the processes listed there, especially the column labeled `RES`, which stands for "resident memory".
+Currently the easiest way to test this is to open a terminal in your project, then type ``top``. Watch the processes listed there, especially the column labeled `RES`, which stands for "resident memory".
 If your project has 1,000 MB of RAM, which is the default in CoCalc, and the sum of the RES entries is close to 1,000,000, then you should definitely expect a memory allocation failure soon.
 
 You can type "M" into top to make it sort processes by memory, which will help in seeing how much is used.  You can also hit the space bar a lot to make it update frequently.  Type "q" when you are done.  If you want to kill a process in top, type "k" then the process id (PID), which is in the first column.
+
+``htop`` is a more modern alternative to ``top``. You can use the functional keys to issue commands or even use the mouse to point and click.
 
 2. Project settings
 ^^^^^^^^^^^^^^^^^^^
