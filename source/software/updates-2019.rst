@@ -40,13 +40,8 @@ Software Updates 2019
         *GPyOpt*
 
     - (upd) ``flask-1.1.1``, ``lz4-2.2.1`` and ``brotli-1.0.7`` compression libs
+    - (fix) missing basemap dependency on ``shapefile`` – `PyShp`_ ``2.1.0``
 
-
-.. _admcycles: https://gitlab.com/jo314schmitt/admcycles
-.. _sherpa: https://parameter-sherpa.readthedocs.io/en/latest/
-.. _GPyOpt: https://sheffieldml.github.io/GPyOpt/
-.. _GPy: http://sheffieldml.github.io/GPy/
-.. _CoCalc Docker: https://github.com/sagemathinc/cocalc-docker
 
 
 
@@ -1070,4 +1065,4 @@ Software Updates 2019
 .. _GPyOpt: https://sheffieldml.github.io/GPyOpt/
 .. _GPy: http://sheffieldml.github.io/GPy/
 .. _CoCalc Docker: https://github.com/sagemathinc/cocalc-docker
-
+.. _PyShp: https://github.com/GeospatialPython/pyshp
