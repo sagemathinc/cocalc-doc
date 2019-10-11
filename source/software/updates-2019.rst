@@ -9,6 +9,48 @@ Software Updates 2019
 ..      :depth: 1
 
 
+
+.. _update-2019-10-11:
+
+2019-10-11
+----------------------
+
+- Platform
+    - (enh) :doc:`CoCalc's NbGrader <../teaching-nbgrader>`: `updates about its development status <https://groups.google.com/d/msgid/cocalc/CA%2BjwZMhzyFm7X8e_fjPEN_Fzszcau62rzMZMynFkQMcGXeHLCg%40mail.gmail.com>`_.
+    - (enh) :doc:`CoCalc's LaTeX Editor <../latex>` moved it's build directory to a temporary in-memory location at ``/tmp/...``. Less clutter, more speed!
+    - (new) `CoCalc Docker`_ mailing list: `join here <https://groups.google.com/a/sagemath.com/group/cocalc-docker/subscribe>`_
+
+- SageMath
+    - (upd) `admcycles`_ ``0.2`` in Sage 8.8 and 8.9
+    - (upd) Development version ``9.0.beta0``
+
+- Software
+    - (upd) various Linux package updates, including `xpra`_ 3.0 and R packages.
+      The Xpra update contains various improvements for the :doc:`remote graphical desktop <../x11>`.
+    - (upd) `bazel`_ ``1.0.0``
+
+- Python 3:
+    - (new) `sherpa`_ ``1.0.2`` – *a Python Hyperparameter Optimization Library*
+    - (upd)  `GPy`_ ``1.9.8`` & `GPyOpt`_ ``1.2.5`` – *a Python open-source library for Bayesian Optimization*
+
+    .. figure:: https://storage.googleapis.com/cocalc-extra/20191011-gpyopt.png
+        :width: 75%
+        :align: center
+
+        *GPyOpt*
+
+    - (upd) ``flask-1.1.1``, ``lz4-2.2.1`` and ``brotli-1.0.7`` compression libs
+
+
+.. _admcycles: https://gitlab.com/jo314schmitt/admcycles
+.. _sherpa: https://parameter-sherpa.readthedocs.io/en/latest/
+.. _GPyOpt: https://sheffieldml.github.io/GPyOpt/
+.. _GPy: http://sheffieldml.github.io/GPy/
+.. _CoCalc Docker: https://github.com/sagemathinc/cocalc-docker
+
+
+
+
 .. _update-2019-10-05:
 
 2019-10-05
@@ -1023,4 +1065,9 @@ Software Updates 2019
 .. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html
 .. _DEAP: https://deap.readthedocs.io/en/master/
 .. _simanneal: https://github.com/perrygeo/simanneal
+.. _admcycles: https://gitlab.com/jo314schmitt/admcycles
+.. _sherpa: https://parameter-sherpa.readthedocs.io/en/latest/
+.. _GPyOpt: https://sheffieldml.github.io/GPyOpt/
+.. _GPy: http://sheffieldml.github.io/GPy/
+.. _CoCalc Docker: https://github.com/sagemathinc/cocalc-docker
 
