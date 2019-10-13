@@ -15,12 +15,14 @@ When you first start using CoCalc, you will see a banner saying
     the site depends entirely on your financial support to continue operating.
     Without your financial support this service will not survive long-term!
 
+Trial projects do not expire, but please be aware that without compensation for development and hosting,
+CoCalc itself will not be around indefinitely.
 
 **To remove the warning message** from the top of your project, *at least one collaborator must upgrade the project to run on members-only hosting and have network access*.
 
 .. note::
 
-    CoCalc will never charge you, except after you explicitly purchase a subscription or course package.
+    **CoCalc will never charge you**, except after you explicitly purchase a subscription or course package.
 
 
 Ways to remove the banner
