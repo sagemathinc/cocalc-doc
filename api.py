@@ -39,6 +39,8 @@ API
 
 .. mdinclude:: index.md
 
+.. include:: ../api-iframe.inc
+
 .. toctree::
    :caption: API Endpoints
    :maxdepth: 1
