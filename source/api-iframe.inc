@@ -1,3 +1,5 @@
+.. index:: pair: API; iframe
+
 ###########################
 Using the API in an Iframe
 ###########################
@@ -13,16 +15,16 @@ You should be able to create a proof of concept using the API introduction above
 
 #. With the API, you can :doc:`copy files between projects <copy_path_between_projects>` or :doc:`write to a file <write_text_file_to_project>`. It's also possible to :doc:`run arbitrary commands <project_exec>`.
 
-#. To show a notebook to a user (and just the notebook) you need to do this
+#. To show a notebook to a user (and just the notebook) you need to do this:
 
-    * get a fresh auth token: https://doc.cocalc.com/api/user_auth.html
-    * append the parameter fullscreen=kiosk to remove the UI
-    * make an iframe in your website, which points to a project and file, and ends with ```?auth_token=...&fullscreen=kiosk```.
+   * get a fresh auth token: https://doc.cocalc.com/api/user_auth.html
+   * append the parameter fullscreen=kiosk to remove the UI
+   * make an iframe in your website, which points to a project and file, and ends with ```?auth_token=...&fullscreen=kiosk```.
 
-    A full example might look like this::
+   A full example might look like this::
 
-        https://cocalc.com/projects/....-....-....-..../
-          files/calculate.ipynb?auth_token=......&fullscreen=kiosk&session=
+       https://cocalc.com/projects/....-....-....-..../
+         files/calculate.ipynb?auth_token=......&fullscreen=kiosk&session=
 
 There is work underway to improve kiosk mode. In particular to let the
 parent website send commands to open more than one file, close them,
