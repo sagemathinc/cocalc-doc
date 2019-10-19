@@ -10,6 +10,33 @@ Software Updates 2019
 
 
 
+.. _update-2019-10-19:
+
+2019-10-19
+----------------------
+
+- SageMath
+    - (upd) `SageMath`_ ``8.9`` including many extra packages and libs. This also implies an update of :ref:`SageTeX <latex-sagetex>` to ``3.3``.
+
+- Software
+    - (new) `moreutils`_ ``0.60`` – *Linux bash command-line tools*
+    - (new) `lerna.js`_ ``3.18.1``
+    - (upd) `Go`_ ``1.13.1``, `CoffeScript`_ ``2.4.3``, `TypeScript`_ ``3.6.1`` and `prettier`_ ``1.18.2``
+
+- Python 3:
+    - (ann) **soon,** `Tensorflow`_ **will be version 2 – this has breaking changes**
+    - (new) `tpot`_ ``0.10.2`` – *is a Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming.*
+    - (new) `scikit-mdr`_ ``0.4.4`` – *a scikit-learn-compatible Python implementation of Multifactor Dimensionality Reduction (MDR) for feature construction.*
+    - (new) `scikit-rebate`_ – ``0.6`` *a scikit-learn-compatible Python implementation of ReBATE, a suite of Relief-based feature selection algorithms for Machine Learning*
+    - (upd)  `dask`_/`distributed`_ ``2.6.0``, `numba`_ ``0.46.0``, `textract`_ ``1.6.3``, `beautifulsoup4`_ ``4.8.0``, `pytables`_ ``3.5.2``, `xgboost`_ ``0.90`` and ``pip 19.3``
+
+- Anaconda 2019:
+    - (new) `tpot`_ ``0.10.2``
+
+
+
+
+
 .. _update-2019-10-11:
 
 2019-10-11
@@ -997,6 +1024,7 @@ Software Updates 2019
 .. _Cadabra2: https://cadabra.science
 .. _Qiskit:  https://qiskit.org
 .. _dask: https://dask.org
+.. _distributed: https://distributed.dask.org/
 .. _QGIS: https://www.qgis.org
 .. _arctic: https://arctic.readthedocs.io/en/latest/
 .. _Gradle: https://gradle.org/
@@ -1066,3 +1094,15 @@ Software Updates 2019
 .. _GPy: http://sheffieldml.github.io/GPy/
 .. _CoCalc Docker: https://github.com/sagemathinc/cocalc-docker
 .. _PyShp: https://github.com/GeospatialPython/pyshp
+.. _go: https://golang.org/
+.. _beautifulsoup4: https://www.crummy.com/software/BeautifulSoup/
+.. _textract: https://textract.readthedocs.io/en/stable/
+.. _tpot: https://epistasislab.github.io/tpot/
+.. _scikit-mdr: https://github.com/EpistasisLab/scikit-mdr
+.. _scikit-rebate: https://github.com/EpistasisLab/scikit-rebate
+.. _pytables: http://www.pytables.org/
+.. _xgboost: https://xgboost.readthedocs.io/en/latest/
+.. _lerna.js: https://lerna.js.org/
+.. _moreutils: https://joeyh.name/code/moreutils/
+.. _coffescript: https://coffeescript.org/
+
