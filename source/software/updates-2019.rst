@@ -21,7 +21,7 @@ Software Updates 2019
 - Software
     - (new) `moreutils`_ ``0.60`` – *Linux bash command-line tools*
     - (new) `lerna.js`_ ``3.18.1``
-    - (upd) `Go`_ ``1.13.1``, `CoffeScript`_ ``2.4.3``, `TypeScript`_ ``3.6.1`` and `prettier`_ ``1.18.2``
+    - (upd) `Go`_ ``1.13.1``
 
 - Python 3:
     - (ann) **soon,** `Tensorflow`_ **will be version 2 – this has breaking changes**
