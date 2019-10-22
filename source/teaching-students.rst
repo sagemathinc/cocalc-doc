@@ -179,18 +179,22 @@ to move your student project to an improved "Member Hosting" server and enable "
 (see :doc:`upgrade-guide`).
 This is shown in the screenshots below.
 
-**To use the option for the one-time fee, you must open your student project for the course you are taking.**
+.. note::
+
+    To use the option for the one-time fee, you must open your student project for the course you are taking.
 
 Student projects are named with the student name followed by the course title,
 like this: ``Jane Doe - MATH 101``.
-If you don't see your course project listed under ``Projects`` (click the tab at the very top left) when you login to CoCalc,
-it's possible that the instructor created your project using a different login
-(i.e. different email or name) than you are using,
-or that one of you misspelled your email address ,
-or that you have not been added to the student list yet.
 
-The teacher sets a deadline for course payment by the student.
-The deadline visible below the top row when you open the project.
+If you don't see your course project listed under ``Projects`` (click the tab at the very top left) when you login to CoCalc,
+there might be a couple of reasons for that:
+
+* it's possible that the instructor created your project using a different login (i.e. different email or name) than you are using,
+* or that one of you misspelled your email address,
+* or that you have not been added to the student list yet.
+
+If the teacher sets a deadline for course payment by the student,
+the deadline visible below the top row when you open the project.
 
 In the warning you see below, **click on the "pay the course fee" link**.
 If you do NOT see this box, it is likely that your instructor has not checked the appropriate boxes in their course configuration file.
