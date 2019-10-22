@@ -1,10 +1,9 @@
-Examples
---------------
+
 
 .. index:: pair: API; IFrame
 
 Embedding in an IFrame
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==========================
 
 Here are notes on integrating CoCalc in an IFrame in a web application using the CoCalc API.
 You should be able to create a proof of concept using the API introduction above and these notes.

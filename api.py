@@ -39,17 +39,21 @@ API
 
 .. mdinclude:: index.md
 
-.. include:: ../api-iframe.inc
-
 .. toctree::
    :caption: API Endpoints
    :maxdepth: 1
 
 {endpoints}
 
----------
+--------------
 
-.. mdinclude:: _footer.md
+Examples
+=================
+
+.. toctree::
+   :maxdepth: 1
+
+   api_examples
 
 '''
 
@@ -57,6 +61,9 @@ with open(join(outdir, 'index.rst'), 'w') as out:
     entries = (f'   {k}' for k in sorted(api['events']))
     api['endpoints'] = '\n'.join(entries)
     out.write(index_tmpl.format(**api))
+
+with open(join(outdir, 'api_examples.rst'), 'w') as out:
+    out.write('.. include:: ../api-examples.inc')
 
 # events
 
