@@ -10,6 +10,25 @@ Software Updates 2019
 
 
 
+.. _update-2019-10-25:
+
+2019-10-25
+----------------------
+
+- Platform
+    - (new) Sytnax highlighting for `Verilog`_ files (``.v`` and ``.vh``)
+    - (enh) :doc:`TimeTravel <../time-travel>` opens up in a frame
+
+- Software
+    - (new) `iverilog`_ – *compiles Verilog (IEEE-1364) into some target format*
+    - (new) `GTKWave`_ (in :doc:`../x11`) for viewing Verilog VCD/EVCD files
+
+- SageMath:
+    - (fix) hotfix for viewing ``plot3d`` renderings in the Jupyter Notebook – `issue #28648 <https://trac.sagemath.org/ticket/28648>`_
+
+
+
+
 .. _update-2019-10-19:
 
 2019-10-19
@@ -1105,4 +1124,8 @@ Software Updates 2019
 .. _lerna.js: https://lerna.js.org/
 .. _moreutils: https://joeyh.name/code/moreutils/
 .. _coffescript: https://coffeescript.org/
+.. _iverilog: http://iverilog.icarus.com/
+.. _Verilog: https://en.wikipedia.org/wiki/Verilog
+.. _GTKWave: http://gtkwave.sourceforge.net/
+
 
