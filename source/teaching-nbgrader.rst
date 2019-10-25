@@ -8,7 +8,7 @@ nbgrader in CoCalc
 
     This section of the User Manual describes features that are under active development and expected to be available soon.
 
-`nbgrader <https://nbgrader.readthedocs.io/en/stable/>`_ is a tool for creating and grading assignments in Jupyter notebooks. CoCalc Jupyter notebooks include support for ``nbgrader`` core features without the need for added modules and extensions.
+`nbgrader`_ is a tool for creating and grading assignments in Jupyter notebooks. CoCalc Jupyter notebooks include support for ``nbgrader`` core features without the need for added modules and extensions.
 
 .. contents::
    :local:
@@ -20,8 +20,7 @@ nbgrader in CoCalc
 Purpose of nbgrader
 ===============================
 
-`nbgrader <https://nbgrader.readthedocs.io/en/stable/>`_  provides the following
-teaching-related functionality in a Jupyter notebook environment: [#]_
+`nbgrader`_  provides the following teaching-related functionality in a Jupyter notebook environment:
 
 #. Maintain separate instructor & student versions of Jupyter notebooks
 #. Automatically grade coding exercises written using Python, R, Julia, and more.
@@ -86,3 +85,5 @@ use nbgrader in CoCalc in the future,
 `let us know! <mailto:help@cocalc.com>`_
 
 
+
+.. _nbgrader: https://nbgrader.readthedocs.io/
