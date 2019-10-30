@@ -8,8 +8,10 @@ Here are notes on integrating CoCalc in an IFrame in a web application using the
 You should be able to create a proof of concept using the API introduction above and these notes.
 
 1. You need an account with an API key. You can get an API key via the UI or here using the :doc:`../api/create_account` API call.
-2. You can create several accounts. If you are running the CoCalc Docker image, you probably want one account to be an `admin <https://github.com/sagemathinc/cocalc-docker#make-a-user-an-admin>`_ and then have additional accounts for each actual user of your platform.
+2. You can create several accounts. If you are running the CoCalc Docker image, you probably want one account [to be an admin](https://github.com/sagemathinc/cocalc-docker#make-a-user-an-admin) and then have additional accounts for each actual user of your platform.
 3. You have to create at least one project.
+   Note: _The production website runs each project in their own container._
+   _This means you might want to create several projects to get proper isolation._
 4. With the API, you can :doc:`copy files between projects <../api/copy_path_between_projects>` or :doc:`write to a file <../api/write_text_file_to_project>`. It's also possible to :doc:`run arbitrary commands <../api/project_exec>`.
 5. To show a notebook to a user (and just the notebook) you need to do this:
    - :doc:`get a fresh auth token <../api/user_auth>`
