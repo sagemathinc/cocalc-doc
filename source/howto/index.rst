@@ -16,6 +16,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    running-processes
    upload
    webserver
+   ../api-examples.md
 
 .. toctree::
    :caption: Jupyter Notebook
