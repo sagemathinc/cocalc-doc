@@ -15,23 +15,62 @@ You should be able to create a proof of concept using the API introduction above
 4. With the API, you can :doc:`copy files between projects <../api/copy_path_between_projects>` or :doc:`write to a file <../api/write_text_file_to_project>`. It's also possible to :doc:`run arbitrary commands <../api/project_exec>`.
 5. To show a notebook to a user (and just the notebook) you need to do this:
    - :doc:`get a fresh auth token <../api/user_auth>`
-   - make an IFrame in your website, which points to a project and file, and ends with `?auth_token=...&fullscreen=kiosk`. The parameter `fullscreen=kiosk` removes the UI.
-     A full example might look like this:
-     ```
-     https://cocalc.com/projects/....-....-....-..../
-       files/calculate.ipynb?auth_token=......&fullscreen=kiosk&session=
-     ```
+   - make an IFrame in your website, which points to a project and file, and ends with `?auth_token=...&fullscreen=kiosk`.
+     The parameter `fullscreen=kiosk` removes the UI.
+     A full example might look like this
+     `https://cocalc.com/projects/.../files/calculate.ipynb?auth_token=...&fullscreen=kiosk&session=`
 
-There is work underway to improve kiosk mode.
-In particular to let the parent website send commands to open more than one file, close them, get status information, etc.
-The PR is at https://github.com/sagemathinc/cocalc/pull/3985.
-Once this is merged and working, the implication is that you just have to open cocalc in kiosk mode:
+## IFrame communication
+
+This improves working with an embedded CoCalc instance by enabling a message based communication channel.
+It gives the parent page the ability to send commands to CoCalc (e.g. opening a specific page, etc.) and receiving responses.
+
+.. note::
+
+    This is *beta* and only available for specific domains.
+    Please contact us if you want to use this.
+
+To get started, you just have to embed the main `/app` endpoint in an IFrame's `src` like that:
 
 ```
 https://cocalc.com/app?auth_token=......&fullscreen=kiosk&session=
 ```
 
-and wait until it is ready.
-Then you can control opening and closing files from your website,
-e.g. as a result of users clicking on certain buttons that behave
-just like using the top row of cocalc.
+Once CoCalc is ready, the loading screen shows a green banner of confirmation.
+
+**Sending messages** Use [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) on the `contentWindow` of CoCalc's IFrame to send messages.
+E.g. if your IFrame has the `id="cocalc"`, run `cocalc = document.getElementById("cocalc").contentWindow;` and then `cocalc.postMessage(payload, "https://cocalc.com")`. `payload` is the message, which is explained below.
+
+**Receiving message**
+
+1. write a callback function like `function replies(mesg) { console.log(mesg.data); }`.
+2. Possibly check if `mesg.origin` is really CoCalc's domain.
+3. Hook up this callback via `window.addEventListener("message", replies, false);`.
+
+**Messages sent to CoCalc** have the following structure. The `action` field is mandatory.
+
+    {
+      action: "[command]",
+      field1: ...,
+      field2: ...
+    }
+
+Each message has a **response**, usually containing `{status: "ack|done|error", ...}`.
+
+In particular, **error responses** have the structure `{status: "error", mesg: "[error message]", ...}`.
+
+Available commands and their responses:
+
+- `open` – open a specific file in a project.
+  - fields:
+    - `project_id` – the UUID of the project
+    - `path` – the location relative to the home directory. e.g. `notebook.ipynb` or `subdir1/file.md`.
+  - responses:
+    1. acknowledgement of command (project will start, file will open): `{ status: "ack", ... }`
+    2. file editor is opened and loading of content starts: `{ status: "done", ... }`
+- `closeall` – this closes all open files
+  - response: `{status: "done", mesg: "all files are closed"}`
+- `status` – returns a snapshot of CoCalc's overall status. In particular during starting CoCalc, querying this for a response is useful to know when CoCalc is available and connected to the front-end servers.
+  - response:
+    - `connection` – more detailed information about the connection quality, ping time, etc.
+    - `open_files` – mapping of `project_id` to a list of paths.
