@@ -255,13 +255,17 @@ For addtional detail, see the blog posting `Using SSH with CoCalc <http://blog.s
 
 You can connect to a CoCalc project from your local desktop using `SSH`_ (Secure Shell) and you can upload/download files between your computer and CoCalc using the SSH protocol, with ``scp`` and ``rsync`` command line tools. You must have owner or collaborator status on a project for SSH access to be permitted.
 
-When logging into a project with ``ssh``, make sure the project is running. If the project is stopped, or has been restarted within the last 20 seconds or so, you may get a message of 'Permission denied'.
+.. note::
+
+    When logging into a project with ``ssh``, make sure the project is running. If the project is stopped, or is in the process of starting up, you may get a message of 'Permission denied' or be prompted for a password.
 
 SSH authentication uses a pair of keys, a private key and a public key. Each key is stored in a separate file. For example, a private key might be in the file ``id_ed25519`` and the matching public key in ``id_ed25519.pub``. In general, private keys are not distributed, while public keys are uploaded to remote systems.
 
 On OS X, and Linux, key pairs are stored in ``~/.ssh``, where ``~`` indicates your user's home directory. Use the ``ssh-keygen`` command to generate a key pair. (You can do ``man ssh-keygen`` from a terminal for details on the command.)
 
-*NOTE: CoCalc does not support manual editing of the authorized_keys file for SSH authentication.*
+.. note::
+
+   CoCalc does not support manual editing of the authorized_keys file for SSH authentication.*
 
 To make sure you really connect to CoCalc, you can check the fingerprint of the :ref:`SSH Host Key <ssh-host-key>`.
 
