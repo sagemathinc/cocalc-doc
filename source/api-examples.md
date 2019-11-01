@@ -22,8 +22,12 @@ You should be able to create a proof of concept using the API introduction above
 
 ## IFrame communication
 
-This improves working with an embedded CoCalc instance by enabling a message based communication channel.
-It gives the parent page the ability to send commands to CoCalc (e.g. opening a specific page, etc.) and receiving responses.
+This is a communication channel to improve working with an embedded CoCalc instance.
+It gives the parent page the ability to send command-messages to CoCalc (e.g. opening a specific page, etc.) and receiving responses.
+
+The underlying technology is [window.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage).
+
+The parent page must be served using `https`!
 
 .. note::
 
