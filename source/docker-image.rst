@@ -8,7 +8,7 @@ CoCalc Docker Image
 
 .. contents::
    :local:
-   :depth: 2
+   :depth: 1
 
 ##############################
 About the CoCalc Docker Image
@@ -76,23 +76,18 @@ Getting Started
 
 Detailed instructions to get the image up and running are at `the github repo for sagemathinc/cocalc-docker <https://github.com/sagemathinc/cocalc-docker>`_.
 
-##############################
-**LICENSES AND SUPPORT:**
-##############################
+#############################################
+Additional Licensing Available
+#############################################
 
-*********************************************
-two forms of additional licensing available
-*********************************************
-
-Much of this code is licensed `under the AGPL <https://en.wikipedia.org/wiki/Affero_General_Public_License>`_. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $799.  This also includes some support, though with no guarantees (that costs more). We **do** have several happy paying customers as of Sept 2019.
-
-For customers who can work within AGPL, we also offer a 1-year commercial license for the CoCalc docker image for $799. This license is not required to use the ordinary CoCalc docker image. However, like the no-AGPL license, it includes some support, though with no guarantees.
+CoCalc code is licensed under AGPLv3. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $799.  This also includes some support, though with no guarantees (that costs more). We **do** have several happy paying customers as of Sept 2019.
 
 .. _cocalc-docker-mailing-lists:
 
-*********************************************
-online mailing lists and open issues
-*********************************************
+
+#############################################
+Online Mailing Lists and Open Issues
+#############################################
 
 For additional news and support, we recommend joining the following lists:
 
@@ -103,7 +98,7 @@ For additional news and support, we recommend joining the following lists:
 * Here is a list of `open docker-related CoCalc issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aopen+is%3Aissue+label%3AA-docker>`_.
 
 ##############################
-**SECURITY STATUS:**
+Security Status
 ##############################
 
 The CoCalc Docker image is **not blatantly insecure** from outside attack: the database has a long random password, user accounts are separate, encrypted SSL communication is used by default, etc. That said, please observe the following:
@@ -121,10 +116,6 @@ The CoCalc Docker image is updated approximately weekly. Weekly updates incorpor
 Other updates, such as new versions of Sagemath, Julia, and other additional software, happen less frequently but will be announced on the CoCalc Docker mailing list and listed below:
 
 .. index:: Docker image; updates
-
-**************************************
-Cocalc Docker image update summaries
-**************************************
 
 .. toctree::
    :maxdepth: 1
