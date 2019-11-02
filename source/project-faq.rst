@@ -13,8 +13,8 @@ This FAQ guide answers questions about :doc:`Projects <project>`.
 Upgrades/quotas, billing, and pricing related questions covered in :doc:`billing`.
 
 .. index::
-    Git
-    GitHub
+    Git; with projects
+    GitHub; with projects
     GitLab
     Bitbucket
 
