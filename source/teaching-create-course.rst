@@ -188,7 +188,7 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
      :align: center
 
 
-.. index:: Upgrading students, students pay
+.. index:: Upgrading students; students pay
 .. _course-students-pay:
 
 
@@ -226,7 +226,7 @@ they have a grace period before being required to pay,
 and you can change any of these settings at any time.
 
 
-.. index:: Upgrading students, institution pays
+.. index:: Upgrading students; institution pays
 .. _inst-pays:
 
 
