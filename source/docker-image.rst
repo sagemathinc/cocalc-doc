@@ -41,7 +41,7 @@ Limitations
 
 #. SageMath, Inc. doesn't prioritize supporting the Docker image, which means that if you ask a question about it, or make a support request, we likely won't have time to answer. Please set your expectations accordingly (but see below for alternatives). On the other hand, if you are willing to fully compensate us for our time, then we can likely be very helpful!
 
-#. The license is `AGPLv3 <https://opensource.org/licenses/AGPL-3.0>`_. If you want to run CoCalc internally and cannot use AGPLv3 licensed code at your organization, contact us and we can sell you a version of the Docker image under a different license.
+#. The license is `AGPLv3`_. If you want to run CoCalc internally and cannot use AGPLv3 licensed code at your organization, contact us and we can sell you a version of the Docker image under a different license.
 
 ##############################
 Questions
@@ -77,10 +77,10 @@ Getting Started
 Detailed instructions to get the image up and running are at `the github repo for sagemathinc/cocalc-docker <https://github.com/sagemathinc/cocalc-docker>`_.
 
 #############################################
-Additional Licensing Available
+Additional Licensing and Support Available
 #############################################
 
-CoCalc code is licensed under AGPLv3. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $799.  This also includes some support, though with no guarantees (that costs more). We **do** have several happy paying customers as of Sept 2019.
+CoCalc code is licensed under `AGPLv3`_. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $799.  This also includes some support, though with no guarantees (that costs more). We **do** have several happy paying customers as of Sept 2019.
 
 .. _cocalc-docker-mailing-lists:
 
@@ -122,3 +122,4 @@ Other updates, such as new versions of Sagemath, Julia, and other additional sof
 
    docker/image-updates-2019
 
+.. _AGPLv3: https://opensource.org/licenses/AGPL-3.0
