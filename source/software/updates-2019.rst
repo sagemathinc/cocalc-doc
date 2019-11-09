@@ -9,6 +9,28 @@ Software Updates 2019
 ..      :depth: 1
 
 
+.. _update-2019-11-09:
+
+2019-11-09
+----------------------
+
+- Platform:
+    - (new) `Multifile LaTeX Support <https://doc.cocalc.com/latex-features.html#latex-multi-file-support>`_ ( `announcement <https://groups.google.com/d/topic/cocalc/LNsBScZEWcc/discussion>`_ ) – open the master file and once it compiled once, you can switch between child tex files, edit them side-by-side, etc.
+
+- Software:
+    - (upd) `Jupyter Lab`_ ``1.1.4``
+    - (upd) Node.js related ``coffeescript@2.4.1``, ``typescript@3.7.2``, and ``npm@6.13.0``
+
+- Python3:
+    - (upd) **Tensorflow 2**  ``tensorflow-2.0.0``, ``tensorboard-2.0.1``, ``tensorflow-estimator-2.0.1``, ...
+      (Tensorflow 1 is still available in the Anaconda 2019 kernel)
+    - (new) `ortools`_ ``7.4.7247`` – *a fast and portable software for combinatorial optimization*
+    - (upd) `Cython`_ ``0.29.14``, `joblib`_ ``0.14``, `numpy`_ ``1.17.3``, `h5py`_ ``2.10.0``, `keras`_ ``2.3.1``
+
+- SageMath:
+    - (upd) Development version ``9.0.beta4``
+
+
 
 .. _update-2019-10-25:
 
@@ -276,13 +298,6 @@ Software Updates 2019
 * :doc:`../api/index`:
     * (enh) :doc:`Scheduled copy operations <../api/copy_path_between_projects>`
     * (new) :doc:`../api/copy_path_status` and :doc:`../api/copy_path_delete`
-
-
-.. _Jupyter Lab: https://jupyterlab.readthedocs.io/en/stable/
-.. _Scikit Image: https://scikit-image.org/
-.. _Astroalign: https://astroalign.readthedocs.io/en/master/
-.. _Keras: https://keras.io/
-.. _GAP: https://www.gap-system.org/
 
 
 
@@ -1039,6 +1054,11 @@ Software Updates 2019
 * Julia 1.0.3: comes with packages PyPlot, Plots, DifferentialEquations, Compat, LinearAlgebra, GLM, etc. now!
 * Sage development version 8.6.rc0
 
+
+.. _Jupyter Lab: https://jupyterlab.readthedocs.io/en/stable/
+.. _Scikit Image: https://scikit-image.org/
+.. _Astroalign: https://astroalign.readthedocs.io/en/master/
+.. _GAP: https://www.gap-system.org/
 .. _SageMath: https://sagemath.org
 .. _Cadabra2: https://cadabra.science
 .. _Qiskit:  https://qiskit.org
@@ -1127,5 +1147,7 @@ Software Updates 2019
 .. _iverilog: http://iverilog.icarus.com/
 .. _Verilog: https://en.wikipedia.org/wiki/Verilog
 .. _GTKWave: http://gtkwave.sourceforge.net/
-
-
+.. _keras: https://keras.io
+.. _ortools: https://developers.google.com/optimization
+.. _joblib: https://joblib.readthedocs.io/
+.. _h5py: https://www.h5py.org/
