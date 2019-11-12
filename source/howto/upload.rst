@@ -5,6 +5,8 @@
 Upload Files
 ======================
 
+**NEW: The file size limit on drag-and-drop upload has been increased to 5 GB.** It was previously 256 MB.
+
 There several ways to upload a file from an external source to a CoCalc project.
 
 .. contents::
@@ -31,7 +33,7 @@ This method is convenient if you can select the file to be uploaded with a mouse
 .. note::
 
     We allow any size file in CoCalc,
-    but the drag and drop file interface has a **256 MB limit** on the size of the file
+    but the drag and drop file interface has a **5 GB limit** on the size of the file
     that can be transferred.
     The other upload methods described below do not have this limit.
     There is however an overall file size limit for each project, see :doc:`../upgrade-guide`.
@@ -93,7 +95,7 @@ Hints for dealing with large files
 
 Here 'large' can mean anything from a few tens of megabytes to several gigabytes, whatever value at which uploads become a problem. The threshold may depend on local factors such as speed and quality of your internet connection.
 
-* As noted above, there is a hard limit of 256 MB for the drag and drop interface. Use fetch or SSH methods above for larger files.
+* As noted above, there is a hard limit of 5 GB for the drag and drop interface. Use fetch or SSH methods above for larger files.
 
 * Make sure your project has room for the files. Check in project Settings (wrench icon) → Project usage and quotas → Disk space.
 
