@@ -139,6 +139,20 @@ To get a hint for possible completions of a function name, method argument, etc.
 
      ways to solve `differential equations in SageMath <http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html>`_
 
+.. index:: Sage Worksheets; plot slows down worksheet
+.. index:: Sage Worksheets; enable/disable svg plot
+
+Sage Worksheet Slow When Plotting? Disable svg.
+============================================================
+
+Plots can generate a large number of points. The default display format for plots is ``svg``, which gives excellent detail, but consumes an amount of memory proportional to the number of points and can markedly slow down worksheet performance.
+
+You can efficiently display plots with as many points as you want if you use ``show()`` with an option of ``svg=False``, for example::
+
+    show(plot(sin(x^2),(x,0,10)),svg=False)
+
+This approach also works with ``list_plot()``. There's no way at present to default to svg disabled. You must use the setting with each plot.
+
 .. index:: Sage Worksheets; lifetime of definitions
 
 How Long are Definitions Stored in a Sage Worksheet?
@@ -182,7 +196,6 @@ Items relating strictly to SageMath, whether or not you are using CoCalc.
 
 Howto
 ==================
-
 
 .. index:: Attach Sage files
 .. _attach-sage-files:
