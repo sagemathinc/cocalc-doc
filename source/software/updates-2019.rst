@@ -9,6 +9,23 @@ Software Updates 2019
 ..      :depth: 1
 
 
+
+.. _update-2019-11-16:
+
+2019-11-16
+----------------------
+
+- Python 3
+    - (new) `periodictable`_  ``1.5.1`` – *The periodictable package provides an extensible periodic table of the elements prepopulated with data important to neutron and X-ray scattering experiments*
+    - (new) `teneto`_ ``0.4.6`` – *various tools for analyzing temporal network data*
+    - (upd) `scipy`_ ``1.3.2``, `numpy`_ ``1.17.4``, `dask`_/`distributed`_ ``2.7.0``
+    - (upd) data science libs:  `sklearn-porter`_ ``0.7.3``,   `sklearn-pandas`_ ``1.6.0``, `scikit-image`_ ``0.16.2`` `scikit-posthocs`_ ``0.6.1``
+    - (upd) `scikit-surprise`_ ``1.1.0`` – *a Python scikit building and analyzing recommender systems that deal with explicit rating data*
+    - (upd) Pandas related: `pandas`_ ``0.25.3``, `pandas-bokeh`_ ``0.4``, `pandas-datareader`_ ``0.8.1``,  `pandas-gbq`_ ``0.11.0``
+    - (upd) Google GCP libs: google-api-core ``1.14.3``, google-cloud-bigquery ``1.21.0``, google-cloud-core ``1.0.3``,   google-cloud-storage ``1.22.0``, googleapis-common-protos ``1.6.0``
+
+
+
 .. _update-2019-11-09:
 
 2019-11-09
@@ -1057,6 +1074,7 @@ Software Updates 2019
 
 .. _Jupyter Lab: https://jupyterlab.readthedocs.io/en/stable/
 .. _Scikit Image: https://scikit-image.org/
+.. _scikit-image: https://scikit-image.org/
 .. _Astroalign: https://astroalign.readthedocs.io/en/master/
 .. _GAP: https://www.gap-system.org/
 .. _SageMath: https://sagemath.org
@@ -1151,3 +1169,12 @@ Software Updates 2019
 .. _ortools: https://developers.google.com/optimization
 .. _joblib: https://joblib.readthedocs.io/
 .. _h5py: https://www.h5py.org/
+.. _periodictable: http://www.reflectometry.org/danse/elements.html
+.. _teneto: https://teneto.readthedocs.io/
+.. _sklearn-porter: https://github.com/nok/sklearn-porter
+.. _sklearn-pandas: https://github.com/scikit-learn-contrib/sklearn-pandas
+.. _scikit-posthocs: https://scikit-posthocs.readthedocs.io/
+.. _pandas-datareader: https://pandas-datareader.readthedocs.io/
+.. _pandas-gbq: https://pandas-gbq.readthedocs.io/
+.. _scikit-surprise: http://surpriselib.com/
+
