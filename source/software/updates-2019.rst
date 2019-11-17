@@ -18,6 +18,7 @@ Software Updates 2019
 - Python 3
     - (new) `periodictable`_  ``1.5.1`` – *The periodictable package provides an extensible periodic table of the elements prepopulated with data important to neutron and X-ray scattering experiments*
     - (new) `teneto`_ ``0.4.6`` – *various tools for analyzing temporal network data*
+    - (new) `python-highcharts`_ ``0.4.2`` – *a simple translation layer between Python and Javascript for* `Highcharts`_ *projects (highcharts, highmaps, and highstocks)*
     - (upd) `scipy`_ ``1.3.2``, `numpy`_ ``1.17.4``, `dask`_/`distributed`_ ``2.7.0``
     - (upd) data science libs:  `sklearn-porter`_ ``0.7.3``,   `sklearn-pandas`_ ``1.6.0``, `scikit-image`_ ``0.16.2`` `scikit-posthocs`_ ``0.6.1``
     - (upd) `scikit-surprise`_ ``1.1.0`` – *a Python scikit building and analyzing recommender systems that deal with explicit rating data*
@@ -1177,4 +1178,5 @@ Software Updates 2019
 .. _pandas-datareader: https://pandas-datareader.readthedocs.io/
 .. _pandas-gbq: https://pandas-gbq.readthedocs.io/
 .. _scikit-surprise: http://surpriselib.com/
-
+.. _python-highcharts: https://github.com/kyper-data/python-highcharts
+.. _Highcharts: https://www.highcharts.com/
