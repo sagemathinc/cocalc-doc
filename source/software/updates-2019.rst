@@ -10,6 +10,35 @@ Software Updates 2019
 
 
 
+.. _update-2019-11-19:
+
+2019-11-19: improved support for Rust
+------------------------------------------
+
+- Software
+    - (new/upd) `Rust`_ available in stable, beta and nightly channels and code formatting (red arrow below) via ``rustfmt``!
+
+    ::
+
+        ~$ rustc --version
+        rustc 1.39.0 (4560ea788 2019-11-04)
+        ~$ rustc +beta --version
+        rustc 1.40.0-beta.2 (2a0ba54fa 2019-11-16)
+        ~$ rustc +nightly --version
+        rustc 1.41.0-nightly (5c5b8afd8 2019-11-16)
+
+    .. figure:: https://storage.googleapis.com/cocalc-extra/rust.png
+        :width: 75%
+        :align: center
+
+        *Rust in a frame-editor, side-by-side with a Terminal*
+
+
+- Python 3
+    - (upd) `networkX`_ ``2.4``, `SQLAlchemy`_ ``1.3.11``,  `monty`_ ``3.0.2``, `mypy`_ ``0.740`` and ``mypy-extensions-0.4.3``, `plotly`_ ``4.3.0``
+
+
+
 .. _update-2019-11-16:
 
 2019-11-16
@@ -1180,3 +1209,7 @@ Software Updates 2019
 .. _scikit-surprise: http://surpriselib.com/
 .. _python-highcharts: https://github.com/kyper-data/python-highcharts
 .. _Highcharts: https://www.highcharts.com/
+.. _monty: https://github.com/materialsvirtuallab/monty
+.. _rust: https://www.rust-lang.org/
+.. _networkx: https://networkx.github.io/documentation/stable/
+.. _sqlalchemy: https://www.sqlalchemy.org/
