@@ -271,3 +271,56 @@ Also, if your Python code will raise some exception,
 then it will result in output to ``stderr`` the standard error stream.
 If you JS code (as in the example above) catches stderr,
 you can get any error message from your Python code.
+
+
+How can I play sounds?
+-----------------------------
+
+CoCalc runs on a remote machine in the cloud.
+To make a wav, mp3 or ogg file play on your computer, it must travel from the cloud to your browser.
+That's done by first saving the waveform to a file in CoCalc and then downloading it into the website inside an `HTML5 audio tag`_.
+
+
+.. _HTML5 audio tag: https://developer.mozilla.org/de/docs/Web/HTML/Using_HTML5_audio_and_video
+
+1. Run the code below to render a waveform to a file using `scipy.io.wavfile.write`_:
+
+.. _scipy.io.wavfile.write: https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.wavfile.write.html
+
+.. code-block:: python
+
+    from scipy.io.wavfile import write as write_wav
+    import numpy as np
+    # Samples per second
+    sps = 22050
+    # Frequency / pitch of the sine wave
+    freq_hz = 440
+
+    # Duration per segment
+    duration_s = 1.0
+
+    xx = np.arange(duration_s * sps)  / sps
+    yy = []
+    for i in range(5):
+        yy.append(np.sin(2 * np.pi * xx * freq_hz) * np.cos(0.2 + (i/5.0) * np.pi * xx * (100 + freq_hz)))
+    yy = 0.3 * np.concatenate(yy) # 0.3 adjusts volume
+    yy16bit = np.int16(yy * 32767)
+
+    # Write the .wav file
+    write_wav('sound.wav', sps, yy16bit)
+
+
+2. Put this in a block of code. After evaluating it you'll see an embedded player::
+
+    %md
+    <audio controls=true src="sound.wav"/>
+
+.. note::
+
+    Currently, embedding into HTML5 via a `%md` Markdown cell does not work.
+    Please check the status of `ticket #4240 <https://github.com/sagemathinc/cocalc/issues/4240>`_.
+
+    Until it is resolved, run ``salvus.file('sound.wav')`` and click on the generated link to open the file in a new tab.
+    Your browser should show you a little player.
+
+
