@@ -10,6 +10,38 @@ Software Updates 2019
 
 
 
+.. _update-2019-11-:
+
+2019-11-: various Python 3 package updates
+--------------------------------------------
+
+- Software
+    - (upd) `bazel`_ ``1.2.0``
+    - (upd) `drracket`_ ``7.5.0``
+    - … and various other Linux system libs
+
+- Python 3 (system-wide)
+    - (upd) scientific: `geopandas`_ ``0.6.2``, `pyomo`_ ``5.6.7``, `pystan`_ ``2.19.1.1``, `symengine`_ ``0.5.1``,
+      `cvxpy`_ ``1.0.25``, `qutip`_ ``4.4.1``,
+      `qiskit`_ ``0.13.0``, `qiskit-aer`_ ``0.3.2``, `qiskit-aqua`_ ``0.6.1``, `qiskit-terra`_ ``0.10.0``
+    - (upd) utils: `dask`_/`distributed`_ ``2.8.1``,  `dill`_ ``0.3.1.1``, `cytoolz`_ ``0.10.1``, `psycopg2`_ ``2.8.4``,
+      `fsspec`_ ``0.6.0``, `gcsfs`_ ``0.4.0``
+
+- Python 3 (Anaconda 2019)
+    - (upd) basic `scipy`_ ``1.3.2``, `numpy`_ ``1.16.5``, `xarray`_ ``0.14.1``, `numba`_ ``0.46.0``
+    - (upd) scientific `geopandas`_ ``0.6.2``, `pyproj`_ ``2.4.1``,  `pystan`_ ``2.19.1.1``,
+      `coverage`_ ``4.5.4``, `dask`_ ``2.8.0``, `datrie`_ ``0.8``, `distributed`_ ``2.8.0``,
+      `llvmlite`_ ``0.30.0``, `datashader`_ ``0.8.0``,  `django`_ ``2.2.6``, `symengine`_ ``0.5.0``,
+      `emcee`_ ``3.0.2``, `cvxpy`_ ``1.0.25``,  `fenics`_ ``2019.1.0``,  `kwant`_ ``1.4.1``,
+      `pyomo`_ ``5.6.7``,  `scikit-surprise`_ ``1.1.0``
+    - (upd) utils:  `joblib`_ ``0.14.0``, `cython`_ ``0.29.1``,  `folium`_ ``0.10.0``,
+      `cherrypy`_ ``18.4.0``, `ipyleaflet`_ ``0.11.4``,  `psycopg2`_ ``2.8.4``,
+      `qutip`_ ``4.4.1``, `mpi4py`_ ``3.0.2``, `natsort`_ ``6.2.0``, `cytoolz`_ ``0.10.1``,
+      `memory_profiler`_ ``0.56.0``,  `petsc`_ ``3.11.3``,  `slepc`_ ``3.11.2``, `dill`_ ``0.3.1``
+
+
+
+
 .. _update-2019-11-19:
 
 2019-11-19: improved support for Rust
@@ -570,7 +602,7 @@ Software Updates 2019
     * (new) ``nest-asyncio-1.0.0``, ``osbot-aws-0.6.51``, ``osbot-browser-0.3.1``,
       ``osbot-jupyter-0.4.2``, ``pyee-6.0.0``, `pyppeteer`_ ``0.0.25``,
       and `syncer <https://github.com/notion/a_sync>`_  ``1.3.0``
-    * (upd/new) ``geopandas`` related: `contextily <https://github.com/darribas/contextily>`_ ``0.99.0``,
+    * (upd/new) `geopandas`_ related: `contextily <https://github.com/darribas/contextily>`_ ``0.99.0``,
       `pysal <https://pysal.org/>`_ ``2.0.0`` (major version update!),
       ``esda-2.0.0``, ``libpysal-4.0.1``
       ``mercantile-1.0.4`` and ``palettable-3.1.1``
@@ -599,7 +631,7 @@ Software Updates 2019
     * (new) `imbalanced learn <https://imbalanced-learn.readthedocs.io/en/stable/install.html>`_
     * (new) `memory profiler <https://pypi.org/project/memory-profiler/>`_
       for Jupyter Notebooks: `%memit example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/memory-profile.ipynb?viewer=share>`_
-    * (upd) ``geographiclib-1.49``, ``geopy-1.19.0``, ``geopandas-0.5.0``
+    * (upd) ``geographiclib-1.49``, ``geopy-1.19.0``, `geopandas`_ ``0.5.0``
 
 * Software
     * (new) more `BibTeX`_ related packages: ``search-ccsb``, ``search-citeseer``,
@@ -1085,7 +1117,7 @@ Software Updates 2019
 -------------------------------
 
 * (r): `Rstan <https://mc-stan.org/users/interfaces/rstan>`_ 2.18.2 → `demo worksheet <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/rstan.ipynb?viewer=share>`_, with some setup instructions specific to CoCalc
-* (py2/py3): `PyStan <https://pystan.readthedocs.io/en/latest/index.html>`_ 2.18.1 (`demo  pystan.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/smc-build/pystan.ipynb?viewer=share>`_)
+* (py2/py3): `PyStan`_ 2.18.1 (`demo  pystan.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/smc-build/pystan.ipynb?viewer=share>`_)
 * Julia 1:
   * JuMP & Ipopt (`demo julia-1-jump.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/julia-1-jump.ipynb?viewer=share>`_)
   * We'll also switch the default version of Julia to be 1.0.x soon!
@@ -1110,6 +1142,9 @@ Software Updates 2019
 .. _SageMath: https://sagemath.org
 .. _Cadabra2: https://cadabra.science
 .. _Qiskit:  https://qiskit.org
+.. _qiskit-terra: https://github.com/Qiskit/qiskit-terra
+.. _qiskit-aqua: https://qiskit.org/aqua
+.. _qiskit-aer: https://qiskit.org/aer
 .. _dask: https://dask.org
 .. _distributed: https://distributed.dask.org/
 .. _QGIS: https://www.qgis.org
@@ -1213,3 +1248,31 @@ Software Updates 2019
 .. _rust: https://www.rust-lang.org/
 .. _networkx: https://networkx.github.io/documentation/stable/
 .. _sqlalchemy: https://www.sqlalchemy.org/
+.. _datrie: https://github.com/pytries/datrie
+.. _cherrypy: https://cherrypy.org/
+.. _coverage: https://github.com/nedbat/coveragepy
+.. _petsc: https://www.mcs.anl.gov/petsc/
+.. _slepc: http://slepc.upv.es/
+.. _fenics: https://fenicsproject.org/
+.. _memory_profiler: https://pypi.org/project/memory-profiler/
+.. _dill: https://github.com/uqfoundation/dill
+.. _cytoolz: https://github.com/pytoolz/cytoolz
+.. _emcee: https://emcee.readthedocs.io/
+.. _qutip: http://qutip.org/
+.. _geopandas: http://geopandas.org/
+.. _pyproj: https://github.com/pyproj4/pyproj
+.. _pystan: https://pystan.readthedocs.io/
+.. _symengine: https://github.com/symengine/symengine
+.. _llvmlite: http://llvmlite.pydata.org/en/latest/
+.. _datashader: https://datashader.org/
+.. _django: https://www.djangoproject.com/
+.. _kwant: https://kwant-project.org/
+.. _psycopg2: http://initd.org/psycopg/docs/
+.. _folium: https://python-visualization.github.io/folium/
+.. _ipyleaflet: https://ipyleaflet.readthedocs.io/en/latest/
+.. _natsort: https://natsort.readthedocs.io/en/master/
+.. _mpi4py: https://mpi4py.readthedocs.io/en/stable/
+.. _drracket: https://racket-lang.org
+.. _fsspec: https://filesystem-spec.readthedocs.io/
+.. _gcsfs: https://gcsfs.readthedocs.io/
+
