@@ -32,6 +32,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    :maxdepth: 1
 
    bash-fortunes
+   dask
    fortran
    git
    gsl
