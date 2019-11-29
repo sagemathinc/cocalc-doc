@@ -9,10 +9,41 @@ Software Updates 2019
 ..      :depth: 1
 
 
+.. _update-2019-11-29:
 
-.. _update-2019-11-:
+2019-11-29: Julia 1.3
+--------------------------------------------
 
-2019-11-: various Python 3 package updates
+- Julia
+    - (new) `Julia 1.3 <https://github.com/JuliaLang/julia/blob/v1.3.0/NEWS.md>`_ now available: run ``julia-1.3`` or the corresponding Jupyter kernel. It will become the default version soon!
+    - (dep) Julia 1.2 is deprecated.
+
+- SageMath
+    - (new) optional package `pynormaliz`_ – *Normaliz backend for polyhedral computations*::
+
+          sage: P = Polyhedron(vertices=[[0,0],[0,1],[1,0]], backend="normaliz"); P
+          A 2-dimensional polyhedron in ZZ^2 defined as the convex hull of 3 vertices
+
+          sage: P.ehrhart_series()
+          1/(-t^3 + 3*t^2 - 3*t + 1)
+
+- Python 3 (system-wide)
+    - (new) `adtk`_ ``0.4.1`` - *Anomaly Detection Toolkit (ADTK) is a Python package for unsupervised / rule-based time series anomaly detection.*
+    - (upd) `pint`_ ``0.9`` – *makes units easy*
+    - (upd) `bokeh`_ ``1.4.0``
+
+- Python 3 (Anaconda 2019)
+    - (upd) `plotly`_ ``4.3.0``
+
+- Software
+    - (upd) `git-lfs`_ ``2.9.1``, `bazel`_ ``1.2.1``, `Python`_ ``3.6.9``
+    - (upd) `rust`_ ``rustc +nightly``: ``1.41.0-nightly (412f43ac5 2019-11-24)``
+
+
+
+.. _update-2019-11-23:
+
+2019-11-23: various Python 3 package updates
 --------------------------------------------
 
 - Software
@@ -908,7 +939,7 @@ Software Updates 2019
 
 * **Julia 1.1**: adding ``Images`` and updating various packages like `JuMP 0.19 <https://github.com/JuliaOpt/JuMP.jl/blob/master/NEWS.md>`_!
 
-* **Linux**: various package updates, in particular ``bazel`` 0.23.2, ``xpra`` 2.5, ``git-lfs`` 2.7.1, and ``code`` 1.32
+* **Linux**: various package updates, in particular ``bazel`` 0.23.2, ``xpra`` 2.5, `git-lfs`_ ``2.7.1``, and ``code`` 1.32
 
 * (upd) **SageMath Development** version 8.7.rc0
 
@@ -1275,4 +1306,8 @@ Software Updates 2019
 .. _drracket: https://racket-lang.org
 .. _fsspec: https://filesystem-spec.readthedocs.io/
 .. _gcsfs: https://gcsfs.readthedocs.io/
-
+.. _pint: https://pint.readthedocs.io/
+.. _pynormaliz: http://doc.sagemath.org/html/en/reference/discrete_geometry/sage/geometry/polyhedron/backend_normaliz.html
+.. _git-lfs: https://git-lfs.github.com/
+.. _python: https://www.python.org/
+.. _adtk: https://arundo-adtk.readthedocs-hosted.com/
