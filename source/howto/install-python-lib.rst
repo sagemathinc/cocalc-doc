@@ -178,7 +178,7 @@ It is mostly used for Python packages, but it can manage and deliver almost any 
 CoCalc provides a global environmet, which you can start by running ``anaconda2019`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
 To get going with your own setup for your own CoCalc project,
 you have to :ref:`create your own environment <anaconda-install-own-env>`
-and your ref:`own kernel <anaconda-jupyter>`.
+and your :ref:`own kernel <anaconda-jupyter>`.
 
 .. _anaconda-install-own-env:
 
