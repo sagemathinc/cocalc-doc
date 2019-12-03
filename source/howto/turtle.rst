@@ -4,7 +4,7 @@
 Turtle Graphics with CoCalc
 ===========================
 
-There are three ways to use turtle graphics with CoCalc. The first approach gives the best result.
+There are three ways to use turtle graphics with CoCalc.
 
 .. contents::
    :local:
@@ -15,7 +15,8 @@ There are three ways to use turtle graphics with CoCalc. The first approach give
 Sage worksheet with Turtle module
 =================================
 
-There is a working example of a Sage worksheet with Turtle on the CoCalc share server:
+There is an example of a Sage worksheet using Turtle on the CoCalc share server.
+In the Sage worksheet, code and turtle graphics output are visible in the same tab.
 
    https://share.cocalc.com/share/4a5f0542-5873-4eed-a85c-a18c706e8bcd/support/2014-12-12-turtle/Sage%20Turtle%20via%20JSXGraph.sagews?viewer=share
 
@@ -25,9 +26,7 @@ There is a working example of a Sage worksheet with Turtle on the CoCalc share s
 
      Turtle spirals in the example Sage worksheet
 
-
 To copy the example into a project of your own, do the following:
-
 
 #. Sign into CoCalc.
 #. While signed in, open another browser tab in the same browser session and navigate to the share link above. After a moment, you will see the published read-only copy of the worksheet.
