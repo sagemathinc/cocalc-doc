@@ -28,6 +28,7 @@ then click ``Make item public`` and your file is shared.
      :width: 100%
      :align: center
 
+.. index:: Sharing files; share server
 
 Using the Share Server
 ==========================
@@ -42,6 +43,8 @@ You can click the |external| button to open it at the share server.
 With that link, your file is available read-only on the CoCalc lightweight `share server`_.
 A CoCalc login is not needed to access files on the share server.
 Files on the share server are `indexed by Google <https://www.google.com/search?q=site%3Acocalc.com%2Fshare>`_ unless you click the checkbox next to "Unlisted: Only allow those with a link to view this.".
+
+.. index:: Sharing files; direct from project
 
 Directly sharing files from your project
 ===========================================
@@ -63,6 +66,9 @@ File-sharing Tips
 * If your document depends on auxiliary files (e.g., images embedded in a markdown file) make sure these auxiliary files are also published. A convenient way to do this is to have auxiliary files in a common folder and share that folder.
 
 * Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in "raw" form, i.e. without CoCalc controls, by opening in the share server and clicking "Raw" at upper right, or by removing the parameter setting ``?viewer=share`` from the share server URL for the file.
+
+* Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage ``@interact``, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser, for example in 3d plots like `this cardiod <https://share.cocalc.com/share/7eee8ccdeb4acf37e6c258df1cd973871373df05/Public/hearts.ipynb?viewer=share>`_, will work when served from the share server.
+
 
 .. note::
 
