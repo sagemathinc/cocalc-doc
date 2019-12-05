@@ -5,12 +5,13 @@
 LaTeX editor features
 ======================
 
+.. index:: LaTeX Editor; multi-file
 .. _multi-file-support:
 
 LaTeX Multi-File Support
 ------------------------------
 
-The initial release of CoCalc's support for multi-file documents is now available. Here's a summary of features:
+CoCalc's support for multi-file documents is now available. Here's a summary of features:
 
 * The user interface is initially identical to the current single-file interface.
 * If you explicitly input other files, then build, there is a new menu on the top of a text editor that lets you select from any of the subfiles.

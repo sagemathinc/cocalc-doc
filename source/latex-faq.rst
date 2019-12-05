@@ -61,7 +61,19 @@ Possible reasons:
 How to deal with large documents across multiple source files?
 ----------------------------------------------------------------------------------
 
-The best way is to use the `subfiles`_ package as `described here`_.
+
+Built-in Support for Multi-File Documents (preferred)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Native CoCalc support for multi-file documents has recently been added. Learn more about it at :ref:`multi-file-support`.
+
+
+.. index:: LaTeX Editor; multi-file (legacy)
+
+The `subfiles`_ Package (legacy method)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before direct support for multi-file documents was available, the best way was to use the `subfiles`_ package as `described here`_.
 There is an extended example demonstrating how this works in the CoCalc Library.
 Click "Files" and open the Library. Then select  ``Multiple source files in CoCalc`` in the ``LaTeX templates`` section.
 The same example is also available at `cloud-examples/latex/multiple-files`_.
