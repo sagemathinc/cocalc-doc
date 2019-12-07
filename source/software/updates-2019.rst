@@ -9,6 +9,26 @@ Software Updates 2019
 ..      :depth: 1
 
 
+
+.. _update-2019-12-07:
+
+2019-12-07: Design of Experiment Generator
+--------------------------------------------
+
+- Python 3 (system-wide)
+    - (new) `doepy`_ ``0.0.1``: *Design of Experiment Generator in Python*  (+ `diversipy`_ ``0.8`` dependency)
+    - (new)  `pdpipe`_ ``0.0.32``: *Easy pipelines for pandas DataFrames*
+    - (upd) `scikit-learn`_ ``0.22``: `scikit learn 0.22 release notes <https://scikit-learn.org/0.22/auto_examples/release_highlights/plot_release_highlights_0_22_0.html>`_
+    - (upd) `nltk`_ ``3.4.5``,  `pymc3`_ ``3.8``, `pytables`_ ``3.5.2``, `dask`_/`distributed`_ ``2.9.0``
+
+- SageMath:
+    - (upd) development version ``9.0.beta8``
+
+- Software:
+    - various Linux package updates, including R packages
+
+
+
 .. _update-2019-11-29:
 
 2019-11-29: Julia 1.3
@@ -1311,3 +1331,8 @@ Software Updates 2019
 .. _git-lfs: https://git-lfs.github.com/
 .. _python: https://www.python.org/
 .. _adtk: https://arundo-adtk.readthedocs-hosted.com/
+.. _pdpipe: https://github.com/shaypal5/pdpipe
+.. _nltk: https://www.nltk.org/
+.. _doepy: https://doepy.readthedocs.io/en/latest/
+.. _diversipy: https://www.simonwessing.de/diversipy/doc/
+.. _scikit-learn: https://scikit-learn.org/
