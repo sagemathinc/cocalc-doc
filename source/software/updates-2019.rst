@@ -10,6 +10,33 @@ Software Updates 2019
 
 
 
+.. _update-2019-12-15:
+
+2019-12-15: SymPy 1.5
+--------------------------------------------
+
+- Python 3:
+    - (upd) `sympy`_ ``1.5.0`` – `SymPy 1.5 Release Notes <https://github.com/sympy/sympy/wiki/Release-Notes-for-1.5>`_
+
+- R `bioconductor`_:
+    - (upd) `puma`_ ``3.26``, ``pumadata`` ``2.20``, `oligo`_ ``1.48``, ...
+
+- Software:
+    - (upd) `macaulay2`_ ``1.15``
+    - various Linux package updates, including R packages
+    - (upd) `xpra`_ ``3.0.3`` for :doc:`../x11` support
+    - Node.js modules:
+        - ``npm@6.13.4``
+        - ``tldr@3.3.2``
+        - ``reveal-md@3.4.1``
+        - ``data-cli@0.9.6``
+        - ``pm2@4.2.1``
+        - ``webpack@4.41.2``
+        - ``typescript@3.7.3``
+
+
+
+
 .. _update-2019-12-07:
 
 2019-12-07: Design of Experiment Generator
@@ -1336,3 +1363,7 @@ Software Updates 2019
 .. _doepy: https://doepy.readthedocs.io/en/latest/
 .. _diversipy: https://www.simonwessing.de/diversipy/doc/
 .. _scikit-learn: https://scikit-learn.org/
+.. _puma: https://www.bioconductor.org/packages/release/bioc/html/puma.html
+.. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
+.. _sympy: https://www.sympy.org/
+
