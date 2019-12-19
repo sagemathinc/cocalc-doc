@@ -51,6 +51,10 @@ templates_path = ['_templates']
 edit_on_github_project = 'sagemathinc/cocalc-doc'
 edit_on_github_branch = 'master'
 
+# by default, we do not want any python parsing to happen
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-highlight_language
+highlight_language = 'none'
+
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 
