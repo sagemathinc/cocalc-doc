@@ -68,6 +68,9 @@ Select **"Word Count"** as shown below:
 
 .. _texcount: http://app.uio.no/ifi/texcount/whatitdoes.html
 
+.. index:: LaTeX Editor; build engine
+.. _latex-build-engine:
+
 LaTeX Engines
 ----------------------
 

@@ -35,6 +35,8 @@ Here's the complete example:
    `Floats, Figures and Captions <https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions>`_.
 
 
+.. index:: LaTeX Editor; special characters
+
 How to insert a backslash or dollar sign?
 --------------------------------------------
 
@@ -44,7 +46,7 @@ To enter a backslash, escape its meaning by entering it twice: ``\\``.
 
 A dollar sign is entered as ``\$``, which escapes the meaning of "formula-start".
 
-
+.. index:: LaTeX Editor; preview update
 
 What to do if the preview does not update
 -----------------------------------------
@@ -103,11 +105,12 @@ Following the `subfiles documentation <http://tug.ctan.org/macros/latex/contrib/
 After that, all ``*.tex`` files can be compiled and all other features like forward/inverse search work, too.
 
 
+.. index:: LaTeX Editor; embedding R/Python/Sage
 
 How to work with Knitr, SageTeX or PythonTeX?
 ------------------------------------------------
 
-CoCalc supports several ways to embedd code within a document.
+CoCalc supports several ways to embed code within a document.
 Such code is automatically processed and evaluated during generating the document
 and any output appears as part of the PDF output itself.
 In particular, you can insert small calculations and formulas (Sage, SymPy, ...), Python code, R calculations, plots, data tables, etc.
@@ -220,6 +223,7 @@ Note that :ref:`latex-forward-inverse` will work as well as reporting errors.
 
 
 .. index:: PSTricks
+.. index:: LaTeX Editor; PSTricks
 
 How to use PSTricks macros?
 -----------------------------------------
@@ -280,7 +284,7 @@ You can download the example :download:`gnuplot.tex <files/gnuplot.tex>` and see
     :width: 100%
 
 
-
+.. index:: LaTeX Editor; Asymptote
 .. index:: Asymptote
 
 How can I draw via Asymptote?
@@ -319,7 +323,7 @@ More information: `Asymptote LaTeX Usage <http://asymptote.sourceforge.net/doc/L
 
 
 
-
+.. index:: LaTeX Editor; texmf
 .. index:: texmf
 
 Setup ``texmf`` in a project?
@@ -342,6 +346,7 @@ You can click the home icon to jump into the home directory.
 ``texmf`` is a subdirectory right there.
 
 
+.. index:: LaTeX Editor; turn off build/preview
 
 Is there a way to turn off automatic build and PDF preview while I'm working on sub documents?
 -----------------------------------------------------------------------------------------------
@@ -360,6 +365,7 @@ In general, multifile LaTeX editing is on our radar, but we haven't got to that 
 .. _CoCalc issue #904: https://github.com/sagemathinc/cocalc/issues/904
 
 
+.. index:: LaTeX Editor; debug PDF build
 
 An error says that the PDF cannot be built. How can I find the problem?
 -----------------------------------------------------------------------------------
@@ -398,6 +404,7 @@ The changes will take place the next time ``aspell`` is run on the document. You
 .. _PSTricks: http://tug.org/PSTricks/main.cgi
 
 
+.. index:: LaTeX Editor; install packages
 .. _install-latex-packages:
 
 Install packages in a project
@@ -412,4 +419,29 @@ You can install LaTeX packages in your project:
 #. Either download the package via ``wget ...`` from CRAN and extract it via ``tar xf <downloaded tarball>`` or ``unzip ...``. Alternatively, run ``open .`` to open this path in CoCalc's file explorer and use it to put the files there.
 
 In any case, all files like ``*.sty`` and ``*.cls`` in that directory will be picked up when you load that package.
+
+.. index:: LaTeX Editor; Hebrew
+.. _latex_with_hebrew:
+
+Create Documents in Hebrew
+---------------------------------
+
+.. _polyglossia: https://ctan.org/pkg/polyglossia?lang=en
+
+Here are suggestions for using LaTeX in Hebrew with CoCalc:
+
+* Change the :ref:`LaTeX build engine <latex-build-engine>` to XeLaTeX. In the "Build" pane, which appears by default at lower right when you are editing a .tex file, click the the "Engine" button and select "XeLaTeX".
+* Use the polyglossia_ LaTeX package, which is already installed in CoCalc, to allow using Hebrew other language(s) in the same file. This can be useful if you wish to enter Arabic numerals.
+* Use LaTeX `Noto fonts <https://www.google.com/get/noto/>`_ for Hebrew, they are already installed in CoCalc.
+* Here is an example of commands you could use in the prologue of your .tex document to combine Hebrew and English::
+
+    \usepackage{polyglossia}
+    \setmainlanguage{hebrew}
+    \newfontfamily{\hebrewfont}{Noto Serif Hebrew}
+    \setmainfont{Noto Serif Hebrew}
+    \setmainlanguage{english}
+    \setmainfont{Times New Roman}
+
+
+
 
