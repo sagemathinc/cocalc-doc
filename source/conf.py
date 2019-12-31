@@ -73,7 +73,7 @@ author = u'Sagemath, Inc.'
 # built documents.
 #
 # The short X.Y version.
-version = u'1.0'
+version = ''
 # The full version, including alpha/beta/rc tags.
 #release = f'{version}-{date.today().isoformat()}'
 release = ''
