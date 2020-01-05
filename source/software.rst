@@ -36,6 +36,7 @@ Software update summaries
    :maxdepth: 1
    :caption: Archive
 
+   software/updates-2020
    software/updates-2019
    software/updates-2018
 

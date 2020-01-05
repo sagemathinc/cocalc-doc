@@ -10,6 +10,7 @@ Software Updates 2019
 
 
 
+
 .. _update-2019-12-15:
 
 2019-12-15: SymPy 1.5
@@ -1366,4 +1367,8 @@ Software Updates 2019
 .. _puma: https://www.bioconductor.org/packages/release/bioc/html/puma.html
 .. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
 .. _sympy: https://www.sympy.org/
-
+.. _pypy: https://www.pypy.org/
+.. _kplr: http://dfm.io/kplr/
+.. _pillow: https://pillow.readthedocs.io/en/stable/
+.. _pywavelets: https://pywavelets.readthedocs.io/en/latest/
+.. _imageio: http://imageio.github.io/
