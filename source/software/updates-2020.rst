@@ -27,6 +27,7 @@ Software Updates 2020
 - Julia:
     - new year cleanup: only supporting ``1.0 LTS`` and newer versions – currently ``1.3.1`` – which is the default Julia on CoCalc now.
     - (upd) re-installing all packages will lead to various updates
+    - (new) `ApproxFun`_ and `SpecialMatrices`_ in ``1.3.1``
 
 - Software:
     - (upd) `bazel`_ ``2.0.0``,  `pypy`_ ``7.3.0``, `xpra`_ ``3.0.4``
@@ -209,3 +210,6 @@ Software Updates 2020
 .. _imageio: http://imageio.github.io/
 .. _DeclareDesign: https://cran.r-project.org/package=DeclareDesign
 .. _DesignLibrary: https://cran.r-project.org/package=DesignLibrary
+.. _SpecialMatrices: https://github.com/JuliaMatrices/SpecialMatrices.jl
+.. _ApproxFun: https://juliaapproximation.github.io/ApproxFun.jl/latest/
+
