@@ -54,7 +54,7 @@ Getting started
 
 In any Jupyter notebook, use the top menu to select
 
-Cell --> Cell Toolbar... --> Create assignment (nbgrader)
+View --> Cell Toolbar... --> Create assignment (nbgrader)
 
 You will then see dropdown menus in the upper right of each cell, which you can use to create problems, answer tests, etc.   What you see
 depends on whether the cell is a code cell or a markdown cell.
