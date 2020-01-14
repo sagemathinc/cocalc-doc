@@ -12,6 +12,7 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    index
    getting-started
+   news
    trial
 
 .. toctree::
