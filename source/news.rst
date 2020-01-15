@@ -11,7 +11,7 @@ News
 2020-01-13: Site licenses
 ===============================
 
-Instead of using cocalc's upgrade system, you enter a license key in the course configuration, and all projects associated to that course are automatically upgraded when they start up. If this is something you might be interested in, contact us at `help@cocalc.com <mailto:help@cocalc.com">`_.
+Instead of using CoCalc's upgrade system, you enter a license key in the course configuration, and all projects associated to that course are automatically upgraded when they start up. If this is something you might be interested in, contact us at `help@cocalc.com <mailto:help@cocalc.com">`_.
 
 .. figure:: img/use-license-key-a.png
      :width: 75%
