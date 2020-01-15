@@ -21,7 +21,7 @@ To get a report about all the times when students opened or edited any file in a
 #. Click that button.
 #. A json file will open in a new tab. Hopefully the format is self explanatory. The times are all in milliseconds since the epoch, so in Javascript you can write new Date(time) to make this a date, and in Python do this. You can also load json into python using the json module (import json).
 
-The location of the json files in the following path::
+The json files are created in the following path::
 
     course-exports/[name of course]/file-use-times/[handouts|assignments]/assignment_name.json
     
