@@ -19,7 +19,7 @@ To get a report about all the times when students opened or edited any file in a
 #. Toggle to show the information about a handout or assignment, and scroll to the bottom.
 #. There is a new button "Export file use times for this..."
 #. Click that button.
-#. A json file will open in a new tab. Hopefully the format is self explanatory. The times are all in milliseconds since the epoch, so in JAvascript you can write new Date(time) to make this a date, and in Python do this. You can also load json into python using the json module (import json).
+#. A json file will open in a new tab. Hopefully the format is self explanatory. The times are all in milliseconds since the epoch, so in Javascript you can write new Date(time) to make this a date, and in Python do this. You can also load json into python using the json module (import json).
 
 The location of the json files in the following path::
 
