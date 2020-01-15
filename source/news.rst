@@ -4,6 +4,33 @@
 News
 ==========================
 
+.. _new-2020-01-14:
+.. index:: Export student file use
+.. index:: Courses; Export student file use
+
+2020-01-13: Export student file use
+=====================================
+
+This feature  provides 1-click export of extensive data about what students do in an assignment or handout. Getting information about what happens with anonymous users of shares is not implemented.
+
+To get a report about all the times when students opened or edited any file in an assignment or handout, do the following:
+
+#. Open a .course file.
+#. Toggle to show the information about a handout or assignment, and scroll to the bottom.
+#. There is a new button "Export file use times for this..."
+#. Click that button.
+#. A json file will open in a new tab. Hopefully the format is self explanatory. The times are all in milliseconds since the epoch, so in JAvascript you can write new Date(time) to make this a date, and in Python do this. You can also load json into python using the json module (import json).
+
+The location of the json files in the following path::
+
+    course-exports/[name of course]/file-use-times/[handouts|assignments]/assignment_name.json
+    
+.. figure:: img/export-file-use-times.png
+     :width: 75%
+     :align: center
+
+     export file use times in course file Assingments tab
+
 
 .. _new-2020-01-13:
 .. index:: Site licenses
