@@ -416,9 +416,15 @@ You can install LaTeX packages in your project:
 #. Check by running ``kpsewhich -var-value TEXMFHOME`` where you can install packages locally. It should tell you ``/home/user/texm``.
 #. Create the target directory based on the name of the package. E.g. if the package is called ``webquiz``, run ``mkdir -p /home/user/texmf/tex/latex/webquiz``.
 #. Change your current directory to this one via ``cd /home/user/texmf/tex/latex/webquiz``.
-#. Either download the package via ``wget ...`` from CRAN and extract it via ``tar xf <downloaded tarball>`` or ``unzip ...``. Alternatively, run ``open .`` to open this path in CoCalc's file explorer and use it to put the files there.
+#. Either download the package via ``wget ...`` from CRAN and extract it via ``tar xf <downloaded tarball>`` or ``unzip ...``. Alternatively, run ``open .`` to open this path in CoCalc's file explorer and use it to :ref:`upload <upload-files>` the style files there.
 
 In any case, all files like ``*.sty`` and ``*.cls`` in that directory will be picked up when you load that package.
+You can confirm that by searching for the style file, e.g. run ``kpsewhich [name.sty]``
+and you should get a location like ``/home/user/texmf/tex/latex/.../[name.sty]``.
+
+**Note** In case you use a zip file, place it in ``/home/user/texmf`` and run ``unzip [filename.zip]`` (or if there are already files, ``unzip -o [filename.zip]`` overwrites what's there).
+It should extract into the correct subdirectories, in particular ``./tex/latex`` etc.
+
 
 .. index:: LaTeX Editor; Hebrew
 .. _latex_with_hebrew:
