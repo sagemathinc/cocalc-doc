@@ -1,12 +1,17 @@
 .. index:: LaTeX Editor; FAQ
 .. _latex-faq:
 
-LaTeX FAQ
-==========
+LaTeX Howto and FAQ
+====================
+
+.. contents::
+     :local:
+     :depth: 1
+
 
 .. index:: LaTeX Editor; add image
 
-LaTeX add image
+Include an image
 -----------------------------------------
 
 1. Upload a PNG or PDF file via CoCalc's "Files" interface.
@@ -326,7 +331,7 @@ More information: `Asymptote LaTeX Usage <http://asymptote.sourceforge.net/doc/L
 .. index:: LaTeX Editor; texmf
 .. index:: texmf
 
-Setup ``texmf`` in a project?
+Setup ``texmf`` in a project
 -----------------------------------------
 
 A CoCalc project is equivalent to a linux user account.
@@ -346,28 +351,34 @@ You can click the home icon to jump into the home directory.
 ``texmf`` is a subdirectory right there.
 
 
+
 .. index:: LaTeX Editor; turn off build/preview
 
-Is there a way to turn off automatic build and PDF preview while I'm working on sub documents?
------------------------------------------------------------------------------------------------
+Turn off automatic build and PDF preview
+---------------------------------------------
 
-If you're working on a main LaTeX document that has included tex files, you may want to turn off compilation of the individual subfiles. Here are some steps you can take:
+If you're working on a large LaTeX project including subfiles,
+you may want to turn off compilation of the individual subfiles.
+
+.. note::
+
+    In general, you can open up the main file and :ref:`all subfiles will be detected <multi-file-support>`.
+
+Here are some steps you can take:
 
 * By default, building latex documents on saving is enabled. You can disable it under ``Account`` → ``Preferences`` → ``Editor settings`` by removing the check mark for ``Build on save: build LaTex file whenever it is saved to disk``.
 
-* You can also disable the build process by opening the "Build" dialog and entering ``echo`` in the line where the command is. That just does nothing when it tries to build.
+* You can also disable the build process for a specific file by opening the "Build" dialog and entering ``echo`` in the line where the command is. Then it just does nothing when it tries to build.
 
 * If you like, you could also structure your LaTeX in such a way that subdocuments also build via the `CTAN subfiles`_ package.
-  You can find an example in the CoCalc Library. In a project, click on ``+ New``, and in the middle you will find the Library. Look under ``LaTeX templates`` → ``Multiple source files in CoCalc``.
+  You can find an example in the CoCalc Library. In a project, click on ``+ New``, and in the middle you will find the Library. Look under ``LaTeX templates`` → ``Multiple source files in CoCalc``. Then, each included file will also build on its own.
 
-In general, multifile LaTeX editing is on our radar, but we haven't got to that yet: `CoCalc issue #904`_.
 
-.. _CoCalc issue #904: https://github.com/sagemathinc/cocalc/issues/904
 
 
 .. index:: LaTeX Editor; debug PDF build
 
-An error says that the PDF cannot be built. How can I find the problem?
+The PDF cannot be built. What's the problem?
 -----------------------------------------------------------------------------------
 
 * Use :doc:`TimeTravel <time-travel>` to go back to a working version. In the TimeTravel view, you can use ``Changes`` to see exactly what changed between revisions.
@@ -376,6 +387,8 @@ An error says that the PDF cannot be built. How can I find the problem?
 * If you need more detailed help, make sure to open the ``.tex`` file and make a support request by clicking the ``Help`` button at the top right.
 
 
+
+.. index:: LaTeX Editor; spellcheck
 
 Spell check my LaTeX document
 --------------------------------------------
@@ -406,6 +419,9 @@ The changes will take place the next time ``aspell`` is run on the document. You
 
 .. index:: LaTeX Editor; install packages
 .. _install-latex-packages:
+
+
+.. index:: LaTeX Editor; install packages
 
 Install packages in a project
 ---------------------------------
