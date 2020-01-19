@@ -11,13 +11,17 @@ Software Updates 2020
 
 
 
-.. _update-2020-01-...:
+.. _update-2020-01-19:
 
-2020-01-...: 
+2020-01-19: SentimentAnalysis R package
 --------------------------------------------
 
+- R Software:
+    - (new) `SentimentAnalysis`_ – *package introduces a powerful toolchain facilitating the sentiment analysis of textual contents in R.*
+
 - Python 3:
-    - (upd) `sympy` ``1.3.1``, `tensorflow`_ ``2.1.0``,  `tensorflow-estimator`_ ``2.1.0``
+    - (upd) `sympy` ``1.5.1``, `tensorflow`_ ``2.1.0``,  `tensorflow-estimator`_ ``2.1.0``, `dask`_/`distributed`_ ``2.9.2/.3``
+
 
 
 .. _update-2020-01-05:
@@ -223,4 +227,4 @@ Software Updates 2020
 .. _SpecialMatrices: https://github.com/JuliaMatrices/SpecialMatrices.jl
 .. _ApproxFun: https://juliaapproximation.github.io/ApproxFun.jl/latest/
 .. _tensorflow-estimator: https://www.tensorflow.org/guide/estimator
-
+.. _SentimentAnalysis: https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html
