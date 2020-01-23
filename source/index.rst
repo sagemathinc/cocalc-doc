@@ -21,7 +21,7 @@ For example, files ending in ``*.sagews`` are for working with [SageMath]_ in :d
 an ``*.ipynb`` file starts CoCalc's implementations of the :doc:`Jupyter Notebook <jupyter>`,
 and a ``*.tex`` file opens an editor for :doc:`LaTeX documents <latex>`.
 
-.. figure:: img/cocalc-intro-1.png
+.. figure:: img/cocalc-screenshot-20200123.png
      :width: 75%
      :align: center
 
