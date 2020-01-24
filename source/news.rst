@@ -65,7 +65,7 @@ Instead of using CoCalc's upgrade system, you enter a license key in the course 
 2019-12-16: Anonymous accounts
 ===============================
 
-New uses do not have to sign up on CoCalc any more.
+New users do not have to sign up on CoCalc any more.
 An "anonymous" account is created and you can start exporing CoCalc immediately.
 It is possible to convert this account into a regular CoCalc account any time.
 
