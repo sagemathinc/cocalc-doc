@@ -42,7 +42,7 @@ The json files are created in the following path::
      :width: 75%
      :align: center
 
-     export file use times in course file Assingments tab
+     export file use times in course file Assignments tab
 
 
 .. _new-2020-01-13:
