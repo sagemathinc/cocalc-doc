@@ -3,6 +3,19 @@
 ==========================
 News
 ==========================
+.. _new-2020-01-16:
+.. index:: nbgrader; autograder
+.. index:: Jupyter Notebooks; nbgrader
+
+2020-01-16: nbgrader autograder for Jupyter notebooks
+=====================================================
+
+CoCalc now has integrated nbgrader/autograder for Jupyter notebooks. You can create an assignment with problems that are automatically graded, providing immediate feedback to students. Manual grades and instructor comments can be added after the assignment is collected.
+
+It's all tightly integrated with the course management system. You don't have to configure anything -- you can just use it...
+
+Details at :ref:`nbgrader <nbgrader-doc>`
+
 
 .. _new-2020-01-14:
 .. index:: Export student file use

@@ -1,4 +1,6 @@
-.. index:: Pair: Courses; nbgrader
+.. index:: Courses; nbgrader
+.. index:: nbgrader
+.. _nbgrader-doc:
 
 =====================
 nbgrader in CoCalc
@@ -28,12 +30,12 @@ Purpose of nbgrader
 #. Leave comments for students
 #. Track student grades
 
-CoCalc nbgrader (currently under active development!)
-======================================================
+CoCalc nbgrader
+===============
 
 The official nbgrader project is implemented as Python scripts
 and `extensions to Jupyter classic and JupyterLab <https://nbgrader.readthedocs.io/en/stable/user_guide/installation.html>`_.
-CoCalc has it's own completely new implementation of nbgrader
+CoCalc has its own completely new implementation of nbgrader
 from scratch in order to fully support realtime collaboration,
 course management, and other functionality of CoCalc.
 
@@ -46,8 +48,8 @@ though with some changes.
 * Students see an annotation next to answer cells, so they know that evaluating these cells without errors gives a certain number of points.
 * Instructors have a toolbar that inserts a template with example input or automated tests.
 * There is a Table of Contents overview that shows a link to each question, and whether or not each question passes tests (coming soon).
-* (coming soon) Integration with CoCalc's course management tools for distributing and collecting assignments.
-* (coming soon) Automated grading safely runs code in the student's project, not in the instructor's project.
+* Integration with CoCalc's course management tools for distributing and collecting assignments.
+* Automated grading safely runs code in the student's project, not in the instructor's project.
 
 Getting started
 ================
@@ -66,19 +68,29 @@ When the nbgrader toolbar is visible, you can click the "Student version..." but
 they can click the "Validate..." button at the top of the notebook
 to run all code.
 
-If you click the "Contents" button at the top of your Jupyter notebook,
-you'll see a table of contents appear to the left that has links to all the nbgrader problems, in addition to section headings for markdown cell
-titles.
+If you click the "Contents" button at the top of your Jupyter notebook, you'll see a table of contents appear to the left that has links to all the nbgrader problems, in addition to section headings for markdown cell titles.
 
-**As of October 23, 2019, CoCalc is currently missing** integration of nbgrader with our course management system. When implemented, this will include support
-for both manual (and automatic) grading of student work. CoCalc hasn't yet automated running the teacher tests on student code.  Right now, the only thing you can do is click "Student version..." to generate the
-student version of the notebook, which will be placed in a subdirectory
-called "student".  You could then make this student ipynb file available
-to the students by placing it in an assignment.  The student would then
-answer all the questions, and verify their correctness by running
-the tests you provide.  You would then collect their work, but you would
-have to  manually grade it (at least you could click Validate...), and there is no way to easily
-run your secret tests on the student code.
+1. Create an assignment in a CoCalc course, and put one or more ipynb files in
+the assignment
+2. Use the "Make an assignment" toolbar in the Jupyter notebook to
+create questions in the notebook
+3. Click "Generate student version" at the top of the notebook to
+generate a version for students in the student subdirectory.
+4. Push out the assignment to the students -- (NOTE: they will ONLY get a copy of the student/ subdirectory -- this is a new feature.)
+5. Have them edit it; they can click Validate to see if all tests pass.
+6. Collect the assignment as usual
+7. There's a new "Run nbgrader" button -- click it and nbgrader is run
+on all the collected notebooks **in memory in the student projects
+(for security)**, and the results are saved in the course.  This actually runs
+my own re-implementation of the nbgrader validation steps, and it is *not*
+really running the nbgrader python scripts behind the scenes.
+8. You will see a summary of scores, and can click to see a nice little
+table with scores for each problem.
+9. You can enter manual scores as needed; when all manual scores are
+entered the overall scores are automatically updated.
+10. You can then return the assignment to the student.
+11. I greatly improved GRADE.md (which appears in the returned assignment)
+to actually use markdown and also show a table of scores of problems from nbgrader.  
 
 If you have any questions, comments, or are likely to
 use nbgrader in CoCalc in the future,
