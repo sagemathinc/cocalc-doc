@@ -54,48 +54,215 @@ though with some changes.
 Getting started
 ================
 
-In any Jupyter notebook, use the top menu to select
+These steps illustrate CoCalc course integration with nbgrader. So we start with a .course file and assume that at least one student has been :ref:`added to the course <adding-students>`.
 
-View --> Cell Toolbar... --> Create assignment (nbgrader)
+1. Create an assignment folder.
+-------------------------------
 
-You will then see dropdown menus in the upper right of each cell, which you can use to create problems, answer tests, etc.   What you see
-depends on whether the cell is a code cell or a markdown cell.
+Open the .course file and select the ``Assignments`` tab. There is field at upper right with the prompt "Add assignment by folder name ..."
 
-When you select a menu option from the dropdown for the cell, e.g., "Autograded answer", a sample working snippet of code will be inserted in the notebook (assuming you are using a Python, R, or Julia kernel). You can then modify this template for your purposes. There's also a button with a link to the official nbgrader documentation for
-this type of nbgrader cell.
+.. figure:: img/nbgrader/nbg-create-assg-0.png
+     :width: 95%
+     :align: center
 
-When the nbgrader toolbar is visible, you can click the "Student version..." button at the top of the Jupyter notebook and CoCalc will generate the student version of the notebook, with solutions removed, and only the student-visible tests. You will see this new version of the notebook in another tab, where you can ensure it looks right. When the student uses that notebook, they can "self evaluate" their code by running the test cells and seeing whether or not there are errors, or
-they can click the "Validate..." button at the top of the notebook
-to run all code.
+     About to create an assignment
 
-If you click the "Contents" button at the top of your Jupyter notebook, you'll see a table of contents appear to the left that has links to all the nbgrader problems, in addition to section headings for markdown cell titles.
+You can enter the path of a new folder you want to create:
 
-1. Create an assignment in a CoCalc course, and put one or more ipynb files in
-the assignment
-2. Use the "Make an assignment" toolbar in the Jupyter notebook to
-create questions in the notebook
-3. Click "Generate student version" at the top of the notebook to
-generate a version for students in the student subdirectory.
-4. Push out the assignment to the students -- (NOTE: they will ONLY get a copy of the student/ subdirectory -- this is a new feature.)
-5. Have them edit it; they can click Validate to see if all tests pass.
-6. Collect the assignment as usual
-7. There's a new "Run nbgrader" button -- click it and nbgrader is run
-on all the collected notebooks **in memory in the student projects
-(for security)**, and the results are saved in the course.  This actually runs
-my own re-implementation of the nbgrader validation steps, and it is *not*
-really running the nbgrader python scripts behind the scenes.
-8. You will see a summary of scores, and can click to see a nice little
-table with scores for each problem.
-9. You can enter manual scores as needed; when all manual scores are
+.. figure:: img/nbgrader/nbg-create-assg.png
+     :width: 95%
+     :align: center
+
+     Creating a folder for ``Assignments/Assignment3``
+
+
+Or the enter name of an existing folder that hasn't been assigned yet:
+
+.. figure:: img/nbgrader/nbg-create-assg-1.png
+     :width: 95%
+     :align: center
+
+     Selecting the existing folder ``Assignment4``
+
+2. Start a Jupyter notebook for the assignment.
+------------------------------------------------
+
+With the assignment folder created, open the folder for the assignment:
+
+.. figure:: img/nbgrader/nbg-open-assg-folder.png
+     :width: 95%
+     :align: center
+
+     Opening the folder for ``Assignments/Assignment3``
+
+Start a new Jupyter notebook:
+
+.. figure:: img/nbgrader/nbg-new-notebook.png
+     :width: 95%
+     :align: center
+
+     Starting notebook ``hw3.ipynb`` in folder ``Assignments/Assignment3``
+
+
+In the Jupyter notebook, use the top menu to select:
+
+   View --> Cell Toolbar... --> Create assignment (nbgrader)
+
+.. figure:: img/nbgrader/nbg-view-ca.png
+     :width: 95%
+     :align: center
+
+     Starting nbgrader assignment in a Jupyter notebook
+
+You will a dropdown cell-type menu in the upper right of each cell, which you can use to create problems, answer tests, etc. What you see depends on whether the cell is a code cell or a markdown cell. Here is an example of the cell-type menu for a code cell:
+
+.. figure:: img/nbgrader/nbg-cq-code.png
+     :width: 95%
+     :align: center
+
+     Cell-type menu for a code cell
+
+
+3. Create questions.
+---------------------
+
+When you select a menu option from the dropdown for the cell, e.g., "Autograded answer", a sample working snippet of code will be inserted in the notebook (assuming you are using a Python, R, or Julia kernel). You can then modify this template for your purposes.
+
+.. figure:: img/nbgrader/nbg-code-snippet.png
+     :width: 95%
+     :align: center
+
+     Sample working snippet inserted in Python code cell
+
+The `official nbgrader documentation`_ explains the use of each nbgrader cell type. For your convenience, CoCalc has a button at right with a link to the  documentation for whichever type of nbgrader cell has been selected.
+
+At this point, go ahead and create all the cells for the assignment.
+
+4. Generate student version of the notebook.
+--------------------------------------------
+
+After creating cells for the assignment, click ``Generate student version.`` button at the top of the notebook.
+
+
+.. figure:: img/nbgrader/nbg-gen-sv.png
+     :width: 95%
+     :align: center
+
+     About to generate student version of the notebook
+
+A confirmation screen appears. Click ``Create or update student version``. CoCalc will generate the student version of the notebook, with solutions removed, and only the student-visible tests, and place it in the ``student`` subdirectory of the assignment folder. For example, if you have been creating questions in ``Assignments/Assignment3/hw3.ipynb``, the filesystem will look like this::
+
+    Assignments/
+    ...
+    ├── Assignment3
+    │   ├── hw3.ipynb      ← instructor version
+    │   └── student
+    │       └── hw3.ipynb  ← student version
+
+The student version of the notebook automatically opens in another tab, where you can review the contents. When the student uses that notebook, they can "self evaluate" their code by running the test cells and seeing whether or not there are errors, or they can click the "Validate..." button at the top of the notebook to run all code.
+
+5. Notebook table of contents.
+--------------------------------------------
+
+If you click the "Contents" button at the top of your Jupyter notebook, you'll see a table of contents appear to the left that has links to all the nbgrader problems. You can create section headings using markdown titles. The table of contents view is available in instructor and student versions of the notebook.
+
+.. figure:: img/nbgrader/nbg-contents.png
+     :width: 95%
+     :align: center
+
+     Notebook table of contents
+
+
+6. Distribute the assignment to students.
+--------------------------------------------
+
+Back in the .course file under "Assignments", click ``Assign...`` to distribute the homework to students. This step copies contents of the "student/" folder into student projects. Here's a view of the files in the *student project*::
+
+    Assignments/
+    ...
+    ├── Assignment3
+    │   └── hw3.ipynb  ← student version
+
+.. note::
+
+   When there is a "student/" subdirectory in the assignment folder, as is the case with all nbgrader notebooks, the ``Assign...`` button will ONLY distribute contents of the "student/" subdirectory. This is a new feature.
+
+7. Students complete the assignment.
+--------------------------------------------
+
+Have your students complete the assignment. All student work takes place in the student's project. Students can click ``Validate`` to see if all tests pass.
+
+7. Collect the assignment.
+--------------------------------------------
+
+In the .course file under "Assignments", click ``Collect...`` to distribute the homework to students.
+
+8. Run nbgrader.
+--------------------------------------------
+
+Click the "Run nbgrader" button, and nbgrader is run on the collected notebooks **in memory in the student projects (for security)**, and the results are saved in the course.
+This step runs CoCalc's re-implementation of the nbgrader validation steps. It is *not* running nbgrader's python scripts behind the scenes.
+
+.. figure:: img/nbgrader/nbg-about-to-autograde.png
+     :width: 95%
+     :align: center
+
+     About to run nbgrader for all collected copies of Assignment3.
+
+After running nbgrader, a summary of scores is displayed for each graded assignment. Click ``More...`` to see a small table with scores for each problem.
+
+At this point, all cells of type "Manually graded answer" will show a blank score.
+
+.. figure:: img/nbgrader/nbg-autograded.png
+     :width: 95%
+     :align: center
+
+     After autograding, before reviewing manually graded questions
+
+9. Do manual grading and add instructor comments.
+-------------------------------------------------
+
+You can enter manual scores as needed; when all manual scores are
 entered the overall scores are automatically updated.
-10. You can then return the assignment to the student.
-11. I greatly improved GRADE.md (which appears in the returned assignment)
-to actually use markdown and also show a table of scores of problems from nbgrader.  
 
-If you have any questions, comments, or are likely to
-use nbgrader in CoCalc in the future,
-`let us know! <mailto:help@cocalc.com>`_
+If you want to make additional comments, click ``Edit grade``. You can use Markdown in the comments, including LaTeX expressions.
+
+.. figure:: img/nbgrader/nbg-manual-grade.png
+     :width: 95%
+     :align: center
+
+     Entering a manual grade and an instructor comment
+
+
+10. Return the assignment.
+--------------------------------------------
+
+Click ``Return...`` to return the assignment to the student. Here's a view of the files in the *student project* after graded work is returned::
+
+    Assignments/
+    ...
+    ├── Assignment3
+    │   ├── hw3.ipynb
+    └── graded-Assignment3
+        ├── GRADE.md
+        ├── STUDENT - Janice Doe.txt
+        └── hw3.ipynb
+
+The file GRADE.md appears in the returned assignment. It uses markdown and shows a table of scores of problems from nbgrader. Here's an example of the GRADE.md file that the student receives (rendered view only):
+
+.. figure:: img/nbgrader/nbg-student-grade.png
+     :width: 95%
+     :align: center
+
+     Sample grade report returned to the student
+
+
+Feedback
+================
+
+If you have questions or comments, or are likely to use nbgrader in CoCalc in the future, `let us know! <mailto:help@cocalc.com>`_
 
 
 
 .. _nbgrader: https://nbgrader.readthedocs.io/
+.. _official nbgrader documentation: https://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html#developing-assignments-with-the-assignment-toolbar
