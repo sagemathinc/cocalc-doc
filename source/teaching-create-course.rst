@@ -108,6 +108,7 @@ These course files are independent of each other,
 which allows not only different groups of students, but also different due dates, etc.
 
 .. index:: Course; adding students
+.. _adding-students:
 
 #############################
 Adding students to the course
