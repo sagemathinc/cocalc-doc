@@ -251,7 +251,7 @@ Click ``Return...`` to return the assignment to the student. Here's a view of th
 The file GRADE.md appears in the returned assignment. It uses markdown and shows a table of scores of problems from nbgrader. Here's an example of the GRADE.md file that the student receives (rendered view only):
 
 .. figure:: img/nbgrader/nbg-student-grade.png
-     :width: 95%
+     :width: 65%
      :align: center
 
      Sample grade report returned to the student
