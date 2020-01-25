@@ -14,7 +14,7 @@ CoCalc now has integrated nbgrader/autograder for Jupyter notebooks. You can cre
 
 It's all tightly integrated with the course management system. You don't have to configure anything -- you can just use it...
 
-Details at :ref:`nbgrader <nbgrader-doc>`
+There's an extensive getting-started guide here: :doc:`nbgrader in CoCalc <teaching-nbgrader>`.
 
 
 .. _new-2020-01-14:
