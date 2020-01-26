@@ -10,6 +10,29 @@ Software Updates 2020
 
 
 
+.. _update-2020-01-29:
+
+2020-01-29 Rust ``1.40``
+------------------------------------------
+
+- Software:
+    - (upd) a round of updating `Rust`_:
+        - stable: ``1.40.0``
+        - beta:  ``1.41.0-beta.2``
+        - nightly: ``1.42.0-nightly``
+
+- Python 3 and Anaconda 2019:
+    - (new) `pgmpy`_ ``0.1.9`` – *a python library for working with Probabilistic Graphical Models*
+
+- Python 3:
+    - (new) `okpy`_ ``1.14.19`` – *OK autogrades programming assignments, facilitates submission, composition feedback, and analytics for your class*. It's installed for the :doc:`../terminal` and run ``ok --help`` for more info.
+    - (new) `pyreadstat`_ ``0.2.9`` – *read and write sas (sas7bdat, sas7bcat, xport), spps (sav, zsav, por) and stata (dta) data files into/from pandas dataframes*
+    - (new) `bitarray`_ ``1.2.1`` – *efficient arrays of booleans*
+    - (new) `ifsFractals`_ ``1.17.4`` – *fast IFS fractal generation* (`ifs fractals example <https://share.cocalc.com/share/10a1a74ea3be1a433ce127f46f2b5eb53dbd3907/ifs-fractals.ipynb?viewer=share>`_)
+    - (upd) `PyTorch`_ ``1.3.1``, `joblib`_ ``0.14.1``, `drive-cli`_ ``2.1.0``, `seaborn`_ ``0.10.0``, `numba`_ ``0.47.0``
+
+
+
 
 .. _update-2020-01-19:
 
@@ -228,3 +251,11 @@ Software Updates 2020
 .. _ApproxFun: https://juliaapproximation.github.io/ApproxFun.jl/latest/
 .. _tensorflow-estimator: https://www.tensorflow.org/guide/estimator
 .. _SentimentAnalysis: https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html
+.. _pgmpy: https://pgmpy.org/
+.. _bitarray: https://github.com/ilanschnell/bitarray
+.. _pyreadstat: https://github.com/Roche/pyreadstat
+.. _okpy: https://okpy.org/
+.. _drive-cli: https://github.com/nurdtechie98/drive-cli
+.. _ifsFractals: https://github.com/francisp336/ifsFractals
+.. _seaborn: https://seaborn.pydata.org/
+.. _numba: https://numba.pydata.org/
