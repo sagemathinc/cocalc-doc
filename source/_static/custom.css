@@ -1,3 +1,8 @@
+/* disable "error" border in code -- see https://github.com/sagemathinc/cocalc-doc/issues/10 */
+.highlight .err {
+    border: none !important;
+}
+
 /* theme cocalc */
 div.wy-side-nav-search {
     background-color: #4375c1;
