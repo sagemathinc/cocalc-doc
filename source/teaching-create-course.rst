@@ -11,7 +11,7 @@ how to populate it with a course management file and how to invite all of your s
 
 .. contents::
    :local:
-   :depth: 2
+   :depth: 1
 
 ####
 VFAQ
@@ -174,7 +174,6 @@ The student's course project will have its own individual quotas set for disk st
 
 You can learn more about upgrades and quotas in the :doc:`upgrade-guide`.
 
-
 .. _course-upgrading-students:
 
 ##########################
@@ -193,7 +192,7 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
 .. _course-students-pay:
 
 
-(Option 1): Students pay for upgrades
+Students pay for upgrades
 ------------------------------------------
 
 You can request that the students pay a one-time fee of $14 for four months.
@@ -215,8 +214,7 @@ When you check that checkbox, a calendar form opens. The default is to require s
 To continue from the perspective of your students,
 read the :ref:`instructions for students to pay for a course <student-pay-for-course>`.
 
-Can we mix free and upgraded student projects?
-------------------------------------------------------------
+**Can we mix free and upgraded student projects?**
 
 Yes.
 Just set the due date by which the students have to pay to be at the end of the course.
@@ -231,9 +229,12 @@ and you can change any of these settings at any time.
 .. _inst-pays:
 
 
-(Option 2): Teacher or institution pays for upgrades
-------------------------------------------------------------
+Teacher or institution pays for upgrades
+--------------------------------------------
 
+.. note::
+
+    CoCalc now supports site licenses in addition to the upgrade system described in this section. Licenses greatly simplify managing student upgrades, especially when dealing with multiple courses or sections. See our :ref:`News update on site licenses <site-license-news>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
 
 Assuming you are an instructor and want to setup everything for a course,
 here are the rough steps to **pay for upgrading your students' projects**.
