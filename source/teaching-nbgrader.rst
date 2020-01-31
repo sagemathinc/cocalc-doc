@@ -18,13 +18,13 @@ nbgrader in CoCalc
 Purpose of nbgrader
 ===============================
 
-`nbgrader`_  provides the following teaching-related functionality in a Jupyter notebook environment:
+**nbgrader**  allows an instructor to do the following when teaching in a Jupyter notebook environment:
 
-#. Maintain separate instructor & student versions of Jupyter notebooks
+#. Maintain separate instructor & student versions of Jupyter notebooks.
 #. Automatically grade coding exercises written using Python, R, Julia, and more.
-#. Manually grade free-form exercises and other tasks
-#. Leave comments for students
-#. Track student grades
+#. Manually grade free-form exercises and other tasks.
+#. Leave comments for students.
+#. Track student grades.
 
 CoCalc nbgrader
 ===============
@@ -196,7 +196,7 @@ In the .course file under "Assignments", click ``Collect...`` to distribute the 
 8. Run nbgrader.
 --------------------------------------------
 
-Click the "Run nbgrader" button, and nbgrader is run on the collected notebooks **in memory in the student projects (for security)**, and the results are saved in the course.
+When you click the "Run nbgrader" button, nbgrader is run on the collected notebooks **in memory in the student projects (for security)** and the results are saved in the course.
 This step runs CoCalc's re-implementation of the nbgrader validation steps. It is *not* running nbgrader's python scripts behind the scenes.
 
 .. figure:: img/nbgrader/nbg-about-to-autograde.png
@@ -218,7 +218,7 @@ At this point, all cells of type "Manually graded answer" will show a blank scor
 9. Do manual grading and add instructor comments.
 -------------------------------------------------
 
-You can enter manual scores as needed; when all manual scores are
+You can enter manual scores as needed. When all manual scores are
 entered the overall scores are automatically updated.
 
 If you want to make additional comments, click ``Edit grade``. You can use Markdown in the comments, including LaTeX expressions.
