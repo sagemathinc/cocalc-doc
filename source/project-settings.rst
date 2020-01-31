@@ -79,6 +79,10 @@ appears if the project does not have Member Hosting or Internet Access):
 Adjust Quotas
 *************
 
+.. note::
+
+    CoCalc now supports site licenses in addition to the upgrade system described in this section. See our :ref:`News update on site licenses <site-license-news>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
+
 The "Adjust Quotas" dialog is where you add upgrades you have just purchased to your own project.
 
 *Note: If you want to upgrade student projects for a CoCalc managed course, that is done in the .course file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
