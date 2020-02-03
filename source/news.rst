@@ -4,6 +4,30 @@
 News
 ==========================
 .. _new-2020-01-16:
+
+.. index:: Account Settings; dark mode
+.. index:: Dark mode
+.. _overall-dark-mode:
+
+2020-01-16: dark mode
+=====================================================
+
+Added: an option to enable overall dark mode in "Account" /  "Preferences".
+Checking this gives you a uniformly dark background across the whole page:
+
+.. figure:: img/dark-mode-setting.png
+     :width: 65%
+     :align: center
+
+     Check the box to enable dark mode.
+
+.. figure:: img/dark-mode-example.png
+     :width: 100%
+     :align: center
+
+     Screen capture of CoCalc with dark mode enabled.
+
+
 .. index:: nbgrader; autograder
 .. index:: Jupyter Notebooks; nbgrader
 
@@ -37,12 +61,12 @@ To get a report about all the times when students opened or edited any file in a
 The json files are created in the following path::
 
     course-exports/[name of course]/file-use-times/[handouts|assignments]/assignment_name.json
-    
+
 .. figure:: img/export-file-use-times.png
      :width: 75%
      :align: center
 
-     export file use times in course file Assignments tab
+     Exporting file use times in course file Assignments tab.
 
 
 .. _new-2020-01-13:
@@ -63,7 +87,7 @@ After that, all student projects associated to that course are automatically upg
      :width: 75%
      :align: center
 
-     enter license key in course file Configuration tab
+     Enter license key in course file Configuration tab.
 
 Site license for individual projects
 ------------------------------------
@@ -74,7 +98,7 @@ A site license can be used for a project that is not part of a CoCalc course. Op
      :width: 75%
      :align: center
 
-     enter license key in course project Settings
+     Enter license key in project Settings.
 
 
 .. _new-2019-12-16:

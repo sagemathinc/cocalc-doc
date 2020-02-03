@@ -62,6 +62,8 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 Other settings
 ----------------
 
+CoCalc allows you to specify dark mode for all windows in "Other settings". See the :ref:`News update on dark mode <overall-dark-mode>` for more information.
+
 Profile
 ----------------
 
