@@ -9,6 +9,23 @@ Software Updates 2020
 ..      :depth: 1
 
 
+.. _update-2020-02-03:
+
+2020-02-03: AstroPy 4.0
+---------------------------------
+
+- Python 3:
+    - (upd) `astropy`_ ``4.0``, `astroplan`_ ``0.6`` – `what's new in AstroPY 4.0 <http://docs.astropy.org/en/stable/whatsnew/4.0.html>`_
+    - (upd) `mypy`_ ``0.761``, `pygments`_ ``2.5.2``, `yapf`_ ``0.29.0``, `dask`_ ``2.10.0``, `matplotlib`_ ``3.1.2``, `rpy2`_ ``3.2.5``, `statsmodels`_ ``0.11.0``, `pip`_ ``20.0.2``
+
+- SageMath (8.9 and 9.0):
+    - (upd) `admcycles`_ ``1.0``, a major release update!
+
+- Software:
+    - (new) `openscad`_  (available as ``openscad-nightly``) together with support packages ``meshlab``, ``geomview`` and ``librecad``
+    - (upd) various Linux system packags, including R libs
+
+
 
 .. _update-2020-01-29:
 
@@ -30,7 +47,6 @@ Software Updates 2020
     - (new) `bitarray`_ ``1.2.1`` – *efficient arrays of booleans*
     - (new) `ifsFractals`_ ``1.17.4`` – *fast IFS fractal generation* (`ifs fractals example <https://share.cocalc.com/share/10a1a74ea3be1a433ce127f46f2b5eb53dbd3907/ifs-fractals.ipynb?viewer=share>`_)
     - (upd) `PyTorch`_ ``1.3.1``, `joblib`_ ``0.14.1``, `drive-cli`_ ``2.1.0``, `seaborn`_ ``0.10.0``, `numba`_ ``0.47.0``
-
 
 
 
@@ -162,7 +178,7 @@ Software Updates 2020
 .. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html
 .. _DEAP: https://deap.readthedocs.io/en/master/
 .. _simanneal: https://github.com/perrygeo/simanneal
-.. _admcycles: https://gitlab.com/jo314schmitt/admcycles
+.. _admcycles: https://www.math.uni-bonn.de/people/schmitt/admcycles
 .. _sherpa: https://parameter-sherpa.readthedocs.io/en/latest/
 .. _GPyOpt: https://sheffieldml.github.io/GPyOpt/
 .. _GPy: http://sheffieldml.github.io/GPy/
@@ -259,3 +275,10 @@ Software Updates 2020
 .. _ifsFractals: https://github.com/francisp336/ifsFractals
 .. _seaborn: https://seaborn.pydata.org/
 .. _numba: https://numba.pydata.org/
+.. _mypy: https://mypy.readthedocs.io/
+.. _pygments: https://pygments.org/
+.. _pip: https://pip.pypa.io/en/stable/user_guide/
+.. _openscad: https://www.openscad.org/
+.. _astroplan: https://astroplan.readthedocs.io/
+.. _rpy2: https://rpy2.readthedocs.io/
+.. _astropy: https://www.astropy.org/
