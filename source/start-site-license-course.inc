@@ -1,5 +1,4 @@
 .. index:: Site licenses; for courses (setup)
-.. _site-license-course-setup:
 
 
 For the best results, follow these steps when setting up a course with a site license:

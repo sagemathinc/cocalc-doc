@@ -9,6 +9,8 @@ Some quick items before going into the details...
    :local:
    :depth: 1
 
+.. _site-license-course-setup:
+
 #######################################
 Setting up a Course with a Site License
 #######################################
