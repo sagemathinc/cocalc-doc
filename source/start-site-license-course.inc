@@ -1,0 +1,76 @@
+.. index:: Site licenses; for courses (setup)
+.. _site-license-course-setup:
+
+
+For the best results, follow these steps when setting up a course with a site license:
+
+1. Obtain a license key.
+------------------------
+
+At present, you need to contact us directly at `help@cocalc.com <mailto:help@cocalc.com">`_ to buy a site license. Soon, we expect add capability to buy site licenses online.
+
+A license key is a hexadecimal uuid string. It looks like this::
+
+    78caa80a-4ddf-11ea-a5e5-53e10ace7b7b
+
+2. Create a teaching project.
+-----------------------------
+
+Create a CoCalc project you will to use to manage the course.
+
+.. image:: img/teaching/site-lic-course-create-proj.png
+     :width: 85%
+     :align: center
+
+
+3. Create a .course file.
+-------------------------
+
+Use the (*)New button to create a ``.course`` file for managing your course.
+
+Create a CoCalc project you will to use to manage the course.
+
+.. image:: img/teaching/site-lic-course-create-crse.png
+     :width: 85%
+     :align: center
+
+
+4. Install your license in the .course file.
+--------------------------------------------
+
+- Open the ``.course`` file and click "Configuration."
+- Check the box for "You or your institute will pay for this course".
+- Click "Upgrade using a license key...".
+- Paste in your license key and click "Save". You will see additional text where you entered the license key, indicating which upgrades will be upgraded and the maximum number of simultaneous running projects that can use this license.
+
+.. image:: img/teaching/site-lic-course-config.png
+     :width: 85%
+     :align: center
+
+
+5. Restart the teaching project.
+--------------------------------
+
+In project Settings (wrench icon), restart your project so that the license will be applied. Click "Restart Project..." then click "Yes, restart project" in the confirmation dialog.
+
+.. figure:: img/teaching/site-lic-course-restart-pre.png
+     :width: 85%
+     :align: center
+
+     license entered in course Configuration; about to restart teaching project
+
+
+In project Settings, within a few seconds you will see that the teaching project is being upgraded. The warnings about running on an unpaid server will be gone, and you will see your license upgrades applied to the teaching project, including Member Hosting and Internet Access
+
+.. figure:: img/teaching/site-lic-course-restart-post.png
+     :width: 85%
+     :align: center
+
+     project settings after restarting teaching project
+
+
+
+License setup done!
+-------------------------------
+
+You have just completed the steps to create a teaching project, upgrade the teaching project, and create a .course file. You are ready follow steps below to add TAs, if any, add students, and set up handouts and homework.

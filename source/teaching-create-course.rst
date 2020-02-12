@@ -1,17 +1,20 @@
-.. warning::
 
-    We strongly recommend that the instructor of a course purchase at least a standard subscription for themselves, and upgrade the project where they manage the course. Some functionality that involves inviting students via email, notifications, etc., will only work with such an upgrade. We also pride ourselves on offering very good quality support to paying customers. If you're an instructor and need a free trial subscription, do not hesitate to contact us at help@cocalc.com.
+=========================================================
+Notes on Managing Courses
+=========================================================
 
-=====================
-Creating a new course
-=====================
-
-In this section we will learn how to create a course project,
-how to populate it with a course management file and how to invite all of your students to join the course.
+Some quick items before going into the details...
 
 .. contents::
    :local:
    :depth: 1
+
+#######################################
+Setting up a Course with a Site License
+#######################################
+
+.. include:: start-site-license-course.inc
+
 
 ####
 VFAQ
@@ -22,8 +25,26 @@ Further course plan/quotas related questions are answered in :doc:`billing`.
 
 .. include:: teaching-vfaq.inc
 
+###################################
+Upgrade the Teaching Project First!
+###################################
+
+If you're using CoCalc course management, we *strongly recommend* that the project containing the ``.course`` file have upgrades for Member Hosting and Internet Access. These upgrades are available with any level of subscription to CoCalc. Some functionality that involves inviting students via email, notifications, etc., will only work with the Internet Access upgrade. We also pride ourselves on offering extensive support to paying customers. If you're an instructor and need a free trial subscription, do not hesitate to contact us at help@cocalc.com.
+
+=====================
+Creating a New Course
+=====================
+
+In this section we will learn how to create a course project,
+how to populate it with a course management file and how to invite all of your students to join the course.
+
+.. contents::
+   :local:
+   :depth: 1
+
+
 ###########################
-Creating the course project
+Creating the Course Project
 ###########################
 
 The first step is to create an instructor's project to contain the course.
@@ -50,7 +71,7 @@ The new project will appear at the top of the project list. Click on its  title 
 .. _teaching-add-ta:
 
 ########################################
-Adding teaching assistants to the course
+Adding Teaching Assistants to the Course
 ########################################
 
 To add teaching assistants or other teachers to the course, open the course project, click on the settings tab and look down to see "Add new collaborators" in the project settings.
@@ -70,7 +91,7 @@ Once the account with exactly that email address is created, that new user will 
 .. index:: Course; course file
 
 ########################
-Creating the course file
+Creating the Course File
 ########################
 
 Almost all aspects of a course, such as which students are enrolled and assignment management, are controlled by a **.course** file. We'll now create this file.
@@ -111,7 +132,7 @@ which allows not only different groups of students, but also different due dates
 .. _adding-students:
 
 #############################
-Adding students to the course
+Adding Students to the Course
 #############################
 
 Open your course by clicking on the **.course** file.
@@ -165,7 +186,7 @@ Doing so will also resend email invitations to students who have not already sig
      "Reconfigure all projects" at lower right in Configuration
 
 #########################
-What do the students get?
+What do the Students Get?
 #########################
 
 On being invited to a course, each student will have a project created for them in their CoCalc account that corresponds to that course. Each project will have you and the course Teaching assistants set as collaborators.
@@ -177,7 +198,7 @@ You can learn more about upgrades and quotas in the :doc:`upgrade-guide`.
 .. _course-upgrading-students:
 
 ##########################
-Upgrading student projects
+Upgrading Student Projects
 ##########################
 
 

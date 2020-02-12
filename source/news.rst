@@ -76,18 +76,17 @@ The json files are created in the following path::
 2020-01-13: Site licenses
 ===============================
 
+.. index:: Site licenses; for courses (news)
+
 Site license for courses
 -------------------------
 
 Site licenses can be used to upgrade student projects in a CoCalc-managed course.
-Enter the license key in course configuration as shown below.
-After that, all student projects associated to that course are automatically upgraded the next time they start. If this is something you might be interested in, contact us at `help@cocalc.com <mailto:help@cocalc.com">`_.
+After the license key is entered in course configuration,
+all student projects associated to that course are automatically upgraded the next time they start. There are detailed course setup instructions for a license :ref:`here <site-license-course-setup>`. If this is something you might be interested in, contact us at `help@cocalc.com <mailto:help@cocalc.com">`_.
 
-.. figure:: img/use-license-key-a.png
-     :width: 75%
-     :align: center
 
-     Enter license key in course file Configuration tab.
+.. index:: Site licenses; for projects (news)
 
 Site license for individual projects
 ------------------------------------
