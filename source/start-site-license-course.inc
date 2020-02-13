@@ -6,7 +6,7 @@ For the best results, follow these steps when setting up a course with a site li
 1. Obtain a license key.
 ------------------------
 
-At present, you need to contact us directly at `help@cocalc.com <mailto:help@cocalc.com">`_ to buy a site license. Soon, we expect add capability to buy site licenses online.
+At present, you need to contact us directly at `help@cocalc.com <mailto:help@cocalc.com">`_ to buy a site license. Soon, we will add the ability to buy site licenses online.
 
 A license key is a hexadecimal uuid string. It looks like this::
 
