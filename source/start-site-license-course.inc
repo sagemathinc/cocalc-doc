@@ -27,8 +27,6 @@ Create a CoCalc project you will to use to manage the course.
 
 Use the (*)New button to create a ``.course`` file for managing your course.
 
-Create a CoCalc project you will to use to manage the course.
-
 .. image:: img/teaching/site-lic-course-create-crse.png
      :width: 85%
      :align: center
@@ -40,7 +38,7 @@ Create a CoCalc project you will to use to manage the course.
 - Open the ``.course`` file and click "Configuration."
 - Check the box for "You or your institute will pay for this course".
 - Click "Upgrade using a license key...".
-- Paste in your license key and click "Save". You will see additional text where you entered the license key, indicating which upgrades will be upgraded and the maximum number of simultaneous running projects that can use this license.
+- Paste in your license key and click "Save". You will see additional text where you entered the license key, indicating which upgrades will be applied and the maximum number of simultaneous running projects that can use this license.
 
 .. image:: img/teaching/site-lic-course-config.png
      :width: 85%
@@ -59,7 +57,7 @@ In project Settings (wrench icon), restart your project so that the license will
      license entered in course Configuration; about to restart teaching project
 
 
-In project Settings, within a few seconds you will see that the teaching project is being upgraded. The warnings about running on an unpaid server will be gone, and you will see your license upgrades applied to the teaching project, including Member Hosting and Internet Access
+In project Settings, within a few seconds you will see that the teaching project is being upgraded. The warnings about running on an unpaid server will be gone, and you will see your license upgrades applied to the teaching project, including Member Hosting and Internet Access.
 
 .. figure:: img/teaching/site-lic-course-restart-post.png
      :width: 85%
