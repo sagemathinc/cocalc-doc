@@ -37,9 +37,12 @@ Please include information about special dependencies or a specific example to t
 Install a package
 ===================
 
+Command line (recommended)
+--------------------------------
+
 To actually install a package, create or open an existing :doc:`../terminal` file.
 
-#. Wait for the command-line promt and type in ``R`` and hit the `Return` key. R will start up.
+#. Wait for the command-line prompt and type in ``R`` and hit the `Return` key. R will start up.
 #. Type in ``install.packages("<name of package>")`` and hit the `Return` key.
 #. R will ask you to install it in a local directory, starting with "``~``" – the "home directory" of your project. In the example below it is ``~/R/x86_64-pc-linux-gnu-library/3.4``.
 #. Confirm the questions with ``y`` and the installation process should run smoothly.
@@ -86,6 +89,33 @@ Below is how such a session for installing `conjoint <https://cran.r-project.org
     > q()
     Save workspace image? [y/n/c]: n
 
+
+Jupyter Notebook
+---------------------
+
+It is also possible to install packages directly via a Jupyter Notebook.
+The drawback compared with the Terminal option above is the lack of interactivity.
+
+To be able to install into your own local package library in your home directory,
+you have to make sure such a directory exists and tell it to the ``install.packages`` command –
+it is defined by ``Sys.getenv("R_LIBS_USER")``.
+
+Otherwise you end up with erros like::
+
+    Installing package into ‘/usr/local/lib/R/site-library’
+    (as ‘lib’ is unspecified)
+    Warning message in install.packages("<package name>"):
+    “'lib = "/usr/local/lib/R/site-library"' is not writable”
+
+
+To install packages into your own collection of packages, run this in a notebook cell::
+
+    dir.create(path = Sys.getenv("R_LIBS_USER"), showWarnings = FALSE, recursive = TRUE)
+    install.packages("<name of package>", lib = Sys.getenv("R_LIBS_USER"), repos = "https://cran.rstudio.com/")
+
+Credits: `stack overflow post <https://stackoverflow.com/a/43283085/54236>`_
+
+**Note**: If your ``Sys.getenv("R_LIBS_USER")`` already exists, a freshly started kernel will already know about it. You can check this by running ``.libPaths()``. If the first listed path starts with ``/home/user/R/...`` you can run ``install.packages`` without any errors.
 
 Aftermath
 ===========

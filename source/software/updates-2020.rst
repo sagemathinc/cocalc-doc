@@ -9,6 +9,26 @@ Software Updates 2020
 ..      :depth: 1
 
 
+
+.. _update-2020-02-:
+
+2020-02-: Pandas 1.0 and Octave 5.2.0
+------------------------------------------
+
+- Python 3:
+    - (upd) `pandas`_ ``1.0`` – `Pandas 1.0 release notes <https://pandas.pydata.org/pandas-docs/version/1.0.0/whatsnew/v1.0.0.html>`_. This is a major release which might break some libs. Please `let us know`_ about any issues. You can always switch back to the previous release in ``Settings`` → ``Project Control`` → ``Software Environment`` and select ``Previous``.
+    - (upd) updating Pandas reverse dependencies: `Mesa`_ ``0.8.6``, `Orange3`_ ``3.24.1``, `Quandl`_ ``3.5.0``, `TPOT`_ ``0.11.1``, `adtk`_ ``0.5.2``, `altair`_ ``4.0.1``, `arctic`_ ``1.79.3``, `arviz`_ ``0.6.1``, `bqplot`_ ``0.12.3``, `cobra`_ ``0.17.1``, `dask-ml`_ ``1.2.0``, `empyrical`_ ``0.5.3``, `isochrones`_ ``2.0.1``, `linearmodels`_ ``4.17``, `mlxtend`_ ``0.17.1``, `openTSNE`_ ``0.3.12``, `optlang`_ ``1.4.4``, `pandas-bokeh`_ ``0.4.2``, `pandas-profiling`_ ``2.4.0``, `pdpipe`_ ``0.0.41``, `pysal`_ ``2.1.0``, `qgrid`_ ``1.2.0``, `scikit-rf`_ ``0.15.1``, `tabulate`_ ``0.8.6``, `tellurium`_ ``2.1.5``, `teneto`_ ``0.5.0``, `xarray`_ ``0.15.0``
+
+- Software:
+    - (upd) `Octave`_ ``5.2.0`` (major upgrade!) with some extension packages
+    - (upd) Jupyter related: `jupytext`_ ``1.3.3`` and `nbconvert`_ ``5.6.1``
+
+- Anaconda Python:
+    - (new) `Coq`_ ``8.11.0`` – *a formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs*
+       - plus ``coq-jupyter-1.5.2`` for supporting Jupyer Classic Notebook integration
+    - (new) `ocaml`_ ``4.06.1`` – *an industrial strength programming language supporting functional, imperative and object-oriented styles*
+    - (upd) various package updates, including numpy, scipy, scikit learn, statsmodels, etc.
+
 .. _update-2020-02-03:
 
 2020-02-03: AstroPy 4.0
@@ -114,6 +134,7 @@ Software Updates 2020
 .. _qiskit-aqua: https://qiskit.org/aqua
 .. _qiskit-aer: https://qiskit.org/aer
 .. _dask: https://dask.org
+.. _dask-ml: https://dask-ml.readthedocs.io/
 .. _distributed: https://distributed.dask.org/
 .. _QGIS: https://www.qgis.org
 .. _arctic: https://arctic.readthedocs.io/en/latest/
@@ -155,11 +176,12 @@ Software Updates 2020
 .. _typescript: https://www.typescriptlang.org/
 .. _prettier: https://prettier.io/
 .. _pandas: https://pandas.pydata.org/
+.. _pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
+.. _pandas-bokeh: https://github.com/PatrikHlobil/Pandas-Bokeh
 .. _numpy: https://numpy.org/
 .. _matplotlib: https://matplotlib.org/
 .. _pytest: https://docs.pytest.org/en/latest/
 .. _spyder: https://www.spyder-ide.org/
-.. _pandas-bokeh: https://github.com/PatrikHlobil/Pandas-Bokeh
 .. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
 .. _BioConductor: https://www.bioconductor.org
 .. _music: https://github.com/ttm/music
@@ -282,3 +304,26 @@ Software Updates 2020
 .. _astroplan: https://astroplan.readthedocs.io/
 .. _rpy2: https://rpy2.readthedocs.io/
 .. _astropy: https://www.astropy.org/
+.. _let us know: mailto:help@cocalc.com
+.. _Mesa: https://mesa.readthedocs.io/
+.. _Orange3: https://orange.biolab.si/
+.. _Quandl: https://www.quandl.com/
+.. _altair: https://altair-viz.github.io/
+.. _empyrical: https://github.com/quantopian/empyrical
+.. _xarray: http://xarray.pydata.org/en/stable/
+.. _optlang: https://optlang.readthedocs.io/
+.. _bqplot: https://github.com/bloomberg/bqplot
+.. _arviz: https://arviz-devs.github.io/arviz/
+.. _cobra: https://opencobra.github.io/cobrapy/
+.. _pysal: https://pysal.readthedocs.io/
+.. _scikit-rf: https://scikit-rf.readthedocs.io/
+.. _qgrid: https://github.com/quantopian/qgrid
+.. _tabulate: https://github.com/astanin/python-tabulate
+.. _mlxtend: http://rasbt.github.io/mlxtend/
+.. _isochrones: https://isochrones.readthedocs.io/
+.. _openTSNE: https://opentsne.readthedocs.io/
+.. _tellurium: http://tellurium.analogmachine.org/
+.. _Coq: https://coq.inria.fr/
+.. _ocaml: https://ocaml.org/
+.. _nbconvert: https://nbconvert.readthedocs.io/
+.. _octave: https://www.gnu.org/software/octave/
