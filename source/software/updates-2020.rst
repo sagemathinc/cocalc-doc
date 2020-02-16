@@ -10,9 +10,9 @@ Software Updates 2020
 
 
 
-.. _update-2020-02-:
+.. _update-2020-02-16:
 
-2020-02-: Pandas 1.0 and Octave 5.2.0
+2020-02-16: Pandas 1.0 and Octave 5.2.0
 ------------------------------------------
 
 - Python 3:
@@ -24,8 +24,6 @@ Software Updates 2020
     - (upd) Jupyter related: `jupytext`_ ``1.3.3`` and `nbconvert`_ ``5.6.1``
 
 - Anaconda Python:
-    - (new) `Coq`_ ``8.11.0`` – *a formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs*
-       - plus ``coq-jupyter-1.5.2`` for supporting Jupyer Classic Notebook integration
     - (new) `ocaml`_ ``4.06.1`` – *an industrial strength programming language supporting functional, imperative and object-oriented styles*
     - (upd) various package updates, including numpy, scipy, scikit learn, statsmodels, etc.
 
