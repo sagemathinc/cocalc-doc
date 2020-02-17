@@ -16,6 +16,19 @@ This FAQ/Help page consists of
 
 **Remember:** if you don't find what you need, or if you'd like to ask a question, then email `help@cocalc.com <mailto:help@cocalc.com>`_ at any time. We'd love to hear from you! Please include a link (the URL address in your browser) to any relevant project or document, as part of your email.
 
+.. note::
+
+    **Quick Solution**
+
+    * Hold down the ``Shift``-key and click your browser's reload button to refresh the CoCalc tab.
+      Sometimes this simple action resolves the problem.
+    * Close your browser and open it again. Maybe even restart your computer!
+    * You might be using an old, unsupported browser.
+      Check for updates available to the browser you are using, or switch to the latest version of a different browser.
+
+    If this doesn't help, try additional diagnostic steps mentioned below.
+
+
 Process for Debugging Connectivity
 ==================================================
 
@@ -200,9 +213,12 @@ Question: I see the error message "Timeout while loading CoCalc" instead of the 
 
 If you see the error message **"Timeout while loading CoCalc."** when you try to connect to CoCalc, there are several things to try:
 
-* Hold down the ``shilft``-key and click your browser's Reload button. Sometimes this simple action resolves the problem. It loads the page bypassing your local cache.
+* Hold down the ``Shift``-key and click your browser's reload button to refresh the CoCalc tab.
+  Sometimes this simple action resolves the problem.
 * Close your browser and open it again. Maybe even restart your computer!
-* You might be using an old, unsupported browser. Check for updates available to the browser you are using, or switch to the latest version of a different browser.
-* If you are on a very slow network, loading may succeed, but take more than 60 seconds. Try waiting. Loading may succeed after the timeout warning is displayed.
+* You might be using an old, unsupported browser.
+  Check for updates available to the browser you are using, or switch to the latest version of a different browser.
+* If you are on a very slow network, loading may succeed, but take more than 60 seconds.
+  Try waiting. Loading may succeed after the timeout warning is displayed.
 
 If this doesn't help, try additional diagnostic steps mentioned above.
