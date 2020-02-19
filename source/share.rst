@@ -46,20 +46,6 @@ Files on the share server are `indexed by Google <https://www.google.com/search?
 
 .. index:: Sharing files; direct from project
 
-Directly sharing files from your project
-===========================================
-
-You have another choice after making a file public as in the first section above.
-For instances when you simply want to copy files between projects,
-use the exact URL of the file in your project as shown at the top of your browser.
-This link is slower to load, but other users can easily copy files to their own CoCalc projects by doing the following:
-
-* Log into CoCalc and open the project link to a shared file.
-* Open the Files list for the shared project, i.e. in the tab for the shared file, click the ``Files`` button at upper left.
-* Click Copy, then under ``In the project``, select the destination project and under ``Destination`` select the destination folder for the copy of the shared file.
-
-Note that, unlike URLs for the share server, the project containing the shared file must be running for project URL's to work.  Since it can take several seconds for a project to start running, this can introduce an additional delay when viewing such files.
-
 File-sharing Tips
 ======================
 
