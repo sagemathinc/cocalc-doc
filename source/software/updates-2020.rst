@@ -9,6 +9,33 @@ Software Updates 2020
 ..      :depth: 1
 
 
+.. _update-2020-02-21:
+
+2020-02-21: LEAN 3.5.1 and JavaScript Kernel
+----------------------------------------------
+
+- `LEAN`_, the open source theorem prover:
+    - Update to 3.5.1, the most recent `LEAN community edition <https://github.com/leanprover-community>`_
+    - Latest `mathlib`_ build
+    - Try it:
+        - `LEAN maths challenges <https://share.cocalc.com/share/f014cd1885a22e8665a728be825e563fc79b7e1f/Maths_Challenges/?viewer=share>`_ (open this link, click the green button at the top – that copies all files to your project and you can start playing around)
+        - `Natural numbers example <https://share.cocalc.com/share/df81e09e5b8f16f28b3a2e818dcdd4560e7818ae/support/2020-02-19-lean-natural-numbers.lean?viewer=share>`_:
+
+      .. figure:: https://share.cocalc.com/share/9ba989d8b4e822cb00df1471b2d46a249c90f364/img/2020-02-20-lean-mathlib-3.5.1-cocalc.png?viewer=raw
+          :align: center
+          :width: 75%
+
+- Jupyter:
+    - (new) You can run **JavaScript** in a Jupyter Notebook, powered by `Node.js`_ – `ijavascript example notebook <https://share.cocalc.com/share/2b6ef7cc0e2d7fe8c126e1901e44ecc57b1b98e2/javascript.ipynb?viewer=share>`_.
+
+- Software:
+    - (upd) `pandoc`_ ``2.9.2`` – `pandoc 2.9.2 release notes <https://github.com/jgm/pandoc/releases/tag/2.9.2>`_
+    - (new) `fractint`_ – in an :doc:`X11 <../x11>` desktop, run ``xfractint``
+    - (new) `surface evolver`_ ``2.70`` – *an interactive program for the modelling of liquid surfaces shaped by various forces and constraints* (run ``evolver`` in an :doc:`X11 <../x11>` desktop)
+
+- Python
+    - (upd) `protobuf`_ ``3.11.3``, `dask`_ ``2.11.0`` and `distributed`_ ``2.11.0``, `spacy`_ ``2.2.3``, `nilearn`_ ``0.6.1``
+
 
 .. _update-2020-02-16:
 
@@ -325,3 +352,11 @@ Software Updates 2020
 .. _ocaml: https://ocaml.org/
 .. _nbconvert: https://nbconvert.readthedocs.io/
 .. _octave: https://www.gnu.org/software/octave/
+.. _fractint: https://www.fractint.org/
+.. _surface evolver: http://facstaff.susqu.edu/brakke/evolver/evolver.html
+.. _protobuf: https://developers.google.com/protocol-buffers
+.. _nilearn: https://nilearn.github.io/
+.. _LEAN: https://leanprover.github.io/about/
+.. _mathlib: https://github.com/leanprover-community/mathlib
+.. _Node.js: https://nodejs.org/en/
+.. _spacy: https://spacy.io/
