@@ -18,31 +18,6 @@ Following the instructions at https://www.dropbox.com/install-linux you can inst
 However, Dropbox recently made a very sad decision to not support Linux (except ext4 unencrypted, which is a nonstarter), so Dropbox is no longer possible with CoCalc.
 
 
-.. index:: GitHub
-
-Pull from GitHub using SSH
------------------------------------
-
-.. note::
-
-    First, despite the fact that you are accessing CoCalc through the internet,
-    you are actually working in a highly restricted environment.
-    Processes running inside a *free* project are not allowed to directly access the internet.
-    (We do not allow such access for free users, since when we did,
-    malicious users launched attacks on other computers from CoCalc.)
-    Enable internet access by adding the "internet access" quota.  See :doc:`../upgrade-guide`.
-
-Once you have enabled network access for your project,
-to use ssh from CoCalc to connect to `GitHub <https://www.github.com>`_
-you need to create an SSH key and explicitly allow that account/key access to GitHub.
-
-1. Make a new :doc:`../terminal` in  +New → Terminal or use an existing one
-
-2. Create an SSH key public/private key pair by typing the command `ssh-keygen`. (consult :ref:`ssh-keys` for more information)
-
-3. Copy the ``.ssh/id_rsa.pub`` (could be named similarly, but has the ending ``.pub``) to GitHub's setting for setting up an additional key
-
-
 
 .. index:: SSHFS
 

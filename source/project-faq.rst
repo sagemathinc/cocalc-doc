@@ -21,10 +21,12 @@ Upgrades/quotas, billing, and pricing related questions covered in :doc:`billing
 Can I work with Git – including GitHub, Bitbucket, GitLab, etc.?
 ============================================================================
 
-Git and various other source control tools are installed and ready to use via the "Terminal".
+Git and various other source control tools are installed and ready to use via the :doc:`terminal`.
 But, in order to also interoperate with sites hosting Git repositories,
 you have to :doc:`purchase a plan <upgrade-guide>` giving you "internet upgrades"
 and then applying this upgrade to your project.
+
+**More information**: :doc:`CoCalc Git Howto <howto/git>`
 
 
 .. index::
