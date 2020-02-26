@@ -48,7 +48,7 @@ To actually install a package, create or open an existing :doc:`../terminal` fil
 #. Confirm the questions with ``y`` and the installation process should run smoothly.
 #. Exit R by pressing `Ctrl+d` or calling the ``q()`` function.
 
-Below is how such a session for installing `conjoint <https://cran.r-project.org/web/packages/conjoint/index.html>`_ looks like::
+Here is a session for installing `conjoint <https://cran.r-project.org/web/packages/conjoint/index.html>`_ in a :doc:`../terminal`::
 
     ~$ R
 
@@ -96,11 +96,11 @@ Jupyter Notebook
 It is also possible to install packages directly via a Jupyter Notebook.
 The drawback compared with the Terminal option above is the lack of interactivity.
 
-To be able to install into your own local package library in your home directory,
-you have to make sure such a directory exists and tell it to the ``install.packages`` command –
+To be able to install into your local package library in your home directory,
+you have to make sure such a directory exists and tell the ``install.packages`` command –
 it is defined by ``Sys.getenv("R_LIBS_USER")``.
 
-Otherwise you end up with erros like::
+Otherwise you end up with errors like::
 
     Installing package into ‘/usr/local/lib/R/site-library’
     (as ‘lib’ is unspecified)
