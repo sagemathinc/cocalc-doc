@@ -8,6 +8,41 @@ Software Updates 2020
 ..      :local:
 ..      :depth: 1
 
+.. highlight:: python
+
+.. _update-2020-02-29:
+
+2020-02-29: Async I/O in Jupyter Notebooks
+-----------------------------------------------
+
+- Python 3
+    - (upd) various Jupyter libs:  `jupyter-client`_ ``6.0.0``, `jupyter-console`_ ``6.1.0``, `jupyterhub`_ ``1.1.0``, `jupyterlab`_ ``1.2.6``, `ipykernel`_ ``5.1.4``,  `ipython`_ ``7.12.0``, ...
+
+      This means you work seamlessly with Python 3's `async/await coroutines <https://docs.python.org/3.7/library/asyncio-task.html>`_ in the system-wide Python3 kernel::
+
+          import asyncio
+
+          async def main():
+              print('hello')
+              await asyncio.sleep(1)
+              print('world')
+
+          await main()
+
+    - (new) `folium`_ ``0.10.1`` – maps of the world. try ``import folium; folium.Map(location=[45.523, -122.675], width=750, height=500)``
+    - (upd) `requests`_ ``2.23.0``, `cython`_ ``0.29.15``,  `numba`_ ``0.48.0``, `numpy`_ ``1.17.5``, `curio`_ ``1.0``, `nest-asyncio`_ ``1.2.3``, `biopython`_ ``1.76``
+    - (upd) `PyTest`_ related: ``pytest-5.3.5``, ``pytest-doctestplus-0.5.0``, ``pytest-forked-1.1.3``, ``pytest-html-2.0.1``, ``pytest-mock-2.0.0``, ``pytest-pylint-0.15.0``, ``hypothesis-5.5.4``, ``pytest-astropy-0.8.0``
+
+- Software
+    - (upd) `qgis`_ ``3.12``
+    - (upd) `typescript`_ ``3.8.2``
+
+- LEAN
+    - (upd) `mathlib`_ ``2020-02-27`` nightly build (LEAN 3.6.0 and mathlib aren't compatible yet, hence no update of LEAN itself)
+
+- R
+    - (new) `mltools`_ ``0.3.5`` – *A collection of machine learning helper functions, particularly assisting in the Exploratory Data Analysis phase.*
+
 
 .. _update-2020-02-21:
 
@@ -360,3 +395,16 @@ Software Updates 2020
 .. _mathlib: https://github.com/leanprover-community/mathlib
 .. _Node.js: https://nodejs.org/en/
 .. _spacy: https://spacy.io/
+.. _nest-asyncio: https://github.com/erdewit/nest_asyncio
+.. _cython: https://cython.org/
+.. _jupyter-client: https://github.com/jupyter/jupyter_client
+.. _jupyter-console: https://jupyter-console.readthedocs.io/en/latest/
+.. _ipython: https://ipython.org/
+.. _jupyterhub: https://jupyter.org/hub
+.. _jupyterlab: https://jupyterlab.readthedocs.io/en/stable/
+.. _ipykernel: https://ipython.readthedocs.io/en/stable/install/kernel_install.html
+.. _requests: https://requests.readthedocs.io/en/master/
+.. _curio: https://github.com/dabeaz/curio
+.. _mltools: https://cran.r-project.org/package=mltools
+.. _biopython: https://biopython.org/
+.. _folium: https://python-visualization.github.io/folium/
