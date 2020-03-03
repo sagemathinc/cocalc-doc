@@ -35,7 +35,7 @@ Limitations
 
 #. Unlike the `cocalc.com <https://cocalc.com>`_ service, the Docker image doesn't isolate projects from each other. There are no resource limitations between different projects.
 
-#. The Docker image has no provisions to scale horizontally. The Docker image should work for you on an average server, with a relatively small number of *trusted*, non-malicious users. In contrast, the online service `cocalc.com <https://cocalc.com>`_ uses a proprietary management system based on kubernetes that provides scalability, fault isolation, and resilience. Contact us at help@cocalc.com if you are interested in running CoCalc with kubernetes infrastructure.
+#. The Docker image has no provisions to scale horizontally. The Docker image may be useful if you have a small number of *trusted*, non-malicious users. In contrast, the online service `cocalc.com <https://cocalc.com>`_ uses a proprietary resource management system based on kubernetes that provides scalability, fault isolation, and resilience. Contact us at help@cocalc.com if you are interested in running CoCalc with kubernetes infrastructure.
 
 #. The software stack behind the `cocalc.com <https://cocalc.com>`_ service is several hundred gigabytes of well-tested code and data. In comparison, the Docker image provides a small subset of that stack, including SageMath and LaTeX. You can extend it on your own, though, by either installing more into the container or by amending the Dockerfile.
 
