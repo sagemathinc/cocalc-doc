@@ -10,6 +10,27 @@ Software Updates 2020
 
 .. highlight:: python
 
+
+.. _update-2020-03-20:
+
+2020-03-20:
+-----------------------------------------------
+
+- Python 3 Anaconda 2019
+    - (upd) `scikit-learn`_ ``0.22.2.post1``, `matplotlib`_ ``3.2.0``
+
+- Python 3 system-wide
+    - (new) `ccdproc`_ ``2.1.0``  – *an Astropy affiliated package for basic data reductions of CCD images*
+    - (upd) `matplotlib`_ ``3.2.0``, `dask`_/`distributed`_ ``2.12``, `scikit-learn`_ ``0.22.2.post1``
+
+- Software
+    - (new) ``libnetcdff6 (4.4.4+ds-3)`` and ``libnetcdff-dev (4.4.4+ds-3)``
+
+- R (system-wide)
+    - (new) ``markovchain 0.8.4``
+    - (upd) various packages …
+
+
 .. _update-2020-02-29:
 
 2020-02-29: Async I/O in Jupyter Notebooks
@@ -408,3 +429,4 @@ Software Updates 2020
 .. _mltools: https://cran.r-project.org/package=mltools
 .. _biopython: https://biopython.org/
 .. _folium: https://python-visualization.github.io/folium/
+.. _ccdproc: https://ccdproc.readthedocs.io/
