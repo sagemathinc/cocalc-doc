@@ -18,7 +18,7 @@ Software Updates 2020
 
 
 - Julia:
-    - (new) `Julia 1.4 release notes <https://docs.julialang.org/en/v1.4/NEWS/#>`_ – please update from 1.3 to 1.4 soon, since 1.3 is depreated.
+    - (new) `Julia 1.4 release notes <https://docs.julialang.org/en/v1.4/NEWS/#>`_ – please update from 1.3 to 1.4 soon, since 1.3 is deprecated.
 
 - Python 3 (system-wide)
     - (upd) `geopandas`_ ``0.7.0``, `rasterio`_ ``1.1.3``, `isochrones`_ ``2.1``, `cython`_ ``0.29.16``, `matplotlib`_ ``3.2.1``, `pandas`_ ``1.0.3``, `ipykernel`_ ``5.2.0``, `nipype`_ ``1.4.2``
