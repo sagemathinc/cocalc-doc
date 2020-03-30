@@ -11,6 +11,29 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-03-30:
+
+2020-03-30: Julia 1.4
+-----------------------------------------------
+
+
+- Julia:
+    - (new) `Julia 1.4 release notes <https://docs.julialang.org/en/v1.4/NEWS/#>`_ – please update from 1.3 to 1.4 soon, since 1.3 is depreated.
+
+- Python 3 (system-wide)
+    - (upd) `geopandas`_ ``0.7.0``, `rasterio`_ ``1.1.3``, `isochrones`_ ``2.1``, `cython`_ ``0.29.16``, `matplotlib`_ ``3.2.1``, `pandas`_ ``1.0.3``, `ipykernel`_ ``5.2.0``, `nipype`_ ``1.4.2``
+
+- Python 3 (Anaconda 2019)
+    - (upd) `matplotlib`_ ``3.2.1``, `numba`_ ``0.48.0``, `numpy`_ ``1.18.1``, `statsmodels`_ ``0.11.1``,  `geopandas`_ ``0.7.0``, `pandas`_ ``1.0.3``
+
+- Node.js
+    - (upd) `coffeescript`_ ``2.5.1``, `typescript`_ ``3.8.3``, `npm`_ ``6.14.4``, `data-cli`_ ``0.9.6``, `ijavascript`_ ``5.2.0`` (for the JavaScript kernel), `chromedriver`_ ``80.0.1``, `prettier`_ ``2.0.2``, `lerna`_ ``3.20.2``, `webpack`_ ``4.42.1``
+
+- Software
+    - (upd) various Linux package updates, including ``qgis`` related ones to ``3.12.1``
+
+
+
 .. _update-2020-03-20:
 
 2020-03-20:
@@ -430,3 +453,12 @@ Software Updates 2020
 .. _biopython: https://biopython.org/
 .. _folium: https://python-visualization.github.io/folium/
 .. _ccdproc: https://ccdproc.readthedocs.io/
+.. _rasterio: https://rasterio.readthedocs.io
+.. _coffeescript: https://coffeescript.org/
+.. _npm: https://docs.npmjs.com/
+.. _ijavascript: https://github.com/n-riesco/ijavascript
+.. _chromedriver: https://github.com/giggio/node-chromedriver
+.. _lerna: https://lerna.js.org/
+.. _webpack: https://webpack.js.org/
+.. _data-cli: https://datahub.io/docs
+.. _nipype: https://nipype.readthedocs.io/
