@@ -21,6 +21,8 @@ This tab gives you numerous options for file creation. There are also buttons to
 
 .. _default-template:
 
+.. index:: Templates; default contents for new files
+
 *******************************
 Default contents for new files
 *******************************
