@@ -227,9 +227,61 @@ we advice to order a plan which includes upgrades for CPU and memory.
     We do strongly suggest all classes upgrade the projects to "members-only" hosting,
     since this provides a better experience and higher availability.
 
+.. index:: Personal Plans
+.. _personal-plans:
 
-Personal plans
+Personal Plans
 ===========================
+
+CoCalc personal plans are a good fit for individuals and small teams.
+Unlike the course subscriptions, they are automatically renewing.
+They can be canceled at any time through the Account / Subscriptions and Course Packages tab.
+
+There are three resource levels available. Upgrades provided with each plan are listed below. For the latest information and further detail, see the CoCalc `pricing page <https://cocalc.com/policies/pricing.html>`_.
+
+For additional resources, you can purchase multiple plans and have them run concurrently, thus "stacking" available upgrades to reach the desired level.
+
+.. index:: Personal Plans; standard
+.. _personal-standard:
+
+1. Standard Plan
+-----------------
+
+* 4 projects Member Hosting
+* 8 projects Internet Access
+* 1 day Idle Timeout
+* 8 GB Disk Space
+* 4 GB Shared RAM
+
+.. index:: Personal Plans; premium
+.. _personal-premium:
+
+2. Premium Plan
+----------------
+
+* 16 projects Member Hosting
+* 32 projects Internet Access
+* 8 days Idle Timeout
+* 40 GB Disk Space
+* 24 GB Shared RAM
+* 2 GB Dedicated RAM
+* 2 cores Shared CPU
+* 1 core Dedicated CPU
+
+.. index:: Personal Plans; professional
+.. _personal-professional:
+
+3. Professional Plan
+--------------------
+
+* 40 projects Member Hosting
+* 80 projects Internet Access
+* 20 days Idle Timeout
+* 100 GB Disk Space
+* 60 GB Shared RAM
+* 4 GB Dedicated RAM
+* 4 cores Shared CPU
+* 2 cores Dedicated CPU
 
 Which plan offers "private" file storage?
 -----------------------------------------------
