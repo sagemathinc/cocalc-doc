@@ -172,6 +172,10 @@ Your course page will now look like this
   It is **strongly** recommended that you upgrade this to members-only servers for your students. 
   You can also require in the configuration page that your students pay a small one-time fee to upgrade their projects (see below).
 
+.. note::
+    Some email services, notably Hotmail and Yahoo Mail, may silently block emails sent from our service. In that case, an invitation to sign up will not appear in the inbox or spam folder of the intended recipient and another method must be used to communicate sign-up information to the student.
+
+
 .. index:: Course; reconfigure student projects
 .. index:: Reconfigure student projects
 .. index:: Course; re-send email invitations
