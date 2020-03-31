@@ -70,4 +70,4 @@ In project Settings, within a few seconds you will see that the teaching project
 License setup done!
 -------------------------------
 
-You have just completed the steps to create a teaching project, upgrade the teaching project, and create a .course file. You are ready follow steps below to add TAs, if any, add students, and set up handouts and homework.
+You have just completed the steps to create a teaching project, upgrade the teaching project, and create a .course file. You are ready follow steps below to :ref:`add TAs <teaching-add-ta>`, if any, :ref:`add students <adding-students>`, and set up :ref:`handouts <create-handout>` and :ref:`assignments <create-assignment>`.
