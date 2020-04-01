@@ -89,6 +89,9 @@ Most options under "Editor settings" are self-explanatory. Here are additional d
 Terminal settings
 -------------------
 
+.. index:: Account Tab; subscriptions and course packages
+.. _subs-course-pkgs:
+
 =============================
 Subscriptions/Course Packages
 =============================
@@ -105,11 +108,31 @@ Subscriptions/Course Packages
 
      *active subscriptions, if present, are displayed*
 
+.. index:: Account Tab; payment methods
+.. _payment-methods:
+
 Payment methods
 ----------------
 
+This is where you can enter credit card information for the CoCalc account.
+Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team.
+
+.. index:: Account Tab; subscription list
+
+.. _subscription-list:
+
 Subscriptions and course packages
 ----------------------------------
+
+This section lists your currently active subscriptions. The word "Active" denotes ordinary active subscriptions.
+The word "Trialing" indicates a free trial or other custom subscription plan.
+
+
+.. index:: Account Tab; cancel subscription
+.. index:: Cancel subscription
+
+Personal plans renew automatically. **To cancel a subscription**, find the subscription in the active subscription list and click ``Cancel`` at the far right.
+The subscription will not be auto-renewed at the next renewal date and the expiration date will be displayed in the subscription list.
 
 Invoices and receipts
 ----------------------
