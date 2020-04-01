@@ -170,7 +170,7 @@ See our `list of Jupyter related issues <https://github.com/sagemathinc/cocalc/i
 Collaboration with Classical Jupyter
 *************************************
 
-Here's a pro tip if you need a classical Jupyter notebook for one of the reasons above and want to use real-time collaboration as well.
+Here's a pro tip if you need a classical Jupyter notebook for one of the reasons above and want real-time collaboration as well.
 If you and another user both select "Jupyter classic" in :ref:`Account / Preferences / Editor <ed-settings-jupyter>`,
 then open the ipynb file in cocalc as you normally would, multiple users are supported.
 
