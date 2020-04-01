@@ -166,6 +166,20 @@ The main reasons to use the classical notebook are:
 
 See our `list of Jupyter related issues <https://github.com/sagemathinc/cocalc/issues?q=is%3Aissue+is%3Aopen+label%3AA-jupyter>`_ for more details.
 
+*************************************
+Collaboration with Classical Jupyter
+*************************************
+
+Here's a pro tip if you need a classical Jupyter notebook for one of the reasons above and want to use real-time collaboration as well.
+If you and another user both select "Jupyter classic" in :ref:`Account / Preferences / Editor <ed-settings-jupyter>`,
+then open the ipynb file in cocalc as you normally would, multiple users are supported.
+
+Multiple users are NOT supported with the :ref:`Plain Jupyter Classic Server <plain-jupyter-server>` and :ref:`JupyterLab Server <jupyterlab-server>` activated under Project settings.
+Multiple users ARE supported with classical Jupyter embedded as a normal editor within CoCalc, which is what you get when you enable "Jupyter classic" as in the preceding paragraph.
+
+Basically, we fully implemented two very different approaches to realtime collaboration for Jupyter.
+
+
 .. _dont-mix-warning:
 
 *******************************
