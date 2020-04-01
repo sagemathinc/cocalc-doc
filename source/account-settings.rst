@@ -118,7 +118,6 @@ This is where you can enter credit card information for the CoCalc account.
 Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team.
 
 .. index:: Account Tab; subscription list
-
 .. _subscription-list:
 
 Subscriptions and course packages
@@ -136,6 +135,9 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 
 Invoices and receipts
 ----------------------
+
+.. index:: Account Tab; upgrades
+.. _account-upgrades:
 
 ========
 Upgrades
