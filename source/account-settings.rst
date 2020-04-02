@@ -152,6 +152,21 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 Invoices and receipts
 ----------------------
 
+The "Invoices and receipts" section shows a list of CoCalc purchases made using the order process on this page.
+
+.. figure:: img/account/three-rcpt-hidden.png
+     :width: 90%
+     :align: center
+     
+     *view of receipts*
+
+.. figure:: img/account/three-rcpt-shown.png
+     :width: 90%
+     :align: center
+     
+     *view of receipts showing details for each item*
+
+
 .. index:: Account Tab; upgrades
 .. _account-upgrades:
 
