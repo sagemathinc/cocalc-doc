@@ -10,6 +10,18 @@ Software Updates 2020
 
 .. highlight:: python
 
+.. _update-2020-04-08:
+
+2020-04-08: healpy 1.13
+-----------------------------------------------
+
+- Python 3 and Anaconda 2019:
+    - (new) `healpy`_ 1.13.0`` – *a Python package to handle pixelated data on the sphere*
+
+- System.
+    - (upd) `bazel`_ ``3.0.0``
+    - (upd) various system package updates, including R packages
+
 
 .. _update-2020-03-30:
 
@@ -462,3 +474,4 @@ Software Updates 2020
 .. _webpack: https://webpack.js.org/
 .. _data-cli: https://datahub.io/docs
 .. _nipype: https://nipype.readthedocs.io/
+.. _healpy: https://healpy.readthedocs.io/
