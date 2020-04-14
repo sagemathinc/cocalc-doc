@@ -4,9 +4,11 @@
 Trial Projects
 ================================
 
-When you first start using CoCalc, you will see a banner saying
+When you start using CoCalc, you will see a banner similar to
 
-    "Upgrade this project, since it is on an unpaid trial server and has no internet access."
+    "Trial Project – buy upgrades or expect poor performance, [...] you can't install software packages [...]"
+
+That's because there are no upgrades for :doc:`hosting and/or internet access <billing>` applied to this project.
 
 .. warning::
 
@@ -33,8 +35,9 @@ Purchase upgrades
 --------------------------------------------
 
 Starting with a \$14/month standard subscription,
-you get quotas to :doc:`upgrade four projects, unlock internet access, etc <upgrade-guide>`.
-(`pricing page <https://cocalc.com/policies/pricing.html>`_).
+you get quotas to :doc:`upgrade four projects, unlock internet access, etc <billing>`.
+
+The `pricing page <https://cocalc.com/policies/pricing.html>`_ lists the current offerings.
 
 
 .. note::
