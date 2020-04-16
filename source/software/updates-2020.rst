@@ -10,6 +10,28 @@ Software Updates 2020
 
 .. highlight:: python
 
+
+
+.. _update-2020-04-16:
+
+2020-04-16 COBOL (GnuCOBOL)
+-----------------------------------------------
+
+- Software:
+    - (new) `COBOL` via `GnuCOBOL`_ – *an acronym for "common business-oriented language"). Created in the 60ties, it is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented.*
+    - (upd) `Rust`_ 
+        - ``rustc +stable: 1.42.0``
+        - ``rustc +beta: 1.43.0-beta.5``
+        - ``rustc +nightly: 1.44.0-nightly``
+    - (new) `Intel MKL`_ ``intel-mkl-64bit-2020.1-102`` – *The Fastest and Most-Used Math Library for Intel®-Based Systems*
+
+- Python 3 (system-wide):
+    - (upd) `numpy`_ ``1.18.2``
+
+- SageMath:
+    - (upd) development version ``9.1.rc0``
+
+
 .. _update-2020-04-08:
 
 2020-04-08: healpy 1.13
@@ -475,3 +497,6 @@ Software Updates 2020
 .. _data-cli: https://datahub.io/docs
 .. _nipype: https://nipype.readthedocs.io/
 .. _healpy: https://healpy.readthedocs.io/
+.. _GnuCOBOL: https://open-cobol.sourceforge.io/
+.. _COBOL: https://en.wikipedia.org/wiki/COBOL
+.. _Intel MKL: https://software.intel.com/en-us/mkl
