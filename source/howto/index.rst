@@ -28,6 +28,12 @@ Explanations about how you can accomplish a certain task or run a specific examp
    fix-broken-jupyter-pdf
 
 .. toctree::
+   :caption: Teaching
+   :maxdepth: 1
+
+   random-assignments
+
+.. toctree::
    :caption: Miscellaneous
    :maxdepth: 1
 
