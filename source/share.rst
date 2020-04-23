@@ -15,16 +15,6 @@ You can make individual files and folders public.
 First, do either of the following:
 
 * With the file open, click the lock icon |lock| at upper right. Note: if you see the bullhorn icon |bullhorn| instead of the lock, that means your file is already shared; you could click it to change sharing settings.
-* In the Files listing for your project, check the box in the leftmost column for your file, and click |square| Share. You can also select more than one file in order to share them together (e.g. an HTML page that includes images)
-
-.. |info| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/info-circle.png
-.. |square| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/share-square-o.png
-.. |lock| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/lock.png
-.. |bullhorn| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/bullhorn.png
-
-After either of these steps, you can see the "Share" dialog.
-You may enter a description for the file being shared,
-then click ``Make item public`` and your file is shared.
 
 .. figure:: img/icons/lock.png
      :width: 50%
@@ -37,6 +27,17 @@ then click ``Make item public`` and your file is shared.
      :align: center
 
      *lock is replaced by bullhorn if file is already shared*
+
+* In the Files listing for your project, check the box in the leftmost column for your file, and click |square| Share. You can also select more than one file in order to share them together (e.g. an HTML page that includes images)
+
+.. |info| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/info-circle.png
+.. |square| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/share-square-o.png
+.. |lock| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/lock.png
+.. |bullhorn| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/bullhorn.png
+
+After either of these steps, you can see the "Share" dialog.
+You may enter a description for the file being shared,
+then click ``Make item public`` and your file is shared.
 
 .. image:: img/share-dialog.png
      :width: 100%
