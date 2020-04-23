@@ -10,6 +10,17 @@ In this section we will present some CoCalc features and useful tricks that will
    :local:
    :depth: 2
 
+.. index:: Course; copy missing files
+.. index:: Course; catch up student
+
+Copy missing files to a student project
+==========================================================
+
+If a student project is missing some of the handouts or assignments previously distributed, you can copy those materials to their project. Click on the student name in the Students list in the course file. At the bottom of the expanded content for that student is a button "Catch up this student" that will do that.
+
+.. image:: img/teaching/copy-missing.png
+     :width: 66%
+
 .. index:: Text fields; Markdown and LaTeX
 
 Text fields generally support Markdown and LaTeX
