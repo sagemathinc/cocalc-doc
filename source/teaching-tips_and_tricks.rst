@@ -10,8 +10,41 @@ In this section we will present some CoCalc features and useful tricks that will
    :local:
    :depth: 2
 
+.. index:: Course; download student work
+.. index:: Course; convert student work to pdf
+
+Convert student notebooks to pdf for export
+==========================================================
+
+Here is a convenience feature that can be useful for offline grading and archiving of student work. Assume that an assignment consists of one or more Jupyter notebooks or Sage worksheets and that you have run ``Collect...`` for assignment. With a single click, you can now do the following:
+
+* gather student work into a single folder, prepending each notebook or worksheet name with the student first and last name
+* create a pdf file of each notebook or worksheet and place it in the same folder
+* create a single zip archive of all notebooks and worksheets for that assignment
+
+Open the the course file and select the Assignments tab. Then click the triangle next to the assignment you are interested in. Click to the bottom of the assignment area and select ``Export collected student files...`` and the export folder with pdfs and zipfile will be created.
+
+.. figure:: img/teaching/export-collected.png
+     :width: 90%
+     :align: center
+
+     *create pdf files and zip archive from collected notebooks*
+
+
+For example, if the course is "Math_202", collected notebooks are gathered into folder "Math_202-export" as shown:
+
+.. figure:: img/teaching/math-202-tree.png
+     :width: 90%
+     :align: center
+
+     *terminal view, showing export folder and zipfile contents*
+
+Note: in some rare cases, the pdf file cannot be created; in this case, the utility falls back to html.
+
 .. index:: Course; copy missing files
 .. index:: Course; catch up student
+
+.. _copy-missing-files:
 
 Copy missing files to a student project
 ==========================================================
@@ -22,6 +55,36 @@ If a student project is missing some of the handouts or assignments previously d
      :width: 66%
 
 .. index:: Text fields; Markdown and LaTeX
+
+.. index:: Export student file use
+.. index:: Course; export student file use
+
+.. _export-file-use:
+
+Export student file use
+=====================================
+
+This feature  provides 1-click export of extensive data about what students do in an assignment or handout. Getting information about what happens with anonymous users of shares is not implemented.
+
+To get a report about all the times when students opened or edited any file in an assignment or handout, do the following:
+
+#. Open a .course file.
+#. Toggle to show the information about a handout or assignment, and scroll to the bottom.
+#. There is a new button "Export file use times for this..."
+#. Click that button.
+#. A json file will open in a new tab. Hopefully the format is self explanatory. The times are all in milliseconds since the epoch, so in Javascript you can write new Date(time) to make this a date, and in Python do `this <https://stackoverflow.com/questions/3694487/in-python-how-do-you-convert-seconds-since-epoch-to-a-datetime-object>`_. You can also load json into python using the json module (import json).
+
+The json files are created in the following path::
+
+    course-exports/[name of course]/file-use-times/[handouts|assignments]/assignment_name.json
+
+.. figure:: img/export-file-use-times.png
+     :width: 75%
+     :align: center
+
+     Exporting file use times in course file Assignments tab.
+
+
 
 Text fields generally support Markdown and LaTeX
 ==========================================================
@@ -276,7 +339,7 @@ If student_id's are secret/sensitive, you could use something derived from them,
 Verifing Student Activity
 =============================
 
-In some situations it may be useful to confirm when work was done in a student project.
+In some situations it may be useful to confirm when work was done in a student project. (See also: :ref:`Export student file use <export-file-use>`.)
 
 * If you open the :doc:`activity log <project-log>` for a student project, you can see who opened any file and when.
 
