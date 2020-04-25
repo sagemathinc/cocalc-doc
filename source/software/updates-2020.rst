@@ -39,7 +39,7 @@ Software Updates 2020
 -----------------------------------------------
 
 - Software:
-    - (new) `COBOL` via `GnuCOBOL`_ – *an acronym for "common business-oriented language"). Created in the 60ties, it is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented.* – `cobol example file <https://share.cocalc.com/share/55f06a489bf8944f65f10a8aa8c1a2af30dd3690/cobol/?viewer=share>`_
+    - (new) `COBOL` via `GnuCOBOL`_ – *an acronym for "common business-oriented language"). Created in the 1960's, it is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented.* – `cobol example file <https://share.cocalc.com/share/55f06a489bf8944f65f10a8aa8c1a2af30dd3690/cobol/?viewer=share>`_
     - (upd) `Rust`_ 
         - ``rustc +stable: 1.42.0``
         - ``rustc +beta: 1.43.0-beta.5``
