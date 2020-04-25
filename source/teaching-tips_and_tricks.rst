@@ -13,6 +13,8 @@ In this section we will present some CoCalc features and useful tricks that will
 .. index:: Course; download student work
 .. index:: Course; convert student work to pdf
 
+.. _export-collected:
+
 Convert student notebooks to pdf for export
 ==========================================================
 

@@ -3,6 +3,14 @@
 ==========================
 News
 ==========================
+
+.. _new-2020-03-15:
+
+2020-03-15: Convert Batch of Jupyter Notebooks and Sage Worksheets to PDF
+=========================================================================
+
+Added a convenience feature that can be used for offline grading and archiving of student work. See :ref:`Convert student notebooks to pdf for export <export-collected>`.
+
 .. _new-2020-01-16:
 
 .. index:: Account Settings; dark mode
@@ -43,13 +51,13 @@ There's an extensive getting-started guide here: :doc:`nbgrader in CoCalc <teach
 
 .. _new-2020-01-14:
 
-Export student file use
+2020-01-14: Export student file use
 =====================================
 
 This feature lets you export data about what students do in an assignment or handout. See :ref:`Export student file use <export-file-use>`.
 
 .. _new-2020-01-13:
-.. index:: Site licenses
+.. index:: Site licenses (news)
 .. _site-license-news:
 
 2020-01-13: Site licenses
