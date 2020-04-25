@@ -16,7 +16,7 @@ In this section we will present some CoCalc features and useful tricks that will
 Convert student notebooks to pdf for export
 ==========================================================
 
-Here is a convenience feature that can be useful for offline grading and archiving of student work. Assume that an assignment consists of one or more Jupyter notebooks or Sage worksheets and that you have run ``Collect...`` for assignment. With a single click, you can now do the following:
+Here is a convenience feature that can be useful for offline grading and archiving of student work. Assume that an assignment consists of one or more Jupyter notebooks or Sage worksheets and that you have run ``Collect...`` for the assignment. With a single click, you can now do the following:
 
 * gather student work into a single folder, prepending each notebook or worksheet name with the student first and last name
 * create a pdf file of each notebook or worksheet and place it in the same folder
@@ -39,7 +39,7 @@ For example, if the course is "Math_202", collected notebooks are gathered into 
 
      *terminal view, showing export folder and zipfile contents*
 
-Note: in some rare cases, the pdf file cannot be created; in this case, the utility falls back to html.
+Note: in some cases, the pdf file cannot be created; in this case, the utility creates html instead of pdf.
 
 .. index:: Course; copy missing files
 .. index:: Course; catch up student
