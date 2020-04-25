@@ -11,6 +11,27 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-04-25:
+
+2020-04-25: R ``3.6.3`` and Julia ``1.4.1``
+----------------------------------------------
+
+- R (system-wide)
+    - (upd) Upgrading R to ``3.6.3 -- "Holding the Windsock"`` and many R packages
+    - (rem) Removing ``r-cran-bvs``, ``r-cran-haplo.ccs``, and ``r-cran-haplo.stats``, because they were holding back updating R
+
+- Julia
+    - (upd) to 1.4.1
+    - (new) adding several packages: see `Julia Packages on CoCalc`_
+
+- Python 3 (system-wide)
+    - (new) `ruptures`_ ``1.0.3`` – *a Python library for off-line change point detection*
+    - (upd) `pwlf`_ ``2.0.0``, `pyDOE`_ ``0.3.8``, `numba`_ ``0.49.0``, `numpy`_ ``1.18.3``
+
+- Python 3 (Anaconda 2019):
+    - (new) `pyDOE`_ ``0.3.8``, `ruptures`_ ``1.0.3``
+    - (upd) `tensorflow`_ ``2.1.0``, `sympy`_ ``1.5.1``, `networkx`_ ``2.4.0``, `obspy`_ ``1.2.1``
+
 
 .. _update-2020-04-16:
 
@@ -24,6 +45,7 @@ Software Updates 2020
         - ``rustc +beta: 1.43.0-beta.5``
         - ``rustc +nightly: 1.44.0-nightly``
     - (new) `Intel MKL`_ ``intel-mkl-64bit-2020.1-102`` – *The Fastest and Most-Used Math Library for Intel®-Based Systems*
+        - use via ``export LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64``
 
 - Python 3 (system-wide):
     - (upd) `numpy`_ ``1.18.2``
@@ -500,3 +522,8 @@ Software Updates 2020
 .. _GnuCOBOL: https://open-cobol.sourceforge.io/
 .. _COBOL: https://en.wikipedia.org/wiki/COBOL
 .. _Intel MKL: https://software.intel.com/en-us/mkl
+.. _pwlf: https://github.com/cjekel/piecewise_linear_fit_py
+.. _pyDOE: https://github.com/tisimst/pyDOE
+.. _ruptures: https://github.com/deepcharles/ruptures
+.. _Julia Packages on CoCalc: https://cocalc.com/doc/software-julia.html
+.. _obspy: https://github.com/obspy/obspy/wiki
