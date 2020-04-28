@@ -16,10 +16,9 @@ Therefore, you can not only view the same Python source code file in two places,
 Supported file types
 =======================
 
-.. index:: HTML editor
-.. _edit-html:
 
-.. index:: Markdown
+.. index:: Markdown; frame editor
+.. index:: Frame Editor; markdown
 
 Markdown
 -----------
@@ -28,6 +27,7 @@ If you open/create a file ending with ``*.md``, you're presented by default with
 You can also write `LaTeX formulas <https://en.wikibooks.org/wiki/LaTeX/Mathematics>`_ between ``$`` signs, e.g. ``$\frac{1}{1+x^2}$``.
 
 .. index:: Source Code files
+.. index:: Frame Editor; source code
 
 Plaintext / Source Code
 --------------------------
@@ -37,14 +37,17 @@ Similarly, you can also edit plaintext files with a special purpose, e.g. ``*.cs
 ``*.yaml`` for structured data, and for source-code of software programs, there is
 ``*.c``, ``*.c++``, ``*.sage``, ``*.java``, ``*.py``, ``*.adb`` and many more!
 
-.. index:: HTML
+.. index:: HTML; frame editor
+.. index:: Frame Editor; HTML
+.. _edit-html:
 
 HTML
 -----
 
 Open/create a ``*.html`` file and you'll see the rendered output on the right hand side. You can switch the rendered view between "Preview" (which is faster) or "iframe" (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.
 
-.. index:: RMarkdown
+.. index:: RMarkdown; frame editor
+.. index:: Frame Editor; RMarkdown
 .. _edit-rmd:
 
 RMarkdown
@@ -66,6 +69,8 @@ Text
 -----------
 
 .. index:: Frame Editor; multiple cursors
+.. index:: Text; frame editor
+.. index:: Frame Editor; text files
 
 Multiple Cursors
 =======================
