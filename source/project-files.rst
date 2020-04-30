@@ -72,7 +72,7 @@ File Actions
 
      move file to a different directory in the same project
 
-  * **Copy:** copies a file to a different directory. To copy a file to a destination in the same project, simply choose the destination directory and click "Copy 1 item". To copy a file to a different project , first click inside "A Possibly Different Project" (first screenshot below). Then select the destination project, select the destination folder in that project, then click "Copy 1 item" (second screenshot below). You must be owner or collaborator on the destination project. The log of the project containing the original file records the timestamp, destination, and the user who copied the file.
+  * **Copy:** copies a file. To copy a file to a destination in the same project, simply choose the destination directory and click "Copy 1 item". To copy a file to a different project , first click inside "A Possibly Different Project" (first screenshot below). Then select the destination project, select the destination folder in that project, then click "Copy 1 item" (second screenshot below). You must be owner or collaborator on the destination project. The log of the project containing the original file records the timestamp, destination, and the user who copied the file.
 
   .. figure:: img/project-files/file-action-copy-1.png
      :width: 80%
