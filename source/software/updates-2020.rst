@@ -17,7 +17,7 @@ Software Updates 2020
 ----------------------------------------------
 
 - Python 3 (system-wide)
-    - (new) `stellargraph`_ ``0.11.1``
+    - (new) `stellargraph`_ ``0.11.1`` – *software for network graph analytics*
     - (upd) `tensorflow-estimator`_ ``2.2.0``, `tensorflow-probability`_ ``0.9.0``, `dask`_ ``2.15.0``, `distributed`_ ``2.15.1``, `statsmodels`_ ``0.11.1``
 
 - R (system-wide)
