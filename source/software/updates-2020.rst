@@ -11,6 +11,27 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-05-04:
+
+2020-05-04: Stellargraph
+----------------------------------------------
+
+- Python 3 (system-wide)
+    - (new) `stellargraph`_ ``0.11.1``
+    - (upd) `tensorflow-estimator`_ ``2.2.0``, `tensorflow-probability`_ ``0.9.0``, `dask`_ ``2.15.0``, `distributed`_ ``2.15.1``, `statsmodels`_ ``0.11.1``
+
+- R (system-wide)
+    - (new) `genlasso`_ ``1.4`` – *Provides fast algorithms for computing the solution path for generalized lasso problems*
+    - (new) `coronavirus` ``0.1`` – *Provides a daily summary of the Coronavirus (COVID-19) cases by state/province*
+    - many additional packages and updates
+
+- Jupyter Notebooks:
+    - (rem) disabling deprecated and little useful kernels:
+        - Julia 1.3: use Julia 1.4
+        - Sage's Python 2: use Sage's Python mode. also, starting with 9.0 it's Python 3
+        - Sage's R: use R (system-wide), there is no reason left to use this one
+
+
 .. _update-2020-04-25:
 
 2020-04-25: R ``3.6.3`` and Julia ``1.4.1``
@@ -448,6 +469,7 @@ Software Updates 2020
 .. _SpecialMatrices: https://github.com/JuliaMatrices/SpecialMatrices.jl
 .. _ApproxFun: https://juliaapproximation.github.io/ApproxFun.jl/latest/
 .. _tensorflow-estimator: https://www.tensorflow.org/guide/estimator
+.. _tensorflow-probability: https://www.tensorflow.org/probability
 .. _SentimentAnalysis: https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html
 .. _pgmpy: https://pgmpy.org/
 .. _bitarray: https://github.com/ilanschnell/bitarray
@@ -527,3 +549,6 @@ Software Updates 2020
 .. _ruptures: https://github.com/deepcharles/ruptures
 .. _Julia Packages on CoCalc: https://cocalc.com/doc/software-julia.html
 .. _obspy: https://github.com/obspy/obspy/wiki
+.. _stellargraph: https://www.stellargraph.io/
+.. _genlasso: https://cran.r-project.org/package=genlasso
+.. _coronavirus: https://cran.r-project.org/package=coronavirus
