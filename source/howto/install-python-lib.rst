@@ -6,7 +6,8 @@ Install Python Packages
 
 This page describes how to install a Python package in a CoCalc project.
 
-CoCalc already includes `hundreds of packages for several Python development environments <https://cocalc.com/doc/software-python.html>`_.
+CoCalc already includes hundreds of packages for several Python environments.
+**Check first** if the lib you're looking for `is already installed <https://cocalc.com/doc/software-python.html>`_!
 
 Related: :doc:`custom-jupyter-kernel`, :doc:`jupyter-extension` and :doc:`install-r-package`.
 
