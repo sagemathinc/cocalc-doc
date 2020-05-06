@@ -47,6 +47,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    nbgrader
    neuron
    postgresql
+   mongodb
    remarkjs-slideshow
    ruby
    turtle
