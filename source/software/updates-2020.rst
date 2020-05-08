@@ -11,6 +11,18 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-05-08:
+
+2020-05-08: Fixing `Keras`_
+----------------------------------------------
+
+- Python 3 (system-wide)
+    - (fix) `keras`_ in `tensorflow`_ by downgrading `tensorflow-estimator`_ (`issue tf #37525 <https://github.com/tensorflow/tensorflow/issues/37525>`_)
+
+- Software
+    - (upd) `npm`_ ``6.14.5``, `typescript`_ ``3.8.3``
+
+
 .. _update-2020-05-04:
 
 2020-05-04: Stellargraph
