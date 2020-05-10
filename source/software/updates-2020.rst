@@ -11,6 +11,23 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-05-10:
+
+2020-05-10: QuSpin and RmdFormats
+----------------------------------------------
+
+- Python 3 (Anaconda 2019):
+    - (new) `QuSpin`_ ``0.3.4`` – *Python package for exact diagonalization and quantum dynamics of arbitrary boson, fermion and spin many-body systems. QuSpin supports the use of various (user-defined) symmetries for one and higher-dimensional lattice systems, (imaginary) time evolution following arbitrary user-specified driving protocols, and constrained Hilbert spaces.*
+
+- Python 3 (system-wide)
+    - (fix) the ``/ext/bin/tensorboard`` wrapper script works again
+    - (upd) `dask`_/`distributed`_ ``2.16.0``
+
+- R (system-wide)
+     - (new) `rmdformats`_ – *provides several HTML output formats of unique and attractive styles for RMarkdown*
+     - various package updates …
+
+
 .. _update-2020-05-08:
 
 2020-05-08: Fixing `Keras`_
@@ -564,3 +581,5 @@ Software Updates 2020
 .. _stellargraph: https://www.stellargraph.io/
 .. _genlasso: https://cran.r-project.org/package=genlasso
 .. _coronavirus: https://cran.r-project.org/package=coronavirus
+.. _rmdformats: https://bookdown.org/yihui/rmarkdown/rmdformats.html
+.. _QuSpin: https://weinbe58.github.io/QuSpin/
