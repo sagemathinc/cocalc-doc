@@ -11,6 +11,16 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-05-12:
+
+2020-05-12: Octave 5.2.0
+----------------------------------------------
+
+- Expanded the list of `pre-installed Octave packages <https://cocalc.com/doc/software-octave.html>`_
+- Updated the Octave Jupyter kernel
+- Made it a `first class citizen <https://cocalc.com/doc/octave>`_
+
+
 .. _update-2020-05-10:
 
 2020-05-10: QuSpin and RmdFormats
