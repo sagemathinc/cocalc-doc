@@ -62,7 +62,27 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 Other settings
 ----------------
 
-CoCalc allows you to specify dark mode for all windows in "Other settings". See the :ref:`News update on dark mode <overall-dark-mode>` for more information.
+.. image:: img/account-settings/prefs-other.png
+     :width: 80%
+     :align: center
+
+* Dark mode: CoCalc allows you to specify dark mode for all windows in "Other settings". See the :ref:`News update on dark mode <overall-dark-mode>` for more information.
+* Confirm
+* Show
+* Allow
+* Display
+* Mask
+* Hide
+* Generated filenames
+    .. image:: img/account-settings/prefs-other-gen-names.png
+         :width: 80%
+         :align: center
+* Default file sort
+* Number of files per page
+* Standby timeout
+    .. image:: img/account-settings/standby-screen.png
+         :width: 80%
+         :align: center
 
 Profile
 ----------------
@@ -72,11 +92,17 @@ Profile
 Editor settings
 ----------------
 
-.. figure:: img/account-settings/editor-settings.png
+.. figure:: img/account-settings/editor-settings-0-top.png
      :width: 80%
      :align: center
 
-     *Editor settings*
+     *editor settings (upper part)*
+
+.. figure:: img/account-settings/editor-settings-1-bottom.png
+     :width: 80%
+     :align: center
+
+     *editor settings (lower part)*
 
 Most options under "Editor settings" are self-explanatory. Here are additional details.
 
@@ -129,9 +155,9 @@ The word "Trialing" indicates a free trial or other custom subscription plan.
 .. figure:: img/account/three-subs.png
      :width: 90%
      :align: center
-     
+
      *list of active subscriptions*
-     
+
 Note that you can "stack" multiple course plans to combine the resources. In the example above, a Small Course (25 students) and a Medium Course (70 students) are combined to provide for a class of 95 students.
 
 .. index:: Account Tab; cancel subscription
@@ -145,7 +171,7 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 .. figure:: img/account/three-subs-cancel.png
      :width: 90%
      :align: center
-     
+
      *dialog shown after clicking "Cancel" in the previous example*
 
 
@@ -157,13 +183,13 @@ The "Invoices and receipts" section shows a list of CoCalc purchases made using 
 .. figure:: img/account/three-rcpt-hidden.png
      :width: 90%
      :align: center
-     
+
      *view of receipts*
 
 .. figure:: img/account/three-rcpt-shown.png
      :width: 90%
      :align: center
-     
+
      *view of receipts showing details for each item*
 
 
