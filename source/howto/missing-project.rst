@@ -2,8 +2,10 @@
 .. _missing-project:
 
 ==================================================
-Recovering a Project That Was Accidentally Deleted
+Recovering a Deleted Project
 ==================================================
+
+To recover individual files that are missing, see :doc:`Recovering a Deleted File <recover-deleted-file>`.
 
 ###############################################
 I think I deleted my project! What do I do?
@@ -25,10 +27,6 @@ In this case, click "Deleted" at the top of the Projects page to show all delete
 
 .. index:: Projects; missing
 
-==================================
-What To Do If a Project Is Missing
-==================================
-
 ##################################################################
 I logged in and my projects are gone or empty!
 ##################################################################
@@ -40,17 +38,3 @@ If your projects are all gone, then really you have somehow signed in using a **
 If you sign in, and your projects are all gone, then what really happened is that you've created a new account using a different sign in method.   Try signing in other ways.  If you really, really can't figure out what is going on, email help@cocalc.com, tell us as much as you can about yourself and how you first made an account, and we'll sort things out.  *For example, every few days somebody emails help@cocalc.com because they make a typo in their email address when creating their account, and we hunt it down for them.*
 
 If your project is empty, then again you may have signed in using the wrong account and probably are looking at a different project. Maybe you made another one with the same name.  See above.
-
-.. index:: Backups; recover missing files
-
-##################################################################
-My files are really gone. Help!
-##################################################################
-
-Don't worry -- CoCalc makes extensive backups of all your work, and they are fully accessible to you.
-
-1. Backups: Click the "Backups" button in the upper right of the Files listing.  You'll find many complete backups of ALL files in your project at various points in time.  These backups are made periodically (at most every 20 minutes), and old backups are deleted.
-
-2. The Project Log and :doc:`TimeTravel <../time-travel>`: Try checking the log by clicking on the "Log" button in your project.  The Log lists every file opened in your project, and if you click on a link, then click :doc:`TimeTravel <../time-travel>`, you can go back and view any version of that file, even if it was deleted.  You can then restore this past version.  These backups are made *every few seconds*, and these old backups are never deleted (unless you explicitly write to us and ask us to delete them).
-
-Unfortunately, there's some very small chance that somehow your files really did get deleted, that they are not backed up as above, and it really is entirely the fault of CoCalc. (As far as we know, it's been a long time since this has happened to anybody.) In this case, create a support ticket or email help@cocalc.com, and we'll figure out what is wrong, and (if possible) restore everything from a recent backup.  Make sure to tell us as much as you remember about your files (e.g., their names, when you last worked with them, etc.).

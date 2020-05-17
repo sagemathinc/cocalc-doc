@@ -6,7 +6,7 @@ Account Tab
 The Account Tab is where you manage settings, subscriptions, and resources across your projects. There are 5 tabs under under Account Tab.
 
 .. figure:: img/account-settings/account-subtabs.png
-     :width: 80%
+     :width: 95%
      :align: center
 
      ..
@@ -118,9 +118,9 @@ Terminal settings
 .. index:: Account Tab; subscriptions and course packages
 .. _subs-course-pkgs:
 
-=============================
-Subscriptions/Course Packages
-=============================
+==================================
+Subscriptions and Course Packages
+==================================
 
 .. figure:: img/account-settings/subscr-select.png
      :width: 80%
@@ -210,6 +210,15 @@ Applied upgrades
 
 ``Upgrades you have applied to projects``
 
+.. index:: Account Tab; licenses
+.. _account-licenses:
+
+========
+Licenses
+========
+
+.. index:: Account Tab; SSH keys
+.. _account-ssh-keys:
 
 ========
 SSH keys
@@ -234,6 +243,9 @@ SSH keys
 
 Add an SSH key
 ----------------
+
+.. index:: Account Tab; support
+.. _account-support:
 
 ========
 Support
