@@ -11,6 +11,24 @@ Software Updates 2020
 .. highlight:: python
 
 
+
+
+.. _update-2020-05-20:
+
+2020-05-20
+----------------------------------------------
+
+- Software
+    - (new) `mathlibtools`_ ``0.0.6`` for `LEAN`_
+
+- Python 3 (system-wide)
+    - (upd) `scikit-learn`_ ``0.23.0``, `imageio`_ ``2.8.0``, `PyLaTeX`_ ``1.3.2``, `obspy`_ ``1.2.1``
+
+- Julia 1.4
+    - (new) `FFTW`_
+
+
+
 .. _update-2020-05-12:
 
 2020-05-12: Octave 5.2.0
@@ -593,3 +611,6 @@ Software Updates 2020
 .. _coronavirus: https://cran.r-project.org/package=coronavirus
 .. _rmdformats: https://bookdown.org/yihui/rmarkdown/rmdformats.html
 .. _QuSpin: https://weinbe58.github.io/QuSpin/
+.. _mathlibtools: https://github.com/leanprover-community/mathlib-tools
+.. _PyLaTeX: https://jeltef.github.io/PyLaTeX/
+.. _FFTW: https://juliamath.github.io/FFTW.jl/latest/
