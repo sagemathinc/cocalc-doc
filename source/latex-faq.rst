@@ -429,7 +429,7 @@ Install packages in a project
 You can install LaTeX packages in your project:
 
 #. Open a :doc:`terminal`
-#. Check by running ``kpsewhich -var-value TEXMFHOME`` where you can install packages locally. It should tell you ``/home/user/texm``.
+#. Check by running ``kpsewhich -var-value TEXMFHOME`` where you can install packages locally. It should tell you ``/home/user/texmf``.
 #. Create the target directory based on the name of the package. E.g. if the package is called ``webquiz``, run ``mkdir -p /home/user/texmf/tex/latex/webquiz``.
 #. Change your current directory to this one via ``cd /home/user/texmf/tex/latex/webquiz``.
 #. Either download the package via ``wget ...`` from CRAN and extract it via ``tar xf <downloaded tarball>`` or ``unzip ...``. Alternatively, run ``open .`` to open this path in CoCalc's file explorer and use it to :ref:`upload <upload-files>` the style files there.
