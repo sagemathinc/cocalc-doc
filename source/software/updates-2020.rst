@@ -11,6 +11,23 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-05-27:
+
+2020-05-27: Sage 9.1 and Node.js 12
+----------------------------------------------
+
+- `SageMath`_ 9.1 available now
+    - `Sage 9.1 example notebook <https://share.cocalc.com/share/5ecad91c75ac8591603714693871c056ad3658ad/sage-9.1.ipynb?viewer=share>`_
+
+- Julia
+    - (upd) `Julia`_ ``1.4.2``
+
+- Python 3
+    - (upd) `scikit-learn`_, `sympy`_ ``1.6.0``, `mxnet`_ ``1.6.0``
+
+- Software
+    - (upd) `Node.js`_ version 12
+    - (upd) `cmake`_ ``3.17.2``
 
 
 .. _update-2020-05-20:
@@ -614,3 +631,6 @@ Software Updates 2020
 .. _mathlibtools: https://github.com/leanprover-community/mathlib-tools
 .. _PyLaTeX: https://jeltef.github.io/PyLaTeX/
 .. _FFTW: https://juliamath.github.io/FFTW.jl/latest/
+.. _Julia: https://julialang.org/
+.. _mxnet: https://mxnet.apache.org/
+.. _cmake: https://cmake.org/overview/
