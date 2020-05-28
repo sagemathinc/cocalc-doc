@@ -31,12 +31,25 @@ CoCalc's Jupyter Notebook
 To select the kernel in a CoCalc Jupyter notebook, click the "Kernel" button (usually in the middle toolbar, depending on your configuration).
 In the menu that opens, scroll down past interrupt and restart commands to see the choices for available kernels.
 
+.. _jupyter-kernel-menu:
+
 .. figure:: img/jupyter-kernel.png
      :width: 100%
      :align: center
 
-     selecting the kernel in a CoCalc Jupyter notebook
+     selecting the kernel with the kernel menu
 
+.. _jupyter-change-kernel-lg:
+
+You can view an expanded kernel selection dialog after opening a jupyter notebook by clicking the kernel at upper right.
+
+.. figure:: img/jupyter-select-kernel-lg.png
+     :width: 100%
+     :align: center
+
+     expanded kernel selection after clicking selected kernel at upper right
+
+You can also create a custom kernel if needed. See :doc:`custom-jupyter-kernel`.
 
 Jupyter Classic
 =========================

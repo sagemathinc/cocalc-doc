@@ -8,6 +8,8 @@ Custom Jupyter Kernel
 This short howto explains how you can create and access your own custom Jupyter Kernel inside a CoCalc.
 In case you require a specific software package, there are related guides: :doc:`install-python-lib` and  :doc:`install-r-package`.
 
+For your convenience, there is a link to these instructions at the bottom of both the :ref:`kernel selection menu <jupyter-kernel-menu>` and the :ref:`kernel selection dialog <jupyter-change-kernel-lg>`.
+
 To accomplish this, we're working in a :doc:`../terminal`.
 If you do not already have one, you can create a terminal in Files, as a "Terminal" file with the extension ``*.term``.
 
