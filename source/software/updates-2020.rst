@@ -11,6 +11,18 @@ Software Updates 2020
 .. highlight:: python
 
 
+
+.. _update-2020-06-06:
+
+2020-06-06: Prophet and pmdarima
+----------------------------------------------
+
+- Python 3 (system-wide)
+    - (new) `pmdarima`_ ``1.6.1`` – *ARIMA estimators for Python*
+    - (new) `fbprophet`_ – *Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.*
+    - (upd) `numba`_ ``0.49.1``, `numpy`_ ``1.18.5``
+
+
 .. _update-2020-05-27:
 
 2020-05-27: Sage 9.1 and Node.js 12
@@ -22,7 +34,7 @@ Software Updates 2020
 - Julia
     - (upd) `Julia`_ ``1.4.2``
 
-- Python 3
+- Python 3 (system-wide)
     - (upd) `scikit-learn`_, `sympy`_ ``1.6.0``, `mxnet`_ ``1.6.0``
 
 - Software
@@ -634,3 +646,5 @@ Software Updates 2020
 .. _Julia: https://julialang.org/
 .. _mxnet: https://mxnet.apache.org/
 .. _cmake: https://cmake.org/overview/
+.. _pmdarima: https://alkaline-ml.com/pmdarima/
+.. _fbprophet: https://facebook.github.io/prophet/
