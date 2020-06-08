@@ -78,14 +78,9 @@ all student projects associated to that course are automatically upgraded the ne
 Site license for individual projects
 ------------------------------------
 
-A site license can be used for a project that is not part of a CoCalc course. Open project settings. Scroll down under "Project usage and quotas" and click the button marked "Upgrade using a license key...". Enter your license key in the box that opens and click Save. Upgrades provided by the license will be applied.
-
-.. figure:: img/proj-license-key.png
-     :width: 75%
-     :align: center
-
-     Enter license key in project Settings.
-
+A site license can be used for a project that is not part of a CoCalc course.
+Add the key in Project settings under "Project usage and quotas".
+See the section on :ref:`project Licenses <project-add-license>` for details.
 
 .. _new-2019-12-16:
 .. index:: Anonymous accounts

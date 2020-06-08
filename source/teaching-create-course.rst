@@ -10,6 +10,7 @@ Some quick items before going into the details...
    :depth: 1
 
 .. _site-license-course-setup:
+.. index:: Licenses; add to course
 
 #######################################
 Setting up a Course with a Site License

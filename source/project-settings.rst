@@ -1,3 +1,5 @@
+.. index:: Project Settings
+
 ================
 Project Settings
 ================
@@ -79,13 +81,12 @@ appears if the project does not have Member Hosting or Internet Access):
 Adjust Quotas
 *************
 
+The "Adjust Quotas" dialog is where you add upgrades purchased under a Subscription or Course Package. If you have a license, see the section :ref:`Licenses <project-add-license>` below.
+
 .. note::
 
-    CoCalc now supports site licenses in addition to the upgrade system described in this section. See our :ref:`News update on site licenses <site-license-news>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
+    If you want to upgrade student projects for a CoCalc managed course, that is done in the .course file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
 
-The "Adjust Quotas" dialog is where you add upgrades you have just purchased to your own project.
-
-*Note: If you want to upgrade student projects for a CoCalc managed course, that is done in the .course file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
 
 You can enter any values that do not exceed available upgrades. This example continues
 by adding as much in the way of resources as possible to the current project.
@@ -105,7 +106,7 @@ have not applied any upgrades yet:
 Here are the two most important upgrades.
 You will probably want to apply these to any project you are working on actively:
 
-.. index:: pair: Member Hosting;project settings
+.. index:: pair: Member Hosting;Project Settings
 .. _member-hosting:
 
 Member Hosting
@@ -121,7 +122,7 @@ Often, these computers will house over 150 simultaneously running projects.
 Member-hosted projects run on machines which are much less loaded and are reserved for paying customers only.
 On member-hosted projects, commands execute more quickly, and CPU, memory and I/O heavy operations run more quickly.
 
-.. index:: pair: Internet Access;project settings
+.. index:: pair: Internet Access;Project Settings
 .. index:: Upgrades; Internet Access
 .. _internet-access:
 
@@ -153,7 +154,28 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
      :width: 60%
      :align: center
 
-.. index:: Projects; hidden or deleted
+.. _project-add-license:
+.. index:: Projects; add license
+.. index:: Licenses; add to project
+
+************
+Licenses
+************
+
+To add upgrades from a CoCalc license, click the button marked "Upgrade using a license key...".
+Enter your license key in the box that opens and click Save. Upgrades provided by the license will be applied.
+
+.. figure:: img/proj-license-key.png
+     :width: 75%
+     :align: center
+
+     Enter license key in project Settings.
+
+
+CoCalc now supports site licenses in addition to the upgrade system described in this section. See our :ref:`News update on site licenses <site-license-news>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
+
+.. index:: Projects; hide and unhide
+.. index:: Projects; delete and undelete
 .. _project_hidden_deleted:
 
 ######################
@@ -174,9 +196,9 @@ If the current project is neither hidden nor deleted, you will see this:
 Hidden vs. Deleted projects
 ***************************
 
-If you delete a project, then you delete it for everyone---for all your collaborators. The good news is that this can be undone.
+If you delete a project, then you delete it for everyone---for all your collaborators. The good news is that this can be undone. Deleting a project removes upgrades from any subscriptions or course packages.
 
-Alternatively, if you hide a project, then you will not see it in your projects listing, but your collaborators are unaffected.
+Alternatively, if you hide a project, then you will not see it in your projects listing, but your collaborators will still see it in their listings.
 
 ****************
 Hiding a project
@@ -326,6 +348,31 @@ This section assumes you have created an SSH key pair as described above.
 
    You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
 
+.. index:: Projects; features and configuration
+.. _project_feat_config:
+
+###########################
+Features and Configuration
+###########################
+
+This section lets you enable or disable specific functionality for the project. All options are enabled by default.
+
+.. image:: img/project-settings/feat-config.png
+    :width: 50%
+    :align: center
+
+*****************************************
+Available features
+*****************************************
+
+Settings here enable or disable general project features.
+
+*****************************************
+Available formatter
+*****************************************
+
+Settings here enable or disable formatters for specific file types in the CoCalc frame editor.
+
 .. index:: Projects; collaborators
 .. index:: Collaborators
 .. _project-collaborators:
@@ -444,6 +491,7 @@ Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to
          :align: center
 
 .. index:: Software Environment
+.. index:: Projects; software Environment
 .. _software-environment:
 
 ********************
@@ -471,6 +519,7 @@ Once you have selected an image, click "Save and Restart".
 
 
 .. index:: Sage Worksheets; server
+.. index:: Projects; sage worksheet server
 .. _sage-worksheet-server:
 
 #####################
@@ -505,6 +554,7 @@ For more information and some important caveats, see :doc:`Classical versus CoCa
 
 .. index:: Jupyter Server; Plain
 .. index:: Plain Jupyter Server
+.. index:: Projects; Jupyter classic server
 .. _plain-jupyter-server:
 
 
@@ -519,6 +569,7 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
      :align: center
 
 .. index:: Jupyter Server; JupyterLab
+.. index:: Projects; JupyterLab server
 .. _jupyterlab-server:
 
 *****************
