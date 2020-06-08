@@ -158,22 +158,36 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
 .. index:: Projects; add license
 .. index:: Licenses; add to project
 
-************
+########
 Licenses
-************
+########
 
 To add upgrades from a CoCalc license, click the button marked "Upgrade using a license key...".
 Enter your license key in the box that opens and click Save. Upgrades provided by the license will be applied.
 
-.. figure:: img/proj-license-key.png
-     :width: 75%
+.. figure:: img/project-settings/proj-lic-before-add.png
+     :width: 60%
      :align: center
 
-     Enter license key in project Settings.
+     Before adding a license key.
 
+.. figure:: img/project-settings/proj-lic-after-add.png
+     :width: 60%
+     :align: center
 
-CoCalc now supports site licenses in addition to the upgrade system described in this section. See our :ref:`News update on site licenses <site-license-news>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
+     After adding license key. You can add several keys.
 
+.. _project-url:
+.. index:: Projects; project URL
+
+************
+Project URL
+************
+
+Each CoCalc project has a unique URL. You can find the URL for the current project under the "Licenses" section of the project settings tab, as shown above.
+This URL can useful when contacting support and in some configuration tasks.
+
+.. index:: pair: Member Hosting;Project Settings
 .. index:: Projects; hide and unhide
 .. index:: Projects; delete and undelete
 .. _project_hidden_deleted:
