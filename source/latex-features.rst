@@ -41,15 +41,20 @@ location in the PDF preview.
 The cursor in the text editor will jump to the paragraph in the source-code.
 
 .. _latex-spellcheck:
+.. index:: LaTeX Editor; spellcheck
 
 Spellcheck
 ------------------
 
 Spell checking during LaTeX editing is available for several languages. You can enable/disable Spellcheck and change the language *for a particular file* by opening the ``Settings`` frame as shown:
 
-.. image:: img/latex-spellcheck123.jpg
+.. image:: img/latex-spellcheck.png
     :width: 50%
     :align: center
+    
+You can use your browser's spell checking for the document if you prefer. Choose "Browser (your browser's spell check)". You can find out more about browser spell checking
+`here <https://support.luminello.com/article/1090-how-does-spell-checker-work-in-each-browser>`_.
+In many browsers, a misspelled word is indicated by a colored underline, and control-clicking the underlined word will bring up a menu of suggested spellings.
 
 Note that the Spellcheck feature is also available in Markdown and HTML editors.
 
@@ -85,7 +90,7 @@ Encoding
 
 **UTF8**: the build process runs in a Linux environment.
 All edited documents are assumed to be encoded as UTF-8.
-Therefore, depending if you compile via PDFLaTeX or XeLaTeX, the following encoding defintions are the preferred choices:
+Therefore, depending if you compile via PDFLaTeX or XeLaTeX, the following encoding definitions are the preferred choices:
 
 * PDFLaTeX::
 
