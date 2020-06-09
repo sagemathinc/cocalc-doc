@@ -369,7 +369,9 @@ This section assumes you have created an SSH key pair as described above.
 Features and Configuration
 ###########################
 
-This section lets you enable or disable specific functionality for the project. All options are enabled by default.
+This section displays the configuration of specific functionality for the compute image for the project. These settings are read-only. They cannot be altered for the present project.
+
+If a feature or formatter is disabled, that means the compute image does not support them. It may be that you are using a custom or outdated image (see :ref:`Software Environment <software-environment>` below), or that you are using a :doc:`docker-image` that was built without that feature or formatter.
 
 .. image:: img/project-settings/feat-config.png
     :width: 50%
@@ -379,13 +381,13 @@ This section lets you enable or disable specific functionality for the project. 
 Available features
 *****************************************
 
-Settings here enable or disable general project features.
+This section displays the enabled/disabled state for various general project features.
 
 *****************************************
 Available formatter
 *****************************************
 
-Settings here enable or disable formatters for specific file types in the CoCalc frame editor.
+This section displays the enabled/disabled state for formatters for specific file types in the CoCalc frame editor.
 
 .. index:: Projects; collaborators
 .. index:: Collaborators
@@ -505,7 +507,7 @@ Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to
          :align: center
 
 .. index:: Software Environment
-.. index:: Projects; software Environment
+.. index:: Projects; software environment
 .. _software-environment:
 
 ********************
