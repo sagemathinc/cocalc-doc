@@ -237,7 +237,7 @@ Clicking `Unhide Project` instantly makes the project visible in the normal proj
 Deleting a project
 ******************
 
-*Note: No files are actually deleted by this operation.
+**No files are actually deleted when a project is deleted.**
 Only visibility of the project in the project list is changed.
 If you need to permanently delete information that you
 accidentally copied into a project, contact help@cocalc.com*
