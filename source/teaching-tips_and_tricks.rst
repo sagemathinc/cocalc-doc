@@ -1,4 +1,4 @@
-.. index:: Courses; FAQ
+.. index:: Courses; faq
 
 =======================
 FAQ, Tips and Tricks
@@ -10,8 +10,61 @@ In this section we will present some CoCalc features and useful tricks that will
    :local:
    :depth: 2
 
-.. index:: Course; download student work
-.. index:: Course; convert student work to pdf
+.. _add-del-student:
+
+Delete and undelete students
+==========================================================
+
+Enrollments can change after initial course setup. CoCalc offers a convenient way of deleting a student from a student list, and reversing that deletion step. Deleting a student removes upgrades from the student project. Handouts and assignments will not be distributed after the student is deleted. However, files already in the project for a deleted student are not altered, and the student project is not deleted.
+
+.. index:: Courses; delete student
+
+**To delete a student from a course**, open the course file and select the Students tab. Expand the entry for the student to be deleted.
+Click the "Delete" button at right and the confirmation button that appears next.
+
+.. note::
+
+    If you are using a shared project, you will have to remove a deleted student from the collaborators list for the shared project manually. This is a `known issue <https://github.com/sagemathinc/cocalc/issues/4495>`_ which we expect to resolve soon.
+
+.. figure:: img/teaching/delete-student.png
+     :width: 90%
+     :align: center
+
+     Deleting a student from the student list for a course.
+
+.. figure:: img/teaching/delete-student-2.png
+     :width: 90%
+     :align: center
+
+     Deleting a student, continued.
+
+.. index:: Courses; undelete student
+
+**To undelete a student**, open the course file and select the Students tab.
+Scroll to the bottom of the list. If any students have been deleted, there will be a link saying "Show *n* deleted students". Click that link and entries for all the deleted students will be visible in the student list.
+Expand the entry for the student to be undeleted.
+Click the "Undelete" button at right to restore the student to the course. There will be a link at the bottom of the student list that says "Hide *n* deleted students" to stop showing entries for deleted students.
+
+.. figure:: img/teaching/undelete-student.png
+     :width: 90%
+     :align: center
+
+     Enabling display of deleted student records.
+
+.. figure:: img/teaching/undelete-student-2a.png
+     :width: 90%
+     :align: center
+
+     Undeleting a student.
+
+After a student is undeleted:
+
+- If you are using a CoCalc site license, upgrades to the student project will be restored the next time it is started.
+- If you are using a subscription or course plan, you will need to open the Configuration tab for the course and add back the upgrades to the student project. See :ref:`adding-student-upgrades` for details.
+- To add handouts and assignments that the student may have missed when their student record was deleted, see the documentation on how to :ref:`catch up a student <copy-missing-files>`.
+
+.. index:: Courses; download student work
+.. index:: Courses; convert student work to pdf
 
 .. _export-collected:
 
@@ -43,8 +96,8 @@ For example, if the course is "Math_202", collected notebooks are gathered into 
 
 Note: in some cases, the pdf file cannot be created; in this case, the utility creates html instead of pdf.
 
-.. index:: Course; copy missing files
-.. index:: Course; catch up student
+.. index:: Courses; copy missing files
+.. index:: Courses; catch up student
 
 .. _copy-missing-files:
 
@@ -59,7 +112,7 @@ If a student project is missing some of the handouts or assignments previously d
 .. index:: Text fields; Markdown and LaTeX
 
 .. index:: Export student file use
-.. index:: Course; export student file use
+.. index:: Courses; export student file use
 
 .. _export-file-use:
 
@@ -186,7 +239,7 @@ Also you can use the terminal to commit and push changes to your repository in G
 
     You need to have internet access enabled in your project.
 
-.. index:: Courses; TimeTravel diffs
+.. index:: Courses; timetravel diffs
 
 Time Travel Diffs
 ==========================================================

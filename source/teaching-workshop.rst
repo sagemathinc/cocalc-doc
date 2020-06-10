@@ -1,5 +1,5 @@
 .. _teaching-workshop:
-.. index:: Course; short training sessions (workshops)
+.. index:: Courses; short training sessions (workshops)
 
 =====================================================
 CoCalc for Short Training Sessions

@@ -70,7 +70,7 @@ The new project will appear at the top of the project list. Click on its  title 
      :width: 100%
      :align: center
 
-.. index:: Course; adding teaching assistants
+.. index:: Courses; adding teaching assistants
 .. _teaching-add-ta:
 
 ########################################
@@ -91,7 +91,7 @@ If the email address you add as a collaborator is not associated with a CoCalc a
 an email will be sent to that address with instructions how to join.
 Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.
 
-.. index:: Course; course file
+.. index:: Courses; course file
 
 ########################
 Creating the Course File
@@ -113,12 +113,12 @@ If you go to the root of the course project directory, you will see that a new f
      :width: 100%
      :align: center
 
-.. index:: Course; multiple courses in same project
+.. index:: Courses; multiple courses in same project
 .. note::
 
     You may have more than one course file in a single project, as is explained in the next section. Be aware that that any account you add as a TA to the project will have access to course files and student work for **all** courses in that project.
 
-.. index:: Course; split into sections
+.. index:: Courses; split into sections
 
 Split course into multiple groups
 -------------------------------------
@@ -131,7 +131,7 @@ for groups ``A``, ``B``, ``C`` and so on.
 These course files are independent of each other,
 which allows not only different groups of students, but also different due dates, etc.
 
-.. index:: Course; adding students
+.. index:: Courses; adding students
 .. _adding-students:
 
 #############################
@@ -177,9 +177,9 @@ Your course page will now look like this
     Some email services, notably Hotmail and Yahoo Mail, may silently block emails sent from our service. In that case, an invitation to sign up will not appear in the inbox or spam folder of the intended recipient and another method must be used to communicate sign-up information to the student.
 
 
-.. index:: Course; reconfigure student projects
+.. index:: Courses; reconfigure student projects
 .. index:: Reconfigure student projects
-.. index:: Course; re-send email invitations
+.. index:: Courses; re-send email invitations
 .. index:: Re-send student email invitations
 
 **Reconfiguring student projects and re-issuing email invitations.**
@@ -320,6 +320,8 @@ The instructor enters the usual upgrades *per student* for Standard subscription
      :align: center
 
 After checking that everything looks right, the instructor clicks `Apply changes`.
+
+.. _adding-student-upgrades:
 
 Adding more student upgrades
 ============================

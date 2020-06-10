@@ -8,7 +8,7 @@ No matter what you've added in the instructor's view of the course, the students
    :local:
    :depth: 2
 
-.. index:: Create Handout
+.. index:: Courses; create handout
 .. _create-handout:
 
 Create a new Handout
@@ -32,7 +32,7 @@ The system will look for any folders with **Handout1** in their path name and  r
 
 The new handout will be added to the list of handouts available for the course.
 
-.. index:: Create assignment
+.. index:: Courses; create assignment
 .. _create-assignment:
 
 Create a new assignment
