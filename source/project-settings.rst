@@ -362,8 +362,32 @@ This section assumes you have created an SSH key pair as described above.
 
    You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
 
-.. index:: Projects; features and configuration
+.. index:: Projects; custom environment variables
+.. _project-env-vars:
+
+#############################
+Custom environment variables
+#############################
+
+Here you can set environment variables for the entire project.
+This feature allows you to add custom configuration for applications that are launched by the CoCalc graphical user interface, such as Jupyter notebooks and the JupyterLab server.
+
+Enter custom environment variables as a JSON map from string to string, e.g., {"foo":"bar","x":"y"}.
+Unlike environment variables in .bashrc, these will be available to anything that runs in your project (e.g., Jupyter kernels).
+Delete a variable by setting it to the empty string.
+Restart your project for these changes to take effect.
+
+The text above will appear as a reminder when you click inside the textarea for Custom environment variables.
+
+.. figure:: img/project-settings/env-vars.png
+     :width: 70%
+     :align: center
+
+     Help text appears when you click in the textarea.
+
+.. index:: Projects; features and co3Ynfiguration
 .. _project_feat_config:
+
 
 ###########################
 Features and Configuration
