@@ -25,6 +25,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
 
    jupyter-kernel-selection
    jupyter-extension
+   jupyterlab-extensions
    custom-jupyter-kernel
    fix-broken-jupyter-pdf
 

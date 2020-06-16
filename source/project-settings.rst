@@ -385,6 +385,9 @@ The text above will appear as a reminder when you click inside the textarea for 
 
      Help text appears when you click in the textarea.
 
+For a complete example using a custom envoronment variable, see :doc:`howto/jupyterlab-extensions`.
+
+
 .. index:: Projects; features and co3Ynfiguration
 .. _project_feat_config:
 
