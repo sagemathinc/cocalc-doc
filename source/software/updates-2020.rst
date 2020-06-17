@@ -11,6 +11,15 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-06:
+
+2020-
+----------------------------------------------
+
+- Python 3 (system-wide)
+    - (upd) `tensorflow`_ ``2.2.0``, `Cython`_ ``0.29.20``, `dask`_ ``2.18.1``
+    - (upd) `qiskit`_ related packages and `pyscf`_ ``1.7.3``
+
 
 .. _update-2020-06-06:
 
@@ -648,3 +657,4 @@ Software Updates 2020
 .. _cmake: https://cmake.org/overview/
 .. _pmdarima: https://alkaline-ml.com/pmdarima/
 .. _fbprophet: https://facebook.github.io/prophet/
+.. _pyscf: https://sunqm.github.io/pyscf/

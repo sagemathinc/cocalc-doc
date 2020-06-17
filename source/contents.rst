@@ -21,6 +21,7 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    teaching-instructors
    teaching-students
+   teaching-notes
 
 .. toctree::
    :maxdepth: 2

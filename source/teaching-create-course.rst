@@ -1,38 +1,4 @@
-
-=========================================================
-Notes on Managing Courses
-=========================================================
-
-Some quick items before going into the details...
-
-.. contents::
-   :local:
-   :depth: 1
-
-.. _site-license-course-setup:
-.. index:: Licenses; add to course
-
-#######################################
-Setting up a Course with a Site License
-#######################################
-
-.. include:: start-site-license-course.inc
-
-
-####
-VFAQ
-####
-
-**Very Frequently Asked Questions**. We're putting these here because we get them so often.
-Further course plan/quotas related questions are answered in :doc:`billing`.
-
-.. include:: teaching-vfaq.inc
-
-###################################
-Upgrade the Teaching Project First!
-###################################
-
-If you're using CoCalc course management, we *strongly recommend* that the project containing the ``.course`` file have upgrades for Member Hosting and Internet Access. These upgrades are available with any level of subscription to CoCalc. Some functionality that involves inviting students via email, notifications, etc., will only work with the Internet Access upgrade. We also pride ourselves on offering extensive support to paying customers. If you're an instructor and need a free trial subscription, do not hesitate to contact us at help@cocalc.com.
+.. _create-a-new-course:
 
 =====================
 Creating a New Course
@@ -51,6 +17,11 @@ Creating the Course Project
 ###########################
 
 The first step is to create an instructor's project to contain the course.
+
+.. note::
+
+    :ref:`upgrade-teacher-project-first`
+    Then check our :ref:`very frequently asked questions <teaching-vfaq>`.
 
 Log into CoCalc and click on the **Projects** icon in the top left hand corner of the screen.
 
