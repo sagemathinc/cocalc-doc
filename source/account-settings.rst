@@ -217,6 +217,27 @@ Applied upgrades
 Licenses
 ========
 
+Under "Licenses", you can keep track of CoCalc licenses you manage or use in your projects.
+
+.. figure:: img/account-settings/account-licenses.png
+     :width: 90%
+     :align: center
+
+     ..
+
+Licenses that you manage
+------------------------
+
+If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section. To have license managers added or removed, contact CoCalc support at help@cocalc.com. License managers must have a CoCalc account with an email address.
+
+
+Projects with licenses
+----------------------
+
+If you are an owner or collaborator on any projects that are CoCalc licenses, those projects are listed in this section.
+
+
+
 .. index:: Account Tab; SSH keys
 .. _account-ssh-keys:
 
@@ -254,5 +275,17 @@ Support
 Support tickets
 ----------------
 
+.. figure:: img/account-settings/account-tickets.png
+     :width: 90%
+     :align: center
+
+     ..
+
+
+View your open and closed CoCalc support requests here. A red background indicates an open ticket, while a blue background indicates a closed ticket.
+
+.. note::
+
+    If you email CoCalc support from an email address other than what is  on your account, the help ticket that is created won't be listed here. *A good rule when you have a question is to have the file relating to your question open in CoCalc, then click the Help button to request support. That way, the ticket will be listed here, and CoCalc staff will see a link to the file in question.*
 
 
