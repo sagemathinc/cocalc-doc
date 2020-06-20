@@ -11,14 +11,23 @@ Software Updates 2020
 .. highlight:: python
 
 
-.. _update-2020-06:
+.. _update-2020-06-20:
 
-2020-
+2020-06-20: Updating `SnapPy`_ in SageMath
 ----------------------------------------------
 
 - Python 3 (system-wide)
-    - (upd) `tensorflow`_ ``2.2.0``, `Cython`_ ``0.29.20``, `dask`_ ``2.18.1``
+    - (upd) `tensorflow`_ ``2.2.0``, `Cython`_ ``0.29.20``, `dask`_ ``2.18.1``, `dask`_ ``2.19.0``, `distributed`_ ``2.19.0``, `pandas`_ ``1.0.5``
     - (upd) `qiskit`_ related packages and `pyscf`_ ``1.7.3``
+
+- Sage 9.1
+    - (upd) `snappy`_ ``2.8``, `spherogram`_ ``1.8.3``, `plink`_ ``2.3.1``
+
+- Sage 8.9
+    - (upd) `plink`_ ``2.3.1``, `snappy`_ ``2.8``, `spherogram`_ ``1.8.3``
+
+- Software
+    - various system-wide updates, including R packages
 
 
 .. _update-2020-06-06:
@@ -658,3 +667,6 @@ Software Updates 2020
 .. _pmdarima: https://alkaline-ml.com/pmdarima/
 .. _fbprophet: https://facebook.github.io/prophet/
 .. _pyscf: https://sunqm.github.io/pyscf/
+.. _plink: https://www.math.uic.edu/t3m/plink/doc/
+.. _snappy: https://snappy.math.uic.edu/
+.. _spherogram: https://snappy.math.uic.edu/spherogram.html
