@@ -117,12 +117,15 @@ Here's quick tour of the topmost toolbar in CoCalc, the **Project Toolbar**.
 
 Going from left to right:
 
-* |cocalc-logo| **Projects button** - click here to create a new project and see a list of your existing projects.
-  Any text you type into the **Search for Projects** field will be used to select which projects
-  are displayed. Any project with matching text in Title or Description will appear in the filtered list.
-  If you have any hidden or deleted projects, a checkbox will appear to allow you to show those.
+.. index:: Project Toolbar; projects button
+
+* |cocalc-logo| **Projects button** - click here to create a new project and see a list of your existing projects. Any text you type into the **Search for Projects** field will be used to select which projects are displayed. Any project with matching text in Title or Description will appear in the filtered list. If you have any hidden or deleted projects, a checkbox will appear to allow you to show those.
+
+.. index:: Project Toolbar; open projects
 
 * **Open projects** - a tab button will appear for each project you have open.
+
+.. index:: Project Toolbar; about CoCalc
 
 * |info-circle| **CoCalc** - Information about CoCalc. Includes links to tutorials, examples, lists of available languages, libraries, and packages, and real-time stats for the platform.
 
@@ -132,7 +135,11 @@ Going from left to right:
 
 * |medkit| **Help** - **Use this button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
 
+.. index:: Project Toolbar; account tab
+
 * **Account** - Click here to update your profile, sign out, order subscriptions, view your upgrades, `add SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets. Read more about account operations :doc:`here <account>`.
+
+.. index:: Project Toolbar; notification (bell) icon
 
 * |bell| **Notifications** - A count is displayed over the bell if there are chat updates or file edits in projects you own or collaborate on. Click the bell to view a list of pending notifications, showing which account originated them and a link to the project or file being updated at the time.
 
@@ -154,6 +161,7 @@ Going from left to right:
     
     ..
 
+.. index:: Project Toolbar; fullscreen mode
 
 * |expand| **Fullscreen Mode** - Clicking here will toggle fullscreen mode, in which the project and file toolbars are shown or hidden.
 
