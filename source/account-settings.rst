@@ -3,7 +3,12 @@
 Account Tab
 *****************
 
-The Account Tab is where you manage settings, subscriptions, and resources across your projects. There are 5 tabs under under Account Tab.
+The Account Tab is where you manage settings, subscriptions, and resources across your projects. There are 6 dialog pages under Account Tab.
+
+.. index:: Sign out of CoCalc; from Account tab
+.. _sign-out:
+
+Under "Account" you will find a button to ``Sign out`` at upper right, and the following sections for managing your account.
 
 .. figure:: img/account-settings/account-subtabs.png
      :width: 95%
@@ -39,7 +44,9 @@ Account settings
 
 Most of the entries under ``Account settings`` are self-explanatory. Here are a few additional notes.
 
-.. index:: Sign out of CoCalc, Log out of CoCalc
+.. index::
+   Sign out of CoCalc; from preferences
+   see: Log out of CoCalc; Sign out of CoCalc
 
 * Your password is needed to change your email address.
 
@@ -47,7 +54,7 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 
 * The Newsletter checkbox doesn't do anything yet. We don't send out a newsletter.
 
-* **Sign Out of CoCalc** using one of the orange "Sign Out" buttons. You will be asked to confirm your selection.
+* **Sign Out of CoCalc** using one of the "Sign Out" buttons. You will be asked to confirm your selection.
 
 * Choosing the red ``Delete Account...`` button will cause a warning window to pop up. Confirmation is required before proceeding.
 
@@ -266,6 +273,9 @@ Add an SSH key
 ----------------
 
 .. index:: Account Tab; support
+.. index::
+   Support; view tickets
+
 .. _account-support:
 
 ========

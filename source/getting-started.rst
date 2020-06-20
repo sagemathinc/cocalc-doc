@@ -102,6 +102,11 @@ And click Run or press Shift-Enter to run the code.
 .. image:: img/getting-started/file-8-a.png
      :width: 90%
 
+.. index:: Project Toolbar
+.. index:: Toolbars; project
+.. _project-toolbar:
+
+
 The Project Toolbar
 -------------------
 
@@ -112,40 +117,49 @@ Here's quick tour of the topmost toolbar in CoCalc, the **Project Toolbar**.
 
 Going from left to right:
 
-        .. _pt-cocalc:
+* |cocalc-logo| **Projects button** - click here to create a new project and see a list of your existing projects.
+  Any text you type into the **Search for Projects** field will be used to select which projects
+  are displayed. Any project with matching text in Title or Description will appear in the filtered list.
+  If you have any hidden or deleted projects, a checkbox will appear to allow you to show those.
 
-    * |cocalc-logo| **Projects button** - click here to create a new project and see a list of your existing projects.
-      Any text you type into the **Search for Projects** field will be used to select which projects
-      are displayed. Any project with matching text in Title or Description will appear in the filtered list.
-      If you have any hidden or deleted projects, a checkbox will appear to allow you to show those.
+* **Open projects** - a tab button will appear for each project you have open.
 
-        .. _pt-projects:
+* |info-circle| **CoCalc** - Information about CoCalc. Includes links to tutorials, examples, lists of available languages, libraries, and packages, and real-time stats for the platform.
 
-    * **Open projects** - a tab button will appear for each project you have open.
+.. index::
+   Support; create support request
+   seealso: Help; Support
 
-        .. _pt-info:
+* |medkit| **Help** - **Use this button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
 
-    * |info-circle| **CoCalc** - Information about CoCalc. Includes links to tutorials, examples, lists of available languages, libraries, and packages, and real-time stats for the platform.
+* **Account** - Click here to update your profile, sign out, order subscriptions, view your upgrades, `add SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets. Read more about account operations :doc:`here <account>`.
 
-        .. _pt-medkit:
+* |bell| **Notifications** - A count is displayed over the bell if there are chat updates or file edits in projects you own or collaborate on. Click the bell to view a list of pending notifications, showing which account originated them and a link to the project or file being updated at the time.
 
-    * |medkit| **Help** - **Use this button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
+.. index:: Connection Status
 
-        .. _pt-account:
+* |wifi| **Connection Status**. The connection status icon changes color as shown below to indicate changes in the connection between your browser and CoCalc servers.
 
-    * **Account** - Click here to update your profile, sign out, order subscriptions, view your upgrades, add `SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets.
+  .. figure:: img/getting-started/conn-stat.png
+    :width: 35%
+    
+    ..
 
-        .. _pt-notifications:
 
-    * |bell| **Notifications** - A count is displayed over the bell if there are chat updates or file edits in projects you own or collaborate on.
+  Clicking the connection status icon brings up a window with additional connection detail as shown below, including round-trip ping time to the CoCalc servers. If the ping time doesn't appear right away, wait a bit; it's tested every 30 seconds when the window is open.
 
-        .. _pt-connection-status:
 
-    * |wifi| **Connection Status**. The number to the right of the icon is the round-trip time for data between your computer and CoCalc.
+  .. figure:: img/getting-started/conn-ind.png
+    :width: 70%
+    
+    ..
 
-        .. _pt-fullscreen:
 
-    * |expand| **Fullscreen Mode** - Clicking here will toggle fullscreen mode, in which the project and file toolbars are shown or hidden.
+* |expand| **Fullscreen Mode** - Clicking here will toggle fullscreen mode, in which the project and file toolbars are shown or hidden.
+
+.. index:: Files Toolbar
+.. index:: Toolbars; files
+.. _files-toolbar:
 
 The Files Toolbar
 -----------------
@@ -160,59 +174,59 @@ When you select a file in the toolbar, its contents are displayed in the browser
 
 From left to right:
 
-       .. _ft-files:
+.. _ft-files:
 
-    * |folder-open| **Files** - If you don't have a file open, clicking here will show you a list of files
-      in the project's home directory. If you are working on a file, clicking **Files** will show a list of
-      files in the directory containing the currently selected file. You can enter search characters to
-      filter the file list for filenames containing the search text.
+* |folder-open| **Files** - If you don't have a file open, clicking here will show you a list of files
+  in the project's home directory. If you are working on a file, clicking **Files** will show a list of
+  files in the directory containing the currently selected file. You can enter search characters to
+  filter the file list for filenames containing the search text.
 
-       .. _ft-new:
+.. _ft-new:
 
-    * |plus-circle| **New** - click to create or upload new files. **New** also lets you
-      browse the `CoCalc Library <http://blog.sagemath.com/cocalc/2018/03/06/cocalc-library.html>`_, which contains code examples and entire books about various toolsets
-      and science topics, ready to copy into your project.
+* |plus-circle| **New** - click to create or upload new files. **New** also lets you
+  browse the `CoCalc Library <http://blog.sagemath.com/cocalc/2018/03/06/cocalc-library.html>`_, which contains code examples and entire books about various toolsets
+  and science topics, ready to copy into your project.
 
-       .. _ft-history:
+.. _ft-history:
 
-    * |history| **Log** - The **Project Activity Log** shows recent activity in your project:
-      logins, files opened and uploaded, etc. If you click on a filename in the log, it will open
-      that file. This is often the quickest way to resume work on a file that was recently closed.
+* |history| **Log** - The **Project Activity Log** shows recent activity in your project:
+  logins, files opened and uploaded, etc. If you click on a filename in the log, it will open
+  that file. This is often the quickest way to resume work on a file that was recently closed.
 
-       .. _ft-search:
+.. _ft-search:
 
-    * |search| **Find** - Search  for files containing the specified text in the directory that contains
-      the currently selected file, or the project home directory if no file is selected. There are options
-      to for searching subdirectories, case sensitive search, including hidden files, and restricting search
-      to files in a git repository.
+* |search| **Find** - Search  for files containing the specified text in the directory that contains
+  the currently selected file, or the project home directory if no file is selected. There are options
+  to for searching subdirectories, case sensitive search, including hidden files, and restricting search
+  to files in a git repository.
 
-       .. _ft-settings:
+.. _ft-settings:
 
-    * |wrench| **Settings** - This tab is where you can set a description for your project, add or remove
-      upgrades, hide or delete the project, add a project-specific `SSH Key <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, view and add collaborators, stop and restart the project and the Sage worksheet server,
-      and launch the Plain Jupyter and JupyterLab servers.
-      *Hint: Adding hashtags to the description can make it easy to find a subject with the Project button if you have a large number of projects.*
+* |wrench| **Settings** - This tab is where you can set a description for your project, add or remove
+  upgrades, hide or delete the project, add a project-specific `SSH Key <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, view and add collaborators, stop and restart the project and the Sage worksheet server,
+  and launch the Plain Jupyter and JupyterLab servers.
+  *Hint: Adding hashtags to the description can make it easy to find a subject with the Project button if you have a large number of projects.*
 
-       .. _ft-open-files:
+.. _ft-open-files:
 
-    * **Open Files** - a button will appear for each file you have open. There are several ways to open a file in CoCalc:
+* **Open Files** - a button will appear for each file you have open. There are several ways to open a file in CoCalc:
 
-        * Select the name of the file in :doc:`../project-files` list.
+  * Select the name of the file in :doc:`../project-files` list.
 
-        * Select the filename in an entry in the :ref:`Project Activity Log <ft-history>`.
+  * Select the filename in an entry in the :ref:`Project Activity Log <ft-history>`.
 
-        * Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
+  * Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
 
 
-       .. _ft-share:
+.. _ft-share:
 
-    * |share-square| **Share** - If a file is selected, this button allows you to share it. Files shared publicly
-      can be viewed by people without a CoCalc login.
+* |share-square| **Share** - If a file is selected, this button allows you to share it. Files shared publicly
+  can be viewed by people without a CoCalc login.
 
-       .. _ft-comment:
+.. _ft-comment:
 
-    * |comment| **Chat** - If a file is selected, you can click here to start text or video chat.
-      Collaborators on the project will get a notification when chat is opened or updated.
+* |comment| **Chat** - If a file is selected, you can click here to start text or video chat.
+  Collaborators on the project will get a notification when chat is opened or updated.
 
 Your CoCalc Session
 -------------------
@@ -224,17 +238,16 @@ When you return, you will see the same open projects and files.
 In addition, if you have a program running and disconnect, it will keep running, with a few
 exceptions: the program will stop if any of the following occurs:
 
-    * your project is on a trial server (i.e. does not have Member Hosting upgrade applied) and the
-      server is restarted
-    * you do not edit a file for more than the idle time specified in **Project Settings**
-    * the program crashes or runs out of memory
+* your project is on a trial server (i.e. does not have Member Hosting upgrade applied) and the server is restarted
+
+* you do not edit a file for more than the idle time specified in **Project Settings**
+
+* the program crashes or runs out of memory
 
 Signing Out
 -----------
 
-.. index:: Signing Out
-
-You sign out by using **Account** → **Preferences** → **Sign Out...**
+You :ref:`sign out <sign-out>` by using **Account** → **Preferences** → **Sign Out...**
 
 Next steps
 ----------
@@ -250,6 +263,8 @@ Continue your tour of CoCalc, with these topics:
 Subscribe to CoCalc and upgrade your projects here:
 
 * :doc:`upgrade-guide`
+
+.. index:: Help; general resources
 
 Getting help
 -----------------------------
