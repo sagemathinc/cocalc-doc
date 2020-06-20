@@ -30,7 +30,7 @@ You definitely do not need to have your computer awake, or a window open, for yo
 
 
 
-.. index:: Idle Timeout
+.. index:: Idle Timeout; software development
 .. _idle-timeout:
 
 What is an "idle timeout?"

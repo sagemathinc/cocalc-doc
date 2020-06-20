@@ -141,7 +141,7 @@ Enable internet access by adding the "internet access" quota.
 .. _idle-timeout-quota:
 .. index::
     Quotas; Idle timeout
-    Idle timeout
+    Idle Timeout; quota
 
 What exactly is the **"idle timeout"** quota?
 -------------------------------------------------
