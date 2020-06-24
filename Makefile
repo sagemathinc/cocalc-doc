@@ -22,7 +22,7 @@ watch: api html
 api: Makefile $(APIIDX)
 
 $(APIIDX): api.json api.py
-	python3 api.py
+	#python3 api.py
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).

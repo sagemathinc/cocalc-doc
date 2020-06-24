@@ -453,9 +453,9 @@ Software Updates 2019
 * :ref:`Custom Software Environments <custom-software-environment>`:
     * (upd) "Tensorflow 2" ``2.0.0-rc0``: the first release candidate for ``2.0.0``
 
-* :doc:`../api/index`:
-    * (enh) :doc:`Scheduled copy operations <../api/copy_path_between_projects>`
-    * (new) :doc:`../api/copy_path_status` and :doc:`../api/copy_path_delete`
+..    * :doc:`../api/index`:
+..        * (enh) :doc:`Scheduled copy operations <../api/copy_path_between_projects>`
+..        * (new) :doc:`../api/copy_path_status` and :doc:`../api/copy_path_delete`
 
 
 

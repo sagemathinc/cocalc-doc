@@ -16,7 +16,6 @@ Explanations about how you can accomplish a certain task or run a specific examp
    running-processes
    upload
    webserver
-   ../api-examples.md
    convert-html-to-pdf
 
 .. toctree::

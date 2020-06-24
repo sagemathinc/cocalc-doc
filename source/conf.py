@@ -21,6 +21,29 @@ import sys
 sys.path.insert(0, os.path.abspath('_ext'))  # or just '.'
 from datetime import date
 
+# m2r bug -----------------------------------------------------------------
+# https://github.com/miyakogi/m2r/issues/51#issuecomment-618285433
+
+import sphinx
+
+def monkeypatch(cls):
+    """ decorator to monkey-patch methods """
+    def decorator(f):
+        method = f.__name__
+        old_method = getattr(cls, method)
+        setattr(cls, method, lambda self, *args, **kwargs: f(old_method, self, *args, **kwargs))
+    return decorator
+
+# workaround until https://github.com/miyakogi/m2r/pull/55 is merged
+@monkeypatch(sphinx.registry.SphinxComponentRegistry)
+def add_source_parser(_old_add_source_parser, self, *args, **kwargs):
+    # signature is (parser: Type[Parser], **kwargs), but m2r expects
+    # the removed (str, parser: Type[Parser], **kwargs).
+    if isinstance(args[0], str):
+        args = args[1:]
+    return _old_add_source_parser(self, *args, **kwargs)
+# -------------------------------------------------------------------------
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -171,13 +194,13 @@ elif html_theme == 'sphinx_rtd_theme':
         Insert Google Analytics tracker
         Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
         """
-        app.add_javascript(
+        app.add_js_file(
             "https://www.googletagmanager.com/gtag/js?id={}".format(GA_TAG))
         # this file is _static/google_analytics_tracker.js
         # it also contains the GA_TAG !
-        app.add_javascript("google_analytics_tracker.js")
+        app.add_js_file("google_analytics_tracker.js")
         # cocalc's analytics
-        app.add_javascript("https://cocalc.com/analytics.js")
+        app.add_js_file("https://cocalc.com/analytics.js")
 
 else:
     raise AssertionError(f'Unknown theme "{html_theme}"')

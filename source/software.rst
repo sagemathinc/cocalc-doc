@@ -98,7 +98,7 @@ Simplified, you can think this as an alternative to `MyBinder`_ with a couple of
    :maxdepth: 1
    :caption: Available Custom Environments
 
-   software/custom_software
+   software/custom_software_main
 
 Getting started
 ----------------------

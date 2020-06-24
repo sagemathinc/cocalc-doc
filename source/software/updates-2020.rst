@@ -11,6 +11,18 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-06...:
+
+2020-06-... 
+------------------------------------------------
+
+- Python 3 (system-wide)
+    - (new) `Epidemiology on Networks`_ ``1.1`` – *provides tools to study the spread of SIS and SIR diseases in networks*
+    - (upd) Sphinx-3.1.1 kiwisolver-1.2.0 matplotlib-3.2.2 numpydoc-1.0.0 scipy-1.5.0 six-1.15.0 sphinx-rtd-theme-0.5.0 sphinx-sitemap-2.1.0 `toolz`_ ``0.10.0``
+
+
+
+
 .. _update-2020-06-20:
 
 2020-06-20: Updating `SnapPy`_ in SageMath
@@ -532,6 +544,7 @@ Software Updates 2020
 .. _memory_profiler: https://pypi.org/project/memory-profiler/
 .. _dill: https://github.com/uqfoundation/dill
 .. _cytoolz: https://github.com/pytoolz/cytoolz
+.. _toolz: https://toolz.readthedocs.io/
 .. _emcee: https://emcee.readthedocs.io/
 .. _qutip: http://qutip.org/
 .. _geopandas: http://geopandas.org/
@@ -670,3 +683,4 @@ Software Updates 2020
 .. _plink: https://www.math.uic.edu/t3m/plink/doc/
 .. _snappy: https://snappy.math.uic.edu/
 .. _spherogram: https://snappy.math.uic.edu/spherogram.html
+.. _Epidemiology on Networks: https://epidemicsonnetworks.readthedocs.io/en/latest/
