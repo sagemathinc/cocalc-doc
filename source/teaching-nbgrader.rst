@@ -1,10 +1,10 @@
 .. index:: Courses; nbgrader
-.. index:: nbgrader
+.. index:: nbgrader; teaching with
 .. _nbgrader-doc:
 
-=====================
-nbgrader in CoCalc
-=====================
+================================
+Teaching with nbgrader
+================================
 
 `nbgrader`_ is a tool for creating and grading assignments in Jupyter notebooks. CoCalc Jupyter notebooks include support for nbgrader core features without the need for added modules and extensions.
 
@@ -12,7 +12,6 @@ nbgrader in CoCalc
    :local:
    :depth: 2
 
-.. index:: nbgrader; purpose
 .. _nbgrader-purpose:
 
 Purpose of nbgrader
@@ -46,6 +45,8 @@ though with some changes.
 * There is a Table of Contents overview that shows a link to each question, and whether or not each question passes tests (coming soon).
 * Integration with CoCalc's course management tools for distributing and collecting assignments.
 * Automated grading safely runs code in the student's project, not in the instructor's project.
+
+.. index:: nbgrader; getting started
 
 Getting started
 ================

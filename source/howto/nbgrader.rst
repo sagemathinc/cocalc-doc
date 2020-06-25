@@ -4,16 +4,10 @@
 NBgrader
 ===============
 
-.. warning::
-
-    This is work in progress
-
-Website and documentation: `nbgrader <http://nbgrader.readthedocs.io>`_.
+If you are looking for general information about nbgrader on CoCalc, see: :doc:`../teaching-nbgrader`. For the nbgrader official website and documentation, see: `nbgrader <http://nbgrader.readthedocs.io>`_.
 
 How to setup ``nbgrader`` for CoCalc to work with ``R``
 ===========================================================
-
-**Under construction!**
 
 There are plenty of examples of creating assignments for ``Python``. For other languages, not so much.
 I couldn't find any for ``R``. To get ``R`` to work, you need to add one line to the default ``nbgrader_config.py`` file. Here is my file that I placed in ``/etc/jupyter`` (on my own computer - have not gotten this to work yet on CoCalc)::
