@@ -15,9 +15,15 @@ Explanations about how you can accomplish a certain task or run a specific examp
    install-r-package
    running-processes
    upload
-   webserver
    ../api-examples.md
    convert-html-to-pdf
+
+.. toctree::
+   :caption: Services
+   :maxdepth: 1
+
+   webserver
+   bokeh-server
 
 .. toctree::
    :caption: Jupyter Notebook
