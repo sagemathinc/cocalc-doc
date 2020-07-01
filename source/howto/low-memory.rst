@@ -36,16 +36,24 @@ For example::
 Ways to clear up your project's memory
 ----------------------------------------------------------
 
-- Jupyter:
-    - **Restart** the kernel
-    - When you close it, click the :ref:`Halt button <jupyter-halt>`, which also terminates the kernel running your code behind the scenes. Just closing the tab does not stop it from running and it continues to be active in the background!
+**Jupyter**:
 
-- Sage Worksheet:
-    - **Restart** the worksheet
+    * **Restart** the kernel
+    * When you close it, click the :ref:`Halt button <jupyter-halt>`, which also terminates the kernel running your code behind the scenes. Just closing the tab does not stop it from running and it continues to be active in the background!
 
-- If the above doesn't help or doesn't apply, close all editor tabs (or all but one), and **restart the project** (project settings → project control).
+**Sage Worksheet**:
 
-- If there are collaborators on your project, they might start up additional notebooks. Check the project log if someone else is active at the same time.
+    * **Restart** the worksheet
+
+**Entire Project** – if the above doesn't help or doesn't apply:
+
+    * Make sure all your files are saved (disabled "Save" button resting idle)
+    * Close all editor tabs, and **Restart the Project** (in Project Settings → Project Control). This will clean up all running processes and cleans up all state – all your files will still be there, of course.
+    * Then only open up the file you want to work with!
+
+    .. note::
+
+        If there are collaborators on your project, they might start up additional notebooks. Check the project log if someone else is active at the same time.
 
 
 Inspect in detail why the project is running out of memory

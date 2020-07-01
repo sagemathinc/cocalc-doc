@@ -25,18 +25,32 @@ This example is deploying an interactive visualization of a `DASK`_ dataframe vi
         import os
         import dask.dataframe as dd
         import holoviews as hv
+        import pandas as pd
+        import numpy as np
         from holoviews.operation.datashader import datashade
 
         hv.extension('bokeh')
 
-        # 1. Load data and Datashade it
-        ddf = dd.read_parquet("~/sh_tmp.parq")[['xgal', 'ygal']].persist()
+        # 1. Load data
+        ## load from a parquet file:
+        #ddf = dd.read_parquet("data.parq")[['xgal', 'ygal']].persist()
+
+        # or let's just generate some random data for demo
+        df = pd.Dataframe({
+            'xgal': np.random.randn(1000),
+            'ygal': np.random.randn(1000)
+        })
+        ddf = dd.from_pandas(df)
+
+        # 2. Datashade it
+
         points = hv.Points(ddf, kdims=['xgal', 'ygal'])
         shaded = datashade(points).opts(plot=dict(width=800, height=600))
 
-        # 2. Instead of Jupyter's automatic rich display, render the object as a bokeh document
+        # 3. Instead of Jupyter's automatic rich display, render the object as a bokeh document
         doc = hv.renderer('bokeh').server_doc(shaded)
         doc.title = 'HoloViews Bokeh App'
+
 
 2. in terminal start the Bokeh server::
 
@@ -78,7 +92,7 @@ For deploying an interactive plots based on `Bokeh`_, `Panel`_, `Holoviz`_ or si
 
 2. Start it in the terminal::
 
-        python holo.py
+        python3 holo.py
 
 3. now your interactive `Holoview`_ application is available in the following URL::
 
