@@ -11,6 +11,15 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-07-16:
+
+2020-07-16: Minor/Bugfixes
+----------------------------------------------
+
+This is a cumulative update with several small changes and bugfixes.
+For example a dependency problem for `PyTorch`_.
+A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide), e.g. `EoN example test <https://share.cocalc.com/share/3ae747a3539ade9e76f5de6364d71d7dfb9157b2/TESTS/eon-test.ipynb?viewer=share&session=>`_.
+
 .. _update-2020-06-20:
 
 2020-06-20: Updating `SnapPy`_ in SageMath
@@ -670,3 +679,4 @@ Software Updates 2020
 .. _plink: https://www.math.uic.edu/t3m/plink/doc/
 .. _snappy: https://snappy.math.uic.edu/
 .. _spherogram: https://snappy.math.uic.edu/spherogram.html
+.. _Epidemics-on-Networks: https://springer-math.github.io/Mathematics-of-Epidemics-on-Networks/
