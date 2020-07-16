@@ -66,6 +66,8 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 
 * Use one or more of the options under ``Linked accounts`` if you want to sign in with Facebook, GitHub, Google, or Twitter. You can also unlink online accounts from CoCalc in this section. To sign in with a linked account, choose the icon for Facebook, GitHub, Google, or Twitter under the blanks for Email address & Password at upper right in the sign-in screen.
 
+.. _other-settings:
+
 Other settings
 ----------------
 
@@ -86,10 +88,28 @@ Other settings
          :align: center
 * Default file sort
 * Number of files per page
+
+.. index::
+   Standby Timeout
+   Timeout; standby
+
+.. _standby-timeout:
+
 * Standby timeout
+
+If you are not active for several minutes, you may see the gray and blue CoCalc splash screen. Moving the mouse over the window or typing or clicking in the window will remove the splash screen.
+The time until the splash screen appears is the **standby timeout**.
+We use it to conserve resources, mainly network bandwidth and browser CPU cycles. Execution of your code on the server is not paused.
+You can alter the standby timeout under Account / Preferences / Other / Standby timeout, as shown above under :ref:`other-settings`.
+
     .. image:: img/account-settings/standby-screen.png
          :width: 80%
          :align: center
+
+.. note::
+
+  After a longer interval of inactivity, your project will be stopped. Increasing this setting requires a project upgrade. See: :ref:`idle-timeout`.
+
 
 Profile
 ----------------

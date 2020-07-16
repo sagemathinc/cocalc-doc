@@ -31,6 +31,7 @@ You definitely do not need to have your computer awake, or a window open, for yo
 
 
 .. index:: Idle Timeout; software development
+.. index:: Timeout; idle
 .. _idle-timeout:
 
 What is an "idle timeout?"
@@ -50,6 +51,8 @@ However, free projects have another limitation. A free project can be "killed" (
 at any time, whatsoever. This will happen at least once per day. You have to keep this
 in mind when designing your project. (For example, use checkpointing.) In contrast, all
 paid projects are immune to this issue. See also :doc:`../upgrade-guide`.
+
+
 
 
 

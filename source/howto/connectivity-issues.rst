@@ -204,7 +204,7 @@ This can happen even if you are not using two different accounts simultaneously.
 We have a short help page, :ref:`multiple-accounts` which discusses this.
 The suggestions there will make it work very smoothly for you.
 
-.. index:: Timeout loading CoCalc
+.. index:: Timeout; loading CoCalc
 .. index:: Connectivity Issues; Timeout
 .. _timeout-loading-cocalc:
 
