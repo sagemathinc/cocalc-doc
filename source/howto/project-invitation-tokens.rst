@@ -72,3 +72,4 @@ No Limits
 
 * There is no limit on what users can see in the project. If you share an invitation link, be sure there is no without private information in the project!
 
+There's some discussion about the implementation of invitation tokens and possible enhancements under the CoCalc GitHub issue: `Have a special url for projects... #885 <https://github.com/sagemathinc/cocalc/issues/885>`_.
