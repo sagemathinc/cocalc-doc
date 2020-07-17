@@ -9,6 +9,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    :maxdepth: 1
 
    software-development
+   project-invitation-tokens
    export-timetravel
    external-tools
    install-python-lib

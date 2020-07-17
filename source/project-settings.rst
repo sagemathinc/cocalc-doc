@@ -459,6 +459,8 @@ Current collaborators are also shown in the *Projects* list. You can use the lat
 Add new collaborators
 ######################
 
+*New:* You can use invitation tokens to invite an entire audience to join you as collaborators in a project. See: :doc:`howto/project-invitation-tokens` for more information.
+
 At the **Add new collaborators** dialog, you can type in a person's name or email address. CoCalc will search its database of known users and show you possible matches.
 
 #. After you select a name, don't forget to click "Invite User."
