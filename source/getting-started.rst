@@ -272,17 +272,30 @@ Subscribe to CoCalc and upgrade your projects here:
 
 * :doc:`upgrade-guide`
 
-.. index:: Help; general resources
 
 Getting help
 -----------------------------
+
+.. index:: Help; wiki
 
 In addition the :doc:`Index <genindex>` in this User Manual, if you have specific questions you can check the following:
 
 * CoCalc Wiki `search <https://github.com/sagemathinc/cocalc/search?utf8=%E2%9C%93&q=&type=Wikis>`_
 * CoCalc Wiki `index page <https://github.com/sagemathinc/cocalc/wiki/Home>`_
 
-*Note: we are in the process of migrating CoCalc Wiki documents into this User Manual.*
+.. note::
+
+    We are in the process of migrating CoCalc Wiki documents into this User Manual.
+
+.. index:: Help; Discord
+.. index:: Discord server for CoCalc
+
+If you would like to chat with other CoCalc users, visit our Discord server: https://discord.gg/nEHs2GK
+
+.. index:: Help; CoCalc Google group
+.. index:: Google group for CoCalc
+
+There is also a Google discussion group for CoCalc. You can view it online or use it as a mailing list: https://groups.google.com/forum/#!forum/cocalc
 
 Statements
 -----------------------------
