@@ -59,6 +59,29 @@ CoCalc Jupyter Notebook Enhancements
 
 These enhanced features are available in CoCalc Jupyter notebooks:
 
+.. index:: Jupyter Notebooks; drag-and-drop images
+
+* **drag-and-drop**: You can drag and drop images into markdown cells:
+
+  1. If you have a markdown cell and are *not* actively editing it,
+  there is an image icon/button on the far right of the cell.  Just
+  click that and you can then select an image from your computer.  It'll
+  be uploaded and inserted into the cell.
+
+  .. figure:: img/jupyter/place-image.png
+    :width: 80%
+    :align: center
+
+    Click image icon to open a drop zone for image placement
+
+  2. If you have a markdown cell and *are* editing it, select "Edit -->
+  Insert image in selected markdown cell..." from the menu and proceed
+  as above.
+
+  3. The markdown editor in Jupyter doesn't yet support direct drag-and-drop
+  and copy/paste of images, but it probably will soon.
+  See https://github.com/sagemathinc/cocalc/issues/4762
+
 .. index:: Jupyter Notebooks; cell numbers
 
 * **cell numbers**: Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don't change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.
