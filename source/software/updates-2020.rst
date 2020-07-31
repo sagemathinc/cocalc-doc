@@ -11,6 +11,15 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-07-31:
+
+2020-07-31: Cumulative Updates
+----------------------------------------------
+
+Yet another round of cumulative updates to Linux, Python and R and a
+new tool `grepcidr`_.
+
+
 .. _update-2020-07-16:
 
 2020-07-16: Minor/Bugfixes
@@ -680,3 +689,4 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _snappy: https://snappy.math.uic.edu/
 .. _spherogram: https://snappy.math.uic.edu/spherogram.html
 .. _Epidemics-on-Networks: https://springer-math.github.io/Mathematics-of-Epidemics-on-Networks/
+.. _grepcidr: http://www.pc-tools.net/unix/grepcidr/
