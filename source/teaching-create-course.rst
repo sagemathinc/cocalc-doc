@@ -233,7 +233,7 @@ Teacher or institution pays for upgrades
 
 .. note::
 
-    CoCalc now supports site licenses in addition to the upgrade system described in this section. Licenses greatly simplify managing student upgrades, especially when dealing with multiple courses or sections. See our :ref:`News update on site licenses <site-license-news>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
+    CoCalc now supports site licenses in addition to the upgrade system described in this section. Licenses greatly simplify managing student upgrades, especially when dealing with multiple courses or sections. See :ref:`Setting up a Course with a Site License <site-license-course-setup>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
 
 Assuming you are an instructor and want to setup everything for a course,
 here are the rough steps to **pay for upgrading your students' projects**.
