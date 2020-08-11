@@ -1,4 +1,5 @@
 .. index:: Python Packages
+.. _install-python-packages:
 
 ============================
 Install Python Packages
