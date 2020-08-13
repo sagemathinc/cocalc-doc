@@ -1,25 +1,29 @@
 .. _ubuntu-2004-upgrade:
 
-=====================================
-2020-08-15: Ubuntu 20.04 Upgrade
-=====================================
+========================================
+2020-08-14: Ubuntu 20.04 Upgrade (TBA)
+========================================
 
-CoCalc's default software environment for new projects is based on `Ubuntu 20.04 <https://ubuntu.com/>`_ now.
-This includes Python 3.8 as the system-wide default, Sage 9.1, and many other upgrades.
-It is possible to :ref:`downgrade to Ubuntu 18.04 <switch-to-ubnutu1804>`.
+CoCalc's default software environment for new projects changed: It is based on `Ubuntu 20.04 <https://ubuntu.com/>`_ now!
+
+.. warning::
+
+    This update changes the system-wide Python to 3.8, Sage to 9.1 (`Python 3 syntax! <https://wiki.sagemath.org/Python3-user>`_), Julia to 1.5, and many more.
+    It is possible to :ref:`continue using Ubuntu 18.04 <switch-to-ubnutu1804>`.
 
 Just like before, updates are performed on a regular basis.
 If something is missing, out of date, broken, or not quite ok, please :ref:`let us know <software-install-problems>`!
 
 
 - Python:
-    - Python 2: is installed, but not maintained and only a small selection of still available packages installed. Use Ubuntu 18.04 if you need it!
-    - Python 3: this starts with version 3.8, and contains a lot of pre-installed packages. In particular, almost all that were present in the previous environment are also installed here.
-    - `Anaconda 2020 <https://www.anaconda.com/products/individual>`_: a new setup, based on Python 3.7. It contains almost all of the installed packages of the previous Anaconda 2019 environment.
+    - Ubuntu is based on Python3. This means ``python`` and ``pip`` is for version 3 now! In doubt, be explicit with ``python2/pip2`` and ``python3/pip3``.
+    - Python 2: is installed, but not maintained and only a small selection of still available packages installed. Maybe stay with Ubuntu 18.04 if you still need it!
+    - Python 3: this updated to version 3.8, and contains a lot of pre-installed packages. In particular, almost all that were present in the previous environment are also installed here.
+    - `Anaconda 2020 <https://www.anaconda.com/products/individual>`_: a new setup, based on Python 3.7. It contains almost all of the installed packages of the previous Anaconda 2019 environment. Start it via ``anaconda2020``.
 
 - `SageMath <https://sagemath.org>`_:
     - Version 9.1 is the default now. This implies that Sage Worksheets will use the Python 3 syntax now. More information from the Sage project: https://wiki.sagemath.org/Python3-user
-    - For older versions of Sage and the previous behavior of Sage Worksheets (8.9), switch to use Ubuntu 18.04.
+    - For older versions of Sage and the previous behavior of Sage Worksheets (8.9), :ref:`switch to use Ubuntu 18.04 <switch-to-ubnutu1804>`.
 
 - `R Software Environment <https://www.r-project.org/about.html>`_:
     - This runs the official build of R at version 4. Many packages are already installed.
@@ -30,7 +34,7 @@ If something is missing, out of date, broken, or not quite ok, please :ref:`let 
     - Version 1.5 is installed, along with a selection of additional packages.
 
 - LaTeX:
-    - The default Ubuntu 20.04 `textlive <https://packages.ubuntu.com/focal/texlive-full>`_ distribution.
+    - The default Ubuntu 20.04 `textlive  2019 <https://packages.ubuntu.com/focal/texlive-full>`_  distribution.
 
 - `LEAN <https://leanprover.github.io/>`_:
     - The general future direction of CoCalc serving LEAN will be to pin the provided version and not upgrade.
@@ -45,6 +49,11 @@ If something is missing, out of date, broken, or not quite ok, please :ref:`let 
 
 - C/C++:
     - The jupyter kernels for C++ and ROOT are updated.
+
+- Haskell:
+    - **Discontinued**. We tried to install an updated version of IHaskell + some packages, but we failed.
+    - Call for help: if someone in the Haskell community is motivated to help us setting up a fresh setup, please `<contact us help@cocalc.com>`_.
+    - Until then, :ref:`switch to Ubuntu 18.04 <switch-to-ubnutu1804>` to use the older setup.
 
 
 .. _switch-to-ubnutu1804:

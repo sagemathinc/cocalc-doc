@@ -10,6 +10,12 @@ Software Updates 2020
 
 .. highlight:: python
 
+.. _update-2020-08-15:
+
+2020-08-15: Ubuntu 20.04
+----------------------------------------------
+
+The default environment for new projects changed: :ref:`learn more ... <ubuntu-2004-upgrade>`
 
 .. _update-2020-07-31:
 
