@@ -67,6 +67,17 @@ Project Settings → Project Control → :ref:`Software Environment <software-en
 You can also define the software environment for all student projects in a course.
 That's in the course configuration, at the bottom, in the "Software environment" panel.
 
+
+.. _future-of-ubuntu-1804:
+
+Future of Ubuntu 18.04
+=======================================
+
+The previous "Default" Ubuntu 18.04 based environment will stay around at CoCalc for the foreseeable future.
+There won't be frequent upgrades any more, though.
+The focus of maintenance shifts towards supporting 20.04!
+
+
 .. _software-install-problems:
 
 Problems/Missing?
