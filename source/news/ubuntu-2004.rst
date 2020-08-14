@@ -37,8 +37,8 @@ If something is missing, out of date, broken, or not quite ok, please :ref:`let 
     - The default Ubuntu 20.04 `textlive  2019 <https://packages.ubuntu.com/focal/texlive-full>`_  distribution.
 
 - `LEAN <https://leanprover.github.io/>`_:
-    - The general future direction of CoCalc serving LEAN will be to pin the provided version and not upgrade.
-    - The same holds for the provided version of mathlib.
+    - The general future direction of CoCalc serving LEAN/mathlib will be to pin the version and not make frequent changes.
+    - Initially, CoCalc is using the same setup as the newer one of codewars.com, i.e. ``3.11.0`` + `mathlib 51e2b4c <https://github.com/leanprover-community/mathlib/tree/51e2b4ccef20e49bc24ef86a6afe6e48196abbcf>`_
     - In the future, we will work on supporting a local project setup (see e.g. `issue #3589 <https://github.com/sagemathinc/cocalc/issues/3589>`_) via ``leanproject`` and ``elan``.
 
 - `Octave <https://www.gnu.org/software/octave/>`_:
