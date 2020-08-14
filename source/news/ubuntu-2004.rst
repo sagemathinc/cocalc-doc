@@ -58,10 +58,11 @@ If something is missing, out of date, broken, or not quite ok, please :ref:`let 
 
 .. _switch-to-ubnutu1804:
 
-Switching software environments
+Continue using Ubuntu 18.04
 =======================================
 
 It is possible to switch back to the previous Ubuntu 18.04 software environment.
+Select the environment you want to run in
 Project Settings → Project Control → :ref:`Software Environment <software-environment>`.
 
 You can also define the software environment for all student projects in a course.
