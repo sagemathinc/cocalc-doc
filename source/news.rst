@@ -4,6 +4,12 @@
 News
 ==========================
 
+.. toctree::
+    :hidden:
+
+    news/ubuntu-2004
+
+
 .. _new-2020-03-15:
 
 2020-03-15: Convert Batch of Jupyter Notebooks and Sage Worksheets to PDF
