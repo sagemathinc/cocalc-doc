@@ -52,7 +52,7 @@ If something is missing, out of date, broken, or not quite ok, please :ref:`let 
 
 - Haskell:
     - **Discontinued**. We tried to install an updated version of IHaskell + some packages, but we failed.
-    - Call for help: if someone in the Haskell community is motivated to help us set up a fresh setup, please `<contact us help@cocalc.com>`_.
+    - Call for help: if someone in the Haskell community is motivated to help us set up a fresh setup, please `contact us <help@cocalc.com>`_.
     - Until then, :ref:`switch to Ubuntu 18.04 <switch-to-ubnutu1804>` to use the older setup.
 
 
