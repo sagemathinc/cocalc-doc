@@ -1,7 +1,7 @@
 .. _ubuntu-2004-upgrade:
 
 ========================================
-2020-08-14: Ubuntu 20.04 Upgrade (TBA)
+2020-08-18: Ubuntu 20.04 Upgrade
 ========================================
 
 CoCalc's default software environment for new projects changed: It is based on `Ubuntu 20.04 <https://ubuntu.com/>`_ now!
