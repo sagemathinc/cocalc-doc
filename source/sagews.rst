@@ -184,7 +184,7 @@ Conversion utilities
 * Run ``cc-sagews2pdf --help`` in a :doc:`./terminal` for more information about converting to PDF
 * Similarly, ``cc-sagews2ipynb`` is a command-line utility to convert Sage worksheet to Jupyter notebook, and ``cc-ipynb2sagews`` does the reverse conversion, from Jupyter notebook to Sage worksheet.
 
-SageMath specific
+Help about SageMath
 ====================
 
 Items relating strictly to SageMath, whether or not you are using CoCalc.
