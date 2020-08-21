@@ -85,6 +85,16 @@ But if you're hitting memory issues and just want more space, `upgrade your proj
 
 The subscription are `listed here <https://cocalc.com/policies/pricing.html>`_. For example, for $14/month, you can upgrade memory from 1 GB to 5 GB, and have a **lot** more elbow room!  If you're confused or have questions about upgrading, just ask at help@cocalc.com.
 
+4. Peak memory usage
+^^^^^^^^^^^^^^^^^^^^^^^
+
+In a :doc:`../terminal`, you can check the peak memory usage of a utility this way::
+
+    $ /usr/bin/time -v [tool] [arguments]
+    [...]
+    Maximum resident set size (kbytes): ...
+
+
 
 Software specific
 -----------------
