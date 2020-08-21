@@ -24,6 +24,7 @@ If something is missing, out of date, broken, or not quite ok, please :ref:`let 
 - `SageMath <https://sagemath.org>`_:
     - Version 9.1 is the default now. This implies that Sage Worksheets will use the Python 3 syntax now. More information from the Sage project: https://wiki.sagemath.org/Python3-user
     - For older versions of Sage and the previous behavior of Sage Worksheets (8.9), :ref:`switch to use Ubuntu 18.04 <switch-to-ubnutu1804>`.
+    - Discontinued a "development version", because it is too hard to maintain and if you really work with it, you need to have write access to all files and hence it must reside in your own project.
 
 - `R Software Environment <https://www.r-project.org/about.html>`_:
     - This runs the official build of R at version 4. Many packages are already installed.
