@@ -25,7 +25,7 @@ Create a CoCalc project you will to use to manage the course.
 3. Create a .course file.
 -------------------------
 
-Use the (*)New button to create a ``.course`` file for managing your course.
+Use the (+)New button to create a ``.course`` file for managing your course.
 
 .. image:: img/teaching/site-lic-course-create-crse.png
      :width: 85%
