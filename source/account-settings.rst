@@ -264,7 +264,7 @@ Clicking "Buy a license..." opens a form that lets you configure a CoCalc licens
 Academic discount (if applicable)
 ---------------------------------
 
-At irstf, there is a single choice, whether you qualify for a 40% academic discount (this includes hobbyists), or not.
+Under **Discount**, click **Academic** if applicable, to enable a 40% discount (this includes hobbyists). Otherwise, click **Business**. The license dialog will expand after you select a discount setting.
 
 .. figure:: img/account-settings/buy-lic-1.png
      :width: 90%
@@ -277,15 +277,15 @@ At irstf, there is a single choice, whether you qualify for a 40% academic disco
 Quantity and Type
 -----------------
 
+For **Quantity**, enter the number of projects or students. This will be the maximum number of concurrently running projects that can use the license. Upgrades are applied to projects as they start, and released when projects start. In a typical course, there is one project per student, plus a project for the instructor(s) and a shared project for the entire class to collaborate in. If your course has students working in groups,  then you might provide one project for each group (plus the instructor), instead of one per student.
+
+For **Type**, enter the upgrades for each project. Usually, ``Member hosting`` is selected, because major reason for upgrading is to move your work off the heavily-loaded trial servers. You might not select ``Member hosting`` if you plan to add a license to projects that already have Member hosting, to provide additional resources.
+
 .. figure:: img/account-settings/buy-lic-2.png
      :width: 90%
      :align: center
 
      ..
-
-For **Quantity**, enter the number of projects or students. This will be the maximum number of concurrently running projects that can use the license. Upgrades are applied to projects as they start, and released when projects start. In a typical course, there is one project per student, plus a project for the instructor(s) and a shared project for the entire class to collaborate in. If your course has students working in groups,  then you might provide one project for each group (plus the instructor), instead of one per student.
-
-For **Type**, enter the upgrades for each project. Usually, ``Member hosting`` is selected, because major reason for upgrading is to move your work off the heavily-loaded trial servers. You might not select ``Member hosting`` if you plan to add a license to projects that already have Member hosting, to provide additional resources.
 
 If you're not sure which upgrades to order, here are some suggestions:
 
@@ -313,7 +313,6 @@ If you select **Get a quote**, CoCalc will create a help request form including 
      :align: center
 
      ..
-
 
 Licenses that you manage
 ========================
