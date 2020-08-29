@@ -252,14 +252,14 @@ Under "Licenses", you can keep track of CoCalc licenses you manage or use in you
 
      ..
 
-.. index:: Licenses: buying
+.. index:: Licenses; buying
 
 Buy a license...
 ========================
 
 Clicking "Buy a license..." opens a form that lets you configure a CoCalc license, and buy it immediately online if you wish.
 
-.. index:: Licenses: academic discount
+.. index:: Licenses; academic discount
 
 Academic discount (if applicable)
 ---------------------------------
@@ -272,7 +272,7 @@ When you first open the license dialog, there is a single choice, whether you qu
 
      ..
 
-.. index:: Licenses: quantity and type
+.. index:: Licenses; quantity and type
 
 Quantity and Type
 -----------------
@@ -283,7 +283,7 @@ Quantity and Type
 
      ..
 
-.. index:: Licenses: period, title, cost, purchase
+.. index:: Licenses; period, title, cost, purchase
 
 Period, Title, Cost, and Purchase
 ---------------------------------
