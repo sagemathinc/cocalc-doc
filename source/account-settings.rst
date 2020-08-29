@@ -34,7 +34,7 @@ Preferences
 .. index:: Account Tab; Account settings
 
 Account settings
-----------------
+================
 
 .. figure:: img/account-settings/account-settings.png
      :width: 80%
@@ -69,7 +69,7 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 .. _other-settings:
 
 Other settings
-----------------
+=================
 
 .. image:: img/account-settings/prefs-other.png
      :width: 80%
@@ -112,12 +112,12 @@ You can alter the standby timeout under Account / Preferences / Other / Standby 
 
 
 Profile
-----------------
+=================
 
 .. index:: Account Tab; Editor settings
 
 Editor settings
-----------------
+=================
 
 .. figure:: img/account-settings/editor-settings-0-top.png
      :width: 80%
@@ -140,7 +140,7 @@ Most options under "Editor settings" are self-explanatory. Here are additional d
 * Enable ``Jupyter classic`` if you have a specific requirement for a Jupyter feature that isn't available under CoCalc Jupyter. With this box checked, the default for opening .ipynb files in the CoCalc interface will be Classic jupyter. See warnings regarding :ref:`jupyter-classical-vs-cocalc` notebooks before enabling this feature.
 
 Terminal settings
--------------------
+===================
 
 .. index:: Account Tab; subscriptions and course packages
 .. _subs-course-pkgs:
@@ -165,7 +165,7 @@ Subscriptions and Course Packages
 .. _payment-methods:
 
 Payment methods
-----------------
+====================
 
 This is where you can enter credit card information for the CoCalc account.
 Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team.
@@ -174,7 +174,7 @@ Credit card details (full credit card number, expiration date, CVV number) are m
 .. _subscription-list:
 
 Subscriptions and course packages
-----------------------------------
+===================================
 
 This section lists your currently active subscriptions. The word "Active" denotes ordinary active subscriptions.
 The word "Trialing" indicates a free trial or other custom subscription plan.
@@ -203,7 +203,7 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 
 
 Invoices and receipts
-----------------------
+=====================
 
 The "Invoices and receipts" section shows a list of CoCalc purchases made using the order process on this page.
 
@@ -228,12 +228,12 @@ Upgrades
 ========
 
 All upgrades
---------------
+=================
 
 ``Upgrades that you get from your subscriptions and course packages``
 
 Applied upgrades
------------------
+=================
 
 ``Upgrades you have applied to projects``
 
@@ -252,14 +252,57 @@ Under "Licenses", you can keep track of CoCalc licenses you manage or use in you
 
      ..
 
+.. index:: Licenses: buying
+
+Buy a license...
+========================
+
+Clicking "Buy a license..." opens a form that lets you configure a CoCalc license, and buy it immediately online if you wish.
+
+.. index:: Licenses: academic discount
+
+Academic discount (if applicable)
+---------------------------------
+
+When you first open the license dialog, there is a single choice, whether you qualify for an academic discount (this includes hobbyists), or not.
+
+.. figure:: img/account-settings/buy-lic-1.png
+     :width: 90%
+     :align: center
+
+     ..
+
+.. index:: Licenses: quantity and type
+
+Quantity and Type
+-----------------
+
+.. figure:: img/account-settings/buy-lic-2.png
+     :width: 90%
+     :align: center
+
+     ..
+
+.. index:: Licenses: period, title, cost, purchase
+
+Period, Title, Cost, and Purchase
+---------------------------------
+
+.. figure:: img/account-settings/buy-lic-3.png
+     :width: 90%
+     :align: center
+
+     ..
+
+
 Licenses that you manage
-------------------------
+========================
 
 If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section. To have license managers added or removed, contact CoCalc support at help@cocalc.com. License managers must have a CoCalc account with an email address.
 
 
 Projects with licenses
-----------------------
+========================
 
 If you are an owner or collaborator on any projects that are CoCalc licenses, those projects are listed in this section.
 
@@ -285,12 +328,12 @@ Click Add SSH Key. Your key is now saved for that account and will work for all 
 As with the previous section, the user@hostname string needed for the ssh command consists of the project id with hyphens removed for the user, and 'ssh.cocalc.com' for the hostname, and can be found just below the caption Use the following username@host: in the 'SSH Keys' section of project status tab.
 
 SSH keys
----------
+=========
 
 ``SSH keys``
 
 Add an SSH key
-----------------
+================
 
 .. index:: Account Tab; support
 .. index::
@@ -303,7 +346,7 @@ Support
 ========
 
 Support tickets
-----------------
+================
 
 .. figure:: img/account-settings/account-tickets.png
      :width: 90%
