@@ -194,10 +194,10 @@ For **Type**, enter the quota for each project. Usually, ``Member hosting`` is s
 
 If you're not sure which upgrades to order, here are some suggestions:
 
-* There is no substitute for testing the computations you plan to run at a given resource level. You could buy a license for a small number of days to try things out. For instructors preparing to teach a course, we can provide a free trial that is valid for several days; just email help@cocalc.com for more information.
 * 1 CPU, 1 GB of RAM, and 1 GB of disk space are generally enough for elementary subjects, such as learning programming syntax and introductory math courses.
 * 1 CPU, 2 GB of RAM, and 1 GB of disk space are often enough for intermediate-level courses.
-* You could buy a license for a short period of time, e.g., if there is a 2-week part of a course that requires significantly more compute resources.
+* There is no substitute for testing the computations you plan to run at a given resource level. You could buy a license for a small number of days to try things out. For instructors preparing to teach a course, we can provide a free trial that is valid for several days; just email help@cocalc.com for more information.
+* You might buy a license for a short period of time, e.g., if there is a 2-week part of a course that requires significantly more compute resources.
 
 .. index:: Licenses; period, title, cost, purchase
 
@@ -223,7 +223,7 @@ If you select **Get a quote**, CoCalc will create a help request form including 
 Licenses that you manage
 ========================
 
-If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section. To have license managers added or removed, contact CoCalc support at help@cocalc.com. License managers must have a CoCalc account with an email address.
+If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section. To have license managers added or removed, contact CoCalc support at help@cocalc.com. License managers must have a CoCalc account.
 
 
 Projects with licenses
