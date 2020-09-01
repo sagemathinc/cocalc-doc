@@ -11,6 +11,29 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-09-01:
+
+2020-09-01 : Julia 1.5.1
+----------------------------------------------
+
+- Julia:
+
+    - updated to 1.5.1
+    - various package updates
+
+- Python (system-wide):
+
+    - various package updates, including `dask`_/`distributed`_ ``2.25.0``, `hypothesis`_ ``5.29.1``
+
+- R (system-wide)
+
+    - various package updates
+
+- Software
+
+    - (new) `Asciidoctor`_ ``2.0.10``
+    - `CMake`_ ``3.18.2``
+    - `Haskell`_ ``ghc 8.10.2``
 
 
 .. _update-2020-08-15:
@@ -707,3 +730,7 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _spherogram: https://snappy.math.uic.edu/spherogram.html
 .. _Epidemics-on-Networks: https://springer-math.github.io/Mathematics-of-Epidemics-on-Networks/
 .. _grepcidr: http://www.pc-tools.net/unix/grepcidr/
+.. _Haskell: https://www.haskell.org/
+.. _Asciidoctor: https://asciidoctor.org
+.. _hypothesis: https://hypothesis.readthedocs.io/en/latest/
+
