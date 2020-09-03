@@ -11,18 +11,36 @@ in response to inquiries about using CoCalc for short training sessions.
 Regarding courses, upgrades and pricing, the model is flexible.
 The instructor and each student have separate projects.
 Upgrades are applied to projects, being sure to apply :ref:`Member Hosting <member-hosting>` and :ref:`Internet Access <internet-access>` to each project currently in use.
-Note that you can remove upgrades any time and move them to another project.
 
-The following can be done completely with the CoCalc self-service web interface if you are using the usual workshop duration of 1 week and a compatible course size (see below):
+Note, there are currently two ways to get out of the :doc:`../trial`:
 
-1. Get a Standard Plan
------------------------
+- **License Keys**: this is a recently introduced method. You obtain a code, which upgrades up to a specific number of simultaneously running projects with a specific upgrade schema. (learn more: :ref:`account-licenses`)
+- **Plans/Subscriptions**: that's the older method, which will be phased out. It gives you certain preset upgrades for a few predefined numbers of projects. (learn more: :ref:`account-subscriptions`)
 
-The CoCalc :ref:`Personal Standard Plan <personal-standard>` is a subscription that renews monthly.
-Use this plan to upgrade your teaching project(s). The Standard Plan gives you up to 4 such projects for a cost of $14 per month.
+1. Upgrade Instructor Project
+-------------------------------
+
+First, you will want to make sure that your intructor project is upgraded. You can either obtain a small
+license key or a :ref:`Personal Standard Plan <personal-standard>`.
+
 
 2. Order Session Resources as Needed
 ------------------------------------
+
+New method using License Codes:
+
+First, you want to make sure to know which upgrades for each project you need.
+You probably want to make some tests, check out memory usage, etc.
+
+Next, you need to know how many projects will be running at the same time.
+That's usually the number of participants.
+
+Finally, when will the training start and when will it end?
+
+With that, you go to the :ref:`account-licenses` dialog in your Account panel
+to obtain a license key for the given number of projects with the upgrades you need.
+
+Old method using Course Packages:
 
 Each time you run a workshop, buy a one-time course.
 One-week courses are available directly from the self-service order form under :ref:`Account / Subscriptions and Course Packages <subs-course-pkgs>` for class sizes of 10, 25, 70, and 250 students.
@@ -39,14 +57,18 @@ You can have more than one course file in the same project.
 
 Upgrade the projects of the students. Please read :ref:`Teacher or institution pays for upgrades <inst-pays>`.
 
+
 4. Handouts and Assignments
 -----------------------------
 You can use the course interface to distribute :ref:`Handouts <create-handout>` and :ref:`Assignments <create-assignment>`
 to the student projects. This lets you copy all files from a directory in your project to all student projects.
 
+
 5. After a Session is Done
 ---------------------------
-After the course is done, open the upgrade dialog again and un-check the upgrades and apply it.
+
+When you have a course package (older method), you might want to remove the upgrades from the projects.
+Open the upgrade dialog again and un-check the upgrades and apply it.
 This will free your upgrades for other projects and make sure remaining upgrades will be available again.
 The participants of the session that has ended will not lose access to their projects, but they'll run without upgrades.
 

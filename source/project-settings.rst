@@ -360,7 +360,7 @@ This section assumes you have created an SSH key pair as described above.
 
       ssh CCPROJ
 
-   You can also specify a single SSH key pair under :doc:`account-settings` to use with all your projects.
+   You can also specify a single SSH key pair under :ref:`account-ssh` to use with all your projects.
 
 .. index:: Projects; custom environment variables
 .. _project-env-vars:

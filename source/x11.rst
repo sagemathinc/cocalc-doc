@@ -99,7 +99,7 @@ CoCalc will try (badly) to guess your keyboard layout based on your browser's de
 language settings.  This does NOT work well.  Instead, you should explicitly select your
 keyboard layout in Account preferences:
 
-  1. Open up your :doc:`Account Settings <account-settings>`
+  1. Open up your :ref:`Account Settings <account-settings>`
   2. In the tab "Preferences", look for the panel "Editor settings"
   3. Inside "Editor Settings", look for **Keyboard layout (for X11 Desktop)**
 
