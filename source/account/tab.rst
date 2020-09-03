@@ -23,7 +23,8 @@ Under "Account" you will find a button to ``Sign out`` at upper right, and the f
 
    preferences
    licenses
-   subscriptions
+   purchases
+   upgrades
    ssh
    support
 

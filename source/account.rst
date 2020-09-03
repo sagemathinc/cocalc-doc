@@ -15,4 +15,3 @@ an overview about how your upgrades are currently distributed.
 
    account/tab
    account-faq
-   subscriptions

@@ -4,13 +4,18 @@
     Pricing
     Quotas
     FAQ; Billing
+    FAQ; License Key
+    FAQ; Subscription
+
+
+.. _upgrades-faq:
 
 ===========================
 Billing/Upgrades FAQ
 ===========================
 
 This page answers questions related to `purchasing upgrades <https://cocalc.com/policies/pricing.html>`_,
-:doc:`upgrading projects or courses <upgrade-guide>`, and billing.
+:doc:`upgrading projects or courses <upgrade-guide>`, subscriptions, license keys, and billing.
 
 Questions about projects are covered in :doc:`project-faq`.
 
@@ -93,6 +98,30 @@ Can I pay via wire transfer or PayPal?
 For purchases **above $50** we support PayPal or wire transfers.
 In particular that might be a year-long personal subscription or a larger course plan.
 Please contact help@cocalc.com with all relevant details about your intended purchase.
+
+
+
+.. index:: Subscription Does Not Work
+.. _sub_not_work:
+
+Subscription does not work
+---------------------------------------
+
+After you buy a subscription, the first thing you need to do is go to settings in your project and :ref:`apply upgrades <project-upgrades>` from your subscription quotas to your project(s). Do this for each project that you would like to be upgraded. Exception: if you are managing a course with CoCalc, you :ref:`upgrade student projects <inst-pays>` within the .course file, and not in project settings.
+
+At any time, you can visit https://cocalc.com/settings/upgrades to see exactly how all of your upgrades are allocated across your projects.
+
+.. index:: Member Hosting;subscriptions
+
+**The free servers really are massively overloaded, so it is well worth it to upgrade to member hosting, enable internet access, etc.**
+
+If you used up your upgrades, e.g., you are often using 3 or 4 projects, then you can always buy multiple subscription and you'll get more upgrades as a result.
+
+**In case you're teaching a course and bought a course package**: please read :ref:`inst-pays`.
+
+If this doesn't completely answer your question, please don't hesitate to create a support request or email help@cocalc.com.
+
+
 
 
 Quota upgrades
@@ -227,6 +256,10 @@ we advice to order a plan which includes upgrades for CPU and memory.
     We do strongly suggest all classes upgrade the projects to "members-only" hosting,
     since this provides a better experience and higher availability.
 
+
+
+
+
 .. index:: Personal Plans
 .. _personal-plans:
 
@@ -284,7 +317,7 @@ For additional resources, you can purchase multiple plans and have them run conc
 * 2 cores Dedicated CPU
 
 Which plan offers "private" file storage?
------------------------------------------------
+----------------------------------------------
 
 All our plans (free and paid) host your files privately by default.
 You can :ref:`share a file with collaborators <add-collaborators>`

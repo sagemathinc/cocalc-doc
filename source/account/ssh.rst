@@ -1,4 +1,4 @@
-
+.. index:: Account Tab; SSH keys
 .. _account-ssh:
 
 ========

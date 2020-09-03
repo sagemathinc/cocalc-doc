@@ -1,4 +1,32 @@
 
+.. _account-purchases:
+
+==================================
+Purchases
+==================================
+
+.. figure:: img/settings/subscr-select.png
+     :width: 80%
+     :align: center
+
+     *order form displays if no subscriptions are active*
+
+.. figure:: img/settings/subscr-display.png
+     :width: 80%
+     :align: center
+
+     *active subscriptions, if present, are displayed*
+
+.. index:: Account Tab; payment methods
+.. _payment-methods:
+
+Payment methods
+====================
+
+This is where you can enter credit card information for the CoCalc account.
+Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team.
+
+
 .. index:: Account Tab; subscription list
 .. _account-subscriptions:
 .. _subscription-list:
@@ -6,8 +34,14 @@
 Subscriptions
 =========================
 
-This section lists your currently active subscriptions. The word "Active" denotes ordinary active subscriptions.
+This section lists your currently active subscriptions and course packages.
+The word "Active" denotes ordinary active subscriptions.
 The word "Trialing" indicates a free trial or other custom subscription plan.
+
+.. note::
+
+    If you have further questions about course packages, subscriptions, or upgrades,
+    please consult the :ref:`upgrades-faq`!
 
 .. figure:: img/account/three-subs.png
      :width: 90%
@@ -33,7 +67,7 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 
 
 Invoices and receipts
-=====================
+---------------------------
 
 The "Invoices and receipts" section shows a list of CoCalc purchases made using the order process on this page.
 
@@ -49,20 +83,3 @@ The "Invoices and receipts" section shows a list of CoCalc purchases made using 
 
      *view of receipts showing details for each item*
 
-
-.. index:: Account Tab; upgrades
-.. _account-upgrades:
-
-========
-Upgrades
-========
-
-All upgrades
-=================
-
-``Upgrades that you get from your subscriptions and course packages``
-
-Applied upgrades
-=================
-
-``Upgrades you have applied to projects``

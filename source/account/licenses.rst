@@ -90,30 +90,3 @@ If you are an owner or collaborator on any projects that are CoCalc licenses, th
 
 
 
-.. index:: Account Tab; SSH keys
-.. _account-ssh-keys:
-
-==================================
-Purchases
-==================================
-
-.. figure:: img/settings/subscr-select.png
-     :width: 80%
-     :align: center
-
-     *order form displays if no subscriptions are active*
-
-.. figure:: img/settings/subscr-display.png
-     :width: 80%
-     :align: center
-
-     *active subscriptions, if present, are displayed*
-
-.. index:: Account Tab; payment methods
-.. _payment-methods:
-
-Payment methods
-====================
-
-This is where you can enter credit card information for the CoCalc account.
-Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team.
