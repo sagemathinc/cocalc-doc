@@ -67,7 +67,7 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 
 
 Invoices and receipts
----------------------------
+=========================
 
 The "Invoices and receipts" section shows a list of CoCalc purchases made using the order process on this page.
 
