@@ -1,9 +1,9 @@
 
 .. _course-upgrading-students:
 
-##########################
+=============================
 Upgrading Student Projects
-##########################
+=============================
 
 
 The **Configuration** tab of a **.course** file allows you to upgrade students' course projects in two ways, indicated by the checkboxes in the image below:
@@ -13,12 +13,16 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
      :align: center
 
 
+.. contents::
+   :local:
+   :depth: 2
+
 .. index:: Upgrading students; students pay
 .. _course-students-pay:
 
-
+----------------------------------------------------
 Students pay for upgrades
-------------------------------------------
+----------------------------------------------------
 
 You can request that the students pay a one-time fee of $14 for four months.
 This will move their projects to members-only hosts and enable full internet access.
@@ -53,7 +57,7 @@ and you can change any of these settings at any time.
 .. index:: Upgrading students; institution pays
 .. _inst-pays:
 
-
+--------------------------------------------
 Teacher or institution pays for upgrades
 --------------------------------------------
 
