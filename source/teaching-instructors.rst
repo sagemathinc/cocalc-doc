@@ -16,6 +16,7 @@ There are several reasons why you should consider conducting a course on CoCalc:
    :maxdepth: 2
 
    teaching-create-course
+   teaching-upgrade-course
    teaching-course-management
    teaching-interactions
    teaching-after-course
