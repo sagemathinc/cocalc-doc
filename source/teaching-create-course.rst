@@ -233,7 +233,10 @@ Teacher or institution pays for upgrades
 
 .. note::
 
-    CoCalc now supports site licenses in addition to the upgrade system described in this section. Licenses greatly simplify managing student upgrades, especially when dealing with multiple courses or sections. See :ref:`Setting up a Course with a Site License <site-license-course-setup>` for more information. Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
+    CoCalc now supports site licenses in addition to the upgrade system described in this section.
+    Licenses greatly simplify managing student upgrades, especially when dealing with multiple courses or sections.
+    See :ref:`Setting up a Course with a Site License <site-license-course-setup>` for more information.
+    Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
 
 Assuming you are an instructor and want to setup everything for a course,
 here are the rough steps to **pay for upgrading your students' projects**.
@@ -243,17 +246,21 @@ but you then distribute these upgrades to all student projects in your course
 (these projects are automatically created for the course).
 The students then fully benefit from using these upgraded projects.
 
-In your account settings, next to the "upgrades" page,
-there is a tab `"Subscriptions/Course packages" <https://cocalc.com/settings/billing?session=>`_.
-In that tab, enter your payment information and purchase one or more course packages.
-`We can help you <mailto:help@cocalc.com>`_ if you are not sure which one to buy (it depends on the size of the class, your needs, etc) or if you need us to process a format purchase order (PO), etc.
+In your account settings there are two methods to upgrade your course:
+
+1.  The tab "Licenses" lets you order "license keys". They allow you to specify exactly the number of student projects and upgrades. This is the newer and preferred method. Read more in :ref:`here <site-license-course-setup>`.
+
+2.  Next to the "upgrades" page, there is a tab :ref:`Purchases <account-subscriptions>`. In that tab, enter your payment information and purchase one or more course packages. `We can help you <mailto:help@cocalc.com>`_ if you are not sure which one to buy (it depends on the size of the class, your needs, etc) or if you need us to process a format purchase order (PO), etc.
 
 Once you purchase the course upgrades,
 go to the project where you created the course and **open the .course file**.
-In that interface, where you can add the students, etc. there is also **a tab called "Configurations"** (next to "Students", "Assignments", etc.).
+In that interface, where you can add the students, etc.
+there is also **a tab called "Configurations"** (next to "Students", "Assignments", etc.).
 
-Current pricing is available at https://cocalc.com/policies/pricing.html which at the time of writing ranged from a **total** of about $7 to $14 per student for a 4 month course.
-The price per student varies according to the size of the student cohort. You get significant per-student discounts when you buy in bulk.
+Current pricing is available at https://cocalc.com/policies/pricing.html
+which at the time of writing ranged from a **total** of about $7 to $14 per student for a 4 month course.
+The price per student varies according to the size of the student cohort.
+You get significant per-student discounts when you buy in bulk.
 
 ... and after selecting that "you/your institution pays",
 you can proceed to distribute the upgrades of the course package here:
