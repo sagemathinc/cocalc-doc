@@ -6,6 +6,14 @@
 Upgrades
 ========
 
+Here, you can see the current status of applied upgrades.
+
+.. note::
+
+    If you have further questions about course packages, subscriptions, or upgrades,
+    please consult the :ref:`upgrades-faq`!
+
+
 All upgrades
 =================
 
