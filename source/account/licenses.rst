@@ -51,8 +51,8 @@ For **Type**, enter the quota for each project. Usually, ``Member hosting`` is s
 
 If you're not sure which upgrades to order, here are some suggestions:
 
-* 1 CPU, 1 GB of RAM, and 1 GB of disk space are generally enough for elementary subjects, such as learning programming syntax and introductory math courses.
-* 1 CPU, 2 GB of RAM, and 1 GB of disk space are often enough for intermediate-level courses.
+* Member hosting, 1 CPU, 1 GB of RAM, and 1 GB of disk space are generally enough for elementary subjects, such as learning programming syntax and introductory math courses.
+* Member hosting, 1 CPU, 2 GB of RAM, and 1 GB of disk space are often enough for intermediate-level courses.
 * There is no substitute for testing the computations you plan to run at a given resource level. You could buy a license for a small number of days to try things out. For instructors preparing to teach a course, we can provide a free trial that is valid for several days; just email help@cocalc.com for more information.
 * You might buy a license for a short period of time, e.g., if there is a 2-week part of a course that requires significantly more compute resources.
 
@@ -65,7 +65,7 @@ For **Period**, specify when your license is to be active. There are discounts f
 
 Use any descriptive text you want for **Title** and **Description**. You can easily change these later.
 
-**Cost** displays the total cost of the license. There is indeed a 25% discount for direct payment if you buy directly by credit card using the form.
+**Cost** displays the total cost of the license. There is indeed a 25% discount for direct payment if you buy with a credit card using the form.
 
 Select **Purchase** if you are ready to buy a license with a credit card immediately.
 
