@@ -391,7 +391,7 @@ If student_id's are secret/sensitive, you could use something derived from them,
 
 .. index:: Courses; verifying student activity
 
-Verifing Student Activity
+Verifying Student Activity
 =============================
 
 In some situations it may be useful to confirm when work was done in a student project. (See also: :ref:`Export student file use <export-file-use>`.)
@@ -403,3 +403,14 @@ In some situations it may be useful to confirm when work was done in a student p
 * It's impossible for users to delete or change something once it is recorded in TimeTravel (except by explicitly requesting deletion via a support request). However, it's conceivable maybe something got lost, since no software is perfect.
 
 * Folders under :ref:`Backups <project-snapshot>` are snapshots of the exact state of the filesystem, which are independent of TimeTravel, but provide a good double check.
+
+.. index:: Courses; Moodle integration
+
+Moodle integration
+===================
+
+Q: Is there a way to integrate CoCalc into my `Moodle <https://moodle.org/>`_ environment?
+
+A: Unfortunately, not really. We do have our own fairly sophisticated course management functionality for creating and distributing assignments, working in real time with students, and collecting, grading and returning. See :doc:`teaching-instructors`.
+
+You can also publish an assignment to the `CoCalc share server <https://share.cocalc.com/share/>`_ (you can make content "you must know the link"), point students at that link, and have them download the work when they are done and submit it via Moodle.
