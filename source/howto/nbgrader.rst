@@ -4,7 +4,12 @@
 NBgrader
 ===============
 
-If you are looking for general information about nbgrader on CoCalc, see: :doc:`../teaching-nbgrader`. For the nbgrader official website and documentation, see: `nbgrader <http://nbgrader.readthedocs.io>`_.
+.. warning::
+
+    There are two "nbgrader" systems:
+
+    - CoCalc's "nbgrader" built-in system, which supports its core functionality and can't be configured via that Python config file. Please check :doc:`../teaching-nbgrader` for more information about it.
+    - The "official" NBgrader utility, which is available as well. For the nbgrader official website and documentation, see: `nbgrader <http://nbgrader.readthedocs.io>`_. This page explains roughly how to configure the official NBgrader utility.
 
 How to setup ``nbgrader`` for CoCalc to work with ``R``
 ===========================================================
