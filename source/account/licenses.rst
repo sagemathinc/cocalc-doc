@@ -41,7 +41,7 @@ Number of Projects and Type
 
 For **Number of Projects**, enter the number of projects or students. This will be the maximum number of concurrently running projects that can use the license. Upgrades are applied to projects as they start, and released when projects stop. In a typical course, there is one project per student, plus a project for the instructor(s) and a shared project for the entire class to collaborate in. If your course has students working in groups,  then you might provide one project for each group (plus the instructor), instead of one per student.
 
-For **Type**, enter the quota for each project. Usually, ``Member hosting`` is selected, because a major reason for upgrading is to move your work off the heavily-loaded trial servers. You might not select ``Member hosting`` if you plan to add a license to projects that already have Member hosting, to provide additional resources. Another reason to not select ``Member hosting`` is if you want to run a computation and need more memory or CPU, but are fine with using the spare cycles on the trial servers; combined with ``Always running``, this can be very powerful and affordable.
+For **Type**, enter the quota for each project.
 
 .. figure:: img/settings/buy-lic-2.png
      :width: 90%
@@ -63,7 +63,9 @@ Advanced options
 
 If you click "Show advanced options", two more choices appear.
 
-**Member hosting** is the most essential upgrade for most uses. It gets your projects off heavily-loaded, preemptible trial servers. For that reason, this option is enabled by default. In some rare situations, it can be advantageous to skip this option.
+**Member hosting** is the most essential upgrade for most situations. It gets your projects off heavily-loaded, preemptible trial servers. For that reason, this option is enabled by default.
+
+You might not select ``Member hosting`` if you plan to add a license to projects that already have Member hosting, to provide additional resources. Another reason to not select ``Member hosting`` is if you want to run a computation and need more memory or CPU, but are fine with using the spare cycles on the trial servers; combined with ``Always running``, this can be very powerful and affordable.
 
 The **Always running** option prevents your project from being stopped for an :ref:`idle timeout <idle-timeout-quota>`. This option increases cost, but can be useful in special situations for long-running computations. This option is disabled by default. Note that "Always running" does not guarantee 100% uptime, because projects may occasionally be restarted for security and maintenance reasons.
 
