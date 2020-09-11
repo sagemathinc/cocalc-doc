@@ -105,7 +105,7 @@ If you are a manager for one or more CoCalc licenses, you will see those license
 Projects with licenses
 ========================
 
-If you are an owner or collaborator on any projects that are CoCalc licenses, those projects are listed in this section.
+If you are an owner or collaborator on any projects that have CoCalc licenses, those projects are listed in this section.
 
 
 
