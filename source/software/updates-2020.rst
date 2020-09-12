@@ -11,26 +11,37 @@ Software Updates 2020
 .. highlight:: python
 
 
+
+.. _update-2020-09-12:
+
+2020-09-12: Regular update
+-----------------------------------------------
+
+- Anaconda 2020:
+    - `statsmodels`_ ``0.12.0``, `pandas`_ ``1.1.1``, `matplotlib`_ ``3.3.1``, `dask`_/`distributed`_ ``2.25.0``, `biopython`_ ``1.78``,  etc.
+
+- Python 3 (system-wide):
+    - `pandas`_ ``1.1.2``, `seaborn`_ ``0.11.0`` (to fix `plotting issue #2194 <https://github.com/mwaskom/seaborn/issues/2194>`_), ...
+
+- Ubuntu 18.04:
+    - a couple of small updates, mostly system packages
+
 .. _update-2020-09-01:
 
-2020-09-01 : Julia 1.5.1
+2020-09-01: Julia 1.5.1
 ----------------------------------------------
 
 - Julia:
-
     - updated to 1.5.1
     - various package updates
 
 - Python (system-wide):
-
     - various package updates, including `dask`_/`distributed`_ ``2.25.0``, `hypothesis`_ ``5.29.1``
 
 - R (system-wide)
-
     - various package updates
 
 - Software
-
     - (new) `Asciidoctor`_ ``2.0.10``
     - `CMake`_ ``3.18.2``
     - `Haskell`_ ``ghc 8.10.2``
