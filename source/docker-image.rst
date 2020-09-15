@@ -80,7 +80,7 @@ Detailed instructions to get the image up and running are at `the github repo fo
 Additional Licensing and Support Available
 #############################################
 
-CoCalc code is licensed under `AGPLv3`_. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $799.  This also includes some support, though with no guarantees (that costs more). We **do** have several happy paying customers as of Sept 2019.
+CoCalc code is licensed under `AGPLv3`_. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $999.  This also includes some support, though with no guarantees (that costs more). We **do** have several happy paying customers as of Sept 2019.
 
 .. _cocalc-docker-mailing-lists:
 
