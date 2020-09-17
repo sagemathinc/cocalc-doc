@@ -106,6 +106,7 @@
         "title": "project title (default: \"\")",
         "description": "project description (default: \"\")",
         "image": "(optional) image ID",
+        "license": "(optional) license id (or multiple ids separated by commas) -- if given, project will be created with this license",
         "start": "start running the moment the project is created -- uses more resources, but possibly better user experience (default: false)"
       }
     },
@@ -117,6 +118,22 @@
         "admin": "if true and user is an admin, includes email addresses in result, and does more permissive search (default: false)",
         "active": "only include users active for this interval of time (default: \"\")",
         "limit": "maximum number of results returned (default: 20)"
+      }
+    },
+    "add_license_to_project": {
+      "description": "Add a license to a project.\n\nExample:\n```\n   example not available yet\n```",
+      "fields": {
+        "id": "A unique UUID for the message",
+        "project_id": "project_id (required)",
+        "license_id": "id of a license (required)"
+      }
+    },
+    "remove_license_from_project": {
+      "description": "Remove a license from a project.\n\nExample:\n```\n   example not available yet\n```",
+      "fields": {
+        "id": "A unique UUID for the message",
+        "project_id": "project_id (required)",
+        "license_id": "id of a license (required)"
       }
     },
     "invite_collaborator": {
@@ -134,15 +151,16 @@
       }
     },
     "add_collaborator": {
-      "description": "Directly add a user to a CoCalc project.\nYou must be owner or collaborator on the target project.\nYou cannot remove the project owner.\nThe user is NOT notified via email that they were added, and there\nis no confirmation process.  (Eventually, there will be\nan accept process, or this endpoint will only work\nwith a notion of \"managed accounts\".)\n\nYou can optionally add multiple user to multiple projects by padding\nan array of strings for project_id and account_id.  The arrays\nmust have the same length.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/add_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
+      "description": "Directly add a user to a CoCalc project.\nYou must be owner or collaborator on the target project or provide,\nan optional valid token_id (the token determines the project).\nThe user is NOT notified via email that they were added, and there\nis no confirmation process.  (Eventually, there will be\nan accept process, or this endpoint will only work\nwith a notion of \"managed accounts\".)\n\nYou can optionally add multiple user to multiple projects by padding\nan array of strings for project_id and account_id.  The arrays\nmust have the same length.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/add_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
       "fields": {
         "id": "A unique UUID for the query",
-        "project_id": "project_id of project to add user to (can be an array to add multiple users to multiple projects) (required)",
-        "account_id": "account_id of user (can be an array to add multiple users to multiple projects) (required)"
+        "project_id": "project_id of project to add user to (can be an array to add multiple users to multiple projects); isn't needed if token_id is specified",
+        "account_id": "account_id of user (can be an array to add multiple users to multiple projects) (required)",
+        "token_id": "project_invite_token that is needed in case the user **making the request** is not already a project collab"
       }
     },
     "remove_collaborator": {
-      "description": "Remove a user from a CoCalc project.\nYou must be owner or collaborator on the target project.\nYou cannot remove the project owner.\nThe user is NOT notified via email that they were removed.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/remove_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
+      "description": "Remove a user from a CoCalc project.\nYou must be owner or collaborator on the target project.\nThe project owner cannot be removed.\nThe user is NOT notified via email that they were removed.\n\nExample:\n```\n  curl -u sk_abcdefQWERTY090900000000: \\\n    -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \\\n    -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \\\n    https://cocalc.com/api/v1/remove_collaborator\n  ==> {\"event\":\"success\",\n       \"id\":\"e80fd64d-fd7e-4cbc-981c-c0e8c843deec\"}\n```",
       "fields": {
         "id": "A unique UUID for the query",
         "project_id": "project_id of project from which user is removed (required)",
@@ -319,6 +337,6 @@
     }
   },
   "root": "/api/v1/",
-  "timestamp": "2020-01-29T00:48:22.594Z",
-  "gitrev": "2fdb71553af8718ddf5ae9e7388c0b45a7ba3a37"
+  "timestamp": "2020-09-17T03:08:33.230Z",
+  "gitrev": "86c0a8a7d15edce662867107332f27b0a2b254eb"
 }
