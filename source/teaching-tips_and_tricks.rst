@@ -259,6 +259,7 @@ then click on changes and drag the sliders to see the document in a given time i
 If you need to revert the document to a previous state, drag the slider to the desired revision and click on **Revert live version to this**. Doing so reverts the document contents to that specific version. If you have checked the **Changes** box to compare two revisions and click on **Revert live version to this**, contents are reverted to the latter of the two revisions being compared. Note that reverting a file simply creates a new version of the file equal to the old file at that point in time; in particular, no work is lost!
 
 .. index:: Courses; run a command in all student projects
+.. _run_cmd_students:
 
 Run Terminal command in all student projects
 ============================================
@@ -414,3 +415,21 @@ Q: Is there a way to integrate CoCalc into my `Moodle <https://moodle.org/>`_ en
 A: Unfortunately, not really. We do have our own fairly sophisticated course management functionality for creating and distributing assignments, working in real time with students, and collecting, grading and returning. See :doc:`teaching-instructors`.
 
 You can also publish an assignment to the `CoCalc share server <https://share.cocalc.com/share/>`_ (you can make content "you must know the link"), point students at that link, and have them download the work when they are done and submit it via Moodle.
+
+.. index:: Courses; change assignment due date
+
+Change the due date of an assignment
+=====================================
+
+If a due date is set for an assignment, that date is written to file ``DUE_DATE.TXT`` in the folder for the assignment in the each student project when the assignment is distributed.
+
+.. image:: img/teaching/due-date.png
+     :width: 66%
+     :align: center
+
+To change the date after distributing an assignment, the instructor could run a Linux shell command in all student projects that changes the due date file. See :ref:`run_cmd_students` above for how to run the command.
+In the example above, the command to be run could be:
+
+.. code-block:: bash
+
+    echo "new due date: 2020-10-09 11:00 AM" > Assignments/Assignment1/DUE_DATE.txt
