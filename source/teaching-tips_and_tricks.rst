@@ -421,7 +421,7 @@ You can also publish an assignment to the `CoCalc share server <https://share.co
 Change the due date of an assignment
 =====================================
 
-If a due date is set for an assignment, that date is written to file ``DUE_DATE.TXT`` in the folder for the assignment in the each student project when the assignment is distributed.
+When an assignment is distributed, the due date, if any, is written to file ``DUE_DATE.TXT`` in the folder for the assignment in each student project.
 
 .. image:: img/teaching/due-date.png
      :width: 66%
