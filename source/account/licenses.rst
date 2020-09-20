@@ -61,7 +61,7 @@ If you're not sure which upgrades to order, here are some suggestions:
 Advanced options
 ---------------------------------
 
-If you click "Show advanced options", two more choices appear.
+If you click "Show advanced options", more choices appear.
 
 **Member hosting** is the most essential upgrade for most situations. It gets your projects off heavily-loaded, preemptible trial servers. For that reason, this option is enabled by default.
 
@@ -74,6 +74,10 @@ The **Always running** option prevents your project from being stopped for an :r
      :align: center
 
      ..
+
+**Dedicated CPU cores** are cloud vCPU's not shared with other projects. You can enter a fractional value, such as 0.5 for half a dedicated core.
+
+**Dedicated RAM** is not shared with other projects.
 
 .. index:: Licenses; period, title, cost, purchase
 
