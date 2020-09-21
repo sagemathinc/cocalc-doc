@@ -26,6 +26,10 @@ Markdown
 If you open/create a file ending with ``*.md``, you're presented by default with a split view of `Markdown <https://www.markdowntutorial.com/>`_ code on the left and HTML rendered output on the right hand side.
 You can also write `LaTeX formulas <https://en.wikibooks.org/wiki/LaTeX/Mathematics>`_ between ``$`` signs, e.g. ``$\frac{1}{1+x^2}$``.
 
+.. index:: Frame Editor; markdown inverse search
+
+The markdown editor supports **inverse search** when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.
+
 .. index:: Source Code files
 .. index:: Frame Editor; source code
 
