@@ -11,6 +11,28 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-09-28:
+
+2020-09-28: aTSA, BERT and pyGIMLi
+-----------------------------------------------
+
+- Node.js:
+    - (upd) `typescript`_ ``4.0.2``, ``prettier@2.1.1``, ``webpack@4.44.1``, ``coffeescript@2.5.1``, ``data-cli@0.10.1``, ``ijavascript@5.2.0``, ...
+
+- R (system-wide):
+    - (new) `aTSA <https://cran.r-project.org/package=aTSA>`_ – *Contains some tools for testing, analyzing time series data and fitting popular time series models such as ARIMA, Moving Average and Holt Winters, etc.*
+    - (upd) various packages
+
+- Python 3 (system-wide):
+    - (upd) `nbconvert`_ ``6.0.6``, `matplotlib`_ ``3.3.2`` and various other packages
+
+- Python 3 (Anaconda 2020):
+    - (new) `pyGIMLi <https://www.pygimli.org/>`_– *an open-source multi-method library for modelling and inversion in geophysics*
+    - (new) `BERT <http://resistivity.net/bert/>`_ – *a software package for modelling and inversion of Electrical Resistivity Tomography data*
+    - (upd) various packages
+
+- Utilities:
+    - (upd) `heroku`_ ``7.43.0``
 
 .. _update-2020-09-12:
 
@@ -744,4 +766,4 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _Haskell: https://www.haskell.org/
 .. _Asciidoctor: https://asciidoctor.org
 .. _hypothesis: https://hypothesis.readthedocs.io/en/latest/
-
+.. _heroku: https://www.heroku.com/
