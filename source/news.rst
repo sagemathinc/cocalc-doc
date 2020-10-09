@@ -9,6 +9,27 @@ News
 
     news/ubuntu-2004
 
+
+.. _news-2020-10-09-project-info:
+
+2020-10-09: Project Information
+=====================================
+
+Projects got a new panel called "Info".
+It shows the current status regarding the overall container the project is running in
+and also a detailed list of processes.
+
+In the example below, three Jupyter Notebooks are running.
+You can e.g. see how one of them spawned Octave.
+The indications in red highlight elevated resource usage, which might harm the overall experience.
+
+.. figure:: img/project-info/project-info-table.png
+    :width: 100%
+    :align: center
+
+    Project Info: showing project's resource usage and processes
+
+
 .. _news-2020-08-18:
 
 :ref:`ubuntu-2004-upgrade`
