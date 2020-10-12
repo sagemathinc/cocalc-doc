@@ -34,7 +34,7 @@ Credit card details (full credit card number, expiration date, CVV number) are m
 Subscriptions
 =========================
 
-This section lists your currently active subscriptions and course packages.
+This section lists your currently active license subscriptions, personal plans, and course packages.
 The word "Active" denotes ordinary active subscriptions.
 The word "Trialing" indicates a free trial or other custom subscription plan.
 
@@ -56,7 +56,7 @@ Note that you can "stack" multiple course plans to combine the resources. In the
 
 Personal subscriptions renew automatically. Course plans do *not* renew automatically.
 
-**To cancel a subscription**, find the subscription in the active subscription list and click ``Cancel`` at the far right.
+**To cancel a subscription**, find the subscription in the active subscription list and click ``End`` at the far right.
 The subscription will not be auto-renewed at the next renewal date and the expiration date will be displayed in the subscription list.
 
 .. figure:: img/account/three-subs-cancel.png
