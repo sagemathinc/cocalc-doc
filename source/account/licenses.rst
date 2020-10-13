@@ -12,7 +12,7 @@ Under "Licenses", you can keep track of CoCalc licenses you manage or use in you
      :width: 90%
      :align: center
 
-     ..
+     Licenses tab
 
 .. index:: Licenses; buying
 .. _buying-licenses:
@@ -107,6 +107,8 @@ If you select **Get a quote**, CoCalc will create a help request form including 
 Licenses that you manage
 ========================
 
+*See "Licenses tab" figure at top of this page.*
+
 If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section. To have license managers added or removed, contact CoCalc support at help@cocalc.com. License managers must have a CoCalc account.
 
 .. index:: Licenses; view your licensed projects
@@ -114,6 +116,8 @@ If you are a manager for one or more CoCalc licenses, you will see those license
 
 Projects with licenses
 ========================
+
+*See "Licenses tab" figure at top of this page.*
 
 If you are an owner or collaborator on any projects that have CoCalc licenses, those projects are listed in this section.
 

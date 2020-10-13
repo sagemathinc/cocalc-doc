@@ -17,7 +17,7 @@ You can order a license for any number of projects, with arbitrary start and end
 Dynamic allocation
 ------------------
 
-You can apply a license to any number of projects. Projects are upgraded as they start, until the maximum number of concurrent running projects is reached. Any project with the license that starts while the maximum concurrent number is running will be started without upgrades from that license. When a project using a license stops, its upgrades are released and can be used by the next  project to start that is configured for that license.
+You can apply a license to any number of projects. Projects are upgraded as they start, until the maximum number of concurrent running projects for that license is reached. Any project with the license that starts while the maximum concurrent number is running will be started without upgrades from that license. When a project using a license stops, its upgrades are released and can be used by the next  project to start that is configured for that license.
 
 More information
 ----------------
