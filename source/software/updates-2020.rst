@@ -11,6 +11,36 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-10:
+
+2020-10: Pandoc 2.11
+--------------------------------------------------
+
+- Utils:
+    - (upd) `pandoc` ``2.11.0.1`` – `pandoc 2.11 release notes <https://github.com/jgm/pandoc/releases/tag/2.11.0.1>`_
+
+
+
+.. _update-2020-10-12:
+
+2020-10-12: RPC info, PyCaret, R 4.0.3, …
+-------------------------------------------------
+
+- Utils:
+    - (new) `rpcinfo`_ – *makes an RPC call to an RPC server and reports what it finds*
+
+- R:
+    - (upd) `R`_ ``4.0.3``
+    - various package updates
+
+- Python 3 (system-wide):
+    - (new) `pycaret`_ ``2.1.2`` – *an open source, low-code machine learning library in Python that allows you to go from preparing your data to deploying your model within minutes in your choice of notebook environment*
+    - various package updates
+
+- Julia:
+    - (upd) Julia ``1.5.2``
+
+
 .. _update-2020-09-28:
 
 2020-09-28: aTSA, BERT and pyGIMLi
@@ -767,3 +797,6 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _Asciidoctor: https://asciidoctor.org
 .. _hypothesis: https://hypothesis.readthedocs.io/en/latest/
 .. _heroku: https://www.heroku.com/
+.. _rpcinfo: http://manpages.ubuntu.com/manpages/bionic/man7/rpcinfo.7.html
+.. _pycaret: https://pycaret.org/
+.. _r: https://www.r-project.org
