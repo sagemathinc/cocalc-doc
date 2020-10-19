@@ -118,7 +118,9 @@ Step 7: Does the problem relate to stale cookies?
 
 This situation can happen to users who are attempting to use two different CoCalc accounts, even if they are not attempting to do so simultaneously. We have an entire page devoted to strategies to make it easy to :ref:`painlessly operate with multiple CoCalc accounts <multiple-accounts>`.
 
-For a quick fix, try to connect to CoCalc by opening up a "new private browsing window" or "new incognito window." While inside those special windows, your old cookies will not be active and any new cookies you are given will not affect the main browser.
+For a quick workaround, try to connect to CoCalc by opening up a "new private browsing window" or "new incognito window." While inside those special windows, your old cookies will not be active and any new cookies you are given will not affect the main browser.
+
+The definitive solution is to clear all browser cookies related to cocalc.com, or use a different browser.
 
 Step 8: Have you installed browser extensions ("add-on"s) or enabled blocking software on your computer?
 ----------------------------------------------------------------------------------------------------------------------
