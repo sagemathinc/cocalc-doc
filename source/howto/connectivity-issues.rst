@@ -108,7 +108,13 @@ In this situation, the fix is easy. Just **reload the website with the Shift-key
 Browser caches are an important way of speeding up your internet connection. However, the methods and strategies that work for static web content and relatively straightforward websites do not always work well for sophisticated and complex systems like CoCalc. For example, hotels often have aggressive cache servers, because a large portion of their guests will access the same handful of websites (e.g. to check the weather, get navigation, or print boarding passes.)
 
 Step 7: Does the problem relate to stale cookies?
--------------------------------------------------------------------------------------------------------
+-------------------------------------------------
+
+.. index:: Connectivity Issues; no valid remember_me
+
+.. note::
+
+    Getting the message, ``Error: no valid remember_me token`` when trying to sign into CoCalc is usually a sign of stale browser cookies.
 
 This situation can happen to users who are attempting to use two different CoCalc accounts, even if they are not attempting to do so simultaneously. We have an entire page devoted to strategies to make it easy to :ref:`painlessly operate with multiple CoCalc accounts <multiple-accounts>`.
 
