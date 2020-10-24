@@ -6,7 +6,7 @@ For the best results, follow these steps when setting up a course with a site li
 1. Obtain a license key.
 ------------------------
 
-At present, you need to contact us directly at `help@cocalc.com <mailto:help@cocalc.com">`_ to buy a site license. Soon, we will add the ability to buy site licenses online.
+In your account settings, open the tab "Licenses". There, you find a button named "Buy a license…".
 
 A license key is a hexadecimal uuid string. It looks like this::
 
@@ -25,7 +25,7 @@ Create a CoCalc project you will to use to manage the course.
 3. Create a .course file.
 -------------------------
 
-Use the (+)New button to create a ``.course`` file for managing your course.
+Use the ``(+)New`` button to create a ``.course`` file for managing your course.
 
 .. image:: img/teaching/site-lic-course-create-crse.png
      :width: 85%
