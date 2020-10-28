@@ -11,15 +11,16 @@ Software Updates 2020
 .. highlight:: python
 
 
-.. _update-2020-10:
+.. _update-2020-10-28:
 
-2020-10: Pandoc 2.11
+2020-10-28: Pandoc 2.11
 --------------------------------------------------
 
 - Utils:
     - (upd) `pandoc` ``2.11.0.1`` – `pandoc 2.11 release notes <https://github.com/jgm/pandoc/releases/tag/2.11.0.1>`_
 
-
+- General:
+    - (upd) various Python 3 and Ubuntu Linux packages
 
 .. _update-2020-10-12:
 
