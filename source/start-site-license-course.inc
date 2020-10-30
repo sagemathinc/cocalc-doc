@@ -1,5 +1,4 @@
-.. index:: Site licenses; Courses; setup
-
+.. index:: Site licenses; course setup
 
 For the best results, follow these steps when setting up a course with a site license:
 
@@ -46,7 +45,7 @@ Use the ``(+)New`` button to create a ``.course`` file for managing your course.
      :width: 85%
      :align: center
 
-.. index:: Site licenses; Courses; strategy
+.. index:: Site licenses; course strategy
 
 5. License strategy (multiple licenses only)
 ---------------------------------------------
@@ -89,7 +88,7 @@ License setup done!
 
 You have just completed the steps to create a teaching project, upgrade the teaching project, and create a .course file. You are ready follow steps below to :ref:`add TAs <teaching-add-ta>`, if any, :ref:`add students <adding-students>`, and set up :ref:`handouts <create-handout>` and :ref:`assignments <create-assignment>`.
 
-.. index:: Site licenses; Courses; adding capacity
+.. index:: Site licenses; adding capacity to course
 
 Adding capacity
 ---------------
