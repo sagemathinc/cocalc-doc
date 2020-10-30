@@ -82,7 +82,6 @@ In project Settings, within a few seconds you will see that the teaching project
      project settings after restarting teaching project
 
 
-
 License setup done!
 -------------------------------
 
