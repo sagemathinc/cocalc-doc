@@ -28,13 +28,4 @@ Setting up a Course with a Site License
 
 .. include:: start-site-license-course.inc
 
-.. _teaching-vfaq:
 
-####
-VFAQ
-####
-
-**Very Frequently Asked Questions**. We're putting these here because we get them so often.
-Further course plan/quotas related questions are answered in :doc:`billing`.
-
-.. include:: teaching-vfaq.inc

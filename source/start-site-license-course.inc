@@ -1,7 +1,8 @@
-.. index:: Site licenses; for courses (setup)
+.. index:: Site licenses; Courses; setup
 
 
 For the best results, follow these steps when setting up a course with a site license:
+
 
 1. Obtain a license key.
 ------------------------
@@ -32,20 +33,36 @@ Use the ``(+)New`` button to create a ``.course`` file for managing your course.
      :align: center
 
 
-4. Install your license in the .course file.
---------------------------------------------
+4. Install your license(s) in the .course file.
+-----------------------------------------------
 
 - Open the ``.course`` file and click "Configuration."
 - Check the box for "You or your institute will pay for this course".
 - Click "Upgrade using a license key...".
 - Paste in your license key and click "Save". You will see additional text where you entered the license key, indicating which upgrades will be applied and the maximum number of simultaneous running projects that can use this license.
+- You can apply more than one license. After you install the first license, a new button will appear, "Add another license key (more students or better upgrades)". Click this to add more licenses, one at a time.
 
 .. image:: img/teaching/site-lic-course-config.png
      :width: 85%
      :align: center
 
+.. index:: Site licenses; Courses; strategy
 
-5. Restart the teaching project.
+5. License strategy (multiple licenses only)
+---------------------------------------------
+
+If you have applied two or more licenses to a course, a dialog appears
+for choosing how those licenses are combined. The two options are:
+
+- **Maximize number of covered students:** apply one license to each project associated to this course (e.g., you bought a license to handle a few more students who added your course). This is the default.
+- **Maximize upgrades to each project:** apply all licenses to all projects associated to this course (e.g., you bought a license to increase the RAM or CPU for all students).
+
+.. image:: img/teaching/license-strategy.png
+     :width: 85%
+     :align: center
+
+
+6. Restart the teaching project.
 --------------------------------
 
 In project Settings (wrench icon), restart your project so that the license will be applied. Click "Restart Project..." then click "Yes, restart project" in the confirmation dialog.
@@ -71,3 +88,14 @@ License setup done!
 -------------------------------
 
 You have just completed the steps to create a teaching project, upgrade the teaching project, and create a .course file. You are ready follow steps below to :ref:`add TAs <teaching-add-ta>`, if any, :ref:`add students <adding-students>`, and set up :ref:`handouts <create-handout>` and :ref:`assignments <create-assignment>`.
+
+.. index:: Site licenses; Courses; adding capacity
+
+Adding capacity
+---------------
+
+After you have courses up and running, you may discover that you need to provide for more students,
+or increase computing resources on student projects. You can do either of those by obtaining
+additional licenses and applying them as shown above.
+If you need more flexibility than the available strategies offer,
+contact CoCalc support at help@cocalc.com.

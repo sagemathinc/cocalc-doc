@@ -210,9 +210,6 @@ In particular, "shares" determines the amount of relative CPU time you get.
 Course packages
 ===========================
 
-.. include:: teaching-vfaq.inc
-
-
 
 Am I **required to pay** for conducting a course?
 -----------------------------------------------------------------

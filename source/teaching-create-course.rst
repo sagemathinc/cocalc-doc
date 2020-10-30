@@ -21,7 +21,6 @@ The first step is to create an instructor's project to contain the course.
 .. note::
 
     :ref:`upgrade-teacher-project-first`
-    Then check our :ref:`very frequently asked questions <teaching-vfaq>`.
 
 Log into CoCalc and click on the **Projects** icon in the top left hand corner of the screen.
 
