@@ -10,6 +10,22 @@ Software Updates 2020
 
 .. highlight:: python
 
+.. _update-2020-11-01:
+
+2020-11-01: Sage 9.2
+-------------------------------------------------
+
+
+- `SageMath`_ 9.2 available now
+    - `9.2 Release Tour <https://wiki.sagemath.org/ReleaseTours/sage-9.2>`_
+    - `9.2 example notebook <https://share.cocalc.com/share/8b22ce8f3e9141692f14f63d3dbf333a769db673/sage-9.2.ipynb?viewer=share>`_
+    - To switch back to 9.1 as the default in your project, run ``sage_select 9.1`` in a :doc:`../../terminal`.
+
+
+.. figure:: img/sage9.2-3d-ani.png
+  :align: center
+  :width: 50%
+
 
 .. _update-2020-10-28:
 
