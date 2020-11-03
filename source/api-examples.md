@@ -1,5 +1,81 @@
 # API Examples & Howto
 
+.. index:: pair: API; Copy files
+
+## Copy a file between projects
+
+First, save your API key in a file `api.key`.
+Then, we use the [requests](https://requests.readthedocs.io/en/master/) library to issue calls:
+
+```
+key = open('api.key').read().strip()
+import requests as r
+```
+
+Copy request:
+
+```
+data = {
+    'src_project_id': '...',
+    'src_path': 'cocalc-api/api-demo.ipynb',
+    'target_project_id': '...',
+    'wait_until_done': False
+}
+
+req = r.post('https://cocalc.com/api/v1/copy_path_between_projects',
+             auth=(key, ''),
+             data=data)
+res = req.json()
+res
+```
+
+response `res`:
+
+```
+{'event': 'copy_path_between_projects_response',
+ 'id': '52818dfe-b580-404e-89e6-9845fac7076c',
+ 'copy_path_id': '65cd2079-098d-4147-bb54-12d44cebb8cb',
+ 'note': 'Query copy_path_status with the copy_path_id to learn if the copy operation was successful.'
+}
+```
+
+Now, we wait a few seconds. Then, we check the status using `copy_path_id`:
+
+```
+data = {
+    'copy_path_id': res['copy_path_id']
+}
+
+req = r.post('https://cocalc.com/api/v1/copy_path_status',
+             auth=(key, ''),
+             data=data)
+res = req.json()
+res
+```
+
+which gives
+
+```
+{'event': 'copy_path_status_response',
+ 'id': 'abc3ca91-1388-4208-bdeb-540054e5bcaf',
+ 'data': {'copy_path_id': 'da3a8eaf-14df-4bf8-9131-13bcb9c7e9e5',
+  'time': '2020-11-03T16:20:54.222Z',
+  'source_project_id': '...',
+  'source_path': 'cocalc-api/api-demo.ipynb',
+  'target_project_id': '...',
+  'target_path': 'cocalc-api/api-demo.ipynb',
+  'overwrite_newer': False,
+  'delete_missing': False,
+  'backup': False,
+  'started': '2020-11-03T16:20:54.234Z',
+  'finished': '2020-11-03T16:20:55.177Z'}
+}
+```
+
+Note: `started` and `finished` being part of the response, signals it did work.
+
+
+
 .. index:: pair: API; IFrame
 
 ## Embedding in an IFrame
