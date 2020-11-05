@@ -210,7 +210,7 @@ From left to right:
 
 .. _ft-info:
 
-* |settings| **Info** - This panel offers a consolidated view of real-time activity within the current project. Use the Help button at upper right for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
+* |settings| **Info** - This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
 
 .. note::
 
