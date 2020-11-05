@@ -113,7 +113,7 @@ The Project Toolbar
 Here's quick tour of the topmost toolbar in CoCalc, the **Project Toolbar**.
 
 .. image:: img/getting-started/toolbars-projects-a.png
-     :width: 90%
+     :width: 90% 
 
 Going from left to right:
 
@@ -207,6 +207,18 @@ From left to right:
   the currently selected file, or the project home directory if no file is selected. There are options
   to for searching subdirectories, case sensitive search, including hidden files, and restricting search
   to files in a git repository.
+
+.. _ft-info:
+
+* |settings| **Info** - This panel offers a consolidated view of real-time activity within the current project. Use the Help button at upper right for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
+
+.. note::
+
+    The "Memory" column in the Info panel's process list can help you track down out-of-memory problems.
+
+.. image:: img/getting-started/process-info.png
+     :align: center
+     :width: 95%
 
 .. _ft-settings:
 
@@ -349,4 +361,7 @@ You can find the CoCalc Accessibility Statement on our wiki at https://github.co
      :width: 16px
 .. |comment|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/comment-o.png
+     :width: 16px
+.. |settings|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/gear.png
      :width: 16px

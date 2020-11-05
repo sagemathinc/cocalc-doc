@@ -59,12 +59,17 @@ Ways to clear up your project's memory
 Inspect in detail why the project is running out of memory
 ----------------------------------------------------------
 
-1. Project settings
+1. Project Info
 ^^^^^^^^^^^^^^^^^^^
 
-You can also look in the Settings (wrench) tab of your project under "Shared RAM", which will say how much is "currently" used.  This is only updated once every 30 seconds though, and may not show spikes in attempted memory allocation.
+You can click the "Info" button in the Files toolbar to see a list of running processes and how much memory each is using. See :ref:`project Info <ft-info>` for details.
 
-2. Use "top"/"htop" in a terminal
+2. Project settings
+^^^^^^^^^^^^^^^^^^^
+
+You can look in the Settings (wrench) tab of your project under "Shared RAM", which will say how much is "currently" used.  This is only updated once every 30 seconds though, and may not show spikes in attempted memory allocation.
+
+3. Use "top"/"htop" in a terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Currently the easiest way to test this is to open a terminal in your project, then type ``top``. Watch the processes listed there, especially the column labeled `RES`, which stands for "resident memory".
@@ -74,7 +79,7 @@ You can type "M" into top to make it sort processes by memory, which will help i
 
 ``htop`` is a more modern alternative to ``top``. You can use the functional keys to issue commands or even use the mouse to point and click.
 
-3. Use "smem -ntk" in a terminal
+4. Use "smem -ntk" in a terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This command gives a useful breakdown of memory usage.
@@ -85,7 +90,7 @@ But if you're hitting memory issues and just want more space, `upgrade your proj
 
 The subscription are `listed here <https://cocalc.com/policies/pricing.html>`_. For example, for $14/month, you can upgrade memory from 1 GB to 5 GB, and have a **lot** more elbow room!  If you're confused or have questions about upgrading, just ask at help@cocalc.com.
 
-4. Peak memory usage
+5. Peak memory usage
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 In a :doc:`../terminal`, you can check the peak memory usage of a utility this way::
