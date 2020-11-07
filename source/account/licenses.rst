@@ -8,7 +8,7 @@ Licenses
 
 Under "Licenses", you can keep track of CoCalc licenses you manage or use in your projects.
 
-.. figure:: img/settings/account-licenses.png
+.. figure:: img/settings/account-licenses-manage.png
      :width: 90%
      :align: center
 
