@@ -44,8 +44,8 @@ There is an idle timeout for each project,
 and it will be completely stopped (the technical term in UNIX is "killed") if you don't actively edit a file for that amount of time.
 
 The default for free projects is 30 minutes.
-You can increase this to 24 hours for only $14 per month.
-This means that if you use your project a little bit once per day, then it will *never* timeout.
+To prevent idle timeouts, you can purchase a license with the
+:ref:`Always running <licenses-always-running>` feature and apply it to your project.
 
 However, free projects have another limitation. A free project can be "killed" (stopped)
 at any time, whatsoever. This will happen at least once per day. You have to keep this
