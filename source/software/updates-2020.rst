@@ -10,6 +10,28 @@ Software Updates 2020
 
 .. highlight:: python
 
+
+
+
+
+.. _update-2020-11-09:
+
+2020-11-09 : RDkit, Matplotlib Venn and data8 datascience
+---------------------------------------------------------------
+
+- Python 3 (Anaconda 2020)
+    - (new) `RDkit`_ ``2020.09.1`` – *Open-Source Cheminformatics Software*
+    - (new) `matplotlib_venn`_
+    - (upd) various package updates
+
+- Python 3 (system-wide)
+    - (new) `datascience by data8 <http://data8.org/datascience/>`_ – *written for use in Berkeley’s DS 8 course and contains useful functionality for investigating and graphically displaying data.*
+    - (upd) various package updates
+
+- Linux system
+    - (upd) various package updates
+
+
 .. _update-2020-11-01:
 
 2020-11-01: Sage 9.2
@@ -817,3 +839,5 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _rpcinfo: http://manpages.ubuntu.com/manpages/bionic/man7/rpcinfo.7.html
 .. _pycaret: https://pycaret.org/
 .. _r: https://www.r-project.org
+.. _matplotlib_venn: https://github.com/konstantint/matplotlib-venn
+
