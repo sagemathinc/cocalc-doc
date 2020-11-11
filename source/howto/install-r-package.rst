@@ -115,7 +115,14 @@ To install packages into your own collection of packages, run this in a notebook
 
 Credits: `stack overflow post <https://stackoverflow.com/a/43283085/54236>`_
 
-**Note**: If your ``Sys.getenv("R_LIBS_USER")`` already exists, a freshly started kernel will already know about it. You can check this by running ``.libPaths()``. If the first listed path starts with ``/home/user/R/...`` you can run ``install.packages`` without any errors.
+
+.. note::
+
+    After installing a package, restart your Jupyter notbook kernel. Click "Kernel" then select "Restart kernel..." from the dropdown menu.
+
+.. note::
+
+    If your ``Sys.getenv("R_LIBS_USER")`` already exists, a freshly started kernel will already know about it. You can check this by running ``.libPaths()``. If the first listed path starts with ``/home/user/R/...`` you can run ``install.packages`` without any errors.
 
 Aftermath
 ===========
