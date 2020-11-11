@@ -22,7 +22,8 @@ This FAQ/Help page consists of
 
     * Hold down the ``Shift``-key and click your browser's **reload** button to refresh the CoCalc tab.
       Sometimes this simple action resolves the problem.
-    * **Restart your browser.** Maybe even restart your computer!
+    * **Restart your browser.**
+    * Maybe you even have to **restart your computer** or internet device (**WiFi router**)!
     * You might be using an old, unsupported browser.
       Check for updates available to the browser you are using, or switch to the latest version of a different browser.
 
