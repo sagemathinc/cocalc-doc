@@ -1,5 +1,7 @@
 .. index:: Frame Editor
 
+.. _frame-editor:
+
 ============
 Frame Editor
 ============

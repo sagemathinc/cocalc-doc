@@ -1,5 +1,7 @@
 .. index:: Terminal
 
+.. _terminal:
+
 ==============
 Linux Terminal
 ==============

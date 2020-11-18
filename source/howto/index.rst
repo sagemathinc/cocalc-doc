@@ -25,6 +25,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
 
    webserver
    bokeh-server
+   shiny-server
 
 .. toctree::
    :caption: Jupyter Notebook
