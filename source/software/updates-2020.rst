@@ -11,7 +11,20 @@ Software Updates 2020
 .. highlight:: python
 
 
+.. _update-2020-11-19 :
 
+2020-11-19 : Mathics, gprMax, and pybedtools
+---------------------------------------------------------------
+
+- Tools:
+    - (new) `Mathics`_ – *a general-purpose computer algebra system (CAS). It is an open-source alternative to Mathematica.*
+    - (new) file managers: ``nnn``, ``ranger``, and ``lfm``
+    - (upd) various system package updates
+
+- Python 3 (system-wide):
+    - (new) `gprMax`_ – *electromagnetic simulation software*
+    - (new) `pybedtools`_ – *is widely used for genomic interval manipulation or "genome algebra"*
+    - (upd) various packages updates
 
 
 .. _update-2020-11-09:
@@ -840,4 +853,6 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _pycaret: https://pycaret.org/
 .. _r: https://www.r-project.org
 .. _matplotlib_venn: https://github.com/konstantint/matplotlib-venn
-
+.. _Mathics: https://mathics.org/
+.. _gprMax: https://www.gprmax.com/
+.. _pybedtools: https://daler.github.io/pybedtools/
