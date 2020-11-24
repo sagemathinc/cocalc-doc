@@ -49,11 +49,15 @@ For **Type**, enter the quota for each project.
      :align: center
 
      ..
+     
+**Priority support**
 
-If you're not sure which upgrades to order, here are some suggestions:
+**Network access**
 
-* 1 CPU, 1 GB of RAM, and 1 GB of disk space (with Member hosting, which is selected by default) are generally enough for elementary subjects, such as learning programming syntax and introductory math courses.
-* 1 CPU, 2 GB of RAM, and 1 GB of disk space (with Member hosting, which is selected by default) are often enough for intermediate-level courses.
+**Suggestions.** If you're not sure which upgrades to order, here are some suggestions:
+
+* Basic level: 1 CPU, 1 GB of RAM, and 1 GB of disk space (with Member hosting, which is selected by default) are generally enough for elementary subjects, such as learning programming syntax and introductory math courses.
+* Standard level: 1 CPU, 2 GB of RAM, and 1 GB of disk space (with Member hosting, which is selected by default) are often enough for intermediate-level courses.
 * There is no substitute for testing the computations you plan to run at a given resource level. You could buy a license for a small number of days to try things out. For instructors preparing to teach a course, we can provide a free trial that is valid for several days; just email help@cocalc.com for more information.
 * You might buy a license for a short period of time, e.g., if there is a 2-week part of a course that requires significantly more compute resources.
 
