@@ -111,7 +111,7 @@ In the Jupyter notebook, use the top menu to select:
 
      Starting nbgrader assignment in a Jupyter notebook
 
-You will a dropdown cell-type menu in the upper right of each cell, which you can use to create problems, answer tests, etc. What you see depends on whether the cell is a code cell or a markdown cell. Here is an example of the cell-type menu for a code cell:
+There is a dropdown cell-type menu in the upper right of each cell. Use it to create problems, answer tests, etc. What you see depends on whether the cell is a code cell or a markdown cell. Here is an example of the cell-type menu for a code cell:
 
 .. figure:: img/nbgrader/nbg-cq-code.png
      :width: 95%
