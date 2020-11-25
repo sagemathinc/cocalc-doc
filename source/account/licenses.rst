@@ -49,10 +49,14 @@ For **Type**, enter the quota for each project.
      :align: center
 
      ..
-     
-**Priority support**
 
-**Network access**
+.. index:: Licenses; priority support
+
+**Priority support.** With any licensed project, your support requests are automatically prioritized much higher.
+
+.. index:: Licenses; network access
+
+**Network access.** Any licensed project can connect to the Internet to clone git repositories, download files, send emails, etc.
 
 **Suggestions.** If you're not sure which upgrades to order, here are some suggestions:
 
@@ -67,6 +71,12 @@ Advanced options
 ---------------------------------
 
 If you click "Show advanced options", more choices appear.
+
+.. figure:: img/settings/buy-lic-2a.png
+     :width: 90%
+     :align: center
+
+     ..
 
 .. index:: Licenses; member hosting
 .. _licenses-member-hosting:
@@ -85,12 +95,6 @@ Always running
 ^^^^^^^^^^^^^^
 The **Always running** option prevents your project from being stopped for an :ref:`idle timeout <idle-timeout-quota>`. This option increases cost, but can be useful in special situations for long-running computations. This option is disabled by default. Note that "Always running" does not guarantee 100% uptime, because projects may occasionally be restarted for security and maintenance reasons.
 
-.. figure:: img/settings/buy-lic-2a.png
-     :width: 90%
-     :align: center
-
-     ..
-
 Dedicated CPU cores
 ^^^^^^^^^^^^^^^^^^^
 
@@ -106,6 +110,12 @@ Dedicated RAM
 Period, Title, Cost, and Purchase
 ---------------------------------
 
+.. figure:: img/settings/buy-lic-3.png
+     :width: 90%
+     :align: center
+
+     ..
+
 For **Period**, specify when your license is to be active. There are discounts for licenses that will renew automatically every month or every year. Note that you can cancel renewal at any time; the license will continue to be valid through the current paid interval but will not auto-renew at the end of that interval. You can specify arbitrary start and end dates; unlike the older products, the license can start at a future date and the period does not have to be some exact number of weeks or months. Licenses start at 0:00 in your local time zone on the start date and end at 23:59 in your local time zone on the ending date.
 
 Use any descriptive text you want for **Title** and **Description**. You can easily change these later.
@@ -115,12 +125,6 @@ Use any descriptive text you want for **Title** and **Description**. You can eas
 Select **Purchase** if you are ready to buy a license with a credit card immediately.
 
 If you select **Get a quote**, CoCalc will create a help request form including the license parameters you selected. A text area will open where you can provide additional information. When you are ready, click "Please contact me", and when the help form pops up, click "Get support" to send the request. The price of the license must be at least $100 for the "Get a quote" button to be enabled.
-
-.. figure:: img/settings/buy-lic-3.png
-     :width: 90%
-     :align: center
-
-     ..
 
 .. index:: Licenses; view managed licenses
 .. _view-managed-licenses:
