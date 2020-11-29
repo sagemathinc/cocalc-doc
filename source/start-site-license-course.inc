@@ -1,4 +1,5 @@
 .. index:: Site licenses; course setup
+.. _license-course-setup:
 
 For the best results, follow these steps when setting up a course with a site license:
 
@@ -22,20 +23,22 @@ Create a CoCalc project you will to use to manage the course.
      :align: center
 
 
-3. Create a .course file.
+3. Create a course file.
 -------------------------
 
-Use the ``(+)New`` button to create a ``.course`` file for managing your course.
+Use the ``(+)New`` button to create a ``course`` file for managing your course.
 
 .. image:: img/teaching/site-lic-course-create-crse.png
      :width: 85%
      :align: center
 
+.. index:: Site licenses; install in course file
+.. _install-license-in-course:
 
-4. Install your license(s) in the .course file.
+4. Install your license(s) in the course file.
 -----------------------------------------------
 
-- Open the ``.course`` file and click "Configuration."
+- Open the ``course`` file and click "Configuration."
 - Check the box for "You or your institute will pay for this course".
 - Click "Upgrade using a license key...".
 - Paste in your license key and click "Save". You will see additional text where you entered the license key, indicating which upgrades will be applied and the maximum number of simultaneous running projects that can use this license.
@@ -85,7 +88,7 @@ In project Settings, within a few seconds you will see that the teaching project
 License setup done!
 -------------------------------
 
-You have just completed the steps to create a teaching project, upgrade the teaching project, and create a .course file. You are ready follow steps below to :ref:`add TAs <teaching-add-ta>`, if any, :ref:`add students <adding-students>`, and set up :ref:`handouts <create-handout>` and :ref:`assignments <create-assignment>`.
+You have just completed the steps to create a teaching project, upgrade the teaching project, and create a course file. You are ready follow steps below to :ref:`add TAs <teaching-add-ta>`, if any, :ref:`add students <adding-students>`, and set up :ref:`handouts <create-handout>` and :ref:`assignments <create-assignment>`.
 
 .. index:: Site licenses; adding capacity to course
 
