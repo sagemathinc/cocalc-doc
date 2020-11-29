@@ -14,8 +14,8 @@
 Billing/Upgrades FAQ
 ===========================
 
-This page answers questions related to `purchasing upgrades <https://cocalc.com/policies/pricing.html>`_,
-:doc:`upgrading projects or courses <upgrade-guide>`, subscriptions, license keys, and billing.
+This page answers questions related to :doc:`licenses <licenses>`,
+:doc:`upgrading projects or courses <upgrade-guide>`, and billing.
 
 Questions about projects are covered in :doc:`project-faq`.
 
@@ -28,48 +28,40 @@ Questions about projects are covered in :doc:`project-faq`.
 General
 ===========================
 
-Subscriptions & Upgrades 101
+Licenses & Upgrades 101
 -------------------------------
 
-Purchasing a personal subscription or course package awards to with certain quota upgrades
-for the indicated period of time.
+Purchasing a license allows you to add resources to projects  for the indicated period of time.
 
-Use these upgrades to improve hosting quality,
-enable internet access from within a project
-or increase quotas for CPU and RAM in order to work on larger problems
-and do more computations simultaneously.
-On top of that, your `support questions <mailto:help@cocalc.com>`_ are prioritized.
+Adding a license
+enables internet access from within a project
+and prioritizes response to your `support questions <mailto:help@cocalc.com>`_.
+In addition, you can improve hosting quality,
+increase quotas for CPU, RAM and disk space,
+and extend the amount of time a project can run
+unattended.
 
-You can upgrade the quotas up to the total amount given by your subscription(s)
-and the upper limits per project.
+The project owner and any collaborators may add and remove licenses to the project at any time.
+Multiple licenses may be applied to a project for a cumulative effect of added resources.
 
-Project collaborators can collectively contribute to the same project,
-in order to increase the quotas of their common project –
-these contributions add together to benefit all project collaborators equally.
-
-You can *remove* your contributions to any project *at any time*.
-
-You may also purchase any plans *more than once*,
-in order to increase the total amount of upgrades available to you.
-
-Right after the purchase the subscription becomes active.
-It *automatically renews* after the indicated period.
-
-You can *cancel* a subscription at any time and
-it will continue to run until the end of the current period and *not renew*.
+You can choose start and end dates when ordering a one-time license. License subscriptions are also available. These renew automatically. You can cancel a subscription at any time and
+it will continue to run until the end of the current period and not renew.
 
 
-What is the difference between **free and paid plans**?
+What is the difference between **free and paid service**?
 ----------------------------------------------------------
 
 Learn more about :doc:`Trial Projects <trial>`.
 
-The main differences are increased quotas and the quality of hosting; we also
-prioritize supporting paying users.
-We very strongly encourage you to make an account and explore our product for free!
-There is no difference in functionality between the free and for-pay versions of
+With licensed projects and other paid plans, the main differences are:
+* increased resource quotas
+* better quality of hosting
+* prioritized support.
+
+We strongly encourage you to make an account and explore our product for free!
+Other than lack of internet access from free projects, there is no difference in functionality between the free and for-pay versions of
 CoCalc; everything is still private by default for free users, and you can
-make as many projects as you want.  You can even fully start teaching a course
+make as many projects as you want. You can even fully start teaching a course
 in CoCalc completely for free, then upgrade at any point later so that your students
 have a **much** better quality experience (for a small fraction of the cost of
 their textbook).
@@ -95,21 +87,21 @@ that satisfies your unique requirements.
 Can I pay via wire transfer or PayPal?
 ----------------------------------------
 
-For purchases **above $50** we support PayPal or wire transfers.
+For purchases **above $100** we support PayPal or wire transfers.
 In particular that might be a year-long personal subscription or a larger course plan.
 Please contact help@cocalc.com with all relevant details about your intended purchase.
 
 
 
-.. index:: Subscription Does Not Work
-.. _sub_not_work:
+.. index:: License Does Not Work
+.. _lic_not_work:
 
 Subscription does not work
 ---------------------------------------
 
-After you buy a subscription, the first thing you need to do is go to settings in your project and :ref:`apply upgrades <project-upgrades>` from your subscription quotas to your project(s). Do this for each project that you would like to be upgraded. Exception: if you are managing a course with CoCalc, you :ref:`upgrade student projects <inst-pays>` within the .course file, and not in project settings.
+After you buy a license, the first thing you need to do is go to settings in your project and :ref:`apply the license to your project <project-add-license>`. Do this for each project that you would like to be upgraded. Exception: if you are managing a course with CoCalc, you :ref:`upgrade student projects <site-license-course-setup>` within the .course file, and not in project settings.
 
-At any time, you can visit https://cocalc.com/settings/upgrades to see exactly how all of your upgrades are allocated across your projects.
+At any time, you can visit https://cocalc.com/settings/licenses to see how all of your licenses are allocated across your projects.
 
 .. index:: Member Hosting;subscriptions
 
@@ -120,7 +112,6 @@ If you used up your upgrades, e.g., you are often using 3 or 4 projects, then yo
 **In case you're teaching a course and bought a course package**: please read :ref:`inst-pays`.
 
 If this doesn't completely answer your question, please don't hesitate to create a support request or email help@cocalc.com.
-
 
 
 
@@ -180,7 +171,7 @@ By default, free projects stop running after about 30 minutes of idle time.
 This makes doing an overnight research computation –
 e.g., searching for special prime numbers – impossible.
 
-With an increased idle timeout, projects are allowed to run longer unattended.
+There is an advanced license option to prevent idle timeouts completely: see :ref:`always-running`.
 Processes might still stop if they use too much memory, crash due to an exception, or if the server they are running on is rebooted.
 
 .. note::
