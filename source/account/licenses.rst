@@ -132,9 +132,31 @@ If you select **Get a quote**, CoCalc will create a help request form including 
 Licenses that you manage
 ========================
 
-*See "Licenses tab" figure at top of this page.*
+.. figure:: img/settings/lic-you-manage.png
+     :width: 90%
+     :align: center
 
-If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section. To have license managers added or removed, contact CoCalc support at help@cocalc.com. License managers must have a CoCalc account.
+     Licenses tab
+
+If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section.
+
+The following information is displayed for each license:
+
+* License title and expiration date. Licenses set for automatic renewal will not display an expiration date.
+* Resources provided per project by the license.
+* Number of projects that have this license applied to them.
+* Maximum number of simultaneous running projects that can be upgraded by the license.
+* Number of projects currently using the license.
+* Date the license is first active.
+* Total resources provided by the license, Active/Inactive status,  subscription dates and cancellation button "End" (if license is a subscription)
+* License manager(s)
+* License description
+
+If the license set for automatic monthly or yearly renewal, you can cancel renewal by clicking the "End" button in the right of the license information box. This works the same way as :ref:`canceling a subscription <cancel-subscription>` under the Account / Purchases tab.
+
+Add license managers by clicking the "+ New" button and entering the email address or name of a manager.
+
+Remove a license manager by clicking on the manager name and clicking "Remove".
 
 .. index:: Licenses; view your licensed projects
 .. _view-licensed-projects:

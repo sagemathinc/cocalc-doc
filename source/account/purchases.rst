@@ -51,10 +51,11 @@ The word "Trialing" indicates a free trial or other custom subscription plan.
 
 Note that you can "stack" multiple course plans to combine the resources. In the example above, a Small Course (25 students) and a Medium Course (70 students) are combined to provide for a class of 95 students.
 
+Personal subscriptions renew automatically. Course plans do *not* renew automatically.
+
 .. index:: Account Tab; cancel subscription
 .. index:: Cancel subscription
-
-Personal subscriptions renew automatically. Course plans do *not* renew automatically.
+.. _cancel-subscription:
 
 **To cancel a subscription**, find the subscription in the active subscription list and click ``End`` at the far right.
 The subscription will not be auto-renewed at the next renewal date and the expiration date will be displayed in the subscription list.
