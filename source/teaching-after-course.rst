@@ -24,10 +24,18 @@ teaching assistant with a different account deletes student projects, the upgrad
 .. index:: Courses; recover upgrades
 .. _recover-upgrades:
 
-Recover Upgrades from Student Projects
-=======================================
+Remove License or Upgrades from Student Projects
+==================================================
 
-Upgrades applied to student projects may be re-used on other projects after the course ends. Upgrades remain valid until their expiration date.
+Licenses
+--------
+
+If you applied a license to the course under Configuration, you will probably want to remove it after the course ends. Stopped projects do not use license resources, but could do so if restarted by a student who has moved on and wants to refer to previous work.
+
+Upgrades
+--------
+
+If you used one of the older course upgrade plans, note that upgrades applied to student projects may be re-used on other projects after the course ends. Upgrades remain valid until their expiration date.
 
 To recover upgrades from student projects, i.e. to remove them from student projects and return them to the pool of available upgrades, the owner of the account that originally applied the upgrades can do a :ref:`"Remove Upgrades..." batch operation <project_batch>`, after selecting the desired projects with either search text or hashtag. Or, if student projects are to be deleted, the owner of the upgrades can open the course file **Configuration** tab and click "Delete all Student Projects...".
 
