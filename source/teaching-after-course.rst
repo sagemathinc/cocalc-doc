@@ -30,7 +30,7 @@ Remove License or Upgrades from Student Projects
 Licenses
 --------
 
-If you applied a license to the course under Configuration, you will probably want to remove it after the course ends. Stopped projects do not use license resources, but could do so if restarted by a student who has moved on and wants to refer to previous work.
+If you applied a license to the course under Configuration, you will probably want to remove it after the course ends. Stopped projects do not use license resources, but a student project from a course that has ended could use license resources, for example if restarted by a student looking over work in the old course.
 
 Upgrades
 --------
