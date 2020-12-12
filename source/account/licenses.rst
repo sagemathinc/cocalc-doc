@@ -133,10 +133,10 @@ Licenses that you manage
 ========================
 
 .. figure:: img/settings/lic-you-manage.png
-     :width: 90%
+     :width: 100%
      :align: center
 
-     Licenses tab
+     Licenses that you manage
 
 If you are a manager for one or more CoCalc licenses, you will see those licenses listed in this section.
 
@@ -144,7 +144,7 @@ The following information is displayed for each license:
 
 * License title and expiration date. Licenses set for automatic renewal will not display an expiration date.
 * Resources provided per project by the license.
-* Number of projects that have this license applied to them.
+* Number of projects that have this license applied to them. As shown in the figure above, this may be greater than the maximum number of *running* projects for the license, because license resources are only used when a project is running.
 * Maximum number of simultaneous running projects that can be upgraded by the license.
 * Number of projects currently using the license.
 * Date the license is first active.
@@ -163,8 +163,6 @@ Remove a license manager by clicking on the manager name and clicking "Remove".
 
 Projects with licenses
 ========================
-
-*See "Licenses tab" figure at top of this page.*
 
 If you are an owner or collaborator on any projects that have CoCalc licenses, those projects are listed in this section.
 
