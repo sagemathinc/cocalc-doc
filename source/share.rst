@@ -6,7 +6,12 @@
 Sharing Files
 ==========================
 
-Use sharing to make a file or directory publicly visible to the world.
+Make a file or directory publicly visible to the world.
+
+.. note::
+
+    CoCalc's share server available at: https://share.cocalc.com/share
+
 
 Publishing Files
 ==================
