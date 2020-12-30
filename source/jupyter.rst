@@ -308,7 +308,7 @@ and again you'll see a player and can play your file.
 Notebook too large? Remove output.
 *********************************************
 
-If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way. Often the problem occurs when running the notebook has created large amounts of output. In that case, there is a command you can run from the :doc:`Linux Terminal <terminal>` to remove output, so that you can once again open the notebook normally.
+If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way. Often the problem occurs when running the notebook has created large amounts of output. In that case, there is a command you can run from the :doc:`Linux Terminal <terminal>` to remove output. If removing output results in a small enough notebook, you will be able to open the "-no-output" version of the notebook normally.
 
 .. code-block:: bash
 
