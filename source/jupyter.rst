@@ -302,6 +302,21 @@ Alternatively, you might want the file to be embedded in the notebook itself. To
 
 and again you'll see a player and can play your file.
 
+.. index:: Jupyter Notebooks; notebook too large
+
+*********************************************
+Notebook too large? Remove output.
+*********************************************
+
+If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way. Often the problem occurs when running the notebook has created large amounts of output. In that case, there is a command you can run from the :doc:`Linux Terminal <terminal>` to remove output, so that you can once again open the notebook normally.
+
+.. code-block:: bash
+
+    # run this from a CoCalc Linux terminal (.term file)
+    # use the actual name of your notebook for "myfile.ipynb"
+    cc-jupyter-no-output myfile.ipynb
+    # the above command creates myfile-no-output.ipynb
+
 
 .. _Cocalc Jupyter Notebook: http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html
 .. _Jupyter Notebooks: https://www.jupyter.org
