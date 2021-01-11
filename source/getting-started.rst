@@ -210,11 +210,11 @@ From left to right:
 
 .. _ft-info:
 
-* |settings| **Info** - This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
+* |microchip| **Processes** - This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
 
 .. note::
 
-    The "Memory" column in the Info panel's process list can help you track down out-of-memory problems.
+    The "Memory" column in the Table of Processes can help you track down out-of-memory problems.
 
 .. image:: img/getting-started/process-info.png
      :align: center
@@ -364,4 +364,7 @@ You can find the CoCalc Accessibility Statement on our wiki at https://github.co
      :width: 16px
 .. |settings|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/gear.png
+     :width: 16px
+.. |microchip|
+     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/microchip.png
      :width: 16px
