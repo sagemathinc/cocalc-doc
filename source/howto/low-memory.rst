@@ -59,10 +59,10 @@ Ways to clear up your project's memory
 Inspect in detail why the project is running out of memory
 ----------------------------------------------------------
 
-1. Project Info
-^^^^^^^^^^^^^^^^^^^
+1. Processes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can click the "Info" button in the Files toolbar to see a list of running processes and how much memory each is using. See :ref:`project Info <ft-info>` for details.
+You can click the "Processes" button in the Files toolbar to see a list of running processes and how much memory each is using. See :ref:`Processes <ft-info>` for details.
 
 2. Project settings
 ^^^^^^^^^^^^^^^^^^^
