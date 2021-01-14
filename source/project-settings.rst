@@ -162,8 +162,13 @@ Then clicking `Save Changes` will apply the changes and restart the project if s
 Licenses
 ########
 
-To add upgrades from a CoCalc license, click the button marked "Upgrade using a license key...".
-Enter your license key in the box that opens and click Save. Upgrades provided by the license will be applied.
+.. note::
+
+    If you just bought a license and want to apply your license to a project that is showing the red trial banner, then this section is for you. After opening the project and seeing the banner, click "Settings" (wrench icon) and scroll down to the "Licenses" section. Then follow the instructions below.
+
+* To apply a license to the current project, click the button marked "Upgrade using a license key...". Enter your license key in the box that opens and click Save.
+
+* Then start or restart the project. Upgrades provided by the license will be applied the next time the project is started.
 
 .. figure:: img/project-settings/proj-lic-before-add.png
      :width: 60%
@@ -559,8 +564,9 @@ Once you have selected an image, click "Save and Restart".
      :width: 70%
      :align: center
 
-*Note: Don't forget to reset your image to "Default" after you are finished working with an alternate image.*
+.. note::
 
+    Don't forget to reset your image to "Default" after you are finished working with an alternate image.*
 
 
 .. index:: Sage Worksheets; server
