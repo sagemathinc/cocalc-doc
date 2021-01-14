@@ -21,6 +21,8 @@ It made up of *cells*, which can either store one or more lines of code or forma
 When you *run* a cell – which evaluates the piece of code in the cell via the active kernel session – you can see its output after the calculation is done.
 This combination of communicating back and forth with a kernel and adding descriptive text makes this form of document very attractive.
 
+.. _jupyter-kernels:
+
 ##########################
 Jupyter Kernels
 ##########################

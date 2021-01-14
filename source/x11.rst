@@ -301,6 +301,19 @@ Installed Applications
 Tips & Tricks
 ======================
 
+RStudio with CoCalc
+--------------------------------------
+
+You can use RStudio in CoCalc by doing +New -> X11 Desktop, then clicking the "RStudio" button at the bottom left and waiting 20 seconds. If you need faster response time for R calculations, you might consider the following alternatives to RStudio:
+
+You can also use R in CoCalc via:
+
+- Jupyter notebooks with the R kernel. See :ref:`jupyter-kernels`.
+- Creating a file ending in .r and running it. You can keep your source file in one pane with a Linux terminal beside it to run the program. See :ref:`terminal-editor-panel`.
+- :ref:`edit-rmd` (Rmd file).
+- :ref:`latex-knitr` (rnw or Rtex file).
+- Sage worksheet with R (sagews file and "%r" mode). See Custom “Mode Commands” in Sage Worksheets under :ref:`sagews-wiki`.
+
 High-resolution HDPI displays
 --------------------------------------
 

@@ -56,15 +56,15 @@ Open/create a ``*.html`` file and you'll see the rendered output on the right ha
 .. index:: Frame Editor; RMarkdown
 .. _edit-rmd:
 
-RMarkdown
+R Markdown
 ----------------
 
-Open a ``*.rmd`` file to work with `RMarkdown`_.
+Open a ``*.Rmd`` or ``*.rmd`` file to work with `R Markdown`_.
 Depending on the configuration in the preamble, you either produce an HTML or PDF output.
 Do not forget to switch the panel for the rendered output accordingly.
 (In case you produce PDF and HTML output, you can even see both after splitting the panel.)
 
-.. _RMarkdown: https://rmarkdown.rstudio.com/
+.. _R Markdown: https://rmarkdown.rstudio.com/
 
 LaTeX
 --------

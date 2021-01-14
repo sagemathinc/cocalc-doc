@@ -168,6 +168,8 @@ SageMath built-in functions ``save``, ``load``, ``save_session`` and ``load_sess
 Wiki resources
 ==================
 
+.. _sagews-wiki:
+
 Sage Worksheets
 -------------------
 
