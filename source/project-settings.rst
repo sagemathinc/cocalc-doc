@@ -164,11 +164,15 @@ Licenses
 
 .. note::
 
-    If you just bought a license and want to apply your license to a project that is showing the red trial banner, then this section is for you. After opening the project and seeing the banner, click "Settings" (wrench icon) and scroll down to the "Licenses" section. Then follow the instructions below.
+    If you just bought a license and want to apply your license to a project that is showing the red trial banner, then this section is for you.
 
-* To apply a license to the current project, click the button marked "Upgrade using a license key...". Enter your license key in the box that opens and click Save.
+To apply a license to a project
 
-* Then start or restart the project. Upgrades provided by the license will be applied the next time the project is started.
+1. Open the project and click "Settings" (wrench icon).
+2. Scroll down to the "Licenses" section.
+3. Click the button marked "Upgrade using a license key...".
+4. Enter your license key in the box that opens and click Save.
+5. Then start or restart the project in order to activate the license.
 
 .. figure:: img/project-settings/proj-lic-before-add.png
      :width: 60%
