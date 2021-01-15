@@ -11,7 +11,24 @@ Software Updates 2020
 .. highlight:: python
 
 
-.. _update-2020-11-19 :
+.. _update-2020-12-09:
+
+2020-12-09: materialize, hardlink, and updates
+---------------------------------------------------------------
+
+- Tools:
+    - (new) `materialize`_ – *Materialize is a streaming database for real-time applications. Materialize accepts input data from a variety of streaming sources (e.g. Kafka) and files (e.g. CSVs), and lets you query them using SQL.* Additionally ``mzcli`` is installed to interact with it.
+    - (new) `hardlink`_ – *consolidate duplicate files via hardlinks*
+
+- Python 3 (system-wide) and R:
+    - (upd) various packages updates
+
+- System
+    - package updates
+    - `npm`_ 7, and also updating some node.js utils
+
+
+.. _update-2020-11-19:
 
 2020-11-19 : Mathics, gprMax, and pybedtools
 ---------------------------------------------------------------
@@ -659,7 +676,6 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _DEAP: https://deap.readthedocs.io/en/master/
 .. _simanneal: https://github.com/perrygeo/simanneal
 .. _admcycles: https://www.math.uni-bonn.de/people/schmitt/admcycles
-.. _sherpa: https://parameter-sherpa.readthedocs.io/en/latest/
 .. _GPyOpt: https://sheffieldml.github.io/GPyOpt/
 .. _GPy: http://sheffieldml.github.io/GPy/
 .. _CoCalc Docker: https://github.com/sagemathinc/cocalc-docker
@@ -856,3 +872,9 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _Mathics: https://mathics.org/
 .. _gprMax: https://www.gprmax.com/
 .. _pybedtools: https://daler.github.io/pybedtools/
+.. _materialize: https://materialize.com/
+.. _hardlink: https://linux.die.net/man/1/hardlink
+.. _agate: https://agate.readthedocs.io/
+.. _scrapy: https://scrapy.org/
+.. _squarify: https://github.com/laserson/squarify
+.. _SHERPA: https://parameter-sherpa.readthedocs.io/

@@ -1,0 +1,313 @@
+.. _software-updates-2021:
+
+Software Updates 2021
+======================================
+
+
+.. .. contents::
+..      :local:
+..      :depth: 1
+
+.. highlight:: python
+
+
+
+
+.. _update-2021-01-07:
+
+2021-01-07: More Python libs!
+---------------------------------------------------------------
+
+- Python 3 (system-wide):
+    - (new) `agate`_: *a Python data analysis library that is optimized for humans instead of machines. It is an alternative to numpy and pandas that solves real-world problems with readable code.*
+    - (new) `scrapy`_: *An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.*
+    - (new) `squarify`_: *Pure Python implementation of the squarify treemap layout algorithm*
+    - (new) `SHERPA`_: *A Python Hyperparameter Optimization Library*
+
+- various other package and software updates
+
+
+
+.. The duplication below with the 2020 file extremely silly, but I don't know how to share references properly
+
+.. _Jupyter Lab: https://jupyterlab.readthedocs.io/en/stable/
+.. _Scikit Image: https://scikit-image.org/
+.. _scikit-image: https://scikit-image.org/
+.. _Astroalign: https://astroalign.readthedocs.io/en/master/
+.. _GAP: https://www.gap-system.org/
+.. _SageMath: https://sagemath.org
+.. _Cadabra2: https://cadabra.science
+.. _Qiskit:  https://qiskit.org
+.. _qiskit-terra: https://github.com/Qiskit/qiskit-terra
+.. _qiskit-aqua: https://qiskit.org/aqua
+.. _qiskit-aer: https://qiskit.org/aer
+.. _dask: https://dask.org
+.. _dask-ml: https://dask-ml.readthedocs.io/
+.. _distributed: https://distributed.dask.org/
+.. _QGIS: https://www.qgis.org
+.. _arctic: https://arctic.readthedocs.io/en/latest/
+.. _Gradle: https://gradle.org/
+.. _PyGame: https://www.pygame.org/
+.. _ipywidgets: https://ipywidgets.readthedocs.io/en/stable/user_guide.html
+.. _VQE Playground: https://github.com/JavaFXpert/vqe-playground/
+.. _RDKit: http://www.rdkit.org/docs/index.html
+.. _BibTeX: http://www.bibtex.org/
+.. _gspread: https://github.com/burnash/gspread
+.. _pygsheets: https://pygsheets.readthedocs.io/en/stable/
+.. _statsmodels: https://www.statsmodels.org/
+.. _cvxpy: https://www.cvxpy.org/
+.. _OpenCV: https://github.com/skvark/opencv-python
+.. _pyppeteer: https://github.com/miyakogi/pyppeteer
+.. _scikit-rf: https://scikit-rf.readthedocs.io/
+.. _Binder: https://mybinder.readthedocs.io/en/latest/introduction.html
+.. _pymc3: https://docs.pymc.io/
+.. _theano: http://deeplearning.net/software/theano/
+.. _IRkernel: https://irkernel.github.io/
+.. _psycopg2: http://initd.org/psycopg/docs/
+.. _PyTorch: https://pytorch.org/
+.. _pandoc: https://pandoc.org/
+.. _xpra: http://xpra.org/
+.. _bazel: https://bazel.build/
+.. _jieba: https://github.com/fxsjy/jieba
+.. _julia_distributions: https://github.com/JuliaStats/Distributions.jl
+.. _tensorly: http://tensorly.org/
+.. _pip-upgrader: https://github.com/simion/pip-upgrader
+.. _jax: https://github.com/google/jax
+.. _R Statistical Software: https://www.r-project.org/
+.. _NEURON: https://www.neuron.yale.edu/neuron/
+.. _yapf: https://github.com/google/yapf
+.. _GRASS GIS: https://grass.osgeo.org/
+.. _Tensorflow: https://www.tensorflow.org/
+.. _RISE: https://github.com/damianavila/RISE
+.. _JuMP: http://www.juliaopt.org/JuMP.jl/stable/
+.. _linearmodels: https://bashtage.github.io/linearmodels/
+.. _typescript: https://www.typescriptlang.org/
+.. _prettier: https://prettier.io/
+.. _pandas: https://pandas.pydata.org/
+.. _pandas-profiling: https://github.com/pandas-profiling/pandas-profiling
+.. _pandas-bokeh: https://github.com/PatrikHlobil/Pandas-Bokeh
+.. _numpy: https://numpy.org/
+.. _matplotlib: https://matplotlib.org/
+.. _pytest: https://docs.pytest.org/en/latest/
+.. _spyder: https://www.spyder-ide.org/
+.. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
+.. _BioConductor: https://www.bioconductor.org
+.. _music: https://github.com/ttm/music
+.. _sckit-learn: https://scikit-learn.org/stable/
+.. _SOAP: https://en.wikipedia.org/wiki/SOAP
+.. _suds-jurko: https://bitbucket.org/jurko/suds/src/default/README.rst
+.. _zeep: https://python-zeep.readthedocs.io/
+.. _suds-community: https://github.com/suds-community/suds
+.. _IPOPT: https://coin-or.github.io/Ipopt/
+.. _ipopt examples: https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ipopt.ipynb?viewer=share
+.. _PyOMO: http://www.pyomo.org/
+.. _cyipopt: https://github.com/matthias-k/cyipopt
+.. _bokeh example notebook: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/bokeh-plots.ipynb?viewer=share
+.. _scipy: https://scipy.org/
+.. _bokeh: https://bokeh.pydata.org/en/latest/
+.. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html
+.. _DEAP: https://deap.readthedocs.io/en/master/
+.. _simanneal: https://github.com/perrygeo/simanneal
+.. _admcycles: https://www.math.uni-bonn.de/people/schmitt/admcycles
+.. _GPyOpt: https://sheffieldml.github.io/GPyOpt/
+.. _GPy: http://sheffieldml.github.io/GPy/
+.. _CoCalc Docker: https://github.com/sagemathinc/cocalc-docker
+.. _PyShp: https://github.com/GeospatialPython/pyshp
+.. _go: https://golang.org/
+.. _beautifulsoup4: https://www.crummy.com/software/BeautifulSoup/
+.. _textract: https://textract.readthedocs.io/en/stable/
+.. _tpot: https://epistasislab.github.io/tpot/
+.. _scikit-mdr: https://github.com/EpistasisLab/scikit-mdr
+.. _scikit-rebate: https://github.com/EpistasisLab/scikit-rebate
+.. _pytables: http://www.pytables.org/
+.. _xgboost: https://xgboost.readthedocs.io/en/latest/
+.. _lerna.js: https://lerna.js.org/
+.. _moreutils: https://joeyh.name/code/moreutils/
+.. _coffescript: https://coffeescript.org/
+.. _iverilog: http://iverilog.icarus.com/
+.. _Verilog: https://en.wikipedia.org/wiki/Verilog
+.. _GTKWave: http://gtkwave.sourceforge.net/
+.. _keras: https://keras.io
+.. _ortools: https://developers.google.com/optimization
+.. _joblib: https://joblib.readthedocs.io/
+.. _h5py: https://www.h5py.org/
+.. _periodictable: http://www.reflectometry.org/danse/elements.html
+.. _teneto: https://teneto.readthedocs.io/
+.. _sklearn-porter: https://github.com/nok/sklearn-porter
+.. _sklearn-pandas: https://github.com/scikit-learn-contrib/sklearn-pandas
+.. _scikit-posthocs: https://scikit-posthocs.readthedocs.io/
+.. _pandas-datareader: https://pandas-datareader.readthedocs.io/
+.. _pandas-gbq: https://pandas-gbq.readthedocs.io/
+.. _scikit-surprise: http://surpriselib.com/
+.. _python-highcharts: https://github.com/kyper-data/python-highcharts
+.. _Highcharts: https://www.highcharts.com/
+.. _monty: https://github.com/materialsvirtuallab/monty
+.. _rust: https://www.rust-lang.org/
+.. _networkx: https://networkx.github.io/documentation/stable/
+.. _sqlalchemy: https://www.sqlalchemy.org/
+.. _datrie: https://github.com/pytries/datrie
+.. _cherrypy: https://cherrypy.org/
+.. _coverage: https://github.com/nedbat/coveragepy
+.. _petsc: https://www.mcs.anl.gov/petsc/
+.. _slepc: http://slepc.upv.es/
+.. _fenics: https://fenicsproject.org/
+.. _memory_profiler: https://pypi.org/project/memory-profiler/
+.. _dill: https://github.com/uqfoundation/dill
+.. _cytoolz: https://github.com/pytoolz/cytoolz
+.. _emcee: https://emcee.readthedocs.io/
+.. _qutip: http://qutip.org/
+.. _geopandas: http://geopandas.org/
+.. _pyproj: https://github.com/pyproj4/pyproj
+.. _pystan: https://pystan.readthedocs.io/
+.. _symengine: https://github.com/symengine/symengine
+.. _llvmlite: http://llvmlite.pydata.org/en/latest/
+.. _datashader: https://datashader.org/
+.. _django: https://www.djangoproject.com/
+.. _kwant: https://kwant-project.org/
+.. _psycopg2: http://initd.org/psycopg/docs/
+.. _folium: https://python-visualization.github.io/folium/
+.. _ipyleaflet: https://ipyleaflet.readthedocs.io/en/latest/
+.. _natsort: https://natsort.readthedocs.io/en/master/
+.. _mpi4py: https://mpi4py.readthedocs.io/en/stable/
+.. _drracket: https://racket-lang.org
+.. _fsspec: https://filesystem-spec.readthedocs.io/
+.. _gcsfs: https://gcsfs.readthedocs.io/
+.. _pint: https://pint.readthedocs.io/
+.. _pynormaliz: http://doc.sagemath.org/html/en/reference/discrete_geometry/sage/geometry/polyhedron/backend_normaliz.html
+.. _git-lfs: https://git-lfs.github.com/
+.. _python: https://www.python.org/
+.. _adtk: https://arundo-adtk.readthedocs-hosted.com/
+.. _pdpipe: https://github.com/shaypal5/pdpipe
+.. _nltk: https://www.nltk.org/
+.. _doepy: https://doepy.readthedocs.io/en/latest/
+.. _diversipy: https://www.simonwessing.de/diversipy/doc/
+.. _scikit-learn: https://scikit-learn.org/
+.. _puma: https://www.bioconductor.org/packages/release/bioc/html/puma.html
+.. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
+.. _sympy: https://www.sympy.org/
+.. _pypy: https://www.pypy.org/
+.. _kplr: http://dfm.io/kplr/
+.. _pillow: https://pillow.readthedocs.io/en/stable/
+.. _pywavelets: https://pywavelets.readthedocs.io/en/latest/
+.. _imageio: http://imageio.github.io/
+.. _DeclareDesign: https://cran.r-project.org/package=DeclareDesign
+.. _DesignLibrary: https://cran.r-project.org/package=DesignLibrary
+.. _SpecialMatrices: https://github.com/JuliaMatrices/SpecialMatrices.jl
+.. _ApproxFun: https://juliaapproximation.github.io/ApproxFun.jl/latest/
+.. _tensorflow-estimator: https://www.tensorflow.org/guide/estimator
+.. _tensorflow-probability: https://www.tensorflow.org/probability
+.. _SentimentAnalysis: https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html
+.. _pgmpy: https://pgmpy.org/
+.. _bitarray: https://github.com/ilanschnell/bitarray
+.. _pyreadstat: https://github.com/Roche/pyreadstat
+.. _okpy: https://okpy.org/
+.. _drive-cli: https://github.com/nurdtechie98/drive-cli
+.. _ifsFractals: https://github.com/francisp336/ifsFractals
+.. _seaborn: https://seaborn.pydata.org/
+.. _numba: https://numba.pydata.org/
+.. _mypy: https://mypy.readthedocs.io/
+.. _pygments: https://pygments.org/
+.. _pip: https://pip.pypa.io/en/stable/user_guide/
+.. _openscad: https://www.openscad.org/
+.. _astroplan: https://astroplan.readthedocs.io/
+.. _rpy2: https://rpy2.readthedocs.io/
+.. _astropy: https://www.astropy.org/
+.. _let us know: mailto:help@cocalc.com
+.. _Mesa: https://mesa.readthedocs.io/
+.. _Orange3: https://orange.biolab.si/
+.. _Quandl: https://www.quandl.com/
+.. _altair: https://altair-viz.github.io/
+.. _empyrical: https://github.com/quantopian/empyrical
+.. _xarray: http://xarray.pydata.org/en/stable/
+.. _optlang: https://optlang.readthedocs.io/
+.. _bqplot: https://github.com/bloomberg/bqplot
+.. _arviz: https://arviz-devs.github.io/arviz/
+.. _cobra: https://opencobra.github.io/cobrapy/
+.. _pysal: https://pysal.readthedocs.io/
+.. _scikit-rf: https://scikit-rf.readthedocs.io/
+.. _qgrid: https://github.com/quantopian/qgrid
+.. _tabulate: https://github.com/astanin/python-tabulate
+.. _mlxtend: http://rasbt.github.io/mlxtend/
+.. _isochrones: https://isochrones.readthedocs.io/
+.. _openTSNE: https://opentsne.readthedocs.io/
+.. _tellurium: http://tellurium.analogmachine.org/
+.. _Coq: https://coq.inria.fr/
+.. _ocaml: https://ocaml.org/
+.. _nbconvert: https://nbconvert.readthedocs.io/
+.. _octave: https://www.gnu.org/software/octave/
+.. _fractint: https://www.fractint.org/
+.. _surface evolver: http://facstaff.susqu.edu/brakke/evolver/evolver.html
+.. _protobuf: https://developers.google.com/protocol-buffers
+.. _nilearn: https://nilearn.github.io/
+.. _LEAN: https://leanprover.github.io/about/
+.. _mathlib: https://github.com/leanprover-community/mathlib
+.. _Node.js: https://nodejs.org/en/
+.. _spacy: https://spacy.io/
+.. _nest-asyncio: https://github.com/erdewit/nest_asyncio
+.. _cython: https://cython.org/
+.. _jupyter-client: https://github.com/jupyter/jupyter_client
+.. _jupyter-console: https://jupyter-console.readthedocs.io/en/latest/
+.. _ipython: https://ipython.org/
+.. _jupyterhub: https://jupyter.org/hub
+.. _jupyterlab: https://jupyterlab.readthedocs.io/en/stable/
+.. _ipykernel: https://ipython.readthedocs.io/en/stable/install/kernel_install.html
+.. _requests: https://requests.readthedocs.io/en/master/
+.. _curio: https://github.com/dabeaz/curio
+.. _mltools: https://cran.r-project.org/package=mltools
+.. _biopython: https://biopython.org/
+.. _folium: https://python-visualization.github.io/folium/
+.. _ccdproc: https://ccdproc.readthedocs.io/
+.. _rasterio: https://rasterio.readthedocs.io
+.. _coffeescript: https://coffeescript.org/
+.. _npm: https://docs.npmjs.com/
+.. _ijavascript: https://github.com/n-riesco/ijavascript
+.. _chromedriver: https://github.com/giggio/node-chromedriver
+.. _lerna: https://lerna.js.org/
+.. _webpack: https://webpack.js.org/
+.. _data-cli: https://datahub.io/docs
+.. _nipype: https://nipype.readthedocs.io/
+.. _healpy: https://healpy.readthedocs.io/
+.. _GnuCOBOL: https://open-cobol.sourceforge.io/
+.. _COBOL: https://en.wikipedia.org/wiki/COBOL
+.. _Intel MKL: https://software.intel.com/en-us/mkl
+.. _pwlf: https://github.com/cjekel/piecewise_linear_fit_py
+.. _pyDOE: https://github.com/tisimst/pyDOE
+.. _ruptures: https://github.com/deepcharles/ruptures
+.. _Julia Packages on CoCalc: https://cocalc.com/doc/software-julia.html
+.. _obspy: https://github.com/obspy/obspy/wiki
+.. _stellargraph: https://www.stellargraph.io/
+.. _genlasso: https://cran.r-project.org/package=genlasso
+.. _coronavirus: https://cran.r-project.org/package=coronavirus
+.. _rmdformats: https://bookdown.org/yihui/rmarkdown/rmdformats.html
+.. _QuSpin: https://weinbe58.github.io/QuSpin/
+.. _mathlibtools: https://github.com/leanprover-community/mathlib-tools
+.. _PyLaTeX: https://jeltef.github.io/PyLaTeX/
+.. _FFTW: https://juliamath.github.io/FFTW.jl/latest/
+.. _Julia: https://julialang.org/
+.. _mxnet: https://mxnet.apache.org/
+.. _cmake: https://cmake.org/overview/
+.. _pmdarima: https://alkaline-ml.com/pmdarima/
+.. _fbprophet: https://facebook.github.io/prophet/
+.. _pyscf: https://sunqm.github.io/pyscf/
+.. _plink: https://www.math.uic.edu/t3m/plink/doc/
+.. _snappy: https://snappy.math.uic.edu/
+.. _spherogram: https://snappy.math.uic.edu/spherogram.html
+.. _Epidemics-on-Networks: https://springer-math.github.io/Mathematics-of-Epidemics-on-Networks/
+.. _grepcidr: http://www.pc-tools.net/unix/grepcidr/
+.. _Haskell: https://www.haskell.org/
+.. _Asciidoctor: https://asciidoctor.org
+.. _hypothesis: https://hypothesis.readthedocs.io/en/latest/
+.. _heroku: https://www.heroku.com/
+.. _rpcinfo: http://manpages.ubuntu.com/manpages/bionic/man7/rpcinfo.7.html
+.. _pycaret: https://pycaret.org/
+.. _r: https://www.r-project.org
+.. _matplotlib_venn: https://github.com/konstantint/matplotlib-venn
+.. _Mathics: https://mathics.org/
+.. _gprMax: https://www.gprmax.com/
+.. _pybedtools: https://daler.github.io/pybedtools/
+.. _materialize: https://materialize.com/
+.. _hardlink: https://linux.die.net/man/1/hardlink
+.. _agate: https://agate.readthedocs.io/
+.. _scrapy: https://scrapy.org/
+.. _squarify: https://github.com/laserson/squarify
+.. _SHERPA: https://parameter-sherpa.readthedocs.io/
