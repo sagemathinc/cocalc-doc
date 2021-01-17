@@ -34,8 +34,8 @@ Ways to remove the banner
 Purchase upgrades
 --------------------------------------------
 
-Starting with a \$14/month standard subscription,
-you get quotas to :doc:`upgrade four projects, unlock internet access, etc <billing>`.
+Starting with a \$3/month subscription,
+you get a license to :doc:`upgrade your projects, unlock internet access, etc <billing>`.
 
 The `pricing page <https://cocalc.com/policies/pricing.html>`_ lists the current offerings.
 

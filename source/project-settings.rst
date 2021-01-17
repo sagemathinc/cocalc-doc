@@ -53,7 +53,6 @@ There are many reasons that you might want to have an upgraded project.
    * To connect to your project with SSH.
 * To get extra storage space (both RAM and disk space).
 * To get more compute resources.
-* To have a higher idle timeout threshold. (See :ref:`idle-timeout`.)
 
 You can share upgrades with any project that you are a collaborator on. You must be a collaborator (or owner) to update a project.
 
@@ -61,7 +60,7 @@ You can share upgrades with any project that you are a collaborator on. You must
 .. note::
 
     For details on paid subscriptions, see `Subscription and Pricing Information <https://cocalc.com/policies/pricing.html>`_.
-    Paid subscriptions start at \$14 per month.
+    Subscriptions start at \$3 per month.
 
 **********************
 View Current Resources
@@ -85,7 +84,7 @@ The "Adjust Quotas" dialog is where you add upgrades purchased under a Subscript
 
 .. note::
 
-    If you want to upgrade student projects for a CoCalc managed course, that is done in the .course file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
+    If you want to upgrade student projects for a CoCalc managed course, that is done in the ``.course`` file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
 
 
 You can enter any values that do not exceed available upgrades. This example continues
@@ -165,6 +164,9 @@ Licenses
 .. note::
 
     If you just bought a license and want to apply your license to a project that is showing the red trial banner, then this section is for you.
+
+    In case you don't have a license but instead quota upgrades via a subscription (older mechanism), then
+    :ref:`adjust the project quotas <apply_project-upgrades>` directly.
 
 To apply a license to a project
 
