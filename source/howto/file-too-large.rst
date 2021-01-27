@@ -8,27 +8,12 @@ File Too Large
 Here are suggestions for what to do if you get a file-too-large error when :ref:`opening a file <ft-open-files>` in CoCalc.
 
 .. index:: File too large; Jupyter notebook
+.. _howto-ipynb-too-large:
 
-Jupyter Notebook
+Jupyter Notebook Too Large
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You may see the following warning when opening a Jupyter notebook:
-
-.. figure:: img/ipynb-too-large.png
-     :width: 60%
-     :align: center
-
-     Jupyter notebook *file too large* error
-
-A possible cause for a file-too-large error with a Jupyter notebook is creating an image file from a plot that exceeds the size limit. Here are some suggestions:
-
-1. If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with :ref:`the classical jupyter server or JupyterLab <jupyter-server-alternatives>`. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.
-
-2. You could revert the notebook to an earlier version, before the large plot was created. Click the :ref:`Backups button <project-snapshot>` in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.
-
-3. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
-
-    options(jupyter.plot_mimetypes = c('text/plain', 'image/png'))
+If you receive the error message ``Fatal Error loading ipynb file`` with text saying your file is too large, your notebook has probably created too much output. The :ref:`Notebook too large? <jupyter-ipynb-too-large>` section of this manual has suggestions what to do.
 
 .. index:: File too large; CSV file
 
