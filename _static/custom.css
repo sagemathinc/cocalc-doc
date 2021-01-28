@@ -1,0 +1,94 @@
+/* disable "error" border in code -- see https://github.com/sagemathinc/cocalc-doc/issues/10 */
+.highlight .err {
+    border: none !important;
+}
+
+/* theme cocalc */
+div.wy-side-nav-search {
+    background-color: #4375c1;
+}
+
+nav.wy-nav-top {
+    background: #4375c1;
+}
+
+/* role: strike and :strike:`...` */
+span.strike {
+    text-decoration: line-through;
+}
+
+p.blurb {
+    font-weight: bold;
+}
+
+div.sphinxsidebar p.caption,
+div.body p.caption {
+    margin: 20px 0 -10px 0;
+}
+
+div.sphinxsidebar h3 {
+    font-size: 18px;
+}
+
+div.body {
+    max-width: 900px;
+}
+
+/* https://github.com/sagemathinc/cocalc-doc/issues/4 */
+dl dd {
+    margin-left: 0px;
+}
+
+img.img.section {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 4 space indented lines are blockquotes. we make them stick out a bit more */
+.rst-content blockquote {
+    border-left: 2px solid #d9d9d9;
+    padding-left: 10px;
+    font-style: italic;
+    color: #6d6d6d;
+}
+
+/* adjust spacing in lists, default 1.4em */
+div.body li {
+    line-height: 1.6em;
+}
+
+div.contents ul ul {
+    margin-top: 0;
+}
+
+div.section a.internal.image-reference > img {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+
+div.section a.internal.image-reference > img:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+
+/* otherwise index entries are too close together */
+table.indextable.genindextable td > ul > li {
+    line-height: 20pt;
+}
+
+@media screen and (max-width: 875px) {
+    /* not for the RTD theme */
+    /* body {
+        margin: 0;
+        padding: 10px;
+    } */
+    div:not(.rst-content) > div.document {
+        width: 100%;
+    }
+    a.cocalcbanner {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 875px) {
+    div:not(.rst-content) > div.document {
+        width: 1040px;
+    }
+}
