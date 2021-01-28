@@ -11,6 +11,17 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-01-28:
+
+2021-01-28: Julia 1.5.3, MACS2, ...
+---------------------------------------------------------------
+
+- Julia:
+    - (upd) to version 1.5.3 and updating all packages we provide per default
+
+- Software
+    - (new) `macs2`_ – Model-based Analysis of ChIP-Seq
+    - various system package updates
 
 
 .. _update-2021-01-07:
@@ -311,3 +322,4 @@ Software Updates 2021
 .. _scrapy: https://scrapy.org/
 .. _squarify: https://github.com/laserson/squarify
 .. _SHERPA: https://parameter-sherpa.readthedocs.io/
+.. _macs2: https://macs3-project.github.io/MACS/
