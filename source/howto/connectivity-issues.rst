@@ -132,9 +132,19 @@ Some extensions, for example ad blockers, block certain external websites. It ma
 
 The site-blocking extension `ScriptSafe <https://github.com/andryou/scriptsafe>`_ used with Chrome-based browsers, including `Iridium <https://iridiumbrowser.de/>`_, has been reported to cause connection problems with CoCalc.
 
-With Google Chrome, you can go to the Settings and disable some. Alternatively, you can run Google Chrome with the command-line switch `--disable-extensions`. Incidentally, extensions are disabled in "incognito mode", so "Step 3" above should have taken care of this.
+.. note::
 
-In Firefox, it is very easy to `disable add-ons <https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons>`_ by clicking on that link.
+    With Google Chrome, extensions are disabled in "incognito mode". You can also go to the Settings and disable extensions, or run Google Chrome with the command-line switch `--disable-extensions`.
+    
+    If incognito mode works, then the problem is either:
+
+    * Cookies and other local data associated to cocalc.com are somehow bad (deleting them would fix it), or
+
+    * A browser extension is mangling/breaking cocalc.com -- disabling that extension would fix it.
+
+.. note::
+
+    In Firefox, you can disable add-ons with this link: `Firefox Disable or remove Add-ons <https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons>`_.
 
 Step 9: Are the CoCalc servers down?
 -------------------------------------------------------------------------------------------------------
