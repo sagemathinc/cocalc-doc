@@ -160,14 +160,67 @@ Sage Worksheets
     In case you run a Sage Worksheet, you need to restart the worksheet server (:ref:`in the project settings <sage-worksheet-server>`) and then the worksheet itself via the `Restart` button.
 
 
-Other
-------------------------------------
 
-There are also other managers, which might fit your needs:
+Encapsulated PIP w/ Jupyter Kernel
+======================================
 
-* `pyenv <https://github.com/pyenv/pyenv>`_
+Here, we explain how to setup your own encapsulated Python environment using `pipenv`_.
+You can either choose to use the global packages,
+or – as we do here – tell it to only have explicitly installed ones on board.
 
+We start with an empty directory in our ``$HOME``::
 
+    ~$ cd
+    ~$ mkdir my-special-env
+    ~$ cd my-special-env
+
+Then we run ``pipenv install`` without site packages. Install pandas below version ``1.2`` and the juypter kernel::
+
+    ~/my-special-env$ pipenv install --no-site-packages ipykernel 'pandas<1.2'
+    [output is abbreviated ...]
+    Creating a virtualenv for this project...
+    ✔ Successfully created virtual environment! 
+    Installing ipykernel...
+    ✔ Installation Succeeded 
+    Installing pandas<1.2...
+    ✔ Installation Succeeded 
+    ✔ Success! 
+    Updated Pipfile.lock (4eda65)!
+    Installing dependencies from Pipfile.lock (4eda65)...
+      🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
+    To activate this project's virtualenv, run pipenv shell.
+
+Now, we can launch it and give it a try. Let's check if Pandas is below version ``1.5`` and other libs like ``scipy`` are not available::
+
+    ~/my-special-env$ pipenv shell
+    Launching subshell in virtual environment...
+     . /home/user/.local/share/virtualenvs/my-special-env-gNmS0l6R/bin/activate
+    ~/my-special-env$  . /home/user/.local/share/virtualenvs/my-special-env-gNmS0l6R/bin/activate
+    (my-special-env) ~/my-special-env$ python
+    Python 3.8.5 (default, Jul 28 2020, 12:59:40) 
+    [GCC 9.3.0] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import scipy
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ModuleNotFoundError: No module named 'scipy'
+    >>> import pandas
+    >>> pandas.__version__
+    '1.1.5'
+
+Finally, we install the Juypter Kernel. We run ``ipykernel install`` and give the kernel a unique name.
+After opening the file in CoCalc's editor via ``open <filename.ipynb>`` ,
+make sure to run "Kernel" → "Refresh kernel list", to get the new kernel.
+Then select it and you're good to code!
+
+::
+
+    (my-special-env) ~/my-special-env$ python3 -m ipykernel install --user --name=my-special-env
+    Installed kernelspec my-special-env in /home/user/.local/share/jupyter/kernels/my-special-env
+    (my-special-env) ~/my-special-env$ open my-special-env.ipynb
+    creating file 'my-special-env.ipynb'
+
+All in all this gives you a precisely defined environment, outfitted with checksums for all dependencies for reproducibility.
 
 .. _anaconda-install:
 
@@ -177,7 +230,7 @@ Anaconda Environment
 `Conda <https://conda.io/en/latest/>`_ is an alternative packaging system by `Anaconda <https://anaconda.org/>`_.
 It is mostly used for Python packages, but it can manage and deliver almost any kind of software.
 
-CoCalc provides a global environmet, which you can start by running ``anaconda2019`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
+CoCalc provides a global environmet, which you can start by running ``anaconda2020`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
 To get going with your own setup for your own CoCalc project,
 you have to :ref:`create your own environment <anaconda-install-own-env>`
 and your :ref:`own kernel <anaconda-jupyter>`.
@@ -196,7 +249,7 @@ To get it installed in Anaconda as a user, do this:
 
 1. Open a terminal.
 
-2. Type ``anaconda2019``
+2. Type ``anaconda2020``
 
 3. Type ``conda create -n myconda -c mro r`` This creates a new local environment called "myconda" (name it as you wish) with the package "r" as its source coming from the channel "mro" (Microsoft's Open R). Instead of that, you can add any other anaconda package in that spot. The example from the documentation is biopython, see http://conda.pydata.org/docs/using/envs.html#create-an-environment.
 
@@ -238,7 +291,7 @@ Suppose you want to create a custom Anaconda environment with the ``mdtraj`` pac
 1. Follow these steps in `a .term file in CoCalc <../terminal>`_. In the last step, the display name of the new kernel is changed so that it does not duplicate the name of kernel installed by CoCalc::
 
         ~$ mkdir -p ~/.local/share/jupyter/kernels
-        ~$ anaconda2019
+        ~$ anaconda2020
         (root) ~$ conda create --name mymdtraj mdtraj
         (root) ~$ source activate mymdtraj
         (mymdtraj) ~$ conda install ipykernel
@@ -252,5 +305,6 @@ Suppose you want to create a custom Anaconda environment with the ``mdtraj`` pac
 4. Select the new kernel. You will now be running the environment you created with the ``conda create`` command.
 
 
-.. Virtualenv: https://virtualenv.pypa.io/en/stable/userguide/
+.. _Virtualenv: https://virtualenv.pypa.io/en/stable/userguide/
 
+.. _pipenv: https://pipenv.pypa.io/en/latest/
