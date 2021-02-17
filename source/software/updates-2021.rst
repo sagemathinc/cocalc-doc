@@ -11,6 +11,18 @@ Software Updates 2021
 .. highlight:: python
 
 
+
+
+.. _update-2021-02-17:
+
+2021-02-17: Rust 1.5
+---------------------------------------------------------------
+
+- Software
+    - (upd) `Rust`_ ``1.5``
+    - (upd) various system packages
+
+
 .. _update-2021-01-28:
 
 2021-01-28: Julia 1.5.3, MACS2, ...
