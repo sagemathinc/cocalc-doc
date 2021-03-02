@@ -61,7 +61,13 @@ highlight_language = 'none'
 source_suffix = ['.rst', '.md']
 
 # The master toctree document.
-master_doc = 'contents'
+sphinx_lang = os.environ.get('SPHINX_LANG')
+if sphinx_lang == 'de':
+    master_doc = 'de/inhalt'
+elif sphinx_lang == 'en':
+    master_doc = 'contents'
+else:
+    raise RuntimeError("you have to set the env variable SPHINX_LANG")
 
 # General information about the project.
 project = u'CoCalc Manual'
