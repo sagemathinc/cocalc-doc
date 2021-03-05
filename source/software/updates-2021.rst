@@ -11,6 +11,17 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-03-05:
+
+2021-03-05: ASE, Papermill, etc.
+---------------------------------------------------------------
+
+- Software
+    - (new) `papermill`_ – *Papermill is a tool for parameterizing and executing Jupyter Notebooks.*
+    - (upd) system packages, some python packages, R, etc.
+
+- Python 3 (Anaconda 2020)
+    - (new) `ase`_ – The Atomic Simulation Environment (ASE) is a set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations.*
 
 
 .. _update-2021-02-17:
@@ -335,3 +346,5 @@ Software Updates 2021
 .. _squarify: https://github.com/laserson/squarify
 .. _SHERPA: https://parameter-sherpa.readthedocs.io/
 .. _macs2: https://macs3-project.github.io/MACS/
+.. _ase: https://wiki.fysik.dtu.dk/ase/
+.. _papermill: https://papermill.readthedocs.io/en/latest/
