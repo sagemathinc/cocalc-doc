@@ -11,6 +11,16 @@ Software Updates 2021
 .. highlight:: python
 
 
+
+.. _update-2021-03-08:
+
+2021-03-08: Bioconductor
+---------------------------------------
+
+- R (system-wide):
+    - (upd) refresh of all `bioconductor`_ packages, incl. `oligo`_
+    - (new) `biomaRt`_  – *provides an interface to a growing collection of databases*
+
 .. _update-2021-03-05:
 
 2021-03-05: ASE, Papermill, etc.
@@ -348,3 +358,5 @@ Software Updates 2021
 .. _macs2: https://macs3-project.github.io/MACS/
 .. _ase: https://wiki.fysik.dtu.dk/ase/
 .. _papermill: https://papermill.readthedocs.io/en/latest/
+.. _biomaRt: https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html
+.. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
