@@ -140,10 +140,23 @@ Example 3: Periodic task in SageMath
 Debugging
 *************
 
-To figure out why a script doesn't work as it should, there are two ways to debug it:
+To figure out why a script doesn't work as it should, check the output of the script:
 
+* ``project_init.log`` contains the ``stdout`` output.
+* ``project_init.err`` contains the ``stderr`` output, i.e. this will show any errors.
+
+And please don't get confused, those files could contain stale information, because they aren't automatically deleted.
+
+**************
+Development
+**************
+
+#. It's highly recommended to start the bash script with ``set -e`` to stop at any errors and ``set -ev`` makes it more verbose as well.
 #. Run it directly in a terminal (create a ``*.term`` file) and run ``bash project_init.sh`` or ``python3 project_init.py``.
 #. A common pitfall is to assume ``~/.bashrc`` is run.
    Since this is a non-interactive session, you need to explicitly source any additional environment information.
 
-Note: much of this page is taken from the CoCalc blog article `Project Initialization Scripts <http://blog.sagemath.com/cocalc/2017/09/12/project-init.html>`_.
+
+.. note::
+
+    Much of this page is taken from the CoCalc blog article `Project Initialization Scripts <http://blog.sagemath.com/cocalc/2017/09/12/project-init.html>`_.
