@@ -131,34 +131,9 @@ See  `Virtualenv`_ for more information.
 Sage
 ------------------------------------
 
-A special case is [SageMath]_, which is a fully integrated environment built on top of Python.
-To install a Python package in Sage, it needs to also install into your local home directory.
-To accomplish that, first start the Sage-environment in a Terminal, and then issue the pip-install command with ``--user``. For example:
+A special case is `SageMath`_, which is a fully integrated environment built on top of Python.
 
-1. ``sage -sh`` for the sage environemnt
-2. ``pip install --user git+https://github.com/videlec/sage-flatsurf``
-
-If it happens that Sage doesn't recognize packages in your local path, prepend them to your path via running
-
-::
-
-    import site, sys
-    sys.path.insert(0, site.USER_SITE)
-
-.. note::
-
-    Inside that ``sage -sh`` environment, you can also run ``R`` to install additional R packages in Sage. This also works for other programming libraries.
-
-    You can also combine step (1) and (2) via ``sage --pip install --user ...``
-
-
-Sage Worksheets
-------------------------------------
-
-.. note::
-
-    In case you run a Sage Worksheet, you need to restart the worksheet server (:ref:`in the project settings <sage-worksheet-server>`) and then the worksheet itself via the `Restart` button.
-
+As of sage-9.1 and sage-9.2, installing Python packages into Sage is not supported. For further information, please consult resources listed under :doc:`sage-question`.
 
 
 Encapsulated PIP w/ Jupyter Kernel
@@ -308,3 +283,5 @@ Suppose you want to create a custom Anaconda environment with the ``mdtraj`` pac
 .. _Virtualenv: https://virtualenv.pypa.io/en/stable/userguide/
 
 .. _pipenv: https://pipenv.pypa.io/en/latest/
+
+.. _SageMath: https://sagemath.org
