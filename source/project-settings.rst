@@ -320,6 +320,8 @@ On OS X, and Linux, key pairs are stored in ``~/.ssh``, where ``~`` indicates yo
 
 To make sure you really connect to CoCalc, you can check the fingerprint of the :ref:`SSH Host Key <ssh-host-key>`.
 
+.. _project-settings-ssh-keys:
+
 *****************************************
 Configuring SSH Keys for a Single Project
 *****************************************
@@ -645,3 +647,137 @@ Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_
     :width: 16px
 
 .. _ssh: https://help.ubuntu.com/community/SSH
+
+.. index:: Projects; datastore
+.. _project-datastore:
+
+#################
+Datastore
+#################
+
+A "datastore" is an existing repository of files or file-like objects,
+which can be make accessible in a CoCalc project.
+The files will be mounted in ``/data/[name]``,
+where the name is the name you enter in the datastore configuration.
+
+For easy access, it's possible to create a symlink to that global directory.
+If there is no ``~/data → /data`` in your home directory,
+just run ``ln -s /data ~/data`` in the :ref:`mini-terminal`.
+
+You can configure the datastore to be mounted as *read-only*,
+which prevents accidental modifications.
+Note, if you share datastores via a course,
+they're automatically mounted as "read-only" for all student projects!
+
+Besides that, modifications will eventually propagate to all mounted instances.
+Caching on various levels significantly slows down propagating changes, though.
+So, this won't work well for collaborative editing files,
+but it is ok for letting changes show up on other projects after a brief period of time.
+
+***********
+SSH
+***********
+
+This makes it possible to access files accessible via an OpenSSH server.
+The authentication works via a pair of public/private keys.
+The public key must be shared with with the remote OpenSSH server,
+while the private key – the hidden secret – must be shared with CoCalc's datastore mechanism
+in order to authenticate with the server.
+
+In particular, you should be able to access files stored on a remote server,
+where you can do a **password-less** private-key based ssh login!
+
+It's a good idea to generate a fresh pair of keys,
+for better control overall.
+Run this command to generate the pair::
+
+    ssh-keygen -t ed25519 -f mykey -N ''
+
+which generates ``mykey`` (private key) and ``mykey.pub`` (public key).
+Instead of ``mykey`` you can choose any name you like.
+
+To get the content of the private key, run::
+
+    cat mykey
+
+and copy/paste the whole output into the private key textarea. It should look like::
+
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    ........  random characters ........
+    ........  random characters ........
+    ........  random characters ........
+    ........
+    -----END OPENSSH PRIVATE KEY-----
+
+The public key can be accessed via ``cat mykey.pub``.
+It's one line of text and it must be in the remote server's ``~/.ssh/authorized_keys`` file.
+Note, the permissions of that file must be such that others cannot read it.
+I.e. maybe you have to run ``chmod go-rwx ~/.ssh/authorized_keys``!
+
+
+.. Note::
+
+    It's possible to share files from one CoCalc project via that mechanism.
+    There are a couple of important details to take care of, though!
+
+    1. The project hosting the files has to run all the time.
+       To make sure of that, create a new project and get an **"always running"** license upgrade for one project.
+       Deselect "member hosting" to allow for cheaper hosting with occasional restarts – which should be fine,
+       because it will attempt to reconnect.
+       Then apply that license to this new project.
+    2. Generate the key pair as above.
+       Open that project's settings and :ref:`add that public key as an SSH keys <project-settings-ssh-keys>`.
+    3. The **username** must be the project ID without dashes, as shown in the SSH keys dialog.
+    4. The **host** must be **ssh**!
+    5. The **path** must be **/home/user/[dirname]**, where ``[dirname]`` is the name of the sub-directory
+       in the project's "files" home directory.
+       Set it to **/home/user** to share all files of the entire project!
+
+
+.. warning::
+
+    A common problem of SSH are subtle configuration errors.
+    Please test the connection first, i.e. for a private key file ``mykey``, do this::
+
+        ssh -vv -i mykey [user]@[host]
+
+    to attempt a remote login to the username and the given host.
+    If you see a prompt, everything is fine. Exit via "exit" or Ctrl-D.
+    Otherwise, you see a verbose log of messages,
+    where some of these messages will explain why it wasn't able to connect.
+
+
+************
+AWS S3
+************
+
+Amazon's S3 storage buckets can be accessed via their name, access key and a secret id.
+
+More info: `AWS S3 <https://aws.amazon.com/s3/>`_.
+
+
+******************
+Google GCS
+******************
+
+Google's Cloud Storage is very similar to S3 – <https://cloud.google.com/storage>.
+You need to have at least one project at GCP and a storage bucket at GCS.
+Start with the `quick start guide <https://cloud.google.com/storage/docs/quickstart-console>`_ if you're new to this.
+
+You also have to enable to "Storage API" for the project – see `enabling APIs <https://cloud.google.com/endpoints/docs/openapi/enable-api>`_.
+
+The authentication works by creating a "service account",
+which gives access to a well-defined aspect of your project.
+Read about `GCS Authentication <https://cloud.google.com/storage/docs/authentication>`_ and its links for `creating
+a service account <https://cloud.google.com/docs/authentication/getting-started>`_ to learn more.
+
+On CoCalc's side, the storage bucket name and the content of the authentication file (formatted in JSON) must be entered in the corresponding fields.
+
+For optimal performance, the storage bucket should be in the same region as CoCalc's cluster.
+As of writing this, this would be ``us-east1``.
+
+
+
+
+
+
