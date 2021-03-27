@@ -124,10 +124,10 @@ Credits: `stack overflow post <https://stackoverflow.com/a/43283085/54236>`_
 
     If your ``Sys.getenv("R_LIBS_USER")`` already exists, a freshly started kernel will already know about it. You can check this by running ``.libPaths()``. If the first listed path starts with ``/home/user/R/...`` you can run ``install.packages`` without any errors.
 
-Aftermath
-===========
+Sage Worksheets
+=================
 
-The above will install R packages for use with CoCalc worksheets (``%r`` mode)
+The above will install R packages for use with Sage worksheets (``%r`` mode)
 and Jupyter notebooks using default R.
 The Sage binary may be built with a different release of R.
 Use ``R-sage`` instead of ``R`` to install packages for it.
