@@ -656,36 +656,44 @@ Datastore
 #################
 
 A "datastore" is an existing repository of files or file-like objects,
-which can be make accessible in a CoCalc project.
-The files will be mounted in ``/data/[name]``,
-where the name is the name you enter in the datastore configuration.
+which can be made accessible in a CoCalc project.
+It will be mounted in the filesystem at ``/data/[name]``,
+where the ``[name]`` is the name you entered in the datastore configuration.
 
 For easy access, it's possible to create a symlink to that global directory.
 If there is no ``~/data → /data`` in your home directory,
 just run ``ln -s /data ~/data`` in the :ref:`mini-terminal`.
+Usually, the project will create that symlink for you.
 
 You can configure the datastore to be mounted as *read-only*,
 which prevents accidental modifications.
 Note, if you share datastores via a course,
 they're automatically mounted as "read-only" for all student projects!
 
-Besides that, modifications will eventually propagate to all mounted instances.
+For read-write mounted ones, modifications will eventually propagate to all mounted instances.
 Caching on various levels significantly slows down propagating changes, though.
 So, this won't work well for collaborative editing files,
 but it is ok for letting changes show up on other projects after a brief period of time.
+
+.. warning::
+
+    An active "Internet access" quota is required,
+    because otherwise the project can't access the remote services.
 
 ***********
 SSH
 ***********
 
-This makes it possible to access files accessible via an OpenSSH server.
-The authentication works via a pair of public/private keys.
+This mounts files accessible via an OpenSSH server,
+which means you should be able to access files on a remote Linux server.
+
+The authentication only works via a pair of public/private keys!
 The public key must be shared with with the remote OpenSSH server,
 while the private key – the hidden secret – must be shared with CoCalc's datastore mechanism
 in order to authenticate with the server.
 
-In particular, you should be able to access files stored on a remote server,
-where you can do a **password-less** private-key based ssh login!
+In particular, in order to be able to access files stored on a remote server,
+you need to be able to do a **password-less** private-key based ssh login!
 
 It's a good idea to generate a fresh pair of keys,
 for better control overall.
@@ -728,7 +736,7 @@ I.e. maybe you have to run ``chmod go-rwx ~/.ssh/authorized_keys``!
     2. Generate the key pair as above.
        Open that project's settings and :ref:`add that public key as an SSH keys <project-settings-ssh-keys>`.
     3. The **username** must be the project ID without dashes, as shown in the SSH keys dialog.
-    4. The **host** must be **ssh**!
+    4. The **host** must be **ssh** – yes, those 3 characters are enough to connect internally within the cluster!
     5. The **path** must be **/home/user/[dirname]**, where ``[dirname]`` is the name of the sub-directory
        in the project's "files" home directory.
        Set it to **/home/user** to share all files of the entire project!
@@ -768,8 +776,8 @@ You also have to enable to "Storage API" for the project – see `enabling APIs 
 
 The authentication works by creating a "service account",
 which gives access to a well-defined aspect of your project.
-Read about `GCS Authentication <https://cloud.google.com/storage/docs/authentication>`_ and its links for `creating
-a service account <https://cloud.google.com/docs/authentication/getting-started>`_ to learn more.
+Read about `GCS Authentication <https://cloud.google.com/storage/docs/authentication>`_ and
+its links for `creating a service account <https://cloud.google.com/docs/authentication/getting-started>`_ to learn more.
 
 On CoCalc's side, the storage bucket name and the content of the authentication file (formatted in JSON) must be entered in the corresponding fields.
 
