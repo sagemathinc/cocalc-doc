@@ -11,6 +11,22 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-04-03:
+
+2021-04-03: Julia 1.6
+---------------------------------------
+
+- Julia:
+    - Version 1.6 & rebuilding all pre-installed libraries
+
+- Python 3 (Anaconda 2020):
+    - (new) `lmfit`_ – *provides a high-level interface to non-linear optimization and curve fitting problems for Python*
+    - (new) `periodictable-py`_ – *provides an extensible periodic table of the elements pre-populated with data important to neutron and X-ray scattering experiments*
+
+- Python 3 (system-wide):
+    - (new) `sktime`_ – *specialized time series algorithms and scikit-learn compatible tools to build, tune and validate time series models for multiple learning problems*
+    - (upd) various libs
+
 
 .. _update-2021-03-08:
 
@@ -349,6 +365,8 @@ Software Updates 2021
 .. _Mathics: https://mathics.org/
 .. _gprMax: https://www.gprmax.com/
 .. _pybedtools: https://daler.github.io/pybedtools/
+.. _periodictable-py: https://periodictable.readthedocs.io/en/latest/
+.. _lmfit: https://lmfit.github.io/lmfit-py/
 .. _materialize: https://materialize.com/
 .. _hardlink: https://linux.die.net/man/1/hardlink
 .. _agate: https://agate.readthedocs.io/
@@ -360,3 +378,4 @@ Software Updates 2021
 .. _papermill: https://papermill.readthedocs.io/en/latest/
 .. _biomaRt: https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html
 .. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
+.. _sktime: https://www.sktime.org/en/latest/
