@@ -21,3 +21,4 @@ understanding low memory warnings and how to triage situations where you can't f
    slow-worksheet.rst
    recover-deleted-file.rst
    missing-project.rst
+   sudo-make-install.rst
