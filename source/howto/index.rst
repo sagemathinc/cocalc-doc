@@ -56,6 +56,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    nbgrader
    neuron
    mongodb
+   pluto
    postgresql
    remarkjs-slideshow
    ruby
