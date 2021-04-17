@@ -2,7 +2,7 @@
 .. index:: GCC Compiler
 
 =========================
-Compile GSL C Code
+GSL C Code Compilation
 =========================
 
 This example explains how to compile some `C code`_ via `GCC`_ using the

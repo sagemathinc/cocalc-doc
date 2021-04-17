@@ -51,12 +51,12 @@ Explanations about how you can accomplish a certain task or run a specific examp
    dask
    fortran
    git
-   gsl
    google-api
+   gsl
    nbgrader
    neuron
-   postgresql
    mongodb
+   postgresql
    remarkjs-slideshow
    ruby
    turtle
