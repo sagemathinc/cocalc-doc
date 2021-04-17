@@ -113,13 +113,8 @@ Updates to the CoCalc Docker Image
 
 The CoCalc Docker image is updated approximately weekly. Weekly updates incorporate all features and bug fixes that have been merged into the `CoCalc GitHub code repository <https://github.com/sagemathinc/cocalc>`_ master branch at the time of the build.
 
-Other updates, such as new versions of Sagemath, Julia, and other additional software, happen less frequently but will be announced on the CoCalc Docker mailing list and listed below:
+Other updates, such as new versions of Sagemath, Julia, and other additional software, happen less frequently but will be announced on the CoCalc Docker mailing list.
 
 .. index:: Docker image; updates
-
-.. toctree::
-   :maxdepth: 1
-
-   docker/image-updates-2019
 
 .. _AGPLv3: https://opensource.org/licenses/AGPL-3.0
