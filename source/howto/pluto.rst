@@ -47,7 +47,7 @@ If you get a gateway timeout the first time, hit refresh to give the notebook mo
 Enjoy.
 
 .. figure:: img/pluto-launch.png
-     :width: 60%
+     :width: 80%
      :align: center
 
      ..
