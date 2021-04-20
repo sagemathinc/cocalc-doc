@@ -1,9 +1,8 @@
 .. index:: Hub
 
-
 What is Hub?
 ==============
-.. image:: ./img/hub_logo.png
+.. image:: img/hub_logo.png
 
 
 **The fastest way to access and manage datasets for PyTorch and TensorFlow**
@@ -18,16 +17,16 @@ Quickstart
 
 1. Install Hub ``pip3 install hub``
 
-2. Register and authenticate to upload datasets to
-    `Activeloop <https://app.activeloop.ai/>`__ store
+2. Register and authenticate to upload datasets to `Activeloop <https://app.activeloop.ai/>`__ store.
 
     .. code:: RST
 
         activeloop register
         activeloop login
 
-        alternatively, add username and password as arguments (use on platforms like Kaggle)
-        ====================================================================================
+Alternatively, add username and password as arguments (use on platforms like Kaggle).
+
+    .. code:: RST    
 
         activeloop login -u username -p password
     
@@ -63,8 +62,8 @@ Quickstart
         print(ds["label", 100:110].compute())
         ds.flush()
 
-This code creates dataset in *"./data/examples/new_api_intro"* folder with overwrite mode.
-Dataset has a thousand samples. In each sample there is an *image* and a *label*. Once the dataset is ready, you may read, write and loop over it.
+This code creates dataset with 1000 samples in *"./data/examples/new_api_intro"* folder with overwrite mode.
+Once the dataset is ready, you may read, write and loop over it.
 
 You can also transfer a dataset from TFDS (as below) and convert it
 from/to Tensorflow or PyTorch.
@@ -111,8 +110,10 @@ To store datasets locally, let the ``url`` parameter be a local path.
 
 S3
 ^^
+    .. code:: python
 
-``python url = 's3://new_dataset'  # your s3 path ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token={"aws_access_key_id": "...",                                                               "aws_secret_access_key": "...",                                                               ...})``
+        python url = 's3://new_dataset'  # your s3 path 
+        ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token={"aws_access_key_id": "...",                                                               "aws_secret_access_key": "...",                                                               ...})``
 
 MinIO
 ^^^^^
@@ -164,10 +165,7 @@ Shape
 
 Shape is another required attribute of a dataset. It simply specifies
 how large a dataset is. The rules associated with shapes are derived
-from ``numpy``. As you might have noticed, shape is a universal
-attribute that is also present in schemas, however it is no longer
-required. If a schema does not have a well-definied shape, ``max_shape``
-might be required.
+from ``numpy``.
 
 Dataset Access, Modification and Deletion
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -186,9 +184,7 @@ overview tab.
 Flush, Commit and Close
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Since Hub implements caching, you need to tell the program to push the
-final changes to permanent storage. Hub Datasets have three methods that
-let you do that.
+Hub Datasets have three methods to push the final changes to the selected storage.
 
 The most fundamental method, ``.flush()`` saves changes from cache to
 the dataset final storage and does not invalidate dataset object. It
@@ -208,6 +204,7 @@ the dataset with the ``with`` statement in this fashion:
 
         with hub.Dataset(...) as ds:
             pass
+
 
 For more information see `Hub documentation <https://docs.activeloop.ai/en/latest/>`__ .
 
