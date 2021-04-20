@@ -24,7 +24,7 @@ Quickstart
         activeloop register
         activeloop login
 
-Alternatively, add username and password as arguments (use on platforms like Kaggle).
+    Alternatively, add username and password as arguments (use on platforms like Kaggle).
 
     .. code:: RST    
 
@@ -205,6 +205,9 @@ the dataset with the ``with`` statement in this fashion:
         with hub.Dataset(...) as ds:
             pass
 
+
+Other information
+~~~~~~~~~~~~~~~~~
 
 For more information see `Hub documentation <https://docs.activeloop.ai/en/latest/>`__ .
 
