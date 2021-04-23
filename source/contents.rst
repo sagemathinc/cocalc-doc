@@ -53,6 +53,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    howto/trouble
    api/index.rst
    docker-image
+   cocalc-desktop
 
 Indices, references and tables
 ==============================
