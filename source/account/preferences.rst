@@ -27,9 +27,9 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 
 * Your password is needed to change your email address.
 
-* Your password is needed to create or change the API key for your account. See :doc:`CoCalc API documentation <../api/index>` to learn about the API.
+* Checking the "Unlisted" box will prevent your account from showing up in searches by name, for example when someone adds collaborators to a project.
 
-* The Newsletter checkbox doesn't do anything yet. We don't send out a newsletter.
+* Your password is needed to create or change the API key for your account. See :doc:`CoCalc API documentation <../api/index>` to learn about the API.
 
 * **Sign Out of CoCalc** using one of the "Sign Out" buttons. You will be asked to confirm your selection.
 
