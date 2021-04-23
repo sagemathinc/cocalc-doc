@@ -132,6 +132,7 @@ Going from left to right:
 .. index::
    Support; create support request
    seealso: Help; Support
+.. _help-button:
 
 * |medkit| **Help** - **Use this button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
 

@@ -29,7 +29,6 @@ This FAQ/Help page consists of
 
     If this doesn't help, try additional diagnostic steps mentioned below.
 
-
 Process for Debugging Connectivity
 ==================================================
 
