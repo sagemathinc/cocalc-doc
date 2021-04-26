@@ -1,26 +1,14 @@
 .. index:: Pluto notebooks
 .. index:: Julia; pluto notebooks
 
+.. _howto-pluto:
+
 =========================
 Pluto Notebooks for Julia
 =========================
 
 Here are instructions for running a Pluto notebook on CoCalc.
 
-*************
-Install Pluto
-*************
-
-Note that in CoCalc it's necessary right now to install Pluto. To do that, run the following in a CoCalc Linux Terminal::
-
-    export JULIA_DEPOT_PATH=$HOME/julia_depot
-    $ julia
-    julia> ]
-    pkg> add Pluto
-    # wait a few seconds
-    # then exit package manager with ^C
-
-This only needs to be done once.
 
 *****************
 Launch a Notebook

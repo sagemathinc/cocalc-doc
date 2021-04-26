@@ -11,9 +11,36 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-04-26:
+
+2021-04-26: Julia ``1.6.1``
+---------------------------------------
+
+- Julia:
+    - (upd) `Julia`_ version ``1.6.1``
+    - (new) `Pluto Notebook`_ – see :ref:`instructions for CoCalc <howto-pluto>`
+    - (upd) refreshing various globally installed packages
+
+- Python 3 (system-wide):
+    - (upd) various pkgs
+
+
 .. _update-2021-04-03:
 
-2021-04-03: Julia 1.6
+2021-04-03: R 4.0.5 ("Shake and Throw")
+---------------------------------------
+
+- R:
+    - (upd) `R`_ to ``4.0.5``
+    - (upd) rebuilding/updating all R packages
+
+- Python 3 (system-wide):
+    - (new) `Pyro`_ ``1.6.0`` – *Deep universal probabilistic programming with Python and PyTorch*
+    - (upd) various pkgs
+
+.. _update-2021-03-21:
+
+2021-03-21: Julia 1.6
 ---------------------------------------
 
 - Julia:
@@ -379,3 +406,6 @@ Software Updates 2021
 .. _biomaRt: https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/biomaRt.html
 .. _oligo: https://www.bioconductor.org/packages/release/bioc/html/oligo.html
 .. _sktime: https://www.sktime.org/en/latest/
+.. _pyro: https://pyro.ai/
+.. _Pluto Notebook: https://github.com/fonsp/Pluto.jl
+
