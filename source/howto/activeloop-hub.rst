@@ -1,16 +1,31 @@
 .. index:: Hub
 
-What is Hub?
-==============
+========================
+Getting Started with Hub
+========================
+
 .. image:: img/hub_logo.png
 
+
+What is Hub?
+~~~~~~~~~~~~
 
 **The fastest way to access and manage datasets for PyTorch and TensorFlow**
 
 Hub provides fast access to the state-of-the-art datasets for Deep Learning, enabling data scientists to manage them, build scalable data pipelines and connect to Pytorch and Tensorflow.
 
-Getting Started with Hub
-========================
+
+.. warning::
+
+    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` enabled
+    in order to connect to an online service like Activeloop's hub from within your project!
+
+
+.. note::
+
+    This is user-contributed content.
+    Credits go to Activeloop!
+
 
 Quickstart
 ~~~~~~~~~~
