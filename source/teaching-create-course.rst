@@ -163,7 +163,7 @@ To ensure student projects have correct students and TA's, titles and descriptio
 Doing so will also resend email invitations to students who have not already signed up for CoCalc.
 
 .. figure:: img/teaching/course-reconfigure.png
-     :width: 60%
+     :width: 90%
      :align: center
 
      "Reconfigure all projects" at lower right in Configuration
@@ -177,7 +177,7 @@ In the course Configuration tab, check any of the boxes under "Restrict student 
 Because some CoCalc features may not be compatible with course content created by an instructor, restricting a project can reduce student confusion and prevent issues with running and grading assignments. It may also keep students more focused, e.g., during an exam. Do not gain a false sense of security and expect these to prevent all forms of cheating.
 
 .. figure:: img/teaching/restrict-student-projects.png
-     :width: 60%
+     :width: 90%
      :align: center
 
      "Restrict student projects" at lower right in Configuration
