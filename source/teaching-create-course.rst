@@ -166,7 +166,7 @@ Doing so will also resend email invitations to students who have not already sig
      :width: 90%
      :align: center
 
-     "Reconfigure all projects" at lower right in Configuration
+     "Reconfigure all projects" at lower right in course Configuration
 
 ###############################
 Restricted Student Projects
@@ -180,7 +180,7 @@ Because some CoCalc features may not be compatible with course content created b
      :width: 90%
      :align: center
 
-     "Restrict student projects" at lower right in Configuration
+     "Restrict student projects" at lower right in course Configuration
 
 * **Disable file actions.** Make it so students can't delete, download, copy, publish, etc., files in their project.
 * **Disable toggling whether cells are editable or deletable.** Make it so that in Jupyter notebooks, students can't toggle whether cells are editable or deletable, and also disables the RAW Json Editor and the Jupyter command list dialog. If you set this, you should probably disable all of the JupyterLab and Jupyter classic options too.
