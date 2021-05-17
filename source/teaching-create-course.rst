@@ -155,7 +155,10 @@ Your course page will now look like this
 .. index:: Courses; re-send email invitations
 .. index:: Re-send student email invitations
 
-**Reconfiguring student projects and re-issuing email invitations.**
+###############################
+Reconfiguring Student Projects
+###############################
+
 To ensure student projects have correct students and TA's, titles and descriptions, click `Reconfigure all projects`.
 Doing so will also resend email invitations to students who have not already signed up for CoCalc.
 
