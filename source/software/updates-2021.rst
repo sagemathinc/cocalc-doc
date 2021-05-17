@@ -11,6 +11,17 @@ Software Updates 2021
 .. highlight:: python
 
 
+
+.. _update-2021-05-17:
+
+2021-05-17: HAXE
+---------------------------------------
+
+- Executables:
+    - (new) `HAXE`_ ``4.2.1`` – *an open source high-level strictly-typed programming language with a fast optimizing cross-compiler*
+    - (new) `SageMath`_ ``9.3``: available as ``sage-9.3`` on the command-line and via Jupyter Notebooks. For Sage Worksheets, run ``sage_select 9.3`` first.
+
+
 .. _update-2021-04-26:
 
 2021-04-26: Julia ``1.6.1``
@@ -408,4 +419,4 @@ Software Updates 2021
 .. _sktime: https://www.sktime.org/en/latest/
 .. _pyro: https://pyro.ai/
 .. _Pluto Notebook: https://github.com/fonsp/Pluto.jl
-
+.. _HAXE: https://haxe.org/
