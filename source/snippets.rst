@@ -9,6 +9,14 @@
 Snippets
 ===============
 
+.. contents::
+   :local:
+   :depth: 1
+
+####################
+System-wide Snippets
+####################
+
 Snippets are short examples of working code.
 CoCalc offers curated, annotated snippets with Jupyter Notebooks and Sage Worksheets.
 They can save you time when you're learning a new programming technique
@@ -54,9 +62,9 @@ Note: Snippets first appeared in CoCalc under the name "Assistant" and were anno
     Snippets; custom
 .. _custom-snippets:
 
-=================
+####################
 Custom Snippets
-=================
+####################
 
 Add your own snippets to a project by placing Jupyter Notebooks containing markdown/code cell pairs into ``$HOME/code-snippets``, e.g., ``snippets.ipynb`` or, if defined, into the directory specified by :ref:`environment variable <project-env-vars>` ``COCALC_CODE_SNIPPETS_DIR``.
 
@@ -65,12 +73,12 @@ After changing the files, click the link in the Snippets sidebar,
 
 Regarding the content of the notebooks, the first cell must be a Markdown title header, i.e., # Title. The next cells should be alternating between Markdown (with a 2nd level header, i.e., ## Snippet Name and a description) and followed at least one line of explanatory text and one or more code cells. The language of the snippet notebook must match the language of your notebook in order to see the snippets! Include one snippet in each notebook.
 
-Also, at least for now, there cannot be spaces in the path or filename of the snippets notebooks.
+_NOTE:_ Spaces are not allowed in the path or filename of the snippets notebooks.
 
 .. figure:: img/snippets/custom-snippets.png
      :width: 65%
      :align: center
 
-     adding custom Snippets for Jupyter Notebooks
+     adding custom Snippets in a project
 
 
