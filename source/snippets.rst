@@ -48,3 +48,29 @@ If you have a snippet you'd like to contribute, click ``Contribute`` at lower le
 `CoCalc Snippets <https://github.com/sagemathinc/cocalc-snippets>`_ source code repository on GitHub.
 
 Note: Snippets first appeared in CoCalc under the name "Assistant" and were announced in this blog article: `Examples Assistant <http://blog.sagemath.com/cocalc/2018/04/05/assistant.html>`_.
+
+.. index::
+    Custom Snippets
+    Snippets; custom
+.. _custom-snippets:
+
+=================
+Custom Snippets
+=================
+
+Add your own snippets to a project by placing Jupyter Notebooks containing markdown/code cell pairs into ``$HOME/code-snippets``, e.g., ``snippets.ipynb`` or, if defined, into the directory specified by :ref:`environment variable <project-env-vars>` ``COCALC_CODE_SNIPPETS_DIR``.
+
+After changing the files, click the link in the Snippets sidebar,
+"click here to reload custom snippets". Your snippets will appear in a new category "Custom Snippets" at the top of the snippets list.
+
+Regarding the content of the notebooks, the first cell must be a Markdown title header, i.e., # Title. The next cells should be alternating between Markdown (with a 2nd level header, i.e., ## Snippet Name and a description) and followed at least one line of explanatory text and one or more code cells. The language of the snippet notebook must match the language of your notebook in order to see the snippets! Include one snippet in each notebook.
+
+Also, at least for now, there cannot be spaces in the path or filename of the snippets notebooks.
+
+.. figure:: img/snippets/custom-snippets.png
+     :width: 65%
+     :align: center
+
+     adding custom Snippets for Jupyter Notebooks
+
+
