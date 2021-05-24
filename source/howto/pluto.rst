@@ -19,9 +19,8 @@ Run the following in a CoCalc Linux Terminal to get the ID of the current projec
     $ echo $COCALC_PROJECT_ID
     12345678-1234-1234-1234-123456789012
 
-Then start Julia. You have to tell Julia where to find your Pluto install first.::
+Then start Julia and launch Pluto.::
 
-    export JULIA_DEPOT_PATH=$HOME/julia_depot
     $ julia
     julia> import Pluto
     julia> Pluto.run(launch_browser = false, require_secret_for_access = false, host="0.0.0.0")
