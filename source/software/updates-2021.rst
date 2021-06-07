@@ -11,6 +11,22 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-06-07:
+
+2021-06-07: Octave ``6.2.0`` & Bugfixes
+----------------------------------------------
+
+- Executables:
+    - `Octave`_ ``6.2.0``
+    - `SAOImageDS9 <ds9>`_ ``8.2.1``
+
+- R (system-wide):
+    - updating ``Cairo`` to fix a `ggplot2`_ problem
+    - various package updates
+
+- Python 3 (system-wide):
+    - various updates
+
 
 .. _update-2021-05-17:
 
@@ -128,6 +144,7 @@ Software Updates 2021
 
 .. The duplication below with the 2020 file extremely silly, but I don't know how to share references properly
 
+.. _DS9: https://sites.google.com/cfa.harvard.edu/saoimageds9
 .. _Jupyter Lab: https://jupyterlab.readthedocs.io/en/stable/
 .. _Scikit Image: https://scikit-image.org/
 .. _scikit-image: https://scikit-image.org/
@@ -420,3 +437,4 @@ Software Updates 2021
 .. _pyro: https://pyro.ai/
 .. _Pluto Notebook: https://github.com/fonsp/Pluto.jl
 .. _HAXE: https://haxe.org/
+.. _ggplot2: https://ggplot2.tidyverse.org/
