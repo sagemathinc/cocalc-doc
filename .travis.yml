@@ -1,11 +1,11 @@
+os: linux
+
 dist: xenial
 
 language: python
 
 python:
   - "3.6"
-
-sudo: false
 
 git:
   depth: 10
@@ -17,12 +17,13 @@ install:
 script: "make html"
 
 deploy:
+  strategy: git
   provider: pages
-  local-dir: build/html/
-  skip-cleanup: true
-  github-token: $DOC_COCALC_TOKEN
-  keep-history: false
+  local_dir: build/html/
+  skip_cleanup: true
+  token: $DOC_COCALC_TOKEN
+  keep_history: false
   fqdn: doc.cocalc.com
-  target-branch: gh-pages
+  target_branch: gh-pages
   on:
     branch: master
