@@ -650,25 +650,25 @@ Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_
 
 .. index:: Projects; datastore
 .. _project-datastore:
+.. _datastore:
+.. _cloud-storage:
 
-#################
-Datastore
-#################
+###################################################
+Cloud storage & remote file systems
+###################################################
 
-A "datastore" is an existing repository of files or file-like objects,
-which can be made accessible in a CoCalc project.
+It is possible to access "cloud store" (a repository of file-like objects)
+or a remote file system in a CoCalc project.
 It will be mounted in the filesystem at ``/data/[name]``,
-where the ``[name]`` is the name you entered in the datastore configuration.
+where the ``[name]`` is the name you entered in the cloud storage & remote file systems configuration.
 
 For easy access, it's possible to create a symlink to that global directory.
 If there is no ``~/data → /data`` in your home directory,
 just run ``ln -s /data ~/data`` in the :ref:`mini-terminal`.
 Usually, the project will create that symlink for you.
 
-You can configure the datastore to be mounted as *read-only*,
-which prevents accidental modifications.
-Note, if you share datastores via a course,
-they're automatically mounted as "read-only" for all student projects!
+Mounting as *read-only* prevents accidental modifications.
+Note, in a course it's automatically mounted as "read-only" for all student projects!
 
 For read-write mounted ones, modifications will eventually propagate to all mounted instances.
 Caching on various levels significantly slows down propagating changes, though.
@@ -689,7 +689,7 @@ which means you should be able to access files on a remote Linux server.
 
 The authentication only works via a pair of public/private keys!
 The public key must be shared with with the remote OpenSSH server,
-while the private key – the hidden secret – must be shared with CoCalc's datastore mechanism
+while the private key – the hidden secret – must be shared with CoCalc
 in order to authenticate with the server.
 
 In particular, in order to be able to access files stored on a remote server,
@@ -708,8 +708,8 @@ Instead of ``mykey`` you can choose any name you like.
 
     The ``-N ''`` flag generates a key without a password, therefore anyone who has
     access to this key will then be able to access your remote server.  This is
-    generally not recommended for security reasons, but is needed for the Datastore
-    to work.  See below for ways to mitigate any associated risk.
+    generally not recommended for security reasons, but is needed for CoCalc's
+    remote file system store to work.  See below for ways to mitigate any associated risk.
 
 To get the content of the private key, run::
 
@@ -760,25 +760,30 @@ I.e. maybe you have to run ``chmod go-rwx ~/.ssh/authorized_keys``!
     If you see a prompt, everything is fine. Exit via "exit" or Ctrl-D.
     Otherwise, you see a verbose log of messages,
     where some of these messages will explain why it wasn't able to connect.
-    
-    Note: if you are connecting to CoCalc via SSH, make sure you do not use
+
+.. note::
+    If you are connecting to CoCalc via SSH, make sure you do not use
     ForwardAgent (command-line option ``ssh -A``) while testing this, otherwise you
     might be able to connect to your server using your forwarded agent rather than
-    authenticating with ``mykey``.  The Datastore will not have access to any forwarded
-    agent, however, and thus may still fail.
-        
-    One suble issue is that somme older servers may not accept ``ed25519`` keys:
+    authenticating with ``mykey``.  The cloud storage & remote file system mechanism
+    will not have access to any forwarded agent, however, and thus may still fail.
+
+    One subtle issue is that some older servers may not accept ``ed25519`` keys:
     in this case you might try with an RSA key ``ssh-keygen -t rsa -f mykey -N ''``
     instead.
 
-    As mentioned above, using passwordless keys (``-N ''`` above) is generally regarded as
-    a security risk, but is needed for the CoCalc Datastore to work.  It will become private once entered,
-    but anyone who has acces to the `mykey` file will be able to authenticate to your server.
+    As mentioned above, using password-less keys (``-N ''`` above) is generally regarded as
+    a security risk, but is needed for the CoCalc to work.
+    The key is entered via the user-interface and stored in the database.
+    It stays private and hidden,
+    because neither you nor any collaborator of the project can access it again (only replace it later on).
+    Still, any  who has access to the previously generated `mykey` file will be able to authenticate to your server.
     To mitigate any potential risks:
-    
-    1. Once you get your Datastore working, generate a new key somewhere private (your
-       computer, not CoCalc), enter it in the Datastore, then delete the file.
-    2. On your server, create a deadicate user (i.e. `cocalc_datashare`) with limited access
+
+    1. Once you get your ssh remote filesystem store is working,
+       generate a new key somewhere private (your own computer, not CoCalc),
+       enter it in the cloud storage & remote file systems dialog, then delete the file.
+    2. On your server, create a dedicated user (e.g. ``cocalc_datashare``) with limited access
        for which you only grant permission to access the files needed by your project.
 
 ************
