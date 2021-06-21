@@ -704,6 +704,13 @@ Run this command to generate the pair::
 which generates ``mykey`` (private key) and ``mykey.pub`` (public key).
 Instead of ``mykey`` you can choose any name you like.
 
+.. warning::
+
+    The ``-N ''`` flag generates a key without a password, therefore anyone who has
+    access to this key will then be able to access your remote server.  This is
+    generally not recommended for security reasons, but is needed for the Datastore
+    to work.  See below for ways to mitigate any associated risk.
+
 To get the content of the private key, run::
 
     cat mykey
@@ -753,7 +760,26 @@ I.e. maybe you have to run ``chmod go-rwx ~/.ssh/authorized_keys``!
     If you see a prompt, everything is fine. Exit via "exit" or Ctrl-D.
     Otherwise, you see a verbose log of messages,
     where some of these messages will explain why it wasn't able to connect.
+    
+    Note: if you are connecting to CoCalc via SSH, make sure you do not use
+    ForwardAgent (command-line option ``ssh -A``) while testing this, otherwise you
+    might be able to connect to your server using your forwarded agent rather than
+    authenticating with ``mykey``.  The Datastore will not have access to any forwarded
+    agent, however, and thus may still fail.
+        
+    One suble issue is that somme older servers may not accept ``ed25519`` keys:
+    in this case you might try with an RSA key ``ssh-keygen -t rsa -f mykey -N ''``
+    instead.
 
+    As mentioned above, using passwordless keys (``-N ''`` above) is generally regarded as
+    a security risk, but is needed for the CoCalc Datastore to work.  It will become private once entered,
+    but anyone who has acces to the `mykey` file will be able to authenticate to your server.
+    To mitigate any potential risks:
+    
+    1. Once you get your Datastore working, generate a new key somewhere private (your
+       computer, not CoCalc), enter it in the Datastore, then delete the file.
+    2. On your server, create a deadicate user (i.e. `cocalc_datashare`) with limited access
+       for which you only grant permission to access the files needed by your project.
 
 ************
 AWS S3
