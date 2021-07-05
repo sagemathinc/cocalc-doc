@@ -11,6 +11,13 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-07-05:
+
+2021-07-05: Package updates
+---------------------------------------------
+
+Various updates for Python, R and other languages and also Linux system packages.
+
 .. _update-2021-06-07:
 
 2021-06-07: Octave ``6.2.0`` & Bugfixes
