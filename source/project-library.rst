@@ -23,5 +23,6 @@ and then copy over the files (4).
 .. image:: img/project-library.png
     :width: 100%
     :align: center
+    :alt: project library image
 
 All material is managed by this repository: <https://github.com/sagemathinc/cocalc-examples>.
