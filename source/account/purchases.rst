@@ -6,16 +6,18 @@ Purchases
 ==================================
 
 .. figure:: img/settings/subscr-select.png
-     :width: 80%
+     :width: 90%
      :align: center
+     :alt: purchases tab when there are no active subscriptions
 
-     *order form displays if no subscriptions are active*
+     order form displays if no subscriptions are active
 
 .. figure:: img/settings/subscr-display.png
-     :width: 80%
+     :width: 90%
      :align: center
+     :alt: purchases tab when there are active subscriptions
 
-     *active subscriptions, if present, are displayed*
+     active subscriptions, if present, are displayed
 
 .. index:: Account Tab; payment methods
 .. _payment-methods:
@@ -46,8 +48,9 @@ The word "Trialing" indicates a free trial or other custom subscription plan.
 .. figure:: img/account/three-subs.png
      :width: 90%
      :align: center
+     :alt: active subscriptions displayed in purchases tab
 
-     *list of active subscriptions*
+     list of active subscriptions
 
 Note that you can "stack" multiple course plans to combine the resources. In the example above, a Small Course (25 students) and a Medium Course (70 students) are combined to provide for a class of 95 students.
 
@@ -63,8 +66,9 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 .. figure:: img/account/three-subs-cancel.png
      :width: 90%
      :align: center
+     :alt: warning dialog after clicking cancel on a subscription
 
-     *dialog shown after clicking "Cancel" in the previous example*
+     dialog shown after clicking "Cancel" in the previous example
 
 
 Invoices and receipts
@@ -75,12 +79,14 @@ The "Invoices and receipts" section shows a list of CoCalc purchases made using 
 .. figure:: img/account/three-rcpt-hidden.png
      :width: 90%
      :align: center
+     :alt: condensed list of receipts
 
-     *view of receipts*
+     view of receipts
 
 .. figure:: img/account/three-rcpt-shown.png
      :width: 90%
      :align: center
+     :alt: expanded list of receipts
 
-     *view of receipts showing details for each item*
+     view of receipts showing details for each item
 

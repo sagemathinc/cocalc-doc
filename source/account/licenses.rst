@@ -11,6 +11,7 @@ Under "Licenses", you can keep track of CoCalc licenses you manage or use in you
 .. figure:: img/settings/account-licenses-manage.png
      :width: 90%
      :align: center
+     :alt: licenses section under account tab
 
      Licenses tab
 
@@ -32,6 +33,7 @@ Under **Discount**, click **Academic** if applicable, to enable a 40% discount (
 .. figure:: img/settings/buy-lic-1.png
      :width: 90%
      :align: center
+     :alt: academic or business license selector
 
      ..
 
@@ -47,6 +49,7 @@ For **Type**, enter the quota for each project.
 .. figure:: img/settings/buy-lic-2.png
      :width: 90%
      :align: center
+     :alt: top part of license configuration dialog
 
      ..
 
@@ -75,6 +78,7 @@ If you click "Show advanced options", more choices appear.
 .. figure:: img/settings/buy-lic-2a.png
      :width: 90%
      :align: center
+     :alt: advanced options subdialog
 
      ..
 
@@ -113,6 +117,7 @@ Period, Title, Cost, and Purchase
 .. figure:: img/settings/buy-lic-3.png
      :width: 90%
      :align: center
+     :alt: bottom part of license configuration dialog
 
      ..
 
@@ -135,6 +140,7 @@ Licenses that you manage
 .. figure:: img/settings/lic-you-manage.png
      :width: 100%
      :align: center
+     :alt: information about your licenses
 
      Licenses that you manage
 

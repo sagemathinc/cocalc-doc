@@ -16,6 +16,7 @@ Account settings
 .. figure:: img/settings/account-settings.png
      :width: 80%
      :align: center
+     :alt: account settings dialog
 
      ..
 
@@ -38,6 +39,7 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 .. figure:: img/settings/delete-account.png
      :width: 50%
      :align: center
+     :alt: delete account warning
 
      *warning displayed when "Delete Account..." is clicked*
 
@@ -51,6 +53,7 @@ Other settings
 .. image:: img/settings/prefs-other.png
      :width: 80%
      :align: center
+     :alt: other preference settings
 
 * Dark mode: CoCalc allows you to specify dark mode for all windows in "Other settings". See the :ref:`News update on dark mode <overall-dark-mode>` for more information.
 * Confirm
@@ -63,6 +66,7 @@ Other settings
     .. image:: img/settings/prefs-other-gen-names.png
          :width: 80%
          :align: center
+         :alt: generated filenames menu
 * Default file sort
 * Number of files per page
 
@@ -86,6 +90,7 @@ You can alter the standby timeout under Account / Preferences / Other / Standby 
     .. image:: img/settings/standby-screen.png
          :width: 80%
          :align: center
+         :alt: standby screen
 
 .. note::
 
@@ -103,12 +108,14 @@ Editor settings
 .. figure:: img/settings/editor-settings-0-top.png
      :width: 80%
      :align: center
+     :alt: upper half of editor options list
 
      *editor settings (upper part)*
 
 .. figure:: img/settings/editor-settings-1-bottom.png
      :width: 80%
      :align: center
+     :alt: lower half of editor options list
 
      *editor settings (lower part)*
 
