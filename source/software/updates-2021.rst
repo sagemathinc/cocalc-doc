@@ -11,6 +11,19 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-07-12:
+
+2021-07-12: MODIS and PreTeXt
+------------------------------------------------
+
+- Executables:
+    - ``pretext`` CLI tool for `PreTeXt <https://pretextbook.org/doc/guide/html/guide-toc.html>`_
+
+- R (system-wide):
+    - (new) `MODIS`_ – *automatizing the creation of time series of raster images derived from MODIS Land Products data*
+
+- various system package updates
+
 .. _update-2021-07-05:
 
 2021-07-05: Package updates
@@ -445,3 +458,5 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _Pluto Notebook: https://github.com/fonsp/Pluto.jl
 .. _HAXE: https://haxe.org/
 .. _ggplot2: https://ggplot2.tidyverse.org/
+.. _MODIS: https://docs.ropensci.org/MODIStsp/
+
