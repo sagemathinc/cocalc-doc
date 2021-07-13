@@ -11,6 +11,15 @@ Software Updates 2021
 .. highlight:: python
 
 
+
+.. _update-2021-07-13:
+
+2021-07-13: flipper in Sage
+---------------------------------------
+
+- Sage 9.3:
+    - (new) `flipper`_ – *a program for computing the action of mapping classes on laminations on punctured surfaces using ideal triangulation coordinates*
+
 .. _update-2021-07-12:
 
 2021-07-12: MODIS and PreTeXt
@@ -459,4 +468,4 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _HAXE: https://haxe.org/
 .. _ggplot2: https://ggplot2.tidyverse.org/
 .. _MODIS: https://docs.ropensci.org/MODIStsp/
-
+.. _flipper: https://github.com/MarkCbell/flipper
