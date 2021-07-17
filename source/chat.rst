@@ -10,7 +10,8 @@ to enhance real-time collaboration on files.
 
 .. image:: img/chatroom.png
     :align: center
-    :width: 75%
+    :width: 95%
+    :alt: two-person chat showing typeset integral
 
 
 Features
@@ -40,6 +41,7 @@ Features
 
 .. |FORMULA| image:: img/chatroom-formula.png
                   :height: 20pt
+                  :alt: typeset math formula
 
 Chatroom
 ====================
