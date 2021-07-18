@@ -12,6 +12,7 @@ Make a file or directory publicly visible to the world.
 
     CoCalc's share server available at: https://share.cocalc.com/share
 
+.. _publishing-files:
 
 Publishing Files
 ==================

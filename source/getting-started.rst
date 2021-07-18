@@ -248,8 +248,7 @@ From left to right:
 
 .. _ft-share:
 
-* |lock-icon| **Share** - If a file is selected, this button allows you to share it. Files shared publicly
-  can be viewed by people without a CoCalc login.
+* |lock-icon| **Private/Public** - If a file is selected, this button allows you to share it, or stop sharing. Files shared publicly can be viewed by people without a CoCalc login. You can see a list of all your shared files under :doc:`account/public-files`.
 
 Your CoCalc Session
 -------------------

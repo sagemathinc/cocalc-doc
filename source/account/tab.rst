@@ -3,7 +3,7 @@
 Account Tab
 *****************
 
-The Account Tab is where you manage settings, subscriptions, and resources across your projects. There are 6 dialog pages under Account Tab.
+The Account Tab is where you manage settings, subscriptions, and resources across your projects. Here are the dialog pages under the Account Tab.
 
 .. index:: Sign out of CoCalc; from Account tab
 .. _sign-out:
@@ -27,6 +27,7 @@ Under "Account" you will find a button to ``Sign out`` at upper right, and the f
    upgrades
    ssh
    support
+   public-files
 
 
 
