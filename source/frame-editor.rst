@@ -14,6 +14,7 @@ Therefore, you can not only view the same Python source code file in two places,
 
 .. image:: img/frame-editor-python.png
     :width: 100%
+    :alt: split screen with two views of source file plus terminal running ipython
 
 Supported file types
 =======================
