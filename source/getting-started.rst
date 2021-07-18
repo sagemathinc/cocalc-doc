@@ -180,6 +180,7 @@ When you select a file in the toolbar, its contents are displayed in the browser
 
 .. image:: img/getting-started/toolbars-files-a.png
      :width: 90%
+     :alt: Files toolbar. See below for description.
 
 From left to right:
 
@@ -213,13 +214,14 @@ From left to right:
 
 * |microchip| **Processes** - This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
 
-.. note::
-
-    The "Memory" column in the Table of Processes can help you track down out-of-memory problems.
-
 .. image:: img/getting-started/process-info.png
      :align: center
      :width: 95%
+     :alt: Processes tab. See information above.
+
+.. note::
+
+    The "Memory" column in the Table of Processes can help you track down out-of-memory problems.
 
 .. _ft-settings:
 
@@ -239,15 +241,15 @@ From left to right:
   * Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
 
 
-.. _ft-share:
-
-* |share-square| **Share** - If a file is selected, this button allows you to share it. Files shared publicly
-  can be viewed by people without a CoCalc login.
-
 .. _ft-comment:
 
-* |comment| **Chat** - If a file is selected, you can click here to start text or video chat.
+* |comment-icon| **Chat** - If a file is selected, you can click here to start text or video chat.
   Collaborators on the project will get a notification when chat is opened or updated.
+
+.. _ft-share:
+
+* |lock-icon| **Share** - If a file is selected, this button allows you to share it. Files shared publicly
+  can be viewed by people without a CoCalc login.
 
 Your CoCalc Session
 -------------------
@@ -323,49 +325,58 @@ https://github.com/sagemathinc/cocalc/wiki/GDPR
 You can find the CoCalc Accessibility Statement on our wiki at https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement
 
 
-
-
 .. |cocalc-logo| image:: img/icons/cocalc-logo.svg
     :height: 20px
     :width: 20px
+    :alt: cocalc logo icon
 .. |info-circle|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/info-circle.png
      :width: 16px
+     :alt: info i-circle icon
 .. |medkit|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png
      :width: 16px
+     :alt: help medkit icon
 .. |bell|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bell-o.png
      :width: 16px
+     :alt: notifications bell icon
 .. |wifi|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png
      :width: 16px
+     :alt: connection status wifi icon
 .. |expand| image:: img/icons/expand.png
     :height: 20px
+    :alt: expand fullscreen icon
 .. |folder-open|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/folder-open-o.png
      :width: 16px
+     :alt: files folder open icon
 .. |plus-circle|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/plus-circle.png
      :width: 16px
+     :alt: new file plus circle icon
 .. |history|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
      :width: 16px
+     :alt: log history icon
 .. |search|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/search.png
      :width: 16px
+     :alt: search magnifying glass icon
 .. |wrench|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wrench.png
      :width: 16px
-.. |share-square|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/share-square-o.png
-     :width: 16px
-.. |comment|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/comment-o.png
-     :width: 16px
-.. |settings|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/gear.png
-     :width: 16px
+     :alt: settings wrench icon
+.. |lock-icon|
+     image:: img/antd-icons/lock-icon.png
+     :width: 24px
+     :alt: To share, click lock icon.
+.. |comment-icon|
+     image:: img/antd-icons/comment-icon.png
+     :width: 24px
+     :alt: To open chat, click comment icon.
 .. |microchip|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/microchip.png
      :width: 16px
+     :alt: processes microchip icon
