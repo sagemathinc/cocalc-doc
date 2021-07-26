@@ -11,6 +11,19 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-07-26:
+
+2021-07-26  Julia 1.6.2
+-------------------------------------------
+
+- Julia:
+    - (upd) version 1.6.2
+    - (upd) all globally installed packages
+
+- Executables
+    - (upd) `Jupyter Lab`_ ``3.0.16``
+    - (upd) `pandoc`_ ``2.14.1``
+    - (new) `Paraview`_ – as a test. Open an x11 desktop, then ``cd /ext/paraview/current/bin/`` and ``./paraview``.
 
 .. _update-2021-07-13:
 
@@ -469,3 +482,4 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _ggplot2: https://ggplot2.tidyverse.org/
 .. _MODIS: https://docs.ropensci.org/MODIStsp/
 .. _flipper: https://github.com/MarkCbell/flipper
+.. _Paraview: https://www.paraview.org/
