@@ -1,0 +1,342 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sharing Files &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/share.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Projects" href="project.html" />
+    <link rel="prev" title="Snippets" href="snippets.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/share.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sharing Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#publishing-files">Publishing Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-share-server">Using the Share Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-sharing-tips">File-sharing Tips</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Sharing Files</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/share.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="index-0"></span><div class="section" id="sharing-files">
+<span id="index-1"></span><span id="id1"></span><h1>Sharing Files<a class="headerlink" href="#sharing-files" title="Permalink to this headline">¶</a></h1>
+<p>Make a file or directory publicly visible to the world.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">CoCalc’s share server available at: <a class="reference external" href="https://share.cocalc.com/share">https://share.cocalc.com/share</a></p>
+</div>
+<div class="section" id="publishing-files">
+<span id="id2"></span><h2>Publishing Files<a class="headerlink" href="#publishing-files" title="Permalink to this headline">¶</a></h2>
+<p>You can make individual files and folders public.
+First, do either of the following:</p>
+<ul class="simple">
+<li>With the file open, click the lock icon <img alt="lock" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/lock.png" /> at upper right. Note: if you see the bullhorn icon <img alt="bullhorn" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/bullhorn.png" /> instead of the lock, that means your file is already shared; you could click it to change sharing settings.</li>
+</ul>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/lock.png"><img alt="_images/lock.png" src="_images/lock.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-text"><em>click lock icon to enter file-sharing dialog</em></span></p>
+</div>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/bullhorn.png"><img alt="_images/bullhorn.png" src="_images/bullhorn.png" style="width: 50%;" /></a>
+<p class="caption"><span class="caption-text"><em>lock is replaced by bullhorn if file is already shared</em></span></p>
+</div>
+<ul class="simple">
+<li>In the Files listing for your project, check the box in the leftmost column for your file, and click <img alt="square" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/share-square-o.png" /> Share. You can also select more than one file in order to share them together (e.g. an HTML page that includes images)</li>
+</ul>
+<p>After either of these steps, you can see the “Share” dialog.
+You may enter a description for the file being shared,
+then click <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">item</span> <span class="pre">public</span></code> and your file is shared.</p>
+<a class="reference internal image-reference" href="_images/share-dialog.png"><img alt="_images/share-dialog.png" class="align-center" src="_images/share-dialog.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="using-the-share-server">
+<span id="index-2"></span><h2>Using the Share Server<a class="headerlink" href="#using-the-share-server" title="Permalink to this headline">¶</a></h2>
+<p>After clicking <code class="docutils literal notranslate"><span class="pre">Make</span> <span class="pre">item</span> <span class="pre">public</span></code> as above, the <strong>public URL</strong> will be displayed under <code class="docutils literal notranslate"><span class="pre">Shared</span> <span class="pre">publicly</span></code>.
+You can click the <a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/external-link.png"><img alt="external" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/external-link.png" style="width: 16px;" /></a> button to open it at the share server.</p>
+<p>With that link, your file is available read-only on the CoCalc lightweight <a class="reference external" href="https://share.cocalc.com/share/">share server</a>.
+A CoCalc login is not needed to access files on the share server.
+Files on the share server are <a class="reference external" href="https://www.google.com/search?q=site%3Acocalc.com%2Fshare">indexed by Google</a> unless you click the checkbox next to “Unlisted: Only allow those with a link to view this.”.</p>
+</div>
+<div class="section" id="file-sharing-tips">
+<span id="index-3"></span><h2>File-sharing Tips<a class="headerlink" href="#file-sharing-tips" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>If your document depends on auxiliary files (e.g., images embedded in a markdown file) make sure these auxiliary files are also published. A convenient way to do this is to have auxiliary files in a common folder and share that folder.</li>
+<li>Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in “raw” form, i.e. without CoCalc controls, by opening in the share server and clicking “Raw” at upper right, or by removing the parameter setting <code class="docutils literal notranslate"><span class="pre">?viewer=share</span></code> from the share server URL for the file.</li>
+<li>Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage <code class="docutils literal notranslate"><span class="pre">&#64;interact</span></code>, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser, for example in 3d plots like <a class="reference external" href="https://share.cocalc.com/share/7eee8ccdeb4acf37e6c258df1cd973871373df05/Public/hearts.ipynb?viewer=share">this cardiod</a>, will work when served from the share server.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you would like to collaborate and chat with other people on documents in your project,
+go the <a class="reference internal" href="project-settings.html"><span class="doc">Project Settings</span></a> tab and “<a class="reference internal" href="project-settings.html#add-collaborators"><span class="std std-ref">Add people to project</span></a>”.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="project.html" class="btn btn-neutral float-right" title="Projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="snippets.html" class="btn btn-neutral float-left" title="Snippets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

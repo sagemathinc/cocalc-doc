@@ -1,0 +1,536 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/getting-started.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Licenses" href="licenses.html" />
+    <link rel="prev" title="What is CoCalc?" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/getting-started.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-an-account">Creating an Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#signing-in">Signing in</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-project">Creating a Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-file">Creating a File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-a-jupyter-notebook">Running a Jupyter Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-project-toolbar">The Project Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-files-toolbar">The Files Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#your-cocalc-session">Your CoCalc Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#signing-out">Signing Out</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-help">Getting help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#statements">Statements</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/getting-started.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>A guide for your first CoCalc session.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#creating-an-account" id="id1">Creating an Account</a></li>
+<li><a class="reference internal" href="#signing-in" id="id2">Signing in</a></li>
+<li><a class="reference internal" href="#creating-a-project" id="id3">Creating a Project</a></li>
+<li><a class="reference internal" href="#creating-a-file" id="id4">Creating a File</a></li>
+<li><a class="reference internal" href="#running-a-jupyter-notebook" id="id5">Running a Jupyter Notebook</a></li>
+<li><a class="reference internal" href="#the-project-toolbar" id="id6">The Project Toolbar</a></li>
+<li><a class="reference internal" href="#the-files-toolbar" id="id7">The Files Toolbar</a></li>
+<li><a class="reference internal" href="#your-cocalc-session" id="id8">Your CoCalc Session</a></li>
+<li><a class="reference internal" href="#signing-out" id="id9">Signing Out</a></li>
+<li><a class="reference internal" href="#next-steps" id="id10">Next steps</a></li>
+<li><a class="reference internal" href="#getting-help" id="id11">Getting help</a></li>
+<li><a class="reference internal" href="#statements" id="id12">Statements</a></li>
+</ul>
+</div>
+<div class="section" id="creating-an-account">
+<h2><a class="toc-backref" href="#id1">Creating an Account</a><a class="headerlink" href="#creating-an-account" title="Permalink to this headline">¶</a></h2>
+<p>On your first visit to CoCalc.com, you will see the welcome screen.
+Click either <strong>Sign In</strong> button:</p>
+<a class="reference internal image-reference" href="_images/first-home-page.jpg"><img alt="Main landing page for CoCalc" src="_images/first-home-page.jpg" style="width: 90%;" /></a>
+<p>At the next screen, complete the “Create an Account” dialog: Agree to the Terms of Service. Then, choose a sign-in method. In addition to signing up with your email address,
+you have the option of signing using your credentials for
+Facebook, Github, Google, or Twitter.</p>
+<a class="reference internal image-reference" href="_images/create-account.jpg"><img alt="Sign-in page with Create an Account panel at left" src="_images/create-account.jpg" style="width: 90%;" /></a>
+<p>In the image below, sign up via email is highlighted:</p>
+<a class="reference internal image-reference" href="_images/start-create2-a.png"><img alt="Create an Account dialog" src="_images/start-create2-a.png" style="width: 50%;" /></a>
+</div>
+<div class="section" id="signing-in">
+<h2><a class="toc-backref" href="#id2">Signing in</a><a class="headerlink" href="#signing-in" title="Permalink to this headline">¶</a></h2>
+<p>Once you have signed in for the first time,
+sign-in in will be automatic if you are using
+the same browser and computer.
+All you will
+generally need to do is point your browser
+to <a class="reference external" href="https://cocalc.com">https://cocalc.com</a>.</p>
+<dl class="docutils">
+<dt>You will need to sign in again if you</dt>
+<dd><ul class="first last simple">
+<li>connect from a different browser or computer</li>
+<li>clear your browser cookies.</li>
+<li>sign out</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="creating-a-project">
+<h2><a class="toc-backref" href="#id3">Creating a Project</a><a class="headerlink" href="#creating-a-project" title="Permalink to this headline">¶</a></h2>
+<p>Now that you are signed in, create your first project.
+Click in the <strong>Project title</strong> area and enter a project name, for example
+“My Project”, and then click <strong>Create Project</strong>.</p>
+<a class="reference internal image-reference" href="_images/proj-1-a.png"><img alt="Create Project dialog" src="_images/proj-1-a.png" style="width: 90%;" /></a>
+<p>After the project is created, you will see it appear in your
+list of projects. Click on the project name to open the project:</p>
+<a class="reference internal image-reference" href="_images/proj-2-a.png"><img alt="New project appears in project list" src="_images/proj-2-a.png" style="width: 90%;" /></a>
+</div>
+<div class="section" id="creating-a-file">
+<h2><a class="toc-backref" href="#id4">Creating a File</a><a class="headerlink" href="#creating-a-file" title="Permalink to this headline">¶</a></h2>
+<p>Once you have opened a project, you are ready to create a file.</p>
+<p>If your project isn’t upgraded, you will get a red banner warning that your
+project is running on a trial server. Ignore the warning for now and keep going.</p>
+<p>Click <strong>(+) New</strong> and enter <strong>example</strong> where it says,
+<strong>Name your file…</strong>.
+and click <strong>Jupyter notebook</strong> to select the file type.
+Clicking a button for the type of file causes
+the file extension is added automatically.</p>
+<a class="reference internal image-reference" href="_images/file-1-a.png"><img alt="_images/file-1-a.png" src="_images/file-1-a.png" style="width: 90%;" /></a>
+</div>
+<div class="section" id="running-a-jupyter-notebook">
+<h2><a class="toc-backref" href="#id5">Running a Jupyter Notebook</a><a class="headerlink" href="#running-a-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<p>We’re going to run a simple Python program, so let’s change
+the kernel from <strong>SageMath (stable)</strong> to <strong>Python 3 (Anaconda 5)</strong>.
+In the image, arrow 1 points to the place where the current kernel is displayed,
+while arrows 2 and 3 indicate how to select the new Jupyter kernel.</p>
+<a class="reference internal image-reference" href="_images/file-6-a.png"><img alt="_images/file-6-a.png" src="_images/file-6-a.png" style="width: 90%;" /></a>
+<p>Now enter a line of python code in the first cell of the notebook:</p>
+<a class="reference internal image-reference" href="_images/file-7.png"><img alt="_images/file-7.png" src="_images/file-7.png" style="width: 90%;" /></a>
+<p>And click Run or press Shift-Enter to run the code.</p>
+<a class="reference internal image-reference" href="_images/file-8-a.png"><img alt="_images/file-8-a.png" src="_images/file-8-a.png" style="width: 90%;" /></a>
+<span class="target" id="index-0"></span></div>
+<div class="section" id="the-project-toolbar">
+<span id="project-toolbar"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id6">The Project Toolbar</a><a class="headerlink" href="#the-project-toolbar" title="Permalink to this headline">¶</a></h2>
+<p>Here’s quick tour of the topmost toolbar in CoCalc, the <strong>Project Toolbar</strong>.</p>
+<a class="reference internal image-reference" href="_images/toolbars-projects-a.png"><img alt="_images/toolbars-projects-a.png" src="_images/toolbars-projects-a.png" style="width: 90%;" /></a>
+<p>Going from left to right:</p>
+<ul class="simple" id="index-2">
+<li><a class="reference internal" href="_images/cocalc-logo.svg"><img alt="cocalc logo icon" height="20px" src="_images/cocalc-logo.svg" width="20px" /></a> <strong>Projects button</strong> - click here to create a new project and see a list of your existing projects. Any text you type into the <strong>Search for Projects</strong> field will be used to select which projects are displayed. Any project with matching text in Title or Description will appear in the filtered list. If you have any hidden or deleted projects, a checkbox will appear to allow you to show those.</li>
+</ul>
+<ul class="simple" id="index-3">
+<li><strong>Open projects</strong> - a tab button will appear for each project you have open.</li>
+</ul>
+<ul class="simple" id="index-4">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/info-circle.png"><img alt="info i-circle icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/info-circle.png" style="width: 16px;" /></a> <strong>CoCalc</strong> - Information about CoCalc. Includes links to tutorials, examples, lists of available languages, libraries, and packages, and real-time stats for the platform.</li>
+</ul>
+<span id="index-5"></span><ul class="simple" id="help-button">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png"><img alt="help medkit icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png" style="width: 16px;" /></a> <strong>Help</strong> - <strong>Use this button if you have any questions about CoCalc.</strong> If you have a question while you have a file open in CoCalc, clicking <strong>Help</strong> will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don’t expect, it helps to include steps for us to reproduce the problem.</li>
+</ul>
+<ul class="simple" id="index-6">
+<li><strong>Account</strong> - Click here to update your profile, sign out, order subscriptions, view your upgrades, <a class="reference external" href="http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html">add SSH Keys</a>, and check on support tickets. Read more about account operations <a class="reference internal" href="account.html"><span class="doc">here</span></a>.</li>
+</ul>
+<ul class="simple" id="index-7">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bell-o.png"><img alt="notifications bell icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bell-o.png" style="width: 16px;" /></a> <strong>Notifications</strong> - A count is displayed over the bell if there are chat updates or file edits in projects you own or collaborate on. Click the bell to view a list of pending notifications, showing which account originated them and a link to the project or file being updated at the time.</li>
+</ul>
+<ul id="index-8">
+<li><p class="first"><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png"><img alt="connection status wifi icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png" style="width: 16px;" /></a> <strong>Connection Status</strong>. The connection status icon changes color as shown below to indicate changes in the connection between your browser and CoCalc servers.</p>
+<a class="reference internal image-reference" href="_images/conn-stat.png"><img alt="See below for connection status icon color codes." src="_images/conn-stat.png" style="width: 35%;" /></a>
+<p>Colors for the connection status icon:</p>
+<ul class="simple">
+<li>Grey: connected, no messages in flight.</li>
+<li>Dark Blue: connected, moderate load.</li>
+<li>Light Blue: connected, significant load.</li>
+<li>Red: connected, serious message backlog.</li>
+<li>Orange: disconnected / connecting.</li>
+</ul>
+<p>Clicking the connection status icon brings up a window with additional connection detail, including round-trip ping time to the CoCalc servers. If the ping time doesn’t appear right away, wait a bit; it’s tested every 30 seconds when the window is open.</p>
+<a class="reference internal image-reference" href="_images/conn-ind.png"><img alt="Connection status pop-up showing ping time, hub server id, and message counts." src="_images/conn-ind.png" style="width: 70%;" /></a>
+</li>
+</ul>
+<ul class="simple" id="index-9">
+<li><a class="reference internal" href="_images/expand.png"><img alt="expand fullscreen icon" src="_images/expand.png" style="height: 20px;" /></a> <strong>Fullscreen Mode</strong> - Clicking here will toggle fullscreen mode, in which the project and file toolbars are shown or hidden.</li>
+</ul>
+<span class="target" id="index-10"></span></div>
+<div class="section" id="the-files-toolbar">
+<span id="files-toolbar"></span><span id="index-11"></span><h2><a class="toc-backref" href="#id7">The Files Toolbar</a><a class="headerlink" href="#the-files-toolbar" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Files Toolbar</strong> is next, appears below the Project Toolbar when you have a project open.
+Use it to work with files in the currently open project.
+When you open a file, its name appears in the Files Toolbar.
+When you select a file in the toolbar, its contents are displayed in the browser.</p>
+<a class="reference internal image-reference" href="_images/toolbars-files-a.png"><img alt="Files toolbar. See below for description." src="_images/toolbars-files-a.png" style="width: 90%;" /></a>
+<p>From left to right:</p>
+<ul class="simple" id="ft-files">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/folder-open-o.png"><img alt="files folder open icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/folder-open-o.png" style="width: 16px;" /></a> <strong>Files</strong> - If you don’t have a file open, clicking here will show you a list of files
+in the project’s home directory. If you are working on a file, clicking <strong>Files</strong> will show a list of
+files in the directory containing the currently selected file. You can enter search characters to
+filter the file list for filenames containing the search text.</li>
+</ul>
+<ul class="simple" id="ft-new">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/plus-circle.png"><img alt="new file plus circle icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/plus-circle.png" style="width: 16px;" /></a> <strong>New</strong> - click to create or upload new files. <strong>New</strong> also lets you
+browse the <a class="reference external" href="http://blog.sagemath.com/cocalc/2018/03/06/cocalc-library.html">CoCalc Library</a>, which contains code examples and entire books about various toolsets
+and science topics, ready to copy into your project.</li>
+</ul>
+<ul class="simple" id="ft-history">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png"><img alt="log history icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png" style="width: 16px;" /></a> <strong>Log</strong> - The <strong>Project Activity Log</strong> shows recent activity in your project:
+logins, files opened and uploaded, etc. If you click on a filename in the log, it will open
+that file. This is often the quickest way to resume work on a file that was recently closed.</li>
+</ul>
+<ul class="simple" id="ft-search">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/search.png"><img alt="search magnifying glass icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/search.png" style="width: 16px;" /></a> <strong>Find</strong> - Search  for files containing the specified text in the directory that contains
+the currently selected file, or the project home directory if no file is selected. There are options
+to for searching subdirectories, case sensitive search, including hidden files, and restricting search
+to files in a git repository.</li>
+</ul>
+<ul class="simple" id="ft-info">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/microchip.png"><img alt="processes microchip icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/microchip.png" style="width: 16px;" /></a> <strong>Processes</strong> - This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.</li>
+</ul>
+<a class="reference internal image-reference" href="_images/process-info.png"><img alt="Processes tab. See information above." class="align-center" src="_images/process-info.png" style="width: 95%;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The “Memory” column in the Table of Processes can help you track down out-of-memory problems.</p>
+</div>
+<ul class="simple" id="ft-settings">
+<li><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wrench.png"><img alt="settings wrench icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wrench.png" style="width: 16px;" /></a> <strong>Settings</strong> - This tab is where you can set a description for your project, add or remove
+upgrades, hide or delete the project, add a project-specific <a class="reference external" href="http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html">SSH Key</a>, view and add collaborators, stop and restart the project and the Sage worksheet server,
+and launch the Plain Jupyter and JupyterLab servers.
+<em>Hint: Adding hashtags to the description can make it easy to find a subject with the Project button if you have a large number of projects.</em></li>
+</ul>
+<ul class="simple" id="ft-open-files">
+<li><strong>Open Files</strong> - a button will appear for each file you have open. There are several ways to open a file in CoCalc:<ul>
+<li>Select the name of the file in <a class="reference internal" href="project-files.html"><span class="doc">Project Files</span></a> list.</li>
+<li>Select the filename in an entry in the <a class="reference internal" href="#ft-history"><span class="std std-ref">Project Activity Log</span></a>.</li>
+<li>Use the <cite>open</cite> command to open the file <a class="reference internal" href="terminal.html#terminal-file-open"><span class="std std-ref">from a terminal</span></a>.</li>
+</ul>
+</li>
+</ul>
+<ul class="simple" id="ft-comment">
+<li><a class="reference internal" href="_images/comment-icon.png"><img alt="To open chat, click comment icon." src="_images/comment-icon.png" style="width: 24px;" /></a> <strong>Chat</strong> - If a file is selected, you can click here to start text or video chat.
+Collaborators on the project will get a notification when chat is opened or updated.</li>
+</ul>
+<ul class="simple" id="ft-share">
+<li><a class="reference internal" href="_images/lock-icon.png"><img alt="To share, click lock icon." src="_images/lock-icon.png" style="width: 24px;" /></a> <strong>Private/Public</strong> - If a file is selected, this button allows you to share it, or stop sharing. Files shared publicly can be viewed by people without a CoCalc login. You can see a list of all your shared files under <a class="reference internal" href="account/public-files.html"><span class="doc">Public files</span></a>.</li>
+</ul>
+</div>
+<div class="section" id="your-cocalc-session">
+<h2><a class="toc-backref" href="#id8">Your CoCalc Session</a><a class="headerlink" href="#your-cocalc-session" title="Permalink to this headline">¶</a></h2>
+<p id="index-12">CoCalc will keep track of projects you have open and files that are open within those projects.
+When you return, you will see the same open projects and files.
+In addition, if you have a program running and disconnect, it will keep running, with a few
+exceptions: the program will stop if any of the following occurs:</p>
+<ul class="simple">
+<li>your project is on a trial server (i.e. does not have Member Hosting upgrade applied) and the server is restarted</li>
+<li>you do not edit a file for more than the idle time specified in <strong>Project Settings</strong></li>
+<li>the program crashes or runs out of memory</li>
+</ul>
+</div>
+<div class="section" id="signing-out">
+<h2><a class="toc-backref" href="#id9">Signing Out</a><a class="headerlink" href="#signing-out" title="Permalink to this headline">¶</a></h2>
+<p>You <a class="reference internal" href="account/tab.html#sign-out"><span class="std std-ref">sign out</span></a> by using <strong>Account</strong> → <strong>Preferences</strong> → <strong>Sign Out…</strong></p>
+</div>
+<div class="section" id="next-steps">
+<h2><a class="toc-backref" href="#id10">Next steps</a><a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>Continue your tour of CoCalc, with these topics:</p>
+<ul class="simple">
+<li><a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a></li>
+<li><a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a></li>
+<li><a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheets</span></a></li>
+<li><a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a></li>
+<li><a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a></li>
+</ul>
+<p>Subscribe to CoCalc and upgrade your projects here:</p>
+<ul class="simple">
+<li><a class="reference internal" href="upgrade-guide.html"><span class="doc">Project Upgrades</span></a></li>
+</ul>
+</div>
+<div class="section" id="getting-help">
+<h2><a class="toc-backref" href="#id11">Getting help</a><a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
+<p id="index-13">In addition the <a class="reference internal" href="genindex.html"><span class="doc">Index</span></a> in this User Manual, if you have specific questions you can check the following:</p>
+<ul class="simple">
+<li>CoCalc Wiki <a class="reference external" href="https://github.com/sagemathinc/cocalc/search?utf8=%E2%9C%93&amp;q=&amp;type=Wikis">search</a></li>
+<li>CoCalc Wiki <a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/Home">index page</a></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We are in the process of migrating CoCalc Wiki documents into this User Manual.</p>
+</div>
+<span class="target" id="index-14"></span><p id="index-15">If you would like to chat with other CoCalc users, visit our Discord server: <a class="reference external" href="https://discord.gg/nEHs2GK">https://discord.gg/nEHs2GK</a></p>
+<span class="target" id="index-16"></span><p id="index-17">There is also a Google discussion group for CoCalc. You can view it online or use it as a mailing list: <a class="reference external" href="https://groups.google.com/forum/#!forum/cocalc">https://groups.google.com/forum/#!forum/cocalc</a></p>
+</div>
+<div class="section" id="statements">
+<h2><a class="toc-backref" href="#id12">Statements</a><a class="headerlink" href="#statements" title="Permalink to this headline">¶</a></h2>
+<p id="index-18">You can find the CoCalc GDPR Compliance Statement on our wiki at
+<a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/GDPR">https://github.com/sagemathinc/cocalc/wiki/GDPR</a></p>
+<p id="index-19">You can find the CoCalc Accessibility Statement on our wiki at <a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement">https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="licenses.html" class="btn btn-neutral float-right" title="Licenses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="What is CoCalc?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating a New Course &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-create-course.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Upgrading Student Projects" href="teaching-upgrade-course.html" />
+    <link rel="prev" title="Instructor Guide" href="teaching-instructors.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-create-course.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Creating a New Course</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-the-course-project">Creating the Course Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-teaching-assistants-to-the-course">Adding Teaching Assistants to the Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-the-course-file">Creating the Course File</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#split-course-into-multiple-groups">Split course into multiple groups</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-students-to-the-course">Adding Students to the Course</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reconfiguring-student-projects">Reconfiguring Student Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restricted-student-projects">Restricted Student Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-do-the-students-get">What do the Students Get?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Upgrading Student Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Course Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-after-course.html">After the Course Ends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-tips_and_tricks.html">FAQ, Tips and Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-legacy.html">Upgrading Student Projects (legacy version)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="teaching-instructors.html">Instructor Guide</a> &raquo;</li>
+        
+      <li>Creating a New Course</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/teaching-create-course.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="creating-a-new-course">
+<span id="create-a-new-course"></span><h1>Creating a New Course<a class="headerlink" href="#creating-a-new-course" title="Permalink to this headline">¶</a></h1>
+<p>In this section we will learn how to create a course project,
+how to populate it with a course management file and how to invite all of your students to join the course.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#creating-the-course-project" id="id3">Creating the Course Project</a></li>
+<li><a class="reference internal" href="#adding-teaching-assistants-to-the-course" id="id4">Adding Teaching Assistants to the Course</a></li>
+<li><a class="reference internal" href="#creating-the-course-file" id="id5">Creating the Course File</a></li>
+<li><a class="reference internal" href="#adding-students-to-the-course" id="id6">Adding Students to the Course</a></li>
+<li><a class="reference internal" href="#reconfiguring-student-projects" id="id7">Reconfiguring Student Projects</a></li>
+<li><a class="reference internal" href="#restricted-student-projects" id="id8">Restricted Student Projects</a></li>
+<li><a class="reference internal" href="#what-do-the-students-get" id="id9">What do the Students Get?</a></li>
+</ul>
+</div>
+<div class="section" id="creating-the-course-project">
+<h2><a class="toc-backref" href="#id3">Creating the Course Project</a><a class="headerlink" href="#creating-the-course-project" title="Permalink to this headline">¶</a></h2>
+<p>The first step is to create a teacher’s project to contain the course.</p>
+<p>Log into CoCalc and click on the <strong>Projects</strong> icon in the top left hand corner of the screen.</p>
+<a class="reference internal image-reference" href="_images/projects-cc.png"><img alt="Projects icon" class="align-center" src="_images/projects-cc.png" style="width: 100px;" /></a>
+<p>Click on <strong>Create New Project</strong>, fill out the <strong>Title</strong> and <strong>Description</strong> and click on <strong>Create Project</strong></p>
+<a class="reference internal image-reference" href="_images/create_new_course_project.png"><img alt="entering new project title and description" class="align-center" src="_images/create_new_course_project.png" style="width: 100%;" /></a>
+<p>The new project will appear at the top of the project list. Click on its  title to open it.</p>
+<a class="reference internal image-reference" href="_images/course_list.png"><img alt="new teacher project displayed in project list" class="align-center" src="_images/course_list.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="adding-teaching-assistants-to-the-course">
+<span id="teaching-add-ta"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id4">Adding Teaching Assistants to the Course</a><a class="headerlink" href="#adding-teaching-assistants-to-the-course" title="Permalink to this headline">¶</a></h2>
+<p>To add teaching assistants or other teachers to the course, open the course project, click on the settings tab and look down to see “Add new collaborators” in the project settings.</p>
+<p>Under <strong>Add new collaborators</strong>, you can find or add collaborators by name or email address.
+These collaborators will also have access to all associated student projects orchestrated by that project.
+Do <strong>not</strong> add any students of yours as project collaborators!</p>
+<a class="reference internal image-reference" href="_images/collaborators.png"><img alt="_images/collaborators.png" class="align-center" src="_images/collaborators.png" style="width: 50%;" /></a>
+<p>If the email address you add as a collaborator is not associated with a CoCalc account,
+an email will be sent to that address with instructions how to join.
+Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.</p>
+</div>
+<div class="section" id="creating-the-course-file">
+<span id="index-1"></span><h2><a class="toc-backref" href="#id5">Creating the Course File</a><a class="headerlink" href="#creating-the-course-file" title="Permalink to this headline">¶</a></h2>
+<p>Almost all aspects of a course, such as which students are enrolled and assignment management, are controlled by a <strong>.course</strong> file. We’ll now create this file.</p>
+<p>Open the course project, click on <strong>New</strong> and give the course a title.
+Here, I’ve used <cite>Autumn_2016_PHY001</cite>.
+Click on <strong>Manage a Course</strong> to create the course file.</p>
+<a class="reference internal image-reference" href="_images/new_managecourse.png"><img alt="_images/new_managecourse.png" class="align-center" src="_images/new_managecourse.png" style="width: 100%;" /></a>
+<p>If you go to the root of the course project directory, you will see that a new file has been created with the extension <strong>.course</strong>. This is the course management file and most aspects of your course are controlled by it.</p>
+<a class="reference internal image-reference" href="_images/course_file.png"><img alt="_images/course_file.png" class="align-center" src="_images/course_file.png" style="width: 100%;" /></a>
+<div class="admonition note" id="index-2">
+<p class="first admonition-title">Note</p>
+<p class="last">You may have more than one course file in a single project, as is explained in the next section. Be aware that that any account you add as a TA to the project will have access to course files and student work for <strong>all</strong> courses in that project.</p>
+</div>
+<div class="section" id="split-course-into-multiple-groups">
+<span id="index-3"></span><h3>Split course into multiple groups<a class="headerlink" href="#split-course-into-multiple-groups" title="Permalink to this headline">¶</a></h3>
+<p><strong>Note:</strong> If your course is large, it is possible to partition your class into several groups or sections.
+To accomplish that, simply create more than one course file.
+For example, <code class="docutils literal notranslate"><span class="pre">PHY001_A.course</span></code>, <code class="docutils literal notranslate"><span class="pre">PHY001_B.course</span></code>, <code class="docutils literal notranslate"><span class="pre">PHY001_C.course</span></code>, …
+for groups <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span></code> and so on.</p>
+<p>These course files are independent of each other,
+which allows not only different groups of students, but also different due dates, etc.</p>
+</div>
+</div>
+<div class="section" id="adding-students-to-the-course">
+<span id="adding-students"></span><span id="index-4"></span><h2><a class="toc-backref" href="#id6">Adding Students to the Course</a><a class="headerlink" href="#adding-students-to-the-course" title="Permalink to this headline">¶</a></h2>
+<p>Open your course by clicking on the <strong>.course</strong> file.</p>
+<p>In the <strong>Students</strong> tab, add a comma separated list of students’ emails addresses in the search box and click on the search icon.</p>
+<a class="reference internal image-reference" href="_images/student_list.png"><img alt="_images/student_list.png" class="align-center" src="_images/student_list.png" style="width: 100%;" /></a>
+<p>If you have a particular large class, the above method may take a very long time. If you have your students’ email addresses in an Excel spreadsheet (or Google Sheet) you can copy and paste them directly in the <strong>Add student</strong> box.</p>
+<p>After parsing the list, you can either explicitly the students to add (press shift or ctrl key for multiple selections),
+or just click the “Add all students” button.</p>
+<p>Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc.</p>
+<a class="reference internal image-reference" href="_images/student_list2.png"><img alt="_images/student_list2.png" class="align-center" src="_images/student_list2.png" style="width: 100%;" /></a>
+<p>If your project (the one with the .course file) has the <a class="reference internal" href="project-settings.html#internet-access"><span class="std std-ref">Internet Access upgrade</span></a>, any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.</p>
+</div>
+<p>Your course page will now look like this</p>
+<a class="reference internal image-reference" href="_images/student_list3.png"><img alt="_images/student_list3.png" class="align-center" src="_images/student_list3.png" style="width: 100%;" /></a>
+<ul class="simple">
+<li>Email addresses that are followed by <strong>(invited)</strong> do not have a CoCalc account yet.
+<strong>(invited)</strong> will disappear as soon as they sign up.</li>
+<li>You can see when each student last used the course project. In this case – never!</li>
+<li>The <strong>! Free</strong> warning next to each student shows that they are running this course on free servers.
+It is <strong>strongly</strong> recommended that you upgrade this to members-only servers for your students.
+You can also require in the configuration page that your students pay a small one-time fee to upgrade their projects (see below).</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some email services, notably Hotmail and Yahoo Mail, may silently block emails sent from our service. In that case, an invitation to sign up will not appear in the inbox or spam folder of the intended recipient and another method must be used to communicate sign-up information to the student.</p>
+</div>
+<span class="target" id="index-5"></span><span class="target" id="index-6"></span><span class="target" id="index-7"></span></div>
+<div class="section" id="reconfiguring-student-projects">
+<span id="index-8"></span><h2><a class="toc-backref" href="#id7">Reconfiguring Student Projects</a><a class="headerlink" href="#reconfiguring-student-projects" title="Permalink to this headline">¶</a></h2>
+<p>To ensure student projects have correct students and TA’s, titles and descriptions, click <cite>Reconfigure all projects</cite>.
+Doing so will also resend email invitations to students who have not already signed up for CoCalc.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/course-reconfigure.png"><img alt="_images/course-reconfigure.png" src="_images/course-reconfigure.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text">“Reconfigure all projects” at lower right in course Configuration</span></p>
+</div>
+</div>
+<div class="section" id="restricted-student-projects">
+<h2><a class="toc-backref" href="#id8">Restricted Student Projects</a><a class="headerlink" href="#restricted-student-projects" title="Permalink to this headline">¶</a></h2>
+<p>In the course Configuration tab, check any of the boxes under “Restrict student projects” to remove the corresponding functionality from student projects. See below for more information about each item. This information is also available if you hover over an option in the web dialog.</p>
+<p>Because some CoCalc features may not be compatible with course content created by an instructor, restricting a project can reduce student confusion and prevent issues with running and grading assignments. It may also keep students more focused, e.g., during an exam. Do not gain a false sense of security and expect these to prevent all forms of cheating.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/restrict-student-projects.png"><img alt="_images/restrict-student-projects.png" src="_images/restrict-student-projects.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text">“Restrict student projects” at lower right in course Configuration</span></p>
+</div>
+<ul class="simple">
+<li><strong>Disable file actions.</strong> Make it so students can’t delete, download, copy, publish, etc., files in their project.</li>
+<li><strong>Disable toggling whether cells are editable or deletable.</strong> Make it so that in Jupyter notebooks, students can’t toggle whether cells are editable or deletable, and also disables the RAW Json Editor and the Jupyter command list dialog. If you set this, you should probably disable all of the JupyterLab and Jupyter classic options too.</li>
+<li><strong>Disable Jupyter Classic notebook server.</strong> Disable the user interface for running a Jupyter classic server in the student project. This is important, since Jupyter classic provides its own extensive download and edit functionality; moreover, you may want to disable Jupyter classic to reduce confusion if you don’t plan to use it.</li>
+<li><strong>Disable Jupyter Classic mode.</strong> Do not allow opening Jupyter notebooks using classic mode. The Jupyter classic UI has some workarounds for the other restrictions here, and can also cause confusion if you don’t want students to use it in your class.</li>
+<li><strong>Disable JupyterLab notebook server.</strong> Disable the user interface for running a JupyterLab server in the student project. This is important, since JupyterLab it provides its own extensive download and edit functionality; moreover, you may want to disable JupyterLab to reduce confusion if you don’t plan to use it.</li>
+<li><strong>Disable command line terminal.</strong> Disables opening or running command line terminals in the student project.</li>
+<li><strong>Disable file uploads.</strong> Blocks uploading files to the student project via drag-n-drop or the Upload button.</li>
+<li><strong>Disable adding or removing collaborators.</strong> Removes the user interface for adding or removing collaborators from the student project.</li>
+<li><strong>Disable API keys (NOT IMPLEMENTED).</strong> Makes it so the HTTP API is blocked from accessing the student project. A student might use the API to get around various other restrictions.</li>
+<li><strong>Disable outgoing network access.</strong> Blocks all outgoing network connections from the student project.</li>
+<li><strong>Disable SSH access to project.</strong> Makes any attempt to ssh to the student project fail.</li>
+</ul>
+</div>
+<div class="section" id="what-do-the-students-get">
+<h2><a class="toc-backref" href="#id9">What do the Students Get?</a><a class="headerlink" href="#what-do-the-students-get" title="Permalink to this headline">¶</a></h2>
+<p>On being invited to a course, each student will have a project created for them in their CoCalc account that corresponds to that course. Each project will have you and the course Teaching assistants set as collaborators.</p>
+<p>The student’s course project will have its own individual quotas set for disk storage, internet access and so on (e.g. students get 1GB of RAM). These quotas will be the standard set of quotas that everybody gets with free CoCalc projects.</p>
+<p>You can learn more about upgrades and quotas in the <a class="reference internal" href="teaching-upgrade-course.html#course-upgrading-students"><span class="std std-ref">next chapter</span></a> or the <a class="reference internal" href="upgrade-guide.html"><span class="doc">Project Upgrades</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="teaching-upgrade-course.html" class="btn btn-neutral float-right" title="Upgrading Student Projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="teaching-instructors.html" class="btn btn-neutral float-left" title="Instructor Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

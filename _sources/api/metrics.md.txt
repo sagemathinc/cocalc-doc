@@ -1,0 +1,10 @@
+
+# metrics
+
+* ``metrics``: object containing the metrics (required)
+
+
+
+---
+
+.. mdinclude:: _footer.md

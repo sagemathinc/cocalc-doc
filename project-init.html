@@ -1,0 +1,457 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Project Initialization Scripts &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/project-init.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Projects FAQ" href="project-faq.html" />
+    <link rel="prev" title="Project Library" href="project-library.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/project-init.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="project.html">Projects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="project-list.html">Project List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-files.html">Project Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plus-new.html">(+) New</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-log.html">Project Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-settings.html">Project Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade-guide.html">Project Upgrades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-library.html">Project Library</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Project Initialization Scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#project-initialization">Project Initialization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example-1-record-project-start-time">Example 1: record project start time</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#other-languages-besides-bash">Other languages besides Bash?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example-2-a-periodic-task-in-python">Example 2: a periodic task in Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-3-periodic-task-in-sagemath">Example 3: Periodic task in SageMath</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#debugging">Debugging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#development">Development</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="project-faq.html">Projects FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="project.html">Projects</a> &raquo;</li>
+        
+      <li>Project Initialization Scripts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/project-init.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="project-initialization-scripts">
+<span id="index-0"></span><h1>Project Initialization Scripts<a class="headerlink" href="#project-initialization-scripts" title="Permalink to this headline">¶</a></h1>
+<p>All about the <strong>project-init.sh</strong> file.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#project-initialization" id="id2">Project Initialization</a></li>
+<li><a class="reference internal" href="#other-languages-besides-bash" id="id3">Other languages besides Bash?</a></li>
+<li><a class="reference internal" href="#debugging" id="id4">Debugging</a></li>
+<li><a class="reference internal" href="#development" id="id5">Development</a></li>
+</ul>
+</div>
+<p>While crontab-based management of periodic tasks is not available in CoCalc projects, we offer a flexible mechanism to use regular Bash, Python, or SageMath files for the same sort of capability.</p>
+<div class="section" id="project-initialization">
+<h2><a class="toc-backref" href="#id2">Project Initialization</a><a class="headerlink" href="#project-initialization" title="Permalink to this headline">¶</a></h2>
+<p>When a CoCalc project starts this is run:</p>
+<ul class="simple">
+<li>an instance of <strong>“local hub”</strong>. It is used for managing the project, communication with the outside world, monitoring, etc.</li>
+<li><strong>sshd</strong>: the endpoint for remote SSH access.</li>
+<li><strong>initialization file</strong>: an <em>optional</em> bash script called <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>, located in your home directory. It is only started <em>once</em>!</li>
+</ul>
+<div class="section" id="example-1-record-project-start-time">
+<h3>Example 1: record project start time<a class="headerlink" href="#example-1-record-project-start-time" title="Permalink to this headline">¶</a></h3>
+<p>A very simple example is to record the project’s start time.
+Go to your home directory and create a file <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code> with that content:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>date &gt; project-start
+</pre></div>
+</div>
+<p>This is a very simple bash script, which pipes the output of the <code class="docutils literal notranslate"><span class="pre">date</span></code> command into the file <code class="docutils literal notranslate"><span class="pre">project-start</span></code>.</p>
+<p>In order to see its effect, the file needs to be saved and the project restarted.
+Give it a few seconds to come back online and run the script.
+After that (maybe click the refresh button in the file listing) you should see this file and its content might look like:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Mon Sep 12 11:14:20 UTC 2017
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="other-languages-besides-bash">
+<h2><a class="toc-backref" href="#id3">Other languages besides Bash?</a><a class="headerlink" href="#other-languages-besides-bash" title="Permalink to this headline">¶</a></h2>
+<p>You can run any language via bash’s <code class="docutils literal notranslate"><span class="pre">exec</span></code>!
+For example, <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code> containing:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>exec python3 project_init.py
+</pre></div>
+</div>
+<p>will run a Python 3 initialization file named <code class="docutils literal notranslate"><span class="pre">project_init.py</span></code>.</p>
+<div class="section" id="example-2-a-periodic-task-in-python">
+<span id="index-1"></span><h3>Example 2: a periodic task in Python<a class="headerlink" href="#example-2-a-periodic-task-in-python" title="Permalink to this headline">¶</a></h3>
+<p>Here we write a small Python script,
+which runs an infinite loop (make sure to use <code class="docutils literal notranslate"><span class="pre">time.sleep</span></code>!)
+and evaluates a function running a simple command every 10 minutes.
+This examples uses the library <a class="reference external" href="https://schedule.readthedocs.io/en/stable/">schedule</a>.
+Feel free to choose any other solution.</p>
+<ol class="arabic">
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>: contains <code class="docutils literal notranslate"><span class="pre">exec</span> <span class="pre">python3</span> <span class="pre">project_init.py</span></code></p>
+</li>
+<li><p class="first">The content of <cite>project_init.py</cite> is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">schedule</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span><span class="p">,</span> <span class="n">PIPE</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">CMD</span> <span class="o">=</span> <span class="s2">&quot;date&quot;</span>
+
+<span class="k">def</span> <span class="nf">task</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">i</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;task_output.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fout</span><span class="p">:</span>
+        <span class="n">ts</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">())</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="n">run</span><span class="p">(</span><span class="n">CMD</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">status</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">status</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">fout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Task </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2"> output:</span><span class="se">\n</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">ts</span><span class="p">,</span> <span class="n">out</span><span class="p">))</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+<span class="n">schedule</span><span class="o">.</span><span class="n">every</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">minutes</span><span class="o">.</span><span class="n">do</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">schedule</span><span class="o">.</span><span class="n">run_pending</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Indeed, after restarting the project the output of <cite>ps auxf</cite> shows this task as a child of the project hub:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user           1  0.1  0.0   4520   756 ?        Ss   09:18   0:00 /cocalc/bin/tini -- sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID $KUCALC_IMAGE_NAME
+user           8  0.0  0.0   4628   832 ?        S    09:18   0:00 sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID $KUCALC_IMAGE_NAME
+user           9 10.7  0.4 978240 121400 ?       Sl   09:18   0:03  \_ node /cocalc/src/smc-project/local_hub.js --tcp_port 6000 --raw_port 6001 --kucalc
+user          21  0.0  0.0  72296  5728 ?        S    09:18   0:00      \_ /usr/sbin/sshd -D -p 2222 -h /tmp/.cocalc/ssh_host_rsa_key -o PidFile=/tmp/.cocalc/sshd.pid -f /cocalc/init/sshd_config
+user          22  0.5  0.0  37836 14332 ?        S    09:18   0:00      \_ python3 project_init.py
+ ...
+</pre></div>
+</div>
+<p>and the output file <code class="docutils literal notranslate"><span class="pre">task_output.log</span></code> contains entries for each run.</p>
+</div>
+<div class="section" id="example-3-periodic-task-in-sagemath">
+<h3>Example 3: Periodic task in SageMath<a class="headerlink" href="#example-3-periodic-task-in-sagemath" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">run.sage</span></code> is similar to the Python script above.</p>
+<ol class="arabic">
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>: <code class="docutils literal notranslate"><span class="pre">exec</span> <span class="pre">sage</span> <span class="pre">run.sage</span></code></p>
+</li>
+<li><p class="first">This results in Sage running a small task every two minutes and appends outputs to <code class="docutils literal notranslate"><span class="pre">sage_output.log</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">task</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">i</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sage_output.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fout</span><span class="p">:</span>
+        <span class="n">ts</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">())</span>
+        <span class="n">fout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Sage Task </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2"> value = </span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">ts</span><span class="p">,</span> <span class="n">random</span><span class="p">()))</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">task</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2><a class="toc-backref" href="#id4">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p>To figure out why a script doesn’t work as it should, check the output of the script:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">project_init.log</span></code> contains the <code class="docutils literal notranslate"><span class="pre">stdout</span></code> output.</li>
+<li><code class="docutils literal notranslate"><span class="pre">project_init.err</span></code> contains the <code class="docutils literal notranslate"><span class="pre">stderr</span></code> output, i.e. this will show any errors.</li>
+</ul>
+<p>And please don’t get confused, those files could contain stale information, because they aren’t automatically deleted.</p>
+</div>
+<div class="section" id="development">
+<h2><a class="toc-backref" href="#id5">Development</a><a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>It’s highly recommended to start the bash script with <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">-e</span></code> to stop at any errors and <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">-ev</span></code> makes it more verbose as well.</li>
+<li>Run it directly in a terminal (create a <code class="docutils literal notranslate"><span class="pre">*.term</span></code> file) and run <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">project_init.sh</span></code> or <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">project_init.py</span></code>.</li>
+<li>A common pitfall is to assume <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> is run.
+Since this is a non-interactive session, you need to explicitly source any additional environment information.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Much of this page is taken from the CoCalc blog article <a class="reference external" href="http://blog.sagemath.com/cocalc/2017/09/12/project-init.html">Project Initialization Scripts</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="project-faq.html" class="btn btn-neutral float-right" title="Projects FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="project-library.html" class="btn btn-neutral float-left" title="Project Library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

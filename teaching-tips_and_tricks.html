@@ -1,0 +1,598 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FAQ, Tips and Tricks &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-tips_and_tricks.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Teaching with nbgrader" href="teaching-nbgrader.html" />
+    <link rel="prev" title="After the Course Ends" href="teaching-after-course.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-tips_and_tricks.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="teaching-create-course.html">Creating a New Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Upgrading Student Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Course Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-after-course.html">After the Course Ends</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">FAQ, Tips and Tricks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#delete-and-undelete-students">Delete and undelete students</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#convert-student-notebooks-to-pdf-for-export">Convert student notebooks to pdf for export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#copy-missing-files-to-a-student-project">Copy missing files to a student project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-student-file-use">Export student file use</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#text-fields-generally-support-markdown-and-latex">Text fields generally support Markdown and LaTeX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#making-multiple-assignment-folders-quickly">Making multiple assignment folders quickly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#starting-up-everyone-s-project-before-class">Starting up everyone’s project before class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restarting-a-project">Restarting a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-git">Using Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-travel-diffs">Time Travel Diffs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-terminal-command-in-all-student-projects">Run Terminal command in all student projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-exactly-are-assignments-copied-to-students">How exactly are Assignments copied to students?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#invite-students-without-having-their-email-addresses">Invite Students Without Having Their Email Addresses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verifying-student-activity">Verifying Student Activity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#moodle-integration">Moodle integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#change-the-due-date-of-an-assignment">Change the due date of an assignment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-legacy.html">Upgrading Student Projects (legacy version)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="teaching-instructors.html">Instructor Guide</a> &raquo;</li>
+        
+      <li>FAQ, Tips and Tricks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/teaching-tips_and_tricks.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="faq-tips-and-tricks">
+<span id="index-0"></span><h1>FAQ, Tips and Tricks<a class="headerlink" href="#faq-tips-and-tricks" title="Permalink to this headline">¶</a></h1>
+<p>In this section we will present some CoCalc features and useful tricks that will make the management of your project easier and answer some common questions.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#delete-and-undelete-students" id="id8">Delete and undelete students</a></li>
+<li><a class="reference internal" href="#convert-student-notebooks-to-pdf-for-export" id="id9">Convert student notebooks to pdf for export</a></li>
+<li><a class="reference internal" href="#copy-missing-files-to-a-student-project" id="id10">Copy missing files to a student project</a></li>
+<li><a class="reference internal" href="#export-student-file-use" id="id11">Export student file use</a></li>
+<li><a class="reference internal" href="#text-fields-generally-support-markdown-and-latex" id="id12">Text fields generally support Markdown and LaTeX</a></li>
+<li><a class="reference internal" href="#making-multiple-assignment-folders-quickly" id="id13">Making multiple assignment folders quickly</a></li>
+<li><a class="reference internal" href="#starting-up-everyone-s-project-before-class" id="id14">Starting up everyone’s project before class</a></li>
+<li><a class="reference internal" href="#restarting-a-project" id="id15">Restarting a project</a></li>
+<li><a class="reference internal" href="#using-git" id="id16">Using Git</a></li>
+<li><a class="reference internal" href="#time-travel-diffs" id="id17">Time Travel Diffs</a></li>
+<li><a class="reference internal" href="#run-terminal-command-in-all-student-projects" id="id18">Run Terminal command in all student projects</a></li>
+<li><a class="reference internal" href="#how-exactly-are-assignments-copied-to-students" id="id19">How exactly are Assignments copied to students?</a></li>
+<li><a class="reference internal" href="#invite-students-without-having-their-email-addresses" id="id20">Invite Students Without Having Their Email Addresses</a></li>
+<li><a class="reference internal" href="#verifying-student-activity" id="id21">Verifying Student Activity</a></li>
+<li><a class="reference internal" href="#moodle-integration" id="id22">Moodle integration</a></li>
+<li><a class="reference internal" href="#change-the-due-date-of-an-assignment" id="id23">Change the due date of an assignment</a></li>
+</ul>
+</div>
+<div class="section" id="delete-and-undelete-students">
+<span id="add-del-student"></span><h2><a class="toc-backref" href="#id8">Delete and undelete students</a><a class="headerlink" href="#delete-and-undelete-students" title="Permalink to this headline">¶</a></h2>
+<p>Enrollments can change after initial course setup. CoCalc offers a convenient way of deleting a student from a student list, and reversing that deletion step. Deleting a student removes upgrades from the student project. Handouts and assignments will not be distributed after the student is deleted. However, files already in the project for a deleted student are not altered, and the student project is not deleted.</p>
+<p id="index-1"><strong>To delete a student from a course</strong>, open the course file and select the Students tab. Expand the entry for the student to be deleted.
+Click the “Delete” button at right and the confirmation button that appears next.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are using a shared project, you will have to remove a deleted student from the collaborators list for the shared project manually. This is a <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/4495">known issue</a> which we expect to resolve soon.</p>
+</div>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/delete-student.png"><img alt="_images/delete-student.png" src="_images/delete-student.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text">Deleting a student from the student list for a course.</span></p>
+</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/delete-student-2.png"><img alt="_images/delete-student-2.png" src="_images/delete-student-2.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text">Deleting a student, continued.</span></p>
+</div>
+<p id="index-2"><strong>To undelete a student</strong>, open the course file and select the Students tab.
+Scroll to the bottom of the list. If any students have been deleted, there will be a link saying “Show <em>n</em> deleted students”. Click that link and entries for all the deleted students will be visible in the student list.
+Expand the entry for the student to be undeleted.
+Click the “Undelete” button at right to restore the student to the course. There will be a link at the bottom of the student list that says “Hide <em>n</em> deleted students” to stop showing entries for deleted students.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/undelete-student.png"><img alt="_images/undelete-student.png" src="_images/undelete-student.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text">Enabling display of deleted student records.</span></p>
+</div>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/undelete-student-2a.png"><img alt="_images/undelete-student-2a.png" src="_images/undelete-student-2a.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text">Undeleting a student.</span></p>
+</div>
+<p>After a student is undeleted:</p>
+<ul class="simple">
+<li>If you are using a CoCalc site license, upgrades to the student project will be restored the next time it is started.</li>
+<li>If you are using a subscription or course plan, you will need to open the Configuration tab for the course and add back the upgrades to the student project. See <a class="reference internal" href="teaching-upgrade-legacy.html#course-upgrading-students-legacy"><span class="std std-ref">Upgrading Student Projects (legacy version)</span></a> for details.</li>
+<li>To add handouts and assignments that the student may have missed when their student record was deleted, see the documentation on how to <a class="reference internal" href="#copy-missing-files"><span class="std std-ref">catch up a student</span></a>.</li>
+</ul>
+<span class="target" id="index-3"></span></div>
+<div class="section" id="convert-student-notebooks-to-pdf-for-export">
+<span id="export-collected"></span><span id="index-4"></span><h2><a class="toc-backref" href="#id9">Convert student notebooks to pdf for export</a><a class="headerlink" href="#convert-student-notebooks-to-pdf-for-export" title="Permalink to this headline">¶</a></h2>
+<p>Here is a convenience feature that can be useful for offline grading and archiving of student work. Assume that an assignment consists of one or more Jupyter notebooks or Sage worksheets and that you have run <code class="docutils literal notranslate"><span class="pre">Collect...</span></code> for the assignment. With a single click, you can now do the following:</p>
+<ul class="simple">
+<li>gather student work into a single folder, prepending each notebook or worksheet name with the student first and last name</li>
+<li>create a pdf file of each notebook or worksheet and place it in the same folder</li>
+<li>create a single zip archive of all notebooks and worksheets for that assignment</li>
+</ul>
+<p>Open the the course file and select the Assignments tab. Then click the triangle next to the assignment you are interested in. Click to the bottom of the assignment area and select <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">collected</span> <span class="pre">student</span> <span class="pre">files...</span></code> and the export folder with pdfs and zipfile will be created.</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/export-collected.png"><img alt="_images/export-collected.png" src="_images/export-collected.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text"><em>create pdf files and zip archive from collected notebooks</em></span></p>
+</div>
+<p>For example, if the course is “Math_202”, collected notebooks are gathered into folder “Math_202-export” as shown:</p>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/math-202-tree.png"><img alt="_images/math-202-tree.png" src="_images/math-202-tree.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text"><em>terminal view, showing export folder and zipfile contents</em></span></p>
+</div>
+<p>Note: in some cases, the pdf file cannot be created; in this case, the utility creates html instead of pdf.</p>
+<span class="target" id="index-5"></span></div>
+<div class="section" id="copy-missing-files-to-a-student-project">
+<span id="copy-missing-files"></span><span id="index-6"></span><h2><a class="toc-backref" href="#id10">Copy missing files to a student project</a><a class="headerlink" href="#copy-missing-files-to-a-student-project" title="Permalink to this headline">¶</a></h2>
+<p>If a student project is missing some of the handouts or assignments previously distributed, you can copy those materials to their project. Click on the student name in the Students list in the course file. At the bottom of the expanded content for that student is a button “Catch up this student” that will do that.</p>
+<a class="reference internal image-reference" href="_images/copy-missing.png"><img alt="_images/copy-missing.png" src="_images/copy-missing.png" style="width: 66%;" /></a>
+<span class="target" id="index-7"></span><span class="target" id="index-8"></span></div>
+<div class="section" id="export-student-file-use">
+<span id="export-file-use"></span><span id="index-9"></span><h2><a class="toc-backref" href="#id11">Export student file use</a><a class="headerlink" href="#export-student-file-use" title="Permalink to this headline">¶</a></h2>
+<p>This feature  provides 1-click export of extensive data about what students do in an assignment or handout. Getting information about what happens with anonymous users of shares is not implemented.</p>
+<p>To get a report about all the times when students opened or edited any file in an assignment or handout, do the following:</p>
+<ol class="arabic simple">
+<li>Open a .course file.</li>
+<li>Toggle to show the information about a handout or assignment, and scroll to the bottom.</li>
+<li>There is a new button “Export file use times for this…”</li>
+<li>Click that button.</li>
+<li>A json file will open in a new tab. Hopefully the format is self explanatory. The times are all in milliseconds since the epoch, so in Javascript you can write new Date(time) to make this a date, and in Python do <a class="reference external" href="https://stackoverflow.com/questions/3694487/in-python-how-do-you-convert-seconds-since-epoch-to-a-datetime-object">this</a>. You can also load json into python using the json module (import json).</li>
+</ol>
+<p>The json files are created in the following path:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>course-exports/[name of course]/file-use-times/[handouts|assignments]/assignment_name.json
+</pre></div>
+</div>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/export-file-use-times.png"><img alt="_images/export-file-use-times.png" src="_images/export-file-use-times.png" style="width: 75%;" /></a>
+<p class="caption"><span class="caption-text">Exporting file use times in course file Assignments tab.</span></p>
+</div>
+</div>
+<div class="section" id="text-fields-generally-support-markdown-and-latex">
+<h2><a class="toc-backref" href="#id12">Text fields generally support Markdown and LaTeX</a><a class="headerlink" href="#text-fields-generally-support-markdown-and-latex" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc not only facilitates the creation of LaTeX documents, but most input areas in CoCalc support and render LaTeX and markdown  (specifically  <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">GitHub Flavored Markdown</a>).</p>
+<p>For example, you can use LaTeX math formulas in the chat rooms:</p>
+<a class="reference internal image-reference" href="_images/before_latex_render.png"><img alt="_images/before_latex_render.png" src="_images/before_latex_render.png" style="width: 66%;" /></a>
+<p>which renders as</p>
+<a class="reference internal image-reference" href="_images/after_latex_render.png"><img alt="_images/after_latex_render.png" src="_images/after_latex_render.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="making-multiple-assignment-folders-quickly">
+<span id="index-10"></span><h2><a class="toc-backref" href="#id13">Making multiple assignment folders quickly</a><a class="headerlink" href="#making-multiple-assignment-folders-quickly" title="Permalink to this headline">¶</a></h2>
+<p>So far we have shown how to create folders and files by using the <strong>New</strong> button every time. → <a class="reference internal" href="_images/new.png"><img alt="NEW_BUTTON" src="_images/new.png" style="height: 20pt;" /></a></p>
+<p>However, such a method could be quite time consuming when you need to create multiple folders, subfolders, and documents. If you are a terminal fan you could create a shell script in your preferred programming language and run it from the terminal.</p>
+<p>Alternatively, in the files menu of your project, you can enter paths such as <cite>assignments/assignment1/directions.md</cite> then hit <strong>enter</strong> or <strong>ctrl+enter</strong> to create <cite>directions.md</cite> inside the folder <cite>assignment1</cite> within <cite>assignments</cite>. Hitting <strong>enter</strong> will open up the new file while <strong>ctrl+enter</strong> will silently create the necessary files and folders in the path.</p>
+<a class="reference internal image-reference" href="_images/file.png"><img alt="_images/file.png" src="_images/file.png" style="width: 100%;" /></a>
+<p>You can also create folders here just by ending with a <cite>/</cite></p>
+<a class="reference internal image-reference" href="_images/folder.png"><img alt="_images/folder.png" src="_images/folder.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="starting-up-everyone-s-project-before-class">
+<span id="index-11"></span><h2><a class="toc-backref" href="#id14">Starting up everyone’s project before class</a><a class="headerlink" href="#starting-up-everyone-s-project-before-class" title="Permalink to this headline">¶</a></h2>
+<p>By default, projects have an idle time of 24 hours before they spin down and need to be restarted. However, it may be handy to start everyone’s project before a class or presentation so that they are all “hot loaded”.</p>
+<p>You can easily do this from your course manager:
+first, open the course configuration tab:</p>
+<a class="reference internal image-reference" href="_images/settings.png"><img alt="_images/settings.png" src="_images/settings.png" style="width: 100%;" /></a>
+<p>Then scroll down to find and click on the <cite>Start all…</cite> button</p>
+<a class="reference internal image-reference" href="_images/start_all_clicked.png"><img alt="_images/start_all_clicked.png" src="_images/start_all_clicked.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="restarting-a-project">
+<span id="index-12"></span><h2><a class="toc-backref" href="#id15">Restarting a project</a><a class="headerlink" href="#restarting-a-project" title="Permalink to this headline">¶</a></h2>
+<p>Every time you open a Jupyter notebook or a Sage Worksheet, its state is stored in memory. This can become quite costly if you open multiple files one after the other (e.g. when you are marking your students’ work).</p>
+<p>To solve this, you can stop every instance using the stop button (for both Jupyter notebooks and Sage worksheets) once you are done with your marking.</p>
+<a class="reference internal image-reference" href="_images/stop_notebook.png"><img alt="_images/stop_notebook.png" src="_images/stop_notebook.png" style="width: 100%;" /></a>
+<p>Alternatively, you can restart the entire project, which will clean everything. You just need to go to your project settings and click on <strong>Restart project</strong>.</p>
+<a class="reference internal image-reference" href="_images/restart_project.png"><img alt="_images/restart_project.png" src="_images/restart_project.png" style="width: 60%;" /></a>
+<span class="target" id="teaching-using-git"></span></div>
+<div class="section" id="using-git">
+<span id="index-13"></span><h2><a class="toc-backref" href="#id16">Using Git</a><a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc support for the terminal enables students (and instructors) to collaborate using Git within a course-affiliated project.</p>
+<p>If you already have a project or some files allocated in GitHub you can add them to your project.
+Click on the <strong>New</strong> button and add/paste the link to your repository in the appropriate text box. Click on the <strong>Download from Internet</strong> button.</p>
+<p>Also you can use the terminal to commit and push changes to your repository in GitHub.
+(see howto: <a class="reference internal" href="howto/git.html"><span class="doc">Git Version Control</span></a>)</p>
+<a class="reference internal image-reference" href="_images/download1.png"><img alt="_images/download1.png" src="_images/download1.png" style="width: 100%;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You need to have internet access enabled in your project.</p>
+</div>
+</div>
+<div class="section" id="time-travel-diffs">
+<span id="index-14"></span><h2><a class="toc-backref" href="#id17">Time Travel Diffs</a><a class="headerlink" href="#time-travel-diffs" title="Permalink to this headline">¶</a></h2>
+<p>The editor based documents (e.g. Python code, LaTeX documents, markdown files, etc.) as well as Jupyter notebooks and Sage worksheets are Time Travel Diffs supported. The Time Travel Diffs feature allows you to see what happened with a file within a certain time interval.</p>
+<p>Open up <strong>Time travel</strong> from any document:</p>
+<a class="reference internal image-reference" href="_images/time_travel.png"><img alt="_images/time_travel.png" src="_images/time_travel.png" style="width: 100%;" /></a>
+<p>then click on changes and drag the sliders to see the document in a given time interval.</p>
+<a class="reference internal image-reference" href="_images/time_travel_sliders.png"><img alt="_images/time_travel_sliders.png" src="_images/time_travel_sliders.png" style="width: 100%;" /></a>
+<p>If you need to revert the document to a previous state, drag the slider to the desired revision and click on <strong>Revert live version to this</strong>. Doing so reverts the document contents to that specific version. If you have checked the <strong>Changes</strong> box to compare two revisions and click on <strong>Revert live version to this</strong>, contents are reverted to the latter of the two revisions being compared. Note that reverting a file simply creates a new version of the file equal to the old file at that point in time; in particular, no work is lost!</p>
+</div>
+<div class="section" id="run-terminal-command-in-all-student-projects">
+<span id="run-cmd-students"></span><span id="index-15"></span><h2><a class="toc-backref" href="#id18">Run Terminal command in all student projects</a><a class="headerlink" href="#run-terminal-command-in-all-student-projects" title="Permalink to this headline">¶</a></h2>
+<p>If you are managing a course, there may be a time when you want to
+run a shell command in every student project. The following
+feature allows you to do that, if you are using a .course file
+for the course.</p>
+<p>In the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> tab of the course there is a
+panel called <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Terminal</span> <span class="pre">command</span> <span class="pre">in</span> <span class="pre">all</span> <span class="pre">student</span> <span class="pre">projects</span></code>.  You
+can use it to run a command (e.g., to create a file or whatever) in
+<em>all</em> projects in a course…  It’s a single arbitrary bash command.</p>
+<a class="reference internal image-reference" href="_images/term_command_course.png"><img alt="_images/term_command_course.png" src="_images/term_command_course.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="how-exactly-are-assignments-copied-to-students">
+<span id="course-copy-assignments"></span><span id="index-16"></span><h2><a class="toc-backref" href="#id19">How exactly are Assignments copied to students?</a><a class="headerlink" href="#how-exactly-are-assignments-copied-to-students" title="Permalink to this headline">¶</a></h2>
+<p>When you assign an assignment to your students,
+it is copied from your project to your students’ projects.</p>
+<p><strong>What happens when you assign again.</strong></p>
+<ul class="simple">
+<li>For files that have a <em>newer</em> timestamp than the corresponding file in the target directory, the target file is copied to a backup and the new source is copied over.</li>
+<li>For files that have an old timestamp and you’ve already assigned the assignment (and students may have worked on it), nothing at all will happen on copy.</li>
+</ul>
+<p><strong>Adding a new file to an assignment.</strong></p>
+<p>If you just want to add a new file to an assignment, you could ensure that all the other files are very old, e.g., by using the touch command in a <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a>.  E.g.,</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>touch -d &#39;Jan 1&#39; *
+</pre></div>
+</div>
+<p>would make it so that everything appears to be from January 1.</p>
+<p>Alternatively, you could just remove the files from the assignment folder, then move them back later.</p>
+<p><strong>Behind the scenes.</strong></p>
+<p>Assignments are copied with the command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>rsync -zaxs --update --backup [...] source/  dest/
+</pre></div>
+</div>
+<p>There are two important options here:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>--update: do not copy over a file if a NEWER file (by timestamp)
+          exists in the destination
+</pre></div>
+</div>
+<p>and</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>--backup: if the source file `foo` (say) is NEWER than the destination file
+          `foo` (e.g., you edit your homework assignment after students have worked
+          on it),  then `dest/foo` is moved to `dest/foo~` and `foo` is copied
+          to the destination.
+</pre></div>
+</div>
+<p>Assigning an assignment never deletes missing files in the target,
+<cite>unless</cite> you explicitly clicked and confirmed the <code class="docutils literal notranslate"><span class="pre">Replace</span> <span class="pre">student</span> <span class="pre">files!</span></code> button.
+This button adds an additional flag:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>--delete
+       This  tells  rsync to delete extraneous files from the receiving side
+       (ones that aren’t on the sending side), but only for the
+       directories that are being synchronized.
+</pre></div>
+</div>
+<p>Some tests below illustrate how rsync works:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ mkdir tmp2
+~$ cd tmp2
+~/tmp2$ mkdir a b
+~/tmp2$ echo &quot;0&quot; &gt; a/x
+~/tmp2$ rsync -zaxs --update --backup a/ b/
+~/tmp2$ ls a
+x
+~/tmp2$ ls b
+x
+~/tmp2$ rsync -zaxs --update --backup a/ b/
+~/tmp2$ vi b/x
+~/tmp2$ rsync -zaxs --update --backup a/ b/
+~/tmp2$ ls -lht b
+total 1.5K
+-rw------- 1 user user 4 Oct 13 16:27 x
+~/tmp2$ more b/x
+0
+1
+~/tmp2$ touch a/x
+~/tmp2$ rsync -zaxs --update --backup a/ b/
+~/tmp2$ ls b
+x  x~
+~/tmp2$
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">We would like to add a new 3-way merge option, which would be more clever and instead of making a backup file of students modified work, would merge your changes into their file.  This is not done yet.</p>
+</div>
+</div>
+<div class="section" id="invite-students-without-having-their-email-addresses">
+<span id="index-17"></span><h2><a class="toc-backref" href="#id20">Invite Students Without Having Their Email Addresses</a><a class="headerlink" href="#invite-students-without-having-their-email-addresses" title="Permalink to this headline">¶</a></h2>
+<p><strong>Question:</strong> The course management software at my university makes it hard to get a list of student emails. Is there a way I can send them a generic invitation link that they can click to join the course?</p>
+<p><strong>Answer:</strong> We don’t support sending generic invitations yet (see <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/886)">CoCalc issue #886</a>). However, you can use the following workaround:</p>
+<p>Assign fake email addresses to all students in your class, e.g.:: c</p>
+<blockquote>
+<div>student+&lt;student_id&gt;&#64;your-university.edu</div></blockquote>
+<p>Then tell the students to sign up for CoCalc using that “fake” email address. This assumes you have some way to communicate with your students, perhaps in class.</p>
+<p>Once students sign up, they will be added as collaborators to their project for the course. At that point, they can change their email address to anything they want, in order to ensure they get &#64;mention notifications, can do password reset, etc.</p>
+<p>If student_id’s are secret/sensitive, you could use something derived from them, e.g., the last two digits.</p>
+</div>
+<div class="section" id="verifying-student-activity">
+<span id="index-18"></span><h2><a class="toc-backref" href="#id21">Verifying Student Activity</a><a class="headerlink" href="#verifying-student-activity" title="Permalink to this headline">¶</a></h2>
+<p>In some situations it may be useful to confirm when work was done in a student project. (See also: <a class="reference internal" href="#export-file-use"><span class="std std-ref">Export student file use</span></a>.)</p>
+<ul class="simple">
+<li>If you open the <a class="reference internal" href="project-log.html"><span class="doc">activity log</span></a> for a student project, you can see who opened any file and when.</li>
+<li>With any file open in a student project, you can see exactly what was done with it and when by clicking the <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a> button, including the total number of edits made to the file (as recorded by TimeTravel) and time and date of the last change. You can click the “Changes” checkbox and see what happened for any range of dates.</li>
+<li>It’s impossible for users to delete or change something once it is recorded in TimeTravel (except by explicitly requesting deletion via a support request). However, it’s conceivable maybe something got lost, since no software is perfect.</li>
+<li>Folders under <a class="reference internal" href="project-files.html#project-snapshot"><span class="std std-ref">Backups</span></a> are snapshots of the exact state of the filesystem, which are independent of TimeTravel, but provide a good double check.</li>
+</ul>
+</div>
+<div class="section" id="moodle-integration">
+<span id="index-19"></span><h2><a class="toc-backref" href="#id22">Moodle integration</a><a class="headerlink" href="#moodle-integration" title="Permalink to this headline">¶</a></h2>
+<p>Q: Is there a way to integrate CoCalc into my <a class="reference external" href="https://moodle.org/">Moodle</a> environment?</p>
+<p>A: Unfortunately, not really. We do have our own fairly sophisticated course management functionality for creating and distributing assignments, working in real time with students, and collecting, grading and returning. See <a class="reference internal" href="teaching-instructors.html"><span class="doc">Instructor Guide</span></a>.</p>
+<p>You can also publish an assignment to the <a class="reference external" href="https://share.cocalc.com/share/">CoCalc share server</a> (you can make content “you must know the link”), point students at that link, and have them download the work when they are done and submit it via Moodle.</p>
+</div>
+<div class="section" id="change-the-due-date-of-an-assignment">
+<span id="index-20"></span><h2><a class="toc-backref" href="#id23">Change the due date of an assignment</a><a class="headerlink" href="#change-the-due-date-of-an-assignment" title="Permalink to this headline">¶</a></h2>
+<p>When an assignment is distributed, the due date, if any, is written to file <code class="docutils literal notranslate"><span class="pre">DUE_DATE.TXT</span></code> in the folder for the assignment in each student project.</p>
+<a class="reference internal image-reference" href="_images/due-date.png"><img alt="_images/due-date.png" class="align-center" src="_images/due-date.png" style="width: 66%;" /></a>
+<p>To change the date after distributing an assignment, the instructor could run a Linux shell command in all student projects that changes the due date file. See <a class="reference internal" href="#run-cmd-students"><span class="std std-ref">Run Terminal command in all student projects</span></a> above for how to run the command.
+In the example above, the command to be run could be:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;new due date: 2020-10-09 11:00 AM&quot;</span> &gt; Assignments/Assignment1/DUE_DATE.txt
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="teaching-nbgrader.html" class="btn btn-neutral float-right" title="Teaching with nbgrader" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="teaching-after-course.html" class="btn btn-neutral float-left" title="After the Course Ends" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>query &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/api/query.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="read_text_file_from_project" href="read_text_file_from_project.html" />
+    <link rel="prev" title="public_get_text_file" href="public_get_text_file.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/api/query.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#protocol-and-data-format">Protocol and Data Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authentication">Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#additional-references">Additional References</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#api-message-reference">API Message Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_collaborator.html">add_collaborator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_license_to_project.html">add_license_to_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change_email_address.html">change_email_address</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change_password.html">change_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_path_between_projects.html">copy_path_between_projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_path_delete.html">copy_path_delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_path_status.html">copy_path_status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_public_path_between_projects.html">copy_public_path_between_projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_account.html">create_account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_project.html">create_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_support_ticket.html">create_support_ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_account.html">delete_account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disconnect_from_project.html">disconnect_from_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="forgot_password.html">forgot_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_available_upgrades.html">get_available_upgrades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_support_tickets.html">get_support_tickets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_usernames.html">get_usernames</a></li>
+<li class="toctree-l3"><a class="reference internal" href="invite_collaborator.html">invite_collaborator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="invite_noncloud_collaborators.html">invite_noncloud_collaborators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="log_client_error.html">log_client_error</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metrics.html">metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ping.html">ping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="project_exec.html">project_exec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="public_get_directory_listing.html">public_get_directory_listing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="public_get_text_file.html">public_get_text_file</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">query</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#examples-of-get-query">Examples of <em>get</em> query:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples-of-set-query">Examples of <em>set</em> query.</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="read_text_file_from_project.html">read_text_file_from_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="remove_collaborator.html">remove_collaborator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="remove_license_from_project.html">remove_license_from_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reset_forgot_password.html">reset_forgot_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start_metrics.html">start_metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="touch_project.html">touch_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unlink_passport.html">unlink_passport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_auth.html">user_auth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_search.html">user_search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="write_text_file_to_project.html">write_text_file_to_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#api-examples-howto">API Examples &amp; Howto</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#copy-a-file-between-projects">Copy a file between projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#embedding-in-an-iframe">Embedding in an IFrame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#iframe-communication">IFrame communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">API</a> &raquo;</li>
+        
+      <li>query</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/query.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="query">
+<h1>query<a class="headerlink" href="#query" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
+<li><code class="docutils literal notranslate"><span class="pre">query</span></code>: The actual query (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">changes</span></code>:</li>
+<li><code class="docutils literal notranslate"><span class="pre">multi_response</span></code>:  (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">options</span></code>:</li>
+</ul>
+<p>This queries directly the database (sort of Facebook’s GraphQL)
+Options for the ‘query’ API message must be sent as JSON object.
+A query is either <em>get</em> (read from database), or <em>set</em> (write to database).
+A query is <em>get</em> if any query keys are null, otherwise the query is <em>set</em>.</p>
+<p>Note: queries with <code class="docutils literal notranslate"><span class="pre">multi_response</span></code> set to <code class="docutils literal notranslate"><span class="pre">true</span></code> are not supported.</p>
+<div class="section" id="examples-of-get-query">
+<h2>Examples of <em>get</em> query:<a class="headerlink" href="#examples-of-get-query" title="Permalink to this headline">¶</a></h2>
+<p>Get title and description for a project, given the project id.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;title&quot;:null,&quot;description&quot;:null}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">     &quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,</span>
+<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
+<span class="err">                          &quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,</span>
+<span class="err">                          &quot;description&quot;:&quot;desc 2&quot;}},</span>
+<span class="err">     &quot;multi_response&quot;:false}</span>
+</pre></div>
+</div>
+<p>Get info on all projects for the account whose security key is provided.
+The information returned may be any of the api-accessible fields in the
+<code class="docutils literal notranslate"><span class="pre">projects</span></code> table. These fields are listed in CoCalc source directory
+src/smc-util/db-schema, under <code class="docutils literal notranslate"><span class="pre">schema.projects.user_query</span></code>.
+In this example, project name and description are returned.</p>
+<p>Note: to get info only on projects active in the past 3 weeks, use
+<code class="docutils literal notranslate"><span class="pre">projects</span></code> instead of <code class="docutils literal notranslate"><span class="pre">projects_all</span></code> in the query.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects_all&quot;:[{&quot;project_id&quot;:null,&quot;title&quot;:null,&quot;description&quot;:null}]}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">     &quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,</span>
+<span class="err">     &quot;multi_response&quot;: False,</span>
+<span class="err">     &quot;query&quot;: {&quot;projects_all&quot;: [{&quot;description&quot;: &quot;Synthetic Monitoring&quot;,</span>
+<span class="err">                       &quot;project_id&quot;: &quot;1fa1626e-ce25-4871-9b0e-19191cd03325&quot;,</span>
+<span class="err">                       &quot;title&quot;: &quot;SYNTHMON&quot;},</span>
+<span class="err">                      {&quot;description&quot;: &quot;No Description&quot;,</span>
+<span class="err">                       &quot;project_id&quot;: &quot;639a6b2e-7499-41b5-ac1f-1701809699a7&quot;,</span>
+<span class="err">                       &quot;title&quot;: &quot;TESTPROJECT 99&quot;}]}}</span>
+</pre></div>
+</div>
+<p>Get project id, given title and description.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:null,&quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,&quot;description&quot;:&quot;desc 2&quot;}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
+<span class="err">                          &quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,</span>
+<span class="err">                          &quot;description&quot;:&quot;desc 2&quot;}},</span>
+<span class="err">     &quot;multi_response&quot;:false,</span>
+<span class="err">     &quot;id&quot;:&quot;2be22e08-f00c-4128-b112-fa8581c2d584&quot;}</span>
+</pre></div>
+</div>
+<p>Get users, given the project id.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
+<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
+<span class="err">                          &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{&quot;group&quot;:&quot;owner&quot;},</span>
+<span class="err">                                   &quot;111634c0-7048-41e7-b2d0-f87129fd409e&quot;:{&quot;group&quot;:&quot;collaborator&quot;}}}},</span>
+<span class="err">     &quot;multi_response&quot;:false,</span>
+<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}</span>
+</pre></div>
+</div>
+<p>Show project upgrades. Like the preceding example, this is a query to get users.
+In this example, there are no collaborators, but upgrades have been applied to the
+selected project. Upgrades do not show if none are applied.</p>
+<p>The project shows the following upgrades:</p>
+<ul class="simple">
+<li>cpu cores:       1</li>
+<li>memory:          3000 MB</li>
+<li>idle timeout:    24 hours (86400 seconds)</li>
+<li>internet access: true</li>
+<li>cpu shares:      3 (stored in database as 768 = 3 * 256)</li>
+<li>disk space:      27000 MB</li>
+<li>member hosting:  true</li>
+</ul>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
+<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
+<span class="err">                          &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{</span>
+<span class="err">                                       &quot;group&quot;:&quot;owner&quot;,</span>
+<span class="err">                                       &quot;upgrades&quot;:{&quot;cores&quot;:1,</span>
+<span class="err">                                                   &quot;memory&quot;:3000,</span>
+<span class="err">                                                   &quot;mintime&quot;:86400,</span>
+<span class="err">                                                   &quot;network&quot;:1,</span>
+<span class="err">                                                   &quot;cpu_shares&quot;:768,</span>
+<span class="err">                                                   &quot;disk_quota&quot;:27000,</span>
+<span class="err">                                                   &quot;member_host&quot;:1}}}}},</span>
+<span class="err">     &quot;multi_response&quot;:false,</span>
+<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}</span>
+</pre></div>
+</div>
+<p>Get editor settings for the present user.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
+<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:null}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">     &quot;multi_response&quot;:false,</span>
+<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;,</span>
+<span class="err">     &quot;query&quot;: {&quot;accounts&quot;: {&quot;account_id&quot;: &quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
+<span class="err">                            &quot;editor_settings&quot;: {&quot;auto_close_brackets&quot;: True,</span>
+<span class="err">                                                &quot;auto_close_xml_tags&quot;: True,</span>
+<span class="err">                                                &quot;bindings&quot;: &quot;standard&quot;,</span>
+<span class="err">                                                &quot;code_folding&quot;: True,</span>
+<span class="err">                                                &quot;electric_chars&quot;: True,</span>
+<span class="err">                                                &quot;extra_button_bar&quot;: True,</span>
+<span class="err">                                                &quot;first_line_number&quot;: 1,</span>
+<span class="err">                                                &quot;indent_unit&quot;: 4,</span>
+<span class="err">                                                &quot;jupyter_classic&quot;: False,</span>
+<span class="err">                                                &quot;line_numbers&quot;: True,</span>
+<span class="err">                                                &quot;line_wrapping&quot;: True,</span>
+<span class="err">                                                &quot;match_brackets&quot;: True,</span>
+<span class="err">                                                &quot;match_xml_tags&quot;: True,</span>
+<span class="err">                                                &quot;multiple_cursors&quot;: True,</span>
+<span class="err">                                                &quot;show_trailing_whitespace&quot;: True,</span>
+<span class="err">                                                &quot;smart_indent&quot;: True,</span>
+<span class="err">                                                &quot;spaces_instead_of_tabs&quot;: True,</span>
+<span class="err">                                                &quot;strip_trailing_whitespace&quot;: False,</span>
+<span class="err">                                                &quot;tab_size&quot;: 4,</span>
+<span class="err">                                                &quot;theme&quot;: &quot;default&quot;,</span>
+<span class="err">                                                &quot;track_revisions&quot;: True,</span>
+<span class="err">                                                &quot;undo_depth&quot;: 300}}}}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="examples-of-set-query">
+<h2>Examples of <em>set</em> query.<a class="headerlink" href="#examples-of-set-query" title="Permalink to this headline">¶</a></h2>
+<p>Set title and description for a project, given the project id.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
+<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \</span>
+<span class="err">                            &quot;title&quot;:&quot;REVISED TITLE&quot;, \</span>
+<span class="err">                            &quot;description&quot;:&quot;REVISED DESC&quot;}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">  ==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">       &quot;query&quot;:{},</span>
+<span class="err">       &quot;multi_response&quot;:false,</span>
+<span class="err">       &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}</span>
+</pre></div>
+</div>
+<p>Make a path public (publish a file).</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
+<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;public_paths&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \</span>
+<span class="err">                                &quot;path&quot;:&quot;myfile.txt&quot;, \</span>
+<span class="err">                                &quot;description&quot;:&quot;a shared text file&quot;}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">  ==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">       &quot;query&quot;:{},</span>
+<span class="err">       &quot;multi_response&quot;:false,</span>
+<span class="err">       &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}</span>
+</pre></div>
+</div>
+<p>Add an upgrade to a project. In the “get” example above showing project upgrades,
+change cpu upgrades from 3 to 4. The <code class="docutils literal notranslate"><span class="pre">users</span></code> object is returned as
+read, with <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> increased to 1024 = 4 * 256.
+It is not necessary to specify the entire <code class="docutils literal notranslate"><span class="pre">upgrades</span></code> object
+if you are only setting the <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> attribute because changes are merged in.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
+<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \</span>
+<span class="err">                            &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{ \</span>
+<span class="err">                                         &quot;upgrades&quot;: {&quot;cpu_shares&quot;:1024}}}}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">  ==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">       &quot;query&quot;:{},</span>
+<span class="err">       &quot;multi_response&quot;:false,</span>
+<span class="err">       &quot;id&quot;:&quot;ec822d6f-f9fe-443d-9845-9cd5f68bac20&quot;}</span>
+</pre></div>
+</div>
+<p>Set present user to open Jupyter notebooks in
+“CoCalc Jupyter Notebook” as opposed to “Classical Notebook”.
+This change not usually needed, because accounts
+default to “CoCalc Jupyter Notebook”.</p>
+<p>It is not necessary to specify the entire <code class="docutils literal notranslate"><span class="pre">editor_settings</span></code> object
+if you are only setting the <code class="docutils literal notranslate"><span class="pre">jupyter_classic</span></code> attribute because changes are merged in.</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
+<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:{&quot;jupyter_classic&quot;:false}}}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/query</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
+<span class="err">     &quot;multi_response&quot;:false,</span>
+<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;,</span>
+<span class="err">     &quot;query&quot;: {}}</span>
+</pre></div>
+</div>
+<p><strong>NOTE:</strong> Information on which fields are gettable and settable in the database tables
+via API message is in the directory ‘db-schema’, in CoCalc sources on GitHub at
+<a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema">https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema</a></p>
+<p>Within directory ‘db-schema’:</p>
+<ul class="simple">
+<li>for <em>project</em> fields you can get, see the definition of
+<code class="docutils literal notranslate"><span class="pre">schema.projects.user_query.get.fields</span></code></li>
+<li>for <em>project</em> fields you can set, see the definition of
+<code class="docutils literal notranslate"><span class="pre">schema.projects.user_query.set.fields</span></code></li>
+<li>for <em>user account</em> fields you can get, see the definition of
+<code class="docutils literal notranslate"><span class="pre">schema.accounts.user_query.get.fields</span></code></li>
+<li>for <em>user account</em> fields you can set, see the definition of
+<code class="docutils literal notranslate"><span class="pre">schema.accounts.user_query.set.fields</span></code></li>
+</ul>
+<hr class="docutils" />
+<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="read_text_file_from_project.html" class="btn btn-neutral float-right" title="read_text_file_from_project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="public_get_text_file.html" class="btn btn-neutral float-left" title="public_get_text_file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

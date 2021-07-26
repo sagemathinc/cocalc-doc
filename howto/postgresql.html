@@ -1,0 +1,415 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PostgreSQL Server &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/postgresql.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="RemarkJS Slideshow" href="remarkjs-slideshow.html" />
+    <link rel="prev" title="Pluto Notebooks for Julia" href="pluto.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/postgresql.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Howto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="software-development.html">Developing Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-invitation-tokens.html">Project Invitation Tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export-timetravel.html">Export TimeTravel History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html">External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-python-lib.html">Install Python Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-r-package.html">Install R Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running-processes.html">Manage Running Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Upload Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert-html-to-pdf.html">Convert HTML to PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webserver.html">Run A Webserver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokeh-server.html">Bokeh / Holoview Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shiny-server.html">Shiny Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-selection.html">Jupyter Kernel Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-extension.html">Setup Jupyter Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlab-extensions.html">JupyterLab Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom-jupyter-kernel.html">Custom Jupyter Kernel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fix-broken-jupyter-pdf.html">Fix broken Jupyter PDF export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dask.html">Dask cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fortran.html">Fortran Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git.html">Git Version Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google-api.html">Google Sheets API Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsl.html">GSL C Code Compilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nbgrader.html">NBgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neuron.html">NEURON simulation environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mongodb.html">MongoDB Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluto.html">Pluto Notebooks for Julia</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PostgreSQL Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-setup">Step 1: Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-start-server">Step 2: Start Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-connect-to-the-database">Step 3: Connect to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-shutting-down">Step 4: Shutting Down</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="remarkjs-slideshow.html">RemarkJS Slideshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ruby.html">Ruby Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turtle.html">Turtle Graphics with CoCalc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activeloop-hub.html">Getting Started with Hub</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Howto</a> &raquo;</li>
+        
+      <li>PostgreSQL Server</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/postgresql.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="postgresql-server">
+<span id="index-0"></span><h1>PostgreSQL Server<a class="headerlink" href="#postgresql-server" title="Permalink to this headline">¶</a></h1>
+<p>You can easily run your own <a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a> server inside any CoCalc project to manage data (or just learn about SQL and databases).</p>
+<div class="section" id="step-1-setup">
+<h2>Step 1: Setup<a class="headerlink" href="#step-1-setup" title="Permalink to this headline">¶</a></h2>
+<p>(only needed once)</p>
+<p>In a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> (Files tab → <code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Create</span></code> → <code class="docutils literal notranslate"><span class="pre">Terminal</span></code>), paste this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd
+pg_ctl initdb -D postgres_data
+echo &quot;unix_socket_directories = &#39;$HOME/postgres_data&#39;&quot; &gt;&gt; postgres_data/postgresql.conf
+echo &quot;unix_socket_permissions = 0700&quot; &gt;&gt; postgres_data/postgresql.conf
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">postgres_data</span></code> subdirectory is where the data files and the communication socket are stored.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">unix_socket_*</span></code> settings make sure that local communication with the database runs through the files in your own project.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">*_permissions</span></code> setting disables reading and writing for anyone else.
+This isn’t necessary because CoCalc uses a Docker container for each project,
+so there are no other users to worry about.</p>
+</div>
+<div class="section" id="step-2-start-server">
+<h2>Step 2: Start Server<a class="headerlink" href="#step-2-start-server" title="Permalink to this headline">¶</a></h2>
+<p>Again in the Terminal:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pg_ctl -D postgres_data -l logfile -o &quot;-h &#39;&#39;&quot; start
+</pre></div>
+</div>
+<p>This command starts the PostgreSQL server listening on a Unix domain socket and not on an IP address and port number.
+To check the status, either run <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">logfile</span></code> to see the logfile’s content or run</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pg_ctl -D postgres_data status
+</pre></div>
+</div>
+<p><strong>Tip</strong>: you can add the ‘pg_ctl…start’ line at the bottom of your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> file.</p>
+</div>
+<div class="section" id="step-3-connect-to-the-database">
+<h2>Step 3: Connect to the database<a class="headerlink" href="#step-3-connect-to-the-database" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>export PGHOST=&quot;$HOME/postgres_data&quot;
+createdb test
+psql test
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>psql (9.6.1)
+Type &quot;help&quot; for help.
+
+test=#
+</pre></div>
+</div>
+<p>and now you’re off to the races!</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>test=# create table people (name varchar, age int);
+CREATE TABLE
+test=# insert into people values (&#39;joe&#39;, 10), (&#39;fred&#39;, 20);
+INSERT 0 2
+test=# select * from people;
+ name | age
+------+-----
+ joe  |  10
+ fred |  20
+(2 rows)
+test=# \q
+</pre></div>
+</div>
+<p>You can also use PostgreSQL from Python (e.g., a Sage worksheet, Jupyter notebook, script, etc.) like so:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import psycopg2
+conn = psycopg2.connect(&quot;dbname=&#39;test&#39; host=/home/user/postgres_data&quot;)
+cur = conn.cursor()
+cur.execute(&quot;SELECT * FROM people&quot;)
+rows = cur.fetchall()
+print(&quot;\nShow me the databases:\n&quot;)
+for row in rows:
+    print(&quot;   &quot;, row[0])
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://wiki.postgresql.org/wiki/Psycopg2_Tutorial">https://wiki.postgresql.org/wiki/Psycopg2_Tutorial</a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">With this setup, you will not have the usual worries about passwords and users,
+because the database is not accessible from outside your project.</p>
+</div>
+</div>
+<div class="section" id="step-4-shutting-down">
+<h2>Step 4: Shutting Down<a class="headerlink" href="#step-4-shutting-down" title="Permalink to this headline">¶</a></h2>
+<p>After you have finished working with PostgreSQL, the following step prevents data loss:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pg_ctl -D postgres_data stop
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="remarkjs-slideshow.html" class="btn btn-neutral float-right" title="RemarkJS Slideshow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pluto.html" class="btn btn-neutral float-left" title="Pluto Notebooks for Julia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

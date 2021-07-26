@@ -1,0 +1,417 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Manage Running Processes &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/running-processes.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Upload Files" href="upload.html" />
+    <link rel="prev" title="Install R Packages" href="install-r-package.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/running-processes.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Howto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="software-development.html">Developing Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-invitation-tokens.html">Project Invitation Tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export-timetravel.html">Export TimeTravel History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html">External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-python-lib.html">Install Python Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-r-package.html">Install R Packages</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Manage Running Processes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#see-all-processes">See all Processes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#see-memory-usage">See Memory Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#even-more-utilities">Even more utilities …</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#top">top</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#glances">glances</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ps-aux">ps aux</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Upload Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert-html-to-pdf.html">Convert HTML to PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webserver.html">Run A Webserver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokeh-server.html">Bokeh / Holoview Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shiny-server.html">Shiny Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-selection.html">Jupyter Kernel Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-extension.html">Setup Jupyter Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlab-extensions.html">JupyterLab Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom-jupyter-kernel.html">Custom Jupyter Kernel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fix-broken-jupyter-pdf.html">Fix broken Jupyter PDF export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dask.html">Dask cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fortran.html">Fortran Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git.html">Git Version Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google-api.html">Google Sheets API Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsl.html">GSL C Code Compilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nbgrader.html">NBgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neuron.html">NEURON simulation environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mongodb.html">MongoDB Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluto.html">Pluto Notebooks for Julia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="postgresql.html">PostgreSQL Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remarkjs-slideshow.html">RemarkJS Slideshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ruby.html">Ruby Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turtle.html">Turtle Graphics with CoCalc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activeloop-hub.html">Getting Started with Hub</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Howto</a> &raquo;</li>
+        
+      <li>Manage Running Processes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/running-processes.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="manage-running-processes">
+<span id="index-0"></span><h1>Manage Running Processes<a class="headerlink" href="#manage-running-processes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="see-all-processes">
+<span id="htop"></span><span id="index-1"></span><h2>See all Processes<a class="headerlink" href="#see-all-processes" title="Permalink to this headline">¶</a></h2>
+<p>Type exactly the following in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> (+New → Terminal) to see all processes running in a project:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>htop
+</pre></div>
+</div>
+<p>The header informs you about overall utilization of the node,
+each row (you can scroll via your cursor keys) lists a process and use your F5 key
+to toggle between a tree or a sorted list.
+The column <code class="docutils literal notranslate"><span class="pre">RES</span></code> tells you the residual memory usage (what’s really being used, more or less),
+and the <code class="docutils literal notranslate"><span class="pre">CPU%</span></code> column the computational use of one CPU core.
+The <code class="docutils literal notranslate"><span class="pre">TIME+</span></code> column tells you the aboslute time that process has used the CPU.</p>
+<p>Select one or more processes via the space key of your keyboard.
+Via the F9 key you can terminate or kill a process, etc.</p>
+<p>If supported, mouse-clicks should also work.</p>
+<p>See <a class="reference external" href="http://linux.die.net/man/1/htop">htop manpage</a> for more information
+or click the letter <code class="docutils literal notranslate"><span class="pre">h</span></code> for help after starting it up;  and <code class="docutils literal notranslate"><span class="pre">q</span></code> to quit the application.</p>
+<a class="reference internal image-reference" href="../_images/htop.png"><img alt="../_images/htop.png" class="align-center" src="../_images/htop.png" style="width: 75%;" /></a>
+</div>
+<div class="section" id="see-memory-usage">
+<span id="smem"></span><span id="index-2"></span><h2>See Memory Usage<a class="headerlink" href="#see-memory-usage" title="Permalink to this headline">¶</a></h2>
+<p>Type exactly the following in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> (+New → Terminal):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>smem -tk
+</pre></div>
+</div>
+<p>It lists all processes and the bottom line shows the total sum.
+The last <code class="docutils literal notranslate"><span class="pre">RSS</span></code> column is probably the most interesting one, for more consult <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">smem</span></code>.   The total used memory is also listed under “Project usage and quotas” in <a class="reference internal" href="../project-settings.html"><span class="doc">Project Settings</span></a> (based on Linux’ cgroup management).</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ smem -tk
+  PID User     Command                         Swap      USS      PSS      RSS
+    1 user     /cocalc/bin/dumb-init -- sh        0    16.0K    19.0K    72.0K
+   12 user     sh -c env -i /cocalc/init/i        0    88.0K   136.0K     1.7M
+   24 user     /usr/sbin/sshd -D -p 2222 -        0   756.0K     1.1M     6.3M
+   58 user     /bin/bash                          0     2.4M     2.5M     5.8M
+   52 user     /bin/bash                          0     2.4M     2.5M     5.8M
+   54 user     /bin/bash                          0     2.4M     2.5M     5.8M
+ 1397 user     /usr/bin/python /usr/bin/sm        0     8.2M     8.3M    10.6M
+   13 user     node /cocalc/src/smc-projec        0    89.2M    91.6M   114.6M
+-------------------------------------------------------------------------------
+    8 1                                           0   105.4M   108.6M   150.7M
+</pre></div>
+</div>
+</div>
+<div class="section" id="even-more-utilities">
+<h2>Even more utilities …<a class="headerlink" href="#even-more-utilities" title="Permalink to this headline">¶</a></h2>
+<p>Besides <code class="docutils literal notranslate"><span class="pre">htop</span></code> and <code class="docutils literal notranslate"><span class="pre">smem</span></code>, there are many more system utilities installed.
+Given a project runs in a <a class="reference external" href="https://docker.com">Docker</a> environment, you only see a limited view of all what’s going on, but it might still be interesting for you.</p>
+<div class="section" id="top">
+<h3>top<a class="headerlink" href="#top" title="Permalink to this headline">¶</a></h3>
+<p>The “classic” version <code class="docutils literal notranslate"><span class="pre">htop</span></code>, similar layout.
+Press key <code class="docutils literal notranslate"><span class="pre">h</span></code> for help after starting it; and <code class="docutils literal notranslate"><span class="pre">q</span></code> to quit the application.</p>
+<a class="reference internal image-reference" href="../_images/top.png"><img alt="../_images/top.png" class="align-center" src="../_images/top.png" style="width: 75%;" /></a>
+</div>
+<div class="section" id="glances">
+<h3>glances<a class="headerlink" href="#glances" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://nicolargo.github.io/glances/">Glances</a> is a modern Python-based monitoring utility.
+Start it the following way if you’re using a white terminal background and want to enable a tree-view of your processes:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>glances --theme-white --tree
+</pre></div>
+</div>
+<p>Again, press key <code class="docutils literal notranslate"><span class="pre">h</span></code> for more help and <code class="docutils literal notranslate"><span class="pre">q</span></code> to quit.</p>
+<p>You can see more command-line switches via <code class="docutils literal notranslate"><span class="pre">glances</span> <span class="pre">--help</span></code>.</p>
+<a class="reference internal image-reference" href="../_images/glances.png"><img alt="../_images/glances.png" class="align-center" src="../_images/glances.png" style="width: 75%;" /></a>
+</div>
+<div class="section" id="ps-aux">
+<h3>ps aux<a class="headerlink" href="#ps-aux" title="Permalink to this headline">¶</a></h3>
+<p>An all-time classic is <code class="docutils literal notranslate"><span class="pre">ps</span> <span class="pre">aux</span></code>. Run <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ps</span></code> to learn more about that utility.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user           1  0.0  0.0    212     4 ?        Ss   21:29   0:00 /cocalc/bin/dumb-init -- sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID
+user          12  0.0  0.0   4628   876 ?        Ss   21:29   0:00 sh -c env -i /cocalc/init/init.sh $COCALC_PROJECT_ID
+user          13  1.4  0.4 1324640 115924 ?      Rl   21:29   0:06 node /cocalc/src/smc-project/local_hub.js --tcp_port 6000 --raw_port 6001 --k
+user          24  0.0  0.0  72296  5836 ?        S    21:29   0:00 /usr/sbin/sshd -D -p 2222 -h /tmp/.cocalc/ssh_host_rsa_key -o PidFile=/tmp/.c
+user          26  0.0  0.0      0     0 ?        Z    21:29   0:00 [bash] &lt;defunct&gt;
+user          52  0.0  0.0  22308  5896 pts/0    Ss+  21:29   0:00 /bin/bash
+user          54  0.0  0.0  22296  5960 pts/1    Ss   21:29   0:00 /bin/bash
+user          58  0.0  0.0  22308  5972 pts/2    Ss+  21:29   0:00 /bin/bash
+user         631  0.0  0.0  36148  3212 pts/1    R+   21:37   0:00 ps aux
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="upload.html" class="btn btn-neutral float-right" title="Upload Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install-r-package.html" class="btn btn-neutral float-left" title="Install R Packages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

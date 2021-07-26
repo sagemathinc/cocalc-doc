@@ -1,0 +1,593 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Install Python Packages &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/install-python-lib.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Install R Packages" href="install-r-package.html" />
+    <link rel="prev" title="External Tools" href="external-tools.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/install-python-lib.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Howto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="software-development.html">Developing Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-invitation-tokens.html">Project Invitation Tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export-timetravel.html">Export TimeTravel History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html">External Tools</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Install Python Packages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-requests">Install requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python-user-installs">Python “user” installs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#install-location-and-sys-path">Install location and <code class="docutils literal notranslate"><span class="pre">sys.path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pip">pip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setup-py">setup.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#virtualenv">Virtualenv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sage">Sage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#encapsulated-pip-w-jupyter-kernel">Encapsulated PIP w/ Jupyter Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anaconda-environment">Anaconda Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#install-some-software-into-my-own-anaconda-environment">Install some software into my own Anaconda environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configure-a-jupyter-kernel-for-my-custom-anaconda-environment">Configure a Jupyter kernel for my custom Anaconda environment</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="install-r-package.html">Install R Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running-processes.html">Manage Running Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Upload Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert-html-to-pdf.html">Convert HTML to PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webserver.html">Run A Webserver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokeh-server.html">Bokeh / Holoview Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shiny-server.html">Shiny Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-selection.html">Jupyter Kernel Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-extension.html">Setup Jupyter Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlab-extensions.html">JupyterLab Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom-jupyter-kernel.html">Custom Jupyter Kernel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fix-broken-jupyter-pdf.html">Fix broken Jupyter PDF export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dask.html">Dask cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fortran.html">Fortran Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git.html">Git Version Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google-api.html">Google Sheets API Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsl.html">GSL C Code Compilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nbgrader.html">NBgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neuron.html">NEURON simulation environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mongodb.html">MongoDB Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluto.html">Pluto Notebooks for Julia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="postgresql.html">PostgreSQL Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remarkjs-slideshow.html">RemarkJS Slideshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ruby.html">Ruby Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turtle.html">Turtle Graphics with CoCalc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activeloop-hub.html">Getting Started with Hub</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Howto</a> &raquo;</li>
+        
+      <li>Install Python Packages</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/install-python-lib.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-python-packages">
+<span id="index-0"></span><span id="id1"></span><h1>Install Python Packages<a class="headerlink" href="#install-python-packages" title="Permalink to this headline">¶</a></h1>
+<p>This page describes how to install a Python package in a CoCalc project.</p>
+<p>CoCalc already includes hundreds of packages for several Python environments.
+<strong>Check first</strong> if the lib you’re looking for <a class="reference external" href="https://cocalc.com/doc/software-python.html">is already installed</a>!</p>
+<p>Related: <a class="reference internal" href="custom-jupyter-kernel.html"><span class="doc">Custom Jupyter Kernel</span></a>, <a class="reference internal" href="jupyter-extension.html"><span class="doc">Setup Jupyter Extensions</span></a> and <a class="reference internal" href="install-r-package.html"><span class="doc">Install R Packages</span></a>.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#install-requests" id="id3">Install requests</a></li>
+<li><a class="reference internal" href="#python-user-installs" id="id4">Python “user” installs</a><ul>
+<li><a class="reference internal" href="#install-location-and-sys-path" id="id5">Install location and <code class="docutils literal notranslate"><span class="pre">sys.path</span></code></a></li>
+<li><a class="reference internal" href="#pip" id="id6">pip</a></li>
+<li><a class="reference internal" href="#setup-py" id="id7">setup.py</a></li>
+<li><a class="reference internal" href="#virtualenv" id="id8">Virtualenv</a></li>
+<li><a class="reference internal" href="#sage" id="id9">Sage</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#encapsulated-pip-w-jupyter-kernel" id="id10">Encapsulated PIP w/ Jupyter Kernel</a></li>
+<li><a class="reference internal" href="#anaconda-environment" id="id11">Anaconda Environment</a><ul>
+<li><a class="reference internal" href="#install-some-software-into-my-own-anaconda-environment" id="id12">Install some software into my own Anaconda environment</a></li>
+<li><a class="reference internal" href="#configure-a-jupyter-kernel-for-my-custom-anaconda-environment" id="id13">Configure a Jupyter kernel for my custom Anaconda environment</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="install-requests">
+<h2><a class="toc-backref" href="#id3">Install requests</a><a class="headerlink" href="#install-requests" title="Permalink to this headline">¶</a></h2>
+<p>If a package may have general use but is not already installed in CoCalc,
+please open a support request to tell us to install it globally for everyone.
+Uncomplicated install requests are typically handled within 1 business day for paying customers.
+Install will happen faster if you include as much as possible of the following information:</p>
+<ul class="simple">
+<li>Which Python environment?</li>
+<li>Which language version: 2 or 3?</li>
+<li>A link to the package website</li>
+<li>Special requirements and dependencies to build &amp; install</li>
+<li>A short but complete example, such that we can verify that we properly installed the software. This example might be included in internal tests, to make sure future updates do not break that library.</li>
+</ul>
+</div>
+<div class="section" id="python-user-installs">
+<span id="python-pkg-install-user"></span><h2><a class="toc-backref" href="#id4">Python “user” installs</a><a class="headerlink" href="#python-user-installs" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a>
+in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
+The install command will not work unless you
+<a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">upgrade your project</span></a> to have internet access.</p>
+</div>
+<p>A way to work around such a blocked internet access
+is to <a class="reference internal" href="upload.html"><span class="doc">upload the package files</span></a> into your project.</p>
+<p>You can install additional packages yourself, but only at user-permission level.
+CoCalc accounts do not have superuser (root) privileges.
+Software must be installed into user-writeable parts of the filesystem, which are in <code class="docutils literal notranslate"><span class="pre">/home/user</span></code> (check the value of <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>In a nutshell:</strong> a CoCalc project is a Linux user account under the username <code class="docutils literal notranslate"><span class="pre">user</span></code>.
+Therefore, installing software and libraries should usually be done in <code class="docutils literal notranslate"><span class="pre">~/.local</span></code> (i.e. <code class="docutils literal notranslate"><span class="pre">/home/user/.local</span></code>),
+which is the canonical location for user installs.
+Furthermore, in case the documentation mentions to specify a custom “prefix” path,
+set this to <code class="docutils literal notranslate"><span class="pre">~/.local</span></code>.
+Executables will install into <code class="docutils literal notranslate"><span class="pre">~/.local/bin</span></code> and will work right away,
+because projects already include that path in their <code class="docutils literal notranslate"><span class="pre">$PATH</span></code> variable.</p>
+</div>
+<div class="section" id="install-location-and-sys-path">
+<h3><a class="toc-backref" href="#id5">Install location and <code class="docutils literal notranslate"><span class="pre">sys.path</span></code></a><a class="headerlink" href="#install-location-and-sys-path" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>In the case of Python 2, <code class="docutils literal notranslate"><span class="pre">$HOME/.local/lib/python2.7/site-packages/</span></code> will contain the package you’ve installed.
+Similarly, this path will contain <code class="docutils literal notranslate"><span class="pre">python3.5</span></code> for a Python 3.5 executable.</p>
+<p>In case your Python environment can’t find the package,
+you might have to add your <code class="docutils literal notranslate"><span class="pre">~/.local/...</span></code> directory dynamically during runtime like that:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import sys, os
+sys.path.insert(0, os.path.expanduser(&#39;~/.local/lib/python2.7/site-packages&#39;))
+</pre></div>
+</div>
+<p class="last">Make sure, the path is correct.
+I.e. for Python 3 this could be one of <code class="docutils literal notranslate"><span class="pre">python3.4</span></code>, <code class="docutils literal notranslate"><span class="pre">python3.5</span></code>, <code class="docutils literal notranslate"><span class="pre">python3.6</span></code>…</p>
+</div>
+</div>
+<div class="section" id="pip">
+<h3><a class="toc-backref" href="#id6">pip</a><a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h3>
+<p>Pip is the “Python package manager”.
+It installs packages hosted at <a class="reference external" href="https://pypi.org/">PyPI.org</a>.</p>
+<p>If your package can be installed via <code class="docutils literal notranslate"><span class="pre">pip</span></code>,
+then run in a <a class="reference internal" href="../terminal.html"><span class="doc">CoCalc Terminal file</span></a>:</p>
+<ul class="simple">
+<li>Python2: <code class="docutils literal notranslate"><span class="pre">pip2</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">[package-name]</span></code></li>
+<li>Python3: <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">[package-name]</span></code></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong>Regarding Python 2 vs. Python 3:</strong></p>
+<ul class="last simple">
+<li>Python 2: use <code class="docutils literal notranslate"><span class="pre">pip2</span></code> and <code class="docutils literal notranslate"><span class="pre">python2</span></code>/<code class="docutils literal notranslate"><span class="pre">ipython2</span></code> – <code class="docutils literal notranslate"><span class="pre">pip</span></code> and <code class="docutils literal notranslate"><span class="pre">python</span></code> should default to these variants.</li>
+<li>Python 3: use <code class="docutils literal notranslate"><span class="pre">pip3</span></code> and <code class="docutils literal notranslate"><span class="pre">python3</span></code>/<code class="docutils literal notranslate"><span class="pre">ipython3</span></code>.</li>
+</ul>
+</div>
+<p>If you’ve <a class="reference internal" href="upload.html"><span class="doc">uploaded a zip/wheel file</span></a>,
+change the <code class="docutils literal notranslate"><span class="pre">[package-name]</span></code> to the actual filename.</p>
+</div>
+<div class="section" id="setup-py">
+<h3><a class="toc-backref" href="#id7">setup.py</a><a class="headerlink" href="#setup-py" title="Permalink to this headline">¶</a></h3>
+<p>If your package is in a folder inside your project
+(e.g., <a class="reference internal" href="upload.html"><span class="doc">you uploaded it</span></a>) which includes a <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file,
+you can do either <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span> <span class="pre">--user</span></code> or <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">--upgrade</span> <span class="pre">./</span></code></p>
+<p>(Some setup instructions alternatively mention <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span> <span class="pre">--home</span></code>)</p>
+<p>If pip requires that any external dependencies be downloaded, then your project must have internet access.</p>
+</div>
+<div class="section" id="virtualenv">
+<h3><a class="toc-backref" href="#id8">Virtualenv</a><a class="headerlink" href="#virtualenv" title="Permalink to this headline">¶</a></h3>
+<p>You can avoid the need for <code class="docutils literal notranslate"><span class="pre">--user</span></code> flags if you work inside a Python virtual environment.
+See  <a class="reference external" href="https://virtualenv.pypa.io/en/stable/userguide/">Virtualenv</a> for more information.</p>
+</div>
+<div class="section" id="sage">
+<span id="sage-install-python-pkg"></span><h3><a class="toc-backref" href="#id9">Sage</a><a class="headerlink" href="#sage" title="Permalink to this headline">¶</a></h3>
+<p>A special case is <a class="reference external" href="https://sagemath.org">SageMath</a>, which is a fully integrated environment built on top of Python.</p>
+<p>As of sage-9.1 and sage-9.2, installing Python packages into Sage is not supported. For further information, please consult resources listed under <a class="reference internal" href="sage-question.html"><span class="doc">Question about Sage</span></a>.</p>
+</div>
+</div>
+<div class="section" id="encapsulated-pip-w-jupyter-kernel">
+<h2><a class="toc-backref" href="#id10">Encapsulated PIP w/ Jupyter Kernel</a><a class="headerlink" href="#encapsulated-pip-w-jupyter-kernel" title="Permalink to this headline">¶</a></h2>
+<p>Here, we explain how to setup your own encapsulated Python environment using <a class="reference external" href="https://pipenv.pypa.io/en/latest/">pipenv</a>.
+You can either choose to use the global packages,
+or – as we do here – tell it to only have explicitly installed ones on board.</p>
+<p>We start with an empty directory in our <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ cd
+~$ mkdir my-special-env
+~$ cd my-special-env
+</pre></div>
+</div>
+<p>Then we run <code class="docutils literal notranslate"><span class="pre">pipenv</span> <span class="pre">install</span></code> without site packages. Install pandas below version <code class="docutils literal notranslate"><span class="pre">1.2</span></code> and the juypter kernel:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~/my-special-env$ pipenv install --no-site-packages ipykernel &#39;pandas&lt;1.2&#39;
+[output is abbreviated ...]
+Creating a virtualenv for this project...
+✔ Successfully created virtual environment!
+Installing ipykernel...
+✔ Installation Succeeded
+Installing pandas&lt;1.2...
+✔ Installation Succeeded
+✔ Success!
+Updated Pipfile.lock (4eda65)!
+Installing dependencies from Pipfile.lock (4eda65)...
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
+To activate this project&#39;s virtualenv, run pipenv shell.
+</pre></div>
+</div>
+<p>Now, we can launch it and give it a try. Let’s check if Pandas is below version <code class="docutils literal notranslate"><span class="pre">1.5</span></code> and other libs like <code class="docutils literal notranslate"><span class="pre">scipy</span></code> are not available:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~/my-special-env$ pipenv shell
+Launching subshell in virtual environment...
+ . /home/user/.local/share/virtualenvs/my-special-env-gNmS0l6R/bin/activate
+~/my-special-env$  . /home/user/.local/share/virtualenvs/my-special-env-gNmS0l6R/bin/activate
+(my-special-env) ~/my-special-env$ python
+Python 3.8.5 (default, Jul 28 2020, 12:59:40)
+[GCC 9.3.0] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import scipy
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No module named &#39;scipy&#39;
+&gt;&gt;&gt; import pandas
+&gt;&gt;&gt; pandas.__version__
+&#39;1.1.5&#39;
+</pre></div>
+</div>
+<p>Finally, we install the Juypter Kernel. We run <code class="docutils literal notranslate"><span class="pre">ipykernel</span> <span class="pre">install</span></code> and give the kernel a unique name.
+After opening the file in CoCalc’s editor via <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">&lt;filename.ipynb&gt;</span></code> ,
+make sure to run “Kernel” → “Refresh kernel list”, to get the new kernel.
+Then select it and you’re good to code!</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(my-special-env) ~/my-special-env$ python3 -m ipykernel install --user --name=my-special-env
+Installed kernelspec my-special-env in /home/user/.local/share/jupyter/kernels/my-special-env
+(my-special-env) ~/my-special-env$ open my-special-env.ipynb
+creating file &#39;my-special-env.ipynb&#39;
+</pre></div>
+</div>
+<p>All in all this gives you a precisely defined environment, outfitted with checksums for all dependencies for reproducibility.</p>
+</div>
+<div class="section" id="anaconda-environment">
+<span id="anaconda-install"></span><h2><a class="toc-backref" href="#id11">Anaconda Environment</a><a class="headerlink" href="#anaconda-environment" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://conda.io/en/latest/">Conda</a> is an alternative packaging system by <a class="reference external" href="https://anaconda.org/">Anaconda</a>.
+It is mostly used for Python packages, but it can manage and deliver almost any kind of software.</p>
+<p>CoCalc provides a global environmet, which you can start by running <code class="docutils literal notranslate"><span class="pre">anaconda2020</span></code> in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> or a related kernel in a <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebooks</span></a>.
+To get going with your own setup for your own CoCalc project,
+you have to <a class="reference internal" href="#anaconda-install-own-env"><span class="std std-ref">create your own environment</span></a>
+and your <a class="reference internal" href="#anaconda-jupyter"><span class="std std-ref">own kernel</span></a>.</p>
+<div class="section" id="install-some-software-into-my-own-anaconda-environment">
+<span id="anaconda-install-own-env"></span><h3><a class="toc-backref" href="#id12">Install some software into my own Anaconda environment</a><a class="headerlink" href="#install-some-software-into-my-own-anaconda-environment" title="Permalink to this headline">¶</a></h3>
+<p>The task below is to create a custom Anaconda overlay environment called <code class="docutils literal notranslate"><span class="pre">myconda</span></code> and, just for the sake of explanation,</p>
+<ol class="arabic simple">
+<li>install “Microsoft’s Open R” (which is an enhanced version of R by Microsoft).</li>
+<li>Install the plotly library from PyPI</li>
+</ol>
+<p>To get it installed in Anaconda as a user, do this:</p>
+<ol class="arabic">
+<li><p class="first">Open a terminal.</p>
+</li>
+<li><p class="first">Type <code class="docutils literal notranslate"><span class="pre">anaconda2020</span></code></p>
+</li>
+<li><p class="first">Type <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">myconda</span> <span class="pre">-c</span> <span class="pre">mro</span> <span class="pre">r</span></code> This creates a new local environment called “myconda” (name it as you wish) with the package “r” as its source coming from the channel “mro” (Microsoft’s Open R). Instead of that, you can add any other anaconda package in that spot. The example from the documentation is biopython, see <a class="reference external" href="http://conda.pydata.org/docs/using/envs.html#create-an-environment">http://conda.pydata.org/docs/using/envs.html#create-an-environment</a>.</p>
+</li>
+<li><p class="first">When installing, it briefly shows you that it ends up in <code class="docutils literal notranslate"><span class="pre">~/.conda/envs/myconda/....</span></code> in your local files. Now that we have it installed, we can get out of this “root” environment via source deactivate or restart the session. In any case, you are back in the the normal Linux terminal environment.</p>
+</li>
+<li><p class="first">Now run this: <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/.conda/envs/myconda/bin/activate</span> <span class="pre">myconda</span></code> Note that myconda is the name specified above, and the prompt switches to <code class="docutils literal notranslate"><span class="pre">(myconda)</span> <span class="pre">$</span></code>. Typing <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">R</span></code> shows: <code class="docutils literal notranslate"><span class="pre">/projects/xxx-xxx-xxx/.conda/envs/myconda/bin/R</span></code> and of course, just running <code class="docutils literal notranslate"><span class="pre">R</span></code> gives:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>R version 3.2.3 (2015-12-10) -- &quot;Wooden Christmas-Tree&quot;
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+[...]
+Microsoft R Open 3.2.3
+Default CRAN mirror snapshot taken on 2016-01-01
+The enhanced R distribution from Microsoft
+</pre></div>
+</div>
+</li>
+<li><p class="first">In the very same spirit, you can also run pip installations:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(myconda)~$ pip install plotly
+Downloading/unpacking plotly
+[...]
+Successfully installed plotly requests six pytz
+(myconda)~$ python -c &#39;import plotly; print(plotly)&#39;
+&lt;module &#39;plotly&#39; from &#39;/projects/20e4a191-73ea-4921-80e9-0a5d792fc511/.local/lib/python2.7/site-packages/plotly/__init__.pyc&#39;&gt;
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Note that since I’m still in my own “myconda” overlay environment, the <code class="docutils literal notranslate"><span class="pre">--user</span></code> switch in <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> wasn’t necessary. (Otherwise, it would be necessary.)</p>
+</div>
+<div class="section" id="configure-a-jupyter-kernel-for-my-custom-anaconda-environment">
+<span id="anaconda-jupyter"></span><h3><a class="toc-backref" href="#id13">Configure a Jupyter kernel for my custom Anaconda environment</a><a class="headerlink" href="#configure-a-jupyter-kernel-for-my-custom-anaconda-environment" title="Permalink to this headline">¶</a></h3>
+<p>With Anaconda’s <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment and software manager, you can <a class="reference external" href="https://conda.io/docs/user-guide/tasks/manage-environments.html">create custom environments</a> with specific versions of Python, R, and their packages. This is similar to capabilities provided by Python’s environment manager, <a class="reference external" href="https://virtualenv.pypa.io/en/stable/userguide/">Virtualenv</a>.</p>
+<p>Suppose you want to create a custom Anaconda environment with the <code class="docutils literal notranslate"><span class="pre">mdtraj</span></code> package and be able to use this environment in a Jupyter notebook. Here’s how:</p>
+<ol class="arabic">
+<li><p class="first">Follow these steps in <a class="reference external" href="../terminal">a .term file in CoCalc</a>. In the last step, the display name of the new kernel is changed so that it does not duplicate the name of kernel installed by CoCalc:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ mkdir -p ~/.local/share/jupyter/kernels
+~$ anaconda2020
+(root) ~$ conda create --name mymdtraj mdtraj
+(root) ~$ source activate mymdtraj
+(mymdtraj) ~$ conda install ipykernel
+(mymdtraj) ~$ source deactivate
+~$ mv ~/.conda/envs/mymdtraj/share/jupyter/kernels/python3 ~/.local/share/jupyter/kernels/mymdtraj
+~$ open ~/.local/share/jupyter/kernels/mymdtraj/kernel.json
+## change display_name from &quot;Python 3&quot; to &quot;My mdtraj&quot; and save the file
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open a new Jupyter notebook in CoCalc.</p>
+</li>
+<li><p class="first">Click on the <cite>Kernel</cite> button and look for your new kernel, “My mdtraj”, or whatever you used for <code class="docutils literal notranslate"><span class="pre">display_name</span></code> in <code class="docutils literal notranslate"><span class="pre">kernel.json</span></code>. If you don’t see your new kernel, scroll to the bottom of the Kernel menu and click <cite>Refresh Kernel List</cite>, and your new kernel should appear.</p>
+</li>
+<li><p class="first">Select the new kernel. You will now be running the environment you created with the <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code> command.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install-r-package.html" class="btn btn-neutral float-right" title="Install R Packages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="external-tools.html" class="btn btn-neutral float-left" title="External Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

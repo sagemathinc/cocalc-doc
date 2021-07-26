@@ -1,0 +1,1322 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Software Updates 2020 &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/software/updates-2020.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Software Updates 2019" href="updates-2019.html" />
+    <link rel="prev" title="Software Updates 2021" href="updates-2021.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/software/updates-2020.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../software.html">Software</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../software.html#default-environment">Default environment</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../software.html#software-update-summaries">Software update summaries</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="updates-2021.html">Software Updates 2021</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Software Updates 2020</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updates-2019.html">Software Updates 2019</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updates-2018.html">Software Updates 2018</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../software.html#main-supported-software-environments">Main supported software environments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../software.html#custom-environments">Custom environments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../software.html">Software</a> &raquo;</li>
+        
+      <li>Software Updates 2020</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/software/updates-2020.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software-updates-2020">
+<span id="id1"></span><h1>Software Updates 2020<a class="headerlink" href="#software-updates-2020" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="materialize-hardlink-and-updates">
+<span id="update-2020-12-09"></span><h2>2020-12-09: materialize, hardlink, and updates<a class="headerlink" href="#materialize-hardlink-and-updates" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Tools:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://materialize.com/">materialize</a> – <em>Materialize is a streaming database for real-time applications. Materialize accepts input data from a variety of streaming sources (e.g. Kafka) and files (e.g. CSVs), and lets you query them using SQL.</em> Additionally <code class="docutils literal notranslate"><span class="pre">mzcli</span></code> is installed to interact with it.</li>
+<li>(new) <a class="reference external" href="https://linux.die.net/man/1/hardlink">hardlink</a> – <em>consolidate duplicate files via hardlinks</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide) and R:</dt>
+<dd><ul class="first last">
+<li>(upd) various packages updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>System</dt>
+<dd><ul class="first last">
+<li>package updates</li>
+<li><a class="reference external" href="https://docs.npmjs.com/">npm</a> 7, and also updating some node.js utils</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="mathics-gprmax-and-pybedtools">
+<span id="update-2020-11-19"></span><h2>2020-11-19 : Mathics, gprMax, and pybedtools<a class="headerlink" href="#mathics-gprmax-and-pybedtools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Tools:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://mathics.org/">Mathics</a> – <em>a general-purpose computer algebra system (CAS). It is an open-source alternative to Mathematica.</em></li>
+<li>(new) file managers: <code class="docutils literal notranslate"><span class="pre">nnn</span></code>, <code class="docutils literal notranslate"><span class="pre">ranger</span></code>, and <code class="docutils literal notranslate"><span class="pre">lfm</span></code></li>
+<li>(upd) various system package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide):</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://www.gprmax.com/">gprMax</a> – <em>electromagnetic simulation software</em></li>
+<li>(new) <a class="reference external" href="https://daler.github.io/pybedtools/">pybedtools</a> – <em>is widely used for genomic interval manipulation or “genome algebra”</em></li>
+<li>(upd) various packages updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="rdkit-matplotlib-venn-and-data8-datascience">
+<span id="update-2020-11-09"></span><h2>2020-11-09 : RDkit, Matplotlib Venn and data8 datascience<a class="headerlink" href="#rdkit-matplotlib-venn-and-data8-datascience" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 (Anaconda 2020)</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="http://www.rdkit.org/docs/index.html">RDkit</a> <code class="docutils literal notranslate"><span class="pre">2020.09.1</span></code> – <em>Open-Source Cheminformatics Software</em></li>
+<li>(new) <a class="reference external" href="https://github.com/konstantint/matplotlib-venn">matplotlib_venn</a></li>
+<li>(upd) various package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="http://data8.org/datascience/">datascience by data8</a> – <em>written for use in Berkeley’s DS 8 course and contains useful functionality for investigating and graphically displaying data.</em></li>
+<li>(upd) various package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Linux system</dt>
+<dd><ul class="first last">
+<li>(upd) various package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="sage-9-2">
+<span id="update-2020-11-01"></span><h2>2020-11-01: Sage 9.2<a class="headerlink" href="#sage-9-2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><a class="reference external" href="https://sagemath.org">SageMath</a> 9.2 available now</dt>
+<dd><ul class="first last">
+<li><a class="reference external" href="https://wiki.sagemath.org/ReleaseTours/sage-9.2">9.2 Release Tour</a></li>
+<li><a class="reference external" href="https://share.cocalc.com/share/8b22ce8f3e9141692f14f63d3dbf333a769db673/sage-9.2.ipynb?viewer=share">9.2 example notebook</a></li>
+<li>To switch back to 9.1 as the default in your project, run <code class="docutils literal notranslate"><span class="pre">sage_select</span> <span class="pre">9.1</span></code> in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/sage9.2-3d-ani.png"><img alt="../_images/sage9.2-3d-ani.png" src="../_images/sage9.2-3d-ani.png" style="width: 50%;" /></a>
+</div>
+</div>
+<div class="section" id="pandoc-2-11">
+<span id="update-2020-10-28"></span><h2>2020-10-28: Pandoc 2.11<a class="headerlink" href="#pandoc-2-11" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Utils:</dt>
+<dd><ul class="first last">
+<li>(upd) <cite>pandoc</cite> <code class="docutils literal notranslate"><span class="pre">2.11.0.1</span></code> – <a class="reference external" href="https://github.com/jgm/pandoc/releases/tag/2.11.0.1">pandoc 2.11 release notes</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>General:</dt>
+<dd><ul class="first last">
+<li>(upd) various Python 3 and Ubuntu Linux packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="rpc-info-pycaret-r-4-0-3">
+<span id="update-2020-10-12"></span><h2>2020-10-12: RPC info, PyCaret, R 4.0.3, …<a class="headerlink" href="#rpc-info-pycaret-r-4-0-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Utils:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="http://manpages.ubuntu.com/manpages/bionic/man7/rpcinfo.7.html">rpcinfo</a> – <em>makes an RPC call to an RPC server and reports what it finds</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R:</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.r-project.org">R</a> <code class="docutils literal notranslate"><span class="pre">4.0.3</span></code></li>
+<li>various package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide):</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://pycaret.org/">pycaret</a> <code class="docutils literal notranslate"><span class="pre">2.1.2</span></code> – <em>an open source, low-code machine learning library in Python that allows you to go from preparing your data to deploying your model within minutes in your choice of notebook environment</em></li>
+<li>various package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Julia:</dt>
+<dd><ul class="first last">
+<li>(upd) Julia <code class="docutils literal notranslate"><span class="pre">1.5.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="atsa-bert-and-pygimli">
+<span id="update-2020-09-28"></span><h2>2020-09-28: aTSA, BERT and pyGIMLi<a class="headerlink" href="#atsa-bert-and-pygimli" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Node.js:</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.typescriptlang.org/">typescript</a> <code class="docutils literal notranslate"><span class="pre">4.0.2</span></code>, <code class="docutils literal notranslate"><span class="pre">prettier&#64;2.1.1</span></code>, <code class="docutils literal notranslate"><span class="pre">webpack&#64;4.44.1</span></code>, <code class="docutils literal notranslate"><span class="pre">coffeescript&#64;2.5.1</span></code>, <code class="docutils literal notranslate"><span class="pre">data-cli&#64;0.10.1</span></code>, <code class="docutils literal notranslate"><span class="pre">ijavascript&#64;5.2.0</span></code>, …</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R (system-wide):</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://cran.r-project.org/package=aTSA">aTSA</a> – <em>Contains some tools for testing, analyzing time series data and fitting popular time series models such as ARIMA, Moving Average and Holt Winters, etc.</em></li>
+<li>(upd) various packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide):</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://nbconvert.readthedocs.io/">nbconvert</a> <code class="docutils literal notranslate"><span class="pre">6.0.6</span></code>, <a class="reference external" href="https://matplotlib.org/">matplotlib</a> <code class="docutils literal notranslate"><span class="pre">3.3.2</span></code> and various other packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (Anaconda 2020):</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://www.pygimli.org/">pyGIMLi</a>– <em>an open-source multi-method library for modelling and inversion in geophysics</em></li>
+<li>(new) <a class="reference external" href="http://resistivity.net/bert/">BERT</a> – <em>a software package for modelling and inversion of Electrical Resistivity Tomography data</em></li>
+<li>(upd) various packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Utilities:</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.heroku.com/">heroku</a> <code class="docutils literal notranslate"><span class="pre">7.43.0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="regular-update">
+<span id="update-2020-09-12"></span><h2>2020-09-12: Regular update<a class="headerlink" href="#regular-update" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Anaconda 2020:</dt>
+<dd><ul class="first last">
+<li><a class="reference external" href="https://www.statsmodels.org/">statsmodels</a> <code class="docutils literal notranslate"><span class="pre">0.12.0</span></code>, <a class="reference external" href="https://pandas.pydata.org/">pandas</a> <code class="docutils literal notranslate"><span class="pre">1.1.1</span></code>, <a class="reference external" href="https://matplotlib.org/">matplotlib</a> <code class="docutils literal notranslate"><span class="pre">3.3.1</span></code>, <a class="reference external" href="https://dask.org">dask</a>/<a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.25.0</span></code>, <a class="reference external" href="https://biopython.org/">biopython</a> <code class="docutils literal notranslate"><span class="pre">1.78</span></code>,  etc.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide):</dt>
+<dd><ul class="first last">
+<li><a class="reference external" href="https://pandas.pydata.org/">pandas</a> <code class="docutils literal notranslate"><span class="pre">1.1.2</span></code>, <a class="reference external" href="https://seaborn.pydata.org/">seaborn</a> <code class="docutils literal notranslate"><span class="pre">0.11.0</span></code> (to fix <a class="reference external" href="https://github.com/mwaskom/seaborn/issues/2194">plotting issue #2194</a>), …</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Ubuntu 18.04:</dt>
+<dd><ul class="first last">
+<li>a couple of small updates, mostly system packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="julia-1-5-1">
+<span id="update-2020-09-01"></span><h2>2020-09-01: Julia 1.5.1<a class="headerlink" href="#julia-1-5-1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Julia:</dt>
+<dd><ul class="first last">
+<li>updated to 1.5.1</li>
+<li>various package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python (system-wide):</dt>
+<dd><ul class="first last">
+<li>various package updates, including <a class="reference external" href="https://dask.org">dask</a>/<a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.25.0</span></code>, <a class="reference external" href="https://hypothesis.readthedocs.io/en/latest/">hypothesis</a> <code class="docutils literal notranslate"><span class="pre">5.29.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R (system-wide)</dt>
+<dd><ul class="first last">
+<li>various package updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://asciidoctor.org">Asciidoctor</a> <code class="docutils literal notranslate"><span class="pre">2.0.10</span></code></li>
+<li><a class="reference external" href="https://cmake.org/overview/">CMake</a> <code class="docutils literal notranslate"><span class="pre">3.18.2</span></code></li>
+<li><a class="reference external" href="https://www.haskell.org/">Haskell</a> <code class="docutils literal notranslate"><span class="pre">ghc</span> <span class="pre">8.10.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="ubuntu-20-04">
+<span id="update-2020-08-15"></span><h2>2020-08-18: Ubuntu 20.04<a class="headerlink" href="#ubuntu-20-04" title="Permalink to this headline">¶</a></h2>
+<p>The default environment for new projects changed: <a class="reference internal" href="../news/ubuntu-2004.html#ubuntu-2004-upgrade"><span class="std std-ref">learn more …</span></a></p>
+</div>
+<div class="section" id="regular-update-of-ubuntu-18-04">
+<span id="update-2020-08-14"></span><h2>2020-08-14/18.04: Regular update of Ubuntu 18.04<a class="headerlink" href="#regular-update-of-ubuntu-18-04" title="Permalink to this headline">¶</a></h2>
+<p>Cumulative updates to various software package environments.</p>
+</div>
+<div class="section" id="cumulative-updates">
+<span id="update-2020-07-31"></span><h2>2020-07-31: Cumulative Updates<a class="headerlink" href="#cumulative-updates" title="Permalink to this headline">¶</a></h2>
+<p>Yet another round of cumulative updates to Linux, Python and R and a
+new tool <a class="reference external" href="http://www.pc-tools.net/unix/grepcidr/">grepcidr</a>.</p>
+</div>
+<div class="section" id="minor-bugfixes">
+<span id="update-2020-07-16"></span><h2>2020-07-16: Minor/Bugfixes<a class="headerlink" href="#minor-bugfixes" title="Permalink to this headline">¶</a></h2>
+<p>This is a cumulative update with several small changes and bugfixes.
+For example a dependency problem for <a class="reference external" href="https://pytorch.org/">PyTorch</a>.
+A noteworthy new library is <a class="reference external" href="https://springer-math.github.io/Mathematics-of-Epidemics-on-Networks/">Epidemics-on-Networks</a> for Python 3 (system-wide), e.g. <a class="reference external" href="https://share.cocalc.com/share/3ae747a3539ade9e76f5de6364d71d7dfb9157b2/TESTS/eon-test.ipynb?viewer=share&amp;session=">EoN example test</a>.</p>
+</div>
+<div class="section" id="updating-snappy-in-sagemath">
+<span id="update-2020-06-20"></span><h2>2020-06-20: Updating <a class="reference external" href="https://snappy.math.uic.edu/">SnapPy</a> in SageMath<a class="headerlink" href="#updating-snappy-in-sagemath" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.tensorflow.org/">tensorflow</a> <code class="docutils literal notranslate"><span class="pre">2.2.0</span></code>, <a class="reference external" href="https://cython.org/">Cython</a> <code class="docutils literal notranslate"><span class="pre">0.29.20</span></code>, <a class="reference external" href="https://dask.org">dask</a> <code class="docutils literal notranslate"><span class="pre">2.18.1</span></code>, <a class="reference external" href="https://dask.org">dask</a> <code class="docutils literal notranslate"><span class="pre">2.19.0</span></code>, <a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.19.0</span></code>, <a class="reference external" href="https://pandas.pydata.org/">pandas</a> <code class="docutils literal notranslate"><span class="pre">1.0.5</span></code></li>
+<li>(upd) <a class="reference external" href="https://qiskit.org">qiskit</a> related packages and <a class="reference external" href="https://sunqm.github.io/pyscf/">pyscf</a> <code class="docutils literal notranslate"><span class="pre">1.7.3</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Sage 9.1</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://snappy.math.uic.edu/">snappy</a> <code class="docutils literal notranslate"><span class="pre">2.8</span></code>, <a class="reference external" href="https://snappy.math.uic.edu/spherogram.html">spherogram</a> <code class="docutils literal notranslate"><span class="pre">1.8.3</span></code>, <a class="reference external" href="https://www.math.uic.edu/t3m/plink/doc/">plink</a> <code class="docutils literal notranslate"><span class="pre">2.3.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Sage 8.9</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.math.uic.edu/t3m/plink/doc/">plink</a> <code class="docutils literal notranslate"><span class="pre">2.3.1</span></code>, <a class="reference external" href="https://snappy.math.uic.edu/">snappy</a> <code class="docutils literal notranslate"><span class="pre">2.8</span></code>, <a class="reference external" href="https://snappy.math.uic.edu/spherogram.html">spherogram</a> <code class="docutils literal notranslate"><span class="pre">1.8.3</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last">
+<li>various system-wide updates, including R packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="prophet-and-pmdarima">
+<span id="update-2020-06-06"></span><h2>2020-06-06: Prophet and pmdarima<a class="headerlink" href="#prophet-and-pmdarima" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://alkaline-ml.com/pmdarima/">pmdarima</a> <code class="docutils literal notranslate"><span class="pre">1.6.1</span></code> – <em>ARIMA estimators for Python</em></li>
+<li>(new) <a class="reference external" href="https://facebook.github.io/prophet/">fbprophet</a> – <em>Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.</em></li>
+<li>(upd) <a class="reference external" href="https://numba.pydata.org/">numba</a> <code class="docutils literal notranslate"><span class="pre">0.49.1</span></code>, <a class="reference external" href="https://numpy.org/">numpy</a> <code class="docutils literal notranslate"><span class="pre">1.18.5</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="sage-9-1-and-node-js-12">
+<span id="update-2020-05-27"></span><h2>2020-05-27: Sage 9.1 and Node.js 12<a class="headerlink" href="#sage-9-1-and-node-js-12" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><a class="reference external" href="https://sagemath.org">SageMath</a> 9.1 available now</dt>
+<dd><ul class="first last">
+<li><a class="reference external" href="https://share.cocalc.com/share/5ecad91c75ac8591603714693871c056ad3658ad/sage-9.1.ipynb?viewer=share">Sage 9.1 example notebook</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Julia</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://julialang.org/">Julia</a> <code class="docutils literal notranslate"><span class="pre">1.4.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://scikit-learn.org/">scikit-learn</a>, <a class="reference external" href="https://www.sympy.org/">sympy</a> <code class="docutils literal notranslate"><span class="pre">1.6.0</span></code>, <a class="reference external" href="https://mxnet.apache.org/">mxnet</a> <code class="docutils literal notranslate"><span class="pre">1.6.0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://nodejs.org/en/">Node.js</a> version 12</li>
+<li>(upd) <a class="reference external" href="https://cmake.org/overview/">cmake</a> <code class="docutils literal notranslate"><span class="pre">3.17.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="update-2020-05-20">
+<span id="id2"></span><h2>2020-05-20<a class="headerlink" href="#update-2020-05-20" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://github.com/leanprover-community/mathlib-tools">mathlibtools</a> <code class="docutils literal notranslate"><span class="pre">0.0.6</span></code> for <a class="reference external" href="https://leanprover.github.io/about/">LEAN</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://scikit-learn.org/">scikit-learn</a> <code class="docutils literal notranslate"><span class="pre">0.23.0</span></code>, <a class="reference external" href="http://imageio.github.io/">imageio</a> <code class="docutils literal notranslate"><span class="pre">2.8.0</span></code>, <a class="reference external" href="https://jeltef.github.io/PyLaTeX/">PyLaTeX</a> <code class="docutils literal notranslate"><span class="pre">1.3.2</span></code>, <a class="reference external" href="https://github.com/obspy/obspy/wiki">obspy</a> <code class="docutils literal notranslate"><span class="pre">1.2.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Julia 1.4</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://juliamath.github.io/FFTW.jl/latest/">FFTW</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="octave-5-2-0">
+<span id="update-2020-05-12"></span><h2>2020-05-12: Octave 5.2.0<a class="headerlink" href="#octave-5-2-0" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Expanded the list of <a class="reference external" href="https://cocalc.com/doc/software-octave.html">pre-installed Octave packages</a></li>
+<li>Updated the Octave Jupyter kernel</li>
+<li>Made it a <a class="reference external" href="https://cocalc.com/doc/octave">first class citizen</a></li>
+</ul>
+</div>
+<div class="section" id="quspin-and-rmdformats">
+<span id="update-2020-05-10"></span><h2>2020-05-10: QuSpin and RmdFormats<a class="headerlink" href="#quspin-and-rmdformats" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 (Anaconda 2019):</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://weinbe58.github.io/QuSpin/">QuSpin</a> <code class="docutils literal notranslate"><span class="pre">0.3.4</span></code> – <em>Python package for exact diagonalization and quantum dynamics of arbitrary boson, fermion and spin many-body systems. QuSpin supports the use of various (user-defined) symmetries for one and higher-dimensional lattice systems, (imaginary) time evolution following arbitrary user-specified driving protocols, and constrained Hilbert spaces.</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(fix) the <code class="docutils literal notranslate"><span class="pre">/ext/bin/tensorboard</span></code> wrapper script works again</li>
+<li>(upd) <a class="reference external" href="https://dask.org">dask</a>/<a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.16.0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R (system-wide)</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://bookdown.org/yihui/rmarkdown/rmdformats.html">rmdformats</a> – <em>provides several HTML output formats of unique and attractive styles for RMarkdown</em></li>
+<li>various package updates …</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="fixing-keras">
+<span id="update-2020-05-08"></span><h2>2020-05-08: Fixing <a class="reference external" href="https://keras.io">Keras</a><a class="headerlink" href="#fixing-keras" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(fix) <a class="reference external" href="https://keras.io">keras</a> in <a class="reference external" href="https://www.tensorflow.org/">tensorflow</a> by downgrading <a class="reference external" href="https://www.tensorflow.org/guide/estimator">tensorflow-estimator</a> (<a class="reference external" href="https://github.com/tensorflow/tensorflow/issues/37525">issue tf #37525</a>)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://docs.npmjs.com/">npm</a> <code class="docutils literal notranslate"><span class="pre">6.14.5</span></code>, <a class="reference external" href="https://www.typescriptlang.org/">typescript</a> <code class="docutils literal notranslate"><span class="pre">3.8.3</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="stellargraph">
+<span id="update-2020-05-04"></span><h2>2020-05-04: Stellargraph<a class="headerlink" href="#stellargraph" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://www.stellargraph.io/">stellargraph</a> <code class="docutils literal notranslate"><span class="pre">0.11.1</span></code> – <em>software for network graph analytics</em></li>
+<li>(upd) <a class="reference external" href="https://www.tensorflow.org/guide/estimator">tensorflow-estimator</a> <code class="docutils literal notranslate"><span class="pre">2.2.0</span></code>, <a class="reference external" href="https://www.tensorflow.org/probability">tensorflow-probability</a> <code class="docutils literal notranslate"><span class="pre">0.9.0</span></code>, <a class="reference external" href="https://dask.org">dask</a> <code class="docutils literal notranslate"><span class="pre">2.15.0</span></code>, <a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.15.1</span></code>, <a class="reference external" href="https://www.statsmodels.org/">statsmodels</a> <code class="docutils literal notranslate"><span class="pre">0.11.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R (system-wide)</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://cran.r-project.org/package=genlasso">genlasso</a> <code class="docutils literal notranslate"><span class="pre">1.4</span></code> – <em>Provides fast algorithms for computing the solution path for generalized lasso problems</em></li>
+<li>(new) <cite>coronavirus</cite> <code class="docutils literal notranslate"><span class="pre">0.1</span></code> – <em>Provides a daily summary of the Coronavirus (COVID-19) cases by state/province</em></li>
+<li>many additional packages and updates</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Jupyter Notebooks:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>(rem) disabling deprecated and little useful kernels:</dt>
+<dd><ul class="first last">
+<li>Julia 1.3: use Julia 1.4</li>
+<li>Sage’s Python 2: use Sage’s Python mode. also, starting with 9.0 it’s Python 3</li>
+<li>Sage’s R: use R (system-wide), there is no reason left to use this one</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="r-3-6-3-and-julia-1-4-1">
+<span id="update-2020-04-25"></span><h2>2020-04-25: R <code class="docutils literal notranslate"><span class="pre">3.6.3</span></code> and Julia <code class="docutils literal notranslate"><span class="pre">1.4.1</span></code><a class="headerlink" href="#r-3-6-3-and-julia-1-4-1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>R (system-wide)</dt>
+<dd><ul class="first last">
+<li>(upd) Upgrading R to <code class="docutils literal notranslate"><span class="pre">3.6.3</span> <span class="pre">--</span> <span class="pre">&quot;Holding</span> <span class="pre">the</span> <span class="pre">Windsock&quot;</span></code> and many R packages</li>
+<li>(rem) Removing <code class="docutils literal notranslate"><span class="pre">r-cran-bvs</span></code>, <code class="docutils literal notranslate"><span class="pre">r-cran-haplo.ccs</span></code>, and <code class="docutils literal notranslate"><span class="pre">r-cran-haplo.stats</span></code>, because they were holding back updating R</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Julia</dt>
+<dd><ul class="first last">
+<li>(upd) to 1.4.1</li>
+<li>(new) adding several packages: see <a class="reference external" href="https://cocalc.com/doc/software-julia.html">Julia Packages on CoCalc</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://github.com/deepcharles/ruptures">ruptures</a> <code class="docutils literal notranslate"><span class="pre">1.0.3</span></code> – <em>a Python library for off-line change point detection</em></li>
+<li>(upd) <a class="reference external" href="https://github.com/cjekel/piecewise_linear_fit_py">pwlf</a> <code class="docutils literal notranslate"><span class="pre">2.0.0</span></code>, <a class="reference external" href="https://github.com/tisimst/pyDOE">pyDOE</a> <code class="docutils literal notranslate"><span class="pre">0.3.8</span></code>, <a class="reference external" href="https://numba.pydata.org/">numba</a> <code class="docutils literal notranslate"><span class="pre">0.49.0</span></code>, <a class="reference external" href="https://numpy.org/">numpy</a> <code class="docutils literal notranslate"><span class="pre">1.18.3</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (Anaconda 2019):</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://github.com/tisimst/pyDOE">pyDOE</a> <code class="docutils literal notranslate"><span class="pre">0.3.8</span></code>, <a class="reference external" href="https://github.com/deepcharles/ruptures">ruptures</a> <code class="docutils literal notranslate"><span class="pre">1.0.3</span></code></li>
+<li>(upd) <a class="reference external" href="https://www.tensorflow.org/">tensorflow</a> <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code>, <a class="reference external" href="https://www.sympy.org/">sympy</a> <code class="docutils literal notranslate"><span class="pre">1.5.1</span></code>, <a class="reference external" href="https://networkx.github.io/documentation/stable/">networkx</a> <code class="docutils literal notranslate"><span class="pre">2.4.0</span></code>, <a class="reference external" href="https://github.com/obspy/obspy/wiki">obspy</a> <code class="docutils literal notranslate"><span class="pre">1.2.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="cobol-gnucobol">
+<span id="update-2020-04-16"></span><h2>2020-04-16 COBOL (GnuCOBOL)<a class="headerlink" href="#cobol-gnucobol" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Software:</dt>
+<dd><ul class="first last">
+<li>(new) <cite>COBOL</cite> via <a class="reference external" href="https://open-cobol.sourceforge.io/">GnuCOBOL</a> – <em>an acronym for “common business-oriented language”). Created in the 1960’s, it is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented.</em> – <a class="reference external" href="https://share.cocalc.com/share/55f06a489bf8944f65f10a8aa8c1a2af30dd3690/cobol/?viewer=share">cobol example file</a></li>
+<li><dl class="first docutils">
+<dt>(upd) <a class="reference external" href="https://www.rust-lang.org/">Rust</a></dt>
+<dd><ul class="first last">
+<li><code class="docutils literal notranslate"><span class="pre">rustc</span> <span class="pre">+stable:</span> <span class="pre">1.42.0</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rustc</span> <span class="pre">+beta:</span> <span class="pre">1.43.0-beta.5</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">rustc</span> <span class="pre">+nightly:</span> <span class="pre">1.44.0-nightly</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>(new) <a class="reference external" href="https://software.intel.com/en-us/mkl">Intel MKL</a> <code class="docutils literal notranslate"><span class="pre">intel-mkl-64bit-2020.1-102</span></code> – <em>The Fastest and Most-Used Math Library for Intel®-Based Systems</em></dt>
+<dd><ul class="first last">
+<li>use via <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">LD_LIBRARY_PATH=/opt/intel/mkl/lib/intel64</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide):</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://numpy.org/">numpy</a> <code class="docutils literal notranslate"><span class="pre">1.18.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>SageMath:</dt>
+<dd><ul class="first last">
+<li>(upd) development version <code class="docutils literal notranslate"><span class="pre">9.1.rc0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="healpy-1-13">
+<span id="update-2020-04-08"></span><h2>2020-04-08: healpy 1.13<a class="headerlink" href="#healpy-1-13" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 and Anaconda 2019:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://healpy.readthedocs.io/">healpy</a> 1.13.0`` – <em>a Python package to handle pixelated data on the sphere</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>System.</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://bazel.build/">bazel</a> <code class="docutils literal notranslate"><span class="pre">3.0.0</span></code></li>
+<li>(upd) various system package updates, including R packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="julia-1-4">
+<span id="update-2020-03-30"></span><h2>2020-03-30: Julia 1.4<a class="headerlink" href="#julia-1-4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Julia:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://docs.julialang.org/en/v1.4/NEWS/#">Julia 1.4 release notes</a> – please update from 1.3 to 1.4 soon, since 1.3 is deprecated.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (system-wide)</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="http://geopandas.org/">geopandas</a> <code class="docutils literal notranslate"><span class="pre">0.7.0</span></code>, <a class="reference external" href="https://rasterio.readthedocs.io">rasterio</a> <code class="docutils literal notranslate"><span class="pre">1.1.3</span></code>, <a class="reference external" href="https://isochrones.readthedocs.io/">isochrones</a> <code class="docutils literal notranslate"><span class="pre">2.1</span></code>, <a class="reference external" href="https://cython.org/">cython</a> <code class="docutils literal notranslate"><span class="pre">0.29.16</span></code>, <a class="reference external" href="https://matplotlib.org/">matplotlib</a> <code class="docutils literal notranslate"><span class="pre">3.2.1</span></code>, <a class="reference external" href="https://pandas.pydata.org/">pandas</a> <code class="docutils literal notranslate"><span class="pre">1.0.3</span></code>, <a class="reference external" href="https://ipython.readthedocs.io/en/stable/install/kernel_install.html">ipykernel</a> <code class="docutils literal notranslate"><span class="pre">5.2.0</span></code>, <a class="reference external" href="https://nipype.readthedocs.io/">nipype</a> <code class="docutils literal notranslate"><span class="pre">1.4.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 (Anaconda 2019)</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://matplotlib.org/">matplotlib</a> <code class="docutils literal notranslate"><span class="pre">3.2.1</span></code>, <a class="reference external" href="https://numba.pydata.org/">numba</a> <code class="docutils literal notranslate"><span class="pre">0.48.0</span></code>, <a class="reference external" href="https://numpy.org/">numpy</a> <code class="docutils literal notranslate"><span class="pre">1.18.1</span></code>, <a class="reference external" href="https://www.statsmodels.org/">statsmodels</a> <code class="docutils literal notranslate"><span class="pre">0.11.1</span></code>,  <a class="reference external" href="http://geopandas.org/">geopandas</a> <code class="docutils literal notranslate"><span class="pre">0.7.0</span></code>, <a class="reference external" href="https://pandas.pydata.org/">pandas</a> <code class="docutils literal notranslate"><span class="pre">1.0.3</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Node.js</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://coffeescript.org/">coffeescript</a> <code class="docutils literal notranslate"><span class="pre">2.5.1</span></code>, <a class="reference external" href="https://www.typescriptlang.org/">typescript</a> <code class="docutils literal notranslate"><span class="pre">3.8.3</span></code>, <a class="reference external" href="https://docs.npmjs.com/">npm</a> <code class="docutils literal notranslate"><span class="pre">6.14.4</span></code>, <a class="reference external" href="https://datahub.io/docs">data-cli</a> <code class="docutils literal notranslate"><span class="pre">0.9.6</span></code>, <a class="reference external" href="https://github.com/n-riesco/ijavascript">ijavascript</a> <code class="docutils literal notranslate"><span class="pre">5.2.0</span></code> (for the JavaScript kernel), <a class="reference external" href="https://github.com/giggio/node-chromedriver">chromedriver</a> <code class="docutils literal notranslate"><span class="pre">80.0.1</span></code>, <a class="reference external" href="https://prettier.io/">prettier</a> <code class="docutils literal notranslate"><span class="pre">2.0.2</span></code>, <a class="reference external" href="https://lerna.js.org/">lerna</a> <code class="docutils literal notranslate"><span class="pre">3.20.2</span></code>, <a class="reference external" href="https://webpack.js.org/">webpack</a> <code class="docutils literal notranslate"><span class="pre">4.42.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last">
+<li>(upd) various Linux package updates, including <code class="docutils literal notranslate"><span class="pre">qgis</span></code> related ones to <code class="docutils literal notranslate"><span class="pre">3.12.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="update-2020-03-20">
+<span id="id3"></span><h2>2020-03-20:<a class="headerlink" href="#update-2020-03-20" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3 Anaconda 2019</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://scikit-learn.org/">scikit-learn</a> <code class="docutils literal notranslate"><span class="pre">0.22.2.post1</span></code>, <a class="reference external" href="https://matplotlib.org/">matplotlib</a> <code class="docutils literal notranslate"><span class="pre">3.2.0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 system-wide</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://ccdproc.readthedocs.io/">ccdproc</a> <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code>  – <em>an Astropy affiliated package for basic data reductions of CCD images</em></li>
+<li>(upd) <a class="reference external" href="https://matplotlib.org/">matplotlib</a> <code class="docutils literal notranslate"><span class="pre">3.2.0</span></code>, <a class="reference external" href="https://dask.org">dask</a>/<a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.12</span></code>, <a class="reference external" href="https://scikit-learn.org/">scikit-learn</a> <code class="docutils literal notranslate"><span class="pre">0.22.2.post1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last">
+<li>(new) <code class="docutils literal notranslate"><span class="pre">libnetcdff6</span> <span class="pre">(4.4.4+ds-3)</span></code> and <code class="docutils literal notranslate"><span class="pre">libnetcdff-dev</span> <span class="pre">(4.4.4+ds-3)</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R (system-wide)</dt>
+<dd><ul class="first last">
+<li>(new) <code class="docutils literal notranslate"><span class="pre">markovchain</span> <span class="pre">0.8.4</span></code></li>
+<li>(upd) various packages …</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="async-i-o-in-jupyter-notebooks">
+<span id="update-2020-02-29"></span><h2>2020-02-29: Async I/O in Jupyter Notebooks<a class="headerlink" href="#async-i-o-in-jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>Python 3</dt>
+<dd><ul class="first last">
+<li><p class="first">(upd) various Jupyter libs:  <a class="reference external" href="https://github.com/jupyter/jupyter_client">jupyter-client</a> <code class="docutils literal notranslate"><span class="pre">6.0.0</span></code>, <a class="reference external" href="https://jupyter-console.readthedocs.io/en/latest/">jupyter-console</a> <code class="docutils literal notranslate"><span class="pre">6.1.0</span></code>, <a class="reference external" href="https://jupyter.org/hub">jupyterhub</a> <code class="docutils literal notranslate"><span class="pre">1.1.0</span></code>, <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">jupyterlab</a> <code class="docutils literal notranslate"><span class="pre">1.2.6</span></code>, <a class="reference external" href="https://ipython.readthedocs.io/en/stable/install/kernel_install.html">ipykernel</a> <code class="docutils literal notranslate"><span class="pre">5.1.4</span></code>,  <a class="reference external" href="https://ipython.org/">ipython</a> <code class="docutils literal notranslate"><span class="pre">7.12.0</span></code>, …</p>
+<p>This means you work seamlessly with Python 3’s <a class="reference external" href="https://docs.python.org/3.7/library/asyncio-task.html">async/await coroutines</a> in the system-wide Python3 kernel:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">)</span>
+
+<span class="k">await</span> <span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">(new) <a class="reference external" href="https://python-visualization.github.io/folium/">folium</a> <code class="docutils literal notranslate"><span class="pre">0.10.1</span></code> – maps of the world. try <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">folium;</span> <span class="pre">folium.Map(location=[45.523,</span> <span class="pre">-122.675],</span> <span class="pre">width=750,</span> <span class="pre">height=500)</span></code></p>
+</li>
+<li><p class="first">(upd) <a class="reference external" href="https://requests.readthedocs.io/en/master/">requests</a> <code class="docutils literal notranslate"><span class="pre">2.23.0</span></code>, <a class="reference external" href="https://cython.org/">cython</a> <code class="docutils literal notranslate"><span class="pre">0.29.15</span></code>,  <a class="reference external" href="https://numba.pydata.org/">numba</a> <code class="docutils literal notranslate"><span class="pre">0.48.0</span></code>, <a class="reference external" href="https://numpy.org/">numpy</a> <code class="docutils literal notranslate"><span class="pre">1.17.5</span></code>, <a class="reference external" href="https://github.com/dabeaz/curio">curio</a> <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, <a class="reference external" href="https://github.com/erdewit/nest_asyncio">nest-asyncio</a> <code class="docutils literal notranslate"><span class="pre">1.2.3</span></code>, <a class="reference external" href="https://biopython.org/">biopython</a> <code class="docutils literal notranslate"><span class="pre">1.76</span></code></p>
+</li>
+<li><p class="first">(upd) <a class="reference external" href="https://docs.pytest.org/en/latest/">PyTest</a> related: <code class="docutils literal notranslate"><span class="pre">pytest-5.3.5</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest-doctestplus-0.5.0</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest-forked-1.1.3</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest-html-2.0.1</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest-mock-2.0.0</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest-pylint-0.15.0</span></code>, <code class="docutils literal notranslate"><span class="pre">hypothesis-5.5.4</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest-astropy-0.8.0</span></code></p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software</dt>
+<dd><ul class="first last simple">
+<li>(upd) <a class="reference external" href="https://www.qgis.org">qgis</a> <code class="docutils literal notranslate"><span class="pre">3.12</span></code></li>
+<li>(upd) <a class="reference external" href="https://www.typescriptlang.org/">typescript</a> <code class="docutils literal notranslate"><span class="pre">3.8.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>LEAN</dt>
+<dd><ul class="first last simple">
+<li>(upd) <a class="reference external" href="https://github.com/leanprover-community/mathlib">mathlib</a> <code class="docutils literal notranslate"><span class="pre">2020-02-27</span></code> nightly build (LEAN 3.6.0 and mathlib aren’t compatible yet, hence no update of LEAN itself)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R</dt>
+<dd><ul class="first last simple">
+<li>(new) <a class="reference external" href="https://cran.r-project.org/package=mltools">mltools</a> <code class="docutils literal notranslate"><span class="pre">0.3.5</span></code> – <em>A collection of machine learning helper functions, particularly assisting in the Exploratory Data Analysis phase.</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="lean-3-5-1-and-javascript-kernel">
+<span id="update-2020-02-21"></span><h2>2020-02-21: LEAN 3.5.1 and JavaScript Kernel<a class="headerlink" href="#lean-3-5-1-and-javascript-kernel" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt><a class="reference external" href="https://leanprover.github.io/about/">LEAN</a>, the open source theorem prover:</dt>
+<dd><ul class="first last">
+<li><p class="first">Update to 3.5.1, the most recent <a class="reference external" href="https://github.com/leanprover-community">LEAN community edition</a></p>
+</li>
+<li><p class="first">Latest <a class="reference external" href="https://github.com/leanprover-community/mathlib">mathlib</a> build</p>
+</li>
+<li><dl class="first docutils">
+<dt>Try it:</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="https://share.cocalc.com/share/f014cd1885a22e8665a728be825e563fc79b7e1f/Maths_Challenges/?viewer=share">LEAN maths challenges</a> (open this link, click the green button at the top – that copies all files to your project and you can start playing around)</li>
+<li><a class="reference external" href="https://share.cocalc.com/share/df81e09e5b8f16f28b3a2e818dcdd4560e7818ae/support/2020-02-19-lean-natural-numbers.lean?viewer=share">Natural numbers example</a>:</li>
+</ul>
+</dd>
+</dl>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="https://share.cocalc.com/share/9ba989d8b4e822cb00df1471b2d46a249c90f364/img/2020-02-20-lean-mathlib-3.5.1-cocalc.png?viewer=raw"><img alt="https://share.cocalc.com/share/9ba989d8b4e822cb00df1471b2d46a249c90f364/img/2020-02-20-lean-mathlib-3.5.1-cocalc.png?viewer=raw" src="https://share.cocalc.com/share/9ba989d8b4e822cb00df1471b2d46a249c90f364/img/2020-02-20-lean-mathlib-3.5.1-cocalc.png?viewer=raw" style="width: 75%;" /></a>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Jupyter:</dt>
+<dd><ul class="first last simple">
+<li>(new) You can run <strong>JavaScript</strong> in a Jupyter Notebook, powered by <a class="reference external" href="https://nodejs.org/en/">Node.js</a> – <a class="reference external" href="https://share.cocalc.com/share/2b6ef7cc0e2d7fe8c126e1901e44ecc57b1b98e2/javascript.ipynb?viewer=share">ijavascript example notebook</a>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software:</dt>
+<dd><ul class="first last simple">
+<li>(upd) <a class="reference external" href="https://pandoc.org/">pandoc</a> <code class="docutils literal notranslate"><span class="pre">2.9.2</span></code> – <a class="reference external" href="https://github.com/jgm/pandoc/releases/tag/2.9.2">pandoc 2.9.2 release notes</a></li>
+<li>(new) <a class="reference external" href="https://www.fractint.org/">fractint</a> – in an <a class="reference internal" href="../x11.html"><span class="doc">X11</span></a> desktop, run <code class="docutils literal notranslate"><span class="pre">xfractint</span></code></li>
+<li>(new) <a class="reference external" href="http://facstaff.susqu.edu/brakke/evolver/evolver.html">surface evolver</a> <code class="docutils literal notranslate"><span class="pre">2.70</span></code> – <em>an interactive program for the modelling of liquid surfaces shaped by various forces and constraints</em> (run <code class="docutils literal notranslate"><span class="pre">evolver</span></code> in an <a class="reference internal" href="../x11.html"><span class="doc">X11</span></a> desktop)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python</dt>
+<dd><ul class="first last simple">
+<li>(upd) <a class="reference external" href="https://developers.google.com/protocol-buffers">protobuf</a> <code class="docutils literal notranslate"><span class="pre">3.11.3</span></code>, <a class="reference external" href="https://dask.org">dask</a> <code class="docutils literal notranslate"><span class="pre">2.11.0</span></code> and <a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.11.0</span></code>, <a class="reference external" href="https://spacy.io/">spacy</a> <code class="docutils literal notranslate"><span class="pre">2.2.3</span></code>, <a class="reference external" href="https://nilearn.github.io/">nilearn</a> <code class="docutils literal notranslate"><span class="pre">0.6.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="pandas-1-0-and-octave-5-2-0">
+<span id="update-2020-02-16"></span><h2>2020-02-16: Pandas 1.0 and Octave 5.2.0<a class="headerlink" href="#pandas-1-0-and-octave-5-2-0" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3:</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://pandas.pydata.org/">pandas</a> <code class="docutils literal notranslate"><span class="pre">1.0</span></code> – <a class="reference external" href="https://pandas.pydata.org/pandas-docs/version/1.0.0/whatsnew/v1.0.0.html">Pandas 1.0 release notes</a>. This is a major release which might break some libs. Please <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">let us know</a> about any issues. You can always switch back to the previous release in <code class="docutils literal notranslate"><span class="pre">Settings</span></code> → <code class="docutils literal notranslate"><span class="pre">Project</span> <span class="pre">Control</span></code> → <code class="docutils literal notranslate"><span class="pre">Software</span> <span class="pre">Environment</span></code> and select <code class="docutils literal notranslate"><span class="pre">Previous</span></code>.</li>
+<li>(upd) updating Pandas reverse dependencies: <a class="reference external" href="https://mesa.readthedocs.io/">Mesa</a> <code class="docutils literal notranslate"><span class="pre">0.8.6</span></code>, <a class="reference external" href="https://orange.biolab.si/">Orange3</a> <code class="docutils literal notranslate"><span class="pre">3.24.1</span></code>, <a class="reference external" href="https://www.quandl.com/">Quandl</a> <code class="docutils literal notranslate"><span class="pre">3.5.0</span></code>, <a class="reference external" href="https://epistasislab.github.io/tpot/">TPOT</a> <code class="docutils literal notranslate"><span class="pre">0.11.1</span></code>, <a class="reference external" href="https://arundo-adtk.readthedocs-hosted.com/">adtk</a> <code class="docutils literal notranslate"><span class="pre">0.5.2</span></code>, <a class="reference external" href="https://altair-viz.github.io/">altair</a> <code class="docutils literal notranslate"><span class="pre">4.0.1</span></code>, <a class="reference external" href="https://arctic.readthedocs.io/en/latest/">arctic</a> <code class="docutils literal notranslate"><span class="pre">1.79.3</span></code>, <a class="reference external" href="https://arviz-devs.github.io/arviz/">arviz</a> <code class="docutils literal notranslate"><span class="pre">0.6.1</span></code>, <a class="reference external" href="https://github.com/bloomberg/bqplot">bqplot</a> <code class="docutils literal notranslate"><span class="pre">0.12.3</span></code>, <a class="reference external" href="https://opencobra.github.io/cobrapy/">cobra</a> <code class="docutils literal notranslate"><span class="pre">0.17.1</span></code>, <a class="reference external" href="https://dask-ml.readthedocs.io/">dask-ml</a> <code class="docutils literal notranslate"><span class="pre">1.2.0</span></code>, <a class="reference external" href="https://github.com/quantopian/empyrical">empyrical</a> <code class="docutils literal notranslate"><span class="pre">0.5.3</span></code>, <a class="reference external" href="https://isochrones.readthedocs.io/">isochrones</a> <code class="docutils literal notranslate"><span class="pre">2.0.1</span></code>, <a class="reference external" href="https://bashtage.github.io/linearmodels/">linearmodels</a> <code class="docutils literal notranslate"><span class="pre">4.17</span></code>, <a class="reference external" href="http://rasbt.github.io/mlxtend/">mlxtend</a> <code class="docutils literal notranslate"><span class="pre">0.17.1</span></code>, <a class="reference external" href="https://opentsne.readthedocs.io/">openTSNE</a> <code class="docutils literal notranslate"><span class="pre">0.3.12</span></code>, <a class="reference external" href="https://optlang.readthedocs.io/">optlang</a> <code class="docutils literal notranslate"><span class="pre">1.4.4</span></code>, <a class="reference external" href="https://github.com/PatrikHlobil/Pandas-Bokeh">pandas-bokeh</a> <code class="docutils literal notranslate"><span class="pre">0.4.2</span></code>, <a class="reference external" href="https://github.com/pandas-profiling/pandas-profiling">pandas-profiling</a> <code class="docutils literal notranslate"><span class="pre">2.4.0</span></code>, <a class="reference external" href="https://github.com/shaypal5/pdpipe">pdpipe</a> <code class="docutils literal notranslate"><span class="pre">0.0.41</span></code>, <a class="reference external" href="https://pysal.readthedocs.io/">pysal</a> <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code>, <a class="reference external" href="https://github.com/quantopian/qgrid">qgrid</a> <code class="docutils literal notranslate"><span class="pre">1.2.0</span></code>, <a class="reference external" href="https://scikit-rf.readthedocs.io/">scikit-rf</a> <code class="docutils literal notranslate"><span class="pre">0.15.1</span></code>, <a class="reference external" href="https://github.com/astanin/python-tabulate">tabulate</a> <code class="docutils literal notranslate"><span class="pre">0.8.6</span></code>, <a class="reference external" href="http://tellurium.analogmachine.org/">tellurium</a> <code class="docutils literal notranslate"><span class="pre">2.1.5</span></code>, <a class="reference external" href="https://teneto.readthedocs.io/">teneto</a> <code class="docutils literal notranslate"><span class="pre">0.5.0</span></code>, <a class="reference external" href="http://xarray.pydata.org/en/stable/">xarray</a> <code class="docutils literal notranslate"><span class="pre">0.15.0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software:</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.gnu.org/software/octave/">Octave</a> <code class="docutils literal notranslate"><span class="pre">5.2.0</span></code> (major upgrade!) with some extension packages</li>
+<li>(upd) Jupyter related: <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/introduction.html">jupytext</a> <code class="docutils literal notranslate"><span class="pre">1.3.3</span></code> and <a class="reference external" href="https://nbconvert.readthedocs.io/">nbconvert</a> <code class="docutils literal notranslate"><span class="pre">5.6.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Anaconda Python:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://ocaml.org/">ocaml</a> <code class="docutils literal notranslate"><span class="pre">4.06.1</span></code> – <em>an industrial strength programming language supporting functional, imperative and object-oriented styles</em></li>
+<li>(upd) various package updates, including numpy, scipy, scikit learn, statsmodels, etc.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="astropy-4-0">
+<span id="update-2020-02-03"></span><h2>2020-02-03: AstroPy 4.0<a class="headerlink" href="#astropy-4-0" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Python 3:</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.astropy.org/">astropy</a> <code class="docutils literal notranslate"><span class="pre">4.0</span></code>, <a class="reference external" href="https://astroplan.readthedocs.io/">astroplan</a> <code class="docutils literal notranslate"><span class="pre">0.6</span></code> – <a class="reference external" href="http://docs.astropy.org/en/stable/whatsnew/4.0.html">what’s new in AstroPY 4.0</a></li>
+<li>(upd) <a class="reference external" href="https://mypy.readthedocs.io/">mypy</a> <code class="docutils literal notranslate"><span class="pre">0.761</span></code>, <a class="reference external" href="https://pygments.org/">pygments</a> <code class="docutils literal notranslate"><span class="pre">2.5.2</span></code>, <a class="reference external" href="https://github.com/google/yapf">yapf</a> <code class="docutils literal notranslate"><span class="pre">0.29.0</span></code>, <a class="reference external" href="https://dask.org">dask</a> <code class="docutils literal notranslate"><span class="pre">2.10.0</span></code>, <a class="reference external" href="https://matplotlib.org/">matplotlib</a> <code class="docutils literal notranslate"><span class="pre">3.1.2</span></code>, <a class="reference external" href="https://rpy2.readthedocs.io/">rpy2</a> <code class="docutils literal notranslate"><span class="pre">3.2.5</span></code>, <a class="reference external" href="https://www.statsmodels.org/">statsmodels</a> <code class="docutils literal notranslate"><span class="pre">0.11.0</span></code>, <a class="reference external" href="https://pip.pypa.io/en/stable/user_guide/">pip</a> <code class="docutils literal notranslate"><span class="pre">20.0.2</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>SageMath (8.9 and 9.0):</dt>
+<dd><ul class="first last">
+<li>(upd) <a class="reference external" href="https://www.math.uni-bonn.de/people/schmitt/admcycles">admcycles</a> <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, a major release update!</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://www.openscad.org/">openscad</a>  (available as <code class="docutils literal notranslate"><span class="pre">openscad-nightly</span></code>) together with support packages <code class="docutils literal notranslate"><span class="pre">meshlab</span></code>, <code class="docutils literal notranslate"><span class="pre">geomview</span></code> and <code class="docutils literal notranslate"><span class="pre">librecad</span></code></li>
+<li>(upd) various Linux system packags, including R libs</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="rust-1-40">
+<span id="update-2020-01-29"></span><h2>2020-01-29 Rust <code class="docutils literal notranslate"><span class="pre">1.40</span></code><a class="headerlink" href="#rust-1-40" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Software:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>(upd) a round of updating <a class="reference external" href="https://www.rust-lang.org/">Rust</a>:</dt>
+<dd><ul class="first last">
+<li>stable: <code class="docutils literal notranslate"><span class="pre">1.40.0</span></code></li>
+<li>beta:  <code class="docutils literal notranslate"><span class="pre">1.41.0-beta.2</span></code></li>
+<li>nightly: <code class="docutils literal notranslate"><span class="pre">1.42.0-nightly</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3 and Anaconda 2019:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://pgmpy.org/">pgmpy</a> <code class="docutils literal notranslate"><span class="pre">0.1.9</span></code> – <em>a python library for working with Probabilistic Graphical Models</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://okpy.org/">okpy</a> <code class="docutils literal notranslate"><span class="pre">1.14.19</span></code> – <em>OK autogrades programming assignments, facilitates submission, composition feedback, and analytics for your class</em>. It’s installed for the <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> and run <code class="docutils literal notranslate"><span class="pre">ok</span> <span class="pre">--help</span></code> for more info.</li>
+<li>(new) <a class="reference external" href="https://github.com/Roche/pyreadstat">pyreadstat</a> <code class="docutils literal notranslate"><span class="pre">0.2.9</span></code> – <em>read and write sas (sas7bdat, sas7bcat, xport), spps (sav, zsav, por) and stata (dta) data files into/from pandas dataframes</em></li>
+<li>(new) <a class="reference external" href="https://github.com/ilanschnell/bitarray">bitarray</a> <code class="docutils literal notranslate"><span class="pre">1.2.1</span></code> – <em>efficient arrays of booleans</em></li>
+<li>(new) <a class="reference external" href="https://github.com/francisp336/ifsFractals">ifsFractals</a> <code class="docutils literal notranslate"><span class="pre">1.17.4</span></code> – <em>fast IFS fractal generation</em> (<a class="reference external" href="https://share.cocalc.com/share/10a1a74ea3be1a433ce127f46f2b5eb53dbd3907/ifs-fractals.ipynb?viewer=share">ifs fractals example</a>)</li>
+<li>(upd) <a class="reference external" href="https://pytorch.org/">PyTorch</a> <code class="docutils literal notranslate"><span class="pre">1.3.1</span></code>, <a class="reference external" href="https://joblib.readthedocs.io/">joblib</a> <code class="docutils literal notranslate"><span class="pre">0.14.1</span></code>, <a class="reference external" href="https://github.com/nurdtechie98/drive-cli">drive-cli</a> <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code>, <a class="reference external" href="https://seaborn.pydata.org/">seaborn</a> <code class="docutils literal notranslate"><span class="pre">0.10.0</span></code>, <a class="reference external" href="https://numba.pydata.org/">numba</a> <code class="docutils literal notranslate"><span class="pre">0.47.0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="sentimentanalysis-r-package">
+<span id="update-2020-01-19"></span><h2>2020-01-19: SentimentAnalysis R package<a class="headerlink" href="#sentimentanalysis-r-package" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>R Software:</dt>
+<dd><ul class="first last">
+<li>(new) <a class="reference external" href="https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html">SentimentAnalysis</a> – <em>package introduces a powerful toolchain facilitating the sentiment analysis of textual contents in R.</em></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3:</dt>
+<dd><ul class="first last">
+<li>(upd) <cite>sympy</cite> <code class="docutils literal notranslate"><span class="pre">1.5.1</span></code>, <a class="reference external" href="https://www.tensorflow.org/">tensorflow</a> <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code>,  <a class="reference external" href="https://www.tensorflow.org/guide/estimator">tensorflow-estimator</a> <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code>, <a class="reference external" href="https://dask.org">dask</a>/<a class="reference external" href="https://distributed.dask.org/">distributed</a> <code class="docutils literal notranslate"><span class="pre">2.9.2/.3</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="sagemath-9-0-based-on-python-3">
+<span id="update-2020-01-05"></span><h2>2020-01-05: SageMath 9.0 based on Python 3<a class="headerlink" href="#sagemath-9-0-based-on-python-3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><dl class="first docutils">
+<dt>SageMath:</dt>
+<dd><ul class="first last">
+<li><p class="first">(new) <code class="docutils literal notranslate"><span class="pre">sage-9.0</span></code> and associated Jupyter Kernel available.
+This release marks a significant change, because the era of Python 2 ends and Python 3 starts – finally.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please read about the <a class="reference external" href="https://wiki.sagemath.org/Python3-user">changes in Sage 9.0 regarding Python 3</a>
+or more general, consult the <a class="reference external" href="https://portingguide.readthedocs.io/en/latest/">Python 3 porting guide</a>!</p>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Julia:</dt>
+<dd><ul class="first last simple">
+<li>new year cleanup: only supporting <code class="docutils literal notranslate"><span class="pre">1.0</span> <span class="pre">LTS</span></code> and newer versions – currently <code class="docutils literal notranslate"><span class="pre">1.3.1</span></code> – which is the default Julia on CoCalc now.</li>
+<li>(upd) re-installing all packages will lead to various updates</li>
+<li>(new) <a class="reference external" href="https://juliaapproximation.github.io/ApproxFun.jl/latest/">ApproxFun</a> and <a class="reference external" href="https://github.com/JuliaMatrices/SpecialMatrices.jl">SpecialMatrices</a> in <code class="docutils literal notranslate"><span class="pre">1.3.1</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Software:</dt>
+<dd><ul class="first last simple">
+<li>(upd) <a class="reference external" href="https://bazel.build/">bazel</a> <code class="docutils literal notranslate"><span class="pre">2.0.0</span></code>,  <a class="reference external" href="https://www.pypy.org/">pypy</a> <code class="docutils literal notranslate"><span class="pre">7.3.0</span></code>, <a class="reference external" href="http://xpra.org/">xpra</a> <code class="docutils literal notranslate"><span class="pre">3.0.4</span></code></li>
+<li>and various Linux package updates, including R packages</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 3:</dt>
+<dd><ul class="first last simple">
+<li>(new) <a class="reference external" href="http://dfm.io/kplr/">kplr</a> <code class="docutils literal notranslate"><span class="pre">0.2.2</span></code> – <em>A Python interface to the Kepler data</em></li>
+<li>(upd) <code class="docutils literal notranslate"><span class="pre">six</span> <span class="pre">1.13</span></code>, <a class="reference external" href="https://numpy.org/">numpy</a> <code class="docutils literal notranslate"><span class="pre">1.17.4</span></code>, <a class="reference external" href="https://scipy.org/">scipy</a> <code class="docutils literal notranslate"><span class="pre">1.4.1</span></code>, <code class="docutils literal notranslate"><span class="pre">ansi2html-1.5.2</span></code>, <code class="docutils literal notranslate"><span class="pre">markdown2-2.3.8</span></code>, <code class="docutils literal notranslate"><span class="pre">pylint-2.4.4</span></code>, <a class="reference external" href="https://pillow.readthedocs.io/en/stable/">pillow</a> <code class="docutils literal notranslate"><span class="pre">6.2.1</span></code>, <a class="reference external" href="http://imageio.github.io/">imageio</a> <code class="docutils literal notranslate"><span class="pre">2.6.1</span></code>, <a class="reference external" href="https://pywavelets.readthedocs.io/en/latest/">pywavelets</a> <code class="docutils literal notranslate"><span class="pre">1.1.1</span></code>, <a class="reference external" href="https://scikit-learn.org/">scikit-learn</a> <code class="docutils literal notranslate"><span class="pre">0.22.1</span></code>, <a class="reference external" href="https://epistasislab.github.io/tpot/">tpot</a> <code class="docutils literal notranslate"><span class="pre">0.11.0</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Python 2:</dt>
+<dd><ul class="first last simple">
+<li>Python 2 is still available, but w/o maintenance.</li>
+<li>If you require specific setups for old libraries and python 2, we can setup a <a class="reference internal" href="../software.html#custom-software-environment"><span class="std std-ref">custom software environment</span></a>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>R:</dt>
+<dd><ul class="first last simple">
+<li>(new) <a class="reference external" href="https://cran.r-project.org/package=DeclareDesign">DeclareDesign</a> <code class="docutils literal notranslate"><span class="pre">0.20.0</span></code> and <a class="reference external" href="https://cran.r-project.org/package=DesignLibrary">DesignLibrary</a> <code class="docutils literal notranslate"><span class="pre">0.1.4</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="updates-2019.html" class="btn btn-neutral float-right" title="Software Updates 2019" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="updates-2021.html" class="btn btn-neutral float-left" title="Software Updates 2021" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

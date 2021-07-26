@@ -1,0 +1,556 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started with Hub &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/activeloop-hub.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Troubleshooting" href="trouble.html" />
+    <link rel="prev" title="Turtle Graphics with CoCalc" href="turtle.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/activeloop-hub.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Howto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="software-development.html">Developing Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-invitation-tokens.html">Project Invitation Tokens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export-timetravel.html">Export TimeTravel History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external-tools.html">External Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-python-lib.html">Install Python Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-r-package.html">Install R Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="running-processes.html">Manage Running Processes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Upload Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert-html-to-pdf.html">Convert HTML to PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="webserver.html">Run A Webserver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bokeh-server.html">Bokeh / Holoview Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shiny-server.html">Shiny Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-selection.html">Jupyter Kernel Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-extension.html">Setup Jupyter Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlab-extensions.html">JupyterLab Extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom-jupyter-kernel.html">Custom Jupyter Kernel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fix-broken-jupyter-pdf.html">Fix broken Jupyter PDF export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dask.html">Dask cluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fortran.html">Fortran Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git.html">Git Version Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="google-api.html">Google Sheets API Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsl.html">GSL C Code Compilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nbgrader.html">NBgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="neuron.html">NEURON simulation environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mongodb.html">MongoDB Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluto.html">Pluto Notebooks for Julia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="postgresql.html">PostgreSQL Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remarkjs-slideshow.html">RemarkJS Slideshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ruby.html">Ruby Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="turtle.html">Turtle Graphics with CoCalc</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started with Hub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-hub">What is Hub?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-storage">Data Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hub">Hub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#local-storage">Local storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#s3">S3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#minio">MinIO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#google-cloud-storage">Google Cloud Storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#azure">Azure</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#schema">Schema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shape">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dataset-access-modification-and-deletion">Dataset Access, Modification and Deletion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flush-commit-and-close">Flush, Commit and Close</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-information">Other information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Howto</a> &raquo;</li>
+        
+      <li>Getting Started with Hub</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/activeloop-hub.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started-with-hub">
+<span id="index-0"></span><h1>Getting Started with Hub<a class="headerlink" href="#getting-started-with-hub" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/hub_logo.png" src="../_images/hub_logo.png" />
+<div class="section" id="what-is-hub">
+<h2>What is Hub?<a class="headerlink" href="#what-is-hub" title="Permalink to this headline">¶</a></h2>
+<p><strong>The fastest way to access and manage datasets for PyTorch and TensorFlow</strong></p>
+<p>Hub provides fast access to the state-of-the-art datasets for Deep Learning, enabling data scientists to manage them, build scalable data pipelines and connect to Pytorch and Tensorflow.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a> enabled
+in order to connect to an online service like Activeloop’s hub from within your project!</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is user-contributed content.
+Credits go to Activeloop!</p>
+</div>
+</div>
+<div class="section" id="quickstart">
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Install Hub <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">hub</span></code></p>
+</li>
+<li><p class="first">Register and authenticate to upload datasets to <a class="reference external" href="https://app.activeloop.ai/">Activeloop</a> store.</p>
+<blockquote>
+<div><div class="code RST highlight-none notranslate"><div class="highlight"><pre><span></span>activeloop register
+activeloop login
+</pre></div>
+</div>
+<p>Alternatively, add username and password as arguments (use on platforms like Kaggle).</p>
+<div class="code RST highlight-none notranslate"><div class="highlight"><pre><span></span>activeloop login -u username -p password
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Load a dataset</p>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>import hub
+
+ds = hub.Dataset(&quot;activeloop/cifar10_train&quot;)
+print(ds[&quot;label&quot;, :10].compute())
+print(ds[&quot;id&quot;, 1234].compute())
+print(ds[&quot;image&quot;, 4321].compute())
+ds.copy(&quot;./data/examples/cifar10_train&quot;)
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Create a dataset</p>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>import numpy as np
+
+import hub from hub.schema import ClassLabel, Image
+
+my_schema = { &quot;image&quot;: Image((28, 28)),
+            &quot;label&quot;: ClassLabel(num_classes=10), }
+url = &quot;./data/examples/quickstart&quot; # write your {username}/{dataset_name} to make it remotely accessible
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema)
+for i in range(len(ds)):
+    ds[&quot;image&quot;, i] = np.ones((28, 28), dtype=&quot;uint8&quot;)
+    ds[&quot;label&quot;, i] = 3
+
+print(ds[&quot;image&quot;, 5].compute())
+print(ds[&quot;label&quot;, 100:110].compute())
+ds.flush()
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>This code creates dataset with 1000 samples in <em>“./data/examples/new_api_intro”</em> folder with overwrite mode.
+Once the dataset is ready, you may read, write and loop over it.</p>
+<p>You can also transfer a dataset from TFDS (as below) and convert it
+from/to Tensorflow or PyTorch.</p>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>import hub
+import tensorflow as tf
+
+out_ds = hub.Dataset.from_tfds(&#39;mnist&#39;, split=&#39;test+train&#39;, num=1000)
+res_ds = out_ds.store(&quot;username/mnist&quot;) # res_ds is now a usable hub dataset
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="data-storage">
+<h2>Data Storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h2>
+<p>The first positional argument to declare a Hub dataset is <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
+<div class="section" id="hub">
+<h3>Hub<a class="headerlink" href="#hub" title="Permalink to this headline">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter has the form of <code class="docutils literal notranslate"><span class="pre">username/dataset</span></code>, the dataset
+will be stored in our cloud storage.</p>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>url = &#39;username/dataset&#39;
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema)
+</pre></div>
+</div>
+</div></blockquote>
+<p>You can also create or load a dataset locally or in <em>S3</em>, <em>MinIO</em>, <em>Google Cloud
+Storage</em> and <em>Azure</em>. In case you choose other remote storage platforms,
+you will need to provide the corresponding credentials as a <code class="docutils literal notranslate"><span class="pre">token</span></code>
+argument during Dataset creation or loading. It can be a filepath to
+your credentials or a <code class="docutils literal notranslate"><span class="pre">dict</span></code>.</p>
+</div>
+<div class="section" id="local-storage">
+<h3>Local storage<a class="headerlink" href="#local-storage" title="Permalink to this headline">¶</a></h3>
+<p>To store datasets locally, let the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter be a local path.</p>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>url = &#39;./datasets/&#39;
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema)
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="s3">
+<h3>S3<a class="headerlink" href="#s3" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>python url = &#39;s3://new_dataset&#39;  # your s3 path
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token={&quot;aws_access_key_id&quot;: &quot;...&quot;,                                                               &quot;aws_secret_access_key&quot;: &quot;...&quot;,                                                               ...})``
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="minio">
+<h3>MinIO<a class="headerlink" href="#minio" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>url = &#39;s3://new_dataset&#39;  # minio also uses *s3://* prefix
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token={&quot;aws_access_key_id&quot;: &quot;your_minio_access_key&quot;,
+                                                                &quot;aws_secret_access_key&quot;: &quot;your_minio_secret_key&quot;,
+                                                                &quot;endpoint_url&quot;: &quot;your_minio_url:port&quot;,
+                                                                ...})
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="google-cloud-storage">
+<h3>Google Cloud Storage<a class="headerlink" href="#google-cloud-storage" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>url = &#39;gcs://new_dataset&#39; # your google storage (gs://) path
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token=&quot;/path/to/credentials&quot;)
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="azure">
+<h3>Azure<a class="headerlink" href="#azure" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>url = &#39;https://activeloop.blob.core.windows.net/activeloop-hub/dataset&#39; # Azure link
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token=&quot;/path/to/credentials&quot;)
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="schema">
+<h2>Schema<a class="headerlink" href="#schema" title="Permalink to this headline">¶</a></h2>
+<p>Schema is a required attribute that describes what
+a dataset consists of. This
+is how you can create a simple schema:</p>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>from hub.schema import ClassLabel, Image, BBox, Text
+
+my_schema = {
+    &#39;kind&#39;: ClassLabel(names=[&quot;cows&quot;, &quot;horses&quot;]),
+    &#39;animal&#39;: Image(shape=(512, 256, 3)),
+    &#39;eyes&#39;: BBox(),
+    &#39;description&#39;: Text(max_shape=(100,))
+}
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="shape">
+<h2>Shape<a class="headerlink" href="#shape" title="Permalink to this headline">¶</a></h2>
+<p>Shape is another required attribute of a dataset. It simply specifies
+how large a dataset is. The rules associated with shapes are derived
+from <code class="docutils literal notranslate"><span class="pre">numpy</span></code>.</p>
+</div>
+<div class="section" id="dataset-access-modification-and-deletion">
+<h2>Dataset Access, Modification and Deletion<a class="headerlink" href="#dataset-access-modification-and-deletion" title="Permalink to this headline">¶</a></h2>
+<p>In order to access the data from the dataset, you should use
+<code class="docutils literal notranslate"><span class="pre">.compute()</span></code> on a portion of the dataset: <code class="docutils literal notranslate"><span class="pre">ds['key',</span> <span class="pre">:5].compute()</span></code>.</p>
+<p>You can modify the data to the dataset with a regular assignment
+operator or by performing more sophisticated
+transforms.</p>
+<p>You can delete your dataset with <code class="docutils literal notranslate"><span class="pre">.delete()</span></code> or through Activeloop’s
+app on <a class="reference external" href="https://app.activeloop.ai/">app.activeloop.ai</a> in a dataset
+overview tab.</p>
+</div>
+<div class="section" id="flush-commit-and-close">
+<h2>Flush, Commit and Close<a class="headerlink" href="#flush-commit-and-close" title="Permalink to this headline">¶</a></h2>
+<p>Hub Datasets have three methods to push the final changes to the selected storage.</p>
+<p>The most fundamental method, <code class="docutils literal notranslate"><span class="pre">.flush()</span></code> saves changes from cache to
+the dataset final storage and does not invalidate dataset object. It
+means that you can continue working on your data and pushing it later
+on.</p>
+<p><code class="docutils literal notranslate"><span class="pre">.commit()</span></code> saves the changes into a new version of a dataset that you
+may go back to later on if you want to.</p>
+<p>In rare cases, you may also use <code class="docutils literal notranslate"><span class="pre">.close()</span></code> to invalidate the dataset
+object after saving the changes.</p>
+<p>If you prefer flushing to be taken care for you, wrap your operations on
+the dataset with the <code class="docutils literal notranslate"><span class="pre">with</span></code> statement in this fashion:</p>
+<blockquote>
+<div><div class="code python highlight-none notranslate"><div class="highlight"><pre><span></span>with hub.Dataset(...) as ds:
+    pass
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="other-information">
+<h2>Other information<a class="headerlink" href="#other-information" title="Permalink to this headline">¶</a></h2>
+<p>For more information see <a class="reference external" href="https://docs.activeloop.ai/en/latest/">Hub documentation</a> .</p>
+<p>Join our <a class="reference external" href="https://hubdb.slack.com/join/shared_invite/zt-ivhsj8sz-GWv9c5FLBDVw8vn~sxRKqQ#/">Slack community</a> for help from Activeloop team and other users as well as dataset management/preprocessing tips and tricks.</p>
+<p>For feature requests or bug reports, please open a new <a class="reference external" href="https://github.com/activeloopai/Hub/issues/new">GitHub issue</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="trouble.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="turtle.html" class="btn btn-neutral float-left" title="Turtle Graphics with CoCalc" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

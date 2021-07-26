@@ -1,0 +1,86 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyphenat}
+
+\usepackage[separate-uncertainty=true,output-decimal-marker={,}]{siunitx}
+\usepackage[shortlabels,inline]{enumitem}
+\usepackage{placeins, siunitx, booktabs, array, colortbl, float, color, tikz, multicol, multirow, pgfplots, pgfplotstable,filecontents, subcaption}
+
+\usepgfplotslibrary{statistics}
+\usepackage[arrowdel]{physics}
+\pgfplotsset{width=15cm,compat=newest}
+
+\usepackage[%
+    font={small,sf}, % <-- Sans Serif option
+    labelfont=bf,
+    format=plain,
+    skip=3pt
+]{caption}
+
+%Pacotes Matemáticos
+\everymath{\displaystyle}
+\usepackage{amsmath, amsthm, latexsym, amssymb, graphicx, amsfonts,latexsym}
+
+
+%Layout da Página
+\usepackage[a4paper,total={18cm,26cm},top=1.5cm, left=1.5cm]{geometry}
+
+\parindent 0in
+\parskip 0.5em
+\setlength\columnsep{15pt}
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \bf Gnuplot Example}\\
+\vspace{15pt}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Example 1}
+
+This first example show how to use gnuplot to plot a simple funcion [$f(x) = cos(380 x)$]
+
+
+\begin{figure}[H]\centering
+  \begin{tikzpicture}[scale=0.7]
+    \begin{axis}[
+        x tick label style={/pgf/number format/.cd,fixed,fixed zerofill,use comma,scaled ticks=false,precision=3,/tikz/.cd},
+        y tick label style={/pgf/number format/.cd,fixed,fixed zerofill,set decimal separator={,},precision=1,/tikz/.cd},
+        title={Gnuplot - Example 1},
+        xlabel={Time [\si{\second}]},
+        ylabel={Voltage [\si{\volt}]},
+        %xmin=-0.1, xmax=0.1,
+        ymin=-1.5, ymax=1.5,
+        ytick={-1.5,-1,-0.5,0,1,0.5,1.5},
+        xtick={-0.015,-0.01,-0.005,0,0.005,0.01,0.015},
+        legend pos=north west,
+        ymajorgrids=true,
+        grid style=dashed,
+        xmajorgrids=true,
+        grid style=dashed,
+        legend cell align=left,
+        minor tick num= 4,
+        major tick length = 3mm,
+        legend style={at={(0.02,0.98)},anchor=north west,legend cell align=left}
+]
+        %Plots
+        \addplot [smooth, no markers, red, samples=5000] gnuplot [raw gnuplot] {plot [-0.015:0.015] cos(380*x);};
+        \addplot [smooth, no markers, blue, samples=5000] gnuplot [raw gnuplot] {plot [-0.015:0.015] cos(380*x + 2);};
+        %plotsLegend
+        \addlegendentry{ PHASE 1 $cos(\omega t)$};
+        \addlegendentry{ PHASE 2 $cos(\omega t + \Delta t)$};
+    \end{axis}
+\end{tikzpicture}
+        \caption{Gnuplot: Ploting a simple function [$f(x) = cos(380 x)$]}
+        \label{figura:Gnuplot Example}
+\end{figure}
+
+
+\end{document}

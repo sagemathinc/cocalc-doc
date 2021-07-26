@@ -1,0 +1,431 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Low Memory Problems &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/low-memory.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Question about Sage" href="sage-question.html" />
+    <link rel="prev" title="Jupyter Kernel Terminated" href="jupyter-kernel-terminated.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/low-memory.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="trouble.html">Troubleshooting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="connectivity-issues.html">Debugging connectivity issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file-too-large.html">File Too Large</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-terminated.html">Jupyter Kernel Terminated</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Low Memory Problems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#why-is-my-project-out-of-memory">Why is my project out of memory?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ways-to-clear-up-your-project-s-memory">Ways to clear up your project’s memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#inspect-in-detail-why-the-project-is-running-out-of-memory">Inspect in detail why the project is running out of memory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#processes">1. Processes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#project-settings">2. Project settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-top-htop-in-a-terminal">3. Use “top”/”htop” in a terminal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#use-smem-ntk-in-a-terminal">4. Use “smem -ntk” in a terminal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#peak-memory-usage">5. Peak memory usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#software-specific">Software specific</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#grading-jupyter-notebooks">Grading Jupyter Notebooks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#matplotlib">Matplotlib</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rstan">RSTAN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sage-question.html">Question about Sage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slow-worksheet.html">Program Seems Slow or Stuck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recover-deleted-file.html">Recovering a Deleted File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="missing-project.html">Recovering a Deleted Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sudo-make-install.html">Install compiled software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="trouble.html">Troubleshooting</a> &raquo;</li>
+        
+      <li>Low Memory Problems</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/low-memory.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="index-0"></span><div class="section" id="low-memory-problems">
+<span id="low-memory"></span><span id="index-1"></span><h1>Low Memory Problems<a class="headerlink" href="#low-memory-problems" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="why-is-my-project-out-of-memory">
+<h2>Why is my project out of memory?<a class="headerlink" href="#why-is-my-project-out-of-memory" title="Permalink to this headline">¶</a></h2>
+<p>There are many possibilities.
+All computer programs need to allocate memory in order to work – even the smallest ones could use a huge amount of memory!
+Also, if you run several processes at the same time, their memory usage adds up.
+All memory is finite and there are limits on each project to avoid that the server, where the project runs, to fill up and crash.</p>
+<p>An <strong>OOM: out-of-memory event</strong> happens, when the sum of all memory usages of your project’s processes exceeds the allowed quota or hits the limit of the host machine.
+The Linux kernel (managing all processes) will switch into “survival mode” and attempt to get rid of large processes.
+The selection is rather random, and will be recorded as part of the memory quota management of your project.
+In case this happens, the only information is about <em>how many</em> processes were killed – not which one in particular.</p>
+<p>Usually this means you are running too many processes (too many <a class="reference internal" href="../sagews.html"><span class="doc">Sage Worksheets</span></a> or <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebooks</span></a>).
+Just closing the tab of their editor doesn’t terminate them!</p>
+<p>Alternatively, you might be running a single calculation that is using up too much memory (e.g. a large list, array or matrix, a heavy for-loop that appends data, etc.).
+Please check your code to understand why this is happening.
+Sometimes it’s a small, innocent looking for loop that causes allocating too much memory!
+For example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>l = [1, 1]
+for i in l:
+    l.append(l[-2] + l[-1])
+</pre></div>
+</div>
+</div>
+<div class="section" id="ways-to-clear-up-your-project-s-memory">
+<h2>Ways to clear up your project’s memory<a class="headerlink" href="#ways-to-clear-up-your-project-s-memory" title="Permalink to this headline">¶</a></h2>
+<p><strong>Jupyter</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Restart</strong> the kernel</li>
+<li>When you close it, click the <a class="reference internal" href="../jupyter.html#jupyter-halt"><span class="std std-ref">Halt button</span></a>, which also terminates the kernel running your code behind the scenes. Just closing the tab does not stop it from running and it continues to be active in the background!</li>
+</ul>
+</div></blockquote>
+<p><strong>Sage Worksheet</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Restart</strong> the worksheet</li>
+</ul>
+</div></blockquote>
+<p><strong>Entire Project</strong> – if the above doesn’t help or doesn’t apply:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Make sure all your files are saved (disabled “Save” button resting idle)</li>
+<li>Close all editor tabs, and <strong>Restart the Project</strong> (in Project Settings → Project Control). This will clean up all running processes and cleans up all state – all your files will still be there, of course.</li>
+<li>Then only open up the file you want to work with!</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If there are collaborators on your project, they might start up additional notebooks. Check the project log if someone else is active at the same time.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="inspect-in-detail-why-the-project-is-running-out-of-memory">
+<h2>Inspect in detail why the project is running out of memory<a class="headerlink" href="#inspect-in-detail-why-the-project-is-running-out-of-memory" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="processes">
+<h3>1. Processes<a class="headerlink" href="#processes" title="Permalink to this headline">¶</a></h3>
+<p>You can click the “Processes” button in the Files toolbar to see a list of running processes and how much memory each is using. See <a class="reference internal" href="../getting-started.html#ft-info"><span class="std std-ref">Processes</span></a> for details.</p>
+</div>
+<div class="section" id="project-settings">
+<h3>2. Project settings<a class="headerlink" href="#project-settings" title="Permalink to this headline">¶</a></h3>
+<p>You can look in the Settings (wrench) tab of your project under “Shared RAM”, which will say how much is “currently” used.  This is only updated once every 30 seconds though, and may not show spikes in attempted memory allocation.</p>
+</div>
+<div class="section" id="use-top-htop-in-a-terminal">
+<h3>3. Use “top”/”htop” in a terminal<a class="headerlink" href="#use-top-htop-in-a-terminal" title="Permalink to this headline">¶</a></h3>
+<p>Currently the easiest way to test this is to open a terminal in your project, then type <code class="docutils literal notranslate"><span class="pre">top</span></code>. Watch the processes listed there, especially the column labeled <cite>RES</cite>, which stands for “resident memory”.
+If your project has 1,000 MB of RAM, which is the default in CoCalc, and the sum of the RES entries is close to 1,000,000, then you should definitely expect a memory allocation failure soon.</p>
+<p>You can type “M” into top to make it sort processes by memory, which will help in seeing how much is used.  You can also hit the space bar a lot to make it update frequently.  Type “q” when you are done.  If you want to kill a process in top, type “k” then the process id (PID), which is in the first column.</p>
+<p><code class="docutils literal notranslate"><span class="pre">htop</span></code> is a more modern alternative to <code class="docutils literal notranslate"><span class="pre">top</span></code>. You can use the functional keys to issue commands or even use the mouse to point and click.</p>
+</div>
+<div class="section" id="use-smem-ntk-in-a-terminal">
+<h3>4. Use “smem -ntk” in a terminal<a class="headerlink" href="#use-smem-ntk-in-a-terminal" title="Permalink to this headline">¶</a></h3>
+<p>This command gives a useful breakdown of memory usage.</p>
+<p>You may be able to work around a low-memory situation temporarily by killing selected processes or restarting your project.</p>
+<p>But if you’re hitting memory issues and just want more space, <a class="reference external" href="https://cocalc.com/settings/billing?session=default">upgrade your project</a>.</p>
+<p>The subscription are <a class="reference external" href="https://cocalc.com/policies/pricing.html">listed here</a>. For example, for $14/month, you can upgrade memory from 1 GB to 5 GB, and have a <strong>lot</strong> more elbow room!  If you’re confused or have questions about upgrading, just ask at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
+</div>
+<div class="section" id="peak-memory-usage">
+<h3>5. Peak memory usage<a class="headerlink" href="#peak-memory-usage" title="Permalink to this headline">¶</a></h3>
+<p>In a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>, you can check the peak memory usage of a utility this way:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ /usr/bin/time -v [tool] [arguments]
+[...]
+Maximum resident set size (kbytes): ...
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="software-specific">
+<h2>Software specific<a class="headerlink" href="#software-specific" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="grading-jupyter-notebooks">
+<h3>Grading Jupyter Notebooks<a class="headerlink" href="#grading-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<p>In case you’re grading a bunch of Jupyter Notebooks, use the <strong>“Halt” button</strong> to not only hide the worksheet, but also terminate the associated kernel session. Also, avoid opening many of them at once in the same project!</p>
+</div>
+<div class="section" id="matplotlib">
+<h3>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">¶</a></h3>
+<p>When you produce many graphics in a row and use the usual <em>pyplot</em> API, the intermediate graphics are not cleaned up. Run the following to clear up the memory:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import matplotlib.pyplot as plt
+plt.close(&#39;all&#39;)
+</pre></div>
+</div>
+</div>
+<div class="section" id="rstan">
+<h3>RSTAN<a class="headerlink" href="#rstan" title="Permalink to this headline">¶</a></h3>
+<p>In case you’re using <em>rstan</em> in R, you can try to switch the C++ compiler to clang++. Run the following in a cell to create appropriate config files in your project:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dir.create(&quot;~/.R&quot;, showWarnings = FALSE)
+cat(&quot;CXX = clang++&quot;,
+    &quot;CXXFLAGS = -g0 -Os -march=native -mtune=native&quot;,
+    file = &quot;~/.R/Makevars&quot;,
+    sep = &quot;\n&quot;)
+Sys.setenv(R_MAKEVARS_USER = normalizePath(&quot;~/.R/Makevars&quot;))
+</pre></div>
+</div>
+<p>Acknowledgment: <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/2337#issuecomment-355637033">comment to CoCalc issue 2337</a> by &#64;bgoodri.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sage-question.html" class="btn btn-neutral float-right" title="Question about Sage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="jupyter-kernel-terminated.html" class="btn btn-neutral float-left" title="Jupyter Kernel Terminated" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

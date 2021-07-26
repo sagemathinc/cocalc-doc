@@ -1,0 +1,909 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Project Settings &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/project-settings.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Project Upgrades" href="upgrade-guide.html" />
+    <link rel="prev" title="Project Log" href="project-log.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/project-settings.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="project.html">Projects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="project-list.html">Project List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-files.html">Project Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plus-new.html">(+) New</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-log.html">Project Log</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Project Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#title-and-description">Title and description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-usage-and-quotas">Project usage and quotas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#why-add-upgrades">Why Add Upgrades?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#view-current-resources">View Current Resources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adjust-quotas">Adjust Quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#max-all-upgrades">Max All Upgrades</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#save-changes">Save Changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#licenses">Licenses</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#index-8">Project URL</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#hide-or-delete-project">Hide or delete project</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hidden-vs-deleted-projects">Hidden vs. Deleted projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hiding-a-project">Hiding a project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleting-a-project">Deleting a project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hidden-and-deleted-projects">Hidden and Deleted projects</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-ssh-keys">Setup SSH Keys</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-ssh">Using SSH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuring-ssh-keys-for-a-single-project">Configuring SSH Keys for a Single Project</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-environment-variables">Custom environment variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features-and-configuration">Features and Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#available-features">Available features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#available-formatter">Available formatter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#about-collaborators">About collaborators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#current-collaborators">Current collaborators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-new-collaborators">Add new collaborators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-control">Project control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#restart-project-and-stop-project">Restart Project and Stop Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#software-environment">Software Environment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#sage-worksheet-server">Sage worksheet server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alternate-jupyter-servers-in-cocalc">Alternate Jupyter Servers in CoCalc</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#plain-jupyter-server">Plain Jupyter server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jupyterlab-server">JupyterLab server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cloud-storage-remote-file-systems">Cloud storage &amp; remote file systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#remote-files-with-ssh">Remote files with SSH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#aws-s3">AWS S3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#google-gcs">Google GCS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade-guide.html">Project Upgrades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-library.html">Project Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-init.html">Project Initialization Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project-faq.html">Projects FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="project.html">Projects</a> &raquo;</li>
+        
+      <li>Project Settings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/project-settings.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="project-settings">
+<span id="index-0"></span><h1>Project Settings<a class="headerlink" href="#project-settings" title="Permalink to this headline">¶</a></h1>
+<p>All about the <strong>Project Settings</strong> tab.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#title-and-description" id="id17">Title and description</a></li>
+<li><a class="reference internal" href="#project-usage-and-quotas" id="id18">Project usage and quotas</a></li>
+<li><a class="reference internal" href="#licenses" id="id19">Licenses</a></li>
+<li><a class="reference internal" href="#hide-or-delete-project" id="id20">Hide or delete project</a></li>
+<li><a class="reference internal" href="#setup-ssh-keys" id="id21">Setup SSH Keys</a></li>
+<li><a class="reference internal" href="#custom-environment-variables" id="id22">Custom environment variables</a></li>
+<li><a class="reference internal" href="#features-and-configuration" id="id23">Features and Configuration</a></li>
+<li><a class="reference internal" href="#about-collaborators" id="id24">About collaborators</a></li>
+<li><a class="reference internal" href="#current-collaborators" id="id25">Current collaborators</a></li>
+<li><a class="reference internal" href="#add-new-collaborators" id="id26">Add new collaborators</a></li>
+<li><a class="reference internal" href="#project-control" id="id27">Project control</a></li>
+<li><a class="reference internal" href="#sage-worksheet-server" id="id28">Sage worksheet server</a></li>
+<li><a class="reference internal" href="#alternate-jupyter-servers-in-cocalc" id="id29">Alternate Jupyter Servers in CoCalc</a></li>
+<li><a class="reference internal" href="#cloud-storage-remote-file-systems" id="id30">Cloud storage &amp; remote file systems</a></li>
+</ul>
+</div>
+<div class="section" id="title-and-description">
+<span id="set-project-title"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id17">Title and description</a><a class="headerlink" href="#title-and-description" title="Permalink to this headline">¶</a></h2>
+<p>The text for <strong>Title and description</strong> for a project can be changed at any time.</p>
+<a class="reference internal image-reference" href="_images/title-and-desc-a.png"><img alt="_images/title-and-desc-a.png" class="align-center" src="_images/title-and-desc-a.png" style="width: 50%;" /></a>
+<p>Title and Description fields are both used when searching for matching text under <strong>Projects</strong>.
+If you have several projects, it can help to add hashtags to your project descriptions
+for topics you want to return to quickly.</p>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_images/project-match.png"><img alt="_images/project-match.png" src="_images/project-match.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text"><em>searching for “astro” in project title &amp; description</em></span></p>
+</div>
+</div>
+<div class="section" id="project-usage-and-quotas">
+<span id="project-upgrades"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id18">Project usage and quotas</a><a class="headerlink" href="#project-usage-and-quotas" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="why-add-upgrades">
+<h3>Why Add Upgrades?<a class="headerlink" href="#why-add-upgrades" title="Permalink to this headline">¶</a></h3>
+<p>There are many reasons that you might want to have an upgraded project.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>To give your project access to the internet. For example,</dt>
+<dd><ul class="first last">
+<li>To download a software package from the internet.</li>
+<li>To use Github/Bitbucket/Gitlab with your project.</li>
+<li>To download datasets into your project.</li>
+<li>To connect to your project with SSH.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>To get extra storage space (both RAM and disk space).</li>
+<li>To get more compute resources.</li>
+</ul>
+<p>You can share upgrades with any project that you are a collaborator on. You must be a collaborator (or owner) to update a project.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For details on paid subscriptions, see <a class="reference external" href="https://cocalc.com/policies/pricing.html">Subscription and Pricing Information</a>.
+Subscriptions start at $3 per month.</p>
+</div>
+</div>
+<div class="section" id="view-current-resources">
+<h3>View Current Resources<a class="headerlink" href="#view-current-resources" title="Permalink to this headline">¶</a></h3>
+<p>You can view upgrades for the current project and current resource use under <cite>Project usage and quotas</cite>.
+Here’s an example for a project with no upgrades added (note the warning banner that
+appears if the project does not have Member Hosting or Internet Access):</p>
+<a class="reference internal image-reference" href="_images/before-upgrade.png"><img alt="_images/before-upgrade.png" class="align-center" src="_images/before-upgrade.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="adjust-quotas">
+<span id="apply-project-upgrades"></span><h3>Adjust Quotas<a class="headerlink" href="#adjust-quotas" title="Permalink to this headline">¶</a></h3>
+<p>The “Adjust Quotas” dialog is where you add upgrades purchased under a Subscription or Course Package. If you have a license, see the section <a class="reference internal" href="#project-add-license"><span class="std std-ref">Licenses</span></a> below.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want to upgrade student projects for a CoCalc managed course, that is done in the <code class="docutils literal notranslate"><span class="pre">.course</span></code> file.* (See the <a class="reference internal" href="teaching-upgrade-course.html#course-upgrading-students"><span class="std std-ref">Upgrading Student Projects</span></a> section in the teaching guide.)</p>
+</div>
+<p>You can enter any values that do not exceed available upgrades. This example continues
+by adding as much in the way of resources as possible to the current project.
+You can remove upgrades at any time and apply them to other projects.</p>
+<p>When you click <cite>Adjust Quotas…</cite>, a dialog like the following appears. The screenshot shows numbers
+for a project that has not been upgraded.
+Available upgrades show what the numbers would be if you just purchased a Standard Plan and
+have not applied any upgrades yet:</p>
+<div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="_images/add-upgrades-standard.png"><img alt="_images/add-upgrades-standard.png" src="_images/add-upgrades-standard.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text"><em>Adjust Quotas</em> dialog</span></p>
+</div>
+<p>Here are the two most important upgrades.
+You will probably want to apply these to any project you are working on actively:</p>
+<div class="section" id="member-hosting">
+<span id="index-3"></span><span id="id1"></span><h4>Member Hosting<a class="headerlink" href="#member-hosting" title="Permalink to this headline">¶</a></h4>
+<p>Member hosting is added by checking the “Enable” box next to the upgrade.</p>
+<p>There are two types of projects: “free projects” and “member projects”.
+Free projects run on heavily loaded <a class="reference external" href="https://cloud.google.com/compute/docs/instances/preemptible">Google preemptible VM instances</a>.
+These are randomly restarted by Google at least once every 24 hours.
+Often, these computers will house over 150 simultaneously running projects.</p>
+<p>Member-hosted projects run on machines which are much less loaded and are reserved for paying customers only.
+On member-hosted projects, commands execute more quickly, and CPU, memory and I/O heavy operations run more quickly.</p>
+<span class="target" id="index-4"></span></div>
+<div class="section" id="internet-access">
+<span id="index-5"></span><span id="id2"></span><h4>Internet Access<a class="headerlink" href="#internet-access" title="Permalink to this headline">¶</a></h4>
+<p>Internet access is added by checking the “Enable” box next to the upgrade. This upgrade allows you to:</p>
+<ul class="simple">
+<li>Originate connections to external sites, for example to install packages from internet sites for Python and R, or to clone code from GitHub.</li>
+<li>Send email from a project, for example, to invite people without a CoCalc account to collaborate on a project via email, or to allow <a class="reference internal" href="teaching-interactions.html#at-mention-chat"><span class="std std-ref">&#64;mentions</span></a> in a project to send out emails.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="max-all-upgrades">
+<h3>Max All Upgrades<a class="headerlink" href="#max-all-upgrades" title="Permalink to this headline">¶</a></h3>
+<p>Clicking <cite>Max All Upgrades</cite> will add as much as possible from available upgrades:</p>
+<a class="reference internal image-reference" href="_images/apply-max.png"><img alt="_images/apply-max.png" class="align-center" src="_images/apply-max.png" style="width: 60%;" /></a>
+</div>
+<div class="section" id="save-changes">
+<h3>Save Changes<a class="headerlink" href="#save-changes" title="Permalink to this headline">¶</a></h3>
+<p>Then clicking <cite>Save Changes</cite> will apply the changes and restart the project if settings have changed:</p>
+<a class="reference internal image-reference" href="_images/max-added.png"><img alt="_images/max-added.png" class="align-center" src="_images/max-added.png" style="width: 60%;" /></a>
+<span class="target" id="project-add-license"></span><span class="target" id="index-6"></span></div>
+</div>
+<div class="section" id="licenses">
+<span id="index-7"></span><h2><a class="toc-backref" href="#id19">Licenses</a><a class="headerlink" href="#licenses" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If you just bought a license and want to apply your license to a project that is showing the red trial banner, then this section is for you.</p>
+<p class="last">In case you don’t have a license but instead quota upgrades via a subscription (older mechanism), then
+<a class="reference internal" href="#apply-project-upgrades"><span class="std std-ref">adjust the project quotas</span></a> directly.</p>
+</div>
+<p>To apply a license to a project</p>
+<ol class="arabic simple">
+<li>Open the project and click “Settings” (wrench icon).</li>
+<li>Scroll down to the “Licenses” section.</li>
+<li>Click the button marked “Upgrade using a license key…”.</li>
+<li>Enter your license key in the box that opens and click Save.</li>
+<li>Then start or restart the project in order to activate the license.</li>
+</ol>
+<div class="figure align-center" id="id13">
+<a class="reference internal image-reference" href="_images/proj-lic-before-add.png"><img alt="_images/proj-lic-before-add.png" src="_images/proj-lic-before-add.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">Before adding a license key.</span></p>
+</div>
+<div class="figure align-center" id="id14">
+<a class="reference internal image-reference" href="_images/proj-lic-after-add.png"><img alt="_images/proj-lic-after-add.png" src="_images/proj-lic-after-add.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-text">After adding license key. You can add several keys.</span></p>
+</div>
+<span class="target" id="project-url"></span><div class="section" id="index-8">
+<span id="id3"></span><h3>Project URL<a class="headerlink" href="#index-8" title="Permalink to this headline">¶</a></h3>
+<p>Each CoCalc project has a unique URL. You can find the URL for the current project under the “Licenses” section of the project settings tab, as shown above.
+This URL can useful when contacting support and in some configuration tasks.</p>
+<span class="target" id="index-9"></span><span class="target" id="index-10"></span></div>
+</div>
+<div class="section" id="hide-or-delete-project">
+<span id="project-hidden-deleted"></span><span id="index-11"></span><h2><a class="toc-backref" href="#id20">Hide or delete project</a><a class="headerlink" href="#hide-or-delete-project" title="Permalink to this headline">¶</a></h2>
+<p>Next in the Project Settings window is the section for hidden and deleted projects,
+which do not appear in the normal project list
+(the list you get when you click <cite>Projects</cite> at upper left).</p>
+<p>If the current project is neither hidden nor deleted, you will see this:</p>
+<a class="reference internal image-reference" href="_images/hide-or-delete.png"><img alt="_images/hide-or-delete.png" class="align-center" src="_images/hide-or-delete.png" style="width: 60%;" /></a>
+<div class="section" id="hidden-vs-deleted-projects">
+<h3>Hidden vs. Deleted projects<a class="headerlink" href="#hidden-vs-deleted-projects" title="Permalink to this headline">¶</a></h3>
+<p>If you delete a project, then you delete it for everyone—for all your collaborators. The good news is that this can be undone. Deleting a project removes upgrades from any subscriptions or course packages.</p>
+<p>Alternatively, if you hide a project, then you will not see it in your projects listing, but your collaborators will still see it in their listings.</p>
+</div>
+<div class="section" id="hiding-a-project">
+<h3>Hiding a project<a class="headerlink" href="#hiding-a-project" title="Permalink to this headline">¶</a></h3>
+<p>If you click <cite>Hide Project</cite>, the button changes:</p>
+<a class="reference internal image-reference" href="_images/hidden.png"><img alt="_images/hidden.png" class="align-center" src="_images/hidden.png" style="width: 60%;" /></a>
+<p>And now if you click the <cite>Projects</cite> button at upper left, you will have a checkbox
+that lets you view hidden projects. The checkbox only appears if there are hidden projects.</p>
+<a class="reference internal image-reference" href="_images/show-hidden.png"><img alt="_images/show-hidden.png" class="align-center" src="_images/show-hidden.png" style="width: 60%;" /></a>
+<p>Clicking <cite>Unhide Project</cite> instantly makes the project visible in the normal project list again.</p>
+</div>
+<div class="section" id="deleting-a-project">
+<h3>Deleting a project<a class="headerlink" href="#deleting-a-project" title="Permalink to this headline">¶</a></h3>
+<p><strong>No files are actually deleted when a project is deleted.</strong>
+Only visibility of the project in the project list is changed.
+If you need to permanently delete information that you
+accidentally copied into a project, contact <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a></p>
+<p>If you click <cite>Delete Project</cite>, the button changes:</p>
+<a class="reference internal image-reference" href="_images/delproj1.png"><img alt="_images/delproj1.png" class="align-center" src="_images/delproj1.png" style="width: 60%;" /></a>
+<p>Click <cite>Yes, please delete this project</cite> to confirm, and the screen changes again:</p>
+<a class="reference internal image-reference" href="_images/delproj2.png"><img alt="_images/delproj2.png" class="align-center" src="_images/delproj2.png" style="width: 60%;" /></a>
+<p>Note the warning banner that appears at the top.</p>
+<p>The project will not appear in the normal project list for you and all collaborators on the project.</p>
+<p>And now if you click the <cite>Projects</cite> button at upper left, you will have a checkbox
+that lets you view deleted projects. The checkbox only appears if there are hidden projects.</p>
+<a class="reference internal image-reference" href="_images/show-deleted.png"><img alt="_images/show-deleted.png" class="align-center" src="_images/show-deleted.png" style="width: 60%;" /></a>
+<p>Clicking <cite>Undelete Project</cite> instantly makes the project visible in the normal project list again
+for you and all collaborators on the project.</p>
+</div>
+<div class="section" id="hidden-and-deleted-projects">
+<h3>Hidden and Deleted projects<a class="headerlink" href="#hidden-and-deleted-projects" title="Permalink to this headline">¶</a></h3>
+<p>A project can be both hidden and deleted. In that case, you will need to check both
+<cite>Deleted</cite> and <cite>Hidden</cite> boxes in the <cite>Projects</cite> list to see the project.</p>
+<a class="reference internal image-reference" href="_images/deleted-and-hidden-a.png"><img alt="_images/deleted-and-hidden-a.png" class="align-center" src="_images/deleted-and-hidden-a.png" style="width: 60%;" /></a>
+</div>
+</div>
+<div class="section" id="setup-ssh-keys">
+<span id="ssh-keys"></span><span id="index-12"></span><h2><a class="toc-backref" href="#id21">Setup SSH Keys</a><a class="headerlink" href="#setup-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="using-ssh">
+<h3>Using SSH<a class="headerlink" href="#using-ssh" title="Permalink to this headline">¶</a></h3>
+<p>For addtional detail, see the blog posting <a class="reference external" href="http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html">Using SSH with CoCalc</a>.</p>
+<p>You can connect to a CoCalc project from your local desktop using <a class="reference external" href="https://help.ubuntu.com/community/SSH">SSH</a> (Secure Shell) and you can upload/download files between your computer and CoCalc using the SSH protocol, with <code class="docutils literal notranslate"><span class="pre">scp</span></code> and <code class="docutils literal notranslate"><span class="pre">rsync</span></code> command line tools. You must have owner or collaborator status on a project for SSH access to be permitted.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When logging into a project with <code class="docutils literal notranslate"><span class="pre">ssh</span></code>, make sure the project is running. If the project is stopped, or is in the process of starting up, you may get a message of ‘Permission denied’ or be prompted for a password.</p>
+</div>
+<p>SSH authentication uses a pair of keys, a private key and a public key. Each key is stored in a separate file. For example, a private key might be in the file <code class="docutils literal notranslate"><span class="pre">id_ed25519</span></code> and the matching public key in <code class="docutils literal notranslate"><span class="pre">id_ed25519.pub</span></code>. In general, private keys are not distributed, while public keys are uploaded to remote systems.</p>
+<p>On OS X, and Linux, key pairs are stored in <code class="docutils literal notranslate"><span class="pre">~/.ssh</span></code>, where <code class="docutils literal notranslate"><span class="pre">~</span></code> indicates your user’s home directory. Use the <code class="docutils literal notranslate"><span class="pre">ssh-keygen</span></code> command to generate a key pair. (You can do <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ssh-keygen</span></code> from a terminal for details on the command.)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">CoCalc does not support manual editing of the authorized_keys file for SSH authentication.*</p>
+</div>
+<p>To make sure you really connect to CoCalc, you can check the fingerprint of the <a class="reference internal" href="project-faq.html#ssh-host-key"><span class="std std-ref">SSH Host Key</span></a>.</p>
+</div>
+<div class="section" id="configuring-ssh-keys-for-a-single-project">
+<span id="project-settings-ssh-keys"></span><h3>Configuring SSH Keys for a Single Project<a class="headerlink" href="#configuring-ssh-keys-for-a-single-project" title="Permalink to this headline">¶</a></h3>
+<p>This section assumes you have created an SSH key pair as described above.</p>
+<ol class="arabic">
+<li><p class="first">Open the project Settings tab (wrench icon) for the project you want to access.</p>
+</li>
+<li><p class="first">Look for the section “SSH Keys” at lower left.</p>
+<a class="reference internal image-reference" href="_images/usernameathost.png"><img alt="_images/usernameathost.png" class="align-center" src="_images/usernameathost.png" style="width: 50%;" /></a>
+</li>
+<li><p class="first">Click “Add an SSH Key”.</p>
+</li>
+<li><p class="first">Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example “Sample Key for TESTPROJ”.</p>
+</li>
+<li><p class="first">Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cat ~/.ssh/id_ed25519.pub
+</pre></div>
+</div>
+<p>Use your mouse to select the contents of the key file, then copy and paste it into the Key area.</p>
+</li>
+<li><p class="first">Click “Add SSH Key”. Your key is now saved for that project.</p>
+<a class="reference internal image-reference" href="_images/addingprojkey.png"><img alt="_images/addingprojkey.png" class="align-center" src="_images/addingprojkey.png" style="width: 50%;" /></a>
+</li>
+<li><p class="first">The user for the SSH connection is the project id <em>without the hyphens</em>. (Why? Because the project id is not a valid Linux username.) The hostname is <code class="docutils literal notranslate"><span class="pre">ssh.cocalc.com</span></code>. Look for “Use the following <a class="reference external" href="mailto:username&#37;&#52;&#48;host">username<span>&#64;</span>host</a>:” in the “SSH Keys” section of project status for a string you can copy and paste. For example, if the Project id is:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2507078b-6e5b-43da-809a-0073f1196181
+</pre></div>
+</div>
+<p>then the SSH <a class="reference external" href="mailto:username&#37;&#52;&#48;host">username<span>&#64;</span>host</a> will be:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
+</pre></div>
+</div>
+</li>
+<li><p class="first">To login from your local computer, use a command equivalent to the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh 2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
+</pre></div>
+</div>
+</li>
+<li><p class="first">On macOS or Linux, you can specify a host alias in <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code> to avoid having to explicitly pass the project id as above. For example, the following lines in <code class="docutils literal notranslate"><span class="pre">~/.ssh/config</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Host CCPROJ
+    Hostname ssh.cocalc.com
+    User 2507078b6e5b43da809a0073f1196181
+    IdentityFile ~/.ssh/id_ed25519
+</pre></div>
+</div>
+<p>will allow you to log into the your project from your local computer with the command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh CCPROJ
+</pre></div>
+</div>
+<p>You can also specify a single SSH key pair under <a class="reference internal" href="account/ssh.html#account-ssh"><span class="std std-ref">SSH keys</span></a> to use with all your projects.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="custom-environment-variables">
+<span id="project-env-vars"></span><span id="index-13"></span><h2><a class="toc-backref" href="#id22">Custom environment variables</a><a class="headerlink" href="#custom-environment-variables" title="Permalink to this headline">¶</a></h2>
+<p>Here you can set environment variables for the entire project.
+This feature allows you to add custom configuration for applications that are launched by the CoCalc graphical user interface, such as Jupyter notebooks and the JupyterLab server.</p>
+<p>Enter custom environment variables as a JSON map from string to string, e.g., {“foo”:”bar”,”x”:”y”}.
+Unlike environment variables in .bashrc, these will be available to anything that runs in your project (e.g., Jupyter kernels).
+Delete a variable by setting it to the empty string.
+Restart your project for these changes to take effect.</p>
+<p>The text above will appear as a reminder when you click inside the textarea for Custom environment variables.</p>
+<div class="figure align-center" id="id15">
+<a class="reference internal image-reference" href="_images/env-vars.png"><img alt="_images/env-vars.png" src="_images/env-vars.png" style="width: 70%;" /></a>
+<p class="caption"><span class="caption-text">Help text appears when you click in the textarea.</span></p>
+</div>
+<p>For a complete example using a custom envoronment variable, see <a class="reference internal" href="howto/jupyterlab-extensions.html"><span class="doc">JupyterLab Extensions</span></a>.</p>
+</div>
+<div class="section" id="features-and-configuration">
+<span id="project-feat-config"></span><span id="index-14"></span><h2><a class="toc-backref" href="#id23">Features and Configuration</a><a class="headerlink" href="#features-and-configuration" title="Permalink to this headline">¶</a></h2>
+<p>This section displays the configuration of specific functionality for the compute image for the project. These settings are read-only. They cannot be altered for the present project.</p>
+<p>If a feature or formatter is disabled, that means the compute image does not support them. It may be that you are using a custom or outdated image (see <a class="reference internal" href="#software-environment"><span class="std std-ref">Software Environment</span></a> below), or that you are using a <a class="reference internal" href="docker-image.html"><span class="doc">CoCalc Docker Image</span></a> that was built without that feature or formatter.</p>
+<a class="reference internal image-reference" href="_images/feat-config.png"><img alt="_images/feat-config.png" class="align-center" src="_images/feat-config.png" style="width: 50%;" /></a>
+<div class="section" id="available-features">
+<h3>Available features<a class="headerlink" href="#available-features" title="Permalink to this headline">¶</a></h3>
+<p>This section displays the enabled/disabled state for various general project features.</p>
+</div>
+<div class="section" id="available-formatter">
+<h3>Available formatter<a class="headerlink" href="#available-formatter" title="Permalink to this headline">¶</a></h3>
+<p>This section displays the enabled/disabled state for formatters for specific file types in the CoCalc frame editor.</p>
+<span class="target" id="index-15"></span></div>
+</div>
+<div class="section" id="about-collaborators">
+<h2><a class="toc-backref" href="#id24">About collaborators</a><a class="headerlink" href="#about-collaborators" title="Permalink to this headline">¶</a></h2>
+<p>Each CoCalc project has an owner and zero or more collaborators.
+Owner and collaborators all appear in a project under the identity of “user” and home directory of <code class="docutils literal notranslate"><span class="pre">/home/user</span></code>.
+There is no difference in the Linux identity,
+regardless of the CoCalc account that is signed in.
+Owner and collaborators can read anything in the project, and write, delete, and modify anything except backups. They can add and remove other collaborators, but cannot remove the owner.</p>
+<p>Although the owner and all collaborators appear in a project with the same
+Linux user id, there are two ways to see <em>which CoCalc account</em> was used for certain actions in a project:</p>
+<ul class="simple">
+<li>The project activity log.</li>
+<li>Time travel for files edited using the CoCalc frame editor.</li>
+</ul>
+</div>
+<div class="section" id="current-collaborators">
+<span id="remove-collaborators"></span><span id="index-17"></span><h2><a class="toc-backref" href="#id25">Current collaborators</a><a class="headerlink" href="#current-collaborators" title="Permalink to this headline">¶</a></h2>
+<p>The “Current collaborators” section of the <em>Project Settings</em> page shows the names of the owner and all collaborators. Here you can remove collaborators, including yourself. It does not allow you to remove the owner.</p>
+<p>Current collaborators are also shown in the <em>Projects</em> list. You can use the latter to remove yourself as collaborator from several projects at once.</p>
+<a class="reference internal image-reference" href="_images/current-collabs.png"><img alt="_images/current-collabs.png" class="align-center" src="_images/current-collabs.png" style="width: 70%;" /></a>
+</div>
+<div class="section" id="add-new-collaborators">
+<span id="add-collaborators"></span><span id="index-18"></span><h2><a class="toc-backref" href="#id26">Add new collaborators</a><a class="headerlink" href="#add-new-collaborators" title="Permalink to this headline">¶</a></h2>
+<p><em>New:</em> You can use invitation tokens to invite an entire audience to join you as collaborators in a project. See: <a class="reference internal" href="howto/project-invitation-tokens.html"><span class="doc">Project Invitation Tokens</span></a> for more information.</p>
+<p>At the <strong>Add new collaborators</strong> dialog, you can type in a person’s name or email address. CoCalc will search its database of known users and show you possible matches.</p>
+<ol class="arabic simple">
+<li>After you select a name, don’t forget to click “Invite User.”</li>
+<li>The user must accept the invitation to be added as a collaborator.</li>
+</ol>
+<p>It is generally better to use an email address. The reason is that some CoCalc users have multiple accounts.</p>
+<a class="reference internal image-reference" href="_images/add-collabs.png"><img alt="_images/add-collabs.png" class="align-center" src="_images/add-collabs.png" style="width: 70%;" /></a>
+<p>If there are no matches for an email address, then you can send an invitation for the user to start using CoCalc. You can modify the standard email. The default invitation has useful links to make it easier for the other person to start using CoCalc.</p>
+<div class="figure align-center" id="id16">
+<a class="reference internal image-reference" href="_images/email-invitation.png"><img alt="_images/email-invitation.png" src="_images/email-invitation.png" style="width: 70%;" /></a>
+<p class="caption"><span class="caption-text"><em>customizing email invitation to new user</em></span></p>
+</div>
+<p>Sometimes, you’d rather give someone read-only access. In CoCalc, this is called “sharing” with non-collaborators. See <a class="reference internal" href="getting-started.html#ft-share"><span class="std std-ref">share</span></a> for how to share a file.</p>
+<p>Caution: if you are using CoCalc for course management with a .course file, add students under the <strong>Students</strong> tab of the .course file, and <em>NOT</em> as collaborators. That way, they get their own projects, separate from the instructor project. On the other hand, it is common practice to <a class="reference internal" href="teaching-create-course.html#teaching-add-ta"><span class="std std-ref">add teaching assistants</span></a> as collaborators in the instructor project.</p>
+</div>
+<div class="section" id="project-control">
+<span id="index-19"></span><span id="id4"></span><h2><a class="toc-backref" href="#id27">Project control</a><a class="headerlink" href="#project-control" title="Permalink to this headline">¶</a></h2>
+<p>Here is a screen capture of the Project control section. Along with project statistics, it has two buttons and a menu, discussed below.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/project-control.png"><img alt="_images/project-control.png" class="align-center" src="_images/project-control.png" style="width: 70%;" /></a>
+</div></blockquote>
+<div class="section" id="restart-project-and-stop-project">
+<h3>Restart Project and Stop Project<a class="headerlink" href="#restart-project-and-stop-project" title="Permalink to this headline">¶</a></h3>
+<p>What happens when a project restarts?</p>
+<ul class="simple">
+<li>All computations will be stopped.</li>
+<li><strong>Good News:</strong> You don’t lose unsaved files.</li>
+<li>You do lose any information (state of variables/processes) in <strong>RAM</strong>.</li>
+<li>However, anything in files, as long as it’s moved from the browser to the web servers (in most cases, at most a few seconds of information), is permanently saved to disk already in the database, and will not be lost.</li>
+<li>When the project starts back up, even if the files on disk are in an older state, the files you see yourself editing in your browser are new with nothing lost. Those files will then be updated on disc very shortly.</li>
+<li>On the other hand, project code, i.e. the CoCalc software environment, is updated.</li>
+</ul>
+<p>To make all this happen, click “Restart Project…”. Another button appears, to confirm the choice.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/project-restart-confirm.png"><img alt="_images/project-restart-confirm.png" class="align-center" src="_images/project-restart-confirm.png" style="width: 70%;" /></a>
+</div></blockquote>
+<p>Click “Restart Project Server”, and restart initiates.</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/project-restarting.png"><img alt="_images/project-restarting.png" class="align-center" src="_images/project-restarting.png" style="width: 70%;" /></a>
+</div></blockquote>
+<p>It normally takes about 30 seconds to restart a project. It may take another 10 seconds or so after the Files list is visible for terminal processes, etc. to be available.</p>
+<p>You can also stop and restart a project in two separate steps. Why would you stop a project and then restart it, rather than simply restarting it in a single step?</p>
+<ul class="simple">
+<li>If you want CoCalc to move the project to another server, stopping it first and then restarting it allows CoCalc to select a different, possibly less-loaded server.</li>
+<li>If you don’t want any of your project’s processes to run until you explicitly restart the project, you have to stop the project.</li>
+</ul>
+<p>Clicking “Stop Project…” causes the “Stop Project Server” button to appear, to confirm your choice:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/stop-project-confirm.png"><img alt="_images/stop-project-confirm.png" class="align-center" src="_images/stop-project-confirm.png" style="width: 70%;" /></a>
+</div></blockquote>
+<span class="target" id="index-20"></span></div>
+<div class="section" id="software-environment">
+<span id="index-21"></span><span id="id5"></span><h3>Software Environment<a class="headerlink" href="#software-environment" title="Permalink to this headline">¶</a></h3>
+<p>The CoCalc software environment is updated frequently. The collection of installed utilities, compilers, libraries, packages, etc. is called the <em>compute image</em>.</p>
+<p>You can see a recent list of installed software at <a class="reference external" href="https://cocalc.com/doc/software.html">Available Software</a> and in our <a class="reference external" href="https://cocalc.com/help">Help page</a> under “Software and Programming Libraries Details”.</p>
+<p>A running log of regular updates to the environment is the
+<a class="reference internal" href="software.html#default-software-environment"><span class="std std-ref">default software updates list</span></a>.</p>
+<p>You may want to revert to an older environment, or try a new environment that is about to be released. To change the software environment to a different compute image, use the “Selected Image” menu.
+The exact list of available images will change from time to time.</p>
+<p>Once you have selected an image, click “Save and Restart”.</p>
+<a class="reference internal image-reference" href="_images/selected-image-experimental.png"><img alt="_images/selected-image-experimental.png" class="align-center" src="_images/selected-image-experimental.png" style="width: 70%;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Don’t forget to reset your image to “Default” after you are finished working with an alternate image.*</p>
+</div>
+<span class="target" id="index-22"></span></div>
+</div>
+<div class="section" id="sage-worksheet-server">
+<span id="index-23"></span><span id="id6"></span><h2><a class="toc-backref" href="#id28">Sage worksheet server</a><a class="headerlink" href="#sage-worksheet-server" title="Permalink to this headline">¶</a></h2>
+<p>Any time you run a Sage worksheet (.sagews file) there are two processes involved in your project:</p>
+<ul class="simple">
+<li>the Sage worksheet server process - one of these is enough to serve any number of running worksheets</li>
+<li>the Sage worksheet client process - there will be one of these for each worksheet that is running in the project</li>
+</ul>
+<p>It can be helpful to restart the Sage worksheet server if you have changed the default version of Sage, for example with <code class="docutils literal notranslate"><span class="pre">sage_select</span></code>.
+Note that restarting the Sage worksheet server will not affect worksheets that are already running.</p>
+<p>Occasionally, it may be useful to restart the Sage worksheet server if worksheets are not executing properly, followed by restarting individual Sage worksheet(s). You might do this as a less drastic step than restarting the entire project.</p>
+<a class="reference internal image-reference" href="_images/restart-sagews-a.png"><img alt="_images/restart-sagews-a.png" class="align-center" src="_images/restart-sagews-a.png" style="width: 70%;" /></a>
+</div>
+<div class="section" id="alternate-jupyter-servers-in-cocalc">
+<span id="alt-jupyter-server"></span><h2><a class="toc-backref" href="#id29">Alternate Jupyter Servers in CoCalc</a><a class="headerlink" href="#alternate-jupyter-servers-in-cocalc" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc by default provides an interface to Jupyter notebooks that has been rewritten to support multiple users, TimeTravel, and other enhancements. For more information, see the CoCalc blog <a class="reference external" href="http://blog.sagemath.com/jupyter/2017/05/05/jupyter-rewrite-for-smc.html">article on the Jupyter rewrite</a>. There may be occasions when you may want to run the Classical Jupyter server. The most common reason is to use interactive widgets, which are not supported in the CoCalc Jupyter notebook.</p>
+<p>The “Project Settings” page offers two ways to run the Classical Jupyter server code, shown below.
+For more information and some important caveats, see <a class="reference internal" href="jupyter.html"><span class="doc">Classical versus CoCalc</span></a>.</p>
+<span class="target" id="index-24"></span><span class="target" id="index-25"></span><div class="section" id="plain-jupyter-server">
+<span id="index-26"></span><span id="id7"></span><h3>Plain Jupyter server<a class="headerlink" href="#plain-jupyter-server" title="Permalink to this headline">¶</a></h3>
+<p>Starting the Plain Jupyter server opens a new browser tab with usual files listing. Opening a notebook from the Jupyter server tab opens another browser tab.</p>
+<a class="reference internal image-reference" href="_images/jupyter-server-a.png"><img alt="_images/jupyter-server-a.png" class="align-center" src="_images/jupyter-server-a.png" style="width: 70%;" /></a>
+<span class="target" id="index-27"></span></div>
+<div class="section" id="jupyterlab-server">
+<span id="index-28"></span><span id="id8"></span><h3>JupyterLab server<a class="headerlink" href="#jupyterlab-server" title="Permalink to this headline">¶</a></h3>
+<p>Starting the <a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab server</a> opens a new browser tab with the JupyterLab GUI.</p>
+<a class="reference internal image-reference" href="_images/jupyterlab-server-a.png"><img alt="_images/jupyterlab-server-a.png" class="align-center" src="_images/jupyterlab-server-a.png" style="width: 70%;" /></a>
+</div>
+</div>
+<div class="section" id="cloud-storage-remote-file-systems">
+<span id="cloud-storage"></span><span id="datastore"></span><span id="project-datastore"></span><span id="index-29"></span><h2><a class="toc-backref" href="#id30">Cloud storage &amp; remote file systems</a><a class="headerlink" href="#cloud-storage-remote-file-systems" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to access “cloud store” (a repository of file-like objects)
+or a remote file system in a CoCalc project.
+It will be mounted in the filesystem at <code class="docutils literal notranslate"><span class="pre">/data/[name]</span></code>,
+where the <code class="docutils literal notranslate"><span class="pre">[name]</span></code> is the name you entered in the cloud storage &amp; remote file systems configuration.</p>
+<p>For easy access, it’s possible to create a symlink to that global directory.
+If there is no <code class="docutils literal notranslate"><span class="pre">~/data</span> <span class="pre">→</span> <span class="pre">/data</span></code> in your home directory,
+just run <code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">/data</span> <span class="pre">~/data</span></code> in the <a class="reference internal" href="project-files.html#mini-terminal"><span class="std std-ref">Mini-terminal</span></a>.
+Usually, the project will create that symlink for you.</p>
+<p>Mounting as <em>read-only</em> prevents accidental modifications.
+Note, in a course it’s automatically mounted as “read-only” for all student projects!</p>
+<p>For read-write mounted ones, modifications will eventually propagate to all mounted instances.
+Caching on various levels significantly slows down propagating changes, though.
+So, this won’t work well for collaborative editing files,
+but it is ok for letting changes show up on other projects after a brief period of time.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">An active “Internet access” quota is required,
+because otherwise the project can’t access the remote services.</p>
+</div>
+<div class="section" id="remote-files-with-ssh">
+<span id="ssh-remote-files"></span><h3>Remote files with SSH<a class="headerlink" href="#remote-files-with-ssh" title="Permalink to this headline">¶</a></h3>
+<p>You can make files accessible via an OpenSSH server.
+This configuration allows you to access files on a remote Linux server.</p>
+<p>The authentication requires a pair of public/private keys.
+The public key must be shared with with the remote OpenSSH server,
+while the private key – the hidden secret – must be shared with CoCalc
+in order to authenticate with the server.</p>
+<p>In order to access files stored on a remote server,
+you must have a <strong>password-less</strong> private-key based ssh login.</p>
+<p>It’s a good idea to generate a fresh pair of keys,
+for better control overall.
+Run this command to generate the pair:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span> <span class="o">-</span><span class="n">t</span> <span class="n">ed25519</span> <span class="o">-</span><span class="n">f</span> <span class="n">mykey</span> <span class="o">-</span><span class="n">N</span> <span class="s1">&#39;&#39;</span>
+</pre></div>
+</div>
+<p>which generates <code class="docutils literal notranslate"><span class="pre">mykey</span></code> (private key) and <code class="docutils literal notranslate"><span class="pre">mykey.pub</span></code> (public key).
+Instead of <code class="docutils literal notranslate"><span class="pre">mykey</span></code> you can choose any name you like.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">-N</span> <span class="pre">''</span></code> flag generates a key without a password, therefore anyone who has
+access to this key will then be able to access your remote server.  This is
+generally not recommended for security reasons, but is needed for CoCalc’s
+remote file system store to work.  See below for ways to mitigate any associated risk.</p>
+</div>
+<p>To get the content of the private key, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="n">mykey</span>
+</pre></div>
+</div>
+<p>and copy/paste the whole output into the private key textarea. It should look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-----</span><span class="n">BEGIN</span> <span class="n">OPENSSH</span> <span class="n">PRIVATE</span> <span class="n">KEY</span><span class="o">-----</span>
+<span class="o">........</span>  <span class="n">random</span> <span class="n">characters</span> <span class="o">........</span>
+<span class="o">........</span>  <span class="n">random</span> <span class="n">characters</span> <span class="o">........</span>
+<span class="o">........</span>  <span class="n">random</span> <span class="n">characters</span> <span class="o">........</span>
+<span class="o">........</span>
+<span class="o">-----</span><span class="n">END</span> <span class="n">OPENSSH</span> <span class="n">PRIVATE</span> <span class="n">KEY</span><span class="o">-----</span>
+</pre></div>
+</div>
+<p>The public key can be accessed via <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">mykey.pub</span></code>.
+It’s one line of text and it must be in the remote server’s <code class="docutils literal notranslate"><span class="pre">~/.ssh/authorized_keys</span></code> file.
+Note, the permissions of that file must be such that others cannot read it.
+I.e. maybe you have to run <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">go-rwx</span> <span class="pre">~/.ssh/authorized_keys</span></code>!</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>It’s possible to share files from one CoCalc project via that mechanism.
+There are a couple of important details to take care of, though!</p>
+<ol class="last arabic simple">
+<li>The project hosting the files has to run all the time.
+To make sure of that, create a new project and get an <strong>“always running”</strong> license upgrade for one project.
+Deselect “member hosting” to allow for cheaper hosting with occasional restarts – which should be fine,
+because it will attempt to reconnect.
+Then apply that license to this new project.</li>
+<li>Generate the key pair as above.
+Open that project’s settings and <a class="reference internal" href="#project-settings-ssh-keys"><span class="std std-ref">add that public key as an SSH keys</span></a>.</li>
+<li>The <strong>username</strong> must be the project ID without dashes, as shown in the SSH keys dialog.</li>
+<li>The <strong>host</strong> must be <strong>ssh</strong> – yes, those 3 characters are enough to connect internally within the cluster!</li>
+<li>The <strong>path</strong> must be <strong>/home/user/[dirname]</strong>, where <code class="docutils literal notranslate"><span class="pre">[dirname]</span></code> is the name of the sub-directory
+in the project’s “files” home directory.
+Set it to <strong>/home/user</strong> to share all files of the entire project!</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>A common problem of SSH are subtle configuration errors.
+Please test the connection first, i.e. for a private key file <code class="docutils literal notranslate"><span class="pre">mykey</span></code>, do this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">vv</span> <span class="o">-</span><span class="n">i</span> <span class="n">mykey</span> <span class="p">[</span><span class="n">user</span><span class="p">]</span><span class="o">@</span><span class="p">[</span><span class="n">host</span><span class="p">]</span>
+</pre></div>
+</div>
+<p class="last">to attempt a remote login to the username and the given host.
+If you see a prompt, everything is fine. Exit via “exit” or Ctrl-D.
+Otherwise, you see a verbose log of messages,
+where some of these messages will explain why it wasn’t able to connect.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If you are connecting to CoCalc via SSH, make sure you do not use
+ForwardAgent (command-line option <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-A</span></code>) while testing this, otherwise you
+might be able to connect to your server using your forwarded agent rather than
+authenticating with <code class="docutils literal notranslate"><span class="pre">mykey</span></code>.  The cloud storage &amp; remote file system mechanism
+will not have access to any forwarded agent, however, and thus may still fail.</p>
+<p>One subtle issue is that some older servers may not accept <code class="docutils literal notranslate"><span class="pre">ed25519</span></code> keys:
+in this case you might try with an RSA key <code class="docutils literal notranslate"><span class="pre">ssh-keygen</span> <span class="pre">-t</span> <span class="pre">rsa</span> <span class="pre">-f</span> <span class="pre">mykey</span> <span class="pre">-N</span> <span class="pre">''</span></code>
+instead.</p>
+<p>As mentioned above, using password-less keys (<code class="docutils literal notranslate"><span class="pre">-N</span> <span class="pre">''</span></code> above) is generally regarded as
+a security risk, but is needed for the CoCalc to work.
+The key is entered via the user-interface and stored in the database.
+It stays private and hidden,
+because neither you nor any collaborator of the project can access it again (only replace it later on).
+Still, any  who has access to the previously generated <cite>mykey</cite> file will be able to authenticate to your server.
+To mitigate any potential risks:</p>
+<ol class="last arabic simple">
+<li>Once you get your ssh remote filesystem store is working,
+generate a new key somewhere private (your own computer, not CoCalc),
+enter it in the cloud storage &amp; remote file systems dialog, then delete the file.</li>
+<li>On your server, create a dedicated user (e.g. <code class="docutils literal notranslate"><span class="pre">cocalc_datashare</span></code>) with limited access
+for which you only grant permission to access the files needed by your project.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="aws-s3">
+<h3>AWS S3<a class="headerlink" href="#aws-s3" title="Permalink to this headline">¶</a></h3>
+<p>Amazon’s S3 storage buckets can be accessed via their bucket id, access key and a secret id.
+Together with a name of your choice, which will be the name of the mount point,
+enter those pieces of information into the dialog and restart the project.</p>
+<p>More info:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://aws.amazon.com/s3/">AWS S3</a></li>
+<li><a class="reference external" href="https://objectivefs.com/howto/how-to-restrict-s3-bucket-policy-to-only-one-aws-s3-bucket">How To Grant Access To Only One S3 Bucket Using AWS IAM Policy</a></li>
+</ul>
+</div>
+<div class="section" id="google-gcs">
+<h3>Google GCS<a class="headerlink" href="#google-gcs" title="Permalink to this headline">¶</a></h3>
+<p>Google’s Cloud Storage is very similar to S3 – &lt;<a class="reference external" href="https://cloud.google.com/storage">https://cloud.google.com/storage</a>&gt;.
+You need to have at least one project at GCP and a storage bucket at GCS.
+Start with the <a class="reference external" href="https://cloud.google.com/storage/docs/quickstart-console">quick start guide</a> if you’re new to this.</p>
+<p>You also have to enable to “Storage API” for the project – see <a class="reference external" href="https://cloud.google.com/endpoints/docs/openapi/enable-api">enabling APIs</a>.</p>
+<p>The authentication works by creating a “service account”,
+which gives access to a well-defined aspect of your project.
+Read about <a class="reference external" href="https://cloud.google.com/storage/docs/authentication">GCS Authentication</a> and
+its links for <a class="reference external" href="https://cloud.google.com/docs/authentication/getting-started">creating a service account</a> to learn more.</p>
+<p>On CoCalc’s side, the storage bucket name and the content of the authentication file (formatted in JSON) must be entered in the corresponding fields.</p>
+<p>For optimal performance, the storage bucket should be in the same region as CoCalc’s cluster.
+As of writing this, this would be <code class="docutils literal notranslate"><span class="pre">us-east1</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="upgrade-guide.html" class="btn btn-neutral float-right" title="Project Upgrades" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="project-log.html" class="btn btn-neutral float-left" title="Project Log" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Course Management &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-course-management.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Collaboration" href="teaching-interactions.html" />
+    <link rel="prev" title="Upgrading Student Projects" href="teaching-upgrade-course.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-course-management.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="teaching-create-course.html">Creating a New Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Upgrading Student Projects</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Course Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-new-handout">Create a new Handout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-new-assignment">Create a new assignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#assigning-an-assignment-to-students">Assigning an assignment to students</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#peer-grading">Peer Grading</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collecting-assignments-from-students">Collecting assignments from students</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grading">Grading</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exporting-grades">Exporting grades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#returning-an-assignment-to-students">Returning an assignment to students</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#suggested-course-folder-structure">Suggested course folder structure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-after-course.html">After the Course Ends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-tips_and_tricks.html">FAQ, Tips and Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="teaching-instructors.html">Instructor Guide</a> &raquo;</li>
+        
+      <li>Course Management</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/teaching-course-management.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="course-management">
+<h1>Course Management<a class="headerlink" href="#course-management" title="Permalink to this headline">¶</a></h1>
+<p>No matter what you’ve added in the instructor’s view of the course, the students will not see any files until you explicitly assign them.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#create-a-new-handout" id="id1">Create a new Handout</a></li>
+<li><a class="reference internal" href="#create-a-new-assignment" id="id2">Create a new assignment</a></li>
+<li><a class="reference internal" href="#assigning-an-assignment-to-students" id="id3">Assigning an assignment to students</a></li>
+<li><a class="reference internal" href="#peer-grading" id="id4">Peer Grading</a></li>
+<li><a class="reference internal" href="#collecting-assignments-from-students" id="id5">Collecting assignments from students</a></li>
+<li><a class="reference internal" href="#grading" id="id6">Grading</a></li>
+<li><a class="reference internal" href="#exporting-grades" id="id7">Exporting grades</a></li>
+<li><a class="reference internal" href="#returning-an-assignment-to-students" id="id8">Returning an assignment to students</a></li>
+<li><a class="reference internal" href="#suggested-course-folder-structure" id="id9">Suggested course folder structure</a></li>
+</ul>
+</div>
+<div class="section" id="create-a-new-handout">
+<span id="create-handout"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id1">Create a new Handout</a><a class="headerlink" href="#create-a-new-handout" title="Permalink to this headline">¶</a></h2>
+<p>A handout consists of a folder that contains one or more files to be distributed to your students.</p>
+<p>Create a folder called <strong>Handouts</strong> in the root directory of your course project. Within this folder create a subfolder called, say, <strong>Handout1</strong> and populate it with one or more files for the handout. These files can be anything - text, Markdown, code, pdf, and may contain subfolders.</p>
+<p>Open the <strong>.course</strong> file and click on the <strong>Handouts</strong> tab</p>
+<a class="reference internal image-reference" href="_images/handout-course.png"><img alt="_images/handout-course.png" src="_images/handout-course.png" style="width: 100%;" /></a>
+<p>Type <strong>handout</strong> in the search box on the right hand of the screen and press enter. Note that search is case-insensitive.</p>
+<p>The system will look for any folders with <strong>Handout1</strong> in their path name and  return a set of options. Highlight the one you want and click on <strong>Add selected handout</strong>.</p>
+<a class="reference internal image-reference" href="_images/find-handout.png"><img alt="_images/find-handout.png" src="_images/find-handout.png" style="width: 100%;" /></a>
+<p>The new handout will be added to the list of handouts available for the course.</p>
+</div>
+<div class="section" id="create-a-new-assignment">
+<span id="create-assignment"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id2">Create a new assignment</a><a class="headerlink" href="#create-a-new-assignment" title="Permalink to this headline">¶</a></h2>
+<p>An assignment is a folder that contains one or more files that can be distributed to your students and collected at some future time for grading.</p>
+<p>Create a folder called <strong>Assignments</strong> in the root directory of your course project.
+Within this folder create a subfolder called, say, <strong>Assignment1</strong> and populate it with files that contains questions or problems for your students to answer. For example, an assignment can contain a Jupyter notebook and data files, with instructions for a programming exercise.</p>
+<p>Open the <strong>.course</strong> file and click on the <strong>Assignments</strong> tab.
+Enter <strong>assignment1</strong> in the search box on the right hand of the screen and press enter.</p>
+<p>The system will return a list of folders with <strong>assignment1</strong> in their path name. Highlight the one you want and click on <strong>Add assignment</strong>.</p>
+<a class="reference internal image-reference" href="_images/find_assignment.png"><img alt="_images/find_assignment.png" src="_images/find_assignment.png" style="width: 100%;" /></a>
+<p>The new assignment will be added to the list of assignments available for this course.</p>
+<a class="reference internal image-reference" href="_images/assignment_list.png"><img alt="_images/assignment_list.png" src="_images/assignment_list.png" style="width: 75%;" /></a>
+</div>
+<div class="section" id="assigning-an-assignment-to-students">
+<h2><a class="toc-backref" href="#id3">Assigning an assignment to students</a><a class="headerlink" href="#assigning-an-assignment-to-students" title="Permalink to this headline">¶</a></h2>
+<p>Click on the assignment in the assignment list.
+When the assignment opens, set the <strong>Due</strong> date. You can do this in the text area, or using the calendar and clock widgets to the right. Click on the <strong>Assign</strong> button to assign to all students in the course.</p>
+<a class="reference internal image-reference" href="_images/send_assignment.png"><img alt="_images/send_assignment.png" src="_images/send_assignment.png" style="width: 100%;" /></a>
+<p>Alternatively, you can assign just to individual students.</p>
+<p>When an assignment is made to a student, a <strong>copy</strong> of the assignment folder will appear in their course project.</p>
+<p>Advise the students that all work on the assignment should take place in this folder. Any work performed outside of this folder will not be collected.</p>
+</div>
+<div class="section" id="peer-grading">
+<h2><a class="toc-backref" href="#id4">Peer Grading</a><a class="headerlink" href="#peer-grading" title="Permalink to this headline">¶</a></h2>
+<p>A very useful function for formative assessment is <strong>peer grading</strong>.
+Use peer grading to randomly (and anonymously) redistribute collected homework to your students, so that they can grade it for you.</p>
+<p>Within the assignment, click on the <strong>Peer Grading</strong> icon and follow the instructions to activate this feature.</p>
+<a class="reference internal image-reference" href="_images/peer_grading_activation.png"><img alt="_images/peer_grading_activation.png" src="_images/peer_grading_activation.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="collecting-assignments-from-students">
+<h2><a class="toc-backref" href="#id5">Collecting assignments from students</a><a class="headerlink" href="#collecting-assignments-from-students" title="Permalink to this headline">¶</a></h2>
+<p>After an assignment has been made, a <strong>Collect</strong> icon appears next to each student.
+Clicking on one of these will make a copy of the student’s assignment folder to your account.
+The entire folder will be copied including any extra files the student may have created.</p>
+<p>Alternatively, click on the <strong>Collect</strong> icon in the top row to collect from all students simultaneously.</p>
+<a class="reference internal image-reference" href="_images/collect_assignment.png"><img alt="_images/collect_assignment.png" src="_images/collect_assignment.png" style="width: 100%;" /></a>
+<p>You should make sure that your project has enough disk space to accommodate this.
+It may be necessary to purchase an upgrade if you need more than the free allowance (currently 3GB per project).</p>
+<p>Once the assignment has been collected, anything the student subsequently does in <strong>their</strong> copy will not be reflected in <strong>your</strong> copy.</p>
+<p>If you click on the <strong>Files</strong> icon and go to the root directory of the course project, you’ll see that a new folder will have been created with the name <strong>[your_course_name]-collect</strong></p>
+<a class="reference internal image-reference" href="_images/filelist_with_collect.png"><img alt="_images/filelist_with_collect.png" src="_images/filelist_with_collect.png" style="width: 100%;" /></a>
+<p>Navigating within this folder, you’ll find that it has a similar file structure to the original assignment.
+For example, for this demonstration we had the structure <cite>/assignments/Assignment1</cite> which appears in the collected folder as <cite>[your_course_name]-collect/assignments/Assignment1</cite>.
+Entering this folder will give a view of all students’ versions of this assignment</p>
+<a class="reference internal image-reference" href="_images/collected_assignments.png"><img alt="_images/collected_assignments.png" src="_images/collected_assignments.png" style="width: 100%;" /></a>
+<p>The folder corresponding to each collected assignment will have been given a unique random name.
+Navigating inside this folder, you will see all collected files along with a text file whose filename identifies the student.</p>
+<a class="reference internal image-reference" href="_images/Identify_student.png"><img alt="_images/Identify_student.png" src="_images/Identify_student.png" style="width: 100%;" /></a>
+<p>At this point, you can open and mark the student’s returned assignment.</p>
+<p>An easier interface for opening a student’s collected assignment is via the <strong>.course</strong> file.
+Simply click on the <strong>Open</strong> icon corresponding to the student you are interested in and you’ll be taken to the folder described above.</p>
+<a class="reference internal image-reference" href="_images/open_assignment.png"><img alt="_images/open_assignment.png" src="_images/open_assignment.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="grading">
+<h2><a class="toc-backref" href="#id6">Grading</a><a class="headerlink" href="#grading" title="Permalink to this headline">¶</a></h2>
+<p>You are free to annotate the student’s assignment in any way you like.
+The student will get a copy of everything you do once you return it to them.</p>
+<p>When working with Jupyter notebooks, I usually do my annotations in Markdown cells and surround my comments in HTML tags that colour the text red.
+This allows the students to quickly identify my comments.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;font color=&quot;red&quot;&gt;Great work!&lt;/font&gt;
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/feedback.png"><img alt="_images/feedback.png" src="_images/feedback.png" style="width: 50%;" /></a>
+<p>Once you’ve finished marking and commenting on the student’s notebook, you can enter a grade via the <strong>.course</strong> file.
+Click on the <strong>Enter Grade</strong> button to open up the grade entry text box and enter the grade.
+This can be a number or any other string that makes sense for your course.</p>
+<a class="reference internal image-reference" href="_images/Enter_grade.png"><img alt="_images/Enter_grade.png" src="_images/Enter_grade.png" style="width: 100%;" /></a>
+</div>
+<div class="section" id="exporting-grades">
+<h2><a class="toc-backref" href="#id7">Exporting grades</a><a class="headerlink" href="#exporting-grades" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to export grades for all assignments as either a .csv file or as executable Python code.
+The <strong>Export grades</strong> function is available in the <strong>Configuration</strong> tab of the <strong>.course</strong> file.</p>
+<a class="reference internal image-reference" href="_images/Export_grades.png"><img alt="_images/Export_grades.png" src="_images/Export_grades.png" style="width: 66%;" /></a>
+<p>The .csv file format looks like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Course &#39;Autumn_2016_PHY001&#39;
+# exported 2016-06-13T13:24:40.141Z
+Name,Email,&quot;assignments/Assignment1&quot;,&quot;Notes&quot;
+&quot;Mike Croucher&quot;,&quot;some.email@sheffield.ac.uk&quot;,&quot;80&quot;,&quot;&quot;
+&quot;Mike_test &quot;,&quot;some_other_email@sheffield.ac.uk&quot;,&quot;100&quot;,&quot;&quot;
+&quot;bar@sheffield.ac.uk&quot;,&quot;bar@sheffield.ac.uk&quot;,&quot;90&quot;,&quot;&quot;
+&quot;foo@sheffield.ac.uk&quot;,&quot;foo@sheffield.ac.uk&quot;,&quot;70&quot;,&quot;&quot;
+</pre></div>
+</div>
+<p>The corresponding Python code looks like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>course = &#39;Autumn_2016_PHY001&#39;
+exported = &#39;2016-06-13T13:26:19.407Z&#39;
+assignments = [&#39;assignments/Assignment1&#39;,&#39;Notes&#39;]
+students = [
+    {&#39;name&#39;:&#39;Mike Croucher&#39;, &#39;email&#39;:&#39;some.email@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;80&#39;,&#39;&#39;]},
+    {&#39;name&#39;:&#39;Mike_test &#39;, &#39;email&#39;:&#39;some_other_email@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;100&#39;,&#39;&#39;]},
+    {&#39;name&#39;:&#39;bar@sheffield.ac.uk&#39;, &#39;email&#39;:&#39;bar@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;90&#39;,&#39;&#39;]},
+    {&#39;name&#39;:&#39;foo@sheffield.ac.uk&#39;, &#39;email&#39;:&#39;foo@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;70&#39;,&#39;&#39;]},
+]
+</pre></div>
+</div>
+</div>
+<div class="section" id="returning-an-assignment-to-students">
+<h2><a class="toc-backref" href="#id8">Returning an assignment to students</a><a class="headerlink" href="#returning-an-assignment-to-students" title="Permalink to this headline">¶</a></h2>
+<p>Once an assignment has been graded, the <em>Return</em> to student button appears.</p>
+<a class="reference internal image-reference" href="_images/return_button.png"><img alt="_images/return_button.png" src="_images/return_button.png" style="width: 100%;" /></a>
+<p>Clicking on this sends a copy of the graded assignment back to the student.
+It appears in their assignments folder like this:</p>
+<a class="reference internal image-reference" href="_images/returned_assignment.png"><img alt="_images/returned_assignment.png" src="_images/returned_assignment.png" style="width: 100%;" /></a>
+<p>Note that the student now has both their original assignment <strong>and</strong> a copy of the returned, graded assignment.</p>
+</div>
+<div class="section" id="suggested-course-folder-structure">
+<h2><a class="toc-backref" href="#id9">Suggested course folder structure</a><a class="headerlink" href="#suggested-course-folder-structure" title="Permalink to this headline">¶</a></h2>
+<p>I tend to place course content in one of two categories:</p>
+<ul class="simple">
+<li>Content that you only push out to students (e.g. lecture notes, data)</li>
+<li>Content that requires pushing out and pulling back (e.g. assignments and homeworks)</li>
+</ul>
+<p>The reason for splitting content in this way is to save on disk space.</p>
+<p>When you push content out to the students, a copy is placed in their individual projects. When you pull it back for marking, a fresh copy of each student’s assignment is made in <strong>your</strong> project. If the assignment contains large files, the lecturer’s project can quickly run out of space for large classes.</p>
+<p>Each project has 3GB of disk space provided for free, with more being provided by purchasing upgrades.</p>
+<p>There are many ways one could organise a course in CoCalc but the following schema has proven to be useful for many people.</p>
+<ul class="simple">
+<li>notes/date1</li>
+<li>notes/date2</li>
+<li>…</li>
+<li>assignments/date1</li>
+<li>assignments/date2</li>
+<li>…</li>
+<li>data/xyz</li>
+<li>data/abc</li>
+</ul>
+<p>This way, the students just see the following three folders in their course project.</p>
+<ul class="simple">
+<li>notes/</li>
+<li>assignments/</li>
+<li>data/</li>
+</ul>
+<p>The <strong>notes</strong> and <strong>data</strong> folders contain content that you push to the students and <strong>assignments</strong> contains material that you also collect back from them.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="teaching-interactions.html" class="btn btn-neutral float-right" title="Collaboration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="teaching-upgrade-course.html" class="btn btn-neutral float-left" title="Upgrading Student Projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

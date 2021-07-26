@@ -1,0 +1,348 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Task Lists &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/tasks.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Frame Editor" href="frame-editor.html" />
+    <link rel="prev" title="Chatrooms" href="chat.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/tasks.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Task Lists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#editing-the-description-markdown">Editing the Description (Markdown)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#completing-a-task">Completing a task</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#moving-tasks">Moving tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#due-date">Due date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hashtags">Hashtags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#keyboard-shortcuts">Keyboard shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-format">File format</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Task Lists</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/tasks.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="task-lists">
+<span id="index-0"></span><h1>Task Lists<a class="headerlink" href="#task-lists" title="Permalink to this headline">¶</a></h1>
+<p>Use task lists to help organize your work on a CoCalc project.
+Like everything in CoCalc, multiple people can simultaneously edit task lists.</p>
+<a class="reference internal image-reference" href="_images/task-list.png"><img alt="_images/task-list.png" class="align-center" src="_images/task-list.png" style="width: 75%;" /></a>
+<div class="section" id="editing-the-description-markdown">
+<h2>Editing the Description (Markdown)<a class="headerlink" href="#editing-the-description-markdown" title="Permalink to this headline">¶</a></h2>
+<p>Double click or use the cursor keys (and press enter) to edit a task, or create a new task. Use <a class="reference external" href="https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/">Github style markdown</a> to describe your task, use LaTeX to typeset mathematics (use <code class="docutils literal notranslate"><span class="pre">\$</span></code> for a dollar sign), use <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code> and <code class="docutils literal notranslate"><span class="pre">[x]</span></code> to create checklists, and press shift+enter to save your changes. The editor respects the themes you select in account settings, and external links open in another browser tab. You can toggle showing the full description or only everything up to the first blank line (use mod + space to do from keyboard). Of course simultaneous synchronized editing of tasks by multiple clients is fully supported.</p>
+</div>
+<div class="section" id="completing-a-task">
+<h2>Completing a task<a class="headerlink" href="#completing-a-task" title="Permalink to this headline">¶</a></h2>
+<p>Click on the checkbox in the last column to mark a task as done.
+It is removed from the list of open tasks,
+and you can reveal completed tasks by clicking on “Show done” at the top.</p>
+</div>
+<div class="section" id="moving-tasks">
+<h2>Moving tasks<a class="headerlink" href="#moving-tasks" title="Permalink to this headline">¶</a></h2>
+<p>In custom order (the default) click and drag <a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bars.png"><img alt="bars" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bars.png" style="width: 16px;" /></a> to change the order of the tasks.</p>
+</div>
+<div class="section" id="due-date">
+<h2>Due date<a class="headerlink" href="#due-date" title="Permalink to this headline">¶</a></h2>
+<p>Each task has an optional due date (and time), which you can set by clicking on the due date (or none). You can see when the task is due, when you last edited it, and click the due column to sort by due date. View finished tasks by selecting the done checkbox.</p>
+</div>
+<div class="section" id="hashtags">
+<h2>Hashtags<a class="headerlink" href="#hashtags" title="Permalink to this headline">¶</a></h2>
+<p>Put <code class="docutils literal notranslate"><span class="pre">#tag</span></code> anywhere in the description of a task to create a hashtag, with no space between the hash symbol and the tag identifier. A corresponding button will appear at the top of the screen. Click on the bottom or the hashtag in a task to toggle showing only tasks with that hashtag.</p>
+</div>
+<div class="section" id="search">
+<h2>Search<a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h2>
+<p>Enter terms in the search box in the upper left to show only tasks containing all search terms.</p>
+</div>
+<div class="section" id="keyboard-shortcuts">
+<h2>Keyboard shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this headline">¶</a></h2>
+<p>Let mod be any of control, alt, or command keys. Use mod+s to save, mod+f to find, mod+n to make a new task, mod+space to toggle showing or minimizing description, and mod+arrow to move a task up or down the list. Use arrows (or j and k) to change which task is selected, enter to start editing a task description, and shift+enter to stop editing.</p>
+</div>
+<div class="section" id="file-format">
+<h2>File format<a class="headerlink" href="#file-format" title="Permalink to this headline">¶</a></h2>
+<p>A task list is stored as a file with extension <code class="docutils literal notranslate"><span class="pre">.tasks</span></code> that contains one JSON line per task.
+You can directly edit this file with other tools (e.g., vim on the command line) and changes should appear in the task list within a few seconds.
+You can have many task lists, store them in revision control, recover them from snapshots, etc.
+You can also create a task list by creating a file foo.tasks that has one description per line (as a string):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&quot;the first task&quot;
+&quot;another task&quot;
+</pre></div>
+</div>
+<p>Or, with one JSON line per task:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&quot;desc&quot;:&quot;the first task&quot;}
+{&quot;desc&quot;:&quot;another task&quot;}
+</pre></div>
+</div>
+<p>Additional optional fields are <code class="docutils literal notranslate"><span class="pre">position</span></code>, which is a float that determines sort order, <code class="docutils literal notranslate"><span class="pre">done</span></code>, <code class="docutils literal notranslate"><span class="pre">due</span></code> and <code class="docutils literal notranslate"><span class="pre">last_edited</span></code>, which are the number of milliseconds since the epoch in the UTC time zone, and <code class="docutils literal notranslate"><span class="pre">task_id</span></code> which is a v4 UUID.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="frame-editor.html" class="btn btn-neutral float-right" title="Frame Editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chat.html" class="btn btn-neutral float-left" title="Chatrooms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

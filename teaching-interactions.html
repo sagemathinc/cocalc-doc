@@ -1,0 +1,385 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Collaboration &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-interactions.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="After the Course Ends" href="teaching-after-course.html" />
+    <link rel="prev" title="Course Management" href="teaching-course-management.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-interactions.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="teaching-create-course.html">Creating a New Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Upgrading Student Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Course Management</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Collaboration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#real-time-chatrooms">Real-time chatrooms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#live-collaborative-editing">Live collaborative editing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mention-collaborators-in-chat">&#64;Mention collaborators in chat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-shared-project">Creating a shared project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#group-projects">Group Projects</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#one-project-per-team">One project per team</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-git">Using Git</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-after-course.html">After the Course Ends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-tips_and_tricks.html">FAQ, Tips and Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="teaching-instructors.html">Instructor Guide</a> &raquo;</li>
+        
+      <li>Collaboration</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/teaching-interactions.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="collaboration">
+<span id="index-0"></span><span id="id1"></span><h1>Collaboration<a class="headerlink" href="#collaboration" title="Permalink to this headline">¶</a></h1>
+<p>There are multiple ways in which you can interact with your students or collaborators, in this section we will present some features that you might find useful when managing a course.</p>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#real-time-chatrooms" id="id3">Real-time chatrooms</a></li>
+<li><a class="reference internal" href="#live-collaborative-editing" id="id4">Live collaborative editing</a></li>
+<li><a class="reference internal" href="#mention-collaborators-in-chat" id="id5">&#64;Mention collaborators in chat</a></li>
+<li><a class="reference internal" href="#creating-a-shared-project" id="id6">Creating a shared project</a></li>
+<li><a class="reference internal" href="#group-projects" id="id7">Group Projects</a><ul>
+<li><a class="reference internal" href="#one-project-per-team" id="id8">One project per team</a></li>
+<li><a class="reference internal" href="#using-git" id="id9">Using Git</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="real-time-chatrooms">
+<span id="teaching-chatrooms"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id3">Real-time chatrooms</a><a class="headerlink" href="#real-time-chatrooms" title="Permalink to this headline">¶</a></h2>
+<p>You can create general real-time chatrooms for your CoCalc projects.
+You can create a project chat room by clicking on the <strong>New</strong> button, this will create a file with <cite>.sage-chat</cite> extension.</p>
+<p>In addition, every file in CoCalc has a separate chat that can be found on the upper left corner of your screen.</p>
+<a class="reference internal image-reference" href="_images/chat_button.png"><img alt="_images/chat_button.png" src="_images/chat_button.png" style="width: 30%;" /></a>
+<p>Every time one of your students writes something into a chat on any one of their files,
+you will get a notification displayed on the top bar.</p>
+<a class="reference internal image-reference" href="_images/instructor_notification.png"><img alt="_images/instructor_notification.png" src="_images/instructor_notification.png" style="width: 66%;" /></a>
+<p>Clicking on the notification button (bell icon on the top of the screen) displays a notification menu with the latest chats and modifications in the project or specific files.</p>
+<a class="reference internal image-reference" href="_images/notification_highlighted.png"><img alt="_images/notification_highlighted.png" src="_images/notification_highlighted.png" style="width: 100%;" /></a>
+<p>The chat notifications are always presented at the top of the menu, followed by any updates you or your collaborators have done to the project. Clicking on a chat notification will take you to <strong>the student’s copy</strong> of the file inside <strong>his/her project</strong>.
+From there, you can both reply to their questions and look at their work simultaneously.</p>
+<a class="reference internal image-reference" href="_images/student_question.png"><img alt="_images/student_question.png" src="_images/student_question.png" style="width: 66%;" /></a>
+<p>Once you have replied to the student’s question (s)he will receive a notification.</p>
+</div>
+<div class="section" id="live-collaborative-editing">
+<span id="multi-user-edit"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id4">Live collaborative editing</a><a class="headerlink" href="#live-collaborative-editing" title="Permalink to this headline">¶</a></h2>
+<p>Multiple users can collaborate on a project.
+As soon as a collaborator is added to a a project (see <a class="reference internal" href="teaching-create-course.html"><span class="doc">Creating a New Course</span></a>) they share both the project and the associated files.</p>
+<p>Live collaborative editing is possible in CoCalc.
+If one of your collaborators updates a notebook, the rest can see the changes as they are being made (similar to Google Docs).</p>
+<span class="target" id="index-3"></span><span class="target" id="index-4"></span></div>
+<div class="section" id="mention-collaborators-in-chat">
+<span id="at-mention-chat"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id5">&#64;Mention collaborators in chat</a><a class="headerlink" href="#mention-collaborators-in-chat" title="Permalink to this headline">¶</a></h2>
+<p>CoCalc chats support an <code class="docutils literal notranslate"><span class="pre">&#64;mentions</span></code> feature, where you type <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> and a list appears of collaborators, which you can select from. Anybody mentioned there will get emailed (unless they are mentioned again in the next few hours, since we don’t want to spam people). This helps ensure people know about chats. Any chat will cause the notification count to go up in the bell in the upper right, whether or not you are mentioned.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/tex-mentions.png"><img alt="_images/tex-mentions.png" src="_images/tex-mentions.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text"><em>&#64;mentioning names in course shared project chat</em></span></p>
+</div>
+<span class="target" id="index-6"></span></div>
+<div class="section" id="creating-a-shared-project">
+<span id="index-7"></span><h2><a class="toc-backref" href="#id6">Creating a shared project</a><a class="headerlink" href="#creating-a-shared-project" title="Permalink to this headline">¶</a></h2>
+<p>You can create a common shared project for your course. Think of a shared project as your private course website for the students with automatic forum and code support. By default everybody (collaborators and students) will have <strong>write</strong> access to the project and its associated files.</p>
+<p>To create a shared project you need to go to your <strong>.course</strong> file and click on the <strong>Shared Project</strong> button.</p>
+<a class="reference internal image-reference" href="_images/shared1.png"><img alt="_images/shared1.png" src="_images/shared1.png" style="width: 100%;" /></a>
+<p>If you create a <strong>.sage-chat</strong> file here, all students will receive automatic notifications when questions are posted on the chat.</p>
+<p>If you want to make a file or an assignment <strong>read only</strong> so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type <cite>chmod a-w filename</cite> (in this example the filename is <cite>Assignment1</cite>).</p>
+<a class="reference internal image-reference" href="_images/read_only.png"><img alt="_images/read_only.png" src="_images/read_only.png" style="width: 100%;" /></a>
+<p>If you want to check the access permissions of all the files contained in a given directory, use the command <cite>ls -l</cite> on the terminal.</p>
+<a class="reference internal image-reference" href="_images/ls_assignment.png"><img alt="_images/ls_assignment.png" src="_images/ls_assignment.png" style="width: 100%;" /></a>
+<p>In case you want to change a read only file into a read and write, type <cite>chmod a+w filename</cite> on the terminal.</p>
+</div>
+<div class="section" id="group-projects">
+<h2><a class="toc-backref" href="#id7">Group Projects</a><a class="headerlink" href="#group-projects" title="Permalink to this headline">¶</a></h2>
+<p>There are various ways in which you can facilitate students’ group projects in CoCalc.
+A couple of options are:</p>
+<div class="section" id="one-project-per-team">
+<h3><a class="toc-backref" href="#id8">One project per team</a><a class="headerlink" href="#one-project-per-team" title="Permalink to this headline">¶</a></h3>
+<p>Have someone in each group make a project with all the group members as collaborators.
+They will all then be able to collaborate on the same project and modify files simultaneously.</p>
+<p>You should note, however, that by using this approach you cannot automatically collect assignments from the team. A workaround could be creating an assignment in your main project and having the students copy that file to their group project.</p>
+</div>
+<div class="section" id="using-git">
+<h3><a class="toc-backref" href="#id9">Using Git</a><a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h3>
+<p>Students can collaborate from within their individual course projects using [Git] via the terminal in CoCalc.
+See <a class="reference internal" href="teaching-tips_and_tricks.html#teaching-using-git"><span class="std std-ref">Using Git</span></a> in
+<a class="reference internal" href="teaching-tips_and_tricks.html"><span class="doc">Tips and tricks</span></a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="teaching-after-course.html" class="btn btn-neutral float-right" title="After the Course Ends" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="teaching-course-management.html" class="btn btn-neutral float-left" title="Course Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>create_support_ticket &mdash; CoCalc Manual  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+  
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/api/create_support_ticket.html"/>
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="delete_account" href="delete_account.html" />
+    <link rel="prev" title="create_project" href="create_project.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/api/create_support_ticket.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-notes.html">Notes</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#protocol-and-data-format">Protocol and Data Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#authentication">Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#additional-references">Additional References</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#api-message-reference">API Message Reference</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_collaborator.html">add_collaborator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_license_to_project.html">add_license_to_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change_email_address.html">change_email_address</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change_password.html">change_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_path_between_projects.html">copy_path_between_projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_path_delete.html">copy_path_delete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_path_status.html">copy_path_status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="copy_public_path_between_projects.html">copy_public_path_between_projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_account.html">create_account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_project.html">create_project</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">create_support_ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_account.html">delete_account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="disconnect_from_project.html">disconnect_from_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="forgot_password.html">forgot_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_available_upgrades.html">get_available_upgrades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_support_tickets.html">get_support_tickets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_usernames.html">get_usernames</a></li>
+<li class="toctree-l3"><a class="reference internal" href="invite_collaborator.html">invite_collaborator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="invite_noncloud_collaborators.html">invite_noncloud_collaborators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="log_client_error.html">log_client_error</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metrics.html">metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ping.html">ping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="project_exec.html">project_exec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="public_get_directory_listing.html">public_get_directory_listing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="public_get_text_file.html">public_get_text_file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query.html">query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="read_text_file_from_project.html">read_text_file_from_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="remove_collaborator.html">remove_collaborator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="remove_license_from_project.html">remove_license_from_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reset_forgot_password.html">reset_forgot_password</a></li>
+<li class="toctree-l3"><a class="reference internal" href="start_metrics.html">start_metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="touch_project.html">touch_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unlink_passport.html">unlink_passport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_auth.html">user_auth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_search.html">user_search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="write_text_file_to_project.html">write_text_file_to_project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#api-examples-howto">API Examples &amp; Howto</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#copy-a-file-between-projects">Copy a file between projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#embedding-in-an-iframe">Embedding in an IFrame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#iframe-communication">IFrame communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">API</a> &raquo;</li>
+        
+      <li>create_support_ticket</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/create_support_ticket.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-support-ticket">
+<h1>create_support_ticket<a class="headerlink" href="#create-support-ticket" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
+<li><code class="docutils literal notranslate"><span class="pre">username</span></code>: name on the ticket</li>
+<li><code class="docutils literal notranslate"><span class="pre">email_address</span></code>: if there is no email_address in the account, there cannot be a ticket! (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">subject</span></code>: like an email subject (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">body</span></code>: html or md formatted text (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">tags</span></code>: a list of tags, like <code class="docutils literal notranslate"><span class="pre">['member']</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">account_id</span></code>: account_id for the ticket</li>
+<li><code class="docutils literal notranslate"><span class="pre">location</span></code>: from the URL, to know what the requester is talking about</li>
+<li><code class="docutils literal notranslate"><span class="pre">info</span></code>: additional data dict, like browser/OS</li>
+</ul>
+<p>Open a CoCalc support ticket.</p>
+<p>Notes:</p>
+<ul>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">account_id</span></code> is not provided, the ticket will be created, but ticket
+info will not be returned by <code class="docutils literal notranslate"><span class="pre">get_support_tickets</span></code>.</p>
+</li>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">username</span></code> is not provided, <code class="docutils literal notranslate"><span class="pre">email_address</span></code> is used for the name on the ticket.</p>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">location</span></code> is used to provide a path to a specific project or file, for example</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">/project/a17037cb-a083-4519-b3c1-38512af603a6/files/notebook.ipynb`</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>If present, the <code class="docutils literal notranslate"><span class="pre">location</span></code> string will be expanded to a complete URL and
+appended to the body of the ticket.</p>
+<ul>
+<li><p class="first">The <code class="docutils literal notranslate"><span class="pre">info</span></code> dict can be used to provide additional metadata, for example</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">{&quot;user_agent&quot;:&quot;Mozilla/5.0 ... Chrome/58.0.3029.96 Safari/537.36&quot;}</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">If the ticket concerns a CoCalc course, the project id of the course can be included in the <code class="docutils literal notranslate"><span class="pre">info</span></code> dict, for example,</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">{&quot;course&quot;:&quot;0c7ae00c-ea43-4981-b454-90d4a8b1ac47&quot;}</span>
+</pre></div>
+</div>
+<p>In that case, the course project_id will be expanded to a URL and appended to the body of the ticket.</p>
+</li>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">tags</span></code> or <code class="docutils literal notranslate"><span class="pre">info</span></code> are provided, options must be sent as a JSON object.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
+<span class="err">  -d &#39;{&quot;email_address&quot;:&quot;jd@example.com&quot;, \</span>
+<span class="err">       &quot;subject&quot;:&quot;package xyz&quot;, \</span>
+<span class="err">       &quot;account_id&quot;:&quot;291f43c1-deae-431c-b763-712307fa6859&quot;, \</span>
+<span class="err">       &quot;body&quot;:&quot;please install package xyz for use with Python3&quot;, \</span>
+<span class="err">       &quot;tags&quot;:[&quot;member&quot;], \</span>
+<span class="err">       &quot;location&quot;:&quot;/projects/0010abe1-9283-4b42-b403-fa4fc1e3be57/worksheet.sagews&quot;, \</span>
+<span class="err">       &quot;info&quot;:{&quot;user_agent&quot;:&quot;Mozilla/5.0&quot;,&quot;course&quot;:&quot;cc8f1243-d573-4562-9aab-c15a3872d683&quot;}}&#39; \</span>
+<span class="err">  https://cocalc.com/api/v1/create_support_ticket</span>
+<span class="err">==&gt; {&quot;event&quot;:&quot;support_ticket_url&quot;,</span>
+<span class="err">     &quot;id&quot;:&quot;abd649bf-ea2d-4952-b925-e44c6903945e&quot;,</span>
+<span class="err">     &quot;url&quot;:&quot;https://sagemathcloud.zendesk.com/requests/0123&quot;}</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="delete_account.html" class="btn btn-neutral float-right" title="delete_account" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="create_project.html" class="btn btn-neutral float-left" title="create_project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+
+    </p>
+  </div>
+
+<div role="contentinfo">
+  <p>
+    Please <a href="mailto:help@cocalc.com">contact us</a> for any feedback,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34321400-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+  
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>
