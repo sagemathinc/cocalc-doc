@@ -10,6 +10,12 @@ CoCalc Docker Image
    :local:
    :depth: 1
 
+###################################
+Major Update: July 25, 2021
+###################################
+
+On July 25, 2021, we released a new version of the CoCalc Docker image. This is a massive change from the last release.  The internal architecture is significantly simpler. Much of the code has been refactored or rewritten. We have fixed many bugs. It's now possible to disable idle timeout, change the basepath, and modify CoCalc itself much more easily. If you are already using the CoCalc Docker image, please upgrade and test it out: `CoCalc Docker image upgrade`_.
+
 ##############################
 About the CoCalc Docker Image
 ##############################
@@ -111,10 +117,11 @@ The CoCalc Docker image is **not blatantly insecure** from outside attack: the d
 Updates to the CoCalc Docker Image
 ##################################
 
-The CoCalc Docker image is updated approximately weekly. Weekly updates incorporate all features and bug fixes that have been merged into the `CoCalc GitHub code repository <https://github.com/sagemathinc/cocalc>`_ master branch at the time of the build.
+The CoCalc Docker image is updated several times a year. Updates incorporate all features and bug fixes that have been merged into the `CoCalc GitHub code repository <https://github.com/sagemathinc/cocalc>`_ master branch at the time of the build.
 
 Other updates, such as new versions of Sagemath, Julia, and other additional software, happen less frequently but will be announced on the CoCalc Docker mailing list.
 
 .. index:: Docker image; updates
 
 .. _AGPLv3: https://opensource.org/licenses/AGPL-3.0
+.. _CoCalc Docker image upgrade: https://github.com/sagemathinc/cocalc-docker#upgrade
