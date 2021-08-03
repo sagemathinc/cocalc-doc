@@ -11,6 +11,19 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-08-03:
+
+2021-08-03: VSCode
+--------------------------------------------
+
+- Python 3 (system-wide)
+    - (upd) `pymatgen`_ ``2022.0.11``
+
+- Executables:
+    - (new) `VSCode`_ **Server** – available in "+New" or "Settings"
+    - (upd) `Jupyter Lab`_ ``3.1.1``
+
+
 .. _update-2021-07-26:
 
 2021-07-26  Julia 1.6.2
@@ -483,3 +496,5 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _MODIS: https://docs.ropensci.org/MODIStsp/
 .. _flipper: https://github.com/MarkCbell/flipper
 .. _Paraview: https://www.paraview.org/
+.. _VSCode: https://code.visualstudio.com/
+.. _pymatgen: https://pymatgen.org/
