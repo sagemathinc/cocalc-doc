@@ -10,34 +10,32 @@ Pluto Notebooks for Julia
 Here are instructions for running a Pluto notebook on CoCalc.
 
 
-*****************
-Launch a Notebook
-*****************
+***********************
+Launch a Pluto Notebook
+***********************
 
-Run the following in a CoCalc Linux Terminal to get the ID of the current project (or you can copy the project ID from within the URL of any file in the current project)::
+1. Click :doc:`../plus-new` to open the new file dialog.
 
-    $ echo $COCALC_PROJECT_ID
-    12345678-1234-1234-1234-123456789012
+2. Click "Pluto server...".
 
-Then start Julia and launch Pluto.::
-
-    $ julia
-    julia> import Pluto
-    julia> Pluto.run(launch_browser = false, require_secret_for_access = false, host="0.0.0.0")
-
-Open a browser tab to the following, substituting your project ID where indicated::
-
-    https://cocalc.com/PROJECT_ID/server/1234/
-
-If you get a gateway timeout the first time, hit refresh to give the notebook more time to launch.
-
-Enjoy.
-
-.. figure:: img/pluto-launch.png
+.. image:: img/pluto-1.jpg
      :width: 80%
      :align: center
+     :alt: Pluto server button in New file dialog
 
-     ..
+3. Click "Julia Pluto.jl Server" in the panel that opens.
+
+.. image:: img/pluto-2.jpg
+     :width: 80%
+     :align: center
+     :alt: Link to open Pluto server in a new browser tab
+
+4. A new browser tab will open for the Pluto server. If you get a gateway timeout the first time, hit refresh to give the notebook more time to launch.
+
+.. image:: img/pluto-launch.png
+     :width: 80%
+     :align: center
+     :alt: Pluto welcome screen in new browser tab
 
 **********
 References
