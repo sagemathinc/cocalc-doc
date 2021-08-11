@@ -11,6 +11,17 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-08-02:
+
+2021-08-02: Octave 6.3.0
+----------------------------------------------
+
+- Executables:
+    - (upd) `Octave version 6.3.0 <https://www.gnu.org/software/octave/news/release/2021/07/11/octave-6.3.0-released.html>`_
+
+- Python 3 (system-wide):
+    - (upd) `nbconvert`_ version 6 – it was erroneously reverted to 5.x
+
 .. _update-2021-08-03:
 
 2021-08-03: VSCode
