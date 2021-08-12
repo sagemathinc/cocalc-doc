@@ -12,23 +12,25 @@ Creating an Account
 -------------------
 
 On your first visit to CoCalc.com, you will see the welcome screen.
-Click **Create Account!**:
+Click either **Sign In** button:
 
-.. image:: img/getting-started/start-welcome-a.png
+.. image:: img/getting-started/first-home-page.jpg
      :width: 90%
+     :alt: Main landing page for CoCalc
 
-Agree to the **Terms of Service**:
-
-.. image:: img/getting-started/start-create-a.png
-     :width: 90%
-
-Choose a sign-in method. In addition to signing up with your email address,
+At the next screen, complete the "Create an Account" dialog: Agree to the Terms of Service. Then, choose a sign-in method. In addition to signing up with your email address,
 you have the option of signing using your credentials for
 Facebook, Github, Google, or Twitter.
+
+.. image:: img/getting-started/create-account.jpg
+     :width: 90%
+     :alt: Sign-in page with Create an Account panel at left
+
 In the image below, sign up via email is highlighted:
 
 .. image:: img/getting-started/start-create2-a.png
      :width: 50%
+     :alt: Create an Account dialog
 
 Signing in
 ----------
@@ -55,12 +57,14 @@ Click in the **Project title** area and enter a project name, for example
 
 .. image:: img/getting-started/proj-1-a.png
      :width: 90%
+     :alt: Create Project dialog
 
 After the project is created, you will see it appear in your
 list of projects. Click on the project name to open the project:
 
 .. image:: img/getting-started/proj-2-a.png
      :width: 90%
+     :alt: New project appears in project list
 
 
 Creating a File
