@@ -790,10 +790,14 @@ I.e. maybe you have to run ``chmod go-rwx ~/.ssh/authorized_keys``!
 AWS S3
 ************
 
-Amazon's S3 storage buckets can be accessed via their name, access key and a secret id.
+Amazon's S3 storage buckets can be accessed via their bucket id, access key and a secret id.
+Together with a name of your choice, which will be the name of the mount point,
+enter those pieces of information into the dialog and restart the project.
 
-More info: `AWS S3 <https://aws.amazon.com/s3/>`_.
+More info:
 
+- `AWS S3 <https://aws.amazon.com/s3/>`_
+- `How To Grant Access To Only One S3 Bucket Using AWS IAM Policy <https://objectivefs.com/howto/how-to-restrict-s3-bucket-policy-to-only-one-aws-s3-bucket>`_
 
 ******************
 Google GCS
