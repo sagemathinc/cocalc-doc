@@ -24,12 +24,7 @@ However, Dropbox recently made a very sad decision to not support Linux (except 
 Mount remote files via SSHFS
 -----------------------------------
 
-**Unfortunately, SSHFS is no longer supported in CoCalc due to security issues.**
-
-If you really, really need sshfs support,
-feel free to write to us (help@sagemath.com),
-and we may consider implementing a workaround if there is sufficient interest.
-
+You can use ``sshfs`` as explained at :ref:`ssh-remote-files`. Note that using ``sshfs`` directly from the CoCalc terminal is not supported.
 
 .. index:: Emacs
 

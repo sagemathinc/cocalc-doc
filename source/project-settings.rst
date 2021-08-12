@@ -680,20 +680,22 @@ but it is ok for letting changes show up on other projects after a brief period 
     An active "Internet access" quota is required,
     because otherwise the project can't access the remote services.
 
-***********
-SSH
-***********
+.. _ssh-remote-files:
 
-This mounts files accessible via an OpenSSH server,
-which means you should be able to access files on a remote Linux server.
+**********************
+Remote files with SSH
+**********************
 
-The authentication only works via a pair of public/private keys!
+You can make files accessible via an OpenSSH server.
+This configuration allows you to access files on a remote Linux server.
+
+The authentication requires a pair of public/private keys.
 The public key must be shared with with the remote OpenSSH server,
 while the private key – the hidden secret – must be shared with CoCalc
 in order to authenticate with the server.
 
-In particular, in order to be able to access files stored on a remote server,
-you need to be able to do a **password-less** private-key based ssh login!
+In order to access files stored on a remote server,
+you must have a **password-less** private-key based ssh login.
 
 It's a good idea to generate a fresh pair of keys,
 for better control overall.
