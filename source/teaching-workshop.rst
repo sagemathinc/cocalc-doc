@@ -12,7 +12,7 @@ Regarding courses, upgrades and pricing, the model is flexible.
 The instructor and each student have separate projects.
 Licenses are applied to projects. Be sure to apply :ref:`Member Hosting <member-hosting>` and :ref:`Internet Access <internet-access>` to each project currently in use.
 
-You can buy a license key for as short a time as one day. See :ref:`site license course setup <license-course-setup>` for details on course configuration.
+You can buy a license key for as short a time as one day. See :ref:`site license course setup <inst-pays>` for details on course configuration.
 
 After a Session is Done
 ---------------------------

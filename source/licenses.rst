@@ -26,7 +26,7 @@ More information
 
 * :ref:`Adding a license to a project <project-add-license>`
 
-* :ref:`Adding a license to a course <site-license-course-setup>`
+* :ref:`Adding a license to a course <install-course-license>`
 
 * :ref:`Viewing licenses you manage <view-managed-licenses>`
 

@@ -16,29 +16,28 @@ how to populate it with a course management file and how to invite all of your s
 Creating the Course Project
 ###########################
 
-The first step is to create an instructor's project to contain the course.
-
-.. note::
-
-    :ref:`upgrade-teacher-project-first`
+The first step is to create a teacher's project to contain the course.
 
 Log into CoCalc and click on the **Projects** icon in the top left hand corner of the screen.
 
 .. image:: img/teaching/projects-cc.png
     :width: 100px
     :align: center
+    :alt: Projects icon
 
 Click on **Create New Project**, fill out the **Title** and **Description** and click on **Create Project**
 
 .. image:: img/teaching/create_new_course_project.png
      :width: 100%
      :align: center
+     :alt: entering new project title and description
 
 The new project will appear at the top of the project list. Click on its  title to open it.
 
 .. image:: img/teaching/course_list.png
      :width: 100%
      :align: center
+     :alt: new teacher project displayed in project list
 
 .. index:: Courses; adding teaching assistants
 .. _teaching-add-ta:

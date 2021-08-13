@@ -61,100 +61,98 @@ and you can change any of these settings at any time.
 Teacher or institution pays for upgrades
 --------------------------------------------
 
-.. note::
+*This section describes adding upgrades to student projects if you are using a CoCalc license. Please see :doc:`course-upgrading-students-legacy` if you need to upgrade student projects with one of the older upgrade packages.*
 
-    CoCalc now supports site licenses in addition to the upgrade system described in this section.
-    Licenses greatly simplify managing student upgrades, especially when dealing with multiple courses or sections.
-    See :ref:`Setting up a Course with a Site License <site-license-course-setup>` for more information.
-    Contact us at `help@cocalc.com <mailto:help@cocalc.com">`_ if you are interested in a site license.
+At this point, we assume you have created a teaching project and a course file in that project, and have added students under the ``Students`` tab in the course file.
 
-Assuming you are an instructor and want to setup everything for a course,
-here are the rough steps to **pay for upgrading your students' projects**.
+1. Obtain a license key.
+------------------------
 
-**Background:** The course purchase option provides you with upgrades for *your account*,
-but you then distribute these upgrades to all student projects in your course
-(these projects are automatically created for the course).
-The students then fully benefit from using these upgraded projects.
+Obtain a license, if you haven't already. See :ref:`buying-licenses`.
 
-In your account settings there are two methods to upgrade your course:
+Your license key is a hexadecimal uuid string. It looks like this::
 
-1.  The tab "Licenses" lets you order "license keys". They allow you to specify exactly the number of student projects and upgrades. This is the newer and preferred method. Read more in :ref:`here <site-license-course-setup>`.
+    78caa80a-4ddf-11ea-a5e5-53e10ace7b7b
 
-2.  Next to the "upgrades" page, there is a tab :ref:`Purchases <account-subscriptions>`. In that tab, enter your payment information and purchase one or more course packages. `We can help you <mailto:help@cocalc.com>`_ if you are not sure which one to buy (it depends on the size of the class, your needs, etc) or if you need us to process a format purchase order (PO), etc.
+.. _install-course-license:
 
-Once you purchase the course upgrades,
-go to the project where you created the course and **open the .course file**.
-In that interface, where you can add the students, etc.
-there is also **a tab called "Configurations"** (next to "Students", "Assignments", etc.).
+2. Install your license(s) in the course file.
+-----------------------------------------------
 
-Current pricing is available at https://cocalc.com/policies/pricing.html
-which at the time of writing ranged from a **total** of about $7 to $14 per student for a 4 month course.
-The price per student varies according to the size of the student cohort.
-You get significant per-student discounts when you buy in bulk.
+- Open the ``course`` file and click "Configuration."
+- Check the box for "You or your institute will pay for this course".
+- Click "Upgrade using a license key...".
+- Paste in your license key and click "Save". You will see additional text where you entered the license key, indicating which upgrades will be applied and the maximum number of simultaneous running projects that can use this license.
 
-... and after selecting that "you/your institution pays",
-you can proceed to distribute the upgrades of the course package here:
+.. image:: img/teaching/site-lic-course-config.png
+     :width: 85%
+     :align: center
+     :alt: Adding a license key in course configuration.
 
-.. image:: img/teaching/upgrading_students2.png
-     :width: 75%
+- You can apply more than one license. After you install the first license, a new button will appear, "Add another license key (more students or better upgrades)". Click this to add more licenses, one at a time.
+
+.. index:: Site licenses; course strategy
+
+3. License strategy (multiple licenses only)
+---------------------------------------------
+
+If you have applied two or more licenses to a course, a dialog appears
+for choosing how those licenses are combined. The two options are:
+
+- **Maximize number of covered students:** apply one license to each project associated to this course (e.g., you bought a license to handle a few more students who added your course). This is the default.
+- **Maximize upgrades to each project:** apply all licenses to all projects associated to this course (e.g., you bought a license to increase the RAM or CPU for all students).
+
+.. image:: img/teaching/license-strategy.png
+     :width: 85%
      :align: center
 
-Clicking "Adjust upgrades..." lets you allocate any available upgrades in your account.
 
-Entering initial student upgrades
-=================================
+4. Restart the teacher project.
+--------------------------------
 
-The following screenshots assume the instructor has purchased a One Week Standard Extra Small subscription, with upgrades for 10 projects, and applied upgrades to the TEACHING project, leaving upgrades for 9 student projects.
-Two students have been added to the "MATH 101" .course file.
+In project Settings (wrench icon), restart your project so that the license will be applied. Click "Restart Project..." then click "Yes, restart project" in the confirmation dialog.
 
-After clicking `Adjust upgrades...` as shown above, this is what the instructor sees:
-
-.. image:: img/teaching/inst-pay-01-no-upgr.png
-     :width: 50%
+.. figure:: img/teaching/site-lic-course-restart-pre.png
+     :width: 85%
      :align: center
 
-.. index:: Member Hosting;student upgrades
+     license entered in course Configuration; about to restart teaching project
 
-The instructor enters the usual upgrades *per student* for Standard subscriptions:
 
-* Member Hosting: ✓
-* Internet Access: ✓
-* Idle Timeout: 2.4 hours
-* Shared RAM: 1000 MB
-* Shared CPU: 1 core
+In project Settings, within a few seconds you will see that the teaching project is being upgraded. The warnings about running on an unpaid server will be gone, and you will see your license upgrades applied to the teaching project, including Member Hosting and Internet Access.
 
-.. image:: img/teaching/inst-pay-02-add-upgr.png
-     :width: 50%
+.. figure:: img/teaching/site-lic-course-restart-post.png
+     :width: 85%
      :align: center
 
-After checking that everything looks right, the instructor clicks `Apply changes`.
+     project settings after restarting teaching project
 
-.. _adding-student-upgrades:
+.. index:: Site licenses; adding capacity to course
 
-Adding more student upgrades
-============================
+Adding capacity
+---------------
 
-Now suppose a third student arrives after the previous upgrades have been applied. The instructor again opens the .course file, selects Configuration, and clicks `Adjust upgrades...`. Note the message at the bottom of the dialog that only one of the student projects will be upgraded.
-
-*Without making any changes to the numbers entered,* the instructor again clicks `Apply changes`. The third student project is now upgraded.
-
-.. image:: img/teaching/inst-pay-06-before3rd.png
-     :width: 50%
-     :align: center
+After you have courses up and running, you may discover that you need to provide for more students,
+or increase computing resources on student projects. You can do either of those by obtaining
+additional licenses and applying them as shown above.
+If you need more flexibility than the available strategies offer,
+contact CoCalc support at help@cocalc.com.
 
 What the student sees
 ============================
 
-Here is what a student will see upon opening his/her student project for the course.
+Here is what a student will see upon opening the student project for the course.
 
-First, this is what is seen if the instructor has not yet applied upgrades for the student project. Note the red banner warning that the project is not upgraded.
+First, this is what is seen if the instructor has not yet applied a license for the course. Note the red banner warning that the project is not upgraded.
 
 .. image:: img/teaching/inst-pay-03-student-before.png
      :width: 50%
      :align: center
+     :alt: Student project quotas before applying course license.
 
-Second, this is what is seen if the instructor has added typical upgrades for a Standard course. The exact amounts added will vary for different plans. For example, Basic courses include upgrades for Member Hosting and Internet Access, but not for other resources. Note in the Projects toolbar at very top, that the project is restarting. That is because upgrades were applied by the instructor moments ago.
+Second, this is what is seen if the instructor has added a license in the course Configuration tab. The exact resource amounts will vary depending on the license.
 
-.. image:: img/teaching/inst-pay-04-student-after.png
+.. image:: img/teaching/student-license-view.jpg
      :width: 50%
      :align: center
+     :alt: Student project quotas after applying course license.

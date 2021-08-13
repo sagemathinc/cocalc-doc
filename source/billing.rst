@@ -97,7 +97,7 @@ Please contact help@cocalc.com with all relevant details about your intended pur
 License does not work
 ---------------------------------------
 
-After you buy a license, the first thing you need to do is go to settings in your project and :ref:`apply the license to your project <project-add-license>`. Do this for each project that you would like to be upgraded. Exception: if you are managing a course with CoCalc, you :ref:`upgrade student projects <site-license-course-setup>` within the .course file, and not in project settings.
+After you buy a license, the first thing you need to do is go to settings in your project and :ref:`apply the license to your project <project-add-license>`. Do this for each project that you would like to be upgraded. Exception: if you are managing a course with CoCalc, you :ref:`upgrade student projects <install-course-license>` within the .course file, and not in project settings.
 
 At any time, you can visit https://cocalc.com/settings/licenses to see how all of your licenses are allocated across your projects.
 
@@ -105,7 +105,7 @@ At any time, you can visit https://cocalc.com/settings/licenses to see how all o
 
 **The free servers really are massively overloaded, so it is well worth it to upgrade to member hosting, enable internet access, etc.**
 
-**In case you're teaching a course and bought a license to manage that course**: please read :ref:`install-license-in-course`.
+**In case you're teaching a course and bought a license to manage that course**: please read :ref:`install-course-license`.
 
 
 Quota upgrades

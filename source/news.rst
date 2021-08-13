@@ -102,7 +102,7 @@ Site license for courses
 
 Site licenses can be used to upgrade student projects in a CoCalc-managed course.
 After the license key is entered in course configuration,
-all student projects associated to that course are automatically upgraded the next time they start. Here are :ref:`detailed site license course setup instructions <site-license-course-setup>`. If this is something you might be interested in, contact us at `help@cocalc.com <mailto:help@cocalc.com">`_.
+all student projects associated to that course are automatically upgraded the next time they start. Here are :ref:`detailed site license course setup instructions <inst-pays>`.
 
 
 .. index:: Site licenses; for projects (news)

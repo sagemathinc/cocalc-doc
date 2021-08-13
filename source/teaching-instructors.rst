@@ -23,3 +23,4 @@ There are several reasons why you should consider conducting a course on CoCalc:
    teaching-tips_and_tricks
    teaching-nbgrader
    teaching-workshop
+   teaching-upgrade-legacy
