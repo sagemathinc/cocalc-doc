@@ -18,6 +18,7 @@ Software Updates 2021
 
 - Executables
     - (upd) `R`_ ``4.1.1``
+    - (new) `zig`_ ``0.8.0`` – *a general-purpose programming language and toolchain for maintaining robust, optimal, and reusable software*
 
 - Python 3 (system-wide):
     - (upd) `yfinance`_ ``0.1.63``
@@ -521,4 +522,4 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _VSCode: https://code.visualstudio.com/
 .. _pymatgen: https://pymatgen.org/
 .. _yfinance: https://aroussi.com/post/python-yahoo-finance
-
+.. _zig: https://ziglang.org/
