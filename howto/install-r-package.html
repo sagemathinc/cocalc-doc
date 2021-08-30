@@ -44,7 +44,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Manage Running Processes" href="running-processes.html" />
+    <link rel="next" title="Install Julia Packages" href="install-julia-package.html" />
     <link rel="prev" title="Install Python Packages" href="install-python-lib.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -136,9 +136,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#jupyter-notebook">Jupyter Notebook</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#sage-worksheets">Sage Worksheets</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="install-julia-package.html">Install Julia Packages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="running-processes.html">Manage Running Processes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upload.html">Upload Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
@@ -254,7 +254,7 @@
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p>Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a> in order to download software from a remote repository (i.e. CRAN) to your project.
-The install command will not work unless you <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">upgrade your project</span></a> to have internet access.</p>
+Installing an R package will require you to <a class="reference internal" href="../project-settings.html#project-add-license"><span class="std std-ref">add a license</span></a> or <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">add upgrades</span></a> so that your project has internet access.</p>
 <p class="last">Otherwise you have to download the tarball of the R package to your own machine,
 and <a class="reference internal" href="upload.html"><span class="doc">upload</span></a> it to your project.
 Then, you can tell R to install the package directly from there as a local file.</p>
@@ -346,18 +346,7 @@ install.packages(&quot;&lt;name of package&gt;&quot;, lib = Sys.getenv(&quot;R_L
 <p class="first admonition-title">Note</p>
 <p class="last">After installing a package, restart your Jupyter notbook kernel. Click “Kernel” then select “Restart kernel…” from the dropdown menu.</p>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If your <code class="docutils literal notranslate"><span class="pre">Sys.getenv(&quot;R_LIBS_USER&quot;)</span></code> already exists, a freshly started kernel will already know about it. You can check this by running <code class="docutils literal notranslate"><span class="pre">.libPaths()</span></code>. If the first listed path starts with <code class="docutils literal notranslate"><span class="pre">/home/user/R/...</span></code> you can run <code class="docutils literal notranslate"><span class="pre">install.packages</span></code> without any errors.</p>
 </div>
-</div>
-</div>
-<div class="section" id="sage-worksheets">
-<h2>Sage Worksheets<a class="headerlink" href="#sage-worksheets" title="Permalink to this headline">¶</a></h2>
-<p>The above will install R packages for use with Sage worksheets (<code class="docutils literal notranslate"><span class="pre">%r</span></code> mode)
-and Jupyter notebooks using default R.
-The Sage binary may be built with a different release of R.
-Use <code class="docutils literal notranslate"><span class="pre">R-sage</span></code> instead of <code class="docutils literal notranslate"><span class="pre">R</span></code> to install packages for it.</p>
 </div>
 </div>
 
@@ -369,7 +358,7 @@ Use <code class="docutils literal notranslate"><span class="pre">R-sage</span></
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="running-processes.html" class="btn btn-neutral float-right" title="Manage Running Processes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="install-julia-package.html" class="btn btn-neutral float-right" title="Install Julia Packages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="install-python-lib.html" class="btn btn-neutral float-left" title="Install Python Packages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

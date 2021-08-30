@@ -147,6 +147,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="install-r-package.html">Install R Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install-julia-package.html">Install Julia Packages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="running-processes.html">Manage Running Processes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upload.html">Upload Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
@@ -298,10 +299,8 @@ Install will happen faster if you include as much as possible of the following i
 <span id="python-pkg-install-user"></span><h2><a class="toc-backref" href="#id4">Python “user” installs</a><a class="headerlink" href="#python-user-installs" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a>
-in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
-The install command will not work unless you
-<a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">upgrade your project</span></a> to have internet access.</p>
+<p class="last">Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a> in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
+Installing a Python package will require you to <a class="reference internal" href="../project-settings.html#project-add-license"><span class="std std-ref">add a license</span></a> or <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">add upgrades</span></a> so that your project has internet access.</p>
 </div>
 <p>A way to work around such a blocked internet access
 is to <a class="reference internal" href="upload.html"><span class="doc">upload the package files</span></a> into your project.</p>
@@ -323,7 +322,7 @@ because projects already include that path in their <code class="docutils litera
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>In the case of Python 2, <code class="docutils literal notranslate"><span class="pre">$HOME/.local/lib/python2.7/site-packages/</span></code> will contain the package you’ve installed.
-Similarly, this path will contain <code class="docutils literal notranslate"><span class="pre">python3.5</span></code> for a Python 3.5 executable.</p>
+Similarly, this path will contain <code class="docutils literal notranslate"><span class="pre">python3.8</span></code> for a Python 3.8 executable.</p>
 <p>In case your Python environment can’t find the package,
 you might have to add your <code class="docutils literal notranslate"><span class="pre">~/.local/...</span></code> directory dynamically during runtime like that:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import sys, os
@@ -331,7 +330,7 @@ sys.path.insert(0, os.path.expanduser(&#39;~/.local/lib/python2.7/site-packages&
 </pre></div>
 </div>
 <p class="last">Make sure, the path is correct.
-I.e. for Python 3 this could be one of <code class="docutils literal notranslate"><span class="pre">python3.4</span></code>, <code class="docutils literal notranslate"><span class="pre">python3.5</span></code>, <code class="docutils literal notranslate"><span class="pre">python3.6</span></code>…</p>
+I.e. for Python 3 this could be one of <code class="docutils literal notranslate"><span class="pre">python3.7</span></code>, <code class="docutils literal notranslate"><span class="pre">python3.8</span></code>…</p>
 </div>
 </div>
 <div class="section" id="pip">
@@ -348,8 +347,8 @@ then run in a <a class="reference internal" href="../terminal.html"><span class=
 <p class="first admonition-title">Note</p>
 <p><strong>Regarding Python 2 vs. Python 3:</strong></p>
 <ul class="last simple">
-<li>Python 2: use <code class="docutils literal notranslate"><span class="pre">pip2</span></code> and <code class="docutils literal notranslate"><span class="pre">python2</span></code>/<code class="docutils literal notranslate"><span class="pre">ipython2</span></code> – <code class="docutils literal notranslate"><span class="pre">pip</span></code> and <code class="docutils literal notranslate"><span class="pre">python</span></code> should default to these variants.</li>
-<li>Python 3: use <code class="docutils literal notranslate"><span class="pre">pip3</span></code> and <code class="docutils literal notranslate"><span class="pre">python3</span></code>/<code class="docutils literal notranslate"><span class="pre">ipython3</span></code>.</li>
+<li>Python 2: use <code class="docutils literal notranslate"><span class="pre">pip2</span></code> and <code class="docutils literal notranslate"><span class="pre">python2</span></code>/<code class="docutils literal notranslate"><span class="pre">ipython2</span></code>.</li>
+<li>Python 3: use <code class="docutils literal notranslate"><span class="pre">pip3</span></code> and <code class="docutils literal notranslate"><span class="pre">python3</span></code>/<code class="docutils literal notranslate"><span class="pre">ipython3</span></code> – <code class="docutils literal notranslate"><span class="pre">pip</span></code> and <code class="docutils literal notranslate"><span class="pre">python</span></code> should default to these variants.</li>
 </ul>
 </div>
 <p>If you’ve <a class="reference internal" href="upload.html"><span class="doc">uploaded a zip/wheel file</span></a>,

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Fortran Programming &mdash; CoCalc Manual  documentation</title>
+  <title>Install Julia Packages &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/fortran.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/install-julia-package.html"/>
   
 
   
@@ -44,13 +44,13 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Git Version Control" href="git.html" />
-    <link rel="prev" title="Dask cluster" href="dask.html" />
+    <link rel="next" title="Manage Running Processes" href="running-processes.html" />
+    <link rel="prev" title="Install R Packages" href="install-r-package.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/fortran.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/install-julia-package.html"/>
   
 
 </head>
@@ -130,7 +130,15 @@
 <li class="toctree-l2"><a class="reference internal" href="external-tools.html">External Tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install-python-lib.html">Install Python Packages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install-r-package.html">Install R Packages</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install-julia-package.html">Install Julia Packages</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Install Julia Packages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-requests">Install requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-a-package">Install a package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#install-a-julia-package-from-the-command-line">Install a Julia Package from the Command Line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-a-julia-package-in-a-jupyter-notebook">Install a Julia Package in a Jupyter Notebook</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="running-processes.html">Manage Running Processes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upload.html">Upload Files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
@@ -146,11 +154,7 @@
 <li class="toctree-l2"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dask.html">Dask cluster</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Fortran Programming</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#command-line">Command-line</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#jupyter-notebook">Jupyter Notebook</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="fortran.html">Fortran Programming</a></li>
 <li class="toctree-l2"><a class="reference internal" href="git.html">Git Version Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="google-api.html">Google Sheets API Demo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gsl.html">GSL C Code Compilation</a></li>
@@ -222,14 +226,14 @@
         
           <li><a href="index.html">Howto</a> &raquo;</li>
         
-      <li>Fortran Programming</li>
+      <li>Install Julia Packages</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/fortran.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/install-julia-package.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -243,48 +247,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="fortran-programming">
-<span id="index-0"></span><h1>Fortran Programming<a class="headerlink" href="#fortran-programming" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="command-line">
-<h2>Command-line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h2>
-<p>CoCalc supports various ways to run <a class="reference external" href="https://en.wikipedia.org/wiki/Fortran">Fortran code</a>.
-They’re provided by GNU <code class="docutils literal notranslate"><span class="pre">gfortran</span></code> (<code class="docutils literal notranslate"><span class="pre">f95</span></code>) in the <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>.
-You can also view an <code class="docutils literal notranslate"><span class="pre">.f90</span></code> file next to a terminal,
-by splitting the editor window and switching to a Terminal in a <a class="reference internal" href="../frame-editor.html"><span class="doc">Frame Editor</span></a>.</p>
-<p>Read more in the <a class="reference external" href="https://gcc.gnu.org/fortran/">GFortran doc page</a>.</p>
+  <div class="section" id="install-julia-packages">
+<span id="index-0"></span><span id="id1"></span><h1>Install Julia Packages<a class="headerlink" href="#install-julia-packages" title="Permalink to this headline">¶</a></h1>
+<p>This page describes how to install an Julia package in a CoCalc project.</p>
+<p>CoCalc already includes <a class="reference external" href="https://cocalc.com/doc/software-julia.html">hundreds of Julia packages</a>, but you can install even more or update them inside your project.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a> in order to download software from a remote repository (i.e. the <a class="reference external" href="https://github.com/JuliaRegistries/General">General Julia package registry</a> to your project.
+The install command will not work unless you <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">upgrade your project</span></a> to have internet access.</p>
 </div>
-<div class="section" id="jupyter-notebook">
-<h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">¶</a></h2>
-<p>A more convenient way to explore Fortran is to mix it with Python by using the <code class="docutils literal notranslate"><span class="pre">f2py</span></code> wrapper.</p>
-<p>In a Jupyter Notebook running Python 3, there is also the <a class="reference external" href="https://github.com/mgaitan/fortran_magic">fortranmagic</a> extension available.</p>
-<ol class="arabic">
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">%load_ext</span> <span class="pre">fortranmagic</span></code></p>
-</li>
-<li><p class="first">Write a function in a cell like that:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>%%fortran -v
-
-subroutine f1(x, y, z)
-    real, intent(in) :: x,y
-    real, intent(out) :: z
-
-    z = sin(x / 3 * y / 3) + cos(x * y)
-
-end subroutine f1
+<div class="section" id="install-requests">
+<h2>Install requests<a class="headerlink" href="#install-requests" title="Permalink to this headline">¶</a></h2>
+<p>If a package may have general use but is not already installed in CoCalc,
+please open a support request to tell us to install it globally for everyone.
+Please include information about special dependencies or a specific example to test it.</p>
+</div>
+<div class="section" id="install-a-package">
+<h2>Install a package<a class="headerlink" href="#install-a-package" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install-a-julia-package-from-the-command-line">
+<h3>Install a Julia Package from the Command Line<a class="headerlink" href="#install-a-julia-package-from-the-command-line" title="Permalink to this headline">¶</a></h3>
+<p>To install custom Julia packages as a normal user, you have to type this in a terminal before starting Julia:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>export JULIA_DEPOT_PATH=$HOME/julia_depot
 </pre></div>
 </div>
-</li>
-<li><p class="first">Use that new function <code class="docutils literal notranslate"><span class="pre">f1</span></code> in Python, e.g. <code class="docutils literal notranslate"><span class="pre">f1(2.2,</span> <span class="pre">-1)</span></code> gives <code class="docutils literal notranslate"><span class="pre">-0.8305184841156006</span></code>.</p>
-</li>
-</ol>
-<p>Here is an <a class="reference external" href="https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/fortranmagic.ipynb?viewer=share">example worksheet</a>:</p>
+<p>When you do this, you will have to reinstall any needed Julia packages that were installed systemwide, since that’s the way Julia works.</p>
+<p>To have this setting picked up by any terminal in a given project, you can set the <code class="docutils literal notranslate"><span class="pre">JULIA_DEPOT_PATH</span></code> environment variable as explained in <a class="reference internal" href="../project-settings.html#project-env-vars"><span class="std std-ref">Custom environment variables</span></a> and restart the project.</p>
+<p>After setting <code class="docutils literal notranslate"><span class="pre">JULIA_DEPOT_PATH</span></code>, follow the usual Julia <a class="reference external" href="https://docs.julialang.org/en/v1/stdlib/Pkg/">pkg documentation</a>:</p>
 <ol class="arabic simple">
-<li>Defining the function <code class="docutils literal notranslate"><span class="pre">f1</span></code></li>
+<li>Create or open an existing <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> file.</li>
+<li>Type <code class="docutils literal notranslate"><span class="pre">]</span></code> (right bracket). You don’t have to hit Return.</li>
+<li>Type type <code class="docutils literal notranslate"><span class="pre">add</span> <span class="pre">&lt;package_name&gt;</span></code> to add a package; you can provide the names of several packages separated by spaces.</li>
+<li>Allow some time for the package to be compiled.</li>
+<li>Hit backspace or Control-C to exit the package manager and Control-D to exit Julia.</li>
 </ol>
-<a class="reference internal image-reference" href="../_images/fortranmagic-1.png"><img alt="../_images/fortranmagic-1.png" src="../_images/fortranmagic-1.png" style="width: 75%;" /></a>
-<ol class="arabic simple" start="2">
-<li>Using it in a plot:</li>
-</ol>
-<a class="reference internal image-reference" href="../_images/fortranmagic-2.png"><img alt="../_images/fortranmagic-2.png" src="../_images/fortranmagic-2.png" style="width: 75%;" /></a>
+</div>
+<div class="section" id="install-a-julia-package-in-a-jupyter-notebook">
+<h3>Install a Julia Package in a Jupyter Notebook<a class="headerlink" href="#install-a-julia-package-in-a-jupyter-notebook" title="Permalink to this headline">¶</a></h3>
+<p>No special environment setting is needed. Simply do the following in a code cell in a Jupyter notebook that has the default Julia kernel selected:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import Pkg; Pkg.add(&quot;packaage_name&quot;)
+</pre></div>
+</div>
+<p>and let the install run to completion.</p>
+</div>
 </div>
 </div>
 
@@ -296,10 +300,10 @@ end subroutine f1
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="git.html" class="btn btn-neutral float-right" title="Git Version Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="running-processes.html" class="btn btn-neutral float-right" title="Manage Running Processes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="dask.html" class="btn btn-neutral float-left" title="Dask cluster" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="install-r-package.html" class="btn btn-neutral float-left" title="Install R Packages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
