@@ -40,10 +40,8 @@ Python "user" installs
 
 .. warning::
 
-    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>`
-    in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
-    The install command will not work unless you
-    :ref:`upgrade your project <project-upgrades>` to have internet access.
+    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
+    Installing a Python package will require you to :ref:`add a license <project-add-license>` or :ref:`add upgrades <project-upgrades>` so that your project has internet access.
 
 A way to work around such a blocked internet access
 is to :doc:`upload the package files <./upload>` into your project.
@@ -70,7 +68,7 @@ Install location and ``sys.path``
 .. note::
 
     In the case of Python 2, ``$HOME/.local/lib/python2.7/site-packages/`` will contain the package you've installed.
-    Similarly, this path will contain ``python3.5`` for a Python 3.5 executable.
+    Similarly, this path will contain ``python3.8`` for a Python 3.8 executable.
 
     In case your Python environment can't find the package,
     you might have to add your ``~/.local/...`` directory dynamically during runtime like that::
@@ -79,7 +77,7 @@ Install location and ``sys.path``
         sys.path.insert(0, os.path.expanduser('~/.local/lib/python2.7/site-packages'))
 
     Make sure, the path is correct.
-    I.e. for Python 3 this could be one of ``python3.4``, ``python3.5``, ``python3.6``...
+    I.e. for Python 3 this could be one of ``python3.7``, ``python3.8``...
 
 pip
 ------------------------------------
@@ -97,8 +95,8 @@ then run in a :doc:`CoCalc Terminal file <../terminal>`:
 
     **Regarding Python 2 vs. Python 3:**
 
-    * Python 2: use ``pip2`` and ``python2``/``ipython2`` -- ``pip`` and ``python`` should default to these variants.
-    * Python 3: use ``pip3`` and ``python3``/``ipython3``.
+    * Python 2: use ``pip2`` and ``python2``/``ipython2``.
+    * Python 3: use ``pip3`` and ``python3``/``ipython3`` -- ``pip`` and ``python`` should default to these variants.
 
 If you've :doc:`uploaded a zip/wheel file <./upload>`,
 change the ``[package-name]`` to the actual filename.

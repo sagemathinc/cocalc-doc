@@ -14,7 +14,7 @@ CoCalc already includes `hundreds of R packages <https://cocalc.com/doc/software
 .. warning::
 
     Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (i.e. CRAN) to your project.
-    The install command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
+    Installing an R package will require you to :ref:`add a license <project-add-license>` or :ref:`add upgrades <project-upgrades>` so that your project has internet access.
 
     Otherwise you have to download the tarball of the R package to your own machine,
     and :doc:`upload <./upload>` it to your project.
@@ -120,14 +120,3 @@ Credits: `stack overflow post <https://stackoverflow.com/a/43283085/54236>`_
 
     After installing a package, restart your Jupyter notbook kernel. Click "Kernel" then select "Restart kernel..." from the dropdown menu.
 
-.. note::
-
-    If your ``Sys.getenv("R_LIBS_USER")`` already exists, a freshly started kernel will already know about it. You can check this by running ``.libPaths()``. If the first listed path starts with ``/home/user/R/...`` you can run ``install.packages`` without any errors.
-
-Sage Worksheets
-=================
-
-The above will install R packages for use with Sage worksheets (``%r`` mode)
-and Jupyter notebooks using default R.
-The Sage binary may be built with a different release of R.
-Use ``R-sage`` instead of ``R`` to install packages for it.

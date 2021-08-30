@@ -14,6 +14,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    external-tools
    install-python-lib
    install-r-package
+   install-julia-package
    running-processes
    upload
    ../api-examples.md
