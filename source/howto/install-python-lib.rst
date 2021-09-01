@@ -107,7 +107,7 @@ pip install directly from git repository
 Suppose there is a GitHub repository for a python 3 package at :samp:`https://github.com/{organization}/{repo}`. (There should be a ``setup.py`` file at the top-level directory of the repo.)
 The simplest way to install directly from GitHub via pip is this::
 
-    pip3 install git+https://github.com/organization/repo.git
+    pip3 install --user git+https://github.com/organization/repo.git
 
 This approach works with any remote git repository for which you have the necessary access.
 
