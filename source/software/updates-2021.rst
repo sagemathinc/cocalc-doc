@@ -11,12 +11,26 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-09-02:
+
+2021-09-02:  Sage 9.4, NASM, ...
+---------------------------------------------
+
+- Executables:
+    - (new): `SageMath`_ ``9.4`` – `Release Tour Sage 9.4 <https://wiki.sagemath.org/ReleaseTours/sage-9.4>`_, accessible via the "SageMath 9.4" Jupyter kernel, ``sage-9.4`` on the command-line, or run ``sage_select 9.4`` and restart the Sage Worksheet server. In the future, this will become the default Sage version.
+    - (new): `NASM`_ ``2.15.05`` – *Netwide Assembler (NASM), an asssembler for the x86 CPU architecture portable to nearly every modern platform*
+
+- Misc:
+    - (upd) various updates to the "system-wide" and "Anaconda 2020" Python environments
+    - (upd) some Julia packages
+    - (upd) Linux packages
+
 .. _update-2021-08-13:
 
 2021-08-13: R 4.1.1
 ----------------------------------------------
 
-- Executables
+- Executables:
     - (upd) `R`_ ``4.1.1``
     - (new) `zig`_ ``0.8.0`` – *a general-purpose programming language and toolchain for maintaining robust, optimal, and reusable software*
 
@@ -523,3 +537,5 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _pymatgen: https://pymatgen.org/
 .. _yfinance: https://aroussi.com/post/python-yahoo-finance
 .. _zig: https://ziglang.org/
+.. _nasm: https://nasm.us/
+
