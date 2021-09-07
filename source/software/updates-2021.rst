@@ -11,6 +11,18 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-09-07:
+
+2021-09-07: PyPy (Python 3)
+---------------------------------------------
+
+- Python 3:
+    - (new) for the audacious: `PyPy`_ jupyter kernel.
+
+- Misc:
+    - (upd) as usual, updated Python and Linux/R packages.
+
+
 .. _update-2021-09-02:
 
 2021-09-02:  Sage 9.4, NASM, ...
@@ -538,4 +550,4 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _yfinance: https://aroussi.com/post/python-yahoo-finance
 .. _zig: https://ziglang.org/
 .. _nasm: https://nasm.us/
-
+.. _PyPy: https://www.pypy.org/
