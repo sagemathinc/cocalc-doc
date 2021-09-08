@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Howto &mdash; CoCalc Manual  documentation</title>
+  <title>R Step-by-Step with Jupyter &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/index.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/run-r-step-by-step.html"/>
   
 
   
@@ -44,13 +44,13 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Developing Software" href="software-development.html" />
-    <link rel="prev" title="iPad" href="../ipad.html" />
+    <link rel="next" title="Randomized Assignments" href="random-assignments.html" />
+    <link rel="prev" title="Fix broken Jupyter PDF export" href="fix-broken-jupyter-pdf.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/index.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/run-r-step-by-step.html"/>
   
 
 </head>
@@ -123,7 +123,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Howto</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Howto</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="software-development.html">Developing Software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="project-invitation-tokens.html">Project Invitation Tokens</a></li>
 <li class="toctree-l2"><a class="reference internal" href="export-timetravel.html">Export TimeTravel History</a></li>
@@ -143,7 +143,7 @@
 <li class="toctree-l2"><a class="reference internal" href="jupyterlab-extensions.html">JupyterLab Extensions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="custom-jupyter-kernel.html">Custom Jupyter Kernel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fix-broken-jupyter-pdf.html">Fix broken Jupyter PDF export</a></li>
-<li class="toctree-l2"><a class="reference internal" href="run-r-step-by-step.html">R Step-by-Step with Jupyter</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">R Step-by-Step with Jupyter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dask.html">Dask cluster</a></li>
@@ -217,14 +217,16 @@
     
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Howto</li>
+          <li><a href="index.html">Howto</a> &raquo;</li>
+        
+      <li>R Step-by-Step with Jupyter</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/run-r-step-by-step.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -238,70 +240,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="howto">
-<h1>Howto<a class="headerlink" href="#howto" title="Permalink to this headline">¶</a></h1>
-<p>Explanations about how you can accomplish a certain task or run a specific example on CoCalc:</p>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">CoCalc platform</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="software-development.html">Developing Software</a></li>
-<li class="toctree-l1"><a class="reference internal" href="project-invitation-tokens.html">Project Invitation Tokens</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export-timetravel.html">Export TimeTravel History</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external-tools.html">External Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-python-lib.html">Install Python Packages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-r-package.html">Install R Packages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install-julia-package.html">Install Julia Packages</a></li>
-<li class="toctree-l1"><a class="reference internal" href="running-processes.html">Manage Running Processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload.html">Upload Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api-examples.html">API Examples &amp; Howto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="convert-html-to-pdf.html">Convert HTML to PDF</a></li>
-</ul>
+  <span class="target" id="index-0"></span><div class="section" id="r-step-by-step-with-jupyter">
+<span id="run-r-step-by-step"></span><span id="index-1"></span><h1>R Step-by-Step with Jupyter<a class="headerlink" href="#r-step-by-step-with-jupyter" title="Permalink to this headline">¶</a></h1>
+<p>Suppose you have an R script that you would like to debug, or step through line by line collaboratively with others.</p>
+<p>You can do this using a Jupyter notebook and CoCalc’s built-in collaboration.
+Start by using the <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/index.html">jupytext</a> command to convert a script to blocks of code in cells in a notebook.</p>
+<p>If your R script is <code class="docutils literal notranslate"><span class="pre">rscript.R</span></code>, then do the following:</p>
+<ol class="arabic">
+<li><p class="first">Upload <code class="docutils literal notranslate"><span class="pre">rscript.R</span></code> to a CoCalc project.</p>
+</li>
+<li><p class="first">Open a <a class="reference internal" href="../terminal.html"><span class="doc">terminal</span></a> and run the command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>jupytext rscript.r --to ipynb
+open rscript.ipynb
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Services</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="webserver.html">Run A Webserver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bokeh-server.html">Bokeh / Holoview Server</a></li>
-<li class="toctree-l1"><a class="reference internal" href="shiny-server.html">Shiny Server</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Jupyter Notebook</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="jupyter-kernel-selection.html">Jupyter Kernel Selection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter-extension.html">Setup Jupyter Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyterlab-extensions.html">JupyterLab Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom-jupyter-kernel.html">Custom Jupyter Kernel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fix-broken-jupyter-pdf.html">Fix broken Jupyter PDF export</a></li>
-<li class="toctree-l1"><a class="reference internal" href="run-r-step-by-step.html">R Step-by-Step with Jupyter</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Teaching</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Miscellaneous</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dask.html">Dask cluster</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fortran.html">Fortran Programming</a></li>
-<li class="toctree-l1"><a class="reference internal" href="git.html">Git Version Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="google-api.html">Google Sheets API Demo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gsl.html">GSL C Code Compilation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nbgrader.html">NBgrader</a></li>
-<li class="toctree-l1"><a class="reference internal" href="neuron.html">NEURON simulation environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mongodb.html">MongoDB Server</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pluto.html">Pluto Notebooks for Julia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="postgresql.html">PostgreSQL Server</a></li>
-<li class="toctree-l1"><a class="reference internal" href="remarkjs-slideshow.html">RemarkJS Slideshow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ruby.html">Ruby Programming</a></li>
-<li class="toctree-l1"><a class="reference internal" href="turtle.html">Turtle Graphics with CoCalc</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activeloop-hub.html">Getting Started with Hub</a></li>
-</ul>
-</div>
+</li>
+<li><p class="first">In the Jupyter notebook, select the “R (system-wide)” kernel. You will see the script separated into multiple cells in the notebook.</p>
+</li>
+</ol>
+<p>You can then step through the script by running one cell in the notebook at a time.</p>
 </div>
 
 
@@ -312,10 +269,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="software-development.html" class="btn btn-neutral float-right" title="Developing Software" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="random-assignments.html" class="btn btn-neutral float-right" title="Randomized Assignments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../ipad.html" class="btn btn-neutral float-left" title="iPad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="fix-broken-jupyter-pdf.html" class="btn btn-neutral float-left" title="Fix broken Jupyter PDF export" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
