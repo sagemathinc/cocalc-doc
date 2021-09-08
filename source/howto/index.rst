@@ -37,6 +37,7 @@ Explanations about how you can accomplish a certain task or run a specific examp
    jupyterlab-extensions
    custom-jupyter-kernel
    fix-broken-jupyter-pdf
+   run-r-step-by-step
 
 .. toctree::
    :caption: Teaching
