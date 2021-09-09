@@ -249,11 +249,11 @@
 <span id="assembly-language"></span><span id="index-0"></span><h1>Assembly Language Programming<a class="headerlink" href="#assembly-language-programming" title="Permalink to this headline">¶</a></h1>
 <p>You can use your CoCalc account to learn assembly language.</p>
 <p>Both <a class="reference external" href="https://sourceware.org/binutils/docs/as/">GNU assembler</a> and <a class="reference external" href="https://www.nasm.us/">Netwide assembler</a> (<code class="docutils literal notranslate"><span class="pre">nasm</span></code>) are available on CoCalc.com. To run assembler programs on CoCalc.com, use instructions for 64-bit Linux, as shown in the examples.</p>
-<p>To get started with either assembler, create a source file with the <a class="reference internal" href="../frame-editor.html"><span class="doc">fram editor</span></a>. You can then split the editor tab (as shown in the frame editor docs), and open a <a class="reference internal" href="../terminal.html"><span class="doc">terminal</span></a> in one of the tabs. Run the commands below in the terminal to assemble, link, and run your programs.</p>
+<p>To get started with either assembler, create a source file with the <a class="reference internal" href="../frame-editor.html"><span class="doc">frame editor</span></a>. You can then split the editor tab (as shown in the frame editor docs), and open a <a class="reference internal" href="../terminal.html"><span class="doc">terminal</span></a> in one of the tabs. Run the commands below in the terminal to assemble, link, and run your programs.</p>
 <div class="section" id="id1">
 <h2>GNU assembler<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>For a tutorial on using the GNU assembler with Linux, see Ray Toal’s <a class="reference external" href="https://cs.lmu.edu/~ray/notes/gasexamples/">GNU Assembler Examples</a>.
-The first example from that tutorial is available on the CoCalc share server at &lt;<a class="reference external" href="https://cocalc.com/share/public_paths/0481f92026c39a2a9cd1ae35123f702ae7b662eb">https://cocalc.com/share/public_paths/0481f92026c39a2a9cd1ae35123f702ae7b662eb</a>&gt;_.</p>
+Here is a link to <a class="reference external" href="https://cocalc.com/share/public_paths/0481f92026c39a2a9cd1ae35123f702ae7b662eb">the first example from the GNU assembler tutorial</a> on the CoCalc share server.</p>
 <p>Here is a one-line command to assemble, link, and execute a GNU assembler program called <code class="docutils literal notranslate"><span class="pre">hello.s</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>gcc -c hello.s &amp;&amp; ld hello.o &amp;&amp; ./a.out
 </pre></div>
@@ -262,7 +262,7 @@ The first example from that tutorial is available on the CoCalc share server at 
 <div class="section" id="id2">
 <h2>Netwide assembler<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>For a tutorial on using the Netwide assembler with Linux, see Ray Toal’s <a class="reference external" href="https://cs.lmu.edu/~ray/notes/nasmtutorial/">NASM Tutorial</a>.
-The first example from that tutorial is available on the CoCalc share server at  &lt;<a class="reference external" href="https://cocalc.com/share/public_paths/dd3d211ef8d16dff2a6407ab00fc572fbe2653e2">https://cocalc.com/share/public_paths/dd3d211ef8d16dff2a6407ab00fc572fbe2653e2</a>&gt;_.</p>
+Here is a link to <a class="reference external" href="https://cocalc.com/share/public_paths/dd3d211ef8d16dff2a6407ab00fc572fbe2653e2">the first example from the nasm tutorial</a> on the CoCalc share server.</p>
 <p>Here is a one-line command to assemble, link, and execute a NASM program called <code class="docutils literal notranslate"><span class="pre">hello.asm</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>nasm -felf64 hello.asm &amp;&amp; ld hello.o &amp;&amp; ./a.out
 </pre></div>
