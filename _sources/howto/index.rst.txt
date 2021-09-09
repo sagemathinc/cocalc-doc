@@ -49,9 +49,11 @@ Explanations about how you can accomplish a certain task or run a specific examp
    :caption: Miscellaneous
    :maxdepth: 1
 
+   assembly-language
    bash-fortunes
    dask
    fortran
+   activeloop-hub
    git
    google-api
    gsl
@@ -63,4 +65,3 @@ Explanations about how you can accomplish a certain task or run a specific examp
    remarkjs-slideshow
    ruby
    turtle
-   activeloop-hub

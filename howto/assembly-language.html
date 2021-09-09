@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>R Step-by-Step with Jupyter &mdash; CoCalc Manual  documentation</title>
+  <title>Assembly Language Programming &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/run-r-step-by-step.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/assembly-language.html"/>
   
 
   
@@ -44,13 +44,13 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Randomized Assignments" href="random-assignments.html" />
-    <link rel="prev" title="Fix broken Jupyter PDF export" href="fix-broken-jupyter-pdf.html" />
+    <link rel="next" title="Bash Fortunes" href="bash-fortunes.html" />
+    <link rel="prev" title="Randomized Assignments" href="random-assignments.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/run-r-step-by-step.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/assembly-language.html"/>
   
 
 </head>
@@ -143,9 +143,13 @@
 <li class="toctree-l2"><a class="reference internal" href="jupyterlab-extensions.html">JupyterLab Extensions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="custom-jupyter-kernel.html">Custom Jupyter Kernel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fix-broken-jupyter-pdf.html">Fix broken Jupyter PDF export</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">R Step-by-Step with Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run-r-step-by-step.html">R Step-by-Step with Jupyter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="random-assignments.html">Randomized Assignments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="assembly-language.html">Assembly Language Programming</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Assembly Language Programming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">GNU assembler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Netwide assembler</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="bash-fortunes.html">Bash Fortunes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dask.html">Dask cluster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fortran.html">Fortran Programming</a></li>
@@ -220,14 +224,14 @@
         
           <li><a href="index.html">Howto</a> &raquo;</li>
         
-      <li>R Step-by-Step with Jupyter</li>
+      <li>Assembly Language Programming</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/run-r-step-by-step.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/assembly-language.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -241,25 +245,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="index-0"></span><div class="section" id="r-step-by-step-with-jupyter">
-<span id="run-r-step-by-step"></span><span id="index-1"></span><h1>R Step-by-Step with Jupyter<a class="headerlink" href="#r-step-by-step-with-jupyter" title="Permalink to this headline">¶</a></h1>
-<p>Suppose you have an R script that you would like to debug, or step through line by line collaboratively with others.</p>
-<p>You can do this using a Jupyter notebook and CoCalc’s built-in collaboration.
-Start by using the <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/index.html">jupytext</a> command to convert a script to blocks of code in cells in a notebook.</p>
-<p>If your R script is <code class="docutils literal notranslate"><span class="pre">rscript.R</span></code>, then do the following:</p>
-<ol class="arabic">
-<li><p class="first">Upload <code class="docutils literal notranslate"><span class="pre">rscript.R</span></code> to a CoCalc project.</p>
-</li>
-<li><p class="first">Open a <a class="reference internal" href="../terminal.html"><span class="doc">terminal</span></a> and run the commands:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>jupytext rscript.r --to ipynb
-open rscript.ipynb
+  <div class="section" id="assembly-language-programming">
+<span id="assembly-language"></span><span id="index-0"></span><h1>Assembly Language Programming<a class="headerlink" href="#assembly-language-programming" title="Permalink to this headline">¶</a></h1>
+<p>You can use your CoCalc account to learn assembly language.</p>
+<p>Both <a class="reference external" href="https://sourceware.org/binutils/docs/as/">GNU assembler</a> and <a class="reference external" href="https://www.nasm.us/">Netwide assembler</a> (<code class="docutils literal notranslate"><span class="pre">nasm</span></code>) are available on CoCalc.com. To run assembler programs on CoCalc.com, use instructions for 64-bit Linux, as shown in the examples.</p>
+<p>To get started with either assembler, create a source file with the <a class="reference internal" href="../frame-editor.html"><span class="doc">fram editor</span></a>. You can then split the editor tab (as shown in the frame editor docs), and open a <a class="reference internal" href="../terminal.html"><span class="doc">terminal</span></a> in one of the tabs. Run the commands below in the terminal to assemble, link, and run your programs.</p>
+<div class="section" id="id1">
+<h2>GNU assembler<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>For a tutorial on using the GNU assembler with Linux, see Ray Toal’s <a class="reference external" href="https://cs.lmu.edu/~ray/notes/gasexamples/">GNU Assembler Examples</a>.
+The first example from that tutorial is available on the CoCalc share server at &lt;<a class="reference external" href="https://cocalc.com/share/public_paths/0481f92026c39a2a9cd1ae35123f702ae7b662eb">https://cocalc.com/share/public_paths/0481f92026c39a2a9cd1ae35123f702ae7b662eb</a>&gt;_.</p>
+<p>Here is a one-line command to assemble, link, and execute a GNU assembler program called <code class="docutils literal notranslate"><span class="pre">hello.s</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>gcc -c hello.s &amp;&amp; ld hello.o &amp;&amp; ./a.out
 </pre></div>
 </div>
-</li>
-<li><p class="first">In the Jupyter notebook, select the “R (system-wide)” kernel. You will see the script separated into multiple cells in the notebook.</p>
-</li>
-</ol>
-<p>You can then step through the script by running one cell in the notebook at a time.</p>
+</div>
+<div class="section" id="id2">
+<h2>Netwide assembler<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>For a tutorial on using the Netwide assembler with Linux, see Ray Toal’s <a class="reference external" href="https://cs.lmu.edu/~ray/notes/nasmtutorial/">NASM Tutorial</a>.
+The first example from that tutorial is available on the CoCalc share server at  &lt;<a class="reference external" href="https://cocalc.com/share/public_paths/dd3d211ef8d16dff2a6407ab00fc572fbe2653e2">https://cocalc.com/share/public_paths/dd3d211ef8d16dff2a6407ab00fc572fbe2653e2</a>&gt;_.</p>
+<p>Here is a one-line command to assemble, link, and execute a NASM program called <code class="docutils literal notranslate"><span class="pre">hello.asm</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>nasm -felf64 hello.asm &amp;&amp; ld hello.o &amp;&amp; ./a.out
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -270,10 +278,10 @@ open rscript.ipynb
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="random-assignments.html" class="btn btn-neutral float-right" title="Randomized Assignments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="bash-fortunes.html" class="btn btn-neutral float-right" title="Bash Fortunes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="fix-broken-jupyter-pdf.html" class="btn btn-neutral float-left" title="Fix broken Jupyter PDF export" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="random-assignments.html" class="btn btn-neutral float-left" title="Randomized Assignments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

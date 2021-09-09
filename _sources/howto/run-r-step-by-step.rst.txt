@@ -17,7 +17,7 @@ If your R script is ``rscript.R``, then do the following:
 
 #. Upload ``rscript.R`` to a CoCalc project.
 
-#. Open a :doc:`terminal <../terminal>` and run the command::
+#. Open a :doc:`terminal <../terminal>` and run the commands::
 
     jupytext rscript.r --to ipynb
     open rscript.ipynb
