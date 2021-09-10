@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Run A Webserver &mdash; CoCalc Manual  documentation</title>
+  <title>Howto TEST &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/webserver.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/index2.html"/>
   
 
   
@@ -44,11 +44,13 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Troubleshooting" href="trouble.html" />
+    <link rel="prev" title="Turtle Graphics with CoCalc" href="turtle.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/webserver.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/index2.html"/>
   
 
 </head>
@@ -115,13 +117,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Platform</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">TEST</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cocalc-platform">CoCalc platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#services">Services</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
@@ -177,14 +184,14 @@
     
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Run A Webserver</li>
+      <li>Howto TEST</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/webserver.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/index2.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -198,63 +205,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="run-a-webserver">
-<span id="webserver"></span><h1>Run A Webserver<a class="headerlink" href="#run-a-webserver" title="Permalink to this headline">¶</a></h1>
-<p>For testing and development, it is possible to run a small webserver inside a CoCalc project.
-Access to it is restricted to only the owner and all collaborators on the project, and nobody else.</p>
-<div class="section" id="webserver-proxy">
-<h2>Webserver proxy<a class="headerlink" href="#webserver-proxy" title="Permalink to this headline">¶</a></h2>
-<p>Given your project’s ID is [project_id] like <code class="docutils literal notranslate"><span class="pre">60f9ea81-5bd0-45ae-9965-76de986e101f</span></code>
-and the service is serving on [port],
-and it is serving to all ip addresses (<strong>not</strong> just localhost!), then use:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/server/[port]/
-</pre></div>
+  <div class="section" id="howto-test">
+<h1>Howto TEST<a class="headerlink" href="#howto-test" title="Permalink to this headline">¶</a></h1>
+<p>How to accomplish a certain task or run a specific example on CoCalc.</p>
+<div class="section" id="cocalc-platform">
+<h2>CoCalc platform<a class="headerlink" href="#cocalc-platform" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="software-development.html"><span class="doc">Developing Software</span></a></li>
+<li><a class="reference internal" href="project-invitation-tokens.html"><span class="doc">Project Invitation Tokens</span></a></li>
+</ul>
 </div>
-<p>to access your HTTP web server.
-For example, you might have to start the service using <code class="docutils literal notranslate"><span class="pre">--ip=0.0.0.0</span></code> to serve all IPs
-(the exact flag depends on the service).</p>
-</div>
-<div class="section" id="using-the-port-proxy">
-<h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Permalink to this headline">¶</a></h2>
-<p>This is similar to above (<code class="docutils literal notranslate"><span class="pre">port</span></code> instead of <code class="docutils literal notranslate"><span class="pre">server</span></code>)</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/port/[port]/
-</pre></div>
-</div>
-<p>When you visit that URL with your web browser, your web server will get a request for <code class="docutils literal notranslate"><span class="pre">/[project_id]/port/[port]/</span></code> rather than for <code class="docutils literal notranslate"><span class="pre">/</span></code> like it does with server.
-Otherwise, everything is the same, including the big caveat above.</p>
-</div>
-<div class="section" id="what-about-security">
-<h2>What about security?<a class="headerlink" href="#what-about-security" title="Permalink to this headline">¶</a></h2>
-<p>Only the owner and collaborators on the given project can access the webserver via an SSL encrypted connection.
-Our proxy server will reject all other requests.
-This means you don’t have to worry about setting up logins/passwords on whatever webserver you run in your project.
-On the other hand, it means that CoCalc is not useful as a platform if you want to run a webserver that is visible to anybody in the world.
-If you need that, use some other service.</p>
-</div>
-<div class="section" id="what-about-dynamically-generated-subdomains">
-<h2>What about dynamically generated subdomains?<a class="headerlink" href="#what-about-dynamically-generated-subdomains" title="Permalink to this headline">¶</a></h2>
-<p>Obviously, it would be nice if we could map a project_id and port to a subdomain like</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://[project id].project.cocalc.com
-</pre></div>
-</div>
-<p>We have not implemented this.</p>
-</div>
-<div class="section" id="example-code">
-<h2>Example Code<a class="headerlink" href="#example-code" title="Permalink to this headline">¶</a></h2>
-<p>Here’s a simple example of an HTTP server written using the Python SimpleHTTPServer class.
-Open a project and click “+New” then paste in this link, then click the “From Web” button (or use wget or copy/paste into a file):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://gist.githubusercontent.com/williamstein/c69001187923c2a62f1b42126a4a77e8/raw/b50f9410a6d1a55144931ad419affa9466094386/server.py
-</pre></div>
-</div>
-<p>Then in a terminal type</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>chmod +x server.py
-./server.py
-</pre></div>
-</div>
-</div>
-<div class="section" id="raw-files-server">
-<h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Permalink to this headline">¶</a></h2>
-<p>If you just want an http view of your files, use the raw servers, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[project_id]/raw/</span></code>.  The point of the above is that you could modify it to provide all sorts of interesting functionality.</p>
+<div class="section" id="services">
+<h2>Services<a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="webserver.html"><span class="doc">Run A Webserver</span></a></li>
+<li><a class="reference internal" href="bokeh-server.html"><span class="doc">Bokeh / Holoview Server</span></a></li>
+</ul>
 </div>
 </div>
 
@@ -263,6 +229,15 @@ Open a project and click “+New” then paste in this link, then click the “F
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="trouble.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="turtle.html" class="btn btn-neutral float-left" title="Turtle Graphics with CoCalc" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

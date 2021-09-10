@@ -1,7 +1,7 @@
 .. index:: nbgrader; R
 
 ===============
-NBgrader
+nbgrader for R
 ===============
 
 .. warning::

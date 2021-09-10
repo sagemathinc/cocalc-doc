@@ -1,0 +1,17 @@
+===============================
+Howto TEST
+===============================
+
+How to accomplish a certain task or run a specific example on CoCalc.
+
+CoCalc platform
+===============
+
+* :doc:`Developing Software <software-development>`
+* :doc:`Project Invitation Tokens <project-invitation-tokens>`
+
+Services
+========
+
+* :doc:`webserver`
+* :doc:`bokeh-server`

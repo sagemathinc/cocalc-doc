@@ -2,66 +2,55 @@
 Howto
 ===============================
 
-Explanations about how you can accomplish a certain task or run a specific example on CoCalc:
+How to accomplish a certain task or run a specific example on CoCalc.
 
-.. toctree::
-   :caption: CoCalc platform
-   :maxdepth: 1
+CoCalc platform
+===============
 
-   software-development
-   project-invitation-tokens
-   export-timetravel
-   external-tools
-   install-python-lib
-   install-r-package
-   install-julia-package
-   running-processes
-   upload
-   ../api-examples.md
-   convert-html-to-pdf
+* :doc:`software-development`
+* :doc:`project-invitation-tokens`
+* :doc:`export-timetravel`
+* :doc:`external-tools`
+* :doc:`install-python-lib`
+* :doc:`install-r-package`
+* :doc:`install-julia-package`
+* :doc:`running-processes`
+* :doc:`upload`
+* :doc:`convert-html-to-pdf`
 
-.. toctree::
-   :caption: Services
-   :maxdepth: 1
+Services
+========
 
-   webserver
-   bokeh-server
-   shiny-server
+* :doc:`webserver`
+* :doc:`bokeh-server`
+* :doc:`shiny-server`
 
-.. toctree::
-   :caption: Jupyter Notebook
-   :maxdepth: 1
+Jupyter Notebook
+================
 
-   jupyter-kernel-selection
-   jupyter-extension
-   jupyterlab-extensions
-   custom-jupyter-kernel
-   fix-broken-jupyter-pdf
-   run-r-step-by-step
+* :doc:`jupyter-kernel-selection`
+* :doc:`jupyter-extension`
+* :doc:`jupyterlab-extensions`
+* :doc:`custom-jupyter-kernel`
+* :doc:`fix-broken-jupyter-pdf`
+* :doc:`run-r-step-by-step`
 
-.. toctree::
-   :caption: Teaching
-   :maxdepth: 1
+Programming Languages and Tools
+===============================
 
-   random-assignments
-
-.. toctree::
-   :caption: Miscellaneous
-   :maxdepth: 1
-
-   assembly-language
-   bash-fortunes
-   dask
-   fortran
-   activeloop-hub
-   git
-   google-api
-   gsl
-   nbgrader
-   neuron
-   mongodb
-   pluto
-   postgresql
-   remarkjs-slideshow
-   ruby
-   turtle
+* :doc:`assembly-language`
+* :doc:`bash-fortunes`
+* :doc:`dask`
+* :doc:`fortran`
+* :doc:`activeloop-hub`
+* :doc:`git`
+* :doc:`google-api`
+* :doc:`gsl`
+* :doc:`nbgrader`
+* :doc:`neuron`
+* :doc:`mongodb`
+* :doc:`pluto`
+* :doc:`postgresql`
+* :doc:`remarkjs-slideshow`
+* :doc:`ruby`
+* :doc:`turtle`
