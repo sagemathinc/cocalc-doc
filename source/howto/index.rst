@@ -46,7 +46,6 @@ Programming Languages and Tools
 * :doc:`git`
 * :doc:`google-api`
 * :doc:`gsl`
-* :doc:`nbgrader`
 * :doc:`neuron`
 * :doc:`mongodb`
 * :doc:`pluto`
