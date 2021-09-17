@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Howto &mdash; CoCalc Manual  documentation</title>
+  <title>C++ Programming &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/index.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/cplusplus.html"/>
   
 
   
@@ -44,13 +44,11 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Troubleshooting" href="trouble.html" />
-    <link rel="prev" title="iPad" href="../ipad.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/index.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/cplusplus.html"/>
   
 
 </head>
@@ -117,19 +115,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Platform</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account.html">Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Howto</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#cocalc-platform">CoCalc platform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#services">Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#jupyter-notebook">Jupyter Notebook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#programming-languages-and-tools">Programming Languages and Tools</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
@@ -185,14 +177,14 @@
     
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Howto</li>
+      <li>C++ Programming</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/cplusplus.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -206,64 +198,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="howto">
-<h1>Howto<a class="headerlink" href="#howto" title="Permalink to this headline">¶</a></h1>
-<p>How to accomplish a certain task or run a specific example on CoCalc.</p>
-<div class="section" id="cocalc-platform">
-<h2>CoCalc platform<a class="headerlink" href="#cocalc-platform" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference internal" href="software-development.html"><span class="doc">Developing Software</span></a></li>
-<li><a class="reference internal" href="project-invitation-tokens.html"><span class="doc">Project Invitation Tokens</span></a></li>
-<li><a class="reference internal" href="export-timetravel.html"><span class="doc">Export TimeTravel History</span></a></li>
-<li><a class="reference internal" href="external-tools.html"><span class="doc">External Tools</span></a></li>
-<li><a class="reference internal" href="install-python-lib.html"><span class="doc">Install Python Packages</span></a></li>
-<li><a class="reference internal" href="install-r-package.html"><span class="doc">Install R Packages</span></a></li>
-<li><a class="reference internal" href="install-julia-package.html"><span class="doc">Install Julia Packages</span></a></li>
-<li><a class="reference internal" href="running-processes.html"><span class="doc">Manage Running Processes</span></a></li>
-<li><a class="reference internal" href="upload.html"><span class="doc">Upload Files</span></a></li>
-<li><a class="reference internal" href="convert-html-to-pdf.html"><span class="doc">Convert HTML to PDF</span></a></li>
-</ul>
+  <div class="section" id="c-programming">
+<span id="c"></span><span id="index-0"></span><h1>C++ Programming<a class="headerlink" href="#c-programming" title="Permalink to this headline">¶</a></h1>
+<p>You can create C++ programs in the <a class="reference internal" href="../frame-editor.html"><span class="doc">Frame Editor</span></a>.</p>
+<p>Create a file by clicking “(+) New”, then typing in a filename ending in <cite>.C</cite> (or <cite>.cpp</cite>), for example <cite>hello.C</cite>. You’ll get syntax highlighting, indentation, code folding, etc.</p>
+<p>You can then open a <a class="reference internal" href="../terminal.html"><span class="doc">Linux terminal</span></a> by either splitting your .C edit session and selecting Terminal at upper right in one of the frames of the split (see below), or starting a new .term file.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/c++-compile.png"><img alt="editing and running C++ from the frame editor" src="../_images/c++-compile.png" style="width: 95%;" /></a>
 </div>
-<div class="section" id="services">
-<h2>Services<a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference internal" href="webserver.html"><span class="doc">Run A Webserver</span></a></li>
-<li><a class="reference internal" href="bokeh-server.html"><span class="doc">Bokeh / Holoview Server</span></a></li>
-<li><a class="reference internal" href="shiny-server.html"><span class="doc">Shiny Server</span></a></li>
-</ul>
+<p>To compile the program, type <cite>make</cite> in the terminal, followed by the name of your file without the suffix, or explicitly use the <cite>g++</cite> command as shown. Then run the program by typing the file name preceded by a period and a slash, without the suffix on the command line:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># compile
+make hello
+# OR
+g++ -o hello hello.C
+
+# run the compiled program
+./hello
+... program output appears here ...
+</pre></div>
 </div>
-<div class="section" id="jupyter-notebook">
-<h2>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference internal" href="jupyter-kernel-selection.html"><span class="doc">Jupyter Kernel Selection</span></a></li>
-<li><a class="reference internal" href="jupyter-extension.html"><span class="doc">Setup Jupyter Extensions</span></a></li>
-<li><a class="reference internal" href="jupyterlab-extensions.html"><span class="doc">JupyterLab Extensions</span></a></li>
-<li><a class="reference internal" href="custom-jupyter-kernel.html"><span class="doc">Custom Jupyter Kernel</span></a></li>
-<li><a class="reference internal" href="fix-broken-jupyter-pdf.html"><span class="doc">Fix broken Jupyter PDF export</span></a></li>
-<li><a class="reference internal" href="run-r-step-by-step.html"><span class="doc">R Step-by-Step with Jupyter</span></a></li>
-</ul>
-</div>
-<div class="section" id="programming-languages-and-tools">
-<h2>Programming Languages and Tools<a class="headerlink" href="#programming-languages-and-tools" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference internal" href="assembly-language.html"><span class="doc">Assembly Language Programming</span></a></li>
-<li><a class="reference internal" href="bash-fortunes.html"><span class="doc">Bash Fortunes</span></a></li>
-<li><a class="reference internal" href="cplusplus.html"><span class="doc">C++ Programming</span></a></li>
-<li><a class="reference internal" href="dask.html"><span class="doc">Dask cluster</span></a></li>
-<li><a class="reference internal" href="fortran.html"><span class="doc">Fortran Programming</span></a></li>
-<li><a class="reference internal" href="activeloop-hub.html"><span class="doc">Getting Started with Hub</span></a></li>
-<li><a class="reference internal" href="git.html"><span class="doc">Git Version Control</span></a></li>
-<li><a class="reference internal" href="google-api.html"><span class="doc">Google Sheets API Demo</span></a></li>
-<li><a class="reference internal" href="gsl.html"><span class="doc">GSL C Code Compilation</span></a></li>
-<li><a class="reference internal" href="neuron.html"><span class="doc">NEURON simulation environment</span></a></li>
-<li><a class="reference internal" href="mongodb.html"><span class="doc">MongoDB Server</span></a></li>
-<li><a class="reference internal" href="pluto.html"><span class="doc">Pluto Notebooks for Julia</span></a></li>
-<li><a class="reference internal" href="postgresql.html"><span class="doc">PostgreSQL Server</span></a></li>
-<li><a class="reference internal" href="remarkjs-slideshow.html"><span class="doc">RemarkJS Slideshow</span></a></li>
-<li><a class="reference internal" href="ruby.html"><span class="doc">Ruby Programming</span></a></li>
-<li><a class="reference internal" href="turtle.html"><span class="doc">Turtle Graphics with CoCalc</span></a></li>
-</ul>
-</div>
+<p>For further study, see <a class="reference external" href="https://isocpp.org/get-started">isocpp.org: Get Started!</a></p>
 </div>
 
 
@@ -271,15 +225,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="trouble.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../ipad.html" class="btn btn-neutral float-left" title="iPad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

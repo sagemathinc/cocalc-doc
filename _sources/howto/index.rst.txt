@@ -40,6 +40,7 @@ Programming Languages and Tools
 
 * :doc:`assembly-language`
 * :doc:`bash-fortunes`
+* :doc:`cplusplus`
 * :doc:`dask`
 * :doc:`fortran`
 * :doc:`activeloop-hub`

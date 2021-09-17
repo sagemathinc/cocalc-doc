@@ -184,6 +184,6 @@ What are **"CPU shares"** and **"CPU cores"**?
 
 All projects on a single server share the underlying resources.
 These quotas determine how CPU resources are shared between projects.
-Increasing them increases the priority of a project compared to others on the same host computer.<br/>
+Increasing them increases the priority of a project compared to others on the same host computer.
 In particular, "shares" determines the amount of relative CPU time you get.
 
