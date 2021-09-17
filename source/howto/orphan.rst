@@ -26,6 +26,7 @@
    random-assignments
    assembly-language
    bash-fortunes
+   cplusplus
    dask
    fortran
    activeloop-hub
