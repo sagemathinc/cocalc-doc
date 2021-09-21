@@ -53,7 +53,7 @@ Install a Julia Package in a Jupyter Notebook
 
 No special environment setting is needed. Simply do the following in a code cell in a Jupyter notebook that has the default Julia kernel selected::
 
-    import Pkg; Pkg.add("packaage_name")
+    import Pkg; Pkg.add("package_name")
 
 and let the install run to completion.
 
