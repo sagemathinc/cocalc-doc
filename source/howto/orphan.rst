@@ -29,6 +29,7 @@
    cplusplus
    dask
    fortran
+   front-end-dev
    activeloop-hub
    git
    google-api
