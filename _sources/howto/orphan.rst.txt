@@ -23,7 +23,6 @@
    custom-jupyter-kernel
    fix-broken-jupyter-pdf
    run-r-step-by-step
-   random-assignments
    assembly-language
    bash-fortunes
    cplusplus

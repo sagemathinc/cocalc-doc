@@ -25,7 +25,7 @@ Software Updates 2018
   - `numdifftool <https://github.com/pbrod/numdifftools>`_
   - `xgboost <https://xgboost.readthedocs.io>`_ 0.8.1
   - `joblib <https://joblib.readthedocs.io>`_
-  - `qiskit`_ (`demo qiskit.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/quiskit.ipynb?viewer=share>`_)
+  - `qiskit`_ (`demo qiskit.ipynb <https://cocalc.com/share/public_paths/5910ee2f1fbfc7aa071d17ee40e234df728c8f7b>`_)
 
 .. _update-2018-12-22:
 
@@ -95,8 +95,8 @@ Note about future updates:
 2018-12-01
 -------------------------------
 
-* (Py3/new+fix) dask 1.0, distributed 1.25, dask-glm 0.2, dask-ml 0.11 -- `CoCalc example <https://share.cocalc.com/share/20e4a191-73ea-4921-80e9-0a5d792fc511/dask.ipynb?viewer=share>`_ -- `Wiki page <https://github.com/sagemathinc/cocalc/wiki/Dask>`_
-* (Py3/new) `Scikit-Optimize <https://scikit-optimize.github.io/>`_ -- `see CoCalc example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/skopt.ipynb?viewer=share>`_
+* (Py3/new+fix) dask 1.0, distributed 1.25, dask-glm 0.2, dask-ml 0.11 -- `CoCalc example <https://cocalc.com/share/public_paths/d4b13265bff5452814d18a3d4b169c56503db7e2>`_ -- `Wiki page <https://github.com/sagemathinc/cocalc/wiki/Dask>`_
+* (Py3/new) `Scikit-Optimize <https://scikit-optimize.github.io/>`_ -- `see CoCalc example <https://cocalc.com/share/public_paths/a75f74eeed19afc312976ed7dd7c83c3a9ab7cfd>`_
 
 
 .. _update-2018-11-28:
@@ -106,7 +106,7 @@ Note about future updates:
 
 * (Sage/upd) Sage Development updated to 8.5.beta5
 * (Linux/upd) noteworthy minor updates: vs code: 1.29.1, bazel: 0.19.2, idle: 3.6.7, python3: 3.6.7, postgresql: 11.1
-* (Py3/new) `NOAA SDK <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/noaa-sdk.ipynb?viewer=share>`_
+* (Py3/new) `NOAA SDK <https://cocalc.com/share/public_paths/8def5c67aacd5772c0a8af31d2651cdd7f12a454>`_
 * (Py3/upd) yapf 0.25, tensorflow 1.12, tensorboard 1.12, tensorflow-probability 0.5, scikit-learn 0.20.1, numba 0.40.1, arctic 1.73 (also Py2)
 
 .. _update-2018-11-13:
@@ -115,7 +115,7 @@ Note about future updates:
 -------------------------------
 
 * (Sage/upd) Sage Development updated to 8.5.beta3
-* (C/new) `MLV-2 library <http://www-igm.univ-mlv.fr/~boussica/mlv/api/French/html/index.html>`_ and `test on CoCalc <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/mlv-2/?viewer=share/>`_
+* (C/new) `MLV-2 library <http://www-igm.univ-mlv.fr/~boussica/mlv/api/French/html/index.html>`_ and `test on CoCalc <https://cocalc.com/share/public_paths/d560daaa01feb78d8c1809a1951c984343837432>`_
 * (Gap/upd) `GAP 4.10.0 <https://mail.gap-system.org/pipermail/forum/2018/005826.html>`_
 
 
@@ -132,7 +132,7 @@ Note about future updates:
   * `pcb-gtk <http://pcb.geda-project.org/>`_
   * `gschem <http://www.geda-project.org/>`_
 * (Py/upd) `dask`_ 0.20.1, `distributed <http://distributed.dask.org/en/latest/>`_ 1.24.1
-* (Py+Sage/new) `Automatic Differentiation "ad" <https://pythonhosted.org/ad/>`_ 1.3.2 → `Demo pythonhosted <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ad.ipynb?viewer=share>`_
+* (Py+Sage/new) `Automatic Differentiation "ad" <https://pythonhosted.org/ad/>`_ 1.3.2 → `Demo pythonhosted <https://cocalc.com/share/public_paths/60a6978850ab7dcfd53906d892c6281ed723236e>`_
 * (R/new) `hablar <https://cran.r-project.org/web/packages/hablar/index.html>`_
 
 .. _update-2018-11-03:
@@ -167,7 +167,7 @@ Note about future updates:
    * known issue: ``libhomfly`` not available, because it doesn't compile
 
 * (upd) SageMath development version 8.5.beta0
-* (new) `Tellurium <http://tellurium.analogmachine.org/>`_ in Python 2 and 3. `example worksheet <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/tellurium.ipynb?viewer=share>`_
+* (new) `Tellurium <http://tellurium.analogmachine.org/>`_ in Python 2 and 3. `example worksheet <https://cocalc.com/share/public_paths/77207337ae1882c714196bf0e6fb7d0f54334eb7>`_
 * (new) X11 releated: `nteract.io <https://nteract.io/>`_, `atom editor <https://atom.io/>`_ (to e.g. be able to install `juno for julia <http://junolab.org/>`_ in your project), `Avogadro <https://avogadro.cc/>`_, etc.
 * (py2/py3) `monty library <http://guide.materialsvirtuallab.org/monty/>`_ and `pivottablejs <https://pypi.org/project/pivottablejs/>`_
 
@@ -191,7 +191,7 @@ Note about future updates:
 2018-10-06
 -------------------------------
 
-* (upd/enh) Julia 1.0.1 and associated `Julia Jupyter kernel <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/julia-1.ipynb?viewer=share>`_
+* (upd/enh) Julia 1.0.1 and associated `Julia Jupyter kernel <https://cocalc.com/share/public_paths/a39d0359a3471d09fa1a84ad053079801afb2c0e>`_
     * in a terminal, run ``julia-1`` to get the 1.0.1 release.
 
 * (new) `Ada programming language <https://gcc.gnu.org/wiki/GNAT>`_ (`Ada wikibook <https://en.wikibooks.org/wiki/Ada_Programming>`_), including syntax highlighting of ``*.adb`` files
