@@ -330,7 +330,7 @@ You need to run `Plotly <https://plot.ly/>`_ plots in CoCalc under the **Plain J
 For more information, see the :ref:`Jupyter Classic / Modern page <jupyter-classical-vs-cocalc>`.
 
 Another option is to use the Plotly `Dash framework <https://plot.ly/products/dash/>`_:
-here is a `working example running Dash from a CoCalc terminal <https://share.cocalc.com/share/db982efa-e439-4e2d-933b-7c7011c6b21a/DASH/dash-demo.py?viewer=share>`_. Here is a `CoCalc blog posting explaining it <https://blog.cocalc.com/cocalc/python/2021/05/03/dash-with-cocalc.html>`_.
+here is a `working example running Dash from a CoCalc terminal <https://cocalc.com/share/public_paths/97f923d786291540fd2f98854303db410ba7f22a>`_. Here is a `CoCalc blog posting explaining it <https://blog.cocalc.com/cocalc/python/2021/05/03/dash-with-cocalc.html>`_.
 
 
 

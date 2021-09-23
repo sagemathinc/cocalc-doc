@@ -15,14 +15,13 @@ There are three ways to use turtle graphics with CoCalc.
 Sage worksheet with Turtle module
 =================================
 
-There is an example of a Sage worksheet using Turtle on the CoCalc share server.
+Here is a `Sage worksheet on the CoCalc share server <https://cocalc.com/share/public_paths/75c54b5a2f56cdfeba825a4411325137f5c1502d>`_ using Turtle.
 In the Sage worksheet, code and turtle graphics output are visible in the same tab.
-
-   https://share.cocalc.com/share/4a5f0542-5873-4eed-a85c-a18c706e8bcd/support/2014-12-12-turtle/Sage%20Turtle%20via%20JSXGraph.sagews?viewer=share
 
 .. figure:: img/turtle-spirals.png
      :width: 40%
      :align: center
+     :alt: Sage worksheet source code for Turtle spirals
 
      Turtle spirals in the example Sage worksheet
 
@@ -37,6 +36,7 @@ To copy the example into a project of your own, do the following:
 .. figure:: img/only-public.png
      :width: 80%
      :align: center
+     :alt: screenshot of copy steps
 
      copying worksheet from share server to personal project
 
@@ -50,6 +50,7 @@ X11 terminal with Jupyter notebook
 .. figure:: img/jupyter-turtle.png
      :width: 80%
      :align: center
+     :alt: screenshot of X11 session with Turtle graphics
 
      python turtle display created by jupyter notebook in a second tab
 
@@ -76,6 +77,7 @@ X11 terminal with nteract
 .. figure:: img/nteract-turtle.png
      :width: 100%
      :align: center
+     :alt: screenshot of X11 session with nteract and Turtle graphics
 
      nteract python turtle display
 
