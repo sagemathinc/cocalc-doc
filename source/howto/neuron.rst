@@ -33,7 +33,7 @@ If it doesn't work, restart the kernel and run the first cell again and then imp
 If there is still a problem, please `contact us <mailto:help@cocalc.com>`_.
 
 
-Example worksheet: `neron-yale.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/neron-yale.ipynb?viewer=share>`_.
+Example worksheet: `neron-yale.ipynb <https://cocalc.com/share/public_paths/dd2c8e5f6f062e1b0475158e7332e3a371be35c8>`_.
 
 .. image:: img/neuron-jupyter.png
     :width: 75%

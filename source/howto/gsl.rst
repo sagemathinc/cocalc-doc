@@ -13,7 +13,7 @@ GSL, the `GNU Scientific Library`_.
 .. _GNU Scientific Library: https://www.gnu.org/software/gsl/doc/html/index.html
 
 This example shows how to compile and run code from their documentation on CoCalc.
-We take their `Monte Carlo Integration <https://www.gnu.org/software/gsl/manual/html_node/Monte-Carlo-Examples.html>`_ example, which you can also see `here <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/test.c?viewer=share>`_.
+We take their `Monte Carlo Integration <https://www.gnu.org/software/gsl/manual/html_node/Monte-Carlo-Examples.html>`_ example, which you can also see `here <https://cocalc.com/share/public_paths/fd0f904c3c8e3f31a2a7ea494d5cefc3a38f6df4>`_.
 
 It starts like that:
 
