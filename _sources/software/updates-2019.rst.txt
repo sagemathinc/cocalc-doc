@@ -334,10 +334,11 @@ Software Updates 2019
     - (new) Tools for all your `SOAP`_ needs: `suds-community`_ ``0.8.3`` and `zeep`_ ``3.4.0``
     - (new) `IPOPT`_: interior point solver, see `ipopt examples`_ using `cyipopt`_ bindings – also available via `PyOMO`_ ``5.6.6``. This allows you to solve more types of optimization problems.
     - (upd) `scikit-learn 0.21.3 <https://scikit-learn.org/stable/whats_new.html#version-0-21-3>`_, `scipy`_ ``1.3.1``, `mypy`_ ``0.730``
-    - (upd) Continuing from last update's introduction of `pandas-bokeh`_, also `bokeh`_ got updated to ``1.3.4`` (`bokeh example notebook`_). This let's you create interactive plots of various types right inside CoCalc's Jupter Notebook.
+    - (upd) Continuing from last update's introduction of `pandas-bokeh`_, also `bokeh`_ got updated to ``1.3.4`` (`bokeh example notebook`_). This lets you create interactive plots of various types right inside CoCalc's Jupter Notebook.
 
-      .. image:: https://cocalc.com/share/public_paths/4ae04004ae2d77e3175e76c5967ab7f042a9868f
+      .. image:: https://cocalc.com/share/raw/4ae04004ae2d77e3175e76c5967ab7f042a9868f/2019-09-28-bokeh-plot-cocalc.png
           :width: 50%
+          :alt: Bokeh code and plot
 
 
 
@@ -448,7 +449,7 @@ Software Updates 2019
 * Julia
     * (new) `Julia 1.2 <https://docs.julialang.org/en/v1.2/NEWS/>`_
     * (dep) deprecation of ``Julia 1.1.x``. Only ``1.0.x`` w/ LTS remains, ``1.1`` will be removed soon.
-    * (new) Julia 1.2: `HomotopyContinuation <https://www.juliahomotopycontinuation.org/>`_ (`quick julia 1.2 test <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/julia-1.2.ipynb?viewer=share>`_)
+    * (new) Julia 1.2: `HomotopyContinuation <https://www.juliahomotopycontinuation.org/>`_
 
 * :ref:`Custom Software Environments <custom-software-environment>`:
     * (upd) "Tensorflow 2" ``2.0.0-rc0``: the first release candidate for ``2.0.0``
@@ -563,12 +564,12 @@ Software Updates 2019
 2019-06-30
 ----------------------
 
-* (new) **SageMath 8.8**: general available on CoCalc with various enhancements. When the testing phase passes, it'll be the default (in about a week). (`Sage 8.8 Notebook   <https://share.cocalc.com/share/20e4a191-73ea-4921-80e9-0a5d792fc511/sage-8.8.ipynb?viewer=share>`_)
+* (new) **SageMath 8.8**: general available on CoCalc with various enhancements. When the testing phase passes, it'll be the default (in about a week). (`Sage 8.8 Notebook   <https://cocalc.com/share/public_paths/524518b447683f4b9f7b4f6b7b6b0c04fa2a3153>`_)
 
 * Python 3:
 
     * (upd): `Dask 2.0 <https://docs.dask.org/en/latest/changelog.html#id1>`_: ``dask-2.0.0`` ``distributed-2.0.1``, ``dask-jobqueue-0.5.0``, and ``dask-ml-1.0.0``
-    * (new) `tensorly`_ ``0.4.3`` (`TensorLy example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/tensorly.ipynb?viewer=share>`_)
+    * (new) `tensorly`_ ``0.4.3`` (`TensorLy example <https://cocalc.com/share/public_paths/058fbdf70eff451caff90a8df575122fd902f2f5>`_)
 
 
 * Linux package update, including ``imagemagick-6 6.9.7.4``.
@@ -686,7 +687,7 @@ Software Updates 2019
       ``esda-2.0.0``, ``libpysal-4.0.1``
       ``mercantile-1.0.4`` and ``palettable-3.1.1``
     * (new) `scikit-rf`_ ``0.14.9`` – *package for RF/Microwave engineering* (also for Anaconda 5).
-      `Scikit RF example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/scikit-rf.ipynb?viewer=share>`_
+      `Scikit RF example <https://cocalc.com/share/public_paths/add4baa6e4b4af02d39680766ace2f2720fda042>`_
 
 * SageMath:
     * (upd) development version ``8.8.beta6``
@@ -709,7 +710,7 @@ Software Updates 2019
     * (new) Google Spreadsheet API libs: `gspread`_ and `pygsheets`_
     * (new) `imbalanced learn <https://imbalanced-learn.readthedocs.io/en/stable/install.html>`_
     * (new) `memory profiler <https://pypi.org/project/memory-profiler/>`_
-      for Jupyter Notebooks: `%memit example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/memory-profile.ipynb?viewer=share>`_
+      for Jupyter Notebooks: `%memit example <https://cocalc.com/share/public_paths/126d24208c0b30e3d9566640f4d9f4a2b737f87a>`_
     * (upd) ``geographiclib-1.49``, ``geopy-1.19.0``, `geopandas`_ ``0.5.0``
 
 * Software
@@ -838,7 +839,7 @@ Software Updates 2019
 
 * Python 3:
     - (upd) **pandas 0.24.2**: check `pandas release notes <https://pandas.pydata.org/pandas-docs/stable/whatsnew/index.html#version-0-24>`_ for changes since 0.23.
-    - (new) `umap-learn <https://umap-learn.readthedocs.io/en/latest/>`_ (`UMAP example <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/umap.ipynb?viewer=share>`_):
+    - (new) `umap-learn <https://umap-learn.readthedocs.io/en/latest/>`_ (`UMAP example <https://cocalc.com/share/public_paths/f491dd6a53b87192f2d81101d582e2820470dcf4>`_):
       *Uniform Manifold Approximation and Projection (UMAP) is a dimension reduction technique that can be used for visualisation similarly to t-SNE, but also for general non-linear dimension reduction.*
 
 * R:
@@ -933,7 +934,7 @@ Software Updates 2019
 * Python 3:
    * (new) ``dit-1.2.3``: `discrete information theory <http://docs.dit.io/en/latest/>`_
    * (new) ``skyfield-1.10``: https://rhodesmill.org/skyfield/: *Elegant Astronomy for Python*:
-     Skyfield computes positions for the stars, planets, and satellites in orbit around the Earth. `Skyfield Demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/skyfield.ipynb?viewer=share>`_ –  deps: ``jplephem-2.9`` and ``sgp4-1.4``
+     Skyfield computes positions for the stars, planets, and satellites in orbit around the Earth. `Skyfield Demo <https://cocalc.com/share/public_paths/7cefede06bf75a86128bef894c22695e4375568e>`_ –  deps: ``jplephem-2.9`` and ``sgp4-1.4``
    * (upd) tensorflow related: ``tensorflow-1.13.1``,  ``tensorboard-1.13.1``,
      ``tensorflow-estimator-1.13.0`` and ``tensorflow-probability-0.6.0``
      – https://www.tensorflow.org/probability/overview
@@ -957,7 +958,7 @@ Software Updates 2019
 
 * SageMath:
     * **Version 8.7**: initial deployment, still needs testing. Try it and give us feedback!
-      – `SageMath 8.7 demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/sage-8.7.ipynb?viewer=share>`_.
+      – `SageMath 8.7 demo <https://cocalc.com/share/public_paths/cd1c640ddf0599c7a413a2417f0d64ed9424276d>`_.
     * (upd) Development version to **8.8 beta0** (Python 3)
 
 
@@ -977,7 +978,7 @@ Software Updates 2019
 
 * (UI/Chat) **@Mention** a project collaborator in a chat to ping her/him via email.
 
-* (new) **ROOT Kernel**: `ROOT is a modular scientific software toolkit <https://root.cern.ch/>`_. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualization and storage. `ROOT example Jupyter worksheet <https://share.cocalc.com/share/d552e619-3c8e-4722-bda1-8f6a75f78443/cocalc-root.ipynb?viewer=share>`_
+* (new) **ROOT Kernel**: `ROOT is a modular scientific software toolkit <https://root.cern.ch/>`_. It provides all the functionalities needed to deal with big data processing, statistical analysis, visualization and storage. `ROOT example Jupyter worksheet <https://cocalc.com/share/public_paths/288605402ca63ccfb169d63c296a0351ee0679f6>`_
 
 * (new) **rclone** -- `rsync for cloud storage <https://rclone.org/>`_
 
@@ -1019,12 +1020,12 @@ Software Updates 2019
 
 * Software:
    - Dr. Racket 7.2.0 -- https://racket-lang.org/ (Open/create an :doc:`../x11` file and run ``drracket`` in the Terminal)
-   - ``data`` command-line utility to work with https://datahub.io/ -- a service like GitHub but for data and also ``datapackage`` Python 3 library (`datapackage demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/datahub/datahub.ipynb?viewer=share>`_)
+   - ``data`` command-line utility to work with https://datahub.io/ -- a service like GitHub but for data and also ``datapackage`` Python 3 library (`datapackage demo <https://cocalc.com/share/public_paths/ed58f223db5d2f96d3a5d0f48935a01d0eb0f87a>`_)
    - ``reveal-md`` 3.0.1
    - various linux package updates, e.g. ``qgis/libqgis`` 3.6.0, ``postgresql`` 11.2, ``git-lfs`` 2.7.0, ...
 
 * Python 3:
-    * new ``mlxtend 0.15``: `Mlxtend (machine learning extensions) <http://rasbt.github.io/mlxtend/>`_ *is a Python library of useful tools for the day-to-day data science tasks.* (also available in Anaconda 5), `mlxtend demo <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/mlxtend.ipynb?viewer=share>`_
+    * new ``mlxtend 0.15``: `Mlxtend (machine learning extensions) <http://rasbt.github.io/mlxtend/>`_ *is a Python library of useful tools for the day-to-day data science tasks.* (also available in Anaconda 5), `mlxtend demo <https://cocalc.com/share/public_paths/ed58f223db5d2f96d3a5d0f48935a01d0eb0f87a>`_
     * ``distributed 1.26``
     * ``pefile-2018.8.8``  -- https://github.com/erocarrera/pefile
     * ``Cython-0.29.6``
@@ -1071,7 +1072,7 @@ Software Updates 2019
 - `LEAN 3.4.2 <https://github.com/leanprover/lean/releases/tag/v3.4.2>`_, with a precompiled mathlib in ``/ext/lean/lean/mathlib``.
 
 - Python 3 changes:
-    - `JAX <https://github.com/google/jax>`_ (`jax demo worksheet <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/jax.ipynb?viewer=share>`_)
+    - `JAX <https://github.com/google/jax>`_ (`jax demo worksheet <https://cocalc.com/share/public_paths/82d1fdd4b73ed702bdcc914e0fa41f69ec4de978>`_)
     - tornado 5.1.1, distributed 1.25.3
     - `mypy 0.6.7.0 <https://mypy-lang.blogspot.com/2019/02/mypy-0670-released.html>`_
     - `cython-0.29.5 <https://github.com/cython/cython/blob/master/CHANGES.rst#0295-2019-02-09>`_
@@ -1125,11 +1126,11 @@ Software Updates 2019
 -------------------------
 
 - (sage): **Sage 8.6** is the default! (use ``sage_select 8.4`` to switch back). Enjoy the shorter startup time, which also speeds up compiling :ref:`latex-sagetex` documents!
-    - A Python3 version of Sage 8.6 is also available: ``sage-8.6-py3`` or in a Jupyter Notebook: `sagemath-8.6-python3.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/smc-build/sagemath-8.6-python3.ipynb?viewer=share>`_. (this is experimental)
+    - A Python3 version of Sage 8.6 is also available: ``sage-8.6-py3`` or in a Jupyter Notebook: ``sagemath-8.6-python3.ipynb`` (this is experimental).
 
 - (py3):
    - new:
-      - `ipyvolume <https://github.com/maartenbreddels/ipyvolume#ipyvolume>`_ 0.5.1 (`demo notebook <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ipyvolume-demo.ipynb?viewer=share>`_, requires the plain jupyter server!)
+      - `ipyvolume <https://github.com/maartenbreddels/ipyvolume#ipyvolume>`_ 0.5.1 (`demo notebook <https://cocalc.com/share/public_paths/d047ad03571384f84dbb11e000b6d945e1a84f2d>`_, requires the plain jupyter server!)
       - `qiskit-chemistry <https://github.com/Qiskit/qiskit-chemistry>`_ 0.4.2 – a set of tools, algorithms and software to use for quantum chemistry research
       - `PySCF <https://sunqm.github.io/pyscf/>`_ – a simple, light-weight, and efficient platform for quantum chemistry calculations
 
@@ -1195,13 +1196,13 @@ Software Updates 2019
 2019-01-12
 -------------------------------
 
-* (r): `Rstan <https://mc-stan.org/users/interfaces/rstan>`_ 2.18.2 → `demo worksheet <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/rstan.ipynb?viewer=share>`_, with some setup instructions specific to CoCalc
-* (py2/py3): `PyStan`_ 2.18.1 (`demo  pystan.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/smc-build/pystan.ipynb?viewer=share>`_)
+* (r): `Rstan <https://mc-stan.org/users/interfaces/rstan>`_ 2.18.2 → `demo worksheet <https://cocalc.com/share/public_paths/6fa63a45e3198c720e91955adae9a0d963c265cb>`_, with some setup instructions specific to CoCalc
+* (py2/py3): `PyStan`_ 2.18.1 (`demo  pystan.ipynb <https://cocalc.com/share/public_paths/2c4cacd7124f7a75b500e353fac16d62871fdf54>`_)
 * Julia 1:
-  * JuMP & Ipopt (`demo julia-1-jump.ipynb <https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/julia-1-jump.ipynb?viewer=share>`_)
+  * JuMP & Ipopt (`demo julia-1-jump.ipynb <https://cocalc.com/share/public_paths/f3f332af3d597c419c387c0326fedf2886acac33>`_)
   * We'll also switch the default version of Julia to be 1.0.x soon!
 * Linux updates, notably bazel 0.21
-* Fonts: ocr-a, ocr-b, `opendyslexic <https://gumroad.com/l/OpenDyslexic>`__, mononoki, comic-neue, linex, roboto, vollkorn, tuffy. `Testing some fonts in LuaTeX <https://share.cocalc.com/share/8baad8828430618da0446ee80d6ebcacb83bba14/fonts-luatex/fonts-in-luatex.pdf?viewer=share>`_ (`tex source <https://share.cocalc.com/share/8baad8828430618da0446ee80d6ebcacb83bba14/fonts-luatex/fonts-in-luatex.tex?viewer=share>`_)
+* Fonts: ocr-a, ocr-b, `opendyslexic <https://gumroad.com/l/OpenDyslexic>`__, mononoki, comic-neue, linex, roboto, vollkorn, tuffy. `Testing some fonts in LuaTeX <https://cocalc.com/share/public_paths/8baad8828430618da0446ee80d6ebcacb83bba14/fonts-in-luatex.pdf>`_ (`tex source <https://cocalc.com/share/public_paths/8baad8828430618da0446ee80d6ebcacb83bba14/fonts-in-luatex.tex>`_)
 
 
 .. _update-2019-01-06:
@@ -1283,7 +1284,7 @@ Software Updates 2019
 .. _ipopt examples: https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ipopt.ipynb?viewer=share
 .. _PyOMO: http://www.pyomo.org/
 .. _cyipopt: https://github.com/matthias-k/cyipopt
-.. _bokeh example notebook: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/bokeh-plots.ipynb?viewer=share
+.. _bokeh example notebook: https://cocalc.com/share/public_paths/224f8112a2798e52129e9ec55d71271ac400ba57
 .. _scipy: https://scipy.org/
 .. _bokeh: https://bokeh.pydata.org/en/latest/
 .. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html
