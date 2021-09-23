@@ -10,7 +10,7 @@ Make a file or directory publicly visible to the world.
 
 .. note::
 
-    CoCalc's share server available at: https://share.cocalc.com/share
+    CoCalc's share server is available at https://cocalc.com/share/
 
 .. _publishing-files:
 
@@ -25,12 +25,14 @@ First, do either of the following:
 .. figure:: img/icons/lock.png
      :width: 50%
      :align: center
+     :alt: Lock icon at upper right of file view showing file is not published
 
      *click lock icon to enter file-sharing dialog*
 
 .. figure:: img/icons/bullhorn.png
      :width: 50%
      :align: center
+     :alt: Bullhorn icon at upper right of file view showing file is published
 
      *lock is replaced by bullhorn if file is already shared*
 
@@ -48,6 +50,7 @@ then click ``Make item public`` and your file is shared.
 .. image:: img/share-dialog.png
      :width: 100%
      :align: center
+     :alt: Dialog which appears after clicking "Share"
 
 .. index:: Sharing files; share server
 
@@ -60,6 +63,7 @@ You can click the |external| button to open it at the share server.
 .. |external|
     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/external-link.png
     :width: 16px
+    :alt: Icon for external link
 
 With that link, your file is available read-only on the CoCalc lightweight `share server`_.
 A CoCalc login is not needed to access files on the share server.
@@ -72,9 +76,9 @@ File-sharing Tips
 
 * If your document depends on auxiliary files (e.g., images embedded in a markdown file) make sure these auxiliary files are also published. A convenient way to do this is to have auxiliary files in a common folder and share that folder.
 
-* Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in "raw" form, i.e. without CoCalc controls, by opening in the share server and clicking "Raw" at upper right, or by removing the parameter setting ``?viewer=share`` from the share server URL for the file.
+* Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in "raw" form, i.e. without CoCalc controls, by opening in the share server and clicking "Raw" at upper right.
 
-* Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage ``@interact``, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser, for example in 3d plots like `this cardiod <https://share.cocalc.com/share/7eee8ccdeb4acf37e6c258df1cd973871373df05/Public/hearts.ipynb?viewer=share>`_, will work when served from the share server.
+* Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage ``@interact``, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser, for example in 3d plots like `this cardiod <https://cocalc.com/share/public_paths/7eee8ccdeb4acf37e6c258df1cd973871373df05>`_, will work when served from the share server.
 
 
 .. note::
@@ -82,4 +86,4 @@ File-sharing Tips
     If you would like to collaborate and chat with other people on documents in your project,
     go the :doc:`project-settings` tab and ":ref:`Add people to project <add-collaborators>`".
 
-.. _share server: https://share.cocalc.com/share/
+.. _share server: https://cocalc.com/share/
