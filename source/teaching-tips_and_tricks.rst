@@ -414,7 +414,7 @@ Q: Is there a way to integrate CoCalc into my `Moodle <https://moodle.org/>`_ en
 
 A: Unfortunately, not really. We do have our own fairly sophisticated course management functionality for creating and distributing assignments, working in real time with students, and collecting, grading and returning. See :doc:`teaching-instructors`.
 
-You can also publish an assignment to the `CoCalc share server <https://share.cocalc.com/share/>`_ (you can make content "you must know the link"), point students at that link, and have them download the work when they are done and submit it via Moodle.
+You can also publish an assignment to the `CoCalc share server <https://cocalc.com/share/>`_ (you can make content "you must know the link"), point students at that link, and have them download the work when they are done and submit it via Moodle.
 
 .. index:: Courses; change assignment due date
 
