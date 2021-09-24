@@ -321,7 +321,7 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _ipopt examples: https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ipopt.ipynb?viewer=share
 .. _PyOMO: http://www.pyomo.org/
 .. _cyipopt: https://github.com/matthias-k/cyipopt
-.. _bokeh example notebook: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/bokeh-plots.ipynb?viewer=share
+.. _bokeh example notebook: https://cocalc.com/share/public_paths/224f8112a2798e52129e9ec55d71271ac400ba57
 .. _scipy: https://scipy.org/
 .. _bokeh: https://bokeh.pydata.org/en/latest/
 .. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html

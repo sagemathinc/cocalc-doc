@@ -70,7 +70,7 @@ Software Updates 2020
 
 - `SageMath`_ 9.2 available now
     - `9.2 Release Tour <https://wiki.sagemath.org/ReleaseTours/sage-9.2>`_
-    - `9.2 example notebook <https://share.cocalc.com/share/8b22ce8f3e9141692f14f63d3dbf333a769db673/sage-9.2.ipynb?viewer=share>`_
+    - `9.2 example notebook <https://cocalc.com/share/public_paths/8b22ce8f3e9141692f14f63d3dbf333a769db673>`_
     - To switch back to 9.1 as the default in your project, run ``sage_select 9.1`` in a :doc:`../../terminal`.
 
 
@@ -199,7 +199,7 @@ new tool `grepcidr`_.
 
 This is a cumulative update with several small changes and bugfixes.
 For example a dependency problem for `PyTorch`_.
-A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide), e.g. `EoN example test <https://share.cocalc.com/share/3ae747a3539ade9e76f5de6364d71d7dfb9157b2/TESTS/eon-test.ipynb?viewer=share&session=>`_.
+A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide), e.g. `EoN example test <https://cocalc.com/share/public_paths/3ae747a3539ade9e76f5de6364d71d7dfb9157b2>`_.
 
 .. _update-2020-06-20:
 
@@ -237,7 +237,7 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 ----------------------------------------------
 
 - `SageMath`_ 9.1 available now
-    - `Sage 9.1 example notebook <https://share.cocalc.com/share/5ecad91c75ac8591603714693871c056ad3658ad/sage-9.1.ipynb?viewer=share>`_
+    - `Sage 9.1 example notebook <https://cocalc.com/share/public_paths/5ecad91c75ac8591603714693871c056ad3658ad>`_
 
 - Julia
     - (upd) `Julia`_ ``1.4.2``
@@ -354,7 +354,7 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 -----------------------------------------------
 
 - Software:
-    - (new) `COBOL` via `GnuCOBOL`_ – *an acronym for "common business-oriented language"). Created in the 1960's, it is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented.* – `cobol example file <https://share.cocalc.com/share/55f06a489bf8944f65f10a8aa8c1a2af30dd3690/cobol/?viewer=share>`_
+    - (new) `COBOL` via `GnuCOBOL`_ – *an acronym for "common business-oriented language"). Created in the 1960's, it is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented.* – `cobol example file <https://cocalc.com/share/public_paths/55f06a489bf8944f65f10a8aa8c1a2af30dd3690>`_
     - (upd) `Rust`_ 
         - ``rustc +stable: 1.42.0``
         - ``rustc +beta: 1.43.0-beta.5``
@@ -468,15 +468,16 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
     - Update to 3.5.1, the most recent `LEAN community edition <https://github.com/leanprover-community>`_
     - Latest `mathlib`_ build
     - Try it:
-        - `LEAN maths challenges <https://share.cocalc.com/share/f014cd1885a22e8665a728be825e563fc79b7e1f/Maths_Challenges/?viewer=share>`_ (open this link, click the green button at the top – that copies all files to your project and you can start playing around)
-        - `Natural numbers example <https://share.cocalc.com/share/df81e09e5b8f16f28b3a2e818dcdd4560e7818ae/support/2020-02-19-lean-natural-numbers.lean?viewer=share>`_:
+        - `LEAN maths challenges <https://cocalc.com/share/public_paths/f014cd1885a22e8665a728be825e563fc79b7e1f>`_ (open this link, then click "Edit" to copy the files into a new project where you can run the programs)
+        - `Natural numbers example <https://cocalc.com/share/public_paths/df81e09e5b8f16f28b3a2e818dcdd4560e7818ae/2020-02-19-lean-natural-numbers.lean>`_:
 
-      .. figure:: https://share.cocalc.com/share/9ba989d8b4e822cb00df1471b2d46a249c90f364/img/2020-02-20-lean-mathlib-3.5.1-cocalc.png?viewer=raw
+      .. figure:: https://cocalc.com/share/raw/9ba989d8b4e822cb00df1471b2d46a249c90f364/img/2020-02-20-lean-mathlib-3.5.1-cocalc.png
           :align: center
           :width: 75%
+          :alt: Split screen showing Lean code on left and All Messages view on right
 
 - Jupyter:
-    - (new) You can run **JavaScript** in a Jupyter Notebook, powered by `Node.js`_ – `ijavascript example notebook <https://share.cocalc.com/share/2b6ef7cc0e2d7fe8c126e1901e44ecc57b1b98e2/javascript.ipynb?viewer=share>`_.
+    - (new) You can run **JavaScript** in a Jupyter Notebook, powered by `Node.js`_ – `ijavascript example notebook <https://cocalc.com/share/public_paths/2b6ef7cc0e2d7fe8c126e1901e44ecc57b1b98e2>`_.
 
 - Software:
     - (upd) `pandoc`_ ``2.9.2`` – `pandoc 2.9.2 release notes <https://github.com/jgm/pandoc/releases/tag/2.9.2>`_
@@ -540,7 +541,7 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
     - (new) `okpy`_ ``1.14.19`` – *OK autogrades programming assignments, facilitates submission, composition feedback, and analytics for your class*. It's installed for the :doc:`../terminal` and run ``ok --help`` for more info.
     - (new) `pyreadstat`_ ``0.2.9`` – *read and write sas (sas7bdat, sas7bcat, xport), spps (sav, zsav, por) and stata (dta) data files into/from pandas dataframes*
     - (new) `bitarray`_ ``1.2.1`` – *efficient arrays of booleans*
-    - (new) `ifsFractals`_ ``1.17.4`` – *fast IFS fractal generation* (`ifs fractals example <https://share.cocalc.com/share/10a1a74ea3be1a433ce127f46f2b5eb53dbd3907/ifs-fractals.ipynb?viewer=share>`_)
+    - (new) `ifsFractals`_ ``1.17.4`` – *fast IFS fractal generation* (`ifs fractals example <https://cocalc.com/share/public_paths/10a1a74ea3be1a433ce127f46f2b5eb53dbd3907>`_)
     - (upd) `PyTorch`_ ``1.3.1``, `joblib`_ ``0.14.1``, `drive-cli`_ ``2.1.0``, `seaborn`_ ``0.10.0``, `numba`_ ``0.47.0``
 
 
@@ -669,7 +670,7 @@ A noteworthy new library is `Epidemics-on-Networks`_ for Python 3 (system-wide),
 .. _ipopt examples: https://cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/ipopt.ipynb?viewer=share
 .. _PyOMO: http://www.pyomo.org/
 .. _cyipopt: https://github.com/matthias-k/cyipopt
-.. _bokeh example notebook: https://share.cocalc.com/share/b9bacd7b-6cee-402c-88ed-9d74b07f29a1/bokeh-plots.ipynb?viewer=share
+.. _bokeh example notebook: https://cocalc.com/share/public_paths/224f8112a2798e52129e9ec55d71271ac400ba57
 .. _scipy: https://scipy.org/
 .. _bokeh: https://bokeh.pydata.org/en/latest/
 .. _Jupytext: https://jupytext.readthedocs.io/en/latest/introduction.html
