@@ -11,6 +11,21 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-09-27:
+
+2021-09-27: Mathics 4, Scikit-Learn 1.0, Julia 1.6.3
+-----------------------------------------------------
+
+- Executables:
+    - (upd) `Mathics`_ ``4.0.0``
+    - (upd) `Rust`_ ``1.55``
+    - (upd) `Julia`_ ``1.6.3``
+
+- Python (system-wide):
+    - (upd) `scikit-learn`_ ``1.0``
+
+- various package and system lib updates
+
 .. _update-2021-09-07:
 
 2021-09-07: PyPy (Python 3)
