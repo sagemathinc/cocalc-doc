@@ -149,7 +149,7 @@ After this, you will be able to use the python package from within Sage in any o
 
 * Command-line Sage.
 * :doc:`../sagews`. After installing the package, you will have to restart the Sage worksheet server under project Settings, or restart the project.
-* Jupyter notebook running the Sage kernel. The version of Sage in the Jupyter kernel selected must match the version of Sage used on the command line to install the package.
+* Jupyter notebook running the Sage kernel. The version of Sage in the Jupyter kernel selected must match the version of Sage used on the command line to install the package. Restart the Jupyter kernel to pick up the newly installed package.
 
 
 Encapsulated PIP w/ Jupyter Kernel
