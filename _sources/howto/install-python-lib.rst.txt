@@ -143,7 +143,7 @@ A special case is `SageMath`_, which is a fully integrated environment built on 
 
 To install a python package to be used from Sage, first open a CoCalc :doc:`../terminal`. Then run the command::
 
-    sage --pip install --user <package_name>
+    sage --pip install <package_name>
 
 After this, you will be able to use the python package from within Sage in any of these settings:
 
