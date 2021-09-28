@@ -322,7 +322,16 @@ See  <a class="reference external" href="https://virtualenv.pypa.io/en/stable/us
 <div class="section" id="sage">
 <span id="sage-install-python-pkg"></span><h3><a class="toc-backref" href="#id10">Sage</a><a class="headerlink" href="#sage" title="Permalink to this headline">¶</a></h3>
 <p>A special case is <a class="reference external" href="https://sagemath.org">SageMath</a>, which is a fully integrated environment built on top of Python.</p>
-<p>As of sage-9.1 and sage-9.2, installing Python packages into Sage is not supported. For further information, please consult resources listed under <a class="reference internal" href="sage-question.html"><span class="doc">Question about Sage</span></a>.</p>
+<p>To install a python package to be used from Sage, first open a CoCalc <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>. Then run the command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sage --pip install --user &lt;package_name&gt;
+</pre></div>
+</div>
+<p>After this, you will be able to use the python package from within Sage in any of these settings:</p>
+<ul class="simple">
+<li>Command-line Sage.</li>
+<li><a class="reference internal" href="../sagews.html"><span class="doc">Sage Worksheets</span></a>. After installing the package, you will have to restart the Sage worksheet server under project Settings, or restart the project.</li>
+<li>Jupyter notebook running the Sage kernel. The version of Sage in the Jupyter kernel selected must match the version of Sage used on the command line to install the package.</li>
+</ul>
 </div>
 </div>
 <div class="section" id="encapsulated-pip-w-jupyter-kernel">
@@ -386,7 +395,7 @@ creating file &#39;my-special-env.ipynb&#39;
 <span id="anaconda-install"></span><h2><a class="toc-backref" href="#id12">Anaconda Environment</a><a class="headerlink" href="#anaconda-environment" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://conda.io/en/latest/">Conda</a> is an alternative packaging system by <a class="reference external" href="https://anaconda.org/">Anaconda</a>.
 It is mostly used for Python packages, but it can manage and deliver almost any kind of software.</p>
-<p>CoCalc provides a global environmet, which you can start by running <code class="docutils literal notranslate"><span class="pre">anaconda2020</span></code> in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> or a related kernel in a <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebooks</span></a>.
+<p>CoCalc provides a global environment, which you can start by running <code class="docutils literal notranslate"><span class="pre">anaconda2020</span></code> in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> or a related kernel in a <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebooks</span></a>.
 To get going with your own setup for your own CoCalc project,
 you have to <a class="reference internal" href="#anaconda-install-own-env"><span class="std std-ref">create your own environment</span></a>
 and your <a class="reference internal" href="#anaconda-jupyter"><span class="std std-ref">own kernel</span></a>.</p>

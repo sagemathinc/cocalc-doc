@@ -7,7 +7,7 @@
 Front-end Web Development
 =======================================
 
-A CoCalc project is a convenient platform for learning the latest tools for front-end web development, including `Node.js <https://nodejs.org/en/>`_, `React <https://reactjs.org/>`_, and `Next.js <https://nextjs.org/>`_.
+A CoCalc project is a convenient setting for learning tools of front-end web development, including `Node.js <https://nodejs.org/en/>`_, `React <https://reactjs.org/>`_, and `Next.js <https://nextjs.org/>`_.
 
 .. contents::
    :local:
@@ -16,11 +16,7 @@ A CoCalc project is a convenient platform for learning the latest tools for fron
 General Notes
 ==============
 
-Before starting
-
-* **BaseURL.**
-* **Security Model.**
-* **Not for production.**
+Before starting: read :doc:`webserver`. including the warning, to learn the basics of CoCalc server and port proxies.
 
 Simple Python Server
 ====================

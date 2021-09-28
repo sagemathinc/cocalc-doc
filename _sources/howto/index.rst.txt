@@ -45,6 +45,7 @@ Programming Languages and Tools
 * :doc:`cplusplus`
 * :doc:`dask`
 * :doc:`fortran`
+* :doc:`front-end-dev`
 * :doc:`activeloop-hub`
 * :doc:`git`
 * :doc:`google-api`

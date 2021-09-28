@@ -141,7 +141,15 @@ Sage
 
 A special case is `SageMath`_, which is a fully integrated environment built on top of Python.
 
-As of sage-9.1 and sage-9.2, installing Python packages into Sage is not supported. For further information, please consult resources listed under :doc:`sage-question`.
+To install a python package to be used from Sage, first open a CoCalc :doc:`../terminal`. Then run the command::
+
+    sage --pip install --user <package_name>
+
+After this, you will be able to use the python package from within Sage in any of these settings:
+
+* Command-line Sage.
+* :doc:`../sagews`. After installing the package, you will have to restart the Sage worksheet server under project Settings, or restart the project.
+* Jupyter notebook running the Sage kernel. The version of Sage in the Jupyter kernel selected must match the version of Sage used on the command line to install the package.
 
 
 Encapsulated PIP w/ Jupyter Kernel
@@ -213,7 +221,7 @@ Anaconda Environment
 `Conda <https://conda.io/en/latest/>`_ is an alternative packaging system by `Anaconda <https://anaconda.org/>`_.
 It is mostly used for Python packages, but it can manage and deliver almost any kind of software.
 
-CoCalc provides a global environmet, which you can start by running ``anaconda2020`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
+CoCalc provides a global environment, which you can start by running ``anaconda2020`` in a :doc:`../terminal` or a related kernel in a :doc:`../jupyter`.
 To get going with your own setup for your own CoCalc project,
 you have to :ref:`create your own environment <anaconda-install-own-env>`
 and your :ref:`own kernel <anaconda-jupyter>`.

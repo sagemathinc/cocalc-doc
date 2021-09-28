@@ -213,6 +213,24 @@ and it is serving to all ip addresses (<strong>not</strong> just localhost!), th
 <p>to access your HTTP web server.
 For example, you might have to start the service using <code class="docutils literal notranslate"><span class="pre">--ip=0.0.0.0</span></code> to serve all IPs
 (the exact flag depends on the service).</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>If the webserver directs the client to make additional requests to the backend for absolute URL’s, e.g., the service serves a file index.html like this</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;a href=&#39;/index.html&#39;&gt;HOME!&lt;/a&gt;
+</pre></div>
+</div>
+<p>then when you click on the link, your browser will try to grab</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/index.html
+</pre></div>
+</div>
+<p>instead of</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/server/[port]/index.html
+</pre></div>
+</div>
+<p>Obviously, this can’t possibly work.</p>
+<p class="last">Many webservers, e.g., tensorboard, work fine and do not do this.
+Others won’t work without modification.</p>
+</div>
 </div>
 <div class="section" id="using-the-port-proxy">
 <h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Permalink to this headline">¶</a></h2>
@@ -220,8 +238,8 @@ For example, you might have to start the service using <code class="docutils lit
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/port/[port]/
 </pre></div>
 </div>
-<p>When you visit that URL with your web browser, your web server will get a request for <code class="docutils literal notranslate"><span class="pre">/[project_id]/port/[port]/</span></code> rather than for <code class="docutils literal notranslate"><span class="pre">/</span></code> like it does with server.
-Otherwise, everything is the same, including the big caveat above.</p>
+<p>When you visit that URL with your web browser, your web server will get a request for <code class="docutils literal notranslate"><span class="pre">/[project_id]/port/[port]/</span></code> rather than for <code class="docutils literal notranslate"><span class="pre">/</span></code> as it does with server.
+Otherwise, everything is the same, including the warning above.</p>
 </div>
 <div class="section" id="what-about-security">
 <h2>What about security?<a class="headerlink" href="#what-about-security" title="Permalink to this headline">¶</a></h2>
@@ -243,18 +261,17 @@ If you need that, use some other service.</p>
 <h2>Example Code<a class="headerlink" href="#example-code" title="Permalink to this headline">¶</a></h2>
 <p>Here’s a simple example of an HTTP server written using the Python SimpleHTTPServer class.
 Open a project and click “+New” then paste in this link, then click the “From Web” button (or use wget or copy/paste into a file):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://gist.githubusercontent.com/williamstein/c69001187923c2a62f1b42126a4a77e8/raw/b50f9410a6d1a55144931ad419affa9466094386/server.py
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://gist.githubusercontent.com/DrXyzzy/91a70319d258e65dbd04a04f1e5e3b6d/raw/842875805c7876940937c6ab321f7498c203678d/py3server.py
 </pre></div>
 </div>
-<p>Then in a terminal type</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>chmod +x server.py
-./server.py
+<p>Then in a terminal type:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python py3server.py
 </pre></div>
 </div>
 </div>
 <div class="section" id="raw-files-server">
 <h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Permalink to this headline">¶</a></h2>
-<p>If you just want an http view of your files, use the raw servers, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[project_id]/raw/</span></code>.  The point of the above is that you could modify it to provide all sorts of interesting functionality.</p>
+<p>If you just want an https view of your files, use the raw server, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[project_id]/raw/</span></code>. The point of the above is that you could modify it to provide all sorts of interesting functionality.</p>
 </div>
 </div>
 
