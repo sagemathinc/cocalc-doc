@@ -19,18 +19,31 @@ The first time you sign into CoCalc, you won't have any projects, unless some ha
 .. figure:: img/project-list/proj-01.png
      :width: 100%
      :align: center
+     :alt: project list before any projects are created
 
      *new account with no projects created yet*
 
-After you have some projects, there's more to see:
+After you have some projects, there's more to see.
+If you have a large number of projects, the initial display will be limited to 50 projects, and projects active within the past 2 months. The list can be expanded as needed using "Show projects not used in the last few months..." or "Load n More Matching Projects..." buttons at the bottom.
 
 .. figure:: img/project-list/proj-02a.png
      :width: 100% 
      :align: center
+     :alt: project list showing some projects
 
      ..
 
-If you have a large number of projects, the initial display will be limited to 50 projects, and projects active within the past 2 months. The list can be expanded as needed using "Show projects not used in the last few months..." or "Load n More Matching Projects..." buttons at the bottom.
+You can enter filter text in the Projects search field.
+If you have several projects, it can help to add hashtags to your project descriptions for topics you want to return to quickly.
+
+.. figure:: img/project-settings/project-match.png
+     :width: 60%
+     :align: center
+     :alt: filtering projects for a certain word
+
+     *searching for "astro" in project title & description*
+
+
 
 Using an Invitation Token
 =========================
