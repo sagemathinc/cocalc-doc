@@ -13,25 +13,19 @@ All about the **Project Settings** tab.
 .. index:: Projects; title and description
 .. _set-project-title:
 
-######################
-Title and description
-######################
+###########################
+Title, Description, Name
+###########################
 
-The text for **Title and description** for a project can be changed at any time.
+The text for **Title Description, and Name** for a project can be changed at any time.
 
 .. image:: img/project-settings/title-and-desc-a.png
      :width: 50%
      :align: center
 
-Title and Description fields are both used when searching for matching text under **Projects**.
-If you have several projects, it can help to add hashtags to your project descriptions
-for topics you want to return to quickly.
+Title and Description fields are both used when searching for matching text under ``Projects``.
 
-.. figure:: img/project-settings/project-match.png
-     :width: 60%
-     :align: center
-
-     *searching for "astro" in project title & description*
+In addition to entering a title and description, you may specify a project name. Setting a project name provides much nicer URL's for shared public documents. See :ref:`vanity-urls` to learn more.
 
 .. index:: Projects; upgrades
 .. _project-upgrades:

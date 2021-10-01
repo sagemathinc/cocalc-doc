@@ -20,7 +20,7 @@ When a CoCalc project starts this is run:
 
 * an instance of **"local hub"**. It is used for managing the project, communication with the outside world, monitoring, etc.
 * **sshd**: the endpoint for remote SSH access.
-* **initialization file**: an *optional* bash script called ``project_init.sh``, located in your home directory. It is only started *once*!
+* **initialization file**: an *optional* bash script called ``project_init.sh``, located in the project's home directory. It is only started *once*!
 
 
 .. highlight:: sh
@@ -29,7 +29,7 @@ Example 1: record project start time
 =====================================
 
 A very simple example is to record the project's start time.
-Go to your home directory and create a file ``project_init.sh`` with that content::
+Go to your project's home directory and create a file ``project_init.sh`` with that content::
 
     date > project-start
 
@@ -39,7 +39,7 @@ This is a very simple bash script, which pipes the output of the ``date`` comman
 
 In order to see its effect, the file needs to be saved and the project restarted.
 Give it a few seconds to come back online and run the script.
-After that (maybe click the refresh button in the file listing) you should see this file and its content might look like::
+After that you should see this file and its content might look like::
 
     Mon Sep 12 11:14:20 UTC 2017
 

@@ -245,19 +245,19 @@
 <ul class="simple">
 <li>an instance of <strong>“local hub”</strong>. It is used for managing the project, communication with the outside world, monitoring, etc.</li>
 <li><strong>sshd</strong>: the endpoint for remote SSH access.</li>
-<li><strong>initialization file</strong>: an <em>optional</em> bash script called <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>, located in your home directory. It is only started <em>once</em>!</li>
+<li><strong>initialization file</strong>: an <em>optional</em> bash script called <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>, located in the project’s home directory. It is only started <em>once</em>!</li>
 </ul>
 <div class="section" id="example-1-record-project-start-time">
 <h3>Example 1: record project start time<a class="headerlink" href="#example-1-record-project-start-time" title="Permalink to this headline">¶</a></h3>
 <p>A very simple example is to record the project’s start time.
-Go to your home directory and create a file <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code> with that content:</p>
+Go to your project’s home directory and create a file <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code> with that content:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>date &gt; project-start
 </pre></div>
 </div>
 <p>This is a very simple bash script, which pipes the output of the <code class="docutils literal notranslate"><span class="pre">date</span></code> command into the file <code class="docutils literal notranslate"><span class="pre">project-start</span></code>.</p>
 <p>In order to see its effect, the file needs to be saved and the project restarted.
 Give it a few seconds to come back online and run the script.
-After that (maybe click the refresh button in the file listing) you should see this file and its content might look like:</p>
+After that you should see this file and its content might look like:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Mon Sep 12 11:14:20 UTC 2017
 </pre></div>
 </div>

@@ -15,6 +15,7 @@ The project **Files** list gives you an overview of your files in that project.
 .. figure:: img/project-files/files-list.png
      :width: 80%
      :align: center
+     :alt: view of Files list for the selected project
 
      files list
 
@@ -29,6 +30,7 @@ With the **mini-terminal**, you can enter a simple Linux command in the "Termina
 .. figure:: img/project-files/mini-terminal.png
      :width: 80%
      :align: center
+     :alt: example of one-line shell command executed in mini-terminal in Files tab at upper left
 
      running a command in the mini-terminal
 
@@ -41,11 +43,11 @@ Opening a File
 
 * Click in the line containing a file name to open that file. The project log records the timestamp and name of the user opening the file.
 
-.. index:: Files list; file actions
+.. index:: Files list; actions on one file
 .. _file-actions:
 
-File Actions
-=====================
+File Actions on One File
+========================
 
 
 * **Click the checkbox next to one file** and a menu of actions appears:
@@ -53,6 +55,7 @@ File Actions
   .. figure:: img/project-files/file-actions.png
        :width: 80%
        :align: center
+       :alt: row of file action buttons that appears when one file is selected
 
        actions available when one file is selected
 
@@ -69,6 +72,7 @@ File Actions
   .. figure:: img/project-files/file-action-move.png
      :width: 80%
      :align: center
+     :alt: dialog to move a file
 
      move file to a different directory in the same project
 
@@ -77,24 +81,35 @@ File Actions
   .. figure:: img/project-files/file-action-copy-1.png
      :width: 80%
      :align: center
+     :alt: copy a file to a different project 1
 
      copy a file to a different project, step 1
 
   .. figure:: img/project-files/file-action-copy-2.png
      :width: 80%
      :align: center
+     :alt: copy a file to a different project 2
 
      copy a file to a different project, step 2
 
+.. _file-actions-public:
+
   * **Public:** opens the :doc:`share dialog <share>` to make the file public or private.
 
-* **Click checkboxes next to multiple files** causes a menu of multi-file actions to appear.
+.. index:: Files list; actions on multiple files
+.. _file-actions-multiple:
+
+File Actions on Multiple Files
+==============================
+
+* **Clicking checkboxes next to multiple files** causes a menu of multi-file actions to appear.
 
   .. figure:: img/project-files/file-actions-multiple.png
        :width: 80%
        :align: center
+       :alt: row of file action buttons that appears when multiple files are selected
 
-       actions available when one file is selected
+       actions available when more than one file is selected
 
   * **Download** creates a zip archive containing the selected files in the current directory and downloads the zip file to your local computer. The project log records the names of the files downloaded in the zip file, the user who downloaded the file, and the timestamp.
 
@@ -128,6 +143,7 @@ By convention, a file whose name begins with a dot is a hidden file. It will not
 .. figure:: img/project-files/files-with-hidden.png
      :width: 80%
      :align: center
+     :alt:  when viewing hidden files is enabled, Files list shows them with lower contrast type face than non-hidden files
 
      files list showing hidden files
 
@@ -145,12 +161,14 @@ Processing some programs, notably LaTeX source (e.g. ``.tex`` files) causes temp
 .. figure:: img/project-files/files-filtered-mask.png
      :width: 80%
      :align: center
+     :alt: files list with temp files masked
 
      files list filtered for "latex-sample", temporary files masked
 
 .. figure:: img/project-files/files-filtered-nomask.png
      :width: 80%
      :align: center
+     :alt: files list with temp files shown
 
      files list filtered for "latex-sample", showing temporary files
 

@@ -123,7 +123,8 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Project Files</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#mini-terminal">Mini-terminal</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#opening-a-file">Opening a File</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#file-actions">File Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-actions-on-one-file">File Actions on One File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-actions-on-multiple-files">File Actions on Multiple Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#refresh-files-list">Refresh Files List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#show-hidden-files">Show Hidden Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hide-temporary-files">Hide Temporary Files</a></li>
@@ -228,39 +229,40 @@
 <p>The project <strong>Files</strong> list gives you an overview of your files in that project.</p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#mini-terminal" id="id14">Mini-terminal</a></li>
-<li><a class="reference internal" href="#opening-a-file" id="id15">Opening a File</a></li>
-<li><a class="reference internal" href="#file-actions" id="id16">File Actions</a></li>
+<li><a class="reference internal" href="#mini-terminal" id="id13">Mini-terminal</a></li>
+<li><a class="reference internal" href="#opening-a-file" id="id14">Opening a File</a></li>
+<li><a class="reference internal" href="#file-actions-on-one-file" id="id15">File Actions on One File</a></li>
+<li><a class="reference internal" href="#file-actions-on-multiple-files" id="id16">File Actions on Multiple Files</a></li>
 <li><a class="reference internal" href="#refresh-files-list" id="id17">Refresh Files List</a></li>
 <li><a class="reference internal" href="#show-hidden-files" id="id18">Show Hidden Files</a></li>
 <li><a class="reference internal" href="#hide-temporary-files" id="id19">Hide Temporary Files</a></li>
 <li><a class="reference internal" href="#snapshot-backups" id="id20">Snapshot Backups</a></li>
 </ul>
 </div>
-<div class="figure align-center" id="id4">
-<a class="reference internal image-reference" href="_images/files-list.png"><img alt="_images/files-list.png" src="_images/files-list.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/files-list.png"><img alt="view of Files list for the selected project" src="_images/files-list.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">files list</span></p>
 </div>
 <div class="section" id="mini-terminal">
-<span id="index-2"></span><span id="id2"></span><h2><a class="toc-backref" href="#id14">Mini-terminal</a><a class="headerlink" href="#mini-terminal" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><span id="id2"></span><h2><a class="toc-backref" href="#id13">Mini-terminal</a><a class="headerlink" href="#mini-terminal" title="Permalink to this headline">¶</a></h2>
 <p>With the <strong>mini-terminal</strong>, you can enter a simple Linux command in the “Terminal command…” box at upper right. Current directory for the command will be whatever folder is open in the Files list. Output is limited to a few lines.</p>
-<div class="figure align-center" id="id5">
-<a class="reference internal image-reference" href="_images/mini-terminal.png"><img alt="_images/mini-terminal.png" src="_images/mini-terminal.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/mini-terminal.png"><img alt="example of one-line shell command executed in mini-terminal in Files tab at upper left" src="_images/mini-terminal.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">running a command in the mini-terminal</span></p>
 </div>
 </div>
 <div class="section" id="opening-a-file">
-<span id="file-list-open"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id15">Opening a File</a><a class="headerlink" href="#opening-a-file" title="Permalink to this headline">¶</a></h2>
+<span id="file-list-open"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id14">Opening a File</a><a class="headerlink" href="#opening-a-file" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Click in the line containing a file name to open that file. The project log records the timestamp and name of the user opening the file.</li>
 </ul>
 </div>
-<div class="section" id="file-actions">
-<span id="index-4"></span><span id="id3"></span><h2><a class="toc-backref" href="#id16">File Actions</a><a class="headerlink" href="#file-actions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-actions-on-one-file">
+<span id="file-actions"></span><span id="index-4"></span><h2><a class="toc-backref" href="#id15">File Actions on One File</a><a class="headerlink" href="#file-actions-on-one-file" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p class="first"><strong>Click the checkbox next to one file</strong> and a menu of actions appears:</p>
-<div class="figure align-center" id="id6">
-<a class="reference internal image-reference" href="_images/file-actions.png"><img alt="_images/file-actions.png" src="_images/file-actions.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/file-actions.png"><img alt="row of file action buttons that appears when one file is selected" src="_images/file-actions.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">actions available when one file is selected</span></p>
 </div>
 <ul class="simple">
@@ -270,29 +272,36 @@
 <li><strong>Duplicate:</strong> creates a copy of the selected file in the same directory as the original. A numeric suffix is added as a default. You can edit the name of the copy as needed. The project log records the timestamp and the user who copied the file.</li>
 <li><strong>Move:</strong> moves the file to a different directory in the same project. If the file is open in a browser tab anywhere, that tab will be closed and a brief notification will appear that the file has been deleted or moved. You can add a new directory to the list of possible destination directories by clicking on <code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">New</span> <span class="pre">directory</span></code> and overriding the default name if desired. Click “Move 1 item” to move the file.</li>
 </ul>
-<div class="figure align-center" id="id7">
-<a class="reference internal image-reference" href="_images/file-action-move.png"><img alt="_images/file-action-move.png" src="_images/file-action-move.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/file-action-move.png"><img alt="dialog to move a file" src="_images/file-action-move.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">move file to a different directory in the same project</span></p>
 </div>
 <ul class="simple">
 <li><strong>Copy:</strong> copies a file. To copy a file to a destination in the same project, simply choose the destination directory and click “Copy 1 item”. To copy a file to a different project , first click inside “A Possibly Different Project” (first screenshot below). Then select the destination project, select the destination folder in that project, then click “Copy 1 item” (second screenshot below). You must be owner or collaborator on the destination project. The log of the project containing the original file records the timestamp, destination, and the user who copied the file.</li>
 </ul>
-<div class="figure align-center" id="id8">
-<a class="reference internal image-reference" href="_images/file-action-copy-1.png"><img alt="_images/file-action-copy-1.png" src="_images/file-action-copy-1.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/file-action-copy-1.png"><img alt="copy a file to a different project 1" src="_images/file-action-copy-1.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">copy a file to a different project, step 1</span></p>
 </div>
-<div class="figure align-center" id="id9">
-<a class="reference internal image-reference" href="_images/file-action-copy-2.png"><img alt="_images/file-action-copy-2.png" src="_images/file-action-copy-2.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="_images/file-action-copy-2.png"><img alt="copy a file to a different project 2" src="_images/file-action-copy-2.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">copy a file to a different project, step 2</span></p>
 </div>
-<ul class="simple">
+</li>
+</ul>
+<blockquote id="file-actions-public">
+<div><ul class="simple">
 <li><strong>Public:</strong> opens the <a class="reference internal" href="share.html"><span class="doc">share dialog</span></a> to make the file public or private.</li>
 </ul>
-</li>
-<li><p class="first"><strong>Click checkboxes next to multiple files</strong> causes a menu of multi-file actions to appear.</p>
-<div class="figure align-center" id="id10">
-<a class="reference internal image-reference" href="_images/file-actions-multiple.png"><img alt="_images/file-actions-multiple.png" src="_images/file-actions-multiple.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-text">actions available when one file is selected</span></p>
+</div></blockquote>
+</div>
+<div class="section" id="file-actions-on-multiple-files">
+<span id="file-actions-multiple"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id16">File Actions on Multiple Files</a><a class="headerlink" href="#file-actions-on-multiple-files" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><strong>Clicking checkboxes next to multiple files</strong> causes a menu of multi-file actions to appear.</p>
+<div class="figure align-center" id="id9">
+<a class="reference internal image-reference" href="_images/file-actions-multiple.png"><img alt="row of file action buttons that appears when multiple files are selected" src="_images/file-actions-multiple.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">actions available when more than one file is selected</span></p>
 </div>
 <ul class="simple">
 <li><strong>Download</strong> creates a zip archive containing the selected files in the current directory and downloads the zip file to your local computer. The project log records the names of the files downloaded in the zip file, the user who downloaded the file, and the timestamp.</li>
@@ -305,31 +314,31 @@
 </ul>
 </div>
 <div class="section" id="refresh-files-list">
-<span id="refresh-files"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id17">Refresh Files List</a><a class="headerlink" href="#refresh-files-list" title="Permalink to this headline">¶</a></h2>
+<span id="refresh-files"></span><span id="index-6"></span><h2><a class="toc-backref" href="#id17">Refresh Files List</a><a class="headerlink" href="#refresh-files-list" title="Permalink to this headline">¶</a></h2>
 <p>The contents of the filesystem may change while you have the Files list open and the list might not be current. You can update the list by clicking refresh (<a class="reference internal" href="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/refresh.png"><img alt="refresh" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/refresh.png" style="width: 16px;" /></a>).</p>
-<span class="target" id="index-6"></span></div>
+<span class="target" id="index-7"></span></div>
 <div class="section" id="show-hidden-files">
-<span id="hidden-files"></span><span id="index-7"></span><h2><a class="toc-backref" href="#id18">Show Hidden Files</a><a class="headerlink" href="#show-hidden-files" title="Permalink to this headline">¶</a></h2>
+<span id="hidden-files"></span><span id="index-8"></span><h2><a class="toc-backref" href="#id18">Show Hidden Files</a><a class="headerlink" href="#show-hidden-files" title="Permalink to this headline">¶</a></h2>
 <p>By convention, a file whose name begins with a dot is a hidden file. It will not show up in various file lists by default. Click the eye icon with a slash (<a class="reference internal" href="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/eye-slash.png"><img alt="eye-slash" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/eye-slash.png" style="width: 16px;" /></a>) to include hidden files in the list; the icon changes to an eye (<a class="reference internal" href="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/eye.png"><img alt="eye" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/eye.png" style="width: 16px;" /></a>)  without a slash. Click the <a class="reference internal" href="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/eye.png"><img alt="eye" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/eye.png" style="width: 16px;" /></a> icon to exclude hidden files.</p>
-<div class="figure align-center" id="id11">
-<a class="reference internal image-reference" href="_images/files-with-hidden.png"><img alt="_images/files-with-hidden.png" src="_images/files-with-hidden.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id10">
+<a class="reference internal image-reference" href="_images/files-with-hidden.png"><img alt="when viewing hidden files is enabled, Files list shows them with lower contrast type face than non-hidden files" src="_images/files-with-hidden.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">files list showing hidden files</span></p>
 </div>
-<span class="target" id="index-8"></span><span class="target" id="index-9"></span></div>
+<span class="target" id="index-9"></span><span class="target" id="index-10"></span></div>
 <div class="section" id="hide-temporary-files">
-<span id="masked-files"></span><span id="index-10"></span><h2><a class="toc-backref" href="#id19">Hide Temporary Files</a><a class="headerlink" href="#hide-temporary-files" title="Permalink to this headline">¶</a></h2>
+<span id="masked-files"></span><span id="index-11"></span><h2><a class="toc-backref" href="#id19">Hide Temporary Files</a><a class="headerlink" href="#hide-temporary-files" title="Permalink to this headline">¶</a></h2>
 <p>Processing some programs, notably LaTeX source (e.g. <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files) causes temporary files to be generated. These can clutter your file list. Click the mask icon (<a class="reference internal" href="_images/mask-icon.png"><img alt="mask" src="_images/mask-icon.png" style="width: 16px;" /></a>) to toggle display of hidden files on or off.</p>
-<div class="figure align-center" id="id12">
-<a class="reference internal image-reference" href="_images/files-filtered-mask.png"><img alt="_images/files-filtered-mask.png" src="_images/files-filtered-mask.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_images/files-filtered-mask.png"><img alt="files list with temp files masked" src="_images/files-filtered-mask.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">files list filtered for “latex-sample”, temporary files masked</span></p>
 </div>
-<div class="figure align-center" id="id13">
-<a class="reference internal image-reference" href="_images/files-filtered-nomask.png"><img alt="_images/files-filtered-nomask.png" src="_images/files-filtered-nomask.png" style="width: 80%;" /></a>
+<div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="_images/files-filtered-nomask.png"><img alt="files list with temp files shown" src="_images/files-filtered-nomask.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text">files list filtered for “latex-sample”, showing temporary files</span></p>
 </div>
-<span class="target" id="index-11"></span><span class="target" id="index-12"></span></div>
+<span class="target" id="index-12"></span><span class="target" id="index-13"></span></div>
 <div class="section" id="snapshot-backups">
-<span id="project-snapshot"></span><span id="index-13"></span><h2><a class="toc-backref" href="#id20">Snapshot Backups</a><a class="headerlink" href="#snapshot-backups" title="Permalink to this headline">¶</a></h2>
+<span id="project-snapshot"></span><span id="index-14"></span><h2><a class="toc-backref" href="#id20">Snapshot Backups</a><a class="headerlink" href="#snapshot-backups" title="Permalink to this headline">¶</a></h2>
 <p>Click on the “<a class="reference internal" href="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/life-ring.png"><img alt="life-ring" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/life-ring.png" style="width: 16px;" /></a> Backup” button to switch to a directory containing consistent point-in-time backups of all your files.
 Use this in case you have deleted a whole set of files, or just want to restore them from a while ago.</p>
 <p><em>Note:</em> Snapshots are in a read-only file system. If you want to modify a file that resides in a snapshot, you will need to copy it into a writable part of your project first.</p>

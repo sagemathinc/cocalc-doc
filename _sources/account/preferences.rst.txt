@@ -22,19 +22,32 @@ Account settings
 
 Most of the entries under ``Account settings`` are self-explanatory. Here are a few additional notes.
 
+.. index:: Preferences; username
+.. _username:
+
+* **Username (optional).** In addition to entering your first and last name, you may specify a username. Setting your username provides much nicer URL's for shared public documents. See :ref:`vanity-urls` to learn more.
+
+.. index:: Preferences; email address
+
+* Your password is needed to change your **email address**.
+
+.. index:: Preferences; unlisted
+
+* Checking **Unlisted** will prevent your account from showing up in searches by name, for example when someone adds collaborators to a project.
+
+.. index:: Preferences; API key
+
+* Your password is needed to create or change the **API key** for your account. See :doc:`CoCalc API documentation <../api/index>` to learn about the API.
+
 .. index::
    Sign out of CoCalc; from preferences
    see: Log out of CoCalc; Sign out of CoCalc
 
-* Your password is needed to change your email address.
-
-* Checking the "Unlisted" box will prevent your account from showing up in searches by name, for example when someone adds collaborators to a project.
-
-* Your password is needed to create or change the API key for your account. See :doc:`CoCalc API documentation <../api/index>` to learn about the API.
-
 * **Sign Out of CoCalc** using one of the "Sign Out" buttons. You will be asked to confirm your selection.
 
-* Choosing the red ``Delete Account...`` button will cause a warning window to pop up. Confirmation is required before proceeding.
+.. index:: Preferences; delete account
+
+* Choosing the red **Delete Account...** button will cause a warning window to pop up. Confirmation is required before proceeding.
 
 .. figure:: img/settings/delete-account.png
      :width: 50%
@@ -43,7 +56,9 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 
      *warning displayed when "Delete Account..." is clicked*
 
-* Use one or more of the options under ``Linked accounts`` if you want to sign in with Facebook, GitHub, Google, or Twitter. You can also unlink online accounts from CoCalc in this section. To sign in with a linked account, choose the icon for Facebook, GitHub, Google, or Twitter under the blanks for Email address & Password at upper right in the sign-in screen.
+.. index:: Preferences; linked accounts
+
+* Use one or more of the options under **Linked accounts** if you want to sign in with Facebook, GitHub, Google, or Twitter. You can also unlink online accounts from CoCalc in this section. To sign in with a linked account, choose the icon for Facebook, GitHub, Google, or Twitter under the blanks for Email address & Password at upper right in the sign-in screen.
 
 .. _other-settings:
 

@@ -36,23 +36,49 @@ First, do either of the following:
 
      *lock is replaced by bullhorn if file is already shared*
 
-* In the Files listing for your project, check the box in the leftmost column for your file, and click |square| Share. You can also select more than one file in order to share them together (e.g. an HTML page that includes images)
+* In the Files listing for your project, check the box in the leftmost column for your file, and click |public| Share. You can also select more than one file in order to share them together (e.g. an HTML page that includes images)
 
 .. |info| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/info-circle.png
-.. |square| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/share-square-o.png
 .. |lock| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/lock.png
 .. |bullhorn| image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/16/bullhorn.png
+.. |public| image:: img/antd-icons/public-icon.png
+      :width: 1.5em
 
 After either of these steps, you can see the "Share" dialog.
 You may enter a description for the file being shared,
 then click ``Make item public`` and your file is shared.
+
+In addition to the above settings, you may specify an optional public file name. Setting this name provides much nicer URL's for shared public documents. See :ref:`vanity-urls` below to learn more.
 
 .. image:: img/share-dialog.png
      :width: 100%
      :align: center
      :alt: Dialog which appears after clicking "Share"
 
+.. index:: Sharing files; vanity URLs
+.. _vanity-urls:
+
+Vanity URLs
+===========
+
+You can now make it so
+``https://cocalc.com/name-of-your-choice``  (e.g.,
+``https://cocalc.com/wstein``) lists all of the documents you have shared
+publicly.
+
+CoCalc lets you assign a username, project names, and file names, so that you can create links to shared files that are easy to type and remember.
+
+* Set your username in :ref:`Account Preferences <username>`.
+
+* Set your project name in :ref:`Project Settings <set-project-title>`.
+
+* Set your file name as shown in :ref:`Publishing Files <publishing-files>`.
+
+If you set all these you get a nice url, e.g.,
+https://cocalc.com/wstein/support/examples
+
 .. index:: Sharing files; share server
+.. _share-server:
 
 Using the Share Server
 ==========================
