@@ -13,12 +13,13 @@ understanding low memory warnings and how to triage situations where you can't f
 .. toctree::
    :maxdepth: 1
 
+   clock-is-off.rst
    connectivity-issues.rst
    file-too-large.rst
+   sudo-make-install.rst
    jupyter-kernel-terminated
    low-memory.rst
-   sage-question.rst
    slow-worksheet.rst
+   sage-question.rst
    recover-deleted-file.rst
    missing-project.rst
-   sudo-make-install.rst
