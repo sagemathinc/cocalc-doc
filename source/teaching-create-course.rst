@@ -85,7 +85,7 @@ If you go to the root of the course project directory, you will see that a new f
 .. index:: Courses; multiple courses in same project
 .. note::
 
-    You may have more than one course file in a single project, as is explained in the next section. Be aware that that any account you add as a TA to the project will have access to course files and student work for **all** courses in that project.
+    You may have more than one course file in a single project, as is explained in the next section. Be aware that any account you add as a teaching assistant to the project will have access to course files and student work for **all** courses in that project.
 
 .. index:: Courses; split into sections
 
@@ -117,7 +117,7 @@ In the **Students** tab, add a comma separated list of students' emails addresse
 
 If you have a particular large class, the above method may take a very long time. If you have your students' email addresses in an Excel spreadsheet (or Google Sheet) you can copy and paste them directly in the **Add student** box.
 
-After parsing the list, you can either explicitly the students to add (press shift or ctrl key for multiple selections),
+After parsing the list, you can either add the students explicitly (press shift or ctrl key for multiple selections),
 or just click the "Add all students" button.
 
 Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc.
@@ -158,7 +158,7 @@ Your course page will now look like this
 Reconfiguring Student Projects
 ###############################
 
-To ensure student projects have correct students and TA's, titles and descriptions, click `Reconfigure all projects`.
+To ensure student projects have correct students and teaching assistants, titles and descriptions, click `Reconfigure all projects`.
 Doing so will also resend email invitations to students who have not already signed up for CoCalc.
 
 .. figure:: img/teaching/course-reconfigure.png
@@ -185,7 +185,7 @@ Because some CoCalc features may not be compatible with course content created b
 * **Disable toggling whether cells are editable or deletable.** Make it so that in Jupyter notebooks, students can't toggle whether cells are editable or deletable, and also disables the RAW Json Editor and the Jupyter command list dialog. If you set this, you should probably disable all of the JupyterLab and Jupyter classic options too.
 * **Disable Jupyter Classic notebook server.** Disable the user interface for running a Jupyter classic server in the student project. This is important, since Jupyter classic provides its own extensive download and edit functionality; moreover, you may want to disable Jupyter classic to reduce confusion if you don't plan to use it.
 * **Disable Jupyter Classic mode.** Do not allow opening Jupyter notebooks using classic mode. The Jupyter classic UI has some workarounds for the other restrictions here, and can also cause confusion if you don't want students to use it in your class.
-* **Disable JupyterLab notebook server.** Disable the user interface for running a JupyterLab server in the student project. This is important, since JupyterLab it provides its own extensive download and edit functionality; moreover, you may want to disable JupyterLab to reduce confusion if you don't plan to use it.
+* **Disable JupyterLab notebook server.** Disable the user interface for running a JupyterLab server in the student project. This is important, since JupyterLab provides its own extensive download and edit functionality; moreover, you may want to disable JupyterLab to reduce confusion if you don't plan to use it.
 * **Disable command line terminal.** Disables opening or running command line terminals in the student project.
 * **Disable file uploads.** Blocks uploading files to the student project via drag-n-drop or the Upload button.
 * **Disable adding or removing collaborators.** Removes the user interface for adding or removing collaborators from the student project.
@@ -198,7 +198,7 @@ Because some CoCalc features may not be compatible with course content created b
 What do the Students Get?
 #########################
 
-On being invited to a course, each student will have a project created for them in their CoCalc account that corresponds to that course. Each project will have you and the course Teaching assistants set as collaborators.
+On being invited to a course, each student will have a project created for them in their CoCalc account that corresponds to that course. Each project will have you and the course teaching assistants set as collaborators.
 
 The student's course project will have its own individual quotas set for disk storage, internet access and so on (e.g. students get 1GB of RAM). These quotas will be the standard set of quotas that everybody gets with free CoCalc projects.
 
