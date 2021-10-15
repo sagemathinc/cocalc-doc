@@ -47,7 +47,7 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 
 .. index:: Preferences; delete account
 
-* Choosing the red **Delete Account...** button will cause a warning window to pop up. Confirmation is required before proceeding.
+* Clicking the **Delete Account...** button will cause a warning window to pop up. Confirmation is required before proceeding.
 
 .. figure:: img/settings/delete-account.png
      :width: 50%

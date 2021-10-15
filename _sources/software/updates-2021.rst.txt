@@ -11,6 +11,13 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021-10-10:
+
+2021-10-10: Routine updates
+------------------------------------------------
+
+- (upd) routine updates for system packages, Python and R
+
 .. _update-2021-09-27:
 
 2021-09-27: Mathics 4, Scikit-Learn 1.0, Julia 1.6.3

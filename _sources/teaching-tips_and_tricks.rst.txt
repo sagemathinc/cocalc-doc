@@ -10,14 +10,13 @@ In this section we will present some CoCalc features and useful tricks that will
    :local:
    :depth: 2
 
-.. _add-del-student:
+.. index:: Courses; delete student
+.. _delete-student:
 
 Delete and undelete students
 ==========================================================
 
 Enrollments can change after initial course setup. CoCalc offers a convenient way of deleting a student from a student list, and reversing that deletion step. Deleting a student removes upgrades from the student project. Handouts and assignments will not be distributed after the student is deleted. However, files already in the project for a deleted student are not altered, and the student project is not deleted.
-
-.. index:: Courses; delete student
 
 **To delete a student from a course**, open the course file and select the Students tab. Expand the entry for the student to be deleted.
 Click the "Delete" button at right and the confirmation button that appears next.
@@ -29,12 +28,14 @@ Click the "Delete" button at right and the confirmation button that appears next
 .. figure:: img/teaching/delete-student.png
      :width: 90%
      :align: center
+     :alt: Delete student button is in expanded student entry at right
 
      Deleting a student from the student list for a course.
 
 .. figure:: img/teaching/delete-student-2.png
      :width: 90%
      :align: center
+     :alt: Deleting a student requires confirmation
 
      Deleting a student, continued.
 
@@ -48,12 +49,14 @@ Click the "Undelete" button at right to restore the student to the course. There
 .. figure:: img/teaching/undelete-student.png
      :width: 90%
      :align: center
+     :alt: Button to show deleted students is at very bottom of student list
 
      Enabling display of deleted student records.
 
 .. figure:: img/teaching/undelete-student-2a.png
      :width: 90%
      :align: center
+     :alt: After deleted students are visible, button to undelete a student is in the student entry at the right
 
      Undeleting a student.
 
@@ -62,6 +65,71 @@ After a student is undeleted:
 - If you are using a CoCalc site license, upgrades to the student project will be restored the next time it is started.
 - If you are using a subscription or course plan, you will need to open the Configuration tab for the course and add back the upgrades to the student project. See :ref:`course-upgrading-students-legacy` for details.
 - To add handouts and assignments that the student may have missed when their student record was deleted, see the documentation on how to :ref:`catch up a student <copy-missing-files>`.
+
+**To permanently delete a student from a course** see :ref:`course-empty-trash` below.
+
+.. index:: Courses; delete assignment
+.. _delete-assignment:
+
+Delete and undelete assignments
+==========================================================
+
+The steps for deleting and undeleting assignments are analagous to those for deleting a student described above.
+
+**To delete an assignment from a course**, open the course file and select the Assignments tab. Expand the entry for the assignment to be deleted.
+Click the "Delete" button at right and the confirmation button that appears next.
+
+.. note::
+
+    Deleting an assignment from the course modifies only the course file. It does not actually delete any files from the project.
+
+**To undelete an assignment**, open the course file and select the Assignments tab.
+Scroll to the bottom of the list. If any assignments have been deleted, there will be a link saying "Show *n* deleted assignments". Click that link and entries for all the deleted assignments will be visible.
+Expand the entry for the assignment to be undeleted.
+Click the "Undelete" button at right to restore the assignment. There will be a link at the bottom that says "Hide *n* deleted assignments" to stop showing entries for deleted assignments.
+
+**To permanently delete an assignment from a course** see :ref:`course-empty-trash` below.
+
+.. index:: Courses; delete handout
+.. _delete-handout:
+
+Delete and undelete handouts
+==========================================================
+
+The steps for deleting and undeleting handouts are analagous to those for deleting a student described above.
+
+**To delete an handout from a course**, open the course file and select the handouts tab. Expand the entry for the handout to be deleted.
+Click the "Delete" button at right and the confirmation button that appears next.
+
+.. note::
+
+    Deleting a handout from the course modifies only the course file. It does not actually delete any files from the project.
+
+
+**To undelete a handout**, open the course file and select the handouts tab.
+Scroll to the bottom of the list. If any handouts have been deleted, there will be a link saying "Show *n* deleted handouts". Click that link and entries for all the deleted handouts will be visible.
+Expand the entry for the handout to be undeleted.
+Click the "Undelete" button at right to restore the handout. There will be a link at the bottom that says "Hide *n* deleted handouts" to stop showing entries for deleted handouts.
+
+**To permanently delete a handout from a course** see :ref:`course-empty-trash` below.
+
+.. index:: Courses; empty trash
+.. _course-empty-trash:
+
+Empty trash: remove deleted objects from course file
+====================================================
+
+Deleting a student, assignment, or handout from a course will mark the information as deleted, but preserve the information in the course file in case you want to undelete it. If records for deleted entries accumulate, then normal processing of the course, such as distributing assignments or reconfiguring student projects, may be slowed down.
+
+To permanently delete information about deleted students, assignments, and handouts from the course file, use the ``Purge ...`` button in the course Configuration tab at lower right under "Empty Trash". Purging deleted objects from the course file this way does not affect any other files or configuration in CoCalc. After purging deleted objects, you can still view deleted metadata by looking at the course file with :doc:`time-travel`.
+
+.. figure:: img/teaching/course-empty-trash.png
+     :width: 90%
+     :align: center
+     :alt: Removing deleted objects from course file
+
+     Removing deleted objects from course file.
+
 
 .. index:: Courses; download student work
 .. index:: Courses; convert student work to pdf
