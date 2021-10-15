@@ -66,7 +66,7 @@ After a student is undeleted:
 - If you are using a subscription or course plan, you will need to open the Configuration tab for the course and add back the upgrades to the student project. See :ref:`course-upgrading-students-legacy` for details.
 - To add handouts and assignments that the student may have missed when their student record was deleted, see the documentation on how to :ref:`catch up a student <copy-missing-files>`.
 
-**To permanently delete a student from a course** see :ref:`course-empty-trash` below.
+**To completely delete a student entry from a course** see :ref:`course-empty-trash` below.
 
 .. index:: Courses; delete assignment
 .. _delete-assignment:
@@ -88,7 +88,7 @@ Scroll to the bottom of the list. If any assignments have been deleted, there wi
 Expand the entry for the assignment to be undeleted.
 Click the "Undelete" button at right to restore the assignment. There will be a link at the bottom that says "Hide *n* deleted assignments" to stop showing entries for deleted assignments.
 
-**To permanently delete an assignment from a course** see :ref:`course-empty-trash` below.
+**To completely delete an assignment from a course** see :ref:`course-empty-trash` below.
 
 .. index:: Courses; delete handout
 .. _delete-handout:
@@ -98,7 +98,7 @@ Delete and undelete handouts
 
 The steps for deleting and undeleting handouts are analagous to those for deleting a student described above.
 
-**To delete an handout from a course**, open the course file and select the handouts tab. Expand the entry for the handout to be deleted.
+**To completely delete an handout from a course**, open the course file and select the handouts tab. Expand the entry for the handout to be deleted.
 Click the "Delete" button at right and the confirmation button that appears next.
 
 .. note::
@@ -121,7 +121,7 @@ Empty trash: remove deleted objects from course file
 
 Deleting a student, assignment, or handout from a course will mark the information as deleted, but preserve the information in the course file in case you want to undelete it. If records for deleted entries accumulate, then normal processing of the course, such as distributing assignments or reconfiguring student projects, may be slowed down.
 
-To permanently delete information about deleted students, assignments, and handouts from the course file, use the ``Purge ...`` button in the course Configuration tab at lower right under "Empty Trash". Purging deleted objects from the course file this way does not affect any other files or configuration in CoCalc. After purging deleted objects, you can still view deleted metadata by looking at the course file with :doc:`time-travel`.
+To remove entries about deleted students, assignments, and handouts from the course file (rather than just marking them as deleted), use the ``Purge ...`` button in the course Configuration tab at lower right under "Empty Trash". Purging deleted objects from the course file this way does not affect any other files or configuration in CoCalc. After purging deleted objects, you can still view deleted metadata by looking at the course file with :doc:`time-travel`.
 
 .. figure:: img/teaching/course-empty-trash.png
      :width: 90%

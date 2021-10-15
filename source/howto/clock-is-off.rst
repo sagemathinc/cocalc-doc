@@ -6,7 +6,7 @@
 CoCalc says your clock is off
 ==============================
 
-You may see a warning message pop up saying your clock is off:
+While using CoCalc, you may see a warning message pop up saying your clock is off:
 
 .. figure:: img/clock-is-off.png
      :width: 60%
