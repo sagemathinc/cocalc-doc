@@ -41,3 +41,4 @@
    remarkjs-slideshow
    ruby
    turtle
+   plotly-dash
