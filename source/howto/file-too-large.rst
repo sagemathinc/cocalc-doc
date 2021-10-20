@@ -11,14 +11,31 @@ Here are suggestions for what to do if you get a file-too-large error when :ref:
 .. _howto-ipynb-too-large:
 
 Jupyter Notebook Too Large
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==========================
 
 If you receive the error message ``Fatal Error loading ipynb file`` with text saying your file is too large, your notebook has probably created too much output. The :ref:`Notebook too large? <jupyter-ipynb-too-large>` section of this manual has suggestions what to do.
 
+.. index:: File too large; HTML file
+.. _howto-html-too-large:
+
+HTML File
+==========
+
+An HTML file larger than 5 MB can't be edited with the CoCalc :doc:`../frame-editor`.
+
+You can open a large html file for viewing as follows:
+
+* In the file listing, click the checkbox to the left of the file.
+* Click the "Download" button at the top.
+* Then click on the link that you see.
+
+If you want to edit the file, you can use one of the Linux editing utilities, such as ``vim`` or ``emacs``.
+
 .. index:: File too large; CSV file
+.. _howto-csv-too-large:
 
 CSV File
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==========
 
 Attempting to open a CSV file over 5 MB in size results in the following error:
 
