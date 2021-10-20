@@ -44,8 +44,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="File Too Large" href="file-too-large.html" />
-    <link rel="prev" title="Debugging connectivity issues" href="connectivity-issues.html" />
+    <link rel="next" title="Debugging connectivity issues" href="connectivity-issues.html" />
+    <link rel="prev" title="Troubleshooting" href="trouble.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -125,16 +125,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="trouble.html">Troubleshooting</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CoCalc says your clock is off</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#things-to-try">Things to try</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#checking-your-clock-skew">Checking your clock skew</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="connectivity-issues.html">Debugging connectivity issues</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">CoCalc says your clock is off</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file-too-large.html">File Too Large</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sudo-make-install.html">Install compiled software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-terminated.html">Jupyter Kernel Terminated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="low-memory.html">Low Memory Problems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sage-question.html">Question about Sage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slow-worksheet.html">Program Seems Slow or Stuck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sage-question.html">Question about Sage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="recover-deleted-file.html">Recovering a Deleted File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="missing-project.html">Recovering a Deleted Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sudo-make-install.html">Install compiled software</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
@@ -216,10 +220,12 @@
             
   <div class="section" id="cocalc-says-your-clock-is-off">
 <span id="clock-is-off"></span><span id="index-0"></span><h1>CoCalc says your clock is off<a class="headerlink" href="#cocalc-says-your-clock-is-off" title="Permalink to this headline">¶</a></h1>
-<p>You may see a warning message pop up saying your clock is off:</p>
+<p>While using CoCalc, you may see a warning message pop up saying your clock is off:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/clock-is-off.png"><img alt="pop-up saying Your computer's clock is off`" src="../_images/clock-is-off.png" style="width: 60%;" /></a>
 </div>
+<div class="section" id="things-to-try">
+<h2>Things to try<a class="headerlink" href="#things-to-try" title="Permalink to this headline">¶</a></h2>
 <p>If you get that warning, here are some things to try:</p>
 <ul>
 <li><p class="first">Check system time on your computer and make sure it matches correct time for your timezone.</p>
@@ -243,6 +249,26 @@
 </li>
 </ul>
 </div>
+<div class="section" id="checking-your-clock-skew">
+<h2>Checking your clock skew<a class="headerlink" href="#checking-your-clock-skew" title="Permalink to this headline">¶</a></h2>
+<p>If you want to make sure your computer’s clock is correct (as far as CoCalc is concerned), you can check CoCalc’s measurement for clock skew in your browser in either of the two ways below.</p>
+<a class="reference internal image-reference" href="../_images/clock-skew.png"><img alt="checking clock skew from a Jupyter notebook" class="align-center" src="../_images/clock-skew.png" style="width: 80%;" /></a>
+<ul>
+<li><p class="first">create a jupyter notebook with Python 3 (system-wide) kernel and enter the following into a compute cell:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>%%javascript
+alert(localStorage[&#39;clock_skew&#39;])
+</pre></div>
+</div>
+</li>
+<li><p class="first">or, with your browser open on a CoCalc tab, open your browser’s javascript console and evaluate the following expression:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>localStorage[&#39;clock_skew&#39;]
+</pre></div>
+</div>
+</li>
+</ul>
+<p>A value of clock skew less than 120,000 (two minutes) is acceptable.</p>
+</div>
+</div>
 
 
            </div>
@@ -252,10 +278,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="file-too-large.html" class="btn btn-neutral float-right" title="File Too Large" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="connectivity-issues.html" class="btn btn-neutral float-right" title="Debugging connectivity issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="connectivity-issues.html" class="btn btn-neutral float-left" title="Debugging connectivity issues" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="trouble.html" class="btn btn-neutral float-left" title="Troubleshooting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
