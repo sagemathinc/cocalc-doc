@@ -44,7 +44,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Jupyter Kernel Terminated" href="jupyter-kernel-terminated.html" />
+    <link rel="next" title="Install compiled software" href="sudo-make-install.html" />
     <link rel="prev" title="Debugging connectivity issues" href="connectivity-issues.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -125,19 +125,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="trouble.html">Troubleshooting</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="clock-is-off.html">CoCalc says your clock is off</a></li>
 <li class="toctree-l2"><a class="reference internal" href="connectivity-issues.html">Debugging connectivity issues</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">File Too Large</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#jupyter-notebook-too-large">Jupyter Notebook Too Large</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#html-file">HTML File</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#csv-file">CSV File</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="sudo-make-install.html">Install compiled software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-terminated.html">Jupyter Kernel Terminated</a></li>
 <li class="toctree-l2"><a class="reference internal" href="low-memory.html">Low Memory Problems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sage-question.html">Question about Sage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slow-worksheet.html">Program Seems Slow or Stuck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sage-question.html">Question about Sage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="recover-deleted-file.html">Recovering a Deleted File</a></li>
 <li class="toctree-l2"><a class="reference internal" href="missing-project.html">Recovering a Deleted Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sudo-make-install.html">Install compiled software</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
@@ -224,8 +226,19 @@
 <span id="howto-ipynb-too-large"></span><span id="index-1"></span><h2>Jupyter Notebook Too Large<a class="headerlink" href="#jupyter-notebook-too-large" title="Permalink to this headline">¶</a></h2>
 <p>If you receive the error message <code class="docutils literal notranslate"><span class="pre">Fatal</span> <span class="pre">Error</span> <span class="pre">loading</span> <span class="pre">ipynb</span> <span class="pre">file</span></code> with text saying your file is too large, your notebook has probably created too much output. The <a class="reference internal" href="../jupyter.html#jupyter-ipynb-too-large"><span class="std std-ref">Notebook too large?</span></a> section of this manual has suggestions what to do.</p>
 </div>
+<div class="section" id="html-file">
+<span id="howto-html-too-large"></span><span id="index-2"></span><h2>HTML File<a class="headerlink" href="#html-file" title="Permalink to this headline">¶</a></h2>
+<p>An HTML file larger than 5 MB can’t be edited with the CoCalc <a class="reference internal" href="../frame-editor.html"><span class="doc">Frame Editor</span></a>.</p>
+<p>You can open a large html file for viewing as follows:</p>
+<ul class="simple">
+<li>In the file listing, click the checkbox to the left of the file.</li>
+<li>Click the “Download” button at the top.</li>
+<li>Then click on the link that you see.</li>
+</ul>
+<p>If you want to edit the file, you can use one of the Linux editing utilities, such as <code class="docutils literal notranslate"><span class="pre">vim</span></code> or <code class="docutils literal notranslate"><span class="pre">emacs</span></code>.</p>
+</div>
 <div class="section" id="csv-file">
-<span id="index-2"></span><h2>CSV File<a class="headerlink" href="#csv-file" title="Permalink to this headline">¶</a></h2>
+<span id="howto-csv-too-large"></span><span id="index-3"></span><h2>CSV File<a class="headerlink" href="#csv-file" title="Permalink to this headline">¶</a></h2>
 <p>Attempting to open a CSV file over 5 MB in size results in the following error:</p>
 <div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/big-file.png"><img alt="../_images/big-file.png" src="../_images/big-file.png" style="width: 60%;" /></a>
@@ -243,7 +256,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="jupyter-kernel-terminated.html" class="btn btn-neutral float-right" title="Jupyter Kernel Terminated" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sudo-make-install.html" class="btn btn-neutral float-right" title="Install compiled software" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="connectivity-issues.html" class="btn btn-neutral float-left" title="Debugging connectivity issues" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
