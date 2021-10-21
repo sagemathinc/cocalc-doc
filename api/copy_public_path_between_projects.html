@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/copy_public_path_between_projects.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/copy_public_path_between_projects.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -256,35 +256,39 @@
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
 <li><code class="docutils literal notranslate"><span class="pre">src_project_id</span></code>: id of source project (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">src_path</span></code>: relative path of directory or file in the source project (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">src_path</span></code>: relative path of directory or file in the source
+project (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">target_project_id</span></code>: id of target project (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">target_path</span></code>: defaults to src_path</li>
-<li><code class="docutils literal notranslate"><span class="pre">overwrite_newer</span></code>: overwrite newer versions of file at destination (destructive) (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">delete_missing</span></code>: delete files in dest that are missing from source (destructive) (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">backup</span></code>: make ~ backup files instead of overwriting changed files (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">timeout</span></code>: how long to wait for the copy to complete before reporting error (though it could still succeed)</li>
-<li><code class="docutils literal notranslate"><span class="pre">exclude_history</span></code>: if true, exclude all files of the form <code class="docutils literal notranslate"><span class="pre">*.sage-history</span></code> (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">overwrite_newer</span></code>: overwrite newer versions of file at destination
+(destructive) (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">delete_missing</span></code>: delete files in dest that are missing from source
+(destructive) (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">backup</span></code>: make ~ backup files instead of overwriting changed files
+(default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">timeout</span></code>: how long to wait for the copy to complete before
+reporting error (though it could still succeed)</li>
+<li><code class="docutils literal notranslate"><span class="pre">exclude_history</span></code>: if true, exclude all files of the form
+<code class="docutils literal notranslate"><span class="pre">*.sage-history</span></code> (default: false)</li>
 </ul>
 <p>Copy a file or directory from a public project to a target project.</p>
-<p><strong>Note:</strong> the <code class="docutils literal notranslate"><span class="pre">timeout</span></code> option is passed to a call to the <code class="docutils literal notranslate"><span class="pre">rsync</span></code> command.
-If no data is transferred for the specified number of seconds, then
-the copy terminates. The default is 0, which means no timeout.</p>
+<p><strong>Note:</strong> the <code class="docutils literal notranslate"><span class="pre">timeout</span></code> option is passed to a call to the <code class="docutils literal notranslate"><span class="pre">rsync</span></code>
+command. If no data is transferred for the specified number of seconds,
+then the copy terminates. The default is 0, which means no timeout.</p>
 <p><strong>Note:</strong> You need to have write access to the target project.</p>
 <p>Example:</p>
 <p>Copy public file <code class="docutils literal notranslate"><span class="pre">PUBLIC/doc.txt</span></code> from source project to private file
 <code class="docutils literal notranslate"><span class="pre">A/sample.txt</span></code> in target project.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d src_project_id=e49e86aa-192f-410b-8269-4b89fd934fba \</span>
-<span class="err">  -d src_path=PUBLIC/doc.txt \</span>
-<span class="err">  -d target_project_id=2aae4347-214d-4fd1-809c-b327150442d8 \</span>
-<span class="err">  -d target_path=A/sample.txt \</span>
-<span class="err">  https://cocalc.com/api/v1/copy_public_path_between_projects</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;success&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;45d851ac-5ea0-4aea-9997-99a06c054a60&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d src_project_id=e49e86aa-192f-410b-8269-4b89fd934fba \
+  -d src_path=PUBLIC/doc.txt \
+  -d target_project_id=2aae4347-214d-4fd1-809c-b327150442d8 \
+  -d target_path=A/sample.txt \
+  https://cocalc.com/api/v1/copy_public_path_between_projects
+==&gt; {&quot;event&quot;:&quot;success&quot;,
+     &quot;id&quot;:&quot;45d851ac-5ea0-4aea-9997-99a06c054a60&quot;}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

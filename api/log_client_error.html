@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/log_client_error.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/log_client_error.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -258,28 +258,26 @@
 <li><code class="docutils literal notranslate"><span class="pre">error</span></code>: error string (required)</li>
 </ul>
 <p>Log an error so that CoCalc support can look at it.</p>
-<p>In the following example, an explicit message id
-is provided for future reference.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d id=34a424dc-1731-4b31-ba3d-fc8a484980d9 \</span>
-<span class="err">  -d &quot;error=cannot load library xyz&quot; \</span>
-<span class="err">  https://cocalc.com/api/v1/log_client_error</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;success&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;34a424dc-1731-4b31-ba3d-fc8a484980d9&quot;}</span>
+<p>In the following example, an explicit message id is provided for future
+reference.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d id=34a424dc-1731-4b31-ba3d-fc8a484980d9 \
+  -d &quot;error=cannot load library xyz&quot; \
+  https://cocalc.com/api/v1/log_client_error
+==&gt; {&quot;event&quot;:&quot;success&quot;,
+     &quot;id&quot;:&quot;34a424dc-1731-4b31-ba3d-fc8a484980d9&quot;}
 </pre></div>
 </div>
 <p>Note: the above API call will create the following record in the
-<code class="docutils literal notranslate"><span class="pre">client_error_log</span></code> database table. This table is not readable
-via the API and is intended for use by CoCalc support only:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">[{&quot;id&quot;:&quot;34a424dc-1731-4b31-ba3d-fc8a484980d9&quot;,</span>
-<span class="err">  &quot;event&quot;:&quot;error&quot;,</span>
-<span class="err">  &quot;error&quot;:&quot;cannot load library xyz&quot;,</span>
-<span class="err">  &quot;account_id&quot;:&quot;1c87a139-9e13-4cdd-b02c-e7d41dcfe921&quot;,</span>
-<span class="err">  &quot;time&quot;:&quot;2017-07-06T02:32:41.176Z&quot;}]</span>
+<code class="docutils literal notranslate"><span class="pre">client_error_log</span></code> database table. This table is not readable via the
+API and is intended for use by CoCalc support only:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[{&quot;id&quot;:&quot;34a424dc-1731-4b31-ba3d-fc8a484980d9&quot;,
+  &quot;event&quot;:&quot;error&quot;,
+  &quot;error&quot;:&quot;cannot load library xyz&quot;,
+  &quot;account_id&quot;:&quot;1c87a139-9e13-4cdd-b02c-e7d41dcfe921&quot;,
+  &quot;time&quot;:&quot;2017-07-06T02:32:41.176Z&quot;}]
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

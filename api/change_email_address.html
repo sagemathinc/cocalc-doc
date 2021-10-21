@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/change_email_address.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/change_email_address.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -255,38 +255,38 @@
 <h1>change_email_address<a class="headerlink" href="#change-email-address" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
-<li><code class="docutils literal notranslate"><span class="pre">account_id</span></code>: account_id for account whose email address is changed (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">old_email_address</span></code>: ignored – deprecated (default: “”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">new_email_address</span></code>:  (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">password</span></code>:  (default: “”)</li>
+<li><code class="docutils literal notranslate"><span class="pre">account_id</span></code>: account_id for account whose email address is changed
+(required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">old_email_address</span></code>: ignored – deprecated (default: ““)</li>
+<li><code class="docutils literal notranslate"><span class="pre">new_email_address</span></code>: (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">password</span></code>: (default: ““)</li>
 </ul>
 <p>Given the <code class="docutils literal notranslate"><span class="pre">account_id</span></code> for an account, set a new email address.</p>
 <p>Examples:</p>
 <p>Successful change of email address.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \</span>
-<span class="err">  -d password=secret_password \</span>
-<span class="err">  -d new_email_address=new@email.com \</span>
-<span class="err">  https://cocalc.com/api/v1/change_email_address</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;changed_email_address&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;8f68f6c4-9851-4b88-bd65-37cb983298e3&quot;,</span>
-<span class="err">     &quot;error&quot;:false}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \
+  -d password=secret_password \
+  -d new_email_address=new@email.com \
+  https://cocalc.com/api/v1/change_email_address
+==&gt; {&quot;event&quot;:&quot;changed_email_address&quot;,
+     &quot;id&quot;:&quot;8f68f6c4-9851-4b88-bd65-37cb983298e3&quot;,
+     &quot;error&quot;:false}
 </pre></div>
 </div>
 <p>Fails if new email address is already in use.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \</span>
-<span class="err">  -d password=secret_password \</span>
-<span class="err">  -d new_email_address=used@email.com \</span>
-<span class="err">  https://cocalc.com/api/v1/change_email_address</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;changed_email_address&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;4501f022-a57c-4aaf-9cd8-af0eb05ebfce&quot;,</span>
-<span class="err">     &quot;error&quot;:&quot;email_already_taken&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \
+  -d password=secret_password \
+  -d new_email_address=used@email.com \
+  https://cocalc.com/api/v1/change_email_address
+==&gt; {&quot;event&quot;:&quot;changed_email_address&quot;,
+     &quot;id&quot;:&quot;4501f022-a57c-4aaf-9cd8-af0eb05ebfce&quot;,
+     &quot;error&quot;:&quot;email_already_taken&quot;}
 </pre></div>
 </div>
-<p><strong>Note:</strong> <code class="docutils literal notranslate"><span class="pre">account_id</span></code> and <code class="docutils literal notranslate"><span class="pre">password</span></code> must match the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current login.</p>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
+<p><strong>Note:</strong> <code class="docutils literal notranslate"><span class="pre">account_id</span></code> and <code class="docutils literal notranslate"><span class="pre">password</span></code> must match the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the
+current login.</p>
 </div>
 
 

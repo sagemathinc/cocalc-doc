@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/delete_account.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/delete_account.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -259,20 +259,17 @@
 </ul>
 <p>Example:</p>
 <p>Delete an existing account:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \</span>
-<span class="err">  https://cocalc.com/api/v1/delete_account</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;account_deleted&quot;,&quot;id&quot;:&quot;9e8b68ac-08e8-432a-a853-398042fae8c9&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d account_id=99ebde5c-58f8-4e29-b6e4-b55b8fd71a1b \
+  https://cocalc.com/api/v1/delete_account
+==&gt; {&quot;event&quot;:&quot;account_deleted&quot;,&quot;id&quot;:&quot;9e8b68ac-08e8-432a-a853-398042fae8c9&quot;}
 </pre></div>
 </div>
 <p>Event <code class="docutils literal notranslate"><span class="pre">account_deleted</span></code> is also returned if the account was already
 deleted before the API call, or if the account never existed.</p>
 <p>After successful <code class="docutils literal notranslate"><span class="pre">delete_account</span></code>, the owner of the deleted account
-will not be able to login, but will still be listed as collaborator
-or owner on projects which the user collaborated on or owned
-respectively.</p>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
+will not be able to login, but will still be listed as collaborator or
+owner on projects which the user collaborated on or owned respectively.</p>
 </div>
 
 

@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/create_project.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/create_project.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -255,24 +255,24 @@
 <h1>create_project<a class="headerlink" href="#create-project" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
-<li><code class="docutils literal notranslate"><span class="pre">title</span></code>: project title (default: “”)</li>
-<li><code class="docutils literal notranslate"><span class="pre">description</span></code>: project description (default: “”)</li>
+<li><code class="docutils literal notranslate"><span class="pre">title</span></code>: project title (default: ““)</li>
+<li><code class="docutils literal notranslate"><span class="pre">description</span></code>: project description (default: ““)</li>
 <li><code class="docutils literal notranslate"><span class="pre">image</span></code>: (optional) image ID</li>
-<li><code class="docutils literal notranslate"><span class="pre">license</span></code>: (optional) license id (or multiple ids separated by commas) – if given, project will be created with this license</li>
-<li><code class="docutils literal notranslate"><span class="pre">start</span></code>: start running the moment the project is created – uses more resources, but possibly better user experience (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">license</span></code>: (optional) license id (or multiple ids separated by
+commas) – if given, project will be created with this license</li>
+<li><code class="docutils literal notranslate"><span class="pre">start</span></code>: start running the moment the project is created – uses
+more resources, but possibly better user experience (default: false)</li>
 </ul>
 <p>Example:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d title=&#39;MY NEW PROJECT&#39; \</span>
-<span class="err">  -d description=&#39;sample project&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/create_project</span>
-<span class="err">== &gt; {&quot;event&quot;:&quot;project_created&quot;,</span>
-<span class="err">      &quot;id&quot;:&quot;0b4df293-d518-45d0-8a3c-4281e501b85e&quot;,</span>
-<span class="err">      &quot;project_id&quot;:&quot;07897899-6bbb-4fbc-80a7-3586c43348d1&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d title=&#39;MY NEW PROJECT&#39; \
+  -d description=&#39;sample project&#39; \
+  https://cocalc.com/api/v1/create_project
+== &gt; {&quot;event&quot;:&quot;project_created&quot;,
+      &quot;id&quot;:&quot;0b4df293-d518-45d0-8a3c-4281e501b85e&quot;,
+      &quot;project_id&quot;:&quot;07897899-6bbb-4fbc-80a7-3586c43348d1&quot;}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

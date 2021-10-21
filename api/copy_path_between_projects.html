@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/copy_path_between_projects.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/copy_path_between_projects.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -256,56 +256,70 @@
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
 <li><code class="docutils literal notranslate"><span class="pre">src_project_id</span></code>: id of source project (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">src_path</span></code>: relative path of directory or file in the source project (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">src_path</span></code>: relative path of directory or file in the source
+project (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">target_project_id</span></code>: id of target project (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">target_path</span></code>: defaults to src_path</li>
-<li><code class="docutils literal notranslate"><span class="pre">overwrite_newer</span></code>: overwrite newer versions of file at destination (destructive) (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">delete_missing</span></code>: delete files in dest that are missing from source (destructive) (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">backup</span></code>: make ~ backup files instead of overwriting changed files (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">timeout</span></code>: seconds to wait before reporting “error” (though copy could still succeed)</li>
-<li><code class="docutils literal notranslate"><span class="pre">exclude_history</span></code>: if true, exclude all files of the form <code class="docutils literal notranslate"><span class="pre">*.sage-history</span></code> (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">wait_until_done</span></code>: if false, the operation returns immediately with the copy_path_id for querying copy_path_status (default: true)</li>
-<li><code class="docutils literal notranslate"><span class="pre">scheduled</span></code>: if set, the copy operation runs earliest after the given time and wait_until_done is false. Must be a <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">Date(...)</span></code> parseable string.</li>
+<li><code class="docutils literal notranslate"><span class="pre">overwrite_newer</span></code>: overwrite newer versions of file at destination
+(destructive) (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">delete_missing</span></code>: delete files in dest that are missing from source
+(destructive) (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">backup</span></code>: make ~ backup files instead of overwriting changed files
+(default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">timeout</span></code>: seconds to wait before reporting “error” (though copy
+could still succeed)</li>
+<li><code class="docutils literal notranslate"><span class="pre">exclude_history</span></code>: if true, exclude all files of the form
+<code class="docutils literal notranslate"><span class="pre">*.sage-history</span></code> (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">wait_until_done</span></code>: if false, the operation returns immediately with
+the copy_path_id for querying copy_path_status (default: true)</li>
+<li><code class="docutils literal notranslate"><span class="pre">scheduled</span></code>: if set, the copy operation runs earliest after the
+given time and wait_until_done is false. Must be a <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">Date(...)</span></code>
+parseable string.</li>
 </ul>
 <p>Copy a file or directory from one project to another.</p>
-<p><strong>Note:</strong> the <code class="docutils literal notranslate"><span class="pre">timeout</span></code> option is passed to a call to the <code class="docutils literal notranslate"><span class="pre">rsync</span></code> command.
-If no data is transferred for the specified number of seconds, then
-the copy terminates. The default is 0, which means no timeout.</p>
+<p><strong>Note:</strong> the <code class="docutils literal notranslate"><span class="pre">timeout</span></code> option is passed to a call to the <code class="docutils literal notranslate"><span class="pre">rsync</span></code>
+command. If no data is transferred for the specified number of seconds,
+then the copy terminates. The default is 0, which means no timeout.</p>
 <p>Relative paths (paths not beginning with ‘/’) are relative to the user’s
 home directory in source and target projects.</p>
-<p><strong>Note:</strong> You need to have read/write access to the associated src/target project.</p>
+<p><strong>Note:</strong> You need to have read/write access to the associated
+src/target project.</p>
 <p>Further options:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">wait_until_done</span></code>: set this to false to immediately retrieve the <code class="docutils literal notranslate"><span class="pre">copy_path_id</span></code>.
-This is the <strong>recommended way</strong> to use this endpoint,
-because a blocking request might time out and you’ll never learn about outcome of the copy operation.
-Learn about the status (success or failure, including an error message) via the <a class="reference internal" href="copy_path_status.html"><span class="doc">copy_path_status</span></a> endpoint.</li>
-<li><code class="docutils literal notranslate"><span class="pre">scheduled</span></code>: set this to a date in the future or postpone the copy operation.
-Suitable timestamps can be created as follows:<ul>
-<li>Bash: 1 minute in the future <code class="docutils literal notranslate"><span class="pre">date</span> <span class="pre">-d</span> <span class="pre">'+1</span> <span class="pre">minute'</span> <span class="pre">--utc</span> <span class="pre">+'%Y-%m-%dT%H:%M:%S'</span></code></li>
-<li>Python using <a class="reference external" href="https://arrow.readthedocs.io/en/latest/">arrow</a> library:<ul>
-<li>1 minute in the future: <code class="docutils literal notranslate"><span class="pre">arrow.now('UTC').shift(minutes=+1).for_json()</span></code></li>
-<li>At a specific time: <code class="docutils literal notranslate"><span class="pre">arrow.get(&quot;2019-08-29</span> <span class="pre">22:00&quot;).for_json()</span></code>
-Later, learn about its outcome via <a class="reference internal" href="copy_path_status.html"><span class="doc">copy_path_status</span></a> as well.</li>
+<li><code class="docutils literal notranslate"><span class="pre">wait_until_done</span></code>: set this to false to immediately retrieve the
+<code class="docutils literal notranslate"><span class="pre">copy_path_id</span></code>. This is the <strong>recommended way</strong> to use this
+endpoint, because a blocking request might time out and you’ll never
+learn about outcome of the copy operation. Learn about the status
+(success or failure, including an error message) via the
+:doc:<code class="docutils literal notranslate"><span class="pre">copy_path_status</span></code> endpoint.</li>
+<li><code class="docutils literal notranslate"><span class="pre">scheduled</span></code>: set this to a date in the future or postpone the copy
+operation. Suitable timestamps can be created as follows:<ul>
+<li>Bash: 1 minute in the future
+<code class="docutils literal notranslate"><span class="pre">date</span> <span class="pre">-d</span> <span class="pre">'+1</span> <span class="pre">minute'</span> <span class="pre">--utc</span> <span class="pre">+'%Y-%m-%dT%H:%M:%S'</span></code></li>
+<li>Python using <a class="reference external" href="https://arrow.readthedocs.io/en/latest/">arrow</a>
+library:<ul>
+<li>1 minute in the future:
+<code class="docutils literal notranslate"><span class="pre">arrow.now('UTC').shift(minutes=+1).for_json()</span></code></li>
+<li>At a specific time:
+<code class="docutils literal notranslate"><span class="pre">arrow.get(&quot;2019-08-29</span> <span class="pre">22:00&quot;).for_json()</span></code> Later, learn about
+its outcome via :doc:<code class="docutils literal notranslate"><span class="pre">copy_path_status</span></code> as well.</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <p>Example:</p>
-<p>Copy file <code class="docutils literal notranslate"><span class="pre">A/doc.txt</span></code> from source project to target project.
-Folder <code class="docutils literal notranslate"><span class="pre">A</span></code> will be created in target project if it does not exist already.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d src_project_id=e49e86aa-192f-410b-8269-4b89fd934fba \</span>
-<span class="err">  -d src_path=A/doc.txt \</span>
-<span class="err">  -d target_project_id=2aae4347-214d-4fd1-809c-b327150442d8 \</span>
-<span class="err">  https://cocalc.com/api/v1/copy_path_between_projects</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;success&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;45d851ac-5ea0-4aea-9997-99a06c054a60&quot;}</span>
+<p>Copy file <code class="docutils literal notranslate"><span class="pre">A/doc.txt</span></code> from source project to target project. Folder
+<code class="docutils literal notranslate"><span class="pre">A</span></code> will be created in target project if it does not exist already.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d src_project_id=e49e86aa-192f-410b-8269-4b89fd934fba \
+  -d src_path=A/doc.txt \
+  -d target_project_id=2aae4347-214d-4fd1-809c-b327150442d8 \
+  https://cocalc.com/api/v1/copy_path_between_projects
+==&gt; {&quot;event&quot;:&quot;success&quot;,
+     &quot;id&quot;:&quot;45d851ac-5ea0-4aea-9997-99a06c054a60&quot;}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

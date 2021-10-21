@@ -241,7 +241,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/query.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/query.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -261,203 +261,199 @@
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
 <li><code class="docutils literal notranslate"><span class="pre">query</span></code>: The actual query (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">changes</span></code>:</li>
-<li><code class="docutils literal notranslate"><span class="pre">multi_response</span></code>:  (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">multi_response</span></code>: (default: false)</li>
 <li><code class="docutils literal notranslate"><span class="pre">options</span></code>:</li>
 </ul>
-<p>This queries directly the database (sort of Facebook’s GraphQL)
-Options for the ‘query’ API message must be sent as JSON object.
-A query is either <em>get</em> (read from database), or <em>set</em> (write to database).
-A query is <em>get</em> if any query keys are null, otherwise the query is <em>set</em>.</p>
+<p>This queries directly the database (sort of Facebook’s GraphQL) Options
+for the ‘query’ API message must be sent as JSON object. A query is
+either <em>get</em> (read from database), or <em>set</em> (write to database). A query
+is <em>get</em> if any query keys are null, otherwise the query is <em>set</em>.</p>
 <p>Note: queries with <code class="docutils literal notranslate"><span class="pre">multi_response</span></code> set to <code class="docutils literal notranslate"><span class="pre">true</span></code> are not supported.</p>
 <div class="section" id="examples-of-get-query">
 <h2>Examples of <em>get</em> query:<a class="headerlink" href="#examples-of-get-query" title="Permalink to this headline">¶</a></h2>
 <p>Get title and description for a project, given the project id.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;title&quot;:null,&quot;description&quot;:null}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,</span>
-<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
-<span class="err">                          &quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,</span>
-<span class="err">                          &quot;description&quot;:&quot;desc 2&quot;}},</span>
-<span class="err">     &quot;multi_response&quot;:false}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;title&quot;:null,&quot;description&quot;:null}}}&#39; \
+  https://cocalc.com/api/v1/query
+==&gt; {&quot;event&quot;:&quot;query&quot;,
+     &quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,
+     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,
+                          &quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,
+                          &quot;description&quot;:&quot;desc 2&quot;}},
+     &quot;multi_response&quot;:false}
 </pre></div>
 </div>
 <p>Get info on all projects for the account whose security key is provided.
 The information returned may be any of the api-accessible fields in the
 <code class="docutils literal notranslate"><span class="pre">projects</span></code> table. These fields are listed in CoCalc source directory
-src/smc-util/db-schema, under <code class="docutils literal notranslate"><span class="pre">schema.projects.user_query</span></code>.
-In this example, project name and description are returned.</p>
+src/smc-util/db-schema, under <code class="docutils literal notranslate"><span class="pre">schema.projects.user_query</span></code>. In this
+example, project name and description are returned.</p>
 <p>Note: to get info only on projects active in the past 3 weeks, use
 <code class="docutils literal notranslate"><span class="pre">projects</span></code> instead of <code class="docutils literal notranslate"><span class="pre">projects_all</span></code> in the query.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects_all&quot;:[{&quot;project_id&quot;:null,&quot;title&quot;:null,&quot;description&quot;:null}]}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,</span>
-<span class="err">     &quot;multi_response&quot;: False,</span>
-<span class="err">     &quot;query&quot;: {&quot;projects_all&quot;: [{&quot;description&quot;: &quot;Synthetic Monitoring&quot;,</span>
-<span class="err">                       &quot;project_id&quot;: &quot;1fa1626e-ce25-4871-9b0e-19191cd03325&quot;,</span>
-<span class="err">                       &quot;title&quot;: &quot;SYNTHMON&quot;},</span>
-<span class="err">                      {&quot;description&quot;: &quot;No Description&quot;,</span>
-<span class="err">                       &quot;project_id&quot;: &quot;639a6b2e-7499-41b5-ac1f-1701809699a7&quot;,</span>
-<span class="err">                       &quot;title&quot;: &quot;TESTPROJECT 99&quot;}]}}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;projects_all&quot;:[{&quot;project_id&quot;:null,&quot;title&quot;:null,&quot;description&quot;:null}]}}&#39; \
+  https://cocalc.com/api/v1/query
+==&gt; {&quot;event&quot;:&quot;query&quot;,
+     &quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,
+     &quot;multi_response&quot;: False,
+     &quot;query&quot;: {&quot;projects_all&quot;: [{&quot;description&quot;: &quot;Synthetic Monitoring&quot;,
+                       &quot;project_id&quot;: &quot;1fa1626e-ce25-4871-9b0e-19191cd03325&quot;,
+                       &quot;title&quot;: &quot;SYNTHMON&quot;},
+                      {&quot;description&quot;: &quot;No Description&quot;,
+                       &quot;project_id&quot;: &quot;639a6b2e-7499-41b5-ac1f-1701809699a7&quot;,
+                       &quot;title&quot;: &quot;TESTPROJECT 99&quot;}]}}
 </pre></div>
 </div>
 <p>Get project id, given title and description.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:null,&quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,&quot;description&quot;:&quot;desc 2&quot;}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
-<span class="err">                          &quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,</span>
-<span class="err">                          &quot;description&quot;:&quot;desc 2&quot;}},</span>
-<span class="err">     &quot;multi_response&quot;:false,</span>
-<span class="err">     &quot;id&quot;:&quot;2be22e08-f00c-4128-b112-fa8581c2d584&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:null,&quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,&quot;description&quot;:&quot;desc 2&quot;}}}&#39; \
+  https://cocalc.com/api/v1/query
+==&gt; {&quot;event&quot;:&quot;query&quot;,
+     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,
+                          &quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,
+                          &quot;description&quot;:&quot;desc 2&quot;}},
+     &quot;multi_response&quot;:false,
+     &quot;id&quot;:&quot;2be22e08-f00c-4128-b112-fa8581c2d584&quot;}
 </pre></div>
 </div>
 <p>Get users, given the project id.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
-<span class="err">                          &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{&quot;group&quot;:&quot;owner&quot;},</span>
-<span class="err">                                   &quot;111634c0-7048-41e7-b2d0-f87129fd409e&quot;:{&quot;group&quot;:&quot;collaborator&quot;}}}},</span>
-<span class="err">     &quot;multi_response&quot;:false,</span>
-<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \
+  https://cocalc.com/api/v1/query
+==&gt; {&quot;event&quot;:&quot;query&quot;,
+     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,
+                          &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{&quot;group&quot;:&quot;owner&quot;},
+                                   &quot;111634c0-7048-41e7-b2d0-f87129fd409e&quot;:{&quot;group&quot;:&quot;collaborator&quot;}}}},
+     &quot;multi_response&quot;:false,
+     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}
 </pre></div>
 </div>
-<p>Show project upgrades. Like the preceding example, this is a query to get users.
-In this example, there are no collaborators, but upgrades have been applied to the
-selected project. Upgrades do not show if none are applied.</p>
-<p>The project shows the following upgrades:</p>
-<ul class="simple">
-<li>cpu cores:       1</li>
-<li>memory:          3000 MB</li>
-<li>idle timeout:    24 hours (86400 seconds)</li>
-<li>internet access: true</li>
-<li>cpu shares:      3 (stored in database as 768 = 3 * 256)</li>
-<li>disk space:      27000 MB</li>
-<li>member hosting:  true</li>
-</ul>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
-<span class="err">                          &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{</span>
-<span class="err">                                       &quot;group&quot;:&quot;owner&quot;,</span>
-<span class="err">                                       &quot;upgrades&quot;:{&quot;cores&quot;:1,</span>
-<span class="err">                                                   &quot;memory&quot;:3000,</span>
-<span class="err">                                                   &quot;mintime&quot;:86400,</span>
-<span class="err">                                                   &quot;network&quot;:1,</span>
-<span class="err">                                                   &quot;cpu_shares&quot;:768,</span>
-<span class="err">                                                   &quot;disk_quota&quot;:27000,</span>
-<span class="err">                                                   &quot;member_host&quot;:1}}}}},</span>
-<span class="err">     &quot;multi_response&quot;:false,</span>
-<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}</span>
+<p>Show project upgrades. Like the preceding example, this is a query to
+get users. In this example, there are no collaborators, but upgrades
+have been applied to the selected project. Upgrades do not show if none
+are applied.</p>
+<p>The project shows the following upgrades: - cpu cores: 1 - memory: 3000
+MB - idle timeout: 24 hours (86400 seconds) - internet access: true -
+cpu shares: 3 (stored in database as 768 = 3 * 256) - disk space: 27000
+MB - member hosting: true</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \
+  https://cocalc.com/api/v1/query
+==&gt; {&quot;event&quot;:&quot;query&quot;,
+     &quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,
+                          &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{
+                                       &quot;group&quot;:&quot;owner&quot;,
+                                       &quot;upgrades&quot;:{&quot;cores&quot;:1,
+                                                   &quot;memory&quot;:3000,
+                                                   &quot;mintime&quot;:86400,
+                                                   &quot;network&quot;:1,
+                                                   &quot;cpu_shares&quot;:768,
+                                                   &quot;disk_quota&quot;:27000,
+                                                   &quot;member_host&quot;:1}}}}},
+     &quot;multi_response&quot;:false,
+     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}
 </pre></div>
 </div>
 <p>Get editor settings for the present user.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:null}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">     &quot;multi_response&quot;:false,</span>
-<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;,</span>
-<span class="err">     &quot;query&quot;: {&quot;accounts&quot;: {&quot;account_id&quot;: &quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,</span>
-<span class="err">                            &quot;editor_settings&quot;: {&quot;auto_close_brackets&quot;: True,</span>
-<span class="err">                                                &quot;auto_close_xml_tags&quot;: True,</span>
-<span class="err">                                                &quot;bindings&quot;: &quot;standard&quot;,</span>
-<span class="err">                                                &quot;code_folding&quot;: True,</span>
-<span class="err">                                                &quot;electric_chars&quot;: True,</span>
-<span class="err">                                                &quot;extra_button_bar&quot;: True,</span>
-<span class="err">                                                &quot;first_line_number&quot;: 1,</span>
-<span class="err">                                                &quot;indent_unit&quot;: 4,</span>
-<span class="err">                                                &quot;jupyter_classic&quot;: False,</span>
-<span class="err">                                                &quot;line_numbers&quot;: True,</span>
-<span class="err">                                                &quot;line_wrapping&quot;: True,</span>
-<span class="err">                                                &quot;match_brackets&quot;: True,</span>
-<span class="err">                                                &quot;match_xml_tags&quot;: True,</span>
-<span class="err">                                                &quot;multiple_cursors&quot;: True,</span>
-<span class="err">                                                &quot;show_trailing_whitespace&quot;: True,</span>
-<span class="err">                                                &quot;smart_indent&quot;: True,</span>
-<span class="err">                                                &quot;spaces_instead_of_tabs&quot;: True,</span>
-<span class="err">                                                &quot;strip_trailing_whitespace&quot;: False,</span>
-<span class="err">                                                &quot;tab_size&quot;: 4,</span>
-<span class="err">                                                &quot;theme&quot;: &quot;default&quot;,</span>
-<span class="err">                                                &quot;track_revisions&quot;: True,</span>
-<span class="err">                                                &quot;undo_depth&quot;: 300}}}}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:null}}}&#39; \
+  https://cocalc.com/api/v1/query
+==&gt; {&quot;event&quot;:&quot;query&quot;,
+     &quot;multi_response&quot;:false,
+     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;,
+     &quot;query&quot;: {&quot;accounts&quot;: {&quot;account_id&quot;: &quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,
+                            &quot;editor_settings&quot;: {&quot;auto_close_brackets&quot;: True,
+                                                &quot;auto_close_xml_tags&quot;: True,
+                                                &quot;bindings&quot;: &quot;standard&quot;,
+                                                &quot;code_folding&quot;: True,
+                                                &quot;electric_chars&quot;: True,
+                                                &quot;extra_button_bar&quot;: True,
+                                                &quot;first_line_number&quot;: 1,
+                                                &quot;indent_unit&quot;: 4,
+                                                &quot;jupyter_classic&quot;: False,
+                                                &quot;line_numbers&quot;: True,
+                                                &quot;line_wrapping&quot;: True,
+                                                &quot;match_brackets&quot;: True,
+                                                &quot;match_xml_tags&quot;: True,
+                                                &quot;multiple_cursors&quot;: True,
+                                                &quot;show_trailing_whitespace&quot;: True,
+                                                &quot;smart_indent&quot;: True,
+                                                &quot;spaces_instead_of_tabs&quot;: True,
+                                                &quot;strip_trailing_whitespace&quot;: False,
+                                                &quot;tab_size&quot;: 4,
+                                                &quot;theme&quot;: &quot;default&quot;,
+                                                &quot;track_revisions&quot;: True,
+                                                &quot;undo_depth&quot;: 300}}}}
 </pre></div>
 </div>
 </div>
 <div class="section" id="examples-of-set-query">
 <h2>Examples of <em>set</em> query.<a class="headerlink" href="#examples-of-set-query" title="Permalink to this headline">¶</a></h2>
 <p>Set title and description for a project, given the project id.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \</span>
-<span class="err">                            &quot;title&quot;:&quot;REVISED TITLE&quot;, \</span>
-<span class="err">                            &quot;description&quot;:&quot;REVISED DESC&quot;}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">  ==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">       &quot;query&quot;:{},</span>
-<span class="err">       &quot;multi_response&quot;:false,</span>
-<span class="err">       &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
+                            &quot;title&quot;:&quot;REVISED TITLE&quot;, \
+                            &quot;description&quot;:&quot;REVISED DESC&quot;}}}&#39; \
+  https://cocalc.com/api/v1/query
+  ==&gt; {&quot;event&quot;:&quot;query&quot;,
+       &quot;query&quot;:{},
+       &quot;multi_response&quot;:false,
+       &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}
 </pre></div>
 </div>
 <p>Make a path public (publish a file).</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;public_paths&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \</span>
-<span class="err">                                &quot;path&quot;:&quot;myfile.txt&quot;, \</span>
-<span class="err">                                &quot;description&quot;:&quot;a shared text file&quot;}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">  ==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">       &quot;query&quot;:{},</span>
-<span class="err">       &quot;multi_response&quot;:false,</span>
-<span class="err">       &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;public_paths&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
+                                &quot;path&quot;:&quot;myfile.txt&quot;, \
+                                &quot;description&quot;:&quot;a shared text file&quot;}}}&#39; \
+  https://cocalc.com/api/v1/query
+  ==&gt; {&quot;event&quot;:&quot;query&quot;,
+       &quot;query&quot;:{},
+       &quot;multi_response&quot;:false,
+       &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}
 </pre></div>
 </div>
-<p>Add an upgrade to a project. In the “get” example above showing project upgrades,
-change cpu upgrades from 3 to 4. The <code class="docutils literal notranslate"><span class="pre">users</span></code> object is returned as
-read, with <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> increased to 1024 = 4 * 256.
-It is not necessary to specify the entire <code class="docutils literal notranslate"><span class="pre">upgrades</span></code> object
-if you are only setting the <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> attribute because changes are merged in.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \</span>
-<span class="err">                            &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{ \</span>
-<span class="err">                                         &quot;upgrades&quot;: {&quot;cpu_shares&quot;:1024}}}}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">  ==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">       &quot;query&quot;:{},</span>
-<span class="err">       &quot;multi_response&quot;:false,</span>
-<span class="err">       &quot;id&quot;:&quot;ec822d6f-f9fe-443d-9845-9cd5f68bac20&quot;}</span>
+<p>Add an upgrade to a project. In the “get” example above showing project
+upgrades, change cpu upgrades from 3 to 4. The <code class="docutils literal notranslate"><span class="pre">users</span></code> object is
+returned as read, with <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> increased to 1024 = 4 * 256. It
+is not necessary to specify the entire <code class="docutils literal notranslate"><span class="pre">upgrades</span></code> object if you are
+only setting the <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> attribute because changes are merged in.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
+                            &quot;users&quot;:{&quot;6c28c5f4-3235-46be-b025-166b4dcaac7e&quot;:{ \
+                                         &quot;upgrades&quot;: {&quot;cpu_shares&quot;:1024}}}}}}&#39; \
+  https://cocalc.com/api/v1/query
+  ==&gt; {&quot;event&quot;:&quot;query&quot;,
+       &quot;query&quot;:{},
+       &quot;multi_response&quot;:false,
+       &quot;id&quot;:&quot;ec822d6f-f9fe-443d-9845-9cd5f68bac20&quot;}
 </pre></div>
 </div>
-<p>Set present user to open Jupyter notebooks in
-“CoCalc Jupyter Notebook” as opposed to “Classical Notebook”.
-This change not usually needed, because accounts
-default to “CoCalc Jupyter Notebook”.</p>
-<p>It is not necessary to specify the entire <code class="docutils literal notranslate"><span class="pre">editor_settings</span></code> object
-if you are only setting the <code class="docutils literal notranslate"><span class="pre">jupyter_classic</span></code> attribute because changes are merged in.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:{&quot;jupyter_classic&quot;:false}}}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/query</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;query&quot;,</span>
-<span class="err">     &quot;multi_response&quot;:false,</span>
-<span class="err">     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;,</span>
-<span class="err">     &quot;query&quot;: {}}</span>
+<p>Set present user to open Jupyter notebooks in “CoCalc Jupyter Notebook”
+as opposed to “Classical Notebook”. This change not usually needed,
+because accounts default to “CoCalc Jupyter Notebook”.</p>
+<p>It is not necessary to specify the entire <code class="docutils literal notranslate"><span class="pre">editor_settings</span></code> object if
+you are only setting the <code class="docutils literal notranslate"><span class="pre">jupyter_classic</span></code> attribute because changes
+are merged in.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:{&quot;jupyter_classic&quot;:false}}}}&#39; \
+  https://cocalc.com/api/v1/query
+==&gt; {&quot;event&quot;:&quot;query&quot;,
+     &quot;multi_response&quot;:false,
+     &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;,
+     &quot;query&quot;: {}}
 </pre></div>
 </div>
-<p><strong>NOTE:</strong> Information on which fields are gettable and settable in the database tables
-via API message is in the directory ‘db-schema’, in CoCalc sources on GitHub at
+<p><strong>NOTE:</strong> Information on which fields are gettable and settable in the
+database tables via API message is in the directory ‘db-schema’, in
+CoCalc sources on GitHub at
 <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema">https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema</a></p>
 <p>Within directory ‘db-schema’:</p>
 <ul class="simple">
@@ -470,8 +466,6 @@ via API message is in the directory ‘db-schema’, in CoCalc sources on GitHub
 <li>for <em>user account</em> fields you can set, see the definition of
 <code class="docutils literal notranslate"><span class="pre">schema.accounts.user_query.set.fields</span></code></li>
 </ul>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 </div>
 

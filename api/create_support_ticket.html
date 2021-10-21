@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/create_support_ticket.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/create_support_ticket.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -256,62 +256,68 @@
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
 <li><code class="docutils literal notranslate"><span class="pre">username</span></code>: name on the ticket</li>
-<li><code class="docutils literal notranslate"><span class="pre">email_address</span></code>: if there is no email_address in the account, there cannot be a ticket! (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">email_address</span></code>: if there is no email_address in the account, there
+cannot be a ticket! (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">subject</span></code>: like an email subject (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">body</span></code>: html or md formatted text (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">tags</span></code>: a list of tags, like <code class="docutils literal notranslate"><span class="pre">['member']</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">account_id</span></code>: account_id for the ticket</li>
-<li><code class="docutils literal notranslate"><span class="pre">location</span></code>: from the URL, to know what the requester is talking about</li>
+<li><code class="docutils literal notranslate"><span class="pre">location</span></code>: from the URL, to know what the requester is talking
+about</li>
 <li><code class="docutils literal notranslate"><span class="pre">info</span></code>: additional data dict, like browser/OS</li>
 </ul>
 <p>Open a CoCalc support ticket.</p>
 <p>Notes:</p>
 <ul>
-<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">account_id</span></code> is not provided, the ticket will be created, but ticket
-info will not be returned by <code class="docutils literal notranslate"><span class="pre">get_support_tickets</span></code>.</p>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">account_id</span></code> is not provided, the ticket will be created, but
+ticket info will not be returned by <code class="docutils literal notranslate"><span class="pre">get_support_tickets</span></code>.</p>
 </li>
-<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">username</span></code> is not provided, <code class="docutils literal notranslate"><span class="pre">email_address</span></code> is used for the name on the ticket.</p>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">username</span></code> is not provided, <code class="docutils literal notranslate"><span class="pre">email_address</span></code> is used for the
+name on the ticket.</p>
 </li>
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">location</span></code> is used to provide a path to a specific project or file, for example</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">/project/a17037cb-a083-4519-b3c1-38512af603a6/files/notebook.ipynb`</span>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">location</span></code> is used to provide a path to a specific project or file,
+for example</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>/project/a17037cb-a083-4519-b3c1-38512af603a6/files/notebook.ipynb`
 </pre></div>
 </div>
 </li>
 </ul>
-<p>If present, the <code class="docutils literal notranslate"><span class="pre">location</span></code> string will be expanded to a complete URL and
-appended to the body of the ticket.</p>
+<p>If present, the <code class="docutils literal notranslate"><span class="pre">location</span></code> string will be expanded to a complete URL
+and appended to the body of the ticket.</p>
 <ul>
-<li><p class="first">The <code class="docutils literal notranslate"><span class="pre">info</span></code> dict can be used to provide additional metadata, for example</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">{&quot;user_agent&quot;:&quot;Mozilla/5.0 ... Chrome/58.0.3029.96 Safari/537.36&quot;}</span>
+<li><p class="first">The <code class="docutils literal notranslate"><span class="pre">info</span></code> dict can be used to provide additional metadata, for
+example</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&quot;user_agent&quot;:&quot;Mozilla/5.0 ... Chrome/58.0.3029.96 Safari/537.36&quot;}
 </pre></div>
 </div>
 </li>
-<li><p class="first">If the ticket concerns a CoCalc course, the project id of the course can be included in the <code class="docutils literal notranslate"><span class="pre">info</span></code> dict, for example,</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">{&quot;course&quot;:&quot;0c7ae00c-ea43-4981-b454-90d4a8b1ac47&quot;}</span>
+<li><p class="first">If the ticket concerns a CoCalc course, the project id of the course
+can be included in the <code class="docutils literal notranslate"><span class="pre">info</span></code> dict, for example,</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&quot;course&quot;:&quot;0c7ae00c-ea43-4981-b454-90d4a8b1ac47&quot;}
 </pre></div>
 </div>
-<p>In that case, the course project_id will be expanded to a URL and appended to the body of the ticket.</p>
+<p>In that case, the course project_id will be expanded to a URL and
+appended to the body of the ticket.</p>
 </li>
-<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">tags</span></code> or <code class="docutils literal notranslate"><span class="pre">info</span></code> are provided, options must be sent as a JSON object.</p>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">tags</span></code> or <code class="docutils literal notranslate"><span class="pre">info</span></code> are provided, options must be sent as a JSON
+object.</p>
 </li>
 </ul>
 <p>Example:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;email_address&quot;:&quot;jd@example.com&quot;, \</span>
-<span class="err">       &quot;subject&quot;:&quot;package xyz&quot;, \</span>
-<span class="err">       &quot;account_id&quot;:&quot;291f43c1-deae-431c-b763-712307fa6859&quot;, \</span>
-<span class="err">       &quot;body&quot;:&quot;please install package xyz for use with Python3&quot;, \</span>
-<span class="err">       &quot;tags&quot;:[&quot;member&quot;], \</span>
-<span class="err">       &quot;location&quot;:&quot;/projects/0010abe1-9283-4b42-b403-fa4fc1e3be57/worksheet.sagews&quot;, \</span>
-<span class="err">       &quot;info&quot;:{&quot;user_agent&quot;:&quot;Mozilla/5.0&quot;,&quot;course&quot;:&quot;cc8f1243-d573-4562-9aab-c15a3872d683&quot;}}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/create_support_ticket</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;support_ticket_url&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;abd649bf-ea2d-4952-b925-e44c6903945e&quot;,</span>
-<span class="err">     &quot;url&quot;:&quot;https://sagemathcloud.zendesk.com/requests/0123&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;email_address&quot;:&quot;jd@example.com&quot;, \
+       &quot;subject&quot;:&quot;package xyz&quot;, \
+       &quot;account_id&quot;:&quot;291f43c1-deae-431c-b763-712307fa6859&quot;, \
+       &quot;body&quot;:&quot;please install package xyz for use with Python3&quot;, \
+       &quot;tags&quot;:[&quot;member&quot;], \
+       &quot;location&quot;:&quot;/projects/0010abe1-9283-4b42-b403-fa4fc1e3be57/worksheet.sagews&quot;, \
+       &quot;info&quot;:{&quot;user_agent&quot;:&quot;Mozilla/5.0&quot;,&quot;course&quot;:&quot;cc8f1243-d573-4562-9aab-c15a3872d683&quot;}}&#39; \
+  https://cocalc.com/api/v1/create_support_ticket
+==&gt; {&quot;event&quot;:&quot;support_ticket_url&quot;,
+     &quot;id&quot;:&quot;abd649bf-ea2d-4952-b925-e44c6903945e&quot;,
+     &quot;url&quot;:&quot;https://sagemathcloud.zendesk.com/requests/0123&quot;}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

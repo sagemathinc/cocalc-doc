@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/copy_path_status.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/copy_path_status.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -257,25 +257,30 @@
 <li><code class="docutils literal notranslate"><span class="pre">copy_path_id</span></code>: A unique UUID for a copy path operation</li>
 <li><code class="docutils literal notranslate"><span class="pre">src_project_id</span></code>: Source of copy operation to filter on</li>
 <li><code class="docutils literal notranslate"><span class="pre">target_project_id</span></code>: Target of copy operation to filter on</li>
-<li><code class="docutils literal notranslate"><span class="pre">src_path</span></code>: (src/targ only) Source path of copy operation to filter on</li>
-<li><code class="docutils literal notranslate"><span class="pre">limit</span></code>: (src/targ only) maximum number of results  (max 1000) (default: 1000)</li>
-<li><code class="docutils literal notranslate"><span class="pre">offset</span></code>: (src/targ only) default 0; set this to a multiple of the limit</li>
-<li><code class="docutils literal notranslate"><span class="pre">pending</span></code>: (src/targ only) true returns copy ops, which did not finish yet (default: true) (default: true)</li>
-<li><code class="docutils literal notranslate"><span class="pre">failed</span></code>: (src/targ only) if true, only show finished and failed copy ops (default: false) (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">src_path</span></code>: (src/targ only) Source path of copy operation to filter
+on</li>
+<li><code class="docutils literal notranslate"><span class="pre">limit</span></code>: (src/targ only) maximum number of results (max 1000)
+(default: 1000)</li>
+<li><code class="docutils literal notranslate"><span class="pre">offset</span></code>: (src/targ only) default 0; set this to a multiple of the
+limit</li>
+<li><code class="docutils literal notranslate"><span class="pre">pending</span></code>: (src/targ only) true returns copy ops, which did not
+finish yet (default: true) (default: true)</li>
+<li><code class="docutils literal notranslate"><span class="pre">failed</span></code>: (src/targ only) if true, only show finished and failed
+copy ops (default: false) (default: false)</li>
 </ul>
 <p>Retrieve status information about copy path operation(s).</p>
 <p>There are two ways to query:</p>
 <ul class="simple">
-<li><strong>single result</strong> for a specific <code class="docutils literal notranslate"><span class="pre">copy_path_id</span></code>,
-which was returned by <code class="docutils literal notranslate"><span class="pre">copy_path_between_projects</span></code> earlier;</li>
-<li><strong>array of results</strong>, for at last one of <code class="docutils literal notranslate"><span class="pre">src_project_id</span></code> or <code class="docutils literal notranslate"><span class="pre">target_project_id</span></code>,
-and additionally filtered by an optionally given <code class="docutils literal notranslate"><span class="pre">src_path</span></code>.</li>
+<li><strong>single result</strong> for a specific <code class="docutils literal notranslate"><span class="pre">copy_path_id</span></code>, which was returned
+by <code class="docutils literal notranslate"><span class="pre">copy_path_between_projects</span></code> earlier;</li>
+<li><strong>array of results</strong>, for at last one of <code class="docutils literal notranslate"><span class="pre">src_project_id</span></code> or
+<code class="docutils literal notranslate"><span class="pre">target_project_id</span></code>, and additionally filtered by an optionally
+given <code class="docutils literal notranslate"><span class="pre">src_path</span></code>.</li>
 </ul>
-<p>Check for the field <code class="docutils literal notranslate"><span class="pre">&quot;finished&quot;</span></code>, containing the timestamp when the operation completed.
-There might also be an <code class="docutils literal notranslate"><span class="pre">&quot;error&quot;</span></code>!</p>
-<p><strong>Note:</strong> You need to have read/write access to the associated src/target project.</p>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
+<p>Check for the field <code class="docutils literal notranslate"><span class="pre">&quot;finished&quot;</span></code>, containing the timestamp when the
+operation completed. There might also be an <code class="docutils literal notranslate"><span class="pre">&quot;error&quot;</span></code>!</p>
+<p><strong>Note:</strong> You need to have read/write access to the associated
+src/target project.</p>
 </div>
 
 

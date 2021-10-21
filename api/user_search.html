@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/user_search.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/user_search.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -255,69 +255,70 @@
 <h1>user_search<a class="headerlink" href="#user-search" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
-<li><code class="docutils literal notranslate"><span class="pre">query</span></code>: comma separated list of email addresses or strings such as ‘foo bar’ (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">admin</span></code>: if true and user is an admin, includes email addresses in result, and does more permissive search (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">active</span></code>: only include users active for this interval of time (default: “”)</li>
+<li><code class="docutils literal notranslate"><span class="pre">query</span></code>: comma separated list of email addresses or strings such as
+‘foo bar’ (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">admin</span></code>: if true and user is an admin, includes email addresses in
+result, and does more permissive search (default: false)</li>
+<li><code class="docutils literal notranslate"><span class="pre">active</span></code>: only include users active for this interval of time
+(default: ““)</li>
 <li><code class="docutils literal notranslate"><span class="pre">limit</span></code>: maximum number of results returned (default: 20)</li>
 </ul>
-<p>There are two possible item types in the query list: email addresses
-and strings that are not email addresses. An email query item will return
+<p>There are two possible item types in the query list: email addresses and
+strings that are not email addresses. An email query item will return
 account id, first name, last name, and email address for the unique
 account with that email address, if there is one. A string query item
 will return account id, first name, and last name for all matching
 accounts.</p>
 <p>We do not reveal email addresses of users queried by name to non admins.</p>
-<p>String query matches first and last names that start with the given string.
-If a string query item consists of two strings separated by space,
-the search will return accounts in which the first name begins with one
-of the two strings and the last name begins with the other.
+<p>String query matches first and last names that start with the given
+string. If a string query item consists of two strings separated by
+space, the search will return accounts in which the first name begins
+with one of the two strings and the last name begins with the other.
 String and email queries may be mixed in the list for a single
 user_search call. Searches are case-insensitive.</p>
 <p>Note: there is a hard limit of 50 returned items in the results.</p>
 <p>Examples:</p>
 <p>Search for account by email.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u : \</span>
-<span class="err">  -d query=jd@m.local \</span>
-<span class="err">  https://cocalc.com/api/v1/user_search</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;user_search_results&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;3818fa50-b892-4167-b9d9-d22d521b36af&quot;,</span>
-<span class="err">     &quot;results&quot;:[{&quot;account_id&quot;:&quot;96c523b8-321e-41a3-9523-39fde95dc71d&quot;,</span>
-<span class="err">                 &quot;first_name&quot;:&quot;John&quot;,</span>
-<span class="err">                 &quot;last_name&quot;:&quot;Doe&quot;,</span>
-<span class="err">                 &quot;email_address&quot;:&quot;jd@m.local&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u : \
+  -d query=jd@m.local \
+  https://cocalc.com/api/v1/user_search
+==&gt; {&quot;event&quot;:&quot;user_search_results&quot;,
+     &quot;id&quot;:&quot;3818fa50-b892-4167-b9d9-d22d521b36af&quot;,
+     &quot;results&quot;:[{&quot;account_id&quot;:&quot;96c523b8-321e-41a3-9523-39fde95dc71d&quot;,
+                 &quot;first_name&quot;:&quot;John&quot;,
+                 &quot;last_name&quot;:&quot;Doe&quot;,
+                 &quot;email_address&quot;:&quot;jd@m.local&quot;}
 </pre></div>
 </div>
-<p>Search for at most 3 accounts where first and last name begin with ‘foo’ or ‘bar’.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d &#39;query=foo bar&#39;\</span>
-<span class="err">  -d limit=3 \</span>
-<span class="err">  https://cocalc.com/api/v1/user_search</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;user_search_results&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;fd9b025b-25d0-4e27-97f4-2c080bb07155&quot;,</span>
-<span class="err">     &quot;results&quot;:[{&quot;account_id&quot;:&quot;1a842a67-eed3-405d-a222-2f23a33f675e&quot;,</span>
-<span class="err">                 &quot;first_name&quot;:&quot;foo&quot;,</span>
-<span class="err">                 &quot;last_name&quot;:&quot;bar&quot;},</span>
-<span class="err">                {&quot;account_id&quot;:&quot;0e9418a7-af6a-4004-970a-32fafe733f29&quot;,</span>
-<span class="err">                 &quot;first_name&quot;:&quot;bar123&quot;,</span>
-<span class="err">                 &quot;last_name&quot;:&quot;fooxyz&quot;},</span>
-<span class="err">                {&quot;account_id&quot;:&quot;93f8131c-6c21-401a-897d-d4abd9c6c225&quot;,</span>
-<span class="err">                 &quot;first_name&quot;:&quot;Foo&quot;,</span>
-<span class="err">                 &quot;last_name&quot;:&quot;Bar&quot;}]}</span>
+<p>Search for at most 3 accounts where first and last name begin with ‘foo’
+or ‘bar’.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d &#39;query=foo bar&#39;\
+  -d limit=3 \
+  https://cocalc.com/api/v1/user_search
+==&gt; {&quot;event&quot;:&quot;user_search_results&quot;,
+     &quot;id&quot;:&quot;fd9b025b-25d0-4e27-97f4-2c080bb07155&quot;,
+     &quot;results&quot;:[{&quot;account_id&quot;:&quot;1a842a67-eed3-405d-a222-2f23a33f675e&quot;,
+                 &quot;first_name&quot;:&quot;foo&quot;,
+                 &quot;last_name&quot;:&quot;bar&quot;},
+                {&quot;account_id&quot;:&quot;0e9418a7-af6a-4004-970a-32fafe733f29&quot;,
+                 &quot;first_name&quot;:&quot;bar123&quot;,
+                 &quot;last_name&quot;:&quot;fooxyz&quot;},
+                {&quot;account_id&quot;:&quot;93f8131c-6c21-401a-897d-d4abd9c6c225&quot;,
+                 &quot;first_name&quot;:&quot;Foo&quot;,
+                 &quot;last_name&quot;:&quot;Bar&quot;}]}
 </pre></div>
 </div>
 <p>The same result as the last example above would be returned with a
-search string of ‘bar foo’.
-A name of “Xfoo YBar” would not match.</p>
+search string of ‘bar foo’. A name of “Xfoo YBar” would not match.</p>
 <p>Note that email addresses are not returned for string search items.</p>
 <p>Email and string search types may be mixed in a single query:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d &#39;query=foo bar,jd@m.local&#39; \</span>
-<span class="err">  -d limit=4 \</span>
-<span class="err">  https://cocalc.com/api/v1/user_search</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d &#39;query=foo bar,jd@m.local&#39; \
+  -d limit=4 \
+  https://cocalc.com/api/v1/user_search
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

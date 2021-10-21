@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/create_account.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/create_account.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -258,37 +258,36 @@
 <li><code class="docutils literal notranslate"><span class="pre">password</span></code>: if given, must be between 6 and 64 characters in length</li>
 <li><code class="docutils literal notranslate"><span class="pre">agreed_to_terms</span></code>: must be true or user will get nagged</li>
 <li><code class="docutils literal notranslate"><span class="pre">token</span></code>: account creation token - see src/dev/docker/README.md</li>
-<li><code class="docutils literal notranslate"><span class="pre">get_api_key</span></code>: if set to anything truth-ish, will create (if needed) and return api key with signed_in message</li>
+<li><code class="docutils literal notranslate"><span class="pre">get_api_key</span></code>: if set to anything truth-ish, will create (if
+needed) and return api key with signed_in message</li>
 <li><code class="docutils literal notranslate"><span class="pre">usage_intent</span></code>: response to Cocalc usage intent at sign up</li>
 </ul>
 <p>Examples:</p>
 <p>Create a new account:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d first_name=John00 \</span>
-<span class="err">  -d last_name=Doe00 \</span>
-<span class="err">  -d email_address=jd@example.com \</span>
-<span class="err">  -d password=xyzabc09090 \</span>
-<span class="err">  -d agreed_to_terms=true https://cocalc.com/api/v1/create_account</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d first_name=John00 \
+  -d last_name=Doe00 \
+  -d email_address=jd@example.com \
+  -d password=xyzabc09090 \
+  -d agreed_to_terms=true https://cocalc.com/api/v1/create_account
 </pre></div>
 </div>
 <p>Option <code class="docutils literal notranslate"><span class="pre">agreed_to_terms</span></code> must be present and specified as true.
-Account creation fails if there is already an account using the
-given email address, if <code class="docutils literal notranslate"><span class="pre">email_address</span></code> is improperly formatted,
-and if password is fewer than 6 or more than 64 characters.</p>
+Account creation fails if there is already an account using the given
+email address, if <code class="docutils literal notranslate"><span class="pre">email_address</span></code> is improperly formatted, and if
+password is fewer than 6 or more than 64 characters.</p>
 <p>Attempting to create the same account a second time results in an error:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d first_name=John00 \</span>
-<span class="err">  -d last_name=Doe00 \</span>
-<span class="err">  -d email_address=jd@example.com \</span>
-<span class="err">  -d password=xyzabc09090 \</span>
-<span class="err">  -d agreed_to_terms=true https://cocalc.com/api/v1/create_account</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;account_creation_failed&quot;,</span>
-<span class="err">     &quot;id&quot;:&quot;2332be03-aa7d-49a6-933a-cd9824b7331a&quot;,</span>
-<span class="err">     &quot;reason&quot;:{&quot;email_address&quot;:&quot;This e-mail address is already taken.&quot;}}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d first_name=John00 \
+  -d last_name=Doe00 \
+  -d email_address=jd@example.com \
+  -d password=xyzabc09090 \
+  -d agreed_to_terms=true https://cocalc.com/api/v1/create_account
+==&gt; {&quot;event&quot;:&quot;account_creation_failed&quot;,
+     &quot;id&quot;:&quot;2332be03-aa7d-49a6-933a-cd9824b7331a&quot;,
+     &quot;reason&quot;:{&quot;email_address&quot;:&quot;This e-mail address is already taken.&quot;}}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/invite_noncloud_collaborators.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/invite_noncloud_collaborators.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -255,56 +255,54 @@
 <h1>invite_noncloud_collaborators<a class="headerlink" href="#invite-noncloud-collaborators" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
-<li><code class="docutils literal notranslate"><span class="pre">project_id</span></code>: project_id of project into which users are invited (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">to</span></code>: comma- or semicolon-delimited string of email addresses (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">email</span></code>: body of the email to be sent, may include HTML markup (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">title</span></code>: string that will be used for project title in the email (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">project_id</span></code>: project_id of project into which users are invited
+(required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">to</span></code>: comma- or semicolon-delimited string of email addresses
+(required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">email</span></code>: body of the email to be sent, may include HTML markup
+(required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">title</span></code>: string that will be used for project title in the email
+(required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">link2proj</span></code>: URL for the target project (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">replyto</span></code>: Reply-To email address</li>
 <li><code class="docutils literal notranslate"><span class="pre">replyto_name</span></code>: Reply-To name</li>
 <li><code class="docutils literal notranslate"><span class="pre">subject</span></code>: email Subject</li>
 </ul>
-<p>Invite users who do not already have a CoCalc account
-to join a project.
-An invitation email is sent to each user in the <code class="docutils literal notranslate"><span class="pre">to</span></code>
-option.
-Invitation is not sent if there is already a CoCalc
-account with the given email address.
-You must be owner or collaborator on the target project.</p>
-<p>Limitations:</p>
-<ul class="simple">
-<li>Total length of the request message must be less than or equal to 1024 characters.</li>
-<li>Length of each email address must be less than 128 characters.</li>
-</ul>
+<p>Invite users who do not already have a CoCalc account to join a project.
+An invitation email is sent to each user in the <code class="docutils literal notranslate"><span class="pre">to</span></code> option.
+Invitation is not sent if there is already a CoCalc account with the
+given email address. You must be owner or collaborator on the target
+project.</p>
+<p>Limitations: - Total length of the request message must be less than or
+equal to 1024 characters. - Length of each email address must be less
+than 128 characters.</p>
 <p>Example:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \</span>
-<span class="err">  -d to=someone@m.local \</span>
-<span class="err">  -d &#39;email=Please sign up and join this project.&#39; \</span>
-<span class="err">  -d &#39;title=Class Project&#39; \</span>
-<span class="err">  -d link2proj=https://cocalc.com/projects/18955da4-4bfa-4afa-910c-7f2358c05eb8 \</span>
-<span class="err">  https://cocalc.com/api/v1/invite_noncloud_collaborators</span>
-<span class="err">==&gt;  {&quot;event&quot;:&quot;invite_noncloud_collaborators_resp&quot;,</span>
-<span class="err">      &quot;id&quot;:&quot;39d7203d-89b1-4145-8a7a-59e41d5682a3&quot;,</span>
-<span class="err">      &quot;mesg&quot;:&quot;Invited someone@m.local to collaborate on a project.&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d project_id=18955da4-4bfa-4afa-910c-7f2358c05eb8 \
+  -d to=someone@m.local \
+  -d &#39;email=Please sign up and join this project.&#39; \
+  -d &#39;title=Class Project&#39; \
+  -d link2proj=https://cocalc.com/projects/18955da4-4bfa-4afa-910c-7f2358c05eb8 \
+  https://cocalc.com/api/v1/invite_noncloud_collaborators
+==&gt;  {&quot;event&quot;:&quot;invite_noncloud_collaborators_resp&quot;,
+      &quot;id&quot;:&quot;39d7203d-89b1-4145-8a7a-59e41d5682a3&quot;,
+      &quot;mesg&quot;:&quot;Invited someone@m.local to collaborate on a project.&quot;}
 </pre></div>
 </div>
 <p>Email sent by the previous example:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span>To: someone@m.local
-From: CoCalc <span class="nt">&lt;invites</span><span class="err">@cocalc.com</span>
-<span class="err">Reply-To:</span> <span class="err">help@cocalc.com</span>
-<span class="err">Subject:</span> <span class="err">CoCalc</span> <span class="err">Invitation</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>To: someone@m.local
+From: CoCalc &lt;invites@cocalc.com
+Reply-To: help@cocalc.com
+Subject: CoCalc Invitation
 
-<span class="err">Please</span> <span class="err">sign</span> <span class="err">up</span> <span class="err">and</span> <span class="err">join</span> <span class="err">this</span> <span class="err">project.&lt;br</span><span class="nt">/&gt;&lt;br/&gt;</span>\n<span class="nt">&lt;b&gt;</span>
+Please sign up and join this project.&lt;br/&gt;&lt;br/&gt;\n&lt;b&gt;
 To accept the invitation, please sign up at\n
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#39;https://cocalc.com&#39;</span><span class="nt">&gt;</span>https://cocalc.com<span class="nt">&lt;/a&gt;</span>\n
+&lt;a href=&#39;https://cocalc.com&#39;&gt;https://cocalc.com&lt;/a&gt;\n
 using exactly the email address &#39;someone@m.local&#39;.\n
-Then go to <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#39;https://cocalc.com/projects/18955da4-4bfa-4afa-910c-7f2358c05eb8&#39;</span><span class="nt">&gt;</span>
-the project &#39;Team Project&#39;<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/b&gt;&lt;br/&gt;</span>
+Then go to &lt;a href=&#39;https://cocalc.com/projects/18955da4-4bfa-4afa-910c-7f2358c05eb8&#39;&gt;
+the project &#39;Team Project&#39;&lt;/a&gt;.&lt;/b&gt;&lt;br/&gt;
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

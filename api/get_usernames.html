@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/get_usernames.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/get_usernames.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -258,20 +258,19 @@
 <li><code class="docutils literal notranslate"><span class="pre">account_ids</span></code>: list of account_ids (required)</li>
 </ul>
 <p>Get first and last names for a list of account ids.</p>
-<p>Note: Options for the <code class="docutils literal notranslate"><span class="pre">get_usernames</span></code> API message must be sent as JSON object.</p>
+<p>Note: Options for the <code class="docutils literal notranslate"><span class="pre">get_usernames</span></code> API message must be sent as JSON
+object.</p>
 <p>Example:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;account_ids&quot;:[&quot;cc3cb7f1-14f6-4a18-a803-5034af8c0004&quot;,&quot;9b896055-920a-413c-9172-dfb4007a8e7f&quot;]}&#39; \</span>
-<span class="err">  https://cocalc.com/api/v1/get_usernames</span>
-<span class="err">==&gt;  {&quot;event&quot;:&quot;usernames&quot;,</span>
-<span class="err">      &quot;id&quot;:&quot;32b485a8-f214-4fda-a622-4dbfe0db2b9c&quot;,</span>
-<span class="err">      &quot;usernames&quot;: {</span>
-<span class="err">         &quot;cc3cb7f1-14f6-4a18-a803-5034af8c0004&quot;:{&quot;first_name&quot;:&quot;John&quot;,&quot;last_name&quot;:&quot;Smith&quot;},</span>
-<span class="err">         &quot;9b896055-920a-413c-9172-dfb4007a8e7f&quot;:{&quot;first_name&quot;:&quot;Jane&quot;,&quot;last_name&quot;:&quot;Doe&quot;}}}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;account_ids&quot;:[&quot;cc3cb7f1-14f6-4a18-a803-5034af8c0004&quot;,&quot;9b896055-920a-413c-9172-dfb4007a8e7f&quot;]}&#39; \
+  https://cocalc.com/api/v1/get_usernames
+==&gt;  {&quot;event&quot;:&quot;usernames&quot;,
+      &quot;id&quot;:&quot;32b485a8-f214-4fda-a622-4dbfe0db2b9c&quot;,
+      &quot;usernames&quot;: {
+         &quot;cc3cb7f1-14f6-4a18-a803-5034af8c0004&quot;:{&quot;first_name&quot;:&quot;John&quot;,&quot;last_name&quot;:&quot;Smith&quot;},
+         &quot;9b896055-920a-413c-9172-dfb4007a8e7f&quot;:{&quot;first_name&quot;:&quot;Jane&quot;,&quot;last_name&quot;:&quot;Doe&quot;}}}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

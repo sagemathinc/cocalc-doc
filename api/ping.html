@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/ping.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/ping.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -256,34 +256,33 @@
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
 </ul>
-<p>Test API connection, return time as ISO string when server responds to ping.</p>
+<p>Test API connection, return time as ISO string when server responds to
+ping.</p>
 <p>Security key may be blank.</p>
 <p>Examples:</p>
 <p>Omitting request id:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -X POST -u sk_abcdefQWERTY090900000000: https://cocalc.com/api/v1/ping</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;c74afb40-d89b-430f-836a-1d889484c794&quot;,&quot;now&quot;:&quot;2017-05-24T13:29:11.742Z&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -X POST -u sk_abcdefQWERTY090900000000: https://cocalc.com/api/v1/ping
+==&gt; {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;c74afb40-d89b-430f-836a-1d889484c794&quot;,&quot;now&quot;:&quot;2017-05-24T13:29:11.742Z&quot;}
 </pre></div>
 </div>
 <p>Omitting request id and using blank security key:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -X POST -u : https://cocalc.com/api/v1/ping</span>
-<span class="err">==&gt;  {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;d90f529b-e026-4a60-8131-6ce8b6d4adc8&quot;,&quot;now&quot;:&quot;2017-11-05T21:10:46.585Z&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -X POST -u : https://cocalc.com/api/v1/ping
+==&gt;  {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;d90f529b-e026-4a60-8131-6ce8b6d4adc8&quot;,&quot;now&quot;:&quot;2017-11-05T21:10:46.585Z&quot;}
 </pre></div>
 </div>
 <p>Using <code class="docutils literal notranslate"><span class="pre">uuid</span></code> shell command to create a request id:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">uuid</span>
-<span class="err">==&gt; 553f2815-1508-416d-8e69-2dde5af3aed8</span>
-<span class="err">curl -u sk_abcdefQWERTY090900000000: https://cocalc.com/api/v1/ping -d id=553f2815-1508-416d-8e69-2dde5af3aed8</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;553f2815-1508-416d-8e69-2dde5af3aed8&quot;,&quot;now&quot;:&quot;2017-05-24T13:47:21.312Z&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>uuid
+==&gt; 553f2815-1508-416d-8e69-2dde5af3aed8
+curl -u sk_abcdefQWERTY090900000000: https://cocalc.com/api/v1/ping -d id=553f2815-1508-416d-8e69-2dde5af3aed8
+==&gt; {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;553f2815-1508-416d-8e69-2dde5af3aed8&quot;,&quot;now&quot;:&quot;2017-05-24T13:47:21.312Z&quot;}
 </pre></div>
 </div>
 <p>Using JSON format to provide request id:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \</span>
-<span class="err">  -d &#39;{&quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;}&#39; https://cocalc.com/api/v1/ping</span>
-<span class="err">==&gt; {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,&quot;now&quot;:&quot;2017-05-24T17:15:59.288Z&quot;}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;}&#39; https://cocalc.com/api/v1/ping
+==&gt; {&quot;event&quot;:&quot;pong&quot;,&quot;id&quot;:&quot;8ec4ac73-2595-42d2-ad47-0b9641043b46&quot;,&quot;now&quot;:&quot;2017-05-24T17:15:59.288Z&quot;}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

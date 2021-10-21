@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/get_support_tickets.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/get_support_tickets.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -260,28 +260,27 @@
 See the example for details on what is returned.</p>
 <p>Notes:</p>
 <ul class="simple">
-<li>There may be a delay of several minutes between the time a support ticket
-is created with a given <code class="docutils literal notranslate"><span class="pre">account_id</span></code> and the time that ticket is
-available to the account owner via <code class="docutils literal notranslate"><span class="pre">get_support_tickets</span></code>.</li>
-<li>Field <code class="docutils literal notranslate"><span class="pre">account_id</span></code> is not required because it is implicit from the request.</li>
+<li>There may be a delay of several minutes between the time a support
+ticket is created with a given <code class="docutils literal notranslate"><span class="pre">account_id</span></code> and the time that
+ticket is available to the account owner via <code class="docutils literal notranslate"><span class="pre">get_support_tickets</span></code>.</li>
+<li>Field <code class="docutils literal notranslate"><span class="pre">account_id</span></code> is not required because it is implicit from the
+request.</li>
 <li>Archived tickets are not returned.</li>
 </ul>
 <p>Example:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000:  -X POST \</span>
-<span class="err">    https://cocalc.com/api/v1/get_support_tickets</span>
-<span class="err">  ==&gt; {&quot;event&quot;:&quot;support_tickets&quot;,</span>
-<span class="err">       &quot;id&quot;:&quot;58bfd6f4-fd63-4602-82b8-676d92f8b0b8&quot;,</span>
-<span class="err">       &quot;tickets&quot;:[{&quot;id&quot;:1234,</span>
-<span class="err">                   &quot;subject&quot;:&quot;package xyz&quot;,</span>
-<span class="err">                   &quot;description&quot;:&quot;package xyz\n\nhttps://cocalc.com/projects/0010abe1-9283-4b42-b403-fa4fc1e3be57/worksheet.sagews\n\nCourse: https://cocalc.com/projects/cc8f1243-d573-4562-9aab-c15a3872d683&quot;,</span>
-<span class="err">                   &quot;created_at&quot;:&quot;2017-07-05T14:28:38Z&quot;,</span>
-<span class="err">                   &quot;updated_at&quot;:&quot;2017-07-05T14:29:29Z&quot;,</span>
-<span class="err">                   &quot;status&quot;:&quot;open&quot;,</span>
-<span class="err">                   &quot;url&quot;:&quot;https://sagemathcloud.zendesk.com/requests/0123&quot;}]}</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000:  -X POST \
+    https://cocalc.com/api/v1/get_support_tickets
+  ==&gt; {&quot;event&quot;:&quot;support_tickets&quot;,
+       &quot;id&quot;:&quot;58bfd6f4-fd63-4602-82b8-676d92f8b0b8&quot;,
+       &quot;tickets&quot;:[{&quot;id&quot;:1234,
+                   &quot;subject&quot;:&quot;package xyz&quot;,
+                   &quot;description&quot;:&quot;package xyz\n\nhttps://cocalc.com/projects/0010abe1-9283-4b42-b403-fa4fc1e3be57/worksheet.sagews\n\nCourse: https://cocalc.com/projects/cc8f1243-d573-4562-9aab-c15a3872d683&quot;,
+                   &quot;created_at&quot;:&quot;2017-07-05T14:28:38Z&quot;,
+                   &quot;updated_at&quot;:&quot;2017-07-05T14:29:29Z&quot;,
+                   &quot;status&quot;:&quot;open&quot;,
+                   &quot;url&quot;:&quot;https://sagemathcloud.zendesk.com/requests/0123&quot;}]}
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 

@@ -237,7 +237,7 @@
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/write_text_file_to_project.md" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/write_text_file_to_project.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -256,26 +256,26 @@
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
 <li><code class="docutils literal notranslate"><span class="pre">project_id</span></code>: id of project where file is created (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">path</span></code>: path to file, relative to home directory in destination project (required)</li>
+<li><code class="docutils literal notranslate"><span class="pre">path</span></code>: path to file, relative to home directory in destination
+project (required)</li>
 <li><code class="docutils literal notranslate"><span class="pre">content</span></code>: contents of the text file to be written (required)</li>
 </ul>
 <p>Create a text file in the target project with the given <code class="docutils literal notranslate"><span class="pre">project_id</span></code>.
-Directories containing the file are created if they do not exist already.
-If a file already exists at the destination path, it is overwritten.</p>
-<p><strong>Note:</strong> You need to have read access to the project.
-The Linux user <code class="docutils literal notranslate"><span class="pre">user</span></code> in the target project must have permissions to create files
-and containing directories if they do not already exist.</p>
+Directories containing the file are created if they do not exist
+already. If a file already exists at the destination path, it is
+overwritten.</p>
+<p><strong>Note:</strong> You need to have read access to the project. The Linux user
+<code class="docutils literal notranslate"><span class="pre">user</span></code> in the target project must have permissions to create files and
+containing directories if they do not already exist.</p>
 <p>Example:</p>
 <p>Create a text file.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">curl -u sk_abcdefQWERTY090900000000: \</span>
-<span class="err">  -d project_id=e49e86aa-192f-410b-8269-4b89fd934fba \</span>
-<span class="err">  -d &quot;content=hello$&#39;\n&#39;world&quot; \</span>
-<span class="err">  -d path=Assignments/A1/h1.txt \</span>
-<span class="err">  https://cocalc.com/api/v1/write_text_file_to_project</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -d project_id=e49e86aa-192f-410b-8269-4b89fd934fba \
+  -d &quot;content=hello$&#39;\n&#39;world&quot; \
+  -d path=Assignments/A1/h1.txt \
+  https://cocalc.com/api/v1/write_text_file_to_project
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>This information is based on <a class="reference external" href="https://github.com/sagemathinc/cocalc/commit/86c0a8a7d15edce662867107332f27b0a2b254eb">86c0a8a7d1</a> exported at <code class="docutils literal notranslate"><span class="pre">2020-09-17T03:08:33.230Z</span></code>.</p>
 </div>
 
 
