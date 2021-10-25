@@ -42,3 +42,4 @@
    ruby
    turtle
    plotly-dash
+   disk-space-warning

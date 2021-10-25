@@ -11,6 +11,15 @@ Software Updates 2021
 .. highlight:: python
 
 
+.. _update-2021:
+
+2021-10: Scikit Optimize 0.9
+-------------------------------------------------
+
+- Python 3 (system-wide):
+    - (upd) `scikit-optimize`_ ``0.9`` fixing some compatibility bugs
+
+
 .. _update-2021-10-10:
 
 2021-10-10: Routine updates
@@ -573,3 +582,4 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _zig: https://ziglang.org/
 .. _nasm: https://nasm.us/
 .. _PyPy: https://www.pypy.org/
+.. _scikit-optimize: https://scikit-optimize.github.io/stable/
