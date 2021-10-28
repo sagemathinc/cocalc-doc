@@ -17,6 +17,7 @@ CoCalc platform
 * :doc:`running-processes`
 * :doc:`upload`
 * :doc:`convert-html-to-pdf`
+* :doc:`disk-space-warning`
 
 Services
 ========
