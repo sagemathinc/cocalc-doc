@@ -111,4 +111,4 @@ Restart the terminal via Ctrl-d. "pyenv versions" should then show you what you 
     pip install ipykernel
     python -m ipykernel install --user --name=py3.10 --display-name "Python 3.10"
 
-After the above steps, when you open a juypter notebook, you may have to do "Refresh kernel list" at the bottom of the Kernel menu, or refresh the CoCalc tab. You will then see "Python 3.10" listed among the available kernels.
+After the above steps, when you open a Jupyter notebook, you may have to do "Refresh kernel list" at the bottom of the Kernel menu, or refresh the CoCalc tab. You will then see "Python 3.10" listed among the available kernels.
