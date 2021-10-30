@@ -43,3 +43,5 @@
    turtle
    plotly-dash
    disk-space-warning
+   ../project-list
+   ../account

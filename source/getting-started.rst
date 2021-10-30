@@ -2,11 +2,12 @@
 Getting Started
 =====================
 
-A guide for your first CoCalc session.
-
 .. contents::
    :local:
    :depth: 2
+
+Your First CoCalc Session
+=========================
 
 Creating an Account
 -------------------
@@ -106,166 +107,19 @@ And click Run or press Shift-Enter to run the code.
 .. image:: img/getting-started/file-8-a.png
      :width: 90%
 
-.. index:: Project Toolbar
-.. index:: Toolbars; project
-.. _project-toolbar:
+Toolbars
+=========
 
+You have used CoCalc's two main toolbars a bit during your first session. Learn more about them at these locations in this online guide:
 
-The Project Toolbar
--------------------
+* :doc:`project-toolbar`
 
-Here's quick tour of the topmost toolbar in CoCalc, the **Project Toolbar**.
+* :doc:`files-toolbar`
 
-.. image:: img/getting-started/toolbars-projects-a.png
-     :width: 90% 
-
-Going from left to right:
-
-.. index:: Project Toolbar; projects button
-
-* |cocalc-logo| **Projects button** - click here to create a new project and see a list of your existing projects. Any text you type into the **Search for Projects** field will be used to select which projects are displayed. Any project with matching text in Title or Description will appear in the filtered list. If you have any hidden or deleted projects, a checkbox will appear to allow you to show those.
-
-.. index:: Project Toolbar; open projects
-
-* **Open projects** - a tab button will appear for each project you have open.
-
-.. index:: Project Toolbar; about CoCalc
-
-* |info-circle| **CoCalc** - Information about CoCalc. Includes links to tutorials, examples, lists of available languages, libraries, and packages, and real-time stats for the platform.
-
-.. index::
-   Support; create support request
-   seealso: Help; Support
-.. _help-button:
-
-* |medkit| **Help** - **Use this button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
-
-.. index:: Project Toolbar; account tab
-
-* **Account** - Click here to update your profile, sign out, order subscriptions, view your upgrades, `add SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets. Read more about account operations :doc:`here <account>`.
-
-.. index:: Project Toolbar; notification (bell) icon
-
-* |bell| **Notifications** - A count is displayed over the bell if there are chat updates or file edits in projects you own or collaborate on. Click the bell to view a list of pending notifications, showing which account originated them and a link to the project or file being updated at the time.
-
-.. index:: Connection Status
-
-* |wifi| **Connection Status**. The connection status icon changes color as shown below to indicate changes in the connection between your browser and CoCalc servers.
-
-  .. image:: img/getting-started/conn-stat.png
-    :width: 35%
-    :alt: See below for connection status icon color codes.
-
-  Colors for the connection status icon:
-
-  * Grey: connected, no messages in flight.
-
-  * Dark Blue: connected, moderate load.
-
-  * Light Blue: connected, significant load.
-
-  * Red: connected, serious message backlog.
-
-  * Orange: disconnected / connecting.
-
-
-  Clicking the connection status icon brings up a window with additional connection detail, including round-trip ping time to the CoCalc servers. If the ping time doesn't appear right away, wait a bit; it's tested every 30 seconds when the window is open.
-
-  .. image:: img/getting-started/conn-ind.png
-    :width: 70%
-    :alt: Connection status pop-up showing ping time, hub server id, and message counts.
-
-
-.. index:: Project Toolbar; fullscreen mode
-
-* |expand| **Fullscreen Mode** - Clicking here will toggle fullscreen mode, in which the project and file toolbars are shown or hidden.
-
-.. index:: Files Toolbar
-.. index:: Toolbars; files
-.. _files-toolbar:
-
-The Files Toolbar
------------------
-
-The **Files Toolbar** is next, appears below the Project Toolbar when you have a project open.
-Use it to work with files in the currently open project.
-When you open a file, its name appears in the Files Toolbar.
-When you select a file in the toolbar, its contents are displayed in the browser.
-
-.. image:: img/getting-started/toolbars-files-a.png
-     :width: 90%
-     :alt: Files toolbar. See below for description.
-
-From left to right:
-
-.. _ft-files:
-
-* |folder-open| **Files** - If you don't have a file open, clicking here will show you a list of files
-  in the project's home directory. If you are working on a file, clicking **Files** will show a list of
-  files in the directory containing the currently selected file. You can enter search characters to
-  filter the file list for filenames containing the search text.
-
-.. _ft-new:
-
-* |plus-circle| **New** - click to create or upload new files. **New** also lets you
-  browse the `CoCalc Library <http://blog.sagemath.com/cocalc/2018/03/06/cocalc-library.html>`_, which contains code examples and entire books about various toolsets
-  and science topics, ready to copy into your project.
-
-.. _ft-history:
-
-* |history| **Log** - The **Project Activity Log** shows recent activity in your project:
-  logins, files opened and uploaded, etc. If you click on a filename in the log, it will open
-  that file. This is often the quickest way to resume work on a file that was recently closed.
-
-.. _ft-search:
-
-* |search| **Find** - Search  for files containing the specified text in the directory that contains
-  the currently selected file, or the project home directory if no file is selected. There are options
-  to for searching subdirectories, case sensitive search, including hidden files, and restricting search
-  to files in a git repository.
-
-.. _ft-info:
-
-* |microchip| **Processes** - This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
-
-.. image:: img/getting-started/process-info.png
-     :align: center
-     :width: 95%
-     :alt: Processes tab. See information above.
-
-.. note::
-
-    The "Memory" column in the Table of Processes can help you track down out-of-memory problems.
-
-.. _ft-settings:
-
-* |wrench| **Settings** - This tab is where you can set a description for your project, add or remove
-  upgrades, hide or delete the project, add a project-specific `SSH Key <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, view and add collaborators, stop and restart the project and the Sage worksheet server,
-  and launch the Plain Jupyter and JupyterLab servers.
-  *Hint: Adding hashtags to the description can make it easy to find a subject with the Project button if you have a large number of projects.*
-
-.. _ft-open-files:
-
-* **Open Files** - a button will appear for each file you have open. There are several ways to open a file in CoCalc:
-
-  * Select the name of the file in :doc:`../project-files` list.
-
-  * Select the filename in an entry in the :ref:`Project Activity Log <ft-history>`.
-
-  * Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
-
-
-.. _ft-comment:
-
-* |comment-icon| **Chat** - If a file is selected, you can click here to start text or video chat.
-  Collaborators on the project will get a notification when chat is opened or updated.
-
-.. _ft-share:
-
-* |lock-icon| **Private/Public** - If a file is selected, this button allows you to share it, or stop sharing. Files shared publicly can be viewed by people without a CoCalc login. You can see a list of all your shared files under :doc:`account/public-files`.
+.. _cocalc-session:
 
 Your CoCalc Session
--------------------
+===================
 
 .. index:: Member Hosting;compute session
 
@@ -285,10 +139,10 @@ Signing Out
 
 You :ref:`sign out <sign-out>` by using **Account** → **Preferences** → **Sign Out...**
 
-Next steps
-----------
+Next Steps
+==========
 
-Continue your tour of CoCalc, with these topics:
+Continue your tour of CoCalc with these topics:
 
 * :doc:`jupyter`
 * :doc:`latex`
@@ -301,19 +155,15 @@ Subscribe to CoCalc and upgrade your projects here:
 * :doc:`upgrade-guide`
 
 
-Getting help
------------------------------
+Additional Resources
+--------------------
 
 .. index:: Help; wiki
 
-In addition the :doc:`Index <genindex>` in this User Manual, if you have specific questions you can check the following:
+In addition the :doc:`Index <genindex>` in this User Manual, if you have specific questions you can check the CoCalc Wiki. Most of the CoCalc Wiki content has been moved into this User Manual.
 
 * CoCalc Wiki `search <https://github.com/sagemathinc/cocalc/search?utf8=%E2%9C%93&q=&type=Wikis>`_
-* CoCalc Wiki `index page <https://github.com/sagemathinc/cocalc/wiki/Home>`_
-
-.. note::
-
-    We are in the process of migrating CoCalc Wiki documents into this User Manual.
+* CoCalc Wiki `index page <https://github.com/sagemathinc/cocalc/wiki/Home>`
 
 .. index:: Help; Discord
 .. index:: Discord server for CoCalc
@@ -326,70 +176,18 @@ If you would like to chat with other CoCalc users, visit our Discord server: htt
 There is also a Google discussion group for CoCalc. You can view it online or use it as a mailing list: https://groups.google.com/forum/#!forum/cocalc
 
 Statements
------------------------------
+----------
 
 .. index:: GDPR
 
-You can find the CoCalc GDPR Compliance Statement on our wiki at 
-https://github.com/sagemathinc/cocalc/wiki/GDPR
+CoCalc GDPR Compliance Statement: https://github.com/sagemathinc/cocalc/wiki/GDPR
 
 .. index:: Accessibility
 
-You can find the CoCalc Accessibility Statement on our wiki at https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement
+CoCalc Accessibility Statement: https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement
+
+.. index:: VPAT
+
+CoCalc Voluntary Product Accessibility Template (VPAT): https://cocalc.com/policies/accessibility
 
 
-.. |cocalc-logo| image:: img/icons/cocalc-logo.svg
-    :height: 20px
-    :width: 20px
-    :alt: cocalc logo icon
-.. |info-circle|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/info-circle.png
-     :width: 16px
-     :alt: info i-circle icon
-.. |medkit|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png
-     :width: 16px
-     :alt: help medkit icon
-.. |bell|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bell-o.png
-     :width: 16px
-     :alt: notifications bell icon
-.. |wifi|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png
-     :width: 16px
-     :alt: connection status wifi icon
-.. |expand| image:: img/icons/expand.png
-    :height: 20px
-    :alt: expand fullscreen icon
-.. |folder-open|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/folder-open-o.png
-     :width: 16px
-     :alt: files folder open icon
-.. |plus-circle|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/plus-circle.png
-     :width: 16px
-     :alt: new file plus circle icon
-.. |history|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
-     :width: 16px
-     :alt: log history icon
-.. |search|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/search.png
-     :width: 16px
-     :alt: search magnifying glass icon
-.. |wrench|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wrench.png
-     :width: 16px
-     :alt: settings wrench icon
-.. |lock-icon|
-     image:: img/antd-icons/lock-icon.png
-     :width: 24px
-     :alt: To share, click lock icon.
-.. |comment-icon|
-     image:: img/antd-icons/comment-icon.png
-     :width: 24px
-     :alt: To open chat, click comment icon.
-.. |microchip|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/microchip.png
-     :width: 16px
-     :alt: processes microchip icon
