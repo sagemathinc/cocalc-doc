@@ -22,7 +22,6 @@ To start being productive, you have to create a
 .. toctree::
    :maxdepth: 2
 
-   project-list
    project-files
    plus-new
    project-log
