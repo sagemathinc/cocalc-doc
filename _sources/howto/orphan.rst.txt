@@ -45,4 +45,3 @@
    disk-space-warning
    ../project-list
    ../account
-   ../cocalc-help

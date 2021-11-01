@@ -6,17 +6,22 @@
 The Files Toolbar
 ========================
 
+Here's a tour of the **Files Toolbar**. It appears under the Project Toolbar when a project has been selected.
+
 .. contents::
    :local:
    :depth: 1
 
-When you have selected an open project, the **Files Toolbar** appears below the project toolbar. Use it to work with files in the selected project.
-When you open a file, the name of the file appears in the Files Toolbar.
-When you select a file in the toolbar, its contents are displayed in the browser.
-
-.. image:: img/getting-started/toolbars-files-a.png
+.. figure:: img/files-toolbar.png
+     :align: center
      :width: 90%
-     :alt: Files toolbar. See below for description.
+     :alt: files toolbar just below the project toolbar
+
+     the files toolbar is just below the project toolbar
+
+Use the Files Toolbar to work with files in the selected project.
+When you open a file, the name of the file appears in the Files Toolbar.
+When you select a file in the Toolbar, its contents are displayed in the browser.
 
 From left to right:
 
@@ -88,22 +93,21 @@ Open Files
 
 To the right of the Processes icon, a button appears for each file you have open. There are several ways to open a file in CoCalc:
 
-  * Select the name of the file in :doc:`../project-files` list.
+* Select the name of the file in :doc:`../project-files` list.
 
-  * Select the filename in an entry in the :ref:`Project Activity Log <ft-history>`.
+* Select the filename in an entry in the :ref:`Project Activity Log <ft-history>`.
 
-  * Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
+* Use the `open` command to open the file :ref:`from a terminal <terminal-file-open>`.
 
 
 .. _ft-comment:
 
-"Side Chat" for Files
+"Side Chat" for files
 ======================
 
-|comment-icon| If a file is selected, you can click here to start text or video chat.
-  Collaborators on the project will get a notification when chat is opened or updated.
+|comment-icon| If a file is selected, you can click here to start text or video chat. Collaborators on the project will get a notification when chat is opened or updated.
 
-Private / Public Status
+private / public status
 =======================
 
 .. _ft-share:
