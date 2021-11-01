@@ -79,26 +79,26 @@ Connection Status
 
 |wifi| The connection status icon changes color as shown below to indicate changes in the connection between your browser and CoCalc servers.
 
-  .. image:: img/getting-started/conn-stat.png
+.. image:: img/getting-started/conn-stat.png
     :width: 35%
     :alt: See below for connection status icon color codes.
 
-  Colors for the connection status icon:
+Colors for the connection status icon:
 
-  * Grey: connected, no messages in flight.
+* Grey: connected, no messages in flight.
 
-  * Dark Blue: connected, moderate load.
+* Dark Blue: connected, moderate load.
 
-  * Light Blue: connected, significant load.
+* Light Blue: connected, significant load.
 
-  * Red: connected, serious message backlog.
+* Red: connected, serious message backlog.
 
-  * Orange: disconnected / connecting.
+* Orange: disconnected / connecting.
 
 
   Clicking the connection status icon brings up a window with additional connection detail, including round-trip ping time to the CoCalc servers. If the ping time doesn't appear right away, wait a bit; it's tested every 30 seconds when the window is open.
 
-  .. image:: img/getting-started/conn-ind.png
+.. image:: img/getting-started/conn-ind.png
     :width: 70%
     :alt: Connection status pop-up showing ping time, hub server id, and message counts.
 
