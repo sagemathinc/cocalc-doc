@@ -18,6 +18,7 @@ understanding low memory warnings and how to triage situations where you can't f
    file-too-large.rst
    sudo-make-install.rst
    jupyter-kernel-terminated
+   license-doesnt-work.rst
    low-memory.rst
    slow-worksheet.rst
    sage-question.rst
