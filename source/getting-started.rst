@@ -13,35 +13,51 @@ Creating an Account
 -------------------
 
 On your first visit to CoCalc.com, you will see the welcome screen.
-Click either **Sign In** button:
+Click either **Sign Up** button:
 
-.. image:: img/getting-started/first-home-page.jpg
-     :width: 90%
-     :alt: Main landing page for CoCalc
+.. image:: img/getting-started/2021-11-welcome-sign-up.png
+     :width: 100%
+     :alt: CoCalc welcome page with Sign Up buttons circled in red
 
-At the next screen, complete the "Create an Account" dialog: Agree to the Terms of Service. Then, choose a sign-in method. In addition to signing up with your email address,
-you have the option of signing using your credentials for
-Facebook, Github, Google, or Twitter.
+At the next screen, check the box to agree to the Terms of Service.
 
-.. image:: img/getting-started/create-account.jpg
-     :width: 90%
-     :alt: Sign-in page with Create an Account panel at left
+.. image:: img/getting-started/sign-up-1.png
+     :width: 100%
+     :alt: checkbox and button for agreeing to terms of service
 
-In the image below, sign up via email is highlighted:
+Choose a sign-in method. In addition to signing up with your email address, you have the option of signing up using your credentials for Facebook, Github, Google, or Twitter.
 
-.. image:: img/getting-started/start-create2-a.png
-     :width: 50%
-     :alt: Create an Account dialog
+.. image:: img/getting-started/sign-up-2.png
+     :width: 100%
+     :alt: Sign up using email or linked account with Facebook, Github, Google, or Twitter.
 
-Signing in
-----------
+.. note::
+
+    If you don't want to agree to terms of service at this time, you can click "Try CoCalc without creating an account".
+
+Resuming a Session
+------------------
+
+If you closed your browser tab while signed in, you can probably resume your browser session without signing in again the next time you visit https://cocalc.com. Click your name at the top of the "Signed in as" screen or click "View your CoCalc Projects" at the bottom.
+
+.. image:: img/getting-started/view-projects.png
+     :width: 100%
+     :alt: Resume a session by clicking name at top or view projects at bottom
+
+
+Signing in Again
+-----------------
 
 Once you have signed in for the first time,
 sign-in in will be automatic if you are using
 the same browser and computer.
 All you will
 generally need to do is point your browser
-to https://cocalc.com.
+to https://cocalc.com and click either "Sign In" button.
+
+.. image:: img/getting-started/2021-11-welcome-sign-in.png
+     :width: 100%
+     :alt: CoCalc welcome page with Sign In buttons circled in red
 
 You will need to sign in again if you
     * connect from a different browser or computer
@@ -52,20 +68,11 @@ You will need to sign in again if you
 Creating a Project
 ------------------
 
-Now that you are signed in, create your first project.
-Click in the **Project title** area and enter a project name, for example
-"My Project", and then click **Create Project**.
+Now that you are signed in, you can create your first project. Click the Project button at upper left, and then enter a title for your project.
 
-.. image:: img/getting-started/proj-1-a.png
+.. image:: img/getting-started/create-project.png
      :width: 90%
      :alt: Create Project dialog
-
-After the project is created, you will see it appear in your
-list of projects. Click on the project name to open the project:
-
-.. image:: img/getting-started/proj-2-a.png
-     :width: 90%
-     :alt: New project appears in project list
 
 
 Creating a File
@@ -78,34 +85,32 @@ project is running on a trial server. Ignore the warning for now and keep going.
 
 Click **(+) New** and enter **example** where it says,
 **Name your file...**.
-and click **Jupyter notebook** to select the file type.
+Select **Jupyter notebook** to set the file type.
 Clicking a button for the type of file causes
-the file extension is added automatically.
+the file extension to be added automatically.
 
-.. image:: img/getting-started/file-1-a.png
+.. image:: img/getting-started/create-notebook.png
      :width: 90%
+     :alt: new file, file name, Jupyter notebook file type
 
 Running a Jupyter Notebook
 --------------------------
 
-We're going to run a simple Python program, so let's change
-the kernel from **SageMath (stable)** to **Python 3 (Anaconda 5)**.
-In the image, arrow 1 points to the place where the current kernel is displayed,
-while arrows 2 and 3 indicate how to select the new Jupyter kernel.
+Select the "Python 3 (system-wide)" kernel.
 
-.. image:: img/getting-started/file-6-a.png
+.. image:: img/getting-started/select-kernel.png
      :width: 90%
+     :alt: select python 3 system-wide kernel
 
+Now enter a line of python code in the first cell of the notebook::
 
-Now enter a line of python code in the first cell of the notebook:
-
-.. image:: img/getting-started/file-7.png
-     :width: 90%
+    print("hello")
 
 And click Run or press Shift-Enter to run the code.
 
-.. image:: img/getting-started/file-8-a.png
+.. image:: img/getting-started/run-first-cell.png
      :width: 90%
+     :alt: run a cell to print "hello"
 
 Toolbars
 =========
