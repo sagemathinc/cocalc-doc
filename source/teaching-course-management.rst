@@ -22,6 +22,7 @@ Open the **.course** file and click on the **Handouts** tab
 
 .. image:: img/teaching/handout-course.png
      :width: 100%
+     :alt: selecting the Handouts tab
 
 Type **handout** in the search box on the right hand of the screen and press enter. Note that search is case-insensitive.
 
@@ -29,6 +30,7 @@ The system will look for any folders with **Handout1** in their path name and  r
 
 .. image:: img/teaching/find-handout.png
      :width: 100%
+     :alt: entering a partial handout folder path in the handout search panel at right
 
 The new handout will be added to the list of handouts available for the course.
 
@@ -51,24 +53,27 @@ The system will return a list of folders with **assignment1** in their path name
 
 .. image:: img/teaching/find_assignment.png
      :width: 100%
+     :alt: entering a partial assignment folder path in the assignment search panel at right
 
 The new assignment will be added to the list of assignments available for this course.
 
 .. image:: img/teaching/assignment_list.png
      :width: 75%
+     :alt: first assignment has been added to assignment list
 
-Assigning an assignment to students
+Distributing an assignment to students
 ======================================
 
 Click on the assignment in the assignment list.
-When the assignment opens, set the **Due** date. You can do this in the text area, or using the calendar and clock widgets to the right. Click on the **Assign** button to assign to all students in the course.
+When the assignment opens, set the **Due** date. You can do this in the text area, or using the calendar and clock widgets to the right. Click on the **Assign** button to distribute to all students in the course.
 
 .. image:: img/teaching/send_assignment.png
      :width: 100%
+     :alt: distributing an assignment to all students
 
-Alternatively, you can assign just to individual students.
+Alternatively, you can distribute just to individual students.
 
-When an assignment is made to a student, a **copy** of the assignment folder will appear in their course project.
+When an assignment is distributed to a student, a **copy** of the assignment folder will appear in the student project.
 
 Advise the students that all work on the assignment should take place in this folder. Any work performed outside of this folder will not be collected.
 
@@ -82,6 +87,7 @@ Within the assignment, click on the **Peer Grading** icon and follow the instruc
 
 .. image:: img/teaching/peer_grading_activation.png
      :width: 100%
+     :alt: enabling peer grading for an assignment
 
 Collecting assignments from students
 ======================================
@@ -94,6 +100,7 @@ Alternatively, click on the **Collect** icon in the top row to collect from all 
 
 .. image:: img/teaching/collect_assignment.png
      :width: 100%
+     :alt: collecting an assignment from all students
 
 You should make sure that your project has enough disk space to accommodate this.
 It may be necessary to purchase an upgrade if you need more than the free allowance (currently 3GB per project).
@@ -104,6 +111,7 @@ If you click on the **Files** icon and go to the root directory of the course pr
 
 .. image:: img/teaching/filelist_with_collect.png
      :width: 100%
+     :alt: folder of collected assignment files appears in files list in instructor project
 
 Navigating within this folder, you'll find that it has a similar file structure to the original assignment.
 For example, for this demonstration we had the structure `/assignments/Assignment1` which appears in the collected folder as `[your_course_name]-collect/assignments/Assignment1`.
@@ -111,12 +119,14 @@ Entering this folder will give a view of all students' versions of this assignme
 
 .. image:: img/teaching/collected_assignments.png
      :width: 100%
+     :alt: "collect" folder for each student
 
 The folder corresponding to each collected assignment will have been given a unique random name.
 Navigating inside this folder, you will see all collected files along with a text file whose filename identifies the student.
 
 .. image:: img/teaching/Identify_student.png
      :width: 100%
+     :alt: student name appears under the folder with the 
 
 At this point, you can open and mark the student's returned assignment.
 
@@ -125,15 +135,28 @@ Simply click on the **Open** icon corresponding to the student you are intereste
 
 .. image:: img/teaching/open_assignment.png
      :width: 100%
+     :alt: opening a collected assignment in the instructor project
 
-Grading
-======================================
+.. _skip-entering-grades:
 
-You are free to annotate the student's assignment in any way you like.
-The student will get a copy of everything you do once you return it to them.
+Returning Assignments Without Grading
+=====================================
 
-When working with Jupyter notebooks, I usually do my annotations in Markdown cells and surround my comments in HTML tags that colour the text red.
-This allows the students to quickly identify my comments.
+You can provide comments to students by editing student files that you have collected, or by adding files to the "-course-collect" folder for the assignment and student in question.
+
+If you click the "Skip entering grades" button before returning assignments, your notes and any added files will be sent to the student projects, but the GRADE.md file will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.
+
+.. image:: img/teaching/non-nbg-2.png
+     :width: 100%
+     :alt: Skip entering grades button in Assignments tab of course file
+
+
+Manual Grading
+=======================
+
+You may annotate the student's assignment by modifying the collected file(s) in any way you like. The student will get a copy of everything you do after you return it.
+
+When working with Jupyter notebooks, it can be useful to make annotations in Markdown cells and surround comments in HTML tags that color the text red. This allows students to quickly identify comments.
 
 ::
 
@@ -141,6 +164,7 @@ This allows the students to quickly identify my comments.
 
 .. image:: img/teaching/feedback.png
      :width: 50%
+     :alt: highlighting instructor remark using html in a jupyter notebook markdown cell
 
 Once you've finished marking and commenting on the student's notebook, you can enter a grade via the **.course** file.
 Click on the **Enter Grade** button to open up the grade entry text box and enter the grade.
@@ -148,6 +172,13 @@ This can be a number or any other string that makes sense for your course.
 
 .. image:: img/teaching/Enter_grade.png
      :width: 100%
+     :alt: entering a grade for one student's assignment
+
+
+Automatic Grading
+=======================
+
+For automatic grading, see :doc:`teaching-nbgrader`.
 
 Exporting grades
 ======================================
@@ -157,6 +188,7 @@ The **Export grades** function is available in the **Configuration** tab of the 
 
 .. image:: img/teaching/Export_grades.png
      :width: 66%
+     :alt: exporting grades for all assignments from the Configuration tab
 
 The .csv file format looks like this::
 
@@ -187,45 +219,13 @@ Once an assignment has been graded, the *Return* to student button appears.
 
 .. image:: img/teaching/return_button.png
      :width: 100%
+     :alt: return buttons appear as assignments are graded
 
 Clicking on this sends a copy of the graded assignment back to the student.
 It appears in their assignments folder like this:
 
 .. image:: img/teaching/returned_assignment.png
      :width: 100%
+     :alt: in the student project, a new folder appears for returned work from the instructor
 
 Note that the student now has both their original assignment **and** a copy of the returned, graded assignment.
-
-Suggested course folder structure
-==========================================
-
-I tend to place course content in one of two categories:
-
-* Content that you only push out to students (e.g. lecture notes, data)
-* Content that requires pushing out and pulling back (e.g. assignments and homeworks)
-
-The reason for splitting content in this way is to save on disk space.
-
-When you push content out to the students, a copy is placed in their individual projects. When you pull it back for marking, a fresh copy of each student's assignment is made in **your** project. If the assignment contains large files, the lecturer's project can quickly run out of space for large classes.
-
-Each project has 3GB of disk space provided for free, with more being provided by purchasing upgrades.
-
-There are many ways one could organise a course in CoCalc but the following schema has proven to be useful for many people.
-
-
-* notes/date1
-* notes/date2
-* ...
-* assignments/date1
-* assignments/date2
-* ...
-* data/xyz
-* data/abc
-
-This way, the students just see the following three folders in their course project.
-
-* notes/
-* assignments/
-* data/
-
-The **notes** and **data** folders contain content that you push to the students and **assignments** contains material that you also collect back from them.
