@@ -63,7 +63,7 @@ Help
 Account
 =======
 
-|avatar-sample| The Account button has the avatar for your account in a small circle just left of the word "Account". Click here to update your profile, sign out, order subscriptions, view your upgrades, `add SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets. Read more about account actions :doc:`here <account>`.
+|avatar-sample| The Account button has the avatar for your account in a small circle just left of the word "Account". Click here to update your profile, sign out, order subscriptions, view your upgrades, `add SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets. Read more about account actions :doc:`here <account-toolbar>`.
 
 .. index:: Project Toolbar; notification (bell) icon
 

@@ -3,6 +3,7 @@
 .. toctree::
    :hidden:
 
+   multiple-accounts
    software-development
    project-invitation-tokens
    export-timetravel
@@ -44,4 +45,3 @@
    plotly-dash
    disk-space-warning
    ../project-list
-   ../account
