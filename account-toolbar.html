@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Frame Editor &mdash; CoCalc Manual  documentation</title>
+  <title>The Account Toolbar &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/frame-editor.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/account-toolbar.html"/>
   
 
   
@@ -44,13 +44,13 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Time Travel" href="time-travel.html" />
-    <link rel="prev" title="Task Lists" href="tasks.html" />
+    <link rel="next" title="Preferences" href="account/preferences.html" />
+    <link rel="prev" title="The Files Toolbar" href="files-toolbar.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/frame-editor.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/account-toolbar.html"/>
   
 
 </head>
@@ -103,7 +103,7 @@
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Features</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
@@ -112,28 +112,25 @@
 <li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Frame Editor</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#supported-file-types">Supported file types</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#markdown">Markdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#plaintext-source-code">Plaintext / Source Code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#html">HTML</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#r-markdown">R Markdown</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#latex">LaTeX</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#text">Text</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#multiple-cursors">Multiple Cursors</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Platform</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">The Project Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="files-toolbar.html">The Files Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="account-toolbar.html">The Account Toolbar</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Account Toolbar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account/preferences.html">Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/licenses.html">Licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/purchases.html">Purchases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/upgrades.html">Upgrades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/ssh.html">SSH keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/support.html">Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/public-files.html">Public files</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
@@ -193,14 +190,14 @@
     
       <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Frame Editor</li>
+      <li>The Account Toolbar</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/frame-editor.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/account-toolbar.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -214,49 +211,55 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="frame-editor">
-<span id="index-0"></span><span id="id1"></span><h1>Frame Editor<a class="headerlink" href="#frame-editor" title="Permalink to this headline">¶</a></h1>
-<p>This guide explains how to work with the <strong>frame editor</strong> for editing source code, <a class="reference internal" href="latex.html"><span class="doc">LaTeX documents</span></a>, <a class="reference internal" href="terminal.html"><span class="doc">Command-line terminal</span></a> etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is splitted horizontally. After that, the bottom right frame is changed to a <a class="reference internal" href="terminal.html"><span class="doc">Terminal</span></a>.</p>
-<p>Therefore, you can not only view the same Python source code file in two places, but you can also work with e.g. <a class="reference external" href="https://www.ipython.org">IPython</a> on the command-line in the same directory.</p>
-<a class="reference internal image-reference" href="_images/frame-editor-python.png"><img alt="split screen with two views of source file plus terminal running ipython" src="_images/frame-editor-python.png" style="width: 100%;" /></a>
-<div class="section" id="supported-file-types">
-<h2>Supported file types<a class="headerlink" href="#supported-file-types" title="Permalink to this headline">¶</a></h2>
-<span class="target" id="index-1"></span><div class="section" id="markdown">
-<span id="index-2"></span><h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
-<p>If you open/create a file ending with <code class="docutils literal notranslate"><span class="pre">*.md</span></code>, you’re presented by default with a split view of <a class="reference external" href="https://www.markdowntutorial.com/">Markdown</a> code on the left and HTML rendered output on the right hand side.
-You can also write <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX formulas</a> between <code class="docutils literal notranslate"><span class="pre">$</span></code> signs, e.g. <code class="docutils literal notranslate"><span class="pre">$\frac{1}{1+x^2}$</span></code>.</p>
-<p id="index-3">The markdown editor supports <strong>inverse search</strong> when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.</p>
-<span class="target" id="index-4"></span></div>
-<div class="section" id="plaintext-source-code">
-<span id="index-5"></span><h3>Plaintext / Source Code<a class="headerlink" href="#plaintext-source-code" title="Permalink to this headline">¶</a></h3>
-<p>A file ending in <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> is a plaintext file, which does not have any formatting.
-Similarly, you can also edit plaintext files with a special purpose, e.g. <code class="docutils literal notranslate"><span class="pre">*.csv</span></code> for CSV data,
-<code class="docutils literal notranslate"><span class="pre">*.yaml</span></code> for structured data, and for source-code of software programs, there is
-<code class="docutils literal notranslate"><span class="pre">*.c</span></code>, <code class="docutils literal notranslate"><span class="pre">*.c++</span></code>, <code class="docutils literal notranslate"><span class="pre">*.sage</span></code>, <code class="docutils literal notranslate"><span class="pre">*.java</span></code>, <code class="docutils literal notranslate"><span class="pre">*.py</span></code>, <code class="docutils literal notranslate"><span class="pre">*.adb</span></code> and many more!</p>
-<span class="target" id="index-6"></span></div>
-<div class="section" id="html">
-<span id="edit-html"></span><span id="index-7"></span><h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
-<p>Open/create a <code class="docutils literal notranslate"><span class="pre">*.html</span></code> file and you’ll see the rendered output on the right hand side. You can switch the rendered view between “Preview” (which is faster) or “iframe” (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.</p>
-<span class="target" id="index-8"></span></div>
-<div class="section" id="r-markdown">
-<span id="edit-rmd"></span><span id="index-9"></span><h3>R Markdown<a class="headerlink" href="#r-markdown" title="Permalink to this headline">¶</a></h3>
-<p>Open a <code class="docutils literal notranslate"><span class="pre">*.Rmd</span></code> or <code class="docutils literal notranslate"><span class="pre">*.rmd</span></code> file to work with <a class="reference external" href="https://rmarkdown.rstudio.com/">R Markdown</a>.
-Depending on the configuration in the preamble, you either produce an HTML or PDF output.
-Do not forget to switch the panel for the rendered output accordingly.
-(In case you produce PDF and HTML output, you can even see both after splitting the panel.)</p>
-</div>
-<div class="section" id="latex">
-<h3>LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h3>
-<p>See <a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a>.</p>
-</div>
-<div class="section" id="text">
-<h3>Text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h3>
-<span class="target" id="index-10"></span><span class="target" id="index-11"></span></div>
-</div>
-<div class="section" id="multiple-cursors">
-<span id="index-12"></span><h2>Multiple Cursors<a class="headerlink" href="#multiple-cursors" title="Permalink to this headline">¶</a></h2>
-<p>You can get multiple cursors while editing any file in the frame editor using the mouse and ctrl+click (cmd+click on Mac).</p>
-<p>If you switch to Sublime keybindings in “Account” &gt; “Preferences” &gt; “Editor settings”, you can select text and then use ctrl-D (cmd-D on Mac) to multi-select the next occurrence of the same text.</p>
+  <span class="target" id="index-0"></span><div class="section" id="the-account-toolbar">
+<span id="account-toolbar"></span><span id="index-1"></span><h1>The Account Toolbar<a class="headerlink" href="#the-account-toolbar" title="Permalink to this headline">¶</a></h1>
+<p>Here’s a description of the Account toolbar. It appears under the Project Toolbar when Account has been selected.</p>
+<p>Your account on CoCalc is everything related to your current identity.
+Your identity gives you access to your <a class="reference internal" href="project.html"><span class="doc">Projects</span></a>, where you can either be an owner or collaborator.
+The <a class="reference internal" href="account/preferences.html#account-settings"><span class="std std-ref">Account settings</span></a> allow you to customize many aspects of how the user interface behaves.
+It also contains the configuration for setting up
+<a class="reference internal" href="upgrade-guide.html"><span class="doc">subscriptions/purchasing course packages</span></a> and
+an overview about how your upgrades are currently distributed.</p>
+<a class="reference internal image-reference" href="_images/account-toolbar.png"><img alt="actions in the Account toolbar" class="align-center" src="_images/account-toolbar.png" style="width: 95%;" /></a>
+<p id="sign-out"><span id="index-2"></span>Under “Account” you will find a button to <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">out</span></code> at upper right, and the following sections for managing your account.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="account/preferences.html">Preferences</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account/preferences.html#account-settings">Account settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/preferences.html#other-settings">Other settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/preferences.html#profile">Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/preferences.html#editor-settings">Editor settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/preferences.html#terminal-settings">Terminal settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account/licenses.html">Licenses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account/licenses.html#buy-a-license">Buy a license…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/licenses.html#licenses-that-you-manage">Licenses that you manage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/licenses.html#projects-with-licenses">Projects with licenses</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account/purchases.html">Purchases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account/purchases.html#payment-methods">Payment methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/purchases.html#subscriptions">Subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/purchases.html#invoices-and-receipts">Invoices and receipts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account/upgrades.html">Upgrades</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account/upgrades.html#all-upgrades">All upgrades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/upgrades.html#applied-upgrades">Applied upgrades</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account/ssh.html">SSH keys</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account/ssh.html#id1">SSH keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/ssh.html#add-an-ssh-key">Add an SSH key</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account/support.html">Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account/support.html#support-tickets">Support tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="account/public-files.html">Public files</a></li>
+</ul>
 </div>
 </div>
 
@@ -268,10 +271,10 @@ Do not forget to switch the panel for the rendered output accordingly.
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="time-travel.html" class="btn btn-neutral float-right" title="Time Travel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="account/preferences.html" class="btn btn-neutral float-right" title="Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="tasks.html" class="btn btn-neutral float-left" title="Task Lists" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="files-toolbar.html" class="btn btn-neutral float-left" title="The Files Toolbar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

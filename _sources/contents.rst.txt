@@ -46,6 +46,7 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    project-toolbar
    files-toolbar
+   account-toolbar
    billing
    software
    ipad

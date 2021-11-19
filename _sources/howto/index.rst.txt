@@ -7,27 +7,28 @@ How to accomplish a certain task or run a specific example on CoCalc.
 CoCalc platform
 ===============
 
+* :doc:`convert-html-to-pdf`
 * :doc:`software-development`
-* :doc:`project-invitation-tokens`
+* :doc:`disk-space-warning`
 * :doc:`export-timetravel`
 * :doc:`external-tools`
+* :doc:`install-julia-package`
 * :doc:`install-python-lib`
 * :doc:`install-r-package`
-* :doc:`install-julia-package`
 * :doc:`running-processes`
+* :doc:`multiple-accounts`
+* :doc:`project-invitation-tokens`
 * :doc:`upload`
-* :doc:`convert-html-to-pdf`
-* :doc:`disk-space-warning`
 
 Services
 ========
 
 * :doc:`bokeh-server`
 * :doc:`mongodb`
+* :doc:`plotly-dash`
 * :doc:`postgresql`
 * :doc:`webserver`
 * :doc:`shiny-server`
-* :doc:`plotly-dash`
 
 Jupyter Notebook
 ================

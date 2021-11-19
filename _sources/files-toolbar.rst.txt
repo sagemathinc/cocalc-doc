@@ -8,9 +8,8 @@ The Files Toolbar
 
 Here's a tour of the **Files Toolbar**. It appears under the Project Toolbar when a project has been selected.
 
-.. contents::
-   :local:
-   :depth: 1
+.. toctree::
+   :maxdepth: 2
 
 .. figure:: img/files-toolbar.png
      :align: center

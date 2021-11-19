@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Front-end Web Development &mdash; CoCalc Manual  documentation</title>
+  <title>Multiple CoCalc Accounts &mdash; CoCalc Manual  documentation</title>
   
 
   
@@ -21,7 +21,7 @@
   
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/front-end-dev.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/multiple-accounts.html"/>
   
 
   
@@ -48,7 +48,7 @@
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/front-end-dev.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/multiple-accounts.html"/>
   
 
 </head>
@@ -179,14 +179,14 @@
     
       <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Front-end Web Development</li>
+      <li>Multiple CoCalc Accounts</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
             
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/front-end-dev.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/multiple-accounts.rst" class="fa fa-github"> Edit on GitHub</a>
             
           
         
@@ -200,66 +200,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="front-end-web-development">
-<span id="front-end-dev"></span><span id="index-0"></span><h1>Front-end Web Development<a class="headerlink" href="#front-end-web-development" title="Permalink to this headline">¶</a></h1>
-<p>A CoCalc project is a convenient platform for learning the latest tools for front-end web development, including <a class="reference external" href="https://nodejs.org/en/">Node.js</a>, <a class="reference external" href="https://reactjs.org/">React</a>, and <a class="reference external" href="https://nextjs.org/">Next.js</a>.</p>
-<div class="contents local topic" id="contents">
+  <div class="section" id="multiple-cocalc-accounts">
+<span id="multiple-accounts"></span><span id="index-0"></span><h1>Multiple CoCalc Accounts<a class="headerlink" href="#multiple-cocalc-accounts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-can-go-wrong">
+<h2>What Can go Wrong?<a class="headerlink" href="#what-can-go-wrong" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you have more than one CoCalc account, sometimes you might have problems when logged into both accounts simultaneously.</p>
+</div>
+<p>The key fact is that you <em>should not</em> attempt to use two different accounts on CoCalc simultaneously, from the same browser.
+The cookies will interfere with each other.
+However, both Firefox and Chrome allow for two or more <strong>identities</strong> / <strong>profiles</strong> at once,
+where each identity has a distinct set (cookie jar?) of cookies.
+That approach works very well with CoCalc.</p>
+<p>One phenomenon is that you might be able to access some files from one account,
+but not other files from that account, even from the same browser tab!</p>
+<p>For example, you might see the error message like “Opening <code class="docutils literal notranslate"><span class="pre">'filename'</span></code> publicly not yet supported” if you are signed into two user accounts simultaneously.</p>
+</div>
+<div class="section" id="an-easy-fix-when-things-get-weird">
+<h2>An Easy Fix when Things Get Weird<a class="headerlink" href="#an-easy-fix-when-things-get-weird" title="Permalink to this headline">¶</a></h2>
+<p>Make sure you close all cocalc.com windows in a given browser,
+log out of cocalc.com entirely (Account → Sign out…),
+and then log in again with the account that you want to use.</p>
+</div>
+<div class="section" id="how-to-use-multiple-cocalc-accounts-at-once">
+<h2>How to use multiple CoCalc accounts at once<a class="headerlink" href="#how-to-use-multiple-cocalc-accounts-at-once" title="Permalink to this headline">¶</a></h2>
+<p>There are several ways to do this.</p>
+<div class="section" id="method-1-use-different-browsers">
+<h3>Method 1: use different browsers<a class="headerlink" href="#method-1-use-different-browsers" title="Permalink to this headline">¶</a></h3>
+<p>Use one account in one browser, like FireFox, and the other account in a different browser, perhaps Google Chrome.</p>
+</div>
+<div class="section" id="method-2-use-private-icognito-sessions">
+<h3>Method 2: use private / icognito sessions<a class="headerlink" href="#method-2-use-private-icognito-sessions" title="Permalink to this headline">¶</a></h3>
+<p>Or within Firefox alone, you can have one account in a normal window.
+Then open a “New Private Window” under the “File” menu and use the other account in that window. The browser will keep those separate.</p>
+<p>Similarly, within Google Chrome alone, you can have one account in a normal window.
+Then open a “New Incognito Window” under the “File” menu
+and use the other account in that window.
+Again, the browser will keep those separate.</p>
+<p>If you have both Firefox and Google Chrome on the same machine,
+you can use four accounts simultaneously this way.</p>
+</div>
+<div class="section" id="method-3-use-different-browser-profiles-identities">
+<h3>Method 3: use different browser profiles / identities<a class="headerlink" href="#method-3-use-different-browser-profiles-identities" title="Permalink to this headline">¶</a></h3>
+<p><strong>Google Chrome</strong> refers to adding multiple identities as “Add a person or profile”.
+Here is a link to some <a class="reference external" href="https://support.google.com/chrome/answer/2364824?hl=en">Google Chrome Support Pages</a> that discuss this.</p>
+<p><strong>Firefox</strong> users can manage multiple identities via Contextual Identity Containers.
+Here is a <a class="reference external" href="https://wiki.mozilla.org/Security/Contextual_Identity_Project/Containers">the Mozilla Wiki page about Containers</a>.</p>
+</div>
+</div>
+<div class="section" id="merging-accounts">
+<span id="id1"></span><h2>Merging Accounts<a class="headerlink" href="#merging-accounts" title="Permalink to this headline">¶</a></h2>
+<p>Right now, we do not have a way to merge accounts and associated projects. However, adding your primary account as a collaborator for each project of the deprecated account is sufficient to have access to all projects by the primary account. Use the exact email address in the search box for collaborators to be sure to select the correct one. Then, you can access everything from your primary account, also distribute quota upgrades, etc.</p>
 <ul class="simple">
-<li><a class="reference internal" href="#general-notes" id="id3">General Notes</a></li>
-<li><a class="reference internal" href="#simple-python-server" id="id4">Simple Python Server</a></li>
-<li><a class="reference internal" href="#id1" id="id5">Node.js</a></li>
-<li><a class="reference internal" href="#typescript" id="id6">Typescript</a></li>
-<li><a class="reference internal" href="#vscode" id="id7">VSCode</a></li>
-<li><a class="reference internal" href="#id2" id="id8">React</a></li>
-<li><a class="reference internal" href="#nextjs" id="id9">Nextjs</a></li>
-<li><a class="reference internal" href="#connecting-to-a-database" id="id10">Connecting to a database</a></li>
-<li><a class="reference internal" href="#modifying-cocalc-sources" id="id11">Modifying CoCalc Sources</a><ul>
-<li><a class="reference internal" href="#cocalc-docker-image" id="id12">CoCalc Docker Image</a></li>
-<li><a class="reference internal" href="#cocalc-com" id="id13">CoCalc.com</a></li>
+<li><a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/2880">Ticket for merging accounts</a></li>
 </ul>
-</li>
-</ul>
-</div>
-<div class="section" id="general-notes">
-<h2><a class="toc-backref" href="#id3">General Notes</a><a class="headerlink" href="#general-notes" title="Permalink to this headline">¶</a></h2>
-<p>Before starting</p>
-<ul class="simple">
-<li><strong>BaseURL.</strong></li>
-<li><strong>Security Model.</strong></li>
-<li><strong>Not for production.</strong></li>
-</ul>
-</div>
-<div class="section" id="simple-python-server">
-<h2><a class="toc-backref" href="#id4">Simple Python Server</a><a class="headerlink" href="#simple-python-server" title="Permalink to this headline">¶</a></h2>
-<p>xxx</p>
-</div>
-<div class="section" id="id1">
-<h2><a class="toc-backref" href="#id5">Node.js</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>xxx</p>
-</div>
-<div class="section" id="typescript">
-<h2><a class="toc-backref" href="#id6">Typescript</a><a class="headerlink" href="#typescript" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="vscode">
-<h2><a class="toc-backref" href="#id7">VSCode</a><a class="headerlink" href="#vscode" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id2">
-<h2><a class="toc-backref" href="#id8">React</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="nextjs">
-<h2><a class="toc-backref" href="#id9">Nextjs</a><a class="headerlink" href="#nextjs" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="connecting-to-a-database">
-<h2><a class="toc-backref" href="#id10">Connecting to a database</a><a class="headerlink" href="#connecting-to-a-database" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="modifying-cocalc-sources">
-<h2><a class="toc-backref" href="#id11">Modifying CoCalc Sources</a><a class="headerlink" href="#modifying-cocalc-sources" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="cocalc-docker-image">
-<h3><a class="toc-backref" href="#id12">CoCalc Docker Image</a><a class="headerlink" href="#cocalc-docker-image" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="cocalc-com">
-<h3><a class="toc-backref" href="#id13">CoCalc.com</a><a class="headerlink" href="#cocalc-com" title="Permalink to this headline">¶</a></h3>
-</div>
 </div>
 </div>
 
