@@ -202,7 +202,7 @@ In the .course file under "Assignments", click ``Collect...`` to distribute the 
 Option: Skip entering grades
 ============================
 
-As with non-nbgrader assignments, have the option to :ref:`Skip entering <skip-entering-grades>`. After checking the box, proceed directly to returning the assignment below.
+As with non-nbgrader assignments, you have the option to :ref:`Skip entering grades<skip-entering-grades>`. After checking the box, proceed directly to returning the assignment below.
 
 Run nbgrader
 ============
@@ -231,8 +231,7 @@ At this point, all cells of type "Manually graded answer" will show a blank scor
 Do manual grading and add instructor comments
 =============================================
 
-You can enter manual scores as needed. When all manual scores are
-entered the overall scores are automatically updated.
+You can enter scores for manually-graded cells in an nbgrader notebook as needed. When all manual scores are entered, the overall scores are automatically updated.
 
 If you want to make additional comments, click ``Edit grade``. You can use Markdown in the comments, including LaTeX expressions.
 
