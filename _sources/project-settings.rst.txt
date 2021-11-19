@@ -651,6 +651,10 @@ Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_
 Cloud storage & remote file systems
 ###################################################
 
+.. image:: img/project-settings/project-settings-cloud-storage.png
+     :width: 100%
+     :align: center
+
 It is possible to access "cloud store" (a repository of file-like objects)
 or a remote file system in a CoCalc project.
 It will be mounted in the filesystem at ``/data/[name]``,
