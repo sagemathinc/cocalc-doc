@@ -80,8 +80,8 @@ https://cocalc.com/wstein/support/examples
 .. index:: Sharing files; share server
 .. _share-server:
 
-Using the Share Server
-==========================
+View Your File on the Share Server
+==================================
 
 After clicking ``Make item public`` as above, the **public URL** will be displayed under ``Shared publicly``.
 You can click the |external| button to open it at the share server.
@@ -105,6 +105,7 @@ File-sharing Tips
 * Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in "raw" form, i.e. without CoCalc controls, by opening in the share server and clicking "Raw" at upper right.
 
 * Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage ``@interact``, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser, for example in 3d plots like `this cardiod <https://cocalc.com/share/public_paths/7eee8ccdeb4acf37e6c258df1cd973871373df05>`_, will work when served from the share server.
+
 
 
 .. note::
