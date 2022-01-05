@@ -1,3 +1,4 @@
+=====
 query
 =====
 
@@ -14,10 +15,11 @@ is *get* if any query keys are null, otherwise the query is *set*.
 
 Note: queries with ``multi_response`` set to ``true`` are not supported.
 
-Examples of *get* query:
-^^^^^^^^^^^^^^^^^^^^^^^^
+Examples of a *get* query
+=========================
 
-Get title and description for a project, given the project id.
+Get title and description for a project
+---------------------------------------
 
 ::
 
@@ -55,7 +57,8 @@ Note: to get info only on projects active in the past 3 weeks, use
                             "project_id": "639a6b2e-7499-41b5-ac1f-1701809699a7",
                             "title": "TESTPROJECT 99"}]}}
 
-Get project id, given title and description.
+Get project id, given title and description
+--------------------------------------------
 
 ::
 
@@ -69,7 +72,8 @@ Get project id, given title and description.
           "multi_response":false,
           "id":"2be22e08-f00c-4128-b112-fa8581c2d584"}
 
-Get users, given the project id.
+Get users, given the project id
+---------------------------------------
 
 ::
 
@@ -114,7 +118,8 @@ MB - member hosting: true
           "multi_response":false,
           "id":"9dd3ef3f-002b-4893-b31f-ff51440c855f"}
 
-Get editor settings for the present user.
+Get editor settings for the present user
+--------------------------------------------
 
 ::
 
@@ -149,10 +154,11 @@ Get editor settings for the present user.
                                                      "track_revisions": True,
                                                      "undo_depth": 300}}}}
 
-Examples of *set* query.
-^^^^^^^^^^^^^^^^^^^^^^^^
+Examples of a *set* query
+=========================
 
-Set title and description for a project, given the project id.
+Set title and description for a project
+---------------------------------------
 
 ::
 
@@ -167,7 +173,8 @@ Set title and description for a project, given the project id.
             "multi_response":false,
             "id":"ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f"}
 
-Make a path public (publish a file).
+Make a path public (publish a file)
+---------------------------------------
 
 ::
 
@@ -182,7 +189,10 @@ Make a path public (publish a file).
             "multi_response":false,
             "id":"ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f"}
 
-Add an upgrade to a project. In the “get” example above showing project
+Add an upgrade to a project
+---------------------------------------
+
+In the “get” example above showing project
 upgrades, change cpu upgrades from 3 to 4. The ``users`` object is
 returned as read, with ``cpu_shares`` increased to 1024 = 4 \* 256. It
 is not necessary to specify the entire ``upgrades`` object if you are
@@ -220,19 +230,28 @@ are merged in.
           "id":"9dd3ef3f-002b-4893-b31f-ff51440c855f",
           "query": {}}
 
-**NOTE:** Information on which fields are gettable and settable in the
-database tables via API message is in the directory ‘db-schema’, in
-CoCalc sources on GitHub at
-https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema
+.. _api-stop-project:
 
-Within directory ‘db-schema’:
+Start and Stop a project
+-------------------------
 
--  for *project* fields you can get, see the definition of
-   ``schema.projects.user_query.get.fields``
--  for *project* fields you can set, see the definition of
-   ``schema.projects.user_query.set.fields``
--  for *user account* fields you can get, see the definition of
-   ``schema.accounts.user_query.get.fields``
--  for *user account* fields you can set, see the definition of
-   ``schema.accounts.user_query.set.fields``
+The example starts a project.
+Use `stop` instead of `start` for the action to stop a project.
 
+::
+
+     curl -u sk_abcdefQWERTY090900000000: \
+       -H "Content-Type: application/json" \
+       -d '{"query": \
+             { "projects": \
+               { "project_id":"29163de6-b5b0-496f-b75d-24be9aa2aa1d", \
+                 "action_request":{'action':'start'}}}}' \
+       https://cocalc.com/api/v1/query
+
+Gettable and settable fields
+============================
+
+Information on which fields are gettable and settable is in the CoCalc source code. See the definition of ``user_query`` for example in the
+`accounts.ts <https://github.com/sagemathinc/cocalc/blob/8015b03113dc1bc24690fb6d99abb49de3bf273a/src/packages/util/db-schema/accounts.ts>`_
+or
+`projects.ts <https://github.com/sagemathinc/cocalc/blob/8015b03113dc1bc24690fb6d99abb49de3bf273a/src/packages/util/db-schema/projects.ts>`_ files.
