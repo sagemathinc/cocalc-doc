@@ -11,13 +11,35 @@ Software Updates 2021
 .. highlight:: python
 
 
-.. _update-2021:
+.. _update-2021-12-13:
 
-2021-10: Scikit Optimize 0.9
+2021-12-13: Routine updates...
+-------------------------------------------------
+
+- Python:
+    - (upd) various packages
+
+- Executables:
+    - (upd) routine Linux package updates, including R packages
+    - (upd) Jupyter Lab ``3.2.5``
+
+- Known issues:
+    - Selenium in Python, you can use the "Preivous" software environment instead
+
+.. _update-2021-11-01:
+
+2021-11-01: taichi, tikzplotlib, Scikit Optimize
 -------------------------------------------------
 
 - Python 3 (system-wide):
-    - (upd) `scikit-optimize`_ ``0.9`` fixing some compatibility bugs
+    - (new) `tikzplotlib`_ – export matplotlib to PGF/TikZ plots – `TikZ plot example <https://cocalc.com/share/public_paths/be93350eccca7cf72b62aa8eab2de1509be32a63>`_
+    - (new) `taichi`_ ``0.8.4`` – *a parallel programming language for high-performance numerical computations* –  `taichi example <https://cocalc.com/share/public_paths/ae23d804c707870993372c86c66623bb933dc8c7>`_
+    - (upd) `scikit-optimize`_ ``0.9`` to fix compatibility bugs
+    - (upd) various package updates
+
+- Executables:
+    - (upd) Jupyter Lab ``3.2.1``
+    - (upd) routine Linux package updates, including R packages
 
 
 .. _update-2021-10-10:
@@ -26,6 +48,7 @@ Software Updates 2021
 ------------------------------------------------
 
 - (upd) routine updates for system packages, Python and R
+
 
 .. _update-2021-09-27:
 
@@ -583,3 +606,5 @@ Various updates for Python, R and other languages and also Linux system packages
 .. _nasm: https://nasm.us/
 .. _PyPy: https://www.pypy.org/
 .. _scikit-optimize: https://scikit-optimize.github.io/stable/
+.. _tikzplotlib: https://github.com/nschloe/tikzplotlib
+.. _taichi: https://github.com/taichi-dev/taichi

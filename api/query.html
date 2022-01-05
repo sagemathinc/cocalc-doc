@@ -159,8 +159,9 @@
 <li class="toctree-l3"><a class="reference internal" href="public_get_directory_listing.html">public_get_directory_listing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="public_get_text_file.html">public_get_text_file</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">query</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#examples-of-get-query">Examples of <em>get</em> query:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#examples-of-set-query">Examples of <em>set</em> query.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples-of-a-get-query">Examples of a <em>get</em> query</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples-of-a-set-query">Examples of a <em>set</em> query</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gettable-and-settable-fields">Gettable and settable fields</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="read_text_file_from_project.html">read_text_file_from_project</a></li>
@@ -271,9 +272,10 @@ for the ‘query’ API message must be sent as JSON object. A query is
 either <em>get</em> (read from database), or <em>set</em> (write to database). A query
 is <em>get</em> if any query keys are null, otherwise the query is <em>set</em>.</p>
 <p>Note: queries with <code class="docutils literal notranslate"><span class="pre">multi_response</span></code> set to <code class="docutils literal notranslate"><span class="pre">true</span></code> are not supported.</p>
-<div class="section" id="examples-of-get-query">
-<h2>Examples of <em>get</em> query:<a class="headerlink" href="#examples-of-get-query" title="Permalink to this headline">¶</a></h2>
-<p>Get title and description for a project, given the project id.</p>
+<div class="section" id="examples-of-a-get-query">
+<h2>Examples of a <em>get</em> query<a class="headerlink" href="#examples-of-a-get-query" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="get-title-and-description-for-a-project">
+<h3>Get title and description for a project<a class="headerlink" href="#get-title-and-description-for-a-project" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;title&quot;:null,&quot;description&quot;:null}}}&#39; \
   https://cocalc.com/api/v1/query
@@ -306,7 +308,9 @@ example, project name and description are returned.</p>
                        &quot;title&quot;: &quot;TESTPROJECT 99&quot;}]}}
 </pre></div>
 </div>
-<p>Get project id, given title and description.</p>
+</div>
+<div class="section" id="get-project-id-given-title-and-description">
+<h3>Get project id, given title and description<a class="headerlink" href="#get-project-id-given-title-and-description" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:null,&quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,&quot;description&quot;:&quot;desc 2&quot;}}}&#39; \
   https://cocalc.com/api/v1/query
@@ -318,7 +322,9 @@ example, project name and description are returned.</p>
      &quot;id&quot;:&quot;2be22e08-f00c-4128-b112-fa8581c2d584&quot;}
 </pre></div>
 </div>
-<p>Get users, given the project id.</p>
+</div>
+<div class="section" id="get-users-given-the-project-id">
+<h3>Get users, given the project id<a class="headerlink" href="#get-users-given-the-project-id" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \
@@ -358,7 +364,9 @@ MB - member hosting: true</p>
      &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}
 </pre></div>
 </div>
-<p>Get editor settings for the present user.</p>
+</div>
+<div class="section" id="get-editor-settings-for-the-present-user">
+<h3>Get editor settings for the present user<a class="headerlink" href="#get-editor-settings-for-the-present-user" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:null}}}&#39; \
@@ -392,9 +400,11 @@ MB - member hosting: true</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="examples-of-set-query">
-<h2>Examples of <em>set</em> query.<a class="headerlink" href="#examples-of-set-query" title="Permalink to this headline">¶</a></h2>
-<p>Set title and description for a project, given the project id.</p>
+</div>
+<div class="section" id="examples-of-a-set-query">
+<h2>Examples of a <em>set</em> query<a class="headerlink" href="#examples-of-a-set-query" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="set-title-and-description-for-a-project">
+<h3>Set title and description for a project<a class="headerlink" href="#set-title-and-description-for-a-project" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
@@ -407,7 +417,9 @@ MB - member hosting: true</p>
        &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}
 </pre></div>
 </div>
-<p>Make a path public (publish a file).</p>
+</div>
+<div class="section" id="make-a-path-public-publish-a-file">
+<h3>Make a path public (publish a file)<a class="headerlink" href="#make-a-path-public-publish-a-file" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;public_paths&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
@@ -420,7 +432,10 @@ MB - member hosting: true</p>
        &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}
 </pre></div>
 </div>
-<p>Add an upgrade to a project. In the “get” example above showing project
+</div>
+<div class="section" id="add-an-upgrade-to-a-project">
+<h3>Add an upgrade to a project<a class="headerlink" href="#add-an-upgrade-to-a-project" title="Permalink to this headline">¶</a></h3>
+<p>In the “get” example above showing project
 upgrades, change cpu upgrades from 3 to 4. The <code class="docutils literal notranslate"><span class="pre">users</span></code> object is
 returned as read, with <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> increased to 1024 = 4 * 256. It
 is not necessary to specify the entire <code class="docutils literal notranslate"><span class="pre">upgrades</span></code> object if you are
@@ -453,21 +468,28 @@ are merged in.</p>
      &quot;query&quot;: {}}
 </pre></div>
 </div>
-<p><strong>NOTE:</strong> Information on which fields are gettable and settable in the
-database tables via API message is in the directory ‘db-schema’, in
-CoCalc sources on GitHub at
-<a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema">https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema</a></p>
-<p>Within directory ‘db-schema’:</p>
-<ul class="simple">
-<li>for <em>project</em> fields you can get, see the definition of
-<code class="docutils literal notranslate"><span class="pre">schema.projects.user_query.get.fields</span></code></li>
-<li>for <em>project</em> fields you can set, see the definition of
-<code class="docutils literal notranslate"><span class="pre">schema.projects.user_query.set.fields</span></code></li>
-<li>for <em>user account</em> fields you can get, see the definition of
-<code class="docutils literal notranslate"><span class="pre">schema.accounts.user_query.get.fields</span></code></li>
-<li>for <em>user account</em> fields you can set, see the definition of
-<code class="docutils literal notranslate"><span class="pre">schema.accounts.user_query.set.fields</span></code></li>
-</ul>
+</div>
+<div class="section" id="start-and-stop-a-project">
+<span id="api-stop-project"></span><h3>Start and Stop a project<a class="headerlink" href="#start-and-stop-a-project" title="Permalink to this headline">¶</a></h3>
+<p>The example starts a project.
+Use <cite>stop</cite> instead of <cite>start</cite> for the action to stop a project.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
+  -H &quot;Content-Type: application/json&quot; \
+  -d &#39;{&quot;query&quot;: \
+        { &quot;projects&quot;: \
+          { &quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
+            &quot;action_request&quot;:{&#39;action&#39;:&#39;start&#39;}}}}&#39; \
+  https://cocalc.com/api/v1/query
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="gettable-and-settable-fields">
+<h2>Gettable and settable fields<a class="headerlink" href="#gettable-and-settable-fields" title="Permalink to this headline">¶</a></h2>
+<p>Information on which fields are gettable and settable is in the CoCalc source code. See the definition of <code class="docutils literal notranslate"><span class="pre">user_query</span></code> for example in the
+<a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/8015b03113dc1bc24690fb6d99abb49de3bf273a/src/packages/util/db-schema/accounts.ts">accounts.ts</a>
+or
+<a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/8015b03113dc1bc24690fb6d99abb49de3bf273a/src/packages/util/db-schema/projects.ts">projects.ts</a> files.</p>
 </div>
 </div>
 
@@ -492,7 +514,7 @@ CoCalc sources on GitHub at
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2021, Sagemath, Inc., CC BY-4.0 licensed
+        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
 
     </p>
   </div>
