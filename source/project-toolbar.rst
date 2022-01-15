@@ -3,7 +3,7 @@
 .. _project-toolbar:
 
 ========================
-The Project Toolbar
+Project Toolbar
 ========================
 
 Here's a tour of the topmost toolbar in CoCalc, the **Project Toolbar**.

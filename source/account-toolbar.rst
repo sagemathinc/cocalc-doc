@@ -3,8 +3,17 @@
 .. _account-toolbar:
 
 ========================
-The Account Toolbar
+Account Toolbar
 ========================
+
+.. note::
+
+   Account configuration is getting a new look. See :doc:`Account Dropdown Menu <account-dropdown>` for more information. To try out the new configuration screens, you can click "Try the new page..." at upper left in the existing Account Toolbar.
+
+.. image:: img/old-config-page.png
+     :width: 80%
+     :align: center
+     :alt: select "Try the new page..."
 
 Here’s a description of the Account toolbar. It appears under the Project Toolbar when Account has been selected.
 
