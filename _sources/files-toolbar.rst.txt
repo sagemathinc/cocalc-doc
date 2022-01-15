@@ -3,7 +3,7 @@
 .. _files-toolbar:
 
 ========================
-The Files Toolbar
+Files Toolbar
 ========================
 
 Here's a tour of the **Files Toolbar**. It appears under the Project Toolbar when a project has been selected.
