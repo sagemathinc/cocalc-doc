@@ -10,7 +10,6 @@ Software Updates 2021
 
 .. highlight:: python
 
-
 .. _update-2021-12-13:
 
 2021-12-13: Routine updates...

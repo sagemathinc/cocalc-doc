@@ -35,6 +35,7 @@ Software update summaries
 .. toctree::
    :maxdepth: 1
 
+   software/updates-2022
    software/updates-2021
    software/updates-2020
    software/updates-2019
