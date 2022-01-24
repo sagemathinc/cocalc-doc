@@ -22,4 +22,9 @@ Software Updates 2022
     - (upd) routine upgrades
 
 - Executables:
+    - (new) `GNU C Compiler`_ version 10: ``gcc-10``, ``g++-10``, ...
     - (upd) various Linux package updates, including R packages
+
+
+
+.. _GNU C Compiler: https://gcc.gnu.org/
