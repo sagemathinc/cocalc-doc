@@ -40,52 +40,48 @@ Install a package
 Command line (recommended)
 --------------------------------
 
-To actually install a package, create or open an existing :doc:`../terminal` file.
+To install a package, create or open an existing :doc:`../terminal` file.
+
+It may first be necessary to create the path where your locally-installed R packages will be stored. The first steps make sure that the needed directory is created and available to R instances. It's necessary to exit R and restart it for the directory path to become available. This first part (steps 1-3) only needs to be done once per project.
 
 #. Wait for the command-line prompt and type in ``R`` and hit the `Return` key. R will start up.
+#. Type in ``dir.create(path = Sys.getenv("R_LIBS_USER"), showWarnings = FALSE, recursive = TRUE)`` and hit the `Return` key.
+#. Exit R by pressing `Ctrl+d` or calling the ``q()`` function.
+#. Again type in ``R`` and hit the `Return` key. This will start R with the new directory available.
 #. Type in ``install.packages("<name of package>")`` and hit the `Return` key.
-#. R will ask you to install it in a local directory, starting with "``~``" – the "home directory" of your project. In the example below it is ``~/R/x86_64-pc-linux-gnu-library/3.4``.
-#. Confirm the questions with ``y`` and the installation process should run smoothly.
+#. R may ask you to install it in a local directory, starting with "``~``" – the "home directory" of your project, for example ``~/R/x86_64-pc-linux-gnu-library/4.1``. If so, confirm the questions with ``y`` and the installation process should run smoothly.
 #. Exit R by pressing `Ctrl+d` or calling the ``q()`` function.
 
-Here is a session for installing `conjoint <https://cran.r-project.org/web/packages/conjoint/index.html>`_ in a :doc:`../terminal`::
+Here is a session for installing `listcompr <https://cran.r-project.org/web/packages/listcompr/index.html>`_ in a :doc:`../terminal`::
 
     ~$ R
 
-    R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-    Copyright (C) 2018 The R Foundation for Statistical Computing
+    R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+    Copyright (C) 2021 The R Foundation for Statistical Computing
     Platform: x86_64-pc-linux-gnu (64-bit)
 
     [...]
 
-    > install.packages("conjoint")
-    Installing package into ‘/usr/local/lib/R/site-library’
-    (as ‘lib’ is unspecified)
-    Warning in install.packages("conjoint") :
-      'lib = "/usr/local/lib/R/site-library"' is not writable
-    Would you like to use a personal library instead?  (y/n) y
-    Would you like to create a personal library
-    ~/R/x86_64-pc-linux-gnu-library/3.4
-    to install packages into?  (y/n) y
-    trying URL 'https://cloud.r-project.org/src/contrib/conjoint_1.41.tar.gz'
-    Content type 'application/x-gzip' length 32601 bytes (31 KB)
-    ==================================================
-    downloaded 31 KB
+    > dir.create(path = Sys.getenv("R_LIBS_USER"), showWarnings = FALSE, recursive = TRUE)
+    > q()
+    Save workspace image? [y/n/c]: n
 
-    * installing *source* package ‘conjoint’ ...
-    ** package ‘conjoint’ successfully unpacked and MD5 sums checked
-    ** R
-    ** data
-    ** inst
-    ** preparing package for lazy loading
-    ** help
-    *** installing help indices
-    ** building package indices
-    ** testing if installed package can be loaded
-    * DONE (conjoint)
+    ~$ R
+
+    R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+    [...]
+
+    > install.packages("listcompr") # this will take several seconds
+
+    Installing package into ‘/home/user/R/x86_64-pc-linux-gnu-library/4.1’
+    (as ‘lib’ is unspecified)
+    [...]
+    * DONE (listcompr)
 
     The downloaded source packages are in
-            ‘/tmp/RtmpHza9lC/downloaded_packages’
+            ‘/tmp/Rtmpu49yve/downloaded_packages’
+
+    > library(listcompr) # make sure we can load the package
     > q()
     Save workspace image? [y/n/c]: n
 
