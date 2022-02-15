@@ -64,7 +64,7 @@ and you can change any of these settings at any time.
 Teacher or institution pays for upgrades
 --------------------------------------------
 
-This section describes adding upgrades to student projects if you are using a CoCalc license. Please see :doc:`course-upgrading-students-legacy` if you need to upgrade student projects with one of the older upgrade packages.
+This section describes adding upgrades to student projects if you are using a CoCalc license. Please see :doc:`teaching-upgrade-legacy` if you need to upgrade student projects with one of the older upgrade packages.
 
 We assume you have created an instructor project and a course file in that project, and have added students under the ``Students`` tab in the course file. You do not need the teacher project licensed at this time. See step 4 below if you plan to use your course license to upgrade the instructor project as well as student projects.
 
@@ -124,8 +124,8 @@ If you already have upgraded your instructor project from another CoCalc product
      :alt: enable/disable upgrading instructor project
 
 
-5. Restart the instructor project.
---------------------------------
+5. Restart the instructor project
+-----------------------------------
 
 If you enabled "Upgrade instructor project" in the previous step, then open project Settings (wrench icon) and restart your project so that the license will be applied. Click "Restart Project..." then click "Yes, restart project" in the confirmation dialog.
 
