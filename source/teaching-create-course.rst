@@ -107,7 +107,7 @@ which allows not only different groups of students, but also different due dates
 Adding Students to the Course
 #############################
 
-Open your course by clicking on the **.course** file.
+Open your course by clicking on the **course** file.
 
 In the **Students** tab, add a comma separated list of students' emails addresses in the search box and click on the search icon.
 
@@ -155,23 +155,10 @@ Your course page will now look like this
 .. index:: Re-send student email invitations
 
 ###############################
-Reconfiguring Student Projects
+Restrict Student Projects
 ###############################
 
-To ensure student projects have correct students and teaching assistants, titles and descriptions, click `Reconfigure all projects`.
-Doing so will also resend email invitations to students who have not already signed up for CoCalc.
-
-.. figure:: img/teaching/course-reconfigure.png
-     :width: 90%
-     :align: center
-
-     "Reconfigure all projects" at lower right in course Configuration
-
-###############################
-Restricted Student Projects
-###############################
-
-In the course Configuration tab, check any of the boxes under "Restrict student projects" to remove the corresponding functionality from student projects. See below for more information about each item. This information is also available if you hover over an option in the web dialog.
+In the course Configuration tab on the right, check any of the boxes under "Restrict student projects" to remove the corresponding functionality from student projects. See below for more information about each item. This information is also available if you hover over an option in the web dialog.
 
 Because some CoCalc features may not be compatible with course content created by an instructor, restricting a project can reduce student confusion and prevent issues with running and grading assignments. It may also keep students more focused, e.g., during an exam. Do not gain a false sense of security and expect these to prevent all forms of cheating.
 
@@ -192,6 +179,32 @@ Because some CoCalc features may not be compatible with course content created b
 * **Disable API keys (NOT IMPLEMENTED).** Makes it so the HTTP API is blocked from accessing the student project. A student might use the API to get around various other restrictions.
 * **Disable outgoing network access.** Blocks all outgoing network connections from the student project.
 * **Disable SSH access to project.** Makes any attempt to ssh to the student project fail.
+
+###############################
+Reconfigure Student Projects
+###############################
+
+In the course Configuration tab on the right, click `Reconfigure all projects` to ensure student projects have correct students and teaching assistants, titles and descriptionsa.
+Doing so will also resend email invitations to students who have not already signed up for CoCalc.
+
+.. figure:: img/teaching/course-reconfigure.png
+     :width: 90%
+     :align: center
+
+     "Reconfigure all projects" at lower right in course Configuration
+
+##################################
+Resend outstanding email invites
+##################################
+
+In the course Configuration tab on the right, click `Reinvite students` to send/resend an email invitation to all students who do not yet have an account on CoCalc. This will send at most one email per student per day.
+
+.. figure:: img/teaching/reinvite-students.png
+     :width: 90%
+     :align: center
+
+     "Reinvite students" at lower right in course Configuration
+
 
 
 #########################
