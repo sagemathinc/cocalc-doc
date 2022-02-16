@@ -66,7 +66,7 @@ Teacher or institution pays for upgrades
 
 This section describes adding upgrades to student projects if you are using a CoCalc license. Please see :doc:`teaching-upgrade-legacy` if you need to upgrade student projects with one of the older upgrade packages.
 
-We assume you have created an instructor project and a course file in that project, and have added students under the ``Students`` tab in the course file. You do not need the teacher project licensed at this time. See step 4 below if you plan to use your course license to upgrade the instructor project as well as student projects.
+We assume you have created an instructor project and a course file in that project, and have added students under the ``Students`` tab in the course file. You do not need the instructor project licensed at this time. See step 4 below if you plan to use your course license to upgrade the instructor project as well as student projects.
 
 1. Obtain a license key.
 ------------------------
