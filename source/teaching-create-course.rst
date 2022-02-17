@@ -114,6 +114,7 @@ In the **Students** tab, add a comma separated list of students' emails addresse
 .. image:: img/teaching/student_list.png
      :width: 100%
      :align: center
+     :alt: text area at upper right for entering student list
 
 If you have a particular large class, the above method may take a very long time. If you have your students' email addresses in an Excel spreadsheet (or Google Sheet) you can copy and paste them directly in the **Add student** box.
 
@@ -125,6 +126,7 @@ Next, the student projects will be created. Please be patient until all students
 .. image:: img/teaching/student_list2.png
      :width: 100%
      :align: center
+     :alt: droptdown list of results of searching for students entered
 
 If your project (the one with the .course file) has the :ref:`Internet Access upgrade <internet-access>`, any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course. 
 
@@ -137,6 +139,7 @@ Your course page will now look like this
 .. image:: img/teaching/student_list3.png
      :width: 100%
      :align: center
+     :alt: student list after students have been added
 
 * Email addresses that are followed by **(invited)** do not have a CoCalc account yet.
   **(invited)** will disappear as soon as they sign up.
@@ -165,6 +168,7 @@ Because some CoCalc features may not be compatible with course content created b
 .. figure:: img/teaching/restrict-student-projects.png
      :width: 90%
      :align: center
+     :alt: several options for restricting student projects
 
      "Restrict student projects" at lower right in course Configuration
 
@@ -190,6 +194,7 @@ Doing so will also resend email invitations to students who have not already sig
 .. figure:: img/teaching/course-reconfigure.png
      :width: 90%
      :align: center
+     :alt: button to reconfigure all student projects in lower right of course Configuration tab
 
      "Reconfigure all projects" at lower right in course Configuration
 
@@ -202,6 +207,8 @@ In the course Configuration tab on the right, click `Reinvite students` to send/
 .. figure:: img/teaching/reinvite-students.png
      :width: 90%
      :align: center
+     :alt: button to resend email invitations to students in lower right of course Configuration tab
+
 
      "Reinvite students" at lower right in course Configuration
 
