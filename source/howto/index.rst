@@ -12,6 +12,7 @@ CoCalc platform
 * :doc:`disk-space-warning`
 * :doc:`export-timetravel`
 * :doc:`external-tools`
+* :doc:`firewall-info`
 * :doc:`install-julia-package`
 * :doc:`install-python-lib`
 * :doc:`install-r-package`

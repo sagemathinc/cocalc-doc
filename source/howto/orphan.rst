@@ -3,6 +3,7 @@
 .. toctree::
    :hidden:
 
+   firewall-info
    multiple-accounts
    software-development
    project-invitation-tokens

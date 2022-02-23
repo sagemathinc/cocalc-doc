@@ -186,6 +186,8 @@ Step 12: Is your browser out of date or otherwise incompatible with CoCalc?
 
 The problem may be solved by using another browser, in particular Google Chrome, or by updating your browser to a recent version if it is outdated.
 
+.. _websocket-test:
+
 Step 13: Do WebSocket connections work?
 -------------------------------------------------------------------------------------------------------
 
