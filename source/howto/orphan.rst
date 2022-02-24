@@ -3,6 +3,7 @@
 .. toctree::
    :hidden:
 
+   cant-save
    firewall-info
    multiple-accounts
    software-development

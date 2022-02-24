@@ -13,6 +13,7 @@ understanding low memory warnings and how to triage situations where you can't f
 .. toctree::
    :maxdepth: 1
 
+   cant-save.rst
    clock-is-off.rst
    connectivity-issues.rst
    file-too-large.rst

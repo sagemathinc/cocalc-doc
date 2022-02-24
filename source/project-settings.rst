@@ -56,6 +56,8 @@ You can share upgrades with any project that you are a collaborator on. You must
     For details on paid subscriptions, see `Subscription and Pricing Information <https://cocalc.com/policies/pricing.html>`_.
     Subscriptions start at \$3 per month.
 
+.. _view-resources:
+
 **********************
 View Current Resources
 **********************

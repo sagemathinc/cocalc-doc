@@ -74,6 +74,8 @@ Notification Bell
 
 .. index:: Connection Status
 
+.. _connection-status:
+
 Connection Status
 =================
 
