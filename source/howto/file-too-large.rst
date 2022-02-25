@@ -5,6 +5,10 @@
 File Too Large
 ================================================
 
+.. contents::
+   :local:
+   :depth: 1
+
 Here are suggestions for what to do if you get a file-too-large error when :ref:`opening a file <ft-open-files>` in CoCalc.
 
 .. index:: File too large; Jupyter notebook
@@ -18,18 +22,18 @@ If you receive the error message ``Fatal Error loading ipynb file`` with text sa
 .. index:: File too large; HTML file
 .. _howto-html-too-large:
 
-HTML File
-==========
+HTML or Text File
+=================
 
-An HTML file larger than 5 MB can't be edited with the CoCalc :doc:`../frame-editor`.
+An HTML or text file larger than 5 MB can't be edited with the CoCalc :doc:`../frame-editor`.
 
-You can open a large html file for viewing as follows:
+Here is a workaround to view a large .html or .txt file in a CoCalc project in your browser.
 
-* In the file listing, click the checkbox to the left of the file.
-* Click the "Download" button at the top.
-* Then click on the link that you see.
+#. In the file listing, click the checkbox to the left of the file.
+#. Click the "Download" button at the top.
+#. Click on the link that you see.
 
-If you want to edit the file, you can use one of the Linux editing utilities, such as ``vim`` or ``emacs``.
+If you want to edit the file, you can open a :doc:`../terminal` and use one of the Linux editing utilities, such as "vi" or "emacs".
 
 .. index:: File too large; CSV file
 .. _howto-csv-too-large:
