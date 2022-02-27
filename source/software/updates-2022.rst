@@ -10,6 +10,23 @@ Software Updates 2022
 
 .. highlight:: python
 
+
+.. _update-2022-02-27:
+
+2022-02-27: Removing PyPy Notebooks
+------------------------------------------------
+
+- Jupyter:
+    - removing `pypy`_ kernel, since it is broken. ``pypy3`` still available on the command-line.
+
+- Sage:
+    - `admcycles`_: updated to be compatible with 9.5
+
+- Executables:
+    - (new) `valgrind`_
+    - (upd) various Linux package updates, including R packages
+
+
 .. _update-2022-02-12:
 
 2022-02-12: Sage 9.5
@@ -49,3 +66,6 @@ Software Updates 2022
 .. _GNU C Compiler: https://gcc.gnu.org/
 .. _Sage: https://www.sagemath.org/
 .. _numpyro: https://num.pyro.ai/
+.. _admcycles: https://www.math.uni-bonn.de/people/schmitt/admcycles
+.. _pypy: https://www.pypy.org/
+.. _valgrind: https://valgrind.org/
