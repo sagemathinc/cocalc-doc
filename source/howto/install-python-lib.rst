@@ -165,9 +165,9 @@ We start with an empty directory in our ``$HOME``::
     ~$ mkdir my-special-env
     ~$ cd my-special-env
 
-Then we run ``pipenv install`` without site packages. Install pandas below version ``1.2`` and the juypter kernel::
+Then we run ``pipenv install`` without site packages and specifying the python interpreter to use (Note: by default it might pick up ``pypy3``, which is not a good idea in general). Install pandas below version ``1.2`` and the juypter kernel::
 
-    ~/my-special-env$ pipenv install --no-site-packages ipykernel 'pandas<1.2'
+    ~/my-special-env$ pipenv install --python /usr/bin/python3 --no-site-packages ipykernel 'pandas<1.2'
     [output is abbreviated ...]
     Creating a virtualenv for this project...
     ✔ Successfully created virtual environment! 
