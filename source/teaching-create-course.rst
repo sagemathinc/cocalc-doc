@@ -107,26 +107,45 @@ which allows not only different groups of students, but also different due dates
 Adding Students to the Course
 #############################
 
-Open your course by clicking on the **course** file.
+Open your new course by clicking on the **course** file. Select the **Students** tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc.
 
-In the **Students** tab, add a comma separated list of students' emails addresses in the search box and click on the search icon.
-
-.. image:: img/teaching/student_list.png
+.. image:: img/teaching/add-students-1.png
      :width: 100%
      :align: center
      :alt: text area at upper right for entering student list
 
-If you have a particular large class, the above method may take a very long time. If you have your students' email addresses in an Excel spreadsheet (or Google Sheet) you can copy and paste them directly in the **Add student** box.
+It's best to add students using their email addresses, because those are unique for cocalc accounts. However, it is also possible to search for students by first and last names.
 
-After parsing the list, you can either add the students explicitly (press shift or ctrl key for multiple selections),
-or just click the "Add all students" button.
+To add multiple students, you can paste in a comma-separated list of email addresses or names. Another way to enter the information is if you have your students' email addresses in a column of a spreadsheet, for example with Excel or Google Sheets.
 
-Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc.
+.. image:: img/teaching/add-students-2.png
+     :width: 60%
+     :align: center
+     :alt: example of student email addresses in a spreadsheet
 
-.. image:: img/teaching/student_list2.png
+You can copy the addresses from the spreadsheet and paste directly in the **Add student** box.
+
+.. image:: img/teaching/add-students-3.png
      :width: 100%
      :align: center
-     :alt: droptdown list of results of searching for students entered
+     :alt: copy/paste from spreadsheet into Add Student box
+
+
+After running the search by clicking "Search" or hitting shift-Enter, you can select which students you want add from the search results (use Ctrl-click or Cmd-click for more than 1 student), or just click the "Add all students" button.
+
+.. image:: img/teaching/add-students-4.png
+     :width: 100%
+     :align: center
+     :alt: selecting all matching students after searching by email address
+
+
+Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc. If the process appears stalled after creating some number of student projects, you can refresh your browser to check for updated results.
+
+.. image:: img/teaching/add-students-5.png
+     :width: 100%
+     :align: center
+     :alt: student list after adding all students from the search
+
 
 If your project (the one with the .course file) has the :ref:`Internet Access upgrade <internet-access>`, any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course. 
 
