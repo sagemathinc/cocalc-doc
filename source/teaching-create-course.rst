@@ -153,13 +153,6 @@ If your project (the one with the .course file) has the :ref:`Internet Access up
 
     For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.
 
-Your course page will now look like this
-
-.. image:: img/teaching/student_list3.png
-     :width: 100%
-     :align: center
-     :alt: student list after students have been added
-
 * Email addresses that are followed by **(invited)** do not have a CoCalc account yet.
   **(invited)** will disappear as soon as they sign up.
 * You can see when each student last used the course project. In this case -- never!
