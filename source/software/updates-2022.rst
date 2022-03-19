@@ -11,6 +11,26 @@ Software Updates 2022
 .. highlight:: python
 
 
+.. _update-2022-03-19:
+
+2022-03-19: Bioconductor Maintenance
+----------------------------------------------
+
+- R:
+    - (upd) entire `Bioconductor`_ stack
+
+- System:
+    - various Linux, R and Python package updates
+
+
+.. _update-2022-03-08:
+
+2022-03-08: Regular update
+-----------------------------------------------
+
+- System:
+    - various Linux, R and Python package updates
+
 .. _update-2022-02-27:
 
 2022-02-27: Removing PyPy Notebooks
@@ -69,3 +89,5 @@ Software Updates 2022
 .. _admcycles: https://www.math.uni-bonn.de/people/schmitt/admcycles
 .. _pypy: https://www.pypy.org/
 .. _valgrind: https://valgrind.org/
+.. _bioconductor: https://bioconductor.org/
+
