@@ -108,6 +108,7 @@ If a file is selected, you can click here to start text or video chat. Collabora
 |lock-icon| private / public status
 ===================================
 
+
 If a file is selected, this button allows you to share it, or stop sharing. Files shared publicly can be viewed by people without a CoCalc login. You can see a list of all your shared files under :doc:`account/public-files`.
 
 .. |folder-open|

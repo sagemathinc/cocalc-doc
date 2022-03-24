@@ -30,13 +30,9 @@ In addition to entering a title and description, you may specify a project name.
 .. index:: Projects; upgrades
 .. _project-upgrades:
 
-########################
-Project usage and quotas
-########################
-
-*****************
+#################
 Why Add Upgrades?
-*****************
+#################
 
 There are many reasons that you might want to have an upgraded project.
 
@@ -58,17 +54,25 @@ You can share upgrades with any project that you are a collaborator on. You must
 
 .. _view-resources:
 
-**********************
-View Current Resources
-**********************
+#########################################
+|dashboard-icon| Project usage and quotas
+#########################################
 
-You can view upgrades for the current project and current resource use under `Project usage and quotas`.
-Here's an example for a project with no upgrades added (note the warning banner that
-appears if the project does not have Member Hosting or Internet Access):
+You can view upgrades applied to the current project under "Project usage and quotas". The project must be running for values to be displayed.
+Here's an example:
 
-.. image:: img/project-settings/before-upgrade.png
-     :width: 60%
+.. image:: img/project-settings/usage-and-quotas.png
+     :width: 80%
      :align: center
+     :alt: display usage and quotas for a running project
+
+If you click on the value at the right for any setting, you will see a brief explanation of that setting. In the example, the text for Idle timeout is displayed:
+
+.. image:: img/project-settings/usage-and-quotas-hint.png
+     :width: 80%
+     :align: center
+     :alt: explanatory text for Idle timeout
+
 
 .. _apply_project-upgrades:
 
@@ -821,7 +825,10 @@ On CoCalc's side, the storage bucket name and the content of the authentication 
 For optimal performance, the storage bucket should be in the same region as CoCalc's cluster.
 As of writing this, this would be ``us-east1``.
 
-
+.. |dashboard-icon|
+     image:: img/antd-icons/dashboard-icon.png
+     :width: 24px
+     :alt: icon for project 
 
 
 
