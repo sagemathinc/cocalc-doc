@@ -8,6 +8,7 @@ Linux Terminal
 
 .. image:: img/terminals4.png
     :width: 100%
+    :alt: sample terminal screenshot
 
 The **CoCalc Linux Terminal** lets you run programs online in a Linux environment.
 Everything runs remotely inside :doc:`a project <./project>`,
@@ -126,6 +127,7 @@ It contains further instructions about how to configure commands that are run wh
 .. |rocket|
     image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/rocket.png
     :width: 16px
+    :alt: rocket icon
 
 .. index:: Anaconda Environment
 
@@ -158,8 +160,7 @@ If you open a source code file in CoCalc for editing, for example an ``.sh``, ``
 .. image:: img/edit-terminal-split.png
     :width: 100%
     :align: center
-
-
+    :alt: split screen, editor pane with .py file on left, terminal on right
 
 Customize font
 -----------------
@@ -167,18 +168,19 @@ Customize font
 To change the **size** of the font, click the plus and minus magnification glass icons at the top of a focused terminal frame.
 
 In order to change the appearance of the **font family** of the terminal, adjust the font settings of your web browser.
-For example, in *Google Chrome* this is done in **Settings** → **Appearace** → **Customize Fonts**:
+For example, in *Google Chrome* this is done in **Settings** → **Appearance** → **Customize Fonts**:
 
 .. image:: img/terminal/chrome-customize-fonts.png
     :width: 75%
     :align: center
+    :alt: customize fonts in your browser
 
 Then select a different **fixed-width** font:
 
 .. image:: img/terminal/chrome-fixed-width-font.png
     :width: 75%
     :align: center
-
+    :alt: choose fixed-width font in your browser
 
 
 Broken VIM key bindings
@@ -218,5 +220,6 @@ Suppose you want to use a .term file, but want to remove previous history, comme
 .. image:: img/terminal/clean-terminal.png
     :width: 75%
     :align: center
+    :alt: removing hidden history files for a terminal
 
 One reason this situation might arise is if you are an instructor in  a course and want to distribute a .term file to your students using the Handouts or :ref:`Assignments <create-assignment>` feature in CoCalc courses, but do not want to distribute command history that may have accumulated with the original terminal in the instructor's project.
