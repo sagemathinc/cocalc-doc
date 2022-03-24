@@ -25,23 +25,27 @@ In addition, every file in CoCalc has a separate chat that can be found on the u
 
 .. image:: img/teaching/chat_button.png
      :width: 30%
+     :alt: button at upper right for side chat with any file
 
 Every time one of your students writes something into a chat on any one of their files,
 you will get a notification displayed on the top bar.
 
 .. image:: img/teaching/instructor_notification.png
      :width: 66%
+     :alt: notification count shown inside bell icon
 
 Clicking on the notification button (bell icon on the top of the screen) displays a notification menu with the latest chats and modifications in the project or specific files.
 
 .. image:: img/teaching/notification_highlighted.png
      :width: 100%
+     :alt: click notification bell for list of latest notifications
 
 The chat notifications are always presented at the top of the menu, followed by any updates you or your collaborators have done to the project. Clicking on a chat notification will take you to **the student's copy** of the file inside **his/her project**.
 From there, you can both reply to their questions and look at their work simultaneously.
 
 .. image:: img/teaching/student_question.png
      :width: 66%
+     :alt: clicking on notification expands to show detail
 
 Once you have replied to the student's question (s)he will receive a notification.
 
@@ -72,6 +76,7 @@ CoCalc chats support an ``@mentions`` feature, where you type ``@`` and a list a
 .. figure:: img/teaching/tex-mentions.png
      :width: 90%
      :align: center
+     :alt: @-mention causes email notifications to be sent
 
      *@mentioning names in course shared project chat*
 
@@ -89,6 +94,7 @@ To create a shared project you need to go to your **.course** file and click on 
 
 .. image:: img/teaching/shared1.png
      :width: 100%
+     :alt: creating a project that will be shared by all students
 
 If you create a **.sage-chat** file here, all students will receive automatic notifications when questions are posted on the chat.
 
