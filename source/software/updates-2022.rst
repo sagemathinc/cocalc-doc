@@ -10,6 +10,23 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-03-24:
+
+2022-03-24: New Anaconda Environment
+----------------------------------------------
+
+- (new) Anaconda 2021:
+    - Despite we already have the year 2022, the installer is versioned as ``2021.11``, hence that name.
+    - Most of the packages that were installed in Anaconda 2020 are also installed here.
+    - The Python version is ``3.9``.
+    - Anaconda 2020 will stay around, but updates or additional packages will go into the 2021 edition.
+
+- Python 3 (system-wide):
+    - (new) `requests-cache`_ ``0.9.2``
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
 
 .. _update-2022-03-19:
 
@@ -90,4 +107,4 @@ Software Updates 2022
 .. _pypy: https://www.pypy.org/
 .. _valgrind: https://valgrind.org/
 .. _bioconductor: https://bioconductor.org/
-
+.. _requests-cache: https://requests-cache.readthedocs.io/en/stable/
