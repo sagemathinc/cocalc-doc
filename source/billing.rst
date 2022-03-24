@@ -83,9 +83,10 @@ Please contact help@cocalc.com with all relevant details about your intended pur
 Quota upgrades
 ===========================
 
-.. _member_hosting:
 .. index::
     Quotas; Member hosting
+
+.. _member-hosting:
 
 What is **"member hosting"**?
 ---------------------------------------------
@@ -106,14 +107,15 @@ more quickly with lower latency,
 and CPU, memory and I/O heavy operations run more quickly.
 
 
-
-.. _network-access:
 .. index::
     Quotas; Network access
 
+.. _network-access:
 
-What exactly is the **"internet access"** quota?
+What exactly is the **"network access"** quota?
 ------------------------------------------------
+
+(This was formerly called the **Internet access** quota.)
 
 Despite the fact that you are accessing CoCalc through the internet,
 you are actually working in a highly restricted environment.

@@ -92,17 +92,17 @@ To create a shared project you need to go to your **.course** file and click on 
 
 If you create a **.sage-chat** file here, all students will receive automatic notifications when questions are posted on the chat.
 
-If you want to make a file or an assignment **read only** so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type `chmod a-w filename` (in this example the filename is `Assignment1`).
+If you want to make a file or an assignment **read-only** so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type::
 
-.. image:: img/teaching/read_only.png
-     :width: 100%
+    chmod a-w filename
 
-If you want to check the access permissions of all the files contained in a given directory, use the command `ls -l` on the terminal.
+If you want to check the access permissions of all the files contained in a given directory, use the following::
 
-.. image:: img/teaching/ls_assignment.png
-     :width: 100%
+    ls -l
 
-In case you want to change a read only file into a read and write, type `chmod a+w filename` on the terminal.
+In case you want to change a read only file into a read and write, type::
+
+    chmod a+w filename
 
 Group Projects
 ========================
