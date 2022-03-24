@@ -76,82 +76,29 @@ If you click on the value at the right for any setting, you will see a brief exp
 
 .. _apply_project-upgrades:
 
-*************
-Adjust Quotas
-*************
-
-The "Adjust Quotas" dialog is where you add upgrades purchased under a Subscription or Course Package. If you have a license, see the section :ref:`Licenses <project-add-license>` below.
+#######################################
+Your upgrade contributions
+#######################################
 
 .. note::
 
-    If you want to upgrade student projects for a CoCalc managed course, that is done in the ``.course`` file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
+    Dialogues to view and modify upgrade contributions are only displayed if you own an older updgrade package. They do not display if your purchases consist exclusively of the newer license product.
 
+If you have any of the older non-license products, an option to view and modify resources from these will appear:
 
-You can enter any values that do not exceed available upgrades. This example continues
-by adding as much in the way of resources as possible to the current project.
-You can remove upgrades at any time and apply them to other projects.
-
-When you click `Adjust Quotas...`, a dialog like the following appears. The screenshot shows numbers
-for a project that has not been upgraded.
-Available upgrades show what the numbers would be if you just purchased a Standard Plan and
-have not applied any upgrades yet:
-
-.. figure:: img/project-settings/add-upgrades-standard.png
+.. image:: img/project-settings/open-upgrade-contributions.png
      :width: 60%
      :align: center
+     :alt: click "Adjust" to view and change upgrade contributions from older products
 
-     *Adjust Quotas* dialog
+Click "Adjust" to open the dialogue. You can add and remove upgrades. Values entered must not exceed your available upgrades.
 
-Here are the two most important upgrades.
-You will probably want to apply these to any project you are working on actively:
-
-.. index:: pair: Member Hosting;Project Settings
-.. _member-hosting:
-
-Member Hosting
-==============
-
-Member hosting is added by checking the "Enable" box next to the upgrade.
-
-There are two types of projects: "free projects" and "member projects".
-Free projects run on heavily loaded `Google preemptible VM instances <https://cloud.google.com/compute/docs/instances/preemptible>`_.
-These are randomly restarted by Google at least once every 24 hours.
-Often, these computers will house over 150 simultaneously running projects.
-
-Member-hosted projects run on machines which are much less loaded and are reserved for paying customers only.
-On member-hosted projects, commands execute more quickly, and CPU, memory and I/O heavy operations run more quickly.
-
-.. index:: pair: Internet Access;Project Settings
-.. index:: Upgrades; Internet Access
-.. _internet-access:
-
-Internet Access
-===============
-
-Internet access is added by checking the "Enable" box next to the upgrade. This upgrade allows you to:
-
-* Originate connections to external sites, for example to install packages from internet sites for Python and R, or to clone code from GitHub.
-
-* Send email from a project, for example, to invite people without a CoCalc account to collaborate on a project via email, or to allow :ref:`@mentions <at-mention-chat>` in a project to send out emails.
-
-****************
-Max All Upgrades
-****************
-
-Clicking `Max All Upgrades` will add as much as possible from available upgrades:
-
-.. image:: img/project-settings/apply-max.png
+.. image:: img/project-settings/upgrade-contributions-full.png
      :width: 60%
      :align: center
+     :alt: after clicking "Adjust" you can view and modify resources from all your non-license update packages.
 
-************
-Save Changes
-************
-Then clicking `Save Changes` will apply the changes and restart the project if settings have changed:
-
-.. image:: img/project-settings/max-added.png
-     :width: 60%
-     :align: center
+Clicking `Save Changes` will apply the upgrade changes and restart the project if settings have changed:
 
 .. _project-add-license:
 .. index:: Projects; add license
