@@ -1,6 +1,7 @@
 .. index:: LaTeX Editor; FAQ
 .. _latex-faq:
 
+====================
 LaTeX Howto and FAQ
 ====================
 
@@ -390,26 +391,16 @@ The PDF cannot be built. What's the problem?
 
 .. index:: LaTeX Editor; spellcheck
 
-Spell check my LaTeX document
---------------------------------------------
+Spell check a LaTeX document
+------------------------------
 
-Whenever you save the LaTeX document, it will run a spell checker and underline the words that are not spelled correctly.  By default, it uses the language you've set in your web browser.
+Whenever you save a LaTeX document, it will run a spell checker and underline the words that are not spelled correctly.  By default, it uses the language you've set in your web browser.
 
 You can change the autosave interval to be very short in account settings (under editor) if you need the spell checking to update frequently.
 
 Seeing a list of alternative words (correct spellings) isn't supported directly in the editor yet `Issue #3461 <https://github.com/sagemathinc/cocalc/issues/3461>`_.
-For now, a workaround is to run LaTeX-aware ``aspell``, e.g.
+For now, a workaround is to run LaTeX-aware ``aspell``. See :ref:`Use the aspell Linux command <use-aspell>` for details.
 
-    1. Open a :doc:`./terminal`
-    2. ``aspell -t -c <filename.tex>``
-
-You can add words for ``aspell`` to ignore using `personal dictionaries <http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries>`_. These words won't be underlined red. To do this create the file ``~/.aspell.lang.pws``, where ``lang`` is the choice of langauge. The first line of this file should be ``personal_ws-1.1 lang 0``, where ``lang`` is the choice of language. Then add one word per line for ``aspell`` to ignore. For example, to ignore the words 'bijection' and 'surjection' in an English document, create the file ``~/.aspell.en.pws`` with the content::
-
-   personal_ws-1.1 en 0
-   bijection
-   surjection
-
-The changes will take place the next time ``aspell`` is run on the document. You may force this by clicking the build button.
 
 .. _LatexMK: https://www.ctan.org/pkg/latexmk/
 .. _subfiles: https://www.ctan.org/pkg/subfiles?lang=en
