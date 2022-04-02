@@ -22,7 +22,7 @@ CoCalc is a platform that provides a high amount of versatility when it comes to
 Also, being this a cloud service, you can access it from any computer you need to as long as you have internet access on it. Meaning that you do not need to install anything. Plus, it is an OpenSource project.
 
 * **Software is already installed:** Dozens of programming languages and thousands of libraries and packages are available. There is no need to install them on your computer!
-* **Unified place of work:** witch computers without pausing to install software or move your work to another system.
+* **Unified place of work:** switch computers without pausing to install software or move your work to another system.
 * **Consistent coding environment:** Your teacher and you work on CoCalc with the very same software stack.
 * **Interactive notebooks:** Use :doc:`sagews` and :doc:`Jupyter Notebooks <jupyter>` to create an executable record of each study session. Make the most of your time when reviewing your work later.
 * **Your personal study archive:** Your work remains accessible and usable in CoCalc long after the course is over. (Except, when your teacher explicitly removes you)
