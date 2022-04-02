@@ -36,7 +36,7 @@ Markdown
 
 If you open/create a file ending with ``*.md``, you're presented by default with a split view of `Markdown <https://www.markdowntutorial.com/>`_ code on the left and HTML rendered output on the right hand side.
 
-There's an entire page in this guide dedicated to :doc:`howto/markdown`.
+There's an entire page in this guide dedicated to :doc:`markdown`.
 
 
 
@@ -81,7 +81,7 @@ Do not forget to switch the panel for the rendered output accordingly. Here is a
 
 If you produce PDF and HTML output, you can see both after splitting the panel.
 
-There is a brief tutorial on R Markdown in the :doc:`../project-library`. To view the sample files, do the following:
+There is a brief tutorial on R Markdown in the :doc:`project-library`. To view the sample files, do the following:
 
 #. Open a project where you want the copied files to be placed.
 #. Open the Files tab.

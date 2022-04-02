@@ -16,7 +16,7 @@ Wikipedia defines Markdown as "a lightweight markup language for creating format
 
 Markdown makes it easy to add basic structure, such as headings and lists, to a plaintext document. Use of Markdown is ubiquitous in CoCalc (see :ref:`below <where-markdown-used>`). When you start making notes into a text file, it is often most convenient to open the file as a Markdown document, i.e. a file with name ending in ".md". It is easy to produce pdf and html files from markdown.
 
-There is a brief tutorial on Markdown in the :doc:`../project-library`. To copy the introduction into a project of yours, open the project and follow the four steps below:
+There is a brief tutorial on Markdown in the :doc:`project-library`. To copy the introduction into a project of yours, open the project and follow the four steps below:
 
 .. image:: img/markdown-library-numbers.png
     :width: 100%
@@ -45,12 +45,13 @@ Where Markdown can be used in CoCalc
 ####################################
 
 * Editing a ".md" file with the :ref:`frame editor <frame-editor-markdown>`
-* :doc:`Chat rooms <../chat>` (".sage-chat" files)
+* :doc:`Chat rooms <chat>` (".sage-chat" files)
 * :ref:`Side chat <side-chat>` panel available with any file being edited
 * :ref:`Text cells in Jupyter notebooks <cocalc-jupyter-features>`
 * Markdown mode ("%md") in :ref:`Sage worksheets <what-is-sagews>`
 * :ref:`R Markdown <edit-rmd>` (".Rmd" and ".rmd" files)
-* :doc:`../tasks` (".tasks" files, also known as "Todo lists")
+* :doc:`tasks` (".tasks" files, also known as "Todo lists")
+* *Coming soon:* `CoCalc whiteboard <https://cocalc.com/features/whiteboard>`_, in text, sticky notes, Jupyter cells, etc.
 
 .. _cocalc-markdown-features:
 
@@ -76,7 +77,7 @@ Special features in CoCalc Markdown
 
 * To export a markdown (".md") file as pdf, open the file, select "Locked" from the view pulldown menu and click the "Print" button.
 
-* To create html from a markdown file, open a :doc:`Linux terminal <../terminal>`. If your file is "filename.md", run the command::
+* To create html from a markdown file, open a :doc:`Linux terminal <terminal>`. If your file is "filename.md", run the command::
 
     pandoc filename.md -o filename.html
 

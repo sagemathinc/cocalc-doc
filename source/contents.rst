@@ -36,6 +36,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    chat
    tasks
    frame-editor
+   markdown
    time-travel
    snippets
    share

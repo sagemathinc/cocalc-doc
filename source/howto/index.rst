@@ -53,7 +53,6 @@ Programming Languages and Tools
 * :doc:`git`
 * :doc:`google-api`
 * :doc:`gsl`
-* :doc:`markdown`
 * :doc:`neuron`
 * :doc:`pluto`
 * :doc:`remarkjs-slideshow`

@@ -30,7 +30,7 @@ What's a Sage Worksheet?
 
 A Sage Worksheet is a file ending in ``.sagews`` and is subdivided into cells. Each cell has an input region and an output region, which might be 0, 1, 2, or many lines long.
 
-The input can be mathematical, in the Sage syntax, or it could be in many other formats, including :doc:`howto/markdown`, HTML, Python 2 or 3, and R. To use a format other than Sage syntax, start the cell with a mode directive such ss "%md" for markdown. See this `CoCalc blog article <https://blog.cocalc.com/smc/2016/08/08/custom-magic-commands.html>`_ for more information about built-in and custom sagews modes.
+The input can be mathematical, in the Sage syntax, or it could be in many other formats, including :doc:`markdown`, HTML, Python 2 or 3, and R. To use a format other than Sage syntax, start the cell with a mode directive such ss "%md" for markdown. See this `CoCalc blog article <https://blog.cocalc.com/smc/2016/08/08/custom-magic-commands.html>`_ for more information about built-in and custom sagews modes.
 
 When you *run* a cell, by clicking ``Run`` or typing ``Shift-Enter``, the input is executed (or formatted, for text processing). The result appears in the output after the calculation is done.
 
