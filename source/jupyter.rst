@@ -34,6 +34,8 @@ Popular choices are `Python3`_, `SageMath`_, and `R`_. There many others. Our pa
 
     Make sure and double-check that you're working with :doc:`a suitable kernel <howto/jupyter-kernel-selection>` for your calculations!
 
+.. _cocalc-jupyter-features:
+
 ##########################################
 CoCalc Jupyter Notebook Basic Features
 ##########################################

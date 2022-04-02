@@ -59,9 +59,17 @@ To start a new chat:
 Side Chat
 ====================
 
-Next to an open file, at the top right, is a chat-bubble.
-This opens up a chatroom, which is *specific to that file*.
+At the top right in the Files toolbar for any open file, there is a chat icon: |comment-icon|.
+This opens up a chatroom which is *specific to that file*.
 This is commonly used to discuss the content of the given worksheet or notebook,
 e.g. :ref:`students asking teachers/TAs <teaching-chatrooms>`.
 
+.. image:: img/sagews-side-chat-a.png
+    :align: center
+    :width: 95%
+    :alt: button at upper right and panel at right for side chat with a file
+
+.. |comment-icon| image:: img/antd-icons/comment-icon.png
+    :height: 20px
+    :alt: comment or chat icon
 

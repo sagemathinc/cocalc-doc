@@ -3,6 +3,7 @@
 .. toctree::
    :hidden:
 
+   markdown
    cant-save
    firewall-info
    multiple-accounts

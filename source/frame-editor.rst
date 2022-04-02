@@ -8,7 +8,7 @@ Frame Editor
 
 .. contents::
      :local:
-     :depth: 1
+     :depth: 2
 
 This guide explains how to work with the **frame editor** for editing source code, :doc:`LaTeX documents <latex>`, :doc:`Command-line terminal <terminal>` etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is splitted horizontally. After that, the bottom right frame is changed to a :doc:`Terminal <terminal>`.
 
@@ -28,22 +28,23 @@ Supported file types
 .. index:: Markdown; frame editor
 .. index:: Frame Editor; markdown
 
+.. _frame-editor-markdown:
+
 ********
 Markdown
 ********
 
 If you open/create a file ending with ``*.md``, you're presented by default with a split view of `Markdown <https://www.markdowntutorial.com/>`_ code on the left and HTML rendered output on the right hand side.
-You can also write `LaTeX formulas <https://en.wikibooks.org/wiki/LaTeX/Mathematics>`_ between ``$`` signs, e.g. ``$\frac{1}{1+x^2}$``.
 
-.. index:: Frame Editor; markdown inverse search
+There's an entire page in this guide dedicated to :doc:`howto/markdown`.
 
-The markdown editor supports **inverse search** when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.
+
 
 .. index:: Source Code files
 .. index:: Frame Editor; source code
 
 ***************************
-Text and other file types
+Text and Other File Types
 ***************************
 
 The frame editor lets you edit text files, i.e. files whose name ends in ``*.txt``.
@@ -72,8 +73,25 @@ R Markdown
 
 Open a ``*.Rmd`` or ``*.rmd`` file to work with `R Markdown`_.
 Depending on the configuration in the preamble, you either produce an HTML or PDF output.
-Do not forget to switch the panel for the rendered output accordingly.
-(In case you produce PDF and HTML output, you can even see both after splitting the panel.)
+Do not forget to switch the panel for the rendered output accordingly. Here is an example of R markdown producing a pdf file:
+
+.. image:: img/rmd-pdf-example.png
+    :width: 100%
+    :alt: example of R markdown producing a pdf file
+
+If you produce PDF and HTML output, you can see both after splitting the panel.
+
+There is a brief tutorial on R Markdown in the :doc:`../project-library`. To view the sample files, do the following:
+
+#. Open a project where you want the copied files to be placed.
+#. Open the Files tab.
+#. Click "Library" at upper right.
+#. Select "RMarkdown in CoCalc".
+#. Click "Get a copy".
+
+.. image:: img/r-markdown-library.png
+    :width: 100%
+    :alt: fetching R Markdown intro from the project library
 
 .. _R Markdown: https://rmarkdown.rstudio.com/
 
@@ -95,9 +113,11 @@ You can get multiple cursors while editing any file in the frame editor using th
 
 If you switch to Sublime keybindings in "Account" > "Preferences" > "Editor settings", you can select text and then use ctrl-D (cmd-D on Mac) to multi-select the next occurrence of the same text.
 
+The frame editor also supports simultaneous editing by more than one user. In this case, separate cursors are displayed for each user.
+
 
 ################
-Spell checker
+Spell Checker
 ################
 
 Here are two ways to spell-check your documents in CoCalc.
@@ -124,4 +144,8 @@ You can add words for ``aspell`` to ignore using `personal dictionaries <http://
 
 The changes will take place the next time ``aspell`` is run on the document. 
 
+################
+Side Chat
+################
 
+You can share comments on a CoCalc file using a side chat panel. For more information, see :ref:`side-chat`.
