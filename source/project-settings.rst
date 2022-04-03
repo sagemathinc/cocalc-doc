@@ -22,6 +22,7 @@ The text for **Title Description, and Name** for a project can be changed at any
 .. image:: img/project-settings/title-and-desc-a.png
      :width: 50%
      :align: center
+     :alt: form for setting project title, description, and name
 
 Title and Description fields are both used when searching for matching text under ``Projects``.
 
@@ -126,12 +127,14 @@ To apply a license to a project
 .. figure:: img/project-settings/proj-lic-before-add.png
      :width: 60%
      :align: center
+     :alt: dialog to add a license key, before key is added
 
      Before adding a license key.
 
 .. figure:: img/project-settings/proj-lic-after-add.png
      :width: 60%
      :align: center
+     :alt: dialog to add a license key, after key is added
 
      After adding license key. You can add several keys.
 
@@ -154,15 +157,12 @@ This URL can useful when contacting support and in some configuration tasks.
 Hide or delete project
 ######################
 
-Next in the Project Settings window is the section for hidden and deleted projects,
-which do not appear in the normal project list
-(the list you get when you click `Projects` at upper left).
-
-If the current project is neither hidden nor deleted, you will see this:
+Next in the Project Settings window is the section for hidden and deleted projects:
 
 .. image:: img/project-settings/hide-or-delete.png
      :width: 60%
      :align: center
+     :alt: buttons for Hide Project and Delete Project
 
 ***************************
 Hidden vs. Deleted projects
@@ -181,6 +181,7 @@ If you click `Hide Project`, the button changes:
 .. image:: img/project-settings/hidden.png
      :width: 60%
      :align: center
+     :alt: Unhide Project button
 
 And now if you click the `Projects` button at upper left, you will have a checkbox
 that lets you view hidden projects. The checkbox only appears if there are hidden projects.
@@ -188,6 +189,7 @@ that lets you view hidden projects. The checkbox only appears if there are hidde
 .. image:: img/project-settings/show-hidden.png
      :width: 60%
      :align: center
+     :alt: showing hidden projects in the project list
 
 Clicking `Unhide Project` instantly makes the project visible in the normal project list again.
 
@@ -205,12 +207,14 @@ If you click `Delete Project`, the button changes:
 .. image:: img/project-settings/delproj1.png
      :width: 60%
      :align: center
+     :alt: button to confirm deleting a project
 
 Click `Yes, please delete this project` to confirm, and the screen changes again:
 
 .. image:: img/project-settings/delproj2.png
      :width: 60%
      :align: center
+     :alt: confirmation box saying project is deleted
 
 Note the warning banner that appears at the top.
 
@@ -222,6 +226,7 @@ that lets you view deleted projects. The checkbox only appears if there are hidd
 .. image:: img/project-settings/show-deleted.png
      :width: 60%
      :align: center
+     :alt: showing deleted projects in the project list
 
 Clicking `Undelete Project` instantly makes the project visible in the normal project list again
 for you and all collaborators on the project.
@@ -236,6 +241,7 @@ A project can be both hidden and deleted. In that case, you will need to check b
 .. image:: img/project-settings/deleted-and-hidden-a.png
      :width: 60%
      :align: center
+     :alt: showing projects that are both hidden and deleted in the project list
 
 
 .. index:: SSH Keys
@@ -283,6 +289,7 @@ This section assumes you have created an SSH key pair as described above.
    .. image:: img/project-settings/usernameathost.png
         :width: 50%
         :align: center
+        :alt: SSH Keys in project settings with ssh username outlined
 
 #. Click "Add an SSH Key".
 #. Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example "Sample Key for TESTPROJ".
@@ -296,6 +303,7 @@ This section assumes you have created an SSH key pair as described above.
    .. image:: img/project-settings/addingprojkey.png
         :width: 50%
         :align: center
+        :alt: dialog to add SSH key
 
 #. The user for the SSH connection is the project id *without the hyphens*. (Why? Because the project id is not a valid Linux username.) The hostname is ``ssh.cocalc.com``. Look for "Use the following username@host:" in the "SSH Keys" section of project status for a string you can copy and paste. For example, if the Project id is::
 
@@ -342,6 +350,7 @@ The text above will appear as a reminder when you click inside the textarea for 
 .. figure:: img/project-settings/env-vars.png
      :width: 70%
      :align: center
+     :alt: explanatory text under box for Custom environment variables
 
      Help text appears when you click in the textarea.
 
@@ -363,6 +372,7 @@ If a feature or formatter is disabled, that means the compute image does not sup
 .. image:: img/project-settings/feat-config.png
     :width: 50%
     :align: center
+    :alt: list of features and language formatters enabled in the current compute image
 
 *****************************************
 Available features
@@ -404,13 +414,14 @@ Linux user id, there are two ways to see *which CoCalc account* was used for cer
 Current collaborators
 ######################
 
-The "Current collaborators" section of the *Project Settings* page shows the names of the owner and all collaborators. Here you can remove collaborators, including yourself. It does not allow you to remove the owner.
-
-Current collaborators are also shown in the *Projects* list. You can use the latter to remove yourself as collaborator from several projects at once.
+The "Current collaborators" section of the *Project Settings* page shows the names of the owner and all collaborators. Here you can remove collaborators, including yourself. It does not allow you to remove the owner:
 
 .. image:: img/project-settings/current-collabs.png
      :width: 70%
      :align: center
+     :alt: list of current collaborators in project settings
+
+Current collaborators are also shown in the *Projects* list. You can use the latter to remove yourself as collaborator from several projects at once.
 
 .. index:: Collaborators; adding
 .. _add-collaborators:
@@ -431,14 +442,16 @@ It is generally better to use an email address. The reason is that some CoCalc u
 .. image:: img/project-settings/add-collabs.png
      :width: 70%
      :align: center
+     :alt: form to search for collaborators, nothing entered yet
 
 If there are no matches for an email address, then you can send an invitation for the user to start using CoCalc. You can modify the standard email. The default invitation has useful links to make it easier for the other person to start using CoCalc.
 
 .. figure:: img/project-settings/email-invitation.png
      :width: 70%
      :align: center
+     :alt: customizing the invitation. Send button circled.
 
-     *customizing email invitation to new user*
+     *form to customize (optional) and send an email invitation*
 
 Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :ref:`share <ft-share>` for how to share a file.
 
@@ -456,6 +469,7 @@ Here is a screen capture of the Project control section. Along with project stat
     .. image:: img/project-settings/project-control.png
          :width: 70%
          :align: center
+         :alt: project control section with buttons to restart and stop the project
 
 ********************************
 Restart Project and Stop Project
@@ -475,12 +489,14 @@ To make all this happen, click "Restart Project...". Another button appears, to 
     .. image:: img/project-settings/project-restart-confirm.png
          :width: 70%
          :align: center
+         :alt: confirmation button for restarting a project
 
 Click "Restart Project Server", and restart initiates.
 
     .. image:: img/project-settings/project-restarting.png
          :width: 70%
          :align: center
+         :alt: project state updates to "Starting" after restart is confirmed
 
 It normally takes about 30 seconds to restart a project. It may take another 10 seconds or so after the Files list is visible for terminal processes, etc. to be available.
 
@@ -494,6 +510,7 @@ Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to
     .. image:: img/project-settings/stop-project-confirm.png
          :width: 70%
          :align: center
+         :alt: confirmation button for stopping a project
 
 .. index:: Software Environment
 .. index:: Projects; software environment
@@ -518,6 +535,7 @@ Once you have selected an image, click "Save and Restart".
 .. image:: img/project-settings/selected-image-experimental.png
      :width: 70%
      :align: center
+     :alt: choosing and starting a specific compute image
 
 .. note::
 
@@ -546,6 +564,7 @@ Occasionally, it may be useful to restart the Sage worksheet server if worksheet
 .. image:: img/project-settings/restart-sagews-a.png
      :width: 70%
      :align: center
+     :alt: button to restart the Sage worksheet server
 
 .. _alt-jupyter-server:
 
@@ -573,6 +592,7 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
 .. image:: img/project-settings/jupyter-server-a.png
      :width: 70%
      :align: center
+     :alt: button to start the Plain Jupyter Server
 
 .. index:: Jupyter Server; JupyterLab
 .. index:: Projects; JupyterLab server
@@ -587,11 +607,8 @@ Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_
 .. image:: img/project-settings/jupyterlab-server-a.png
      :width: 70%
      :align: center
+     :alt: button to start the JupyterLab Server
 
-
-.. |header|
-    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/header.png
-    :width: 16px
 
 .. _ssh: https://help.ubuntu.com/community/SSH
 
@@ -607,6 +624,7 @@ Cloud storage & remote file systems
 .. image:: img/project-settings/project-settings-cloud-storage.png
      :width: 100%
      :align: center
+     :alt: options for configuring remote storage for a project
 
 It is possible to access "cloud store" (a repository of file-like objects)
 or a remote file system in a CoCalc project.
