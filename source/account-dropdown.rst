@@ -3,7 +3,7 @@
 .. _account-dropdown:
 
 ====================================
-**new**: Account Dropdown Menu
+Account Dropdown Menu
 ====================================
 
 .. note::

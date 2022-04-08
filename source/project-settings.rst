@@ -283,29 +283,31 @@ Configuring SSH Keys for a Single Project
 
 This section assumes you have created an SSH key pair as described above.
 
-#. Open the project Settings tab (wrench icon) for the project you want to access.
-#. Look for the section "SSH Keys" at lower left.
+1. Open the project Settings tab (wrench icon) for the project you want to access.
+2. Look for the section "SSH Keys" at lower left.
 
    .. image:: img/project-settings/usernameathost.png
         :width: 50%
         :align: center
         :alt: SSH Keys in project settings with ssh username outlined
 
-#. Click "Add an SSH Key".
-#. Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example "Sample Key for TESTPROJ".
-#. Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file::
+3. Click "Add an SSH Key".
+4. Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example "Sample Key for TESTPROJ".
+5. Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file::
 
       cat ~/.ssh/id_ed25519.pub
 
    Use your mouse to select the contents of the key file, then copy and paste it into the Key area.
-#. Click "Add SSH Key". Your key is now saved for that project.
+6. Click "Add SSH Key". Your key is now saved for that project.
 
    .. image:: img/project-settings/addingprojkey.png
         :width: 50%
         :align: center
         :alt: dialog to add SSH key
 
-#. The user for the SSH connection is the project id *without the hyphens*. (Why? Because the project id is not a valid Linux username.) The hostname is ``ssh.cocalc.com``. Look for "Use the following username@host:" in the "SSH Keys" section of project status for a string you can copy and paste. For example, if the Project id is::
+.. _ssh-user:
+
+7. The user for the SSH connection is the project id *without the hyphens*. (Why? Because the project id is not a valid Linux username.) The hostname is ``ssh.cocalc.com``. Look for "Use the following username@host:" in the "SSH Keys" section of project status for a string you can copy and paste. For example, if the Project id is::
 
       2507078b-6e5b-43da-809a-0073f1196181
 
@@ -313,11 +315,16 @@ This section assumes you have created an SSH key pair as described above.
 
       2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
 
-#. To login from your local computer, use a command equivalent to the following::
+.. image:: img/project-settings/ssh-user-host.png
+    :width: 50%
+    :align: center
+    :alt: view ssh user@host in project settings
+
+8. To login from your local computer, use a command equivalent to the following::
 
       ssh 2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
 
-#. On macOS or Linux, you can specify a host alias in ``~/.ssh/config`` to avoid having to explicitly pass the project id as above. For example, the following lines in ``~/.ssh/config``::
+9. On macOS or Linux, you can specify a host alias in ``~/.ssh/config`` to avoid having to explicitly pass the project id as above. For example, the following lines in ``~/.ssh/config``::
 
       Host CCPROJ
           Hostname ssh.cocalc.com
