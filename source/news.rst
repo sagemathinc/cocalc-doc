@@ -121,7 +121,7 @@ See the section on :ref:`project Licenses <project-add-license>` for details.
 ===============================
 
 New users do not have to sign up on CoCalc any more.
-An "anonymous" account is created and you can start exporing CoCalc immediately.
+An "anonymous" account is created and you can start exploring CoCalc immediately.
 It is possible to convert this account into a regular CoCalc account any time.
 
 Beyond that, :ref:`publicly shared files <sharing-files>` can be the seed for a new project.
