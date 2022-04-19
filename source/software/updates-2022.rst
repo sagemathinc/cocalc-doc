@@ -10,6 +10,18 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-04-19:
+
+2022-04-19: Various updates …
+----------------------------------------------
+
+- Python3 (system-wide) & System:
+    - as usual, various Linux, R and Python package updates
+
+- Python 3 (system-wide):
+    - (fix) resolved an `xlrd`_ <-> `pandas`_ incompatibility for reading older Excel xls files.
+
+
 .. _update-2022-03-24:
 
 2022-03-24: New Anaconda Environment
@@ -108,3 +120,5 @@ Software Updates 2022
 .. _valgrind: https://valgrind.org/
 .. _bioconductor: https://bioconductor.org/
 .. _requests-cache: https://requests-cache.readthedocs.io/en/stable/
+.. _xlrd: https://xlrd.readthedocs.io/en/latest/
+.. _pandas: https://pandas.pydata.org/
