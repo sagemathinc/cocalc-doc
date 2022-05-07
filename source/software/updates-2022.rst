@@ -10,6 +10,24 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-05-07:
+
+2022-05-07: R 4.2
+----------------------------------------------
+
+- R (system-wide):
+    - (upd) `R 4.2`_ + many packages
+    - Not yet ready for 4.2? In Settings → Control → Software Environment, you can select ``Ubuntu 20.04``/``2022-04-19``.
+
+- Python3 (system-wide):
+    - (new) `prophet`_ – *a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects*
+    - (new) `pyspice`_ – *Simulate Electronic Circuit using Python and the Ngspice / Xyce Simulators*
+    - (new) `timml`_ – *an analytic element model for steady multi-layer flow*
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
+
 .. _update-2022-04-19:
 
 2022-04-19: Various updates …
@@ -122,3 +140,7 @@ Software Updates 2022
 .. _requests-cache: https://requests-cache.readthedocs.io/en/stable/
 .. _xlrd: https://xlrd.readthedocs.io/en/latest/
 .. _pandas: https://pandas.pydata.org/
+.. _R 4.2: https://www.r-bloggers.com/2022/04/new-features-in-r-4-2-0/
+.. _prophet: https://facebook.github.io/prophet/
+.. _pyspice: https://pyspice.fabrice-salvaire.fr/pages/documentation.html
+.. _timml: https://github.com/mbakker7/timml
