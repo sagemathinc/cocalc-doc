@@ -8,7 +8,7 @@ All about the **Project Settings** tab.
 
 .. contents::
    :local:
-   :depth: 1
+   :depth: 2
 
 .. index:: Projects; title and description
 .. _set-project-title:
@@ -608,6 +608,10 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
 *****************
 JupyterLab server
 *****************
+
+.. note::
+
+    As of May, 2022, CoCalc's JupyterLab server supports real-time collaboration. Although CoCalc's "Timetravel" feature is not available with JupyterLab, :ref:`filesystem snapshots <project-snapshot>` are still available if you need to recover a file.
 
 Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_ opens a new browser tab with the JupyterLab GUI.
 
