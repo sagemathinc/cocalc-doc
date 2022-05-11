@@ -20,6 +20,7 @@
    webserver
    bokeh-server
    shiny-server
+   streamlit
    jupyter-kernel-selection
    jupyter-extension
    jupyterlab-extensions

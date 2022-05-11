@@ -30,6 +30,7 @@ Services
 * :doc:`postgresql`
 * :doc:`webserver`
 * :doc:`shiny-server`
+* :doc:`streamlit`
 
 Jupyter Notebook
 ================
