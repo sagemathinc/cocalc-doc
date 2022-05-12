@@ -15,7 +15,7 @@ Read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/w
 .. image:: img/whiteboard-sage.png
     :width: 90%
     :align: center
-    :alt: large sample cocalc whiteboard
+    :alt: large sample cocalc whiteboard.
 
 ##########################
 General Features
@@ -42,11 +42,14 @@ CoCalc's collaborative mathematical whiteboard supports an infinite canvas with
 Jupyter Cells
 ##########################
 
-Your CoCalc whiteboard can include executable Jupyter cells.
+A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:
 
-You can use Jupyter notebook code cells in a whiteboard with
 * over a dozen supported kernels
 * CoCalc's massive library of pre-installed software
 * interactive widgets
 * execution order determined by a directed graph
 
+.. image:: img/code-cells-in-wb.png
+    :width: 80%
+    :align: center
+    :alt: whiteboard with two code cells and a sticky note
