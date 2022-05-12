@@ -23,14 +23,20 @@ General Features
 
 CoCalc's collaborative mathematical whiteboard supports an infinite canvas with
 
-* text with mathematical LaTeX expressions,
-* sticky notes,
-* sketching with pens,
-* Jupyter code cells with support for tab completion and interactive widgets,
-* chat conversations with collaborators,
-* hundreds of icons,
-* frames to group objects, and
+* text with mathematical LaTeX expressions
+* sticky notes
+* sketching with pens
+* chat conversations with collaborators
+* hundreds of icons
+* copy and paste between whiteboards
+* frames to group objects and organize the whiteboard into sections
 * stopwatches and countdown timers to organize and track work.
+* create edges between all objects
+* infinitely split editor windows to view multiple parts of the whiteboard simultaneously
+* easily navigate with an overview map with two preview modes
+* every change you make is recorded via browsable TimeTravel and you can copy/paste from any point in the history
+* publish your whiteboards to the CoCalc share server
+
 
 ##########################
 Jupyter Cells
@@ -38,12 +44,9 @@ Jupyter Cells
 
 Your CoCalc whiteboard can include executable Jupyter cells.
 
-You can use Jupyter notebook code cells with over a dozen supported kernels, a massive library of pre-installed software, and interactive widgets, with execution ordered determined by a directed graph.
-
-* create edges between all objects,
-* use frames to organize the whiteboard into sections,
-* infinitely split your editor windows to view multiple parts of the whiteboard simultaneously,
-* easily navigate with an overview map with two preview modes,
-* every change you make is recorded via browsable TimeTravel and you can copy/paste from any point in the history,
-* and you can publish your whiteboards to the share server.
+You can use Jupyter notebook code cells in a whiteboard with
+* over a dozen supported kernels
+* CoCalc's massive library of pre-installed software
+* interactive widgets
+* execution order determined by a directed graph
 

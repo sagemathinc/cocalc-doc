@@ -102,6 +102,8 @@ See :ref:`@Mention collaborators in chat <at-mention-chat>`.
 WYSIWYG
 ***********************************
 
+What-you-see-is-what-you-get editing...
+
 See :doc:`wysiwyg`.
 
 ***********************************

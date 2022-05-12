@@ -11,7 +11,16 @@ Streamlit
 Additional notes:
 
 * Your project must have network access for Streamlit to work.
+* The streamlit package must be in your computing environment.
 * Streamlit supports displaying markdown and latex text formats.
+
+##############################
+streamlit package availability
+##############################
+
+In a linux terminal, run `which streamlit`. If you get an empty response and not a path to an executable file, you will need to install the Python package. To do this, in the linux terminal run the command::
+
+    pip install --user streamlit
 
 ############################
 Configuration: baseUrlPath

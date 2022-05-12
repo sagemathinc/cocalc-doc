@@ -1,14 +1,10 @@
 .. index:: wysiwyg
 
 ========================
-wysiwyg editing
+WYSIWYG
 ========================
 
-*What You See Is What You Get*
-
-.. contents::
-     :local:
-     :depth: 1
+What-You-See-Is-What-You-Get editing.
 
 .. epigraph::
 
@@ -16,22 +12,24 @@ wysiwyg editing
 
     -- Wikipedia
 
-What You See Is What You Get editing. This feature is under development at present, but already quite usable. Select the "Editable" option in the pulldown menu at upper right.
-
-To enable wysiwyg editing, select "Text" wherever 
+.. contents::
+     :local:
+     :depth: 1
 
 
 #####################################
-Where wysiwyg is Available in CoCalc
+Where WYSIWYG is Available in CoCalc
 #####################################
 
-* **Frame editor.**  With Markdown (.md) files. Select "Editable Text".
+* :doc:`frame-editor`: when editing Markdown (.md) files. Select "Editable Text".
 
-* **Chat.**
+* :doc:`chat` as well as :ref:`side-chat`.
 
-* **Whiteboard.** Text and sticky notes.
+* :doc:`tasks`.
 
-* **Jupyter notebooks.** Text or Markdown cell types.
+* :doc:`whiteboard` In text, sticky notes, and task lists.
+
+* :doc:`jupyter` In text or Markdown cell types.
 
 ########################
 Features
@@ -46,12 +44,29 @@ Features
 * **Font options.** You can specify font family, face (bold, italics, etc.), size, and color.
 
 If you select "Text" mode (instead of Markdown) for editing content between code cells,
-then you can highlight any text and click the color palette icon, then set the color of that text.  This uses <span class='color:#0000ff'>...</span>
-under the hood, as you can see by switching back to Markdown.  The format is sufficiently well defined that this doesn't get removed by our 
-XSS processing, so it works even if your student opens the file and doesn't switch to trusted mode.
+then you can highlight any text and click the color palette icon, then set the color of that text.
 
-I also added some similar font face and font size menus, in case you want to use a different font ...
+For a markdown file: select "Editable Text" for font options.
+
+.. image:: img/font-options-md.png
+    :width: 60%
+    :align: center
+    :alt: font options while editing a .md file
+
+For a Jupyter cell: select "Text" cell type, then "Edit" for font options.
 
 
+.. image:: img/font-options-ipynb1.png
+    :width: 60%
+    :align: center
+    :alt: font options while editing a .md file
+
+.. image:: img/font-options-ipynb2.png
+    :width: 60%
+    :align: center
+    :alt: font options while editing a .md file
 
 
+(Implementation note: WYSIWYG font options use <span class='color:#0000ff'>...</span>
+under the hood.
+The format is sufficiently well-defined that it doesn't get removed by CoCalc XSS processing. So it works even if e.g., a student opens the file and doesn't switch to trusted mode.)
