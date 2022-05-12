@@ -18,7 +18,11 @@ Additional notes:
 streamlit package availability
 ##############################
 
-In a linux terminal, run `which streamlit`. If you get an empty response and not a path to an executable file, you will need to install the Python package. To do this, in the linux terminal run the command::
+In a linux terminal, run::
+
+    which streamlit
+
+If you get an empty response and not a path to an executable file, you will need to install the Python package. To do this, in the linux terminal run the command::
 
     pip install --user streamlit
 
