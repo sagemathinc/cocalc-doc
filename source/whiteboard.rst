@@ -4,13 +4,18 @@
 Whiteboard
 ========================
 
+CoCalc offers you a full-featured online collaborative whiteboard.
+
+Read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/whiteboard>`_.
+
 .. contents::
      :local:
      :depth: 2
 
-*CoCalc offers you a full-featured online collaborative whiteboard.*
-
-`Whiteboard on the CoCalc website <https://cocalc.com/features/whiteboard>`_.
+.. image:: img/whiteboard-sage.png
+    :width: 90%
+    :align: center
+    :alt: large sample cocalc whiteboard
 
 ##########################
 General Features
