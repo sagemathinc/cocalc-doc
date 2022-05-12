@@ -6,7 +6,7 @@ Markdown
 
 .. contents::
      :local:
-     :depth: 1
+     :depth: 2
 
 ########################
 Introduction
@@ -51,35 +51,88 @@ Where Markdown can be used in CoCalc
 * Markdown mode ("%md") in :ref:`Sage worksheets <what-is-sagews>`
 * :ref:`R Markdown <edit-rmd>` (".Rmd" and ".rmd" files)
 * :doc:`tasks` (".tasks" files, also known as "Todo lists")
-* *Coming soon:* `CoCalc whiteboard <https://cocalc.com/features/whiteboard>`_, in text, sticky notes, Jupyter cells, etc.
+* :doc:`whiteboard` (text, sticky notes, Jupyter cells)
+
 
 .. _cocalc-markdown-features:
 
-###################################
-Special features in CoCalc Markdown
-###################################
+####################################
+Enhanced features in CoCalc Markdown
+####################################
 
-* Collaborative editing. Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).
+***********************************
+Collaborative editing
+***********************************
 
-* Embedded LaTeX. You can write `LaTeX formulas <https://en.wikibooks.org/wiki/LaTeX/Mathematics>`_ between ``$`` signs, e.g. ``$\frac{1}{1+x^2}$``.
+Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).
 
-* Emojis. View the list of supported emojis in the `markdown-it-emojis GitHub repository <https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json>`_.
 
-* Checkboxes. Type " [ ] " to create an unchecked checkbox; " [x] " to create a checked box.
+***********************************
+Embedded LaTeX
+***********************************
 
-* Hashtags. Precede a word with a hash sign ("#") and it is formatted to stand out as a hashtag.
+You can write `LaTeX formulas <https://en.wikibooks.org/wiki/LaTeX/Mathematics>`_ between ``$`` signs, e.g. ``$\frac{1}{1+x^2}$``.
 
-* @-mentions. See :ref:`@Mention collaborators in chat <at-mention-chat>`.
+***********************************
+Emojis
+***********************************
 
-* WYSIWYG (what you see is what you get) editing. This feature is under development at present, but already quite usable. Select the "Editable" option in the pulldown menu at upper right.
+View the list of supported emojis in the `markdown-it-emojis GitHub repository <https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json>`_.
 
-* Inverse search in Markdown frame editor. The markdown editor supports **inverse search** when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.
 
+***********************************
+Checkboxes
+***********************************
+
+Type " [ ] " to create an unchecked checkbox. Note the single space between the square brackets. Type " [x] " to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.
+
+***********************************
+Hashtags
+***********************************
+
+Precede a word with a hash sign ("#") and it is formatted to stand out as a hashtag.
+
+***********************************
+@-mentions
+***********************************
+
+See :ref:`@Mention collaborators in chat <at-mention-chat>`.
+
+***********************************
+WYSIWYG
+***********************************
+
+See :doc:`wysiwyg`.
+
+***********************************
+Inverse search
+***********************************
+
+The markdown editor supports **inverse search** when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.
+
+If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: |sync| at the top from either pane to synchronize the cursor in the other pane.
+
+***********************************
+Export to PDF
+***********************************
 * To export a markdown (".md") file as pdf, open the file, select "Locked" from the view pulldown menu and click the "Print" button.
 
+***********************************
+Export to HTML
+***********************************
 * To create html from a markdown file, open a :doc:`Linux terminal <terminal>`. If your file is "filename.md", run the command::
 
     pandoc filename.md -o filename.html
+
+############################
+Limitations
+############################
+
+At present, the markdown "Editable Text" editor does not offer an easy way to add a link. And adding an image is limited to copying an image that has been added to the paste buffer. To add a link, or to add an image from a file at this time, choose "Markdown Code" in the pulldown menu at the top.
+
+.. image:: img/md-text-vs-code.png
+    :width: 70%
+    :alt: choosing Markdown Code vs. Editable Text while editing an md file
 
 
 .. _cocalc-markdown-impl:
@@ -89,3 +142,8 @@ About the CoCalc Implementation of Markdown
 ###########################################
 
 CoCalc uses `markdown-it <https://github.com/markdown-it/markdown-it>`_, with plug-ins and some customizations. Details are in the CoCalc source code at GitHub in file `src/packages/frontend/markdown/index.ts <https://github.com/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/index.ts>`_.
+
+.. |sync|
+     image:: img/antd-icons/sync-icon.png
+     :width: 24px
+     :alt: sync icon

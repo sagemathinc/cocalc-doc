@@ -29,6 +29,7 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    project
    jupyter
+   whiteboard
    latex
    sagews
    terminal
@@ -37,6 +38,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    tasks
    frame-editor
    markdown
+   wysiwyg
    time-travel
    snippets
    share
