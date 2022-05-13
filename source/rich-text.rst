@@ -4,6 +4,23 @@
 Rich Text Editing
 ========================
 
+*Rich text editing* refers to editing content in a form that resembles the final result, i.e. you are not interspersing formatting commands and text.
+
+Here is how you would enter text in markdown code without rich text editing:
+
+.. image:: img/not-rich.png
+    :width: 50%
+    :align: center
+    :alt: markdown commands are displayed when not using rich text editing
+
+Here is how the same content looks as you enter it with rich text editing:
+
+.. image:: img/yes-rich.png
+    :width: 50%
+    :align: center
+    :alt: rich text editing does not show formatting commands
+
+In the example, you would type in the same characters in either case. With rich text editing enabled, you see the final result more clearly.
 
 #####################################
 Where Rich Text Editing is Available
