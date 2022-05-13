@@ -1,24 +1,12 @@
-.. index:: wysiwyg
+.. index:: rich text
 
 ========================
-WYSIWYG
+Rich Text Editing
 ========================
-
-What-You-See-Is-What-You-Get editing.
-
-.. epigraph::
-
-    In computing, WYSIWYG ... is a system in which editing software allows content to be edited in a form that resembles its appearance when printed or displayed as a finished product
-
-    -- Wikipedia
-
-.. contents::
-     :local:
-     :depth: 1
 
 
 #####################################
-Where WYSIWYG is Available in CoCalc
+Where Rich Text Editing is Available
 #####################################
 
 * :doc:`frame-editor`: when editing Markdown (.md) files. Select "Editable Text".
@@ -35,13 +23,44 @@ Where WYSIWYG is Available in CoCalc
 Features
 ########################
 
-* **Real-time Collaboration.**
+"""""""""""""""""""""""
+Real-time Collaboration
+"""""""""""""""""""""""
 
-* **Markdown.**
+Multiple users can use rich text editing on a file, and see one another's work at the same time.
 
-* **LaTeX.**
+"""""""""""""""""""""""
+Markdown
+"""""""""""""""""""""""
 
-* **Font options.** You can specify font family, face (bold, italics, etc.), size, and color.
+See :doc:`markdown`.
+
+"""""""""""""""""""""""
+LaTeX
+"""""""""""""""""""""""
+
+When using rich text editing, you can embed LaTeX directives between dollar signs ($) *followed by a space*. You must add a space to cause conversion to mathematical characters.
+
+Here is an example of latex entry in :ref:`side-chat` for a file, before typing a space after the second $:
+
+.. image:: img/rich-text-latex-1.png
+    :width: 60%
+    :align: center
+    :alt: rich text editing with latex, before final space
+
+Here is the formatting that results after typing the space:
+
+.. image:: img/rich-text-latex-2.png
+    :width: 60%
+    :align: center
+    :alt: rich text editing with latex, after final space
+
+
+"""""""""""""""""""""""
+Font options
+"""""""""""""""""""""""
+
+You can specify font family, face (bold, italics, etc.), size, and color.
 
 If you select "Text" mode (instead of Markdown) for editing content between code cells,
 then you can highlight any text and click the color palette icon, then set the color of that text.
@@ -67,6 +86,6 @@ For a Jupyter cell: select "Text" cell type, then "Edit" for font options.
     :alt: font options while editing a .md file
 
 
-(Implementation note: WYSIWYG font options use <span class='color:#0000ff'>...</span>
+(Implementation note: rich text font options use <span class='color:#0000ff'>...</span>
 under the hood.
 The format is sufficiently well-defined that it doesn't get removed by CoCalc XSS processing. So it works even if e.g., a student opens the file and doesn't switch to trusted mode.)

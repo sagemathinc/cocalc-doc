@@ -99,12 +99,10 @@ Precede a word with a hash sign ("#") and it is formatted to stand out as a hash
 See :ref:`@Mention collaborators in chat <at-mention-chat>`.
 
 ***********************************
-WYSIWYG
+Rich Text Editing
 ***********************************
 
-What-you-see-is-what-you-get editing...
-
-See :doc:`wysiwyg`.
+See :doc:`rich-text`.
 
 ***********************************
 Inverse search
