@@ -6,14 +6,14 @@ Rich Text Editing
 
 With *Rich text editing*, as you enter content, your work is displayed in a form that resembles the final result, i.e. you do not see formatting commands mixed in with text.
 
-Here is how some sample content will appear as you enter it **with rich text editing**:
+Here is how some sample content will appear **as you enter it** with rich text editing. For each line, use the usual markdown formatting characters, i.e. start the first line with a "#" and a space:
 
 .. image:: img/yes-rich.png
     :width: 50%
     :align: center
     :alt: rich text editing does not show formatting commands
 
-And here is how it would appear if you type the same markdown code **without rich text editing**:
+And here is how it would appear if you type the same markdown code without rich text editing:
 
 .. image:: img/not-rich.png
     :width: 50%
@@ -21,6 +21,8 @@ And here is how it would appear if you type the same markdown code **without ric
     :alt: markdown commands are displayed when not using rich text editing
 
 With rich text editing, you see the final result right away.
+
+Note that you can also set title and subtitle font size by selecting the text and using "H" (headings) in font options, as shown below.
 
 #####################################
 Where Rich Text Editing is Available
