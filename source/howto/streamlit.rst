@@ -86,6 +86,51 @@ Then open a new browser tab to the following link::
 If you make a change to file "st-hello.py", you don't have to restart the linux script. Simply refresh the browser tab showing the Streamlit display.
 
 ############################
+Streamlit Example
+############################
+
+Here is an example of a streamlit python script to display exoplanet counts:
+
+.. image:: img/exoplanets-streamlit.png
+    :width: 100%
+    :alt: sample plot showing number of exoplanets discovered per year
+
+.. code-block:: python
+
+    # file exoplanets-per-year.py
+    
+    # run this from a cocalc terminal with
+    #   streamlit run exoplanets-per-year.py
+    # make sure you have baseUrlPath set as in
+    #   https://doc.cocalc.com/howto/streamlit.html
+    # after launching streamlit, point your browser at
+    #   https://cocalc.com/<project-id>/port/8501/
+    
+    import streamlit as st
+    import pandas as pd
+    import seaborn as sns
+    import matplotlib
+    from matplotlib.figure import Figure
+    
+    st.markdown('# Exoplanets Found Each Year')
+    
+    # csv file is generated here:
+    # https://cocalc.com/drxyzzy/experimental/exoplanets
+    
+    df = pd.read_csv("exo.csv")
+    fig = Figure()
+    ax = fig.subplots()
+    g = sns.barplot(x=df['year'],
+                y=df['count'],  ax=ax)
+    #g.set_yscale("log")
+    ax.set_xlabel('Year')
+    ax.set_ylabel('Number of exoplanets confirmed')
+    ax.set_xticklabels(ax.get_xticklabels(),rotation = 80)
+    st.pyplot(fig)
+
+
+
+############################
 References
 ############################
 
