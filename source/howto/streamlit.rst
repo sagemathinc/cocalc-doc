@@ -75,7 +75,7 @@ Create a Streamlit python script. Here is an example. Be sure you have `baseUrlP
     hello *world*!
     """)
 
-Run this command from a linux terminal, making sure ::
+Run this command from a linux terminal::
 
     streamlit run st-hello.py
 
