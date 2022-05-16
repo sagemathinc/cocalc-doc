@@ -58,7 +58,7 @@ Start the Streamlit welcome page by doing this. Be sure you have `baseUrlPath` s
     
 Then open a new browser tab to the following link::
 
-    https://cocalc.com//<your project id>/port/8501/
+    https://cocalc.com/<your project id>/port/8501/
 
 If you get an "Email:" prompt, you can ignore it. Just hit <Enter> when you see it.
 
@@ -81,7 +81,7 @@ Run this command from a linux terminal, making sure ::
 
 Then open a new browser tab to the following link::
 
-    https://cocalc.com//<your project id>/port/8501/
+    https://cocalc.com/<your project id>/port/8501/
 
 If you make a change to file "st-hello.py", you don't have to restart the linux script. Simply refresh the browser tab showing the Streamlit display.
 
