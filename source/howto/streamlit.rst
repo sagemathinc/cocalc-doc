@@ -56,11 +56,13 @@ Start the Streamlit welcome page by doing this. Be sure you have `baseUrlPath` s
 
     streamlit hello
     
-Then open a new browser tab to the following link::
+Then run the following in another linux terminal::
 
-    https://cocalc.com/<your project id>/port/8501/
+    echo "https://cocalc.com/$COCALC_PROJECT_ID/port/8501/"
 
-If you get an "Email:" prompt, you can ignore it. Just hit <Enter> when you see it.
+and click on the link that is printed.
+
+If you get an "Email:" prompt in the new page that opens, you can ignore it. Just hit <Enter> when you see it.
 
 ############################
 Streamlit Python script
@@ -79,9 +81,11 @@ Run this command from a linux terminal::
 
     streamlit run st-hello.py
 
-Then open a new browser tab to the following link::
+Run the following in another linux terminal::
 
-    https://cocalc.com/<your project id>/port/8501/
+    echo "https://cocalc.com/$COCALC_PROJECT_ID/port/8501/"
+
+and click on the link that is printed.
 
 If you make a change to file "st-hello.py", you don't have to restart the linux script. Simply refresh the browser tab showing the Streamlit display.
 
