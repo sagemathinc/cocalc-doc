@@ -63,7 +63,8 @@ In a sticky note, text, etc., mark action items by placing a pair of brackets in
 Search View
 ##########################
 
-*Search View* of a whiteboard gives you a panel that lists all text, sticky notes and code in order, with a search box at the top. You can search for text and click on any matching item to center the whiteboard on it.
+*Search View* of a whiteboard gives you a panel that lists all text, sticky notes and code in order, with a search box at the top. You can search for text and click on any matching item to center the whiteboard on it. The ordering of items in Search View is lexicographic by the \(y,x\) coordinates. Items closer to the top are listed first. Items at the same height are listed left to right.
+
 Search view can make your whiteboards easier to manage as they get larger.
 
 .. figure:: img/wb-search-view.png
