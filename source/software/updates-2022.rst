@@ -10,6 +10,20 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-05-30:
+
+2022-05-30: Octave 7.1.0 and Sage 9.6
+----------------------------------------------
+
+- System wide:
+    - (upd) `SageMath 9.6`_ available via Jupyter Kernel, ``sage-9.6`` on the command line and by default in Sage Worksheets.
+        - (upd) Python ``3.10``: the "Python 3 (Sage)" kernel runs version ``3.10``, which is inside of the default Sage's Python environment. (`Python 3.10 example <https://cocalc.com/share/public_paths/fd6b49f325554e64ed73716129f65237f6d0cb4e>`_)
+    - (upd) `Octave 7.1.0`_ available by default.
+    - (upd) `Rust`_ ``1.61.0``
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
 .. _update-2022-05-07:
 
 2022-05-07: R 4.2
@@ -144,3 +158,6 @@ Software Updates 2022
 .. _prophet: https://facebook.github.io/prophet/
 .. _pyspice: https://pyspice.fabrice-salvaire.fr/pages/documentation.html
 .. _timml: https://github.com/mbakker7/timml
+.. _octave 7.1.0: https://www.gnu.org/software/octave/NEWS-7.html
+.. _SageMath 9.6: https://trac.sagemath.org/wiki/ReleaseTours/sage-9.6
+.. _rust: https://www.rust-lang.org/
