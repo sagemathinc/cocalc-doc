@@ -8,6 +8,10 @@ Chatrooms
 CoCalc supports chatrooms for direct communication between collaborators
 to enhance real-time collaboration on files.
 
+.. contents::
+     :local:
+     :depth: 1
+
 .. image:: img/chatroom.png
     :align: center
     :width: 95%
@@ -27,7 +31,7 @@ Features
   by starting a new word with the ``@`` symbol. A list of names appears and you can select her or him.
   Be aware, that in order to actually send an email, we need to know a working email address
   of the recipient.
-* **Search**: use the search box at the top left to filter messages.
+* **Search**: use the search box at the top left to filter messages. You can search for regular expressions by enclosing them in slashes, for example ``/^# /``.
 * **Emoticons**: a small set of characters are translated to unicode emoticons.
   E.g. type in ``:-)`` to express that you're happy!
 * **Editing**: you can edit any message by double-clicking on it; a message specific "history" appears.
@@ -43,8 +47,8 @@ Features
                   :height: 20pt
                   :alt: typeset math formula
 
-Chatroom
-====================
+Creating a Chatroom
+========================
 
 To start a new chat:
 

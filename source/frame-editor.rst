@@ -10,9 +10,9 @@ Frame Editor
      :local:
      :depth: 2
 
-This guide explains how to work with the **frame editor** for editing source code, :doc:`LaTeX documents <latex>`, :doc:`Command-line terminal <terminal>` etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is splitted horizontally. After that, the bottom right frame is changed to a :doc:`Terminal <terminal>`.
+This guide explains how to work with the **frame editor** for editing source code, :doc:`LaTeX documents <latex>`, :doc:`Command-line terminal <terminal>` etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is split horizontally. After that, the bottom right frame is changed to a :doc:`Terminal <terminal>`.
 
-Therefore, you can not only view the same Python source code file in two places, but you can also work with e.g. IPython_ on the command-line in the same directory.
+You can not only view the same Python source code in two places, but you can also work with e.g. IPython_ on the command-line in the same directory.
 
 .. _IPython: https://www.ipython.org
 
@@ -39,19 +39,25 @@ If you open/create a file ending with ``*.md``, you're presented by default with
 There's an entire page in this guide dedicated to :doc:`markdown`.
 
 
-
 .. index:: Source Code files
 .. index:: Frame Editor; source code
 
-***************************
-Text and Other File Types
-***************************
+************************************
+Text, Source Code, and Data Files
+************************************
 
-The frame editor lets you edit text files, i.e. files whose name ends in ``*.txt``.
+The frame editor lets you edit many types of text files. Here are some of the most common types, followed by the filename extension:
 
-You can also use it to edit source code in many programming languages, including file types ``*.c``, ``*.c++``, ``*.sage``, ``*.java``, ``*.py``, and ``*.adb``.
+* plain text: ``.txt``
+* Python code: ``.py``
+* Sage code: ``*.sage``
+* C source code: ``*.c``
+* C++ source code: ``*.c++``
+* Java source code:  ``*.java``
+* Comma-separated data: ``*.csv``
+* YAML data: ``*.yaml``
+* JSON data: ``.json``
 
-And you can use the frame editor to edit common data formats, including ``*.csv``, ``*.yaml``, and ``.json``.
 
 .. index:: HTML; frame editor
 .. index:: Frame Editor; HTML
@@ -149,3 +155,19 @@ Side Chat
 ################
 
 You can share comments on a CoCalc file using a side chat panel. For more information, see :ref:`side-chat`.
+
+
+#######################
+Search Inside the File
+#######################
+
+You can search for a string of text in your file while editing by hitting Ctrl-F (or Cmd-F on a Mac) and entering the string you want to search for in the blank that appears at the top. If you want to search for a regular expression rather than simple text, surround the regular expression with slashes. For example, to search for a pound sign and a space at the start of a line, enter ``/^# /`` for the search string.
+
+.. figure:: img/regex-search-ed.png
+    :width: 60%
+    :align: center
+    :alt: search for string inside file being edited
+
+    search in a .sage file; regular expression hint is outlined
+
+Implementation note: CoCalc's frame editor search is implemented using the `Codemirror search function <https://codemirror.net/demo/search.html#>`_.
