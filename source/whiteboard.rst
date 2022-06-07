@@ -27,47 +27,29 @@ List of Features
 
 CoCalc's collaborative mathematical whiteboard supports an infinite canvas with these features:
 
-* text with mathematical LaTeX expressions
-* sticky notes
-* sketching with pens
-* chat conversations with collaborators
-* hundreds of icons
-* manage to-do lists with whiteboards
-* copy and paste between whiteboards
-* search view of whiteboard contents (see below)
-* frames to group objects and organize the whiteboard into sections
-* stopwatches and countdown timers to organize and track work.
-* create edges between all objects
-* infinitely split editor windows to view multiple parts of the whiteboard simultaneously
-* easily navigate with an overview map with two preview modes
-* every change you make is recorded via browsable TimeTravel and you can copy/paste from any point in the history
-* publish your whiteboards to the CoCalc share server
+* **search view** of whiteboard contents
+* organize your whiteboard as multiple **pages**
+* **Jupyter code cells** that execute sequentially
+* **to-do lists**
+* **text** objects that allow mathematical LaTeX expressions
+* **sticky notes**
+* sketching with **pens**
+* **chat** conversations with collaborators
+* hundreds of **icons**
+* **copy and paste** between whiteboards
+* **frames** to group objects and organize the whiteboard into sections
+* **stopwatches and countdown timers** to organize and track work.
+* create **edges** (arrows) between all objects
+* infinitely **split whiteboard windows** to view multiple parts of the whiteboard simultaneously
+* easily navigate with an **overview map** with two preview modes
+* every change you make is recorded via browsable **TimeTravel** and you can copy/paste from any point in the history
+* **publish** your whiteboards to the CoCalc share server
 
 ##########################
-To-do Lists
+Search View
 ##########################
 
-In a sticky note, text, etc., you can mark action items by placing a pair of brackets in the item, preceded and followed by a space and with a space between the brackets. The item will be displayed with an empty checkbox. Click the checkbox when the item is done, or place an "x" between the brackets, and it will show as a checked item.
-
-.. figure:: img/wb-tasks-code.png
-    :width: 60%
-    :align: center
-    :alt: code for to-do list in a whiteboard sticky note
-    
-    Code for an unchecked box and a checked box in a sticky note.
-
-.. figure:: img/wb-tasks-rendered.png
-    :width: 50%
-    :align: center
-    :alt: rendered list in a whiteboard sticky note
-
-    How the unchecked and checked boxes are displayed
-
-##########################
-|search-icon| Search View
-##########################
-
-By default, the search panel is open to the right for new whiteboards. You can also use the vertical toolbar at left and select the icon for the search panel.
+By default, the search panel is open to the right for new whiteboards. You can also use the vertical toolbar at left and select the icon for the search panel: |search-icon|.
 
 .. figure:: img/open-search-view.png
     :width: 40%
@@ -96,10 +78,10 @@ If you don't see a menu choice for Search View in a current whiteboard, then ref
 
 
 ##########################
-|pages-icon| Pages
+Pages
 ##########################
 
-If you click the "Pages" icon, the Pages panel appears.
+If you click the "Pages" icon: |pages-icon|, the Pages panel appears.
 
 .. figure:: img/open-pages-view.png
     :width: 40%
@@ -136,6 +118,28 @@ A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:
     :width: 80%
     :align: center
     :alt: whiteboard with two code cells and a sticky note
+
+##########################
+To-do Lists
+##########################
+
+In a sticky note, text, etc., you can mark action items by placing a pair of brackets in the item, preceded and followed by a space and with a space between the brackets. The item will be displayed with an empty checkbox. Click the checkbox when the item is done, or place an "x" between the brackets, and it will show as a checked item.
+
+.. figure:: img/wb-tasks-code.png
+    :width: 60%
+    :align: center
+    :alt: code for to-do list in a whiteboard sticky note
+    
+    Code for an unchecked box and a checked box in a sticky note.
+
+.. figure:: img/wb-tasks-rendered.png
+    :width: 50%
+    :align: center
+    :alt: rendered list in a whiteboard sticky note
+
+    How the unchecked and checked boxes are displayed
+
+
 
 .. |search-icon| image:: img/antd-icons/search-icon.png
     :height: 20px
