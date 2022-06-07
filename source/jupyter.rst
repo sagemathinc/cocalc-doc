@@ -37,7 +37,7 @@ Popular choices are `Python3`_, `SageMath`_, and `R`_. There many others. Our pa
 .. _cocalc-jupyter-features:
 
 ##########################################
-CoCalc Jupyter Notebook Basic Features
+Basic Features
 ##########################################
 
 By default, a Jupyter notebook on CoCalc has all CoCalc's core features, including real-time collaboration, side chat, and TimeTravel.
@@ -45,27 +45,66 @@ Read more in our `blogpost <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-
 
 .. image:: img/jupyter/jupyter-notebook-cocalc-1.png
     :width: 100%
+    :alt: example of a jupyter notebook with Python kernel selected
 
-Above the main area is a menu bar and a button row:
 
-* The **menu bar** contains all commands, and in particular the **Kernel** menu is for changing it if necessary.
-* The **button row** gives you a one-click access to *Run* the current cell (otherwise press your Shift+Return keys), a way to restart the kernel (which clears the current session) and a Save button to make sure CoCalc has stored the file. The :doc:`time-travel` button allows you to see previous versions of that notebook, such that you can go back in time to recover from a bad change.
 
-* **Active cell**: in the screenshot above, the blue bar on the left and a blue border around a cell indicates that this is the currently active one. Actions like *Run*, *Delete Cell*, etc. operate on the currently selected cell. It is also possible to select more than one cell.
-* **Execution counter**: On the left of each cell, there is an execution counter ``In [ x ]``. The number ``x`` increases each time a cell is being run. After the kernel stopped and restarted, that counter starts again at *1*.
-* The **output of code cells** is below the input cell. For example, ``Out [7]:`` is the output of cell ``In [7]:``. In the right hand corner of the input cell is some information about how long it took to calculate the result.
-* **Text cells** are slightly different. Select "Markdown" in the ``[ Code ]`` dropdown menu in the button bar to change a code cell to such a markdown text cell. There, you can use `Markdown`_ to format the text. Similar to code-cells, either *Run* these text cells to see the processed Markdown code or press Shift+Return. To edit a text cell, either double click it or press your Return key.
-* **Saving**: more general, the nice things about Jupyter Notebooks is that they save all your intput and output in one single file. This means you can download or publish the notebook as it is, and everyone else sees it in exactly the same way.
+
+*****************************
+menu bar
+*****************************
+
+* Above the scrollable area for the notebook, there is a menu bar beginning with buttons for "File  Edit  View  ...". The menu bar is contains the button for selecting the kernel, which determines the programming language and version for this notebook.
+
+*****************************
+button row
+*****************************
+
+Under the menu bar is the button row. The button row gives you a one-click access to *Run* the current cell (otherwise press your Shift+Return keys), a way to restart the kernel (which clears the current session) and a Save button to make sure CoCalc has stored the file. The :doc:`time-travel` button allows you to see previous versions of that notebook, such that you can go back in time to recover from a bad change.
+
+*****************************
+active cell
+*****************************
+
+In the screenshot above, the blue bar on the left and a blue border indicate that this is the currently active cell. Actions like *Run*, *Delete Cell*, etc. operate on the currently selected cell. It is possible to select more than one cell.
+
+*****************************
+execution counter
+*****************************
+
+On the left of each code cell, there is an execution counter ``In [ x ]``. The number ``x`` increases each time a cell is being run. After the kernel stopped and restarted, that counter starts again at *1*.
+
+*****************************
+code cell output
+*****************************
+
+The output of code cells is below the code. For example, ``Out [7]:`` is the output of cell ``In [7]:``. In the right hand corner of the input cell is some information about how long it took to calculate the result.
+
+*****************************
+text cells
+*****************************
+
+Text cells are for explanatory text. Select "Text" in the ``[ Code ]`` dropdown menu in the button bar to change a code cell to text. You can use `Markdown`_ to format the text. Similar to code cells, either *Run* these text cells to see the processed Markdown code or press Shift+Return. To edit a text cell, either double click it or press your Return key.
+
+*****************************
+saving
+*****************************
+
+One advantage of Jupyter Notebooks is that they save all your input and output in a single file. This means you can download or publish the notebook as it is, and everyone else sees it in exactly the same way.
 
 #######################################
-CoCalc Jupyter Notebook Enhancements
+CoCalc Enhancements
 #######################################
 
 These enhanced features are available in CoCalc Jupyter notebooks:
 
 .. index:: Jupyter Notebooks; drag-and-drop images
 
-* **drag-and-drop**: You can drag and drop images into markdown cells:
+*****************************
+drag-and-drop
+*****************************
+
+You can drag and drop images into markdown cells:
 
   1. If you have a markdown cell and are *not* actively editing it,
   there is an image icon/button on the far right of the cell.  Just
@@ -88,31 +127,48 @@ These enhanced features are available in CoCalc Jupyter notebooks:
 
 .. index:: Jupyter Notebooks; cell numbers
 
-* **cell numbers**: Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don't change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.
+*****************************
+consecutive ell numbers
+*****************************
+
+Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don't change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.
 
 .. figure:: img/jupyter/jup-cell-num-timing.png
      :width: 80%
      :align: center
 
-     ..
+     compute cell run time
 
 .. index:: Jupyter Notebooks; cell run time
 
-* **run time for compute cells**: When a compute cell is executed, the amount of time it takes is displayed at upper right. See preceding figure.
+*****************************
+run time for compute cells
+*****************************
+
+
+When a compute cell is executed, the amount of time it takes is displayed at upper right. See the preceding figure.
 
 .. index:: Jupyter Notebooks; table of contents
 
-* **table of contents**: Table of contents level (indicated by font size) is the same as markdown heading level, i.e. "#" for top level, "##" for second level, etc. Click the "Contents" button in the "Notebook" menu at the top of a notebook, or select "File --> Table of Contents", or split the frame and change one of the resulting frames to "Table of Contents". Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.
+*****************************
+table of contents
+*****************************
+
+Table of contents sets the indentation level based on the markdown heading level, i.e. "#" for top level, "##" for second level, etc. Click the "Contents" button in the "Notebook" menu at the top of a notebook, or select "File --> Table of Contents", or split the frame and change one of the resulting frames to "Table of Contents". Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.
 
 .. figure:: img/jupyter/jup-toc2.png
      :width: 80%
      :align: center
 
-     ..
+     table of contents
 
 .. index:: Jupyter Notebooks; slideshow
 
-* **slideshow** CoCalc notebooks offer you a shortcut for making a slideshow. Select "View" > "Cell Toolbar..." > "Slideshow" to add a ``Slide`` button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the "Slideshow" in the "Notebook" menu at the top of a notebook, or select "File" > "Slideshow", or split the frame and change one of the resulting frames to "Slideshow". The latter allows you to view the original notebook side-by-side with the slides.
+*****************************
+slideshow
+*****************************
+
+CoCalc notebooks offer you a shortcut for making a slideshow. Select "View" > "Cell Toolbar..." > "Slideshow" to add a ``Slide`` button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the "Slideshow" in the "Notebook" menu at the top of a notebook, or select "File" > "Slideshow", or split the frame and change one of the resulting frames to "Slideshow". The latter allows you to view the original notebook side-by-side with the slides.
 
 .. figure:: img/jupyter/slideshow-1.png
      :width: 80%
@@ -134,9 +190,15 @@ When presenting, the next slide is to the right, while the next subslide is belo
 
      original notebook side by side with slideshow
 
-*Note: the legacy method of creating and presenting a slideshow by using a separate Linux terminal command and starting a small web server is still available by clicking "File" > "Slideshow via nbconvert...".*
+.. note::
 
-* **nbgrader integration**: CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See :doc:`nbgrader in CoCalc<teaching-nbgrader>` for more information.
+    The legacy method of creating and presenting a slideshow by using a separate Linux terminal command and starting a small web server is still available by clicking "File" > "Slideshow via nbconvert...".*
+
+*****************************
+nbgrader integration
+*****************************
+
+CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See :doc:`nbgrader in CoCalc<teaching-nbgrader>` for more information.
 
 .. index:: Jupyter Notebooks; interactive widgets
 .. _jupyter-interactive-widgets:
