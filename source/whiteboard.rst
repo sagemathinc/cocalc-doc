@@ -12,8 +12,6 @@ Read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/w
      :local:
      :depth: 2
 
-#.. image:: img/whiteboard-sage.png
-
 .. figure:: img/search-and-pages.png
     :width: 90%
     :align: center
