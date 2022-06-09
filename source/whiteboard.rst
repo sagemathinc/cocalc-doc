@@ -25,10 +25,10 @@ List of Features
 
 CoCalc's collaborative mathematical whiteboard supports an infinite canvas with these features:
 
-* **search view** of whiteboard contents
-* organize your whiteboard as multiple **pages**
-* **Jupyter code cells** that execute sequentially
-* **to-do lists**
+* :ref:`search view <search-view>` of whiteboard contents
+* organize your whiteboard as multiple :ref:`pages <pages-view>`.
+* :ref:`Jupyter code cells <jupyter-cells>` that execute sequentially
+* :ref:`to-do lists <to-do-lists>`
 * **text** objects that allow mathematical LaTeX expressions
 * **sticky notes**
 * sketching with **pens**
@@ -42,6 +42,8 @@ CoCalc's collaborative mathematical whiteboard supports an infinite canvas with 
 * easily navigate with an **overview map** with two preview modes
 * every change you make is recorded via browsable **TimeTravel** and you can copy/paste from any point in the history
 * **publish** your whiteboards to the CoCalc share server
+
+.. _search-view:
 
 ##########################
 Search View
@@ -74,6 +76,7 @@ You can put hashtags on notes, e.g. :code:`#foo` and search for those as well, o
 
 If you don't see a menu choice for Search View in a current whiteboard, then refresh your browser, click the "split vertically" button (upper right), then click the dropdown that says "Whiteboard" and change it to "Search".
 
+.. _pages-view:
 
 ##########################
 Pages
@@ -101,6 +104,8 @@ You can also see a page number in upper left of the main whiteboard, and click o
 
 The Search panel (see above) is ordered by page. Putting things in different pages imposes an ordering in the search.
 
+.. _jupyter-cells:
+
 ##########################
 Jupyter Cells
 ##########################
@@ -116,6 +121,8 @@ A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:
     :width: 80%
     :align: center
     :alt: whiteboard with two code cells and a sticky note
+
+.. _to-do-lists:
 
 ##########################
 To-do Lists
@@ -136,7 +143,6 @@ In a sticky note, text, etc., you can mark action items by placing a pair of bra
     :alt: rendered list in a whiteboard sticky note
 
     How the unchecked and checked boxes are displayed
-
 
 
 .. |search-icon| image:: img/antd-icons/search-icon.png

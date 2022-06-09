@@ -7,7 +7,6 @@ Jupyter Notebooks
 
 CoCalc offers several options for hosting running `Jupyter Notebooks`_ online.
 
-
 .. contents::
    :local:
    :depth: 2
@@ -48,13 +47,16 @@ Read more in our `blogpost <http://blog.sagemath.com/jupyter/2017/05/05/jupyter-
     :alt: example of a jupyter notebook with Python kernel selected
 
 
-
-
 *****************************
 menu bar
 *****************************
 
-* Above the scrollable area for the notebook, there is a menu bar beginning with buttons for "File  Edit  View  ...". The menu bar is contains the button for selecting the kernel, which determines the programming language and version for this notebook.
+.. image:: img/jupyter/jupyter-notebook-cocalc-2.png
+    :width: 100%
+    :alt: menu bar, button row, and active cell pointed out
+
+
+Above the scrollable area for the notebook, there is a menu bar beginning with buttons for "File  Edit  View  ...". The menu bar is contains the button for selecting the kernel, which determines the programming language and version for this notebook.
 
 *****************************
 button row
