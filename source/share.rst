@@ -6,6 +6,10 @@
 Sharing Files
 ==========================
 
+.. contents::
+     :local:
+     :depth: 1
+
 Make a file or directory publicly visible to the world.
 
 .. note::
@@ -14,8 +18,9 @@ Make a file or directory publicly visible to the world.
 
 .. _publishing-files:
 
+#################
 Publishing Files
-==================
+#################
 
 You can make individual files and folders public.
 First, do either of the following:
@@ -58,8 +63,9 @@ In addition to the above settings, you may specify an optional public file name.
 .. index:: Sharing files; vanity URLs
 .. _vanity-urls:
 
+#################
 Vanity URLs
-===========
+#################
 
 You can now make it so
 ``https://cocalc.com/name-of-your-choice``  (e.g.,
@@ -97,20 +103,40 @@ Files on the share server are `indexed by Google <https://www.google.com/search?
 
 .. index:: Sharing files; direct from project
 
-File-sharing Tips
-======================
+#################
+File Sharing Tips
+#################
 
 * If your document depends on auxiliary files (e.g., images embedded in a markdown file) make sure these auxiliary files are also published. A convenient way to do this is to have auxiliary files in a common folder and share that folder.
 
 * Serving raw files: you can host arbitrary html, etc. through the share server. Files can be viewed in "raw" form, i.e. without CoCalc controls, by opening in the share server and clicking "Raw" at upper right.
 
-* Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage ``@interact``, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser, for example in 3d plots like `this cardiod <https://cocalc.com/share/public_paths/7eee8ccdeb4acf37e6c258df1cd973871373df05>`_, will work when served from the share server.
+* Interactive elements that use server processes, such as notebooks with Jupyter widgets and worksheets with Sage ``@interact``, will not operate in files viewed from the share server. That is because documents on the share server are truly static. There is no kernel or Sage server running in the background to facilitate any sort of interactive computing. Controls that run completely in the browser work when served from the share server, for example 3d plots like `this cardioid <https://cocalc.com/share/public_paths/7eee8ccdeb4acf37e6c258df1cd973871373df05>`_.
 
+.. _star-shared-file:
 
+##########################
+Starring Shared Files
+##########################
 
-.. note::
+You can star shared public files on the share server and see everything you starred here: https://cocalc.com/stars.
+You must be signed into CoCalc to star a shared file.
 
-    If you would like to collaborate and chat with other people on documents in your project,
-    go the :doc:`project-settings` tab and ":ref:`Add people to project <add-collaborators>`".
+.. figure:: img/add-star.png
+     :width: 80%
+     :align: center
+     :alt: star a file on the share server
+
+     star a shared file so you can find it easily later
+
+When you click "Star", the count increases by one and the prompt changes to "Starred". You can undo the operation by clicking "Starred", after which the star count will decrease by one.
+
+.. figure:: img/remove-star.png
+     :width: 80%
+     :align: center
+     :alt: remove previously-added star from a file on the share server
+
+     click "starred" to remove a previously-added star
+
 
 .. _share server: https://cocalc.com/share/
