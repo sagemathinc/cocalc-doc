@@ -120,7 +120,6 @@ Starring Shared Files
 ##########################
 
 You can star shared public files on the share server and see everything you starred here: https://cocalc.com/stars.
-You must be signed into CoCalc to star a shared file.
 
 .. figure:: img/add-star.png
      :width: 80%
