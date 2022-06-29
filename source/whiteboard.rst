@@ -43,6 +43,10 @@ CoCalc's collaborative mathematical whiteboard supports an infinite canvas with 
 * every change you make is recorded via browsable **TimeTravel** and you can copy/paste from any point in the history
 * **publish** your whiteboards to the CoCalc share server
 
+.. note::
+
+    At this time, the only way to export an image of all or part of a whiteboard is by taking a screenshot. Exporting a whiteboard to a pdf, png, or svg file is not yet implemented. See `CoCalc issue #6024 <https://github.com/sagemathinc/cocalc/issues/6024>`_.
+
 .. _search-view:
 
 ##########################
