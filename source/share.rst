@@ -1,20 +1,48 @@
 .. index:: Sharing files
 .. index:: Publishing files
+
 .. _sharing-files:
 
 ==========================
-Sharing Files
+Shared Files
 ==========================
 
 .. contents::
      :local:
      :depth: 1
 
-Make a file or directory publicly visible to the world.
+Files and folders published (shared) to CoCalc's `share server <https://cocalc.com/share>`_ are viewable by the public with no login required.
 
-.. note::
+=====================================
+Viewing Files on the Share Server
+=====================================
 
-    CoCalc's share server is available at https://cocalc.com/share/
+To see CoCalc files that people have shared, browse to https://cocalc.com/share. You can search for text in the title and contents of shared files using the search box at upper right. You can sort the list of files by any of the columns listed, in increasing or decreasing order, by clicking in the column headings.
+
+.. figure:: img/share-home-page.png
+     :width: 100%
+     :align: center
+     :alt: share server home page
+
+     search and sort shared files at share server home page
+
+There is also a preview at the CoCalc home page, allowing people who are just learning about CoCalc to view a sample of shared files:
+
+.. figure:: img/share-at-landing.png
+     :width: 100%
+     :align: center
+     :alt: share server preview at CoCalc home page
+
+     preview of shared files on CoCalc home page
+
+When you select a shared folder, you get a view of the contents. Click "Edit" to copy a shared file or folder to a project that you own or collaborate on.
+
+.. figure:: img/shared-folder.png
+     :width: 100%
+     :align: center
+     :alt: share server showing shared folder "k3d"
+
+     listing of shared folder "k3d"
 
 .. _publishing-files:
 
@@ -86,6 +114,7 @@ https://cocalc.com/wstein/support/examples
 .. index:: Sharing files; share server
 .. _share-server:
 
+==================================
 View Your File on the Share Server
 ==================================
 
@@ -97,8 +126,7 @@ You can click the |external| button to open it at the share server.
     :width: 16px
     :alt: Icon for external link
 
-With that link, your file is available read-only on the CoCalc lightweight `share server`_.
-A CoCalc login is not needed to access files on the share server.
+With that link, a read-only copy of your file is available on the CoCalc  `share server`_.
 Files on the share server are `indexed by Google <https://www.google.com/search?q=site%3Acocalc.com%2Fshare>`_ unless you click the checkbox next to "Unlisted: Only allow those with a link to view this.".
 
 .. index:: Sharing files; direct from project
@@ -106,6 +134,8 @@ Files on the share server are `indexed by Google <https://www.google.com/search?
 #################
 File Sharing Tips
 #################
+
+* You can now share files from a free CoCalc account. At one time, the :ref:`Internet access <view-resources>` upgrade was required in order to share files; this is no longer the case.
 
 * If your document depends on auxiliary files (e.g., images embedded in a markdown file) make sure these auxiliary files are also published. A convenient way to do this is to have auxiliary files in a common folder and share that folder.
 
@@ -136,6 +166,3 @@ When you click "Star", the count increases by one and the prompt changes to "Sta
      :alt: remove previously-added star from a file on the share server
 
      click "starred" to remove a previously-added star
-
-
-.. _share server: https://cocalc.com/share/
