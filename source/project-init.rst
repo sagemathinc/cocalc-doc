@@ -4,7 +4,7 @@
 Project Initialization Scripts
 ================================
 
-All about the **project-init.sh** file.
+All about the **project_init.sh** file.
 
 .. contents::
    :local:
