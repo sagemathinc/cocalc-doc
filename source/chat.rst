@@ -62,8 +62,15 @@ To start a new chat:
 @-mentions
 ########################
 
-When you include an ``@-mention`` in a chat message, your collaborator will receive email about your new message. Start a new word with the ``@`` symbol. A list of names appears and you can select her or him.
-In order to actually send an email, CoCalc must have a working email address for the recipient.
+Start a new word with the ``@`` symbol to create an ``@-mention`` in a chat message. A list of names appears and you can select one or more recipients of an email notification. Additional mentions of the same user will not trigger notifications for the next few hours, since we don't want to spam people. In order to send an email, CoCalc must have a working email address for the recipient.
+
+
+.. figure:: img/teaching/tex-mentions.png
+     :width: 90%
+     :align: center
+     :alt: @-mention causes email notifications to be sent
+
+     @-mention of names in course shared project chat
 
 You can see a list of all @-mentions sent to you by visiting the link https://cocalc.com/notifications
 

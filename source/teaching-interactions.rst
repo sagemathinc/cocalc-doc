@@ -15,8 +15,9 @@ There are multiple ways in which you can interact with your students or collabor
 .. index:: Collaboration; chat rooms
 .. _teaching-chatrooms:
 
+#####################
 Real-time chatrooms
-=========================================================
+#####################
 
 You can create general real-time chatrooms for your CoCalc projects.
 You can create a project chat room by clicking on the **New** button, this will create a file with `.sage-chat` extension.
@@ -53,8 +54,9 @@ Once you have replied to the student's question (s)he will receive a notificatio
 .. index:: Collaboration; multi-user editing
 .. _multi-user-edit:
 
+############################
 Live collaborative editing
-===================================
+############################
 
 Multiple users can collaborate on a project.
 As soon as a collaborator is added to a a project (see :doc:`teaching-create-course`) they share both the project and the associated files.
@@ -65,28 +67,21 @@ If one of your collaborators updates a notebook, the rest can see the changes as
 .. index:: @Mentions in chat
 .. index:: Mentions in chat
 .. index:: Chat; @mentions
+
 .. _at-mention-chat:
 
+################################
+@-Mention collaborators in chat
+################################
 
-@Mention collaborators in chat
-=================================
-
-CoCalc chats support an ``@mentions`` feature, where you type ``@`` and a list appears of collaborators, which you can select from. Anybody mentioned there will get emailed (unless they are mentioned again in the next few hours, since we don't want to spam people). This helps ensure people know about chats. Any chat will cause the notification count to go up in the bell in the upper right, whether or not you are mentioned.
-
-.. figure:: img/teaching/tex-mentions.png
-     :width: 90%
-     :align: center
-     :alt: @-mention causes email notifications to be sent
-
-     *@mentioning names in course shared project chat*
-
+Using ``@`` followed by a recipient's name in a chat message you send, you can cause an email notification to be sent. See :ref:`chat-at-mentions` for more information.
 
 .. index:: Shared project; in course
 .. index:: Collaboration; shared project
 
-
+################################
 Creating a shared project
-===============================
+################################
 
 You can create a common shared project for your course. Think of a shared project as your private course website for the students with automatic forum and code support. By default everybody (collaborators and students) will have **write** access to the project and its associated files.
 
@@ -110,8 +105,9 @@ In case you want to change a read only file into a read and write, type::
 
     chmod a+w filename
 
+################################
 Group Projects
-========================
+################################
 
 There are various ways in which you can facilitate students' group projects in CoCalc.
 A couple of options are:
