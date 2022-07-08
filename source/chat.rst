@@ -21,10 +21,7 @@ to enhance real-time collaboration on files.
 Features
 ############
 
-* **@Mention**: you can ping a certain collaborator via email in message,
-  by starting a new word with the ``@`` symbol. A list of names appears and you can select her or him.
-  Be aware, that in order to actually send an email, we need to know a working email address
-  of the recipient.
+* :ref:`chat-at-mentions`
 * **Editing**: you can edit any message by double-clicking on it; a message specific "history" appears.
 * **Emoticons**: a small set of characters are translated to unicode emoticons.
   E.g. type in ``:-)`` to express that you're happy!
@@ -59,10 +56,10 @@ To start a new chat:
 2. (Maybe) switch to a specific directory, but any directory works;
 3. Click the ``+ Add`` button and select the "Chatroom" filetype.
 
-.._chat-at-mentions:
+.. _chat-at-mentions:
 
 ########################
-At-mentions
+@-mentions
 ########################
 
 When you include an ``@-mention`` in a chat message, your collaborator will receive email about your new message. Start a new word with the ``@`` symbol. A list of names appears and you can select her or him.
