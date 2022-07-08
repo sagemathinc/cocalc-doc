@@ -59,6 +59,17 @@ To start a new chat:
 2. (Maybe) switch to a specific directory, but any directory works;
 3. Click the ``+ Add`` button and select the "Chatroom" filetype.
 
+.._chat-at-mentions:
+
+########################
+At-mentions
+########################
+
+When you include an ``@-mention`` in a chat message, your collaborator will receive email about your new message. Start a new word with the ``@`` symbol. A list of names appears and you can select her or him.
+In order to actually send an email, CoCalc must have a working email address for the recipient.
+
+You can see a list of all @-mentions sent to you by visiting the link https://cocalc.com/notifications
+
 .. _chat-hashtags:
 
 ########################
