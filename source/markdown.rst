@@ -86,6 +86,8 @@ Checkboxes
 
 Type " [ ] " to create an unchecked checkbox. Note the single space between the square brackets. Type " [x] " to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.
 
+.. _markdown-hashtags:
+
 ***********************************
 Hashtags
 ***********************************

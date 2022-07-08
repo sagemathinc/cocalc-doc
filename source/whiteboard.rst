@@ -47,6 +47,61 @@ CoCalc's collaborative mathematical whiteboard supports an infinite canvas with 
 
     At this time, the only way to export an image of all or part of a whiteboard is by taking a screenshot. Exporting a whiteboard to a pdf, png, or svg file is not yet implemented. See `CoCalc issue #6024 <https://github.com/sagemathinc/cocalc/issues/6024>`_.
 
+.. _whiteboard-hashtags:
+
+########################
+Hashtags
+########################
+
+You can put hashtags on notes, e.g. :code:`#foo` and search for those as well, or put :code:`-` (minus sign) in front to exclude matching items from search, e.g. :code:`-#foo`. You can search for regular expressions by enclosing them in slashes, for example ``/^# /``.
+
+.. _jupyter-cells:
+
+##########################
+Jupyter Cells
+##########################
+
+A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:
+
+* over a dozen supported kernels
+* CoCalc's massive library of pre-installed software
+* interactive widgets
+* execution order determined by a directed graph
+
+.. image:: img/code-cells-in-wb.png
+    :width: 80%
+    :align: center
+    :alt: whiteboard with two code cells and a sticky note
+
+.. _pages-view:
+
+##########################
+Pages
+##########################
+
+If you click the "Pages" icon: |pages-icon|, the Pages panel appears.
+
+.. figure:: img/open-pages-view.png
+    :width: 40%
+    :align: center
+    :alt: pages icon in toolbar
+
+    pages icon in toolbar opens Pages view
+
+There's a button "+ New" that creates a new page. You can see previews of all your pages in the pages panel, and click a preview to jump to any page.
+
+You can also see a page number in upper left of the main whiteboard, and click or edit to go to a page.
+
+.. figure:: img/page-one-of-two.png
+    :width: 40%
+    :align: center
+    :alt: page number displayed at upper left
+
+    whiteboard is showing page 1 of 2
+
+The Search panel is ordered by page number. Putting things in different pages imposes an ordering in the search.
+
+
 .. _search-view:
 
 ##########################
@@ -76,55 +131,7 @@ Search view can make your whiteboards easier to manage as they get larger.
 
 Search view works well with to-do lists. To find all not done items, put :code:`"[ ]"` (note the quotes) in the search box. To find all completed items, search for :code:`"[x]"`.
 
-You can put hashtags on notes, e.g. :code:`#foo` and search for those as well, or put :code:`-` (minus sign) in front to exclude matching items from search, e.g. :code:`-#foo`. You can search for regular expressions by enclosing them in slashes, for example ``/^# /``.
-
 If you don't see a menu choice for Search View in a current whiteboard, then refresh your browser, click the "split vertically" button (upper right), then click the dropdown that says "Whiteboard" and change it to "Search".
-
-.. _pages-view:
-
-##########################
-Pages
-##########################
-
-If you click the "Pages" icon: |pages-icon|, the Pages panel appears.
-
-.. figure:: img/open-pages-view.png
-    :width: 40%
-    :align: center
-    :alt: pages icon in toolbar
-
-    pages icon in toolbar opens Pages view
-
-There's a button "+ New" that creates a new page. You can see previews of all your pages in the pages panel, and click a preview to jump to any page.
-
-You can also see a page number in upper left of the main whiteboard, and click or edit to go to a page.
-
-.. figure:: img/page-one-of-two.png
-    :width: 40%
-    :align: center
-    :alt: page number displayed at upper left
-
-    whiteboard is showing page 1 of 2
-
-The Search panel (see above) is ordered by page. Putting things in different pages imposes an ordering in the search.
-
-.. _jupyter-cells:
-
-##########################
-Jupyter Cells
-##########################
-
-A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:
-
-* over a dozen supported kernels
-* CoCalc's massive library of pre-installed software
-* interactive widgets
-* execution order determined by a directed graph
-
-.. image:: img/code-cells-in-wb.png
-    :width: 80%
-    :align: center
-    :alt: whiteboard with two code cells and a sticky note
 
 .. _to-do-lists:
 

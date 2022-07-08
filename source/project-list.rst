@@ -11,8 +11,9 @@ The project **List** gives you an overview of projects in your account.
    :local:
    :depth: 1
 
+#############################
 Introducing the Project List
-=============================
+#############################
 
 The first time you sign into CoCalc, you won't have any projects, unless some have already been created for you:
 
@@ -34,7 +35,7 @@ If you have a large number of projects, the initial display will be limited to 5
      ..
 
 You can enter filter text in the Projects search field.
-If you have several projects, it can help to add hashtags to your project descriptions for topics you want to return to quickly.
+If you have several projects, it can help to add :ref:`hashtags <project-desc-hashtags>` to your project descriptions for topics you want to return to quickly.
 
 .. figure:: img/project-settings/project-match.png
      :width: 60%
@@ -44,9 +45,9 @@ If you have several projects, it can help to add hashtags to your project descri
      *searching for "astro" in project title & description*
 
 
-
+#############################
 Using an Invitation Token
-=========================
+#############################
 
 If you have been given an invitation token, you can enter it
 at the top right of the Project list. There's more information at
@@ -55,8 +56,9 @@ at the top right of the Project list. There's more information at
 .. index:: Projects; search for
 .. _project_search:
 
+#############################
 Filtering the Project List
-===========================
+#############################
 
 As your project list grows, you can save time finding projects by entering text into the ``Search for projects...`` box. As you type, the list of projects displayed is narrowed to only the projects whose Title or Description contains the search string. If you enter several words separated by spaces, the list will be limited to projects in which all the words in the search text appear in the project title or description.
 
@@ -69,8 +71,9 @@ As your project list grows, you can save time finding projects by entering text 
 .. index:: Projects; batch operations
 .. _project_batch:
 
+#############################
 Batch Operations on Projects
-=============================
+#############################
 
 Using the project filter also brings up a toolbar for **batch operations on projects** (see figure above). Each of the four buttons allows you to do one of the following on all projects shown, in a single operation:
 
@@ -84,8 +87,11 @@ Using the project filter also brings up a toolbar for **batch operations on proj
 * hide projects
 * remove all *your* upgrades from projects (does not remove upgrades added by others)
 
+.. _project-desc-hashtags:
+
+#############################
 Tagging Projects
-=================
+#############################
 
 You can make it easy to find certain projects if you add a *hashtag*, i.e. text beginning with a pound sign (#), to the project title or description. Hashtag text may contain letters, digits, hyphens, and underscores. Hashtags appear as buttons to the right of project search text.
 
@@ -95,9 +101,9 @@ You can make it easy to find certain projects if you add a *hashtag*, i.e. text 
 
      *hashtag "#boxplots" in project description*
 
-
+###############################
 Hidden and/or Deleted Projects
-================================
+###############################
 
 If any of your projects are hidden and/or deleted, you will see checkboxes at the right of the search text to allow you to view them. Learn more about hidden and deleted projects in :ref:`Project Settings <project_hidden_deleted>`.
 
