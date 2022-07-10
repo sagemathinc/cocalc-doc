@@ -220,6 +220,8 @@ A good way to get started using Jupyter widgets is to go through the `Widget Lis
 
      CoCalc Jupyter notebook with Jupyter Widgets
 
+For more information on the implementation of Jupyter Widgets in Cocalc, including support for real-time collaboration, see this video presentation: `Jupyter Widgets in CoCalc  <https://www.youtube.com/watch?v=t4h5QrBKjyY>`_.
+
 
 .. index:: Jupyter Notebooks; classical vs. CoCalc
 .. _jupyter-classical-vs-cocalc:
