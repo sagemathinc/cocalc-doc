@@ -61,6 +61,18 @@ Enhanced features in CoCalc Markdown
 ####################################
 
 ***********************************
+@-mentions
+***********************************
+
+See :ref:`@Mention collaborators in chat <at-mention-chat>`.
+
+***********************************
+Checkboxes
+***********************************
+
+Type " [ ] " to create an unchecked checkbox. Note the single space between the square brackets. Type " [x] " to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.
+
+***********************************
 Collaborative editing
 ***********************************
 
@@ -79,12 +91,17 @@ Emojis
 
 View the list of supported emojis in the `markdown-it-emojis GitHub repository <https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json>`_.
 
+***********************************
+Export to HTML
+***********************************
+* To create html from a markdown file, open a :doc:`Linux terminal <terminal>`. If your file is "filename.md", run the command::
+
+    pandoc filename.md -o filename.html
 
 ***********************************
-Checkboxes
+Export to PDF
 ***********************************
-
-Type " [ ] " to create an unchecked checkbox. Note the single space between the square brackets. Type " [x] " to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.
+* To export a markdown (".md") file as pdf, open the file, select "Locked" from the view pulldown menu and click the "Print" button.
 
 .. _markdown-hashtags:
 
@@ -95,18 +112,6 @@ Hashtags
 Precede a word with a hash sign ("#") and it is formatted to stand out as a hashtag.
 
 ***********************************
-@-mentions
-***********************************
-
-See :ref:`@Mention collaborators in chat <at-mention-chat>`.
-
-***********************************
-Rich Text Editing
-***********************************
-
-See :doc:`rich-text`.
-
-***********************************
 Inverse search
 ***********************************
 
@@ -115,16 +120,10 @@ The markdown editor supports **inverse search** when source and rendered views a
 If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: |sync| at the top from either pane to synchronize the cursor in the other pane.
 
 ***********************************
-Export to PDF
+Rich Text Editing
 ***********************************
-* To export a markdown (".md") file as pdf, open the file, select "Locked" from the view pulldown menu and click the "Print" button.
 
-***********************************
-Export to HTML
-***********************************
-* To create html from a markdown file, open a :doc:`Linux terminal <terminal>`. If your file is "filename.md", run the command::
-
-    pandoc filename.md -o filename.html
+See :doc:`rich-text`.
 
 ############################
 Limitations
@@ -135,7 +134,6 @@ At present, the markdown "Editable Text" editor does not offer an easy way to ad
 .. image:: img/md-text-vs-code.png
     :width: 70%
     :alt: choosing Markdown Code vs. Editable Text while editing an md file
-
 
 .. _cocalc-markdown-impl:
 
