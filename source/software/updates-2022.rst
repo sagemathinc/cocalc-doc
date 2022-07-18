@@ -10,6 +10,26 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-07-18:
+
+2022-07-18: Node 14
+-----------------------------------------------
+
+- Executables:
+    - `Node.js`_: updated to version 14
+    - `CheckIt`_: update to ``0.2.2``
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
+.. _update-2022-06-24:
+
+2022-06-24: More Updates …
+-----------------------------------------------
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
 .. _update-2022-05-30:
 
 2022-05-30: Octave 7.1.0 and Sage 9.6
@@ -161,3 +181,5 @@ Software Updates 2022
 .. _octave 7.1.0: https://www.gnu.org/software/octave/NEWS-7.html
 .. _SageMath 9.6: https://trac.sagemath.org/wiki/ReleaseTours/sage-9.6
 .. _rust: https://www.rust-lang.org/
+.. _node.js: https://nodejs.org/
+.. _checkit: https://checkit.clontz.org/
