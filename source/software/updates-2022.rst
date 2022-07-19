@@ -10,6 +10,14 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-07-19:
+
+2022-07-19: VSCode reverted
+-------------------------------------------------
+
+- Executables:
+    - (bug) reverting `code-server`_ back to ``4.4.0`` due to `a bug <https://github.com/coder/code-server/pull/5332>`_.
+
 .. _update-2022-07-18:
 
 2022-07-18: Node 14
@@ -183,3 +191,4 @@ Software Updates 2022
 .. _rust: https://www.rust-lang.org/
 .. _node.js: https://nodejs.org/
 .. _checkit: https://checkit.clontz.org/
+.. _code-server: https://github.com/coder/code-server
