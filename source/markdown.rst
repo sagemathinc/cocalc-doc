@@ -160,6 +160,16 @@ About the CoCalc Implementation of Markdown
 
 CoCalc uses `markdown-it <https://github.com/markdown-it/markdown-it>`_, with plug-ins and some customizations. Details are in the CoCalc source code at GitHub in file `src/packages/frontend/markdown/index.ts <https://github.com/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/index.ts>`_.
 
+CoCalc markdown is parsed using `markdown-it` with the linkify and html options set to true, so that patterns that look like URL's are clickable and html blocks and fragments are parsed as html, according to the commonmark spec (which can be weird, subtle, and surprising). CoCalc's markdown is also parsed with the following five plugins enabled. Except for the emoji plugin, these are all forks of upstreams plugins:
+
+* math - `math code <https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/math-plugin.ts>`_; this is a proper markdown-it plugin with rules designed to be as close to Jupyter classic's math formula parsing as I could write. By default math is rendered using katex by default, then mathjax if that fails. There are also some hacks to extend katex support.
+* emoji - `emoji docs <https://github.com/markdown-it/markdown-it-emoji/blob/master/README.md>`_; configured with the defaults, so all github supported emojis. 😊
+* checkbox - `checkbox code <https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/checkbox-plugin.ts>`_; create checkbox anywhere via [ ] and checked box via [x]. Also supports github task lists.
+* hashtag - `hashtag code <https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/hashtag-plugin.ts>`_; create #hashtags anywhere that look like #hashtags. In some parts of cocalc, click on these to search for matches.
+* mentions - `mentions code <https://cocalc.com/github/sagemathinc/cocalc/blob/master/src/packages/frontend/markdown/mentions-plugin.ts>`_; type @ then select the name of one of your collaborators. They will receive an email pointing to your mention of them. For chat, the rest of the line is included as context in the @mention.
+
+CoCalc's markdown is only parsed using markdown-it. It is rendered using a custom React-based renderer that is built around slatejs, which we also use for direct rich text editing of markdown. Thus rendering is much more rigid and structured than most markdown renderers, which simply export an html string and let the browser interpret it. For example, rendering of code blocks (triple back ticks) is accomplished using CodeMirror's parser and react to provide syntax highlighting for any mode we support. The html blocks are rendered using `html-react-parser`, so they will only work if they are valid complete html; moreover, in context like the share server or untrusted notebooks, where the HTML shouldn't be trusted, our markdown renderer sanitizes the html using the `xss` module.
+
 .. |sync|
      image:: img/antd-icons/sync-icon.png
      :width: 24px
