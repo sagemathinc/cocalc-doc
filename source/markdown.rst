@@ -125,16 +125,6 @@ Rich Text Editing
 
 See :doc:`rich-text`.
 
-############################
-Limitations
-############################
-
-At present, the markdown "Editable Text" editor does not offer an easy way to add a link. And adding an image is limited to copying an image that has been added to the paste buffer. To add a link, or to add an image from a file at this time, choose "Markdown Code" in the pulldown menu at the top.
-
-.. image:: img/md-text-vs-code.png
-    :width: 70%
-    :alt: choosing Markdown Code vs. Editable Text while editing an md file
-
 .. _cocalc-markdown-impl:
 
 ###########################################
