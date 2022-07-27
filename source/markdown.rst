@@ -78,6 +78,33 @@ Collaborative editing
 
 Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).
 
+*********************
+Details element
+*********************
+
+CoCalc markdown editing supports `The Details disclosure element <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details>`_. Here is how a `details` element is entered::
+
+    <details>
+        <summary>summary text</summary>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+    </details>
+
+You can put text that you want hidden inside the `details` element. When not expanded, only the summary text is displayed. To expand the content and show the hidden content, click anywhere in the summary. To hide the content, click the summary again.
+
+.. figure:: img/details-summary-only.png
+    :width: 60%
+    :align: center
+    :alt: a details element with content hidden
+
+    details element with content hidden
+
+.. figure:: img/details-expanded.png
+    :width: 60%
+    :align: center
+    :alt: a details element with content expanded
+
+    details element with content expanded
+
 
 ***********************************
 Embedded LaTeX
