@@ -82,14 +82,14 @@ Multiple users can edit CoCalc Markdown at the same time. In fact, one user can 
 Details element
 *********************
 
-CoCalc markdown editing supports `The Details disclosure element <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details>`_. Here is how a `details` element is entered::
+CoCalc markdown editing supports `The Details disclosure element <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details>`_. Here is how a `details` element is entered, using Markdown code edit mode::
 
     <details>
         <summary>summary text</summary>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
     </details>
 
-You can put text that you want hidden inside the `details` element. When not expanded, only the summary text is displayed. To expand the content and show the hidden content, click anywhere in the summary. To hide the content, click the summary again.
+You can put text that you want hidden inside the `details` element. When not expanded, only the summary text is displayed. To expand the content and show the hidden content, click anywhere in the summary. To hide the content, click the summary again. If you do not specify summary text, the word "Details" is used.
 
 .. figure:: img/details-summary-only.png
     :width: 60%
@@ -145,6 +145,33 @@ Inverse search
 The markdown editor supports **inverse search** when source and rendered views are both visible (this is the default display for markdown files). If you double-click on markdown in the rendered view, the source view will scroll to display the corresponding line.
 
 If you are using a split view with Markdown Code in one pane and Editable Text in the other, you can use the sync button: |sync| at the top from either pane to synchronize the cursor in the other pane.
+
+See :doc:`rich-text`.
+
+***********************************
+Reference links
+***********************************
+
+CoCalc will gather hyperlinks in a `References` section at the bottom of the file if you use either of the following formats to enter hyperlinks while in Markdown code edit mode. The input format for reference links follows the specification here, `markdown reference links <https://daringfireball.net/projects/markdown/syntax#link>`_ (with the enhancement that with implicit link names, an empty pair of brackets is not needed).
+
+Implicit link name. In the body of your document, enclose the text reference to the link in square brackets. Then include a definition of the link on a separate line. You may append an optional title string, surrounded by single or double quotes, to the definition. The definition does not have to be next to the reference; for example, you could gather definitions at the bottom of your document. Here is an example of a link reference line and a corresponding definition line::
+
+    Here is some text with a link to [CoCalc]
+    
+    [CoCalc]: https://cocalc.com 'optional added text'
+
+Link id. Here's another example of a link reference line followed by the corresponding definition. In this case the link id is numeric::
+
+    Use [Sagemath][1] for numeric and symbolic mathematics.
+    
+    [1]: https://sagemath.com 'sagemath site'
+
+CoCalc will create the following `References` section at the bottom of the markdown file from the sample links above.
+
+.. image:: img/reference-links.png
+    :width: 60%
+    :align: center
+    :alt: References section at bottom of file
 
 ***********************************
 Rich Text Editing
