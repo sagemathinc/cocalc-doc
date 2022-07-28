@@ -10,6 +10,48 @@ These enhanced features are available in CoCalc Jupyter notebooks:
      :local:
      :depth: 1
 
+.. index:: Jupyter Notebooks; cell numbers
+.. _consecutive-cell-numbers:
+
+#######################################
+consecutive cell numbers
+#######################################
+
+Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don't change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.
+
+.. figure:: img/jupyter/jup-cell-num-timing.png
+     :width: 80%
+     :align: center
+     :alt: compute cell with ordinal number and run time at right
+
+     compute cell consecutive numbers and run time
+     
+######################
+delete protect cells
+######################
+
+You can protect markdown and code cells from deletion in a Jupyter notebook using "Delete protection -- toggle whether cells are deletable" in the "Edit" menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.
+
+.. figure:: img/jupyter/delete-protect.png
+     :width: 60%
+     :align: center
+     :alt: protecting cells from deletion
+     
+     protecting cells from being deleted
+
+######################
+edit protect cells
+######################
+
+You can prevent editing of markdown and code cells in a Jupyter notebook using "Edit protect -- toggle whether cells are editable" in the "Edit" menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.
+
+.. figure:: img/jupyter/edit-protect.png
+     :width: 60%
+     :align: center
+     :alt: protecting cells from editing
+     
+     protecting cells from being edited
+
 .. index:: Jupyter Notebooks; drag-and-drop images
 
 #######################################
@@ -38,20 +80,11 @@ as above.
 and copy/paste of images, but it probably will soon.
 See https://github.com/sagemathinc/cocalc/issues/4762
 
-.. index:: Jupyter Notebooks; cell numbers
+#################################
+nbgrader integration
+#################################
 
-#######################################
-consecutive cell numbers
-#######################################
-
-Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don't change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.
-
-.. figure:: img/jupyter/jup-cell-num-timing.png
-     :width: 80%
-     :align: center
-     :alt: compute cell with ordinal number and run time at right
-
-     compute cell consecutive numbers and run time
+CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See :doc:`nbgrader in CoCalc<teaching-nbgrader>` for more information.
 
 .. index:: Jupyter Notebooks; cell run time
 
@@ -59,30 +92,7 @@ Cells are numbered consecutively at upper right. Unlike execution numbers shown 
 run time for compute cells
 #######################################
 
-When a compute cell is executed, the amount of time it takes is displayed at upper right. See the preceding figure.
-
-
-#################################
-nbgrader integration
-#################################
-
-CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See :doc:`nbgrader in CoCalc<teaching-nbgrader>` for more information.
-
-
-.. index:: Jupyter Notebooks; table of contents
-
-#######################################
-table of contents
-#######################################
-
-Table of contents sets the indentation level based on the markdown heading level, i.e. "#" for top level, "##" for second level, etc. Click the "Contents" button in the "Notebook" menu at the top of a notebook, or select "File --> Table of Contents", or split the frame and change one of the resulting frames to "Table of Contents". Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.
-
-.. figure:: img/jupyter/jup-toc2.png
-     :width: 80%
-     :align: center
-     :alt: jupyter notebook table of contents
-
-     table of contents
+When a compute cell is executed, the amount of time it takes is displayed at upper right. See the figure above under :ref:`consecutive cell numbers <consecutive-cell-numbers>`.
 
 
 .. index:: Jupyter Notebooks; slideshow
@@ -119,6 +129,22 @@ When presenting, the next slide is to the right, while the next subslide is belo
 .. note::
 
     The legacy method of creating and presenting a slideshow by using a separate Linux terminal command and starting a small web server is still available by clicking "File" > "Slideshow via nbconvert...".*
+
+.. index:: Jupyter Notebooks; table of contents
+
+#######################################
+table of contents
+#######################################
+
+Table of contents sets the indentation level based on the markdown heading level, i.e. "#" for top level, "##" for second level, etc. Click the "Contents" button in the "Notebook" menu at the top of a notebook, or select "File --> Table of Contents", or split the frame and change one of the resulting frames to "Table of Contents". Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.
+
+.. figure:: img/jupyter/jup-toc2.png
+     :width: 80%
+     :align: center
+     :alt: jupyter notebook table of contents
+
+     table of contents
+
 
 .. index:: Jupyter Notebooks; interactive widgets
 .. _jupyter-interactive-widgets:
