@@ -101,6 +101,11 @@ You should be able to create a proof of concept using the API introduction above
 This is a communication channel to improve working with an embedded CoCalc instance.
 It gives the parent page the ability to send command-messages to CoCalc (e.g. opening a specific page, etc.) and receiving responses.
 
+.. warning::
+
+     The IFrame communication might be currently broken.
+     Please check `issue #6059 <https://github.com/sagemathinc/cocalc/issues/6059>`_ for the current status.
+
 The underlying technology is [window.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage).
 
 The parent page must be served using `https`!
