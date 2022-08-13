@@ -12,75 +12,84 @@ how to populate it with a course management file and how to invite all of your s
    :depth: 1
 
 
-###########################
-Creating the Course Project
-###########################
+##############################
+Create the Teacher's Project
+##############################
 
 The first step is to create a teacher's project to contain the course.
 
-Log into CoCalc and click on the **Projects** icon in the top left hand corner of the screen.
+Sign into CoCalc and click on **Projects** at upper left.
 
 .. image:: img/teaching/projects-cc.png
     :width: 100px
     :align: center
-    :alt: Projects icon
+    :alt: projects button
 
-Click on **Create New Project**, fill out the **Title** and **Description** and click on **Create Project**
+Click on **Create New Project**, fill in the **Title**, and click **Create Project**
 
 .. image:: img/teaching/create_new_course_project.png
      :width: 100%
      :align: center
-     :alt: entering new project title and description
+     :alt: enter new project title
 
-The new project will appear at the top of the project list. Click on its  title to open it.
+The new project will be created. If the project is not automatically started, click the "Start Project" button to start it. You will see an empty Files list for the new project, because you haven't added any files yet.x
 
-.. image:: img/teaching/course_list.png
+.. image:: img/teaching/new-instructor-project-started.png
      :width: 100%
      :align: center
-     :alt: new teacher project displayed in project list
+     :alt: files list is empty just after project is created
+
+.. note::
+
+    When a new project is first opened, you will see a "Free Trial" banner above the Files toolbar, warning that no license has been applied. You can add a license later (see below) in one of two ways: 1) there is an option in course configuration to use the same license for the teacher's project that is used for all the students; 2) you can decline that option and instead specify a different license in project Settings for the teacher's project.
 
 .. index:: Courses; adding teaching assistants
 .. _teaching-add-ta:
 
-########################################
-Adding Teaching Assistants to the Course
-########################################
-
-To add teaching assistants or other teachers to the course, open the course project, click on the settings tab and look down to see "Add new collaborators" in the project settings.
-
-Under **Add new collaborators**, you can find or add collaborators by name or email address.
-These collaborators will also have access to all associated student projects orchestrated by that project.
-Do **not** add any students of yours as project collaborators!
+################################################
+Add Teaching Assistants to the Teacher's Project
+################################################
 
 .. image:: img/teaching/collaborators.png
      :width: 50%
      :align: center
+     :alt: dialog to add new collaborators
 
-If the email address you add as a collaborator is not associated with a CoCalc account,
-an email will be sent to that address with instructions how to join.
-Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.
+To add teaching assistants or other teachers:
+
+#. If it is not already open, open the course project.
+#. Click Settings (wrench icon) and scroll down to "Add new collaborators" in the project settings.
+#. Under "Add new collaborators", you can find or add collaborators by name or email address. These collaborators will also have access to all associated student projects orchestrated by that project. Do **not** add students in the course as project collaborators!
+
+If the email address you add as a collaborator is not associated with a CoCalc account, an email will be sent to that address with instructions how to join. Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.
 
 .. index:: Courses; course file
 
 ########################
-Creating the Course File
+Create the Course File
 ########################
 
-Almost all aspects of a course, such as which students are enrolled and assignment management, are controlled by a **.course** file. We'll now create this file.
+Almost all aspects of a course, such as which students are enrolled and assignment management, are controlled by a ``course`` file.
 
-Open the course project, click on **New** and give the course a title.
-Here, I've used `Autumn_2016_PHY001`.
-Click on **Manage a Course** to create the course file.
+#. In the project Files list (see image above), click "(+)New" in the upper toolbar, or click "(+)Create or Upload Files..." in the middle of the page.
+
+#. You can override the default file name. Give the file a descriptive name like "Data Science 101"
+
+#. Click on "Manage a Course" to create the course file. Note that this step merely appends the suffix ".course" to the filename.
 
 .. image:: img/teaching/new_managecourse.png
      :width: 100%
      :align: center
+     :alt: create course file
 
-If you go to the root of the course project directory, you will see that a new file has been created with the extension **.course**. This is the course management file and most aspects of your course are controlled by it.
+A new file with the extension ".course" will be created in the home directory of the project. This is the course management file. Most aspects of your course are controlled within it.
 
 .. image:: img/teaching/course_file.png
      :width: 100%
      :align: center
+     :alt: display new course file
+
+
 
 .. index:: Courses; multiple courses in same project
 .. note::
@@ -104,7 +113,7 @@ which allows not only different groups of students, but also different due dates
 .. _adding-students:
 
 #############################
-Adding Students to the Course
+Add Students to the Course
 #############################
 
 Open your new course by clicking on the **course** file. Select the **Students** tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc.
