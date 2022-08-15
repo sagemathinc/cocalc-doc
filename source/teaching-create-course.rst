@@ -32,7 +32,7 @@ Click on **Create New Project**, fill in the **Title**, and click **Create Proje
      :align: center
      :alt: enter new project title
 
-The new project will be created. If the project is not automatically started, click the "Start Project" button to start it. You will see an empty Files list for the new project, because you haven't added any files yet.x
+The new project will be created. If the project is not automatically started, click the "Start Project" button to start it. You will see an empty Files list for the new project, because you haven't added any files yet.
 
 .. image:: img/teaching/new-instructor-project-started.png
      :width: 100%
@@ -82,19 +82,13 @@ Almost all aspects of a course, such as which students are enrolled and assignme
      :align: center
      :alt: create course file
 
-A new file with the extension ".course" will be created in the home directory of the project. This is the course management file. Most aspects of your course are controlled within it.
-
-.. image:: img/teaching/course_file.png
-     :width: 100%
-     :align: center
-     :alt: display new course file
-
+A new file with the extension ".course" will be created in the home directory of the project. This is the course management file.
 
 
 .. index:: Courses; multiple courses in same project
 .. note::
 
-    You may have more than one course file in a single project, as is explained in the next section. Be aware that any account you add as a teaching assistant to the project will have access to course files and student work for **all** courses in that project.
+    You may have more than one course file in a single project, as is explained in the next section. Be aware that any teaching assistant you add to the project will have access to **all** course files and student work in that project.
 
 .. index:: Courses; split into sections
 
@@ -103,7 +97,7 @@ Split course into multiple groups
 
 **Note:** If your course is large, it is possible to partition your class into several groups or sections.
 To accomplish that, simply create more than one course file.
-For example, ``PHY001_A.course``, ``PHY001_B.course``, ``PHY001_C.course``, ...
+For example, ``DS101_A.course``, ``DS101_B.course``, ``DS101_C.course``, ...
 for groups ``A``, ``B``, ``C`` and so on.
 
 These course files are independent of each other,
@@ -116,12 +110,13 @@ which allows not only different groups of students, but also different due dates
 Add Students to the Course
 #############################
 
-Open your new course by clicking on the **course** file. Select the **Students** tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc.
+Open your new course by clicking on the course file. Select the "Students" tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc.
 
-.. image:: img/teaching/add-students-1.png
+.. image:: img/teaching/course_file.png
      :width: 100%
      :align: center
-     :alt: text area at upper right for entering student list
+     :alt: open the new course file
+
 
 It's best to add students using their email addresses, because those are unique for cocalc accounts. However, it is also possible to search for students by first and last names.
 
