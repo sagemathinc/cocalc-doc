@@ -10,6 +10,14 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-08-15:
+
+2022-08-15: Updates
+-----------------------------------------------
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
 .. _update-2022-07-19:
 
 2022-07-19: VSCode reverted
