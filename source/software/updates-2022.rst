@@ -10,6 +10,16 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-08-17:
+
+2022-08-17: Python packages
+-----------------------------------------------
+
+- Python: small updates to a few packages to fix incompatibilities
+    - `black`_ ``22.6`` – we also added it to the list of tools to check up on
+    - `papermill`_ ``2.4.0`` – *a tool for parameterizing and executing Jupyter Notebooks*
+    - `pyarrow`_ ``9.0.0`` – *a development platform for in-memory analytics*
+
 .. _update-2022-08-15:
 
 2022-08-15: Updates
@@ -200,3 +210,6 @@ Software Updates 2022
 .. _node.js: https://nodejs.org/
 .. _checkit: https://checkit.clontz.org/
 .. _code-server: https://github.com/coder/code-server
+.. _black: https://black.readthedocs.io/en/stable/
+.. _papermill: https://papermill.readthedocs.io/en/latest/
+.. _pyarrow: https://arrow.apache.org/docs/python/index.html
