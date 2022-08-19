@@ -38,8 +38,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
     # 'edit_on_github',  # in _ext, but disabled/removed!
-    'sphinx_sitemap',  # https://pypi.org/project/sphinx-sitemap/
-    'm2r',  # pip3 install m2r
+    'sphinx_sitemap'  # https://pypi.org/project/sphinx-sitemap/
 ]
 
 html_baseurl = 'https://doc.cocalc.com/'
@@ -58,7 +57,7 @@ highlight_language = 'none'
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst']
 
 # The master toctree document.
 master_doc = 'contents'
@@ -83,7 +82,7 @@ release = ''
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -171,13 +170,13 @@ elif html_theme == 'sphinx_rtd_theme':
         Insert Google Analytics tracker
         Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
         """
-        app.add_javascript(
+        app.add_js_file(
             "https://www.googletagmanager.com/gtag/js?id={}".format(GA_TAG))
         # this file is _static/google_analytics_tracker.js
         # it also contains the GA_TAG !
-        app.add_javascript("google_analytics_tracker.js")
+        app.add_js_file("google_analytics_tracker.js")
         # cocalc's analytics
-        app.add_javascript("https://cocalc.com/analytics.js")
+        app.add_js_file("https://cocalc.com/analytics.js")
 
 else:
     raise AssertionError(f'Unknown theme "{html_theme}"')

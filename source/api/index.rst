@@ -5,8 +5,7 @@
 API
 ====================
 
-.. mdinclude:: index.md
-
+.. include:: index0.rst
 
 .. toctree::
    :caption: API Endpoints
@@ -51,5 +50,5 @@ API
 
 --------------
 
-.. mdinclude:: ../api-examples.md
+.. include:: ../api-examples.rst
 
