@@ -10,6 +10,20 @@ News
     news/ubuntu-2004
 
 
+.. _news-2022-08-18-quarto:
+
+2022-08-18 Quarto
+=====================================
+
+Adding basic support for `Quarto <https://quarto.org/>`_ – *an open-source scientific and technical publishing system built on Pandoc*.
+
+.. figure:: img/quarto.jpeg
+    :width: 100%
+    :align: center
+
+    Quarto side-by-side editor
+
+
 .. _news-2020-10-09-project-info:
 
 2020-10-09: Project Information
