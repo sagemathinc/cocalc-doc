@@ -15,7 +15,7 @@
    install-julia-package
    running-processes
    upload
-   ../api-examples.md
+   ../api-examples
    convert-html-to-pdf
    webserver
    bokeh-server

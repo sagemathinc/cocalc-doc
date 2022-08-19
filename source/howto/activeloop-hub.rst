@@ -127,8 +127,8 @@ S3
 ^^
     .. code:: python
 
-        python url = 's3://new_dataset'  # your s3 path 
-        ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token={"aws_access_key_id": "...",                                                               "aws_secret_access_key": "...",                                                               ...})``
+        url = 's3://new_dataset'  # your s3 path 
+        ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token={"aws_access_key_id": "...",                                                               "aws_secret_access_key": "...",                                                               ...})
 
 MinIO
 ^^^^^
