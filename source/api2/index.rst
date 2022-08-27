@@ -17,7 +17,7 @@ Introduction
 
 With API v2, the CoCalc API is being improved and expanded.
 
-Source code for the API v2 implemention is in the `CoCalc public GitHub repository under src/packages/next/pages/api/v2 <https://github.com/sagemathinc/cocalc/tree/master/src/packages/next/pages/api/v2>`_. Each ".ts" file under the ``v2`` directory corresponds to an endpoint in the new API. For example, the "stop" endpoint, which allows you to stop a project, is at https://cocalc.com/api/v2/projects/stop.
+Source code for the API v2 implemention is in the `CoCalc public GitHub repository under src/packages/next/pages/api/v2 <https://github.com/sagemathinc/cocalc/tree/master/src/packages/next/pages/api/v2>`_. Each ".ts" file under the ``v2`` directory corresponds to an endpoint in the new API. For example, the "stop" endpoint, which allows you to stop a project, has source code at `https://github.com/sagemathinc/.../api/v2/projects/stop.ts <https://github.com/sagemathinc/cocalc/blob/master/src/packages/next/pages/api/v2/projects/stop.ts>`__ and is called with the URL https://cocalc.com/api/v2/projects/stop.
 
 .. note::
 
@@ -38,7 +38,7 @@ API v2 Examples
 stop
 *****************************
 
-Use the ``stop`` endpoint to stop a CoCalc project, given its project_id. Note that this endpoint is in the ``v2/projects/`` subdirectory.
+Use the ``stop`` endpoint to stop a CoCalc project, given its project_id. Note that this endpoint is in the ``v2/projects/`` subdirectory. The user must be signed in and must be an owner or collaborator on the project.
 
 .. code:: bash
 
@@ -52,8 +52,10 @@ Use the ``stop`` endpoint to stop a CoCalc project, given its project_id. Note t
       -d project_id=$p \
       https://cocalc.com/api/v2/projects/stop
 
-    ### output
+    ### project will be stopped; normal output is a pair of braces
     {}
+
+You can learn more about the ``stop`` endpoint by viewing the source code at `https://github.com/sagemathinc/.../api/v2/projects/stop.ts <https://github.com/sagemathinc/cocalc/blob/master/src/packages/next/pages/api/v2/projects/stop.ts>`__.
 
 *****************************
 user-query
@@ -85,12 +87,17 @@ Use the ``user-query`` endpoint to get the email address and account_id for the 
       }
     }
 
+You can learn more about the ``user-query`` endpoint by viewing the source code at `https://github.com/sagemathinc/.../api/v2/user-query.ts <https://github.com/sagemathinc/cocalc/blob/master/src/packages/next/pages/api/v2/user-query.ts>`__.
 
 *****************************
 latex
 *****************************
 
-Use the ``latex`` endpoint to compile a latex document.
+Use the ``latex`` endpoint to compile a latex document. This endpoint converts a tex file to pdf, and stores the pdf
+temporarily as a blob in CoCalc's PostgreSQL database. The tmp files used
+for compilation are cleaned up. You can specify a ``project_id`` in the
+API call, or leave that off and your most recent project gets used
+automatically (or a new one created). By default the compilation uses "latexmk" with certain options, but you can specify a custom ``command`` parameter to convert the tex to pdf.
 
 .. code:: bash
 
@@ -111,4 +118,4 @@ Use the ``latex`` endpoint to compile a latex document.
     ### browse to this link to see the compiled pdf document
     "https://cocalc.com/blobs/tmp/d.pdf?uuid=36862b42-2634-11ed-889d-3b8b6aedd65b"
 
-
+You can learn more about the ``latex`` endpoint by viewing the source code at `https://github.com/sagemathinc/.../api/v2/latex.ts <https://github.com/sagemathinc/cocalc/blob/master/src/packages/next/pages/api/v2/latex.ts>`__.
