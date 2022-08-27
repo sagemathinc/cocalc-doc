@@ -56,6 +56,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    ipad
    howto/index
    howto/trouble
+   api2/index.rst
    api/index.rst
    docker-image
    cocalc-desktop

@@ -2,7 +2,7 @@
 .. index:: API
 
 ====================
-API
+API v1
 ====================
 
 .. include:: index0.rst
