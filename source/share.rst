@@ -20,6 +20,10 @@ Viewing Files on the Share Server
 
 To see CoCalc files that people have shared, browse to https://cocalc.com/share. You can search for text in the title and contents of shared files using the search box at upper right. You can sort the list of files by any of the columns listed, in increasing or decreasing order, by clicking in the column headings.
 
+.. note::
+
+    For your convenience, note the input box at the top of the browsable documents list: "Share what you create in CoCalc or paste a URL from anywhere on the web of a notebook, GitHub repo, or markdown file".
+
 .. figure:: img/share-home-page.png
      :width: 90%
      :align: center
