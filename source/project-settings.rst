@@ -13,20 +13,35 @@ All about the **Project Settings** tab.
 .. index:: Projects; title and description
 .. _set-project-title:
 
-###########################
-Title, Description, Name
-###########################
+##################################
+Title, Description, Name, Image
+##################################
 
-The text for **Title Description, and Name** for a project can be changed at any time.
+The **Title, Description, Name, and Image** for a project can be changed at any time.
 
 .. image:: img/project-settings/title-and-desc-a.png
      :width: 50%
      :align: center
      :alt: form for setting project title, description, and name
 
-Title and Description fields are both used when searching for matching text under ``Projects``.
+**********************
+Title and Description
+**********************
 
-In addition to entering a title and description, you may specify a project name. Setting a project name provides much nicer URL's for shared public documents. See :ref:`vanity-urls` to learn more.
+Title and Description fields are both used when searching for matching text under ``Projects``. You can include hashtags in either field, to simplify your searches.
+
+**********************
+Project Name
+**********************
+
+You may specify a project name. Setting a project name provides much nicer URL's for shared public documents. See :ref:`vanity-urls` to learn more.
+
+**********************
+Project Image
+**********************
+
+You may upload an image for any project. It appears in many places. Both a hi-res and tiny version are stored. The tiny version is used in most places where the project title appears across CoCalc, e.g., tabs at the top, project listing. (The bigger version will be used soon, e.g., in the share server, but that's not done yet.)
+
 
 .. index:: Projects; upgrades
 .. _project-upgrades:
