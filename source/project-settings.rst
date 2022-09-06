@@ -19,7 +19,7 @@ Title, Description, Name, Image
 
 The **Title, Description, Name, and Image** for a project can be changed at any time.
 
-.. image:: img/project-settings/title-and-desc-a.png
+.. image:: img/project-settings/proj-name-etc.png
      :width: 50%
      :align: center
      :alt: form for setting project title, description, and name
