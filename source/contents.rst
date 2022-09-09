@@ -47,6 +47,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    :maxdepth: 2
    :caption: Platform
 
+   display-options
    account-dropdown
    project-toolbar
    files-toolbar
