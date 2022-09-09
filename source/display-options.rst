@@ -44,6 +44,10 @@ Visiting a CoCalc file URL with a query string of `?fullscreen=default`  present
 session
 #######################
 
+***************
+default
+***************
+
 By default, CoCalc remembers your session with a specific browser, that is, if you have certain projects open, and certain file tabs displayed within those projects when you close your browser, they will normally be restored when you visit CoCalc again with that browser.
 
 Limitations:
