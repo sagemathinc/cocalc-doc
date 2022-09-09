@@ -4,9 +4,9 @@
 Whiteboard
 ========================
 
-CoCalc offers you a full-featured online collaborative whiteboard.
+CoCalc offers you a full-featured computational whiteboard.
 
-Read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/whiteboard>`_.
+For a guided tour of all the whiteboard features, see the CoCalc blog page `All About Computational Whiteboard <https://about.cocalc.com/2022/09/08/all-about-computational-whiteboard/>`_. You can also read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/whiteboard>`_.
 
 .. contents::
      :local:
@@ -23,10 +23,12 @@ Read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/w
 List of Features
 ##########################
 
-CoCalc's collaborative mathematical whiteboard supports an infinite canvas with these features:
+CoCalc's computational whiteboard supports an infinite canvas with these features:
 
+* **collaborative editing** many users can edit at the same time and see what the others are doing in real time
 * :ref:`search view <search-view>` of whiteboard contents
-* organize your whiteboard as multiple :ref:`pages <pages-view>`.
+* organize your whiteboard as multiple :ref:`pages <pages-view>`
+* **table of contents** view contents as an outline in a panel on the left and click to view any item instantly
 * :ref:`Jupyter code cells <jupyter-cells>` that execute sequentially
 * :ref:`to-do lists <to-do-lists>`
 * **text** objects that allow mathematical LaTeX expressions
