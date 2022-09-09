@@ -40,7 +40,30 @@ You may specify a project name. Setting a project name provides much nicer URL's
 Project Image
 **********************
 
-You may upload an image for any project. It appears in many places. Both a hi-res and tiny version are stored. The tiny version is used in most places where the project title appears across CoCalc, e.g., tabs at the top, project listing. (The bigger version will be used soon, e.g., in the share server, but that's not done yet.)
+You may upload an image for any project. It appears in many places. Both a hi-res and tiny version are stored. The tiny version is used in most places where the project title appears across CoCalc, e.g., tabs at the top, share server listing.
+
+The bigger version appears in your project list, in shared projects when you click on a project in the share server listing, and project settings. You can click the image in the project list to open the project.
+
+.. figure:: img/project-settings/project-image-list.png
+     :width: 80%
+     :align: center
+     :alt: clickable project image in project list
+     
+     project image appears at right in project list; click to open the project
+
+.. figure:: img/project-settings/image-in-shared-list.png
+     :width: 80%
+     :align: center
+     :alt: small project image in project list
+     
+     tiny project image appears at left in shared projects list
+
+.. figure:: img/project-settings/image-in-shared-project.png
+     :width: 80%
+     :align: center
+     :alt: clickable project image in project list
+     
+     large project image appears when you open a shared project
 
 
 .. index:: Projects; upgrades
