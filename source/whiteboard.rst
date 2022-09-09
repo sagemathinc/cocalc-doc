@@ -4,9 +4,7 @@
 Whiteboard
 ========================
 
-CoCalc offers you a full-featured computational whiteboard.
-
-For a guided tour of all the whiteboard features, see the CoCalc blog page `All About Computational Whiteboard <https://about.cocalc.com/2022/09/08/all-about-computational-whiteboard/>`_. You can also read more about `Whiteboard on the CoCalc website <https://cocalc.com/features/whiteboard>`_.
+CoCalc offers you a full-featured computational whiteboard. For a guided tour of all the whiteboard features, see the CoCalc blog post, `All About Computational Whiteboard <https://about.cocalc.com/2022/09/08/all-about-computational-whiteboard/>`_.
 
 .. contents::
      :local:
