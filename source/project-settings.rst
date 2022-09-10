@@ -42,7 +42,7 @@ Project Image
 
 You may upload an image for any project. It appears in many places. Both a hi-res and tiny version are stored. The tiny version is used in most places where the project title appears across CoCalc, e.g., tabs at the top, share server listing.
 
-The bigger version appears in your project list, in shared projects when you click on a project in the share server listing, and project settings. You can click the image in the project list to open the project.
+The bigger version appears in your project list, in shared projects when you click on a project in the share server listing, and project settings. You can click the image in the project list to open the project. The bigger version is also visible if you hover over the tab for the project after opening the project.
 
 .. figure:: img/project-settings/project-image-list.png
      :width: 80%
@@ -65,6 +65,12 @@ The bigger version appears in your project list, in shared projects when you cli
      
      large project image appears when you open a shared project
 
+.. figure:: img/project-settings/image-hover-project-tab.png
+     :width: 50%
+     :align: center
+     :alt: large project image when hovering over project tab
+     
+     large project image appears when pointer hovers over project tab
 
 .. index:: Projects; upgrades
 .. _project-upgrades:
