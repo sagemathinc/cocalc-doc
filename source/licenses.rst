@@ -5,6 +5,10 @@
 Licenses
 ===============
 
+.. contents::
+     :local:
+     :depth: 1
+
 ###########################
 Order Just What You Need
 ###########################
@@ -37,6 +41,8 @@ More Information
 * :ref:`Adding a license to a project <project-add-license>`
 
 * :ref:`Adding a license to a course <install-course-license>`
+
+* :doc:`Adding capacity to an existing license <add-capacity>`
 
 * :ref:`Viewing licenses you manage <view-managed-licenses>`
 

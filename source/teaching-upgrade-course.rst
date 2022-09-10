@@ -95,6 +95,7 @@ Your license key is a hexadecimal uuid string. It looks like this::
 - You can apply more than one license. After you install the first license, a new button will appear, "Add another license key (more students or better upgrades)". Click this to add more licenses, one at a time.
 
 .. index:: Site licenses; course strategy
+.. _license-strategy:
 
 3. License strategy (multiple licenses only)
 ---------------------------------------------

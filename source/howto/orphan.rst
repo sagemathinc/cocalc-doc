@@ -48,3 +48,4 @@
    plotly-dash
    disk-space-warning
    ../project-list
+   ../add-capacity
