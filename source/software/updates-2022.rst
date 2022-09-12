@@ -10,6 +10,18 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-09-12:
+
+2022-09-12: Various updates
+-----------------------------------------------
+
+- R (system-wide):
+    - (new) `gprofiler2`_: *A toolset for functional enrichment analysis and visualization, gene/protein/SNP identifier conversion and mapping orthologous genes across species via 'g:Profiler'*
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
+
 .. _update-2022-08-17:
 
 2022-08-17: Python packages
@@ -213,3 +225,5 @@ Software Updates 2022
 .. _black: https://black.readthedocs.io/en/stable/
 .. _papermill: https://papermill.readthedocs.io/en/latest/
 .. _pyarrow: https://arrow.apache.org/docs/python/index.html
+.. _gprofiler2: https://cran.r-project.org/package=gprofiler2
+
