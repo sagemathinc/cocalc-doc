@@ -4,11 +4,7 @@
 Whiteboard
 ========================
 
-CoCalc offers you a full-featured computational whiteboard. For a guided tour of all the whiteboard features, see the CoCalc blog post, `All About Computational Whiteboard <https://about.cocalc.com/2022/09/08/all-about-computational-whiteboard/>`_.
-
-.. contents::
-     :local:
-     :depth: 2
+CoCalc provides a computational whiteboard with infinite canvas. Our web page `All About Computational Whiteboard <https://about.cocalc.com/2022/09/08/all-about-computational-whiteboard/>`_ gives a quick visual tour of whiteboard features.
 
 .. figure:: img/search-and-pages.png
     :width: 90%
@@ -17,7 +13,9 @@ CoCalc offers you a full-featured computational whiteboard. For a guided tour of
     
     sample whiteboard with Pages and Search views open
 
-CoCalc's computational whiteboard supports an infinite canvas with these features:
+.. contents::
+     :local:
+     :depth: 1
 
 ##############################
 Chat
