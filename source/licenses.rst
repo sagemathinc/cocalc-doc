@@ -5,10 +5,6 @@
 Licenses
 ===============
 
-.. contents::
-     :local:
-     :depth: 1
-
 ###########################
 Order Just What You Need
 ###########################
@@ -22,32 +18,36 @@ Dynamic Allocation
 
 You can apply a license to any number of projects. Projects are upgraded as they start, until the maximum number of concurrent running projects for that license is reached. Any project with the license that starts while the maximum concurrent number is running will be started without upgrades from that license. When a project using a license stops, its upgrades are released and can be used by the next  project to start that is configured for that license.
 
-.. index:: Licenses; multiple licenses
-.. _multiple-licenses:
-
-################################
-Combining Licenses on a Project
-################################
-
-Multiple licenses may be applied to a project for a cumulative effect of added resources.
-The project owner and any collaborators may add and remove licenses for a project at any time.
-
 ############################
-More Information
+Buy a License
 ############################
 
-* :ref:`Buying a license <buying-licenses>`
+To buy a license, or to just get pricing information, visit the link https://cocalc.com/store/site-license.
 
-* :ref:`Adding a license to a project <project-add-license>`
+############################
+Add a License to a Course
+############################
 
-* :ref:`Adding a license to a course <install-course-license>`
+See :ref:`Install your license(s) in the course file <install-course-license>`.
 
-* :doc:`Adding capacity to an existing license <add-capacity>`
+##########################################
+View Your License Information
+##########################################
 
-* :ref:`Viewing licenses you manage <view-managed-licenses>`
+See https://cocalc.com/licenses for information about your licenses and licensed projects, including the following (note that each topic has its own dedicated URL):
 
-* :ref:`Viewing your licensed projects <view-licensed-projects>`
+* `licenses you manage <https://cocalc.com/licenses/managed>`_
+* `licensed projects you collaborate on <https://cocalc.com/licenses/projects>`_
+* `how a specific site license is being used <https://cocalc.com/licenses/how-used>`_
+* `subscriptions <https://cocalc.com/billing/subscriptions>`_ (includes how to cancel a license subscription)
 
-* :ref:`Viewing your license subscriptions <subscription-list>`
+############################
+Additional License Topics
+############################
 
-* :doc:`Support for licenses in the CoCalc API <api/index>`. See entry points "add_license_to_project", "create_project", and "remove_license_from_project".
+.. toctree::
+   :maxdepth: 1
+
+   add-lic-project
+   add-capacity
+   View license entry points in the CoCalc API v1 <api/index>

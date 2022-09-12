@@ -1,5 +1,5 @@
 ======================================
-Adding Capacity to an Existing License
+Add Capacity to an Existing License
 ======================================
 
 You may want to increase the amount of resources provided with an existing CoCalc license. Possible situations include:
