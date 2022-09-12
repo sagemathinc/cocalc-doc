@@ -17,35 +17,45 @@ CoCalc offers you a full-featured computational whiteboard. For a guided tour of
     
     sample whiteboard with Pages and Search views open
 
-##########################
-List of Features
-##########################
-
 CoCalc's computational whiteboard supports an infinite canvas with these features:
 
-* **collaborative editing** many users can edit at the same time and see what the others are doing in real time
-* :ref:`search view <search-view>` of whiteboard contents
-* organize your whiteboard as multiple :ref:`pages <pages-view>`
-* **table of contents** view contents as an outline in a panel on the left and click to view any item instantly
-* :ref:`Jupyter code cells <jupyter-cells>` that execute sequentially
-* :ref:`to-do lists <to-do-lists>`
-* **text** objects that allow mathematical LaTeX expressions
-* **sticky notes**
-* sketching with **pens**
-* **chat** conversations with collaborators
-* hundreds of **icons**
-* **copy and paste** between whiteboards
-* **frames** to group objects and organize the whiteboard into sections
-* **stopwatches and countdown timers** to organize and track work.
-* create **edges** (arrows) between all objects
-* infinitely **split whiteboard windows** to view multiple parts of the whiteboard simultaneously
-* easily navigate with an **overview map** with two preview modes
-* every change you make is recorded via browsable **TimeTravel** and you can copy/paste from any point in the history
-* **publish** your whiteboards to the CoCalc share server
+##############################
+Chat
+##############################
 
-.. note::
+Chat with collaborators. Open multiple chat boxes within the whiteboard as well as the usual CoCalc :ref:`side-chat` for the entire whiteboard file.
 
-    At this time, the only way to export an image of all or part of a whiteboard is by taking a screenshot. Exporting a whiteboard to a pdf, png, or svg file is not yet implemented. See `CoCalc issue #6024 <https://github.com/sagemathinc/cocalc/issues/6024>`_.
+##############################
+Collaborative Editing
+##############################
+
+Many users can edit at the same time, see what the others are doing in real time, and center their view at the location of another's cursor.
+
+##############################
+Countdown Timers
+##############################
+
+Add countdown timers to keep meetings and discussions on schedule.
+
+##############################
+Cut or Copy and Paste
+##############################
+
+Select objects within a rectangular area and cut or copy them, then paste to the same whiteboard or a different whiteboard you already have open.
+
+########################
+Edges
+########################
+
+Create edges (arrows) between all objects.
+
+
+########################
+Frames
+########################
+
+Use frames to group objects and organize the whiteboard into sections.
+
 
 .. _whiteboard-hashtags:
 
@@ -54,6 +64,13 @@ Hashtags
 ########################
 
 You can put hashtags on notes, e.g. :code:`#foo` and search for those as well, or put :code:`-` (minus sign) in front to exclude matching items from search, e.g. :code:`-#foo`. You can search for regular expressions by enclosing them in slashes, for example ``/^# /``.
+
+########################
+Icons
+########################
+
+Choose from a wide selection of Icons to add to your whiteboard.
+
 
 .. _jupyter-cells:
 
@@ -73,10 +90,17 @@ A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:
     :align: center
     :alt: whiteboard with two code cells and a sticky note
 
+##############################
+LaTeX Expressions
+##############################
+
+Text inside whiteboard items supports LaTeX mathematical typesetting.
+
+
 .. _pages-view:
 
 ##########################
-Pages
+Pages View
 ##########################
 
 If you click the "Pages" icon: |pages-icon|, the Pages panel appears.
@@ -100,6 +124,26 @@ You can also see a page number in upper left of the main whiteboard, and click o
     whiteboard is showing page 1 of 2
 
 The Search panel is ordered by page number. Putting things in different pages imposes an ordering in the search.
+
+##########################
+Overview Map
+##########################
+
+Easily navigate with an overview map with two preview modes.
+
+
+##########################
+Pens
+##########################
+
+Choose one of the different pen shapes to draw freehand on your whiteboard. Supported pointing devices include most forms of mouse and trackpad as well as many Wacom tablets and iPencil and Apple Pencil.
+
+##########################
+Publish
+##########################
+
+You can :ref:`publish <publishing-files>` your whiteboards to the CoCalc share server.
+
 
 
 .. _search-view:
@@ -133,6 +177,38 @@ Search view works well with to-do lists. To find all not done items, put :code:`
 
 If you don't see a menu choice for Search View in a current whiteboard, then refresh your browser, click the "split vertically" button (upper right), then click the dropdown that says "Whiteboard" and change it to "Search".
 
+##############################
+Split Whiteboard Windows
+##############################
+
+Infinitely split whiteboard windows horizontally and vertically to view multiple parts of the whiteboard simultaneously.
+
+
+##############################
+Sticky Notes
+##############################
+
+A sticky note is a rectangle for enclosing text. When creating a sticky note, it's easy to select from a variety of eye-catching background colors and text fonts and sizes.
+
+##############################
+Stopwatches
+##############################
+
+Add stopwatches to the whiteboard to time activities and track work.
+
+##############################
+Table of Contents
+##############################
+
+You can view contents as an outline in a panel on the left and click to view any item instantly.
+
+##############################
+TimeTravel
+##############################
+
+As with other native CoCalc applications, every change is recorded via browsable :doc:`time-travel` You can see what changed, and who changed it, and copy/paste from any point in the history.
+
+
 .. _to-do-lists:
 
 ##########################
@@ -140,6 +216,13 @@ To-do Lists
 ##########################
 
 In a sticky note, text, etc., you can mark action items by placing a pair of brackets in the item, preceded and followed by a space and with a space between the brackets. The item will be displayed with an empty checkbox. Click the checkbox when the item is done, or place an "x" between the brackets, and it will show as a checked item.
+
+----
+
+.. note::
+
+    At this time, the only way to export an image of all or part of a whiteboard is by taking a screenshot. Exporting a whiteboard to a pdf, png, or svg file is not yet implemented. See `CoCalc issue #6024 <https://github.com/sagemathinc/cocalc/issues/6024>`_.
+
 
 .. figure:: img/wb-tasks-code.png
     :width: 60%
