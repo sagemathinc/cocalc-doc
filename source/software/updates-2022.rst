@@ -10,6 +10,13 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-09-13:
+
+2022-09-13: Fixing HoloViews
+
+- Python3 (system-wide):
+    - (upd) `holoviews`_ ``1.15.0`` to fix a compatibility issue
+
 .. _update-2022-09-12:
 
 2022-09-12: Various updates
@@ -226,4 +233,4 @@ Software Updates 2022
 .. _papermill: https://papermill.readthedocs.io/en/latest/
 .. _pyarrow: https://arrow.apache.org/docs/python/index.html
 .. _gprofiler2: https://cran.r-project.org/package=gprofiler2
-
+.. _holoviews: https://holoviews.org/
