@@ -10,9 +10,25 @@ Software Updates 2022
 
 .. highlight:: python
 
+.. _update-2022-09-14:
+
+2022-09-14: Fixing `ipywidgets`
+-------------------------------------------------
+
+.. note::
+
+    As a quick reminder, in Project Settings → Project Control → Software Environment,
+    you can select "20.04 // Previous" to select the most recent "stable" software environment.
+    It lags one or more versions behind what is available as "Default".
+
+- Python3 (system-wide):
+    - (fix) `ipywidgets`_ by downgrading to a version before `8`. This is now `issue 6128 <https://github.com/sagemathinc/cocalc/issues/6128>`_.
+
+
 .. _update-2022-09-13:
 
 2022-09-13: Fixing HoloViews
+------------------------------------------------------
 
 - Python3 (system-wide):
     - (upd) `holoviews`_ ``1.15.0`` to fix a compatibility issue
@@ -234,3 +250,4 @@ Software Updates 2022
 .. _pyarrow: https://arrow.apache.org/docs/python/index.html
 .. _gprofiler2: https://cran.r-project.org/package=gprofiler2
 .. _holoviews: https://holoviews.org/
+.. _ipywidgets: https://ipywidgets.readthedocs.io/en/stable/
