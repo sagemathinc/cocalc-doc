@@ -197,7 +197,7 @@ Have your students complete the assignment. All student work takes place in the 
 Collect the assignment
 ======================
 
-In the .course file under "Assignments", click ``Collect...`` to distribute the homework to students.
+In the .course file under "Assignments", click ``Collect...`` to collect homework from students.
 
 Option: Skip entering grades
 ============================
