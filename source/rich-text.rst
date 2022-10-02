@@ -76,6 +76,8 @@ Here is the formatting that results after typing the space:
     :align: center
     :alt: rich text editing with latex, after final space
 
+.. _font-options:
+
 ********************
 Font options
 ********************
@@ -104,6 +106,22 @@ For a Jupyter cell: select "Text" cell type, then "Edit" for font options.
     :width: 60%
     :align: center
     :alt: font options while editing a .md file
+    
+To set the color for selected text in a markdown cell, click the colored dot in the font options toolbar.
+
+.. image:: img/set-font-color-1.png
+    :width: 100%
+    :align: center
+    :alt: about to set font color
+    
+You can then select a color picker and a color.
+    
+.. image:: img/set-font-color-2.png
+    :width: 100%
+    :align: center
+    :alt: choosing font color
+
+
 
 
 (Implementation note: rich text font options use <span class='color:#0000ff'>...</span>
