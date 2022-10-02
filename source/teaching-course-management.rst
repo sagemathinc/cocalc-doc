@@ -158,7 +158,7 @@ You may annotate the student's assignment by modifying the collected file(s) in 
 
 When working with Jupyter notebooks, it can be useful to make annotations in markdown cells and set the color of the annotations to stand out.
 
-You can change the font color in a markdown cell in Text edit mode using the font options toolbar, as explained in the section on :ref:`blah <font-options>`.
+You can change the font color in a markdown cell in Text edit mode using the font options toolbar, as explained in the section on :ref:`font-options`.
 
 Or you can edit the cell in Markdown edit mode and enter the HTML tags for desired color explicitly::
 
