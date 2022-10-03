@@ -1,4 +1,4 @@
-.. _software-updates-2022:
+ .. _software-updates-2022:
 
 Software Updates 2022
 ======================================
@@ -9,6 +9,21 @@ Software Updates 2022
 ..      :depth: 1
 
 .. highlight:: python
+
+.. _update-2022-10-03:
+
+2022-10-03: Sage 9.7 and Julia 1.8
+-------------------------------------------------
+
+- Sage:
+    - (new) `Sagemath 9.7 <https://trac.sagemath.org/wiki/ReleaseTours/sage-9.7>`_ now available, although not the default yet.
+
+- Julia
+    - (new) `Julia 1.8 <https://docs.julialang.org/en/v1/NEWS/>`_ Jupyter Kernel and `julia-1.8` command-line available now.
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
 
 .. _update-2022-09-14:
 
