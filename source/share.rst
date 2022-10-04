@@ -165,20 +165,13 @@ When you click "Star", the count increases by one and the prompt changes to "Sta
 Sharing Rendered Notebooks
 ##########################
 
-CoCalc's share server offers a simple way to share fully-rendered Jupyter notebooks and certain other file types. All you need is a URL to the file, folder, or repository you want to share. Rendered document sharing is done by means of URL proxying (see :ref:`url-proxy-notes` below).
+CoCalc's share server offers a simple way to share fully-rendered Jupyter notebooks and certain other file types in gists and github repositories. All you need is a URL to the gist or repository you want to share. Rendered document sharing is done by means of URL proxying (see :ref:`url-proxy-notes` below).
 
-The URL schema is exactly the same as what https://nbviewer.org uses, i.e., github/<github url>, url/<anything on the internet> and gist/[github user]/[gist id].
+The URL schema is exactly the same as what https://nbviewer.org uses, i.e., github/<github url> and gist/[github user]/[gist id].
 
 *******************************
-File Types
+Examples of Shared File Types
 *******************************
-
-In addition to the file types shown below, any file that CoCalc can render is sharable in rendered form. See :ref:`url-proxy-cocalc-diff`.
-
-Jupyter notebook
-===================
-
-https://cocalc.com/url/archive.org/download/musing_math/Volume_Solutions_To_Snub_Dodecahedron.ipynb
 
 GitHub Repo
 =============
@@ -198,7 +191,7 @@ Differences Relative to nbviewer
 
 The main differences are:
 
-* You can put a URL to any file CoCalc can render or edit, and you'll see it:
+* You can put a URL to any file CoCalc can render or edit in a github repository, and you'll see it:
 
   * Here's a **markdown file**: https://cocalc.com/github/sagemathinc/cocalc/blob/master/README.md which nbviewer doesn't render (it only renders ipynb).
   * Here's a **whiteboard**: https://cocalc.com/github/williamstein/scratch/blob/main/2022-06-27-ws.board
