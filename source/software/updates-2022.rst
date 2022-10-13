@@ -10,6 +10,23 @@ Software Updates 2022
 
 .. highlight:: python
 
+
+.. _update-2022-10-13:
+
+2022-10-13: More packages …
+-------------------------------------------------
+
+- Python 3 (system-wide):
+    - (new) `mapclassify`_ – *open-source python library for Choropleth map classification*
+    - (new) `lsqfit`_ – *least-squares fitting of noisy data by multi-dimensional, nonlinear functions of arbitrarily many parameters, each with a (Bayesian) prior*
+    - (new)  `gvar`_ – *representing, manipulating, and simulating Gaussian random variables numerically*
+
+- Julia:
+    - (upd) updating packages, and there is still 1.7 around
+
+- System:
+    - as usual, various Linux, R and Python package updates
+
 .. _update-2022-10-03:
 
 2022-10-03: Sage 9.7 and Julia 1.8
@@ -18,7 +35,7 @@ Software Updates 2022
 - Sage:
     - (new) `Sagemath 9.7 <https://trac.sagemath.org/wiki/ReleaseTours/sage-9.7>`_ now available, although not the default yet.
 
-- Julia
+- Julia:
     - (new) `Julia 1.8 <https://docs.julialang.org/en/v1/NEWS/>`_ Jupyter Kernel and `julia-1.8` command-line available now.
 
 - System:
@@ -266,3 +283,7 @@ Software Updates 2022
 .. _gprofiler2: https://cran.r-project.org/package=gprofiler2
 .. _holoviews: https://holoviews.org/
 .. _ipywidgets: https://ipywidgets.readthedocs.io/en/stable/
+.. _mapclassify: https://pysal.org/mapclassify/
+.. _lsqfit: https://lsqfit.readthedocs.io/en/latest/overview.html
+.. _gvar: https://gvar.readthedocs.io/en/latest/overview.html
+
