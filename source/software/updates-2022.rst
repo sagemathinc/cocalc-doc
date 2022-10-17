@@ -11,6 +11,15 @@ Software Updates 2022
 .. highlight:: python
 
 
+.. _update-2022-10-17:
+
+2022-10-17: Fixing Julia/Pluto
+------------------------------------------------
+
+- Julia:
+    - (fix) tweaking globally installed packages, updating `Pluto`_ notebook server, to fix it.
+
+
 .. _update-2022-10-13:
 
 2022-10-13: More packages …
@@ -286,4 +295,4 @@ Software Updates 2022
 .. _mapclassify: https://pysal.org/mapclassify/
 .. _lsqfit: https://lsqfit.readthedocs.io/en/latest/overview.html
 .. _gvar: https://gvar.readthedocs.io/en/latest/overview.html
-
+.. _Pluto: https://github.com/fonsp/Pluto.jl
