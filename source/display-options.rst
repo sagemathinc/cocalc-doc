@@ -11,7 +11,7 @@ The following options allow you to change how CoCalc appears in your browser, an
    :maxdepth: 2
 
 #######################
-fullscreen
+Fullscreen Options
 #######################
 
 
@@ -41,7 +41,7 @@ Visiting a CoCalc file URL with a query string of `?fullscreen=default`  present
 
 
 #######################
-session
+Sessions
 #######################
 
 ***************
@@ -62,7 +62,7 @@ no session
 If you visit CoCalc with a query string of `session=`, then the link is loaded and the "session=" parameter is removed from the displayed URL. In this case, there is no session at all. No project or files tabs will be remembered the next time you visit CoCalc with that browser.
 
 ###########################
-CoCalc desktop application
+Desktop Application
 ###########################
 
 The CoCalc desktop application provides a lightweight wrapper around the latest version of the website. (So it's always up to date from the point of view of CoCalc.) The main advantages of the desktop application are:
