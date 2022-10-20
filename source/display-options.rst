@@ -61,9 +61,16 @@ no session
 
 If you visit CoCalc with a query string of `session=`, then the link is loaded and the "session=" parameter is removed from the displayed URL. In this case, there is no session at all. No project or files tabs will be remembered the next time you visit CoCalc with that browser.
 
-..
-   broken at the moment
-   #######################
-   desktop application
-   #######################
+###########################
+CoCalc desktop application
+###########################
 
+The CoCalc desktop application provides a lightweight wrapper around the latest version of the website. (So it's always up to date from the point of view of CoCalc.) The main advantages of the desktop application are:
+
+* You can use emacs/vim keyboard shortcuts without accidentally triggering browser actions.
+
+* No extensions: by omitting browser extensions and other browser configuration, CoCalc performance in the desktop app may be improved, and some connectivity issues seen in the full browser (such as problems arising from ad blockers) can be eliminated.
+
+You can download macOS and Windows binaries for the CoCalc desktop application at https://github.com/sagemathinc/cocalc-desktop/releases. 
+
+See the `CoCalc desktop github repository <https://github.com/sagemathinc/cocalc-desktop>`_ for more information.
