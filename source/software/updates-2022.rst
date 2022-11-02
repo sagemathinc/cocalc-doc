@@ -11,6 +11,17 @@ Software Updates 2022
 .. highlight:: python
 
 
+.. _update-2022-10-29:
+
+2022-10-29: Sage 9.7
+------------------------------------------------
+
+- Sage:
+    - (upd) the system-wide default is now version ``9.7``. Run ``sage_select`` in a :ref:`terminal` to learn how to switch back to an earlier version.
+
+- Executables:
+    - Various updates to software packages, python libs, R, etc.
+
 .. _update-2022-10-17:
 
 2022-10-17: Fixing Julia/Pluto
