@@ -50,4 +50,5 @@ Additional License Topics
 
    add-lic-project
    add-capacity
+   license-errors
    View license entry points in the CoCalc API v1 <api/index>

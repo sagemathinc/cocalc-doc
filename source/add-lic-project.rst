@@ -34,3 +34,5 @@ To apply a license to a project
      :alt: dialog to add a license key, after key is added
 
      After adding license key. You can add several keys.
+
+If the license is not successfully applied, see :ref:`license-errors`.

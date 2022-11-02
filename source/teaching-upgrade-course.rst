@@ -158,6 +158,11 @@ additional licenses and applying them as shown above.
 If you need more flexibility than the available strategies offer,
 contact CoCalc support at help@cocalc.com.
 
+7. Problems adding a license
+----------------------------
+
+If after adding license(s) under course Configuration, a license does not seem correctly applied a student project, first check that the student project has been restarted since adding the license. If there is still a problem, see :ref:`license-errors`.
+
 What the student sees
 ============================
 
