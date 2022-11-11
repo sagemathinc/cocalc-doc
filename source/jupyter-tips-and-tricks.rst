@@ -18,6 +18,17 @@ See :ref:`nbconvert-exports`.
 .. _jupyter-ipynb-too-large:
 
 #############################################
+Embed a CoCalc project in your website
+#############################################
+
+Suppose you have an interactive application running in a CoCalc project and you would like to share it.
+You can share documents publicly and embed them, see :doc:`share`.
+
+Embedding the CoCalc interactive website directly in any other website is restricted because it is a security risk (see `clickjacking <https://owasp.org/www-community/attacks/Clickjacking>`_, etc.).
+Beyond that, users who are not collaborators won't be able to see the project.
+
+
+#############################################
 Notebook too large? Remove output.
 #############################################
 
