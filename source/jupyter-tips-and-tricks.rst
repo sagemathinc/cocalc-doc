@@ -4,34 +4,50 @@
 Jupyter Tips and Tricks
 ==========================================
 
-.. index:: pair: Jupyter Notebooks; halt button
-.. _jupyter-halt:
+.. contents::
+     :local:
+     :depth: 1
 
-######################################
-Use the Halt Button to Conserve Memory
-######################################
+#################################################
+Customize Jupyter notebook LaTeX export settings
+#################################################
 
-Each running Jupyter Notebook spawns a session in your project.
-This **uses up memory**, which could cause troubles running all your processes in your project.
+See :ref:`nbconvert-exports`.
 
-You can either *restart* the kernel to clean up its current memory (i.e. all variables are deleted), or if you've finished working on that notebook, click the ``Halt`` button to stop the kernel and close the notebook.
-
-.. image:: img/jupyter/jupyter-halt-button.png
-    :width: 90%
-    :alt: halt button
-
-.. index:: Jupyter Notebooks; remove local files
+.. index:: Jupyter Notebooks; notebook too large
+.. _jupyter-ipynb-too-large:
 
 #############################################
-Remove Local Files to Troubleshoot a Notebook
+Notebook too large? Remove output.
 #############################################
 
-If you have a Jupyter notebook that suddenly stops working, especially with extensions or widgets, you can try removing local files in a :doc:`Linux Terminal <terminal>`, then restarting and running the notebook::
+.. figure:: img/ipynb-too-large-help.png
+     :width: 90%
+     :align: center
+     :alt: file-too-large error
 
-    cd
-    rm -rf .sage .ipython/ .config/ .local/ .jupyter .cache/
+     Jupyter notebook *file too large* error
 
-You will need to reinstall packages you added locally after doing the above.
+
+If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way; instead, you will see the error message shown above. Usually, the problem occurs when the notebook has created large amounts of output. In that case, there is a command you can run from the :doc:`Linux Terminal <terminal>` to remove output. If removing output results in a small enough notebook, you will be able to open the "-no-output" version of the notebook normally.
+
+.. code-block:: bash
+
+    # run this from a CoCalc Linux terminal (.term file)
+    # use the actual name of your notebook for "myfile.ipynb"
+    cc-jupyter-no-output myfile.ipynb
+    # the above command creates myfile-no-output.ipynb
+
+
+If your Jupyter notebook is creating an image file from a plot that exceeds the size limit, here are some things you can do:
+
+1. If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with :ref:`the classical jupyter server or JupyterLab <jupyter-server-alternatives>`. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.
+
+2. Revert the notebook to an earlier version, before the large plot was created. Click the :ref:`Backups button <project-snapshot>` in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.
+
+3. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
+
+    options(jupyter.plot_mimetypes = c('text/plain', 'image/png'))
 
 .. index:: Jupyter Notebooks; play wav file
 .. index:: wav file: play in Jupyter notebook
@@ -71,38 +87,32 @@ Alternatively, you might want the file to be embedded in the notebook itself. To
 
 and again you'll see a player and can play your file.
 
-.. index:: Jupyter Notebooks; notebook too large
-.. _jupyter-ipynb-too-large:
+.. index:: Jupyter Notebooks; remove local files
 
 #############################################
-Notebook too large? Remove output.
+Remove Local Files to Troubleshoot a Notebook
 #############################################
 
-.. figure:: img/ipynb-too-large-help.png
-     :width: 90%
-     :align: center
-     :alt: file-too-large error
+If you have a Jupyter notebook that suddenly stops working, especially with extensions or widgets, you can try removing local files in a :doc:`Linux Terminal <terminal>`, then restarting and running the notebook::
 
-     Jupyter notebook *file too large* error
+    cd
+    rm -rf .sage .ipython/ .config/ .local/ .jupyter .cache/
 
+You will need to reinstall packages you added locally after doing the above.
 
-If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way; instead, you will see the error message shown above. Usually, the problem occurs when the notebook has created large amounts of output. In that case, there is a command you can run from the :doc:`Linux Terminal <terminal>` to remove output. If removing output results in a small enough notebook, you will be able to open the "-no-output" version of the notebook normally.
+.. index:: pair: Jupyter Notebooks; halt button
+.. _jupyter-halt:
 
-.. code-block:: bash
+######################################
+Use the Halt Button to Conserve Memory
+######################################
 
-    # run this from a CoCalc Linux terminal (.term file)
-    # use the actual name of your notebook for "myfile.ipynb"
-    cc-jupyter-no-output myfile.ipynb
-    # the above command creates myfile-no-output.ipynb
+Each running Jupyter Notebook spawns a session in your project.
+This **uses up memory**, which could cause troubles running all your processes in your project.
 
+You can either *restart* the kernel to clean up its current memory (i.e. all variables are deleted), or if you've finished working on that notebook, click the ``Halt`` button to stop the kernel and close the notebook.
 
-If your Jupyter notebook is creating an image file from a plot that exceeds the size limit, here are some things you can do:
-
-1. If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with :ref:`the classical jupyter server or JupyterLab <jupyter-server-alternatives>`. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.
-
-2. Revert the notebook to an earlier version, before the large plot was created. Click the :ref:`Backups button <project-snapshot>` in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.
-
-3. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
-
-    options(jupyter.plot_mimetypes = c('text/plain', 'image/png'))
+.. image:: img/jupyter/jupyter-halt-button.png
+    :width: 90%
+    :alt: halt button
 
