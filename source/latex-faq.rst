@@ -13,10 +13,11 @@ LaTeX Howto and FAQ
 Howto
 ######
 
+
 .. index:: LaTeX Editor; Hebrew
 .. _latex_with_hebrew:
 
-Create Documents in Hebrew
+Create documents in Hebrew
 ---------------------------------
 
 .. _polyglossia: https://ctan.org/pkg/polyglossia?lang=en
@@ -34,6 +35,13 @@ Here are suggestions for using LaTeX in Hebrew with CoCalc:
     \setmainfont{Noto Serif Hebrew}
     \setmainlanguage{english}
     \setmainfont{Times New Roman}
+
+.. _custom nbconvert exports: https://cocalc.com/gist/binary10/20b632dc8c3f5a3c9a1b7266aa016128
+
+Customize Jupyter notebook LaTeX export settings
+-----------------------------------------------------
+
+Cocalc exports Jupyter notebooks to LaTeX using `nbconvert` when "File > PDF via LaTeX" is clicked in the menu. If you want to customize the default LaTeX settings, you need to override system files found at /ext/jupyter/nbconvert/templates/latex. Instructions for creating these overrides can be found in this gist file: `custom nbconvert exports`_.
 
 Deal with large documents across multiple source files
 ---------------------------------------------------------
