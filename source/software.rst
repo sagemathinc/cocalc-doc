@@ -73,10 +73,6 @@ Custom environments
 ==============================
 
 
-.. warning::
-    This is an experimental new feature!
-
-
 *Custom software environments* provide a narrow stack of software and libraries for specific purposes.
 
 Motivation
