@@ -58,4 +58,9 @@ In the case that Time Travel says "The Project" made the change, that means that
 
 Make sure you save your file to disk when you're finished working with it. A file is saved to disk when the "Save" button turns from a bright green to a disabled dull green.
 
+####################################
+Clear TimeTravel History for a File
+####################################
+
+While you can't explicitly delete the TimeTravel history for a file, you can achieve a similar result. CoCalc, unlike other software (including Microsoft Office), does not store the TimeTravel history of a file in the file or even in any filesystem (e.g., it is not in a hidden file). It exists only in the CoCalc backend PostgreSQL database as a series of patches tracking the evolution of your notebook over time. It is the same data used for realtime collaboration. TimeTravel is associated to the specific project and path. If you copy your file to a new location (even in the same project), then click "TimeTravel", you will see that it is a new history.
 
