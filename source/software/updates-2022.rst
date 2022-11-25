@@ -11,6 +11,21 @@ Software Updates 2022
 .. highlight:: python
 
 
+.. _update-2022-11-25:
+
+2022-11-25: Various updates
+------------------------------------------------
+
+- R (system-wide):
+    - (new) `msImpute`_ – *Imputation of label-free mass spectrometry peptides*
+    - (new) `ComplexUpset`_ – *Create Complex UpSet Plots Using 'ggplot2' Components*
+
+- Python 3 (system-wide):
+    - various updates
+
+- Executables:
+    - various upd
+
 .. _update-2022-10-29:
 
 2022-10-29: Sage 9.7
@@ -307,3 +322,5 @@ Software Updates 2022
 .. _lsqfit: https://lsqfit.readthedocs.io/en/latest/overview.html
 .. _gvar: https://gvar.readthedocs.io/en/latest/overview.html
 .. _Pluto: https://github.com/fonsp/Pluto.jl
+.. _msImpute: https://www.bioconductor.org/packages/release/bioc/html/msImpute.html
+.. _ComplexUpset: https://cran.r-project.org/package=ComplexUpset
