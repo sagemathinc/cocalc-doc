@@ -23,6 +23,15 @@ Chat
 
 Chat with collaborators. Open multiple chat boxes within the whiteboard as well as the usual CoCalc :ref:`side-chat` for the entire whiteboard file.
 
+Keyboard shortcut to create Chat boxes: "C".
+
+.. figure:: img/whiteboard/chat.png
+    :width: 90%
+    :align: center
+    :alt: example chat box and side chat in whiteboard
+
+    chat box and side chat in whiteboard
+
 ##############################
 Collaborative Editing
 ##############################
@@ -35,11 +44,29 @@ Countdown Timers
 
 Add countdown timers to keep meetings and discussions on schedule.
 
+.. figure:: img/whiteboard/timers.png
+    :width: 50%
+    :align: center
+    :alt: stopwatches and timers
+
+    stopwatches and timers in whiteboard
+
+Keyboard shortcut to create Stopwatches and Timers: "S".
+
 ##############################
 Cut or Copy and Paste
 ##############################
 
-Select objects within a rectangular area and cut or copy them, then paste to the same whiteboard or a different whiteboard you already have open.
+Click "Select" (arrow icon) then drag the cursor to create a rectangular region. Doing so will select all objects that lie partially or completely in the region. "Cut" removes all the objects from their current position and saves them to the clipboard. "Copy" keeps the objects in their current position and saves them to the clipboard. "Paste" will drop the group of objects in the clipboard into the current page or into any page of any whiteboard you have open.
+
+.. figure:: img/whiteboard/cut-copy-paste.png
+    :width: 70%
+    :align: center
+    :alt: select, cut or copy, and paste
+
+    cut, copy, paste in whiteboard
+
+Keyboard shortcut to enable rectangular selection: "V".
 
 ########################
 Edges
@@ -47,12 +74,15 @@ Edges
 
 Create edges (arrows) between all objects.
 
+Keyboard shortcut to create Edges: "E".
 
 ########################
 Frames
 ########################
 
 Use frames to group objects and organize the whiteboard into sections.
+
+Keyboard shortcut to create a Frame: "F".
 
 
 .. _whiteboard-hashtags:
@@ -68,6 +98,8 @@ Icons
 ########################
 
 Choose from a wide selection of Icons to add to your whiteboard.
+
+Keyboard shortcut to open the table of available Icons: "I".
 
 
 .. _jupyter-cells:
@@ -87,6 +119,8 @@ A CoCalc whiteboard can include Jupyter code cells. Whiteboard code cells allow:
     :width: 80%
     :align: center
     :alt: whiteboard with two code cells and a sticky note
+
+Keyboard shortcut to create a Jupyter Code Cell: "J".
 
 ##############################
 LaTeX Expressions
@@ -135,6 +169,8 @@ Pens
 ##########################
 
 Choose one of the different pen shapes to draw freehand on your whiteboard. Supported pointing devices include most forms of mouse and trackpad as well as many Wacom tablets and iPencil and Apple Pencil.
+
+Keyboard shortcut to start using Pens: "P".
 
 ##########################
 Publish
@@ -186,7 +222,9 @@ Infinitely split whiteboard windows horizontally and vertically to view multiple
 Sticky Notes
 ##############################
 
-A sticky note is a rectangle for enclosing text. When creating a sticky note, it's easy to select from a variety of eye-catching background colors and text fonts and sizes.
+A sticky note is a rectangle, with a colored background, for enclosing text. When creating a sticky note, it's easy to select from a variety of eye-catching background colors and text fonts and sizes.
+
+Keyboard shortcut to create a Sticky Note: "N".
 
 ##############################
 Stopwatches
@@ -199,6 +237,14 @@ Table of Contents
 ##############################
 
 You can view contents as an outline in a panel on the left and click to view any item instantly.
+
+##############################
+Text
+##############################
+
+A text box is a rectangle, with a transparent background, for enclosing text.
+
+Keyboard shortcut to create a Text box: "T".
 
 ##############################
 TimeTravel
