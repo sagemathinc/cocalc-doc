@@ -1,11 +1,13 @@
 {%- extends "sphinx_rtd_theme/breadcrumbs.html" %}
 
 {% block breadcrumbs_aside %}
-<li class="wy-breadcrumbs-aside">
-<a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/{{ theme_vcs_pageview_mode or "blob" }}/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ page_source_suffix }}" class="fa fa-github"> {{ _('Edit ME on GitHub') }}</a>
-</li>
-
-<li class="wy-breadcrumbs-aside">
-<a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=question%20about%20documentation&body=&title=Ask%20Us%20Anything!">Ask a Question</a>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
 </li>
 {% endblock %}
