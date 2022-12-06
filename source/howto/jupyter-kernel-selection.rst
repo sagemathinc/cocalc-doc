@@ -6,6 +6,10 @@
 Jupyter Kernel Selection
 ================================
 
+.. contents::
+     :local:
+     :depth: 1
+
 :doc:`Jupyter notebooks <../jupyter>` support more than a single programming language.
 The element which instantiates a session and runs the code of a cell is called the **kernel**.
 
@@ -36,6 +40,7 @@ In the menu that opens, scroll down past interrupt and restart commands to see t
 .. figure:: img/jupyter-kernel.png
      :width: 100%
      :align: center
+     :alt: jupyter kernel menu
 
      selecting the kernel with the kernel menu
 
@@ -46,6 +51,7 @@ You can view an expanded kernel selection dialog after opening a jupyter noteboo
 .. figure:: img/jupyter-select-kernel-lg.png
      :width: 100%
      :align: center
+     :alt: jupyter kernel selection dialog
 
      expanded kernel selection after clicking selected kernel at upper right
 
@@ -55,11 +61,12 @@ Jupyter Classic
 =========================
 
 Here is a sequence of steps depicted about how to change the Kernel in a notebook.
-The current selection is "SageMath", and it is about to be change to "Python 3 (Ubuntu Linux)".
+The current selection is "SageMath", and it is about to be changed to "Python 3 (Ubuntu Linux)".
 
 .. figure:: img/jupyter-classic-change-kernel.png
      :width: 100%
      :align: center
+     :alt: jupyter classic kernel menu
 
      selecting the kernel in a Classical Jupyter notebook
 
@@ -71,6 +78,7 @@ When creating a new notebook in JupyterLab, the Launcher displays icons for the 
 .. figure:: img/jlab-launcher.png
     :width: 60%
     :align: center
+    :alt: jupyterlab launcher
 
     kernel choices when creating a notebook with JupyterLab
 
@@ -80,6 +88,7 @@ Once you have opened a notebook in JupyterLab, you can change the kernel using t
 .. figure:: img/jlab-change-kernel.png
     :width: 90%
     :align: center
+    :alt: jupyterlab kernel selection
 
     changing kernel of existing notebook with JupyterLab
 
