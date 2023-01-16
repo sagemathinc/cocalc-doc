@@ -6,7 +6,7 @@ Getting Started with Jupyter Notebooks
 
 .. contents::
      :local:
-     :depth: 1
+     :depth: 2
 
 ##########################
 What's a Jupyter Notebook?
@@ -78,6 +78,15 @@ code cell output
 *****************************
 
 The output of code cells is below the code. For example, ``Out [7]:`` is the output of cell ``In [7]:``. In the right hand corner of the input cell is some information about how long it took to calculate the result.
+
+*****************************
+select multiple cells
+*****************************
+
+Selecting multiple cells in a notebook enables you to copy, move, or delete them in a single operation. It works as you might expect. To select a range of cells, click to select the first, then shift-click to select the last (or vice versa). To select cells that are not in a contiguous range, command- or control-click each one.
+
+Suppose you wanted to delete several cells. To do that, select multiple cells as above, then delete them the same way you would delete a single cell (edit menu or "dd").
+
 
 *****************************
 text cells
