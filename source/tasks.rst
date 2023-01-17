@@ -10,6 +10,7 @@ Like everything in CoCalc, multiple people can simultaneously edit task lists.
 .. image:: img/task-list.png
     :width: 75%
     :align: center
+    :alt: example of a task list
 
 Editing the Description (Markdown)
 ====================================
@@ -31,6 +32,7 @@ In custom order (the default) click and drag |bars| to change the order of the t
 .. |bars|
     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bars.png
     :width: 16px
+    :alt: three horizontal bars "hamburger" icon
 
 Due date
 ==========
