@@ -4,6 +4,11 @@
 Task Lists
 ==================
 
+.. contents::
+     :local:
+     :depth: 1
+
+
 Use task lists to help organize your work on a CoCalc project.
 Like everything in CoCalc, multiple people can simultaneously edit task lists.
 
@@ -11,6 +16,11 @@ Like everything in CoCalc, multiple people can simultaneously edit task lists.
     :width: 75%
     :align: center
     :alt: example of a task list
+
+Creating a Task List
+====================================
+
+To create a task list, open a file with the extension ".task". This extension is added automatically if you click "(+)New", enter a filename, and then click "Todo list".
 
 Editing the Description (Markdown)
 ====================================
