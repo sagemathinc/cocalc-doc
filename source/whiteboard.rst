@@ -21,7 +21,7 @@ CoCalc provides a computational whiteboard with infinite canvas. Our web page `A
 Chat
 ##############################
 
-Chat with collaborators. Open multiple chat boxes within the whiteboard as well as the usual CoCalc :ref:`side-chat` for the entire whiteboard file.
+Chat with collaborators. Open multiple chat boxes within the whiteboard as well as the usual CoCalc :ref:`side-chat` for the entire whiteboard file. Learn about all the features of CoCalc Chat at this link: :doc:`chat`.
 
 Keyboard shortcut to create Chat boxes: "C".
 
@@ -38,11 +38,13 @@ Collaborative Editing
 
 Many users can edit at the same time, see what the others are doing in real time, and center their view at the location of another's cursor.
 
+.. _wb-timers:
+
 ##############################
 Countdown Timers
 ##############################
 
-Add countdown timers to keep meetings and discussions on schedule.
+Add stopwatches (count up) and timers (count down) to keep meetings and discussions on schedule.
 
 .. figure:: img/whiteboard/timers.png
     :width: 50%
@@ -52,6 +54,16 @@ Add countdown timers to keep meetings and discussions on schedule.
     stopwatches and timers in whiteboard
 
 Keyboard shortcut to create Stopwatches and Timers: "S".
+
+When a timer counts down to zero, a pop-up announcement will be displayed if the whiteboard file is open at the time.
+
+.. figure:: img/whiteboard/wb-timer-expired.png
+    :width: 50%
+    :align: center
+    :alt: timer expired pop-up
+
+    notification displayed when whiteboard timer expires
+
 
 ##############################
 Cut or Copy and Paste

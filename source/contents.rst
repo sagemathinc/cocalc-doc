@@ -36,6 +36,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    x11
    chat
    tasks
+   timers
    frame-editor
    markdown
    rich-text
