@@ -29,5 +29,8 @@ To compile the program, type `make` in the terminal, followed by the name of you
     ./hello
     ... program output appears here ...
 
+.. note::
+
+    If the file name contains spaces, the version of the command with "make" won't work. And you will need to enclose the file name in single or double quotes, or put a \\ before every space in the filename. If you are going to work with the command line, things are easier if you do not put spaces in file names.
 
 For further study, see `isocpp.org: Get Started! <https://isocpp.org/get-started>`_
