@@ -179,6 +179,12 @@ Rich Text Editing
 
 See :doc:`rich-text`.
 
+###########################################
+Search and Replace Within the File
+###########################################
+
+Search and replace in markdown are done the same as with any other frame editor file. See :ref:`frame editor search and replace <frame-editor-search>`.
+
 .. _cocalc-markdown-impl:
 
 ###########################################

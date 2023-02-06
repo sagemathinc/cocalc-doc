@@ -156,6 +156,7 @@ Side Chat
 
 You can share comments on a CoCalc file using a side chat panel. For more information, see :ref:`side-chat`.
 
+.. _frame-editor-search:
 
 ###################################
 Search and Replace Inside the File
