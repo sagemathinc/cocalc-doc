@@ -157,9 +157,9 @@ Side Chat
 You can share comments on a CoCalc file using a side chat panel. For more information, see :ref:`side-chat`.
 
 
-#######################
-Search Inside the File
-#######################
+###################################
+Search and Replace Inside the File
+###################################
 
 You can search for a string of text in your file while editing by hitting Ctrl-F (or Cmd-F on a Mac) and entering the string you want to search for in the blank that appears at the top. If you want to search for a regular expression rather than simple text, surround the regular expression with slashes. For example, to search for a pound sign and a space at the start of a line, enter ``/^# /`` for the search string.
 
@@ -170,4 +170,16 @@ You can search for a string of text in your file while editing by hitting Ctrl-F
 
     search in a .sage file; regular expression hint is outlined
 
-Implementation note: CoCalc's frame editor search is implemented using the `Codemirror search function <https://codemirror.net/demo/search.html#>`_.
+Other commands relating to search and replace:
+
+* **Ctrl-F / Cmd-F:** Start searching
+* **Ctrl-G / Cmd-G:** Find next
+* **Shift-Ctrl-G / Shift-Cmd-G:** Find previous
+* **Shift-Ctrl-F / Cmd-Option-F:** Replace
+* **Shift-Ctrl-R / Shift-Cmd-Option-F:** Replace all
+* **Alt-F:** Persistent search (dialog doesn't autoclose, enter to find next, Shift-Enter to find previous)
+
+Implementation note: CoCalc's frame editor search is implemented using the `CodeMirror search function <https://codemirror.net/demo/search.html#>`_. The full set of commands for CodeMirror search and replace is:
+
+
+
