@@ -180,7 +180,4 @@ Other commands relating to search and replace:
 * **Shift-Ctrl-R / Shift-Cmd-Option-F:** Replace all
 * **Alt-F:** Persistent search (dialog doesn't autoclose, enter to find next, Shift-Enter to find previous)
 
-Implementation note: CoCalc's frame editor search is implemented using the `CodeMirror search function <https://codemirror.net/demo/search.html#>`_. The full set of commands for CodeMirror search and replace is:
-
-
-
+Implementation note: CoCalc's frame editor search is implemented using the `CodeMirror search function <https://codemirror.net/demo/search.html#>`_.
