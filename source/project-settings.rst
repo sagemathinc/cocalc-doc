@@ -48,28 +48,28 @@ The bigger version appears in your project list, in shared projects when you cli
      :width: 80%
      :align: center
      :alt: clickable project image in project list
-     
+
      project image appears at right in project list; click to open the project
 
 .. figure:: img/project-settings/image-in-shared-list.png
      :width: 80%
      :align: center
      :alt: small project image in project list
-     
+
      tiny project image appears at left in shared projects list
 
 .. figure:: img/project-settings/image-in-shared-project.png
      :width: 80%
      :align: center
      :alt: clickable project image in project list
-     
+
      large project image appears when you open a shared project
 
 .. figure:: img/project-settings/image-hover-project-tab.png
      :width: 50%
      :align: center
      :alt: large project image when hovering over project tab
-     
+
      large project image appears when pointer hovers over project tab
 
 .. index:: Projects; upgrades
@@ -815,7 +815,4 @@ As of writing this, this would be ``us-east1``.
      image:: img/antd-icons/dashboard-icon.png
      :width: 24px
      :alt: icon for project 
-
-
-
 

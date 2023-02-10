@@ -7,7 +7,7 @@ Troubleshooting
 
 This collection of guides summarizes ways to overcome certain problems.
 If you can't access CoCalc or end up stuck looking at "Loading ...", check out :doc:`connectivity-issues`.
-Furthermore, there are explanatins about crashing worksheets,
+Furthermore, there are explanations about crashing worksheets,
 understanding low memory warnings and how to triage situations where you can't find your project.
 
 .. toctree::
@@ -16,6 +16,7 @@ understanding low memory warnings and how to triage situations where you can't f
    cant-save.rst
    clock-is-off.rst
    connectivity-issues.rst
+   disk-space-warning.rst
    file-too-large.rst
    gap-kernel-unavailable.rst
    sudo-make-install.rst
