@@ -19,6 +19,7 @@ To open it, click on the light blue button with the reversed cirular arrow aroun
 
 .. image:: img/time-travel-button.png
     :align: center
+    :alt: time travel button
 
 Then you can see the underlying history, e.g. here for exactly this ``time-travel.rst`` file of the documentation in front of you.
 
@@ -30,11 +31,13 @@ For very long histories, another button will show up to load the entire history.
 
 .. image:: img/time-travel-ui.png
     :width: 100%
+    :alt: long time travel history
 
 With ``[x] Changes`` enabled, you get a two-ended slider to see the changes between these two revisions:
 
 .. image:: img/time-travel-changes.png
     :width: 100%
+    :alt: time travel changes
 
 For more information, read this `blog post about time travel <http://blog.sagemath.com/2016/09/08/timetravel-diffs.html>`_.
 
