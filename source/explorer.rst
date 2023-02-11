@@ -5,15 +5,7 @@
 Explorer
 =============================
 
-.. contents::
-   :local:
-   :depth: 1
-
 Use the File Explorer to browse, open, and manage files in the selected directory within your project.
-
-If you don’t have a file open, clicking the **Explorer** button will show you a list of files in the project’s home directory. If you are working on a file, clicking **Explorer** will show a list of files in the directory containing the selected file.
-
-There are three main parts to the Explorer view.
 
 .. figure:: img/explorer-a.png
     :width: 100%
@@ -21,6 +13,14 @@ There are three main parts to the Explorer view.
     :alt: the file explorer
 
     the File Explorer, displaying files inside the TESTS directory
+
+If you don’t have a file open, clicking the **Explorer** button will show you a list of files in the project’s home directory. If you are working on a file, clicking **Explorer** will show a list of files in the directory containing the selected file.
+
+There are three main parts to the Explorer view.
+
+.. contents::
+   :local:
+   :depth: 1
 
 
 ######################
