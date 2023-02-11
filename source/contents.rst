@@ -28,6 +28,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    :caption: Features
 
    project
+   backups
    jupyter
    whiteboard
    latex
@@ -51,6 +52,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    display-options
    account-dropdown
    project-toolbar
+   explorer
    files-toolbar
    account-toolbar
    billing
