@@ -28,12 +28,13 @@ This explains in depth how you can work productively on `CoCalc`_.
    :caption: Features
 
    project
-   backups
    jupyter
+   slides
    whiteboard
    latex
    sagews
    terminal
+   backups
    x11
    chat
    tasks
