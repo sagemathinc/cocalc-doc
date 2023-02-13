@@ -122,11 +122,24 @@ You can then select a color picker and a color.
     :alt: choosing font color
 
 
-
-
 (Implementation note: rich text font options use <span class='color:#0000ff'>...</span>
 under the hood.
 The format is sufficiently well-defined that it doesn't get removed by CoCalc XSS processing. So it works even if e.g., a student opens the file and doesn't switch to trusted mode.)
+
+########################
+Insert emoji
+########################
+
+In CoCalc, anywhere you use the WYSIWYG Slate-based rich text Markdown editor, you can type ":"" and search from thousands of standard emojis. Here it is in action in a Jupyter notebook:
+
+.. image:: img/emoji-list.png
+    :width: 90%
+    :align: center
+    :alt: searchable emoji list
+    
+When you first type ":" you'll see the dropdown in a fraction of the second, showing the most popular emojis. Type further, and you'll instead do a full text search through a large number of matching emojis. These emojis are standard (provided by markdown-it) and will also work in Github, etc.
+
+Here's the original CoCalc feature announcement: `searchable emoji list <https://github.com/sagemathinc/cocalc/discussions/6430>`_.
 
 ########################
 Limitations
