@@ -8,10 +8,6 @@ Rich Text Editing
      :local:
      :depth: 2
 
-##########################
-Introduction
-##########################
-
 With *Rich text editing*, as you enter content, your work is displayed in a form that resembles the final result, i.e. you do not see formatting commands mixed in with text.
 
 Here is how some sample content will appear **as you enter it** with rich text editing. For each line, use the usual markdown formatting characters, i.e. start the first line with a "#" and a space:
@@ -46,19 +42,15 @@ Where Rich Text Editing is Available
 
 * :doc:`jupyter` In text or Markdown cell types.
 
-########################
-Features
-########################
-
-***********************
+#####################################
 Real-time Collaboration
-***********************
+#####################################
 
 Multiple users can use rich text editing on a file, and see one another's work at the same time.
 
-***************************
+#####################################
 LaTeX in Rich Text Editing
-***************************
+#####################################
 
 When using rich text editing, you can embed LaTeX directives between dollar signs ($) *followed by a space*. You must add a space to cause conversion to mathematical characters.
 
@@ -78,9 +70,9 @@ Here is the formatting that results after typing the space:
 
 .. _font-options:
 
-********************
+#####################################
 Font options
-********************
+#####################################
 
 You can specify font family, face (bold, italics, etc.), size, and color.
 
