@@ -52,7 +52,7 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    display-options
    account-dropdown
-   project-toolbar
+   top-toolbar
    explorer
    files-toolbar
    account-toolbar
