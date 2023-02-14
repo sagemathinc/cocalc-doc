@@ -4,6 +4,11 @@
 Slides
 ========================
 
+up down home end - also works with wb / template feature, blank for wb, has some features for slides
+top up/down arrows for reordering list items in markdown editing
+
+pages view expands the page lets you delete drag pages around / overview can delete pages
+
 You can create any number of slides. CoCalc slides let you use all the same tools as from the whiteboard: text, notes, freehand drawing, Jupyter code cells, mind maps, icons, and frames. Of course, text is editable in both markdown and rich text modes, with full latex formula and code block support.
 
 Here's the original CoCalc feature announcement: `ANN: CoCalc Slides -- create slides in CoCalc for presentations, with Jupyter code and latex math <https://github.com/sagemathinc/cocalc/discussions/6420>`_.
