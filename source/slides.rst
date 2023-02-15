@@ -4,8 +4,8 @@
 Slides
 ========================
 
-up down home end - also works with wb / template feature, blank for wb, has some features for slides
-top up/down arrows for reordering list items in markdown editing
+Give presentations with code and mathematics using `CoCalc Slides <https://cocalc.com/features/slides>`_.
+
 
 pages view expands the page lets you delete drag pages around / overview can delete pages
 
@@ -120,6 +120,11 @@ LaTeX Expressions
 
 Text inside slides items supports LaTeX mathematical typesetting.
 
+##############################
+Navigate With Arrow Keys
+##############################
+
+While in Slides view, you can use the arrow keys: "↑" to move up one slide and "↓" to move down one slide from the current slide. Use Home (Fn–Left Arrow on some Mac keyboards) to go to the first slide and End (Fn–Right Arrow on some Mac keyboards) to go to the last slide.
 
 .. _slides-pages-view:
 

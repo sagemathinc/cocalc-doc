@@ -140,6 +140,11 @@ LaTeX Expressions
 
 Text inside whiteboard items supports LaTeX mathematical typesetting.
 
+##############################
+Navigate With Arrow Keys
+##############################
+
+While in Pages view, you can use the arrow keys: "↑" to move up one page and "↓" to move down one page from the current page. Use Home (Fn–Left Arrow on some Mac keyboards) to go to the first page and End (Fn–Right Arrow on some Mac keyboards) to go to the last page. This is most useful if you start in Whiteboard view, split the screen vertically, and set one of the two panes to Pages view.
 
 .. _pages-view:
 
