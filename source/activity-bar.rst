@@ -15,43 +15,9 @@ Use the Activity Bar to navigate to key features in CoCalc. The arrangement is s
 
 Here are the components of the Activity Bar:
 
-.. contents::
-   :local:
-   :depth: 1
-
-
-######################
-File Explorer
-######################
-
-The main part of the File Explorer window is taken up by a list of files. Clicking the check box next to one or more files allows you perform file actions. See :doc:`explorer`.
-
-######################
-New
-######################
-
-See :doc:`plus-new`.
-
-######################
-Log
-######################
-
-See :doc:`project-log`.
-
-######################
-Find
-######################
-
-Toward the top of the window is the Search bar. It includes a *search box* to allow you to filter the list of displayed files, a *New button* for creating a file, the *path and directory* whose files are displayed, and a box for entering a short *Terminal command* to be run by the linux shell. See :ref:`ft-search`.
-
-######################
-Settings
-######################
-
-See :doc:`project-settings`.
-
-######################
-Processes
-######################
-
-See :ref:`ft-info`.
+* :doc:`explorer`
+* :doc:`plus-new`
+* :doc:`project-log`
+* :ref:`ft-search`
+* :doc:`project-settings`
+* :ref:`ft-info`
