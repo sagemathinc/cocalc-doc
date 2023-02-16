@@ -7,7 +7,7 @@ Activity Bar
 Use the Activity Bar to navigate to key features in CoCalc. The arrangement is similar to the `Activity Bar in VS Code <https://code.visualstudio.com/api/ux-guidelines/activity-bar>`_ and the `Sidebar in JupyterLab <https://jupyterlab.readthedocs.io/en/stable/user/interface.html#left-and-right-sidebar>`_.
 
 .. figure:: img/activity-bar.png
-    :width: 80%
+    :width: 70%
     :align: center
     :alt: the activity bar
 
@@ -15,6 +15,7 @@ Use the Activity Bar to navigate to key features in CoCalc. The arrangement is s
 
 Here are the components of the Activity Bar:
 
+* :doc:`project-home`
 * :doc:`explorer`
 * :doc:`plus-new`
 * :doc:`project-log`

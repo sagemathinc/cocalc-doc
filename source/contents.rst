@@ -54,6 +54,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    top-toolbar
    account-dropdown
    activity-bar
+   project-home
    explorer
    files-toolbar
    account-toolbar
