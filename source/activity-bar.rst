@@ -21,3 +21,5 @@ Here are the components of the Activity Bar:
 * :ref:`ft-search`
 * :doc:`project-settings`
 * :ref:`ft-info`
+
+Here's the original CoCalc feature announcement: `ANN: Non-file tabs moved to a column on the left <https://github.com/sagemathinc/cocalc/discussions/6404>`_.
