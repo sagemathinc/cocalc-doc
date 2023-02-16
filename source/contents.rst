@@ -51,8 +51,9 @@ This explains in depth how you can work productively on `CoCalc`_.
    :caption: Platform
 
    display-options
-   account-dropdown
    top-toolbar
+   account-dropdown
+   activity-bar
    explorer
    files-toolbar
    account-toolbar

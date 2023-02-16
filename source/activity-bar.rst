@@ -4,7 +4,7 @@
 Activity Bar
 =============================
 
-Use the Activity Bar to navigate to key features in CoCalc. The arrangement is similar to the `Activity Bar in VS Code <https://code.visualstudio.com/api/ux-guidelines/activity-bar>` and the `Sidebar in JupyterLab <https://jupyterlab.readthedocs.io/en/stable/user/interface.html#left-and-right-sidebar>`_.
+Use the Activity Bar to navigate to key features in CoCalc. The arrangement is similar to the `Activity Bar in VS Code <https://code.visualstudio.com/api/ux-guidelines/activity-bar>`_ and the `Sidebar in JupyterLab <https://jupyterlab.readthedocs.io/en/stable/user/interface.html#left-and-right-sidebar>`_.
 
 .. figure:: img/activity-bar.png
     :width: 80%
