@@ -42,6 +42,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    frame-editor
    markdown
    rich-text
+   csv-viewer
    time-travel
    snippets
    share
