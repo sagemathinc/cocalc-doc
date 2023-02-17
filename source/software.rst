@@ -61,7 +61,7 @@ Main supported software environments
 .. note::
 
     Via the :ref:`software-environment` selector,
-    you have a little bit control over the software you're running in your project.
+    you have control over the software you're running in your project.
 
 .. _SageMath: https://sagemath.org
 
