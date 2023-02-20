@@ -57,7 +57,11 @@ This explains in depth how you can work productively on `CoCalc`_.
    activity-bar
    project-home
    explorer
-   files-toolbar
+   plus-new
+   project-log
+   files-search
+   processes
+   project-settings
    account-toolbar
    billing
    software

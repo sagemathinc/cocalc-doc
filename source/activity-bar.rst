@@ -11,7 +11,7 @@ Use the Activity Bar to navigate to key features in CoCalc. The arrangement is s
     :align: center
     :alt: the activity bar
 
-    the Activity Bar displays files, new, log, find, settings, processes
+    the Activity Bar displays files, new, log, find, processes, settings
 
 Here are the components of the Activity Bar:
 
@@ -19,8 +19,8 @@ Here are the components of the Activity Bar:
 * :doc:`explorer`
 * :doc:`plus-new`
 * :doc:`project-log`
-* :ref:`ft-search`
+* :doc:`files-search`
+* :doc:`processes`
 * :doc:`project-settings`
-* :ref:`ft-info`
 
 Here's the CoCalc feature announcement and discussion: `ANN: Non-file tabs moved to a column on the left <https://github.com/sagemathinc/cocalc/discussions/6404>`_.

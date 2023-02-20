@@ -119,7 +119,7 @@ You have used CoCalc's two main toolbars a bit during your first session. Learn 
 
 * :doc:`top-toolbar`
 
-* :doc:`files-toolbar`
+* :doc:`activity-bar`
 
 .. _cocalc-session:
 
