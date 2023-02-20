@@ -15,7 +15,7 @@ Creating an Account
 On your first visit to CoCalc.com, you will see the welcome screen.
 Click either **Sign Up** button:
 
-.. image:: img/getting-started/2021-11-welcome-sign-up.png
+.. image:: img/getting-started/welcome-sign-up.png
      :width: 100%
      :alt: CoCalc welcome page with Sign Up buttons circled in red
 
