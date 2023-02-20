@@ -49,15 +49,6 @@ The **Project Activity Log** shows recent activity in your project:
   logins, files opened and uploaded, etc. If you click on a filename in the log, it will open
   that file. This is often the quickest way to resume work on a file that was recently closed.
 
-.. _ft-search:
-
-|search| Find
-=============
-
-Search  for files containing the specified text in the directory that contains
-  the currently selected file, or the project home directory if no file is selected. There are options
-  to for searching subdirectories, case sensitive search, including hidden files, and restricting search
-  to files in a git repository.
 
 .. _ft-settings:
 
@@ -123,10 +114,6 @@ If a file is selected, this button allows you to share it, or stop sharing. File
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
      :width: 16px
      :alt: log history icon
-.. |search|
-     image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/search.png
-     :width: 16px
-     :alt: search magnifying glass icon
 .. |wrench|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wrench.png
      :width: 16px
