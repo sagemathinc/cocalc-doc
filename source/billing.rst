@@ -19,17 +19,14 @@ To learn more about licenses, see :doc:`licenses`.
 
 Questions about projects are covered in :doc:`project-faq`.
 
-.. contents::
-   :local:
-   :depth: 2
 
-
+#########################
 General
-===========================
+#########################
 
-
+***********************************************************
 What is the difference between **free and paid service**?
-----------------------------------------------------------
+***********************************************************
 
 Learn more about :doc:`Trial Projects <trial>`.
 
@@ -52,8 +49,9 @@ their textbook).
     Billing; Invoice
     Invoice
 
+***********************************************************
 How do I get an **invoice** with specific information?
-------------------------------------------------------------
+***********************************************************
 
 After purchasing, please email us at help@cocalc.com, reference what you bought,
 and tell us the payer's name, contact information and any other specific instructions.
@@ -65,8 +63,9 @@ that satisfies your unique requirements.
     PayPal
     Wire transfer
 
+***********************************************************
 Can I pay via wire transfer or PayPal?
-----------------------------------------
+***********************************************************
 
 For purchases **above $100** we support PayPal or wire transfers.
 Please contact help@cocalc.com with all relevant details about your intended purchase.
@@ -80,16 +79,18 @@ Please contact help@cocalc.com with all relevant details about your intended pur
 **In case you're teaching a course and bought a license to manage that course**: please read :ref:`install-course-license`.
 
 
+#########################
 Quota upgrades
-===========================
+#########################
 
 .. index::
     Quotas; Member hosting
 
 .. _member-hosting:
 
+***********************************************************
 What is **"member hosting"**?
----------------------------------------------
+***********************************************************
 
 
 There are two types of projects: "trial (free) projects" and "member projects".
@@ -112,8 +113,9 @@ and CPU, memory and I/O heavy operations run more quickly.
 
 .. _network-access:
 
+***********************************************************
 What exactly is the **"network access"** quota?
-------------------------------------------------
+***********************************************************
 
 (This was formerly called the **Internet access** quota.)
 
@@ -130,9 +132,9 @@ Enable internet access by adding the "internet access" quota.
     Quotas; Idle timeout
     Idle Timeout; quota
 
+***********************************************************
 What exactly is the **"idle timeout"** quota?
--------------------------------------------------
-
+***********************************************************
 
 By default, free projects stop running after about 30 minutes of idle time.
 This makes doing an overnight research computation –
@@ -141,23 +143,34 @@ e.g., searching for special prime numbers – impossible.
 There is an advanced license option to prevent idle timeouts completely: see :ref:`licenses-always-running`.
 Processes might still stop if they use too much memory, crash due to an exception, or if the server they are running on is rebooted.
 
-.. note::
-
-    Projects do not stop if you are continuously using them,
-    and there are no daily or monthly caps on how much you may use a CoCalc project, even a free one.
+Projects do not stop if you are continuously using them,
+and there are no daily or monthly caps on how much you may use a CoCalc project, even a free one.
 
 See also: :ref:`Software development/idle timeout <idle-timeout>`.
+
+.. note::
+
+    There is also a user-configurable timeout, the :ref:`standby-timeout`, which does not stop the project.
 
 .. _cpu-shares:
 .. index::
     Quotas; CPU
 
-What are **"CPU shares"** and **"CPU cores"**?
------------------------------------------------------
+***********************************************************
+What are **Shared CPUs / vCPUs**?
+***********************************************************
 
+You can specify 1, 2, or 3 Shared CPUs, also known as Google Cloud vCPUs for a site license. To keep prices low, vCPUs may be shared with other projects, though member hosting very significantly reduces competition for CPUs.
 
-All projects on a single server share the underlying resources.
-These quotas determine how CPU resources are shared between projects.
-Increasing them increases the priority of a project compared to others on the same host computer.
-In particular, "shares" determines the amount of relative CPU time you get.
+Making use of more than 1 CPU specialized code. A typical program will not run twice as fast with two CPUs than with one, for example.
+
+There are basically 3 ways to make use of more than 1 CPU in a project:
+
+#. If you're processing data or a range of values, split them up into partitions and process them in parallel. E.g. for 3 CPUs, instead of 1 to 100, do 1 to 30, 31 to 65 and 66 to 100. Those 3 partitions can still only use one core (same code), but in total they can use all 3 when run at the same time.
+
+#. Structure your code to run in parallel. This depends on what you are doing, the programming language, the type of problem, etc.
+
+#. Use a library or code generator that supports parallel operations on a lower level.
+
+A good way to start with the theory is this article: `Wikipedia: Parallel computing <https://en.wikipedia.org/wiki/Parallel_computing>`_.
 
