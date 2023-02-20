@@ -17,4 +17,4 @@ If you open a CSV file in CoCalc, by default it will show you a nicely formatted
 
     The CSV grid viewer doesn't support collaborative editing yet.
 
-Here's the original CoCalc feature announcement: `ANN: csv viewer <https://github.com/sagemathinc/cocalc/discussions/6437>`_.
+Here's the CoCalc feature announcement and discussion: `ANN: csv viewer <https://github.com/sagemathinc/cocalc/discussions/6437>`_.

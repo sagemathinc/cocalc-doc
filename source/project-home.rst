@@ -13,4 +13,4 @@ When a project is selected, The Project Home page displays general information a
 
     the Project Home page can be opened from the top of the :doc:`activity-bar`.
 
-Here's the original CoCalc feature announcement: `ANN: Projects now have a homepage <https://github.com/sagemathinc/cocalc/discussions/6407>`_.
+Here's the CoCalc feature announcement and discussion: `ANN: Projects now have a homepage <https://github.com/sagemathinc/cocalc/discussions/6407>`_.

@@ -11,7 +11,7 @@ pages view expands the page lets you delete drag pages around / overview can del
 
 You can create any number of slides. CoCalc slides let you use all the same tools as from the whiteboard: text, notes, freehand drawing, Jupyter code cells, mind maps, icons, and frames. Of course, text is editable in both markdown and rich text modes, with full latex formula and code block support.
 
-Here's the original CoCalc feature announcement: `ANN: CoCalc Slides -- create slides in CoCalc for presentations, with Jupyter code and latex math <https://github.com/sagemathinc/cocalc/discussions/6420>`_.
+Here's the CoCalc feature announcement and discussion: `ANN: CoCalc Slides -- create slides in CoCalc for presentations, with Jupyter code and latex math <https://github.com/sagemathinc/cocalc/discussions/6420>`_.
 
 .. figure:: img/slides/slides.png
     :width: 100%
