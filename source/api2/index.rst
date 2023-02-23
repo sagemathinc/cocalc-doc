@@ -28,20 +28,21 @@ API v2 Endpoints
 ################################
 
 The remainder of this guide descsribes individual API v2 endpoints.
-Each API request definition begins with the path of the
-URL used to invoke the request,
-for example ``/api/v2/user-query``.
-The path name ends with the name of the request,
-for example, ``user-query``.
-Following the path is the list of options.
-A sample call is provided as made with the ``curl``
-command.
 
 .. toctree::
-   :caption: API v2 Endpoints
+   :caption: API v2 General-Purpose Endpoints
    :maxdepth: 1
 
+   directory-listing
    latex
    stop
    user-query
+
+.. toctree::
+   :caption: API v2 Partner Endpoints
+   :maxdepth: 1
+
+   email-address-from-account-id
+   purchasing-licenses
+
 
