@@ -60,14 +60,13 @@ that satisfies your unique requirements.
 
 
 .. index::
-    PayPal
     Wire transfer
 
 ***********************************************************
-Can I pay via wire transfer or PayPal?
+Can I pay via wire transfer?
 ***********************************************************
 
-For purchases **above $100** we support PayPal or wire transfers.
+For purchases **above $100** we support wire transfers.
 Please contact help@cocalc.com with all relevant details about your intended purchase.
 
 
