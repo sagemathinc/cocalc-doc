@@ -113,6 +113,16 @@ Choose from a wide selection of Icons to add to your whiteboard.
 
 Keyboard shortcut to open the table of available Icons: "I".
 
+########################
+Insert Page
+########################
+
+You can insert a page after the present page in Pages View by clicking the |insert-icon| icon to the right:
+
+.. image:: img/whiteboard/insert-page.png
+    :width: 50%
+    :align: center
+    :alt: insert a page after the present one
 
 .. _jupyter-cells:
 
@@ -308,3 +318,6 @@ In a sticky note, text, etc., you can mark action items by placing a pair of bra
     :height: 20px
     :alt: pages icon
 
+.. |insert-icon| image:: img/icons/insert-icon.png
+    :height: 30px
+    :alt: present icon
