@@ -197,7 +197,7 @@ Keyboard shortcut to start using Pens: "P".
 Presentation Mode
 ##########################
 
-To use it, click on the present icon: |present-icon|, or select "Slideshow Presentation" from the dropdown:
+To enter presentation mode, click on the present icon: |present-icon|, or select "Slideshow Presentation" from the dropdown:
 
 .. image:: img/slides/present-dropdown.png
     :width: 30%
@@ -211,14 +211,14 @@ then click the "Start Slideshow" button:
     :align: center
     :alt: button to enter presentation mode
 
-This will transition to fullscreen with only the actual slide displayed (nothing outside the margins), always maximally zoomed, like in Powerpoint or Google slides. There's a little wrench icon (that appears only when you move the mouse):
+The display will transition to fullscreen with only the slide displayed (nothing outside the margins) and maximally zoomed, as in Powerpoint or Google slides. There's a little wrench icon that appears only when you move the mouse:
 
 .. image:: img/slides/toggle-slides-toolbar.png
     :width: 30%
     :align: center
     :alt: button to enter presentation mode
 
-you can click it to toggle the toolbar, in case you want to select a pen or click on code and run it live during your talk, or access any other editing tools.
+Click the wrench to toggle the toolbar, in case you want to select a pen or click on code and run it live during your talk, or access any other editing tools.
 
 Press Esc on your keyboard to exit presentation mode.
 
