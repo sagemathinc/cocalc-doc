@@ -8,7 +8,11 @@ Give presentations with code and mathematics using CoCalc Slides. Here's the int
 
 A slides presentation is any CoCalc file with the extension ".slides". CoCalc slides let you use all the same tools as from the whiteboard: text, notes, freehand drawing, Jupyter code cells, mind maps, icons, and frames. Of course, text is editable in both markdown and rich text modes, with full latex formula and code block support.
 
-Here's the CoCalc feature announcement and discussion: `ANN: CoCalc Slides -- create slides in CoCalc for presentations, with Jupyter code and latex math <https://github.com/sagemathinc/cocalc/discussions/6420>`_.
+Here are the CoCalc feature announcements:
+
+* presentation mode: `ANN: Presentation mode for slideshows <https://github.com/sagemathinc/cocalc/discussions/6475>`_.
+
+* original announcement: `ANN: CoCalc Slides -- create slides in CoCalc for presentations, with Jupyter code and latex math <https://github.com/sagemathinc/cocalc/discussions/6420>`_.
 
 .. figure:: img/slides/slides.png
     :width: 100%
@@ -89,6 +93,17 @@ Icons
 Choose from a wide selection of Icons to add to your document.
 
 Keyboard shortcut to open the table of available Icons: "I".
+
+########################
+Insert Slide
+########################
+
+You can insert a slide after the present slide in Pages View or Overview Map by clicking the |insert-icon| icon to the right:
+
+.. image:: img/slides/insert-slide.png
+    :width: 50%
+    :align: center
+    :alt: insert a slide after the present one
 
 
 .. _slides-jupyter-cells:
@@ -177,6 +192,35 @@ Pens
 Choose one of the different pen shapes to draw freehand. Supported pointing devices include most forms of mouse and trackpad as well as many Wacom tablets and iPencil and Apple Pencil.
 
 Keyboard shortcut to start using Pens: "P".
+
+##########################
+Presentation Mode
+##########################
+
+To use it, click on the present icon: |present-icon|, or select "Slideshow Presentation" from the dropdown:
+
+.. image:: img/slides/present-dropdown.png
+    :width: 30%
+    :align: center
+    :alt: button to enter presentation mode
+
+then click the "Start Slideshow" button:
+
+.. image:: img/slides/start-presentation.png
+    :width: 30%
+    :align: center
+    :alt: button to enter presentation mode
+
+This will transition to fullscreen with only the actual slide displayed (nothing outside the margins), always maximally zoomed, like in Powerpoint or Google slides. There's a little wrench icon (that appears only when you move the mouse):
+
+.. image:: img/slides/toggle-slides-toolbar.png
+    :width: 30%
+    :align: center
+    :alt: button to enter presentation mode
+
+you can click it to toggle the toolbar, in case you want to select a pen or click on code and run it live during your talk, or access any other editing tools.
+
+Press Esc on your keyboard to exit presentation mode.
 
 ##########################
 Publish
@@ -306,3 +350,10 @@ In a sticky note, text, etc., you can mark action items by placing a pair of bra
     :height: 20px
     :alt: pages icon
 
+.. |present-icon| image:: img/icons/present-icon.png
+    :height: 30px
+    :alt: present icon
+
+.. |insert-icon| image:: img/icons/insert-icon.png
+    :height: 30px
+    :alt: present icon
