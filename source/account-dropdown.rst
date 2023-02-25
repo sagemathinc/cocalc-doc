@@ -28,7 +28,7 @@ Here's a close-up view.
      ..
 
 
-If you select "Configuration", you'll be taken to the new screen for account configuration.
+If you select "Configuration", you'll be taken to the screen for account configuration.
 
 .. figure:: img/new-config-page.png
      :align: center
@@ -37,4 +37,3 @@ If you select "Configuration", you'll be taken to the new screen for account con
 
      ..
 
-You will see that there is a link to the :doc:`old configuration page <account/preferences>` at upper right, if you want to return to the previous arrangement.
