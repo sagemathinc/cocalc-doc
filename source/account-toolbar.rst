@@ -8,14 +8,9 @@ Account Toolbar
 
 .. note::
 
-   Account configuration is getting a new look. See :doc:`Account Dropdown Menu <account-dropdown>` for more information. To try out the new configuration screens, you can click "Try the new page..." at upper left in the existing Account Toolbar.
+   A newer version of this menu is available if you click the CoCalc logo at upper left and then hover your cursor over "Account" at upper right. See :doc:`Account Dropdown Menu <account-dropdown>` for more information.
 
-.. image:: img/old-config-page.png
-     :width: 80%
-     :align: center
-     :alt: select "Try the new page..."
-
-Here’s a description of the Account toolbar. It appears under the Project Toolbar when Account has been selected.
+Here’s a description of the Account toolbar. It appears after Project list has been selected after clicking "Account" at upper right.
 
 Your account on CoCalc is everything related to your current identity.
 Your identity gives you access to your :doc:`Projects <project>`, where you can either be an owner or collaborator.
