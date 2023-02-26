@@ -34,6 +34,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    latex
    sagews
    terminal
+   vscode
    backups
    x11
    chat
