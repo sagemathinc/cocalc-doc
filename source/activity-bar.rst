@@ -20,6 +20,7 @@ Here are the components of the Activity Bar:
 * :doc:`plus-new`
 * :doc:`project-log`
 * :doc:`files-search`
+* :doc:`servers`
 * :doc:`processes`
 * :doc:`project-settings`
 
