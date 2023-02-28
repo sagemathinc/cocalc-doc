@@ -4,15 +4,21 @@
 Slides
 ========================
 
-You can create any number of slides. CoCalc slides let you use all the same tools as from the whiteboard: text, notes, freehand drawing, Jupyter code cells, mind maps, icons, and frames. Of course, text is editable in both markdown and rich text modes, with full latex formula and code block support.
+Give presentations with code and mathematics using CoCalc Slides. Here's the introduction on our website: `Online Collaborative Slides with Jupyter Code Cells and LaTeX Mathematics <https://cocalc.com/features/slides>`_.
 
-Here's the original CoCalc feature announcement: `ANN: CoCalc Slides -- create slides in CoCalc for presentations, with Jupyter code and latex math <https://github.com/sagemathinc/cocalc/discussions/6420>`_.
+A slides presentation is any CoCalc file with the extension ".slides". CoCalc slides let you use all the same tools as from the whiteboard: text, notes, freehand drawing, Jupyter code cells, mind maps, icons, and frames. Of course, text is editable in both markdown and rich text modes, with full latex formula and code block support.
+
+Here are the CoCalc feature announcements:
+
+* presentation mode: `ANN: Presentation mode for slideshows <https://github.com/sagemathinc/cocalc/discussions/6475>`_.
+
+* original announcement: `ANN: CoCalc Slides -- create slides in CoCalc for presentations, with Jupyter code and latex math <https://github.com/sagemathinc/cocalc/discussions/6420>`_.
 
 .. figure:: img/slides/slides.png
     :width: 100%
     :align: center
     :alt: example of CoCalc slides
-    
+
     CoCalc Slides
 
 .. contents::
@@ -88,6 +94,17 @@ Choose from a wide selection of Icons to add to your document.
 
 Keyboard shortcut to open the table of available Icons: "I".
 
+########################
+Insert Slide
+########################
+
+You can insert a slide after the present slide in Pages View or Overview Map by clicking the |insert-icon| icon to the right:
+
+.. image:: img/slides/insert-slide.png
+    :width: 50%
+    :align: center
+    :alt: insert a slide after the present one
+
 
 .. _slides-jupyter-cells:
 
@@ -115,6 +132,24 @@ LaTeX Expressions
 
 Text inside slides items supports LaTeX mathematical typesetting.
 
+##############################
+Navigate With Arrow Keys
+##############################
+
+While in Slides view, you can use the arrow keys: "↑" to move up one slide and "↓" to move down one slide from the current slide. Use Home (Fn–Left Arrow on some Mac keyboards) to go to the first slide and End (Fn–Right Arrow on some Mac keyboards) to go to the last slide.
+
+##########################
+Overview Map
+##########################
+
+You can see an overview map of all slides in the current file by selecting "Overview" in the mode menu at upper right. There is a trashcan icon next to each slide in the map, allowing you to delete slides. At present, you can't rearrange slides in the map. Use the Pages view for that.
+
+.. figure:: img/overview-map.png
+    :width: 90%
+    :align: center
+    :alt: overview map of slides file
+
+    overview map
 
 .. _slides-pages-view:
 
@@ -122,18 +157,25 @@ Text inside slides items supports LaTeX mathematical typesetting.
 Pages View
 ##########################
 
-If you click the "Pages" icon: |pages-icon|, the Pages panel appears.
+Pages view is available in the mode menu at upper right.
+If you click the "Pages" icon: |pages-icon|, the Pages frame appears.
 
-.. figure:: img/open-pages-view.png
-    :width: 40%
+.. figure:: img/slides-pages.png
+    :width: 90%
     :align: center
-    :alt: pages icon in toolbar
+    :alt: pages and slides views side by side
+    
+    Pages (left) and Slides (right) views side by side
 
-    pages icon in toolbar opens Pages view
+There's a button "+ New" that creates a new page. You can see previews of all your pages in the pages frame, and click a preview to jump to any page.
 
-There's a button "+ New" that creates a new page. You can see previews of all your pages in the pages panel, and click a preview to jump to any page.
+Page numbers determine the order of slides in the Search panel.
 
-You can also see a page number in upper left, and click or edit to go to a page.
+By clicking the three horizontal lines at the left of a slide in the Pages view and dragging, you can change the order of slides.
+
+By clicking the trashcan icon at the right of a slide in the Pages view, you can delete a slide.
+
+When a page is selected in Slides view, the page number is displayed at upper left. You can click the number or change it and hit Enter to go to a specific page number.
 
 .. figure:: img/page-one-of-two.png
     :width: 40%
@@ -141,14 +183,6 @@ You can also see a page number in upper left, and click or edit to go to a page.
     :alt: page number displayed at upper left
 
     slides is showing page 1 of 2
-
-The Search panel is ordered by page number. Putting things in different pages imposes an ordering in the search.
-
-##########################
-Overview Map
-##########################
-
-Easily navigate with an overview map with two preview modes.
 
 
 ##########################
@@ -160,12 +194,39 @@ Choose one of the different pen shapes to draw freehand. Supported pointing devi
 Keyboard shortcut to start using Pens: "P".
 
 ##########################
+Presentation Mode
+##########################
+
+To enter presentation mode, click on the present icon: |present-icon|, or select "Slideshow Presentation" from the dropdown:
+
+.. image:: img/slides/present-dropdown.png
+    :width: 30%
+    :align: center
+    :alt: button to enter presentation mode
+
+then click the "Start Slideshow" button:
+
+.. image:: img/slides/start-presentation.png
+    :width: 30%
+    :align: center
+    :alt: button to enter presentation mode
+
+The display will transition to fullscreen with only the slide displayed (nothing outside the margins) and maximally zoomed, as in Powerpoint or Google slides. There's a little wrench icon that appears only when you move the mouse:
+
+.. image:: img/slides/toggle-slides-toolbar.png
+    :width: 30%
+    :align: center
+    :alt: button to enter presentation mode
+
+Click the wrench to toggle the toolbar, in case you want to select a pen or click on code and run it live during your talk, or access any other editing tools.
+
+Press Esc on your keyboard to exit presentation mode.
+
+##########################
 Publish
 ##########################
 
 You can :ref:`publish <publishing-files>` your slides to the CoCalc share server.
-
-
 
 .. _slides-search-view:
 
@@ -173,17 +234,9 @@ You can :ref:`publish <publishing-files>` your slides to the CoCalc share server
 Search View
 ##########################
 
-By default, the search panel is open to the right for new documents. You can also use the vertical toolbar at left and select the icon for the search panel: |search-icon|.
+To see the Search view, select "Search" from the mode menu at upper right.
 
-.. figure:: img/open-search-view.png
-    :width: 40%
-    :align: center
-    :alt: search icon in toolbar
-
-    search icon in toolbar opens Search view
-
-*Search View* gives you a panel that lists all text, sticky notes and code in order, with a search box at the top. You can search for text and click on any matching item to center the view on it. The ordering of items in Search View is lexicographic by the \(y,x\) coordinates: items closer to the top are listed first; items at the same height are listed left to right.
-
+The Search view lists all text, sticky notes and code in order, with a search box at the top. You can search for text and click on any matching item to center the view on it. The ordering of items is lexicographic by the \(y,x\) coordinates: items closer to the top are listed first; items at the same height are listed left to right.
 
 Search view can make your slides documents easier to manage as they get larger.
 
@@ -194,9 +247,7 @@ Search view can make your slides documents easier to manage as they get larger.
 
     slides, showing search view in right panel
 
-Search view works well with to-do lists. To find all not done items, put :code:`"[ ]"` (note the quotes) in the search box. To find all completed items, search for :code:`"[x]"`.
-
-If you don't see a menu choice for Search View, then refresh your browser, click the "split vertically" button (upper right), then click the dropdown that says "Slides" and change it to "Search".
+The Search frame works well with to-do lists. To find all not done items, put :code:`"[ ]"` (note the quotes) in the search box. To find all completed items, search for :code:`"[x]"`.
 
 ##############################
 Split Windows
@@ -299,3 +350,10 @@ In a sticky note, text, etc., you can mark action items by placing a pair of bra
     :height: 20px
     :alt: pages icon
 
+.. |present-icon| image:: img/icons/present-icon.png
+    :height: 30px
+    :alt: present icon
+
+.. |insert-icon| image:: img/icons/insert-icon.png
+    :height: 30px
+    :alt: present icon

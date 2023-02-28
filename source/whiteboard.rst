@@ -38,32 +38,6 @@ Collaborative Editing
 
 Many users can edit at the same time, see what the others are doing in real time, and center their view at the location of another's cursor.
 
-.. _wb-timers:
-
-##############################
-Countdown Timers
-##############################
-
-Add stopwatches (count up) and timers (count down) to keep meetings and discussions on schedule.
-
-.. figure:: img/whiteboard/timers.png
-    :width: 50%
-    :align: center
-    :alt: stopwatches and timers
-
-    stopwatches and timers in whiteboard
-
-Keyboard shortcut to create Stopwatches and Timers: "S".
-
-When a timer counts down to zero, a pop-up announcement will be displayed if the whiteboard file is open at the time.
-
-.. figure:: img/whiteboard/wb-timer-expired.png
-    :width: 50%
-    :align: center
-    :alt: timer expired pop-up
-
-    notification displayed when whiteboard timer expires
-
 
 ##############################
 Cut or Copy and Paste
@@ -113,6 +87,16 @@ Choose from a wide selection of Icons to add to your whiteboard.
 
 Keyboard shortcut to open the table of available Icons: "I".
 
+########################
+Insert Page
+########################
+
+You can insert a page after the present page in Pages View by clicking the |insert-icon| icon to the right:
+
+.. image:: img/whiteboard/insert-page.png
+    :width: 50%
+    :align: center
+    :alt: insert a page after the present one
 
 .. _jupyter-cells:
 
@@ -140,6 +124,11 @@ LaTeX Expressions
 
 Text inside whiteboard items supports LaTeX mathematical typesetting.
 
+##############################
+Navigate With Arrow Keys
+##############################
+
+While in Pages view, you can use the arrow keys: "↑" to move up one page and "↓" to move down one page from the current page. Use Home (Fn–Left Arrow on some Mac keyboards) to go to the first page and End (Fn–Right Arrow on some Mac keyboards) to go to the last page. This is most useful if you start in Whiteboard view, split the screen vertically, and set one of the two panes to Pages view.
 
 .. _pages-view:
 
@@ -238,11 +227,32 @@ A sticky note is a rectangle, with a colored background, for enclosing text. Whe
 
 Keyboard shortcut to create a Sticky Note: "N".
 
+.. _wb-timers:
+
 ##############################
-Stopwatches
+Stopwatches and Timers
 ##############################
 
-Add stopwatches to the whiteboard to time activities and track work.
+Add stopwatches (count up) and timers (count down) to keep meetings and discussions on schedule.
+
+.. figure:: img/whiteboard/timers.png
+    :width: 50%
+    :align: center
+    :alt: stopwatches and timers
+
+    stopwatches and timers in whiteboard
+
+Keyboard shortcut to create Stopwatches and Timers: "S".
+
+When a timer counts down to zero, a pop-up announcement will be displayed if the whiteboard file is open at the time.
+
+.. figure:: img/whiteboard/wb-timer-expired.png
+    :width: 50%
+    :align: center
+    :alt: timer expired pop-up
+
+    notification displayed when whiteboard timer expires
+
 
 ##############################
 Table of Contents
@@ -303,3 +313,6 @@ In a sticky note, text, etc., you can mark action items by placing a pair of bra
     :height: 20px
     :alt: pages icon
 
+.. |insert-icon| image:: img/icons/insert-icon.png
+    :height: 30px
+    :alt: present icon

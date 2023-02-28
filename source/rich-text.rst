@@ -131,7 +131,7 @@ In CoCalc, anywhere you use the WYSIWYG Slate-based rich text Markdown editor, y
     
 When you first type ":" you'll see the dropdown in a fraction of the second, showing the most popular emojis. Type further, and you'll instead do a full text search through a large number of matching emojis. These emojis are standard (provided by markdown-it) and will also work in Github, etc.
 
-Here's the original CoCalc feature announcement: `ANN: new feature -- searchable emoji list <https://github.com/sagemathinc/cocalc/discussions/6430>`_.
+Here's the CoCalc feature announcement and discussion: `ANN: new feature -- searchable emoji list <https://github.com/sagemathinc/cocalc/discussions/6430>`_.
 
 ########################
 Limitations

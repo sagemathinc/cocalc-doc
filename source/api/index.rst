@@ -34,7 +34,6 @@ API v1
    metrics
    ping
    project_exec
-   public_get_directory_listing
    public_get_text_file
    query
    read_text_file_from_project

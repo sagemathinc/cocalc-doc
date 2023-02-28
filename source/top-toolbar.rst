@@ -1,12 +1,12 @@
-.. index:: Project Toolbar
-.. index:: Toolbars; project
-.. _project-toolbar:
+.. index:: Top Toolbar
+.. index:: Toolbars; top
+.. _top-toolbar:
 
 ========================
-Project Toolbar
+Top Toolbar
 ========================
 
-Here's a tour of the topmost toolbar in CoCalc, the **Project Toolbar**.
+Here's a tour of the topmost toolbar in CoCalc.
 
 .. contents::
    :local:
@@ -15,21 +15,21 @@ Here's a tour of the topmost toolbar in CoCalc, the **Project Toolbar**.
 .. figure:: img/project-toolbar.png
     :width: 90% 
     :align: center
-    :alt: the top toolbar is the project toolbar
+    :alt: the top toolbar
 
-    the top toolbar is the project toolbar
+    the top toolbar
 
 Going from left to right:
 
-.. index:: Project Toolbar; projects button
-.. index:: Project Toolbar; project list
+.. index:: Top Toolbar; projects button
+.. index:: Top Toolbar; project list
 
 Project List
 ==========================
 
 |cocalc-logo| Click the Projects (cocalc logo) button to create a new project and see a list of your existing projects. Any text you type into the **Search for Projects** field will be used to select which projects are displayed. Any project with matching text in Title or Description will appear in the filtered list. If you have any hidden or deleted projects, a checkbox will appear to allow you to show those. Learn more here about the :doc:`project-list`.
 
-.. index:: Project Toolbar; open projects
+.. index:: Top Toolbar; open projects
 
 Open Projects
 =============
@@ -38,7 +38,7 @@ To the right of the Projects button, tab buttons will appear for each project yo
 
 .. image:: img/project-toolbar-projects.png
      :width: 90% 
-     :alt: tabs for open projects occupy the middle of the project toolbar
+     :alt: tabs for open projects occupy the middle of the top toolbar
 
 * To the left of the project title in each button, you will see a run icon |run-icon| if the project is running, and a stop icon |stop-icon| if the project is stopped.
 * To the right of the project title in each button, a red disconnect icon |disconnect-icon| will appear if the project is not connected. It is normal for the disconnect icon to appear if the project is not running.
@@ -58,14 +58,14 @@ Help
 
 |medkit| **Use the Help button if you have any questions about CoCalc.** If you have a question while you have a file open in CoCalc, clicking **Help** will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don't expect, it helps to include steps for us to reproduce the problem.
 
-.. index:: Project Toolbar; account tab
+.. index:: Top Toolbar; account tab
 
 Account
 =======
 
 |avatar-sample| The Account button has the avatar for your account in a small circle just left of the word "Account". Click here to update your profile, sign out, order subscriptions, view your upgrades, `add SSH Keys <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, and check on support tickets. Read more about account actions :doc:`here <account-toolbar>`.
 
-.. index:: Project Toolbar; notification (bell) icon
+.. index:: Top Toolbar; notification (bell) icon
 
 Notification Bell
 ==================
@@ -104,7 +104,7 @@ Colors for the connection status icon:
     :width: 70%
     :alt: Connection status pop-up showing ping time, hub server id, and message counts.
 
-.. index:: Project Toolbar; fullscreen mode
+.. index:: Top Toolbar; fullscreen mode
 
 Fullscreen Mode
 =================

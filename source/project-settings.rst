@@ -470,7 +470,7 @@ If there are no matches for an email address, then you can send an invitation fo
 
      *form to customize (optional) and send an email invitation*
 
-Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :ref:`share <ft-share>` for how to share a file.
+Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :doc:`share` for how to share a file.
 
 Caution: if you are using CoCalc for course management with a .course file, add students under the **Students** tab of the .course file, and *NOT* as collaborators. That way, they get their own projects, separate from the instructor project. On the other hand, it is common practice to :ref:`add teaching assistants <teaching-add-ta>` as collaborators in the instructor project.
 

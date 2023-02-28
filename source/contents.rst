@@ -34,6 +34,8 @@ This explains in depth how you can work productively on `CoCalc`_.
    latex
    sagews
    terminal
+   servers
+   vscode
    backups
    x11
    chat
@@ -42,6 +44,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    frame-editor
    markdown
    rich-text
+   csv-viewer
    time-travel
    snippets
    share
@@ -51,10 +54,16 @@ This explains in depth how you can work productively on `CoCalc`_.
    :caption: Platform
 
    display-options
+   top-toolbar
    account-dropdown
-   project-toolbar
+   activity-bar
+   project-home
    explorer
-   files-toolbar
+   plus-new
+   project-log
+   files-search
+   processes
+   project-settings
    account-toolbar
    billing
    software

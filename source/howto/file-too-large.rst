@@ -9,7 +9,7 @@ File Too Large
    :local:
    :depth: 1
 
-Here are suggestions for what to do if you get a file-too-large error when :ref:`opening a file <ft-open-files>` in CoCalc.
+Here are suggestions for what to do if you get a file-too-large error when opening a file in CoCalc.
 
 .. index:: File too large; Jupyter notebook
 .. _howto-ipynb-too-large:
@@ -46,6 +46,7 @@ Attempting to open a CSV file over 5 MB in size results in the following error:
 .. figure:: img/big-file.png
      :width: 60%
      :align: center
+     :alt: file too large error
 
      CSV *file too large* error
 

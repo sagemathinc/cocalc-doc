@@ -41,6 +41,8 @@ Example: you have a course configured with a "Student" quota license and you wan
 #. Under License strategy, select "Maximize upgrades to each project".
 #. The increase in capacity will happen in each student project the next time that project is (re)started. 
 
+See also: `All About CoCalc: CoCalc Boost Licenses <https://about.cocalc.com/2022/11/18/cocalc-boost-licenses/>`_.
+
 #################
 Stacked Licenses
 #################
