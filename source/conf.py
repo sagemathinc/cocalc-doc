@@ -119,7 +119,7 @@ if html_theme == 'alabaster':
     html_theme_options = {
         'description': 'CoCalc User Manual',
         'fixed_sidebar': 'false',
-        #'logo': ,
+        'logo_url': 'img/cocalc-doc-logo.svg',
         'github_banner': 'false',  # we extend the theme's layout.html
         'github_user': 'sagemathinc',
         'github_repo': 'cocalc-doc',
