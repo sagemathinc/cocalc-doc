@@ -55,6 +55,7 @@ Programming Languages and Tools
 * :doc:`google-api`
 * :doc:`gsl`
 * :doc:`neuron`
+* :doc:`octave`
 * :doc:`pluto`
 * :doc:`remarkjs-slideshow`
 * :doc:`ruby`
