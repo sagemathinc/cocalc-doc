@@ -1,47 +1,27 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Jupyter Kernel &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/custom-jupyter-kernel.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/custom-jupyter-kernel.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -53,41 +33,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
-  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,124 +62,110 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Custom Jupyter Kernel</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/custom-jupyter-kernel.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Custom Jupyter Kernel</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="custom-jupyter-kernel">
-<span id="jupyter-custom-kernel"></span><span id="index-0"></span><h1>Custom Jupyter Kernel<a class="headerlink" href="#custom-jupyter-kernel" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="custom-jupyter-kernel">
+<span id="jupyter-custom-kernel"></span><span id="index-0"></span><h1>Custom Jupyter Kernel<a class="headerlink" href="#custom-jupyter-kernel" title="Permalink to this heading"></a></h1>
 <p>This short howto explains how you can create and access your own custom Jupyter Kernel inside a CoCalc.
 In case you require a specific software package, there are related guides: <a class="reference internal" href="install-python-lib.html"><span class="doc">Install Python Packages</span></a> and  <a class="reference internal" href="install-r-package.html"><span class="doc">Install R Packages</span></a>.</p>
-<div class="section" id="adding-a-kernel-to-cocalc-jupyter">
-<h2>Adding a Kernel to CoCalc Jupyter<a class="headerlink" href="#adding-a-kernel-to-cocalc-jupyter" title="Permalink to this headline">¶</a></h2>
+<section id="adding-a-kernel-to-cocalc-jupyter">
+<h2>Adding a Kernel to CoCalc Jupyter<a class="headerlink" href="#adding-a-kernel-to-cocalc-jupyter" title="Permalink to this heading"></a></h2>
 <p>Suppose you have a kernel from another source and you would like to add it to the list of Jupyter kernels that can be selected from CoCalc Jupyter. You will need to know the command line arguments needed to start the kernel. Then follow the steps here.</p>
 <p>For your convenience, there is a link to these instructions at the bottom of both the <a class="reference internal" href="jupyter-kernel-selection.html#jupyter-kernel-menu"><span class="std std-ref">kernel selection menu</span></a> and the <a class="reference internal" href="jupyter-kernel-selection.html#jupyter-change-kernel-lg"><span class="std std-ref">kernel selection dialog</span></a>.</p>
 <p>To accomplish this, we’re working in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>.
 If you do not already have one, you can create a terminal in Files, as a “Terminal” file with the extension <code class="docutils literal notranslate"><span class="pre">*.term</span></code>.</p>
 <ol class="arabic">
-<li><p class="first">Get a list of the currently installed kernels as follows:</p>
+<li><p>Get a list of the currently installed kernels as follows:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>/usr/local/share$ jupyter kernelspec list
 Available kernels:
   bash              /ext/jupyter/kernels/bash
@@ -226,15 +179,14 @@ Available kernels:
 </pre></div>
 </div>
 </li>
-<li><p class="first">Copy one of the above over that is closest to the kernel you want to create into your project’s <code class="docutils literal notranslate"><span class="pre">~/.local/share/jupyter/kernels/&lt;kernel_name&gt;</span></code> directory, e.g.,</p>
-</li>
+<li><p>Copy one of the above over that is closest to the kernel you want to create into your project’s <code class="docutils literal notranslate"><span class="pre">~/.local/share/jupyter/kernels/&lt;kernel_name&gt;</span></code> directory, e.g.,</p></li>
 </ol>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mkdir -p $HOME/.local/share/jupyter/kernels
 cp -arv /ext/jupyter/kernels/sagemath $HOME/.local/share/jupyter/kernels/sage_custom
 </pre></div>
 </div>
 <ol class="arabic" start="3">
-<li><p class="first">Edit the <code class="docutils literal notranslate"><span class="pre">kernel.json</span></code> file copy of the kernel you made:</p>
+<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">kernel.json</span></code> file copy of the kernel you made:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd $HOME/.local/share/jupyter/kernels/sage_custom
 open kernel.json
 </pre></div>
@@ -251,9 +203,8 @@ open kernel.json
 <p>where <code class="docutils literal notranslate"><span class="pre">/home/user/sage/sage</span></code> points to your own Sage installation.
 Note, <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> should expand to <code class="docutils literal notranslate"><span class="pre">/home/user</span></code>, which you can check by running <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$HOME</span></code>.</p>
 <ol class="arabic" start="4">
-<li><p class="first">Now, run <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">kernelspec</span> <span class="pre">list</span></code> again to check that your kernel shows up in the list of all kernels.</p>
-</li>
-<li><p class="first">Test your kernel in the terminal first to more easily see what is wrong (if anything):</p>
+<li><p>Now, run <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">kernelspec</span> <span class="pre">list</span></code> again to check that your kernel shows up in the list of all kernels.</p></li>
+<li><p>Test your kernel in the terminal first to more easily see what is wrong (if anything):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>jupyter console --kernel=sage_custom
 </pre></div>
 </div>
@@ -261,19 +212,19 @@ Note, <code class="docutils literal notranslate"><span class="pre">$HOME</span><
 </ol>
 <p>An interactive IPython console should start up and you should be able to run Sage commands.</p>
 <ol class="arabic simple" start="6">
-<li>Once you have your kernel working in a terminal, test your kernel from a <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebook</span></a>. To load an updated list of kernels, scroll down in the “Kernel” menu and select “Refresh kernel list”. Your kernel should show up with the given <code class="docutils literal notranslate"><span class="pre">display_name</span></code>!</li>
+<li><p>Once you have your kernel working in a terminal, test your kernel from a <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebook</span></a>. To load an updated list of kernels, scroll down in the “Kernel” menu and select “Refresh kernel list”. Your kernel should show up with the given <code class="docutils literal notranslate"><span class="pre">display_name</span></code>!</p></li>
 </ol>
-</div>
-<div class="section" id="creating-a-new-kernel-for-a-custom-python-version">
-<h2>Creating a new kernel for a Custom Python Version<a class="headerlink" href="#creating-a-new-kernel-for-a-custom-python-version" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="creating-a-new-kernel-for-a-custom-python-version">
+<h2>Creating a new kernel for a Custom Python Version<a class="headerlink" href="#creating-a-new-kernel-for-a-custom-python-version" title="Permalink to this heading"></a></h2>
 <p>These instructions are for the special case in which you want to create a Jupyter kernel for a version of Python that is not already in CoCalc.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The following approach may not succeed with a pre-release version of Python.</p>
+<p class="admonition-title">Note</p>
+<p>The following approach may not succeed with a pre-release version of Python.</p>
 </div>
 <p>The example below uses Python version 3.10.0. This version may already be available in CoCalc when you are reading these instructions. Substitute the actual version of Python you want added to the list of available CoCalc Jupyter kernels.</p>
 <ol class="arabic">
-<li><p class="first">Get pyenv running <a class="reference external" href="https://github.com/pyenv/pyenv/blob/master/README.md#basic-github-checkout">More details</a>:</p>
+<li><p>Get pyenv running <a class="reference external" href="https://github.com/pyenv/pyenv/blob/master/README.md#basic-github-checkout">More details</a>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl https://pyenv.run | bash
 </pre></div>
 </div>
@@ -288,14 +239,14 @@ eval &quot;$(pyenv init -)&quot;
 </div>
 <p>Restart the terminal via Ctrl-d. “pyenv versions” should then show you what you can install.</p>
 <ol class="arabic" start="2">
-<li><p class="first">Install the desired version of Python:</p>
+<li><p>Install the desired version of Python:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pyenv install 3.10.0
 pyenv virtualenv 3.10.0 py3.10
 pyenv virtualenvs # should include py3.10
 </pre></div>
 </div>
 </li>
-<li><p class="first">Start the new virtual environment:</p>
+<li><p>Start the new virtual environment:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pyenv activate py3.10
 python -V # displays 3.10.0
 </pre></div>
@@ -303,11 +254,11 @@ python -V # displays 3.10.0
 </li>
 </ol>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You won’t have access to CoCalc’s more than 1,000 pre-installed Python packages from the virtual environment. You’ll need to <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> such packages as pandas and matplotlib. The <code class="docutils literal notranslate"><span class="pre">--user</span></code> flag is not needed with <code class="docutils literal notranslate"><span class="pre">pip</span></code> in the virtual environment.</p>
+<p class="admonition-title">Note</p>
+<p>You won’t have access to CoCalc’s more than 1,000 pre-installed Python packages from the virtual environment. You’ll need to <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> such packages as pandas and matplotlib. The <code class="docutils literal notranslate"><span class="pre">--user</span></code> flag is not needed with <code class="docutils literal notranslate"><span class="pre">pip</span></code> in the virtual environment.</p>
 </div>
 <ol class="arabic" start="4">
-<li><p class="first">Install ipykernel for Jupyter:</p>
+<li><p>Install ipykernel for Jupyter:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install ipykernel
 python -m ipykernel install --user --name=py3.10 --display-name &quot;Python 3.10&quot;
 </pre></div>
@@ -315,31 +266,30 @@ python -m ipykernel install --user --name=py3.10 --display-name &quot;Python 3.1
 </li>
 </ol>
 <p>After the above steps, when you open a Jupyter notebook, you may have to do “Refresh kernel list” at the bottom of the Kernel menu, or refresh the CoCalc tab. You will then see “Python 3.10” listed among the available kernels.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/custom-jupyter-kernel.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -348,37 +298,26 @@ python -m ipykernel install --user --name=py3.10 --display-name &quot;Python 3.1
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

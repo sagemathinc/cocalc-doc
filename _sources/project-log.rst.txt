@@ -18,6 +18,7 @@ The **Project activity log** gives you quick access to a timeline of past projec
 .. figure:: img/project-log.png
      :width: 95%
      :align: center
+     :alt: project log
 
      ..
 
@@ -49,7 +50,7 @@ Here is a list of project activities that cause log entries to be created:
     * :ref:`inviting <add-collaborators>` a person without a CoCalc account to become a collaborator
     * loading a code :doc:`snippet <snippets>`.
     * loading documentation and sample code from the :doc:`project library <project-library>`
-    * :ref:`opening a file <ft-open-files>`
+    * opening a file
     * :ref:`acting on file(s) <file-actions>` selected in the Files list: Download, Delete, Rename, Duplicate, Move, Copy, Share
     * :ref:`removing <remove-collaborators>` a collaborator
     * requesting :ref:`project restart <project-control>`
@@ -68,6 +69,7 @@ By typing any string into the "Search log..." box, you can limit the log entries
 .. figure:: img/project-log-filter.png
      :width: 95%
      :align: center
+     :alt: filtering log entries
 
      filtering log entries for the string "data"
 
@@ -81,3 +83,4 @@ The initial project log shows at most 300 entries from the last 2 months. When y
 .. |history|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/history.png
      :width: 16px
+     :alt: history icon

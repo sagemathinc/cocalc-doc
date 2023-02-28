@@ -49,18 +49,10 @@ How can I download my files?
   Afterwards, download the archive as explained above.
 
 
-.. _backup:
-
 Are my files backed up?
 =============================
 
-All files in every project are snapshotted every couple of minutes.
-You can browse your snapshots by clicking the **"Backups"** link to the right of the file listing.
-Also, CoCalc records the :doc:`history of all edits <time-travel>` you or your collaborators make to most files,
-and you can browse that history with a slider by clicking on the "Time Travel" button (next to save) in files.
-We care about your data, and also make offsite backups periodically to encrypted USB
-drives that are not physically connected to the internet.
-
+**Yes!** See :doc:`backups` for details.
 
 Can I close my web-browser at any time?
 ===========================================

@@ -8,35 +8,76 @@ All about the **Project Settings** tab.
 
 .. contents::
    :local:
-   :depth: 1
+   :depth: 2
 
 .. index:: Projects; title and description
 .. _set-project-title:
 
-###########################
-Title, Description, Name
-###########################
+##################################
+Title, Description, Name, Image
+##################################
 
-The text for **Title Description, and Name** for a project can be changed at any time.
+The **Title, Description, Name, and Image** for a project can be changed at any time.
 
-.. image:: img/project-settings/title-and-desc-a.png
+.. image:: img/project-settings/proj-name-etc.png
      :width: 50%
      :align: center
+     :alt: form for setting project title, description, and name
 
-Title and Description fields are both used when searching for matching text under ``Projects``.
+**********************
+Title and Description
+**********************
 
-In addition to entering a title and description, you may specify a project name. Setting a project name provides much nicer URL's for shared public documents. See :ref:`vanity-urls` to learn more.
+Title and Description fields are both used when searching for matching text under ``Projects``. You can include hashtags in either field, to simplify your searches.
+
+**********************
+Project Name
+**********************
+
+You may specify a project name. Setting a project name provides much nicer URL's for shared public documents. See :ref:`vanity-urls` to learn more.
+
+**********************
+Project Image
+**********************
+
+You may upload an image for any project. It appears in many places. Both a hi-res and tiny version are stored. The tiny version is used in most places where the project title appears across CoCalc, e.g., tabs at the top, share server listing.
+
+The bigger version appears in your project list, in shared projects when you click on a project in the share server listing, and project settings. You can click the image in the project list to open the project. The bigger version is also visible if you hover over the tab for the project after opening the project.
+
+.. figure:: img/project-settings/project-image-list.png
+     :width: 80%
+     :align: center
+     :alt: clickable project image in project list
+
+     project image appears at right in project list; click to open the project
+
+.. figure:: img/project-settings/image-in-shared-list.png
+     :width: 80%
+     :align: center
+     :alt: small project image in project list
+
+     tiny project image appears at left in shared projects list
+
+.. figure:: img/project-settings/image-in-shared-project.png
+     :width: 80%
+     :align: center
+     :alt: clickable project image in project list
+
+     large project image appears when you open a shared project
+
+.. figure:: img/project-settings/image-hover-project-tab.png
+     :width: 50%
+     :align: center
+     :alt: large project image when hovering over project tab
+
+     large project image appears when pointer hovers over project tab
 
 .. index:: Projects; upgrades
 .. _project-upgrades:
 
-########################
-Project usage and quotas
-########################
-
-*****************
+#################
 Why Add Upgrades?
-*****************
+#################
 
 There are many reasons that you might want to have an upgraded project.
 
@@ -56,131 +97,56 @@ You can share upgrades with any project that you are a collaborator on. You must
     For details on paid subscriptions, see `Subscription and Pricing Information <https://cocalc.com/policies/pricing.html>`_.
     Subscriptions start at \$3 per month.
 
-**********************
-View Current Resources
-**********************
+.. _view-resources:
 
-You can view upgrades for the current project and current resource use under `Project usage and quotas`.
-Here's an example for a project with no upgrades added (note the warning banner that
-appears if the project does not have Member Hosting or Internet Access):
+#########################################
+|dashboard-icon| Project usage and quotas
+#########################################
 
-.. image:: img/project-settings/before-upgrade.png
-     :width: 60%
+You can view upgrades applied to the current project under "Project usage and quotas". The project must be running for values to be displayed.
+Here's an example:
+
+.. image:: img/project-settings/usage-and-quotas.png
+     :width: 80%
      :align: center
+     :alt: display usage and quotas for a running project
+
+If you click on the value at the right for any setting, you will see a brief explanation of that setting. In the example, the text for Idle timeout is displayed:
+
+.. image:: img/project-settings/usage-and-quotas-hint.png
+     :width: 80%
+     :align: center
+     :alt: explanatory text for Idle timeout
+
 
 .. _apply_project-upgrades:
 
-*************
-Adjust Quotas
-*************
-
-The "Adjust Quotas" dialog is where you add upgrades purchased under a Subscription or Course Package. If you have a license, see the section :ref:`Licenses <project-add-license>` below.
+#######################################
+Your upgrade contributions
+#######################################
 
 .. note::
 
-    If you want to upgrade student projects for a CoCalc managed course, that is done in the ``.course`` file.* (See the :ref:`course-upgrading-students` section in the teaching guide.)
+    Dialogues to view and modify upgrade contributions are only displayed if you own an older updgrade package. They do not display if your purchases consist exclusively of the newer license product.
 
+If you have any of the older non-license products, an option to view and modify resources from these will appear:
 
-You can enter any values that do not exceed available upgrades. This example continues
-by adding as much in the way of resources as possible to the current project.
-You can remove upgrades at any time and apply them to other projects.
-
-When you click `Adjust Quotas...`, a dialog like the following appears. The screenshot shows numbers
-for a project that has not been upgraded.
-Available upgrades show what the numbers would be if you just purchased a Standard Plan and
-have not applied any upgrades yet:
-
-.. figure:: img/project-settings/add-upgrades-standard.png
+.. image:: img/project-settings/open-upgrade-contributions.png
      :width: 60%
      :align: center
+     :alt: click "Adjust" to view and change upgrade contributions from older products
 
-     *Adjust Quotas* dialog
+Click "Adjust" to open the dialogue. You can add and remove upgrades. Values entered must not exceed your available upgrades.
 
-Here are the two most important upgrades.
-You will probably want to apply these to any project you are working on actively:
-
-.. index:: pair: Member Hosting;Project Settings
-.. _member-hosting:
-
-Member Hosting
-==============
-
-Member hosting is added by checking the "Enable" box next to the upgrade.
-
-There are two types of projects: "free projects" and "member projects".
-Free projects run on heavily loaded `Google preemptible VM instances <https://cloud.google.com/compute/docs/instances/preemptible>`_.
-These are randomly restarted by Google at least once every 24 hours.
-Often, these computers will house over 150 simultaneously running projects.
-
-Member-hosted projects run on machines which are much less loaded and are reserved for paying customers only.
-On member-hosted projects, commands execute more quickly, and CPU, memory and I/O heavy operations run more quickly.
-
-.. index:: pair: Internet Access;Project Settings
-.. index:: Upgrades; Internet Access
-.. _internet-access:
-
-Internet Access
-===============
-
-Internet access is added by checking the "Enable" box next to the upgrade. This upgrade allows you to:
-
-* Originate connections to external sites, for example to install packages from internet sites for Python and R, or to clone code from GitHub.
-
-* Send email from a project, for example, to invite people without a CoCalc account to collaborate on a project via email, or to allow :ref:`@mentions <at-mention-chat>` in a project to send out emails.
-
-****************
-Max All Upgrades
-****************
-
-Clicking `Max All Upgrades` will add as much as possible from available upgrades:
-
-.. image:: img/project-settings/apply-max.png
+.. image:: img/project-settings/upgrade-contributions-full.png
      :width: 60%
      :align: center
+     :alt: after clicking "Adjust" you can view and modify resources from all your non-license update packages.
 
-************
-Save Changes
-************
-Then clicking `Save Changes` will apply the changes and restart the project if settings have changed:
+Clicking `Save Changes` will apply the upgrade changes and restart the project if settings have changed:
 
-.. image:: img/project-settings/max-added.png
-     :width: 60%
-     :align: center
+.. include:: add-lic-project.rst
 
-.. _project-add-license:
-.. index:: Projects; add license
-.. index:: Licenses; add to project
-
-########
-Licenses
-########
-
-.. note::
-
-    If you just bought a license and want to apply your license to a project that is showing the red trial banner, then this section is for you.
-
-    In case you don't have a license but instead quota upgrades via a subscription (older mechanism), then
-    :ref:`adjust the project quotas <apply_project-upgrades>` directly.
-
-To apply a license to a project
-
-1. Open the project and click "Settings" (wrench icon).
-2. Scroll down to the "Licenses" section.
-3. Click the button marked "Upgrade using a license key...".
-4. Enter your license key in the box that opens and click Save.
-5. Then start or restart the project in order to activate the license.
-
-.. figure:: img/project-settings/proj-lic-before-add.png
-     :width: 60%
-     :align: center
-
-     Before adding a license key.
-
-.. figure:: img/project-settings/proj-lic-after-add.png
-     :width: 60%
-     :align: center
-
-     After adding license key. You can add several keys.
 
 .. _project-url:
 .. index:: Projects; project URL
@@ -201,15 +167,12 @@ This URL can useful when contacting support and in some configuration tasks.
 Hide or delete project
 ######################
 
-Next in the Project Settings window is the section for hidden and deleted projects,
-which do not appear in the normal project list
-(the list you get when you click `Projects` at upper left).
-
-If the current project is neither hidden nor deleted, you will see this:
+Next in the Project Settings window is the section for hidden and deleted projects:
 
 .. image:: img/project-settings/hide-or-delete.png
      :width: 60%
      :align: center
+     :alt: buttons for Hide Project and Delete Project
 
 ***************************
 Hidden vs. Deleted projects
@@ -228,6 +191,7 @@ If you click `Hide Project`, the button changes:
 .. image:: img/project-settings/hidden.png
      :width: 60%
      :align: center
+     :alt: Unhide Project button
 
 And now if you click the `Projects` button at upper left, you will have a checkbox
 that lets you view hidden projects. The checkbox only appears if there are hidden projects.
@@ -235,6 +199,7 @@ that lets you view hidden projects. The checkbox only appears if there are hidde
 .. image:: img/project-settings/show-hidden.png
      :width: 60%
      :align: center
+     :alt: showing hidden projects in the project list
 
 Clicking `Unhide Project` instantly makes the project visible in the normal project list again.
 
@@ -252,12 +217,14 @@ If you click `Delete Project`, the button changes:
 .. image:: img/project-settings/delproj1.png
      :width: 60%
      :align: center
+     :alt: button to confirm deleting a project
 
 Click `Yes, please delete this project` to confirm, and the screen changes again:
 
 .. image:: img/project-settings/delproj2.png
      :width: 60%
      :align: center
+     :alt: confirmation box saying project is deleted
 
 Note the warning banner that appears at the top.
 
@@ -269,6 +236,7 @@ that lets you view deleted projects. The checkbox only appears if there are hidd
 .. image:: img/project-settings/show-deleted.png
      :width: 60%
      :align: center
+     :alt: showing deleted projects in the project list
 
 Clicking `Undelete Project` instantly makes the project visible in the normal project list again
 for you and all collaborators on the project.
@@ -283,6 +251,7 @@ A project can be both hidden and deleted. In that case, you will need to check b
 .. image:: img/project-settings/deleted-and-hidden-a.png
      :width: 60%
      :align: center
+     :alt: showing projects that are both hidden and deleted in the project list
 
 
 .. index:: SSH Keys
@@ -324,27 +293,31 @@ Configuring SSH Keys for a Single Project
 
 This section assumes you have created an SSH key pair as described above.
 
-#. Open the project Settings tab (wrench icon) for the project you want to access.
-#. Look for the section "SSH Keys" at lower left.
+1. Open the project Settings tab (wrench icon) for the project you want to access.
+2. Look for the section "SSH Keys" at lower left.
 
    .. image:: img/project-settings/usernameathost.png
         :width: 50%
         :align: center
+        :alt: SSH Keys in project settings with ssh username outlined
 
-#. Click "Add an SSH Key".
-#. Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example "Sample Key for TESTPROJ".
-#. Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file::
+3. Click "Add an SSH Key".
+4. Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example "Sample Key for TESTPROJ".
+5. Copy the public key into the Key field. To do this, open the file for your public key on your local computer. For example, if you are using macOS or Ubuntu, you could open a terminal and type something like the following, depending on the name of your public key file::
 
       cat ~/.ssh/id_ed25519.pub
 
    Use your mouse to select the contents of the key file, then copy and paste it into the Key area.
-#. Click "Add SSH Key". Your key is now saved for that project.
+6. Click "Add SSH Key". Your key is now saved for that project.
 
    .. image:: img/project-settings/addingprojkey.png
         :width: 50%
         :align: center
+        :alt: dialog to add SSH key
 
-#. The user for the SSH connection is the project id *without the hyphens*. (Why? Because the project id is not a valid Linux username.) The hostname is ``ssh.cocalc.com``. Look for "Use the following username@host:" in the "SSH Keys" section of project status for a string you can copy and paste. For example, if the Project id is::
+.. _ssh-user:
+
+7. The user for the SSH connection is the project id *without the hyphens*. (Why? Because the project id is not a valid Linux username.) The hostname is ``ssh.cocalc.com``. Look for "Use the following username@host:" in the "SSH Keys" section of project status for a string you can copy and paste. For example, if the Project id is::
 
       2507078b-6e5b-43da-809a-0073f1196181
 
@@ -352,11 +325,16 @@ This section assumes you have created an SSH key pair as described above.
 
       2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
 
-#. To login from your local computer, use a command equivalent to the following::
+.. image:: img/project-settings/ssh-user-host.png
+    :width: 50%
+    :align: center
+    :alt: view ssh user@host in project settings
+
+8. To login from your local computer, use a command equivalent to the following::
 
       ssh 2507078b6e5b43da809a0073f1196181@ssh.cocalc.com
 
-#. On macOS or Linux, you can specify a host alias in ``~/.ssh/config`` to avoid having to explicitly pass the project id as above. For example, the following lines in ``~/.ssh/config``::
+9. On macOS or Linux, you can specify a host alias in ``~/.ssh/config`` to avoid having to explicitly pass the project id as above. For example, the following lines in ``~/.ssh/config``::
 
       Host CCPROJ
           Hostname ssh.cocalc.com
@@ -389,6 +367,7 @@ The text above will appear as a reminder when you click inside the textarea for 
 .. figure:: img/project-settings/env-vars.png
      :width: 70%
      :align: center
+     :alt: explanatory text under box for Custom environment variables
 
      Help text appears when you click in the textarea.
 
@@ -410,6 +389,7 @@ If a feature or formatter is disabled, that means the compute image does not sup
 .. image:: img/project-settings/feat-config.png
     :width: 50%
     :align: center
+    :alt: list of features and language formatters enabled in the current compute image
 
 *****************************************
 Available features
@@ -451,13 +431,14 @@ Linux user id, there are two ways to see *which CoCalc account* was used for cer
 Current collaborators
 ######################
 
-The "Current collaborators" section of the *Project Settings* page shows the names of the owner and all collaborators. Here you can remove collaborators, including yourself. It does not allow you to remove the owner.
-
-Current collaborators are also shown in the *Projects* list. You can use the latter to remove yourself as collaborator from several projects at once.
+The "Current collaborators" section of the *Project Settings* page shows the names of the owner and all collaborators. Here you can remove collaborators, including yourself. It does not allow you to remove the owner:
 
 .. image:: img/project-settings/current-collabs.png
      :width: 70%
      :align: center
+     :alt: list of current collaborators in project settings
+
+Current collaborators are also shown in the *Projects* list. You can use the latter to remove yourself as collaborator from several projects at once.
 
 .. index:: Collaborators; adding
 .. _add-collaborators:
@@ -478,16 +459,18 @@ It is generally better to use an email address. The reason is that some CoCalc u
 .. image:: img/project-settings/add-collabs.png
      :width: 70%
      :align: center
+     :alt: form to search for collaborators, nothing entered yet
 
 If there are no matches for an email address, then you can send an invitation for the user to start using CoCalc. You can modify the standard email. The default invitation has useful links to make it easier for the other person to start using CoCalc.
 
 .. figure:: img/project-settings/email-invitation.png
      :width: 70%
      :align: center
+     :alt: customizing the invitation. Send button circled.
 
-     *customizing email invitation to new user*
+     *form to customize (optional) and send an email invitation*
 
-Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :ref:`share <ft-share>` for how to share a file.
+Sometimes, you'd rather give someone read-only access. In CoCalc, this is called "sharing" with non-collaborators. See :doc:`share` for how to share a file.
 
 Caution: if you are using CoCalc for course management with a .course file, add students under the **Students** tab of the .course file, and *NOT* as collaborators. That way, they get their own projects, separate from the instructor project. On the other hand, it is common practice to :ref:`add teaching assistants <teaching-add-ta>` as collaborators in the instructor project.
 
@@ -503,6 +486,7 @@ Here is a screen capture of the Project control section. Along with project stat
     .. image:: img/project-settings/project-control.png
          :width: 70%
          :align: center
+         :alt: project control section with buttons to restart and stop the project
 
 ********************************
 Restart Project and Stop Project
@@ -522,12 +506,14 @@ To make all this happen, click "Restart Project...". Another button appears, to 
     .. image:: img/project-settings/project-restart-confirm.png
          :width: 70%
          :align: center
+         :alt: confirmation button for restarting a project
 
 Click "Restart Project Server", and restart initiates.
 
     .. image:: img/project-settings/project-restarting.png
          :width: 70%
          :align: center
+         :alt: project state updates to "Starting" after restart is confirmed
 
 It normally takes about 30 seconds to restart a project. It may take another 10 seconds or so after the Files list is visible for terminal processes, etc. to be available.
 
@@ -541,6 +527,7 @@ Clicking "Stop Project..." causes the "Stop Project Server" button to appear, to
     .. image:: img/project-settings/stop-project-confirm.png
          :width: 70%
          :align: center
+         :alt: confirmation button for stopping a project
 
 .. index:: Software Environment
 .. index:: Projects; software environment
@@ -565,6 +552,7 @@ Once you have selected an image, click "Save and Restart".
 .. image:: img/project-settings/selected-image-experimental.png
      :width: 70%
      :align: center
+     :alt: choosing and starting a specific compute image
 
 .. note::
 
@@ -593,6 +581,7 @@ Occasionally, it may be useful to restart the Sage worksheet server if worksheet
 .. image:: img/project-settings/restart-sagews-a.png
      :width: 70%
      :align: center
+     :alt: button to restart the Sage worksheet server
 
 .. _alt-jupyter-server:
 
@@ -620,6 +609,7 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
 .. image:: img/project-settings/jupyter-server-a.png
      :width: 70%
      :align: center
+     :alt: button to start the Plain Jupyter Server
 
 .. index:: Jupyter Server; JupyterLab
 .. index:: Projects; JupyterLab server
@@ -629,16 +619,17 @@ Starting the Plain Jupyter server opens a new browser tab with usual files listi
 JupyterLab server
 *****************
 
+.. note::
+
+    As of May, 2022, CoCalc's JupyterLab server supports real-time collaboration. Although CoCalc's "Timetravel" feature is not available with JupyterLab, :ref:`filesystem snapshots <project-snapshot>` are still available if you need to recover a file.
+
 Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_ opens a new browser tab with the JupyterLab GUI.
 
 .. image:: img/project-settings/jupyterlab-server-a.png
      :width: 70%
      :align: center
+     :alt: button to start the JupyterLab Server
 
-
-.. |header|
-    image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/header.png
-    :width: 16px
 
 .. _ssh: https://help.ubuntu.com/community/SSH
 
@@ -654,6 +645,7 @@ Cloud storage & remote file systems
 .. image:: img/project-settings/project-settings-cloud-storage.png
      :width: 100%
      :align: center
+     :alt: options for configuring remote storage for a project
 
 It is possible to access "cloud store" (a repository of file-like objects)
 or a remote file system in a CoCalc project.
@@ -819,8 +811,8 @@ On CoCalc's side, the storage bucket name and the content of the authentication 
 For optimal performance, the storage bucket should be in the same region as CoCalc's cluster.
 As of writing this, this would be ``us-east1``.
 
-
-
-
-
+.. |dashboard-icon|
+     image:: img/antd-icons/dashboard-icon.png
+     :width: 24px
+     :alt: icon for project 
 

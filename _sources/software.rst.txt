@@ -61,7 +61,7 @@ Main supported software environments
 .. note::
 
     Via the :ref:`software-environment` selector,
-    you have a little bit control over the software you're running in your project.
+    you have control over the software you're running in your project.
 
 .. _SageMath: https://sagemath.org
 
@@ -71,10 +71,6 @@ Main supported software environments
 
 Custom environments
 ==============================
-
-
-.. warning::
-    This is an experimental new feature!
 
 
 *Custom software environments* provide a narrow stack of software and libraries for specific purposes.

@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>purchasing licenses &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/api2/purchasing-licenses.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API v1" href="../api/index.html" />
+    <link rel="prev" title="email-address-from-account-id" href="email-address-from-account-id.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/api2/purchasing-licenses.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API v2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#get-an-api-key">Get an API Key</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#api-v2-endpoints">API v2 Endpoints</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="directory-listing.html">directory-listing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="latex.html">latex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stop.html">stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user-query.html">user-query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="email-address-from-account-id.html">email-address-from-account-id</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">purchasing licenses</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-cocalc-api-to-buy-a-license">Using the CoCalc API to buy a license</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-api-to-add-a-license-to-your-shopping-cart">Using the API to add a license to your shopping cart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#place-your-order">Place your order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#getting-all-of-your-licenses">Getting all of your licenses</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">API v2</a></li>
+      <li class="breadcrumb-item active">purchasing licenses</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="purchasing-licenses">
+<h1>purchasing licenses<a class="headerlink" href="#purchasing-licenses" title="Permalink to this heading"></a></h1>
+<section id="using-the-cocalc-api-to-buy-a-license">
+<h2>Using the CoCalc API to buy a license<a class="headerlink" href="#using-the-cocalc-api-to-buy-a-license" title="Permalink to this heading"></a></h2>
+<p>First let’s do the “hello world” query using the v2 api, which is one of
+the <a class="reference external" href="https://doc.cocalc.com/api2/index.html">examples here.</a> Get your
+API key, then use the following curl command to send
+<code class="docutils literal notranslate"><span class="pre">{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:null,&quot;email_address&quot;:null}}}</span></code> to
+the <code class="docutils literal notranslate"><span class="pre">user-query</span></code> endpoint.</p>
+<p>We assume these two variables are already set in all examples below.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">key</span><span class="o">=</span><span class="s1">&#39;sk_TT9hr4nnotsiUXx0&#39;</span><span class="w">        </span><span class="c1"># your API key</span>
+<span class="nv">url</span><span class="o">=</span><span class="s1">&#39;https://cocalc.com/api/v2&#39;</span><span class="w">  </span><span class="c1"># the server</span>
+</pre></div>
+</div>
+<p>Now do our API call:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:null,&quot;email_address&quot;:null}}}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span><span class="nv">$url</span>/user-query<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq
+</pre></div>
+</div>
+<p>The above will output something like the following, but with your
+account_id and email_address replacing the ones below:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;accounts&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="s2">&quot;account_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;a407cc35-c960-481c-9928-1238c868ff8b&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;email_address&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;wstein@gmail.com&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The user-query API endpoint can do an enormous amount related to cocalc
+– it’s a sophisticated GraphQL-style API, and enables reading and
+writing to the PostgreSQL backend database, and triggering a wide range
+of actions. Someday we’ll document this in detail. In the meantime, see
+<a class="reference external" href="https://github.com/sagemathinc/cocalc/tree/master/src/packages/util/db-schema">the
+schema</a>.
+One example is <a class="reference external" href="./directory-listing.md">getting a directory listing</a>.</p>
+</section>
+<section id="using-the-api-to-add-a-license-to-your-shopping-cart">
+<h2>Using the API to add a license to your shopping cart<a class="headerlink" href="#using-the-api-to-add-a-license-to-your-shopping-cart" title="Permalink to this heading"></a></h2>
+<p>The endpoint for adding an item to your shopping cart is
+<code class="docutils literal notranslate"><span class="pre">/shopping/cart/add</span></code>.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;account_id&quot;:&quot;a407cc35-c960-481c-9928-1238c868ff8b&quot;, &quot;product&quot;:&quot;site-license&quot;, &quot;description&quot;:{&quot;ram&quot;:16,&quot;cpu&quot;:2,&quot;disk&quot;:10,&quot;member&quot;:true,&quot;uptime&quot;: &quot;medium&quot;, &quot;type&quot;: &quot;quota&quot;, &quot;user&quot;: &quot;business&quot;,&quot;boost&quot;: false,&quot;period&quot;:&quot;monthly&quot;,&quot;run_limit&quot;:1,&quot;title&quot;: &quot;my title&quot;,&quot;description&quot;: &quot;my desc&quot;}}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span><span class="nv">$url</span>/shopping/cart/add
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://github.com/sagemathinc/cocalc/tree/master/src/packages/util/types/site-licenses.ts">the SiteLicenseQuota interface
+of</a>
+for the possible parameters in the description field, though things are
+not fully explained by that. Also, “uptime” can be “short”, “medium” or
+“day”, and title and description can be arbitrary strings.</p>
+<p>After you do this, visit (or refresh) <a class="reference external" href="https://cocalc.com/store/cart">https://cocalc.com/store/cart</a> to
+see the license in your cart.</p>
+<p>If you have already created a project that you would like to add this
+license to, include “project_id”:“…” next to “account_id” above, so the
+license is automatically added. Of course, you can also easily just use
+the v1 API to <a class="reference external" href="https://doc.cocalc.com/api/add_license_to_project.html">add the license to the
+project</a>.</p>
+</section>
+<section id="place-your-order">
+<h2>Place your order<a class="headerlink" href="#place-your-order" title="Permalink to this heading"></a></h2>
+<p>This will fail if (1) you do not have a credit card on file for this
+account or (2) due to a captcha if you haven’t contacted <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>
+and had your account upgraded to partner status. (NOTE: To set an
+account to be a partner directly using the database, type something like
+this
+<code class="docutils literal notranslate"><span class="pre">update</span> <span class="pre">accounts</span> <span class="pre">set</span> <span class="pre">groups=ARRAY['partner']</span> <span class="pre">where</span> <span class="pre">account_id='a407cc35-c960-481c-9928-1238c868ff8b';</span></code>)</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span><span class="nv">$url</span>/shopping/cart/checkout
+</pre></div>
+</div>
+<p>Output if you don’t have a partner account:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="o">:</span><span class="s2">&quot;reCaptcha token must be provided&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>If you have a valid card on file and a partner account, then the
+purchase will be made and your license will be available to use. Confirm
+your purchase <a class="reference external" href="https://cocalc.com/store/congrats">here</a>.</p>
+<p><strong>WARNINGS</strong>: (1) There is currently no purchase quota implemented yet
+for partners, so a bug in your code could make numerous purchases. Be
+careful. (2) If you add nonsense to your shopping cart, it could lead to
+your account being in a broken state where you can’t see or remove items
+or checkout; if this happens, contact <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a> and we’ll sort it
+out.</p>
+</section>
+<section id="getting-all-of-your-licenses">
+<h2>Getting all of your licenses<a class="headerlink" href="#getting-all-of-your-licenses" title="Permalink to this heading"></a></h2>
+<p>After you place your order using the API, you may want to get a list of
+all of the licenses that you manage. You can do that via the
+<code class="docutils literal notranslate"><span class="pre">licenses/get-managed</span></code> api endpoint:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span><span class="nv">$url</span>/licenses/get-managed
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="email-address-from-account-id.html" class="btn btn-neutral float-left" title="email-address-from-account-id" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../api/index.html" class="btn btn-neutral float-right" title="API v1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api2/purchasing-licenses.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
+    </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

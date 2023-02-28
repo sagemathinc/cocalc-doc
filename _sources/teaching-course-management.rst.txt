@@ -156,11 +156,13 @@ Manual Grading
 
 You may annotate the student's assignment by modifying the collected file(s) in any way you like. The student will get a copy of everything you do after you return it.
 
-When working with Jupyter notebooks, it can be useful to make annotations in Markdown cells and surround comments in HTML tags that color the text red. This allows students to quickly identify comments.
+When working with Jupyter notebooks, it can be useful to make annotations in markdown cells and set the color of the annotations to stand out.
 
-::
+You can change the font color in a markdown cell in Text edit mode using the font options toolbar, as explained in the section on :ref:`font-options`.
 
-    <font color="red">Great work!</font>
+Or you can edit the cell in Markdown edit mode and enter the HTML tags for desired color explicitly::
+
+    <span style='color:red'>Great work!</span>
 
 .. image:: img/teaching/feedback.png
      :width: 50%

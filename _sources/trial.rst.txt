@@ -8,7 +8,7 @@ When you start using CoCalc, you will see a banner similar to
 
     "Trial Project – buy upgrades or expect poor performance, [...] you can't install software packages [...]"
 
-That's because there are no upgrades for :doc:`hosting and/or internet access <billing>` applied to this project.
+That's because a license granting network access has not yet been applied to the project.
 
 .. warning::
 
@@ -31,25 +31,18 @@ Ways to remove the banner
 ===============================
 
 
-Purchase upgrades
+Buy a license
 --------------------------------------------
 
 Starting with a \$3/month subscription,
-you get a license to :doc:`upgrade your projects, unlock internet access, etc <billing>`.
-
-The `pricing page <https://cocalc.com/policies/pricing.html>`_ lists the current offerings.
-
+you get a license to upgrade your projects, enable network access, and add other computing resources. The `pricing page <https://cocalc.com/policies/pricing.html>`_ lists the current offerings.
 
 .. note::
 
-    You have to explicitly apply your upgrades to your projects.
+    You have to explicitly apply your license or upgrades to your projects.
     Open up *Project Settings* and click *Adjust your upgrade contributions...*
     in the *Project usage and quotas* panel.
     For more information read the :doc:`upgrade guide <upgrade-guide>`.
-
-
-You can easily change which projects you have upgraded at any time.
-Thank you for being a customer!
 
 
 Student in a course
@@ -94,7 +87,6 @@ Can't afford to purchase upgrades
 
 
 
-
 Reasons for purchasing a subscription
 ==============================================
 
@@ -116,8 +108,7 @@ collaboratively and to generate a stable revenue source to hire full-time develo
 Internet Access
 ---------------------
 
-The Internet Access upgrade allows outgoing internet connections and outbound email from a project.
-See :ref:`Internet Access <internet-access>` for details.
+The Internet Access upgrade allows outgoing internet connections and outbound email from a project. See :ref:`Network access <network-access>` for details.
 
 .. index:: pair: Trial Projects; Member Hosting
 

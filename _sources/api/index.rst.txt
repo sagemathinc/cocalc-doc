@@ -2,11 +2,10 @@
 .. index:: API
 
 ====================
-API
+API v1
 ====================
 
-.. mdinclude:: index.md
-
+.. include:: index0.rst
 
 .. toctree::
    :caption: API Endpoints
@@ -35,7 +34,6 @@ API
    metrics
    ping
    project_exec
-   public_get_directory_listing
    public_get_text_file
    query
    read_text_file_from_project
@@ -51,5 +49,5 @@ API
 
 --------------
 
-.. mdinclude:: ../api-examples.md
+.. include:: ../api-examples.rst
 

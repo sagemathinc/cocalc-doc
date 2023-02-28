@@ -3,6 +3,8 @@
 .. toctree::
    :hidden:
 
+   cant-save
+   firewall-info
    multiple-accounts
    software-development
    project-invitation-tokens
@@ -13,11 +15,12 @@
    install-julia-package
    running-processes
    upload
-   ../api-examples.md
+   ../api-examples
    convert-html-to-pdf
    webserver
    bokeh-server
    shiny-server
+   streamlit
    jupyter-kernel-selection
    jupyter-extension
    jupyterlab-extensions
@@ -45,3 +48,4 @@
    plotly-dash
    disk-space-warning
    ../project-list
+

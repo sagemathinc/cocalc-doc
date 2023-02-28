@@ -48,12 +48,12 @@ though with some changes.
 
 .. index:: nbgrader; getting started
 
-The following steps illustrate CoCalc course integration with nbgrader. We start with a .course file and assume that at least one student has been :ref:`added to the course <adding-students>`.
+The following steps illustrate CoCalc course integration with nbgrader. We start with a course file and assume that at least one student has been :ref:`added to the course <adding-students>`.
 
 Create an assignment folder
 ===============================
 
-Open the .course file and select the ``Assignments`` tab. There is field at upper right with the prompt "Add assignment by folder name ..."
+Open the course file and select the ``Assignments`` tab. There is field at upper right with the prompt "Add assignment by folder name ..."
 
 .. figure:: img/nbgrader/nbg-create-assg-0.png
      :width: 95%
@@ -178,7 +178,7 @@ If you click the "Contents" button at the top of your Jupyter notebook, you'll s
 Distribute the assignment to students
 ======================================
 
-Back in the .course file under "Assignments", click ``Assign...`` to distribute the homework to students. This step copies contents of the "student/" folder into student projects. Here's a view of the files in the *student project*::
+Back in the course file under "Assignments", click ``Assign...`` to distribute the homework to students. This step copies contents of the "student/" folder into student projects. Here's a view of the files in the *student project*::
 
     Assignments/
     ...
@@ -197,7 +197,7 @@ Have your students complete the assignment. All student work takes place in the 
 Collect the assignment
 ======================
 
-In the .course file under "Assignments", click ``Collect...`` to distribute the homework to students.
+In the course file under "Assignments", click ``Collect...`` to collect homework from students.
 
 Option: Skip entering grades
 ============================

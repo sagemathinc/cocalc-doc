@@ -4,12 +4,15 @@
 Manage Running Processes
 ==============================
 
+This page documents several operating system commands for process management. CoCalc provides a convenient summary with the :doc:`Processes panel <../processes>`.
+
 
 .. index:: htop
 .. _htop:
 
+###########################
 See all Processes
-============================
+###########################
 
 Type exactly the following in a :doc:`../terminal` (+New → Terminal) to see all processes running in a project::
 
@@ -33,13 +36,15 @@ or click the letter ``h`` for help after starting it up;  and ``q`` to quit the 
 .. image:: img/htop.png
     :width: 75%
     :align: center
+    :alt: htop command
 
 
 .. index:: smem
 .. _smem:
 
-See Memory Usage
-============================
+###########################
+See Memory Utilization
+###########################
 
 Type exactly the following in a :doc:`../terminal` (+New → Terminal)::
 
@@ -63,14 +68,16 @@ The last ``RSS`` column is probably the most interesting one, for more consult `
     -------------------------------------------------------------------------------
         8 1                                           0   105.4M   108.6M   150.7M 
 
-Even more utilities …
-=======================
+###########################
+Even more utilities
+###########################
 
 Besides ``htop`` and ``smem``, there are many more system utilities installed.
 Given a project runs in a `Docker <https://docker.com>`_ environment, you only see a limited view of all what's going on, but it might still be interesting for you.
 
+****************
 top
--------
+****************
 
 The "classic" version ``htop``, similar layout.
 Press key ``h`` for help after starting it; and ``q`` to quit the application.
@@ -78,10 +85,12 @@ Press key ``h`` for help after starting it; and ``q`` to quit the application.
 .. image:: img/top.png
     :width: 75%
     :align: center
+    :alt: top command
 
 
+****************
 glances
-----------
+****************
 
 `Glances <https://nicolargo.github.io/glances/>`_ is a modern Python-based monitoring utility.
 Start it the following way if you're using a white terminal background and want to enable a tree-view of your processes::
@@ -95,9 +104,11 @@ You can see more command-line switches via ``glances --help``.
 .. image:: img/glances.png
     :width: 75%
     :align: center
+    :alt: glances command
 
+****************
 ps aux
------------
+****************
 
 An all-time classic is ``ps aux``. Run ``man ps`` to learn more about that utility.
 

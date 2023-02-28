@@ -4,9 +4,7 @@ ping
 -  ``id``: A unique UUID for the query
 
 Test API connection, return time as ISO string when server responds to
-ping.
-
-Security key may be blank.
+ping. Security key is required. Request id is optional.
 
 Examples:
 
@@ -16,13 +14,6 @@ Omitting request id:
 
      curl -X POST -u sk_abcdefQWERTY090900000000: https://cocalc.com/api/v1/ping
      ==> {"event":"pong","id":"c74afb40-d89b-430f-836a-1d889484c794","now":"2017-05-24T13:29:11.742Z"}
-
-Omitting request id and using blank security key:
-
-::
-
-     curl -X POST -u : https://cocalc.com/api/v1/ping
-     ==>  {"event":"pong","id":"d90f529b-e026-4a60-8131-6ce8b6d4adc8","now":"2017-11-05T21:10:46.585Z"}
 
 Using ``uuid`` shell command to create a request id:
 

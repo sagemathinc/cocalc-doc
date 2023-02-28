@@ -1,47 +1,27 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Turtle Graphics with CoCalc &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/turtle.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/turtle.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -53,41 +33,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
-  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,182 +62,176 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Turtle Graphics with CoCalc</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/turtle.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Turtle Graphics with CoCalc</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="turtle-graphics-with-cocalc">
-<span id="index-0"></span><h1>Turtle Graphics with CoCalc<a class="headerlink" href="#turtle-graphics-with-cocalc" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="turtle-graphics-with-cocalc">
+<span id="index-0"></span><h1>Turtle Graphics with CoCalc<a class="headerlink" href="#turtle-graphics-with-cocalc" title="Permalink to this heading"></a></h1>
 <p>There are three ways to use turtle graphics with CoCalc.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#sage-worksheet-with-turtle-module" id="id5">Sage worksheet with Turtle module</a></li>
-<li><a class="reference internal" href="#x11-terminal-with-jupyter-notebook" id="id6">X11 terminal with Jupyter notebook</a></li>
-<li><a class="reference internal" href="#x11-terminal-with-nteract" id="id7">X11 terminal with nteract</a></li>
+<li><p><a class="reference internal" href="#sage-worksheet-with-turtle-module" id="id5">Sage worksheet with Turtle module</a></p></li>
+<li><p><a class="reference internal" href="#x11-terminal-with-jupyter-notebook" id="id6">X11 terminal with Jupyter notebook</a></p></li>
+<li><p><a class="reference internal" href="#x11-terminal-with-nteract" id="id7">X11 terminal with nteract</a></p></li>
 </ul>
-</div>
-<div class="section" id="sage-worksheet-with-turtle-module">
-<span id="index-1"></span><h2><a class="toc-backref" href="#id5">Sage worksheet with Turtle module</a><a class="headerlink" href="#sage-worksheet-with-turtle-module" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="sage-worksheet-with-turtle-module">
+<span id="index-1"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Sage worksheet with Turtle module</a><a class="headerlink" href="#sage-worksheet-with-turtle-module" title="Permalink to this heading"></a></h2>
 <p>Here is a <a class="reference external" href="https://cocalc.com/share/public_paths/75c54b5a2f56cdfeba825a4411325137f5c1502d">Sage worksheet on the CoCalc share server</a> using Turtle.
 In the Sage worksheet, code and turtle graphics output are visible in the same tab.</p>
-<div class="figure align-center" id="id1">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/turtle-spirals.png"><img alt="Sage worksheet source code for Turtle spirals" src="../_images/turtle-spirals.png" style="width: 40%;" /></a>
-<p class="caption"><span class="caption-text">Turtle spirals in the example Sage worksheet</span></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Turtle spirals in the example Sage worksheet</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <p>To copy the example into a project of your own, do the following:</p>
 <ol class="arabic simple">
-<li>Sign into CoCalc.</li>
-<li>While signed in, open another browser tab in the same browser session and navigate to the share link above. After a moment, you will see the published read-only copy of the worksheet.</li>
-<li>Click <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">in</span> <span class="pre">CoCalc</span></code> at the upper right. A third browser tab will open.</li>
-<li>Click <code class="docutils literal notranslate"><span class="pre">Files</span></code> at upper left in this latest tab. You will see a Files listing with a line for the Turtle example.</li>
-<li>Click the <code class="docutils literal notranslate"><span class="pre">Copy</span></code> button at the left of the Turtle entry. You can now copy the worksheet to a destination project and folder of your own.</li>
+<li><p>Sign into CoCalc.</p></li>
+<li><p>While signed in, open another browser tab in the same browser session and navigate to the share link above. After a moment, you will see the published read-only copy of the worksheet.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">in</span> <span class="pre">CoCalc</span></code> at the upper right. A third browser tab will open.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Files</span></code> at upper left in this latest tab. You will see a Files listing with a line for the Turtle example.</p></li>
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">Copy</span></code> button at the left of the Turtle entry. You can now copy the worksheet to a destination project and folder of your own.</p></li>
 </ol>
-<div class="figure align-center" id="id2">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/only-public.png"><img alt="screenshot of copy steps" src="../_images/only-public.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-text">copying worksheet from share server to personal project</span></p>
-</div>
+<figcaption>
+<p><span class="caption-text">copying worksheet from share server to personal project</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The remaining methods use the <a class="reference external" href="https://docs.python.org/3/library/turtle.html">Python turtle library</a>. This library relies on <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a>. You can use tkinter in CoCalc only from the the <a class="reference internal" href="../x11.html"><span class="doc">X11 Desktop</span></a>. Code for the examples below is taken from the <strong>Turtle star</strong> on the doc page for the <a class="reference external" href="https://docs.python.org/3/library/turtle.html">Python turtle library</a>.</p>
+<p class="admonition-title">Note</p>
+<p>The remaining methods use the <a class="reference external" href="https://docs.python.org/3/library/turtle.html">Python turtle library</a>. This library relies on <a class="reference external" href="https://docs.python.org/3/library/tkinter.html">tkinter</a>. You can use tkinter in CoCalc only from the the <a class="reference internal" href="../x11.html"><span class="doc">X11 Desktop</span></a>. Code for the examples below is taken from the <strong>Turtle star</strong> on the doc page for the <a class="reference external" href="https://docs.python.org/3/library/turtle.html">Python turtle library</a>.</p>
 </div>
-</div>
-<div class="section" id="x11-terminal-with-jupyter-notebook">
-<h2><a class="toc-backref" href="#id6">X11 terminal with Jupyter notebook</a><a class="headerlink" href="#x11-terminal-with-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id3">
+</section>
+<section id="x11-terminal-with-jupyter-notebook">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">X11 terminal with Jupyter notebook</a><a class="headerlink" href="#x11-terminal-with-jupyter-notebook" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/jupyter-turtle.png"><img alt="screenshot of X11 session with Turtle graphics" src="../_images/jupyter-turtle.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-text">python turtle display created by jupyter notebook in a second tab</span></p>
-</div>
+<figcaption>
+<p><span class="caption-text">python turtle display created by jupyter notebook in a second tab</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <ol class="arabic simple">
-<li>In the x11 terminal, echo the DISPLAY environment variable to get the display number:</li>
+<li><p>In the x11 terminal, echo the DISPLAY environment variable to get the display number:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$ <span class="nb">echo</span> <span class="nv">$DISPLAY</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$DISPLAY</span>
 :581076966
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
-<li>In your Jupyter notebook set DISPLAY to the same number:</li>
+<li><p>In your Jupyter notebook set DISPLAY to the same number:</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;DISPLAY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;:581076966&quot;</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li>Turtle graphics work in the Jupyter notebook, but appear in the X11 desktop. You may have to run the graphics cell twice to see the turtle graphics.</li>
+<li><p>Turtle graphics work in the Jupyter notebook, but appear in the X11 desktop. You may have to run the graphics cell twice to see the turtle graphics.</p></li>
 </ol>
-</div>
-<div class="section" id="x11-terminal-with-nteract">
-<h2><a class="toc-backref" href="#id7">X11 terminal with nteract</a><a class="headerlink" href="#x11-terminal-with-nteract" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id4">
+</section>
+<section id="x11-terminal-with-nteract">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">X11 terminal with nteract</a><a class="headerlink" href="#x11-terminal-with-nteract" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/nteract-turtle.png"><img alt="screenshot of X11 session with nteract and Turtle graphics" src="../_images/nteract-turtle.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text">nteract python turtle display</span></p>
-</div>
+<figcaption>
+<p><span class="caption-text">nteract python turtle display</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <p>This approach uses the <a class="reference external" href="https://github.com/nteract/nteract">enteract</a> desktop application with X11.</p>
 <ol class="arabic simple">
-<li>Open an X11 Desktop.</li>
-<li>Click the <code class="docutils literal notranslate"><span class="pre">nteract</span></code> button at the bottom, or type “nteract” at the shell prompt. Wait for nteract to start. This can take up to a minute the first time you run it in CoCalc X11.</li>
-<li>Paste this code and hit shift enter:</li>
+<li><p>Open an X11 Desktop.</p></li>
+<li><p>Click the <code class="docutils literal notranslate"><span class="pre">nteract</span></code> button at the bottom, or type “nteract” at the shell prompt. Wait for nteract to start. This can take up to a minute the first time you run it in CoCalc X11.</p></li>
+<li><p>Paste this code and hit shift enter:</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">color</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">)</span>
@@ -285,33 +246,32 @@ In the Sage worksheet, code and turtle graphics output are visible in the same t
 </pre></div>
 </div>
 <ol class="arabic simple" start="4">
-<li>A new tab with title “Python Turtle Graphics” will appear in the X11 display when you run the code. It may not look right the first time. If that happens, return to the compute cell in the nteract tab and run the code again. You can click the vertical split button (upper right) and see the Jupyter notebook and graphics side-by-side, as shown in the screenshot.</li>
+<li><p>A new tab with title “Python Turtle Graphics” will appear in the X11 display when you run the code. It may not look right the first time. If that happens, return to the compute cell in the nteract tab and run the code again. You can click the vertical split button (upper right) and see the Jupyter notebook and graphics side-by-side, as shown in the screenshot.</p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/turtle.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -320,37 +280,26 @@ In the Sage worksheet, code and turtle graphics output are visible in the same t
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

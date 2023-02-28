@@ -26,55 +26,52 @@ From left to right:
 
 .. _ft-files:
 
-Files
-=====
+|folder-open| Files
+===================
 
-|folder-open| If you don't have a file open, clicking here will show you a list of files in the project's home directory. If you are working on a file, clicking **Files** will show a list of files in the directory containing the currently selected file. You can enter search characters to filter the file list for filenames containing the search text.
+If you don't have a file open, clicking here will show you a list of files in the project's home directory. If you are working on a file, clicking **Files** will show a list of files in the directory containing the currently selected file. You can enter search characters to filter the file list for filenames containing the search text.
 
 .. _ft-new:
 
-(+) New
-========
+|plus-circle| New
+=================
 
-|plus-circle| click to create or upload new files. **New** also lets you
+click to create or upload new files. **New** also lets you
   browse the `CoCalc Library <http://blog.sagemath.com/cocalc/2018/03/06/cocalc-library.html>`_, which contains code examples and entire books about various toolsets
   and science topics, ready to copy into your project.
 
 .. _ft-history:
 
-Project Log
-===========
+|history| Project Log
+=====================
 
-|history| The **Project Activity Log** shows recent activity in your project:
+The **Project Activity Log** shows recent activity in your project:
   logins, files opened and uploaded, etc. If you click on a filename in the log, it will open
   that file. This is often the quickest way to resume work on a file that was recently closed.
 
 .. _ft-search:
 
-Find
-====
+|search| Find
+=============
 
-|search| Search  for files containing the specified text in the directory that contains
+Search  for files containing the specified text in the directory that contains
   the currently selected file, or the project home directory if no file is selected. There are options
   to for searching subdirectories, case sensitive search, including hidden files, and restricting search
   to files in a git repository.
 
 .. _ft-settings:
 
-Project Settings
-================
+|wrench| Project Settings
+==========================
 
-|wrench| This tab is where you can set a description for your project, add or remove
-  upgrades, hide or delete the project, add a project-specific `SSH Key <http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html>`_, view and add collaborators, stop and restart the project and the Sage worksheet server,
-  and launch the Plain Jupyter and JupyterLab servers.
-  *Hint: Adding hashtags to the description can make it easy to find a subject with the Project button if you have a large number of projects.*
+See :doc:`project-settings`.
 
 .. _ft-info:
 
-Processes
-=========
+|microchip| Processes
+=====================
 
-|microchip| This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
+This panel offers a consolidated view of real-time activity within the current project. Use the Help toggle above the Memory column for details about this extremely useful panel. You can view use of CPU, memory, and disk space. There is a list of running processes, showing resource use by each and allowing you to terminate non-essential processes.
 
 .. image:: img/getting-started/process-info.png
      :align: center
@@ -101,17 +98,18 @@ To the right of the Processes icon, a button appears for each file you have open
 
 .. _ft-comment:
 
-"Side Chat" for files
-======================
+|comment-icon| Side Chat for files
+====================================
 
-|comment-icon| If a file is selected, you can click here to start text or video chat. Collaborators on the project will get a notification when chat is opened or updated.
-
-private / public status
-=======================
+If a file is selected, you can click here to start text or video chat. Collaborators on the project will get a notification when chat is opened or updated.
 
 .. _ft-share:
 
-|lock-icon| If a file is selected, this button allows you to share it, or stop sharing. Files shared publicly can be viewed by people without a CoCalc login. You can see a list of all your shared files under :doc:`account/public-files`.
+|lock-icon| private / public status
+===================================
+
+
+If a file is selected, this button allows you to share it, or stop sharing. Files shared publicly can be viewed by people without a CoCalc login. You can see a list of all your shared files under :doc:`account/public-files`.
 
 .. |folder-open|
      image:: https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/folder-open-o.png

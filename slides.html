@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slides &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/slides.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Whiteboard" href="whiteboard.html" />
+    <link rel="prev" title="Jupyter Tips and Tricks" href="jupyter-tips-and-tricks.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/slides.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Slides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#chat">Chat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collaborative-editing">Collaborative Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cut-or-copy-and-paste">Cut or Copy and Paste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edges">Edges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frames">Frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hashtags">Hashtags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#icons">Icons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#insert-slide">Insert Slide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jupyter-cells">Jupyter Cells</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latex-expressions">LaTeX Expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#navigate-with-arrow-keys">Navigate With Arrow Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview-map">Overview Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pages-view">Pages View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pens">Pens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#presentation-mode">Presentation Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publish">Publish</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-view">Search View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#split-windows">Split Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sticky-notes">Sticky Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stopwatches-and-timers">Stopwatches and Timers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text">Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#timetravel">TimeTravel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-do-lists">To-do Lists</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backups.html">Backups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csv-viewer.html">CSV Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-settings.html">Project Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account-toolbar.html">Account Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Slides</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="slides">
+<span id="index-0"></span><h1>Slides<a class="headerlink" href="#slides" title="Permalink to this heading"></a></h1>
+<p>Give presentations with code and mathematics using CoCalc Slides. Here’s the introduction on our website: <a class="reference external" href="https://cocalc.com/features/slides">Online Collaborative Slides with Jupyter Code Cells and LaTeX Mathematics</a>.</p>
+<p>A slides presentation is any CoCalc file with the extension “.slides”. CoCalc slides let you use all the same tools as from the whiteboard: text, notes, freehand drawing, Jupyter code cells, mind maps, icons, and frames. Of course, text is editable in both markdown and rich text modes, with full latex formula and code block support.</p>
+<p>Here are the CoCalc feature announcements:</p>
+<ul class="simple">
+<li><p>presentation mode: <a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6475">ANN: Presentation mode for slideshows</a>.</p></li>
+<li><p>original announcement: <a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6420">ANN: CoCalc Slides – create slides in CoCalc for presentations, with Jupyter code and latex math</a>.</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/slides.png"><img alt="example of CoCalc slides" src="_images/slides.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">CoCalc Slides</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#chat" id="id12">Chat</a></p></li>
+<li><p><a class="reference internal" href="#collaborative-editing" id="id13">Collaborative Editing</a></p></li>
+<li><p><a class="reference internal" href="#cut-or-copy-and-paste" id="id14">Cut or Copy and Paste</a></p></li>
+<li><p><a class="reference internal" href="#edges" id="id15">Edges</a></p></li>
+<li><p><a class="reference internal" href="#frames" id="id16">Frames</a></p></li>
+<li><p><a class="reference internal" href="#hashtags" id="id17">Hashtags</a></p></li>
+<li><p><a class="reference internal" href="#icons" id="id18">Icons</a></p></li>
+<li><p><a class="reference internal" href="#insert-slide" id="id19">Insert Slide</a></p></li>
+<li><p><a class="reference internal" href="#jupyter-cells" id="id20">Jupyter Cells</a></p></li>
+<li><p><a class="reference internal" href="#latex-expressions" id="id21">LaTeX Expressions</a></p></li>
+<li><p><a class="reference internal" href="#navigate-with-arrow-keys" id="id22">Navigate With Arrow Keys</a></p></li>
+<li><p><a class="reference internal" href="#overview-map" id="id23">Overview Map</a></p></li>
+<li><p><a class="reference internal" href="#pages-view" id="id24">Pages View</a></p></li>
+<li><p><a class="reference internal" href="#pens" id="id25">Pens</a></p></li>
+<li><p><a class="reference internal" href="#presentation-mode" id="id26">Presentation Mode</a></p></li>
+<li><p><a class="reference internal" href="#publish" id="id27">Publish</a></p></li>
+<li><p><a class="reference internal" href="#search-view" id="id28">Search View</a></p></li>
+<li><p><a class="reference internal" href="#split-windows" id="id29">Split Windows</a></p></li>
+<li><p><a class="reference internal" href="#sticky-notes" id="id30">Sticky Notes</a></p></li>
+<li><p><a class="reference internal" href="#stopwatches-and-timers" id="id31">Stopwatches and Timers</a></p></li>
+<li><p><a class="reference internal" href="#table-of-contents" id="id32">Table of Contents</a></p></li>
+<li><p><a class="reference internal" href="#text" id="id33">Text</a></p></li>
+<li><p><a class="reference internal" href="#timetravel" id="id34">TimeTravel</a></p></li>
+<li><p><a class="reference internal" href="#to-do-lists" id="id35">To-do Lists</a></p></li>
+</ul>
+</nav>
+<section id="chat">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Chat</a><a class="headerlink" href="#chat" title="Permalink to this heading"></a></h2>
+<p>Chat with collaborators. Open multiple chat boxes in the document as well as the usual CoCalc <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a> for the entire slides file. Learn about CoCalc Chat at this link: <a class="reference internal" href="chat.html"><span class="doc">Chatrooms</span></a>.</p>
+<p>Keyboard shortcut to create Chat boxes: “C”.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/chat.png"><img alt="example chat box and side chat" src="_images/chat.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">chat box and side chat</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="collaborative-editing">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Collaborative Editing</a><a class="headerlink" href="#collaborative-editing" title="Permalink to this heading"></a></h2>
+<p>Many users can edit at the same time, see what the others are doing in real time, and center their view at the location of another’s cursor.</p>
+</section>
+<section id="cut-or-copy-and-paste">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Cut or Copy and Paste</a><a class="headerlink" href="#cut-or-copy-and-paste" title="Permalink to this heading"></a></h2>
+<p>Click “Select” (arrow icon) then drag the cursor to create a rectangular region. Doing so will select all objects that lie partially or completely in the region. “Cut” removes all the objects from their current position and saves them to the clipboard. “Copy” keeps the objects in their current position and saves them to the clipboard. “Paste” will drop the group of objects in the clipboard into the current page or into any page of any slides or whiteboard you have open.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/cut-copy-paste.png"><img alt="select, cut or copy, and paste" src="_images/cut-copy-paste.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">cut, copy, paste in whiteboard</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Keyboard shortcut to enable rectangular selection: “V”.</p>
+</section>
+<section id="edges">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Edges</a><a class="headerlink" href="#edges" title="Permalink to this heading"></a></h2>
+<p>Create edges (arrows) between all objects.</p>
+<p>Keyboard shortcut to create Edges: “E”.</p>
+</section>
+<section id="frames">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Frames</a><a class="headerlink" href="#frames" title="Permalink to this heading"></a></h2>
+<p>Use frames to group objects and organize a page into sections.</p>
+<p>Keyboard shortcut to create a Frame: “F”.</p>
+</section>
+<section id="hashtags">
+<span id="slides-hashtags"></span><h2><a class="toc-backref" href="#id17" role="doc-backlink">Hashtags</a><a class="headerlink" href="#hashtags" title="Permalink to this heading"></a></h2>
+<p>You can put hashtags on notes, e.g. <code class="code docutils literal notranslate"><span class="pre">#foo</span></code> and search for those as well, or put <code class="code docutils literal notranslate"><span class="pre">-</span></code> (minus sign) in front to exclude matching items from search, e.g. <code class="code docutils literal notranslate"><span class="pre">-#foo</span></code>. You can search for regular expressions by enclosing them in slashes, for example <code class="docutils literal notranslate"><span class="pre">/^#</span> <span class="pre">/</span></code>.</p>
+</section>
+<section id="icons">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Icons</a><a class="headerlink" href="#icons" title="Permalink to this heading"></a></h2>
+<p>Choose from a wide selection of Icons to add to your document.</p>
+<p>Keyboard shortcut to open the table of available Icons: “I”.</p>
+</section>
+<section id="insert-slide">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Insert Slide</a><a class="headerlink" href="#insert-slide" title="Permalink to this heading"></a></h2>
+<p>You can insert a slide after the present slide in Pages View or Overview Map by clicking the <a class="reference internal" href="_images/insert-icon.png"><img alt="present icon" src="_images/insert-icon.png" style="height: 30px;" /></a> icon to the right:</p>
+<a class="reference internal image-reference" href="_images/insert-slide.png"><img alt="insert a slide after the present one" class="align-center" src="_images/insert-slide.png" style="width: 50%;" /></a>
+</section>
+<section id="jupyter-cells">
+<span id="slides-jupyter-cells"></span><h2><a class="toc-backref" href="#id20" role="doc-backlink">Jupyter Cells</a><a class="headerlink" href="#jupyter-cells" title="Permalink to this heading"></a></h2>
+<p>A CoCalc slides document can include Jupyter code cells. Code cells allow:</p>
+<ul class="simple">
+<li><p>over a dozen supported kernels</p></li>
+<li><p>CoCalc’s massive library of pre-installed software</p></li>
+<li><p>interactive widgets</p></li>
+<li><p>execution order determined by a directed graph</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/code-cells-in-wb.png"><img alt="slides with two code cells and a sticky note" class="align-center" src="_images/code-cells-in-wb.png" style="width: 80%;" /></a>
+<p>Keyboard shortcut to create a Jupyter Code Cell: “J”.</p>
+</section>
+<section id="latex-expressions">
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">LaTeX Expressions</a><a class="headerlink" href="#latex-expressions" title="Permalink to this heading"></a></h2>
+<p>Text inside slides items supports LaTeX mathematical typesetting.</p>
+</section>
+<section id="navigate-with-arrow-keys">
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Navigate With Arrow Keys</a><a class="headerlink" href="#navigate-with-arrow-keys" title="Permalink to this heading"></a></h2>
+<p>While in Slides view, you can use the arrow keys: “↑” to move up one slide and “↓” to move down one slide from the current slide. Use Home (Fn–Left Arrow on some Mac keyboards) to go to the first slide and End (Fn–Right Arrow on some Mac keyboards) to go to the last slide.</p>
+</section>
+<section id="overview-map">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">Overview Map</a><a class="headerlink" href="#overview-map" title="Permalink to this heading"></a></h2>
+<p>You can see an overview map of all slides in the current file by selecting “Overview” in the mode menu at upper right. There is a trashcan icon next to each slide in the map, allowing you to delete slides. At present, you can’t rearrange slides in the map. Use the Pages view for that.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/overview-map.png"><img alt="overview map of slides file" src="_images/overview-map.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">overview map</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="pages-view">
+<span id="slides-pages-view"></span><h2><a class="toc-backref" href="#id24" role="doc-backlink">Pages View</a><a class="headerlink" href="#pages-view" title="Permalink to this heading"></a></h2>
+<p>Pages view is available in the mode menu at upper right.
+If you click the “Pages” icon: <a class="reference internal" href="_images/pages-icon.png"><img alt="pages icon" src="_images/pages-icon.png" style="height: 20px;" /></a>, the Pages frame appears.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/slides-pages.png"><img alt="pages and slides views side by side" src="_images/slides-pages.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Pages (left) and Slides (right) views side by side</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>There’s a button “+ New” that creates a new page. You can see previews of all your pages in the pages frame, and click a preview to jump to any page.</p>
+<p>Page numbers determine the order of slides in the Search panel.</p>
+<p>By clicking the three horizontal lines at the left of a slide in the Pages view and dragging, you can change the order of slides.</p>
+<p>By clicking the trashcan icon at the right of a slide in the Pages view, you can delete a slide.</p>
+<p>When a page is selected in Slides view, the page number is displayed at upper left. You can click the number or change it and hit Enter to go to a specific page number.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/page-one-of-two.png"><img alt="page number displayed at upper left" src="_images/page-one-of-two.png" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-text">slides is showing page 1 of 2</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="pens">
+<h2><a class="toc-backref" href="#id25" role="doc-backlink">Pens</a><a class="headerlink" href="#pens" title="Permalink to this heading"></a></h2>
+<p>Choose one of the different pen shapes to draw freehand. Supported pointing devices include most forms of mouse and trackpad as well as many Wacom tablets and iPencil and Apple Pencil.</p>
+<p>Keyboard shortcut to start using Pens: “P”.</p>
+</section>
+<section id="presentation-mode">
+<h2><a class="toc-backref" href="#id26" role="doc-backlink">Presentation Mode</a><a class="headerlink" href="#presentation-mode" title="Permalink to this heading"></a></h2>
+<p>To enter presentation mode, click on the present icon: <a class="reference internal" href="_images/present-icon.png"><img alt="present icon" src="_images/present-icon.png" style="height: 30px;" /></a>, or select “Slideshow Presentation” from the dropdown:</p>
+<a class="reference internal image-reference" href="_images/present-dropdown.png"><img alt="button to enter presentation mode" class="align-center" src="_images/present-dropdown.png" style="width: 30%;" /></a>
+<p>then click the “Start Slideshow” button:</p>
+<a class="reference internal image-reference" href="_images/start-presentation.png"><img alt="button to enter presentation mode" class="align-center" src="_images/start-presentation.png" style="width: 30%;" /></a>
+<p>The display will transition to fullscreen with only the slide displayed (nothing outside the margins) and maximally zoomed, as in Powerpoint or Google slides. There’s a little wrench icon that appears only when you move the mouse:</p>
+<a class="reference internal image-reference" href="_images/toggle-slides-toolbar.png"><img alt="button to enter presentation mode" class="align-center" src="_images/toggle-slides-toolbar.png" style="width: 30%;" /></a>
+<p>Click the wrench to toggle the toolbar, in case you want to select a pen or click on code and run it live during your talk, or access any other editing tools.</p>
+<p>Press Esc on your keyboard to exit presentation mode.</p>
+</section>
+<section id="publish">
+<h2><a class="toc-backref" href="#id27" role="doc-backlink">Publish</a><a class="headerlink" href="#publish" title="Permalink to this heading"></a></h2>
+<p>You can <a class="reference internal" href="share.html#publishing-files"><span class="std std-ref">publish</span></a> your slides to the CoCalc share server.</p>
+</section>
+<section id="search-view">
+<span id="slides-search-view"></span><h2><a class="toc-backref" href="#id28" role="doc-backlink">Search View</a><a class="headerlink" href="#search-view" title="Permalink to this heading"></a></h2>
+<p>To see the Search view, select “Search” from the mode menu at upper right.</p>
+<p>The Search view lists all text, sticky notes and code in order, with a search box at the top. You can search for text and click on any matching item to center the view on it. The ordering of items is lexicographic by the (y,x) coordinates: items closer to the top are listed first; items at the same height are listed left to right.</p>
+<p>Search view can make your slides documents easier to manage as they get larger.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/wb-search-view.png"><img alt="example search view" src="_images/wb-search-view.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">slides, showing search view in right panel</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The Search frame works well with to-do lists. To find all not done items, put <code class="code docutils literal notranslate"><span class="pre">&quot;[</span> <span class="pre">]&quot;</span></code> (note the quotes) in the search box. To find all completed items, search for <code class="code docutils literal notranslate"><span class="pre">&quot;[x]&quot;</span></code>.</p>
+</section>
+<section id="split-windows">
+<h2><a class="toc-backref" href="#id29" role="doc-backlink">Split Windows</a><a class="headerlink" href="#split-windows" title="Permalink to this heading"></a></h2>
+<p>Infinitely split windows horizontally and vertically to view multiple parts of the document simultaneously.</p>
+</section>
+<section id="sticky-notes">
+<h2><a class="toc-backref" href="#id30" role="doc-backlink">Sticky Notes</a><a class="headerlink" href="#sticky-notes" title="Permalink to this heading"></a></h2>
+<p>A sticky note is a rectangle, with a colored background, for enclosing text. When creating a sticky note, it’s easy to select from a variety of eye-catching background colors and text fonts and sizes.</p>
+<p>Keyboard shortcut to create a Sticky Note: “N”.</p>
+</section>
+<section id="stopwatches-and-timers">
+<span id="slides-timers"></span><h2><a class="toc-backref" href="#id31" role="doc-backlink">Stopwatches and Timers</a><a class="headerlink" href="#stopwatches-and-timers" title="Permalink to this heading"></a></h2>
+<p>Add stopwatches (count up) and timers (count down) to keep meetings and discussions on schedule.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/timers.png"><img alt="stopwatches and timers" src="_images/timers.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">stopwatches and timers in slides</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Keyboard shortcut to create Stopwatches and Timers: “S”.</p>
+<p>When a timer counts down to zero, a pop-up announcement will be displayed if the slides file is open at the time.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/wb-timer-expired.png"><img alt="timer expired pop-up" src="_images/wb-timer-expired.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">notification displayed when slides timer expires</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="table-of-contents">
+<h2><a class="toc-backref" href="#id32" role="doc-backlink">Table of Contents</a><a class="headerlink" href="#table-of-contents" title="Permalink to this heading"></a></h2>
+<p>You can view contents as an outline in a panel on the left and click to view any item instantly.</p>
+</section>
+<section id="text">
+<h2><a class="toc-backref" href="#id33" role="doc-backlink">Text</a><a class="headerlink" href="#text" title="Permalink to this heading"></a></h2>
+<p>A text box is a rectangle, with a transparent background, for enclosing text.</p>
+<p>Keyboard shortcut to create a Text box: “T”.</p>
+</section>
+<section id="timetravel">
+<h2><a class="toc-backref" href="#id34" role="doc-backlink">TimeTravel</a><a class="headerlink" href="#timetravel" title="Permalink to this heading"></a></h2>
+<p>As with other native CoCalc applications, every change is recorded via browsable <a class="reference internal" href="time-travel.html"><span class="doc">Time Travel</span></a> You can see what changed, and who changed it, and copy/paste from any point in the history.</p>
+</section>
+<section id="to-do-lists">
+<span id="slides-to-do-lists"></span><h2><a class="toc-backref" href="#id35" role="doc-backlink">To-do Lists</a><a class="headerlink" href="#to-do-lists" title="Permalink to this heading"></a></h2>
+<p>In a sticky note, text, etc., you can mark action items by placing a pair of brackets in the item, preceded and followed by a space and with a space between the brackets. The item will be displayed with an empty checkbox. Click the checkbox when the item is done, or place an “x” between the brackets, and it will show as a checked item.</p>
+<hr class="docutils" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At this time, the only way to export an image slides document is by taking a screenshot. Exporting slides to a pdf, png, or svg file is not yet implemented. See <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/6024">CoCalc issue #6024</a>.</p>
+</div>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/wb-tasks-code.png"><img alt="code for to-do list in a sticky note" src="_images/wb-tasks-code.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">Code for an unchecked box and a checked box in a sticky note.</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/wb-tasks-rendered.png"><img alt="rendered list in a sticky note" src="_images/wb-tasks-rendered.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">How the unchecked and checked boxes are displayed</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="jupyter-tips-and-tricks.html" class="btn btn-neutral float-left" title="Jupyter Tips and Tricks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="whiteboard.html" class="btn btn-neutral float-right" title="Whiteboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/slides.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
+    </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

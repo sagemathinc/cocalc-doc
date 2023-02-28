@@ -1,47 +1,27 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CoCalc Docker Image &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/docker-image.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/docker-image.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="CoCalc Desktop" href="cocalc-desktop.html" />
@@ -55,41 +35,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="index.html" class="icon icon-home"> CoCalc Manual
-  <img src="_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="_static/_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
@@ -97,40 +64,58 @@
 <li class="toctree-l1"><a class="reference internal" href="news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">CoCalc Docker Image</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#major-update-july-25-2021">Major Update: July 25, 2021</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#about-the-cocalc-docker-image">About the CoCalc Docker Image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#questions">Questions</a></li>
@@ -143,128 +128,89 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>CoCalc Docker Image</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/docker-image.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CoCalc Docker Image</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <span class="target" id="index-0"></span><div class="section" id="cocalc-docker-image">
-<span id="index-1"></span><h1>CoCalc Docker Image<a class="headerlink" href="#cocalc-docker-image" title="Permalink to this headline">¶</a></h1>
-<div class="contents local topic" id="contents">
+             
+  <span class="target" id="index-0"></span><section id="cocalc-docker-image">
+<span id="index-1"></span><h1>CoCalc Docker Image<a class="headerlink" href="#cocalc-docker-image" title="Permalink to this heading"></a></h1>
+<nav class="contents local" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#major-update-july-25-2021" id="id4">Major Update: July 25, 2021</a></li>
-<li><a class="reference internal" href="#about-the-cocalc-docker-image" id="id5">About the CoCalc Docker Image</a></li>
-<li><a class="reference internal" href="#limitations" id="id6">Limitations</a></li>
-<li><a class="reference internal" href="#questions" id="id7">Questions</a></li>
-<li><a class="reference internal" href="#getting-started" id="id8">Getting Started</a></li>
-<li><a class="reference internal" href="#additional-licensing-and-support-available" id="id9">Additional Licensing and Support Available</a></li>
-<li><a class="reference internal" href="#online-mailing-lists-and-open-issues" id="id10">Online Mailing Lists and Open Issues</a></li>
-<li><a class="reference internal" href="#security-status" id="id11">Security Status</a></li>
-<li><a class="reference internal" href="#updates-to-the-cocalc-docker-image" id="id12">Updates to the CoCalc Docker Image</a></li>
+<li><p><a class="reference internal" href="#about-the-cocalc-docker-image" id="id4">About the CoCalc Docker Image</a></p></li>
+<li><p><a class="reference internal" href="#limitations" id="id5">Limitations</a></p></li>
+<li><p><a class="reference internal" href="#questions" id="id6">Questions</a></p></li>
+<li><p><a class="reference internal" href="#getting-started" id="id7">Getting Started</a></p></li>
+<li><p><a class="reference internal" href="#additional-licensing-and-support-available" id="id8">Additional Licensing and Support Available</a></p></li>
+<li><p><a class="reference internal" href="#online-mailing-lists-and-open-issues" id="id9">Online Mailing Lists and Open Issues</a></p></li>
+<li><p><a class="reference internal" href="#security-status" id="id10">Security Status</a></p></li>
+<li><p><a class="reference internal" href="#updates-to-the-cocalc-docker-image" id="id11">Updates to the CoCalc Docker Image</a></p></li>
 </ul>
-</div>
-<div class="section" id="major-update-july-25-2021">
-<h2><a class="toc-backref" href="#id4">Major Update: July 25, 2021</a><a class="headerlink" href="#major-update-july-25-2021" title="Permalink to this headline">¶</a></h2>
-<p>On July 25, 2021, we released a new version of the CoCalc Docker image. This is a massive change from the last release.  The internal architecture is significantly simpler. Much of the code has been refactored or rewritten. We have fixed many bugs. It’s now possible to disable idle timeout, change the basepath, and modify CoCalc itself much more easily. If you are already using the CoCalc Docker image, please upgrade and test it out: <a class="reference external" href="https://github.com/sagemathinc/cocalc-docker#upgrade">CoCalc Docker image upgrade</a>.</p>
-</div>
-<div class="section" id="about-the-cocalc-docker-image">
-<h2><a class="toc-backref" href="#id5">About the CoCalc Docker Image</a><a class="headerlink" href="#about-the-cocalc-docker-image" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="about-the-cocalc-docker-image">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">About the CoCalc Docker Image</a><a class="headerlink" href="#about-the-cocalc-docker-image" title="Permalink to this heading"></a></h2>
 <p>Not only does CoCalc let you use all open source math software in your browser, but <a class="reference external" href="https://github.com/sagemathinc/cocalc">CoCalc itself is open source</a>. This means you can run CoCalc on your own laptop or server.</p>
 <p>The CoCalc Docker image lets you:</p>
 <ul class="simple">
-<li><dl class="first docutils">
-<dt>locally run:</dt>
-<dd><ul class="first last">
-<li>Sage worksheets</li>
-<li>Jupyter notebooks with R, Sage, and Python 2 &amp; 3 kernels</li>
-<li>Julia programs</li>
+<li><dl class="simple">
+<dt>locally run:</dt><dd><ul>
+<li><p>Sage worksheets</p></li>
+<li><p>Jupyter notebooks with R, Sage, and Python 2 &amp; 3 kernels</p></li>
+<li><p>Julia programs</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li>edit LaTeX documents and markdown locally</li>
-<li>learn about how CoCalc works</li>
+<li><p>edit LaTeX documents and markdown locally</p></li>
+<li><p>learn about how CoCalc works</p></li>
 </ul>
 <p>Note that files edited with the Docker image are fully compatible with online CoCalc. You can upload files from your Docker image to your cocalc.com account and work on them there. Files from cocalc.com will run in the Docker image as well, but you will need to ensure that any required packages and libraries are also installed locally.</p>
-</div>
-<div class="section" id="limitations">
-<h2><a class="toc-backref" href="#id6">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="limitations">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
-<li>Unlike the <a class="reference external" href="https://cocalc.com">cocalc.com</a> service, the Docker image doesn’t isolate projects from each other. There are no resource limitations between different projects.</li>
-<li>The Docker image has no provisions to scale horizontally. The Docker image may be useful if you have a small number of <em>trusted</em>, non-malicious users. In contrast, the online service <a class="reference external" href="https://cocalc.com">cocalc.com</a> uses a proprietary resource management system based on kubernetes that provides scalability, fault isolation, and resilience. Contact us at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a> if you are interested in running CoCalc with kubernetes infrastructure.</li>
-<li>The software stack behind the <a class="reference external" href="https://cocalc.com">cocalc.com</a> service is several hundred gigabytes of well-tested code and data. In comparison, the Docker image provides a small subset of that stack, including SageMath and LaTeX. You can extend it on your own, though, by either installing more into the container or by amending the Dockerfile.</li>
-<li>SageMath, Inc. doesn’t prioritize supporting the Docker image, which means that if you ask a question about it, or make a support request, we likely won’t have time to answer. Please set your expectations accordingly (but see below for alternatives). On the other hand, if you are willing to fully compensate us for our time, then we can likely be very helpful!</li>
-<li>The license is <a class="reference external" href="https://opensource.org/licenses/AGPL-3.0">AGPLv3</a>. If you want to run CoCalc internally and cannot use AGPLv3 licensed code at your organization, contact us and we can sell you a version of the Docker image under a different license.</li>
+<li><p>Unlike the <a class="reference external" href="https://cocalc.com">cocalc.com</a> service, the Docker image doesn’t isolate projects from each other. There are no resource limitations between different projects.</p></li>
+<li><p>The Docker image has no provisions to scale horizontally. The Docker image may be useful if you have a small number of <em>trusted</em>, non-malicious users. In contrast, the online service <a class="reference external" href="https://cocalc.com">cocalc.com</a> uses a proprietary resource management system based on kubernetes that provides scalability, fault isolation, and resilience. Contact us at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a> if you are interested in running CoCalc with kubernetes infrastructure.</p></li>
+<li><p>The software stack behind the <a class="reference external" href="https://cocalc.com">cocalc.com</a> service is several hundred gigabytes of well-tested code and data. In comparison, the Docker image provides a small subset of that stack, including SageMath and LaTeX. You can extend it on your own, though, by either installing more into the container or by amending the Dockerfile.</p></li>
+<li><p>SageMath, Inc. doesn’t prioritize supporting the Docker image, which means that if you ask a question about it, or make a support request, we likely won’t have time to answer. Please set your expectations accordingly (but see below for alternatives). On the other hand, if you are willing to fully compensate us for our time, then we can likely be very helpful!</p></li>
+<li><p>The license is <a class="reference external" href="https://opensource.org/licenses/AGPL-3.0">AGPLv3</a>. If you want to run CoCalc internally and cannot use AGPLv3 licensed code at your organization, contact us and we can sell you a version of the Docker image under a different license.</p></li>
 </ol>
-</div>
-<div class="section" id="questions">
-<h2><a class="toc-backref" href="#id7">Questions</a><a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="questions">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Questions</a><a class="headerlink" href="#questions" title="Permalink to this heading"></a></h2>
 <p><strong>I’m working on a collaborative project on cocalc.com and the scripts we’re using will very likely exceed the allotted server time for my cocalc.com account. Can I run the Docker image of CoCalc on my own machine, but still enable access by my collaborators remotely?</strong></p>
 <p>Yes, you definitely can! The CoCalc team does exactly this in some special cases (e.g., for Sage Days workshops).
 Follow the directions here:
@@ -278,70 +224,63 @@ Be sure to make your account an admin and set an “account creation token” so
 <p>The CoCalc Docker image is completely isolated from your main Linux system. It can’t mess up anything installed there! It uses the exact same Linux kernel, but otherwise has minimal overhead (it is very much not a virtual machine).  Docker is designed to not touch or break anything related to your OS.</p>
 <p><strong>How much disk space is needed for the CoCalc Docker image?</strong></p>
 <p>About 12 GB. Remember, the Docker image includes a full LaTeX and Sage install, which is pretty big.</p>
-</div>
-<div class="section" id="getting-started">
-<h2><a class="toc-backref" href="#id8">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="getting-started">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
 <p>Detailed instructions to get the image up and running are at <a class="reference external" href="https://github.com/sagemathinc/cocalc-docker">the github repo for sagemathinc/cocalc-docker</a>.</p>
-</div>
-<div class="section" id="additional-licensing-and-support-available">
-<h2><a class="toc-backref" href="#id9">Additional Licensing and Support Available</a><a class="headerlink" href="#additional-licensing-and-support-available" title="Permalink to this headline">¶</a></h2>
-<p>CoCalc code is licensed under <a class="reference external" href="https://opensource.org/licenses/AGPL-3.0">AGPLv3</a>. If you would instead like a business-friendly MIT license instead, please contact <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com&quot;">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>, and we will sell you a 1-year license for $999.  This also includes some support, though with no guarantees (that costs more). We <strong>do</strong> have several happy paying customers as of Sept 2019.</p>
-</div>
-<div class="section" id="online-mailing-lists-and-open-issues">
-<span id="cocalc-docker-mailing-lists"></span><h2><a class="toc-backref" href="#id10">Online Mailing Lists and Open Issues</a><a class="headerlink" href="#online-mailing-lists-and-open-issues" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="additional-licensing-and-support-available">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Additional Licensing and Support Available</a><a class="headerlink" href="#additional-licensing-and-support-available" title="Permalink to this heading"></a></h2>
+<p>CoCalc code is licensed under <a class="reference external" href="https://opensource.org/licenses/AGPL-3.0">AGPLv3</a>. If you would instead like a business-friendly MIT license instead, please contact <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com&quot;">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>, and we will sell you a 1-year license for $999.  This also includes some support, though with no guarantees (that costs more).</p>
+</section>
+<section id="online-mailing-lists-and-open-issues">
+<span id="cocalc-docker-mailing-lists"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Online Mailing Lists and Open Issues</a><a class="headerlink" href="#online-mailing-lists-and-open-issues" title="Permalink to this heading"></a></h2>
 <p>For additional news and support, we recommend joining the following lists:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://groups.google.com/a/sagemath.com/group/cocalc-docker/subscribe">CoCalc Docker mailing list</a> for news and updates.</li>
-<li><a class="reference external" href="https://groups.google.com/forum/?fromgroups#!forum/cocalc">CoCalc mailing list</a> for general community support.</li>
-<li>Here is a list of <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues?q=is%3Aopen+is%3Aissue+label%3AA-docker">open docker-related CoCalc issues</a>.</li>
+<li><p><a class="reference external" href="https://groups.google.com/a/sagemath.com/group/cocalc-docker/subscribe">CoCalc Docker mailing list</a> for news and updates.</p></li>
+<li><p><a class="reference external" href="https://groups.google.com/forum/?fromgroups#!forum/cocalc">CoCalc mailing list</a> for general community support.</p></li>
+<li><p>Here is a list of <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues?q=is%3Aopen+is%3Aissue+label%3AA-docker">open docker-related CoCalc issues</a>.</p></li>
 </ul>
-</div>
-<div class="section" id="security-status">
-<h2><a class="toc-backref" href="#id11">Security Status</a><a class="headerlink" href="#security-status" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="security-status">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Security Status</a><a class="headerlink" href="#security-status" title="Permalink to this heading"></a></h2>
 <p>The CoCalc Docker image is <strong>not blatantly insecure</strong> from outside attack: the database has a long random password, user accounts are separate, encrypted SSL communication is used by default, etc. That said, please observe the following:</p>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">A determined user with an account can easily access or change files of other users in the same container! Use this for personal use, behind a firewall, or with an account creation token, so that only other people you trust create accounts.  Don’t make one of these publicly available with important data in it and no account creation token! See <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/2031">issue 2031</a>.  Basically, use the CoCalc Docker image only with people you trust.</p>
+<p class="admonition-title">Warning</p>
+<p>A determined user with an account can easily access or change files of other users in the same container! Use this for personal use, behind a firewall, or with an account creation token, so that only other people you trust create accounts.  Don’t make one of these publicly available with important data in it and no account creation token! See <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/2031">issue 2031</a>.  Basically, use the CoCalc Docker image only with people you trust.</p>
 </div>
-</div>
-<div class="section" id="updates-to-the-cocalc-docker-image">
-<h2><a class="toc-backref" href="#id12">Updates to the CoCalc Docker Image</a><a class="headerlink" href="#updates-to-the-cocalc-docker-image" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="updates-to-the-cocalc-docker-image">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Updates to the CoCalc Docker Image</a><a class="headerlink" href="#updates-to-the-cocalc-docker-image" title="Permalink to this heading"></a></h2>
 <p>The CoCalc Docker image is updated several times a year. Updates incorporate all features and bug fixes that have been merged into the <a class="reference external" href="https://github.com/sagemathinc/cocalc">CoCalc GitHub code repository</a> master branch at the time of the build.</p>
 <p>Other updates, such as new versions of Sagemath, Julia, and other additional software, happen less frequently but will be announced on the CoCalc Docker mailing list.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="cocalc-desktop.html" class="btn btn-neutral float-right" title="CoCalc Desktop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="api/write_text_file_to_project.html" class="btn btn-neutral float-left" title="write_text_file_to_project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="api/write_text_file_to_project.html" class="btn btn-neutral float-left" title="write_text_file_to_project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cocalc-desktop.html" class="btn btn-neutral float-right" title="CoCalc Desktop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/docker-image.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -350,37 +289,26 @@ Be sure to make your account an admin and set an “account creation token” so
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

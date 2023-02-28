@@ -19,6 +19,7 @@ To open it, click on the light blue button with the reversed cirular arrow aroun
 
 .. image:: img/time-travel-button.png
     :align: center
+    :alt: time travel button
 
 Then you can see the underlying history, e.g. here for exactly this ``time-travel.rst`` file of the documentation in front of you.
 
@@ -30,11 +31,13 @@ For very long histories, another button will show up to load the entire history.
 
 .. image:: img/time-travel-ui.png
     :width: 100%
+    :alt: long time travel history
 
 With ``[x] Changes`` enabled, you get a two-ended slider to see the changes between these two revisions:
 
 .. image:: img/time-travel-changes.png
     :width: 100%
+    :alt: time travel changes
 
 For more information, read this `blog post about time travel <http://blog.sagemath.com/2016/09/08/timetravel-diffs.html>`_.
 
@@ -58,4 +61,9 @@ In the case that Time Travel says "The Project" made the change, that means that
 
 Make sure you save your file to disk when you're finished working with it. A file is saved to disk when the "Save" button turns from a bright green to a disabled dull green.
 
+####################################
+Clear TimeTravel History for a File
+####################################
+
+While you can't explicitly delete the TimeTravel history for a file, you can achieve a similar result. CoCalc, unlike other software (including Microsoft Office), does not store the TimeTravel history of a file in the file or even in any filesystem (e.g., it is not in a hidden file). It exists only in the CoCalc backend PostgreSQL database as a series of patches tracking the evolution of your notebook over time. It is the same data used for realtime collaboration. TimeTravel is associated to the specific project and path. If you copy your file to a new location (even in the same project), then click "TimeTravel", you will see that it is a new history.
 

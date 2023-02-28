@@ -1,47 +1,27 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>query &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/api/query.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/api/query.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="read_text_file_from_project" href="read_text_file_from_project.html" />
@@ -55,41 +35,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
-  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -97,38 +64,57 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API v1</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="index.html#purpose">Purpose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#protocol-and-data-format">Protocol and Data Format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#authentication">Authentication</a></li>
@@ -157,7 +143,6 @@
 <li class="toctree-l3"><a class="reference internal" href="metrics.html">metrics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ping.html">ping</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project_exec.html">project_exec</a></li>
-<li class="toctree-l3"><a class="reference internal" href="public_get_directory_listing.html">public_get_directory_listing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="public_get_text_file.html">public_get_text_file</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">query</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#examples-of-a-get-query">Examples of a <em>get</em> query</a></li>
@@ -186,97 +171,63 @@
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="index.html">API</a> &raquo;</li>
-        
-      <li>query</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/query.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">API v1</a></li>
+      <li class="breadcrumb-item active">query</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="query">
-<h1>query<a class="headerlink" href="#query" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="query">
+<h1>query<a class="headerlink" href="#query" title="Permalink to this heading"></a></h1>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</li>
-<li><code class="docutils literal notranslate"><span class="pre">query</span></code>: The actual query (required)</li>
-<li><code class="docutils literal notranslate"><span class="pre">changes</span></code>:</li>
-<li><code class="docutils literal notranslate"><span class="pre">multi_response</span></code>: (default: false)</li>
-<li><code class="docutils literal notranslate"><span class="pre">options</span></code>:</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">query</span></code>: The actual query (required)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">changes</span></code>:</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">multi_response</span></code>: (default: false)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">options</span></code>:</p></li>
 </ul>
 <p>This queries directly the database (sort of Facebook’s GraphQL) Options
 for the ‘query’ API message must be sent as JSON object. A query is
 either <em>get</em> (read from database), or <em>set</em> (write to database). A query
 is <em>get</em> if any query keys are null, otherwise the query is <em>set</em>.</p>
 <p>Note: queries with <code class="docutils literal notranslate"><span class="pre">multi_response</span></code> set to <code class="docutils literal notranslate"><span class="pre">true</span></code> are not supported.</p>
-<div class="section" id="examples-of-a-get-query">
-<h2>Examples of a <em>get</em> query<a class="headerlink" href="#examples-of-a-get-query" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="get-title-and-description-for-a-project">
-<h3>Get title and description for a project<a class="headerlink" href="#get-title-and-description-for-a-project" title="Permalink to this headline">¶</a></h3>
+<section id="examples-of-a-get-query">
+<h2>Examples of a <em>get</em> query<a class="headerlink" href="#examples-of-a-get-query" title="Permalink to this heading"></a></h2>
+<section id="get-title-and-description-for-a-project">
+<h3>Get title and description for a project<a class="headerlink" href="#get-title-and-description-for-a-project" title="Permalink to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;title&quot;:null,&quot;description&quot;:null}}}&#39; \
   https://cocalc.com/api/v1/query
@@ -309,9 +260,9 @@ example, project name and description are returned.</p>
                        &quot;title&quot;: &quot;TESTPROJECT 99&quot;}]}}
 </pre></div>
 </div>
-</div>
-<div class="section" id="get-project-id-given-title-and-description">
-<h3>Get project id, given title and description<a class="headerlink" href="#get-project-id-given-title-and-description" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="get-project-id-given-title-and-description">
+<h3>Get project id, given title and description<a class="headerlink" href="#get-project-id-given-title-and-description" title="Permalink to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:null,&quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,&quot;description&quot;:&quot;desc 2&quot;}}}&#39; \
   https://cocalc.com/api/v1/query
@@ -323,9 +274,9 @@ example, project name and description are returned.</p>
      &quot;id&quot;:&quot;2be22e08-f00c-4128-b112-fa8581c2d584&quot;}
 </pre></div>
 </div>
-</div>
-<div class="section" id="get-users-given-the-project-id">
-<h3>Get users, given the project id<a class="headerlink" href="#get-users-given-the-project-id" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="get-users-given-the-project-id">
+<h3>Get users, given the project id<a class="headerlink" href="#get-users-given-the-project-id" title="Permalink to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \
@@ -365,9 +316,9 @@ MB - member hosting: true</p>
      &quot;id&quot;:&quot;9dd3ef3f-002b-4893-b31f-ff51440c855f&quot;}
 </pre></div>
 </div>
-</div>
-<div class="section" id="get-editor-settings-for-the-present-user">
-<h3>Get editor settings for the present user<a class="headerlink" href="#get-editor-settings-for-the-present-user" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="get-editor-settings-for-the-present-user">
+<h3>Get editor settings for the present user<a class="headerlink" href="#get-editor-settings-for-the-present-user" title="Permalink to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:null}}}&#39; \
@@ -400,12 +351,12 @@ MB - member hosting: true</p>
                                                 &quot;undo_depth&quot;: 300}}}}
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="examples-of-a-set-query">
-<h2>Examples of a <em>set</em> query<a class="headerlink" href="#examples-of-a-set-query" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="set-title-and-description-for-a-project">
-<h3>Set title and description for a project<a class="headerlink" href="#set-title-and-description-for-a-project" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="examples-of-a-set-query">
+<h2>Examples of a <em>set</em> query<a class="headerlink" href="#examples-of-a-set-query" title="Permalink to this heading"></a></h2>
+<section id="set-title-and-description-for-a-project">
+<h3>Set title and description for a project<a class="headerlink" href="#set-title-and-description-for-a-project" title="Permalink to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
@@ -418,9 +369,9 @@ MB - member hosting: true</p>
        &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}
 </pre></div>
 </div>
-</div>
-<div class="section" id="make-a-path-public-publish-a-file">
-<h3>Make a path public (publish a file)<a class="headerlink" href="#make-a-path-public-publish-a-file" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="make-a-path-public-publish-a-file">
+<h3>Make a path public (publish a file)<a class="headerlink" href="#make-a-path-public-publish-a-file" title="Permalink to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;public_paths&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
@@ -433,9 +384,9 @@ MB - member hosting: true</p>
        &quot;id&quot;:&quot;ad7d6b17-f5a9-4c5c-abc3-3823b1e1773f&quot;}
 </pre></div>
 </div>
-</div>
-<div class="section" id="add-an-upgrade-to-a-project">
-<h3>Add an upgrade to a project<a class="headerlink" href="#add-an-upgrade-to-a-project" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="add-an-upgrade-to-a-project">
+<h3>Add an upgrade to a project<a class="headerlink" href="#add-an-upgrade-to-a-project" title="Permalink to this heading"></a></h3>
 <p>In the “get” example above showing project
 upgrades, change cpu upgrades from 3 to 4. The <code class="docutils literal notranslate"><span class="pre">users</span></code> object is
 returned as read, with <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> increased to 1024 = 4 * 256. It
@@ -469,9 +420,9 @@ are merged in.</p>
      &quot;query&quot;: {}}
 </pre></div>
 </div>
-</div>
-<div class="section" id="start-and-stop-a-project">
-<span id="api-stop-project"></span><h3>Start and Stop a project<a class="headerlink" href="#start-and-stop-a-project" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="start-and-stop-a-project">
+<span id="api-stop-project"></span><h3>Start and Stop a project<a class="headerlink" href="#start-and-stop-a-project" title="Permalink to this heading"></a></h3>
 <p>The example starts a project.
 Use <cite>stop</cite> instead of <cite>start</cite> for the action to stop a project.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
@@ -483,48 +434,41 @@ Use <cite>stop</cite> instead of <cite>start</cite> for the action to stop a pro
   https://cocalc.com/api/v1/query
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="gettable-and-settable-fields">
-<h2>Gettable and settable fields<a class="headerlink" href="#gettable-and-settable-fields" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="gettable-and-settable-fields">
+<h2>Gettable and settable fields<a class="headerlink" href="#gettable-and-settable-fields" title="Permalink to this heading"></a></h2>
 <p>Information on which fields are gettable and settable is in the CoCalc source code. See the definition of <code class="docutils literal notranslate"><span class="pre">user_query</span></code> for example in the
 <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/8015b03113dc1bc24690fb6d99abb49de3bf273a/src/packages/util/db-schema/accounts.ts">accounts.ts</a>
 or
 <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/8015b03113dc1bc24690fb6d99abb49de3bf273a/src/packages/util/db-schema/projects.ts">projects.ts</a> files.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="read_text_file_from_project.html" class="btn btn-neutral float-right" title="read_text_file_from_project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="public_get_text_file.html" class="btn btn-neutral float-left" title="public_get_text_file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="public_get_text_file.html" class="btn btn-neutral float-left" title="public_get_text_file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="read_text_file_from_project.html" class="btn btn-neutral float-right" title="read_text_file_from_project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/query.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -533,37 +477,26 @@ or
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

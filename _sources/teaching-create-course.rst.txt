@@ -12,80 +12,83 @@ how to populate it with a course management file and how to invite all of your s
    :depth: 1
 
 
-###########################
-Creating the Course Project
-###########################
+##############################
+Create the Teacher's Project
+##############################
 
 The first step is to create a teacher's project to contain the course.
 
-Log into CoCalc and click on the **Projects** icon in the top left hand corner of the screen.
+Sign into CoCalc and click on **Projects** at upper left.
 
 .. image:: img/teaching/projects-cc.png
     :width: 100px
     :align: center
-    :alt: Projects icon
+    :alt: projects button
 
-Click on **Create New Project**, fill out the **Title** and **Description** and click on **Create Project**
+Click on **Create New Project**, fill in the **Title**, and click **Create Project**
 
 .. image:: img/teaching/create_new_course_project.png
      :width: 100%
      :align: center
-     :alt: entering new project title and description
+     :alt: enter new project title
 
-The new project will appear at the top of the project list. Click on its  title to open it.
+The new project will be created. If the project is not automatically started, click the "Start Project" button to start it. You will see an empty Files list for the new project, because you haven't added any files yet.
 
-.. image:: img/teaching/course_list.png
+.. image:: img/teaching/new-instructor-project-started.png
      :width: 100%
      :align: center
-     :alt: new teacher project displayed in project list
+     :alt: files list is empty just after project is created
+
+.. note::
+
+    When a new project is first opened, you will see a "Free Trial" banner above the Files toolbar, warning that no license has been applied. You can add a license later (see below) in one of two ways: 1) there is an option in course configuration to use the same license for the teacher's project that is used for all the students; 2) you can decline that option and instead specify a different license in project Settings for the teacher's project.
 
 .. index:: Courses; adding teaching assistants
 .. _teaching-add-ta:
 
-########################################
-Adding Teaching Assistants to the Course
-########################################
-
-To add teaching assistants or other teachers to the course, open the course project, click on the settings tab and look down to see "Add new collaborators" in the project settings.
-
-Under **Add new collaborators**, you can find or add collaborators by name or email address.
-These collaborators will also have access to all associated student projects orchestrated by that project.
-Do **not** add any students of yours as project collaborators!
+################################################
+Add Teaching Assistants to the Teacher's Project
+################################################
 
 .. image:: img/teaching/collaborators.png
      :width: 50%
      :align: center
+     :alt: dialog to add new collaborators
 
-If the email address you add as a collaborator is not associated with a CoCalc account,
-an email will be sent to that address with instructions how to join.
-Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.
+To add teaching assistants or other teachers:
+
+#. If it is not already open, open the course project.
+#. Click Settings (wrench icon) and scroll down to "Add new collaborators" in the project settings.
+#. Under "Add new collaborators", you can find or add collaborators by name or email address. These collaborators will also have access to all associated student projects orchestrated by that project. Do **not** add students in the course as project collaborators!
+
+If the email address you add as a collaborator is not associated with a CoCalc account, an email will be sent to that address with instructions how to join. Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.
 
 .. index:: Courses; course file
 
 ########################
-Creating the Course File
+Create the Course File
 ########################
 
-Almost all aspects of a course, such as which students are enrolled and assignment management, are controlled by a **.course** file. We'll now create this file.
+Almost all aspects of a course, such as which students are enrolled and assignment management, are controlled by a ``course`` file.
 
-Open the course project, click on **New** and give the course a title.
-Here, I've used `Autumn_2016_PHY001`.
-Click on **Manage a Course** to create the course file.
+#. In the project Files list (see image above), click "(+)New" in the upper toolbar, or click "(+)Create or Upload Files..." in the middle of the page.
+
+#. You can override the default file name. Give the file a descriptive name like "Data Science 101"
+
+#. Click on "Manage a Course" to create the course file. Note that this step merely appends the suffix ".course" to the filename.
 
 .. image:: img/teaching/new_managecourse.png
      :width: 100%
      :align: center
+     :alt: create course file
 
-If you go to the root of the course project directory, you will see that a new file has been created with the extension **.course**. This is the course management file and most aspects of your course are controlled by it.
+A new file with the extension ".course" will be created in the home directory of the project. This is the course management file.
 
-.. image:: img/teaching/course_file.png
-     :width: 100%
-     :align: center
 
 .. index:: Courses; multiple courses in same project
 .. note::
 
-    You may have more than one course file in a single project, as is explained in the next section. Be aware that any account you add as a teaching assistant to the project will have access to course files and student work for **all** courses in that project.
+    You may have more than one course file in a single project, as is explained in the next section. Be aware that any teaching assistant you add to the project will have access to **all** course files and student work in that project.
 
 .. index:: Courses; split into sections
 
@@ -94,7 +97,7 @@ Split course into multiple groups
 
 **Note:** If your course is large, it is possible to partition your class into several groups or sections.
 To accomplish that, simply create more than one course file.
-For example, ``PHY001_A.course``, ``PHY001_B.course``, ``PHY001_C.course``, ...
+For example, ``DS101_A.course``, ``DS101_B.course``, ``DS101_C.course``, ...
 for groups ``A``, ``B``, ``C`` and so on.
 
 These course files are independent of each other,
@@ -104,39 +107,55 @@ which allows not only different groups of students, but also different due dates
 .. _adding-students:
 
 #############################
-Adding Students to the Course
+Add Students to the Course
 #############################
 
-Open your course by clicking on the **.course** file.
+Open your new course by clicking on the course file. Select the "Students" tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc.
 
-In the **Students** tab, add a comma separated list of students' emails addresses in the search box and click on the search icon.
-
-.. image:: img/teaching/student_list.png
+.. image:: img/teaching/course_file.png
      :width: 100%
      :align: center
+     :alt: open the new course file
 
-If you have a particular large class, the above method may take a very long time. If you have your students' email addresses in an Excel spreadsheet (or Google Sheet) you can copy and paste them directly in the **Add student** box.
 
-After parsing the list, you can either add the students explicitly (press shift or ctrl key for multiple selections),
-or just click the "Add all students" button.
+It's best to add students using their email addresses, because those are unique for cocalc accounts. However, it is also possible to search for students by first and last names.
 
-Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc.
+To add multiple students, you can paste in a comma-separated list of email addresses or names. Another way to enter the information is if you have your students' email addresses in a column of a spreadsheet, for example with Excel or Google Sheets.
 
-.. image:: img/teaching/student_list2.png
+.. image:: img/teaching/add-students-2.png
+     :width: 60%
+     :align: center
+     :alt: example of student email addresses in a spreadsheet
+
+You can copy the addresses from the spreadsheet and paste directly in the **Add student** box.
+
+.. image:: img/teaching/add-students-3.png
      :width: 100%
      :align: center
+     :alt: copy/paste from spreadsheet into Add Student box
 
-If your project (the one with the .course file) has the :ref:`Internet Access upgrade <internet-access>`, any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course. 
+
+After running the search by clicking "Search" or hitting shift-Enter, you can select which students you want add from the search results (use Ctrl-click or Cmd-click for more than 1 student), or just click the "Add all students" button.
+
+.. image:: img/teaching/add-students-4.png
+     :width: 100%
+     :align: center
+     :alt: selecting all matching students after searching by email address
+
+
+Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc. If the process appears stalled after creating some number of student projects, you can refresh your browser to check for updated results.
+
+.. image:: img/teaching/add-students-5.png
+     :width: 100%
+     :align: center
+     :alt: student list after adding all students from the search
+
+
+If your project (the one with the .course file) has network access (this is provided when any CoCalc license has been applied), any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course. 
 
 .. note::
 
     For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.
-
-Your course page will now look like this
-
-.. image:: img/teaching/student_list3.png
-     :width: 100%
-     :align: center
 
 * Email addresses that are followed by **(invited)** do not have a CoCalc account yet.
   **(invited)** will disappear as soon as they sign up.
@@ -155,29 +174,17 @@ Your course page will now look like this
 .. index:: Re-send student email invitations
 
 ###############################
-Reconfiguring Student Projects
+Restrict Student Projects
 ###############################
 
-To ensure student projects have correct students and teaching assistants, titles and descriptions, click `Reconfigure all projects`.
-Doing so will also resend email invitations to students who have not already signed up for CoCalc.
-
-.. figure:: img/teaching/course-reconfigure.png
-     :width: 90%
-     :align: center
-
-     "Reconfigure all projects" at lower right in course Configuration
-
-###############################
-Restricted Student Projects
-###############################
-
-In the course Configuration tab, check any of the boxes under "Restrict student projects" to remove the corresponding functionality from student projects. See below for more information about each item. This information is also available if you hover over an option in the web dialog.
+In the course Configuration tab on the right, check any of the boxes under "Restrict student projects" to remove the corresponding functionality from student projects. See below for more information about each item. This information is also available if you hover over an option in the web dialog.
 
 Because some CoCalc features may not be compatible with course content created by an instructor, restricting a project can reduce student confusion and prevent issues with running and grading assignments. It may also keep students more focused, e.g., during an exam. Do not gain a false sense of security and expect these to prevent all forms of cheating.
 
 .. figure:: img/teaching/restrict-student-projects.png
      :width: 90%
      :align: center
+     :alt: several options for restricting student projects
 
      "Restrict student projects" at lower right in course Configuration
 
@@ -192,6 +199,35 @@ Because some CoCalc features may not be compatible with course content created b
 * **Disable API keys (NOT IMPLEMENTED).** Makes it so the HTTP API is blocked from accessing the student project. A student might use the API to get around various other restrictions.
 * **Disable outgoing network access.** Blocks all outgoing network connections from the student project.
 * **Disable SSH access to project.** Makes any attempt to ssh to the student project fail.
+
+###############################
+Reconfigure Student Projects
+###############################
+
+In the course Configuration tab on the right, click `Reconfigure all projects` to ensure student projects have correct students and teaching assistants, titles and descriptionsa.
+Doing so will also resend email invitations to students who have not already signed up for CoCalc.
+
+.. figure:: img/teaching/course-reconfigure.png
+     :width: 90%
+     :align: center
+     :alt: button to reconfigure all student projects in lower right of course Configuration tab
+
+     "Reconfigure all projects" at lower right in course Configuration
+
+##################################
+Resend outstanding email invites
+##################################
+
+In the course Configuration tab on the right, click `Reinvite students` to send/resend an email invitation to all students who do not yet have an account on CoCalc. This will send at most one email per student per day.
+
+.. figure:: img/teaching/reinvite-students.png
+     :width: 90%
+     :align: center
+     :alt: button to resend email invitations to students in lower right of course Configuration tab
+
+
+     "Reinvite students" at lower right in course Configuration
+
 
 
 #########################

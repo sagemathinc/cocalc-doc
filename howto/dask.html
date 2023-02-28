@@ -1,47 +1,27 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dask cluster &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/dask.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/dask.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -53,41 +33,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
-  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,125 +62,109 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Dask cluster</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/dask.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Dask cluster</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="dask-cluster">
-<span id="howto-dask"></span><span id="index-0"></span><h1>Dask cluster<a class="headerlink" href="#dask-cluster" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="dask-cluster">
+<span id="howto-dask"></span><span id="index-0"></span><h1>Dask cluster<a class="headerlink" href="#dask-cluster" title="Permalink to this heading"></a></h1>
 <p>Notes about running a small <a class="reference external" href="https://docs.dask.org/">Dask cluster</a>
 with <a class="reference external" href="https://distributed.dask.org/">Distributed workers</a>
 in your CoCalc project for prototyping and educational use.</p>
-<div class="section" id="start-cluster">
-<h2>Start cluster<a class="headerlink" href="#start-cluster" title="Permalink to this headline">¶</a></h2>
+<section id="start-cluster">
+<h2>Start cluster<a class="headerlink" href="#start-cluster" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
-<li><p class="first">Create a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>, e.g. <code class="docutils literal notranslate"><span class="pre">dask.term</span></code></p>
-</li>
-<li><p class="first">Use the split buttons at the top right to split it horizontally and vertically into 4 panels (see <a class="reference internal" href="../frame-editor.html"><span class="doc">Frame Editor</span></a> for more details).</p>
-</li>
-<li><p class="first">Start the Scheduler in the first terminal panel:</p>
+<li><p>Create a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>, e.g. <code class="docutils literal notranslate"><span class="pre">dask.term</span></code></p></li>
+<li><p>Use the split buttons at the top right to split it horizontally and vertically into 4 panels (see <a class="reference internal" href="../frame-editor.html"><span class="doc">Frame Editor</span></a> for more details).</p></li>
+<li><p>Start the Scheduler in the first terminal panel:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dask-scheduler --dashboard-prefix $COCALC_PROJECT_ID/port/8787
 </pre></div>
 </div>
@@ -224,7 +175,7 @@ in your CoCalc project for prototyping and educational use.</p>
 </li>
 </ol>
 <ol class="arabic" start="3">
-<li><p class="first">Start three works in the other 3 panels via:</p>
+<li><p>Start three works in the other 3 panels via:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dask-worker tcp://localhost:8786 \
     --dashboard-prefix $COCALC_PROJECT_ID/port/8787 \
     --local-directory ~/dask-worker \
@@ -232,33 +183,32 @@ in your CoCalc project for prototyping and educational use.</p>
 </pre></div>
 </div>
 <ul class="simple">
-<li>connecting to <strong>localhost</strong> (not the IP address, which is changing between project restarts!)</li>
-<li>set the local directory to <cite>~/dask-worker</cite> in your home directory (all their data will be there, when shutting down the cluster, you can get rid of all temp data at once by removing that directory)</li>
-<li>threads: just one</li>
-<li>processes: also just one</li>
-<li>and a conservative memory limit per worker.</li>
+<li><p>connecting to <strong>localhost</strong> (not the IP address, which is changing between project restarts!)</p></li>
+<li><p>set the local directory to <cite>~/dask-worker</cite> in your home directory (all their data will be there, when shutting down the cluster, you can get rid of all temp data at once by removing that directory)</p></li>
+<li><p>threads: just one</p></li>
+<li><p>processes: also just one</p></li>
+<li><p>and a conservative memory limit per worker.</p></li>
 </ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you run into memory-limit issues for individual workers, switch to running two clients with 512M memory limit. You can also get memory upgrades to be able to allocate more. In case you only run two workers, you can start <cite>htop</cite> in the 4th panel in order to keep an eye on all running processes in your project.</p>
+<p class="admonition-title">Note</p>
+<p>If you run into memory-limit issues for individual workers, switch to running two clients with 512M memory limit. You can also get memory upgrades to be able to allocate more. In case you only run two workers, you can start <cite>htop</cite> in the 4th panel in order to keep an eye on all running processes in your project.</p>
 </div>
 </li>
 </ol>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last"><strong>Tipp</strong>: in each panel of the terminal, there is an icon with a “rocket”.
+<p class="admonition-title">Note</p>
+<p><strong>Tipp</strong>: in each panel of the terminal, there is an icon with a “rocket”.
 Click it to open up a startup initialization script of that very panel.
 Paste these commands right there, and the next time you start your project and open up that terminal (just keep that tab opened),
 all init commands for each panel will run.
 That way, your little cluster is always spun up when you work in your project. If there is an issue, run <cite>Ctrl-c</cite> and then <cite>Ctrl-d</cite> to interrupt and exit the running instance. It will respan and run that init command again…</p>
 </div>
-</div>
-<div class="section" id="connect-with-a-client">
-<h2>Connect with a client<a class="headerlink" href="#connect-with-a-client" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="connect-with-a-client">
+<h2>Connect with a client<a class="headerlink" href="#connect-with-a-client" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
-<li><p class="first">Create a Jupyter Notebook, e.g. <code class="docutils literal notranslate"><span class="pre">dask.ipynb</span></code>.</p>
-</li>
-<li><p class="first">Configure Dask to set the <strong>temporary directory to be in your project’s files</strong> (the <cite>/tmp</cite> directory is virtual and in memory).
+<li><p>Create a Jupyter Notebook, e.g. <code class="docutils literal notranslate"><span class="pre">dask.ipynb</span></code>.</p></li>
+<li><p>Configure Dask to set the <strong>temporary directory to be in your project’s files</strong> (the <cite>/tmp</cite> directory is virtual and in memory).
 The config below also enables <a class="reference external" href="http://distributed.dask.org/en/latest/work-stealing.html">work stealing</a>,
 because we’re on the same node anyways. The snippet below should get you started:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import dask
@@ -273,15 +223,15 @@ dask.config.set({
 </li>
 </ol>
 <ol class="arabic" start="2">
-<li><p class="first">Create you client, it should return a general status information (how many clients, memory, etc.):</p>
+<li><p>Create you client, it should return a general status information (how many clients, memory, etc.):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>from dask.distributed import Client
 client = Client(&#39;127.0.0.1:8786&#39;)
 client
 </pre></div>
 </div>
-<div class="figure align-center">
+<figure class="align-center">
 <a class="reference internal image-reference" href="https://storage.googleapis.com/cocalc-extra/dask-client.png"><img alt="https://storage.googleapis.com/cocalc-extra/dask-client.png" src="https://storage.googleapis.com/cocalc-extra/dask-client.png" style="width: 50%;" /></a>
-</div>
+</figure>
 </li>
 </ol>
 <p>If that worked, congratulations! You can start submitting tasks to your little cluster!</p>
@@ -289,9 +239,9 @@ client
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dask.config.config
 </pre></div>
 </div>
-</div>
-<div class="section" id="first-example">
-<h2>First example<a class="headerlink" href="#first-example" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="first-example">
+<h2>First example<a class="headerlink" href="#first-example" title="Permalink to this heading"></a></h2>
 <p>To get started with a small example, let’s compute the sum of the first 1000 integers
 using <a class="reference external" href="https://docs.dask.org/en/latest/bag.html">Bags</a>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import dask.bag as db
@@ -303,9 +253,9 @@ nums.sum().compute()
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>499500
 </pre></div>
 </div>
-</div>
-<div class="section" id="dashboard">
-<h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="dashboard">
+<h2>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this heading"></a></h2>
 <p>Once your cluster is running and the scheduler’s prefix is setup correctly (see above),
 open the dashboard’s URL in a new browser tab. Make sure to replace the placeholder with your project’s UUID:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/&lt;PROJECT UUID&gt;/port/8787/status
@@ -315,37 +265,36 @@ open the dashboard’s URL in a new browser tab. Make sure to replace the placeh
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/4c4ad130-62bf-47f0-8dbd-6bd1fef1a6fa/port/8787/status
 </pre></div>
 </div>
-</div>
-<div class="section" id="multi-project-node-cluster">
-<h2>Multi-project/-node cluster<a class="headerlink" href="#multi-project-node-cluster" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="multi-project-node-cluster">
+<h2>Multi-project/-node cluster<a class="headerlink" href="#multi-project-node-cluster" title="Permalink to this heading"></a></h2>
 <p>This setup runs several workers inside the same project.
 This allows to scale up with the number of available cores and memory, but no further.
 Right now, it is not possible to define a cluster made of several projects on CoCalc.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/dask.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -354,37 +303,26 @@ Right now, it is not possible to define a cluster made of several projects on Co
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

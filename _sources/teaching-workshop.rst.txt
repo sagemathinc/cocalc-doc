@@ -9,8 +9,7 @@ We've created this note
 in response to inquiries about using CoCalc for short training sessions.
 
 Regarding courses, upgrades and pricing, the model is flexible.
-The instructor and each student have separate projects.
-Licenses are applied to projects. Be sure to apply :ref:`Member Hosting <member-hosting>` and :ref:`Internet Access <internet-access>` to each project currently in use.
+In general, the instructor and each student have separate projects, and a license or licenses are applied to all projects.
 
 You can buy a license key for as short a time as one day. See :ref:`site license course setup <inst-pays>` for details on course configuration.
 
@@ -19,7 +18,7 @@ After a Session is Done
 
 You might want to remove the license from the course file for a session after it ends.
 Open the course file Configuration tab and remove the license key.
-This will prevent your licensed from being used up by projects for sessions that have ended.
+This will prevent your license from being used up by projects for sessions that have ended.
 The participants of the session that has ended will not lose access to their projects, but they'll run without upgrades, unless they provide their own.
 
 Questions?

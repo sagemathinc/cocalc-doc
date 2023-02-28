@@ -10,12 +10,6 @@ CoCalc Docker Image
    :local:
    :depth: 1
 
-###################################
-Major Update: July 25, 2021
-###################################
-
-On July 25, 2021, we released a new version of the CoCalc Docker image. This is a massive change from the last release.  The internal architecture is significantly simpler. Much of the code has been refactored or rewritten. We have fixed many bugs. It's now possible to disable idle timeout, change the basepath, and modify CoCalc itself much more easily. If you are already using the CoCalc Docker image, please upgrade and test it out: `CoCalc Docker image upgrade`_.
-
 ##############################
 About the CoCalc Docker Image
 ##############################
@@ -86,7 +80,7 @@ Detailed instructions to get the image up and running are at `the github repo fo
 Additional Licensing and Support Available
 #############################################
 
-CoCalc code is licensed under `AGPLv3`_. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $999.  This also includes some support, though with no guarantees (that costs more). We **do** have several happy paying customers as of Sept 2019.
+CoCalc code is licensed under `AGPLv3`_. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $999.  This also includes some support, though with no guarantees (that costs more).
 
 .. _cocalc-docker-mailing-lists:
 

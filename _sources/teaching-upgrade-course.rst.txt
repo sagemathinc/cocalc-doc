@@ -11,6 +11,7 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
 .. image:: img/teaching/upgrading_students.png
      :width: 75%
      :align: center
+     :alt: student pay vs institute pays, choices for upgrading student projects
 
 
 .. contents::
@@ -32,6 +33,7 @@ If you click "Students will pay for this course", another checkbox appears, "Req
 .. image:: img/teaching/students-pay-2.png
      :width: 50%
      :align: center
+     :alt: student pay, step 1
 
 
 When you check that checkbox, a calendar form opens. The default is to require students to pay within one week, but you can change the deadline. Select a different date if you want, or leave it at the default, and click "Close".
@@ -39,6 +41,7 @@ When you check that checkbox, a calendar form opens. The default is to require s
 .. image:: img/teaching/students-pay-3.png
      :width: 50%
      :align: center
+     :alt: student pay, step 2
 
 To continue from the perspective of your students,
 read the :ref:`instructions for students to pay for a course <student-pay-for-course>`.
@@ -61,9 +64,9 @@ and you can change any of these settings at any time.
 Teacher or institution pays for upgrades
 --------------------------------------------
 
-*This section describes adding upgrades to student projects if you are using a CoCalc license. Please see :doc:`course-upgrading-students-legacy` if you need to upgrade student projects with one of the older upgrade packages.*
+This section describes adding upgrades to student projects if you are using a CoCalc license. Please see :doc:`teaching-upgrade-legacy` if you need to upgrade student projects with one of the older upgrade packages.
 
-At this point, we assume you have created a teaching project and a course file in that project, and have added students under the ``Students`` tab in the course file.
+We assume you have created an instructor project and a course file in that project, and have added students under the ``Students`` tab in the course file. You do not need the instructor project licensed at this time. See step 4 below if you plan to use your course license to upgrade the instructor project as well as student projects.
 
 1. Obtain a license key.
 ------------------------
@@ -92,6 +95,7 @@ Your license key is a hexadecimal uuid string. It looks like this::
 - You can apply more than one license. After you install the first license, a new button will appear, "Add another license key (more students or better upgrades)". Click this to add more licenses, one at a time.
 
 .. index:: Site licenses; course strategy
+.. _license-strategy:
 
 3. License strategy (multiple licenses only)
 ---------------------------------------------
@@ -105,38 +109,59 @@ for choosing how those licenses are combined. The two options are:
 .. image:: img/teaching/license-strategy.png
      :width: 85%
      :align: center
+     :alt: maximize no. of covered students vs. upgrades to each project
 
 
-4. Restart the teacher project.
---------------------------------
+4. Apply course license to instructor project. (Optional)
+---------------------------------------------------------
 
-In project Settings (wrench icon), restart your project so that the license will be applied. Click "Restart Project..." then click "Yes, restart project" in the confirmation dialog.
+If you want, you can use the same license that you're using for the students to upgrade the instructor project. This will count against the maximum number of running projects (run limit) for the license. With this option, if you have 10 students and plan to run your instructor project at the same time as all 10 students, your course license should allow for at least 11 projects.
+
+If you already have upgraded your instructor project from another CoCalc product, or want to use a different license than your students, then you will want to disable this option.
+
+.. image:: img/teaching/upgrade-instructor-project.png
+     :width: 85%
+     :align: center
+     :alt: enable/disable upgrading instructor project
+
+
+5. Restart the instructor project
+-----------------------------------
+
+If you enabled "Upgrade instructor project" in the previous step, then open project Settings (wrench icon) and restart your project so that the license will be applied. Click "Restart Project..." then click "Yes, restart project" in the confirmation dialog.
 
 .. figure:: img/teaching/site-lic-course-restart-pre.png
      :width: 85%
      :align: center
+     :alt: restarting instructor project after license change
 
-     license entered in course Configuration; about to restart teaching project
+     license entered in course Configuration; about to restart instructor project
 
 
-In project Settings, within a few seconds you will see that the teaching project is being upgraded. The warnings about running on an unpaid server will be gone, and you will see your license upgrades applied to the teaching project, including Member Hosting and Internet Access.
+In project Settings, within a few seconds you will see that the instructor project is being upgraded. The warnings about running on an unpaid server will be gone, and you will see your license upgrades applied to the instructor project, including Member Hosting and Internet Access.
 
 .. figure:: img/teaching/site-lic-course-restart-post.png
      :width: 85%
      :align: center
+     :alt: confirm member hosting and internet access applied to instructor project
 
-     project settings after restarting teaching project
+     project settings after restarting instructor project
 
 .. index:: Site licenses; adding capacity to course
 
-Adding capacity
----------------
+6. Adding capacity
+-------------------
 
 After you have courses up and running, you may discover that you need to provide for more students,
 or increase computing resources on student projects. You can do either of those by obtaining
 additional licenses and applying them as shown above.
 If you need more flexibility than the available strategies offer,
 contact CoCalc support at help@cocalc.com.
+
+7. Problems adding a license
+----------------------------
+
+If after adding license(s) under course Configuration, a license does not seem correctly applied a student project, first check that the student project has been restarted since adding the license. If there is still a problem, see :ref:`license-errors`.
 
 What the student sees
 ============================

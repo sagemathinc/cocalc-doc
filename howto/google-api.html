@@ -1,47 +1,27 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Google Sheets API Demo &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/google-api.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/google-api.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -53,41 +33,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
-  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,140 +62,126 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Google Sheets API Demo</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/google-api.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Google Sheets API Demo</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="google-sheets-api-demo">
-<h1>Google Sheets API Demo<a class="headerlink" href="#google-sheets-api-demo" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="google-sheets-api-demo">
+<h1>Google Sheets API Demo<a class="headerlink" href="#google-sheets-api-demo" title="Permalink to this heading"></a></h1>
 <p>This example illustrates:</p>
 <ul class="simple">
-<li>writing Python code with frame editor and terminal in <a class="reference internal" href="../terminal.html#terminal-editor-panel"><span class="std std-ref">split view</span></a></li>
-<li>run-through of Google Sheets API <a class="reference external" href="https://developers.google.com/sheets/api/quickstart/python">Python Quickstart</a></li>
-<li><a class="reference external" href="https://developers.google.com/identity/protocols/OAuth2">OAuth2 authentication</a> from a CoCalc project</li>
+<li><p>writing Python code with frame editor and terminal in <a class="reference internal" href="../terminal.html#terminal-editor-panel"><span class="std std-ref">split view</span></a></p></li>
+<li><p>run-through of Google Sheets API <a class="reference external" href="https://developers.google.com/sheets/api/quickstart/python">Python Quickstart</a></p></li>
+<li><p><a class="reference external" href="https://developers.google.com/identity/protocols/OAuth2">OAuth2 authentication</a> from a CoCalc project</p></li>
 </ul>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#what-the-program-does" id="id1">What the program does</a></li>
-<li><a class="reference internal" href="#get-credentials-file" id="id2">Get credentials file</a></li>
-<li><a class="reference internal" href="#upload-python-script-and-credentials-to-cocalc" id="id3">Upload Python script and credentials to CoCalc</a></li>
-<li><a class="reference internal" href="#first-run-oauth2-authentication" id="id4">First run: OAuth2 authentication</a></li>
-<li><a class="reference internal" href="#second-and-later-runs" id="id5">Second and later runs</a></li>
-<li><a class="reference internal" href="#python-3-compatibility" id="id6">Python 3 compatibility</a></li>
-<li><a class="reference internal" href="#for-further-study" id="id7">For further study</a></li>
+<li><p><a class="reference internal" href="#what-the-program-does" id="id1">What the program does</a></p></li>
+<li><p><a class="reference internal" href="#get-credentials-file" id="id2">Get credentials file</a></p></li>
+<li><p><a class="reference internal" href="#upload-python-script-and-credentials-to-cocalc" id="id3">Upload Python script and credentials to CoCalc</a></p></li>
+<li><p><a class="reference internal" href="#first-run-oauth2-authentication" id="id4">First run: OAuth2 authentication</a></p></li>
+<li><p><a class="reference internal" href="#second-and-later-runs" id="id5">Second and later runs</a></p></li>
+<li><p><a class="reference internal" href="#python-3-compatibility" id="id6">Python 3 compatibility</a></p></li>
+<li><p><a class="reference internal" href="#for-further-study" id="id7">For further study</a></p></li>
 </ul>
-</div>
-<div class="section" id="what-the-program-does">
-<h2><a class="toc-backref" href="#id1">What the program does</a><a class="headerlink" href="#what-the-program-does" title="Permalink to this headline">¶</a></h2>
+</nav>
+<section id="what-the-program-does">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">What the program does</a><a class="headerlink" href="#what-the-program-does" title="Permalink to this heading"></a></h2>
 <p>This example runs a short program to read two columns, “Student Name” and “Major”, from a spreadsheet in Google Sheets and writes them to the user’s terminal.</p>
 <p>You don’t need to open the sample data in Google Sheets to run the program, but if you’re curious, you can view it at <a class="reference external" href="https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit#gid=0">Example Spreadsheet</a>.</p>
 <a class="reference internal image-reference" href="../_images/example-spreadsheet.png"><img alt="../_images/example-spreadsheet.png" src="../_images/example-spreadsheet.png" style="width: 60%;" /></a>
 <p>The python program is provided by Google and runs under Python 2 and Python 3.</p>
-</div>
-<div class="section" id="get-credentials-file">
-<h2><a class="toc-backref" href="#id2">Get credentials file</a><a class="headerlink" href="#get-credentials-file" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="get-credentials-file">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Get credentials file</a><a class="headerlink" href="#get-credentials-file" title="Permalink to this heading"></a></h2>
 <p>To get started, you will need a Google account. You will have one already if you use Gmail or Google Drive. If not, browse to <a class="reference external" href="https://drive.google.com/">drive.google.com</a> and follow the steps to create an account.</p>
 <p>Now that you have a Google account, browse to the <a class="reference external" href="https://developers.google.com/sheets/api/quickstart/python">Python Quickstart</a> page at Google and click <code class="docutils literal notranslate"><span class="pre">ENABLE</span> <span class="pre">THE</span> <span class="pre">GOOGLE</span> <span class="pre">SHEETS</span> <span class="pre">API</span></code>:</p>
 <a class="reference internal image-reference" href="../_images/enable-sheets-api.png"><img alt="../_images/enable-sheets-api.png" src="../_images/enable-sheets-api.png" style="width: 50%;" /></a>
@@ -238,9 +191,9 @@
 <a class="reference internal image-reference" href="../_images/project-name.png"><img alt="../_images/project-name.png" src="../_images/project-name.png" style="width: 50%;" /></a>
 <p>Click <code class="docutils literal notranslate"><span class="pre">DOWNLOAD</span> <span class="pre">CLIENT</span> <span class="pre">CONFIGURATION</span></code> to copy file <cite>credentials.json</cite> to your computer.</p>
 <a class="reference internal image-reference" href="../_images/download-config.png"><img alt="../_images/download-config.png" src="../_images/download-config.png" style="width: 50%;" /></a>
-</div>
-<div class="section" id="upload-python-script-and-credentials-to-cocalc">
-<h2><a class="toc-backref" href="#id3">Upload Python script and credentials to CoCalc</a><a class="headerlink" href="#upload-python-script-and-credentials-to-cocalc" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="upload-python-script-and-credentials-to-cocalc">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Upload Python script and credentials to CoCalc</a><a class="headerlink" href="#upload-python-script-and-credentials-to-cocalc" title="Permalink to this heading"></a></h2>
 <p>Log into your CoCalc account. Make a new folder called <cite>Sheets API</cite> or such.</p>
 <p>You can create a folder by typing its name in the Files search box, appending a slash, and pressing Enter:</p>
 <a class="reference internal image-reference" href="../_images/create-folder.png"><img alt="../_images/create-folder.png" src="../_images/create-folder.png" style="width: 50%;" /></a>
@@ -256,9 +209,9 @@ Note that the two panes can be scrolled separately.</p>
 <a class="reference internal image-reference" href="../_images/split-py.png"><img alt="../_images/split-py.png" src="../_images/split-py.png" style="width: 70%;" /></a>
 <p>Change the second pane to a command line terminal and do <code class="docutils literal notranslate"><span class="pre">ls</span></code> to list files in the folder:</p>
 <a class="reference internal image-reference" href="../_images/split-ls.png"><img alt="../_images/split-ls.png" src="../_images/split-ls.png" style="width: 70%;" /></a>
-</div>
-<div class="section" id="first-run-oauth2-authentication">
-<h2><a class="toc-backref" href="#id4">First run: OAuth2 authentication</a><a class="headerlink" href="#first-run-oauth2-authentication" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="first-run-oauth2-authentication">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">First run: OAuth2 authentication</a><a class="headerlink" href="#first-run-oauth2-authentication" title="Permalink to this heading"></a></h2>
 <p>In the terminal file, run the following command. Note the command line option so that OAuth2 does not open a browser inside CoCalc.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">quickstart</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">noauth_local_webserver</span>
 </pre></div>
@@ -271,50 +224,49 @@ Log into your Google account when you are prompted to do so. You will see a <cod
 <p>Click the icon to copy the code to your clipboard. Then paste it into the CoCalc terminal session that is waiting for it and hit Enter.
 After a few seconds, you will see the selected columns of sample data:</p>
 <a class="reference internal image-reference" href="../_images/verify.png"><img alt="../_images/verify.png" src="../_images/verify.png" style="width: 40%;" /></a>
-</div>
-<div class="section" id="second-and-later-runs">
-<h2><a class="toc-backref" href="#id5">Second and later runs</a><a class="headerlink" href="#second-and-later-runs" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="second-and-later-runs">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Second and later runs</a><a class="headerlink" href="#second-and-later-runs" title="Permalink to this heading"></a></h2>
 <p>In the terminal pane, again type <code class="docutils literal notranslate"><span class="pre">ls</span></code> and see that there is now a <cite>token.json</cite> file in your folder. That token saves your authorization. Subsequent runs of the program won’t need the OAuth2 detour through an external browser window. Run the Python script again. This time, you don’t need the added command line switch:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">quickstart</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
 <a class="reference internal image-reference" href="../_images/second-run.png"><img alt="../_images/second-run.png" src="../_images/second-run.png" style="width: 50%;" /></a>
-</div>
-<div class="section" id="python-3-compatibility">
-<h2><a class="toc-backref" href="#id6">Python 3 compatibility</a><a class="headerlink" href="#python-3-compatibility" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="python-3-compatibility">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Python 3 compatibility</a><a class="headerlink" href="#python-3-compatibility" title="Permalink to this heading"></a></h2>
 <p>The script provided by Google is compatible with current versions of both Python 2 and Python 3.
 The default <code class="docutils literal notranslate"><span class="pre">python</span></code> command in the CoCalc terminal runs Python 2.
 Use <code class="docutils literal notranslate"><span class="pre">python3</span></code> at the command line to run quickstart.py with Python 3 compatible versions of the imported modules.</p>
-</div>
-<div class="section" id="for-further-study">
-<h2><a class="toc-backref" href="#id7">For further study</a><a class="headerlink" href="#for-further-study" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="for-further-study">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">For further study</a><a class="headerlink" href="#for-further-study" title="Permalink to this heading"></a></h2>
 <p>The Google Sheets API can do much more than download selected columns of a spreadsheet. To learn more, see the documentation
 for <a class="reference external" href="https://developers.google.com/sheets/api/">Google Sheets API v4</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/google-api.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -323,37 +275,26 @@ for <a class="reference external" href="https://developers.google.com/sheets/api
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

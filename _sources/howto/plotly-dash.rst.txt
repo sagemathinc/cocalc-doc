@@ -10,8 +10,17 @@ Plot.ly's Dash Server
 
 .. _plotly-dash:
 
-This is a simple example how to run `dash`_ by plot.ly in CoCalc.
+This is based on simple example how to run `dash`_ by plot.ly in CoCalc.
 This is taken from the `dash introduction <https://dash.plotly.com/layout>`_.
+A lot more sophisticated dashboards with interactive sliders, selection boxes,
+and linked plots are possible!
+
+.. note::
+
+    The main modification is telling Plot.ly to listen on ``0.0.0.0`` and to
+    compose the URL based on the domain name, the project ID and the port number!
+
+    Access to this endpoint is only allowed for authenticated collaborators on that project!
 
 1. Create a file named ``dash_01.py``::
 
@@ -51,7 +60,7 @@ This is taken from the `dash introduction <https://dash.plotly.com/layout>`_.
         print(
             f'You might have to refresh once or twice in case it takes time to load!\n\n'
         )
-        print(f'       http://cocalc.com{base_url}\n\n')
+        print(f'       https://cocalc.com{base_url}\n\n')
         dash_app.run_server(debug=True, port=port, host='0.0.0.0')
 
 
@@ -66,6 +75,13 @@ This is taken from the `dash introduction <https://dash.plotly.com/layout>`_.
 
 .. note::
 
-    You might have to refresh the page once or twice to get it loaded up properly!
+    Initially, you might have to wait a few seconds until it shows up or
+    refresh the page once to get the plot.ly server fully started and the page properly loaded!
+
+4. This is how the dashboard looks like:
+
+.. figure:: img/plotly-dash.png
+    :width: 100%
+    :align: center
 
 .. _dash: https://dash.plotly.com/

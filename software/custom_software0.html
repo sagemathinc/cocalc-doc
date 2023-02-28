@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100 numpy exercises &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/software/custom_software0.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/software/custom_software0.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">100 numpy exercises</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1><a class="reference external" href="https://github.com/rougier/numpy-100">100 numpy exercises</a><a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<p>This is a collection of numpy exercises from numpy mailing list, stack overflow, and numpy documentation.</p>
+</section>
+<section id="id2">
+<h1><a class="reference external" href="https://github.com/sagemathinc/csi-cmpy-dit">Computational Mechanics &amp; Discrete Information Theory</a><a class="headerlink" href="#id2" title="Permalink to this heading"></a></h1>
+<p>Computational Mechanics &amp; Discrete Information Theory</p>
+</section>
+<section id="id3">
+<h1><a class="reference external" href="https://github.com/dask/dask-examples">Dask Example Notebooks</a><a class="headerlink" href="#id3" title="Permalink to this heading"></a></h1>
+<p>This repository includes easy-to-run example notebooks for <a class="reference external" href="https://dask.org/">Dask</a>. They are intended to be educational and give users a start on common workflows.</p>
+</section>
+<section id="id4">
+<h1><a class="reference external" href="https://github.com/pacm/dl-workshop">Deep Learning Workshop</a><a class="headerlink" href="#id4" title="Permalink to this heading"></a></h1>
+<p>No description available</p>
+</section>
+<section id="id5">
+<h1><a class="reference external" href="https://github.com/ctb/2019-snakemake-ucdavis">Efficient Automated Data Analysis, using snakemake</a><a class="headerlink" href="#id5" title="Permalink to this heading"></a></h1>
+<p>No description available</p>
+</section>
+<section id="id6">
+<h1><a class="reference external" href="https://github.com/ageron/handson-ml2">Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow 2.0</a><a class="headerlink" href="#id6" title="Permalink to this heading"></a></h1>
+<p>This project aims at teaching you the fundamentals of Machine Learning in python. It contains the example code and solutions to the exercises in the second edition of my O’Reilly book <a class="reference external" href="https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/">Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow</a>:</p>
+</section>
+<section id="id7">
+<h1><a class="reference external" href="https://github.com/scientificprogrammingUOS/lectures">Lectures in Scientific Computing in Python</a><a class="headerlink" href="#id7" title="Permalink to this heading"></a></h1>
+<p>This repository contains all lectures from the course <em>Scientific programming in Python</em> that is part of the <em>Cognitive Science</em> program at the <em>University Osnabrück</em>. Each lecture is accompanied by a Jupyter notebook that explains each topic with a combination of code and text.</p>
+</section>
+<section id="id8">
+<h1><a class="reference external" href="https://github.com/mbeyeler/opencv-machine-learning">Machine Learning for OpenCV</a><a class="headerlink" href="#id8" title="Permalink to this heading"></a></h1>
+<p>This is the Jupyter notebook version of the following book:
+Michael Beyeler: <em>“Machine Learning for OpenCV: Intelligent Image Processing with Python”</em>, 14 July 2017, <em>Packt Publishing Ltd., London, England</em></p>
+</section>
+<section id="id9">
+<h1><a class="reference external" href="https://workshop.materialsproject.org/">Materials Project Workshop</a><a class="headerlink" href="#id9" title="Permalink to this heading"></a></h1>
+<p>Assets for the Materials Project workshop.</p>
+</section>
+<section id="id10">
+<h1><a class="reference external" href="https://github.com/AllenDowney/ModSimPy">ModSimPython: Modeling and Simulation in Python</a><a class="headerlink" href="#id10" title="Permalink to this heading"></a></h1>
+<p><em>Modeling and Simulation in Python</em> is an introduction to physical modeling using a computational approach. It is organized in three parts:</p>
+<ul class="simple">
+<li><p>The first part presents discrete models, including a bikeshare system and world population growth.</p></li>
+<li><p>The second part introduces first-order systems, including models of infectious disease, thermal systems, and pharmacokinetics.</p></li>
+<li><p>The third part is about second-order systems, including mechanical systems like projectiles, celestial mechanics, and rotating rigid bodies.</p></li>
+</ul>
+</section>
+<section id="id11">
+<h1><a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a><a class="headerlink" href="#id11" title="Permalink to this heading"></a></h1>
+<p>No description available</p>
+</section>
+<section id="id12">
+<h1><a class="reference external" href="https://github.com/sagemathinc/csi-quantum-chemistry">Quantum Chemistry</a><a class="headerlink" href="#id12" title="Permalink to this heading"></a></h1>
+<p>Quantum Chemistry on CoCalc. Includes  <a class="reference external" href="http://psicode.org/">Psi4</a> and <a class="reference external" href="https://qiskit.org/">Qiskit</a></p>
+</section>
+<section id="id13">
+<h1><a class="reference external" href="https://github.com/haraldschilly/riemann_book">Riemann Problems and Jupyter Solutions</a><a class="headerlink" href="#id13" title="Permalink to this heading"></a></h1>
+<p>An interactive book about the Riemann problem for hyperbolic PDEs, using Jupyter notebooks. Work in progress.</p>
+</section>
+<section id="id14">
+<h1><a class="reference external" href="http://www.underworldcode.org">Underworld 2</a><a class="headerlink" href="#id14" title="Permalink to this heading"></a></h1>
+<p><a class="reference external" href="http://www.underworldcode.org">Underworld 2</a> is a Python API (Application Programming Interface) which provides functionality for the modelling of geodynamics processes.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/software/custom_software0.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
+    </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

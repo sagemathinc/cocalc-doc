@@ -8,6 +8,11 @@ Preferences
 .. index:: Account Settings
 .. index:: Account Tab; Account settings
 
+.. contents::
+   :local:
+   :depth: 2
+
+
 .. _account-settings:
 
 Account settings
@@ -70,20 +75,42 @@ Other settings
      :align: center
      :alt: other preference settings
 
-* Dark mode: CoCalc allows you to specify dark mode for all windows in "Other settings". See the :ref:`News update on dark mode <overall-dark-mode>` for more information.
-* Confirm
-* Show
-* Allow
-* Display
-* Mask
-* Hide
-* Generated filenames
+Dark mode
+------------
+
+CoCalc allows you to specify dark mode for all windows in "Other settings". See the :ref:`News update on dark mode <overall-dark-mode>` for more information.
+Confirm
+------------
+
+Show
+------------
+
+Allow
+------------
+
+Display
+------------
+
+Mask
+------------
+
+Hide
+------------
+
+Generated filenames
+----------------------
+
     .. image:: img/settings/prefs-other-gen-names.png
          :width: 80%
          :align: center
          :alt: generated filenames menu
-* Default file sort
-* Number of files per page
+
+Default file sort
+--------------------
+
+Number of files per page
+----------------------------
+
 
 .. index::
    Standby Timeout
@@ -91,7 +118,9 @@ Other settings
 
 .. _standby-timeout:
 
-* Standby timeout
+Standby timeout
+----------------
+
 
 If you are not active for several minutes, you may see the gray and blue CoCalc splash screen. Moving the mouse over the window or typing or clicking in the window will remove the splash screen.
 
@@ -145,4 +174,4 @@ Most options under "Editor settings" are self-explanatory. Here are additional d
 Terminal settings
 ===================
 
-Let's you configure font and theme of your terminals.
+Lets you configure font and theme of your terminals.

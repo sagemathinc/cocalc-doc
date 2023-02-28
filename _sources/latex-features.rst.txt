@@ -76,12 +76,45 @@ Select **"Word Count"** as shown below:
 .. index:: LaTeX Editor; build engine
 .. _latex-build-engine:
 
-LaTeX Engines
+
+Build command
 ----------------------
+
+In the build panel, you can use the "Engine" dropdown menu to select a supported LaTeX engine.
+This replaces the current build command with a generic one, that's know to work well in many situations!
+These options are available:
 
 * **latexmk** + **PDFlatex**: the default configuration, works in most cases
 * **latexmk** + **XeLaTeX**: this is useful for foreign languages with many special characters.
 * **latexmk** + **LuaTex**: uses the `LuaLaTeX`_ engine.
+
+**Output Directory**
+
+By default, an ``-output-directory=...`` is set,
+such that your current directory is kept clean of temporary files.
+Instead, the actual build process happens in a temporary in-memory directory.
+
+Some packages do not work under these circumstances,
+hence there are ``(no bulid dir)`` variants, which do not set a temporary output directory flag.
+
+**Bring your own command**
+
+More general, you can also specify your own build command.
+To avoid any processing of your build command, append a ";" semicolon at the end of your command or
+even specify several commands separated by semicolons.
+You could also use GNU Makefiles and call ``make ...;`` from here.
+
+**Default build command**
+
+The selected build command is stored in a companion file in the project.
+You can also store the default engine or even hardcode the build command in the LaTeX document itself.
+There are two relevant directives, which are special comment lines at the beginning of your file.
+
+1. ``% !TeX program = xelatex``: upon opening the file the first time, the ``XeLaTeX`` engine is selected. This is one of the default engine directives known from other latex editors. Later on, this line has no effect and your engine selection in CoCalc takes precedence. This could also be ``pdflatex`` or ``luatex``.
+2. ``% !TeX cocalc = ... file.tex``: This takes precedence over any other build command configurations. The command after the equal sign is used to build your document. Without a semicolon, the last token is replaced by the current file name, hence it is ok to just add ``file.tex``. If there is a semicolon, no processing takes place. A suitable standard build command could be::
+
+    % !TeX cocalc = latexmk -pdf -f -g -bibtex -deps -synctex=1 -interaction=nonstopmode file.tex
+
 
 .. _LuaLaTeX: http://www.luatex.org
 

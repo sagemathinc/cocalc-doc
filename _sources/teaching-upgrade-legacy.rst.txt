@@ -5,7 +5,7 @@
 Upgrading Student Projects (legacy version)
 ==========================================================
 
-*This section describes adding upgrades to student projects if you are using an upgrade package. These products are being phased out in favor of the much more flexible Cocalc licenses. Please see :ref:`inst-pays` if you need to upgrade student projects with a CoCalc license.*
+This section describes adding upgrades to student projects if you are using an upgrade package. These products are being phased out in favor of the much more flexible Cocalc licenses. Please see :ref:`Upgrading Student Projects (institution pays) <inst-pays>` if you need to upgrade student projects with a CoCalc license.
 
 The **Configuration** tab of a **.course** file allows you to upgrade students' course projects in two ways, indicated by the checkboxes in the image below:
 

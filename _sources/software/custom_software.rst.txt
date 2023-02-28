@@ -7,4 +7,4 @@ CoCalc also offers :ref:`customizable software environments <custom-software-env
 They bundle content for a specific purpose with software and libraries
 in order to form a runnable environment for them.
 
-.. mdinclude:: custom_software.md
+.. include:: custom_software0.rst

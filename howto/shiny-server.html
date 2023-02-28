@@ -1,47 +1,27 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shiny Server &mdash; CoCalc Manual  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/howto/shiny-server.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/shiny-server.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
    
@@ -53,41 +33,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
-  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -95,213 +62,198 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>Shiny Server</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/shiny-server.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Shiny Server</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="shiny-server">
-<h1>Shiny Server<a class="headerlink" href="#shiny-server" title="Permalink to this headline">¶</a></h1>
+             
+  <section id="shiny-server">
+<h1>Shiny Server<a class="headerlink" href="#shiny-server" title="Permalink to this heading"></a></h1>
 <p><a class="reference external" href="https://shiny.rstudio.com/">Shiny</a> allows you to build interactive web apps from R.
 This file explains how to run Shiny in CoCalc.</p>
 <p>The general idea is the following: First, create the <code class="docutils literal notranslate"><span class="pre">server</span></code> and <code class="docutils literal notranslate"><span class="pre">ui</span></code> function. Then, instantiate the server and pass <code class="docutils literal notranslate"><span class="pre">server</span></code> and <code class="docutils literal notranslate"><span class="pre">ui</span></code> into it. The server will then call the <code class="docutils literal notranslate"><span class="pre">ui</span></code> part to layout the dynamic website and run the <code class="docutils literal notranslate"><span class="pre">server</span></code> part to define the behavior and dynamically update its elements if data changes.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">The CoCalc specific part is in the <code class="docutils literal notranslate"><span class="pre">options</span></code> list passed into the server.
+<p class="admonition-title">Note</p>
+<p>The CoCalc specific part is in the <code class="docutils literal notranslate"><span class="pre">options</span></code> list passed into the server.
 You have to open up the app to outside traffic via <code class="docutils literal notranslate"><span class="pre">list(host=&quot;0.0.0.0&quot;)</span></code> and, for your convenience, specify a port.</p>
 </div>
 <p>It’s possible to either run this code in a standalone file, e.g. <code class="docutils literal notranslate"><span class="pre">kmeans.r</span></code> or evaluate this in a <a class="reference internal" href="../jupyter.html#jupyter-notebook"><span class="std std-ref">Jupyter Notebook</span></a>.</p>
 <ol class="arabic simple">
-<li>Create a new file <code class="docutils literal notranslate"><span class="pre">kmeans.r</span></code></li>
-<li>Split the editor and open up a <a class="reference internal" href="../terminal.html#terminal"><span class="std std-ref">Linux Terminal</span></a> in one frame – see <a class="reference internal" href="../frame-editor.html#frame-editor"><span class="std std-ref">Frame Editor</span></a> for more information. This allows you to run the code from the command-line while also editing the code.</li>
-<li>Run the file via <code class="docutils literal notranslate"><span class="pre">Rscript</span> <span class="pre">kmeans.r</span></code></li>
-<li>Open up the following website: <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[PROJECT_ID]/server/6969/</span></code>. You have to replace the <code class="docutils literal notranslate"><span class="pre">PROJECT_ID</span></code> with the one of your project and the number at the end has to match the <code class="docutils literal notranslate"><span class="pre">port</span> <span class="pre">=</span> <span class="pre">...</span></code> option! The script below will print a link for you in the terminal.</li>
+<li><p>Create a new file <code class="docutils literal notranslate"><span class="pre">kmeans.r</span></code></p></li>
+<li><p>Split the editor and open up a <a class="reference internal" href="../terminal.html#terminal"><span class="std std-ref">Linux Terminal</span></a> in one frame – see <a class="reference internal" href="../frame-editor.html#frame-editor"><span class="std std-ref">Frame Editor</span></a> for more information. This allows you to run the code from the command-line while also editing the code.</p></li>
+<li><p>Run the file via <code class="docutils literal notranslate"><span class="pre">Rscript</span> <span class="pre">kmeans.r</span></code></p></li>
+<li><p>Open up the following website: <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[PROJECT_ID]/server/6969/</span></code>. You have to replace the <code class="docutils literal notranslate"><span class="pre">PROJECT_ID</span></code> with the one of your project and the number at the end has to match the <code class="docutils literal notranslate"><span class="pre">port</span> <span class="pre">=</span> <span class="pre">...</span></code> option! The script below will print a link for you in the terminal.</p></li>
 </ol>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">#!/usr/bin/env Rscript</span>
 <span class="c1"># code taken from https://github.com/rstudio/shiny-examples/tree/master/050-kmeans-example</span>
 
 <span class="nf">require</span><span class="p">(</span><span class="n">shiny</span><span class="p">)</span>
 <span class="nf">require</span><span class="p">(</span><span class="n">shinythemes</span><span class="p">)</span>
-<span class="nf">cat</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;shiny version&quot;</span><span class="p">,</span> <span class="nf">packageVersion</span><span class="p">(</span><span class="s">&quot;shiny&quot;</span><span class="p">)))</span>
-<span class="n">port</span> <span class="o">=</span> <span class="m">6969</span>
-<span class="n">project_id</span> <span class="o">&lt;-</span> <span class="nf">Sys.getenv</span><span class="p">(</span><span class="s">&quot;COCALC_PROJECT_ID&quot;</span><span class="p">)</span>
-<span class="nf">cat</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;\n\nOpen the shiny app here: https://cocalc.com/&quot;</span><span class="p">,</span> <span class="n">project_id</span><span class="p">,</span> <span class="s">&quot;/server/&quot;</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="s">&quot;/\n\n&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">))</span>
-<span class="nf">options</span><span class="p">(</span><span class="n">device.ask.default</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
-<span class="n">opts</span> <span class="o">&lt;-</span> <span class="nf">list</span><span class="p">(</span><span class="n">host</span> <span class="o">=</span> <span class="s">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="n">port</span><span class="p">)</span>
+<span class="nf">cat</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;shiny version&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">packageVersion</span><span class="p">(</span><span class="s">&quot;shiny&quot;</span><span class="p">)))</span>
+<span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">6969</span>
+<span class="n">project_id</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">Sys.getenv</span><span class="p">(</span><span class="s">&quot;COCALC_PROJECT_ID&quot;</span><span class="p">)</span>
+<span class="nf">cat</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;\n\nOpen the shiny app here: https://cocalc.com/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">project_id</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/server/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">port</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/\n\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">))</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">device.ask.default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span>
+<span class="n">opts</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0.0.0.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">port</span><span class="p">)</span>
 
-<span class="n">server</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">session</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1"># Combine the selected variables into a new data frame</span>
-  <span class="n">selectedData</span> <span class="o">&lt;-</span> <span class="nf">reactive</span><span class="p">({</span>
-    <span class="n">iris</span><span class="p">[,</span> <span class="nf">c</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">xcol</span><span class="p">,</span> <span class="n">input</span><span class="o">$</span><span class="n">ycol</span><span class="p">)]</span>
-  <span class="p">})</span>
+<span class="n">server</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="n">session</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1"># Combine the selected variables into a new data frame</span>
+<span class="w">  </span><span class="n">selectedData</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">reactive</span><span class="p">({</span>
+<span class="w">    </span><span class="n">iris</span><span class="p">[,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">input</span><span class="o">$</span><span class="n">xcol</span><span class="p">,</span><span class="w"> </span><span class="n">input</span><span class="o">$</span><span class="n">ycol</span><span class="p">)]</span>
+<span class="w">  </span><span class="p">})</span>
 
-  <span class="n">clusters</span> <span class="o">&lt;-</span> <span class="nf">reactive</span><span class="p">({</span>
-    <span class="nf">kmeans</span><span class="p">(</span><span class="nf">selectedData</span><span class="p">(),</span> <span class="n">input</span><span class="o">$</span><span class="n">clusters</span><span class="p">)</span>
-  <span class="p">})</span>
+<span class="w">  </span><span class="n">clusters</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">reactive</span><span class="p">({</span>
+<span class="w">    </span><span class="nf">kmeans</span><span class="p">(</span><span class="nf">selectedData</span><span class="p">(),</span><span class="w"> </span><span class="n">input</span><span class="o">$</span><span class="n">clusters</span><span class="p">)</span>
+<span class="w">  </span><span class="p">})</span>
 
-  <span class="n">output</span><span class="o">$</span><span class="n">plot1</span> <span class="o">&lt;-</span> <span class="nf">renderPlot</span><span class="p">({</span>
-    <span class="nf">palette</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;#E41A1C&quot;</span><span class="p">,</span> <span class="s">&quot;#377EB8&quot;</span><span class="p">,</span> <span class="s">&quot;#4DAF4A&quot;</span><span class="p">,</span> <span class="s">&quot;#984EA3&quot;</span><span class="p">,</span>
-      <span class="s">&quot;#FF7F00&quot;</span><span class="p">,</span> <span class="s">&quot;#FFFF33&quot;</span><span class="p">,</span> <span class="s">&quot;#A65628&quot;</span><span class="p">,</span> <span class="s">&quot;#F781BF&quot;</span><span class="p">,</span> <span class="s">&quot;#999999&quot;</span><span class="p">))</span>
+<span class="w">  </span><span class="n">output</span><span class="o">$</span><span class="n">plot1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">renderPlot</span><span class="p">({</span>
+<span class="w">    </span><span class="nf">palette</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;#E41A1C&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;#377EB8&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;#4DAF4A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;#984EA3&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s">&quot;#FF7F00&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;#FFFF33&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;#A65628&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;#F781BF&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;#999999&quot;</span><span class="p">))</span>
 
-    <span class="nf">par</span><span class="p">(</span><span class="n">mar</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">5.1</span><span class="p">,</span> <span class="m">4.1</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span>
-    <span class="nf">plot</span><span class="p">(</span><span class="nf">selectedData</span><span class="p">(),</span>
-         <span class="n">col</span> <span class="o">=</span> <span class="nf">clusters</span><span class="p">()</span><span class="o">$</span><span class="n">cluster</span><span class="p">,</span>
-         <span class="n">pch</span> <span class="o">=</span> <span class="m">20</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span>
-    <span class="nf">points</span><span class="p">(</span><span class="nf">clusters</span><span class="p">()</span><span class="o">$</span><span class="n">centers</span><span class="p">,</span> <span class="n">pch</span> <span class="o">=</span> <span class="m">4</span><span class="p">,</span> <span class="n">cex</span> <span class="o">=</span> <span class="m">4</span><span class="p">,</span> <span class="n">lwd</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
-  <span class="p">})</span>
+<span class="w">    </span><span class="nf">par</span><span class="p">(</span><span class="n">mar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">5.1</span><span class="p">,</span><span class="w"> </span><span class="m">4.1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">))</span>
+<span class="w">    </span><span class="nf">plot</span><span class="p">(</span><span class="nf">selectedData</span><span class="p">(),</span>
+<span class="w">         </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">clusters</span><span class="p">()</span><span class="o">$</span><span class="n">cluster</span><span class="p">,</span>
+<span class="w">         </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">20</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span>
+<span class="w">    </span><span class="nf">points</span><span class="p">(</span><span class="nf">clusters</span><span class="p">()</span><span class="o">$</span><span class="n">centers</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">)</span>
+<span class="w">  </span><span class="p">})</span>
 <span class="p">}</span>
 
 <span class="c1"># k-means only works with numerical variables,</span>
 <span class="c1"># so don&#39;t give the user the option to select</span>
 <span class="c1"># a categorical variable</span>
-<span class="n">vars</span> <span class="o">&lt;-</span> <span class="nf">setdiff</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">iris</span><span class="p">),</span> <span class="s">&quot;Species&quot;</span><span class="p">)</span>
+<span class="n">vars</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">setdiff</span><span class="p">(</span><span class="nf">names</span><span class="p">(</span><span class="n">iris</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Species&quot;</span><span class="p">)</span>
 
-<span class="n">ui</span> <span class="o">&lt;-</span> <span class="nf">fluidPage</span><span class="p">(</span>
-  <span class="n">theme</span> <span class="o">=</span> <span class="nf">shinytheme</span><span class="p">(</span><span class="s">&quot;flatly&quot;</span><span class="p">),</span>
-  <span class="nf">headerPanel</span><span class="p">(</span><span class="s">&#39;Iris K-Means clustering&#39;</span><span class="p">),</span>
-  <span class="nf">sidebarPanel</span><span class="p">(</span>
-    <span class="nf">selectInput</span><span class="p">(</span><span class="s">&#39;xcol&#39;</span><span class="p">,</span> <span class="s">&#39;X Variable&#39;</span><span class="p">,</span> <span class="n">vars</span><span class="p">,</span> <span class="n">selected</span> <span class="o">=</span> <span class="n">vars</span><span class="p">[[</span><span class="m">1</span><span class="p">]]),</span>
-    <span class="nf">selectInput</span><span class="p">(</span><span class="s">&#39;ycol&#39;</span><span class="p">,</span> <span class="s">&#39;Y Variable&#39;</span><span class="p">,</span> <span class="n">vars</span><span class="p">,</span> <span class="n">selected</span> <span class="o">=</span> <span class="n">vars</span><span class="p">[[</span><span class="m">2</span><span class="p">]]),</span>
-    <span class="nf">sliderInput</span><span class="p">(</span><span class="s">&quot;clusters&quot;</span><span class="p">,</span> <span class="s">&quot;Cluster count:&quot;</span><span class="p">,</span> <span class="n">min</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">max</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="m">3</span><span class="p">),</span>
-  <span class="p">),</span>
-  <span class="nf">mainPanel</span><span class="p">(</span>
-    <span class="nf">plotOutput</span><span class="p">(</span><span class="s">&#39;plot1&#39;</span><span class="p">)</span>
-  <span class="p">)</span>
+<span class="n">ui</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">fluidPage</span><span class="p">(</span>
+<span class="w">  </span><span class="n">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">shinytheme</span><span class="p">(</span><span class="s">&quot;flatly&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="nf">headerPanel</span><span class="p">(</span><span class="s">&#39;Iris K-Means clustering&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="nf">sidebarPanel</span><span class="p">(</span>
+<span class="w">    </span><span class="nf">selectInput</span><span class="p">(</span><span class="s">&#39;xcol&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;X Variable&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">vars</span><span class="p">,</span><span class="w"> </span><span class="n">selected</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vars</span><span class="p">[[</span><span class="m">1</span><span class="p">]]),</span>
+<span class="w">    </span><span class="nf">selectInput</span><span class="p">(</span><span class="s">&#39;ycol&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Y Variable&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">vars</span><span class="p">,</span><span class="w"> </span><span class="n">selected</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vars</span><span class="p">[[</span><span class="m">2</span><span class="p">]]),</span>
+<span class="w">    </span><span class="nf">sliderInput</span><span class="p">(</span><span class="s">&quot;clusters&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Cluster count:&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">),</span>
+<span class="w">  </span><span class="p">),</span>
+<span class="w">  </span><span class="nf">mainPanel</span><span class="p">(</span>
+<span class="w">    </span><span class="nf">plotOutput</span><span class="p">(</span><span class="s">&#39;plot1&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="p">)</span>
 <span class="p">)</span>
 
 
 <span class="c1"># The object can be passed to runApp()</span>
-<span class="n">app</span> <span class="o">&lt;-</span> <span class="nf">shinyApp</span><span class="p">(</span><span class="n">options</span> <span class="o">=</span> <span class="n">opts</span><span class="p">,</span> <span class="n">ui</span> <span class="o">=</span> <span class="n">ui</span><span class="p">,</span> <span class="n">server</span> <span class="o">=</span> <span class="n">server</span><span class="p">)</span>
+<span class="n">app</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">shinyApp</span><span class="p">(</span><span class="n">options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">opts</span><span class="p">,</span><span class="w"> </span><span class="n">ui</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ui</span><span class="p">,</span><span class="w"> </span><span class="n">server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">server</span><span class="p">)</span>
 <span class="nf">runApp</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>If everything goes well, the website you open up should look like this:</p>
 <a class="reference internal image-reference" href="../_images/shiny-rmeans.png"><img alt="../_images/shiny-rmeans.png" src="../_images/shiny-rmeans.png" style="width: 100%;" /></a>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/shiny-server.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -310,37 +262,26 @@ You have to open up the app to outside traffic via <code class="docutils literal
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"

@@ -1,51 +1,31 @@
 
-
-
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>API &mdash; CoCalc Manual  documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API v1 &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-  
-  
-  
-    <link rel="canonical" href="https://doc.cocalc.com/api/index.html"/>
-  
-
-  
+    <link rel="canonical" href="https://doc.cocalc.com/api/index.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
-        <script type="text/javascript" src="../_static/google_analytics_tracker.js"></script>
-        <script type="text/javascript" src="https://cocalc.com/analytics.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
+        <script src="../_static/google_analytics_tracker.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="add_collaborator" href="add_collaborator.html" />
-    <link rel="prev" title="Recovering a Deleted Project" href="../howto/missing-project.html" />
+    <link rel="prev" title="purchasing licenses" href="../api2/purchasing-licenses.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -55,41 +35,28 @@
 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
 <a href="../index.html" class="icon icon-home"> CoCalc Manual
-  <img src="../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
 </a>
 
 
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
 
 
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
@@ -97,38 +64,57 @@
 <li class="toctree-l1"><a class="reference internal" href="../news.html">News</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Teaching</span></p>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Features</span></p>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../share.html">Sharing Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Platform</span></p>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html"><strong>new</strong>: Account Dropdown Menu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API v1</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#purpose">Purpose</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#protocol-and-data-format">Protocol and Data Format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#authentication">Authentication</a></li>
@@ -157,7 +143,6 @@
 <li class="toctree-l3"><a class="reference internal" href="metrics.html">metrics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ping.html">ping</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project_exec.html">project_exec</a></li>
-<li class="toctree-l3"><a class="reference internal" href="public_get_directory_listing.html">public_get_directory_listing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="public_get_text_file.html">public_get_text_file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="query.html">query</a></li>
 <li class="toctree-l3"><a class="reference internal" href="read_text_file_from_project.html">read_text_file_from_project</a></li>
@@ -181,88 +166,55 @@
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Appendix</span></p>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
   <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
   <a href="../index.html">CoCalc Manual</a>
 
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../contents.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>API</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-            
-            
-              <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/index.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
-      </li>
-    
-  </ul>
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API v1</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
 
-  
+  </ul>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="api">
-<span id="index-0"></span><h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="purpose">
-<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
+             
+  <section id="api-v1">
+<span id="index-0"></span><h1>API v1<a class="headerlink" href="#api-v1" title="Permalink to this heading"></a></h1>
+<section id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading"></a></h2>
 <p>The purpose of the CoCalc API (application programming interface) is to make
 essential operations within the CoCalc platform available to automated
 clients. This allows embedding of CoCalc services within other products
 and customizing the external look and feel of the application.</p>
-</div>
-<div class="section" id="protocol-and-data-format">
-<h2>Protocol and Data Format<a class="headerlink" href="#protocol-and-data-format" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="protocol-and-data-format">
+<h2>Protocol and Data Format<a class="headerlink" href="#protocol-and-data-format" title="Permalink to this heading"></a></h2>
 <p>Each API command is invoked using an HTTPS POST request.
 All commands support request parameters in JSON format, with request header
 <code class="docutils literal notranslate"><span class="pre">Content-Type:</span> <span class="pre">application/json</span></code>. Many commands (those that do not
@@ -277,9 +229,9 @@ the failure. In other cases, if the request cannnot
 be completed, a response code other than 200 may be
 returned, and the response body may be a
 generic HTML message rather than a JSON string.</p>
-</div>
-<div class="section" id="authentication">
-<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="authentication">
+<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading"></a></h2>
 <p>A valid API key is required on all API requests.</p>
 <p>To obtain a key manually, log into
 CoCalc and click on Settings (gear icon next to user name at upper
@@ -304,18 +256,18 @@ after the equals sign as the API key.</p>
 <p>Your API key carries access privileges, just like your login and password.
 <strong>Keep it secret.</strong>
 Do not share your API key with others or post it in publicly accessible forums.</p>
-</div>
-<div class="section" id="additional-references">
-<h2>Additional References<a class="headerlink" href="#additional-references" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="additional-references">
+<h2>Additional References<a class="headerlink" href="#additional-references" title="Permalink to this heading"></a></h2>
 <ul class="simple">
-<li>The <a class="reference external" href="https://share.cocalc.com/share/6eec7a75ce704502e2d557f44c316bf75c5c6ce7/Public/?viewer=share">CoCalc API tutorial</a> illustrates API calls in Python.</li>
-<li>The CoCalc PostgreSQL schema definition <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema">src/smc-util/db-schema</a> has information on tables and fields used with the API <code class="docutils literal notranslate"><span class="pre">query</span></code> request.</li>
-<li>The API test suite <a class="reference external" href="https://github.com/sagemathinc/cocalc/tree/master/src/smc-hub/test/api">src/smc-hub/test/api/</a> contains mocha unit tests for the API messages.</li>
-<li>The CoCalc message definition file <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/message.js">src/smc-util/message.js</a> contains the source for this guide.</li>
+<li><p>The <a class="reference external" href="https://share.cocalc.com/share/6eec7a75ce704502e2d557f44c316bf75c5c6ce7/Public/?viewer=share">CoCalc API tutorial</a> illustrates API calls in Python.</p></li>
+<li><p>The CoCalc PostgreSQL schema definition <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema">src/smc-util/db-schema</a> has information on tables and fields used with the API <code class="docutils literal notranslate"><span class="pre">query</span></code> request.</p></li>
+<li><p>The API test suite <a class="reference external" href="https://github.com/sagemathinc/cocalc/tree/master/src/smc-hub/test/api">src/smc-hub/test/api/</a> contains mocha unit tests for the API messages.</p></li>
+<li><p>The CoCalc message definition file <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/message.js">src/smc-util/message.js</a> contains the source for this guide.</p></li>
 </ul>
-</div>
-<div class="section" id="api-message-reference">
-<h2>API Message Reference<a class="headerlink" href="#api-message-reference" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="api-message-reference">
+<h2>API Message Reference<a class="headerlink" href="#api-message-reference" title="Permalink to this heading"></a></h2>
 <p>The remainder of this guide explains the individual API endpoints.
 Each API request definition begins with the path of the
 URL used to invoke the request,
@@ -330,13 +282,13 @@ command, and the format of the response.</p>
 (request parameters are often referred to
 as ‘options’ in the guide):</p>
 <ul class="simple">
-<li><strong>event</strong>: the command to be executed, for example “ping”</li>
-<li><strong>id</strong>: uuid for the API call, returned in response in most cases.
+<li><p><strong>event</strong>: the command to be executed, for example “ping”</p></li>
+<li><p><strong>id</strong>: uuid for the API call, returned in response in most cases.
 If id is not provided in the API message, a random id will be
-generated and returned in the response.</li>
+generated and returned in the response.</p></li>
 </ul>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">API Endpoints</span></p>
+<p class="caption" role="heading"><span class="caption-text">API Endpoints</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="add_collaborator.html">add_collaborator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_license_to_project.html">add_license_to_project</a></li>
@@ -361,7 +313,6 @@ generated and returned in the response.</li>
 <li class="toctree-l1"><a class="reference internal" href="metrics.html">metrics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ping.html">ping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_exec.html">project_exec</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_get_directory_listing.html">public_get_directory_listing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="public_get_text_file.html">public_get_text_file</a></li>
 <li class="toctree-l1"><a class="reference internal" href="query.html">query</a></li>
 <li class="toctree-l1"><a class="reference internal" href="read_text_file_from_project.html">read_text_file_from_project</a></li>
@@ -377,189 +328,194 @@ generated and returned in the response.</li>
 </ul>
 </div>
 <hr class="docutils" />
-<div class="section" id="api-examples-howto">
-<h3>API Examples &amp; Howto<a class="headerlink" href="#api-examples-howto" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-<div class="section" id="copy-a-file-between-projects">
-<span id="index-2"></span><h2>Copy a file between projects<a class="headerlink" href="#copy-a-file-between-projects" title="Permalink to this headline">¶</a></h2>
+<section id="api-examples-howto">
+<h3>API Examples &amp; Howto<a class="headerlink" href="#api-examples-howto" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="copy-a-file-between-projects">
+<span id="index-2"></span><h2>Copy a file between projects<a class="headerlink" href="#copy-a-file-between-projects" title="Permalink to this heading"></a></h2>
 <p>First, save your API key in a file <code class="docutils literal notranslate"><span class="pre">api.key</span></code>.
 Then, we use the <a class="reference external" href="https://requests.readthedocs.io/en/master/">requests</a> library to issue calls:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="n">key</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;api.key&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-<span class="kn">import</span> <span class="nn">requests</span> <span class="kn">as</span> <span class="nn">r</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">key</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;api.key&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">r</span>
 </pre></div>
 </div>
 <p>Copy request:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">data</span> <span class="o">=</span> <span class="err">{</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;src_project_id&#39;</span><span class="p">:</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
     <span class="s1">&#39;src_path&#39;</span><span class="p">:</span> <span class="s1">&#39;cocalc-api/api-demo.ipynb&#39;</span><span class="p">,</span>
     <span class="s1">&#39;target_project_id&#39;</span><span class="p">:</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;wait_until_done&#39;</span><span class="p">:</span> <span class="k">False</span>
-<span class="err">}</span>
+    <span class="s1">&#39;wait_until_done&#39;</span><span class="p">:</span> <span class="kc">False</span>
+<span class="p">}</span>
 
-<span class="n">req</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://cocalc.com/api/v1/copy_path_between_projects&#39;</span><span class="p">,</span>
-             <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="k">key</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
-             <span class="k">data</span><span class="o">=</span><span class="k">data</span><span class="p">)</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">req</span><span class="p">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">req</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://cocalc.com/api/v1/copy_path_between_projects&#39;</span><span class="p">,</span>
+             <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
+             <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <span class="n">res</span>
 </pre></div>
 </div>
 <p>response <code class="docutils literal notranslate"><span class="pre">res</span></code>:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">{&#39;event&#39;: &#39;copy_path_between_projects_response&#39;,</span>
-<span class="err"> &#39;id&#39;: &#39;52818dfe-b580-404e-89e6-9845fac7076c&#39;,</span>
-<span class="err"> &#39;copy_path_id&#39;: &#39;65cd2079-098d-4147-bb54-12d44cebb8cb&#39;,</span>
-<span class="err"> &#39;note&#39;: &#39;Query copy_path_status with the copy_path_id to learn if the copy operation was successful.&#39;</span>
-<span class="err">}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;event&#39;</span><span class="p">:</span> <span class="s1">&#39;copy_path_between_projects_response&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;52818dfe-b580-404e-89e6-9845fac7076c&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;copy_path_id&#39;</span><span class="p">:</span> <span class="s1">&#39;65cd2079-098d-4147-bb54-12d44cebb8cb&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;note&#39;</span><span class="p">:</span> <span class="s1">&#39;Query copy_path_status with the copy_path_id to learn if the copy operation was successful.&#39;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Now, we wait a few seconds. Then, we check the status using <code class="docutils literal notranslate"><span class="pre">copy_path_id</span></code>:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="k">data</span> <span class="o">=</span> <span class="err">{</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;copy_path_id&#39;</span><span class="p">:</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;copy_path_id&#39;</span><span class="p">]</span>
-<span class="err">}</span>
+<span class="p">}</span>
 
-<span class="n">req</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://cocalc.com/api/v1/copy_path_status&#39;</span><span class="p">,</span>
-             <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="k">key</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
-             <span class="k">data</span><span class="o">=</span><span class="k">data</span><span class="p">)</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">req</span><span class="p">.</span><span class="n">json</span><span class="p">()</span>
+<span class="n">req</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">&#39;https://cocalc.com/api/v1/copy_path_status&#39;</span><span class="p">,</span>
+             <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
+             <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <span class="n">res</span>
 </pre></div>
 </div>
 <p>which gives</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">{&#39;event&#39;: &#39;copy_path_status_response&#39;,</span>
-<span class="err"> &#39;id&#39;: &#39;abc3ca91-1388-4208-bdeb-540054e5bcaf&#39;,</span>
-<span class="err"> &#39;data&#39;: {&#39;copy_path_id&#39;: &#39;da3a8eaf-14df-4bf8-9131-13bcb9c7e9e5&#39;,</span>
-<span class="err">  &#39;time&#39;: &#39;2020-11-03T16:20:54.222Z&#39;,</span>
-<span class="err">  &#39;source_project_id&#39;: &#39;...&#39;,</span>
-<span class="err">  &#39;source_path&#39;: &#39;cocalc-api/api-demo.ipynb&#39;,</span>
-<span class="err">  &#39;target_project_id&#39;: &#39;...&#39;,</span>
-<span class="err">  &#39;target_path&#39;: &#39;cocalc-api/api-demo.ipynb&#39;,</span>
-<span class="err">  &#39;overwrite_newer&#39;: False,</span>
-<span class="err">  &#39;delete_missing&#39;: False,</span>
-<span class="err">  &#39;backup&#39;: False,</span>
-<span class="err">  &#39;started&#39;: &#39;2020-11-03T16:20:54.234Z&#39;,</span>
-<span class="err">  &#39;finished&#39;: &#39;2020-11-03T16:20:55.177Z&#39;}</span>
-<span class="err">}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;event&#39;</span><span class="p">:</span> <span class="s1">&#39;copy_path_status_response&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;abc3ca91-1388-4208-bdeb-540054e5bcaf&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;copy_path_id&#39;</span><span class="p">:</span> <span class="s1">&#39;da3a8eaf-14df-4bf8-9131-13bcb9c7e9e5&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;2020-11-03T16:20:54.222Z&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;source_project_id&#39;</span><span class="p">:</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;source_path&#39;</span><span class="p">:</span> <span class="s1">&#39;cocalc-api/api-demo.ipynb&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;target_project_id&#39;</span><span class="p">:</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;target_path&#39;</span><span class="p">:</span> <span class="s1">&#39;cocalc-api/api-demo.ipynb&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;overwrite_newer&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+  <span class="s1">&#39;delete_missing&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+  <span class="s1">&#39;backup&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+  <span class="s1">&#39;started&#39;</span><span class="p">:</span> <span class="s1">&#39;2020-11-03T16:20:54.234Z&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;finished&#39;</span><span class="p">:</span> <span class="s1">&#39;2020-11-03T16:20:55.177Z&#39;</span><span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Note: <code class="docutils literal notranslate"><span class="pre">started</span></code> and <code class="docutils literal notranslate"><span class="pre">finished</span></code> being part of the response, signals it did work.</p>
-</div>
-<div class="section" id="embedding-in-an-iframe">
-<span id="index-3"></span><h2>Embedding in an IFrame<a class="headerlink" href="#embedding-in-an-iframe" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="embedding-in-an-iframe">
+<span id="index-3"></span><h2>Embedding in an IFrame<a class="headerlink" href="#embedding-in-an-iframe" title="Permalink to this heading"></a></h2>
 <p>Here are notes on integrating CoCalc in an IFrame in a web application using the CoCalc API.
 You should be able to create a proof of concept using the API introduction above and these notes.</p>
 <ol class="arabic simple">
-<li>You need an account with an API key. You can get an API key via the UI or here using the <a class="reference internal" href="create_account.html"><span class="doc">create_account</span></a> API call.</li>
-<li>You can create several accounts. If you are running the CoCalc Docker image, you probably want one account <a class="reference external" href="https://github.com/sagemathinc/cocalc-docker#make-a-user-an-admin">to be an admin</a> and then have additional accounts for each actual user of your platform.</li>
-<li>You have to create at least one project.
+<li><p>You need an account with an API key. You can get an API key via the UI or here using the <a class="reference internal" href="create_account.html"><span class="doc">create_account</span></a> API call.</p></li>
+<li><p>You can create several accounts. If you are running the CoCalc Docker image, you probably want one account <a class="reference external" href="https://github.com/sagemathinc/cocalc-docker#make-a-user-an-admin">to be an admin</a> and then have additional accounts for each actual user of your platform.</p></li>
+<li><p>You have to create at least one project.
 Note: <em>The production website runs each project in their own container.</em>
-<em>This means you might want to create several projects to get proper isolation.</em></li>
-<li>With the API, you can <a class="reference internal" href="copy_path_between_projects.html"><span class="doc">copy files between projects</span></a> or <a class="reference internal" href="write_text_file_to_project.html"><span class="doc">write to a file</span></a>. It’s also possible to <a class="reference internal" href="project_exec.html"><span class="doc">run arbitrary commands</span></a>.</li>
-<li>To show a notebook to a user (and just the notebook) you need to do this:<ul>
-<li><a class="reference internal" href="user_auth.html"><span class="doc">get a fresh auth token</span></a></li>
-<li>make an IFrame in your website, which points to a project and file, and ends with <code class="docutils literal notranslate"><span class="pre">?auth_token=...&amp;fullscreen=kiosk</span></code>.
+<em>This means you might want to create several projects to get proper isolation.</em></p></li>
+<li><p>With the API, you can <a class="reference internal" href="copy_path_between_projects.html"><span class="doc">copy files between projects</span></a> or <a class="reference internal" href="write_text_file_to_project.html"><span class="doc">write to a file</span></a>. It’s also possible to <a class="reference internal" href="project_exec.html"><span class="doc">run arbitrary commands</span></a>.</p></li>
+<li><p>To show a notebook to a user (and just the notebook) you need to do this:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="user_auth.html"><span class="doc">get a fresh auth token</span></a></p></li>
+<li><p>make an IFrame in your website, which points to a project and file, and ends with <code class="docutils literal notranslate"><span class="pre">?auth_token=...&amp;fullscreen=kiosk</span></code>.
 The parameter <code class="docutils literal notranslate"><span class="pre">fullscreen=kiosk</span></code> removes the UI.
 A full example might look like this
-<code class="docutils literal notranslate"><span class="pre">https://cocalc.com/projects/.../files/calculate.ipynb?auth_token=...&amp;fullscreen=kiosk&amp;session=</span></code></li>
+<code class="docutils literal notranslate"><span class="pre">https://cocalc.com/projects/.../files/calculate.ipynb?auth_token=...&amp;fullscreen=kiosk&amp;session=</span></code></p></li>
 </ul>
 </li>
 </ol>
-</div>
-<div class="section" id="iframe-communication">
-<h2>IFrame communication<a class="headerlink" href="#iframe-communication" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="iframe-communication">
+<h2>IFrame communication<a class="headerlink" href="#iframe-communication" title="Permalink to this heading"></a></h2>
 <p>This is a communication channel to improve working with an embedded CoCalc instance.
 It gives the parent page the ability to send command-messages to CoCalc (e.g. opening a specific page, etc.) and receiving responses.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The IFrame communication might be currently broken.
+Please check <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/6059">issue #6059</a> for the current status.</p>
+</div>
 <p>The underlying technology is <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">window.postMessage</a>.</p>
 <p>The parent page must be served using <code class="docutils literal notranslate"><span class="pre">https</span></code>!</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This is <em>beta</em> and only available for specific domains.
+<p class="admonition-title">Note</p>
+<p>This is <em>beta</em> and only available for specific domains.
 Please contact us if you want to use this.</p>
 </div>
 <p>To get started, you just have to embed the main <code class="docutils literal notranslate"><span class="pre">/app</span></code> endpoint in an IFrame’s <code class="docutils literal notranslate"><span class="pre">src</span></code> like that:</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c">https://cocalc.com/app?auth_token=......&amp;fullscreen=kiosk&amp;session=</span>
-</pre></div>
-</div>
+<blockquote>
+<div><p><a class="reference external" href="https://cocalc.com/app?auth_token=......&amp;fullscreen=kiosk&amp;session=">https://cocalc.com/app?auth_token=……&amp;fullscreen=kiosk&amp;session=</a></p>
+</div></blockquote>
 <p>Once CoCalc is ready, the loading screen shows a green banner of confirmation.</p>
 <p><strong>Sending messages</strong> Use <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">postMessage</a> on the <code class="docutils literal notranslate"><span class="pre">contentWindow</span></code> of CoCalc’s IFrame to send messages.
 E.g. if your IFrame has the <code class="docutils literal notranslate"><span class="pre">id=&quot;cocalc&quot;</span></code>, run <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">=</span> <span class="pre">document.getElementById(&quot;cocalc&quot;).contentWindow;</span></code> and then <code class="docutils literal notranslate"><span class="pre">cocalc.postMessage(payload,</span> <span class="pre">&quot;https://cocalc.com&quot;)</span></code>. <code class="docutils literal notranslate"><span class="pre">payload</span></code> is the message, which is explained below.</p>
 <p><strong>Receiving message</strong></p>
 <ol class="arabic simple">
-<li>write a callback function like <code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">replies(mesg)</span> <span class="pre">{</span> <span class="pre">console.log(mesg.data);</span> <span class="pre">}</span></code>.</li>
-<li>Possibly check if <code class="docutils literal notranslate"><span class="pre">mesg.origin</span></code> is really CoCalc’s domain.</li>
-<li>Hook up this callback via <code class="docutils literal notranslate"><span class="pre">window.addEventListener(&quot;message&quot;,</span> <span class="pre">replies,</span> <span class="pre">false);</span></code>.</li>
+<li><p>write a callback function like <code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">replies(mesg)</span> <span class="pre">{</span> <span class="pre">console.log(mesg.data);</span> <span class="pre">}</span></code>.</p></li>
+<li><p>Possibly check if <code class="docutils literal notranslate"><span class="pre">mesg.origin</span></code> is really CoCalc’s domain.</p></li>
+<li><p>Hook up this callback via <code class="docutils literal notranslate"><span class="pre">window.addEventListener(&quot;message&quot;,</span> <span class="pre">replies,</span> <span class="pre">false);</span></code>.</p></li>
 </ol>
 <p><strong>Messages sent to CoCalc</strong> have the following structure. The <code class="docutils literal notranslate"><span class="pre">action</span></code> field is mandatory.</p>
-<div class="highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="err">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">action</span><span class="err">:</span><span class="w"> </span><span class="ss">&quot;[command]&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="nl">field1</span><span class="p">:</span><span class="w"> </span><span class="p">...,</span><span class="w"></span>
-<span class="w">  </span><span class="nl">field2</span><span class="p">:</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
-<span class="err">}</span><span class="w"></span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="n">action</span><span class="p">:</span> <span class="s2">&quot;[command]&quot;</span><span class="p">,</span>
+  <span class="n">field1</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+  <span class="n">field2</span><span class="p">:</span> <span class="o">...</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Each message has a <strong>response</strong>, usually containing <code class="docutils literal notranslate"><span class="pre">{status:</span> <span class="pre">&quot;ack|done|error&quot;,</span> <span class="pre">...}</span></code>.</p>
 <p>In particular, <strong>error responses</strong> have the structure <code class="docutils literal notranslate"><span class="pre">{status:</span> <span class="pre">&quot;error&quot;,</span> <span class="pre">mesg:</span> <span class="pre">&quot;[error</span> <span class="pre">message]&quot;,</span> <span class="pre">...}</span></code>.</p>
 <p>Available commands and their responses:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">open</span></code> – open a specific file in a project.<ul>
-<li>fields:<ul>
-<li><code class="docutils literal notranslate"><span class="pre">project_id</span></code> – the UUID of the project</li>
-<li><code class="docutils literal notranslate"><span class="pre">path</span></code> – the location relative to the home directory. e.g. <code class="docutils literal notranslate"><span class="pre">notebook.ipynb</span></code> or <code class="docutils literal notranslate"><span class="pre">subdir1/file.md</span></code>.</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">open</span></code> – open a specific file in a project.</p>
+<ul>
+<li><p>fields:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">project_id</span></code> – the UUID of the project</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">path</span></code> – the location relative to the home directory. e.g. <code class="docutils literal notranslate"><span class="pre">notebook.ipynb</span></code> or <code class="docutils literal notranslate"><span class="pre">subdir1/file.md</span></code>.</p></li>
 </ul>
 </li>
-<li>responses:<ol class="arabic">
-<li>acknowledgement of command (project will start, file will open): <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">status:</span> <span class="pre">&quot;ack&quot;,</span> <span class="pre">...</span> <span class="pre">}</span></code></li>
-<li>file editor is opened and loading of content starts: <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">status:</span> <span class="pre">&quot;done&quot;,</span> <span class="pre">...</span> <span class="pre">}</span></code></li>
+<li><p>responses:</p>
+<ol class="arabic simple">
+<li><p>acknowledgement of command (project will start, file will open): <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">status:</span> <span class="pre">&quot;ack&quot;,</span> <span class="pre">...</span> <span class="pre">}</span></code></p></li>
+<li><p>file editor is opened and loading of content starts: <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">status:</span> <span class="pre">&quot;done&quot;,</span> <span class="pre">...</span> <span class="pre">}</span></code></p></li>
 </ol>
 </li>
 </ul>
 </li>
-<li><code class="docutils literal notranslate"><span class="pre">closeall</span></code> – this closes all open files<ul>
-<li>response: <code class="docutils literal notranslate"><span class="pre">{status:</span> <span class="pre">&quot;done&quot;,</span> <span class="pre">mesg:</span> <span class="pre">&quot;all</span> <span class="pre">files</span> <span class="pre">are</span> <span class="pre">closed&quot;}</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">closeall</span></code> – this closes all open files</p>
+<ul>
+<li><p>response: <code class="docutils literal notranslate"><span class="pre">{status:</span> <span class="pre">&quot;done&quot;,</span> <span class="pre">mesg:</span> <span class="pre">&quot;all</span> <span class="pre">files</span> <span class="pre">are</span> <span class="pre">closed&quot;}</span></code></p></li>
 </ul>
 </li>
-<li><code class="docutils literal notranslate"><span class="pre">status</span></code> – returns a snapshot of CoCalc’s overall status. In particular during starting CoCalc, querying this for a response is useful to know when CoCalc is available and connected to the front-end servers.<ul>
-<li>response:<ul>
-<li><code class="docutils literal notranslate"><span class="pre">connection</span></code> – more detailed information about the connection quality, ping time, etc.</li>
-<li><code class="docutils literal notranslate"><span class="pre">open_files</span></code> – mapping of <code class="docutils literal notranslate"><span class="pre">project_id</span></code> to a list of paths.</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">status</span></code> – returns a snapshot of CoCalc’s overall status. In particular during starting CoCalc, querying this for a response is useful to know when CoCalc is available and connected to the front-end servers.</p>
+<ul>
+<li><p>response:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">connection</span></code> – more detailed information about the connection quality, ping time, etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">open_files</span></code> – mapping of <code class="docutils literal notranslate"><span class="pre">project_id</span></code> to a list of paths.</p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="add_collaborator.html" class="btn btn-neutral float-right" title="add_collaborator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../howto/missing-project.html" class="btn btn-neutral float-left" title="Recovering a Deleted Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../api2/purchasing-licenses.html" class="btn btn-neutral float-left" title="purchasing licenses" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="add_collaborator.html" class="btn btn-neutral float-right" title="add_collaborator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2022, Sagemath, Inc., CC BY-4.0 licensed
-
-    </p>
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
+
+  
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new">Questions and Feedback</a>,
-    <a href="https://github.com/sagemathinc/cocalc-doc/">Doc Repository</a>,
-    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>
+    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/index.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
@@ -568,37 +524,26 @@ E.g. if your IFrame has the <code class="docutils literal notranslate"><span cla
 
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34321400-6"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-34321400-6', 'auto');
-    ga('send', 'pageview');
+      gtag('config', 'UA-34321400-6', {
+          'anonymize_ip': false,
+      });
     </script>
-
-    
-  
    
   <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
      <img alt="Start CoCalc"
