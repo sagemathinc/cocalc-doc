@@ -24,7 +24,7 @@ Software Updates 2022
     - various updates
 
 - Executables:
-    - various upd
+    - various updates
 
 .. _update-2022-10-29:
 
