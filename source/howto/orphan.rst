@@ -40,6 +40,7 @@
    nbgrader
    neuron
    mongodb
+   octave
    pluto
    postgresql
    remarkjs-slideshow
