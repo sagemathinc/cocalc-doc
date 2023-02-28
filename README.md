@@ -16,7 +16,7 @@ Hence even small details like a broken reference link will cause a failed build.
 
 ### Prerequisites
 
-- Sphinx 5.1.1+
+- Sphinx 6.1.3+
 - Knowledge about [ReST Doc](http://www.sphinx-doc.org/en/1.8/rest.html)
 - [ReST/Sphinx Cheat Sheet](http://docs.sphinxdocs.com/en/latest/cheatsheet.html)
 
