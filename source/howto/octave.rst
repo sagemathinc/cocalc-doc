@@ -7,7 +7,7 @@ Octave Images and Plots
 
 `GNU Octave <https://octave.org/>`_ is a scientific programming language that provides drop-in compatibility with many Matlab scripts.
 
-Octave can create graphics images. Here are two ways to do that:
+With CoCalc, you can display plots created by Octave. Here are two ways to do that:
 
 #####################################
 Octave with Jupyter Kernel
