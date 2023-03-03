@@ -5,11 +5,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Octave Images and Plots &mdash; CoCalc Manual  documentation</title>
+  <title>Software Updates 2023 &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/howto/octave.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/software/updates-2023.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -24,11 +24,13 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Software Updates 2022" href="updates-2022.html" />
+    <link rel="prev" title="Software" href="../software.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/octave.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/software/updates-2023.html"/>
   
 
 </head>
@@ -92,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Platform</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../top-toolbar.html">Top Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
@@ -107,10 +109,26 @@
 <li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../software.html">Software</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../software.html#default-environment">Default environment</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../software.html#software-update-summaries">Software update summaries</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Software Updates 2023</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updates-2022.html">Software Updates 2022</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updates-2021.html">Software Updates 2021</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updates-2020.html">Software Updates 2020</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updates-2019.html">Software Updates 2019</a></li>
+<li class="toctree-l4"><a class="reference internal" href="updates-2018.html">Software Updates 2018</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../software.html#main-supported-software-environments">Main supported software environments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../software.html#custom-environments">Custom environments</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
@@ -137,7 +155,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Octave Images and Plots</li>
+          <li class="breadcrumb-item"><a href="../software.html">Software</a></li>
+      <li class="breadcrumb-item active">Software Updates 2023</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -154,27 +173,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="octave-images-and-plots">
-<span id="index-0"></span><h1>Octave Images and Plots<a class="headerlink" href="#octave-images-and-plots" title="Permalink to this heading"></a></h1>
-<p><a class="reference external" href="https://octave.org/">GNU Octave</a> is a scientific programming language that provides drop-in compatibility with many Matlab scripts.</p>
-<p>With CoCalc, you can display plots created by Octave. Here are two ways to do that:</p>
-<section id="octave-with-jupyter-kernel">
-<h2>Octave with Jupyter Kernel<a class="headerlink" href="#octave-with-jupyter-kernel" title="Permalink to this heading"></a></h2>
-<p>If you select the Octave Jupyter kernel, you will be able to view Octave plots in a Jupyter notebook. The first time <cite>plot</cite> is run in a cell, there is a warning about the gnuplot graphics toolkit. Just clear the cell output and run the cell again. Note that CoCalc support for Octave in Jupyter is limited at this time. Some dependent packages may fail to load.</p>
-<a class="reference internal image-reference" href="../_images/octave-jupyter.png"><img alt="octave in a jupyter notebook" class="align-center" src="../_images/octave-jupyter.png" style="width: 90%;" /></a>
+  <blockquote>
+<div></div></blockquote>
+<section id="software-updates-2023">
+<span id="id1"></span><h1>Software Updates 2023<a class="headerlink" href="#software-updates-2023" title="Permalink to this heading"></a></h1>
+<section id="sage-9-8">
+<span id="update-2023-02-27"></span><h2>2023-02-27: Sage 9.8<a class="headerlink" href="#sage-9-8" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Sage:</dt><dd><ul>
+<li><p>(upd) the system-wide <a class="reference external" href="https://www.sagemath.org/">SageMath</a> version to <code class="docutils literal notranslate"><span class="pre">9.8</span></code>. Run <code class="docutils literal notranslate"><span class="pre">sage_select</span></code> in a <a class="reference internal" href="../terminal.html#terminal"><span class="std std-ref">Linux Terminal</span></a> to learn how to switch back to an earlier version. In the near future, this will become the default version of Sage.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
-<section id="octave-with-x11-desktop">
-<h2>Octave with X11 Desktop<a class="headerlink" href="#octave-with-x11-desktop" title="Permalink to this heading"></a></h2>
-<p>You can run Octave in the terminal in the <a class="reference internal" href="../x11.html"><span class="doc">X11 Graphical Desktop</span></a>. Do: +New –&gt; Graphical Desktop, then type “octave” in the terminal in the upper left or click the “Octave” button at lower left. It can take a few seconds for the X11 server to start the first time.</p>
-<p>Whe Octave opens at the right, select your file under the File browser and run it from there. Your plot should appear to the right in a new tab, e.g. “Figure “</p>
-<a class="reference internal image-reference" href="../_images/octave-x11.png"><img alt="octave with the CoCalc X11 server" class="align-center" src="../_images/octave-x11.png" style="width: 100%;" /></a>
+<section id="first-release-of-ubuntu-22-04">
+<span id="update-2023-01-08"></span><h2>2023-01-08: First release of Ubuntu 22.04<a class="headerlink" href="#first-release-of-ubuntu-22-04" title="Permalink to this heading"></a></h2>
+<p>The main focus of releasing the <code class="docutils literal notranslate"><span class="pre">22.04</span></code> variant is to provide as many software applications as for the older <code class="docutils literal notranslate"><span class="pre">20.04</span></code> line.
+However, it won’t be possible to provide 100% and there will also be new software, only available in the newer variant.
+Additionally, many newer versions will be available – starting with a more recent version of <a class="reference external" href="https://www.python.org">Python</a>.</p>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../software.html" class="btn btn-neutral float-left" title="Software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="updates-2022.html" class="btn btn-neutral float-right" title="Software Updates 2022" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
@@ -191,7 +220,7 @@
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/octave.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/software/updates-2023.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!

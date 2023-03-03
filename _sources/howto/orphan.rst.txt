@@ -48,5 +48,6 @@
    turtle
    plotly-dash
    disk-space-warning
+   parallel
    ../project-list
 

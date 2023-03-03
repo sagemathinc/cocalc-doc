@@ -5,11 +5,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Octave Images and Plots &mdash; CoCalc Manual  documentation</title>
+  <title>Multiple CPUs &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/howto/octave.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/howto/parallel.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/octave.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/parallel.html"/>
   
 
 </head>
@@ -137,7 +137,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Octave Images and Plots</li>
+      <li class="breadcrumb-item active">Multiple CPUs</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -154,21 +154,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="octave-images-and-plots">
-<span id="index-0"></span><h1>Octave Images and Plots<a class="headerlink" href="#octave-images-and-plots" title="Permalink to this heading"></a></h1>
-<p><a class="reference external" href="https://octave.org/">GNU Octave</a> is a scientific programming language that provides drop-in compatibility with many Matlab scripts.</p>
-<p>With CoCalc, you can display plots created by Octave. Here are two ways to do that:</p>
-<section id="octave-with-jupyter-kernel">
-<h2>Octave with Jupyter Kernel<a class="headerlink" href="#octave-with-jupyter-kernel" title="Permalink to this heading"></a></h2>
-<p>If you select the Octave Jupyter kernel, you will be able to view Octave plots in a Jupyter notebook. The first time <cite>plot</cite> is run in a cell, there is a warning about the gnuplot graphics toolkit. Just clear the cell output and run the cell again. Note that CoCalc support for Octave in Jupyter is limited at this time. Some dependent packages may fail to load.</p>
-<a class="reference internal image-reference" href="../_images/octave-jupyter.png"><img alt="octave in a jupyter notebook" class="align-center" src="../_images/octave-jupyter.png" style="width: 90%;" /></a>
-</section>
-<section id="octave-with-x11-desktop">
-<h2>Octave with X11 Desktop<a class="headerlink" href="#octave-with-x11-desktop" title="Permalink to this heading"></a></h2>
-<p>You can run Octave in the terminal in the <a class="reference internal" href="../x11.html"><span class="doc">X11 Graphical Desktop</span></a>. Do: +New –&gt; Graphical Desktop, then type “octave” in the terminal in the upper left or click the “Octave” button at lower left. It can take a few seconds for the X11 server to start the first time.</p>
-<p>Whe Octave opens at the right, select your file under the File browser and run it from there. Your plot should appear to the right in a new tab, e.g. “Figure “</p>
-<a class="reference internal image-reference" href="../_images/octave-x11.png"><img alt="octave with the CoCalc X11 server" class="align-center" src="../_images/octave-x11.png" style="width: 100%;" /></a>
-</section>
+  <span class="target" id="index-0"></span><section id="multiple-cpus">
+<span id="index-1"></span><h1>Multiple CPUs<a class="headerlink" href="#multiple-cpus" title="Permalink to this heading"></a></h1>
+<p>Making use of more than 1 CPU specialized code. A typical program will not run twice as fast with two CPUs than with one, for example.</p>
+<p>There are basically 3 ways to make use of more than 1 CPU in a project:</p>
+<ol class="arabic simple">
+<li><p>If you’re processing data or a range of values, split them up into partitions and process them in parallel. E.g. for 3 CPUs, instead of 1 to 100, do 1 to 30, 31 to 65 and 66 to 100. Those 3 partitions can still only use one core (same code), but in total they can use all 3 when run at the same time.</p></li>
+<li><p>Structure your code to run in parallel. This depends on what you are doing, the programming language, the type of problem, etc.</p></li>
+<li><p>Use a library or code generator that supports parallel operations on a lower level.</p></li>
+</ol>
+<p>A good way to start with the theory is this article: <a class="reference external" href="https://en.wikipedia.org/wiki/Parallel_computing">Wikipedia: Parallel computing</a>.</p>
 </section>
 
 
@@ -191,7 +186,7 @@
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/octave.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/parallel.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
