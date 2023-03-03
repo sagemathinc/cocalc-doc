@@ -161,7 +161,7 @@ What are **Shared CPUs / vCPUs**?
 
 You can specify 1, 2, or 3 Shared CPUs, also known as Google Cloud vCPUs for a site license. To keep prices low, vCPUs may be shared with other projects, though member hosting very significantly reduces competition for CPUs.
 
-To learn more about making use of more than one vCPU per project, see :doc:`howto/parallel`.
+To learn more about using of more than one vCPU per project, see :doc:`howto/parallel`.
 
 
 
