@@ -18,6 +18,7 @@ CoCalc platform
 * :doc:`install-r-package`
 * :doc:`running-processes`
 * :doc:`multiple-accounts`
+* :doc:`parallel`
 * :doc:`project-invitation-tokens`
 * :doc:`upload`
 
