@@ -178,7 +178,7 @@ Next in the Project Settings window is the section for hidden and deleted projec
 Hidden vs. Deleted projects
 ***************************
 
-If you delete a project, then you delete it for everyone---for all your collaborators. The good news is that this can be undone. Deleting a project removes upgrades from any subscriptions or course packages.
+If you delete a project, then you delete it for everyone---for all your collaborators. Deleting a project removes upgrades from any subscriptions or course packages.
 
 Alternatively, if you hide a project, then you will not see it in your projects listing, but your collaborators will still see it in their listings.
 
@@ -207,9 +207,11 @@ Clicking `Unhide Project` instantly makes the project visible in the normal proj
 Deleting a project
 ******************
 
-**No files are actually deleted when a project is deleted.**
-Only visibility of the project in the project list is changed.
-If you need to permanently delete information that you
+When you delete a project,
+initially only the visibility of the project in the project list is changed.
+**You fully lose access to the project after 30 days.** We completely remove all users from the project, and there's no way for them to get their work back.
+
+If you urgently need to permanently delete information that you
 accidentally copied into a project, contact help@cocalc.com
 
 If you click `Delete Project`, the button changes:
