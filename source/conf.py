@@ -18,6 +18,7 @@
 
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('_ext'))  # or just '.'
 from datetime import date
 
@@ -119,7 +120,6 @@ if html_theme == 'alabaster':
     html_theme_options = {
         'description': 'CoCalc User Manual',
         'fixed_sidebar': 'false',
-        'logo_url': 'img/cocalc-doc-logo.svg',
         'github_banner': 'false',  # we extend the theme's layout.html
         'github_user': 'sagemathinc',
         'github_repo': 'cocalc-doc',

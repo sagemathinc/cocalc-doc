@@ -18,6 +18,12 @@ help:
 watch: html
 	while inotifywait -re close_write,moved_to,create source; do make html; done
 
+html:
+	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@echo "fix logo being referenced in the wrong location"
+	@mkdir -p ./build/html/_static/_static/
+	@cp -v ./build/html/_static/cocalc-doc-logo.svg ./build/html/_static/_static/cocalc-doc-logo.svg
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
