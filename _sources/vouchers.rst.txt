@@ -9,14 +9,14 @@ Vouchers
     :align: center
     :alt: voucher center
 
-    voucher center welcome screen
+    ..
 
 
 ################################
 What are CoCalc Vouchers?
 ################################
 
-A voucher is a list of codes that can be redeemed for CoCalc licenses. Distributing codes is like distributing licenses, except that the keys do not circulate during distribution. In fact, license keys are not created until codes are redeemed by end users.
+A `CoCalc voucher <https://cocalc.com/vouchers>`_ is a list of codes that can be redeemed for CoCalc licenses. Distributing codes is like distributing licenses, except that the keys do not circulate during distribution. In fact, license keys are not created until codes are redeemed by end users.
 
 ################################
 Examples of Voucher Use
@@ -175,7 +175,7 @@ An end user can view all the voucher codes they have redeemed by browsing to the
     :align: center
     :alt: vouchers you redeemed
 
-    disply to end user of redeemed codes
+    ..
 
 ############################
 Questions?
