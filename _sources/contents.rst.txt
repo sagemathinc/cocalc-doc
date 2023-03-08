@@ -31,6 +31,8 @@ This explains in depth how you can work productively on `CoCalc`_.
    jupyter
    slides
    whiteboard
+   vouchers
+   on-premises
    latex
    sagews
    terminal
@@ -73,6 +75,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    api2/index.rst
    api/index.rst
    docker-image
+   cocalc-cloud
    cocalc-desktop
 
 Indices, references and tables

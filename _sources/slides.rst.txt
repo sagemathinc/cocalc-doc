@@ -8,7 +8,7 @@ Give presentations with code and mathematics using CoCalc Slides. Here's the int
 
 A slides presentation is any CoCalc file with the extension ".slides". CoCalc slides let you use all the same tools as from the whiteboard: text, notes, freehand drawing, Jupyter code cells, mind maps, icons, and frames. Of course, text is editable in both markdown and rich text modes, with full latex formula and code block support.
 
-Here are the CoCalc feature announcements:
+Here are the CoCalc feature announcements and discussion:
 
 * presentation mode: `ANN: Presentation mode for slideshows <https://github.com/sagemathinc/cocalc/discussions/6475>`_.
 

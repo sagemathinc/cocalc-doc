@@ -1,10 +1,10 @@
 .. index:: Docker image
 .. index:: Cocalc; Docker image
+.. index:: On-Premises: CoCalc Docker
 
 =====================
 CoCalc Docker Image
 =====================
-
 
 .. contents::
    :local:
@@ -27,7 +27,17 @@ The CoCalc Docker image lets you:
 
 * learn about how CoCalc works
 
-Note that files edited with the Docker image are fully compatible with online CoCalc. You can upload files from your Docker image to your cocalc.com account and work on them there. Files from cocalc.com will run in the Docker image as well, but you will need to ensure that any required packages and libraries are also installed locally.
+Files edited with the Docker image are fully compatible with `online CoCalc <https://cocalc.com>`_. You can upload files from your Docker image to your cocalc.com account and work on them there. Files from cocalc.com will run in the Docker image as well, but you will need to ensure that any required packages and libraries are also installed locally.
+
+Our blog article `CoCalc On-Premise <https://about.cocalc.com/2022/11/18/cocalc-on-premise/>`_ has introductory information about the CoCalc Docker image, a.k.a. "CoCalc Docker".
+
+
+########################################
+Purchasing a Business-Friendly License
+########################################
+
+The default license for CoCalc Docker is `AGPLv3`_. If you want to run CoCalc internally and cannot use AGPLv3 licensed code at your organization, a version of the Docker image is available for purchase under a different license. See `CoCalc Docker` at `CoCalc - On Premises Offerings <https://cocalc.com/pricing/onprem>`_ or email help@cocalc.com for more information.
+
 
 ##############################
 Limitations
@@ -41,7 +51,6 @@ Limitations
 
 #. SageMath, Inc. doesn't prioritize supporting the Docker image, which means that if you ask a question about it, or make a support request, we likely won't have time to answer. Please set your expectations accordingly (but see below for alternatives). On the other hand, if you are willing to fully compensate us for our time, then we can likely be very helpful!
 
-#. The license is `AGPLv3`_. If you want to run CoCalc internally and cannot use AGPLv3 licensed code at your organization, contact us and we can sell you a version of the Docker image under a different license.
 
 ##############################
 Questions
@@ -76,11 +85,6 @@ Getting Started
 
 Detailed instructions to get the image up and running are at `the github repo for sagemathinc/cocalc-docker <https://github.com/sagemathinc/cocalc-docker>`_.
 
-#############################################
-Additional Licensing and Support Available
-#############################################
-
-CoCalc code is licensed under `AGPLv3`_. If you would instead like a business-friendly MIT license instead, please contact `help@cocalc.com <mailto:help@cocalc.com">`_, and we will sell you a 1-year license for $999.  This also includes some support, though with no guarantees (that costs more).
 
 .. _cocalc-docker-mailing-lists:
 
