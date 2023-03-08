@@ -26,7 +26,7 @@ Examples of Voucher Use
 No Special Arrangement Is Needed
 *********************************
 
-You can purchase and resell vouchers without any special arrangement with us. The special arrangement (see "CoCalc Resellers" below is only needed if you want to create vouchers and be billed later, only for the ones that were redeemed. If you purchase the vouchers ahead of time, you get a 25% discount immediately, and you then have a thing that can be resold, e.g., as part of an online course offering. 
+You can purchase and resell vouchers without any special arrangement with us. The special arrangement (see "CoCalc Resellers" below) is only needed if you want to create vouchers and be billed later, only for the ones that were redeemed. If you purchase the vouchers ahead of time, you get a 25% discount immediately, and you then have a thing that can be resold, e.g., as part of an online course offering. 
 
 ***************************
 Hosting a Workshop
@@ -38,7 +38,7 @@ Vouchers can be useful for running a workshop on CoCalc, offering simpler setup 
 CoCalc Resellers
 ***************************
 
-CoCalc resellers may choose to order vouchers before selling CoCalc licenses, then make after some interval for codes that have been redeemed. Contact us at help@cocalc.com to learn about becoming a reseller.
+CoCalc resellers may choose to order vouchers before selling CoCalc licenses, then pay after some interval for codes that have been redeemed. Contact us at help@cocalc.com to learn about becoming a reseller.
 
 ***************************
 CoCalc Administrators
@@ -78,7 +78,7 @@ Click "Create Vouchers". In the dialog that opens, configure the voucher as foll
 
 #. Under "Pay Now or Invoice Later?" there will be one or more options:
 
-   * **Pay Now**:Buy the voucher immediately and get a 25% discount.
+   * **Pay Now**: Buy the voucher immediately and get a 25% discount.
    * **Pay Later. Invoice me...**: This option requires you to contact us and become a partner. If you are not a reseller, this option will not be enabled.
    * **Admin**: This option will only be visible if you are a CoCalc administrator.
 
@@ -134,7 +134,7 @@ Here is some sample text you might use when sending out voucher codes::
 Status of Vouchers Created
 ********************************
 
-For any voucher you have created, you can download all codes and view the status of all codes for any voucher at the link https://cocalc.com/vouchers/created
+For any voucher you have created, you can download all codes and view the status of all codes for any voucher at the `created vouchers page <https://cocalc.com/vouchers/created>`_.
 
 .. figure:: img/your-vouchers.png
     :width: 90%
