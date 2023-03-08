@@ -22,6 +22,12 @@ A voucher is a list of codes that can be redeemed for CoCalc licenses. Distribut
 Examples of Voucher Use
 ################################
 
+*********************************
+No Special Arrangement Is Needed
+*********************************
+
+You can purchase and resell vouchers without any special arrangement with us. The special arrangement (see "CoCalc Resellers" below is only needed if you want to create vouchers and be billed later, only for the ones that were redeemed. If you purchase the vouchers ahead of time, you get a 25% discount immediately, and you then have a thing that can be resold, e.g., as part of an online course offering. 
+
 ***************************
 Hosting a Workshop
 ***************************
@@ -48,9 +54,7 @@ Obtaining a Voucher
 Put Item(s) into Shopping Cart
 ********************************
 
-You must have at least one non-subscription item in your cart to create vouchers. Shop for upgrades, a license boost, or a dedicated VM or disk, and select a specific range of dates.
-
-Once you have the item(s) selected, open your shopping cart at https://test.cocalc.com/store/cart.
+You must have at least one non-subscription item in `your shopping cart <https://cocalc.com/store/cart.>`_ to create vouchers. Shop for upgrades, a license boost, or a dedicated VM or disk, and select a specific range of dates.
 
 .. figure:: img/before-create-vouchers.png
     :width: 90%
@@ -72,7 +76,11 @@ Click "Create Vouchers". In the dialog that opens, configure the voucher as foll
 
     configure payment, number of codes, and code format
 
-#. Under "Pay Now or Invoice Later?" make the appropriate choice. If you are not a reseller, the "Pay Later" option will not be eneabled. If you are not a CoCalc admin, the "Admin" option will not be enabled. 
+#. Under "Pay Now or Invoice Later?" there will be one or more options:
+
+   * **Pay Now**:Buy the voucher immediately and get a 25% discount.
+   * **Pay Later. Invoice me...**: This option requires you to contact us and become a partner. If you are not a reseller, this option will not be enabled.
+   * **Admin**: This option will only be visible if you are a CoCalc administrator.
 
 #. In the blank for "How Many Vouchers?", enter the number of codes you want in the present voucher.
 
@@ -91,13 +99,13 @@ After configuring the voucher, click "Create *n* Vouchers" to pay, if necessary,
 
     voucher order confirmation
 
-In the upper part of the screen, you will see one ore more links, with the caption, "you can download the corresponding voucher codes via the links below". The topmost link will take you to the codes for the new voucher.
+In the upper part of the screen, you will see one or more links, with the caption, "you can download the corresponding voucher codes via the links below". The topmost link will take you to the codes for the new voucher.
 
 ********************************
 Download Voucher Codes
 ********************************
 
-You can download the voucher codes immediately by clicking the link under "Order Complete!" above. You can also view and download codes for any vouchers at any time by visiting the link https://test.cocalc.com/vouchers/created
+You can download the voucher codes immediately by clicking the link under "Order Complete!" above. You can also `view and download codes <https://cocalc.com/vouchers/created>`_ for any vouchers at any time.
 
 .. figure:: img/view-codes.png
     :width: 90%
@@ -110,7 +118,17 @@ You can download the voucher codes immediately by clicking the link under "Order
 Distribute Codes to Users
 ********************************
 
-Once you have the voucher codes, you can distribute them by any means of your choice, for example email or text message.
+Once you have the voucher codes, you can distribute them by any means of your choice, for example email or text message. When you look at the list of codes there is a "Private Notes" field where you can keep track of what you have done with each voucher.
+
+Here is some sample text you might use when sending out voucher codes::
+
+   You can redeem this code at https://cocalc.com/redeem
+
+   If you want to easily apply the license provided by this
+   voucher to a project, open that project's settings and
+   click the "Redeem Voucher" button. (You can do this with
+   the same voucher multiple times for different projects.)
+
 
 ********************************
 Status of Vouchers Created
@@ -130,23 +148,7 @@ For any voucher you have created, you can download all codes and view the status
 Redeeming voucher codes
 ################################
 
-When a user redeems a code, the corresponding license(s) start at the time of redemption and last for the same number of days as the original shopping cart item(s) used to create the voucher.
-
-To redeem a code, a user does the following:
-
-* select a project
-* open project Settings (wrench)
-* scroll down to "Project usage and quotas" and "Licenses"
-* click "Redeem a voucher"
-
-.. figure:: img/redeem-a-code.png
-    :width: 80%
-    :align: center
-    :alt: redeeming a code
-
-    redeem voucher code button in project settings
-
-* enter the voucher code
+To obtain license key(s) from a voucher, visit the `code redemption page <https://cocalc.com/redeem>`_ and enter the voucher code:
 
 .. figure:: img/enter-voucher-code.png
     :width: 70%
@@ -155,11 +157,18 @@ To redeem a code, a user does the following:
 
     entering the voucher code
 
+You can also obtain a license key by selecting a project and scrolling down to "Redeem a voucher" in :doc:`project-settings`:
 
+.. figure:: img/redeem-a-code.png
+    :width: 80%
+    :align: center
+    :alt: redeeming a code
 
-Once the code has been redeemed, the license key(s) created can be copied to the Settings for other projects.
+    redeem voucher code button in project settings
 
-An end user can view all the voucher codes they have redeemed by browsing to https://cocalc.com/vouchers/redeemed.
+When a user redeems a code, the corresponding license(s) start at the time of redemption and last for the same number of days as the original shopping cart item(s) used to create the voucher.
+
+An end user can view all the voucher codes they have redeemed by browsing to the `redeemed voucher page <https://cocalc.com/vouchers/redeemed>`_.
 
 .. figure:: img/vouchers-you-redeemed.png
     :width: 90%
@@ -168,4 +177,9 @@ An end user can view all the voucher codes they have redeemed by browsing to htt
 
     disply to end user of redeemed codes
 
+############################
+Questions?
+############################
+
+If you want to try out using a voucher (or have any other questions), let us know. You can open a support request while signed into CoCalc by clicking :ref:`help-button` at upper right, or just send an email to help@cocalc.com.
 
