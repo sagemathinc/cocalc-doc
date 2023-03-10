@@ -69,7 +69,7 @@ If you want professional-level support for running the server from us, send emai
 
 **Is Anaconda available in the CoCalc Docker image?**
 
-The Docker image does NOT currently include Anaconda at all. If you need it, you'll have to install it yourself.  This isn't difficult, since the Docker image is running Ubuntu 18.04, and it is easy to install Anaconda into Ubuntu.
+The Docker image does NOT currently include Anaconda at all. If you need it, you'll have to install it yourself.  This isn't difficult, since the Docker image runs a recent release of Ubuntu, and it is easy to install Anaconda into Ubuntu.
 
 **What about compatibility with the operating system on my local computer?**
 
