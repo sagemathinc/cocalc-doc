@@ -18,6 +18,8 @@ What are CoCalc Vouchers?
 
 A `CoCalc voucher <https://cocalc.com/vouchers>`_ is a list of codes that can be redeemed for CoCalc licenses. Distributing codes is like distributing licenses, except that the keys do not circulate during distribution. In fact, license keys are not created until codes are redeemed by end users.
 
+Here's the CoCalc feature announcement and discussion: `ANN: Vouchers - transferable codes that can be renewed later for a license <https://github.com/sagemathinc/cocalc/discussions/6534>`_.
+
 ################################
 Examples of Voucher Use
 ################################
