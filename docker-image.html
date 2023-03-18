@@ -119,6 +119,12 @@
 <li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">CoCalc Docker Image</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#about-the-cocalc-docker-image">About the CoCalc Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variations-of-the-cocalc-docker-image">Variations of the CoCalc Docker Image</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cpu-x86-or-arm64">CPU: X86 or ARM64</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options-default-lite-or-personal">Options: Default, Lite, or Personal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#selecting-the-image">Selecting the Image</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#purchasing-a-business-friendly-license">Purchasing a Business-Friendly License</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#questions">Questions</a></li>
@@ -174,13 +180,14 @@
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#about-the-cocalc-docker-image" id="id3">About the CoCalc Docker Image</a></p></li>
-<li><p><a class="reference internal" href="#purchasing-a-business-friendly-license" id="id4">Purchasing a Business-Friendly License</a></p></li>
-<li><p><a class="reference internal" href="#limitations" id="id5">Limitations</a></p></li>
-<li><p><a class="reference internal" href="#questions" id="id6">Questions</a></p></li>
-<li><p><a class="reference internal" href="#getting-started" id="id7">Getting Started</a></p></li>
-<li><p><a class="reference internal" href="#online-mailing-lists-and-open-issues" id="id8">Online Mailing Lists and Open Issues</a></p></li>
-<li><p><a class="reference internal" href="#security-status" id="id9">Security Status</a></p></li>
-<li><p><a class="reference internal" href="#updates-to-the-cocalc-docker-image" id="id10">Updates to the CoCalc Docker Image</a></p></li>
+<li><p><a class="reference internal" href="#variations-of-the-cocalc-docker-image" id="id4">Variations of the CoCalc Docker Image</a></p></li>
+<li><p><a class="reference internal" href="#purchasing-a-business-friendly-license" id="id5">Purchasing a Business-Friendly License</a></p></li>
+<li><p><a class="reference internal" href="#limitations" id="id6">Limitations</a></p></li>
+<li><p><a class="reference internal" href="#questions" id="id7">Questions</a></p></li>
+<li><p><a class="reference internal" href="#getting-started" id="id8">Getting Started</a></p></li>
+<li><p><a class="reference internal" href="#online-mailing-lists-and-open-issues" id="id9">Online Mailing Lists and Open Issues</a></p></li>
+<li><p><a class="reference internal" href="#security-status" id="id10">Security Status</a></p></li>
+<li><p><a class="reference internal" href="#updates-to-the-cocalc-docker-image" id="id11">Updates to the CoCalc Docker Image</a></p></li>
 </ul>
 </nav>
 <section id="about-the-cocalc-docker-image">
@@ -203,12 +210,40 @@
 <p>Files edited with the Docker image are fully compatible with <a class="reference external" href="https://cocalc.com">online CoCalc</a>. You can upload files from your Docker image to your cocalc.com account and work on them there. Files from cocalc.com will run in the Docker image as well, but you will need to ensure that any required packages and libraries are also installed locally.</p>
 <p>Our blog article <a class="reference external" href="https://about.cocalc.com/2022/11/18/cocalc-on-premise/">CoCalc On-Premise</a> has introductory information about the CoCalc Docker image, a.k.a. “CoCalc Docker”.</p>
 </section>
+<section id="variations-of-the-cocalc-docker-image">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Variations of the CoCalc Docker Image</a><a class="headerlink" href="#variations-of-the-cocalc-docker-image" title="Permalink to this heading"></a></h2>
+<section id="cpu-x86-or-arm64">
+<h3>CPU: X86 or ARM64<a class="headerlink" href="#cpu-x86-or-arm64" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc-docker#building-your-own-docker-image">intel X86</a></p></li>
+<li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc-docker#apple-silicon-m1--linux-aarch64arm64-is-fully-supported-via-a-different-image">Apple Silicon or Rasberry Pi 64-bit</a></p></li>
+<li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc-docker#cocalc-personal">personal</a></p></li>
+</ul>
+</section>
+<section id="options-default-lite-or-personal">
+<h3>Options: Default, Lite, or Personal<a class="headerlink" href="#options-default-lite-or-personal" title="Permalink to this heading"></a></h3>
+<p>“lite” version that is much smaller because it doesn’t come with Sage, Latex, etc</p>
+<p>“personal” absolutely everything in the container runs as a single non-root user named user.</p>
+</section>
+<section id="selecting-the-image">
+<h3>Selecting the Image<a class="headerlink" href="#selecting-the-image" title="Permalink to this heading"></a></h3>
+<p>After choosing CPU and other options, modify the docker install command to use the image in question:</p>
+<ul class="simple">
+<li><p>aarch64-lite</p></li>
+<li><p>aarch64-personal</p></li>
+<li><p>aarch64</p></li>
+<li><p>x86_64-lite</p></li>
+<li><p>x86_64-personal</p></li>
+<li><p>x86_64</p></li>
+</ul>
+</section>
+</section>
 <section id="purchasing-a-business-friendly-license">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Purchasing a Business-Friendly License</a><a class="headerlink" href="#purchasing-a-business-friendly-license" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Purchasing a Business-Friendly License</a><a class="headerlink" href="#purchasing-a-business-friendly-license" title="Permalink to this heading"></a></h2>
 <p>The default license for CoCalc Docker is <a class="reference external" href="https://opensource.org/licenses/AGPL-3.0">AGPLv3</a>. If you want to run CoCalc internally and cannot use AGPLv3 licensed code at your organization, a version of the Docker image is available for purchase under a different license. See <cite>CoCalc Docker</cite> at <a class="reference external" href="https://cocalc.com/pricing/onprem">CoCalc - On Premises Offerings</a> or email <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a> for more information.</p>
 </section>
 <section id="limitations">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Unlike the <a class="reference external" href="https://cocalc.com">cocalc.com</a> service, the Docker image doesn’t isolate projects from each other. There are no resource limitations between different projects.</p></li>
 <li><p>The Docker image has no provisions to scale horizontally. The Docker image may be useful if you have a small number of <em>trusted</em>, non-malicious users. In contrast, the online service <a class="reference external" href="https://cocalc.com">cocalc.com</a> uses a proprietary resource management system based on kubernetes that provides scalability, fault isolation, and resilience. Contact us at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a> if you are interested in running CoCalc with kubernetes infrastructure.</p></li>
@@ -217,7 +252,7 @@
 </ol>
 </section>
 <section id="questions">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Questions</a><a class="headerlink" href="#questions" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Questions</a><a class="headerlink" href="#questions" title="Permalink to this heading"></a></h2>
 <p><strong>I’m working on a collaborative project on cocalc.com and the scripts we’re using will very likely exceed the allotted server time for my cocalc.com account. Can I run the Docker image of CoCalc on my own machine, but still enable access by my collaborators remotely?</strong></p>
 <p>Yes, you definitely can! The CoCalc team does exactly this in some special cases (e.g., for Sage Days workshops).
 Follow the directions here:
@@ -233,11 +268,11 @@ Be sure to make your account an admin and set an “account creation token” so
 <p>About 12 GB. Remember, the Docker image includes a full LaTeX and Sage install, which is pretty big.</p>
 </section>
 <section id="getting-started">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Getting Started</a><a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h2>
 <p>Detailed instructions to get the image up and running are at <a class="reference external" href="https://github.com/sagemathinc/cocalc-docker">the github repo for sagemathinc/cocalc-docker</a>.</p>
 </section>
 <section id="online-mailing-lists-and-open-issues">
-<span id="cocalc-docker-mailing-lists"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Online Mailing Lists and Open Issues</a><a class="headerlink" href="#online-mailing-lists-and-open-issues" title="Permalink to this heading"></a></h2>
+<span id="cocalc-docker-mailing-lists"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Online Mailing Lists and Open Issues</a><a class="headerlink" href="#online-mailing-lists-and-open-issues" title="Permalink to this heading"></a></h2>
 <p>For additional news and support, we recommend joining the following lists:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://groups.google.com/a/sagemath.com/group/cocalc-docker/subscribe">CoCalc Docker mailing list</a> for news and updates.</p></li>
@@ -246,7 +281,7 @@ Be sure to make your account an admin and set an “account creation token” so
 </ul>
 </section>
 <section id="security-status">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Security Status</a><a class="headerlink" href="#security-status" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Security Status</a><a class="headerlink" href="#security-status" title="Permalink to this heading"></a></h2>
 <p>The CoCalc Docker image is <strong>not blatantly insecure</strong> from outside attack: the database has a long random password, user accounts are separate, encrypted SSL communication is used by default, etc. That said, please observe the following:</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -254,7 +289,7 @@ Be sure to make your account an admin and set an “account creation token” so
 </div>
 </section>
 <section id="updates-to-the-cocalc-docker-image">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Updates to the CoCalc Docker Image</a><a class="headerlink" href="#updates-to-the-cocalc-docker-image" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Updates to the CoCalc Docker Image</a><a class="headerlink" href="#updates-to-the-cocalc-docker-image" title="Permalink to this heading"></a></h2>
 <p>The CoCalc Docker image is updated several times a year. Updates incorporate all features and bug fixes that have been merged into the <a class="reference external" href="https://github.com/sagemathinc/cocalc">CoCalc GitHub code repository</a> master branch at the time of the build.</p>
 <p>Other updates, such as new versions of Sagemath, Julia, and other additional software, happen less frequently but will be announced on the CoCalc Docker mailing list.</p>
 </section>

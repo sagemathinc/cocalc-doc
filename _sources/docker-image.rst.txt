@@ -31,6 +31,38 @@ Files edited with the Docker image are fully compatible with `online CoCalc <htt
 
 Our blog article `CoCalc On-Premise <https://about.cocalc.com/2022/11/18/cocalc-on-premise/>`_ has introductory information about the CoCalc Docker image, a.k.a. "CoCalc Docker".
 
+########################################
+Variations of the CoCalc Docker Image
+########################################
+
+********************************
+CPU: X86 or ARM64
+********************************
+
+* `intel X86 <https://github.com/sagemathinc/cocalc-docker#building-your-own-docker-image>`_
+* `Apple Silicon or Rasberry Pi 64-bit <https://github.com/sagemathinc/cocalc-docker#apple-silicon-m1--linux-aarch64arm64-is-fully-supported-via-a-different-image>`_
+* `personal <https://github.com/sagemathinc/cocalc-docker#cocalc-personal>`_
+
+****************************************
+Options: Default, Lite, or Personal
+****************************************
+
+"lite" version that is much smaller because it doesn't come with Sage, Latex, etc
+
+"personal" absolutely everything in the container runs as a single non-root user named user.
+
+********************************
+Selecting the Image
+********************************
+
+After choosing CPU and other options, modify the docker install command to use the image in question:
+
+* aarch64-lite
+* aarch64-personal
+* aarch64
+* x86_64-lite
+* x86_64-personal
+* x86_64
 
 ########################################
 Purchasing a Business-Friendly License

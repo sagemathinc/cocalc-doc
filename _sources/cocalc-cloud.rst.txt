@@ -10,10 +10,12 @@ CoCalc Cloud
    :depth: 1
 
 #################################
-About the CoCalc Cloud Product
+Introduction
 #################################
 
-CoCalc Cloud runs on a Kubernetes Cluster. The underlying services and their architecture are identical to those in online cocalc.com, with comparable performance, scalability, and reliability to the online site.
+**CoCalc Cloud** runs on a Kubernetes Cluster. The underlying services and their architecture are identical to those in online cocalc.com, with comparable performance, scalability, and reliability to the online site.
+
+This page provides a summary of CoCalc Cloud features. For detailed information, see `CoCalc Cloud documentation <https://doc-cloud.cocalc.com/>`_.
 
 Our blog article `CoCalc On-Premise <https://about.cocalc.com/2022/11/18/cocalc-on-premise/>`_ has introductory information about CoCalc Cloud.
 
