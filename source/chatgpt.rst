@@ -12,10 +12,12 @@ With customized ChatGPT help you can:
 
 * Describe a formula in English and have ChatGPT turn it into a latex formula.
 
-   .. image:: img/ch-4.png
-       :width: 50%
-       :align: center
-       :alt: custom help latex formulas
+.. figure:: img/ch-4.png
+   :width: 50%
+   :align: center
+   :alt: custom help latex formulas
+
+   custom help with latex formulas
 
 
 * Add custom datasets and training examples to the ChatGPT model, making it even more effective at answering your questions.
@@ -36,25 +38,30 @@ Examples:
 
 * If you're on the R landing page and ask how to do something, it assumes you're using CoCalc and R and gives help related to that.
 
-   .. image:: img/ch-r.png
-       :width: 90%
-       :align: center
-       :alt: custom help with R
+.. figure:: img/ch-r.png
+   :width: 90%
+   :align: center
+   :alt: custom help with R
+
+   custom help with R
 
 * If you're on the sagemath landing page and ask how to do something, it assumes you're using CoCalc and sagemath.
 
-   .. image:: img/ch-1.png
-       :width: 90%
-       :align: center
-       :alt: custom help with sagemath
+.. figure:: img/ch-1.png
+   :width: 90%
+   :align: center
+   :alt: custom help with sagemath
+
+   custom help with sagemath
 
 * You don't even have to be signed in to use CoCalc's ChatGPT custom help.
 
-   .. image:: img/ch-2.png
-       :width: 90%
-       :align: center
-       :alt: custom help at sign-in page
+.. figure:: img/ch-2.png
+   :width: 90%
+   :align: center
+   :alt: custom help at sign-in page
 
+   custom help at sign-in page
 
 ####################################
 ChatGPT in Chat Rooms and Side Chat
@@ -62,9 +69,11 @@ ChatGPT in Chat Rooms and Side Chat
 
 In a :doc:`chat room <chat>` or in the :ref:`side chat <side-chat>` next to an open file, you can do an :ref:`@-mention <chat-at-mentions>` of ChatGPT and enter your question there.
 
-   .. image:: img/ch-5.png
-       :width: 70%
-       :align: center
-       :alt: @-mention help with latex
+.. figure:: img/ch-5.png
+   :width: 70%
+   :align: center
+   :alt: @-mention help with latex
+
+   @-mention help with latex
 
 
