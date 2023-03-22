@@ -19,6 +19,7 @@ This page provides a summary of CoCalc Cloud features. For detailed information,
 
 Our blog article `CoCalc On-Premise <https://about.cocalc.com/2022/11/18/cocalc-on-premise/>`_ has introductory information about CoCalc Cloud.
 
+Here's a link to CoCalc feature announcement and discussion of the updated project documentation: `CoCalc-Cloud on Kubernetes (e.g., cocalc.com) -- have you ever wondered how it works and what it is? <https://github.com/sagemathinc/cocalc/discussions/6558>`_.
 
 *************
 Features
