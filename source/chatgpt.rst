@@ -4,13 +4,9 @@
 ChatGPT
 =====================
 
-Customized ChatGPT Help in CoCalc provides a personalized chatbot that can help with programming, data analysis, and technical topics. This help is unique in that it can be personalized to fit your needs.
+Customized ChatGPT Help in CoCalc provides a chatbot that can help with programming, data analysis, and technical topics.
 
-With customized ChatGPT help you can:
-
-* Train the chatbot to recognize your coding and data analysis patterns and provide responses that are tailored specifically to your workflow.
-
-* Describe a formula in English and have ChatGPT turn it into a latex formula.
+For example, you can describe a formula in English and have ChatGPT turn it into a latex formula.
 
 .. figure:: img/ch-4.png
    :width: 50%
@@ -19,22 +15,23 @@ With customized ChatGPT help you can:
 
    custom help with latex formulas
 
+Here are the CoCalc feature announcements and discussion:
 
-* Add custom datasets and training examples to the ChatGPT model, making it even more effective at answering your questions.
+* `ChatGPT integration via any chatroom in cocalc <https://github.com/sagemathinc/cocalc/discussions/6543>`_.
 
-Here's the CoCalc feature announcement and discussion: `ANN: ChatGPT integration via any chatroom in cocalc <https://github.com/sagemathinc/cocalc/discussions/6543>`_.
+* `Cocalc chatrooms now support reply message threads, and chatgpt now has "long memory" of the entire thread it was involved in <https://github.com/sagemathinc/cocalc/discussions/6567>`_.
 
 
 ####################################
 ChatGPT Help Box in Landing Pages
 ####################################
 
-To use Customized ChatGPT help in landing pages and support requests, locate the help box and click the chatbot icon on the right. Once you open the chat interface, you can type in your questions and the ChatGPT model will provide you with contextualized answers.
+To use ChatGPT help in landing pages and support requests, locate the help box and click the chatbot icon on the right. Once you open the chat interface, you can type in your questions and the ChatGPT model will provide you with contextualized answers.
 
 
 Examples:
 
-* Visit the `CoCalc features list <https://cocalc.com/features>`_ or click any of the features listed, and you will see the help box for customized help near the top of the screen.
+* Visit the `CoCalc features list <https://cocalc.com/features>`_ or click any of the features listed, and you will see the help box for help near the top of the screen.
 
 * If you're on the R landing page and ask how to do something, it assumes you're using CoCalc and R and gives help related to that.
 
@@ -54,7 +51,7 @@ Examples:
 
    custom help with sagemath
 
-* You don't even have to be signed in to use CoCalc's ChatGPT custom help.
+* You don't even have to be signed in to use CoCalc's ChatGPT  help.
 
 .. figure:: img/ch-2.png
    :width: 90%
