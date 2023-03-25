@@ -21,6 +21,8 @@ Here are the CoCalc feature announcements and discussion:
 
 * `Cocalc chatrooms now support reply message threads, and chatgpt now has "long memory" of the entire thread it was involved in <https://github.com/sagemathinc/cocalc/discussions/6567>`_.
 
+* `New button to help you fix errors in Jupyter notebooks <https://github.com/sagemathinc/cocalc/discussions/6584>`_.
+
 
 ####################################
 ChatGPT Help Box in Landing Pages
