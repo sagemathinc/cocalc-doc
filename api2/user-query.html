@@ -176,26 +176,26 @@
   <section id="user-query">
 <h1>user-query<a class="headerlink" href="#user-query" title="Permalink to this heading"></a></h1>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">user-query</span></code> endpoint to get the email address and account_id for the owner of the API key. A request header is set because the query is a JSON string. The example sends output to the linux command “jq” to format the output nicely.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span><span class="w"> </span><span class="c1"># your API key</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
 <span class="nv">q</span><span class="o">=</span><span class="s1">&#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:null,&quot;email_address&quot;:null}}}&#39;</span>
 
-curl<span class="w"> </span>-sk<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-u<span class="w"> </span><span class="nv">$x</span>:<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="nv">$q</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://cocalc.com/api/v2/user-query<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq
+curl -sk <span class="se">\</span>
+  -u <span class="nv">$x</span>: <span class="se">\</span>
+  -d <span class="nv">$q</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+  https://cocalc.com/api/v2/user-query <span class="p">|</span> jq
 
 <span class="nb">echo</span>
 
 <span class="c1">### sample output (not from a real account):</span>
 
 <span class="o">{</span>
-<span class="w">  </span><span class="s2">&quot;query&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">    </span><span class="s2">&quot;accounts&quot;</span>:<span class="w"> </span><span class="o">{</span>
-<span class="w">      </span><span class="s2">&quot;account_id&quot;</span>:<span class="w"> </span><span class="s2">&quot;e32a26f8-262c-11ed-8a33-8358017cec89&quot;</span>,
-<span class="w">      </span><span class="s2">&quot;email_address&quot;</span>:<span class="w"> </span><span class="s2">&quot;jane.doe@example.com&quot;</span>
-<span class="w">    </span><span class="o">}</span>
-<span class="w">  </span><span class="o">}</span>
+  <span class="s2">&quot;query&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;accounts&quot;</span>: <span class="o">{</span>
+      <span class="s2">&quot;account_id&quot;</span>: <span class="s2">&quot;e32a26f8-262c-11ed-8a33-8358017cec89&quot;</span>,
+      <span class="s2">&quot;email_address&quot;</span>: <span class="s2">&quot;jane.doe@example.com&quot;</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
 </div>

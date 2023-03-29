@@ -200,39 +200,39 @@ to necessarily have that file in it.</p>
 <code class="docutils literal notranslate"><span class="pre">project_id</span></code> via a user_query to the database. Obviously, the
 project_id and path you give below may be different. The path should be
 relatively to the HOME directory, e.g., “path”:“” is the HOME directory:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">   </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;query&quot;:{&quot;listings&quot;:{&quot;project_id&quot;:&quot;5ee8d3ca-b723-4fe5-a94e-dc8c62659886&quot;,&quot;path&quot;:&quot;&quot;,&quot;listing&quot;:null}}}&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">   </span><span class="nv">$url</span>/user-query<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl -sk -u <span class="nv">$key</span>: -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+   -d <span class="s1">&#39;{&quot;query&quot;:{&quot;listings&quot;:{&quot;project_id&quot;:&quot;5ee8d3ca-b723-4fe5-a94e-dc8c62659886&quot;,&quot;path&quot;:&quot;&quot;,&quot;listing&quot;:null}}}&#39;</span> <span class="se">\</span>
+   <span class="nv">$url</span>/user-query <span class="p">|</span> jq
 </pre></div>
 </div>
 <p>The above will output something like the following, but with your
 account_id and email_address replacing the ones below</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;listings&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;project_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;5ee8d3ca-b723-4fe5-a94e-dc8c62659886&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;path&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;listing&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;.ssh&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;size&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;isdir&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;mtime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1677111163.888</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2022-04-04-164144.ipynb&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;size&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1809</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;mtime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1650036446.483</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">          </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2022-04-16-160712.md&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;size&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;mtime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1650150434.384</span>
-<span class="w">        </span><span class="p">},</span>
-<span class="w">      </span><span class="p">]</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="s2">&quot;query&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;listings&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;project_id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;5ee8d3ca-b723-4fe5-a94e-dc8c62659886&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;path&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;listing&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;.ssh&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;size&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;isdir&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;mtime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1677111163.888</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2022-04-04-164144.ipynb&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;size&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1809</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;mtime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1650036446.483</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2022-04-16-160712.md&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;size&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;mtime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1650150434.384</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">      </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
@@ -240,9 +240,9 @@ account_id and email_address replacing the ones below</p>
 <h3>Directory listings for all known paths at once<a class="headerlink" href="#directory-listings-for-all-known-paths-at-once" title="Permalink to this heading"></a></h3>
 <p>The following shows how to get <strong>all known directory listings for all
 paths</strong> in a project. This gives up to 25 distinct paths.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">   </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;query&quot;:{&quot;listings&quot;:[{&quot;project_id&quot;:&quot;5ee8d3ca-b723-4fe5-a94e-dc8c62659886&quot;,&quot;path&quot;:null,&quot;listing&quot;:null}]}}&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">   </span><span class="nv">$url</span>/user-query<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl -sk -u <span class="nv">$key</span>: -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+   -d <span class="s1">&#39;{&quot;query&quot;:{&quot;listings&quot;:[{&quot;project_id&quot;:&quot;5ee8d3ca-b723-4fe5-a94e-dc8c62659886&quot;,&quot;path&quot;:null,&quot;listing&quot;:null}]}}&#39;</span> <span class="se">\</span>
+   <span class="nv">$url</span>/user-query <span class="p">|</span> jq
 </pre></div>
 </div>
 </section>
