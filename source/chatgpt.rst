@@ -6,16 +6,8 @@ ChatGPT
 
 Customized ChatGPT Help in CoCalc provides a chatbot that can help with programming, data analysis, and technical topics.
 
-For example, you can describe a formula in English and have ChatGPT turn it into a latex formula.
 
-.. figure:: img/ch-4.png
-   :width: 50%
-   :align: center
-   :alt: custom help latex formulas
-
-   ChatGPT help with latex formulas
-
-Here's a list of CoCalc ChatGPT announcement and discussion topics to date:
+You can read all CoCalc ChatGPT announcements to date and join the discussion at the links shown:
 
 #. `ChatGPT integration via any chatroom in cocalc <https://github.com/sagemathinc/cocalc/discussions/6543>`_.
 
@@ -62,6 +54,16 @@ Examples:
    :alt: custom help at sign-in page
 
    ChatGPT help at sign-in page
+
+* You can describe a formula in English and have ChatGPT turn it into a latex formula.
+
+.. figure:: img/ch-4.png
+   :width: 50%
+   :align: center
+   :alt: custom help latex formulas
+
+   ChatGPT help with latex formulas
+
 
 ####################################
 ChatGPT in Chat Rooms and Side Chat
