@@ -4,8 +4,11 @@
 ChatGPT
 =====================
 
-Customized ChatGPT Help in CoCalc provides a chatbot that can help with programming, data analysis, and technical topics.
+ChatGPT can transform how you use CoCalc for learning, writing programs, and writing scientific documents. Here are some areas where ChatGPT offers a shortcut to getting results:
 
+.. contents::
+   :local:
+   :depth: 2
 
 You can read all CoCalc ChatGPT announcements to date and join the discussion at the links shown:
 
@@ -13,15 +16,85 @@ You can read all CoCalc ChatGPT announcements to date and join the discussion at
 
 #. `Cocalc chatrooms now support reply message threads, and chatgpt now has "long memory" of the entire thread it was involved in <https://github.com/sagemathinc/cocalc/discussions/6567>`_.
 
+#. `CoCalc Jupyter notebooks now have a new "Explain" button in Jupyter notebooks <https://github.com/sagemathinc/cocalc/discussions/6583>`_.
+
 #. `New button to help you fix errors in Jupyter notebooks <https://github.com/sagemathinc/cocalc/discussions/6584>`_.
 
 #. `ChatGPT integration with the Linux Terminal <https://github.com/sagemathinc/cocalc/discussions/6594>`_.
 
 ####################################
-ChatGPT Help Box in Landing Pages
+Jupyter Notebooks
 ####################################
 
-To use ChatGPT help in landing pages and support requests, locate the help box and click the chatbot icon on the right. Once you open the chat interface, you can type in your questions and the ChatGPT model will provide you with contextualized answers.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Coding Suggestions
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+blah
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Explaining Error Messages
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+zotz
+
+####################################
+Writing Code
+####################################
+
+scribble
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+python
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+foo
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+R
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+foo
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+sagemath
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+sagesagesage
+
+####################################
+Linux Terminal
+####################################
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+learn the bash shell
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+help writing SQL queries
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+####################################
+Scientific Documents
+####################################
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+typeset scientific content with LaTeX
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+\\{infty}
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+suggest wording for explanations
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+####################################
+ChatGPT Box at top of feature pages
+####################################
+
+To use ChatGPT help in feature headings (landing pages) and support requests, locate the help box and click the chatbot icon on the right. Once you open the chat interface, you can type in your questions and the ChatGPT model will provide you with contextualized answers.
 
 
 Examples:
