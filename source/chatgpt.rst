@@ -13,7 +13,7 @@ For example, you can describe a formula in English and have ChatGPT turn it into
    :align: center
    :alt: custom help latex formulas
 
-   custom help with latex formulas
+   ChatGPT help with latex formulas
 
 Here are the CoCalc feature announcements and discussion:
 
@@ -42,7 +42,7 @@ Examples:
    :align: center
    :alt: custom help with R
 
-   custom help with R
+   ChatGPT help with R
 
 * If you're on the sagemath landing page and ask how to do something, it assumes you're using CoCalc and sagemath.
 
@@ -51,7 +51,7 @@ Examples:
    :align: center
    :alt: custom help with sagemath
 
-   custom help with sagemath
+   ChatGPT help with sagemath
 
 * You don't even have to be signed in to use CoCalc's ChatGPT  help.
 
@@ -60,7 +60,7 @@ Examples:
    :align: center
    :alt: custom help at sign-in page
 
-   custom help at sign-in page
+   ChatGPT help at sign-in page
 
 ####################################
 ChatGPT in Chat Rooms and Side Chat
