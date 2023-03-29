@@ -15,14 +15,15 @@ For example, you can describe a formula in English and have ChatGPT turn it into
 
    ChatGPT help with latex formulas
 
-Here are the CoCalc feature announcements and discussion:
+Here's a list of CoCalc ChatGPT announcement and discussion topics to date:
 
-* `ChatGPT integration via any chatroom in cocalc <https://github.com/sagemathinc/cocalc/discussions/6543>`_.
+#. `ChatGPT integration via any chatroom in cocalc <https://github.com/sagemathinc/cocalc/discussions/6543>`_.
 
-* `Cocalc chatrooms now support reply message threads, and chatgpt now has "long memory" of the entire thread it was involved in <https://github.com/sagemathinc/cocalc/discussions/6567>`_.
+#. `Cocalc chatrooms now support reply message threads, and chatgpt now has "long memory" of the entire thread it was involved in <https://github.com/sagemathinc/cocalc/discussions/6567>`_.
 
-* `New button to help you fix errors in Jupyter notebooks <https://github.com/sagemathinc/cocalc/discussions/6584>`_.
+#. `New button to help you fix errors in Jupyter notebooks <https://github.com/sagemathinc/cocalc/discussions/6584>`_.
 
+#. `ChatGPT integration with the Linux Terminal <https://github.com/sagemathinc/cocalc/discussions/6594>`_.
 
 ####################################
 ChatGPT Help Box in Landing Pages
