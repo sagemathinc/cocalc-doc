@@ -72,8 +72,25 @@
 <p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">ChatGPT</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#chatgpt-help-box-in-landing-pages">ChatGPT Help Box in Landing Pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#suggesting-code">suggesting code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fixing-errors">Fixing Errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#explaining-code">Explaining Code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-python-r-and-other-files">Editing Python, R, and Other Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linux-terminal">Linux Terminal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#suggest-code-for-shell-scripts">suggest code for shell scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help-writing-sql-queries">help writing SQL queries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#scientific-documents">Scientific Documents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#typeset-scientific-content-with-latex">typeset scientific content with LaTeX</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#chatgpt-on-sign-in-and-feature-pages">ChatGPT on sign-in and feature pages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#chatgpt-in-chat-rooms-and-side-chat">ChatGPT in Chat Rooms and Side Chat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cocalc-admins-add-chatgpt-to-your-site">CoCalc Admins: add ChatGPT to your site</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
@@ -166,65 +183,183 @@
              
   <section id="chatgpt">
 <span id="index-0"></span><h1>ChatGPT<a class="headerlink" href="#chatgpt" title="Permalink to this heading"></a></h1>
-<p>Customized ChatGPT Help in CoCalc provides a chatbot that can help with programming, data analysis, and technical topics.</p>
+<p>ChatGPT can transform how you use CoCalc for learning, writing programs, and writing scientific documents.</p>
+<p>Here are some areas where CoCalc’s context-sensitive ChatGPT help can save you time and effort:</p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#jupyter-notebooks" id="id11">Jupyter Notebooks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#suggesting-code" id="id12">suggesting code</a></p></li>
+<li><p><a class="reference internal" href="#fixing-errors" id="id13">Fixing Errors</a></p></li>
+<li><p><a class="reference internal" href="#explaining-code" id="id14">Explaining Code</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#editing-python-r-and-other-files" id="id15">Editing Python, R, and Other Files</a></p></li>
+<li><p><a class="reference internal" href="#linux-terminal" id="id16">Linux Terminal</a></p>
+<ul>
+<li><p><a class="reference internal" href="#suggest-code-for-shell-scripts" id="id17">suggest code for shell scripts</a></p></li>
+<li><p><a class="reference internal" href="#help-writing-sql-queries" id="id18">help writing SQL queries</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#scientific-documents" id="id19">Scientific Documents</a></p>
+<ul>
+<li><p><a class="reference internal" href="#typeset-scientific-content-with-latex" id="id20">typeset scientific content with LaTeX</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#chatgpt-on-sign-in-and-feature-pages" id="id21">ChatGPT on sign-in and feature pages</a></p></li>
+<li><p><a class="reference internal" href="#chatgpt-in-chat-rooms-and-side-chat" id="id22">ChatGPT in Chat Rooms and Side Chat</a></p></li>
+<li><p><a class="reference internal" href="#cocalc-admins-add-chatgpt-to-your-site" id="id23">CoCalc Admins: add ChatGPT to your site</a></p></li>
+</ul>
+</nav>
 <p>You can read all CoCalc ChatGPT announcements to date and join the discussion at the links shown:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6543">ChatGPT integration via any chatroom in cocalc</a>.</p></li>
 <li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6567">Cocalc chatrooms now support reply message threads, and chatgpt now has “long memory” of the entire thread it was involved in</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6583">CoCalc Jupyter notebooks now have a new “Explain” button in Jupyter notebooks</a>.</p></li>
 <li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6584">New button to help you fix errors in Jupyter notebooks</a>.</p></li>
 <li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6594">ChatGPT integration with the Linux Terminal</a>.</p></li>
 </ol>
-<section id="chatgpt-help-box-in-landing-pages">
-<h2>ChatGPT Help Box in Landing Pages<a class="headerlink" href="#chatgpt-help-box-in-landing-pages" title="Permalink to this heading"></a></h2>
-<p>To use ChatGPT help in landing pages and support requests, locate the help box and click the chatbot icon on the right. Once you open the chat interface, you can type in your questions and the ChatGPT model will provide you with contextualized answers.</p>
-<p>Examples:</p>
-<ul class="simple">
-<li><p>Visit the <a class="reference external" href="https://cocalc.com/features">CoCalc features list</a> or click any of the features listed, and you will see the help box for help near the top of the screen.</p></li>
-<li><p>If you’re on the R landing page and ask how to do something, it assumes you’re using CoCalc and R and gives help related to that.</p></li>
-</ul>
+<section id="jupyter-notebooks">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Jupyter Notebooks</a><a class="headerlink" href="#jupyter-notebooks" title="Permalink to this heading"></a></h2>
+<section id="suggesting-code">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">suggesting code</a><a class="headerlink" href="#suggesting-code" title="Permalink to this heading"></a></h3>
+<p>Here is an example of a code suggestion using ChatGPT with a python Jupyter notebook.</p>
+<p>Sample request: <em>plot time series data using a pandas dataframe</em></p>
+<ol class="arabic">
+<li><p>Ask the question in the ChatGPT box above the <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter notebook</span></a>.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/ch-r.png"><img alt="custom help with R" src="_images/ch-r.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/ch-ask-pandas-question.png"><img alt="copy chat response" src="_images/ch-ask-pandas-question.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">ChatGPT help with R</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">asking for a code suggestion</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<ul class="simple">
-<li><p>If you’re on the sagemath landing page and ask how to do something, it assumes you’re using CoCalc and sagemath.</p></li>
-</ul>
+</li>
+<li><p>Copy the code from the response in side chat.</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/ch-1.png"><img alt="custom help with sagemath" src="_images/ch-1.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/ch-copy-python-code.png"><img alt="copy chat response" src="_images/ch-copy-python-code.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">ChatGPT help with sagemath</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">copying suggested code</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<ul class="simple">
-<li><p>You don’t even have to be signed in to use CoCalc’s ChatGPT  help.</p></li>
-</ul>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/ch-2.png"><img alt="custom help at sign-in page" src="_images/ch-2.png" style="width: 90%;" /></a>
+</li>
+<li><p>Paste the code into a notebook code cell.</p></li>
+<li><p>Inspect the code for correctness.</p></li>
+<li><p>Run the code.</p></li>
+</ol>
+</section>
+<section id="fixing-errors">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Fixing Errors</a><a class="headerlink" href="#fixing-errors" title="Permalink to this heading"></a></h3>
+<p>ChatGPT can help you understand and fix execution errors in a <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter notebook</span></a> code cell.</p>
+<blockquote>
+<div><figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/ch-fix-jup-err.png"><img alt="ask how to fix an error" src="_images/ch-fix-jup-err.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">ChatGPT help at sign-in page</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">asking how to fix an error</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+</div></blockquote>
+</section>
+<section id="explaining-code">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Explaining Code</a><a class="headerlink" href="#explaining-code" title="Permalink to this heading"></a></h3>
+<p>ChatGPT can explain what is going on in a <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter notebook</span></a> code cell.</p>
+<blockquote>
+<div><figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/ch-explain-code-jup.png"><img alt="explain a code cell" src="_images/ch-explain-code-jup.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">asking to explain contents of a code cell</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</section>
+</section>
+<section id="editing-python-r-and-other-files">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Editing Python, R, and Other Files</a><a class="headerlink" href="#editing-python-r-and-other-files" title="Permalink to this heading"></a></h2>
+<p>For programming language file types such as .py, .R, pl, and .c, the CoCalc <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a> includes ChatGPT buttons in the top menu.</p>
+<ol class="arabic">
+<li><p>Open a .py file in CoCalc.</p></li>
+<li><p>Notice there’s a ChatGPT button in the top menu bar.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/ch-top-of-frame-ed.png"><img alt="chat help editing a python file" src="_images/ch-top-of-frame-ed.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">ChatGPT button displayed above .py file</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+</section>
+<section id="linux-terminal">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Linux Terminal</a><a class="headerlink" href="#linux-terminal" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a> windows include a ChatGPT button at the top.</p>
+<blockquote>
+<div><figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/ch-linux-term.png"><img alt="chat button in a terminal window" src="_images/ch-linux-term.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">ChatGPT button displayed above terminal window</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<section id="suggest-code-for-shell-scripts">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">suggest code for shell scripts</a><a class="headerlink" href="#suggest-code-for-shell-scripts" title="Permalink to this heading"></a></h3>
+<p>You can get help with basic shell scripting as well as with advanced CoCalc commands. Sample requests:</p>
 <ul class="simple">
-<li><p>You can describe a formula in English and have ChatGPT turn it into a latex formula.</p></li>
+<li><p><em>replace ‘x’ by ‘y’ in all files</em></p></li>
+<li><p><em>how can I use pari/gp to compute the number of primes up to 2023</em></p></li>
 </ul>
-<figure class="align-center" id="id4">
+</section>
+<section id="help-writing-sql-queries">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">help writing SQL queries</a><a class="headerlink" href="#help-writing-sql-queries" title="Permalink to this heading"></a></h3>
+<p>Sample request:</p>
+<p><em>I am using psql to query a table with a column called “time”. I would like to make a table showing the number of entries in my table for each of the last 7 days.</em></p>
+</section>
+</section>
+<section id="scientific-documents">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Scientific Documents</a><a class="headerlink" href="#scientific-documents" title="Permalink to this heading"></a></h2>
+<section id="typeset-scientific-content-with-latex">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">typeset scientific content with LaTeX</a><a class="headerlink" href="#typeset-scientific-content-with-latex" title="Permalink to this heading"></a></h3>
+<p>You can describe a formula in English and have ChatGPT turn it into a latex formula. Sample requests:</p>
+<ul class="simple">
+<li><p><em>Use latex to typeset the following formula: the integral from 0 to infinity of sin(x^2)</em></p></li>
+<li><p><em>Use latex to typeset the following formula: (a + b + c) / alpha</em></p></li>
+</ul>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="_images/ch-4.png"><img alt="custom help latex formulas" src="_images/ch-4.png" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-text">ChatGPT help with latex formulas</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">ChatGPT help with latex formulas</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="chatgpt-on-sign-in-and-feature-pages">
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">ChatGPT on sign-in and feature pages</a><a class="headerlink" href="#chatgpt-on-sign-in-and-feature-pages" title="Permalink to this heading"></a></h2>
+<p>You can ask a question at the start of your CoCalc session. ChatGPT help boxes are at the top of the sign-in page and all feature headings (landing pages).</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/ch-2.png"><img alt="custom help at sign-in page" src="_images/ch-2.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">ChatGPT help near top of sign-in page</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>ChatGPT is available near the top of the CoCalc features main page and each of the individual feature pages.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/ch-cocalc-features.png"><img alt="help at features page" src="_images/ch-cocalc-features.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">ChatGPT help near top of features page</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="chatgpt-in-chat-rooms-and-side-chat">
-<h2>ChatGPT in Chat Rooms and Side Chat<a class="headerlink" href="#chatgpt-in-chat-rooms-and-side-chat" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">ChatGPT in Chat Rooms and Side Chat</a><a class="headerlink" href="#chatgpt-in-chat-rooms-and-side-chat" title="Permalink to this heading"></a></h2>
 <p>In a <a class="reference internal" href="chat.html"><span class="doc">chat room</span></a> or in the <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">side chat</span></a> next to an open file, you can do an <a class="reference internal" href="chat.html#chat-at-mentions"><span class="std std-ref">&#64;-mention</span></a> of ChatGPT and enter your question there.</p>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="_images/ch-5.png"><img alt="&#64;-mention help with latex" src="_images/ch-5.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-text">&#64;-mention help with latex</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">&#64;-mention help with latex</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+</section>
+<section id="cocalc-admins-add-chatgpt-to-your-site">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">CoCalc Admins: add ChatGPT to your site</a><a class="headerlink" href="#cocalc-admins-add-chatgpt-to-your-site" title="Permalink to this heading"></a></h2>
+<p>CoCalc-Docker:
+<a class="reference external" href="https://github.com/sagemathinc/cocalc-docker/discussions/183">ChatGPT integration in latest image</a>.</p>
 </section>
 </section>
 
