@@ -10,7 +10,6 @@ Software Updates 2022
 
 .. highlight:: python
 
-
 .. _update-2022-11-25:
 
 2022-11-25: Various updates

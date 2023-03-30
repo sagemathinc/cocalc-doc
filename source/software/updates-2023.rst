@@ -10,7 +10,17 @@ Software Updates 2023
 
 .. highlight:: python
 
+.. _update-2023-03-30:
 
+2023-03-30: DUNE, OpenAI, etc.
+-------------------------------------------------
+
+- Python 3:
+    - (new) `DUNE`_ – *the Distributed and Unified Numerics Environment is a modular toolbox for solving partial differential equations (PDEs) with grid-based methods. It supports the easy implementation of methods like Finite Elements (FE), Finite Volumes (FV), and also Finite Differences (FD)*
+    - (upd) many packages, among them the `OpenAI`_ python library
+
+- Executables:
+    - Various updates to software packages, python libs, R, etc.
 
 .. _update-2023-02-27:
 
@@ -66,4 +76,5 @@ Additionally, many newer versions will be available – starting with a more rec
 .. _msImpute: https://www.bioconductor.org/packages/release/bioc/html/msImpute.html
 .. _ComplexUpset: https://cran.r-project.org/package=ComplexUpset
 .. _Python: https://www.python.org
-
+.. _DUNE: https://www.dune-project.org/
+.. _OpenAI: https://openai.com/
