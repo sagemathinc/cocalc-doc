@@ -4,7 +4,9 @@
 ChatGPT
 =====================
 
-ChatGPT can transform how you use CoCalc for learning, writing programs, and writing scientific documents. Here are some areas where ChatGPT offers a shortcut to getting results:
+ChatGPT can transform how you use CoCalc for learning, writing programs, and writing scientific documents.
+
+Here are some areas where CoCalc's context-sensitive ChatGPT help can save you time and effort:
 
 .. contents::
    :local:
@@ -27,53 +29,113 @@ Jupyter Notebooks
 ####################################
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Coding Suggestions
+suggesting code
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-blah
+Here is an example of a code suggestion using ChatGPT with a python Jupyter notebook.
+
+Sample request: *plot time series data using a pandas dataframe*
+
+#. Ask the question in the ChatGPT box above the :doc:`Jupyter notebook <jupyter>`.
+
+   .. figure:: img/ch-ask-pandas-question.png
+      :width: 90%
+      :align: center
+      :alt: copy chat response
+
+      asking for a code suggestion
+
+
+#. Copy the code from the response in side chat.
+
+   .. figure:: img/ch-copy-python-code.png
+      :width: 90%
+      :align: center
+      :alt: copy chat response
+
+      copying suggested code
+
+#. Paste the code into a notebook code cell.
+#. Inspect the code for correctness.
+#. Run the code.
+
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Explaining Error Messages
+Fixing Errors
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-zotz
+ChatGPT can help you understand and fix execution errors in a :doc:`Jupyter notebook <jupyter>` code cell.
+
+   .. figure:: img/ch-fix-jup-err.png
+      :width: 90%
+      :align: center
+      :alt: ask how to fix an error
+
+      asking how to fix an error
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Explaining Code
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ChatGPT can explain what is going on in a :doc:`Jupyter notebook <jupyter>` code cell.
+
+   .. figure:: img/ch-explain-code-jup.png
+      :width: 90%
+      :align: center
+      :alt: explain a code cell
+
+      asking to explain contents of a code cell
 
 ####################################
-Writing Code
+Editing Python, R, and Other Files
 ####################################
 
-scribble
+For programming language file types such as .py, .R, pl, and .c, the CoCalc :doc:`frame-editor` includes ChatGPT buttons in the top menu.
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-python
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#. Open a .py file in CoCalc.
+#. Notice there's a ChatGPT button in the top menu bar.
 
-foo
+   .. figure:: img/ch-top-of-frame-ed.png
+      :width: 60%
+      :align: center
+      :alt: chat help editing a python file
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-R
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      ChatGPT button displayed above .py file
 
-foo
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-sagemath
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-sagesagesage
 
 ####################################
 Linux Terminal
 ####################################
 
+:doc:`terminal` windows include a ChatGPT button at the top.
+
+   .. figure:: img/ch-linux-term.png
+      :width: 60%
+      :align: center
+      :alt: chat button in a terminal window
+
+      ChatGPT button displayed above terminal window
+
+
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-learn the bash shell
+suggest code for shell scripts
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+You can get help with basic shell scripting as well as with advanced CoCalc commands. Sample requests:
+
+* *replace 'x' by 'y' in all files*
+* *how can I use pari/gp to compute the number of primes up to 2023*
+
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 help writing SQL queries
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+Sample request:
+
+*I am using psql to query a table with a column called "time". I would like to make a table showing the number of entries in my table for each of the last 7 days.*
 
 ####################################
 Scientific Documents
@@ -83,52 +145,11 @@ Scientific Documents
 typeset scientific content with LaTeX
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-\\{infty}
+You can describe a formula in English and have ChatGPT turn it into a latex formula. Sample requests:
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-suggest wording for explanations
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+* *Use latex to typeset the following formula: the integral from 0 to infinity of sin(x^2)*
 
-
-####################################
-ChatGPT Box at top of feature pages
-####################################
-
-To use ChatGPT help in feature headings (landing pages) and support requests, locate the help box and click the chatbot icon on the right. Once you open the chat interface, you can type in your questions and the ChatGPT model will provide you with contextualized answers.
-
-
-Examples:
-
-* Visit the `CoCalc features list <https://cocalc.com/features>`_ or click any of the features listed, and you will see the help box for help near the top of the screen.
-
-* If you're on the R landing page and ask how to do something, it assumes you're using CoCalc and R and gives help related to that.
-
-.. figure:: img/ch-r.png
-   :width: 90%
-   :align: center
-   :alt: custom help with R
-
-   ChatGPT help with R
-
-* If you're on the sagemath landing page and ask how to do something, it assumes you're using CoCalc and sagemath.
-
-.. figure:: img/ch-1.png
-   :width: 90%
-   :align: center
-   :alt: custom help with sagemath
-
-   ChatGPT help with sagemath
-
-* You don't even have to be signed in to use CoCalc's ChatGPT  help.
-
-.. figure:: img/ch-2.png
-   :width: 90%
-   :align: center
-   :alt: custom help at sign-in page
-
-   ChatGPT help at sign-in page
-
-* You can describe a formula in English and have ChatGPT turn it into a latex formula.
+* *Use latex to typeset the following formula: (a + b + c) / alpha*
 
 .. figure:: img/ch-4.png
    :width: 50%
@@ -136,6 +157,29 @@ Examples:
    :alt: custom help latex formulas
 
    ChatGPT help with latex formulas
+
+
+####################################
+ChatGPT on sign-in and feature pages
+####################################
+
+You can ask a question at the start of your CoCalc session. ChatGPT help boxes are at the top of the sign-in page and all feature headings (landing pages).
+
+.. figure:: img/ch-2.png
+   :width: 90%
+   :align: center
+   :alt: custom help at sign-in page
+
+   ChatGPT help near top of sign-in page
+
+ChatGPT is available near the top of the CoCalc features main page and each of the individual feature pages.
+
+.. figure:: img/ch-cocalc-features.png
+   :width: 90%
+   :align: center
+   :alt: help at features page
+
+   ChatGPT help near top of features page
 
 
 ####################################
@@ -150,5 +194,12 @@ In a :doc:`chat room <chat>` or in the :ref:`side chat <side-chat>` next to an o
    :alt: @-mention help with latex
 
    @-mention help with latex
+
+########################################
+CoCalc Admins: add ChatGPT to your site
+########################################
+
+CoCalc-Docker:
+`ChatGPT integration in latest image <https://github.com/sagemathinc/cocalc-docker/discussions/183>`_.
 
 
