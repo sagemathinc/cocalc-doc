@@ -199,6 +199,8 @@ Because some CoCalc features may not be compatible with course content created b
 * **Disable API keys (NOT IMPLEMENTED).** Makes it so the HTTP API is blocked from accessing the student project. A student might use the API to get around various other restrictions.
 * **Disable outgoing network access.** Blocks all outgoing network connections from the student project.
 * **Disable SSH access to project.** Makes any attempt to ssh to the student project fail.
+* **Disable ChatGPT integration.** Remove all ChatGPT integrations from the student projects. This is a hint for honest students, since of course students can still use copy/paste to accomplish the same thing.
+* **Disable Public sharing.** Disable public sharing of files from the student projects. This is a hint for honest students, since of course students can still download files or even copy them to another project and share them. This does not change the share status of any files that are currently shared.
 
 ###############################
 Reconfigure Student Projects
