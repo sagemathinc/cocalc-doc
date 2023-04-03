@@ -24,6 +24,8 @@ You can read all CoCalc ChatGPT announcements to date and join the discussion at
 
 #. `ChatGPT integration with the Linux Terminal <https://github.com/sagemathinc/cocalc/discussions/6594>`_.
 
+#. `Easily use the OpenAI ChatGPT API from your Jupyter notebooks in CoCalc <https://github.com/sagemathinc/cocalc/discussions/6600>`_.
+
 ####################################
 Jupyter Notebooks
 ####################################
