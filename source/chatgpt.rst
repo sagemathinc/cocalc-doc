@@ -31,7 +31,7 @@ Jupyter Notebooks
 ####################################
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-suggesting code
+Suggesting Code
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 Here is an example of a code suggestion using ChatGPT with a python Jupyter notebook.
@@ -122,7 +122,7 @@ Linux Terminal
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-suggest code for shell scripts
+Suggest Code for Shell Scripts
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 You can get help with basic shell scripting as well as with advanced CoCalc commands. Sample requests:
@@ -132,7 +132,7 @@ You can get help with basic shell scripting as well as with advanced CoCalc comm
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-help writing SQL queries
+Help Writing SQL Queries
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 Sample request:
@@ -144,7 +144,7 @@ Scientific Documents
 ####################################
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-typeset scientific content with LaTeX
+Typeset Scientific Content with LaTeX
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 You can describe a formula in English and have ChatGPT turn it into a latex formula. Sample requests:
@@ -162,7 +162,7 @@ You can describe a formula in English and have ChatGPT turn it into a latex form
 
 
 ####################################
-ChatGPT on sign-in and feature pages
+ChatGPT on Sign-in and Feature Pages
 ####################################
 
 You can ask a question at the start of your CoCalc session. ChatGPT help boxes are at the top of the sign-in page and all feature headings (landing pages).
