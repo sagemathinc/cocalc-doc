@@ -31,7 +31,25 @@ Jupyter Notebooks
 ####################################
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-suggesting code
+Fixing Errors
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Have you ever been using a Jupyter notebook and got an error message? You can now click a button and ChatGPT will automatically try to figure out how to fix the error and tell you in a chat next to your main document.
+
+You can chat back and forth with ChatGPT in :ref:`side-chat`. This way, you can request more explanation in case you don't understand or don't like the first suggested fix.
+
+ChatGPT can help you understand and fix execution errors in a :doc:`Jupyter notebook <jupyter>` code cell.
+
+   .. figure:: img/ch-fix-jup-err.png
+      :width: 90%
+      :align: center
+      :alt: ask how to fix an error
+
+      asking how to fix an error
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Suggesting Code
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 Here is an example of a code suggestion using ChatGPT with a python Jupyter notebook.
@@ -43,7 +61,7 @@ Sample request: *plot time series data using a pandas dataframe*
    .. figure:: img/ch-ask-pandas-question.png
       :width: 90%
       :align: center
-      :alt: copy chat response
+      :alt: ask for suggestion
 
       asking for a code suggestion
 
@@ -62,25 +80,16 @@ Sample request: *plot time series data using a pandas dataframe*
 #. Run the code.
 
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Fixing Errors
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-ChatGPT can help you understand and fix execution errors in a :doc:`Jupyter notebook <jupyter>` code cell.
-
-   .. figure:: img/ch-fix-jup-err.png
-      :width: 90%
-      :align: center
-      :alt: ask how to fix an error
-
-      asking how to fix an error
-
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Explaining Code
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 ChatGPT can explain what is going on in a :doc:`Jupyter notebook <jupyter>` code cell.
+
+* The "Explain" button in the upper right of the cell always uses exactly the current cell.
+
+* The "ChatGPT" button at the top uses: the current selection, or if there is no selection, the current cell, or if the cell is empty, all the cells.
 
    .. figure:: img/ch-explain-code-jup.png
       :width: 90%
@@ -93,7 +102,7 @@ ChatGPT can explain what is going on in a :doc:`Jupyter notebook <jupyter>` code
 Editing Python, R, and Other Files
 ####################################
 
-For programming language file types such as .py, .R, pl, and .c, the CoCalc :doc:`frame-editor` includes ChatGPT buttons in the top menu.
+For programming language file types such as .py, .R, pl, and .c, the CoCalc :doc:`frame-editor` includes ChatGPT buttons in the top menu. ChatGPT editor support actually works for hundreds of file types (basically everything that exists), including LaTeX (".tex") and R markdown (".rmd").
 
 #. Open a .py file in CoCalc.
 #. Notice there's a ChatGPT button in the top menu bar.
@@ -111,6 +120,8 @@ For programming language file types such as .py, .R, pl, and .c, the CoCalc :doc
 Linux Terminal
 ####################################
 
+ChatGPT in combination with the Linux terminal is extremely powerful, because ChatGPT can help you write a script for *any command* that can be invoked from the command shell. See the next subsections for example.
+
 :doc:`terminal` windows include a ChatGPT button at the top.
 
    .. figure:: img/ch-linux-term.png
@@ -122,17 +133,21 @@ Linux Terminal
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-suggest code for shell scripts
+Suggest Code for Shell Scripts
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-You can get help with basic shell scripting as well as with advanced CoCalc commands. Sample requests:
+You can get help with basic shell scripting as well as with advanced CoCalc commands.
+
+Sample requests:
 
 * *replace 'x' by 'y' in all files*
 * *how can I use pari/gp to compute the number of primes up to 2023*
+* *count the total number of lines of code in all coffeescript files under git in all subdirectories* then follow-up with: *can you exclude counting blank lines and comments?*
+* *write a SQL query with psql* - full example below.
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-help writing SQL queries
+Help Writing SQL Queries
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 Sample request:
@@ -144,7 +159,7 @@ Scientific Documents
 ####################################
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-typeset scientific content with LaTeX
+Typeset Scientific Content with LaTeX
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 You can describe a formula in English and have ChatGPT turn it into a latex formula. Sample requests:
@@ -162,7 +177,7 @@ You can describe a formula in English and have ChatGPT turn it into a latex form
 
 
 ####################################
-ChatGPT on sign-in and feature pages
+ChatGPT on Sign-in and Feature Pages
 ####################################
 
 You can ask a question at the start of your CoCalc session. ChatGPT help boxes are at the top of the sign-in page and all feature headings (landing pages).
