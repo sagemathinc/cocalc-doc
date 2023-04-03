@@ -43,7 +43,7 @@ Sample request: *plot time series data using a pandas dataframe*
    .. figure:: img/ch-ask-pandas-question.png
       :width: 90%
       :align: center
-      :alt: copy chat response
+      :alt: ask for suggestion
 
       asking for a code suggestion
 
