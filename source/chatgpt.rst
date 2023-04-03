@@ -102,7 +102,7 @@ ChatGPT can explain what is going on in a :doc:`Jupyter notebook <jupyter>` code
 Editing Python, R, and Other Files
 ####################################
 
-For programming language file types such as .py, .R, pl, and .c, the CoCalc :doc:`frame-editor` includes ChatGPT buttons in the top menu.
+For programming language file types such as .py, .R, pl, and .c, the CoCalc :doc:`frame-editor` includes ChatGPT buttons in the top menu. ChatGPT editor support actually works for hundreds of file types (basically everything that exists), including LaTeX (".tex") and R markdown (".rmd").
 
 #. Open a .py file in CoCalc.
 #. Notice there's a ChatGPT button in the top menu bar.
