@@ -36,7 +36,7 @@ Fixing Errors
 
 Have you ever been using a Jupyter notebook and got an error message? You can now click a button and ChatGPT will automatically try to figure out how to fix the error and tell you in a chat next to your main document.
 
-You can chat back and forth with ChatGPT in :ref:`side-chat`. This way, you can request more explanation in case you don't understand or don't like the first suggested fix.
+It is often helpful to chat back and forth with ChatGPT in :ref:`side-chat` to refine the initial answer. Use the "Reply" button in side chat to ask follow-up questions.
 
 ChatGPT can help you understand and fix execution errors in a :doc:`Jupyter notebook <jupyter>` code cell.
 
