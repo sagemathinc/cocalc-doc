@@ -120,6 +120,8 @@ For programming language file types such as .py, .R, pl, and .c, the CoCalc :doc
 Linux Terminal
 ####################################
 
+ChatGPT in combination with the Linux terminal is extremely powerful, because ChatGPT can help you write a script for *any command* that can be invoked from the command shell. See the next subsections for example.
+
 :doc:`terminal` windows include a ChatGPT button at the top.
 
    .. figure:: img/ch-linux-term.png
@@ -134,10 +136,14 @@ Linux Terminal
 Suggest Code for Shell Scripts
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-You can get help with basic shell scripting as well as with advanced CoCalc commands. Sample requests:
+You can get help with basic shell scripting as well as with advanced CoCalc commands.
+
+Sample requests:
 
 * *replace 'x' by 'y' in all files*
 * *how can I use pari/gp to compute the number of primes up to 2023*
+* *count the total number of lines of code in all coffeescript files under git in all subdirectories* then follow-up with: *can you exclude counting blank lines and comments?*
+* *write a SQL query with psql* - full example below.
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
