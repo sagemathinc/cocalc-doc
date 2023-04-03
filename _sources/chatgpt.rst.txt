@@ -89,14 +89,15 @@ ChatGPT can explain what is going on in a :doc:`Jupyter notebook <jupyter>` code
 
 * The "Explain" button in the upper right of the cell always uses exactly the current cell.
 
-* The "ChatGPT" button at the top uses: the current selection, or if there is no selection, the current cell, or if the cell is empty, all the cells.
-
    .. figure:: img/ch-explain-code-jup.png
       :width: 90%
       :align: center
       :alt: explain a code cell
 
       asking to explain contents of a code cell
+
+* The "ChatGPT" button at the top uses: the current selection, or if there is no selection, the current cell, or if the cell is empty, all the cells.
+
 
 ####################################
 Editing Python, R, and Other Files
