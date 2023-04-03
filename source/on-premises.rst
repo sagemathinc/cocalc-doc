@@ -12,3 +12,4 @@ For persons who want the features of  advanced math, science, and data science c
 
 Our blog article `CoCalc On-Premise <https://about.cocalc.com/2022/11/18/cocalc-on-premise/>`_ has more information about these two products.
 
+There's information about pricing in the `CoCalc on-premises price guide <https://cocalc.com/pricing/onprem>`_.
