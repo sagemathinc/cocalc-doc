@@ -54,6 +54,12 @@ Ways to clear up your project's memory
     .. note::
 
         If there are collaborators on your project, they might start up additional notebooks. Check the project log if someone else is active at the same time.
+        
+**Dedicated VM**
+
+    * A possible solution for out of memory problems is using a dedicated virtual machine (VM). Licenses for dedicated VMs are available in the `CoCalc Store <https://cocalc.com/store/dedicated?type=vm>`_ with memory ranging from 6 GB to 126 GB.
+
+
 
 
 Inspect in detail why the project is running out of memory
