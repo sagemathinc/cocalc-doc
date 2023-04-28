@@ -26,7 +26,7 @@ an ``*.ipynb`` file starts CoCalc's implementations of the :doc:`Jupyter Noteboo
 and a ``*.tex`` file opens an editor for :doc:`LaTeX documents <latex>`.
 
 .. figure:: img/cocalc-screenshot-20200123.png
-     :width: 75%
+     :width: 100%
      :align: center
      :alt: jupyter notebook
 
@@ -63,7 +63,7 @@ First Steps Guide
 As an alternative to the "Getting Started" steps above, you can use the **First Steps Guide**. Whenever a new project is created, a banner appears offering to create a set of files constituting Guide:
 
 .. figure:: img/first-steps-message.png
-     :width: 80%
+     :width: 100%
      :align: center
      :alt: first steps banner
 
@@ -74,7 +74,7 @@ Clicking on the banner puts copies of the Guide files into the project in a fold
 If you don't want the guide copied at the moment, you can dismiss the banner. And you can always bring the banner back later if you change your mind:
 
 .. figure:: img/first-steps-hide.png
-     :width: 80%
+     :width: 100%
      :align: center
      :alt: dismiss first steps banner
 
