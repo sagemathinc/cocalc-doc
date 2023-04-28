@@ -75,11 +75,12 @@
 <li class="toctree-l1 current"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="jupyter-start.html">Getting Started with Jupyter Notebooks</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">CoCalc Enhancements to Jupyter Notebooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cell-insert-bar">cell-insert bar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#consecutive-cell-numbers">consecutive cell numbers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#delete-protect-cells">delete protect cells</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#edit-protect-cells">edit protect cells</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#drag-and-drop">drag-and-drop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#nbgrader-integration">nbgrader integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#protect-cells-from-deletion">protect cells from deletion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#protect-cells-from-editing">protect cells from editing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#run-time-for-compute-cells">run time for compute cells</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#slideshow">slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#table-of-contents">table of contents</a></li>
@@ -183,44 +184,44 @@
 <p>These enhanced features are available in CoCalc Jupyter notebooks:</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#consecutive-cell-numbers" id="id11">consecutive cell numbers</a></p></li>
-<li><p><a class="reference internal" href="#delete-protect-cells" id="id12">delete protect cells</a></p></li>
-<li><p><a class="reference internal" href="#edit-protect-cells" id="id13">edit protect cells</a></p></li>
+<li><p><a class="reference internal" href="#cell-insert-bar" id="id12">cell-insert bar</a></p></li>
+<li><p><a class="reference internal" href="#consecutive-cell-numbers" id="id13">consecutive cell numbers</a></p></li>
 <li><p><a class="reference internal" href="#drag-and-drop" id="id14">drag-and-drop</a></p></li>
 <li><p><a class="reference internal" href="#nbgrader-integration" id="id15">nbgrader integration</a></p></li>
-<li><p><a class="reference internal" href="#run-time-for-compute-cells" id="id16">run time for compute cells</a></p></li>
-<li><p><a class="reference internal" href="#slideshow" id="id17">slideshow</a></p></li>
-<li><p><a class="reference internal" href="#table-of-contents" id="id18">table of contents</a></p></li>
-<li><p><a class="reference internal" href="#widgets-in-cocalc" id="id19">widgets in CoCalc</a></p></li>
+<li><p><a class="reference internal" href="#protect-cells-from-deletion" id="id16">protect cells from deletion</a></p></li>
+<li><p><a class="reference internal" href="#protect-cells-from-editing" id="id17">protect cells from editing</a></p></li>
+<li><p><a class="reference internal" href="#run-time-for-compute-cells" id="id18">run time for compute cells</a></p></li>
+<li><p><a class="reference internal" href="#slideshow" id="id19">slideshow</a></p></li>
+<li><p><a class="reference internal" href="#table-of-contents" id="id20">table of contents</a></p></li>
+<li><p><a class="reference internal" href="#widgets-in-cocalc" id="id21">widgets in CoCalc</a></p></li>
 </ul>
 </nav>
-<section id="consecutive-cell-numbers">
-<span id="index-1"></span><span id="id1"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">consecutive cell numbers</a><a class="headerlink" href="#consecutive-cell-numbers" title="Permalink to this heading"></a></h2>
-<p>Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don’t change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.</p>
+<section id="cell-insert-bar">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">cell-insert bar</a><a class="headerlink" href="#cell-insert-bar" title="Permalink to this heading"></a></h2>
+<p>If you hover your cursor over the space between two consecutive cells in a Jupyter notebook, a blue bar will appear:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/cell-insert-bar.png"><img alt="bar for inserting a cell" src="_images/cell-insert-bar.png" style="width: 100%;" /></a>
+</figure>
+<ul class="simple">
+<li><p>Clicking the bar anyplace between the buttons, or clicking the “Code” button, will insert an empty code cell.</p></li>
+<li><p>Shift-clicking the bar between the buttons, or clicking the “Text” button, will insert an empty text cell.</p></li>
+<li><p>Clicking the “Paste” button can paste content from the clipboard into a new cell, but note that some browsers will warn you or prohibit this action for security reasons.</p></li>
+<li><p>Clicking the “ChatGPT” button will pop up a prompt allowing you to describe what you want and have ChstGPT write code for you. The code, with comments, will appear in a new cell. Note that code created by ChatGPT may have errors, so it needs to be checked. Often, even if the code has errors, it can show you new ways to solve your problem.</p></li>
+</ul>
 <figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/cell-insert-chatgpt.png"><img alt="button to insert generated code in a new cell" src="_images/cell-insert-chatgpt.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Use “ChatGPT” button to write code in a new cell</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="consecutive-cell-numbers">
+<span id="index-1"></span><span id="id1"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">consecutive cell numbers</a><a class="headerlink" href="#consecutive-cell-numbers" title="Permalink to this heading"></a></h2>
+<p>Cells are numbered consecutively at upper right. Unlike execution numbers shown in brackets at left, these don’t change when you re-run a compute cell or go blank when you clear output, and markdown cells are numbered as well as code cells.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/jup-cell-num-timing.png"><img alt="compute cell with ordinal number and run time at right" src="_images/jup-cell-num-timing.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">compute cell consecutive numbers and run time</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="delete-protect-cells">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">delete protect cells</a><a class="headerlink" href="#delete-protect-cells" title="Permalink to this heading"></a></h2>
-<p>You can protect markdown and code cells from deletion in a Jupyter notebook using “Delete protection – toggle whether cells are deletable” in the “Edit” menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.</p>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/delete-protect.png"><img alt="protecting cells from deletion" src="_images/delete-protect.png" style="width: 60%;" /></a>
-<figcaption>
-<p><span class="caption-text">protecting cells from being deleted</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="edit-protect-cells">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">edit protect cells</a><a class="headerlink" href="#edit-protect-cells" title="Permalink to this heading"></a></h2>
-<p>You can prevent editing of markdown and code cells in a Jupyter notebook using “Edit protect – toggle whether cells are editable” in the “Edit” menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.</p>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/edit-protect.png"><img alt="protecting cells from editing" src="_images/edit-protect.png" style="width: 60%;" /></a>
-<figcaption>
-<p><span class="caption-text">protecting cells from being edited</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">compute cell consecutive numbers and run time</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -231,10 +232,10 @@
 there is an image icon/button on the far right of the cell.  Just
 click that and you can then select an image from your computer.  It’ll
 be uploaded and inserted into the cell.</p>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/place-image.png"><img alt="drag and drop into drop zone of markdown cell" src="_images/place-image.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">Click image icon to open a drop zone for image placement</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Click image icon to open a drop zone for image placement</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>2. If you have a markdown cell and <em>are</em> editing it, select “Edit –&gt;
@@ -248,30 +249,50 @@ See <a class="reference external" href="https://github.com/sagemathinc/cocalc/is
 <h2><a class="toc-backref" href="#id15" role="doc-backlink">nbgrader integration</a><a class="headerlink" href="#nbgrader-integration" title="Permalink to this heading"></a></h2>
 <p>CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See <a class="reference internal" href="teaching-nbgrader.html"><span class="doc">nbgrader in CoCalc</span></a> for more information.</p>
 </section>
+<section id="protect-cells-from-deletion">
+<span id="index-3"></span><h2><a class="toc-backref" href="#id16" role="doc-backlink">protect cells from deletion</a><a class="headerlink" href="#protect-cells-from-deletion" title="Permalink to this heading"></a></h2>
+<p>You can protect markdown and code cells from deletion in a Jupyter notebook using “Delete protection – toggle whether cells are deletable” in the “Edit” menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/delete-protect.png"><img alt="protecting cells from deletion" src="_images/delete-protect.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">protecting cells from being deleted</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="protect-cells-from-editing">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">protect cells from editing</a><a class="headerlink" href="#protect-cells-from-editing" title="Permalink to this heading"></a></h2>
+<p>You can prevent editing of markdown and code cells in a Jupyter notebook using “Edit protect – toggle whether cells are editable” in the “Edit” menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/edit-protect.png"><img alt="protecting cells from editing" src="_images/edit-protect.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">protecting cells from being edited</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 <section id="run-time-for-compute-cells">
-<span id="index-3"></span><h2><a class="toc-backref" href="#id16" role="doc-backlink">run time for compute cells</a><a class="headerlink" href="#run-time-for-compute-cells" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">run time for compute cells</a><a class="headerlink" href="#run-time-for-compute-cells" title="Permalink to this heading"></a></h2>
 <p>When a compute cell is executed, the amount of time it takes is displayed at upper right. See the figure above under <a class="reference internal" href="#consecutive-cell-numbers"><span class="std std-ref">consecutive cell numbers</span></a>.</p>
 </section>
 <section id="slideshow">
-<span id="index-4"></span><h2><a class="toc-backref" href="#id17" role="doc-backlink">slideshow</a><a class="headerlink" href="#slideshow" title="Permalink to this heading"></a></h2>
+<span id="index-4"></span><h2><a class="toc-backref" href="#id19" role="doc-backlink">slideshow</a><a class="headerlink" href="#slideshow" title="Permalink to this heading"></a></h2>
 <p>CoCalc notebooks offer you a shortcut for making a slideshow. Select “View” &gt; “Cell Toolbar…” &gt; “Slideshow” to add a <code class="docutils literal notranslate"><span class="pre">Slide</span></code> button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the “Slideshow” in the “Notebook” menu at the top of a notebook, or select “File” &gt; “Slideshow”, or split the frame and change one of the resulting frames to “Slideshow”. The latter allows you to view the original notebook side-by-side with the slides.</p>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="_images/slideshow-1.png"><img alt="slide button in cell toolbar" src="_images/slideshow-1.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">enabling “Slide” button in cell toolbar</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">enabling “Slide” button in cell toolbar</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="_images/slideshow-2.png"><img alt="selecting slide type" src="_images/slideshow-2.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">selecting slide type for each cell</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">selecting slide type for each cell</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>When presenting, the next slide is to the right, while the next subslide is below. Fragments are revealed within the present slide. Click in the slideshow and then click “?” to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking in the toolbar above the show and clicking “Build”, or by clicking “File” in the toolbar above the notebook and again selecting “Slideshow”.</p>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="_images/slideshow-3.png"><img alt="notebook side-by-side with slideshow" src="_images/slideshow-3.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">original notebook side by side with slideshow</span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
+<p><span class="caption-text">original notebook side by side with slideshow</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -280,24 +301,24 @@ See <a class="reference external" href="https://github.com/sagemathinc/cocalc/is
 </div>
 </section>
 <section id="table-of-contents">
-<span id="index-5"></span><h2><a class="toc-backref" href="#id18" role="doc-backlink">table of contents</a><a class="headerlink" href="#table-of-contents" title="Permalink to this heading"></a></h2>
+<span id="index-5"></span><h2><a class="toc-backref" href="#id20" role="doc-backlink">table of contents</a><a class="headerlink" href="#table-of-contents" title="Permalink to this heading"></a></h2>
 <p>Table of contents sets the indentation level based on the markdown heading level, i.e. “#” for top level, “##” for second level, etc. Click the “Contents” button in the “Notebook” menu at the top of a notebook, or select “File –&gt; Table of Contents”, or split the frame and change one of the resulting frames to “Table of Contents”. Each entry in the table of contents is a clickable link that takes you to the corresponding cell in the notebook.</p>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="_images/jup-toc2.png"><img alt="jupyter notebook table of contents" src="_images/jup-toc2.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-text">table of contents</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
+<p><span class="caption-text">table of contents</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="widgets-in-cocalc">
-<span id="jupyter-interactive-widgets"></span><span id="index-6"></span><h2><a class="toc-backref" href="#id19" role="doc-backlink">widgets in CoCalc</a><a class="headerlink" href="#widgets-in-cocalc" title="Permalink to this heading"></a></h2>
+<span id="jupyter-interactive-widgets"></span><span id="index-6"></span><h2><a class="toc-backref" href="#id21" role="doc-backlink">widgets in CoCalc</a><a class="headerlink" href="#widgets-in-cocalc" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/index.html">Jupyter Widgets</a> are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
 <a class="reference internal" href="teaching-interactions.html#multi-user-edit"><span class="std std-ref">real-time collaboration</span></a>, <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a>, and <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">side chat</span></a>.</p>
 <p>A good way to get started using Jupyter widgets is to go through the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html">Widget List</a> in the main widgets documentation.</p>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="_images/cocalc-widgets-a.png"><img alt="notebook with widgets" src="_images/cocalc-widgets-a.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">CoCalc Jupyter notebook with Jupyter Widgets</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
+<p><span class="caption-text">CoCalc Jupyter notebook with Jupyter Widgets</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>For more information on the implementation of Jupyter Widgets in Cocalc, including support for real-time collaboration, see this video presentation: <a class="reference external" href="https://www.youtube.com/watch?v=t4h5QrBKjyY">Jupyter Widgets in CoCalc</a>.</p>
