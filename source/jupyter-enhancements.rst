@@ -10,6 +10,34 @@ These enhanced features are available in CoCalc Jupyter notebooks:
      :local:
      :depth: 1
 
+#######################################
+cell-insert bar
+#######################################
+
+If you hover your cursor over the space between two consecutive cells in a Jupyter notebook, a blue bar will appear:
+
+.. figure:: img/jupyter/cell-insert-bar.png
+    :width: 100%
+    :align: center
+    :alt: bar for inserting a cell
+
+    ..
+
+* Clicking the bar anyplace between the buttons, or clicking the "Code" button, will insert an empty code cell.
+* Shift-clicking the bar between the buttons, or clicking the "Text" button, will insert an empty text cell.
+* Clicking the "Paste" button can paste content from the clipboard into a new cell, but note that some browsers will warn you or prohibit this action for security reasons.
+* Clicking the "ChatGPT" button will pop up a prompt allowing you to describe what you want and have ChstGPT write code for you. The code, with comments, will appear in a new cell. Note that code created by ChatGPT may have errors, so it needs to be checked. Often, even if the code has errors, it can show you new ways to solve your problem.
+
+.. figure:: img/jupyter/cell-insert-chatgpt.png
+    :width: 100%
+    :align: center
+    :alt: button to insert generated code in a new cell
+
+    Use "ChatGPT" button to write code in a new cell
+
+
+
+
 .. index:: Jupyter Notebooks; cell numbers
 .. _consecutive-cell-numbers:
 
@@ -26,31 +54,6 @@ Cells are numbered consecutively at upper right. Unlike execution numbers shown 
 
      compute cell consecutive numbers and run time
      
-######################
-delete protect cells
-######################
-
-You can protect markdown and code cells from deletion in a Jupyter notebook using "Delete protection -- toggle whether cells are deletable" in the "Edit" menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.
-
-.. figure:: img/jupyter/delete-protect.png
-     :width: 60%
-     :align: center
-     :alt: protecting cells from deletion
-     
-     protecting cells from being deleted
-
-######################
-edit protect cells
-######################
-
-You can prevent editing of markdown and code cells in a Jupyter notebook using "Edit protect -- toggle whether cells are editable" in the "Edit" menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.
-
-.. figure:: img/jupyter/edit-protect.png
-     :width: 60%
-     :align: center
-     :alt: protecting cells from editing
-     
-     protecting cells from being edited
 
 .. index:: Jupyter Notebooks; drag-and-drop images
 
@@ -80,6 +83,7 @@ as above.
 and copy/paste of images, but it probably will soon.
 See https://github.com/sagemathinc/cocalc/issues/4762
 
+
 #################################
 nbgrader integration
 #################################
@@ -87,6 +91,34 @@ nbgrader integration
 CoCalc offers nbgrader support without adding separate Jupyter extensions. This ehancement is in under active development. See :doc:`nbgrader in CoCalc<teaching-nbgrader>` for more information.
 
 .. index:: Jupyter Notebooks; cell run time
+
+############################
+protect cells from deletion
+############################
+
+You can protect markdown and code cells from deletion in a Jupyter notebook using "Delete protection -- toggle whether cells are deletable" in the "Edit" menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.
+
+.. figure:: img/jupyter/delete-protect.png
+     :width: 60%
+     :align: center
+     :alt: protecting cells from deletion
+     
+     protecting cells from being deleted
+
+############################
+protect cells from editing
+############################
+
+
+You can prevent editing of markdown and code cells in a Jupyter notebook using "Edit protect -- toggle whether cells are editable" in the "Edit" menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.
+
+.. figure:: img/jupyter/edit-protect.png
+     :width: 60%
+     :align: center
+     :alt: protecting cells from editing
+     
+     protecting cells from being edited
+
 
 #######################################
 run time for compute cells
