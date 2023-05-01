@@ -87,8 +87,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#backups-snapshots">Backups (snapshots)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#understanding-error-messages">Understanding Error Messages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#help-for-programmers">Help for Programmers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#chatgpt-help-understanding-errors">ChatGPT help understanding errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#understanding-error-messages">Understanding Error Messages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#extended-documentation">Extended Documentation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#concise-documentation">Concise Documentation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#source-code">Source Code</a></li>
@@ -105,8 +106,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#help-about-sagemath">Help about SageMath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#howto">Howto</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#attach-sage-files-to-sage-worksheets">Attach Sage files to Sage Worksheets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#how-can-i-connect-an-html-form-with-my-python-code">How can I connect an HTML form with my Python code?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#how-can-i-play-sounds">How can I play sounds?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect-an-html-form-with-python-code">Connect an HTML form with Python code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#play-sounds">Play sounds</a></li>
 </ul>
 </li>
 </ul>
@@ -195,43 +196,44 @@
 <span id="sage-worksheet"></span><span id="index-0"></span><h1>Sage Worksheets<a class="headerlink" href="#sage-worksheets" title="Permalink to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#introduction" id="id6">Introduction</a></p></li>
-<li><p><a class="reference internal" href="#what-s-a-sage-worksheet" id="id7">What’s a Sage Worksheet?</a></p></li>
-<li><p><a class="reference internal" href="#how-to-revert-undo-changes-in-a-sage-worksheet" id="id8">How to Revert/Undo Changes in a Sage Worksheet</a></p>
+<li><p><a class="reference internal" href="#introduction" id="id8">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#what-s-a-sage-worksheet" id="id9">What’s a Sage Worksheet?</a></p></li>
+<li><p><a class="reference internal" href="#how-to-revert-undo-changes-in-a-sage-worksheet" id="id10">How to Revert/Undo Changes in a Sage Worksheet</a></p>
 <ul>
-<li><p><a class="reference internal" href="#timetravel" id="id9">TimeTravel</a></p></li>
-<li><p><a class="reference internal" href="#backups-snapshots" id="id10">Backups (snapshots)</a></p></li>
+<li><p><a class="reference internal" href="#timetravel" id="id11">TimeTravel</a></p></li>
+<li><p><a class="reference internal" href="#backups-snapshots" id="id12">Backups (snapshots)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#understanding-error-messages" id="id11">Understanding Error Messages</a></p></li>
-<li><p><a class="reference internal" href="#help-for-programmers" id="id12">Help for Programmers</a></p>
+<li><p><a class="reference internal" href="#help-for-programmers" id="id13">Help for Programmers</a></p>
 <ul>
-<li><p><a class="reference internal" href="#extended-documentation" id="id13">Extended Documentation</a></p></li>
-<li><p><a class="reference internal" href="#concise-documentation" id="id14">Concise Documentation</a></p></li>
-<li><p><a class="reference internal" href="#source-code" id="id15">Source Code</a></p></li>
-<li><p><a class="reference internal" href="#tab-completion" id="id16">Tab Completion</a></p></li>
+<li><p><a class="reference internal" href="#chatgpt-help-understanding-errors" id="id14">ChatGPT help understanding errors</a></p></li>
+<li><p><a class="reference internal" href="#understanding-error-messages" id="id15">Understanding Error Messages</a></p></li>
+<li><p><a class="reference internal" href="#extended-documentation" id="id16">Extended Documentation</a></p></li>
+<li><p><a class="reference internal" href="#concise-documentation" id="id17">Concise Documentation</a></p></li>
+<li><p><a class="reference internal" href="#source-code" id="id18">Source Code</a></p></li>
+<li><p><a class="reference internal" href="#tab-completion" id="id19">Tab Completion</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#sage-worksheet-slow-when-plotting-disable-svg" id="id17">Sage Worksheet Slow When Plotting? Disable svg.</a></p></li>
-<li><p><a class="reference internal" href="#how-long-are-definitions-stored-in-a-sage-worksheet" id="id18">How Long are Definitions Stored in a Sage Worksheet?</a></p></li>
-<li><p><a class="reference internal" href="#wiki-resources" id="id19">Wiki resources</a></p>
+<li><p><a class="reference internal" href="#sage-worksheet-slow-when-plotting-disable-svg" id="id20">Sage Worksheet Slow When Plotting? Disable svg.</a></p></li>
+<li><p><a class="reference internal" href="#how-long-are-definitions-stored-in-a-sage-worksheet" id="id21">How Long are Definitions Stored in a Sage Worksheet?</a></p></li>
+<li><p><a class="reference internal" href="#wiki-resources" id="id22">Wiki resources</a></p>
 <ul>
-<li><p><a class="reference internal" href="#sagews-wiki" id="id20">Sage Worksheets</a></p></li>
-<li><p><a class="reference internal" href="#conversion-utilities" id="id21">Conversion utilities</a></p></li>
+<li><p><a class="reference internal" href="#sagews-wiki" id="id23">Sage Worksheets</a></p></li>
+<li><p><a class="reference internal" href="#conversion-utilities" id="id24">Conversion utilities</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#help-about-sagemath" id="id22">Help about SageMath</a></p></li>
-<li><p><a class="reference internal" href="#howto" id="id23">Howto</a></p>
+<li><p><a class="reference internal" href="#help-about-sagemath" id="id25">Help about SageMath</a></p></li>
+<li><p><a class="reference internal" href="#howto" id="id26">Howto</a></p>
 <ul>
-<li><p><a class="reference internal" href="#attach-sage-files-to-sage-worksheets" id="id24">Attach Sage files to Sage Worksheets</a></p></li>
-<li><p><a class="reference internal" href="#how-can-i-connect-an-html-form-with-my-python-code" id="id25">How can I connect an HTML form with my Python code?</a></p></li>
-<li><p><a class="reference internal" href="#how-can-i-play-sounds" id="id26">How can I play sounds?</a></p></li>
+<li><p><a class="reference internal" href="#attach-sage-files-to-sage-worksheets" id="id27">Attach Sage files to Sage Worksheets</a></p></li>
+<li><p><a class="reference internal" href="#connect-an-html-form-with-python-code" id="id28">Connect an HTML form with Python code</a></p></li>
+<li><p><a class="reference internal" href="#play-sounds" id="id29">Play sounds</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
 <section id="introduction">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
 <p>Sage Worksheets were developed for collaborative, notebook-style computing with <a class="reference external" href="https://www.sagemath.org">SageMath</a> on the <a class="reference external" href="https://cocalc.com">CoCalc</a> platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments. More than one language environment can be used in the same Sage Worksheet.</p>
 <p>Note: in the CoCalc User Manual, we will generally use the term <em>SageMath</em> to refer to the <a class="reference external" href="https://www.sagemath.org">open source mathematical system</a> that runs on CoCalc and in many other environments. Elsewhere, you may see it referred to simply as <em>Sage</em>.</p>
 <p>In CoCalc, there are at least three ways to run SageMath:</p>
@@ -242,88 +244,109 @@
 </ul>
 </section>
 <section id="what-s-a-sage-worksheet">
-<span id="what-is-sagews"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">What’s a Sage Worksheet?</a><a class="headerlink" href="#what-s-a-sage-worksheet" title="Permalink to this heading"></a></h2>
+<span id="what-is-sagews"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">What’s a Sage Worksheet?</a><a class="headerlink" href="#what-s-a-sage-worksheet" title="Permalink to this heading"></a></h2>
 <p>A Sage Worksheet is a file ending in <code class="docutils literal notranslate"><span class="pre">.sagews</span></code> and is subdivided into cells. Each cell has an input region and an output region, which might be 0, 1, 2, or many lines long.</p>
 <p>The input can be mathematical, in the Sage syntax, or it could be in many other formats, including <a class="reference internal" href="markdown.html"><span class="doc">Markdown</span></a>, HTML, Python 2 or 3, and R. To use a format other than Sage syntax, start the cell with a mode directive such ss “%md” for markdown. See this <a class="reference external" href="https://blog.cocalc.com/smc/2016/08/08/custom-magic-commands.html">CoCalc blog article</a> for more information about built-in and custom sagews modes.</p>
 <p>When you <em>run</em> a cell, by clicking <code class="docutils literal notranslate"><span class="pre">Run</span></code> or typing <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code>, the input is executed (or formatted, for text processing). The result appears in the output after the calculation is done.</p>
 <p>To begin work on a Sage Worksheet, create a file ending with <code class="docutils literal notranslate"><span class="pre">.sagews</span></code>.</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/sagews-example.png"><img alt="_images/sagews-example.png" src="_images/sagews-example.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/sagews-example.png"><img alt="example sage worksheet" src="_images/sagews-example.png" style="width: 90%;" /></a>
 <figcaption>
 <p><span class="caption-text"><em>example of a Sage Worksheet</em></span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="how-to-revert-undo-changes-in-a-sage-worksheet">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">How to Revert/Undo Changes in a Sage Worksheet</a><a class="headerlink" href="#how-to-revert-undo-changes-in-a-sage-worksheet" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">How to Revert/Undo Changes in a Sage Worksheet</a><a class="headerlink" href="#how-to-revert-undo-changes-in-a-sage-worksheet" title="Permalink to this heading"></a></h2>
 <p>For tiny changes, control+Z (or command+Z on a mac) will give you an instantaneous undo.</p>
 <p>When it comes to undoing larger changes, one of the most useful things about CoCalc is that it will keep all versions of all of your files. This means that you can revert back to previous versions easily.</p>
 <section id="timetravel">
-<span id="index-1"></span><h3><a class="toc-backref" href="#id9" role="doc-backlink">TimeTravel</a><a class="headerlink" href="#timetravel" title="Permalink to this heading"></a></h3>
+<span id="index-1"></span><h3><a class="toc-backref" href="#id11" role="doc-backlink">TimeTravel</a><a class="headerlink" href="#timetravel" title="Permalink to this heading"></a></h3>
 <p>From any worksheet, click on TimeTravel.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="_images/sagews-example-tt.png"><img alt="_images/sagews-example-tt.png" src="_images/sagews-example-tt.png" style="width: 30%;" /></a>
+<a class="reference internal image-reference" href="_images/sagews-example-tt.png"><img alt="TimeTravel button" src="_images/sagews-example-tt.png" style="width: 30%;" /></a>
 </figure>
 <p>Using the slider, look at all the versions. Find the revision that you want and then click “Revert live version to this.”</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/sagews-timetravel-a.png"><img alt="_images/sagews-timetravel-a.png" src="_images/sagews-timetravel-a.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/sagews-timetravel-a.png"><img alt="TimeTravel controls" src="_images/sagews-timetravel-a.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text"><em>looking at a Sage Worksheet with TimeTravel</em></span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="backups-snapshots">
-<span id="index-2"></span><h3><a class="toc-backref" href="#id10" role="doc-backlink">Backups (snapshots)</a><a class="headerlink" href="#backups-snapshots" title="Permalink to this heading"></a></h3>
+<span id="index-2"></span><h3><a class="toc-backref" href="#id12" role="doc-backlink">Backups (snapshots)</a><a class="headerlink" href="#backups-snapshots" title="Permalink to this heading"></a></h3>
 <p>For a list of snapshots taken by CoCalc, use the <code class="docutils literal notranslate"><span class="pre">Backups</span></code> button from the TimeTravel view or the Files list. Note that these backups are read-only. If you want to continue working on a file from a snapshot in Backups, you will need to copy it into a writable folder in your project.</p>
 </section>
 </section>
-<section id="understanding-error-messages">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Understanding Error Messages</a><a class="headerlink" href="#understanding-error-messages" title="Permalink to this heading"></a></h2>
-<p><em>Question: I did xyz and now I have this huge error message! Why?</em></p>
-<p>Often when SageMath encounters an error, a long error message appears. This output is called a “stack trace” and it can be very useful to experienced programmers. However, often it is enough to <strong>look at the last line of the error message</strong> to understand what has gone wrong.</p>
+<section id="help-for-programmers">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Help for Programmers</a><a class="headerlink" href="#help-for-programmers" title="Permalink to this heading"></a></h2>
+<section id="chatgpt-help-understanding-errors">
+<span id="sagews-chatgpt"></span><h3><a class="toc-backref" href="#id14" role="doc-backlink">ChatGPT help understanding errors</a><a class="headerlink" href="#chatgpt-help-understanding-errors" title="Permalink to this heading"></a></h3>
+<p>When sage reports an error, a “Help me fix this…” button appears in the cell output:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/sagews-help-0.png"><img alt="stacktrace from an error" src="_images/sagews-help-0.png" style="width: 100%;" /></a>
+</figure>
+<p>When you click the button, ChatGPT will open a side chat panel. After a few seconds, an explanation of the error will appear. <strong>You can reply to ChatGPT in the chat panel if you have more questions after the initial explanation.</strong>:</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/sagews-stacktrace.png"><img alt="_images/sagews-stacktrace.png" src="_images/sagews-stacktrace.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/sagews-help-1.png"><img alt="stacktrace from an error" src="_images/sagews-help-1.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text"><em>making sense of error messages</em></span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">side chat opened by ChatGPT</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Context for the explanation is created but is initially hidden behind a disclosure triangle. Clicking the triangle will show you the context:</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/sagews-help-2.png"><img alt="stacktrace from an error" src="_images/sagews-help-2.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">last line of stacktrace has clue to error</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="help-for-programmers">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">Help for Programmers</a><a class="headerlink" href="#help-for-programmers" title="Permalink to this heading"></a></h2>
+<section id="understanding-error-messages">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Understanding Error Messages</a><a class="headerlink" href="#understanding-error-messages" title="Permalink to this heading"></a></h3>
+<p><em>Question: I did xyz and now I have this huge error message! Why?</em></p>
+<p>Often when SageMath encounters an error, a long error message appears. This output is called a “stack trace” and it can be very useful to experienced programmers. However, often it is enough to <strong>look at the last line of the error message</strong> to understand what has gone wrong.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/sagews-stacktrace.png"><img alt="stacktrace from an error" src="_images/sagews-stacktrace.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">last line of stacktrace has clue to error</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 <section id="extended-documentation">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Extended Documentation</a><a class="headerlink" href="#extended-documentation" title="Permalink to this heading"></a></h3>
-<p>To see verbose documentation for language features, including commands, methods, and attributes, use the <code class="docutils literal notranslate"><span class="pre">help()</span></code> function.</p>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Extended Documentation</a><a class="headerlink" href="#extended-documentation" title="Permalink to this heading"></a></h3>
+<p>To see verbose documentation for language features, including commands, methods, and attributes, <strong>use the ``help()`` function</strong>.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="_images/sagews-help.png"><img alt="_images/sagews-help.png" src="_images/sagews-help.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="_images/sagews-help.png"><img alt="help() for sagews topics" src="_images/sagews-help.png" style="width: 70%;" /></a>
 </figure>
 </section>
 <section id="concise-documentation">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Concise Documentation</a><a class="headerlink" href="#concise-documentation" title="Permalink to this heading"></a></h3>
-<p>To see concise documentation (docstrings) for language features, attributes, append a single question mark and run the cell. This information is similar to what you get with <code class="docutils literal notranslate"><span class="pre">help()</span></code>.</p>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Concise Documentation</a><a class="headerlink" href="#concise-documentation" title="Permalink to this heading"></a></h3>
+<p>To see concise documentation (docstrings) for language features, attributes, <strong>append a single question mark</strong> and run the cell. This information is similar to what you get with <code class="docutils literal notranslate"><span class="pre">help()</span></code>.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="_images/sagews-1q.png"><img alt="_images/sagews-1q.png" src="_images/sagews-1q.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="_images/sagews-1q.png"><img alt="concise documentation with single question mark" src="_images/sagews-1q.png" style="width: 70%;" /></a>
 </figure>
 </section>
 <section id="source-code">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Source Code</a><a class="headerlink" href="#source-code" title="Permalink to this heading"></a></h3>
-<p>To see source code for language features, append two question marks and run the cell.</p>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Source Code</a><a class="headerlink" href="#source-code" title="Permalink to this heading"></a></h3>
+<p>To see source code for language features, <strong>append two question marks</strong> and run the cell.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="_images/sagews-2q.png"><img alt="_images/sagews-2q.png" src="_images/sagews-2q.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="_images/sagews-2q.png"><img alt="source code with double question mark" src="_images/sagews-2q.png" style="width: 70%;" /></a>
 </figure>
 </section>
 <section id="tab-completion">
-<h3><a class="toc-backref" href="#id16" role="doc-backlink">Tab Completion</a><a class="headerlink" href="#tab-completion" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Tab Completion</a><a class="headerlink" href="#tab-completion" title="Permalink to this heading"></a></h3>
 <p>To get a hint for possible completions of a function name, method argument, etc., type the beginning of what you are looking for then press the <code class="docutils literal notranslate"><span class="pre">[tab]</span></code> key. This is a quick way to browse through the methods for an object.</p>
-<figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/tabcomplete.png"><img alt="_images/tabcomplete.png" src="_images/tabcomplete.png" style="width: 40%;" /></a>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/tabcomplete.png"><img alt="tab completion" src="_images/tabcomplete.png" style="width: 40%;" /></a>
 <figcaption>
-<p><span class="caption-text">ways to solve <a class="reference external" href="http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html">differential equations in SageMath</a></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">ways to solve <a class="reference external" href="http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html">differential equations in SageMath</a></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <span class="target" id="index-3"></span></section>
 </section>
 <section id="sage-worksheet-slow-when-plotting-disable-svg">
-<span id="index-4"></span><h2><a class="toc-backref" href="#id17" role="doc-backlink">Sage Worksheet Slow When Plotting? Disable svg.</a><a class="headerlink" href="#sage-worksheet-slow-when-plotting-disable-svg" title="Permalink to this heading"></a></h2>
+<span id="index-4"></span><h2><a class="toc-backref" href="#id20" role="doc-backlink">Sage Worksheet Slow When Plotting? Disable svg.</a><a class="headerlink" href="#sage-worksheet-slow-when-plotting-disable-svg" title="Permalink to this heading"></a></h2>
 <p>Plots can generate a large number of points. The default display format for plots is <code class="docutils literal notranslate"><span class="pre">svg</span></code>, which gives excellent detail, but consumes an amount of memory proportional to the number of points and can markedly slow down worksheet performance.</p>
 <p>You can efficiently display plots with as many points as you want if you use <code class="docutils literal notranslate"><span class="pre">show()</span></code> with an option of <code class="docutils literal notranslate"><span class="pre">svg=False</span></code>, for example:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>show(plot(sin(x^2),(x,0,10)),svg=False)
@@ -332,15 +355,15 @@
 <p>This approach also works with <code class="docutils literal notranslate"><span class="pre">list_plot()</span></code>. There’s no way at present to default to svg disabled. You must use the setting with each plot.</p>
 </section>
 <section id="how-long-are-definitions-stored-in-a-sage-worksheet">
-<span id="index-5"></span><h2><a class="toc-backref" href="#id18" role="doc-backlink">How Long are Definitions Stored in a Sage Worksheet?</a><a class="headerlink" href="#how-long-are-definitions-stored-in-a-sage-worksheet" title="Permalink to this heading"></a></h2>
+<span id="index-5"></span><h2><a class="toc-backref" href="#id21" role="doc-backlink">How Long are Definitions Stored in a Sage Worksheet?</a><a class="headerlink" href="#how-long-are-definitions-stored-in-a-sage-worksheet" title="Permalink to this heading"></a></h2>
 <p>Definitions (of variables, functions, etc.) are stored in the worksheet process and are retained until that process terminates. The worksheet process may end by itself, for example when <code class="docutils literal notranslate"><span class="pre">Restart</span></code> is clicked at the top of the worksheet. It is also terminated when the sage worksheet server terminates or is restarted, when the project is stopped or restarted, and when the host virtual machine restarts.</p>
 <p>Projects are stopped after some number of hours of non-interactive use (see <a class="reference internal" href="howto/software-development.html#idle-timeout"><span class="std std-ref">Idle Timeout</span></a>). If your project is on a free server, it will be stopped whenever the Google pre-emptible server instance restarts, typically once per 24 hours.</p>
 <p>SageMath built-in functions <code class="docutils literal notranslate"><span class="pre">save</span></code>, <code class="docutils literal notranslate"><span class="pre">load</span></code>, <code class="docutils literal notranslate"><span class="pre">save_session</span></code> and <code class="docutils literal notranslate"><span class="pre">load_session</span></code> are useful for saving and restoring state. See <a class="reference external" href="http://doc.sagemath.org/html/en/reference/misc/sage/misc/session.html">Loading and saving sessions and listing all variables</a>.</p>
 </section>
 <section id="wiki-resources">
-<h2><a class="toc-backref" href="#id19" role="doc-backlink">Wiki resources</a><a class="headerlink" href="#wiki-resources" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Wiki resources</a><a class="headerlink" href="#wiki-resources" title="Permalink to this heading"></a></h2>
 <section id="sagews-wiki">
-<span id="id1"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">Sage Worksheets</a><a class="headerlink" href="#sagews-wiki" title="Permalink to this heading"></a></h3>
+<span id="id1"></span><h3><a class="toc-backref" href="#id23" role="doc-backlink">Sage Worksheets</a><a class="headerlink" href="#sagews-wiki" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>A previous version of this page is at <a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/sagews">Sage Worksheet UI and Help</a></p></li>
 <li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/sagews-custom-modes">Custom “Mode Commands” in Sage Worksheets</a></p></li>
@@ -348,7 +371,7 @@
 </ul>
 </section>
 <section id="conversion-utilities">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">Conversion utilities</a><a class="headerlink" href="#conversion-utilities" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">Conversion utilities</a><a class="headerlink" href="#conversion-utilities" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p>There are buttons in the UI to convert to PDF, a print-button or a Jupyter Notebook</p></li>
 <li><p><a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/sagews2html">SageWS to HTML</a> (including a utility to extract the sagews file from a generated HTML file)</p></li>
@@ -358,7 +381,7 @@
 </section>
 </section>
 <section id="help-about-sagemath">
-<h2><a class="toc-backref" href="#id22" role="doc-backlink">Help about SageMath</a><a class="headerlink" href="#help-about-sagemath" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id25" role="doc-backlink">Help about SageMath</a><a class="headerlink" href="#help-about-sagemath" title="Permalink to this heading"></a></h2>
 <p>Items relating strictly to SageMath, whether or not you are using CoCalc.</p>
 <ul class="simple">
 <li><p><strong>Quickstart:</strong> read the <a class="reference external" href="https://doc.sagemath.org/html/en/">documentation</a>, in particular the <a class="reference external" href="https://doc.sagemath.org/html/en/tutorial/index.html">Tutorial</a>.</p></li>
@@ -368,9 +391,9 @@
 </ul>
 </section>
 <section id="howto">
-<h2><a class="toc-backref" href="#id23" role="doc-backlink">Howto</a><a class="headerlink" href="#howto" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id26" role="doc-backlink">Howto</a><a class="headerlink" href="#howto" title="Permalink to this heading"></a></h2>
 <section id="attach-sage-files-to-sage-worksheets">
-<span id="attach-sage-files"></span><span id="index-6"></span><h3><a class="toc-backref" href="#id24" role="doc-backlink">Attach Sage files to Sage Worksheets</a><a class="headerlink" href="#attach-sage-files-to-sage-worksheets" title="Permalink to this heading"></a></h3>
+<span id="attach-sage-files"></span><span id="index-6"></span><h3><a class="toc-backref" href="#id27" role="doc-backlink">Attach Sage files to Sage Worksheets</a><a class="headerlink" href="#attach-sage-files-to-sage-worksheets" title="Permalink to this heading"></a></h3>
 <p><strong>Is there a way to write functions in one worksheet, and then import them to another and use them there?</strong></p>
 <p>Not exactly, but you can write code in a <code class="docutils literal notranslate"><span class="pre">.sage</span></code> file and then load it into another Sage Worksheet as illustrated at
 <a class="reference external" href="https://cocalc.com/share/4a5f0542-5873-4eed-a85c-a18c706e8bcd/support/2018-06-12-sage-code/?viewer=share">https://cocalc.com/share/4a5f0542-5873-4eed-a85c-a18c706e8bcd/support/2018-06-12-sage-code/?viewer=share</a></p>
@@ -381,8 +404,8 @@
 <li><p>If you’re using Jupyter, this is all broken (see <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/2916">https://github.com/sagemathinc/cocalc/issues/2916</a>), but at least you can use <code class="docutils literal notranslate"><span class="pre">load(&quot;code.sage&quot;)</span></code> instead.</p></li>
 </ol>
 </section>
-<section id="how-can-i-connect-an-html-form-with-my-python-code">
-<h3><a class="toc-backref" href="#id25" role="doc-backlink">How can I connect an HTML form with my Python code?</a><a class="headerlink" href="#how-can-i-connect-an-html-form-with-my-python-code" title="Permalink to this heading"></a></h3>
+<section id="connect-an-html-form-with-python-code">
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">Connect an HTML form with Python code</a><a class="headerlink" href="#connect-an-html-form-with-python-code" title="Permalink to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following explanation might be outdated!</p>
@@ -431,8 +454,8 @@ then it will result in output to <code class="docutils literal notranslate"><spa
 If you JS code (as in the example above) catches stderr,
 you can get any error message from your Python code.</p>
 </section>
-<section id="how-can-i-play-sounds">
-<h3><a class="toc-backref" href="#id26" role="doc-backlink">How can I play sounds?</a><a class="headerlink" href="#how-can-i-play-sounds" title="Permalink to this heading"></a></h3>
+<section id="play-sounds">
+<h3><a class="toc-backref" href="#id29" role="doc-backlink">Play sounds</a><a class="headerlink" href="#play-sounds" title="Permalink to this heading"></a></h3>
 <p>CoCalc runs on a remote machine in the cloud.
 To make a wav, mp3 or ogg file play on your computer, it must travel from the cloud to your browser.
 That’s done by first saving the waveform to a file in CoCalc and then downloading it into the website inside an <a class="reference external" href="https://developer.mozilla.org/de/docs/Web/HTML/Using_HTML5_audio_and_video">HTML5 audio tag</a>.</p>
