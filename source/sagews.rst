@@ -39,6 +39,7 @@ To begin work on a Sage Worksheet, create a file ending with ``.sagews``.
 .. figure:: img/sagews/sagews-example.png
      :width: 90%
      :align: center
+     :alt: example sage worksheet
 
      *example of a Sage Worksheet*
 
@@ -61,6 +62,7 @@ From any worksheet, click on TimeTravel.
 .. figure:: img/sagews/sagews-example-tt.png
      :width: 30%
      :align: center
+     :alt: TimeTravel button
 
      ..
 
@@ -70,6 +72,7 @@ Using the slider, look at all the versions. Find the revision that you want and 
 .. figure:: img/sagews/sagews-timetravel-a.png
      :width: 100%
      :align: center
+     :alt: TimeTravel controls
 
      *looking at a Sage Worksheet with TimeTravel*
 
@@ -91,8 +94,9 @@ Often when SageMath encounters an error, a long error message appears. This outp
 .. figure:: img/sagews/sagews-stacktrace.png
      :width: 100%
      :align: center
+     :alt: stacktrace from an error
 
-     *making sense of error messages*
+     last line of stacktrace has clue to error
 
 Help for Programmers
 =====================
@@ -100,11 +104,12 @@ Help for Programmers
 Extended Documentation
 -----------------------
 
-To see verbose documentation for language features, including commands, methods, and attributes, use the ``help()`` function.
+To see verbose documentation for language features, including commands, methods, and attributes, **use the ``help()`` function**.
 
 .. figure:: img/sagews/sagews-help.png
      :width: 70%
      :align: center
+     :alt: help() for sagews topics
 
      ..
 
@@ -112,22 +117,24 @@ To see verbose documentation for language features, including commands, methods,
 Concise Documentation
 -----------------------
 
-To see concise documentation (docstrings) for language features, attributes, append a single question mark and run the cell. This information is similar to what you get with ``help()``.
+To see concise documentation (docstrings) for language features, attributes, **append a single question mark** and run the cell. This information is similar to what you get with ``help()``.
 
 .. figure:: img/sagews/sagews-1q.png
      :width: 70%
      :align: center
+     :alt: concise documentation with single question mark
 
      ..
 
 Source Code
 -----------------------
 
-To see source code for language features, append two question marks and run the cell.
+To see source code for language features, **append two question marks** and run the cell.
 
 .. figure:: img/sagews/sagews-2q.png
      :width: 70%
      :align: center
+     :alt: source code with double question mark
 
      ..
 
@@ -139,6 +146,7 @@ To get a hint for possible completions of a function name, method argument, etc.
 .. figure:: img/sagews/tabcomplete.png
      :width: 40%
      :align: center
+     :alt: tab completion
 
      ways to solve `differential equations in SageMath <http://doc.sagemath.org/html/en/reference/calculus/sage/calculus/desolvers.html>`_
 
