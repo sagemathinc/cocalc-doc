@@ -88,8 +88,45 @@ Backups (snapshots)
 For a list of snapshots taken by CoCalc, use the ``Backups`` button from the TimeTravel view or the Files list. Note that these backups are read-only. If you want to continue working on a file from a snapshot in Backups, you will need to copy it into a writable folder in your project.
 
 ###############################
-Understanding Error Messages
+Help for Programmers
 ###############################
+
+.. _sagews-chatgpt:
+
+*********************************
+ChatGPT help understanding errors
+*********************************
+
+When sage reports an error, a "Help me fix this..." button appears in the cell output:
+
+.. figure:: img/sagews/sagews-help-0.png
+     :width: 100%
+     :align: center
+     :alt: stacktrace from an error
+
+     ..
+
+When you click the button, ChatGPT will open a side chat panel. After a few seconds, an explanation of the error will appear. **You can reply to ChatGPT in the chat panel if you have more questions after the initial explanation.**:
+
+.. figure:: img/sagews/sagews-help-1.png
+     :width: 100%
+     :align: center
+     :alt: stacktrace from an error
+
+     side chat opened by ChatGPT
+
+Context for the explanation is created but is initially hidden behind a disclosure triangle. Clicking the triangle will show you the context:
+
+.. figure:: img/sagews/sagews-help-2.png
+     :width: 90%
+     :align: center
+     :alt: stacktrace from an error
+
+     last line of stacktrace has clue to error
+
+*******************************
+Understanding Error Messages
+*******************************
 
 *Question: I did xyz and now I have this huge error message! Why?*
 
@@ -103,9 +140,6 @@ Often when SageMath encounters an error, a long error message appears. This outp
 
      last line of stacktrace has clue to error
 
-###############################
-Help for Programmers
-###############################
 
 *************************
 Extended Documentation

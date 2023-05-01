@@ -98,6 +98,11 @@ ChatGPT can explain what is going on in a :doc:`Jupyter notebook <jupyter>` code
 
 * The "ChatGPT" button at the top uses: the current selection, or if there is no selection, the current cell, or if the cell is empty, all the cells.
 
+####################################
+Sage Worksheets
+####################################
+
+You can get help from ChatGPT when an error occurs while running a sage worksheet, too. See :ref:`ChatGPT help with sage worksheets <sagews-chatgpt>` for details.
 
 ####################################
 Editing Python, R, and Other Files
