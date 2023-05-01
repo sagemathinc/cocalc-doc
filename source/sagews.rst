@@ -10,8 +10,9 @@ Sage Worksheets
    :local:
    :depth: 2
 
+###############
 Introduction
-============
+###############
 
 Sage Worksheets were developed for collaborative, notebook-style computing with `SageMath <https://www.sagemath.org>`_ on the `CoCalc <https://cocalc.com>`_ platform. Like Jupyter Notebooks, Sage Worksheets support many programming environments. More than one language environment can be used in the same Sage Worksheet.
 
@@ -25,8 +26,9 @@ In CoCalc, there are at least three ways to run SageMath:
 
 .. _what-is-sagews:
 
+#############################
 What's a Sage Worksheet?
-==============================
+#############################
 
 A Sage Worksheet is a file ending in ``.sagews`` and is subdivided into cells. Each cell has an input region and an output region, which might be 0, 1, 2, or many lines long.
 
@@ -43,9 +45,9 @@ To begin work on a Sage Worksheet, create a file ending with ``.sagews``.
 
      *example of a Sage Worksheet*
 
-
+#################################################
 How to Revert/Undo Changes in a Sage Worksheet
-==============================================
+#################################################
 
 For tiny changes, control+Z (or command+Z on a mac) will give you an instantaneous undo.
 
@@ -53,8 +55,9 @@ When it comes to undoing larger changes, one of the most useful things about CoC
 
 .. index:: TimeTravel; in Sage Worksheet
 
+*************
 TimeTravel
-----------
+*************
 
 
 From any worksheet, click on TimeTravel.
@@ -78,13 +81,15 @@ Using the slider, look at all the versions. Find the revision that you want and 
 
 .. index:: Backups; Sage worksheets
 
+********************
 Backups (snapshots)
---------------------
+********************
 
 For a list of snapshots taken by CoCalc, use the ``Backups`` button from the TimeTravel view or the Files list. Note that these backups are read-only. If you want to continue working on a file from a snapshot in Backups, you will need to copy it into a writable folder in your project.
 
+###############################
 Understanding Error Messages
-============================
+###############################
 
 *Question: I did xyz and now I have this huge error message! Why?*
 
@@ -98,11 +103,13 @@ Often when SageMath encounters an error, a long error message appears. This outp
 
      last line of stacktrace has clue to error
 
+###############################
 Help for Programmers
-=====================
+###############################
 
+*************************
 Extended Documentation
------------------------
+*************************
 
 To see verbose documentation for language features, including commands, methods, and attributes, **use the ``help()`` function**.
 
@@ -113,9 +120,9 @@ To see verbose documentation for language features, including commands, methods,
 
      ..
 
-
+*************************
 Concise Documentation
------------------------
+*************************
 
 To see concise documentation (docstrings) for language features, attributes, **append a single question mark** and run the cell. This information is similar to what you get with ``help()``.
 
@@ -126,8 +133,9 @@ To see concise documentation (docstrings) for language features, attributes, **a
 
      ..
 
+*************************
 Source Code
------------------------
+*************************
 
 To see source code for language features, **append two question marks** and run the cell.
 
@@ -138,8 +146,9 @@ To see source code for language features, **append two question marks** and run 
 
      ..
 
+*************************
 Tab Completion
------------------------
+*************************
 
 To get a hint for possible completions of a function name, method argument, etc., type the beginning of what you are looking for then press the ``[tab]`` key. This is a quick way to browse through the methods for an object.
 
@@ -153,8 +162,9 @@ To get a hint for possible completions of a function name, method argument, etc.
 .. index:: Sage Worksheets; plot slows down worksheet
 .. index:: Sage Worksheets; enable/disable svg plot
 
+###################################################
 Sage Worksheet Slow When Plotting? Disable svg.
-============================================================
+###################################################
 
 Plots can generate a large number of points. The default display format for plots is ``svg``, which gives excellent detail, but consumes an amount of memory proportional to the number of points and can markedly slow down worksheet performance.
 
@@ -166,8 +176,9 @@ This approach also works with ``list_plot()``. There's no way at present to defa
 
 .. index:: Sage Worksheets; lifetime of definitions
 
+######################################################
 How Long are Definitions Stored in a Sage Worksheet?
-=====================================================
+######################################################
 
 Definitions (of variables, functions, etc.) are stored in the worksheet process and are retained until that process terminates. The worksheet process may end by itself, for example when ``Restart`` is clicked at the top of the worksheet. It is also terminated when the sage worksheet server terminates or is restarted, when the project is stopped or restarted, and when the host virtual machine restarts.
 
@@ -175,30 +186,33 @@ Projects are stopped after some number of hours of non-interactive use (see :ref
 
 SageMath built-in functions ``save``, ``load``, ``save_session`` and ``load_session`` are useful for saving and restoring state. See `Loading and saving sessions and listing all variables <http://doc.sagemath.org/html/en/reference/misc/sage/misc/session.html>`_.
 
-
+##################
 Wiki resources
-==================
+##################
 
 .. _sagews-wiki:
 
+*****************
 Sage Worksheets
--------------------
+*****************
 
 * A previous version of this page is at `Sage Worksheet UI and Help <https://github.com/sagemathinc/cocalc/wiki/sagews>`_
 * `Custom "Mode Commands" in Sage Worksheets <https://github.com/sagemathinc/cocalc/wiki/sagews-custom-modes>`_
 * `Search the CoCalc wiki <https://github.com/sagemathinc/cocalc/search?utf8=%E2%9C%93&q=&type=Wikis>`_ Enter your search text in the "Search or jump to..." blank at the top.
 
 
+***********************
 Conversion utilities
-----------------------
+***********************
 
 * There are buttons in the UI to convert to PDF, a print-button or a Jupyter Notebook
 * `SageWS to HTML <https://github.com/sagemathinc/cocalc/wiki/sagews2html>`_ (including a utility to extract the sagews file from a generated HTML file)
 * Run ``cc-sagews2pdf --help`` in a :doc:`./terminal` for more information about converting to PDF
 * Similarly, ``cc-sagews2ipynb`` is a command-line utility to convert Sage worksheet to Jupyter notebook, and ``cc-ipynb2sagews`` does the reverse conversion, from Jupyter notebook to Sage worksheet.
 
+######################
 Help about SageMath
-====================
+######################
 
 Items relating strictly to SageMath, whether or not you are using CoCalc.
 
@@ -207,14 +221,16 @@ Items relating strictly to SageMath, whether or not you are using CoCalc.
 * :ref:`Questions about Sage <sage-question>` -- how to get help working with Sage.
 * `Sage Bugreport <https://github.com/sagemathinc/cocalc/wiki/SageBug>`_ -- I am using Sage and think I have found a bug
 
+######################
 Howto
-==================
+######################
 
 .. index:: Attach Sage files
 .. _attach-sage-files:
 
+****************************************
 Attach Sage files to Sage Worksheets
----------------------------------------------------------------
+****************************************
 
 **Is there a way to write functions in one worksheet, and then import them to another and use them there?**
 
@@ -227,9 +243,9 @@ https://cocalc.com/share/4a5f0542-5873-4eed-a85c-a18c706e8bcd/support/2018-06-12
 #. If you're using Jupyter, this is all broken (see https://github.com/sagemathinc/cocalc/issues/2916), but at least you can use ``load("code.sage")`` instead.
 
 
-
-How can I connect an HTML form with my Python code?
----------------------------------------------------------------
+****************************************
+Connect an HTML form with Python code
+****************************************
 
 .. note::
 
@@ -286,8 +302,9 @@ If you JS code (as in the example above) catches stderr,
 you can get any error message from your Python code.
 
 
-How can I play sounds?
------------------------------
+****************************************
+Play sounds
+****************************************
 
 CoCalc runs on a remote machine in the cloud.
 To make a wav, mp3 or ogg file play on your computer, it must travel from the cloud to your browser.
