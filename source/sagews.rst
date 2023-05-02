@@ -106,7 +106,7 @@ When sage reports an error, a "Help me fix this..." button appears in the cell o
 
      ..
 
-When you click the button, ChatGPT will open a side chat panel. After a few seconds, an explanation of the error will appear. **You can reply to ChatGPT in the chat panel if you have more questions after the initial explanation.**:
+When you click the button, :doc:`ChatGPT <../chatgpt>` will open a side chat panel. After a few seconds, an explanation of the error will appear. **You can reply to ChatGPT in the chat panel if you have more questions after the initial explanation.**:
 
 .. figure:: img/sagews/sagews-help-1.png
      :width: 100%
