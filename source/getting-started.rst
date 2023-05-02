@@ -117,7 +117,7 @@ Toolbars
 
 You have used CoCalc's two main toolbars a bit during your first session. Learn more about them at these locations in this online guide:
 
-* :doc:`top-toolbar`
+* :doc:`project-toolbar`
 
 * :doc:`activity-bar`
 
