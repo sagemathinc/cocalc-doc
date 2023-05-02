@@ -24,8 +24,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Explorer" href="explorer.html" />
-    <link rel="prev" title="Account Dropdown Menu" href="account-dropdown.html" />
+    <link rel="next" title="Account Dropdown Menu" href="account-dropdown.html" />
+    <link rel="prev" title="Display Options" href="display-options.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -71,13 +71,18 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Features</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chatgpt.html">ChatGPT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="slides.html">Slides</a></li>
 <li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="on-premises.html">On-Premises CoCalc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
 <li class="toctree-l1"><a class="reference internal" href="backups.html">Backups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
@@ -86,6 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csv-viewer.html">CSV Viewer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
@@ -93,19 +99,28 @@
 <p class="caption" role="heading"><span class="caption-text">Platform</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="display-options.html">Display Options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Project Toolbar</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cocalc-logo">CoCalc Logo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#project-list">Project List</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#open-projects">Open Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#help">Help</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#account">Account</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#notification-bell">Notification Bell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notifications">Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recently-edited-documents-and-chat">Recently Edited Documents and Chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#connection-status">Connection Status</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fullscreen-mode">Fullscreen Mode</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-home.html">Project Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="explorer.html">Explorer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="files-toolbar.html">Files Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-settings.html">Project Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="account-toolbar.html">Account Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
@@ -115,6 +130,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-cloud.html">CoCalc Cloud</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
@@ -142,7 +158,7 @@
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
-    href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
     style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
   >
     Ask us a Question!
@@ -157,56 +173,66 @@
              
   <span class="target" id="index-0"></span><section id="project-toolbar">
 <span id="index-1"></span><span id="id1"></span><h1>Project Toolbar<a class="headerlink" href="#project-toolbar" title="Permalink to this heading"></a></h1>
-<p>Here’s a tour of the topmost toolbar in CoCalc, the <strong>Project Toolbar</strong>.</p>
+<p>Here’s a tour of the topmost toolbar in CoCalc.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#project-list" id="id4">Project List</a></p></li>
-<li><p><a class="reference internal" href="#open-projects" id="id5">Open Projects</a></p></li>
-<li><p><a class="reference internal" href="#help" id="id6">Help</a></p></li>
-<li><p><a class="reference internal" href="#account" id="id7">Account</a></p></li>
-<li><p><a class="reference internal" href="#notification-bell" id="id8">Notification Bell</a></p></li>
-<li><p><a class="reference internal" href="#connection-status" id="id9">Connection Status</a></p></li>
-<li><p><a class="reference internal" href="#fullscreen-mode" id="id10">Fullscreen Mode</a></p></li>
+<li><p><a class="reference internal" href="#cocalc-logo" id="id4">CoCalc Logo</a></p></li>
+<li><p><a class="reference internal" href="#project-list" id="id5">Project List</a></p></li>
+<li><p><a class="reference internal" href="#open-projects" id="id6">Open Projects</a></p></li>
+<li><p><a class="reference internal" href="#help" id="id7">Help</a></p></li>
+<li><p><a class="reference internal" href="#account" id="id8">Account</a></p></li>
+<li><p><a class="reference internal" href="#notifications" id="id9">Notifications</a></p></li>
+<li><p><a class="reference internal" href="#recently-edited-documents-and-chat" id="id10">Recently Edited Documents and Chat</a></p></li>
+<li><p><a class="reference internal" href="#connection-status" id="id11">Connection Status</a></p></li>
+<li><p><a class="reference internal" href="#fullscreen-mode" id="id12">Fullscreen Mode</a></p></li>
 </ul>
 </nav>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/project-toolbar.png"><img alt="the top toolbar is the project toolbar" src="_images/project-toolbar.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/project-toolbar.png"><img alt="the project toolbar" src="_images/project-toolbar.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">the top toolbar is the project toolbar</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">the project toolbar</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Going from left to right:</p>
-<span class="target" id="index-2"></span><section id="project-list">
-<span id="index-3"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Project List</a><a class="headerlink" href="#project-list" title="Permalink to this heading"></a></h2>
-<p><a class="reference internal" href="_images/cocalc-logo.svg"><img alt="cocalc logo icon" height="20px" src="_images/cocalc-logo.svg" width="20px" /></a> Click the Projects (cocalc logo) button to create a new project and see a list of your existing projects. Any text you type into the <strong>Search for Projects</strong> field will be used to select which projects are displayed. Any project with matching text in Title or Description will appear in the filtered list. If you have any hidden or deleted projects, a checkbox will appear to allow you to show those. Learn more here about the <a class="reference internal" href="project-list.html"><span class="doc">Project List</span></a>.</p>
+<span class="target" id="index-2"></span><section id="cocalc-logo">
+<span id="index-3"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">CoCalc Logo</a><a class="headerlink" href="#cocalc-logo" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="_images/cocalc-logo.svg"><img alt="cocalc logo icon" src="_images/cocalc-logo.svg" width="28px" /></a> Clicking on the CoCalc logo at extreme left will take you to the cocalc.com home page.</p>
+</section>
+<section id="project-list">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Project List</a><a class="headerlink" href="#project-list" title="Permalink to this heading"></a></h2>
+<p><cite>Projects</cite> button. Visit the <a class="reference external" href="https://cocalc.com/projects">Projects link</a> or click the word <cite>Projects</cite> to the right of the logo to create your first project or see a list of your existing projects. Any text you type into the <cite>Search for Projects</cite> field will be used to select which projects are displayed. Any project with matching text in Title or Description will appear in the filtered list. If you have any hidden or deleted projects, a checkbox will appear to allow you to show those. Learn more here about the <a class="reference internal" href="project-list.html"><span class="doc">Project List</span></a>.</p>
 </section>
 <section id="open-projects">
-<span id="index-4"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Open Projects</a><a class="headerlink" href="#open-projects" title="Permalink to this heading"></a></h2>
+<span id="index-4"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Open Projects</a><a class="headerlink" href="#open-projects" title="Permalink to this heading"></a></h2>
 <p>To the right of the Projects button, tab buttons will appear for each project you have open.</p>
 <a class="reference internal image-reference" href="_images/project-toolbar-projects.png"><img alt="tabs for open projects occupy the middle of the project toolbar" src="_images/project-toolbar-projects.png" style="width: 90%;" /></a>
 <ul class="simple">
-<li><p>To the left of the project title in each button, you will see a run icon <a class="reference internal" href="_images/run-icon.png"><img alt="running project icon" src="_images/run-icon.png" style="height: 20px;" /></a> if the project is running, and a stop icon <a class="reference internal" href="_images/stop-icon.png"><img alt="stopped project icon" src="_images/stop-icon.png" style="height: 20px;" /></a> if the project is stopped.</p></li>
-<li><p>To the right of the project title in each button, a red disconnect icon <a class="reference internal" href="_images/disconnect-icon.png"><img alt="project disconnected icon" src="_images/disconnect-icon.png" style="height: 20px;" /></a> will appear if the project is not connected. It is normal for the disconnect icon to appear if the project is not running.</p></li>
-<li><p>At the far right in each button, there is a close-project icon <a class="reference internal" href="_images/remove-icon.png"><img alt="close project icon" src="_images/remove-icon.png" style="height: 20px;" /></a> that allows you to close the project.</p></li>
+<li><p>To the left of the project title in each button, you will see a run icon <a class="reference internal" href="_images/run-icon.png"><img alt="running project icon" src="_images/run-icon.png" style="height: 28px;" /></a> if the project is running, and a stop icon <a class="reference internal" href="_images/stop-icon.png"><img alt="stopped project icon" src="_images/stop-icon.png" style="height: 28px;" /></a> if the project is stopped.</p></li>
+<li><p>To the right of the project title in each button, a red disconnect icon <a class="reference internal" href="_images/disconnect-icon.png"><img alt="project disconnected icon" src="_images/disconnect-icon.png" style="height: 28px;" /></a> will appear if the project is not connected. It is normal for the disconnect icon to appear if the project is not running.</p></li>
+<li><p>At the far right in each button, there is a close-project icon <a class="reference internal" href="_images/remove-icon.png"><img alt="close project icon" src="_images/remove-icon.png" style="height: 28px;" /></a> that allows you to close the project.</p></li>
 </ul>
 <p>A member-hosted project that is running will continue running after it is closed until its idle time has been reached. At that point it will be stopped.</p>
 <p>If you close your browser window or sign out, CoCalc will remember your open projects and files (this is your <a class="reference internal" href="getting-started.html#cocalc-session"><span class="std std-ref">CoCalc session</span></a>), and restore the project tabs the next time you sign in.</p>
 </section>
 <section id="help">
-<span id="help-button"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Help</a><a class="headerlink" href="#help" title="Permalink to this heading"></a></h2>
-<p><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png"><img alt="help medkit icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png" style="width: 16px;" /></a> <strong>Use the Help button if you have any questions about CoCalc.</strong> If you have a question while you have a file open in CoCalc, clicking <strong>Help</strong> will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don’t expect, it helps to include steps for us to reproduce the problem.</p>
+<span id="help-button"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Help</a><a class="headerlink" href="#help" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png"><img alt="help medkit icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/medkit.png" style="width: 28px;" /></a> <strong>Use the Help button if you have any questions about CoCalc.</strong> If you have a question while you have a file open in CoCalc, clicking <strong>Help</strong> will automatically include a link to the file in your request, allowing our support team to understand the issue better. If you are getting a result that you don’t expect, it helps to include steps for us to reproduce the problem.</p>
 </section>
 <section id="account">
-<span id="index-6"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Account</a><a class="headerlink" href="#account" title="Permalink to this heading"></a></h2>
-<p><a class="reference internal" href="_images/avatar-sample.png"><img alt="sample avatar in a circle" src="_images/avatar-sample.png" style="height: 20px;" /></a> The Account button has the avatar for your account in a small circle just left of the word “Account”. Click here to update your profile, sign out, order subscriptions, view your upgrades, <a class="reference external" href="http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html">add SSH Keys</a>, and check on support tickets. Read more about account actions <a class="reference internal" href="account-toolbar.html"><span class="doc">here</span></a>.</p>
+<span id="index-6"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Account</a><a class="headerlink" href="#account" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="_images/avatar-sample.png"><img alt="sample avatar in a circle" src="_images/avatar-sample.png" style="height: 28px;" /></a> The Account button has the avatar for your account in a small circle just left of the word “Account”. Click here to update your profile, sign out, order subscriptions, view your upgrades, <a class="reference external" href="http://blog.sagemath.com/cocalc/2017/09/08/using-ssh-with-cocalc.html">add SSH Keys</a>, and check on support tickets. Read more about account actions <a class="reference internal" href="account-toolbar.html"><span class="doc">here</span></a>.</p>
 </section>
-<section id="notification-bell">
-<span id="index-7"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Notification Bell</a><a class="headerlink" href="#notification-bell" title="Permalink to this heading"></a></h2>
-<p><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bell-o.png"><img alt="notifications bell icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/bell-o.png" style="width: 16px;" /></a> A count is displayed over the notification bell if there are chat updates or file edits in projects you own or collaborate on. Click the bell to view a list of pending notifications, showing which account originated them and a link to the project or file being updated at the time.</p>
+<section id="notifications">
+<span id="index-7"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Notifications</a><a class="headerlink" href="#notifications" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="_images/envelope-icon.png"><img alt="a nearly square closed envelope" src="_images/envelope-icon.png" style="height: 28px;" /></a> Clicking the envelope icon will show you notifications of <a class="reference internal" href="chat.html#chat-at-mentions"><span class="std std-ref">&#64;-mentions</span></a> and news items. If there are unread notifications, a count is displayed, as shown.</p>
+</section>
+<section id="recently-edited-documents-and-chat">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Recently Edited Documents and Chat</a><a class="headerlink" href="#recently-edited-documents-and-chat" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="_images/docs-counter.png"><img alt="counter for edited documents" src="_images/docs-counter.png" style="height: 28px;" /></a> Just right of the notifications envelope is a counter you can click to see <cite>Recently edited documents and chat</cite>.</p>
 </section>
 <section id="connection-status">
-<span id="index-8"></span><span id="id2"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Connection Status</a><a class="headerlink" href="#connection-status" title="Permalink to this heading"></a></h2>
-<p><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png"><img alt="connection status wifi icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png" style="width: 16px;" /></a> The connection status icon changes color as shown below to indicate changes in the connection between your browser and CoCalc servers.</p>
+<span id="index-8"></span><span id="id2"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Connection Status</a><a class="headerlink" href="#connection-status" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png"><img alt="connection status wifi icon" src="https://github.com/encharm/Font-Awesome-SVG-PNG/raw/master/black/png/128/wifi.png" style="width: 28px;" /></a> The connection status icon changes color as shown below to indicate changes in the connection between your browser and CoCalc servers.</p>
 <a class="reference internal image-reference" href="_images/conn-stat.png"><img alt="See below for connection status icon color codes." src="_images/conn-stat.png" style="width: 35%;" /></a>
 <p>Colors for the connection status icon:</p>
 <ul>
@@ -221,8 +247,8 @@
 <a class="reference internal image-reference" href="_images/conn-ind.png"><img alt="Connection status pop-up showing ping time, hub server id, and message counts." src="_images/conn-ind.png" style="width: 70%;" /></a>
 </section>
 <section id="fullscreen-mode">
-<span id="index-9"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Fullscreen Mode</a><a class="headerlink" href="#fullscreen-mode" title="Permalink to this heading"></a></h2>
-<p><a class="reference internal" href="_images/expand.png"><img alt="expand fullscreen icon" src="_images/expand.png" style="height: 20px;" /></a> Clicking here will toggle fullscreen mode, to hide or show the project and file toolbars.</p>
+<span id="index-9"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Fullscreen Mode</a><a class="headerlink" href="#fullscreen-mode" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="_images/expand.png"><img alt="expand fullscreen icon" src="_images/expand.png" style="height: 28px;" /></a> Clicking here will toggle fullscreen mode, to hide or show the project and file toolbars.</p>
 </section>
 </section>
 
@@ -230,8 +256,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="account-dropdown.html" class="btn btn-neutral float-left" title="Account Dropdown Menu" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="explorer.html" class="btn btn-neutral float-right" title="Explorer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="display-options.html" class="btn btn-neutral float-left" title="Display Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="account-dropdown.html" class="btn btn-neutral float-right" title="Account Dropdown Menu" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -244,7 +270,7 @@
 
 <div role="contentinfo">
   <p>
-    Please contact us for <a href="https://cocalc.com/support/new?hideExtra=true&type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    Please contact us for <a href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
     <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>

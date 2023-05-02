@@ -57,7 +57,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    :caption: Platform
 
    display-options
-   top-toolbar
+   project-toolbar
    account-dropdown
    activity-bar
    project-home
