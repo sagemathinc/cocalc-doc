@@ -37,7 +37,7 @@ Here's the CoCalc feature announcement and discussion about the project list tou
 
 If you click `Projects` on the welcome screen or in the :doc:`project-toolbar`, you will be taken to the `Project List`.
 
-If you have just signed up for CoCalc, a new project called "My First Project" will be created for you and you will see it in the `Project List`, as shown in the screenshot at the start of this article.
+If you have just signed up for CoCalc from the welcome screen, a new project called "My First Project" will be created for you and you will see it in the `Project List`, as shown in the screenshot at the start of this article.
 
 After you have some projects, there's more to see.
 If you have a large number of projects, the initial display will be limited to 50 projects, and projects active within the past 2 months. The list can be expanded as needed using "Show projects not used in the last few months..." or "Load n More Matching Projects..." buttons at the bottom.
