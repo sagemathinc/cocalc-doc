@@ -34,7 +34,7 @@ CoCalc Logo
 Project List
 ***************
 
-`Projects` button. Visit the `Projects link <https://cocalc.com/projects>`_ or click the word `Projects` to the right of the logo to create your first project or see a list of your existing projects. Any text you type into the `Search for Projects` field will be used to select which projects are displayed. Any project with matching text in Title or Description will appear in the filtered list. If you have any hidden or deleted projects, a checkbox will appear to allow you to show those. Learn more here about the :doc:`project-list`.
+Visit the `Projects link <https://cocalc.com/projects>`_ or click the word `Projects` to the right of the CoCalc logo to create your first project or see a list of your existing projects. Learn more at :doc:`project-list`.
 
 .. index:: Project Toolbar; open projects
 
