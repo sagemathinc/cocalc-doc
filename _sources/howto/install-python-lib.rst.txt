@@ -296,7 +296,7 @@ Suppose you want to create a custom Anaconda environment with the ``mdtraj`` pac
 4. Select the new kernel. You will now be running the environment you created with the ``conda create`` command.
 
 
-.. _Virtualenv: https://virtualenv.pypa.io/en/stable/userguide/
+.. _Virtualenv: https://virtualenv.pypa.io/en/latest/user_guide.html
 
 .. _pipenv: https://pipenv.pypa.io/en/latest/
 
