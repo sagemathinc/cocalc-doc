@@ -135,12 +135,28 @@ Fenced Code Blocks
 
 Code in fenced code blocks can be executed using any available jupyter kernel. In the example, the "Python 3 (system wide)" kernel is active. Hover your cursor over the kernel indicator to expose a menu for selecting other kernels. Click "Run" to produce the output. Hover over the space below the output to get buttons for additional code cells. This feature even works if the document is published.
 
+The info string should start with the programming language want to use, for example "python", "sage", "bash", or "julia". Typing in the language will select one possible kernel. Use the Jupyter kernel selector if you would like a different kernel for the selected language.
+
+You can append descriptive text to the info string, such as "ex 1".
+
+
 .. figure:: img/md-fenced-exec.png
     :width: 100%
     :align: center
-    :alt: References section at bottom of file
+    :alt: execute fenced code block
 
     *fenced Python code cell inside a markdown file*
+
+
+If you evaluate a cell, everything above it with the *exact same info string* is always run. Clicking "Run" in the third cell in the following example will cause the first cell to be run before it, but not the second cell.
+
+.. figure:: img/md-fenced-info.png
+    :width: 100%
+    :align: center
+    :alt: matching info strings
+
+    *matching info strings "python ex1" in first and third cells*
+
 
 
 .. _markdown-hashtags:
