@@ -105,7 +105,6 @@ You can put text that you want hidden inside the `details` element. When not exp
 
     details element with content expanded
 
-
 ***********************************
 Embedded LaTeX
 ***********************************
@@ -129,6 +128,20 @@ Export to HTML
 Export to PDF
 ***********************************
 * To export a markdown (".md") file as pdf, open the file, select "Locked" from the view pulldown menu and click the "Print" button.
+
+***********************************
+Fenced Code Blocks
+***********************************
+
+Code in fenced code blocks can be executed using any available jupyter kernel. In the example, the "Python 3 (system wide)" kernel is active. Hover your cursor over the kernel indicator to expose a menu for selecting other kernels. Click "Run" to produce the output. Hover over the space below the output to get buttons for additional code cells. This feature even works if the document is published.
+
+.. figure:: img/md-fenced-exec.png
+    :width: 100%
+    :align: center
+    :alt: References section at bottom of file
+
+    *fenced Python code cell inside a markdown file*
+
 
 .. _markdown-hashtags:
 
