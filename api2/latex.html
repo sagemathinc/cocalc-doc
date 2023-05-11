@@ -188,7 +188,7 @@ automatically (or a new one created). By default the compilation uses “latexmk
 curl -sk <span class="se">\</span>
   -u <span class="nv">$x</span>: <span class="se">\</span>
   -d <span class="nv">path</span><span class="o">=</span>/tmp/d.tex <span class="se">\</span>
-  -d <span class="nv">content</span><span class="o">=</span><span class="nv">$c</span> <span class="se">\</span>
+  -d <span class="nv">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span> <span class="se">\</span>
   https://cocalc.com/api/v2/latex <span class="p">|</span> jq <span class="s1">&#39;.url&#39;</span>
 
 <span class="nb">echo</span>
