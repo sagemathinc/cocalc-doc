@@ -133,7 +133,7 @@ Export to PDF
 Fenced Code Blocks
 ***********************************
 
-Code in fenced code blocks can be executed using any available jupyter kernel. In the example, the "Python 3 (system wide)" kernel is active. Hover your cursor over the kernel indicator to expose a menu for selecting other kernels. Click "Run" to produce the output. Hover over the space below the output to get buttons for additional code cells. This feature even works if the document is published.
+Code in fenced code blocks can be executed using any available jupyter kernel. In the example, the "Python 3 (system wide)" kernel is active. Hover your cursor over the kernel selector to expose a menu for selecting other kernels. Click "Run" to produce the output. Hover over the space below the output to get buttons for additional code cells. This feature even works if the document is published.
 
 The info string should start with the programming language want to use, for example "python", "sage", "bash", or "julia". Typing in the language will select one possible kernel. Use the Jupyter kernel selector if you would like a different kernel for the selected language.
 
@@ -156,8 +156,6 @@ If you evaluate a cell, everything above it with the *exact same info string* is
     :alt: matching info strings
 
     *matching info strings "python ex1" in first and third cells*
-
-
 
 .. _markdown-hashtags:
 
