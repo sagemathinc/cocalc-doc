@@ -18,7 +18,7 @@ automatically (or a new one created). By default the compilation uses "latexmk" 
     curl -sk \
       -u $x: \
       -d path=/tmp/d.tex \
-      -d content=$c \
+      -d content="$c" \
       https://cocalc.com/api/v2/latex | jq '.url'
       
     echo
