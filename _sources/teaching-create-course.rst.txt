@@ -202,6 +202,11 @@ In the course Configuration tab on the right, click `Reinvite students` to send/
      "Reinvite students" at lower right in course Configuration
 
 
+###############################
+Restrict Student Projects
+###############################
+
+See :ref:`restrict-student-projects`.
 
 #########################
 What do the Students Get?
