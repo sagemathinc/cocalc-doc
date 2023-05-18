@@ -51,6 +51,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    time-travel
    snippets
    share
+   restrict-student-projects
 
 .. toctree::
    :maxdepth: 2
