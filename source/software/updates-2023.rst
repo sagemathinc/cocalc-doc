@@ -10,6 +10,23 @@ Software Updates 2023
 
 .. highlight:: python
 
+.. _update-2023-06-07:
+
+2023-06-07: Ubuntu 22.04 and Sage 10.0
+-------------------------------------------------
+
+The "Ubuntu 22.04" based line of images became `the default for new projects <https://cocalc.com/news/ubuntu-22-04-default-software-environment-9>`_.
+We'll continue to update the 20.04 line of images, but long-term it will become stale.
+
+
+- Sage:
+    - (upd) the system-wide `SageMath`_ version to ``10.0``. Run ``sage_select`` in a :ref:`terminal` to learn how to switch back to an earlier version.
+
+- System-wide:
+    - cont. update various packages
+    - (rem) IJavascript on Ubuntu 20.04: Updating Node.js to 16 (from the deprecated 14) made it impossible to compile ``ijavascript``. Please switch to the Ubuntu 22.04 image!
+
+
 .. _update-2023-03-30:
 
 2023-03-30: DUNE, OpenAI, etc.
