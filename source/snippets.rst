@@ -39,7 +39,7 @@ CoCalc offers code snippets in many programming languages, including Python, R, 
      :width: 95%
      :align: center
 
-     opening Snippets from a Jupyter Notebook
+     opening Snippets from a Jupyter Notebook. Click on the three dots to access Snippets. 
 
 .. figure:: img/snippets/snippets-btn-sagews.png
      :width: 95%
