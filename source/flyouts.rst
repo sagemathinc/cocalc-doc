@@ -43,7 +43,7 @@ New File
     :align: center
     :alt: new file flyout
 
-    New File flyout menu
+    New File flyout menu (partial view)
 
 ###########################
 Project Log
