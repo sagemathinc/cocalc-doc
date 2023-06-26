@@ -1,6 +1,9 @@
 .. index:: File Explorer
 .. index:: Explorer
 
+.. _explorer-tour:
+
+
 =============================
 Explorer
 =============================
@@ -9,7 +12,11 @@ Explorer
    :local:
    :depth: 1
 
-Use the File Explorer to browse, open, and manage files in the selected directory within your project.
+After a project is opened, you can use the File Explorer to browse, open, and manage files in the selected directory within your project.
+
+
+You can launch a short introduction to the Explorer by clicking the blue **Tour** button. This is one of several :doc:`tours` of features in CoCalc.
+
 
 .. figure:: img/explorer-c.png
     :width: 100%
@@ -17,6 +24,7 @@ Use the File Explorer to browse, open, and manage files in the selected director
     :alt: the file explorer
 
     the File Explorer, displaying files inside the TESTS directory
+
 
 If you don’t have a file open, clicking the **Explorer** button will show you a list of files in the project’s home directory. If you are working on a file, clicking **Explorer** will show a list of files in the directory containing the selected file.
 
