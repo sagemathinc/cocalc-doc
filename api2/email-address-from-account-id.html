@@ -88,6 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tours.html">Tours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyouts.html">Flyout Menus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
@@ -196,13 +198,13 @@ an email address, since GitHub and Twitter don’t provide email.</p>
 <h3>Email address of a user<a class="headerlink" href="#email-address-of-a-user" title="Permalink to this heading"></a></h3>
 <p>Put the account_id below of the user whose email address you want to
 look up:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl -sk -u <span class="nv">$key</span>: -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
-   -d <span class="s1">&#39;{&quot;account_id&quot;:&quot;a407dd35-c960-481c-123F-1238c868ff8b&quot;}&#39;</span> <span class="se">\</span>
-   <span class="nv">$url</span>/accounts/get-email-address
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;account_id&quot;:&quot;a407dd35-c960-481c-123F-1238c868ff8b&quot;}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span><span class="nv">$url</span>/accounts/get-email-address
 </pre></div>
 </div>
 <p>Result:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;email_address&quot;</span><span class="o">:</span><span class="s2">&quot;joe@example.com&quot;</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;email_address&quot;</span><span class="o">:</span><span class="s2">&quot;joe@example.com&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </section>

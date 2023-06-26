@@ -106,6 +106,8 @@
 <li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tours.html">Tours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyouts.html">Flyout Menus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
@@ -214,7 +216,7 @@ Beyond that, users who are not collaborators won’t be able to see the project.
 <p>If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way; instead, you will see the error message shown above. Usually, the problem occurs when the notebook has created large amounts of output. In that case, there is a command you can run from the <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a> to remove output. If removing output results in a small enough notebook, you will be able to open the “-no-output” version of the notebook normally.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># run this from a CoCalc Linux terminal (.term file)</span>
 <span class="c1"># use the actual name of your notebook for &quot;myfile.ipynb&quot;</span>
-cc-jupyter-no-output myfile.ipynb
+cc-jupyter-no-output<span class="w"> </span>myfile.ipynb
 <span class="c1"># the above command creates myfile-no-output.ipynb</span>
 </pre></div>
 </div>

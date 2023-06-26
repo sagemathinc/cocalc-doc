@@ -88,6 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tours.html">Tours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyouts.html">Flyout Menus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
@@ -181,16 +183,16 @@ temporarily as a blob in CoCalc’s PostgreSQL database. The tmp files used
 for compilation are cleaned up. You can specify a <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in the
 API call, or leave that off and your most recent project gets used
 automatically (or a new one created). By default the compilation uses “latexmk” with certain options, but you can specify a custom <code class="docutils literal notranslate"><span class="pre">command</span></code> parameter to convert the tex to pdf.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span><span class="w"> </span><span class="c1"># your API key</span>
 
 <span class="c1"># c is the latex document as a text string</span>
 <span class="nv">c</span><span class="o">=</span><span class="s1">&#39;\documentclass{article}\begin{document}\section{Main Section}Hello.\end{document}&#39;</span>
 
-curl -sk <span class="se">\</span>
-  -u <span class="nv">$x</span>: <span class="se">\</span>
-  -d <span class="nv">path</span><span class="o">=</span>/tmp/d.tex <span class="se">\</span>
-  -d <span class="nv">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span> <span class="se">\</span>
-  https://cocalc.com/api/v2/latex <span class="p">|</span> jq <span class="s1">&#39;.url&#39;</span>
+curl<span class="w"> </span>-sk<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-u<span class="w"> </span><span class="nv">$x</span>:<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="nv">path</span><span class="o">=</span>/tmp/d.tex<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="nv">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://cocalc.com/api/v2/latex<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.url&#39;</span>
 
 <span class="nb">echo</span>
 
