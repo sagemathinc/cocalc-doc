@@ -4,7 +4,10 @@
 Activity Bar
 =============================
 
+The `Activity Bar` is a column of icons that appears on the left after a project is opened in CoCalc.
 Use the Activity Bar to navigate to key features in CoCalc. The arrangement is similar to the `Activity Bar in VS Code <https://code.visualstudio.com/api/ux-guidelines/activity-bar>`_ and the `Sidebar in JupyterLab <https://jupyterlab.readthedocs.io/en/stable/user/interface.html#left-and-right-sidebar>`_.
+
+Just to the right of the Activity Bar there is a column of triangular icons. Click any of these to open the corresponding :doc:`flyout menu <flyouts>`.
 
 .. figure:: img/activity-bar.png
     :width: 70%

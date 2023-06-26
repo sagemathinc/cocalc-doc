@@ -44,6 +44,8 @@ This explains in depth how you can work productively on `CoCalc`_.
    chat
    tasks
    timers
+   tours
+   flyouts
    frame-editor
    markdown
    rich-text
