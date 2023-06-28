@@ -13,9 +13,9 @@ Add a License to a Project
 To apply a license to a project:
 
 1. Open the project.
-2. In the left :doc:`activity-bar`, click **Quotas / Licenses**. You will see the following:
+2. In the left :doc:`activity-bar`, click **Upgrades** to open the :doc:`upgrades` panel.
 
-.. figure:: img/add-lic-1.png
+.. figure:: img/add-lic-1b.png
      :width: 100%
      :align: center
      :alt: Settings / Quotas and Licenses
@@ -24,7 +24,7 @@ To apply a license to a project:
 
 3. Scroll down to the **Licenses** section. You will see the following:
 
-.. figure:: img/add-lic-2.png
+.. figure:: img/add-lic-2b.png
      :width: 100%
      :align: center
      :alt: dialog to add a license key

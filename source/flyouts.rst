@@ -17,8 +17,11 @@ After a project is opened, triangular icons for The Flyouts Menus appear to the 
 
     File Explorer, displaying flyout icons to right of Activity Bar
 
-Here's the CoCalc feature announcement and discussion: `ANN: Flyout Panels for Projects <https://github.com/sagemathinc/cocalc/discussions/6736>`_.
-And here's the `CoCalc News <https://cocalc.com/news>`_ article introducing flyouts: `Flyout Panels for Projects <https://cocalc.com/news/13>`_.
+Additional information:
+
+* CoCalc feature announcement and discussion: `ANN: Flyout Panels for Projects <https://github.com/sagemathinc/cocalc/discussions/6736>`_.
+* `CoCalc News <https://cocalc.com/news>`_ article introducing flyouts: `Flyout Panels for Projects <https://cocalc.com/news/13>`_.
+* `CoCalc News <https://cocalc.com/news>`_ article with updates: `Update on Flyouts <https://cocalc.com/news/17>`_.
 
 Below are screenshots illustrating each flyout menu:
 
