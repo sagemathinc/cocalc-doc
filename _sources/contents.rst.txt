@@ -38,6 +38,8 @@ This explains in depth how you can work productively on `CoCalc`_.
    sagews
    terminal
    servers
+   users
+   upgrades
    vscode
    backups
    x11

@@ -9,8 +9,8 @@ Use the Activity Bar to navigate to key features in CoCalc. The arrangement is s
 
 Just to the right of the Activity Bar there is a column of triangular icons. Click any of these to open the corresponding :doc:`flyout menu <flyouts>`.
 
-.. figure:: img/activity-bar.png
-    :width: 70%
+.. figure:: img/activity-bar-2.png
+    :width: 100%
     :align: center
     :alt: the activity bar
 
@@ -24,6 +24,8 @@ Here are the components of the Activity Bar:
 * :doc:`project-log`
 * :doc:`files-search`
 * :doc:`servers`
+* :doc:`users`
+* :doc:`upgrades`
 * :doc:`processes`
 * :doc:`project-settings`
 
