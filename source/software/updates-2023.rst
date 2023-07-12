@@ -10,6 +10,16 @@ Software Updates 2023
 
 .. highlight:: python
 
+.. _update-2023-07-12:
+
+2023-07-12: Sage 10.0 on Ubuntu 20.04
+------------------------------------------------
+
+The deprecated Ubuntu 20.04 recieved an update. Besides many package updates across all areas, the default `SageMath`_ version is now ``10.0``. Run ``sage_select`` in a :ref:`terminal` to learn how to switch back to an earlier version.
+
+This line of software environments only receives occasional updates.
+
+
 .. _update-2023-06-28:
 
 2023-06-28: Macaulay2, new Python pkgs, etc.
