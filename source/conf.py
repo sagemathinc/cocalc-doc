@@ -112,7 +112,7 @@ show_source = 'true'
 html_show_sourcelink = False
 html_favicon = 'img/favicon-32x32.png'
 html_logo = 'img/cocalc-doc-logo.svg'
-GA_TAG = 'UA-34321400-6'
+#GA_TAG = 'UA-34321400-6'
 
 if html_theme == 'alabaster':
 
@@ -123,7 +123,7 @@ if html_theme == 'alabaster':
         'github_banner': 'false',  # we extend the theme's layout.html
         'github_user': 'sagemathinc',
         'github_repo': 'cocalc-doc',
-        'analytics_id': 'UA-34321400-6',
+        #'analytics_id': GA_TAG,
         #'sidebar_collapse': 'true',
         'show_powered_by': 'false',
         #'show_relbars': 'true', # doesn't work. not sure why.
@@ -140,7 +140,7 @@ elif html_theme == 'sphinx_rtd_theme':
 
     html_theme_options = {
         'canonical_url': 'https://doc.cocalc.com/',
-        'analytics_id': GA_TAG,  # this only works with the online version
+        #'analytics_id': GA_TAG,  # this only works with the online version
         'logo_only': False,
         'display_version': False,
         'prev_next_buttons_location': 'bottom',
@@ -170,11 +170,10 @@ elif html_theme == 'sphinx_rtd_theme':
         Insert Google Analytics tracker
         Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
         """
-        app.add_js_file(
-            "https://www.googletagmanager.com/gtag/js?id={}".format(GA_TAG))
-        # this file is _static/google_analytics_tracker.js
-        # it also contains the GA_TAG !
-        app.add_js_file("google_analytics_tracker.js")
+        #app.add_js_file("https://www.googletagmanager.com/gtag/js?id={}".format(GA_TAG))
+        ## this file is _static/google_analytics_tracker.js
+        ## it also contains the GA_TAG !
+        #app.add_js_file("google_analytics_tracker.js")
         # cocalc's analytics
         app.add_js_file("https://cocalc.com/analytics.js")
 

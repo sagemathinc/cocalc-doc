@@ -10,6 +10,21 @@ Software Updates 2023
 
 .. highlight:: python
 
+.. _update-2023-06-28:
+
+2023-06-28: Macaulay2, new Python pkgs, etc.
+-------------------------------------------------
+
+Updates to the Ubuntu 22.04 image:
+
+- (new) `Macaulay2`_ – Jupyter Kernel: `m2 example notebook <https://cocalc.com/hsy/ubuntu-22.04-testing/macaulay2>`_
+- Python3 (system-wide):
+    - (new) `GerryChain`_ – *a library for using Markov Chain Monte Carlo methods to study the problem of political redistricting.*
+    - (new) `cirq`_ – *creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits*
+    - (new) `tequila`_ – *A High-Level Abstraction Framework for Quantum Algorithms*
+
+Besides that, various updates to system packages and Anaconda 2021.
+
 .. _update-2023-06-07:
 
 2023-06-07: Ubuntu 22.04 and Sage 10.0
@@ -95,3 +110,7 @@ Additionally, many newer versions will be available – starting with a more rec
 .. _Python: https://www.python.org
 .. _DUNE: https://www.dune-project.org/
 .. _OpenAI: https://openai.com/
+.. _GerryChain:  https://gerrychain.readthedocs.io
+.. _cirq: https://github.com/quantumlib/Cirq
+.. _tequila: https://github.com/tequilahub/tequila
+.. _Macaulay2: http://www2.macaulay2.com/Macaulay2/
