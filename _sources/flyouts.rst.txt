@@ -1,14 +1,14 @@
-.. index:: Flyout Menus
+.. index:: Flyout Panels
 
 ===============
-Flyout Menus
+Flyout Panels
 ===============
 
 .. contents::
    :local:
    :depth: 1
 
-After a project is opened, triangular icons for The Flyouts Menus appear to the right of the Activity Bar.
+After a project is opened, triangular icons for flyouts panels appear to the right of the Activity Bar. Click a triangle to open the corresponding :doc:`flyout panel <flyouts>`. A second click causes the panel to close.
 
 .. figure:: img/explorer-b.png
     :width: 100%
@@ -23,7 +23,7 @@ Additional information:
 * `CoCalc News <https://cocalc.com/news>`_ article introducing flyouts: `Flyout Panels for Projects <https://cocalc.com/news/13>`_.
 * `CoCalc News <https://cocalc.com/news>`_ article with updates: `Update on Flyouts <https://cocalc.com/news/17>`_.
 
-Below are screenshots illustrating each flyout menu:
+Below are screenshots illustrating each flyout panel:
 
 ###########################
 Explorer
@@ -34,7 +34,7 @@ Explorer
     :align: center
     :alt: explorer flyout
 
-    Explorer flyout menu
+    Explorer flyout panel
 
 
 ###########################
@@ -46,7 +46,7 @@ New File
     :align: center
     :alt: new file flyout
 
-    New File flyout menu (partial view)
+    New File flyout panel (partial view)
 
 ###########################
 Project Log
@@ -57,7 +57,7 @@ Project Log
     :align: center
     :alt: log flyout
 
-    Project Log flyout menu
+    Project Log flyout panel
 
 ###########################
 Find Files
@@ -68,7 +68,7 @@ Find Files
     :align: center
     :alt: find flyout
 
-    Find Files flyout menu
+    Find Files flyout panel
 
 ###########################
 Processes
@@ -79,7 +79,7 @@ Processes
     :align: center
     :alt: processes flyout
 
-    Processes flyout menu
+    Processes flyout panel
 
 
 ###########################
@@ -91,5 +91,5 @@ Settings
     :align: center
     :alt: settings flyout
 
-    Settings flyout menu
+    Settings flyout panel
 

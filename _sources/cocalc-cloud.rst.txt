@@ -15,7 +15,7 @@ Introduction
 
 **CoCalc Cloud** runs on a Kubernetes Cluster. The underlying services and their architecture are identical to those in online cocalc.com, with comparable performance, scalability, and reliability to the online site.
 
-This page provides a summary of CoCalc Cloud features. For detailed information, see `CoCalc Cloud documentation <https://doc-cloud.cocalc.com/>`_.
+This page provides a summary of CoCalc Cloud features. For detailed information, see `CoCalc Cloud documentation <https://doc-cloud.cocalc.com/>`_ and in particular the `Overview <https://doc-cloud.cocalc.com/overview.html>`_.
 
 Our blog article `CoCalc On-Premise <https://about.cocalc.com/2022/11/18/cocalc-on-premise/>`_ has introductory information about CoCalc Cloud.
 
@@ -39,15 +39,11 @@ You can deploy this solution on your bare-metal cluster or managed Kubernetes cl
 Prerequisites
 *************
 
-A Kubernetes cluster and some experience managing it. We will be happy to guide you through the setup and give you enough information to manage the service, react to issues, plan resource requirements, and know how to scale the various benefits to your expected usage.
+CoCalc Cloud runs on the abstractions provided by a Kubernetes cluster. Since it is a web-service, you need to have everything regarding networking in place, to be able to run it as a website. You also need a storage solution, providing a shared file-system supporting ``ReadWriteMany``.
 
-Experience working with HELM charts.
+We will be happy to guide you through the setup and give you enough information to manage the service, react to issues, plan resource requirements, and know how to scale the various benefits to your expected usage.
 
-A (sub)domain and TLS certificate (e.g., letsencrypt).
-
-A standard PostgreSQL database.
-
-Storage. A network file system such as NFS, supporting ReadWriteMany, is used to hold the data of all projects.
+The `Setup Guide <https://doc-cloud.cocalc.com/setup.html>`_ has more details.
 
 ########################################
 Purchasing CoCalc Cloud
