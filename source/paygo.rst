@@ -14,7 +14,7 @@ CoCalc's Pay-As-You-Go feature lets you choose resources for a project and only 
 
 You can choose different amounts of any resource the next time you run the project. Resources are completely editable at any time, unlike the older CoCalc :doc:`licenses` products, which had resource settings for the entire duration of the license.
 
-For added detail, see the news announcement: `CoCalc's New Purchasing System <https://cocalc.com/news/cocalc-s-new-purchasing-system-19>`_.
+Here's the CoCalc feature announcement and discussion: `ANN: CoCalc's New Purchasing System <https://github.com/sagemathinc/cocalc/discussions/6848>`_.
 
 #######################################
 How to Enable Pay-As-You-Go
