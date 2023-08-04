@@ -22,38 +22,60 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
 .. _course-students-pay:
 
 ----------------------------------------------------
-Students pay for upgrades
+Students Pay For Upgrades
 ----------------------------------------------------
 
-You can request that the students pay a one-time fee of $14 for four months.
-This will move their projects to members-only hosts and enable full internet access.
+You can request that the students pay a for CoCalc resources needed for the course. You can also set exactly which resources are needed, as well as the start and end dates for those resources.
 
-If you click "Students will pay for this course", another checkbox appears, "Require that students upgrade...":
+Note: **As of August, 2023, Student-pay resources are provided under Cocalc's :doc:`paygo` feature.** For added detail, including information on student-pay, see the news announcement: `CoCalc's New Purchasing System <https://cocalc.com/news/cocalc-s-new-purchasing-system-19>`_.
 
-.. image:: img/teaching/students-pay-2.png
-     :width: 50%
+1. Instructor Configures Student-Pay
+-----------------------------------------------
+
+In the course Configuration tab, if you click "Students pay directly" and then "Start and end dates and upgrades...", another dialog opens: "Require Students to Upgrade their Project":
+
+.. figure:: img/student-pay-levels.png
+     :width: 90%
      :align: center
      :alt: student pay, step 1
+     
+     student pay, step 1
 
+You will see options for amount of disk space, RAM, etc. You can also set the "Require that students upgrade by" deadline to be as late as you want, even after the class is over. ThE latter effectively makes payment optional.
 
-When you check that checkbox, a calendar form opens. The default is to require students to pay within one week, but you can change the deadline. Select a different date if you want, or leave it at the default, and click "Close".
+2. Student Opens Project and Sees Payment Banner
+-------------------------------------------------
 
-.. image:: img/teaching/students-pay-3.png
-     :width: 50%
+When the student opens their project for the course, they will see a banner at the top:
+
+.. figure:: img/student-pay-2b.png
+     :width: 100%
      :align: center
      :alt: student pay, step 2
 
-To continue from the perspective of your students,
-read the :ref:`instructions for students to pay for a course <student-pay-for-course>`.
+     student pay, step 2
+
+3. Student Clicks Banner and Can Make Payment
+-------------------------------------------------
+
+After clicking the banner, they will see a button allowing them to pay for the course:
+
+.. figure:: img/student-pay-3b.png
+     :width: 100%
+     :align: center
+     :alt: student pay, step 3
+
+     student pay, step 3
+
 
 **Can we mix free and upgraded student projects?**
 
 Yes.
-Just set the due date by which the students have to pay to be at the end of the course.
+As noted above, set the due date by which the students have to pay to be at the end of the course.
 Give them the opportunity to pay for an upgrade for the first few weeks (say),
 then just unclick the student pay checkbox and thus no longer requiring them to pay at all.
-In short, whether they have to pay or not is something you can change at any time,
-they have a grace period before being required to pay,
+In short, whether they have to pay or not is something you can change at any time.
+They have a grace period before being required to pay,
 and you can change any of these settings at any time.
 
 
