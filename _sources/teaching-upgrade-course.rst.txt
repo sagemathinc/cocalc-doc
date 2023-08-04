@@ -25,9 +25,9 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
 Students Pay For Upgrades
 ----------------------------------------------------
 
-You can request that the students pay a for CoCalc resources needed for the course. You can also set exactly which resources are needed, as well as the start and end dates for those resources.
+Note: **As of August, 2023, Student-pay resources are provided under Cocalc's** :doc:`paygo` **feature.** For added detail, including information on student-pay, see the CoCalc feature announcement and discussion: `ANN: CoCalc's New Purchasing System <https://github.com/sagemathinc/cocalc/discussions/6848>`_.
 
-Note: **As of August, 2023, Student-pay resources are provided under Cocalc's :doc:`paygo` feature.** For added detail, including information on student-pay, see the news announcement: `CoCalc's New Purchasing System <https://cocalc.com/news/cocalc-s-new-purchasing-system-19>`_.
+You can request that the students pay a for CoCalc resources needed for the course. You can also set exactly which resources are needed, as well as the start and end dates for those resources.
 
 1. Instructor Configures Student-Pay
 -----------------------------------------------
