@@ -25,9 +25,10 @@ The **Configuration** tab of a **.course** file allows you to upgrade students' 
 Students Pay For Upgrades
 ----------------------------------------------------
 
-Note: **As of August, 2023, Student-pay resources are provided under Cocalc's** :doc:`paygo` **feature.** For added detail, including information on student-pay, see the CoCalc feature announcement and discussion: `ANN: CoCalc's New Purchasing System <https://github.com/sagemathinc/cocalc/discussions/6848>`_.
-
 You can request that the students pay a for CoCalc resources needed for the course. You can also set exactly which resources are needed, as well as the start and end dates for those resources.
+
+*Note that, as of August, 2023,  students in a course must buy the license specified for that course. Upgrading the student project in some other way is not  sufficient.*
+
 
 1. Instructor Configures Student-Pay
 -----------------------------------------------
@@ -41,7 +42,7 @@ In the course Configuration tab, if you click "Students pay directly" and then "
      
      student pay, step 1
 
-You will see options for amount of disk space, RAM, etc. You can also set the "Require that students upgrade by" deadline to be as late as you want, even after the class is over. ThE latter effectively makes payment optional.
+You will see options for amount of disk space, RAM, etc. You can also set the "Require that students upgrade by" deadline to be as late as you want, even after the class is over. The latter effectively makes payment optional.
 
 2. Student Opens Project and Sees Payment Banner
 -------------------------------------------------
