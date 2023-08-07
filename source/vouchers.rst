@@ -4,6 +4,11 @@
 Vouchers
 ======================
 
+.. contents::
+   :local:
+   :depth: 2
+
+
 .. figure:: img/voucher-center-upper.png
     :width: 90%
     :align: center
@@ -13,16 +18,27 @@ Vouchers
 
 
 ################################
-What are CoCalc Vouchers?
+About CoCalc Vouchers
 ################################
 
 A `CoCalc voucher <https://cocalc.com/vouchers>`_ is a list of codes that can be redeemed for CoCalc licenses. Distributing codes is like distributing licenses, except that the keys do not circulate during distribution. In fact, license keys are not created until codes are redeemed by end users.
 
-Here's the CoCalc feature announcement and discussion: `ANN: Vouchers - transferable codes that can be renewed later for a license <https://github.com/sagemathinc/cocalc/discussions/6534>`_.
+Here's the CoCalc general voucher feature announcement and discussion: `ANN: Vouchers - transferable codes that can be renewed later for a license <https://github.com/sagemathinc/cocalc/discussions/6534>`_.
 
 ################################
 Examples of Voucher Use
 ################################
+
+*********************************
+Cash Vouchers
+*********************************
+
+CoCalc cash voucher codes are single-use codes that you can purchase and make available to somebody else, who can then redeem them at https://cocalc.com/redeem for that amount of credit on their CoCalc account. They can then buy anything in CoCalc using that credit, including upgrade licenses, dedicated VM's and disks, pay-as-you-go project upgrades, student-pay course upgrades, GPT-4 chat evaluation, more vouchers, etc.
+
+To buy a cash voucher code, visit https://cocalc.com/store/vouchers and do "Add Cash Voucher".
+
+For more detail, see the feature announcement and discussion: `ANN: Cash Vouchers <https://github.com/sagemathinc/cocalc/discussions/6857>`_.
+
 
 *********************************
 No Special Arrangement Is Needed
