@@ -42,6 +42,7 @@ Jupyter Notebook
 * :doc:`jupyterlab-extensions`
 * :doc:`run-r-step-by-step`
 * :doc:`jupyter-extension`
+* :doc:`jupyter-plot-png-svg`
 
 Programming Languages and Tools
 ===============================
