@@ -42,6 +42,10 @@ Software update summaries
    software/updates-2019
    software/updates-2018
 
+Software update detailed items
+-----------------------------------------------
+
+* :doc:`platform-news`
 
 Main supported software environments
 -----------------------------------------------
