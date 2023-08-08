@@ -20,6 +20,7 @@ Prepare your project
 .. figure:: img/jlab-env.png
      :width: 70%
      :align: center
+     :alt: prepare project for jupyterlab
 
      ..
 
@@ -51,6 +52,7 @@ At this point, your extensions are installed and enabled.
 .. figure:: img/jlab-ext-example.png
      :width: 90%
      :align: center
+     :alt: extensions are installed
 
      ..
 

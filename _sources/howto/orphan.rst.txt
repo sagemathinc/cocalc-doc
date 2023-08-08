@@ -23,6 +23,7 @@
    streamlit
    jupyter-kernel-selection
    jupyter-extension
+   jupyter-plot-png-svg
    jupyterlab-extensions
    custom-jupyter-kernel
    fix-broken-jupyter-pdf
