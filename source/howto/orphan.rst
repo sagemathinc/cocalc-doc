@@ -51,4 +51,5 @@
    disk-space-warning
    parallel
    ../project-list
+   ../platform-news
 

@@ -4,8 +4,6 @@
 Pay-As-You-Go Purchase
 ======================
 
-*NEW in August, 2023*
-
 .. contents::
    :local:
    :depth: 2
