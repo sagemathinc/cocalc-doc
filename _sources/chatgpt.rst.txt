@@ -1,14 +1,11 @@
 .. index:: ChatGPT
 
-.. _chatgpt-tour:
 
 =====================
 ChatGPT
 =====================
 
 ChatGPT can transform how you use CoCalc for learning, writing programs, and writing scientific documents.
-
-You can launch a short introduction to CoCalc's support for ChatGPT by clicking the blue **Tour** button at upper right in the ChatGPT dialog box whenever you open ChatGPT in CoCalc. This is one of several :doc:`tours` of features in CoCalc.
 
 Here are some areas where CoCalc's context-sensitive ChatGPT help can save you time and effort:
 
@@ -30,9 +27,24 @@ You can read all CoCalc ChatGPT announcements to date and join the discussion at
 
 #. `Easily use the OpenAI ChatGPT API from your Jupyter notebooks in CoCalc <https://github.com/sagemathinc/cocalc/discussions/6600>`_.
 
+.. _chatgpt-tour:
+
 ####################################
+ChatGPT Tour
+####################################
+
+You can launch a short introduction to CoCalc's support for ChatGPT by clicking the blue **Tour** button at upper right in the ChatGPT dialog box whenever you open ChatGPT in CoCalc. This is one of several :doc:`tours` of features in CoCalc.
+
+   .. figure:: img/chat-gpt-tour.png
+      :width: 90%
+      :align: center
+      :alt: chatgpt tour
+
+      ChatGPT tour
+
+###################################
 Jupyter Notebooks
-####################################
+###################################
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Fixing Errors

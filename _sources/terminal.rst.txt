@@ -1,28 +1,40 @@
 .. index:: Terminal
 
 .. _terminal:
-.. _terminal-tour:
+
 
 ==============
 Linux Terminal
 ==============
-
-.. image:: img/terminals4.png
-    :width: 100%
-    :alt: sample terminal screenshot
 
 The **CoCalc Linux Terminal** lets you run programs online in a Linux environment.
 Everything runs remotely inside :doc:`a project <./project>`,
 the ongoing terminal session is synchronized with your collaborators,
 and all your files are backed up.
 
-You can launch a short introduction to CoCalc's support for the Linux terminal by clicking the blue **Tour** button at upper right after opening a .term file. This is one of several :doc:`tours` of features in CoCalc.
+.. image:: img/terminals4.png
+    :width: 100%
+    :alt: sample terminal screenshot
 
 
 
 .. contents::
    :local:
    :depth: 2
+
+.. _terminal-tour:
+
+Terminal Tour
+=================
+
+You can launch a short introduction to CoCalc's support for the Linux terminal by clicking the blue **Tour** button at upper right after opening a .term file. This is one of several :doc:`tours` of features in CoCalc.
+
+.. figure:: img/term-tour.png
+    :width: 100%
+    :align: center
+    :alt: terminal tour
+
+    terminul tour
 
 
 Quickstart

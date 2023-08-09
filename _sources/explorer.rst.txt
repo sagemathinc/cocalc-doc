@@ -1,7 +1,7 @@
 .. index:: File Explorer
 .. index:: Explorer
 
-.. _explorer-tour:
+
 
 
 =============================
@@ -13,9 +13,6 @@ Explorer
    :depth: 1
 
 After a project is opened, you can use the File Explorer to browse, open, and manage files in the selected directory within your project.
-
-
-You can launch a short introduction to the Explorer by clicking the blue **Tour** button. This is one of several :doc:`tours` of features in CoCalc.
 
 
 .. figure:: img/explorer-c.png
@@ -33,6 +30,22 @@ Explorer Top Bar
 ######################
 
 Toward the top of the window is the Search bar. It includes a *search box* to allow you to filter the list of displayed files, a *New button* for creating a file, the *path and directory* whose files are displayed, and a mini-terminal text area for entering a short *Terminal command* to be run by the linux shell.
+
+.. _explorer-tour:
+
+######################
+Explorer Tour
+######################
+
+You can launch a short introduction to the Explorer by clicking the blue **Tour** button. This is one of several :doc:`tours` of features in CoCalc.
+
+.. figure:: img/explorer-tour2.png
+    :width: 100%
+    :align: center
+    :alt: the file explorer
+
+    file explorer tour
+
 
 ######################
 Files Toolbar

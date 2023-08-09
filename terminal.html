@@ -80,6 +80,7 @@
 <li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Linux Terminal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#terminal-tour">Terminal Tour</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quickstart">Quickstart</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#new-to-linux">New to Linux?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installing-software-packages">Installing software packages</a></li>
@@ -190,45 +191,55 @@
            <div itemprop="articleBody">
              
   <section id="linux-terminal">
-<span id="terminal-tour"></span><span id="terminal"></span><span id="index-0"></span><h1>Linux Terminal<a class="headerlink" href="#linux-terminal" title="Permalink to this heading"></a></h1>
-<a class="reference internal image-reference" href="_images/terminals4.png"><img alt="sample terminal screenshot" src="_images/terminals4.png" style="width: 100%;" /></a>
+<span id="terminal"></span><span id="index-0"></span><h1>Linux Terminal<a class="headerlink" href="#linux-terminal" title="Permalink to this heading"></a></h1>
 <p>The <strong>CoCalc Linux Terminal</strong> lets you run programs online in a Linux environment.
 Everything runs remotely inside <a class="reference internal" href="project.html"><span class="doc">a project</span></a>,
 the ongoing terminal session is synchronized with your collaborators,
 and all your files are backed up.</p>
-<p>You can launch a short introduction to CoCalc’s support for the Linux terminal by clicking the blue <strong>Tour</strong> button at upper right after opening a .term file. This is one of several <a class="reference internal" href="tours.html"><span class="doc">Tours</span></a> of features in CoCalc.</p>
+<a class="reference internal image-reference" href="_images/terminals4.png"><img alt="sample terminal screenshot" src="_images/terminals4.png" style="width: 100%;" /></a>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#quickstart" id="id1">Quickstart</a></p>
+<li><p><a class="reference internal" href="#terminal-tour" id="id3">Terminal Tour</a></p></li>
+<li><p><a class="reference internal" href="#quickstart" id="id4">Quickstart</a></p>
 <ul>
-<li><p><a class="reference internal" href="#new-to-linux" id="id2">New to Linux?</a></p></li>
-<li><p><a class="reference internal" href="#installing-software-packages" id="id3">Installing software packages</a></p></li>
+<li><p><a class="reference internal" href="#new-to-linux" id="id5">New to Linux?</a></p></li>
+<li><p><a class="reference internal" href="#installing-software-packages" id="id6">Installing software packages</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#features" id="id4">Features</a></p>
+<li><p><a class="reference internal" href="#features" id="id7">Features</a></p>
 <ul>
-<li><p><a class="reference internal" href="#extensive-command-set" id="id5">Extensive Command Set</a></p></li>
-<li><p><a class="reference internal" href="#cocalc-terminal-commands" id="id6">CoCalc Terminal Commands</a></p></li>
-<li><p><a class="reference internal" href="#collaboration-and-side-chat" id="id7">Collaboration and Side Chat</a></p></li>
-<li><p><a class="reference internal" href="#disconnect-and-resume" id="id8">Disconnect and Resume</a></p></li>
-<li><p><a class="reference internal" href="#multiple-terminals-in-a-single-browser-tab" id="id9">Multiple Terminals in a Single Browser Tab</a></p></li>
-<li><p><a class="reference internal" href="#startup-files" id="id10">Startup files</a></p></li>
-<li><p><a class="reference internal" href="#anaconda-environment" id="id11">Anaconda Environment</a></p></li>
+<li><p><a class="reference internal" href="#extensive-command-set" id="id8">Extensive Command Set</a></p></li>
+<li><p><a class="reference internal" href="#cocalc-terminal-commands" id="id9">CoCalc Terminal Commands</a></p></li>
+<li><p><a class="reference internal" href="#collaboration-and-side-chat" id="id10">Collaboration and Side Chat</a></p></li>
+<li><p><a class="reference internal" href="#disconnect-and-resume" id="id11">Disconnect and Resume</a></p></li>
+<li><p><a class="reference internal" href="#multiple-terminals-in-a-single-browser-tab" id="id12">Multiple Terminals in a Single Browser Tab</a></p></li>
+<li><p><a class="reference internal" href="#startup-files" id="id13">Startup files</a></p></li>
+<li><p><a class="reference internal" href="#anaconda-environment" id="id14">Anaconda Environment</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#tips-and-tricks" id="id12">Tips and tricks</a></p>
+<li><p><a class="reference internal" href="#tips-and-tricks" id="id15">Tips and tricks</a></p>
 <ul>
-<li><p><a class="reference internal" href="#terminal-environment-in-split-frame-with-file-editor" id="id13">Terminal Environment in Split Frame with File Editor</a></p></li>
-<li><p><a class="reference internal" href="#customize-font" id="id14">Customize font</a></p></li>
-<li><p><a class="reference internal" href="#broken-vim-key-bindings" id="id15">Broken VIM key bindings</a></p></li>
-<li><p><a class="reference internal" href="#setup-fish-shell" id="id16">Setup fish shell</a></p></li>
-<li><p><a class="reference internal" href="#remove-history-from-a-terminal-file" id="id17">Remove history from a terminal file</a></p></li>
+<li><p><a class="reference internal" href="#terminal-environment-in-split-frame-with-file-editor" id="id16">Terminal Environment in Split Frame with File Editor</a></p></li>
+<li><p><a class="reference internal" href="#customize-font" id="id17">Customize font</a></p></li>
+<li><p><a class="reference internal" href="#broken-vim-key-bindings" id="id18">Broken VIM key bindings</a></p></li>
+<li><p><a class="reference internal" href="#setup-fish-shell" id="id19">Setup fish shell</a></p></li>
+<li><p><a class="reference internal" href="#remove-history-from-a-terminal-file" id="id20">Remove history from a terminal file</a></p></li>
 </ul>
 </li>
 </ul>
 </nav>
+<section id="terminal-tour">
+<span id="id1"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Terminal Tour</a><a class="headerlink" href="#terminal-tour" title="Permalink to this heading"></a></h2>
+<p>You can launch a short introduction to CoCalc’s support for the Linux terminal by clicking the blue <strong>Tour</strong> button at upper right after opening a .term file. This is one of several <a class="reference internal" href="tours.html"><span class="doc">Tours</span></a> of features in CoCalc.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/term-tour.png"><img alt="terminal tour" src="_images/term-tour.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">terminul tour</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 <section id="quickstart">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Quickstart</a><a class="headerlink" href="#quickstart" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Quickstart</a><a class="headerlink" href="#quickstart" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To get started, create a <strong>“Terminal”</strong> file in the “Files” listing or in “+ New”.
@@ -236,7 +247,7 @@ Such files end in <code class="docutils literal notranslate"><span class="pre">.
 Inside of each panel a terminal session starts up and you can issue commands.</p>
 </div>
 <section id="new-to-linux">
-<h3><a class="toc-backref" href="#id2" role="doc-backlink">New to Linux?</a><a class="headerlink" href="#new-to-linux" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">New to Linux?</a><a class="headerlink" href="#new-to-linux" title="Permalink to this heading"></a></h3>
 <p>The terminal is a way to interactively communicate with the computer.
 You type in a so-called “<code class="docutils literal notranslate"><span class="pre">command</span></code>” and then hit the <code class="docutils literal notranslate"><span class="pre">Return</span></code>-key to send your instruction.
 This causes <a class="reference external" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a>, the default interpreter, to process your command and most likely run a program.
@@ -249,7 +260,7 @@ this sends an “interrupt” signal to the running process.</p>
 is one of several introductory topics at <a class="reference external" href="http://ryanstutorials.net/">Ryan’s Tutorials</a>.</p>
 </section>
 <section id="installing-software-packages">
-<h3><a class="toc-backref" href="#id3" role="doc-backlink">Installing software packages</a><a class="headerlink" href="#installing-software-packages" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Installing software packages</a><a class="headerlink" href="#installing-software-packages" title="Permalink to this heading"></a></h3>
 <p>You can use the terminal to install software packages in your project.</p>
 <ul class="simple">
 <li><p>To install certain <strong>Python or Anaconda</strong> packages, please consult <a class="reference internal" href="howto/install-python-lib.html#python-pkg-install-user"><span class="std std-ref">Python “user” installs</span></a>.</p></li>
@@ -259,13 +270,13 @@ is one of several introductory topics at <a class="reference external" href="htt
 </section>
 </section>
 <section id="features">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Features</a><a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Features</a><a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
 <section id="extensive-command-set">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">Extensive Command Set</a><a class="headerlink" href="#extensive-command-set" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Extensive Command Set</a><a class="headerlink" href="#extensive-command-set" title="Permalink to this heading"></a></h3>
 <p>In addition to the usual commands available at user level in <a class="reference external" href="https://www.ubuntu.com/">Ubuntu Linux</a>, there are command line programming interfaces for <code class="docutils literal notranslate"><span class="pre">sage</span></code>, <code class="docutils literal notranslate"><span class="pre">python2</span></code> / <code class="docutils literal notranslate"><span class="pre">ipython2</span></code>, <code class="docutils literal notranslate"><span class="pre">python3</span></code> / <code class="docutils literal notranslate"><span class="pre">ipython3</span></code>, <code class="docutils literal notranslate"><span class="pre">R</span></code>, <code class="docutils literal notranslate"><span class="pre">gap</span></code>, <code class="docutils literal notranslate"><span class="pre">java</span></code>, <code class="docutils literal notranslate"><span class="pre">julia</span></code>, <code class="docutils literal notranslate"><span class="pre">octave</span></code> and many more. There is an extensive list of added executables at the <a class="reference external" href="https://cocalc.com/doc/software.html">CoCalc installed software list</a>.</p>
 </section>
 <section id="cocalc-terminal-commands">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">CoCalc Terminal Commands</a><a class="headerlink" href="#cocalc-terminal-commands" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">CoCalc Terminal Commands</a><a class="headerlink" href="#cocalc-terminal-commands" title="Permalink to this heading"></a></h3>
 <p>The Linux shell in CoCalc projects has access to commands specifically intended for the CoCalc project environment. These include:</p>
 <span id="index-1"></span><ul class="simple" id="terminal-file-open">
 <li><dl class="simple">
@@ -290,7 +301,7 @@ is one of several introductory topics at <a class="reference external" href="htt
 </ul>
 </section>
 <section id="collaboration-and-side-chat">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Collaboration and Side Chat</a><a class="headerlink" href="#collaboration-and-side-chat" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Collaboration and Side Chat</a><a class="headerlink" href="#collaboration-and-side-chat" title="Permalink to this heading"></a></h3>
 <p>Like any other application in CoCalc, the terminal environment allows
 more than one user to enter commands and view results in the same session.
 The terminal size will adjust according to the available number of rows and columns of each particiant.
@@ -298,22 +309,22 @@ It also allows users participating in the same session to share comments by open
 <p>Additionally, you can use the “open door” button to remove all other collaborators interfering with your current terminal session.</p>
 </section>
 <section id="disconnect-and-resume">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Disconnect and Resume</a><a class="headerlink" href="#disconnect-and-resume" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Disconnect and Resume</a><a class="headerlink" href="#disconnect-and-resume" title="Permalink to this heading"></a></h3>
 <p>If you disconnect your browser from CoCalc while you have a terminal session open, the session is preserved as long as the project is not restarted.
 Next time you reconnect – even with a different browser or via another computer – a still running session will appear again and you can continue to work where you’ve left.</p>
 </section>
 <section id="multiple-terminals-in-a-single-browser-tab">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Multiple Terminals in a Single Browser Tab</a><a class="headerlink" href="#multiple-terminals-in-a-single-browser-tab" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Multiple Terminals in a Single Browser Tab</a><a class="headerlink" href="#multiple-terminals-in-a-single-browser-tab" title="Permalink to this heading"></a></h3>
 <p>Terminals open up in a <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a>. This means you can use buttons at upper right to split the terminal frame vertically or horizontally. The split defaults to the middle of the frame, but the dividing line can be dragged to give more space to one of the new frames and less to the other. You can continue splitting to get even more frames in a single browser tab. Click the <cite>x</cite> icon at upper left to close a frame.</p>
 </section>
 <section id="startup-files">
-<span id="terminal-startup-files"></span><span id="index-4"></span><h3><a class="toc-backref" href="#id10" role="doc-backlink">Startup files</a><a class="headerlink" href="#startup-files" title="Permalink to this heading"></a></h3>
+<span id="terminal-startup-files"></span><span id="index-4"></span><h3><a class="toc-backref" href="#id13" role="doc-backlink">Startup files</a><a class="headerlink" href="#startup-files" title="Permalink to this heading"></a></h3>
 <p>When you click on the “rocket” icon (<a class="reference internal" href="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/rocket.png"><img alt="rocket icon" src="https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/rocket.png" style="width: 16px;" /></a>),
 a hidden file – which is tied to that specific terminal – is created.
 It contains further instructions about how to configure commands that are run when it starts.</p>
 </section>
 <section id="anaconda-environment">
-<span id="index-5"></span><h3><a class="toc-backref" href="#id11" role="doc-backlink">Anaconda Environment</a><a class="headerlink" href="#anaconda-environment" title="Permalink to this heading"></a></h3>
+<span id="index-5"></span><h3><a class="toc-backref" href="#id14" role="doc-backlink">Anaconda Environment</a><a class="headerlink" href="#anaconda-environment" title="Permalink to this heading"></a></h3>
 <p>To use the <a class="reference external" href="https://www.anaconda.com/">Anaconda data science platform</a>,
 enter the command <code class="docutils literal notranslate"><span class="pre">anacond2019</span></code> in a terminal session.
 The shell prompt will change to notify you
@@ -326,14 +337,14 @@ We recommend all new applications use <code class="docutils literal notranslate"
 </section>
 </section>
 <section id="tips-and-tricks">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">Tips and tricks</a><a class="headerlink" href="#tips-and-tricks" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Tips and tricks</a><a class="headerlink" href="#tips-and-tricks" title="Permalink to this heading"></a></h2>
 <section id="terminal-environment-in-split-frame-with-file-editor">
-<span id="terminal-editor-panel"></span><h3><a class="toc-backref" href="#id13" role="doc-backlink">Terminal Environment in Split Frame with File Editor</a><a class="headerlink" href="#terminal-environment-in-split-frame-with-file-editor" title="Permalink to this heading"></a></h3>
+<span id="terminal-editor-panel"></span><h3><a class="toc-backref" href="#id16" role="doc-backlink">Terminal Environment in Split Frame with File Editor</a><a class="headerlink" href="#terminal-environment-in-split-frame-with-file-editor" title="Permalink to this heading"></a></h3>
 <p>If you open a source code file in CoCalc for editing, for example an <code class="docutils literal notranslate"><span class="pre">.sh</span></code>, <code class="docutils literal notranslate"><span class="pre">.py</span></code>, <code class="docutils literal notranslate"><span class="pre">.R</span></code>, or <code class="docutils literal notranslate"><span class="pre">.rb</span></code> file, you can <a class="reference internal" href="frame-editor.html"><span class="doc">split the editor frame</span></a> and add a command session. That way, you can easily move between editing and running the code.</p>
 <a class="reference internal image-reference" href="_images/edit-terminal-split.png"><img alt="split screen, editor pane with .py file on left, terminal on right" class="align-center" src="_images/edit-terminal-split.png" style="width: 100%;" /></a>
 </section>
 <section id="customize-font">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Customize font</a><a class="headerlink" href="#customize-font" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Customize font</a><a class="headerlink" href="#customize-font" title="Permalink to this heading"></a></h3>
 <p>To change the <strong>size</strong> of the font, click the plus and minus magnification glass icons at the top of a focused terminal frame.</p>
 <p>In order to change the appearance of the <strong>font family</strong> of the terminal, adjust the font settings of your web browser.
 For example, in <em>Google Chrome</em> this is done in <strong>Settings</strong> → <strong>Appearance</strong> → <strong>Customize Fonts</strong>:</p>
@@ -342,12 +353,12 @@ For example, in <em>Google Chrome</em> this is done in <strong>Settings</strong>
 <a class="reference internal image-reference" href="_images/chrome-fixed-width-font.png"><img alt="choose fixed-width font in your browser" class="align-center" src="_images/chrome-fixed-width-font.png" style="width: 75%;" /></a>
 </section>
 <section id="broken-vim-key-bindings">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Broken VIM key bindings</a><a class="headerlink" href="#broken-vim-key-bindings" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Broken VIM key bindings</a><a class="headerlink" href="#broken-vim-key-bindings" title="Permalink to this heading"></a></h3>
 <p>If you have a browser extension that uses the vim keys it may intercept the ‘Esc’ character, preventing you from switching to command mode in CoCalc.
 Either remap ‘Esc’ to a different key for the browser extension or disable the extension on the cocalc.com domain.</p>
 </section>
 <section id="setup-fish-shell">
-<span id="index-6"></span><h3><a class="toc-backref" href="#id16" role="doc-backlink">Setup fish shell</a><a class="headerlink" href="#setup-fish-shell" title="Permalink to this heading"></a></h3>
+<span id="index-6"></span><h3><a class="toc-backref" href="#id19" role="doc-backlink">Setup fish shell</a><a class="headerlink" href="#setup-fish-shell" title="Permalink to this heading"></a></h3>
 <p>You can automatically span a process replacing of the default bash shell while it starts
 via a <a class="reference internal" href="#terminal-startup-files"><span class="std std-ref">startup file</span></a>.
 In order to avoid having broken Home/End keys in the fish shell,
@@ -365,7 +376,7 @@ exec fish
 <p>Next time you launch this terminal, or restart it via typing in <code class="docutils literal notranslate"><span class="pre">exit</span></code> and pressing the return-key, this setup file will be evaluated and you’ll end up in the fish shell with the correct TERM environment variable set.</p>
 </section>
 <section id="remove-history-from-a-terminal-file">
-<span id="index-7"></span><h3><a class="toc-backref" href="#id17" role="doc-backlink">Remove history from a terminal file</a><a class="headerlink" href="#remove-history-from-a-terminal-file" title="Permalink to this heading"></a></h3>
+<span id="index-7"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">Remove history from a terminal file</a><a class="headerlink" href="#remove-history-from-a-terminal-file" title="Permalink to this heading"></a></h3>
 <p>Suppose you want to use a .term file, but want to remove previous history, comments, etc. In addition to deleting the contents of the .term file, you need to delete one or more hidden files. Click the little “hidden eye” icon in the upper right of the file listing to show hidden files. Then delete the hidden files that end in .term. They have the (recent) history of use of that terminal. If you delete them, then they are gone.</p>
 <a class="reference internal image-reference" href="_images/clean-terminal.png"><img alt="removing hidden history files for a terminal" class="align-center" src="_images/clean-terminal.png" style="width: 75%;" /></a>
 <p>One reason this situation might arise is if you are an instructor in  a course and want to distribute a .term file to your students using the Handouts or <a class="reference internal" href="teaching-course-management.html#create-assignment"><span class="std std-ref">Assignments</span></a> feature in CoCalc courses, but do not want to distribute command history that may have accumulated with the original terminal in the instructor’s project.</p>
