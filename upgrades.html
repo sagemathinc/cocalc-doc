@@ -83,7 +83,12 @@
 <li class="toctree-l1"><a class="reference internal" href="servers.html">Servers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="users.html">Users</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Upgrades</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#upgrades-upgrades"> Upgrades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#member-hosting">Member hosting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#internet-access">Internet access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upg-idleto">Idle timeout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disk-space">Disk space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ram">RAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cpu">CPU</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
@@ -169,8 +174,6 @@
              
   <section id="upgrades">
 <span id="index-0"></span><h1>Upgrades<a class="headerlink" href="#upgrades" title="Permalink to this heading"></a></h1>
-<section id="upgrades-upgrades">
-<h2><a class="reference internal" href="_images/upgrades-icon.png"><img alt="quotas icon" src="_images/upgrades-icon.png" style="width: 24px;" /></a> Upgrades<a class="headerlink" href="#upgrades-upgrades" title="Permalink to this heading"></a></h2>
 <p>After opening a project, you can view resource quotas for the project and add or remove licenses. Click “Upgrades” in the <a class="reference internal" href="activity-bar.html"><span class="doc">Activity Bar</span></a> for this feature.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="_images/upgrades.png"><img alt="upgrades pane" src="_images/upgrades.png" style="width: 100%;" /></a>
@@ -178,6 +181,66 @@
 <p><span class="caption-text">upgrades pane</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#member-hosting" id="id2">Member hosting</a></p></li>
+<li><p><a class="reference internal" href="#internet-access" id="id3">Internet access</a></p></li>
+<li><p><a class="reference internal" href="#upg-idleto" id="id4">Idle timeout</a></p></li>
+<li><p><a class="reference internal" href="#disk-space" id="id5">Disk space</a></p></li>
+<li><p><a class="reference internal" href="#ram" id="id6">RAM</a></p></li>
+<li><p><a class="reference internal" href="#cpu" id="id7">CPU</a></p></li>
+</ul>
+</nav>
+<section id="member-hosting">
+<span id="upg-mhost"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Member hosting</a><a class="headerlink" href="#member-hosting" title="Permalink to this heading"></a></h2>
+<p>There are two types of projects: “trial (free) projects” and “member projects”.
+<a class="reference internal" href="trial.html"><span class="doc">Trial projects</span></a> run on heavily loaded computers
+sharing the same node with many other projects and system tasks.
+These nodes might also shutdown at any time,
+causing your currently running project to interrupt your work and restart.</p>
+<p>Member-hosted projects are moved to less loaded machines,
+which are reserved only for paying customers and aren’t restarted on a daily basis.
+The cluster scales up dynamically to accommodate for a varying number of member-projects.</p>
+<p>Working in member-hosted projects feels much smoother because commands execute
+more quickly with lower latency,
+and CPU, memory and I/O heavy operations run more quickly.</p>
+</section>
+<section id="internet-access">
+<span id="upg-net"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Internet access</a><a class="headerlink" href="#internet-access" title="Permalink to this heading"></a></h2>
+<p>Despite the fact that you are accessing CoCalc through the internet,
+you are actually working in a highly restricted environment.
+Processes running <em>inside</em> a free project are not allowed to directly
+access the internet. (We do not allow such access for free users, since when we did,
+malicious users launched attacks on other computers from CoCalc.)</p>
+</section>
+<section id="upg-idleto">
+<span id="idle-timeout"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Idle timeout</a><a class="headerlink" href="#upg-idleto" title="Permalink to this heading"></a></h2>
+<p>By default, free projects stop running after about 30 minutes of idle time.
+This makes doing an overnight research computation –
+e.g., searching for special prime numbers – impossible.</p>
+<p>There is an advanced license option to prevent idle timeouts completely: see <a class="reference internal" href="account/licenses.html#licenses-always-running"><span class="std std-ref">Always running</span></a>.
+Processes might still stop if they use too much memory, crash due to an exception, or if the server they are running on is rebooted.</p>
+<p>Projects do not stop if you are continuously using them,
+and there are no daily or monthly caps on how much you may use a CoCalc project, even a free one.</p>
+<p>See also: <a class="reference internal" href="howto/software-development.html#idle-timeout"><span class="std std-ref">Software development/idle timeout</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is also a user-configurable timeout, the <a class="reference internal" href="account/preferences.html#standby-timeout"><span class="std std-ref">Standby timeout</span></a>, which does not stop the project.</p>
+</div>
+</section>
+<section id="disk-space">
+<span id="upg-disk"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Disk space</a><a class="headerlink" href="#disk-space" title="Permalink to this heading"></a></h2>
+<p>Disk space is the number of GB total used by your project’s files. Snapshots and file edit history are included at no additional charge. Each project receives at least 3G of storage space. The maximum for typical CoCalc projects is 15GB of disk space. For even larger disk storage requirements, <a class="reference external" href="https://cocalc.com/store/dedicated?type=disk">dedicated disks</a> are available</p>
+</section>
+<section id="ram">
+<span id="upg-ram"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">RAM</a><a class="headerlink" href="#ram" title="Permalink to this heading"></a></h2>
+<p>The RAM quota limits the total amount of memory a project can use. The amount of RAM used by a running project will be the sum of RAM used by each of the collaborators. Therefore, the RAM quota will be larger if multiple collaborators are expected to use the project at the same time.</p>
+<p>We recommend at least 2GB for general purposes. The maximum for typical CoCalc projects is 16GB of RAM. For even larger memory requirements, <a class="reference external" href="https://cocalc.com/store/dedicated?type=vm">dedicated VM’s</a> are available.</p>
+</section>
+<section id="cpu">
+<span id="upg-cpu"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">CPU</a><a class="headerlink" href="#cpu" title="Permalink to this heading"></a></h2>
+<p>You can specify 1, 2, or 3 Shared CPUs, also known as Google Cloud vCPUs for a site license. To keep prices low, vCPUs may be shared with other projects, though member hosting very significantly reduces competition for CPUs.</p>
+<p>To learn more about using more than one vCPU per project, see <a class="reference internal" href="howto/parallel.html"><span class="doc">Multiple CPUs</span></a>.</p>
 </section>
 </section>
 

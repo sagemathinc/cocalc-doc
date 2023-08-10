@@ -70,7 +70,6 @@ For purchases **above $100** we support wire transfers.
 Please contact help@cocalc.com with all relevant details about your intended purchase.
 
 
-
 .. index:: Member Hosting;subscriptions
 
 **The free servers really are massively overloaded, so it is well worth it to upgrade to member hosting, enable internet access, etc.**
@@ -91,20 +90,7 @@ Quota upgrades
 What is **"member hosting"**?
 ***********************************************************
 
-
-There are two types of projects: "trial (free) projects" and "member projects".
-:doc:`Trial projects <trial>` run on heavily loaded computers
-sharing the same node with many other projects and system tasks.
-These nodes might also shutdown at any time,
-causing your currently running project to interrupt your work and restart.
-
-Member-hosted projects are moved to less loaded machines,
-which are reserved only for paying customers and aren't restarted on a daily basis.
-The cluster scales up dynamically to accommodate for a varying number of member-projects.
-
-Working in member-hosted projects feels much smoother because commands execute
-more quickly with lower latency,
-and CPU, memory and I/O heavy operations run more quickly.
+See :ref:`upg_mhost`.
 
 
 .. index::
@@ -116,13 +102,8 @@ and CPU, memory and I/O heavy operations run more quickly.
 What exactly is the **"network access"** quota?
 ***********************************************************
 
-(This was formerly called the **Internet access** quota.)
+See :ref:`upg_net`.
 
-Despite the fact that you are accessing CoCalc through the internet,
-you are actually working in a highly restricted environment.
-Processes running *inside* a free project are not allowed to directly
-access the internet.  (We do not allow such access for free users, since when we did,
-malicious users launched attacks on other computers from CoCalc.)
 Enable internet access by adding the "internet access" quota.
 
 
@@ -135,21 +116,7 @@ Enable internet access by adding the "internet access" quota.
 What exactly is the **"idle timeout"** quota?
 ***********************************************************
 
-By default, free projects stop running after about 30 minutes of idle time.
-This makes doing an overnight research computation –
-e.g., searching for special prime numbers – impossible.
-
-There is an advanced license option to prevent idle timeouts completely: see :ref:`licenses-always-running`.
-Processes might still stop if they use too much memory, crash due to an exception, or if the server they are running on is rebooted.
-
-Projects do not stop if you are continuously using them,
-and there are no daily or monthly caps on how much you may use a CoCalc project, even a free one.
-
-See also: :ref:`Software development/idle timeout <idle-timeout>`.
-
-.. note::
-
-    There is also a user-configurable timeout, the :ref:`standby-timeout`, which does not stop the project.
+See :ref:`upg_idleto`.
 
 .. _cpu-shares:
 .. index::
@@ -159,9 +126,5 @@ See also: :ref:`Software development/idle timeout <idle-timeout>`.
 What are **Shared CPUs / vCPUs**?
 ***********************************************************
 
-You can specify 1, 2, or 3 Shared CPUs, also known as Google Cloud vCPUs for a site license. To keep prices low, vCPUs may be shared with other projects, though member hosting very significantly reduces competition for CPUs.
-
-To learn more about using of more than one vCPU per project, see :doc:`howto/parallel`.
-
-
+See :ref:`upg_cpu`
 

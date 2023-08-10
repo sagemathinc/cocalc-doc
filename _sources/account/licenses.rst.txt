@@ -88,7 +88,7 @@ If you click "Show advanced options", more choices appear.
 Member hosting
 ^^^^^^^^^^^^^^
 
-**Member hosting** is the most essential upgrade for most situations. It gets your projects off heavily-loaded, preemptible trial servers. For that reason, this option is enabled by default.
+:ref:`upg_mhost` is the most essential upgrade for most situations. It gets your projects off heavily-loaded, preemptible trial servers. For that reason, this option is enabled by default.
 
 You might not select ``Member hosting`` if you plan to add a license to projects that already have Member hosting, to provide additional resources. Another reason to not select ``Member hosting`` is if you want to run a computation and need more memory or CPU, but are fine with using the spare cycles on the trial servers; combined with ``Always running``, this can be very powerful and affordable.
 
@@ -97,12 +97,13 @@ You might not select ``Member hosting`` if you plan to add a license to projects
 
 Always running
 ^^^^^^^^^^^^^^
-The **Always running** option prevents your project from being stopped for an :ref:`idle timeout <idle-timeout-quota>`. This option increases cost, but can be useful in special situations for long-running computations. This option is disabled by default. Note that "Always running" does not guarantee 100% uptime, because projects may occasionally be restarted for security and maintenance reasons.
+The **Always running** option prevents your project from being stopped for an :ref:`upg_idleto`. This option increases cost, but can be useful in special situations for long-running computations. This option is disabled by default. Note that "Always running" does not guarantee 100% uptime, because projects may occasionally be restarted for security and maintenance reasons.
 
 Dedicated CPU cores
 ^^^^^^^^^^^^^^^^^^^
 
 **Dedicated CPU cores** are cloud vCPU's not shared with other projects. You can enter a fractional value, such as 0.5 for half a dedicated core.
+
 
 Dedicated RAM
 ^^^^^^^^^^^^^
