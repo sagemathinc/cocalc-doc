@@ -30,6 +30,8 @@ CoCalc Logo
 
 |cocalc-logo| Clicking on the CoCalc logo at extreme left will take you to the cocalc.com home page.
 
+.. _project-list:
+
 ***************
 Project List
 ***************
