@@ -5,11 +5,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>unlink_passport &mdash; CoCalc Manual  documentation</title>
+  <title>get-purchases (Python example) &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/api/unlink_passport.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/api2/get-purchases.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -23,13 +23,13 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="user_auth" href="user_auth.html" />
-    <link rel="prev" title="touch_project" href="touch_project.html" />
+    <link rel="next" title="latex" href="latex.html" />
+    <link rel="prev" title="directory-listing" href="directory-listing.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/api/unlink_passport.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/api2/get-purchases.html"/>
   
 
 </head>
@@ -121,56 +121,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">API v1</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="index.html#purpose">Purpose</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#protocol-and-data-format">Protocol and Data Format</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#authentication">Authentication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#additional-references">Additional References</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#api-message-reference">API Message Reference</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="add_collaborator.html">add_collaborator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="add_license_to_project.html">add_license_to_project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="change_email_address.html">change_email_address</a></li>
-<li class="toctree-l3"><a class="reference internal" href="change_password.html">change_password</a></li>
-<li class="toctree-l3"><a class="reference internal" href="copy_path_between_projects.html">copy_path_between_projects</a></li>
-<li class="toctree-l3"><a class="reference internal" href="copy_path_delete.html">copy_path_delete</a></li>
-<li class="toctree-l3"><a class="reference internal" href="copy_path_status.html">copy_path_status</a></li>
-<li class="toctree-l3"><a class="reference internal" href="copy_public_path_between_projects.html">copy_public_path_between_projects</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_account.html">create_account</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_project.html">create_project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_support_ticket.html">create_support_ticket</a></li>
-<li class="toctree-l3"><a class="reference internal" href="delete_account.html">delete_account</a></li>
-<li class="toctree-l3"><a class="reference internal" href="disconnect_from_project.html">disconnect_from_project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="forgot_password.html">forgot_password</a></li>
-<li class="toctree-l3"><a class="reference internal" href="get_available_upgrades.html">get_available_upgrades</a></li>
-<li class="toctree-l3"><a class="reference internal" href="get_support_tickets.html">get_support_tickets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="get_usernames.html">get_usernames</a></li>
-<li class="toctree-l3"><a class="reference internal" href="invite_collaborator.html">invite_collaborator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="invite_noncloud_collaborators.html">invite_noncloud_collaborators</a></li>
-<li class="toctree-l3"><a class="reference internal" href="log_client_error.html">log_client_error</a></li>
-<li class="toctree-l3"><a class="reference internal" href="metrics.html">metrics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ping.html">ping</a></li>
-<li class="toctree-l3"><a class="reference internal" href="project_exec.html">project_exec</a></li>
-<li class="toctree-l3"><a class="reference internal" href="public_get_text_file.html">public_get_text_file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="query.html">query</a></li>
-<li class="toctree-l3"><a class="reference internal" href="read_text_file_from_project.html">read_text_file_from_project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="remove_collaborator.html">remove_collaborator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="remove_license_from_project.html">remove_license_from_project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="reset_forgot_password.html">reset_forgot_password</a></li>
-<li class="toctree-l3"><a class="reference internal" href="start_metrics.html">start_metrics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="touch_project.html">touch_project</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">unlink_passport</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_auth.html">user_auth</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_search.html">user_search</a></li>
-<li class="toctree-l3"><a class="reference internal" href="write_text_file_to_project.html">write_text_file_to_project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#api-examples-howto">API Examples &amp; Howto</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API v2</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#get-an-api-key">Get an API Key</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#api-v2-endpoints">API v2 Endpoints</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="directory-listing.html">directory-listing</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">get-purchases (Python example)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="latex.html">latex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stop.html">stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user-query.html">user-query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="email-address-from-account-id.html">email-address-from-account-id</a></li>
+<li class="toctree-l3"><a class="reference internal" href="purchasing-licenses.html">purchasing licenses</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#copy-a-file-between-projects">Copy a file between projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#embedding-in-an-iframe">Embedding in an IFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#iframe-communication">IFrame communication</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-cloud.html">CoCalc Cloud</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
@@ -196,8 +161,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">API v1</a></li>
-      <li class="breadcrumb-item active">unlink_passport</li>
+          <li class="breadcrumb-item"><a href="index.html">API v2</a></li>
+      <li class="breadcrumb-item active">get-purchases (Python example)</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -214,47 +179,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="unlink-passport">
-<h1>unlink_passport<a class="headerlink" href="#unlink-passport" title="Permalink to this heading"></a></h1>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">strategy</span></code>: passport strategy (required)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>: numeric id for user and passport strategy (required)</p></li>
-</ul>
-<p>Unlink a passport auth for the account.</p>
-<p>Strategies are defined in the database and may be viewed at
-<a class="reference external" href="https://cocalc.com/auth/strategies">/auth/strategies</a>.</p>
-<p>Example:</p>
-<p>Get passport id for some strategy for current user.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
-  -H &quot;Content-Type: application/json&quot; \
-  -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;e6993694-820d-4f78-bcc9-10a8e336a88d&quot;,&quot;passports&quot;:null}}}&#39; \
-  https://cocalc.com/api/v1/query
-==&gt; {&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;e6993694-820d-4f78-bcc9-10a8e336a88d&quot;,
-                          &quot;passports&quot;:{&quot;facebook-14159265358&quot;:{&quot;id&quot;:&quot;14159265358&quot;,...}}}},
-     &quot;multi_response&quot;:false,
-     &quot;event&quot;:&quot;query&quot;,
-     &quot;id&quot;:&quot;a2554ec8-665b-495b-b0e2-8e248b54eb94&quot;}
+  <section id="get-purchases-python-example">
+<h1>get-purchases (Python example)<a class="headerlink" href="#get-purchases-python-example" title="Permalink to this heading"></a></h1>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">get-purchases</span></code> endpoint to get purchases made by the owner of the <a class="reference internal" href="index.html#get-api-key"><span class="std std-ref">API key</span></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">requests.auth</span> <span class="kn">import</span> <span class="n">HTTPBasicAuth</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">pprint</span>
+<span class="n">pp</span> <span class="o">=</span> <span class="n">pprint</span><span class="o">.</span><span class="n">PrettyPrinter</span><span class="p">()</span>
+
+<span class="n">api_key</span><span class="o">=</span><span class="s1">&#39;YOUR_API_KEY&#39;</span>
+
+<span class="n">query_str</span> <span class="o">=</span> <span class="s1">&#39;{&quot;offset&quot;:2, &quot;limit&quot;:1}&#39;</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">adapters</span><span class="o">.</span><span class="n">HTTPAdapter</span><span class="p">(</span><span class="n">max_retries</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;https://&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://cocalc.com/api/v2/purchases/get-purchases&#39;</span>
+<span class="n">auth</span> <span class="o">=</span> <span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="n">api_key</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;content-type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">}</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="n">auth</span><span class="o">=</span><span class="n">auth</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">query_str</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">,</span> \
+  <span class="sa">f</span><span class="s1">&#39;bad status code </span><span class="si">{</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="n">pp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
 </pre></div>
 </div>
-<p>Unlink passport for that strategy and id.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
-  -d strategy=facebook \
-  -d id=14159265358 \
-  https://cocalc.com/api/v1/unlink_passport
-==&gt; {&quot;event&quot;:&quot;success&quot;,
-     &quot;id&quot;:&quot;14159265358&quot;}
+<p>Sample output (not for a real project ID):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s1">&#39;cost&#39;</span><span class="p">:</span> <span class="mf">0.017470052</span><span class="p">,</span>
+  <span class="s1">&#39;cost_per_hour&#39;</span><span class="p">:</span> <span class="mf">0.05464481</span><span class="p">,</span>
+  <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;project_id&#39;</span><span class="p">:</span> <span class="s1">&#39;d0381938-38be-11ee-9202-2ae9a0a47fef&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;quota&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;cost&#39;</span><span class="p">:</span> <span class="mf">0.0546448087431694</span><span class="p">,</span>
+                            <span class="s1">&#39;disk_quota&#39;</span><span class="p">:</span> <span class="mi">3000</span><span class="p">,</span>
+                            <span class="s1">&#39;enabled&#39;</span><span class="p">:</span> <span class="mi">1691447836428</span><span class="p">,</span>
+                            <span class="s1">&#39;member_host&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                            <span class="s1">&#39;memory&#39;</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span>
+                            <span class="s1">&#39;network&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                            <span class="s1">&#39;start&#39;</span><span class="p">:</span> <span class="mi">1691447837010</span><span class="p">},</span>
+                  <span class="s1">&#39;start&#39;</span><span class="p">:</span> <span class="mi">1691447837010</span><span class="p">,</span>
+                  <span class="s1">&#39;stop&#39;</span><span class="p">:</span> <span class="mi">1691448987937</span><span class="p">,</span>
+                  <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;project-upgrade&#39;</span><span class="p">},</span>
+  <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">427</span><span class="p">,</span>
+  <span class="s1">&#39;invoice_id&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+  <span class="s1">&#39;notes&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+  <span class="s1">&#39;pending&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+  <span class="s1">&#39;period_end&#39;</span><span class="p">:</span> <span class="s1">&#39;2023-08-07T22:56:27.937Z&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;period_start&#39;</span><span class="p">:</span> <span class="s1">&#39;2023-08-07T22:37:17.010Z&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;project_id&#39;</span><span class="p">:</span> <span class="s1">&#39;d0381938-38be-11ee-9202-2ae9a0a47fef&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;service&#39;</span><span class="p">:</span> <span class="s1">&#39;project-upgrade&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="s1">&#39;2023-08-07T22:37:17.011Z&#39;</span><span class="p">}]</span>
 </pre></div>
 </div>
-<p>Note that success is returned regardless of whether or not passport was
-linked for the given strategy and id before issuing the API command.</p>
+<p>You can learn more about this endpoint by viewing the <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/next/pages/api/v2/purchases/get-purchases.ts">source code</a>.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="touch_project.html" class="btn btn-neutral float-left" title="touch_project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="user_auth.html" class="btn btn-neutral float-right" title="user_auth" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="directory-listing.html" class="btn btn-neutral float-left" title="directory-listing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="latex.html" class="btn btn-neutral float-right" title="latex" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -272,7 +254,7 @@ linked for the given strategy and id before issuing the API command.</p>
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api/unlink_passport.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/api2/get-purchases.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!

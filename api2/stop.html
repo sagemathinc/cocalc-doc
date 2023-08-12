@@ -14,7 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -124,6 +125,7 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#get-an-api-key">Get an API Key</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#api-v2-endpoints">API v2 Endpoints</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="directory-listing.html">directory-listing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-purchases.html">get-purchases (Python example)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="latex.html">latex</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user-query.html">user-query</a></li>
@@ -180,15 +182,15 @@
   <section id="stop">
 <h1>stop<a class="headerlink" href="#stop" title="Permalink to this heading"></a></h1>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">stop</span></code> endpoint to stop a CoCalc project, given its project_id. Note that this endpoint is in the <code class="docutils literal notranslate"><span class="pre">v2/projects/</span></code> subdirectory. The user must be signed in and must be an owner or collaborator on the project.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span><span class="w"> </span><span class="c1"># your API key</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
 
 <span class="c1"># project_id of the project you want to stop</span>
 <span class="nv">p</span><span class="o">=</span><span class="s1">&#39;304506b4-262e-11ed-a279-2f22f36cbe91&#39;</span>
 
-curl<span class="w"> </span>-sk<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-u<span class="w"> </span><span class="nv">$x</span>:<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="nv">project_id</span><span class="o">=</span><span class="nv">$p</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://cocalc.com/api/v2/projects/stop
+curl -sk <span class="se">\</span>
+  -u <span class="nv">$x</span>: <span class="se">\</span>
+  -d <span class="nv">project_id</span><span class="o">=</span><span class="nv">$p</span> <span class="se">\</span>
+  https://cocalc.com/api/v2/projects/stop
 
 <span class="c1">### project will be stopped; normal output is a pair of braces</span>
 <span class="o">{}</span>

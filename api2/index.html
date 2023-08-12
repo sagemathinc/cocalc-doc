@@ -14,7 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -124,6 +125,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#get-an-api-key">Get an API Key</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#api-v2-endpoints">API v2 Endpoints</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="directory-listing.html">directory-listing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-purchases.html">get-purchases (Python example)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="latex.html">latex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stop.html">stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user-query.html">user-query</a></li>
@@ -178,8 +180,6 @@
              
   <section id="api-v2">
 <span id="index-0"></span><h1>API v2<a class="headerlink" href="#api-v2" title="Permalink to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-</div>
 <p>With API Version 2, the CoCalc API is being improved and expanded.</p>
 <p>Source code for the API v2 implemention is in the <a class="reference external" href="https://github.com/sagemathinc/cocalc/tree/master/src/packages/next/pages/api/v2">CoCalc public GitHub repository under src/packages/next/pages/api/v2</a>. Each “.ts” file under the <code class="docutils literal notranslate"><span class="pre">v2</span></code> directory corresponds to an endpoint in the new API. For example, the “stop” endpoint, which allows you to stop a project, has source code at <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/next/pages/api/v2/projects/stop.ts">https://github.com/sagemathinc/…/api/v2/projects/stop.ts</a> and is called with the URL <a class="reference external" href="https://cocalc.com/api/v2/projects/stop">https://cocalc.com/api/v2/projects/stop</a>.</p>
 <div class="admonition note">
@@ -187,7 +187,7 @@
 <p>For security reasons, <strong>API v2 calls must be made with the POST method</strong>. This policy supersedes any comments about the availability of GET that may appear in the source code.</p>
 </div>
 <section id="get-an-api-key">
-<h2>Get an API Key<a class="headerlink" href="#get-an-api-key" title="Permalink to this heading"></a></h2>
+<span id="get-api-key"></span><h2>Get an API Key<a class="headerlink" href="#get-an-api-key" title="Permalink to this heading"></a></h2>
 <p>To get started with API v2, you will need a CoCalc account and an API key for that account. Visit the link <a class="reference external" href="https://cocalc.com/config/account/api">Account - API Key</a> under your account settings to create and view your API key. A CoCalc API key will be a text string beginning with the symbols “sk_”</p>
 </section>
 <section id="api-v2-endpoints">
@@ -197,6 +197,7 @@
 <p class="caption" role="heading"><span class="caption-text">API v2 General-Purpose Endpoints</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="directory-listing.html">directory-listing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get-purchases.html">get-purchases (Python example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="latex.html">latex</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stop.html">stop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-query.html">user-query</a></li>

@@ -5,9 +5,6 @@
 API v2
 =========================
 
-.. toctree::
-   :caption: API v2 Endpoints
-   :maxdepth: 1
 
 With API Version 2, the CoCalc API is being improved and expanded.
 
@@ -16,6 +13,8 @@ Source code for the API v2 implemention is in the `CoCalc public GitHub reposito
 .. note::
 
     For security reasons, **API v2 calls must be made with the POST method**. This policy supersedes any comments about the availability of GET that may appear in the source code.
+
+.. _get_api_key:
 
 ################################
 Get an API Key
@@ -34,6 +33,7 @@ The remainder of this guide descsribes individual API v2 endpoints.
    :maxdepth: 1
 
    directory-listing
+   get-purchases
    latex
    stop
    user-query

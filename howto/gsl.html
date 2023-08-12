@@ -14,7 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -169,12 +170,12 @@ GSL, the <a class="reference external" href="https://www.gnu.org/software/gsl/do
 <p>This example shows how to compile and run code from their documentation on CoCalc.
 We take their <a class="reference external" href="https://www.gnu.org/software/gsl/manual/html_node/Monte-Carlo-Examples.html">Monte Carlo Integration</a> example, which you can also see <a class="reference external" href="https://cocalc.com/share/public_paths/fd0f904c3c8e3f31a2a7ea494d5cefc3a38f6df4">here</a>.</p>
 <p>It starts like that:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_math.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte_miser.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte_plain.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte_vegas.h&gt;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_math.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte_miser.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte_plain.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gsl/gsl_monte_vegas.h&gt;</span><span class="cp"></span>
 
 
 <span class="cm">/* Computation of the integral,</span>
@@ -186,21 +187,21 @@ We take their <a class="reference external" href="https://www.gnu.org/software/g
 <span class="cm">   C.Itzykson, J.M.Drouffe, &quot;Statistical Field Theory -</span>
 <span class="cm">   Volume 1&quot;, Section 1.1, p21, which cites the original</span>
 <span class="cm">   paper M.L.Glasser, I.J.Zucker, Proc.Natl.Acad.Sci.USA 74</span>
-<span class="cm">   1800 (1977) */</span>
+<span class="cm">   1800 (1977) */</span><span class="w"></span>
 
 <span class="cm">/* For simplicity we compute the integral over the region</span>
-<span class="cm">   (0,0,0) -&gt; (pi,pi,pi) and multiply by 8 */</span>
+<span class="cm">   (0,0,0) -&gt; (pi,pi,pi) and multiply by 8 */</span><span class="w"></span>
 
-<span class="kt">double</span><span class="w"> </span><span class="n">exact</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.3932039296856768591842462603255</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">exact</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.3932039296856768591842462603255</span><span class="p">;</span><span class="w"></span>
 
-<span class="kt">double</span><span class="w"> </span><span class="nf">g</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="o">*</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">dim</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)(</span><span class="n">dim</span><span class="p">);</span><span class="w"> </span><span class="cm">/* avoid unused parameter warnings */</span>
-<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)(</span><span class="n">params</span><span class="p">);</span>
-<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="p">);</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mf">1.0</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span>
-<span class="p">}</span>
+<span class="kt">double</span><span class="w"> </span><span class="nf">g</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="o">*</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="n">dim</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)(</span><span class="n">dim</span><span class="p">);</span><span class="w"> </span><span class="cm">/* avoid unused parameter warnings */</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="kt">void</span><span class="p">)(</span><span class="n">params</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mf">1.0</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">k</span><span class="p">[</span><span class="mi">2</span><span class="p">]));</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="p">[...]</span>
+<span class="p">[...]</span><span class="w"></span>
 </pre></div>
 </div>
 <p>First, create a file <code class="docutils literal notranslate"><span class="pre">test.c</span></code> and paste that code there.

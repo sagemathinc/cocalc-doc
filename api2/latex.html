@@ -14,7 +14,8 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -23,7 +24,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="stop" href="stop.html" />
-    <link rel="prev" title="directory-listing" href="directory-listing.html" />
+    <link rel="prev" title="get-purchases (Python example)" href="get-purchases.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -124,6 +125,7 @@
 <li class="toctree-l2"><a class="reference internal" href="index.html#get-an-api-key">Get an API Key</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#api-v2-endpoints">API v2 Endpoints</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="directory-listing.html">directory-listing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-purchases.html">get-purchases (Python example)</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">latex</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stop.html">stop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user-query.html">user-query</a></li>
@@ -184,16 +186,16 @@ temporarily as a blob in CoCalc’s PostgreSQL database. The tmp files used
 for compilation are cleaned up. You can specify a <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in the
 API call, or leave that off and your most recent project gets used
 automatically (or a new one created). By default the compilation uses “latexmk” with certain options, but you can specify a custom <code class="docutils literal notranslate"><span class="pre">command</span></code> parameter to convert the tex to pdf.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span><span class="w"> </span><span class="c1"># your API key</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
 
 <span class="c1"># c is the latex document as a text string</span>
 <span class="nv">c</span><span class="o">=</span><span class="s1">&#39;\documentclass{article}\begin{document}\section{Main Section}Hello.\end{document}&#39;</span>
 
-curl<span class="w"> </span>-sk<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-u<span class="w"> </span><span class="nv">$x</span>:<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="nv">path</span><span class="o">=</span>/tmp/d.tex<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="nv">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>https://cocalc.com/api/v2/latex<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.url&#39;</span>
+curl -sk <span class="se">\</span>
+  -u <span class="nv">$x</span>: <span class="se">\</span>
+  -d <span class="nv">path</span><span class="o">=</span>/tmp/d.tex <span class="se">\</span>
+  -d <span class="nv">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span> <span class="se">\</span>
+  https://cocalc.com/api/v2/latex <span class="p">|</span> jq <span class="s1">&#39;.url&#39;</span>
 
 <span class="nb">echo</span>
 
@@ -209,7 +211,7 @@ curl<span class="w"> </span>-sk<span class="w"> </span><span class="se">\</span>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="directory-listing.html" class="btn btn-neutral float-left" title="directory-listing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="get-purchases.html" class="btn btn-neutral float-left" title="get-purchases (Python example)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="stop.html" class="btn btn-neutral float-right" title="stop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
