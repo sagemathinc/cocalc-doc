@@ -8,7 +8,7 @@ Account Toolbar
 
 .. note::
 
-   A newer version of this menu is available if you click the CoCalc logo at upper left and then hover your cursor over "Account" at upper right. See :doc:`Account Dropdown Menu <account-dropdown>` for more information.
+   A different version of this menu is available if you click the CoCalc logo at upper left and then hover your cursor over "Account" at upper right. See :doc:`Account Dropdown Menu <account-dropdown>` for more information.
 
 Here’s a description of the Account toolbar. It appears after Project list has been selected after clicking "Account" at upper right.
 

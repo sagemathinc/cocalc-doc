@@ -6,6 +6,11 @@
 Account Dropdown Menu
 ====================================
 
+.. note::
+
+   A different view of your account is available if you open the :ref:`project-list` and click "Account", or visit http://cocalc.com/settings. See :doc:`account-toolbar` for more information.
+
+
 The Account Dropdown Menu appears when you click "Account" at upper right after signing in or after clicking the CoCalc logo at upper left.
 
 .. toctree::
