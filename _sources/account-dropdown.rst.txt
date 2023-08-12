@@ -6,7 +6,7 @@
 Account Dropdown Menu
 ====================================
 
-The Account Dropdown Menu appears when you click "Account" at upper right in the top navigation bar that appears just after signing in.
+The Account Dropdown Menu appears when you click "Account" at upper right after signing in or after clicking the CoCalc logo at upper left.
 
 .. toctree::
    :maxdepth: 2
