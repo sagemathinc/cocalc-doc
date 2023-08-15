@@ -6,15 +6,20 @@
 Account Toolbar
 ========================
 
-.. note::
-
-   A different version of this menu is available if you click the CoCalc logo at upper left and then hover your cursor over "Account" at upper right. See :doc:`Account Dropdown Menu <account-dropdown>` for more information.
+Here's a tour of the Account toolbar in CoCalc.
 
 .. contents::
    :local:
    :depth: 1
 
-Here’s a description of the Account toolbar. It appears after Project list has been selected after clicking "Account" at upper right.
+.. note::
+
+   A different arrangement of account configuration is available if you click the CoCalc logo at upper left and then hover your cursor over "Account" at upper right. See :doc:`Account Dropdown Menu <account-dropdown>` for more information.
+
+To open the Account toolbar, first open the :ref:`project-list`, then click "Account" at upper right. You can also open the Account toolbar by browsing to https://cocalc.com/settings
+
+Contents of the Account toolbar
+===============================
 
 Your account on CoCalc is everything related to your current identity.
 Your identity gives you access to your :doc:`Projects <project>`, where you can either be an owner or collaborator.
@@ -28,19 +33,19 @@ an overview about how your upgrades are currently distributed.
      :align: center
      :alt: actions in the Account toolbar
 
-.. index:: Sign out of CoCalc; from Account tab
-.. _sign-out:
-
-Under "Account" you will find a button to ``Sign out`` at upper right, and the following sections for managing your account.
-
 
 * :doc:`account/preferences`
-
-
 * :ref:`account-purchases`
 * :doc:`account/upgrades`
 * :doc:`account/ssh`
 * :doc:`account/support`
 * :doc:`account/public-files`
 
+.. index:: Sign out of CoCalc; from Account tab
+.. _sign-out:
+
+Signing out of CoCalc
+=====================
+
+Under "Account" you will find a button to ``Sign out`` at upper right.
 
