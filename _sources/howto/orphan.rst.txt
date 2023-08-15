@@ -52,4 +52,17 @@
    parallel
    ../project-list
    ../platform-news
+   ../account/licenses
+   ../account/preferences
+   ../account/public-files
+   ../account/purchases
+   ../account/ssh
+   ../account/support
+   ../account/upgrades
+
+
+
+
+
+
 
