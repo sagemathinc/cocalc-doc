@@ -4,6 +4,12 @@
 Upgrades
 =============================
 
+.. contents::
+   :local:
+   :depth: 1
+
+This article describes the different upgrades that are available for a CoCalc project.
+
 After opening a project, you can view resource quotas for the project and add or remove licenses. Click "Upgrades" in the :doc:`activity-bar` for this feature.
 
 
@@ -14,10 +20,7 @@ After opening a project, you can view resource quotas for the project and add or
 
      upgrades pane
 
-.. contents::
-   :local:
-   :depth: 1
-
+For billing information, see :ref:`upgrades-faq`.
 
 .. _upg_mhost:
 

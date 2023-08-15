@@ -36,7 +36,7 @@ an overview about how your upgrades are currently distributed.
 
 * :doc:`account/preferences`
 * :ref:`account-purchases`
-* :doc:`account/upgrades`
+* :doc:`upgrades`
 * :doc:`account/ssh`
 * :doc:`account/support`
 * :doc:`account/public-files`
