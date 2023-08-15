@@ -5,6 +5,11 @@
 Purchases
 ==================================
 
+.. contents::
+   :local:
+   :depth: 1
+
+
 To view the Purchases panel, first open the :ref:`project-list`, then click "Account" at upper right, then "Purchases". You can also view the Purchases panel by browsing to https://cocalc.com/settings/purchases
 
 Account Balance
@@ -19,7 +24,10 @@ Account Balance
 
 Account balance information is displayed in the upper part of the Purchases panel.
 
-Note the "Enable Automatic Payments" button at upper left. Clicking it to enable, click again to disable automatic payments.
+Enable/Disable Automatic Payments
+==================================
+
+Note the "Enable Automatic Payments" button at upper left. Click it to enable, click again to disable automatic payments.
 
 .. figure:: img/enable-auto-pay.png
      :width: 100%
@@ -127,3 +135,7 @@ The "Invoices and receipts" section shows a list of CoCalc purchases made using 
 
      view of receipts showing details for each item
 
+API v2 endpoint
+=================
+
+If you're interested in automating access to purchase data, see the `API v2 endpoint to get purchases <https://doc.cocalc.com/api2/get-purchases.html>`_.

@@ -4,6 +4,10 @@ get-purchases (Python example)
 
 Use the ``get-purchases`` endpoint to get purchases made by the owner of the :ref:`API key <get_api_key>`.
 
+Note that the API v2 path has an additional node "purchases", so that the full URL for the endpoint is `https://cocalc.com/api/v2/purchases/get-purchases`
+
+See :doc:`../account/purchases` for the user interface corresponding to this API call.
+
 .. code:: python
 
     import requests
