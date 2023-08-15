@@ -26,7 +26,7 @@ To get started with API v2, you will need a CoCalc account and an API key for th
 API v2 Endpoints
 ################################
 
-The remainder of this guide descsribes individual API v2 endpoints.
+The remainder of this guide describes individual API v2 endpoints.
 
 .. toctree::
    :caption: API v2 General-Purpose Endpoints
