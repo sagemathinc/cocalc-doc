@@ -58,7 +58,7 @@
    ../account/purchases
    ../account/ssh
    ../account/support
-   ../account/upgrades
+
 
 
 
