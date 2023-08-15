@@ -126,7 +126,7 @@ For **Period**, specify when your license is to be active. There are discounts f
 
 Use any descriptive text you want for **Title** and **Description**. You can easily change these later.
 
-**Cost** displays the total cost of the license. There is indeed a 25% discount for direct payment if you buy with a credit card using the form.
+**Cost** displays the total cost of the license.
 
 Select **Purchase** if you are ready to buy a license with a credit card immediately.
 

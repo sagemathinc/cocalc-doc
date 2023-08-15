@@ -1,23 +1,47 @@
-
+.. index:: Account Purchases
 .. _account-purchases:
 
 ==================================
 Purchases
 ==================================
 
-.. figure:: img/settings/subscr-select.png
-     :width: 90%
+To view the Purchases panel, first open the :ref:`project-list`, then click "Account" at upper right, then "Purchases". You can also view the Purchases panel by browsing to https://cocalc.com/settings/purchases
+
+Account Balance
+================
+
+.. figure:: img/purch01.png
+     :width: 100%
      :align: center
-     :alt: purchases tab when there are no active subscriptions
+     :alt: top of purchases panel
 
-     order form displays if no subscriptions are active
+     top of purchases panel
 
-.. figure:: img/settings/subscr-display.png
-     :width: 90%
+Account balance information is displayed in the upper part of the Purchases panel.
+
+Note the "Enable Automatic Payments" button at upper left. Clicking it to enable, click again to disable automatic payments.
+
+.. figure:: img/enable-auto-pay.png
+     :width: 100%
      :align: center
-     :alt: purchases tab when there are active subscriptions
+     :alt: enable auto pay pop-up
 
-     active subscriptions, if present, are displayed
+     enable auto pay
+
+If you click "Enable Automatic Payments", you may get a pop-up screen presenting a Stripe checkout session where you can enter payment information.
+
+
+Transactions, Limits, and Plots
+================================
+
+.. figure:: img/purch02.png
+     :width: 100%
+     :align: center
+     :alt: bottom of purchases panel
+
+     bottom of purchases panel
+     
+Several views of transactions for your account are available in the lower part of the Purchases panel.
 
 .. index:: Account Tab; payment methods
 .. _payment-methods:
