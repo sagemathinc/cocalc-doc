@@ -108,7 +108,7 @@ collaboratively and to generate a stable revenue source to hire full-time develo
 Internet Access
 ---------------------
 
-The Internet Access upgrade allows outgoing internet connections and outbound email from a project. See :ref:`Network access <network-access>` for details.
+The Internet Access upgrade allows outgoing internet connections and outbound email from a project. See :ref:`Network access <upg_net>` for details.
 
 .. index:: pair: Trial Projects; Member Hosting
 
@@ -116,7 +116,7 @@ Member Hosting
 ---------------------
 
 Servers hosting trial projects have fewer compute resources and a higher project load than members-only servers.
-See :ref:`Member Hosting <member-hosting>` for details.
+See :ref:`Member Hosting <upg_mhost>` for details.
 
 Better support
 ---------------------

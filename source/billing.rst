@@ -2,7 +2,6 @@
     Billing
     Upgrades
     Pricing
-    Quotas
     FAQ; Billing
     FAQ; Subscription
 
@@ -81,50 +80,4 @@ Please contact help@cocalc.com with all relevant details about your intended pur
 Quota upgrades
 #########################
 
-.. index::
-    Quotas; Member hosting
-
-.. _member-hosting:
-
-***********************************************************
-What is **"member hosting"**?
-***********************************************************
-
-See :ref:`upg_mhost`.
-
-
-.. index::
-    Quotas; Network access
-
-.. _network-access:
-
-***********************************************************
-What exactly is the **"network access"** quota?
-***********************************************************
-
-See :ref:`upg_net`.
-
-Enable internet access by adding the "internet access" quota.
-
-
-.. _idle-timeout-quota:
-.. index::
-    Quotas; Idle timeout
-    Idle Timeout; quota
-
-***********************************************************
-What exactly is the **"idle timeout"** quota?
-***********************************************************
-
-See :ref:`upg_idleto`.
-
-.. _cpu-shares:
-.. index::
-    Quotas; CPU
-
-***********************************************************
-What are **Shared CPUs / vCPUs**?
-***********************************************************
-
-See :ref:`upg_cpu`
-
+For more information about specific quota upgrades, see :doc:`upgrades`

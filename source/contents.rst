@@ -74,6 +74,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    processes
    project-settings
    account-toolbar
+   account/purchases
    billing
    software
    ipad
