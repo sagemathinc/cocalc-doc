@@ -58,4 +58,5 @@
    ../account/purchases
    ../account/ssh
    ../account/support
+   ../update-credit-card
 
