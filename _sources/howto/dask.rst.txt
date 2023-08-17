@@ -72,9 +72,10 @@ Connect with a client
         client = Client('127.0.0.1:8786')
         client
 
-   .. figure:: https://storage.googleapis.com/cocalc-extra/dask-client.png
+   .. image:: https://storage.googleapis.com/cocalc-extra/dask-client.png
               :width: 50%
               :align: center
+              :alt: dask example
 
 If that worked, congratulations! You can start submitting tasks to your little cluster!
 
