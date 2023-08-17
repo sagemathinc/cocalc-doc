@@ -75,6 +75,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    project-settings
    account-toolbar
    account/purchases
+   update-credit-card
    billing
    software
    ipad
