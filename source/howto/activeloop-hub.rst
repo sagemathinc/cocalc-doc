@@ -5,7 +5,7 @@ Getting Started with Hub
 ========================
 
 .. image:: img/hub_logo.png
-
+     :alt: hub logo
 
 What is Hub?
 ~~~~~~~~~~~~

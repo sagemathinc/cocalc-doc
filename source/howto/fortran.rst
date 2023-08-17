@@ -42,8 +42,11 @@ Here is an `example worksheet <https://cocalc.com/share/public_paths/65db906b3df
 
 .. image:: img/fortranmagic-1.png
     :width: 75%
+    :alt: fortran example 1
 
 2. Using it in a plot:
 
 .. image:: img/fortranmagic-2.png
     :width: 75%
+    :alt: fortran example 2
+
