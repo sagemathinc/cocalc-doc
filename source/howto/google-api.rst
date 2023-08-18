@@ -22,6 +22,7 @@ You don't need to open the sample data in Google Sheets to run the program, but 
 
 .. image:: img/example-spreadsheet.png
      :width: 60%
+     :alt: example spreadsheet
 
 The python program is provided by Google and runs under Python 2 and Python 3.
 
@@ -34,21 +35,25 @@ Now that you have a Google account, browse to the `Python Quickstart`_ page at G
 
 .. image:: img/enable-sheets-api.png
      :width: 50%
+     :alt: enable sheets api
 
 In the pop-up dialog, select ``+ Create a new project``:
 
 .. image:: img/create-project.png
      :width: 50%
+     :alt: create project
 
 Give the project a name:
 
 .. image:: img/project-name.png
      :width: 50%
+     :alt: name project
 
 Click ``DOWNLOAD CLIENT CONFIGURATION`` to copy file `credentials.json` to your computer.
 
 .. image:: img/download-config.png
      :width: 50%
+     :alt: download config
 
 Upload Python script and credentials to CoCalc
 ----------------------------------------------
@@ -59,6 +64,7 @@ You can create a folder by typing its name in the Files search box, appending a 
 
 .. image:: img/create-folder.png
      :width: 50%
+     :alt: create folder
 
 Click ``(+) New`` (upper left) or ``Upload`` (upper right) to upload the `credentials.json` file from your computer into the new folder.
 
@@ -70,6 +76,7 @@ Paste the above link into the ``(+) New`` dialog in the CoCalc Files screen:
 
 .. image:: img/upload-py.png
      :width: 50%
+     :alt: upload script
 
 Open the .py file.
 Split the view vertically.
@@ -77,11 +84,13 @@ Note that the two panes can be scrolled separately.
 
 .. image:: img/split-py.png
      :width: 70%
+     :alt: split the view
 
 Change the second pane to a command line terminal and do ``ls`` to list files in the folder:
 
 .. image:: img/split-ls.png
      :width: 70%
+     :alt: ls comment in the terminal pane
 
 First run: OAuth2 authentication
 --------------------------------
@@ -97,18 +106,21 @@ The program will print a message saying **Go to the following link...**:
 
 .. image:: img/go-to-link.png
      :width: 50%
+     :alt: go to link
 
 Copy that link from the terminal output. Open a new browser tab and paste it in, and visit that link. If you have more than one Google account, choose the same account you used when creating your `credentials.json` file.
 Log into your Google account when you are prompted to do so. You will see a ``Sign in`` confirmation message with a code to be copied:
 
 .. image:: img/oauth-sign-in.png
      :width: 50%
+     :alt: sign in
 
 Click the icon to copy the code to your clipboard. Then paste it into the CoCalc terminal session that is waiting for it and hit Enter.
 After a few seconds, you will see the selected columns of sample data:
 
 .. image:: img/verify.png
      :width: 40%
+     :alt: verify
 
 Second and later runs
 ---------------------
@@ -121,13 +133,14 @@ In the terminal pane, again type ``ls`` and see that there is now a `token.json`
 
 .. image:: img/second-run.png
      :width: 50%
+     :alt: second run
 
-Python 3 compatibility
+Python 2 compatibility
 ----------------------
 
-The script provided by Google is compatible with current versions of both Python 2 and Python 3. 
-The default ``python`` command in the CoCalc terminal runs Python 2.
-Use ``python3`` at the command line to run quickstart.py with Python 3 compatible versions of the imported modules.
+The script provided is compatible with current versions of both Python 2 and Python 3. 
+The default ``python`` command in the CoCalc terminal runs Python 3.
+Use ``python2`` at the command line to run quickstart.py with Python 2 compatible versions of the imported modules.
 
 For further study
 -----------------
