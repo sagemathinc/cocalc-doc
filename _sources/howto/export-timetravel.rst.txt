@@ -23,6 +23,7 @@ Click the Export button with :doc:`TimeTravel <../time-travel>` open.
 .. figure:: img/tt-export-button.png
      :width: 100%
      :align: center
+     :alt: about to export
 
      about to export TimeTravel data
 
@@ -31,6 +32,7 @@ A JSON file is saved with timestamp, author, and patch length of each change.
 .. figure:: img/tt-exported-json.png
      :width: 100%
      :align: center
+     :alt: resulting json
 
      the resulting JSON file
 
@@ -72,6 +74,7 @@ If the project API is used to export TimeTravel, contents of the patches as well
 .. figure:: img/tt-export-api.png
      :width: 100%
      :align: center
+     :alt: complete example
 
      TimeTravel export with project API, showing patch contents
 
