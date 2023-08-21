@@ -42,6 +42,54 @@ You can launch a short introduction to CoCalc's support for ChatGPT by clicking 
 
       ChatGPT tour
 
+.. _gpt-versions:
+
+####################################
+GPT-3.5 and GPT-4
+####################################
+
+CoCalc makes three different versions of ChatGPT available. The options are displayed whenever you ask ChatGPT something. Here is an example showing the choices when ChatGPT is asked to ``Explain`` a code block in a Jupyter notebook:
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+GPT-3.5
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+The first option is OpenAI's fastest model, GPT-3.5 with 4k token context. It is offered in CoCalc free of charge and sufficient for most everyday tasks.
+
+   .. figure:: img/explain2.png
+      :width: 90%
+      :align: center
+      :alt: GPT-3.5 (4k)
+
+      GPT-3.5 (4k token context)
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+GPT-3.5-16k
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+The GPT-3.5-16k model is the same as GPT-3.5, but with much larger context size (16k token context).
+
+   .. figure:: img/explain3.png
+      :width: 90%
+      :align: center
+      :alt: GPT-3.5 (16k)
+
+      GPT-3.5-16k
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+GPT-4
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+GPT-4 is OpenAI's most capable model, great for tasks that require creativity and advanced reasoning (8k token context). GPT4 is generally considerably slower than either of the GPT-3.5 options.
+
+   .. figure:: img/explain4.png
+      :width: 90%
+      :align: center
+      :alt: GPT-4
+
+      GPT-4
+
+
 ###################################
 Jupyter Notebooks
 ###################################
@@ -233,6 +281,12 @@ In a :doc:`chat room <chat>` or in the :ref:`side chat <side-chat>` next to an o
    :alt: @-mention help with latex
 
    @-mention help with latex
+
+########################################
+GPT-4 in CoCalc Courses
+########################################
+
+See: :doc:`gpt4-course`.
 
 ########################################
 CoCalc Admins: add ChatGPT to your site
