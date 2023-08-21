@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPT4 with Courses &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/gpt4-course.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Jupyter Notebooks" href="jupyter.html" />
+    <link rel="prev" title="ChatGPT" href="chatgpt.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/gpt4-course.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paygo.html">Pay-As-You-Go Purchase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news.html">CoCalc News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chatgpt.html">ChatGPT</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GPT4 with Courses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#first-notice-of-gpt-4-use">First Notice of GPT-4 Use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ongoing-use-of-gpt-4">Ongoing Use of GPT-4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#review-cost-and-spending-limits">Review Cost and Spending Limits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#default-chatgpt-version">Default ChatGPT version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#estimated-cost-per-semester">Estimated Cost Per Semester</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disabling-chatgpt-in-a-course">Disabling ChatGPT in a Course</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="on-premises.html">On-Premises CoCalc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="users.html">Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upgrades.html">Upgrades</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backups.html">Backups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tours.html">Tours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flyouts.html">Flyout Panels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="csv-viewer.html">CSV Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="share.html">Shared Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict-student-projects.html">Restrict Student Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-settings.html">Project Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account-toolbar.html">Account Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account/purchases.html">Purchases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-credit-card.html">Update Your Credit Card</a></li>
+<li class="toctree-l1"><a class="reference internal" href="billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-cloud.html">CoCalc Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">GPT4 with Courses</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="gpt4-with-courses">
+<span id="index-0"></span><h1>GPT4 with Courses<a class="headerlink" href="#gpt4-with-courses" title="Permalink to this heading"></a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#first-notice-of-gpt-4-use" id="id1">First Notice of GPT-4 Use</a></p></li>
+<li><p><a class="reference internal" href="#ongoing-use-of-gpt-4" id="id2">Ongoing Use of GPT-4</a></p>
+<ul>
+<li><p><a class="reference internal" href="#review-cost-and-spending-limits" id="id3">Review Cost and Spending Limits</a></p></li>
+<li><p><a class="reference internal" href="#default-chatgpt-version" id="id4">Default ChatGPT version</a></p></li>
+<li><p><a class="reference internal" href="#estimated-cost-per-semester" id="id5">Estimated Cost Per Semester</a></p></li>
+<li><p><a class="reference internal" href="#disabling-chatgpt-in-a-course" id="id6">Disabling ChatGPT in a Course</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<p>This article explains how payments work when GPT-4 capability is requested when using ChatGPT. This information is especially relevant, but not limited to, student projects in a CoCalc managed course. Learn about the differences in available GPT versions at <a class="reference internal" href="chatgpt.html#gpt-versions"><span class="std std-ref">GPT-3.5 and GPT-4</span></a>.</p>
+<section id="first-notice-of-gpt-4-use">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">First Notice of GPT-4 Use</a><a class="headerlink" href="#first-notice-of-gpt-4-use" title="Permalink to this heading"></a></h2>
+<p>The first time you use GPT-4, a confirmation dialog requires you set a specific monthly spending limit. You can set any amount. The default is $0. The dialog also lets you add credit to your account, in case you don’t have any.</p>
+<p>The rates for GPT-4 are available in the dialog.  Also, on any day when you use GPT-4, you’ll receive an email statement at the end of the day listing how much you spent (and this is easy to disable).</p>
+<p>The confirmation dialog also serves as a reminder to users about the fee before the GPT-4 chat is sent.</p>
+<p>After you explicitly set a limit and add credit, you don’t get explicitly asked again every time you use GPT-4.</p>
+</section>
+<section id="ongoing-use-of-gpt-4">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Ongoing Use of GPT-4</a><a class="headerlink" href="#ongoing-use-of-gpt-4" title="Permalink to this heading"></a></h2>
+<section id="review-cost-and-spending-limits">
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Review Cost and Spending Limits</a><a class="headerlink" href="#review-cost-and-spending-limits" title="Permalink to this heading"></a></h3>
+<p>You can review costs for GPT-4 and GPT-3.5 by visiting <a class="reference external" href="https://cocalc.com/settings/purchases">https://cocalc.com/settings/purchases</a>. To view and configure spending limits, select <code class="docutils literal notranslate"><span class="pre">Self-Imposed</span> <span class="pre">Spending</span> <span class="pre">Limits</span></code> at the above link.</p>
+</section>
+<section id="default-chatgpt-version">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Default ChatGPT version</a><a class="headerlink" href="#default-chatgpt-version" title="Permalink to this heading"></a></h3>
+<p>Q: If a student uses GPT-4 once, will CoCalc default to GPT-4 thereafter?</p>
+<p>A: No. The default is always GPT-3.5.</p>
+</section>
+<section id="estimated-cost-per-semester">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Estimated Cost Per Semester</a><a class="headerlink" href="#estimated-cost-per-semester" title="Permalink to this heading"></a></h3>
+<p>Q: Can you offer an estimate of typical cost per semester for a student project?</p>
+<p>A: Since all use is explicit and manual, e.g., via chat or clicking, in practice it’s very difficult to use very much. A typical student might use $10 for an entire semester worth of use. A typical interaction is a few cents, so hundreds of interactions are about $10. You’ll quickly get a sense of this because it’s listed in the daily statements. The model in CoCalc where you pay for what you actually use is generally more affordable than what is charged by OpenAI or Microsoft.</p>
+<p>Note that GPT-3.5 is significantly faster (and completely free to CoCalc users), and for some things it’s pretty good, so people often use it just because the output appears so quickly.</p>
+</section>
+<section id="disabling-chatgpt-in-a-course">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Disabling ChatGPT in a Course</a><a class="headerlink" href="#disabling-chatgpt-in-a-course" title="Permalink to this heading"></a></h3>
+<p>Note to instructors: It’s also possible to fully or partly disable ChatGPT for students in a class, e.g., during an exam. That’s in course configuration. See <a class="reference internal" href="restrict-student-projects.html#restrict-student-projects"><span class="std std-ref">Restrict Student Projects</span></a>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="chatgpt.html" class="btn btn-neutral float-left" title="ChatGPT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="jupyter.html" class="btn btn-neutral float-right" title="Jupyter Notebooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/gpt4-course.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

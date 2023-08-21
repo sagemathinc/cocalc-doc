@@ -29,6 +29,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    :caption: Features
 
    chatgpt
+   gpt4-course
    jupyter
    slides
    whiteboard

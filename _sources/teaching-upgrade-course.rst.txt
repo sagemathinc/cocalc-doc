@@ -204,3 +204,10 @@ Second, this is what is seen if the instructor has added a license in the course
      :width: 50%
      :align: center
      :alt: Student project quotas after applying course license.
+     
+--------------------------------------------
+Charges for GPT-4 (and GPT-3.5-16k)
+--------------------------------------------
+
+See :doc:`gpt4-course`.
+

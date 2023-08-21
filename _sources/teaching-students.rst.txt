@@ -63,6 +63,7 @@ Click on the project of your course to open it.
 .. image:: img/student/projects.png
     :width: 75%
     :align: center
+    :alt: project list
 
 Once you open the project you will be redirected to your course-specific file directory.
 
@@ -72,6 +73,7 @@ They're organized in several directories, or sub-directories, and can correspond
 .. image:: img/student/content.png
     :width: 75%
     :align: center
+    :alt: files list
 
 Your assignments
 ------------------------------------------
@@ -97,18 +99,21 @@ There are multiple ways to do it:
 .. image:: img/student/upload.png
     :width: 100%
     :align: center
+    :alt: upload
 
 * **Drag and drop**: If you have the files in your local computer navigate to your assignment folder. Once there click on the **New** button on the upper banner. Drag and drop the files in the corresponding box.
 
 .. image:: img/student/drag.png
     :width: 50%
     :align: center
+    :alt: drag and drop
 
 * **Content in the internet**: If you have your files in a GitHub repository or hosted on a publicly accessible web-server, click on the **New** button. On the file name box paste/write the UTL to the resource and click on the **Download from the internet** button.
 
 .. image:: img/student/download.png
     :width: 100%
     :align: center
+    :alt: download from internet
 
 * **Terminal**: if you have your files in a GitHub repository you can create a so called :doc:`"Terminal file" <terminal>` and copy the contents using::
 
@@ -126,12 +131,14 @@ One of the best features of CoCalc is the time travel diff feature. You will not
 .. image:: img/student/time_diff.png
     :width: 25%
     :align: center
+    :alt: timetravel
 
 If you click on this button you will see two sliders that you can move to see previous versions of the file:
 
 .. image:: img/student/control.png
     :width: 100%
     :align: center
+    :alt: timetravel sliders
 
 This is extremely handy if you want to see a previously saved version of the document or revert to it.
 
@@ -150,6 +157,7 @@ Alternatively, you can restart the entire project, which will cleanup all runnin
 .. image:: img/teaching/restart_project.png
     :width: 50%
     :align: center
+    :alt: restart project
 
 Contacting your lecturer or TA
 ------------------------------------------
@@ -159,6 +167,7 @@ If you need assistance with a piece of coursework you can contact the using the 
 .. image:: img/teaching/student_question.png
     :width: 50%
     :align: center
+    :alt: chat for asking questions
 
 Just click on the speech-bubble icon button located on the upper right hand corner of the piece of work you need help with and start typing straight away.
 
@@ -204,6 +213,7 @@ Please let your instructor know that you're unable to see the student pay option
 .. image:: img/student/cocalc-student-pays-1.png
      :width: 75%
      :align: center
+     :alt: student pay 1
 
 
 Enter your credit card details:
@@ -212,6 +222,7 @@ Enter your credit card details:
 .. image:: img/student/cocalc-student-pays-2.png
      :width: 75%
      :align: center
+     :alt: student pay 2
 
 Click the confirmation button to pay:
 
@@ -219,6 +230,7 @@ Click the confirmation button to pay:
 .. image:: img/student/cocalc-student-pays-3.png
      :width: 75%
      :align: center
+     :alt: student pay 3
 
 If the course already started and the deadline passed,
 you are required to pay before you can access files in the student project.
@@ -227,6 +239,7 @@ In that case, the dialog looks similar to the one below:
 .. image:: img/student/cocalc-student-pays-too-late.png
      :width: 75%
      :align: center
+     :alt: student pay late
 
 
 .. note::
@@ -235,4 +248,7 @@ In that case, the dialog looks similar to the one below:
     it is not necessary to pay the $14 fee.
     You can simply apply "Member Hosting" and "Internet Access" upgrades to your student project for the course in question.
 
+Charges for GPT-4 (and GPT-3.5-16k)
+=====================================
 
+See :doc:`gpt4-course`.
