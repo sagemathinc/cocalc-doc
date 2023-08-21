@@ -10,6 +10,8 @@ GPT4 with Courses
 
 This article explains how payments work when GPT-4 capability is requested when using ChatGPT. This information is especially relevant, but not limited to, student projects in a CoCalc managed course. Learn about the differences in available GPT versions at :ref:`gpt-versions`.
 
+Here's the CoCalc feature announcement and discussion: `Concerns about GPT-4 Fees for Students <https://github.com/sagemathinc/cocalc/discussions/6879>`_.
+
 ################################
 First Notice of GPT-4 Use
 ################################
