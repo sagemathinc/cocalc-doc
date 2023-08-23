@@ -183,8 +183,8 @@ Our teacher requires us students to pay. How?
 
 .. index:: Member Hosting;students-pay course
 
-As a student, you can/have to pay a one-time fee of $14 (for the whole course)
-to move your student project to an improved "Member Hosting" server and enable "Internet Access"
+As a student, you can/have to pay a one-time fee for the whole course
+to run your student project with improved "Member Hosting" quality and enable "Internet Access"
 (see :doc:`upgrade-guide`).
 This is shown in the screenshots below.
 
@@ -245,7 +245,7 @@ In that case, the dialog looks similar to the one below:
 .. note::
 
     If you already have a subscription to CoCalc and have available upgrades,
-    it is not necessary to pay the $14 fee.
+    it is not necessary to pay the fee.
     You can simply apply "Member Hosting" and "Internet Access" upgrades to your student project for the course in question.
 
 Charges for GPT-4 (and GPT-3.5-16k)

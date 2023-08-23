@@ -95,7 +95,7 @@ You may be able to work around a low-memory situation temporarily by killing sel
 
 But if you're hitting memory issues and just want more space, `upgrade your project <https://cocalc.com/settings/billing?session=default>`_.
 
-The subscription are `listed here <https://cocalc.com/policies/pricing.html>`_. For example, for $14/month, you can upgrade memory from 1 GB to 5 GB, and have a **lot** more elbow room!  If you're confused or have questions about upgrading, just ask at help@cocalc.com.
+Subscriptions are `listed here <https://cocalc.com/pricing/subscriptions>`_. A couple more GB of memory give you a **lot** more elbow room!  If you're confused or have questions about upgrading, just ask at help@cocalc.com.
 
 5. Peak memory usage
 ^^^^^^^^^^^^^^^^^^^^^^^
