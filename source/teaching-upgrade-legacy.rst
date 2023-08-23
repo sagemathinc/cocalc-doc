@@ -45,10 +45,9 @@ go to the project where you created the course and **open the .course file**.
 In that interface, where you can add the students, etc.
 there is also **a tab called "Configurations"** (next to "Students", "Assignments", etc.).
 
-Current pricing is available at https://cocalc.com/policies/pricing.html
-which at the time of writing ranged from a **total** of about $7 to $14 per student for a 4 month course.
+Current pricing is available at https://cocalc.com/pricing/courses
+which at the time of writing was about $20 per student for a 4 month course.
 The price per student varies according to the size of the student cohort.
-You get significant per-student discounts when you buy in bulk.
 
 ... and after selecting that "you/your institution pays",
 you can proceed to distribute the upgrades of the course package here:

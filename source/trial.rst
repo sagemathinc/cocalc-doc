@@ -53,9 +53,9 @@ If it is just for a short project or a small course, they might as well want to 
 which can also be used to upgrade your student project!
 
 Alternatively, if you're a student in a course, ask your instructor to enable the "Students pay" option in course settings,
-which makes available a special one-time \$14 fee for a four month subscription to you.
+which makes available a special one-time fee to cover the entire course.
 
-In both cases, we are available to talk to the teacher/instructor directly and explain CoCalcs course functionality.
+In both cases, we are available to talk to the teacher/instructor directly and explain CoCalc's course functionality.
 For inquiries, contact us at `help@sagemath.com <help@sagemath.com>`_.
 
 **For more details, read the** :ref:`course-upgrading-students` **section in the teaching guide.**
