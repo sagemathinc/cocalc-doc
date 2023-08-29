@@ -32,5 +32,3 @@ You can then put Ruby code in the cell, and it will be evaluated when you hit sh
 Or...
 
 Type ``%default_mode ruby`` in a Sage worksheet and execute that cell. The rest of the worksheet uses Ruby.
-
-
