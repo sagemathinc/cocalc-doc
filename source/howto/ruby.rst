@@ -20,7 +20,7 @@ You can get a terminal by either splitting your .rb edit session and selecting T
 .. figure:: img/ruby-fe.png
      :width: 85%
      :align: center
-     :alt: ruby frame editor
+     :alt: editing a ruby file
 
      editing and running Ruby from the frame editor
 
