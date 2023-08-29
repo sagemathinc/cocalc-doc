@@ -5,11 +5,11 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Home &mdash; CoCalc Manual  documentation</title>
+  <title>API Keys &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/project-home.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/apikeys.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -23,13 +23,13 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Explorer" href="explorer.html" />
-    <link rel="prev" title="Activity Bar" href="activity-bar.html" />
+    <link rel="next" title="API v2" href="api2/index.html" />
+    <link rel="prev" title="Recovering a Deleted Project" href="howto/missing-project.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/project-home.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/apikeys.html"/>
   
 
 </head>
@@ -108,7 +108,7 @@
 <li class="toctree-l1"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="account-dropdown.html">Account Dropdown Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="activity-bar.html">Activity Bar</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project-home.html">Project Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="explorer.html">Explorer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plus-new.html">(+) New</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
@@ -124,7 +124,7 @@
 <li class="toctree-l1"><a class="reference internal" href="ipad.html">iPad</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apikeys.html">API Keys</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Keys</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
@@ -152,7 +152,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Project Home</li>
+      <li class="breadcrumb-item active">API Keys</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -169,24 +169,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="project-home">
-<span id="index-0"></span><h1>Project Home<a class="headerlink" href="#project-home" title="Permalink to this heading"></a></h1>
-<p>When a project is selected, The Project Home page displays general information about the selected project. The plan is to make the layout user-configurable.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/project-home.png"><img alt="project home page" src="_images/project-home.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-text">the Project Home page can be opened from the top of the <a class="reference internal" href="activity-bar.html"><span class="doc">Activity Bar</span></a>.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>Here’s the CoCalc feature announcement and discussion: <a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6407">ANN: Projects now have a homepage</a>.</p>
+  <section id="api-keys">
+<h1>API Keys<a class="headerlink" href="#api-keys" title="Permalink to this heading"></a></h1>
+<p>A valid API key is required on all API requests.</p>
+<p>To obtain a key manually, log into
+CoCalc and click on Settings (gear icon next to user name at upper
+right), and look under <code class="docutils literal notranslate"><span class="pre">Account</span> <span class="pre">Settings</span></code>.
+With the <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">key</span></code> dialogue, you can create a key,
+view a previously assigned key, generate a replacement key,
+and delete your key entirely.</p>
+<p id="index-0">It is also possible to obtain an API key using a javascript-enabled automated web client.
+This option is useful for applications that embed CoCalc
+in a custom environment, for example <a class="reference external" href="https://juno.sh">juno.sh</a>,
+the iOS application for Jupyter notebooks.
+Visiting the link <code class="samp docutils literal notranslate"><span class="pre">https://cocalc.com/app?get_api_key=myapp</span></code>,
+where “myapp” is an identifier for your application,
+returns a modified sign-in page with the banner
+“CoCalc API Key Access for Myapp”.
+The web client must
+sign in with credentials for the account in question.
+Response headers from a successful sign-in will include a url of the form
+<code class="samp docutils literal notranslate"><span class="pre">https://authenticated/?api_key=sk_abcdefQWERTY090900000000</span></code>.
+The client should intercept this response and capture the string
+after the equals sign as the API key.</p>
+<p>Your API key carries access privileges, just like your login and password.
+<strong>Keep it secret.</strong>
+Do not share your API key with others or post it in publicly accessible forums.</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="activity-bar.html" class="btn btn-neutral float-left" title="Activity Bar" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="explorer.html" class="btn btn-neutral float-right" title="Explorer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="howto/missing-project.html" class="btn btn-neutral float-left" title="Recovering a Deleted Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api2/index.html" class="btn btn-neutral float-right" title="API v2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -204,7 +220,7 @@
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/project-home.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/apikeys.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
