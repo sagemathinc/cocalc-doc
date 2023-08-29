@@ -10,8 +10,8 @@
 
 This tab gives you numerous options for file creation. There are also buttons to launch :ref:`Jupyter Classic and JupyterLab servers <jupyter-server-alternatives>`, `VS Code`_ server, and :doc:`Pluto server <howto/pluto>`.
 
-.. figure:: img/plus-new.jpg
-     :width: 80%
+.. figure:: img/plus-new.png
+     :width: 100%
      :align: center
      :alt: dialog for new file name and type and drag-and-drop upload
 
