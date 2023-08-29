@@ -14,11 +14,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -184,7 +184,7 @@ Enable internet access by adding the “internet access” quota.  See <a class=
 <a class="reference external" href="https://www.github.com">GitHub</a>, <a class="reference external" href="https://about.gitlab.com/">GitLab</a> or <a class="reference external" href="https://bitbucket.org/">Bitbucket</a>.
 You can immediately pull from a public repository.</p>
 <p>To access private repositories or to push your new commits,
-you need to create an SSH key and explicitly allow that account/key access to access the remove repository.</p>
+you need to create an SSH key and explicitly allow that account/key access to access the remote repository.</p>
 <ol class="arabic simple">
 <li><p>Create an SSH key public/private key pair by typing the command <cite>ssh-keygen</cite>. (consult <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">Setup SSH Keys</span></a> for more information)</p></li>
 <li><p>Copy the content of <code class="docutils literal notranslate"><span class="pre">.ssh/id_rsa.pub</span></code> (could be named similarly, but has the ending <code class="docutils literal notranslate"><span class="pre">.pub</span></code>) to GitHub’s setting for setting up an additional key. To open that file quickly, you can run this in the Terminal: <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">~/.ssh/id_*.pub</span></code>.</p></li>
