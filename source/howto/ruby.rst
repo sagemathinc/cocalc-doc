@@ -20,13 +20,14 @@ You can get a terminal by either splitting your .rb edit session and selecting T
 .. figure:: img/ruby-fe.png
      :width: 85%
      :align: center
+     :alt: ruby frame editor
 
      editing and running Ruby from the frame editor
 
 Ruby code in a Sage worksheet
 -------------------------------
 Create a Sage worksheet, then type ``%ruby`` at the beginning a cell.
-You can then put Ruby code in the cell, and it will be evaluated when you hit shift+enter.
+You can then put Ruby code in the cell, and it will be evaluated when you hit shift-enter.
 
 Or...
 
