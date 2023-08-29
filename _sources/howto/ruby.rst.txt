@@ -27,8 +27,9 @@ You can get a terminal by either splitting your .rb edit session and selecting T
 Ruby code in a Sage worksheet
 -------------------------------
 Create a Sage worksheet, then type ``%ruby`` at the beginning a cell.
-You can then put Ruby code in the cell, and it will be evaluated when you hit shift-enter.
+You can then put Ruby code in the cell. It will be evaluated when you hit shift-enter.
 
 Or...
 
 Type ``%default_mode ruby`` in a Sage worksheet and execute that cell. The rest of the worksheet uses Ruby.
+
