@@ -30,7 +30,7 @@ Once you have *enabled internet access for your project*, you can to connect to 
 You can immediately pull from a public repository.
 
 To access private repositories or to push your new commits,
-you need to create an SSH key and explicitly allow that account/key access to access the remove repository.
+you need to create an SSH key and explicitly allow that account/key access to access the remote repository.
 
 1. Create an SSH key public/private key pair by typing the command `ssh-keygen`. (consult :ref:`ssh-keys` for more information)
 
