@@ -33,4 +33,5 @@ Or...
 
 Type ``%default_mode ruby`` in a Sage worksheet and execute that cell. The rest of the worksheet uses Ruby.
 
-123
+456
+
