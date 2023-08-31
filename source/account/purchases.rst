@@ -12,6 +12,9 @@ Purchases
 
 To view the Purchases panel, first open the :ref:`project-list`, then click "Account" at upper right, then "Purchases". You can also view the Purchases panel by browsing to https://cocalc.com/settings/purchases
 
+CoCalc's purchasing system has been upgraded as of August, 2023. Here's the CoCalc feature announcement and discussion: `ANN: CoCalc's New Purchasing System <https://github.com/sagemathinc/cocalc/discussions/6848>`_.
+
+
 Account Balance
 ================
 
@@ -23,6 +26,8 @@ Account Balance
      top of purchases panel
 
 Account balance information is displayed in the upper part of the Purchases panel.
+
+.. _automatic-payments:
 
 Enable/Disable Automatic Payments
 ==================================
@@ -82,10 +87,31 @@ As of August 2023, we changed CoCalc to make it more straightforward to work wit
 .. _account-subscriptions:
 .. _subscription-list:
 
-Subscriptions
+Subscriptions (prepaid)
 =========================
 
-This section lists your currently active license subscriptions, personal plans, and course packages.
+As noted above, the CoCalc purchasing system has been revised as of August, 2023.
+
+To buy a license subscription with the newer system, visit the same link as before, https://cocalc.com/store/site-license.
+
+With the prepaid system, if you don't have a payment method on file, you will be rquired to select :ref:`automatic-payments` and enter a payment method.
+
+To view currently active subscriptions, browse to https://cocalc.com/settings/subscriptions. This link will take you to the new system:
+
+.. figure:: img/new-subscr.png
+     :width: 100%
+     :align: center
+     :alt: view subscriptions
+     
+       
+
+
+Subscriptions (legacy page)
+===========================
+
+You can still use the legacy subscription purchasing system by clicking "Legacy Subscriptions Page..." at the bottom of the prepaid subscription view, or by visiting https://cocalc.com/store/site-license and selecting one of the subscription options there.
+
+The legacy subscriptions section lists your currently active license subscriptions, personal plans, and course packages.
 The word "Active" denotes ordinary active subscriptions.
 The word "Trialing" indicates a free trial or other custom subscription plan.
 

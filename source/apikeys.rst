@@ -23,7 +23,7 @@ In the Account Preferences pane that opens, scroll down to the "API Keys" dialog
      :align: center
      :alt: API Key dialog
      
-     ..
+       
 
 
 Click "Add API key..." In the pop-up that opens, you can create a key and set an expiration date (recommended):
@@ -33,7 +33,7 @@ Click "Add API key..." In the pop-up that opens, you can create a key and set an
      :align: center
      :alt: create API key
      
-     ..
+       
 
 Immediately save the secret key that is displayed somewhere safe. You won't be able to view it again. **If you lose this key, you'll need to generate a new one.**
 
@@ -42,7 +42,7 @@ Immediately save the secret key that is displayed somewhere safe. You won't be a
      :align: center
      :alt: save the displayed key
      
-     ..
+       
 
 
 Project API Keys
