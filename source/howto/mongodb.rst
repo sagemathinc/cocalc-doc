@@ -40,4 +40,4 @@ Screenshot
 .. figure:: img/mongodb.png
      :width: 100%
      :align: center
-
+     :alt: MongoDB in Linux terminal

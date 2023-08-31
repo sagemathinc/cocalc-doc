@@ -19,6 +19,7 @@ Step 1: Export
 .. image:: img/overleaf-export.png
     :width: 75%
     :align: center
+    :alt: export from overleaf
 
 * **ShareLaTeX**: Open your ShareLaTeX project and choose `Menu`, `Download`, and `Source`. Download your project to your local computer as a .zip file.
 
@@ -33,6 +34,7 @@ and use the file picker to upload the zip file you downloaded in the previous st
 .. image:: img/latex-upload.png
     :width: 100%
     :align: center
+    :alt: upload to CoCalc
 
 To extract the files from the Zip archive, click on it and then the  ``Extract Files`` button.
 A folder will be created with the name of the zipfile without the .zip extension.
@@ -43,6 +45,7 @@ Just click on them again to extract the actual files.
 .. image:: img/latex-unzip.png
     :width: 50%
     :align: center
+    :alt: extracting files from zip archive
 
 **Congratulations!**
 Now you are ready to edit your LaTeX files in CoCalc!

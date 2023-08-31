@@ -92,7 +92,8 @@ resulting in an output like that::
     exact  =  1.393204
     error  =  0.000077 = 0.21 sigma
 
-Here is a screenshot how all this looks like:
+Here is a screenshot what all this looks like:
 
 .. image:: img/gsl-compile.png
      :width: 100%
+     :alt: GSL compilation

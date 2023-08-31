@@ -38,6 +38,7 @@ Example worksheet: `neron-yale.ipynb <https://cocalc.com/share/public_paths/dd2c
 .. image:: img/neuron-jupyter.png
     :width: 75%
     :align: center
+    :alt: NEURON in a jupyter notebook
 
 Graphical Application
 ---------------------------
