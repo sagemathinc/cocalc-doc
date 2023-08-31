@@ -45,19 +45,19 @@ What is logged
 
 Here is a list of project activities that cause log entries to be created:
 
-    * changing :ref:`project upgrades <project-upgrades>`
-    * :ref:`inviting <add-collaborators>` a CoCalc user to become a collaborator
-    * :ref:`inviting <add-collaborators>` a person without a CoCalc account to become a collaborator
-    * loading a code :doc:`snippet <snippets>`.
-    * loading documentation and sample code from the :doc:`project library <project-library>`
-    * opening a file
-    * :ref:`acting on file(s) <file-actions>` selected in the Files list: Download, Delete, Rename, Duplicate, Move, Copy, Share
-    * :ref:`removing <remove-collaborators>` a collaborator
-    * requesting :ref:`project restart <project-control>`
-    * requesting :ref:`project stop <project-control>`
-    * running a command in the Files list :ref:`mini-terminal <mini-terminal>`
-    * setting the :ref:`project title and description <set-project-title>`
-    * :ref:`starting <project-control>` the project
+* changing :ref:`project upgrades <project-upgrades>`
+* :ref:`inviting <add-collaborators>` a CoCalc user to become a collaborator
+* :ref:`inviting <add-collaborators>` a person without a CoCalc account to become a collaborator
+* loading a code :doc:`snippet <snippets>`.
+* loading documentation and sample code from the :doc:`project library <project-library>`
+* opening a file
+* :ref:`acting on file(s) <file-actions>` selected in the Files list: Download, Delete, Rename, Duplicate, Move, Copy, Share
+* :ref:`removing <remove-collaborators>` a collaborator
+* requesting :ref:`project restart <project-control>`
+* requesting :ref:`project stop <project-control>`
+* running a command in the Files list :ref:`mini-terminal <mini-terminal>`
+* setting the :ref:`project title and description <set-project-title>`
+* :ref:`starting <project-control>` the project
 
 .. index:: Project Activity Log; filter log entries
 
