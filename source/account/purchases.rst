@@ -60,6 +60,24 @@ Payment methods
 This is where you can enter credit card information for the CoCalc account.
 Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team. For details, see :ref:`update-credit-card`.
 
+.. _subscriptions-update:
+
+Recent Updates to Subscriptions
+===================================
+
+As of August, 2023, we changed cocalc to make it very straightforward to cancel a subscription:
+
+#. A few days before the subscription renews, we send out an email with a cancel link. This link lets a user cancel a subscription and does NOT require signing into cocalc, though there is a confirmation process.  This avoids users getting frustrated trying to reset their password, navigate the site, etc., just to cancel a subscription.  Instead it's a direct link.  This seems like the right thing to do.
+
+#. We also provide a prorated refund when the subscription is canceled, so you can use the remaining money toward something else in cocalc, rather than being locked in for the duration of the subscription.  We think this is much more flexible than the old system.
+
+#. It's now possible to have a subscription without having any automatic payment method on file.  Instead, when the renewal date is near, you get an email that you should add credit to your account to cover the subscription renewal.  This is valuable to people in some countries, like India, where automatic subscription renewals are heavily regulated by law.
+
+#. After you cancel a subscription, you can resume it later, rather than having to create a new subscription.
+
+#. You can edit what a subscription is for (e.g., increase the RAM) at any time, and you just pay the prorated difference.
+
+
 .. index:: Account Tab; subscription list
 .. _account-subscriptions:
 .. _subscription-list:
