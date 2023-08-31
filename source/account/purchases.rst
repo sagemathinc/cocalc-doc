@@ -65,9 +65,9 @@ Credit card details (full credit card number, expiration date, CVV number) are m
 Recent Updates to Subscriptions
 ===================================
 
-As of August, 2023, we changed cocalc to make it very straightforward to cancel a subscription:
+As of August 2023, we changed CoCalc to make it more straightforward to work with subscriptions:
 
-#. A few days before the subscription renews, we send out an email with a cancel link. This link lets a user cancel a subscription and does NOT require signing into cocalc, though there is a confirmation process.  This avoids users getting frustrated trying to reset their password, navigate the site, etc., just to cancel a subscription.  Instead it's a direct link.  This seems like the right thing to do.
+#. A few days before the subscription renews, we send out an email with a cancel link. This link lets a user cancel a subscription and does NOT require signing into cocalc, though there is a confirmation process.  This avoids users getting frustrated trying to reset their password, navigate the site, etc., just to cancel a subscription.  Instead it's a direct link.
 
 #. We also provide a prorated refund when the subscription is canceled, so you can use the remaining money toward something else in cocalc, rather than being locked in for the duration of the subscription.  We think this is much more flexible than the old system.
 
