@@ -124,6 +124,7 @@ to use the alpha version of `"Tensorflow 2" <https://www.tensorflow.org/alpha>`_
 .. figure:: img/cocalc-custom-tensorflow2.png
     :width: 100%
     :align: center
+    :alt: select Tensorflow 2
 
     *Selecting "Tensorflow 2" Custom Software Environment*
 
