@@ -20,6 +20,7 @@ In Project Settings, at the bottom of the section for "+ Add new collaborators",
 .. figure:: img/invite-token-0.png
      :width: 60%
      :align: center
+     :alt: invite people with a token
 
      Creating a project invitation token
 
@@ -29,6 +30,7 @@ Click the clipboard icon to copy the token.
 .. figure:: img/invite-token-05.png
      :width: 60%
      :align: center
+     :alt: copy invitation token
 
      Copying a project invitation token
 
@@ -39,6 +41,7 @@ For a complete URL that includes the token, click the "+" to the left of the tok
 .. figure:: img/invite-token-1.png
      :width: 60%
      :align: center
+     :alt: create invitation link
 
      Creating a project invitation link
 
@@ -54,6 +57,7 @@ They will be added as collaborators and the project will be opened for them.
 .. figure:: img/enter-token.png
      :width: 30%
      :align: center
+     :alt: add token in projects list
 
      Enter an invitation token in the Projects list
 

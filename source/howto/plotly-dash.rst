@@ -83,5 +83,6 @@ and linked plots are possible!
 .. figure:: img/plotly-dash.png
     :width: 100%
     :align: center
+    :alt: plotly dashboard
 
 .. _dash: https://dash.plotly.com/
