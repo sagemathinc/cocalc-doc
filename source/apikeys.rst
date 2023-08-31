@@ -2,18 +2,53 @@
 API Keys
 ========
 
+A valid API key is required on all API requests. Keys created using the following steps can be used with both `API v1 <https://doc.cocalc.com/api/index.html>`_ and `API v2 <https://doc.cocalc.com/api2/index.html>`_.
 
-A valid API key is required on all API requests.
+.. contents::
+   :local:
+   :depth: 1
 
-To obtain a key manually, log into
-CoCalc and click on Settings (gear icon next to user name at upper
-right), and look under ``Account Settings``.
-With the ``API key`` dialogue, you can create a key,
-view a previously assigned key, generate a replacement key,
-and delete your key entirely.
+Account API Keys
+================
+
+To obtain an account-wide key manually, browse to
+`CoCalc accont settings <https://cocalc.com/settings/account>`_.
+
+In the Account Preferences pane that opens, scroll down to the "API Keys" dialog at bottom left:
+
+.. image:: img/account-api-key.png
+     :width: 70%
+     :align: center
+     :alt: API Key dialog
+
+
+Click "Add API key..." In the pop-up that opens, you can create a key and set an expiration date (recommended):
+
+.. image:: img/account-api-key2.png
+     :width: 70%
+     :align: center
+     :alt: create API key
+
+
+Immediately save the secret key that is displayed somewhere safe. You won't be able to view it again. **If you lose this key, you'll need to generate a new one.**
+
+.. image:: img/account-api-key3.png
+     :width: 70%
+     :align: center
+     :alt: save the displayed key
+
+
+Project API Keys
+================
+
+You can also make project specific api keys in any project's settings. If you only need to use the API to access one project, these are safer.
+
+To create a project-specific API key, open the project in CoCalc and scroll down to the "API Keys" dialog at bottom right. The steps to create and save a key are exactly the same as displayed above for account API keys.
 
 .. index:: API; get_api_key
 
+Create an API Key With Web Client
+=================================
 
 It is also possible to obtain an API key using a javascript-enabled automated web client.
 This option is useful for applications that embed CoCalc
@@ -33,3 +68,4 @@ after the equals sign as the API key.
 Your API key carries access privileges, just like your login and password.
 **Keep it secret.**
 Do not share your API key with others or post it in publicly accessible forums.
+
