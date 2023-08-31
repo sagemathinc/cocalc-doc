@@ -7,6 +7,8 @@ A valid API key is required on all API requests. Keys created using the followin
 .. contents::
    :local:
    :depth: 1
+   
+Here's the CoCalc feature announcement and discussion: `ANN: api keys rewrite <https://github.com/sagemathinc/cocalc/discussions/6738>`_.
 
 Account API Keys
 ================
@@ -16,26 +18,31 @@ To obtain an account-wide key manually, browse to
 
 In the Account Preferences pane that opens, scroll down to the "API Keys" dialog at bottom left:
 
-.. image:: img/account-api-key.png
+.. figure:: img/account-api-key.png
      :width: 70%
      :align: center
      :alt: API Key dialog
+     
+     ..
 
 
 Click "Add API key..." In the pop-up that opens, you can create a key and set an expiration date (recommended):
 
-.. image:: img/account-api-key2.png
+.. figure:: img/account-api-key2.png
      :width: 70%
      :align: center
      :alt: create API key
-
+     
+     ..
 
 Immediately save the secret key that is displayed somewhere safe. You won't be able to view it again. **If you lose this key, you'll need to generate a new one.**
 
-.. image:: img/account-api-key3.png
+.. figure:: img/account-api-key3.png
      :width: 70%
      :align: center
      :alt: save the displayed key
+     
+     ..
 
 
 Project API Keys
