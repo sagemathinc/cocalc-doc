@@ -94,7 +94,7 @@ As noted above, the CoCalc purchasing system has been revised as of August, 2023
 
 To buy a license subscription with the newer system, visit the same link as before, https://cocalc.com/store/site-license.
 
-With the prepaid system, if you don't have a payment method on file, you will be rquired to select :ref:`automatic-payments` and enter a payment method.
+With the prepaid system, if you don't have a payment method on file, you can optionally select :ref:`automatic-payments` and enter a payment method.
 
 To view currently active subscriptions, browse to https://cocalc.com/settings/subscriptions. This link will take you to the new system:
 
