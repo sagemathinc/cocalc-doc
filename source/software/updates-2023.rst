@@ -10,6 +10,14 @@ Software Updates 2023
 
 .. highlight:: python
 
+.. _update-2023-09-11:
+
+2023-09-11: Sage 10.1
+--------------------------------------------------
+
+After an intermediate update, this one makes Sage 10.1 available.
+More info, see `CoCalc News item #23 <https://cocalc.com/news/sage-10-1-23>`_.
+
 .. _update-2023-07-12:
 
 2023-07-12: Sage 10.0 on Ubuntu 20.04
