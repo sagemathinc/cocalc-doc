@@ -23,19 +23,20 @@ Install requests
 If a package may have general use but is not already installed in CoCalc,
 please open a support request to tell us to install it globally for everyone.
 Please include information about special dependencies or a specific example to test it.
+Please be aware, due to upgrade issues or general conflicts, not all packages can be installed.
 
 
 Install a package
 ===================
 
-Install a Julia Package from the Command Line
+Command Line / Custom Depot Path
 ----------------------------------------------
 
 To install custom Julia packages as a normal user, you have to type this in a terminal before starting Julia::
 
     export JULIA_DEPOT_PATH=$HOME/julia_depot
 
-When you do this, you will have to reinstall any needed Julia packages that were installed systemwide, since that's the way Julia works.
+When you do this, you will have to reinstall any needed Julia packages that were installed system-wide, since that's the way Julia works.
 
 To have this setting picked up by any terminal in a given project, you can set the ``JULIA_DEPOT_PATH`` environment variable as explained in :ref:`Custom environment variables <project-env-vars>` and restart the project.
 
@@ -48,7 +49,22 @@ After setting ``JULIA_DEPOT_PATH``, follow the usual Julia `pkg documentation <h
 #. Hit backspace or Control-C to exit the package manager and Control-D to exit Julia.
 
 
-Install a Julia Package in a Jupyter Notebook
+Command Line / Custom Environment
+----------------------------------------------
+
+Julia comes with a packaging mechanism to create
+`custom environments <https://pkgdocs.julialang.org/v1/environments/>`_.
+This might be what you really need in order to make your code work
+in many places.
+
+Note: details about how to set this up and how it works is beyond CoCalc's expertise.
+
+To use such an environment in a Jupyter Notebook,
+you will have to setup your own kernel in a CoCalc project.
+Follow :ref:`jupyter-custom-kernel` for how to do this – you basically copy one of the global Julia kernels and tweak it's ``kernel.json`` definition.
+
+
+In a Jupyter Notebook
 ----------------------------------------------
 
 No special environment setting is needed. Simply do the following in a code cell in a Jupyter notebook that has the default Julia kernel selected::
@@ -57,4 +73,8 @@ No special environment setting is needed. Simply do the following in a code cell
 
 and let the install run to completion.
 
+This will cause Julia to install that package locally on top of the globally installed packages.
+That might not always work, though.
+You might also want to try installing from the command-line,
+to get a better view into the console output and to better understand any error messages.
 
