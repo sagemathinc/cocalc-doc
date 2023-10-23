@@ -10,6 +10,22 @@ Software Updates 2023
 
 .. highlight:: python
 
+
+.. _update-2023-10-23:
+
+2023-10-23: Miniforge 2023
+---------------------------------------
+
+- (new) Python3 `Miniforge`_ 2023 environment:
+    - Based on Python 3.10, various data science related packages with a newer version than in the existing Anaconda 2022 environment
+
+- Python3 (system-wide):
+    - (new) `capytaine`_: *Python BEM solver for linear potential flow, based on Nemoh*
+
+
+- System-wide: update various packages
+
+
 .. _update-2023-09-11:
 
 2023-09-11: Sage 10.1
@@ -132,3 +148,5 @@ Additionally, many newer versions will be available – starting with a more rec
 .. _cirq: https://github.com/quantumlib/Cirq
 .. _tequila: https://github.com/tequilahub/tequila
 .. _Macaulay2: http://www2.macaulay2.com/Macaulay2/
+.. _capytaine: https://github.com/capytaine/capytaine
+.. _miniforge: https://github.com/conda-forge/miniforge
