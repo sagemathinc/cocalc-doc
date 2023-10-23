@@ -48,6 +48,7 @@ Programming Languages and Tools
 ===============================
 
 * :doc:`assembly-language`
+* :doc:`awscli`
 * :doc:`bash-fortunes`
 * :doc:`cplusplus`
 * :doc:`dask`
