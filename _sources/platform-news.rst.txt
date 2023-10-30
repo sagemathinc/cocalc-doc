@@ -20,6 +20,7 @@ Adding basic support for `Quarto <https://quarto.org/>`_ – *an open-source sci
 .. figure:: img/quarto.jpeg
     :width: 100%
     :align: center
+    :alt: quarto editor
 
     Quarto side-by-side editor
 
@@ -40,6 +41,7 @@ The indications in red highlight elevated resource usage, which might harm the o
 .. figure:: img/project-info/project-info-table.png
     :width: 100%
     :align: center
+    :alt: project information
 
     Project Info: showing project's resource usage and processes
 
@@ -72,12 +74,14 @@ Checking this gives you a uniformly dark background across the whole page:
 .. figure:: img/dark-mode-setting.png
      :width: 65%
      :align: center
+     :alt: enabling dark mode
 
      Check the box to enable dark mode.
 
 .. figure:: img/dark-mode-example.png
      :width: 100%
      :align: center
+     :alt: screenshot of dark mode
 
      Screen capture of CoCalc with dark mode enabled.
 

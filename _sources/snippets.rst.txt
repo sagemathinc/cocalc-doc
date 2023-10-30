@@ -26,24 +26,28 @@ CoCalc offers code snippets in many programming languages, including Python, R, 
 .. figure:: img/snippets/snippets-langs.png
      :width: 75%
      :align: center
+     :alt: snippets for programming languages
 
      Snippets are available in many programming languages
 
 .. figure:: img/snippets/snippets.png
-     :width: 95%
+     :width: 100%
      :align: center
+     :alt: python snippet
 
      example of Python Snippet
 
 .. figure:: img/snippets/snippets-btn-ipynb.png
      :width: 95%
      :align: center
+     :alt: jupyter snippet
 
      opening Snippets from a Jupyter Notebook
 
 .. figure:: img/snippets/snippets-btn-sagews.png
      :width: 95%
      :align: center
+     :alt: sage worksheet snippet
 
      opening Snippets from a Sage Worksheet
 
@@ -76,8 +80,9 @@ Regarding the content of the notebooks, the first cell must be a Markdown title 
 _NOTE:_ Spaces are not allowed in the path or filename of the snippets notebooks.
 
 .. figure:: img/snippets/custom-snippets.png
-     :width: 65%
+     :width: 75%
      :align: center
+     :alt: add custom snippets
 
      adding custom Snippets in a project
 

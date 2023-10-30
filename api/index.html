@@ -14,11 +14,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -245,30 +245,7 @@ generic HTML message rather than a JSON string.</p>
 </section>
 <section id="authentication">
 <h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading"></a></h2>
-<p>A valid API key is required on all API requests.</p>
-<p>To obtain a key manually, log into
-CoCalc and click on Settings (gear icon next to user name at upper
-right), and look under <code class="docutils literal notranslate"><span class="pre">Account</span> <span class="pre">Settings</span></code>.
-With the <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">key</span></code> dialogue, you can create a key,
-view a previously assigned key, generate a replacement key,
-and delete your key entirely.</p>
-<p id="index-1">It is also possible to obtain an API key using a javascript-enabled automated web client.
-This option is useful for applications that embed CoCalc
-in a custom environment, for example <a class="reference external" href="https://juno.sh">juno.sh</a>,
-the iOS application for Jupyter notebooks.
-Visiting the link <code class="samp docutils literal notranslate"><span class="pre">https://cocalc.com/app?get_api_key=myapp</span></code>,
-where “myapp” is an identifier for your application,
-returns a modified sign-in page with the banner
-“CoCalc API Key Access for Myapp”.
-The web client must
-sign in with credentials for the account in question.
-Response headers from a successful sign-in will include a url of the form
-<code class="samp docutils literal notranslate"><span class="pre">https://authenticated/?api_key=sk_abcdefQWERTY090900000000</span></code>.
-The client should intercept this response and capture the string
-after the equals sign as the API key.</p>
-<p>Your API key carries access privileges, just like your login and password.
-<strong>Keep it secret.</strong>
-Do not share your API key with others or post it in publicly accessible forums.</p>
+<p>A valid API key is required on all API requests. To learn how to create an API key, see <a class="reference internal" href="../apikeys.html"><span class="doc">API Keys</span></a>.</p>
 </section>
 <section id="additional-references">
 <h2>Additional References<a class="headerlink" href="#additional-references" title="Permalink to this heading"></a></h2>
@@ -346,7 +323,7 @@ generated and returned in the response.</p></li>
 </section>
 </section>
 <section id="copy-a-file-between-projects">
-<span id="index-2"></span><h2>Copy a file between projects<a class="headerlink" href="#copy-a-file-between-projects" title="Permalink to this heading"></a></h2>
+<span id="index-1"></span><h2>Copy a file between projects<a class="headerlink" href="#copy-a-file-between-projects" title="Permalink to this heading"></a></h2>
 <p>First, save your API key in a file <code class="docutils literal notranslate"><span class="pre">api.key</span></code>.
 Then, we use the <a class="reference external" href="https://requests.readthedocs.io/en/master/">requests</a> library to issue calls:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">key</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;api.key&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -408,7 +385,7 @@ Then, we use the <a class="reference external" href="https://requests.readthedoc
 <p>Note: <code class="docutils literal notranslate"><span class="pre">started</span></code> and <code class="docutils literal notranslate"><span class="pre">finished</span></code> being part of the response, signals it did work.</p>
 </section>
 <section id="embedding-in-an-iframe">
-<span id="index-3"></span><h2>Embedding in an IFrame<a class="headerlink" href="#embedding-in-an-iframe" title="Permalink to this heading"></a></h2>
+<span id="index-2"></span><h2>Embedding in an IFrame<a class="headerlink" href="#embedding-in-an-iframe" title="Permalink to this heading"></a></h2>
 <p>Here are notes on integrating CoCalc in an IFrame in a web application using the CoCalc API.
 You should be able to create a proof of concept using the API introduction above and these notes.</p>
 <ol class="arabic simple">

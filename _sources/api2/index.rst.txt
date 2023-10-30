@@ -20,7 +20,7 @@ Source code for the API v2 implemention is in the `CoCalc public GitHub reposito
 Get an API Key
 ################################
 
-To get started with API v2, you will need a CoCalc account and an API key for that account. Visit the link `Account - API Key <https://cocalc.com/config/account/api>`_ under your account settings to create and view your API key. A CoCalc API key will be a text string beginning with the symbols "sk\_"
+To get started with API v2, you will need a CoCalc account and an API key for that account. To learn how to create an API key, see :doc:`../apikeys`.
 
 ################################
 API v2 Endpoints

@@ -12,6 +12,9 @@ Purchases
 
 To view the Purchases panel, first open the :ref:`project-list`, then click "Account" at upper right, then "Purchases". You can also view the Purchases panel by browsing to https://cocalc.com/settings/purchases
 
+CoCalc's purchasing system has been upgraded as of August, 2023. Here's the CoCalc feature announcement and discussion: `ANN: CoCalc's New Purchasing System <https://github.com/sagemathinc/cocalc/discussions/6848>`_.
+
+
 Account Balance
 ================
 
@@ -23,6 +26,8 @@ Account Balance
      top of purchases panel
 
 Account balance information is displayed in the upper part of the Purchases panel.
+
+.. _automatic-payments:
 
 Enable/Disable Automatic Payments
 ==================================
@@ -60,14 +65,53 @@ Payment methods
 This is where you can enter credit card information for the CoCalc account.
 Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team. For details, see :ref:`update-credit-card`.
 
+.. _subscriptions-update:
+
+Recent Updates to Subscriptions
+===================================
+
+As of August 2023, we changed CoCalc to make it more straightforward to work with subscriptions:
+
+#. A few days before the subscription renews, we send out an email with a cancel link. This link lets a user cancel a subscription and does NOT require signing into cocalc, though there is a confirmation process.  This avoids users getting frustrated trying to reset their password, navigate the site, etc., just to cancel a subscription.  Instead it's a direct link.
+
+#. We also provide a prorated refund when the subscription is canceled, so you can use the remaining money toward something else in cocalc, rather than being locked in for the duration of the subscription.  We think this is much more flexible than the old system.
+
+#. It's now possible to have a subscription without having any automatic payment method on file.  Instead, when the renewal date is near, you get an email that you should add credit to your account to cover the subscription renewal.  This is valuable to people in some countries, like India, where automatic subscription renewals are heavily regulated by law.
+
+#. After you cancel a subscription, you can resume it later, rather than having to create a new subscription.
+
+#. You can edit what a subscription is for (e.g., increase the RAM) at any time, and you just pay the prorated difference.
+
+
 .. index:: Account Tab; subscription list
 .. _account-subscriptions:
 .. _subscription-list:
 
-Subscriptions
+Subscriptions (prepaid)
 =========================
 
-This section lists your currently active license subscriptions, personal plans, and course packages.
+As noted above, the CoCalc purchasing system has been revised as of August, 2023.
+
+To buy a license subscription with the newer system, visit the same link as before, https://cocalc.com/store/site-license.
+
+With the prepaid system, if you don't have a payment method on file, you can optionally select :ref:`automatic-payments` and enter a payment method.
+
+To view currently active subscriptions, browse to https://cocalc.com/settings/subscriptions. This link will take you to the new system:
+
+.. figure:: img/new-subscr.png
+     :width: 100%
+     :align: center
+     :alt: view subscriptions
+     
+       
+
+
+Subscriptions (legacy page)
+===========================
+
+You can still use the legacy subscription purchasing system by clicking "Legacy Subscriptions Page..." at the bottom of the prepaid subscription view, or by visiting https://cocalc.com/store/site-license and selecting one of the subscription options there.
+
+The legacy subscriptions section lists your currently active license subscriptions, personal plans, and course packages.
 The word "Active" denotes ordinary active subscriptions.
 The word "Trialing" indicates a free trial or other custom subscription plan.
 

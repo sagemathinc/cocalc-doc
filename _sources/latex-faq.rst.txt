@@ -123,6 +123,7 @@ More information: `Asymptote LaTeX Usage <http://asymptote.sourceforge.net/doc/L
 
 .. image:: img/latex-asymptote.png
     :width: 100%
+    :alt: latex with asymptote
 
 .. index:: LaTeX Editor; Gnuplot
 .. index:: LaTeX Editor; shell-escape
@@ -162,6 +163,7 @@ You can download the example :download:`gnuplot.tex <files/gnuplot.tex>` and see
 
 .. image:: img/latex-gnuplot-shell-escape.png
     :width: 100%
+    :alt: latex with gnuplot
 
 .. index:: LaTeX Editor; add image
 
@@ -300,11 +302,12 @@ The main thing to remember when using PSTricks is to set ``Engine`` in the CoCal
 .. image:: img/latex-pstricks-demo3.png
     :width: 40%
     :align: center
+    :alt: pstricks demo part 1
 
 .. image:: img/latex-pstricks-demo4.png
     :width: 40%
     :align: center
-
+    :alt: pstricks demo part 2
 
 .. index:: LaTeX Editor; embedding R/Python/Sage
 
@@ -336,6 +339,7 @@ Besides that, the `SageMath Documentation <http://doc.sagemath.org/html/en/>`_ c
 
 .. |SAGETEX| image:: img/latex-sagetex.png
                   :height: 17pt
+                  :alt: sagetex
 
 
 .. index:: PythonTeX
@@ -371,6 +375,7 @@ produces:
 .. image:: img/latex-pythontex.png
     :width: 75%
     :align: center
+    :alt: latex with pythontex
 
 
 You can read more in the `PythonTeX Documentation <https://ctan.org/pkg/pythontex>`_.
@@ -412,6 +417,7 @@ produces a plot of a histogram, drawn using `TikZ`_.
 .. image:: img/latex-knitr.png
     :width: 75%
     :align: center
+    :alt: latex with knitr
 
 Note that :ref:`latex-forward-inverse` will work as well as reporting errors.
 

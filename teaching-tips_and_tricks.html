@@ -14,11 +14,11 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="_static/jquery.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -92,6 +92,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#verifying-student-activity">Verifying Student Activity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#moodle-integration">Moodle integration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#change-the-due-date-of-an-assignment">Change the due date of an assignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#account-management-restrictions-and-single-sign-on">Account management, restrictions, and Single-Sign-On</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
@@ -227,6 +228,7 @@
 <li><p><a class="reference internal" href="#verifying-student-activity" id="id25">Verifying Student Activity</a></p></li>
 <li><p><a class="reference internal" href="#moodle-integration" id="id26">Moodle integration</a></p></li>
 <li><p><a class="reference internal" href="#change-the-due-date-of-an-assignment" id="id27">Change the due date of an assignment</a></p></li>
+<li><p><a class="reference internal" href="#account-management-restrictions-and-single-sign-on" id="id28">Account management, restrictions, and Single-Sign-On</a></p></li>
 </ul>
 </nav>
 <section id="delete-and-undelete-students">
@@ -544,6 +546,22 @@ In the example above, the command to be run could be:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;new due date: 2020-10-09 11:00 AM&quot;</span> &gt; Assignments/Assignment1/DUE_DATE.txt
 </pre></div>
 </div>
+</section>
+<section id="account-management-restrictions-and-single-sign-on">
+<h2><a class="toc-backref" href="#id28" role="doc-backlink">Account management, restrictions, and Single-Sign-On</a><a class="headerlink" href="#account-management-restrictions-and-single-sign-on" title="Permalink to this heading"></a></h2>
+<p>If your university has certain security restrictions on accounts,
+like requiring 2FA or password rules,
+the best way to impose them is to provide the identity by your organization!
+This is accomplished best via <a class="reference external" href="https://en.wikipedia.org/wiki/Single_sign-on">Single Sign On (SSO)</a>.</p>
+<p>This way, it is ensured that all users on CoCalc with a specific domain in their email address are authenticated by your institution.
+Your organization is providing the identity of your students – not CoCalc.
+The sign-up process happens with all the restrictions your organization imposes on the student account access, and hence this aspect stays under your control.</p>
+<p>On CoCalc’s side, the authentication starts here: <a class="reference external" href="https://cocalc.com/sso/">https://cocalc.com/sso/</a></p>
+<p>Under the hood this is accomplished by <a class="reference external" href="https://en.wikipedia.org/wiki/SAML_2.0">SAML 2.0</a>,
+which is probably already supported in some way.
+There are also other mechanisms we support,
+but this one is quite a well known industry standard and known to work well.</p>
+<p>The only caveat, this is for the entire organization. This might require some internal communication, but long-term, this is certainly the best way to go forward, since such restrictions apply to the entire organization – not just your course.</p>
 </section>
 </section>
 

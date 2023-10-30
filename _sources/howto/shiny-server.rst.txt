@@ -88,7 +88,9 @@ If everything goes well, the website you open up should look like this:
 
 .. image:: img/shiny-rmeans.png
     :width: 100%
+    :alt: shiny server
 
+See also: `Shiny for R and Python using Posit <https://shiny.posit.co/>`_.
 
 
 .. _Shiny: https://shiny.rstudio.com/

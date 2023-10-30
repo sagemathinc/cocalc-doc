@@ -501,3 +501,24 @@ In the example above, the command to be run could be:
 .. code-block:: bash
 
     echo "new due date: 2020-10-09 11:00 AM" > Assignments/Assignment1/DUE_DATE.txt
+
+Account management, restrictions, and Single-Sign-On
+=====================================================
+
+If your university has certain security restrictions on accounts,
+like requiring 2FA or password rules,
+the best way to impose them is to provide the identity by your organization!
+This is accomplished best via `Single Sign On (SSO) <https://en.wikipedia.org/wiki/Single_sign-on>`_.
+
+This way, it is ensured that all users on CoCalc with a specific domain in their email address are authenticated by your institution.
+Your organization is providing the identity of your students – not CoCalc.
+The sign-up process happens with all the restrictions your organization imposes on the student account access, and hence this aspect stays under your control.
+
+On CoCalc's side, the authentication starts here: https://cocalc.com/sso/
+
+Under the hood this is accomplished by `SAML 2.0 <https://en.wikipedia.org/wiki/SAML_2.0>`_,
+which is probably already supported in some way.
+There are also other mechanisms we support,
+but this one is quite a well known industry standard and known to work well.
+
+The only caveat, this is for the entire organization. This might require some internal communication, but long-term, this is certainly the best way to go forward, since such restrictions apply to the entire organization – not just your course.

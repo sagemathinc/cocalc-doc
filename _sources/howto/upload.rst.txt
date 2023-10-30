@@ -21,6 +21,7 @@ In the :doc:`Files tab <../project-files>`, there is a button for upload at uppe
 .. figure:: img/files-upload.png
      :width: 100%
      :align: center
+     :alt: upload button
 
      upload button in Files tab
 
@@ -115,3 +116,4 @@ Extra steps may be needed if you're uploading a file from Google Drive.
 .. |plus-circle|
     image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/plus-circle.png
     :width: 16px
+    :alt: plus-circle icon

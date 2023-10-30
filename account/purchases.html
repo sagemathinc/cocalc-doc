@@ -14,11 +14,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -122,7 +122,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#enable-disable-automatic-payments">Enable/Disable Automatic Payments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#transactions-limits-and-plots">Transactions, Limits, and Plots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#payment-methods">Payment methods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#subscriptions">Subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recent-updates-to-subscriptions">Recent Updates to Subscriptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#subscriptions-prepaid">Subscriptions (prepaid)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#subscriptions-legacy-page">Subscriptions (legacy page)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#invoices-and-receipts">Invoices and receipts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#api-v2-endpoint">API v2 endpoint</a></li>
 </ul>
@@ -186,12 +188,15 @@
 <li><p><a class="reference internal" href="#enable-disable-automatic-payments" id="id10">Enable/Disable Automatic Payments</a></p></li>
 <li><p><a class="reference internal" href="#transactions-limits-and-plots" id="id11">Transactions, Limits, and Plots</a></p></li>
 <li><p><a class="reference internal" href="#payment-methods" id="id12">Payment methods</a></p></li>
-<li><p><a class="reference internal" href="#subscriptions" id="id13">Subscriptions</a></p></li>
-<li><p><a class="reference internal" href="#invoices-and-receipts" id="id14">Invoices and receipts</a></p></li>
-<li><p><a class="reference internal" href="#api-v2-endpoint" id="id15">API v2 endpoint</a></p></li>
+<li><p><a class="reference internal" href="#recent-updates-to-subscriptions" id="id13">Recent Updates to Subscriptions</a></p></li>
+<li><p><a class="reference internal" href="#subscriptions-prepaid" id="id14">Subscriptions (prepaid)</a></p></li>
+<li><p><a class="reference internal" href="#subscriptions-legacy-page" id="id15">Subscriptions (legacy page)</a></p></li>
+<li><p><a class="reference internal" href="#invoices-and-receipts" id="id16">Invoices and receipts</a></p></li>
+<li><p><a class="reference internal" href="#api-v2-endpoint" id="id17">API v2 endpoint</a></p></li>
 </ul>
 </nav>
 <p>To view the Purchases panel, first open the <a class="reference internal" href="../project-toolbar.html#project-list"><span class="std std-ref">Project List</span></a>, then click “Account” at upper right, then “Purchases”. You can also view the Purchases panel by browsing to <a class="reference external" href="https://cocalc.com/settings/purchases">https://cocalc.com/settings/purchases</a></p>
+<p>CoCalc’s purchasing system has been upgraded as of August, 2023. Here’s the CoCalc feature announcement and discussion: <a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6848">ANN: CoCalc’s New Purchasing System</a>.</p>
 <section id="account-balance">
 <h2><a class="toc-backref" href="#id9" role="doc-backlink">Account Balance</a><a class="headerlink" href="#account-balance" title="Permalink to this heading"></a></h2>
 <figure class="align-center" id="id2">
@@ -203,7 +208,7 @@
 <p>Account balance information is displayed in the upper part of the Purchases panel.</p>
 </section>
 <section id="enable-disable-automatic-payments">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Enable/Disable Automatic Payments</a><a class="headerlink" href="#enable-disable-automatic-payments" title="Permalink to this heading"></a></h2>
+<span id="automatic-payments"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Enable/Disable Automatic Payments</a><a class="headerlink" href="#enable-disable-automatic-payments" title="Permalink to this heading"></a></h2>
 <p>Note the “Enable Automatic Payments” button at upper left. Click it to enable, click again to disable automatic payments.</p>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/enable-auto-pay.png"><img alt="enable auto pay pop-up" src="../_images/enable-auto-pay.png" style="width: 100%;" /></a>
@@ -228,9 +233,31 @@
 <p>This is where you can enter credit card information for the CoCalc account.
 Credit card details (full credit card number, expiration date, CVV number) are maintained by our payment provider and are not stored on CoCalc servers or visible to the CoCalc support team. For details, see <a class="reference internal" href="../update-credit-card.html#update-credit-card"><span class="std std-ref">Update Your Credit Card</span></a>.</p>
 </section>
-<section id="subscriptions">
-<span id="subscription-list"></span><span id="account-subscriptions"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">Subscriptions</a><a class="headerlink" href="#subscriptions" title="Permalink to this heading"></a></h2>
-<p>This section lists your currently active license subscriptions, personal plans, and course packages.
+<section id="recent-updates-to-subscriptions">
+<span id="subscriptions-update"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">Recent Updates to Subscriptions</a><a class="headerlink" href="#recent-updates-to-subscriptions" title="Permalink to this heading"></a></h2>
+<p>As of August 2023, we changed CoCalc to make it more straightforward to work with subscriptions:</p>
+<ol class="arabic simple">
+<li><p>A few days before the subscription renews, we send out an email with a cancel link. This link lets a user cancel a subscription and does NOT require signing into cocalc, though there is a confirmation process.  This avoids users getting frustrated trying to reset their password, navigate the site, etc., just to cancel a subscription.  Instead it’s a direct link.</p></li>
+<li><p>We also provide a prorated refund when the subscription is canceled, so you can use the remaining money toward something else in cocalc, rather than being locked in for the duration of the subscription.  We think this is much more flexible than the old system.</p></li>
+<li><p>It’s now possible to have a subscription without having any automatic payment method on file.  Instead, when the renewal date is near, you get an email that you should add credit to your account to cover the subscription renewal.  This is valuable to people in some countries, like India, where automatic subscription renewals are heavily regulated by law.</p></li>
+<li><p>After you cancel a subscription, you can resume it later, rather than having to create a new subscription.</p></li>
+<li><p>You can edit what a subscription is for (e.g., increase the RAM) at any time, and you just pay the prorated difference.</p></li>
+</ol>
+</section>
+<section id="subscriptions-prepaid">
+<span id="subscription-list"></span><span id="account-subscriptions"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">Subscriptions (prepaid)</a><a class="headerlink" href="#subscriptions-prepaid" title="Permalink to this heading"></a></h2>
+<p>As noted above, the CoCalc purchasing system has been revised as of August, 2023.</p>
+<p>To buy a license subscription with the newer system, visit the same link as before, <a class="reference external" href="https://cocalc.com/store/site-license">https://cocalc.com/store/site-license</a>.</p>
+<p>With the prepaid system, if you don’t have a payment method on file, you can optionally select <a class="reference internal" href="#automatic-payments"><span class="std std-ref">Enable/Disable Automatic Payments</span></a> and enter a payment method.</p>
+<p>To view currently active subscriptions, browse to <a class="reference external" href="https://cocalc.com/settings/subscriptions">https://cocalc.com/settings/subscriptions</a>. This link will take you to the new system:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/new-subscr.png"><img alt="view subscriptions" src="../_images/new-subscr.png" style="width: 100%;" /></a>
+</figure>
+</section>
+<section id="subscriptions-legacy-page">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Subscriptions (legacy page)</a><a class="headerlink" href="#subscriptions-legacy-page" title="Permalink to this heading"></a></h2>
+<p>You can still use the legacy subscription purchasing system by clicking “Legacy Subscriptions Page…” at the bottom of the prepaid subscription view, or by visiting <a class="reference external" href="https://cocalc.com/store/site-license">https://cocalc.com/store/site-license</a> and selecting one of the subscription options there.</p>
+<p>The legacy subscriptions section lists your currently active license subscriptions, personal plans, and course packages.
 The word “Active” denotes ordinary active subscriptions.
 The word “Trialing” indicates a free trial or other custom subscription plan.</p>
 <div class="admonition note">
@@ -256,7 +283,7 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 </figure>
 </section>
 <section id="invoices-and-receipts">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink">Invoices and receipts</a><a class="headerlink" href="#invoices-and-receipts" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Invoices and receipts</a><a class="headerlink" href="#invoices-and-receipts" title="Permalink to this heading"></a></h2>
 <p>The “Invoices and receipts” section shows a list of CoCalc purchases made using the order process on this page.</p>
 <figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../_images/three-rcpt-hidden.png"><img alt="condensed list of receipts" src="../_images/three-rcpt-hidden.png" style="width: 90%;" /></a>
@@ -272,7 +299,7 @@ The subscription will not be auto-renewed at the next renewal date and the expir
 </figure>
 </section>
 <section id="api-v2-endpoint">
-<h2><a class="toc-backref" href="#id15" role="doc-backlink">API v2 endpoint</a><a class="headerlink" href="#api-v2-endpoint" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">API v2 endpoint</a><a class="headerlink" href="#api-v2-endpoint" title="Permalink to this heading"></a></h2>
 <p>If you’re interested in automating access to purchase data, see the <a class="reference external" href="https://doc.cocalc.com/api2/get-purchases.html">API v2 endpoint to get purchases</a>.</p>
 </section>
 </section>

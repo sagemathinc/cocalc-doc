@@ -40,6 +40,7 @@
    gsl
    nbgrader
    neuron
+   awscli
    mongodb
    octave
    pluto

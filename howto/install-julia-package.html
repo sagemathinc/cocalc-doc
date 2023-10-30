@@ -14,11 +14,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -180,17 +180,18 @@ The install command will not work unless you <a class="reference internal" href=
 <h2>Install requests<a class="headerlink" href="#install-requests" title="Permalink to this heading"></a></h2>
 <p>If a package may have general use but is not already installed in CoCalc,
 please open a support request to tell us to install it globally for everyone.
-Please include information about special dependencies or a specific example to test it.</p>
+Please include information about special dependencies or a specific example to test it.
+Please be aware, due to upgrade issues or general conflicts, not all packages can be installed.</p>
 </section>
 <section id="install-a-package">
 <h2>Install a package<a class="headerlink" href="#install-a-package" title="Permalink to this heading"></a></h2>
-<section id="install-a-julia-package-from-the-command-line">
-<h3>Install a Julia Package from the Command Line<a class="headerlink" href="#install-a-julia-package-from-the-command-line" title="Permalink to this heading"></a></h3>
+<section id="command-line-custom-depot-path">
+<h3>Command Line / Custom Depot Path<a class="headerlink" href="#command-line-custom-depot-path" title="Permalink to this heading"></a></h3>
 <p>To install custom Julia packages as a normal user, you have to type this in a terminal before starting Julia:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>export JULIA_DEPOT_PATH=$HOME/julia_depot
 </pre></div>
 </div>
-<p>When you do this, you will have to reinstall any needed Julia packages that were installed systemwide, since that’s the way Julia works.</p>
+<p>When you do this, you will have to reinstall any needed Julia packages that were installed system-wide, since that’s the way Julia works.</p>
 <p>To have this setting picked up by any terminal in a given project, you can set the <code class="docutils literal notranslate"><span class="pre">JULIA_DEPOT_PATH</span></code> environment variable as explained in <a class="reference internal" href="../project-settings.html#project-env-vars"><span class="std std-ref">Custom environment variables</span></a> and restart the project.</p>
 <p>After setting <code class="docutils literal notranslate"><span class="pre">JULIA_DEPOT_PATH</span></code>, follow the usual Julia <a class="reference external" href="https://docs.julialang.org/en/v1/stdlib/Pkg/">pkg documentation</a>:</p>
 <ol class="arabic simple">
@@ -201,13 +202,28 @@ Please include information about special dependencies or a specific example to t
 <li><p>Hit backspace or Control-C to exit the package manager and Control-D to exit Julia.</p></li>
 </ol>
 </section>
-<section id="install-a-julia-package-in-a-jupyter-notebook">
-<h3>Install a Julia Package in a Jupyter Notebook<a class="headerlink" href="#install-a-julia-package-in-a-jupyter-notebook" title="Permalink to this heading"></a></h3>
+<section id="command-line-custom-environment">
+<h3>Command Line / Custom Environment<a class="headerlink" href="#command-line-custom-environment" title="Permalink to this heading"></a></h3>
+<p>Julia comes with a packaging mechanism to create
+<a class="reference external" href="https://pkgdocs.julialang.org/v1/environments/">custom environments</a>.
+This might be what you really need in order to make your code work
+in many places.</p>
+<p>Note: details about how to set this up and how it works is beyond CoCalc’s expertise.</p>
+<p>To use such an environment in a Jupyter Notebook,
+you will have to setup your own kernel in a CoCalc project.
+Follow <a class="reference internal" href="custom-jupyter-kernel.html#jupyter-custom-kernel"><span class="std std-ref">Custom Jupyter Kernel</span></a> for how to do this – you basically copy one of the global Julia kernels and tweak it’s <code class="docutils literal notranslate"><span class="pre">kernel.json</span></code> definition.</p>
+</section>
+<section id="in-a-jupyter-notebook">
+<h3>In a Jupyter Notebook<a class="headerlink" href="#in-a-jupyter-notebook" title="Permalink to this heading"></a></h3>
 <p>No special environment setting is needed. Simply do the following in a code cell in a Jupyter notebook that has the default Julia kernel selected:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import Pkg; Pkg.add(&quot;package_name&quot;)
 </pre></div>
 </div>
 <p>and let the install run to completion.</p>
+<p>This will cause Julia to install that package locally on top of the globally installed packages.
+That might not always work, though.
+You might also want to try installing from the command-line,
+to get a better view into the console output and to better understand any error messages.</p>
 </section>
 </section>
 </section>

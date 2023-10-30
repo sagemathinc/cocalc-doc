@@ -24,6 +24,7 @@ See the section `LaTeX/Modular Documents <https://en.wikibooks.org/wiki/LaTeX/Mo
 
 .. image:: img/latex-multifile.png
     :width: 100%
+    :alt: latex with multiple files
 
 .. _latex-forward-inverse:
 
@@ -51,6 +52,7 @@ Spell checking during LaTeX editing is available for several languages. You can 
 .. image:: img/latex-spellcheck.png
     :width: 50%
     :align: center
+    :alt: latex spellcheck
     
 You can use your browser's spell checking for the document if you prefer. Choose "Browser (your browser's spell check)". You can find out more about browser spell checking
 `here <https://support.luminello.com/article/1090-how-does-spell-checker-work-in-each-browser>`_.
@@ -70,6 +72,7 @@ Select **"Word Count"** as shown below:
 .. image:: img/latex-word-count.png
     :width: 50%
     :align: center
+    :alt: latex word count
 
 .. _texcount: http://app.uio.no/ifi/texcount/whatitdoes.html
 

@@ -14,11 +14,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -193,30 +193,7 @@ generic HTML message rather than a JSON string.</p>
 </section>
 <section id="authentication">
 <h1>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading"></a></h1>
-<p>A valid API key is required on all API requests.</p>
-<p>To obtain a key manually, log into
-CoCalc and click on Settings (gear icon next to user name at upper
-right), and look under <code class="docutils literal notranslate"><span class="pre">Account</span> <span class="pre">Settings</span></code>.
-With the <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">key</span></code> dialogue, you can create a key,
-view a previously assigned key, generate a replacement key,
-and delete your key entirely.</p>
-<p id="index-0">It is also possible to obtain an API key using a javascript-enabled automated web client.
-This option is useful for applications that embed CoCalc
-in a custom environment, for example <a class="reference external" href="https://juno.sh">juno.sh</a>,
-the iOS application for Jupyter notebooks.
-Visiting the link <code class="samp docutils literal notranslate"><span class="pre">https://cocalc.com/app?get_api_key=myapp</span></code>,
-where “myapp” is an identifier for your application,
-returns a modified sign-in page with the banner
-“CoCalc API Key Access for Myapp”.
-The web client must
-sign in with credentials for the account in question.
-Response headers from a successful sign-in will include a url of the form
-<code class="samp docutils literal notranslate"><span class="pre">https://authenticated/?api_key=sk_abcdefQWERTY090900000000</span></code>.
-The client should intercept this response and capture the string
-after the equals sign as the API key.</p>
-<p>Your API key carries access privileges, just like your login and password.
-<strong>Keep it secret.</strong>
-Do not share your API key with others or post it in publicly accessible forums.</p>
+<p>A valid API key is required on all API requests. To learn how to create an API key, see <a class="reference internal" href="../apikeys.html"><span class="doc">API Keys</span></a>.</p>
 </section>
 <section id="additional-references">
 <h1>Additional References<a class="headerlink" href="#additional-references" title="Permalink to this heading"></a></h1>

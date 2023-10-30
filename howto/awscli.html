@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Install AWS CLI &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/awscli.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/howto/awscli.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="../index.html" class="icon icon-home"> CoCalc Manual
+  <img src="../_static/../_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">What is CoCalc?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../paygo.html">Pay-As-You-Go Purchase</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licenses.html">Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../news.html">CoCalc News</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trial.html">Trial Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Teaching</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chatgpt.html">ChatGPT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gpt4-course.html">GPT4 with Courses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vouchers.html">Vouchers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../on-premises.html">On-Premises CoCalc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project.html">Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../latex.html">LaTeX Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../terminal.html">Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../servers.html">Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../users.html">Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../upgrades.html">Upgrades</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../backups.html">Backups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../x11.html">Graphical Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chat.html">Chatrooms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tasks.html">Task Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tours.html">Tours</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../flyouts.html">Flyout Panels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../markdown.html">Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../csv-viewer.html">CSV Viewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../time-travel.html">Time Travel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../share.html">Shared Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../restrict-student-projects.html">Restrict Student Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platform</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../display-options.html">Display Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-toolbar.html">Project Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-dropdown.html">Account Dropdown Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../activity-bar.html">Activity Bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-home.html">Project Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explorer.html">Explorer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html">(+) New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../plus-new.html#default-contents-for-new-files">Default contents for new files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-log.html">Project Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files-search.html">Files Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../processes.html">Processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../project-settings.html">Project Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account-toolbar.html">Account Toolbar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../account/purchases.html">Purchases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../update-credit-card.html">Update Your Credit Card</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../billing.html">Billing/Upgrades FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ipad.html">iPad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apikeys.html">API Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api2/index.html">API v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API v1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-cloud.html">CoCalc Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="../index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Install AWS CLI</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="install-aws-cli">
+<span id="install-awscli"></span><span id="index-0"></span><h1>Install AWS CLI<a class="headerlink" href="#install-aws-cli" title="Permalink to this heading"></a></h1>
+<p>Here is how you can install AWS command-line utility in a CoCalc project.
+The main idea is to unpack the distribution in your project and tell the installation script to put it into your project.</p>
+<p>This works for any kind of utility, which comes pre-packaged and can be installed in your <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>-directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>                     <span class="c1"># make sure you&#39;re in your $HOME directory</span>
+mkdir awscli           <span class="c1"># where it will end up</span>
+<span class="nb">cd</span> awscli/
+curl <span class="s2">&quot;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&quot;</span> -o <span class="s2">&quot;awscliv2.zip&quot;</span>
+unzip awscliv2.zip
+./aws/install -i ~/awscli -b ~/bin            <span class="c1"># the installation</span>
+rm -rf aws awscliv2.zip                       <span class="c1"># remove temporary files</span>
+</pre></div>
+</div>
+<p>What remains are installation artifacts in <code class="docutils literal notranslate"><span class="pre">~/awscli</span></code> and a symlink from your <code class="docutils literal notranslate"><span class="pre">~/bin</span></code> directory to the entry point where it has been installed. Confirm this by running <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">aws</span></code>.</p>
+<p>With that, you can run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ aws --version gives
+
+aws-cli/2.13.28 Python/3.11.6 Linux/5.15.0-1038-gcp exe/x86_64.ubuntu.22 prompt/off
+</pre></div>
+</div>
+<p>Ref: <a class="reference external" href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html</a></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/awscli.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="../_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>
