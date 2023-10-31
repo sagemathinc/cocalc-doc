@@ -48,7 +48,15 @@ Make sure to change the name of the kernel, etc.  E.g., you might change ``kerne
 
     {
      "display_name": "sage_custom",
-     "argv": ["/home/user/sage/sage", "--python", "-m", "sage.repl.ipython_kernel", "--matplotlib=inline", "-f", "{connection_file}"]
+     "argv": [
+         "/home/user/sage/sage",
+         "--python",
+         "-m",
+         "sage.repl.ipython_kernel",
+         "--matplotlib=inline",
+         "-f",
+         "{connection_file}"
+     ]
     }
 
 
@@ -112,3 +120,11 @@ Restart the terminal via Ctrl-d. "pyenv versions" should then show you what you 
     python -m ipykernel install --user --name=py3.10 --display-name "Python 3.10"
 
 After the above steps, when you open a Jupyter notebook, you may have to do "Refresh kernel list" at the bottom of the Kernel menu, or refresh the CoCalc tab. You will then see "Python 3.10" listed among the available kernels.
+
+.. note::
+
+    For a Python kernel, we suggest to add these parameters to the ``argv`` array:
+
+    * ``"--HistoryManager.enabled=False"``: there is no need to record the history in a local database
+    * ``"--matplotlib=inline"``: to automatically load matplotlib
+
