@@ -12,10 +12,88 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    index
    getting-started
-   paygo
-   licenses
    news
+   tours
+   howto/index
+   howto/trouble
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Service Options
+
    trial
+   licenses
+   paygo
+   vouchers
+   on-premises
+   docker-image
+   cocalc-cloud
+   cocalc-desktop
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Working With
+
+   frame-editor
+   jupyter
+   terminal
+   latex
+   vscode
+   chat
+   chatgpt
+   x11
+   
+   sagews
+   markdown
+   rich-text
+   csv-viewer
+
+   whiteboard
+   tasks
+   timers
+   slides
+   snippets
+   
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Platform
+
+   project
+   share
+   software
+   backups
+   time-travel
+
+   apikeys
+   api2/index.rst
+   api/index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: User Interface
+
+   display-options
+   project-toolbar
+   activity-bar
+   project-home
+   flyouts
+   explorer
+   plus-new
+   project-log
+   files-search
+   servers
+   users
+   upgrades
+   processes
+   project-settings
+
+   account-dropdown
+   account-toolbar
+   account/purchases
+   update-credit-card
+   billing
+   ipad
 
 .. toctree::
    :maxdepth: 2
@@ -23,71 +101,9 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    teaching-instructors
    teaching-students
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Features
-
-   chatgpt
    gpt4-course
-   jupyter
-   slides
-   whiteboard
-   vouchers
-   on-premises
-   project
-   latex
-   sagews
-   terminal
-   servers
-   users
-   upgrades
-   vscode
-   backups
-   x11
-   chat
-   tasks
-   timers
-   tours
-   flyouts
-   frame-editor
-   markdown
-   rich-text
-   csv-viewer
-   time-travel
-   snippets
-   share
    restrict-student-projects
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Platform
-
-   display-options
-   project-toolbar
-   account-dropdown
-   activity-bar
-   project-home
-   explorer
-   plus-new
-   project-log
-   files-search
-   processes
-   project-settings
-   account-toolbar
-   account/purchases
-   update-credit-card
-   billing
-   software
-   ipad
-   howto/index
-   howto/trouble
-   apikeys
-   api2/index.rst
-   api/index.rst
-   docker-image
-   cocalc-cloud
-   cocalc-desktop
 
 Indices, references and tables
 ==============================
