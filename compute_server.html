@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compute Servers &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/compute_server.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Pay-As-You-Go Purchase" href="paygo.html" />
+    <link rel="prev" title="License error messages" href="license-errors.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/compute_server.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working_with.html">Working With</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform.html">Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_interface.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="service_options.html">Service Options</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Compute Servers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-compute-server">Creating a Compute Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-a-compute-server">Using a Compute Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#billing-for-a-compute-server">Billing for a Compute Server</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paygo.html">Pay-As-You-Go Purchase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="on-premises.html">On-Premises CoCalc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docker-image.html">CoCalc Docker Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cocalc-cloud.html">CoCalc Cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teaching.html">Teaching</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="service_options.html">Service Options</a></li>
+      <li class="breadcrumb-item active">Compute Servers</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="compute-servers">
+<span id="index-0"></span><h1>Compute Servers<a class="headerlink" href="#compute-servers" title="Permalink to this heading"></a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#creating-a-compute-server" id="id6">Creating a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#using-a-compute-server" id="id7">Using a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#billing-for-a-compute-server" id="id8">Billing for a Compute Server</a></p></li>
+</ul>
+</nav>
+<p>A compute server in CoCalc is a remote computer, whose resources (GPUs, CPUs, RAM, disks) you can utilize via CoCalc collaborative interface in Jupyter notebooks and terminals. It is a way to open up possibilities for enhanced computing resources, extending far beyond the bounds of local machines.</p>
+<p>To create a compute server, you select the software image, hardware and (optional) GPU, and can then start running any Jupyter notebook or Linux terminal on this server for an on-demand fee, charged by the second when the server is in use.</p>
+<p>The GPU support is extensive, offering variants including A100 80GB, A100 40GB, L4, and T4 GPUs with finely configured software stacks. These stack images include SageMath, Google Colab, Julia, PyTorch, Tensorflow and CUDA Toolkit, accommodating a versatile range of uses. The compute servers come at highly competitive pricing, particularly for spot instances.</p>
+<section id="creating-a-compute-server">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Creating a Compute Server</a><a class="headerlink" href="#creating-a-compute-server" title="Permalink to this heading"></a></h2>
+<p>Navigate to the project where you intend to use a compute server. Click on the “Servers” button on the left side of the screen and select “Create Compute Server”:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/compute_server_creating.png"><img alt="Creating a Compute Server" src="_images/compute_server_creating.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Creating a Compute Server</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>You will be prompted to select the desired software image and optionally a GPU. A GPU is selected by default but you can disable it if you don’t need one.</p>
+<p>If you are going to write code using CUDA libraries, choose the “Cuda Toolkit” image. If you want to accelerate PyTorch computations with a GPU, choose the “PyTorch” image. If you want to use SageMath, choose the “SageMath” image. Note that image selection does depend on the presence of a GPU.</p>
+<p>Adjust the hardware parameters according to your needs. Take some time to look over the options! Note that you will be able to edit CPU and RAM when the machine if off, so if you don’t quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. The disk size can be increased even when the machine is running.</p>
+<p>Start your compute server!</p>
+</section>
+<section id="using-a-compute-server">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Using a Compute Server</a><a class="headerlink" href="#using-a-compute-server" title="Permalink to this heading"></a></h2>
+<p>If you want to use the Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and using the upper-left menu, select your compute server:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/compute_server_terminal.png"><img alt="Connecting a Compute Server to a Terminal" src="_images/compute_server_terminal.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">Connecting a Compute Server to a Terminal</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If you chose the “CUDA Toolkit”, then the “nvcc” command will be available for compiling .cu code.</p>
+<p>If you need to edit the files during your computations on the compute server, remember to click the “Sync” button at the top left of the terminal for the files to get copied to your compute server:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/compute_server_syncing.png"><img alt="Sync Button for a Compute Server" src="_images/compute_server_syncing.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">Sync Button for a Compute Server</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>If you chose the “PyTorch” image or similar, create a Jupyter notebook and move it to the compute server via the upper-left menu in the same way. You can then select a Jupyter kernel that’s available on the compute server, and your Jupyter notebook will run there:</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/compute_server_select_kernel.png"><img alt="Picking a Jupyter Kernel on a Compute Server" src="_images/compute_server_select_kernel.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Picking a Jupyter Kernel on a Compute Server</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="billing-for-a-compute-server">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Permalink to this heading"></a></h2>
+<p>Compute servers are billed by the second when they are running. When they are stopped, you pay only for the disk space. In this example the running cost is $0.14/hour while the disk cost is less than a penny, notice the extra zero in $0.009/hour:</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/compute_server_cost_running_vs_stopped.png"><img alt="Compute Server Cost" src="_images/compute_server_cost_running_vs_stopped.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Compute Server Cost</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>In “Deprovisioned” state there is no charge at all, but you do lose data that were not synced to your CoCalc project.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="license-errors.html" class="btn btn-neutral float-left" title="License error messages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="paygo.html" class="btn btn-neutral float-right" title="Pay-As-You-Go Purchase" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/compute_server.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>
