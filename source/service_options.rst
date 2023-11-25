@@ -6,6 +6,7 @@ Service Options
 
   trial
   licenses
+  compute_server
   paygo
   vouchers
   on-premises
