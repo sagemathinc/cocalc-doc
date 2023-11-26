@@ -10,9 +10,11 @@ Pay-As-You-Go Purchase
 
 CoCalc's Pay-As-You-Go feature lets you choose resources for a project and only pay for them while the project is running.
 
+A related concept are :doc:`compute servers <compute_server>` that allow you to connect powerful remote computers to your CoCalc project.
+
 You can choose different amounts of any resource the next time you run the project.
 
-Resources are completely editable at any time, for both new purchases and existing licenses. Existing licenses are NOW editable at any time by the user who bought the license (but by nobody else).
+Resources are completely editable at any time, for both new purchases and existing licenses. Existing licenses are now editable at any time by the user who bought the license (but by nobody else).
 
 Here's the CoCalc feature announcement and discussion: `ANN: CoCalc's New Purchasing System <https://github.com/sagemathinc/cocalc/discussions/6848>`_.
 
