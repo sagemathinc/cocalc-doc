@@ -56,7 +56,7 @@ If you want to use the Linux command line, e.g., compilers, etc., create a termi
 
 If you chose the "CUDA Toolkit", then the "nvcc" command will be available for compiling .cu code. See `this tutorial <https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md>`_ for details.
 
-If you need to edit the files during your computations on the compute server, remember to click the "Sync" button at the top left of the terminal for the files to get copied to your compute server:
+When you edit files via CoCalc interface, they are synced to the compute server automatically. However, if you are using vim or some other tool in a terminal, you may need to click the "Sync" button at the top left for the files to get copied to your compute server:
 
 .. figure:: img/compute_server_syncing.png
     :width: 60%
