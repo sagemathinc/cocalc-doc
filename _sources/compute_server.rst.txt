@@ -18,7 +18,11 @@ The GPU support is extensive, offering variants including A100 80GB, A100 40GB, 
 Examples of Compute Server Uses
 -------------------------------
 
-You may find something useful, at least some inspiration, in our growing `collection of tutorials <https://github.com/sagemathinc/cocalc-howto/blob/main/README.md>`_ that make use of compute servers.
+You may find something useful, at least some inspiration, in our growing `collection of tutorials <https://github.com/sagemathinc/cocalc-howto/blob/main/README.md>`_ that make use of compute servers. You can either read them or follow along video versions. Here William explains how to run Google Colab environment on compute servers and use either Tensorflow or PyTorch:
+
+.. raw:: html
+
+    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/kcxyShH3wYE?si=rGZEWZgs6XbOF38u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 ----------------------------
 Creating a Compute Server
@@ -37,7 +41,13 @@ You will be prompted to select the desired software image and optionally one or 
 
 If you are going to write code using CUDA libraries, choose the "Cuda Toolkit" image. If you want to accelerate PyTorch computations with a GPU, choose the "PyTorch" image. If you want to use SageMath, choose the "SageMath" image. Note that image selection does depend on the presence of a GPU.
 
-Adjust the hardware parameters according to your needs. Take some time to look over the options! Note that you will be able to edit CPU and RAM when the machine if off, so if you don't quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. The disk size can be increased even when the machine is running. Unfortunately, you currently can't move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this may change in the future.
+Adjust the hardware parameters according to your needs. Take some time to look over the options! Note that you will be able to edit CPU and RAM when the machine if off, so if you don't quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. For example, in this video William uses a machine with 60 CPU cores and 240GB of RAM to build SageMath from source in under 18 minutes:
+
+.. raw:: html
+
+    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/b8e8qq-KWbA?si=Y9N6ZtcVKo3fD9Fn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+After the build is done, William changes the machine type to have only 2 CPU cores and 8GB of RAM - such a machine is very cheap to run even 24/7! The disk size can be increased even when the machine is running. Unfortunately, you currently can't move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this may change in the future.
 
 Start your compute server!
 
@@ -56,7 +66,7 @@ If you want to use the Linux command line, e.g., compilers, etc., create a termi
 
 If you chose the "CUDA Toolkit", then the "nvcc" command will be available for compiling .cu code. See `this tutorial <https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md>`_ for details.
 
-If you need to edit the files during your computations on the compute server, remember to click the "Sync" button at the top left of the terminal for the files to get copied to your compute server:
+When you edit files via CoCalc interface, they are synced to the compute server automatically. However, if you are using vim or some other tool in a terminal, you may need to click the "Sync" button at the top left for the files to get copied to your compute server:
 
 .. figure:: img/compute_server_syncing.png
     :width: 60%
