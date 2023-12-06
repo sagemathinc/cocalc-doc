@@ -9,7 +9,7 @@ Jupyter Tips and Tricks
      :depth: 1
 
 #################################################
-Run Jupyter notebook with a GPU support
+Run Jupyter notebook with GPU support
 #################################################
 
 CoCalc allows you to use basic and advanced GPUs for a few pennies an hour! See :doc:`compute_server` for details.
