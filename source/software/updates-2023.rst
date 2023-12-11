@@ -10,6 +10,14 @@ Software Updates 2023
 
 .. highlight:: python
 
+.. _update-2023-12-11:
+
+2023-12-11: Sage 10.2 and Python 3 (Colab)
+---------------------------------------------
+
+- (new) `Sagemath 10.2 <https://github.com/sagemath/sage/wiki/Sage-10.2-Release-Tour>`_ is now available as a Jupyter Notebook kernel or the ``sage-10.2`` executable. Note: `3D graphics are broken <https://github.com/sagemathinc/cocalc/issues/7103>`_.
+- (new) **Python 3 (Colab)**: this Python environment is very similar to what is offered in `Google Colab`_. This makes moving your worksheets over to CoCalc easy. Note, for GPU support start a :ref:`Compute Server <compute-servers>` and select the "Colab" environment.
+- (upd) system-wide/R/Python 3: as usual, many updated packages and libraries
 
 .. _update-2023-10-23:
 
@@ -150,3 +158,4 @@ Additionally, many newer versions will be available – starting with a more rec
 .. _Macaulay2: http://www2.macaulay2.com/Macaulay2/
 .. _capytaine: https://github.com/capytaine/capytaine
 .. _miniforge: https://github.com/conda-forge/miniforge
+.. _Google Colab: https://colab.research.google.com/
