@@ -9,7 +9,7 @@ You may receive a warning that your project is running out of disk space. Here a
 
 - Store less data, delete what you don't need.
 - Work with more than one project.
-- Buy an upgrade for :doc:`additional disk space <../add-capacity>`.
+- :ref:`Edit your license <manage-licenses>` to add more disk space.
 - Connect to a :ref:`remote file storage <project-datastore>`.
 - If the problem is with a Jupyter notebook using too much disk space, click on :doc:`../servers` in the :doc:`../activity-bar`, then "JupyterLab server", then open your file from there, and remove extra content to make the size smaller, then save it. After that you may be able to open it in Cocalc again.
 
