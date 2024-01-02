@@ -17,9 +17,9 @@ Software Updates 2024
 
 Let's start 2024 with a larger update!
 
-- (new) `SageMath`_ ``10.2``: `10.2 release tour <https://github.com/sagemath/sage/wiki/Sage-10.2-Release-Tour>`_
-- (new) `Julia` ``1.10``: `1.10 release notes <https://docs.julialang.org/en/v1/NEWS/>`_: Use ``julia-<version>`` on the command line or a different kernel to switch between versions.
-- (upd) system-wide, there are a lot of updates, not only the Python 3 based environment, but also various Linux utilities. E.g. there is now `gcc`_ 12 available.
+- (new) `SageMath`_ version ``10.2`` is the default now: `10.2 release tour <https://github.com/sagemath/sage/wiki/Sage-10.2-Release-Tour>`_. You can use the ``sage_select`` utility to switch what version to use in a :ref:`sage-worksheet` or switch the kernel in a :ref:`Jupyter Notebook <jupyter-notebook>`.
+- (new) `Julia`_ ``1.10``: `1.10 release notes <https://docs.julialang.org/en/v1/NEWS/>`_: Use ``julia-<version>`` on the command line or a different kernel to switch between versions.
+- (upd) system-wide, there are a lot of updates, not only the Python 3 based environment, but also various Linux utilities. E.g. `gcc`_ 12 is available now.
 
 
 
@@ -73,3 +73,4 @@ Let's start 2024 with a larger update!
 .. _miniforge: https://github.com/conda-forge/miniforge
 .. _Google Colab: https://colab.research.google.com/
 .. _gcc: https://gcc.gnu.org/
+.. _julia: https://julialang.org/
