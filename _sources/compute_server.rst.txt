@@ -1,4 +1,5 @@
 .. index:: Compute Servers
+.. _compute-servers:
 
 ==========================
 Compute Servers
