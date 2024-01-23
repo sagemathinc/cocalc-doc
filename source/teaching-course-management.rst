@@ -77,6 +77,11 @@ When an assignment is distributed to a student, a **copy** of the assignment fol
 
 Advise the students that all work on the assignment should take place in this folder. Any work performed outside of this folder will not be collected.
 
+Check "Student View"
+====================
+
+If you want to see what *exactly* your students will see and experience, the best way is to use your other email to create another CoCalc account (use incognito mode in your browser to prevent interference with your main account), add this "test student" to your course, and assign an assignment just to this test student before the whole class.
+
 Peer Grading
 ======================================
 
