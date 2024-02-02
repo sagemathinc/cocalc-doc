@@ -80,7 +80,7 @@ Using ``@`` followed by a recipient's name in a chat message you send, you can c
 .. index:: Collaboration; shared project
 
 ################################
-Creating a shared project
+Shared Project
 ################################
 
 You can create a common shared project for your course. Think of a shared project as your private course website for the students with automatic forum and code support. By default everybody (collaborators and students) will have **write** access to the project and its associated files.
@@ -109,23 +109,6 @@ In case you want to change a read only file into a read and write, type::
 Group Projects
 ################################
 
-There are various ways in which you can facilitate students' group projects in CoCalc.
-A couple of options are:
+If you want students to work together in groups, you can assign a "leader" for each group, have them create a project, and add other members and you as collaborators. (Of course, you can also create all such projects yourself, although it can take some time.) Everybody will be able to collaborate on this project and modify files simultaneously.
 
-One project per team
--------------------------------
-
-Have someone in each group make a project with all the group members as collaborators.
-They will all then be able to collaborate on the same project and modify files simultaneously.
-
-You should note, however, that by using this approach you cannot automatically collect assignments from the team. A workaround could be creating an assignment in your main project and having the students copy that file to their group project.
-
-Using Git
------------------------------
-
-Students can collaborate from within their individual course projects using [Git] via the terminal in CoCalc.
-See :ref:`Using Git <teaching-using-git>` in
-:doc:`Tips and tricks <teaching-tips_and_tricks>`.
-
-
-
+If you want to use automatic distribution and collection of assignments with group projects, you can create a course file with only group "leaders" added as students and then manually add other group memebers as collaborators. We do plan to add a more direct support for groups in the future.
