@@ -72,7 +72,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#real-time-chatrooms">Real-time chatrooms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#live-collaborative-editing">Live collaborative editing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#mention-collaborators-in-chat">&#64;-Mention collaborators in chat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#creating-a-shared-project">Creating a shared project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shared-project">Shared Project</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#group-projects">Group Projects</a></li>
 </ul>
 </li>
@@ -138,13 +138,8 @@
 <li><p><a class="reference internal" href="#real-time-chatrooms" id="id2">Real-time chatrooms</a></p></li>
 <li><p><a class="reference internal" href="#live-collaborative-editing" id="id3">Live collaborative editing</a></p></li>
 <li><p><a class="reference internal" href="#mention-collaborators-in-chat" id="id4">&#64;-Mention collaborators in chat</a></p></li>
-<li><p><a class="reference internal" href="#creating-a-shared-project" id="id5">Creating a shared project</a></p></li>
-<li><p><a class="reference internal" href="#group-projects" id="id6">Group Projects</a></p>
-<ul>
-<li><p><a class="reference internal" href="#one-project-per-team" id="id7">One project per team</a></p></li>
-<li><p><a class="reference internal" href="#using-git" id="id8">Using Git</a></p></li>
-</ul>
-</li>
+<li><p><a class="reference internal" href="#shared-project" id="id5">Shared Project</a></p></li>
+<li><p><a class="reference internal" href="#group-projects" id="id6">Group Projects</a></p></li>
 </ul>
 </nav>
 <section id="real-time-chatrooms">
@@ -174,8 +169,8 @@ If one of your collaborators updates a notebook, the rest can see the changes as
 <span id="at-mention-chat"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">&#64;-Mention collaborators in chat</a><a class="headerlink" href="#mention-collaborators-in-chat" title="Permalink to this heading"></a></h2>
 <p>Using <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> followed by a recipient’s name in a chat message you send, you can cause an email notification to be sent. See <a class="reference internal" href="chat.html#chat-at-mentions"><span class="std std-ref">&#64;-mentions</span></a> for more information.</p>
 <span class="target" id="index-6"></span></section>
-<section id="creating-a-shared-project">
-<span id="index-7"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Creating a shared project</a><a class="headerlink" href="#creating-a-shared-project" title="Permalink to this heading"></a></h2>
+<section id="shared-project">
+<span id="index-7"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Shared Project</a><a class="headerlink" href="#shared-project" title="Permalink to this heading"></a></h2>
 <p>You can create a common shared project for your course. Think of a shared project as your private course website for the students with automatic forum and code support. By default everybody (collaborators and students) will have <strong>write</strong> access to the project and its associated files.</p>
 <p>To create a shared project you need to go to your <strong>.course</strong> file and click on the <strong>Shared Project</strong> button.</p>
 <a class="reference internal image-reference" href="_images/shared1.png"><img alt="creating a project that will be shared by all students" src="_images/shared1.png" style="width: 100%;" /></a>
@@ -195,20 +190,8 @@ If one of your collaborators updates a notebook, the rest can see the changes as
 </section>
 <section id="group-projects">
 <h2><a class="toc-backref" href="#id6" role="doc-backlink">Group Projects</a><a class="headerlink" href="#group-projects" title="Permalink to this heading"></a></h2>
-<p>There are various ways in which you can facilitate students’ group projects in CoCalc.
-A couple of options are:</p>
-<section id="one-project-per-team">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">One project per team</a><a class="headerlink" href="#one-project-per-team" title="Permalink to this heading"></a></h3>
-<p>Have someone in each group make a project with all the group members as collaborators.
-They will all then be able to collaborate on the same project and modify files simultaneously.</p>
-<p>You should note, however, that by using this approach you cannot automatically collect assignments from the team. A workaround could be creating an assignment in your main project and having the students copy that file to their group project.</p>
-</section>
-<section id="using-git">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Using Git</a><a class="headerlink" href="#using-git" title="Permalink to this heading"></a></h3>
-<p>Students can collaborate from within their individual course projects using [Git] via the terminal in CoCalc.
-See <a class="reference internal" href="teaching-tips_and_tricks.html#teaching-using-git"><span class="std std-ref">Using Git</span></a> in
-<a class="reference internal" href="teaching-tips_and_tricks.html"><span class="doc">Tips and tricks</span></a>.</p>
-</section>
+<p>If you want students to work together in groups, you can assign a “leader” for each group, have them create a project, and add other members and you as collaborators. (Of course, you can also create all such projects yourself, although it can take some time.) Everybody will be able to collaborate on this project and modify files simultaneously.</p>
+<p>If you want to use automatic distribution and collection of assignments with group projects, you can create a course file with only group “leaders” added as students and then manually add other group memebers as collaborators. We do plan to add a more direct support for groups in the future.</p>
 </section>
 </section>
 
