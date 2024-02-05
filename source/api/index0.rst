@@ -36,9 +36,9 @@ Additional References
 
 
 * The `CoCalc API tutorial <https://share.cocalc.com/share/6eec7a75ce704502e2d557f44c316bf75c5c6ce7/Public/?viewer=share>`_ illustrates API calls in Python.
-* The CoCalc PostgreSQL schema definition `src/smc-util/db-schema <https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/db-schema>`_ has information on tables and fields used with the API ``query`` request.
+* The CoCalc PostgreSQL schema definition `src/packages/util/db-schema <https://github.com/sagemathinc/cocalc/blob/master/src/packages/util/db-schema>`_ has information on tables and fields used with the API ``query`` request.
 * The API test suite `src/smc-hub/test/api/ <https://github.com/sagemathinc/cocalc/tree/master/src/smc-hub/test/api>`_ contains mocha unit tests for the API messages.
-* The CoCalc message definition file `src/smc-util/message.js <https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/message.js>`_ contains the source for this guide.
+* The CoCalc message definition file `src/packages/util/message.js <https://github.com/sagemathinc/cocalc/blob/master/src/packages/util/message.js>`_ contains the source for this guide.
 
 API Message Reference
 ---------------------

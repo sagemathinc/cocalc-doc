@@ -8,7 +8,7 @@ API key appears in the request. Two objects are returned, total upgrades
 and available upgrades.
 
 See
-https://github.com/sagemathinc/cocalc/blob/master/src/smc-util/upgrade-spec.js
+https://github.com/sagemathinc/cocalc/blob/master/src/packages/util/upgrade-spec.ts
 for units
 
 Example:
