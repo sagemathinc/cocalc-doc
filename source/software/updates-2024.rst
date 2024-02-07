@@ -10,6 +10,16 @@ Software Updates 2024
 
 .. highlight:: python
 
+.. _update-2024-02-07:
+
+2024-02-07: Octave fixes
+--------------------------------------------
+
+On top of various updates to many system packages and libraries,
+this update also tweaks how Octave output is processed.
+This should address `issue #6695 <https://github.com/sagemathinc/cocalc/issues/6695>`_.
+
+
 .. _update-2024-01-02:
 
 2024-01-02: Sage 10.2 and Julia 1.10
@@ -20,8 +30,6 @@ Let's start 2024 with a larger update!
 - (new) `SageMath`_ version ``10.2`` is the default now: `10.2 release tour <https://github.com/sagemath/sage/wiki/Sage-10.2-Release-Tour>`_. You can use the ``sage_select`` utility to switch what version to use in a :ref:`sage-worksheet` or switch the kernel in a :ref:`Jupyter Notebook <jupyter-notebook>`.
 - (new) `Julia`_ ``1.10``: `1.10 release notes <https://docs.julialang.org/en/v1/NEWS/>`_: Use ``julia-<version>`` on the command line or a different kernel to switch between versions.
 - (upd) system-wide, there are a lot of updates, not only the Python 3 based environment, but also various Linux utilities. E.g. `gcc`_ 12 is available now.
-
-
 
 
 
