@@ -139,7 +139,8 @@
 <section id="examples-of-compute-server-uses">
 <h2><a class="toc-backref" href="#id12" role="doc-backlink">Examples of Compute Server Uses</a><a class="headerlink" href="#examples-of-compute-server-uses" title="Permalink to this heading"></a></h2>
 <p>You may find something useful, at least some inspiration, in our growing <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/README.md">collection of tutorials</a> that make use of compute servers. You can either read them or follow along video versions. Here William explains how to run Google Colab environment on compute servers and use either Tensorflow or PyTorch:</p>
-<center><iframe width="640" height="360" src="https://www.youtube.com/embed/kcxyShH3wYE?si=rGZEWZgs6XbOF38u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center></section>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/kcxyShH3wYE?si=rGZEWZgs6XbOF38u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br/></section>
 <section id="creating-a-compute-server">
 <h2><a class="toc-backref" href="#id13" role="doc-backlink">Creating a Compute Server</a><a class="headerlink" href="#creating-a-compute-server" title="Permalink to this heading"></a></h2>
 <p>There are multiple ways to create a compute server, one of them is to click the <strong>Server</strong> button:</p>
@@ -151,13 +152,13 @@
 </figure>
 <p>You will be prompted to select the desired software image and optionally one or more GPUs.</p>
 <p>If you are going to write code using CUDA libraries, choose the “Cuda Toolkit” image. If you want to accelerate PyTorch computations with a GPU, choose the “PyTorch” image. If you want to use SageMath, choose the “SageMath” image. Note that image selection does depend on the presence of a GPU.</p>
-<p>Adjust the hardware parameters according to your needs. Take some time to look over the options! Note that you will be able to edit CPU and RAM when the machine if off, so if you don’t quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. For example, in this video William uses a machine with 60 CPU cores and 240GB of RAM to build SageMath from source in under 18 minutes:</p>
-<center><iframe width="640" height="360" src="https://www.youtube.com/embed/b8e8qq-KWbA?si=Y9N6ZtcVKo3fD9Fn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><p>After the build is done, William changes the machine type to have only 2 CPU cores and 8GB of RAM - such a machine is very cheap to run even 24/7! The disk size can be increased even when the machine is running. Unfortunately, you currently can’t move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this may change in the future.</p>
+<p>Adjust the hardware parameters according to your needs. Take some time to look over the options! You will be able to edit CPU and RAM when the machine is off (if it also has a GPU, currently it will have to be deprovisioned), so if you don’t quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. For example, in this video William uses a machine with 60 CPU cores and 240GB of RAM to build SageMath from source in under 18 minutes:</p>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/b8e8qq-KWbA?si=Y9N6ZtcVKo3fD9Fn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><p>After the build is done, William changes the machine type to have only 2 CPU cores and 8GB of RAM - such a machine is very cheap to run even 24/7! The disk size can be increased even when the machine is running. Unfortunately, you currently can’t move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this will change in the future.</p>
 <p>Start your compute server!</p>
 </section>
 <section id="using-a-compute-server">
 <h2><a class="toc-backref" href="#id14" role="doc-backlink">Using a Compute Server</a><a class="headerlink" href="#using-a-compute-server" title="Permalink to this heading"></a></h2>
-<p>Your freshly created compute server does <em>not</em> replace your CoCalc project, but rather complements it. This is why you have to explicitly indicate that you want to run your terminal or Jupyter notebook on a particular compute server, and you can have multiple ones running at the same time! Click <strong>Server</strong> button and select the one you want to use:</p>
+<p>Your freshly created compute server does <em>not</em> replace your CoCalc project, but rather complements it. This is why you have to explicitly indicate that you want to run your terminal or Jupyter notebook on a particular compute server, and you can have multiple ones running at the same time! Click the <strong>Server</strong> button and select the one you want to use:</p>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/compute_server_notebook.png"><img alt="Connecting a Compute Server to a Notebook" src="_images/compute_server_notebook.png" style="width: 90%;" /></a>
 <figcaption>
@@ -185,7 +186,7 @@
 <p><span class="caption-text">Compute Server Status</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>In order to use Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and connect it to a compute server in the same way. If you chose the “CUDA Toolkit” image, then the <code class="docutils literal notranslate"><span class="pre">nvcc</span></code> command will be available for compiling .cu code. See <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md">this tutorial</a> for details.</p>
+<p>In order to use the Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and connect it to a compute server in the same way. If you chose the “CUDA Toolkit” image, then the <code class="docutils literal notranslate"><span class="pre">nvcc</span></code> command will be available for compiling <code class="docutils literal notranslate"><span class="pre">.cu</span></code> code. See <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md">this tutorial</a> for details.</p>
 </section>
 <section id="billing-for-a-compute-server">
 <h2><a class="toc-backref" href="#id15" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Permalink to this heading"></a></h2>
@@ -196,7 +197,7 @@
 <li><p><strong>Off</strong> - this is an analog of shutting down your laptop, you pay only for the disk space and local data is available to you when you start the server again</p></li>
 <li><p><strong>Deprovisioned</strong> - this is like writing down the model number of your laptop on paper, it costs nothing and when you start the server it will have the same characteristics, but all data that was not synced to your CoCalc project is gone.</p></li>
 </ul>
-<p>In this example the running cost is $0.30/hour while the disk cost is less than a penny; notice the extra zero in $0.004/hour (that appears when you hover over the <strong>Stop</strong> button):</p>
+<p>In the example below the running cost is $0.30/hour while the disk cost is less than a penny! Notice the extra zero in $0.004 that appears when you hover over the <strong>Stop</strong> button (hovering over the cost per hour will also show the cost per month):</p>
 <figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="_images/compute_server_cost.png"><img alt="Compute Server Cost" src="_images/compute_server_cost.png" style="width: 90%;" /></a>
 <figcaption>
@@ -207,8 +208,8 @@
 <section id="compute-server-filesystem">
 <h2><a class="toc-backref" href="#id16" role="doc-backlink">Compute Server Filesystem</a><a class="headerlink" href="#compute-server-filesystem" title="Permalink to this heading"></a></h2>
 <p>In order to smoothly and successfully use a compute server, it is essential to understand how its filesystem interacts with your CoCalc project.</p>
-<p>For the most part, all files in your CoCalc project conveniently appear in your home folder on the compute server and you can use them in a regular way. File changes inside of CoCalc project and on your compute server can be synced both ways. This works great for Jupyter notebooks, for example. However, this convenience is still bound by laws of physics and because of network transfers involved it is much slower than modern local disks. You are also limited by your CoCalc disk quota.</p>
-<p>If you need to read or write massive amounts of data, e.g. for data science or machine learning, or the programs you are running operate with a lot of files, e.g. compilers, you do need to use local fast directories on your compute server. These directories are configured in the compute server settings when you create or edit one:</p>
+<p>For the most part, all files in your CoCalc project conveniently appear in your home folder on the compute server and you can use them in a regular way. File changes inside of your CoCalc project and on your compute server can be synced both ways. This works great for Jupyter notebooks, for example. However, this convenience is still bound by laws of physics and because of network transfers involved it is much slower than modern local disks. You are also limited by your CoCalc disk quota.</p>
+<p>If you need to read or write massive amounts of data, e.g. for data science or machine learning, or the programs you are running operate with a lot of files, e.g. <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> with a large repository, you do need to use local fast directories on your compute server. These directories are configured in the compute server settings when you create or edit one:</p>
 <figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="_images/compute_server_fast_data.png"><img alt="Fast Data Directories" src="_images/compute_server_fast_data.png" style="width: 80%;" /></a>
 <figcaption>
@@ -222,14 +223,14 @@
 <p><span class="caption-text">File Explorer on Project</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>In order to see them, to open files in them, or to open even synced files on the compute server without extra steps, connect your file explorer to the compute server in the same way as with notebooks and terminals, using the <strong>Server</strong> button. Now fast data directory is visible (and you can certainly have more than one):</p>
+<p>In order to see them, to open files in them, or to open even synced files on the compute server without extra steps, connect your file explorer to the compute server in the same way as with notebooks and terminals, using the <strong>Server</strong> button. Now the fast data directories are visible (you can certainly have more than one):</p>
 <figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="_images/compute_server_files.png"><img alt="File Explorer on Compute Server" src="_images/compute_server_files.png" style="width: 80%;" /></a>
 <figcaption>
 <p><span class="caption-text">File Explorer on Compute Server</span><a class="headerlink" href="#id10" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>When you edit files via CoCalc graphical interface, they are usually synced between the project and the compute server automatically. However, if you are using <code class="docutils literal notranslate"><span class="pre">vim</span></code> or some other tool in a terminal, you may need to click the <strong>Sync Files</strong> button:</p>
+<p>When you edit files via CoCalc graphical interface, they are usually synced between the project and the compute server automatically. However, if you are using <code class="docutils literal notranslate"><span class="pre">vim</span></code> or some other tool in a terminal, or just want the files to be synced immediately, you may need to click the <strong>Sync Files</strong> button:</p>
 <figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="_images/compute_server_sync_files.png"><img alt="Sync Files Button for a Compute Server" src="_images/compute_server_sync_files.png" style="width: 80%;" /></a>
 <figcaption>
