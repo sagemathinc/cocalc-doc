@@ -200,6 +200,11 @@ Collections of Documents
 
 If you want to publish multiple related files, e.g. notebooks accompanying your book, the best approach is likely to organize everything in a single folder, perhaps with subfolders for each chapter, and *publish the top level folder*. You still will be able to use links to individual chapters and/or notebooks!
 
+Publishing the Whole Project
+----------------------------
+
+You can *NOT* publish your whole project and we have no plans to implement such a feature due to security considerations. If you want to work on the whole project with a trusted team, add them as collaborators instead!
+
 Data Sets
 ---------
 
