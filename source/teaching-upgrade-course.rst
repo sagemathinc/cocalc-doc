@@ -204,7 +204,15 @@ Second, this is what is seen if the instructor has added a license in the course
      :width: 50%
      :align: center
      :alt: Student project quotas after applying course license.
-     
+
+
+---------------------------------------
+Teaching with Compute Servers
+---------------------------------------
+
+If CoCalc projects are not sufficient for your needs, e.g. because you need GPUs or more CPU cores, you can consider :ref:`teaching_with_compute_servers`!
+
+
 --------------------------------------------
 Charges for GPT-4 (and GPT-3.5-16k)
 --------------------------------------------
