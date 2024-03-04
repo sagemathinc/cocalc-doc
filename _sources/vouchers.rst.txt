@@ -15,6 +15,8 @@ Vouchers
     :alt: voucher center
 
     ..
+    
+.. _credit-vouchers:
 
 ################################
 CoCalc Credit Vouchers
