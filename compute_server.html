@@ -127,24 +127,24 @@
 <span id="index-0"></span><span id="id1"></span><h1>Compute Servers<a class="headerlink" href="#compute-servers" title="Permalink to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#examples-of-compute-server-uses" id="id13">Examples of Compute Server Uses</a></p></li>
-<li><p><a class="reference internal" href="#creating-a-compute-server" id="id14">Creating a Compute Server</a></p></li>
-<li><p><a class="reference internal" href="#using-a-compute-server" id="id15">Using a Compute Server</a></p></li>
-<li><p><a class="reference internal" href="#billing-for-a-compute-server" id="id16">Billing for a Compute Server</a></p></li>
-<li><p><a class="reference internal" href="#compute-server-filesystem" id="id17">Compute Server Filesystem</a></p></li>
-<li><p><a class="reference internal" href="#teaching-with-compute-servers" id="id18">Teaching with Compute Servers</a></p></li>
+<li><p><a class="reference internal" href="#examples-of-compute-server-uses" id="id14">Examples of Compute Server Uses</a></p></li>
+<li><p><a class="reference internal" href="#creating-a-compute-server" id="id15">Creating a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#using-a-compute-server" id="id16">Using a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#billing-for-a-compute-server" id="id17">Billing for a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#compute-server-filesystem" id="id18">Compute Server Filesystem</a></p></li>
+<li><p><a class="reference internal" href="#teaching-with-compute-servers" id="id19">Teaching with Compute Servers</a></p></li>
 </ul>
 </nav>
 <p>A compute server in CoCalc is a remote computer, whose resources (GPUs, CPUs, RAM, disks) you can utilize via CoCalc’s collaborative interface in Jupyter notebooks and terminals. It is a way to open up possibilities for enhanced computing resources, extending far beyond the bounds of local machines.</p>
 <p>To create a compute server, you select the software image, hardware and (optional) GPU, and can then start running any Jupyter notebook or Linux terminal on this server for an on-demand fee, charged by the second when the server is in use.</p>
 <p>The GPU support is extensive, offering variants including A100 80GB, A100 40GB, L4, and T4 GPUs with finely configured software stacks. These stack images include SageMath, Google Colab, Julia, PyTorch, Tensorflow and CUDA Toolkit, accommodating a versatile range of uses. The compute servers come at highly competitive pricing, particularly for spot instances.</p>
 <section id="examples-of-compute-server-uses">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Examples of Compute Server Uses</a><a class="headerlink" href="#examples-of-compute-server-uses" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Examples of Compute Server Uses</a><a class="headerlink" href="#examples-of-compute-server-uses" title="Permalink to this heading"></a></h2>
 <p>You may find something useful, at least some inspiration, in our growing <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/README.md">collection of tutorials</a> that make use of compute servers. You can either read them or follow along video versions. Here William explains how to run Google Colab environment on compute servers and use either Tensorflow or PyTorch:</p>
 <center><iframe width="640" height="360" src="https://www.youtube.com/embed/kcxyShH3wYE?si=rGZEWZgs6XbOF38u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br/></section>
 <section id="creating-a-compute-server">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink">Creating a Compute Server</a><a class="headerlink" href="#creating-a-compute-server" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Creating a Compute Server</a><a class="headerlink" href="#creating-a-compute-server" title="Permalink to this heading"></a></h2>
 <p>There are multiple ways to create a compute server, one of them is to click the <strong>Server</strong> button:</p>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/compute_server_creating_2.png"><img alt="Creating a Compute Server" src="_images/compute_server_creating_2.png" style="width: 90%;" /></a>
@@ -159,7 +159,7 @@
 <p>Start your compute server!</p>
 </section>
 <section id="using-a-compute-server">
-<h2><a class="toc-backref" href="#id15" role="doc-backlink">Using a Compute Server</a><a class="headerlink" href="#using-a-compute-server" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Using a Compute Server</a><a class="headerlink" href="#using-a-compute-server" title="Permalink to this heading"></a></h2>
 <p>Your freshly created compute server does <em>not</em> replace your CoCalc project, but rather complements it. This is why you have to explicitly indicate that you want to run your terminal or Jupyter notebook on a particular compute server, and you can have multiple ones running at the same time! Click the <strong>Server</strong> button and select the one you want to use:</p>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/compute_server_notebook.png"><img alt="Connecting a Compute Server to a Notebook" src="_images/compute_server_notebook.png" style="width: 90%;" /></a>
@@ -191,7 +191,7 @@
 <p>In order to use the Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and connect it to a compute server in the same way. If you chose the “CUDA Toolkit” image, then the <code class="docutils literal notranslate"><span class="pre">nvcc</span></code> command will be available for compiling <code class="docutils literal notranslate"><span class="pre">.cu</span></code> code. See <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md">this tutorial</a> for details.</p>
 </section>
 <section id="billing-for-a-compute-server">
-<h2><a class="toc-backref" href="#id16" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Permalink to this heading"></a></h2>
 <p>A compute server is billed by the second and the price depends on its state:</p>
 <ul class="simple">
 <li><p><strong>Running</strong> - the server is ready to perform your tasks, you pay for all of its resources and this is the price shown when creating a server</p></li>
@@ -208,7 +208,7 @@
 </figure>
 </section>
 <section id="compute-server-filesystem">
-<h2><a class="toc-backref" href="#id17" role="doc-backlink">Compute Server Filesystem</a><a class="headerlink" href="#compute-server-filesystem" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Compute Server Filesystem</a><a class="headerlink" href="#compute-server-filesystem" title="Permalink to this heading"></a></h2>
 <p>In order to smoothly and successfully use a compute server, it is essential to understand how its filesystem interacts with your CoCalc project.</p>
 <p>For the most part, all files in your CoCalc project conveniently appear in your home folder on the compute server and you can use them in a regular way. File changes inside of your CoCalc project and on your compute server can be synced both ways. This works great for Jupyter notebooks, for example. However, this convenience is still bound by laws of physics and because of network transfers involved it is much slower than modern local disks. You are also limited by your CoCalc disk quota.</p>
 <p>If you need to read or write massive amounts of data, e.g. for data science or machine learning, or the programs you are running operate with a lot of files, e.g. <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> with a large repository, you do need to use local fast directories on your compute server. These directories are configured in the compute server settings when you create or edit one:</p>
@@ -241,14 +241,23 @@
 </figure>
 </section>
 <section id="teaching-with-compute-servers">
-<span id="id2"></span><h2><a class="toc-backref" href="#id18" role="doc-backlink">Teaching with Compute Servers</a><a class="headerlink" href="#teaching-with-compute-servers" title="Permalink to this heading"></a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id19" role="doc-backlink">Teaching with Compute Servers</a><a class="headerlink" href="#teaching-with-compute-servers" title="Permalink to this heading"></a></h2>
 <p>Compute servers are a great option to let your students or workshop participants use GPUs or powerful compute resources! Some important points to consider ahead of the course start:</p>
-<ul class="simple">
+<ul>
 <li><p>What configuration do you need for your students?</p></li>
 <li><p>How will you communicate it to them so that they don’t miss important settings? (We do plan to support sharing server configuration directly, but it is not implemented yet.)</p></li>
 <li><p>Who will pay for running compute servers? The cost will be deducted directly from student accounts, but you can provide them with <a class="reference internal" href="vouchers.html#credit-vouchers"><span class="std std-ref">CoCalc Credit Vouchers</span></a> if you wish, paying for those yourself.</p></li>
 <li><p>If you do use vouchers, you will need to figure out a suitable amount and, perhaps, develop a policy for those who run out of credit. For example, students may forget to turn off their servers when they are done working. It is also theoretically possible for them to configure a much more powerful machine than needed/instructed.</p></li>
 <li><p>Note that students can not spend more than they have in their account, so the worst case scenario is: they “burn” their allotment because of some mistake, put the same amount of money again, and hopefully behave in a more responsible manner the second time.</p></li>
+<li><p>For smaller courses it may be feasible for the instructor to create a server in each student project and allow collaborators (which includes students) to control it, i.e. they will be able to start and stop it:</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/allow_collaborator_control.png"><img alt="Allow Collaborator Control" src="_images/allow_collaborator_control.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Allow Collaborator Control</span><a class="headerlink" href="#id13" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>In this case usage bills to the instructor account without any need for vouchers. Since the students can’t edit the configuration of such a server, the worst case for an improper use is leaving the server running all the time.</p>
+</li>
 </ul>
 </section>
 </section>
