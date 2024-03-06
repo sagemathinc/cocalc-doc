@@ -176,6 +176,16 @@ Compute servers are a great option to let your students or workshop participants
 
 - Note that students can not spend more than they have in their account, so the worst case scenario is: they "burn" their allotment because of some mistake, put the same amount of money again, and hopefully behave in a more responsible manner the second time.
 
+- For smaller courses it may be feasible for the instructor to create a server in each student project and allow collaborators (which includes students) to control it, i.e. they will be able to start and stop it:
+
+  .. figure:: img/allow_collaborator_control.png
+        :width: 80%
+        :align: center
+        :alt: Allow Collaborator Control
+
+        Allow Collaborator Control
+
+  In this case usage bills to the instructor account without any need for vouchers. Since the students can't edit the configuration of such a server, the worst case for an improper use is leaving the server running all the time.
 
 
 
