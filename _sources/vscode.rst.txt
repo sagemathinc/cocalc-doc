@@ -17,7 +17,5 @@ To start VS Code Server in a CoCalc project, select Servers in the :doc:`activit
 
 When you click the link to start Visual Studio Code Server, a new browser tab opens with VS Code running as a browser application. All files are in the project, and therefore accessible from any browser.
 
-VS Code server is available in `CoCalc.com <https://cocalc.com>`_ and the :doc:`docker-image`.
-
 There's no transparent support for multiple collaborative editing yet.
 
