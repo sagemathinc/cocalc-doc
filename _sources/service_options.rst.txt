@@ -1,4 +1,3 @@
-===================
 Service Options
 ===================
 
@@ -10,6 +9,5 @@ Service Options
   paygo
   vouchers
   on-premises
-  docker-image
   cocalc-cloud
   cocalc-desktop
