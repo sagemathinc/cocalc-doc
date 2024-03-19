@@ -245,8 +245,6 @@ Custom built-from-source Sage
     This requires :doc:`a upgraded project <../upgrade-guide>` and takes **hours**!
     By default CoCalc projects have an idle timeout that is smaller. (see :ref:`idle-timeout`)
     If you aren't editing files in the project, your build will get killed part of the way through.
-    If you're doing legit Sage development, email THE LINK TO YOUR PROJECT to help@cocalc.com
-    and we will increase the idle timeout, disk space, RAM, etc, so you can contribute to Sage.
 
 Open a :doc:`../terminal`.
 Grab the source tarball (requires network access).
@@ -265,8 +263,6 @@ Then for that project, you'll have your own 100% customizable copy of Sage; and 
 This also uses little extra disk space in backups/snapshots, because of de-duplication.
 You can of course also install any custom packages you want into this copy of Sage.
 You can also help improve Sage: `Developer Guide <http://www.sagemath.org/doc/developer/>`_.
-
-If you want to do Sage development see `How to develop for Sage using SageMath <http://mathandhats.blogspot.com/2014/06/how-to-develop-for-sage-using-sage-math.html>`_.
 
 **Important:** Whenever you change Python code installed in that copy of Sage, you may have to restart the worksheet server and any running worksheets.  This is inconvenient, but is necessary because the worksheet server starts one copy of Sage, then *forks* off additional copies each time you open a new worksheet, which greatly reduces the time from when you open a worksheet until it actually starts computing things.
 

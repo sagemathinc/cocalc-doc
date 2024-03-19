@@ -320,9 +320,7 @@ One can also put modules into the user’s site-packages by hand and Sage will f
 <p class="admonition-title">Warning</p>
 <p>This requires <a class="reference internal" href="../upgrade-guide.html"><span class="doc">a upgraded project</span></a> and takes <strong>hours</strong>!
 By default CoCalc projects have an idle timeout that is smaller. (see <a class="reference internal" href="#idle-timeout"><span class="std std-ref">What is an “idle timeout?”</span></a>)
-If you aren’t editing files in the project, your build will get killed part of the way through.
-If you’re doing legit Sage development, email THE LINK TO YOUR PROJECT to <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>
-and we will increase the idle timeout, disk space, RAM, etc, so you can contribute to Sage.</p>
+If you aren’t editing files in the project, your build will get killed part of the way through.</p>
 </div>
 <p>Open a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>.
 Grab the source tarball (requires network access).
@@ -340,7 +338,6 @@ Then for that project, you’ll have your own 100% customizable copy of Sage; an
 This also uses little extra disk space in backups/snapshots, because of de-duplication.
 You can of course also install any custom packages you want into this copy of Sage.
 You can also help improve Sage: <a class="reference external" href="http://www.sagemath.org/doc/developer/">Developer Guide</a>.</p>
-<p>If you want to do Sage development see <a class="reference external" href="http://mathandhats.blogspot.com/2014/06/how-to-develop-for-sage-using-sage-math.html">How to develop for Sage using SageMath</a>.</p>
 <p><strong>Important:</strong> Whenever you change Python code installed in that copy of Sage, you may have to restart the worksheet server and any running worksheets.  This is inconvenient, but is necessary because the worksheet server starts one copy of Sage, then <em>forks</em> off additional copies each time you open a new worksheet, which greatly reduces the time from when you open a worksheet until it actually starts computing things.</p>
 <p><strong>Also Important:</strong> If your copy of Sage is messed up in some way, then the worksheet server <em>can’t</em> start, hence worksheets won’t open.  To debug this, open a terminal and do this:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ cd .smc
