@@ -115,6 +115,9 @@ On a compute server it is fully possible, just make sure that your terminal is r
 
     Using sudo on a Compute Server
 
+.. warning::
+    Since you can do anything as ``root``, you may accidentally lose access to your compute server and your data. If this happens and you do need to regain access to data, contact support at help@cocalc.com
+    
 When you become ``root`` as above, you are still inside of a Docker container that is closely integrated with CoCalc. If this creates problems for your use case, you can escape from it and become ``root`` on the actual virtual machine that represents your compute server. To do this, :ref:`add SSH keys to your account <account-ssh>` (or project). Then use SSH to connect as ``root`` to ``localhost``:
 
 .. figure:: img/compute_server_escape.png

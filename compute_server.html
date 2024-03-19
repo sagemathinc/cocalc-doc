@@ -207,6 +207,10 @@
 <p><span class="caption-text">Using sudo on a Compute Server</span><a class="headerlink" href="#id9" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since you can do anything as <code class="docutils literal notranslate"><span class="pre">root</span></code>, you may accidentally lose access to your compute server and your data. If this happens and you do need to regain access to data, contact support at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a></p>
+</div>
 <p>When you become <code class="docutils literal notranslate"><span class="pre">root</span></code> as above, you are still inside of a Docker container that is closely integrated with CoCalc. If this creates problems for your use case, you can escape from it and become <code class="docutils literal notranslate"><span class="pre">root</span></code> on the actual virtual machine that represents your compute server. To do this, <a class="reference internal" href="account/ssh.html#account-ssh"><span class="std std-ref">add SSH keys to your account</span></a> (or project). Then use SSH to connect as <code class="docutils literal notranslate"><span class="pre">root</span></code> to <code class="docutils literal notranslate"><span class="pre">localhost</span></code>:</p>
 <figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="_images/compute_server_escape.png"><img alt="Escape from the Compute Server Container" src="_images/compute_server_escape.png" style="width: 90%;" /></a>
