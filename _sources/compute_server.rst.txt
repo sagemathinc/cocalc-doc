@@ -97,7 +97,7 @@ In order to use the Linux command line, e.g., compilers, etc., create a terminal
 Becoming root on a Compute Server
 ---------------------------------
 
-You cannot become ``root`` or use ``sudo`` inside of a CoCalc project. If you try to, you get a message like
+You cannot become ``root`` or use ``sudo`` inside of a CoCalc project. If you try to, you will get a message like
 
 .. figure:: img/no_sudo.png
     :width: 90%
@@ -114,6 +114,15 @@ On a compute server it is fully possible, just make sure that your terminal is r
     :alt: Using sudo on a Compute Server
 
     Using sudo on a Compute Server
+
+When you become ``root`` as above, you are still inside of a Docker container that is closely integrated with CoCalc. If this creates problems for your use case, you can escape from it and become ``root`` on the actual virtual machine that represents your compute server. To do it, create an SSH key inside of the CoCalc project and :ref:`add it to the list of project keys <project-settings-ssh-keys>`. Then use SSH to connect as ``root`` to ``localhost``:
+
+.. figure:: img/compute_server_escape.png
+    :width: 90%
+    :align: center
+    :alt: Escape from the Compute Server Container
+
+    Escape from the Compute Server Container
 
 
 Billing for a Compute Server
