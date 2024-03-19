@@ -94,6 +94,28 @@ The server bar appearing above the notebook allows you to quickly see where the 
 In order to use the Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and connect it to a compute server in the same way. If you chose the "CUDA Toolkit" image, then the ``nvcc`` command will be available for compiling ``.cu`` code. See `this tutorial <https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md>`_ for details.
 
 
+Becoming root on a Compute Server
+---------------------------------
+
+You cannot become ``root`` or use ``sudo`` inside of a CoCalc project. If you try to, you get a message like
+
+.. figure:: img/no_sudo.png
+    :width: 90%
+    :align: center
+    :alt: Error Message Using sudo
+
+    Error Message Using sudo
+
+On a compute server it is fully possible, just make sure that your terminal is running on a compute server as explained above:
+
+.. figure:: img/compute_server_sudo.png
+    :width: 90%
+    :align: center
+    :alt: Using sudo on a Compute Server
+
+    Using sudo on a Compute Server
+
+
 Billing for a Compute Server
 ----------------------------
 
