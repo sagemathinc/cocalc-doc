@@ -94,7 +94,7 @@ The server bar appearing above the notebook allows you to quickly see where the 
 In order to use the Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and connect it to a compute server in the same way. If you chose the "CUDA Toolkit" image, then the ``nvcc`` command will be available for compiling ``.cu`` code. See `this tutorial <https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md>`_ for details.
 
 
-Becoming root on a Compute Server
+Becoming root and Port Forwarding
 ---------------------------------
 
 You cannot become ``root`` or use ``sudo`` inside of a CoCalc project. If you try to, you will get a message like
@@ -115,7 +115,7 @@ On a compute server it is fully possible, just make sure that your terminal is r
 
     Using sudo on a Compute Server
 
-When you become ``root`` as above, you are still inside of a Docker container that is closely integrated with CoCalc. If this creates problems for your use case, you can escape from it and become ``root`` on the actual virtual machine that represents your compute server. To do it, create an SSH key inside of the CoCalc project and :ref:`add it to the list of project keys <project-settings-ssh-keys>`. Then use SSH to connect as ``root`` to ``localhost``:
+When you become ``root`` as above, you are still inside of a Docker container that is closely integrated with CoCalc. If this creates problems for your use case, you can escape from it and become ``root`` on the actual virtual machine that represents your compute server. To do this, :ref:`add SSH keys to your account <account-ssh>` (or project). Then use SSH to connect as ``root`` to ``localhost``:
 
 .. figure:: img/compute_server_escape.png
     :width: 90%
@@ -123,6 +123,21 @@ When you become ``root`` as above, you are still inside of a Docker container th
     :alt: Escape from the Compute Server Container
 
     Escape from the Compute Server Container
+
+Alternatively, you can use the external IP address of your compute server to connect to it from *any other machine*, bypassing CoCalc. This address is on the top of information about the server:
+
+.. figure:: img/compute_server_direct_connect.png
+    :width: 90%
+    :align: center
+    :alt: Compute Server IP Address
+
+    Compute Server IP Address
+
+It can be used to gain access to services running on your compute server via ::
+
+    ssh -L port:localhost:port root@[server address]
+
+executed on your local computer. This should work whenever you are instructed to "go to ``http://localhost:nnnn``" while running software on your compute server.
 
 
 Billing for a Compute Server
