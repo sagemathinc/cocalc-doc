@@ -225,11 +225,11 @@
 <p><span class="caption-text">Compute Server IP Address</span><a class="headerlink" href="#id11" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>It can be used to gain access to services running on your compute server via</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh -L port:localhost:port root@[server address]
+<p>The same address can be used to gain access to services. If any software on your compute server instructs you to “go to <code class="docutils literal notranslate"><span class="pre">http://localhost:8123</span></code>”, execute</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh -L 8123:localhost:8123 root@[server address]
 </pre></div>
 </div>
-<p>executed on your local computer. This should work whenever you are instructed to “go to <code class="docutils literal notranslate"><span class="pre">http://localhost:nnnn</span></code>” while running software on your compute server.</p>
+<p>on your <em>local</em> computer and go to <code class="docutils literal notranslate"><span class="pre">http://localhost:8123</span></code> in your <em>local</em> browser.</p>
 </section>
 <section id="billing-for-a-compute-server">
 <h2><a class="toc-backref" href="#id22" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Permalink to this heading"></a></h2>
