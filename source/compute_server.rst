@@ -136,11 +136,11 @@ Alternatively, you can use the external IP address of your compute server to con
 
     Compute Server IP Address
 
-It can be used to gain access to services running on your compute server via ::
+The same address can be used to gain access to services. If any software on your compute server instructs you to "go to ``http://localhost:8123``", execute ::
 
-    ssh -L port:localhost:port root@[server address]
+    ssh -L 8123:localhost:8123 root@[server address]
 
-executed on your local computer. This should work whenever you are instructed to "go to ``http://localhost:nnnn``" while running software on your compute server.
+on your *local* computer and go to ``http://localhost:8123`` in your *local* browser.
 
 
 Billing for a Compute Server
