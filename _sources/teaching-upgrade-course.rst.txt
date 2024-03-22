@@ -181,7 +181,7 @@ for choosing how those licenses are combined. The two options are:
 
 
 ----------------------------
-Problems with licenses
+Problems with Licenses
 ----------------------------
 
 If a license does not seem to be correctly applied to a student project, first check that the student project has been restarted since adding the license. If there is still a problem, see :ref:`license-errors`.
@@ -191,7 +191,7 @@ If a license does not seem to be correctly applied to a student project, first c
 .. index:: Site licenses; adding capacity to course
 
 -------------------
-Adding capacity
+Adding Capacity
 -------------------
 
 After you have courses up and running, you may discover that you need to provide for more students,
