@@ -68,9 +68,11 @@
 <li class="toctree-l3"><a class="reference internal" href="teaching-create-course.html">Creating a New Course</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Upgrading Student Projects</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#students-pay-for-upgrades">Students Pay For Upgrades</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#teacher-or-institution-pays-for-upgrades">Teacher or institution pays for upgrades</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#teacher-or-institute-pays-for-upgrades">Teacher or Institute Pays for Upgrades</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#problems-with-licenses">Problems with licenses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-capacity">Adding capacity</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#teaching-with-compute-servers">Teaching with Compute Servers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#charges-for-gpt-4-and-gpt-3-5-16k">Charges for GPT-4 (and GPT-3.5-16k)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#charges-for-paid-llms">Charges for Paid LLMs</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="teaching-course-management.html">Course Management</a></li>
@@ -131,161 +133,164 @@
              
   <section id="upgrading-student-projects">
 <span id="course-upgrading-students"></span><h1>Upgrading Student Projects<a class="headerlink" href="#upgrading-student-projects" title="Permalink to this heading"></a></h1>
-<p>The <strong>Configuration</strong> tab of a <strong>.course</strong> file allows you to upgrade students’ course projects in two ways, indicated by the checkboxes in the image below:</p>
-<a class="reference internal image-reference" href="_images/upgrading_students.png"><img alt="student pay vs institute pays, choices for upgrading student projects" class="align-center" src="_images/upgrading_students.png" style="width: 75%;" /></a>
+<p>The <strong>Configuration</strong> tab of a <code class="docutils literal notranslate"><span class="pre">.course</span></code> file allows you to upgrade students’ course projects in two ways:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/upgrading_students.png"><img alt="Choices for Upgrading Student Projects" src="_images/upgrading_students.png" style="width: 75%;" /></a>
+<figcaption>
+<p><span class="caption-text">Choices for Upgrading Student Projects</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#students-pay-for-upgrades" id="id6">Students Pay For Upgrades</a></p>
+<li><p><a class="reference internal" href="#students-pay-for-upgrades" id="id8">Students Pay For Upgrades</a></p>
 <ul>
-<li><p><a class="reference internal" href="#instructor-configures-student-pay" id="id7">1. Instructor Configures Student-Pay</a></p></li>
-<li><p><a class="reference internal" href="#student-opens-project-and-sees-payment-banner" id="id8">2. Student Opens Project and Sees Payment Banner</a></p></li>
-<li><p><a class="reference internal" href="#student-clicks-banner-and-can-make-payment" id="id9">3. Student Clicks Banner and Can Make Payment</a></p></li>
+<li><p><a class="reference internal" href="#instructor-configures-the-payment-option" id="id9">1. Instructor configures the payment option</a></p></li>
+<li><p><a class="reference internal" href="#students-see-a-payment-banner" id="id10">2. Students see a payment banner</a></p></li>
+<li><p><a class="reference internal" href="#students-make-payments" id="id11">3. Students make payments</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#teacher-or-institution-pays-for-upgrades" id="id10">Teacher or institution pays for upgrades</a></p>
+<li><p><a class="reference internal" href="#teacher-or-institute-pays-for-upgrades" id="id12">Teacher or Institute Pays for Upgrades</a></p>
 <ul>
-<li><p><a class="reference internal" href="#obtain-a-license-key" id="id11">1. Obtain a license key.</a></p></li>
-<li><p><a class="reference internal" href="#install-your-license-s-in-the-course-file" id="id12">2. Install your license(s) in the course file.</a></p></li>
-<li><p><a class="reference internal" href="#license-strategy-multiple-licenses-only" id="id13">3. License strategy (multiple licenses only)</a></p></li>
-<li><p><a class="reference internal" href="#apply-course-license-to-instructor-project-optional" id="id14">4. Apply course license to instructor project. (Optional)</a></p></li>
-<li><p><a class="reference internal" href="#restart-the-instructor-project" id="id15">5. Restart the instructor project</a></p></li>
-<li><p><a class="reference internal" href="#adding-capacity" id="id16">6. Adding capacity</a></p></li>
-<li><p><a class="reference internal" href="#problems-adding-a-license" id="id17">7. Problems adding a license</a></p></li>
+<li><p><a class="reference internal" href="#configure-the-payment-option" id="id13">1. Configure the payment option</a></p></li>
+<li><p><a class="reference internal" href="#apply-a-license-to-the-course" id="id14">2. Apply a license to the course</a></p></li>
+<li><p><a class="reference internal" href="#apply-the-course-license-to-the-instructor-project-optional" id="id15">3. Apply the course license to the instructor project (optional)</a></p></li>
+<li><p><a class="reference internal" href="#what-do-students-see" id="id16">4. What do students see</a></p></li>
+<li><p><a class="reference internal" href="#license-strategy-multiple-licenses-only" id="id17">5. License strategy (multiple licenses only)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#teaching-with-compute-servers" id="id18">Teaching with Compute Servers</a></p></li>
-<li><p><a class="reference internal" href="#charges-for-gpt-4-and-gpt-3-5-16k" id="id19">Charges for GPT-4 (and GPT-3.5-16k)</a></p></li>
+<li><p><a class="reference internal" href="#problems-with-licenses" id="id18">Problems with licenses</a></p></li>
+<li><p><a class="reference internal" href="#adding-capacity" id="id19">Adding capacity</a></p></li>
+<li><p><a class="reference internal" href="#teaching-with-compute-servers" id="id20">Teaching with Compute Servers</a></p></li>
+<li><p><a class="reference internal" href="#charges-for-paid-llms" id="id21">Charges for Paid LLMs</a></p></li>
 </ul>
 </nav>
 <section id="students-pay-for-upgrades">
-<span id="course-students-pay"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Students Pay For Upgrades</a><a class="headerlink" href="#students-pay-for-upgrades" title="Permalink to this heading"></a></h2>
-<p>You can request that the students pay a for CoCalc resources needed for the course. You can also set exactly which resources are needed, as well as the start and end dates for those resources.</p>
-<p><em>Note that, as of August, 2023,  students in a course must buy the license specified for that course. Upgrading the student project in some other way is not  sufficient.</em></p>
-<section id="instructor-configures-student-pay">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">1. Instructor Configures Student-Pay</a><a class="headerlink" href="#instructor-configures-student-pay" title="Permalink to this heading"></a></h3>
-<p>In the course Configuration tab, if you click “Students pay directly” and then “Start and end dates and upgrades…”, another dialog opens: “Require Students to Upgrade their Project”:</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/student-pay-levels.png"><img alt="student pay, step 1" src="_images/student-pay-levels.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">student pay, step 1</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>You will see options for amount of disk space, RAM, etc. You can also set the “Require that students upgrade by” deadline to be as late as you want, even after the class is over. The latter effectively makes payment optional.</p>
-</section>
-<section id="student-opens-project-and-sees-payment-banner">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">2. Student Opens Project and Sees Payment Banner</a><a class="headerlink" href="#student-opens-project-and-sees-payment-banner" title="Permalink to this heading"></a></h3>
-<p>When the student opens their project for the course, they will see a banner at the top:</p>
+<span id="course-students-pay"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Students Pay For Upgrades</a><a class="headerlink" href="#students-pay-for-upgrades" title="Permalink to this heading"></a></h2>
+<p>You can request that the students pay for CoCalc resources needed for the course. You set exactly which resources are needed, as well as the start and end dates.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of August, 2023, students in a course must buy the license specified for that course. Upgrading the student project in some other way is not sufficient.</p>
+</div>
+<section id="instructor-configures-the-payment-option">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">1. Instructor configures the payment option</a><a class="headerlink" href="#instructor-configures-the-payment-option" title="Permalink to this heading"></a></h3>
+<p>In the course <strong>Configuration</strong> tab, choose <strong>Students pay directly</strong> and adjust parameters as needed:</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/student-pay-2b.png"><img alt="student pay, step 2" src="_images/student-pay-2b.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/students_pay_directly.png"><img alt="Students Pay Directly" src="_images/students_pay_directly.png" style="width: 75%;" /></a>
 <figcaption>
-<p><span class="caption-text">student pay, step 2</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Students Pay Directly</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-</section>
-<section id="student-clicks-banner-and-can-make-payment">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">3. Student Clicks Banner and Can Make Payment</a><a class="headerlink" href="#student-clicks-banner-and-can-make-payment" title="Permalink to this heading"></a></h3>
-<p>After clicking the banner, they will see a button allowing them to pay for the course:</p>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/student-pay-3b.png"><img alt="student pay, step 3" src="_images/student-pay-3b.png" style="width: 100%;" /></a>
-<figcaption>
-<p><span class="caption-text">student pay, step 3</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p><strong>Can we mix free and upgraded student projects?</strong></p>
-<p>Yes.
-As noted above, set the due date by which the students have to pay to be at the end of the course.
-Give them the opportunity to pay for an upgrade for the first few weeks (say),
-then just unclick the student pay checkbox and thus no longer requiring them to pay at all.
-In short, whether they have to pay or not is something you can change at any time.
-They have a grace period before being required to pay,
-and you can change any of these settings at any time.</p>
-</section>
-</section>
-<section id="teacher-or-institution-pays-for-upgrades">
-<span id="inst-pays"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Teacher or institution pays for upgrades</a><a class="headerlink" href="#teacher-or-institution-pays-for-upgrades" title="Permalink to this heading"></a></h2>
-<p>This section describes adding upgrades to student projects if you are using a CoCalc license. Please see <a class="reference internal" href="teaching-upgrade-legacy.html"><span class="doc">Upgrading Student Projects (legacy version)</span></a> if you need to upgrade student projects with one of the older upgrade packages.</p>
-<p>We assume you have created an instructor project and a course file in that project, and have added students under the <code class="docutils literal notranslate"><span class="pre">Students</span></code> tab in the course file. You do not need the instructor project licensed at this time. See step 4 below if you plan to use your course license to upgrade the instructor project as well as student projects.</p>
-<section id="obtain-a-license-key">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">1. Obtain a license key.</a><a class="headerlink" href="#obtain-a-license-key" title="Permalink to this heading"></a></h3>
-<p>Obtain a license, if you haven’t already. See <a class="reference internal" href="account/licenses.html#buying-licenses"><span class="std std-ref">Buy a license…</span></a>.</p>
-<p>Your license key is a hexadecimal uuid string. It looks like this:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>78caa80a-4ddf-11ea-a5e5-53e10ace7b7b
-</pre></div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you are running multiple sections of the same course, you probably want to configure these licenses to be exactly the same including the dates, so that students in different sections pay exactly the same fee.</p>
 </div>
 </section>
-<section id="install-your-license-s-in-the-course-file">
-<span id="install-course-license"></span><h3><a class="toc-backref" href="#id12" role="doc-backlink">2. Install your license(s) in the course file.</a><a class="headerlink" href="#install-your-license-s-in-the-course-file" title="Permalink to this heading"></a></h3>
-<ul class="simple">
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">course</span></code> file and click “Configuration.”</p></li>
-<li><p>Check the box for “You or your institute will pay for this course”.</p></li>
-<li><p>Click “Upgrade using a license key…”.</p></li>
-<li><p>Paste in your license key and click “Save”. You will see additional text where you entered the license key, indicating which upgrades will be applied and the maximum number of simultaneous running projects that can use this license.</p></li>
-</ul>
-<a class="reference internal image-reference" href="_images/site-lic-course-config.png"><img alt="Adding a license key in course configuration." class="align-center" src="_images/site-lic-course-config.png" style="width: 85%;" /></a>
-<ul class="simple">
-<li><p>You can apply more than one license. After you install the first license, a new button will appear, “Add another license key (more students or better upgrades)”. Click this to add more licenses, one at a time.</p></li>
-</ul>
+<section id="students-see-a-payment-banner">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">2. Students see a payment banner</a><a class="headerlink" href="#students-see-a-payment-banner" title="Permalink to this heading"></a></h3>
+<p>When the students open their course projects, they will see a banner at the top:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/student-pay-2b.png"><img alt="Payment Banner" src="_images/student-pay-2b.png" style="width: 75%;" /></a>
+<figcaption>
+<p><span class="caption-text">Payment Banner</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="license-strategy-multiple-licenses-only">
-<span id="license-strategy"></span><span id="index-2"></span><h3><a class="toc-backref" href="#id13" role="doc-backlink">3. License strategy (multiple licenses only)</a><a class="headerlink" href="#license-strategy-multiple-licenses-only" title="Permalink to this heading"></a></h3>
-<p>If you have applied two or more licenses to a course, a dialog appears
-for choosing how those licenses are combined. The two options are:</p>
-<ul class="simple">
-<li><p><strong>Maximize number of covered students:</strong> apply one license to each project associated to this course (e.g., you bought a license to handle a few more students who added your course). This is the default.</p></li>
-<li><p><strong>Maximize upgrades to each project:</strong> apply all licenses to all projects associated to this course (e.g., you bought a license to increase the RAM or CPU for all students).</p></li>
-</ul>
-<a class="reference internal image-reference" href="_images/license-strategy.png"><img alt="maximize no. of covered students vs. upgrades to each project" class="align-center" src="_images/license-strategy.png" style="width: 85%;" /></a>
-</section>
-<section id="apply-course-license-to-instructor-project-optional">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">4. Apply course license to instructor project. (Optional)</a><a class="headerlink" href="#apply-course-license-to-instructor-project-optional" title="Permalink to this heading"></a></h3>
-<p>If you want, you can use the same license that you’re using for the students to upgrade the instructor project. This will count against the maximum number of running projects (run limit) for the license. With this option, if you have 10 students and plan to run your instructor project at the same time as all 10 students, your course license should allow for at least 11 projects.</p>
-<p>If you already have upgraded your instructor project from another CoCalc product, or want to use a different license than your students, then you will want to disable this option.</p>
-<a class="reference internal image-reference" href="_images/upgrade-instructor-project.png"><img alt="enable/disable upgrading instructor project" class="align-center" src="_images/upgrade-instructor-project.png" style="width: 85%;" /></a>
-</section>
-<section id="restart-the-instructor-project">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">5. Restart the instructor project</a><a class="headerlink" href="#restart-the-instructor-project" title="Permalink to this heading"></a></h3>
-<p>If you enabled “Upgrade instructor project” in the previous step, then open project Settings (wrench icon) and restart your project so that the license will be applied. Click “Restart Project…” then click “Yes, restart project” in the confirmation dialog.</p>
+<section id="students-make-payments">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">3. Students make payments</a><a class="headerlink" href="#students-make-payments" title="Permalink to this heading"></a></h3>
+<p>After clicking the banner, they will see a button allowing them to pay for the course:</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/site-lic-course-restart-pre.png"><img alt="restarting instructor project after license change" src="_images/site-lic-course-restart-pre.png" style="width: 85%;" /></a>
+<a class="reference internal image-reference" href="_images/student-pay-3b.png"><img alt="Student Payment" src="_images/student-pay-3b.png" style="width: 75%;" /></a>
 <figcaption>
-<p><span class="caption-text">license entered in course Configuration; about to restart instructor project</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Student Payment</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>In project Settings, within a few seconds you will see that the instructor project is being upgraded. The warnings about running on an unpaid server will be gone, and you will see your license upgrades applied to the instructor project, including Member Hosting and Internet Access.</p>
+</section>
+</section>
+<section id="teacher-or-institute-pays-for-upgrades">
+<span id="inst-pays"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Teacher or Institute Pays for Upgrades</a><a class="headerlink" href="#teacher-or-institute-pays-for-upgrades" title="Permalink to this heading"></a></h2>
+<p>You can buy a license that will upgrade all student projects. The same license can be used to upgrade the main course project as well.</p>
+<section id="configure-the-payment-option">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">1. Configure the payment option</a><a class="headerlink" href="#configure-the-payment-option" title="Permalink to this heading"></a></h3>
+<p>In the course <strong>Configuration</strong> tab, choose <strong>You or your institute will pay for this course</strong>:</p>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/site-lic-course-restart-post.png"><img alt="confirm member hosting and internet access applied to instructor project" src="_images/site-lic-course-restart-post.png" style="width: 85%;" /></a>
+<a class="reference internal image-reference" href="_images/institute_pays.png"><img alt="Institute Pays" src="_images/institute_pays.png" style="width: 75%;" /></a>
 <figcaption>
-<p><span class="caption-text">project settings after restarting instructor project</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Institute Pays</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="adding-capacity">
-<span id="index-3"></span><h3><a class="toc-backref" href="#id16" role="doc-backlink">6. Adding capacity</a><a class="headerlink" href="#adding-capacity" title="Permalink to this heading"></a></h3>
-<p>After you have courses up and running, you may discover that you need to provide for more students,
-or increase computing resources on student projects. You can do either of those by obtaining
-additional licenses and applying them as shown above.
-If you need more flexibility than the available strategies offer,
-contact CoCalc support at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
+<section id="apply-a-license-to-the-course">
+<span id="install-course-license"></span><h3><a class="toc-backref" href="#id14" role="doc-backlink">2. Apply a license to the course</a><a class="headerlink" href="#apply-a-license-to-the-course" title="Permalink to this heading"></a></h3>
+<p>If you already have a license for this course, click <strong>Upgrade using a license key…</strong>. Otherwise use <strong>Buy a license…</strong> button below, get a license, and come back to the course.</p>
+<p>Once you successfully apply your license key, you will see its details including the maximum number of simultaneously running projects:</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/institute_license_applied.png"><img alt="Applying a License" src="_images/institute_license_applied.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Applying a License</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You must use a license with at least the same limit of running projects as the number of enrolled students. (Plus 2 if you use the same license for the instructor project as well as the shared project.) Otherwise some students may not be able to get the upgrades, preventing them from completing their work.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can easily adjust the number of projects your license can upgrade at any time if your enrollment number changes - click on the license description and then <strong>Edit license…</strong> button!</p>
+</div>
 </section>
-<section id="problems-adding-a-license">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">7. Problems adding a license</a><a class="headerlink" href="#problems-adding-a-license" title="Permalink to this heading"></a></h3>
-<p>If after adding license(s) under course Configuration, a license does not seem correctly applied a student project, first check that the student project has been restarted since adding the license. If there is still a problem, see <a class="reference internal" href="licenses.html#license-errors"><span class="std std-ref">License Error Messages</span></a>.</p>
-<section id="what-the-student-sees">
-<h4>What the student sees<a class="headerlink" href="#what-the-student-sees" title="Permalink to this heading"></a></h4>
+<section id="apply-the-course-license-to-the-instructor-project-optional">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">3. Apply the course license to the instructor project (optional)</a><a class="headerlink" href="#apply-the-course-license-to-the-instructor-project-optional" title="Permalink to this heading"></a></h3>
+<p>You can use the same license that you’re using for the students to upgrade the instructor project. This will count against the maximum number of running projects for the license. With this option, if you have 20 students and plan to run your instructor project at the same time as all 20 students, your course license should allow for at least 21 projects.</p>
+<p>If using this option, click <strong>Upgrade instructor project</strong> and then <strong>Save</strong>:</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/upgrade_instructor_project.png"><img alt="Upgrade Instructor Project" src="_images/upgrade_instructor_project.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Upgrade Instructor Project</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>Then you have to manually restart the project to apply the license: click <strong>Settings</strong> and then <strong>Restart Project…</strong></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>While it is convenient to use the course license for the instructor project, you should consider if having more RAM or a longer timeout would be beneficial to you. In that case you can buy a more powerful (and more expensive) license just for one project and apply it in project settings.</p>
+</div>
+</section>
+<section id="what-do-students-see">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">4. What do students see</a><a class="headerlink" href="#what-do-students-see" title="Permalink to this heading"></a></h3>
 <p>Here is what a student will see upon opening the student project for the course.</p>
 <p>First, this is what is seen if the instructor has not yet applied a license for the course. Note the red banner warning that the project is not upgraded.</p>
 <a class="reference internal image-reference" href="_images/inst-pay-03-student-before.png"><img alt="Student project quotas before applying course license." class="align-center" src="_images/inst-pay-03-student-before.png" style="width: 50%;" /></a>
 <p>Second, this is what is seen if the instructor has added a license in the course Configuration tab. The exact resource amounts will vary depending on the license.</p>
 <a class="reference internal image-reference" href="_images/student-license-view.jpg"><img alt="Student project quotas after applying course license." class="align-center" src="_images/student-license-view.jpg" style="width: 50%;" /></a>
 </section>
+<section id="license-strategy-multiple-licenses-only">
+<span id="license-strategy"></span><span id="index-2"></span><h3><a class="toc-backref" href="#id17" role="doc-backlink">5. License strategy (multiple licenses only)</a><a class="headerlink" href="#license-strategy-multiple-licenses-only" title="Permalink to this heading"></a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using multiple licenses for a course was necessary before it was possible to edit an existing license. Now using multiple licenses is discouraged.</p>
+</div>
+<p>If you have applied two or more licenses to a course, a dialog appears
+for choosing how those licenses are combined. The two options are:</p>
+<ul class="simple">
+<li><p><strong>Maximize number of covered students:</strong> apply one license to each project associated to this course (e.g., you bought a license to handle a few more students who added your course). This is the default.</p></li>
+<li><p><strong>Maximize upgrades to each project:</strong> apply all licenses to all projects associated to this course (e.g., you bought a license to increase the RAM or CPU for all students).</p></li>
+</ul>
 </section>
+</section>
+<section id="problems-with-licenses">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Problems with licenses</a><a class="headerlink" href="#problems-with-licenses" title="Permalink to this heading"></a></h2>
+<p>If a license does not seem to be correctly applied to a student project, first check that the student project has been restarted since adding the license. If there is still a problem, see <a class="reference internal" href="licenses.html#license-errors"><span class="std std-ref">License Error Messages</span></a>.</p>
+</section>
+<section id="adding-capacity">
+<span id="index-3"></span><h2><a class="toc-backref" href="#id19" role="doc-backlink">Adding capacity</a><a class="headerlink" href="#adding-capacity" title="Permalink to this heading"></a></h2>
+<p>After you have courses up and running, you may discover that you need to provide for more students,
+or increase computing resources on student projects. You can do this by editing your license at any time!</p>
 </section>
 <section id="teaching-with-compute-servers">
-<h2><a class="toc-backref" href="#id18" role="doc-backlink">Teaching with Compute Servers</a><a class="headerlink" href="#teaching-with-compute-servers" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">Teaching with Compute Servers</a><a class="headerlink" href="#teaching-with-compute-servers" title="Permalink to this heading"></a></h2>
 <p>If CoCalc projects are not sufficient for your needs, e.g. because you need GPUs or more CPU cores, you can consider <a class="reference internal" href="compute_server.html#teaching-with-compute-servers"><span class="std std-ref">Teaching with Compute Servers</span></a>!</p>
 </section>
-<section id="charges-for-gpt-4-and-gpt-3-5-16k">
-<h2><a class="toc-backref" href="#id19" role="doc-backlink">Charges for GPT-4 (and GPT-3.5-16k)</a><a class="headerlink" href="#charges-for-gpt-4-and-gpt-3-5-16k" title="Permalink to this heading"></a></h2>
+<section id="charges-for-paid-llms">
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">Charges for Paid LLMs</a><a class="headerlink" href="#charges-for-paid-llms" title="Permalink to this heading"></a></h2>
 <p>See <a class="reference internal" href="gpt4-course.html"><span class="doc">GPT4 with Courses</span></a>.</p>
 </section>
 </section>
