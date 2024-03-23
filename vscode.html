@@ -64,7 +64,10 @@
 <li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Visual Studio Code Server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Visual Studio Code Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-from-python-scripts">Plotting from Python Scripts</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="chat.html">Chatrooms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chatgpt.html">ChatGPT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
@@ -128,13 +131,35 @@
 <p>Visual Studio Code is a source-code editor made by Microsoft. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. For more information about the server, see the home page: <a class="reference external" href="https://code.visualstudio.com/docs/remote/vscode-server">Visual Studio Code Server</a>.</p>
 <p>To start VS Code Server in a CoCalc project, select Servers in the <a class="reference internal" href="activity-bar.html"><span class="doc">Activity Bar</span></a> and click the “VS Code” button:</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/vscode-server.png"><img alt="starting VS Code Server from the Activity Bar" src="_images/vscode-server.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="_images/vscode-server.png"><img alt="Starting VS Code Server from the Activity Bar" src="_images/vscode-server.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">starting VS Code Server from <em>Servers</em> in the Activity Bar</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Starting VS Code Server from the Activity Bar</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>When you click the link to start Visual Studio Code Server, a new browser tab opens with VS Code running as a browser application. All files are in the project, and therefore accessible from any browser.</p>
 <p>There’s no transparent support for multiple collaborative editing yet.</p>
+<section id="plotting-from-python-scripts">
+<h2>Plotting from Python Scripts<a class="headerlink" href="#plotting-from-python-scripts" title="Permalink to this heading"></a></h2>
+<p>You can use VSC to work with Jupyter notebooks with inline plots. It is also possible to make use of CoCalc support for X11 to display plots from python scripts.</p>
+<ol class="arabic simple">
+<li><p>In the CoCalc browser tab open <a class="reference internal" href="x11.html#x11"><span class="std std-ref">X11 desktop</span></a>.</p></li>
+<li><p>In the terminal frame enter <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$DISPLAY</span></code> which will show something like <code class="docutils literal notranslate"><span class="pre">:1295981061</span></code></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">$DISPLAY</span></code> environment variable to this value (including the column) in your VSC script/terminal.</p></li>
+<li><p>Run your code - plots should show up on the X11 desktop!</p></li>
+</ol>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/vsc_x11_plotting_cocalc.png"><img alt="CoCalc Tab with the Plot" src="_images/vsc_x11_plotting_cocalc.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">CoCalc Tab with the Plot</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/vsc_x11_plotting_vsc.png"><img alt="VSC Tab with ``$DISPLAY`` Set" src="_images/vsc_x11_plotting_vsc.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">VSC Tab with <code class="docutils literal notranslate"><span class="pre">$DISPLAY</span></code> Set</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
 
