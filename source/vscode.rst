@@ -21,11 +21,11 @@ There's no transparent support for multiple collaborative editing yet.
 Plotting from Python Scripts
 ----------------------------
 
-You can use VSC to work with Jupyter notebooks with inline plots. It is also possible to make use of CoCalc support for X11 to display plots from python scripts.
+You can use VS Code to work with Jupyter notebooks with inline plots. It is also possible to make use of CoCalc support for X11 to display plots from python scripts.
 
 #. In the CoCalc browser tab open :ref:`X11 desktop <X11>`.
 #. In the terminal frame enter ``echo $DISPLAY`` which will show something like ``:1295981061``
-#. Set ``$DISPLAY`` environment variable to this value (including the column) in your VSC script/terminal.
+#. Set ``$DISPLAY`` environment variable to this value (including the column) in your VS Code script/terminal.
 #. Run your code - plots should show up on the X11 desktop!
 
 .. figure:: img/vsc_x11_plotting_cocalc.png
@@ -38,6 +38,6 @@ You can use VSC to work with Jupyter notebooks with inline plots. It is also pos
 .. figure:: img/vsc_x11_plotting_vsc.png
     :width: 90%
     :align: center
-    :alt: VSC Tab with ``$DISPLAY`` Set
+    :alt: VS Code Tab with ``$DISPLAY`` Set
     
-    VSC Tab with ``$DISPLAY`` Set
+    VS Code Tab with ``$DISPLAY`` Set
