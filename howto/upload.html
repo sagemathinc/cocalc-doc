@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Upload Files &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="upload-files">
-<span id="index-0"></span><span id="id1"></span><h1>Upload Files<a class="headerlink" href="#upload-files" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Upload Files<a class="headerlink" href="#upload-files" title="Link to this heading"></a></h1>
 <p><strong>NEW: The file size limit on drag-and-drop upload has been increased to 5 GB.</strong> It was previously 256 MB.</p>
 <p>There several ways to upload a file from an external source to a CoCalc project.</p>
 <nav class="contents local" id="contents">
@@ -116,17 +116,17 @@
 </ul>
 </nav>
 <section id="upload-button-in-files-tab">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Upload Button in Files Tab</a><a class="headerlink" href="#upload-button-in-files-tab" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Upload Button in Files Tab</a><a class="headerlink" href="#upload-button-in-files-tab" title="Link to this heading"></a></h2>
 <p>In the <a class="reference internal" href="../project-files.html"><span class="doc">Files tab</span></a>, there is a button for upload at upper right.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/files-upload.png"><img alt="upload button" src="../_images/files-upload.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">upload button in Files tab</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">upload button in Files tab</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="drag-and-drop">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Drag and drop</a><a class="headerlink" href="#drag-and-drop" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Drag and drop</a><a class="headerlink" href="#drag-and-drop" title="Link to this heading"></a></h2>
 <p>This method is convenient if you can select the file to be uploaded with a mouse or other pointing device and drag it into a CoCalc browser tab.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -145,7 +145,7 @@ There is however an overall file size limit for each project, see <a class="refe
 </ul>
 </section>
 <section id="fetch-from-the-internet">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Fetch from the Internet</a><a class="headerlink" href="#fetch-from-the-internet" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Fetch from the Internet</a><a class="headerlink" href="#fetch-from-the-internet" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Internet access must be enabled for your project for these methods to work.</p>
@@ -159,7 +159,7 @@ There is however an overall file size limit for each project, see <a class="refe
 </ul>
 </section>
 <section id="ssh-file-transfer">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">SSH File Transfer</a><a class="headerlink" href="#ssh-file-transfer" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">SSH File Transfer</a><a class="headerlink" href="#ssh-file-transfer" title="Link to this heading"></a></h2>
 <p>This method uses the SSH protocol via <code class="docutils literal notranslate"><span class="pre">scp</span></code> or <code class="docutils literal notranslate"><span class="pre">rsync</span></code> from your computer’s operating system.</p>
 <p>To get started, you need to create an SSH key pair, consisting of a public key and a private key, on your computer.
 Then install the public key in either your CoCalc account or a CoCalc project: <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">Setup SSH keys</span></a>.</p>
@@ -186,7 +186,7 @@ E.g. to upload a file <code class="docutils literal notranslate"><span class="pr
 </div>
 </section>
 <section id="hints-for-dealing-with-large-files">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Hints for dealing with large files</a><a class="headerlink" href="#hints-for-dealing-with-large-files" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Hints for dealing with large files</a><a class="headerlink" href="#hints-for-dealing-with-large-files" title="Link to this heading"></a></h2>
 <p>Here ‘large’ can mean anything from a few tens of megabytes to several gigabytes, whatever value at which uploads become a problem. The threshold may depend on local factors such as speed and quality of your internet connection.</p>
 <ul class="simple">
 <li><p>As noted above, there is a hard limit of 5 GB for the drag and drop interface. Use fetch or SSH methods above for larger files.</p></li>
@@ -195,7 +195,7 @@ E.g. to upload a file <code class="docutils literal notranslate"><span class="pr
 </ul>
 </section>
 <section id="uploading-from-google-drive">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Uploading from Google Drive</a><a class="headerlink" href="#uploading-from-google-drive" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Uploading from Google Drive</a><a class="headerlink" href="#uploading-from-google-drive" title="Link to this heading"></a></h2>
 <p>Extra steps may be needed if you’re uploading a file from Google Drive.</p>
 <ol class="arabic simple">
 <li><p>Like the other “fetch” methods above, internet access must be enabled for your project.</p></li>

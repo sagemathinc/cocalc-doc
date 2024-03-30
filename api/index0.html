@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Purpose &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,14 +102,14 @@
            <div itemprop="articleBody">
              
   <section id="purpose">
-<h1>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading"></a></h1>
+<h1>Purpose<a class="headerlink" href="#purpose" title="Link to this heading"></a></h1>
 <p>The purpose of the CoCalc API (application programming interface) is to make
 essential operations within the CoCalc platform available to automated
 clients. This allows embedding of CoCalc services within other products
 and customizing the external look and feel of the application.</p>
 </section>
 <section id="protocol-and-data-format">
-<h1>Protocol and Data Format<a class="headerlink" href="#protocol-and-data-format" title="Permalink to this heading"></a></h1>
+<h1>Protocol and Data Format<a class="headerlink" href="#protocol-and-data-format" title="Link to this heading"></a></h1>
 <p>Each API command is invoked using an HTTPS POST request.
 All commands support request parameters in JSON format, with request header
 <code class="docutils literal notranslate"><span class="pre">Content-Type:</span> <span class="pre">application/json</span></code>. Many commands (those that do not
@@ -126,11 +126,11 @@ returned, and the response body may be a
 generic HTML message rather than a JSON string.</p>
 </section>
 <section id="authentication">
-<h1>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading"></a></h1>
+<h1>Authentication<a class="headerlink" href="#authentication" title="Link to this heading"></a></h1>
 <p>A valid API key is required on all API requests. To learn how to create an API key, see <a class="reference internal" href="../apikeys.html"><span class="doc">API Keys</span></a>.</p>
 </section>
 <section id="additional-references">
-<h1>Additional References<a class="headerlink" href="#additional-references" title="Permalink to this heading"></a></h1>
+<h1>Additional References<a class="headerlink" href="#additional-references" title="Link to this heading"></a></h1>
 <ul class="simple">
 <li><p>The <a class="reference external" href="https://share.cocalc.com/share/6eec7a75ce704502e2d557f44c316bf75c5c6ce7/Public/?viewer=share">CoCalc API tutorial</a> illustrates API calls in Python.</p></li>
 <li><p>The CoCalc PostgreSQL schema definition <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/util/db-schema">src/packages/util/db-schema</a> has information on tables and fields used with the API <code class="docutils literal notranslate"><span class="pre">query</span></code> request.</p></li>
@@ -139,7 +139,7 @@ generic HTML message rather than a JSON string.</p>
 </ul>
 </section>
 <section id="api-message-reference">
-<h1>API Message Reference<a class="headerlink" href="#api-message-reference" title="Permalink to this heading"></a></h1>
+<h1>API Message Reference<a class="headerlink" href="#api-message-reference" title="Link to this heading"></a></h1>
 <p>The remainder of this guide explains the individual API endpoints.
 Each API request definition begins with the path of the
 URL used to invoke the request,

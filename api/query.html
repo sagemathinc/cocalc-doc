@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>query &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -164,7 +164,7 @@
            <div itemprop="articleBody">
              
   <section id="query">
-<h1>query<a class="headerlink" href="#query" title="Permalink to this heading"></a></h1>
+<h1>query<a class="headerlink" href="#query" title="Link to this heading"></a></h1>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>: A unique UUID for the query</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">query</span></code>: The actual query (required)</p></li>
@@ -178,9 +178,9 @@ either <em>get</em> (read from database), or <em>set</em> (write to database). A
 is <em>get</em> if any query keys are null, otherwise the query is <em>set</em>.</p>
 <p>Note: queries with <code class="docutils literal notranslate"><span class="pre">multi_response</span></code> set to <code class="docutils literal notranslate"><span class="pre">true</span></code> are not supported.</p>
 <section id="examples-of-a-get-query">
-<h2>Examples of a <em>get</em> query<a class="headerlink" href="#examples-of-a-get-query" title="Permalink to this heading"></a></h2>
+<h2>Examples of a <em>get</em> query<a class="headerlink" href="#examples-of-a-get-query" title="Link to this heading"></a></h2>
 <section id="get-title-and-description-for-a-project">
-<h3>Get title and description for a project<a class="headerlink" href="#get-title-and-description-for-a-project" title="Permalink to this heading"></a></h3>
+<h3>Get title and description for a project<a class="headerlink" href="#get-title-and-description-for-a-project" title="Link to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;title&quot;:null,&quot;description&quot;:null}}}&#39; \
   https://cocalc.com/api/v1/query
@@ -215,7 +215,7 @@ example, project name and description are returned.</p>
 </div>
 </section>
 <section id="get-project-id-given-title-and-description">
-<h3>Get project id, given title and description<a class="headerlink" href="#get-project-id-given-title-and-description" title="Permalink to this heading"></a></h3>
+<h3>Get project id, given title and description<a class="headerlink" href="#get-project-id-given-title-and-description" title="Link to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:null,&quot;title&quot;:&quot;MY NEW PROJECT 2&quot;,&quot;description&quot;:&quot;desc 2&quot;}}}&#39; \
   https://cocalc.com/api/v1/query
@@ -229,7 +229,7 @@ example, project name and description are returned.</p>
 </div>
 </section>
 <section id="get-users-given-the-project-id">
-<h3>Get users, given the project id<a class="headerlink" href="#get-users-given-the-project-id" title="Permalink to this heading"></a></h3>
+<h3>Get users, given the project id<a class="headerlink" href="#get-users-given-the-project-id" title="Link to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;users&quot;:null}}}&#39; \
@@ -271,7 +271,7 @@ MB - member hosting: true</p>
 </div>
 </section>
 <section id="get-editor-settings-for-the-present-user">
-<h3>Get editor settings for the present user<a class="headerlink" href="#get-editor-settings-for-the-present-user" title="Permalink to this heading"></a></h3>
+<h3>Get editor settings for the present user<a class="headerlink" href="#get-editor-settings-for-the-present-user" title="Link to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;accounts&quot;:{&quot;account_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;,&quot;editor_settings&quot;:null}}}&#39; \
@@ -307,9 +307,9 @@ MB - member hosting: true</p>
 </section>
 </section>
 <section id="examples-of-a-set-query">
-<h2>Examples of a <em>set</em> query<a class="headerlink" href="#examples-of-a-set-query" title="Permalink to this heading"></a></h2>
+<h2>Examples of a <em>set</em> query<a class="headerlink" href="#examples-of-a-set-query" title="Link to this heading"></a></h2>
 <section id="set-title-and-description-for-a-project">
-<h3>Set title and description for a project<a class="headerlink" href="#set-title-and-description-for-a-project" title="Permalink to this heading"></a></h3>
+<h3>Set title and description for a project<a class="headerlink" href="#set-title-and-description-for-a-project" title="Link to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;projects&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
@@ -324,7 +324,7 @@ MB - member hosting: true</p>
 </div>
 </section>
 <section id="make-a-path-public-publish-a-file">
-<h3>Make a path public (publish a file)<a class="headerlink" href="#make-a-path-public-publish-a-file" title="Permalink to this heading"></a></h3>
+<h3>Make a path public (publish a file)<a class="headerlink" href="#make-a-path-public-publish-a-file" title="Link to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
   -H &quot;Content-Type: application/json&quot; \
   -d &#39;{&quot;query&quot;:{&quot;public_paths&quot;:{&quot;project_id&quot;:&quot;29163de6-b5b0-496f-b75d-24be9aa2aa1d&quot;, \
@@ -339,7 +339,7 @@ MB - member hosting: true</p>
 </div>
 </section>
 <section id="add-an-upgrade-to-a-project">
-<h3>Add an upgrade to a project<a class="headerlink" href="#add-an-upgrade-to-a-project" title="Permalink to this heading"></a></h3>
+<h3>Add an upgrade to a project<a class="headerlink" href="#add-an-upgrade-to-a-project" title="Link to this heading"></a></h3>
 <p>In the “get” example above showing project
 upgrades, change cpu upgrades from 3 to 4. The <code class="docutils literal notranslate"><span class="pre">users</span></code> object is
 returned as read, with <code class="docutils literal notranslate"><span class="pre">cpu_shares</span></code> increased to 1024 = 4 * 256. It
@@ -375,7 +375,7 @@ are merged in.</p>
 </div>
 </section>
 <section id="start-and-stop-a-project">
-<span id="api-stop-project"></span><h3>Start and Stop a project<a class="headerlink" href="#start-and-stop-a-project" title="Permalink to this heading"></a></h3>
+<span id="api-stop-project"></span><h3>Start and Stop a project<a class="headerlink" href="#start-and-stop-a-project" title="Link to this heading"></a></h3>
 <p>The example starts a project.
 Use <cite>stop</cite> instead of <cite>start</cite> for the action to stop a project.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl -u sk_abcdefQWERTY090900000000: \
@@ -390,7 +390,7 @@ Use <cite>stop</cite> instead of <cite>start</cite> for the action to stop a pro
 </section>
 </section>
 <section id="gettable-and-settable-fields">
-<h2>Gettable and settable fields<a class="headerlink" href="#gettable-and-settable-fields" title="Permalink to this heading"></a></h2>
+<h2>Gettable and settable fields<a class="headerlink" href="#gettable-and-settable-fields" title="Link to this heading"></a></h2>
 <p>Information on which fields are gettable and settable is in the CoCalc source code. See the definition of <code class="docutils literal notranslate"><span class="pre">user_query</span></code> for example in the
 <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/8015b03113dc1bc24690fb6d99abb49de3bf273a/src/packages/util/db-schema/accounts.ts">accounts.ts</a>
 or

@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Export TimeTravel History &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="export-timetravel-history">
-<span id="export-timetravel"></span><span id="index-0"></span><h1>Export TimeTravel History<a class="headerlink" href="#export-timetravel-history" title="Permalink to this heading"></a></h1>
+<span id="export-timetravel"></span><span id="index-0"></span><h1>Export TimeTravel History<a class="headerlink" href="#export-timetravel-history" title="Link to this heading"></a></h1>
 <p>It may be useful to get the history of all edits to a given file shown in <a class="reference internal" href="../time-travel.html"><span class="doc">TimeTravel</span></a>.
 One example might be a project in which students collaborate, where individual contributions to a team effort need to be documented.</p>
 <p>There are three ways to export <a class="reference internal" href="../time-travel.html"><span class="doc">TimeTravel</span></a> information.</p>
@@ -115,24 +115,24 @@ One example might be a project in which students collaborate, where individual c
 </ul>
 </nav>
 <section id="export-button-in-timetravel">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Export button in TimeTravel</a><a class="headerlink" href="#export-button-in-timetravel" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Export button in TimeTravel</a><a class="headerlink" href="#export-button-in-timetravel" title="Link to this heading"></a></h2>
 <p>Click the Export button with <a class="reference internal" href="../time-travel.html"><span class="doc">TimeTravel</span></a> open.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/tt-export-button.png"><img alt="about to export" src="../_images/tt-export-button.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">about to export TimeTravel data</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">about to export TimeTravel data</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>A JSON file is saved with timestamp, author, and patch length of each change.</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/tt-exported-json.png"><img alt="resulting json" src="../_images/tt-exported-json.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">the resulting JSON file</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">the resulting JSON file</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<span class="target" id="index-1"></span></section>
+</section>
 <section id="the-project-api">
-<span id="index-2"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">The project API</a><a class="headerlink" href="#the-project-api" title="Permalink to this heading"></a></h2>
+<span id="index-2"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">The project API</a><a class="headerlink" href="#the-project-api" title="Link to this heading"></a></h2>
 <p>Use the <a class="reference internal" href="../api/index.html"><span class="doc">project API</span></a>.</p>
 <p>The following code snippet gives an example:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import sys
@@ -146,18 +146,18 @@ v = api.get_syncdoc_history(&#39;a.ipynb&#39;, patches=False)
 <p>If patches=True you also get the actual patches, not just their lengths.</p>
 </section>
 <section id="the-hub-api">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">The hub API</a><a class="headerlink" href="#the-hub-api" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">The hub API</a><a class="headerlink" href="#the-hub-api" title="Link to this heading"></a></h2>
 <p>Use the hub API, which uses the <cite>get_syncdoc_history</cite> endpoint. (Details to follow.)</p>
 </section>
 <section id="about-exported-timetravel-data">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">About exported TimeTravel data</a><a class="headerlink" href="#about-exported-timetravel-data" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">About exported TimeTravel data</a><a class="headerlink" href="#about-exported-timetravel-data" title="Link to this heading"></a></h2>
 <p>Each entry in the JSON file corresponds to one change, or patch, to the file. The field <cite>patch_length</cite> is the number of characters of the actual patch, which is
 not currently in the export.</p>
 <p>If the project API is used to export TimeTravel, contents of the patches as well as the patch length can be retrieved by setting <code class="docutils literal notranslate"><span class="pre">patches=True</span></code> in the api call.</p>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/tt-export-api.png"><img alt="complete example" src="../_images/tt-export-api.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">TimeTravel export with project API, showing patch contents</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">TimeTravel export with project API, showing patch contents</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>In some cases, changes are attributed to the project, rather than to an individual user.

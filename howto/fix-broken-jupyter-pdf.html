@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fix broken Jupyter PDF export &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="fix-broken-jupyter-pdf-export">
-<h1>Fix broken Jupyter PDF export<a class="headerlink" href="#fix-broken-jupyter-pdf-export" title="Permalink to this heading"></a></h1>
+<h1>Fix broken Jupyter PDF export<a class="headerlink" href="#fix-broken-jupyter-pdf-export" title="Link to this heading"></a></h1>
 <p><a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebooks</span></a> allow to export the given file as a static PDF (in the “File” menu).
 There is just one problem, though: <strong>Sometimes it fails to generate the desired PDF document!</strong></p>
 <p>The overall process at play is that in the first step, the notebook is translated to <a class="reference internal" href="../references.html#latex" id="id1"><span>[LaTeX]</span></a>, a typesetting language. It is famous for supporting mathematical formulas and producing high-quality output, but it is also a <em>programming language</em> and therefore inherits all its “problems” like <a class="reference external" href="https://en.wikipedia.org/wiki/Syntax_error">syntax errors</a> and so on.</p>

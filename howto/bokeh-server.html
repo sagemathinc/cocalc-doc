@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bokeh / Holoview Server &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -101,14 +101,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="index-0"></span><section id="bokeh-holoview-server">
-<h1>Bokeh / Holoview Server<a class="headerlink" href="#bokeh-holoview-server" title="Permalink to this heading"></a></h1>
+  <section id="bokeh-holoview-server">
+<h1>Bokeh / Holoview Server<a class="headerlink" href="#bokeh-holoview-server" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is user-contributed content. Credits go to Dr. A. Khalatyan (researcher at IT-eScience, AIP, Potsdam)!</p>
 </div>
 <section id="bokeh-dask-server">
-<span id="bokeh-server"></span><h2>Bokeh / DASK server<a class="headerlink" href="#bokeh-dask-server" title="Permalink to this heading"></a></h2>
+<span id="bokeh-server"></span><h2>Bokeh / DASK server<a class="headerlink" href="#bokeh-dask-server" title="Link to this heading"></a></h2>
 <p>The combination of the <a class="reference external" href="https://docs.bokeh.org/">Bokeh</a>, <a class="reference external" href="https://dask.org/">DASK</a> and <a class="reference external" href="http://holoviews.org/user_guide/Deploying_Bokeh_Apps.html">Holoview</a> is allowing us to interactively render large datasets.
 This example is deploying an interactive visualization of a <a class="reference external" href="https://dask.org/">DASK</a> dataframe via a <a class="reference external" href="http://holoviews.org/user_guide/Deploying_Bokeh_Apps.html">Holoview</a> application:</p>
 <ol class="arabic">
@@ -161,7 +161,7 @@ This example is deploying an interactive visualization of a <a class="reference 
 </ol>
 </section>
 <section id="holoview-app">
-<span id="holoview-server"></span><h2>Holoview App<a class="headerlink" href="#holoview-app" title="Permalink to this heading"></a></h2>
+<span id="holoview-server"></span><h2>Holoview App<a class="headerlink" href="#holoview-app" title="Link to this heading"></a></h2>
 <p>For deploying an interactive plots based on <a class="reference external" href="https://docs.bokeh.org/">Bokeh</a>, <a class="reference external" href="https://panel.holoviz.org/reference/panes/Matplotlib.html">Panel</a>, <a class="reference external" href="https://holoviz.org/">Holoviz</a> or similar libraries we can use the <a class="reference internal" href="webserver.html#webserver"><span class="std std-ref">server feature of CoCalc</span></a>, like in the examples for the Tensorboard:</p>
 <ol class="arabic">
 <li><p>Create a python file <code class="docutils literal notranslate"><span class="pre">holo.py</span></code>. (If you are using a self hosted instance, replace <code class="docutils literal notranslate"><span class="pre">cocalc.com</span></code> with your domain):</p>

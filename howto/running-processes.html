@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manage Running Processes &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,10 +102,10 @@
            <div itemprop="articleBody">
              
   <section id="manage-running-processes">
-<span id="index-0"></span><h1>Manage Running Processes<a class="headerlink" href="#manage-running-processes" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>Manage Running Processes<a class="headerlink" href="#manage-running-processes" title="Link to this heading"></a></h1>
 <p>This page documents several operating system commands for process management. CoCalc provides a convenient summary with the <a class="reference internal" href="../processes.html"><span class="doc">Processes panel</span></a>.</p>
 <section id="see-all-processes">
-<span id="htop"></span><span id="index-1"></span><h2>See all Processes<a class="headerlink" href="#see-all-processes" title="Permalink to this heading"></a></h2>
+<span id="htop"></span><span id="index-1"></span><h2>See all Processes<a class="headerlink" href="#see-all-processes" title="Link to this heading"></a></h2>
 <p>Type exactly the following in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> (+New → Terminal) to see all processes running in a project:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>htop
 </pre></div>
@@ -124,7 +124,7 @@ or click the letter <code class="docutils literal notranslate"><span class="pre"
 <a class="reference internal image-reference" href="../_images/htop.png"><img alt="htop command" class="align-center" src="../_images/htop.png" style="width: 75%;" /></a>
 </section>
 <section id="see-memory-utilization">
-<span id="smem"></span><span id="index-2"></span><h2>See Memory Utilization<a class="headerlink" href="#see-memory-utilization" title="Permalink to this heading"></a></h2>
+<span id="smem"></span><span id="index-2"></span><h2>See Memory Utilization<a class="headerlink" href="#see-memory-utilization" title="Link to this heading"></a></h2>
 <p>Type exactly the following in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> (+New → Terminal):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>smem -tk
 </pre></div>
@@ -147,17 +147,17 @@ The last <code class="docutils literal notranslate"><span class="pre">RSS</span>
 </div>
 </section>
 <section id="even-more-utilities">
-<h2>Even more utilities<a class="headerlink" href="#even-more-utilities" title="Permalink to this heading"></a></h2>
+<h2>Even more utilities<a class="headerlink" href="#even-more-utilities" title="Link to this heading"></a></h2>
 <p>Besides <code class="docutils literal notranslate"><span class="pre">htop</span></code> and <code class="docutils literal notranslate"><span class="pre">smem</span></code>, there are many more system utilities installed.
 Given a project runs in a <a class="reference external" href="https://docker.com">Docker</a> environment, you only see a limited view of all what’s going on, but it might still be interesting for you.</p>
 <section id="top">
-<h3>top<a class="headerlink" href="#top" title="Permalink to this heading"></a></h3>
+<h3>top<a class="headerlink" href="#top" title="Link to this heading"></a></h3>
 <p>The “classic” version <code class="docutils literal notranslate"><span class="pre">htop</span></code>, similar layout.
 Press key <code class="docutils literal notranslate"><span class="pre">h</span></code> for help after starting it; and <code class="docutils literal notranslate"><span class="pre">q</span></code> to quit the application.</p>
 <a class="reference internal image-reference" href="../_images/top.png"><img alt="top command" class="align-center" src="../_images/top.png" style="width: 75%;" /></a>
 </section>
 <section id="glances">
-<h3>glances<a class="headerlink" href="#glances" title="Permalink to this heading"></a></h3>
+<h3>glances<a class="headerlink" href="#glances" title="Link to this heading"></a></h3>
 <p><a class="reference external" href="https://nicolargo.github.io/glances/">Glances</a> is a modern Python-based monitoring utility.
 Start it the following way if you’re using a white terminal background and want to enable a tree-view of your processes:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>glances --theme-white --tree
@@ -168,7 +168,7 @@ Start it the following way if you’re using a white terminal background and wan
 <a class="reference internal image-reference" href="../_images/glances.png"><img alt="glances command" class="align-center" src="../_images/glances.png" style="width: 75%;" /></a>
 </section>
 <section id="ps-aux">
-<h3>ps aux<a class="headerlink" href="#ps-aux" title="Permalink to this heading"></a></h3>
+<h3>ps aux<a class="headerlink" href="#ps-aux" title="Link to this heading"></a></h3>
 <p>An all-time classic is <code class="docutils literal notranslate"><span class="pre">ps</span> <span class="pre">aux</span></code>. Run <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ps</span></code> to learn more about that utility.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ ps aux
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND

@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>latex &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -129,22 +129,22 @@
            <div itemprop="articleBody">
              
   <section id="latex">
-<h1>latex<a class="headerlink" href="#latex" title="Permalink to this heading"></a></h1>
+<h1>latex<a class="headerlink" href="#latex" title="Link to this heading"></a></h1>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">latex</span></code> endpoint to compile a latex document. This endpoint converts a tex file to pdf, and stores the pdf
 temporarily as a blob in CoCalc’s PostgreSQL database. The tmp files used
 for compilation are cleaned up. You can specify a <code class="docutils literal notranslate"><span class="pre">project_id</span></code> in the
 API call, or leave that off and your most recent project gets used
 automatically (or a new one created). By default the compilation uses “latexmk” with certain options, but you can specify a custom <code class="docutils literal notranslate"><span class="pre">command</span></code> parameter to convert the tex to pdf.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span> <span class="c1"># your API key</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">x</span><span class="o">=</span><span class="s1">&#39;sk_xxxxx&#39;</span><span class="w"> </span><span class="c1"># your API key</span>
 
 <span class="c1"># c is the latex document as a text string</span>
 <span class="nv">c</span><span class="o">=</span><span class="s1">&#39;\documentclass{article}\begin{document}\section{Main Section}Hello.\end{document}&#39;</span>
 
-curl -sk <span class="se">\</span>
-  -u <span class="nv">$x</span>: <span class="se">\</span>
-  -d <span class="nv">path</span><span class="o">=</span>/tmp/d.tex <span class="se">\</span>
-  -d <span class="nv">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span> <span class="se">\</span>
-  https://cocalc.com/api/v2/latex <span class="p">|</span> jq <span class="s1">&#39;.url&#39;</span>
+curl<span class="w"> </span>-sk<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-u<span class="w"> </span><span class="nv">$x</span>:<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="nv">path</span><span class="o">=</span>/tmp/d.tex<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="nv">content</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>https://cocalc.com/api/v2/latex<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.url&#39;</span>
 
 <span class="nb">echo</span>
 

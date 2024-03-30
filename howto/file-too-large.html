@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>File Too Large &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -135,7 +135,7 @@
            <div itemprop="articleBody">
              
   <section id="file-too-large">
-<span id="index-0"></span><span id="id1"></span><h1>File Too Large<a class="headerlink" href="#file-too-large" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>File Too Large<a class="headerlink" href="#file-too-large" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#jupyter-notebook-too-large" id="id3">Jupyter Notebook Too Large</a></p></li>
@@ -145,11 +145,11 @@
 </nav>
 <p>Here are suggestions for what to do if you get a file-too-large error when opening a file in CoCalc.</p>
 <section id="jupyter-notebook-too-large">
-<span id="howto-ipynb-too-large"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Jupyter Notebook Too Large</a><a class="headerlink" href="#jupyter-notebook-too-large" title="Permalink to this heading"></a></h2>
+<span id="howto-ipynb-too-large"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Jupyter Notebook Too Large</a><a class="headerlink" href="#jupyter-notebook-too-large" title="Link to this heading"></a></h2>
 <p>If you receive the error message <code class="docutils literal notranslate"><span class="pre">Fatal</span> <span class="pre">Error</span> <span class="pre">loading</span> <span class="pre">ipynb</span> <span class="pre">file</span></code> with text saying your file is too large, your notebook has probably created too much output. The <a class="reference internal" href="../jupyter-tips-and-tricks.html#jupyter-ipynb-too-large"><span class="std std-ref">Notebook too large?</span></a> section of this manual has suggestions what to do.</p>
 </section>
 <section id="html-or-text-file">
-<span id="howto-html-too-large"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">HTML or Text File</a><a class="headerlink" href="#html-or-text-file" title="Permalink to this heading"></a></h2>
+<span id="howto-html-too-large"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">HTML or Text File</a><a class="headerlink" href="#html-or-text-file" title="Link to this heading"></a></h2>
 <p>An HTML or text file larger than 5 MB can’t be edited with the CoCalc <a class="reference internal" href="../frame-editor.html"><span class="doc">Frame Editor</span></a>.</p>
 <p>Here is a workaround to view a large .html or .txt file in a CoCalc project in your browser.</p>
 <ol class="arabic simple">
@@ -160,12 +160,12 @@
 <p>If you want to edit the file, you can open a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> and use one of the Linux editing utilities, such as “vi” or “emacs”.</p>
 </section>
 <section id="csv-file">
-<span id="howto-csv-too-large"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">CSV File</a><a class="headerlink" href="#csv-file" title="Permalink to this heading"></a></h2>
+<span id="howto-csv-too-large"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">CSV File</a><a class="headerlink" href="#csv-file" title="Link to this heading"></a></h2>
 <p>Attempting to open a CSV file over 5 MB in size results in the following error:</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../_images/big-file.png"><img alt="file too large error" src="../_images/big-file.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-text">CSV <em>file too large</em> error</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">CSV <em>file too large</em> error</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>In this case you can view the file with command-line tools like <code class="docutils literal notranslate"><span class="pre">less</span></code>, or the <cite>vim</cite> editor, or view the file using <a class="reference external" href="https://www.libreoffice.org">libreoffice</a> or the <code class="docutils literal notranslate"><span class="pre">localc</span></code> application in an  <a class="reference internal" href="../x11.html#x11-installed-applications"><span class="std std-ref">x11</span></a> terminal.</p>

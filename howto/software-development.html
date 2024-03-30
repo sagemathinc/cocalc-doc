@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Developing Software &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -101,8 +101,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="index-0"></span><section id="developing-software">
-<span id="index-1"></span><h1>Developing Software<a class="headerlink" href="#developing-software" title="Permalink to this heading"></a></h1>
+  <section id="developing-software">
+<span id="index-1"></span><span id="index-0"></span><h1>Developing Software<a class="headerlink" href="#developing-software" title="Link to this heading"></a></h1>
 <p>This page is all about programming your own software (C, Fortran, Java, Julia, Octave, R, etc.) from CoCalc.
 A highly related page is the FAQ for <a class="reference internal" href="external-tools.html"><span class="doc">Utilizing External Tools from CoCalc</span></a>.
 There is also a separate page about <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebooks</span></a> and <a class="reference internal" href="../sagews.html"><span class="doc">Sage Worksheets</span></a>.</p>
@@ -168,14 +168,14 @@ There is also a separate page about <a class="reference internal" href="../jupyt
 </ul>
 </nav>
 <section id="general">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">General</a><a class="headerlink" href="#general" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">General</a><a class="headerlink" href="#general" title="Link to this heading"></a></h2>
 <section id="will-my-code-keep-running-if-i-disconnect">
-<h3><a class="toc-backref" href="#id3" role="doc-backlink">Will my code keep running if I disconnect?</a><a class="headerlink" href="#will-my-code-keep-running-if-i-disconnect" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Will my code keep running if I disconnect?</a><a class="headerlink" href="#will-my-code-keep-running-if-i-disconnect" title="Link to this heading"></a></h3>
 <p>Even if my computer is put to sleep? Or do I need to have a machine open in order for the  process to run?</p>
 <p>You definitely do not need to have your computer awake, or a window open, for your project to keep working. However, this is controlled by something called an “idle timeout,” described in the next question.</p>
-<span class="target" id="index-2"></span></section>
+</section>
 <section id="what-is-an-idle-timeout">
-<span id="idle-timeout"></span><span id="index-3"></span><h3><a class="toc-backref" href="#id4" role="doc-backlink">What is an “idle timeout?”</a><a class="headerlink" href="#what-is-an-idle-timeout" title="Permalink to this heading"></a></h3>
+<span id="idle-timeout"></span><span id="index-3"></span><span id="index-2"></span><h3><a class="toc-backref" href="#id4" role="doc-backlink">What is an “idle timeout?”</a><a class="headerlink" href="#what-is-an-idle-timeout" title="Link to this heading"></a></h3>
 <p>Under <a class="reference internal" href="../project-settings.html"><span class="doc">Project Settings</span></a> (that’s the wrench icon) there is an entry under
 <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">Why Add Upgrades?</span></a> (left-hand side),
 which will tell you how long the process will run “in the background.”
@@ -190,7 +190,7 @@ in mind when designing your project. (For example, use checkpointing.) In contra
 paid projects are immune to this issue. See also <a class="reference internal" href="../upgrade-guide.html"><span class="doc">Project Upgrades</span></a>.</p>
 </section>
 <section id="timeout-killed-calculations">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">Timeout/Killed calculations</a><a class="headerlink" href="#timeout-killed-calculations" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Timeout/Killed calculations</a><a class="headerlink" href="#timeout-killed-calculations" title="Link to this heading"></a></h3>
 <p>If I have code that has been running for a  while, and it times out or is otherwise “killed” (see previous question), what happens to the output?</p>
 <p>If you are using a classical Jupyter notebook, then all output that is printed will be lost if no
 browser is viewing it. This is a major design flaw in Jupyter. <a class="reference internal" href="../jupyter.html"><span class="doc">CoCalc’s Jupyter implemenetation</span></a> behaves much better!</p>
@@ -198,7 +198,7 @@ browser is viewing it. This is a major design flaw in Jupyter. <a class="referen
 <p>You can also (of course) write to a file on disk, which might be preferable in some cases.</p>
 </section>
 <section id="limitations-of-long-running-computations">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Limitations of long-running computations</a><a class="headerlink" href="#limitations-of-long-running-computations" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Limitations of long-running computations</a><a class="headerlink" href="#limitations-of-long-running-computations" title="Link to this heading"></a></h3>
 <p id="index-4">Open your project and click on Settings.
 The default limitations are listed under “Quotas” in the lower left.
 These can be raised, as mentioned there.  Notes:</p>
@@ -208,28 +208,28 @@ These can be raised, as mentioned there.  Notes:</p>
 </ul>
 </section>
 <section id="see-all-processes-running-in-my-project">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">See all processes running in my project</a><a class="headerlink" href="#see-all-processes-running-in-my-project" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">See all processes running in my project</a><a class="headerlink" href="#see-all-processes-running-in-my-project" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="running-processes.html#htop"><span class="std std-ref">See all Processes</span></a>.</p>
 </section>
 <section id="see-memory-usage">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">See Memory Usage</a><a class="headerlink" href="#see-memory-usage" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">See Memory Usage</a><a class="headerlink" href="#see-memory-usage" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="running-processes.html#smem"><span class="std std-ref">See Memory Utilization</span></a>.</p>
 </section>
 <section id="is-bashrc-or-bash-profile-called-on-startup">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Is <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> or <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> called on startup?</a><a class="headerlink" href="#is-bashrc-or-bash-profile-called-on-startup" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Is <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> or <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> called on startup?</a><a class="headerlink" href="#is-bashrc-or-bash-profile-called-on-startup" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> <strong>is</strong> run on startup and <code class="docutils literal notranslate"><span class="pre">~/.bash_profile</span></code> is <strong>not</strong>!
 Hence, use <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> to customize your setup,
 and you can also use <code class="docutils literal notranslate"><span class="pre">~/.bash_aliases</span></code> for your aliases (see <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>).</p>
 </section>
 <section id="edit-code-and-run-a-terminal-side-by-side">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">Edit code and run a terminal side-by-side</a><a class="headerlink" href="#edit-code-and-run-a-terminal-side-by-side" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Edit code and run a terminal side-by-side</a><a class="headerlink" href="#edit-code-and-run-a-terminal-side-by-side" title="Link to this heading"></a></h3>
 <p>You can open up a terminal next to a code editor panel: <a class="reference internal" href="../terminal.html#terminal-editor-panel"><span class="std std-ref">Terminal Environment in Split Frame with File Editor</span></a>.</p>
 </section>
 </section>
 <section id="sage-worksheets">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Sage Worksheets</a><a class="headerlink" href="#sage-worksheets" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Sage Worksheets</a><a class="headerlink" href="#sage-worksheets" title="Link to this heading"></a></h2>
 <section id="adjust-the-output-cut-offs">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Adjust the output cut-offs</a><a class="headerlink" href="#adjust-the-output-cut-offs" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Adjust the output cut-offs</a><a class="headerlink" href="#adjust-the-output-cut-offs" title="Link to this heading"></a></h3>
 <p>It is an extremely common programming mistake to write an infinite loop, particularly when first learning about loops. Because CoCalc assumes an experienced programmer, the “cutoff limits” are set rather high. Users new to programming might want to set that limit lower, so that their screen isn’t overflowing with repeated lines in the event that they inadvertently code up an infinite loop. (By the way, this works <em>in all languages</em>, not just Sage, e.g. R, C, FORTRAN, whatever you’d like.)</p>
 <p>You can type:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print sage_server.MAX_STDOUT_SIZE
@@ -251,11 +251,11 @@ for i in range(0,1000):
 <p>By the way, it isn’t just the case that the output is truncated at this point. The computation is halted as well. (The technical term for this is that “the process is killed.”)</p>
 </section>
 <section id="fix-an-exception-related-to-sage-s-integer-vs-python-ints">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Fix an exception related to Sage’s Integer(…) vs. Python ints?</a><a class="headerlink" href="#fix-an-exception-related-to-sage-s-integer-vs-python-ints" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Fix an exception related to Sage’s Integer(…) vs. Python ints?</a><a class="headerlink" href="#fix-an-exception-related-to-sage-s-integer-vs-python-ints" title="Link to this heading"></a></h3>
 <p>By default, Sage parses the input commands and replaces some elements with its own parts and also adds some syntactic sugar. For example, an integer like <code class="docutils literal notranslate"><span class="pre">234</span></code> is translated to <code class="docutils literal notranslate"><span class="pre">Integer(234)</span></code> in order to be more powerful and live as a part of Sage. To avoid this behaviour, either append an <code class="docutils literal notranslate"><span class="pre">r</span></code> to the number, like <code class="docutils literal notranslate"><span class="pre">234r</span></code> (the extra <code class="docutils literal notranslate"><span class="pre">r</span></code> tells Sage to consider this as “raw” input) or change the mode of the cell to Python by adding <code class="docutils literal notranslate"><span class="pre">%python</span></code> at the top. You can also switch to pure Python mode by default via <code class="docutils literal notranslate"><span class="pre">%default_mode</span> <span class="pre">python</span></code>.   Alternatively, you can type <code class="docutils literal notranslate"><span class="pre">Integer=int</span></code> and possibly also <code class="docutils literal notranslate"><span class="pre">RealNumber=float</span></code>.</p>
 </section>
 <section id="raise-the-limit-on-the-number-of-output-messages-per-cell">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Raise the limit on the number of output messages per cell</a><a class="headerlink" href="#raise-the-limit-on-the-number-of-output-messages-per-cell" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Raise the limit on the number of output messages per cell</a><a class="headerlink" href="#raise-the-limit-on-the-number-of-output-messages-per-cell" title="Link to this heading"></a></h3>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import sage_server
 sage_server.MAX_OUTPUT_MESSAGES=100000
 </pre></div>
@@ -264,7 +264,7 @@ sage_server.MAX_OUTPUT_MESSAGES=100000
 <p>Also, type <code class="docutils literal notranslate"><span class="pre">sage_server.[tab</span> <span class="pre">key]</span></code> to see information about other limitations.</p>
 </section>
 <section id="custom-modules">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Custom Modules</a><a class="headerlink" href="#custom-modules" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Custom Modules</a><a class="headerlink" href="#custom-modules" title="Link to this heading"></a></h3>
 <p>Put an executable file with this content in <code class="docutils literal notranslate"><span class="pre">$HOME/bin/sage</span></code>:</p>
 <p>First, check where the global Sage install is by running <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">sage</span></code>. Most likely, it is at <code class="docutils literal notranslate"><span class="pre">/ext/bin/sage</span></code>. Then create the file with the content:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#!/usr/bin/env bash
@@ -290,7 +290,7 @@ this does what you want.</p>
 One can also put modules into the user’s site-packages by hand and Sage will find them.</p>
 </section>
 <section id="julia-in-a-sage-worksheet">
-<h3><a class="toc-backref" href="#id16" role="doc-backlink">Julia in a Sage Worksheet</a><a class="headerlink" href="#julia-in-a-sage-worksheet" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Julia in a Sage Worksheet</a><a class="headerlink" href="#julia-in-a-sage-worksheet" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Click +New, type a filename, then click the “Sage Worksheet” button.</p></li>
 <li><p>To evaluate code using Julia, begin the cell with <code class="docutils literal notranslate"><span class="pre">%julia</span></code>, type the code, then press shift+enter.</p></li>
@@ -298,24 +298,24 @@ One can also put modules into the user’s site-packages by hand and Sage will f
 </ol>
 </section>
 <section id="detect-sage-worksheet-environment">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">Detect Sage Worksheet Environment</a><a class="headerlink" href="#detect-sage-worksheet-environment" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Detect Sage Worksheet Environment</a><a class="headerlink" href="#detect-sage-worksheet-environment" title="Link to this heading"></a></h3>
 <p>If your code is running in a CoCalc worksheet, then the global variable <code class="docutils literal notranslate"><span class="pre">__SAGEWS__</span></code> will be defined.</p>
 </section>
 <section id="functions-specific-to-sage-worksheets">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink">Functions specific to Sage worksheets</a><a class="headerlink" href="#functions-specific-to-sage-worksheets" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Functions specific to Sage worksheets</a><a class="headerlink" href="#functions-specific-to-sage-worksheets" title="Link to this heading"></a></h3>
 <p>Type <code class="docutils literal notranslate"><span class="pre">salvus.[tab</span> <span class="pre">key]</span></code> to see the auto-complete list of functions or run <code class="docutils literal notranslate"><span class="pre">dir(salvus)</span></code>.</p>
 </section>
 <section id="run-sage-locally-on-my-own-machine">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink">Run Sage locally, on my own machine</a><a class="headerlink" href="#run-sage-locally-on-my-own-machine" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Run Sage locally, on my own machine</a><a class="headerlink" href="#run-sage-locally-on-my-own-machine" title="Link to this heading"></a></h3>
 <p>There is a lovely tutorial on the web to help you do exactly that:
 <a class="reference external" href="https://doc.sagemath.org/html/en/installation/index.html">Sage Installation Guide</a>.</p>
 </section>
 <section id="custom-sage-binaries">
-<h3><a class="toc-backref" href="#id20" role="doc-backlink">Custom Sage binaries</a><a class="headerlink" href="#custom-sage-binaries" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Custom Sage binaries</a><a class="headerlink" href="#custom-sage-binaries" title="Link to this heading"></a></h3>
 <p>See the instructions, <a class="reference internal" href="#custom-sage-build"><span class="std std-ref">immediately below</span></a>, on using a custom built-from-scratch copy of Sage. Just substitute your own <code class="docutils literal notranslate"><span class="pre">.tar.gz</span></code> file for the official build of Sage.</p>
 </section>
 <section id="custom-built-from-source-sage">
-<span id="custom-sage-build"></span><h3><a class="toc-backref" href="#id21" role="doc-backlink">Custom built-from-source Sage</a><a class="headerlink" href="#custom-built-from-source-sage" title="Permalink to this heading"></a></h3>
+<span id="custom-sage-build"></span><h3><a class="toc-backref" href="#id21" role="doc-backlink">Custom built-from-source Sage</a><a class="headerlink" href="#custom-built-from-source-sage" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This requires <a class="reference internal" href="../upgrade-guide.html"><span class="doc">a upgraded project</span></a> and takes <strong>hours</strong>!
@@ -349,9 +349,9 @@ you should see an error here, e.g.,
 </section>
 </section>
 <section id="python">
-<h2><a class="toc-backref" href="#id22" role="doc-backlink">Python</a><a class="headerlink" href="#python" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Python</a><a class="headerlink" href="#python" title="Link to this heading"></a></h2>
 <section id="custom-python3">
-<h3><a class="toc-backref" href="#id23" role="doc-backlink">Custom Python3</a><a class="headerlink" href="#custom-python3" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Custom Python3</a><a class="headerlink" href="#custom-python3" title="Link to this heading"></a></h3>
 <p>With full network access enabled, you can download and compile Python 3 this way.
 Last line sets a symlink to make it your default!</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>apt-get source python3.4-dev
@@ -372,41 +372,41 @@ ln -s ~/bin/python3 ~/bin/python
 </div>
 </section>
 <section id="how-can-i-install-python-packages-from-pypi-using-pip">
-<h3><a class="toc-backref" href="#id24" role="doc-backlink">How can I install Python packages from PyPI using pip?</a><a class="headerlink" href="#how-can-i-install-python-packages-from-pypi-using-pip" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">How can I install Python packages from PyPI using pip?</a><a class="headerlink" href="#how-can-i-install-python-packages-from-pypi-using-pip" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="install-python-lib.html"><span class="doc">Install Python Packages</span></a>.</p>
 </section>
 <section id="i-would-like-to-develop-a-webserver-in-python">
-<h3><a class="toc-backref" href="#id25" role="doc-backlink">I would like to develop a webserver in Python</a><a class="headerlink" href="#i-would-like-to-develop-a-webserver-in-python" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">I would like to develop a webserver in Python</a><a class="headerlink" href="#i-would-like-to-develop-a-webserver-in-python" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="webserver.html"><span class="doc">Run A Webserver</span></a>.</p>
-<span class="target" id="index-5"></span></section>
+</section>
 <section id="run-plotly-in-a-jupyter-notebook">
-<span id="index-6"></span><h3><a class="toc-backref" href="#id26" role="doc-backlink">Run <code class="docutils literal notranslate"><span class="pre">plotly</span></code> in a Jupyter notebook</a><a class="headerlink" href="#run-plotly-in-a-jupyter-notebook" title="Permalink to this heading"></a></h3>
+<span id="index-6"></span><span id="index-5"></span><h3><a class="toc-backref" href="#id26" role="doc-backlink">Run <code class="docutils literal notranslate"><span class="pre">plotly</span></code> in a Jupyter notebook</a><a class="headerlink" href="#run-plotly-in-a-jupyter-notebook" title="Link to this heading"></a></h3>
 <p>You need to run <a class="reference external" href="https://plot.ly/">Plotly</a> plots in CoCalc under the <strong>Plain Jupyter Server</strong>.
 For more information, see the <a class="reference internal" href="../jupyter-classical-vs-cocalc.html#jupyter-classical-vs-cocalc"><span class="std std-ref">Jupyter Classic / Modern page</span></a>.</p>
 <p>Another option is to use the Plotly <a class="reference external" href="https://plot.ly/products/dash/">Dash framework</a>:
 here is a <a class="reference external" href="https://cocalc.com/share/public_paths/97f923d786291540fd2f98854303db410ba7f22a">working example running Dash from a CoCalc terminal</a>. Here is a <a class="reference external" href="https://blog.cocalc.com/cocalc/python/2021/05/03/dash-with-cocalc.html">CoCalc blog posting explaining it</a>.</p>
 </section>
 <section id="install-some-software-into-my-own-anaconda-environment">
-<h3><a class="toc-backref" href="#id27" role="doc-backlink">Install some software into my own Anaconda environment</a><a class="headerlink" href="#install-some-software-into-my-own-anaconda-environment" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id27" role="doc-backlink">Install some software into my own Anaconda environment</a><a class="headerlink" href="#install-some-software-into-my-own-anaconda-environment" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="install-python-lib.html#anaconda-install"><span class="std std-ref">Anaconda Environment</span></a>.</p>
 </section>
 <section id="configure-a-jupyter-kernel-for-my-custom-anaconda-environment">
-<h3><a class="toc-backref" href="#id28" role="doc-backlink">Configure a Jupyter kernel for my custom Anaconda environment</a><a class="headerlink" href="#configure-a-jupyter-kernel-for-my-custom-anaconda-environment" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id28" role="doc-backlink">Configure a Jupyter kernel for my custom Anaconda environment</a><a class="headerlink" href="#configure-a-jupyter-kernel-for-my-custom-anaconda-environment" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="install-python-lib.html#anaconda-jupyter"><span class="std std-ref">Configure a Jupyter kernel for my custom Anaconda environment</span></a>.</p>
 </section>
 </section>
 <section id="r-statistical-software">
-<h2><a class="toc-backref" href="#id29" role="doc-backlink">R Statistical Software</a><a class="headerlink" href="#r-statistical-software" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id29" role="doc-backlink">R Statistical Software</a><a class="headerlink" href="#r-statistical-software" title="Link to this heading"></a></h2>
 <section id="i-would-like-to-install-new-r-packages">
-<h3><a class="toc-backref" href="#id30" role="doc-backlink">I would like to install new R packages</a><a class="headerlink" href="#i-would-like-to-install-new-r-packages" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id30" role="doc-backlink">I would like to install new R packages</a><a class="headerlink" href="#i-would-like-to-install-new-r-packages" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="install-r-package.html"><span class="doc">Install R Packages</span></a>.</p>
 </section>
 <section id="process-an-r-markdown-rmd-documents">
-<h3><a class="toc-backref" href="#id31" role="doc-backlink">Process an R Markdown (.Rmd) documents</a><a class="headerlink" href="#process-an-r-markdown-rmd-documents" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id31" role="doc-backlink">Process an R Markdown (.Rmd) documents</a><a class="headerlink" href="#process-an-r-markdown-rmd-documents" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="../frame-editor.html#edit-rmd"><span class="std std-ref">R Markdown</span></a>.</p>
 </section>
 <section id="use-r-in-a-sage-worksheet">
-<h3><a class="toc-backref" href="#id32" role="doc-backlink">Use R in a Sage worksheet</a><a class="headerlink" href="#use-r-in-a-sage-worksheet" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id32" role="doc-backlink">Use R in a Sage worksheet</a><a class="headerlink" href="#use-r-in-a-sage-worksheet" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Click +New, type a filename, then click the “Sage Worksheet” button.</p></li>
 <li><p>To evaluate code using R, begin the cell with <code class="docutils literal notranslate"><span class="pre">%r</span></code>, type the code, then press shift+enter.</p></li>
@@ -414,7 +414,7 @@ here is a <a class="reference external" href="https://cocalc.com/share/public_pa
 </ol>
 </section>
 <section id="override-the-default-width-and-height-for-r-svg-figures-in-a-cocalc-worksheet">
-<h3><a class="toc-backref" href="#id33" role="doc-backlink">Override the default width and height for R SVG figures in a CoCalc worksheet</a><a class="headerlink" href="#override-the-default-width-and-height-for-r-svg-figures-in-a-cocalc-worksheet" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id33" role="doc-backlink">Override the default width and height for R SVG figures in a CoCalc worksheet</a><a class="headerlink" href="#override-the-default-width-and-height-for-r-svg-figures-in-a-cocalc-worksheet" title="Link to this heading"></a></h3>
 <p>To set width to 10 inches and height to 4 inches, use the sage command:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>r.set_plot_options(width=10, height=4)
 </pre></div>
@@ -427,7 +427,7 @@ here is a <a class="reference external" href="https://cocalc.com/share/public_pa
 </section>
 </section>
 <section id="octave">
-<span id="index-7"></span><h2><a class="toc-backref" href="#id34" role="doc-backlink">Octave</a><a class="headerlink" href="#octave" title="Permalink to this heading"></a></h2>
+<span id="index-7"></span><h2><a class="toc-backref" href="#id34" role="doc-backlink">Octave</a><a class="headerlink" href="#octave" title="Link to this heading"></a></h2>
 <p>You can work with <a class="reference external" href="https://www.gnu.org/software/octave/">Octave</a> in</p>
 <ul class="simple">
 <li><p>Jupyter and CoCalc worksheets;</p></li>
@@ -441,9 +441,9 @@ Then open an additional panel in the <a class="reference internal" href="../fram
 <p><a class="reference external" href="https://github.com/sagemathinc/cocalc-example-files/tree/master/octave">https://github.com/sagemathinc/cocalc-example-files/tree/master/octave</a></p>
 </section>
 <section id="other-languages">
-<h2><a class="toc-backref" href="#id35" role="doc-backlink">Other Languages</a><a class="headerlink" href="#other-languages" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id35" role="doc-backlink">Other Languages</a><a class="headerlink" href="#other-languages" title="Link to this heading"></a></h2>
 <section id="create-compile-and-run-a-c-program">
-<h3><a class="toc-backref" href="#id36" role="doc-backlink">Create, compile and run a C program</a><a class="headerlink" href="#create-compile-and-run-a-c-program" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id36" role="doc-backlink">Create, compile and run a C program</a><a class="headerlink" href="#create-compile-and-run-a-c-program" title="Link to this heading"></a></h3>
 <ol class="arabic">
 <li><p>Click +New, type a filename ending in “.c”, e.g., <code class="docutils literal notranslate"><span class="pre">foo.c</span></code>, and click “Create File” (or just press return).</p></li>
 <li><p>Paste this code into the file:</p>
@@ -459,11 +459,11 @@ int main(void) {
 </ol>
 </section>
 <section id="create-compile-and-run-a-fortran-f90-program">
-<h3><a class="toc-backref" href="#id37" role="doc-backlink">Create, compile and run a Fortran F90 program</a><a class="headerlink" href="#create-compile-and-run-a-fortran-f90-program" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id37" role="doc-backlink">Create, compile and run a Fortran F90 program</a><a class="headerlink" href="#create-compile-and-run-a-fortran-f90-program" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="fortran.html"><span class="doc">Fortran Programming</span></a></p>
 </section>
 <section id="create-compile-and-run-a-java-program">
-<h3><a class="toc-backref" href="#id38" role="doc-backlink">Create, compile and run a Java program</a><a class="headerlink" href="#create-compile-and-run-a-java-program" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id38" role="doc-backlink">Create, compile and run a Java program</a><a class="headerlink" href="#create-compile-and-run-a-java-program" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Create a file <code class="docutils literal notranslate"><span class="pre">HelloWorld.java</span></code> containing</p></li>
 </ol>
@@ -480,7 +480,7 @@ int main(void) {
 </ol>
 </section>
 <section id="create-and-run-a-ruby-program">
-<h3><a class="toc-backref" href="#id39" role="doc-backlink">Create and run a Ruby program</a><a class="headerlink" href="#create-and-run-a-ruby-program" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id39" role="doc-backlink">Create and run a Ruby program</a><a class="headerlink" href="#create-and-run-a-ruby-program" title="Link to this heading"></a></h3>
 <p>See <a class="reference internal" href="ruby.html"><span class="doc">Ruby Programming</span></a></p>
 </section>
 </section>

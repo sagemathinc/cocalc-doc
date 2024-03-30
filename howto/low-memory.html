@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Low Memory Problems &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -136,10 +136,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="index-0"></span><section id="low-memory-problems">
-<span id="low-memory"></span><span id="index-1"></span><h1>Low Memory Problems<a class="headerlink" href="#low-memory-problems" title="Permalink to this heading"></a></h1>
+  <section id="low-memory-problems">
+<span id="low-memory"></span><span id="index-1"></span><span id="index-0"></span><h1>Low Memory Problems<a class="headerlink" href="#low-memory-problems" title="Link to this heading"></a></h1>
 <section id="why-is-my-project-out-of-memory">
-<h2>Why is my project out of memory?<a class="headerlink" href="#why-is-my-project-out-of-memory" title="Permalink to this heading"></a></h2>
+<h2>Why is my project out of memory?<a class="headerlink" href="#why-is-my-project-out-of-memory" title="Link to this heading"></a></h2>
 <p>There are many possibilities.
 All computer programs need to allocate memory in order to work – even the smallest ones could use a huge amount of memory!
 Also, if you run several processes at the same time, their memory usage adds up.
@@ -161,7 +161,7 @@ for i in l:
 </div>
 </section>
 <section id="ways-to-clear-up-your-project-s-memory">
-<h2>Ways to clear up your project’s memory<a class="headerlink" href="#ways-to-clear-up-your-project-s-memory" title="Permalink to this heading"></a></h2>
+<h2>Ways to clear up your project’s memory<a class="headerlink" href="#ways-to-clear-up-your-project-s-memory" title="Link to this heading"></a></h2>
 <p><strong>Jupyter</strong>:</p>
 <blockquote>
 <div><ul class="simple">
@@ -189,7 +189,7 @@ for i in l:
 </div></blockquote>
 </section>
 <section id="dedicated-vm">
-<span id="id1"></span><h2>Dedicated VM<a class="headerlink" href="#dedicated-vm" title="Permalink to this heading"></a></h2>
+<span id="id1"></span><h2>Dedicated VM<a class="headerlink" href="#dedicated-vm" title="Link to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>A possible solution for out of memory problems is using a dedicated virtual machine (VM). Licenses for dedicated VMs are available in the <a class="reference external" href="https://cocalc.com/store/dedicated?type=vm">CoCalc Store</a> with memory ranging from 6 GB to 126 GB.</p></li>
@@ -197,31 +197,31 @@ for i in l:
 </div></blockquote>
 </section>
 <section id="inspect-in-detail-why-the-project-is-running-out-of-memory">
-<h2>Inspect in detail why the project is running out of memory<a class="headerlink" href="#inspect-in-detail-why-the-project-is-running-out-of-memory" title="Permalink to this heading"></a></h2>
+<h2>Inspect in detail why the project is running out of memory<a class="headerlink" href="#inspect-in-detail-why-the-project-is-running-out-of-memory" title="Link to this heading"></a></h2>
 <section id="processes">
-<h3>1. Processes<a class="headerlink" href="#processes" title="Permalink to this heading"></a></h3>
+<h3>1. Processes<a class="headerlink" href="#processes" title="Link to this heading"></a></h3>
 <p>You can click the “Processes” button in the Files toolbar to see a list of running processes and how much memory each is using. See <a class="reference internal" href="../processes.html#ft-info"><span class="std std-ref">Processes</span></a> for details.</p>
 </section>
 <section id="project-settings">
-<h3>2. Project settings<a class="headerlink" href="#project-settings" title="Permalink to this heading"></a></h3>
+<h3>2. Project settings<a class="headerlink" href="#project-settings" title="Link to this heading"></a></h3>
 <p>You can look in the Settings (wrench) tab of your project under “Shared RAM”, which will say how much is “currently” used.  This is only updated once every 30 seconds though, and may not show spikes in attempted memory allocation.</p>
 </section>
 <section id="use-top-htop-in-a-terminal">
-<h3>3. Use “top”/”htop” in a terminal<a class="headerlink" href="#use-top-htop-in-a-terminal" title="Permalink to this heading"></a></h3>
+<h3>3. Use “top”/”htop” in a terminal<a class="headerlink" href="#use-top-htop-in-a-terminal" title="Link to this heading"></a></h3>
 <p>Currently the easiest way to test this is to open a terminal in your project, then type <code class="docutils literal notranslate"><span class="pre">top</span></code>. Watch the processes listed there, especially the column labeled <cite>RES</cite>, which stands for “resident memory”.
 If your project has 1,000 MB of RAM, which is the default in CoCalc, and the sum of the RES entries is close to 1,000,000, then you should definitely expect a memory allocation failure soon.</p>
 <p>You can type “M” into top to make it sort processes by memory, which will help in seeing how much is used.  You can also hit the space bar a lot to make it update frequently.  Type “q” when you are done.  If you want to kill a process in top, type “k” then the process id (PID), which is in the first column.</p>
 <p><code class="docutils literal notranslate"><span class="pre">htop</span></code> is a more modern alternative to <code class="docutils literal notranslate"><span class="pre">top</span></code>. You can use the functional keys to issue commands or even use the mouse to point and click.</p>
 </section>
 <section id="use-smem-ntk-in-a-terminal">
-<h3>4. Use “smem -ntk” in a terminal<a class="headerlink" href="#use-smem-ntk-in-a-terminal" title="Permalink to this heading"></a></h3>
+<h3>4. Use “smem -ntk” in a terminal<a class="headerlink" href="#use-smem-ntk-in-a-terminal" title="Link to this heading"></a></h3>
 <p>This command gives a useful breakdown of memory usage.</p>
 <p>You may be able to work around a low-memory situation temporarily by killing selected processes or restarting your project.</p>
 <p>But if you’re hitting memory issues and just want more space, <a class="reference external" href="https://cocalc.com/settings/billing?session=default">upgrade your project</a>.</p>
 <p>Subscriptions are <a class="reference external" href="https://cocalc.com/pricing/subscriptions">listed here</a>. A couple more GB of memory give you a <strong>lot</strong> more elbow room!  If you’re confused or have questions about upgrading, just ask at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
 </section>
 <section id="peak-memory-usage">
-<h3>5. Peak memory usage<a class="headerlink" href="#peak-memory-usage" title="Permalink to this heading"></a></h3>
+<h3>5. Peak memory usage<a class="headerlink" href="#peak-memory-usage" title="Link to this heading"></a></h3>
 <p>In a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>, you can check the peak memory usage of a utility this way:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ /usr/bin/time -v [tool] [arguments]
 [...]
@@ -231,13 +231,13 @@ Maximum resident set size (kbytes): ...
 </section>
 </section>
 <section id="software-specific">
-<h2>Software specific<a class="headerlink" href="#software-specific" title="Permalink to this heading"></a></h2>
+<h2>Software specific<a class="headerlink" href="#software-specific" title="Link to this heading"></a></h2>
 <section id="grading-jupyter-notebooks">
-<h3>Grading Jupyter Notebooks<a class="headerlink" href="#grading-jupyter-notebooks" title="Permalink to this heading"></a></h3>
+<h3>Grading Jupyter Notebooks<a class="headerlink" href="#grading-jupyter-notebooks" title="Link to this heading"></a></h3>
 <p>In case you’re grading a bunch of Jupyter Notebooks, use the <strong>“Halt” button</strong> to not only hide the worksheet, but also terminate the associated kernel session. Also, avoid opening many of them at once in the same project!</p>
 </section>
 <section id="matplotlib">
-<h3>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this heading"></a></h3>
+<h3>Matplotlib<a class="headerlink" href="#matplotlib" title="Link to this heading"></a></h3>
 <p>When you produce many graphics in a row and use the usual <em>pyplot</em> API, the intermediate graphics are not cleaned up. Run the following to clear up the memory:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import matplotlib.pyplot as plt
 plt.close(&#39;all&#39;)
@@ -245,7 +245,7 @@ plt.close(&#39;all&#39;)
 </div>
 </section>
 <section id="rstan">
-<h3>RSTAN<a class="headerlink" href="#rstan" title="Permalink to this heading"></a></h3>
+<h3>RSTAN<a class="headerlink" href="#rstan" title="Link to this heading"></a></h3>
 <p>In case you’re using <em>rstan</em> in R, you can try to switch the C++ compiler to clang++. Run the following in a cell to create appropriate config files in your project:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dir.create(&quot;~/.R&quot;, showWarnings = FALSE)
 cat(&quot;CXX = clang++&quot;,

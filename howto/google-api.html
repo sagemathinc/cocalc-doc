@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Google Sheets API Demo &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="google-sheets-api-demo">
-<h1>Google Sheets API Demo<a class="headerlink" href="#google-sheets-api-demo" title="Permalink to this heading"></a></h1>
+<h1>Google Sheets API Demo<a class="headerlink" href="#google-sheets-api-demo" title="Link to this heading"></a></h1>
 <p>This example illustrates:</p>
 <ul class="simple">
 <li><p>writing Python code with frame editor and terminal in <a class="reference internal" href="../terminal.html#terminal-editor-panel"><span class="std std-ref">split view</span></a></p></li>
@@ -121,14 +121,14 @@
 </ul>
 </nav>
 <section id="what-the-program-does">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">What the program does</a><a class="headerlink" href="#what-the-program-does" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">What the program does</a><a class="headerlink" href="#what-the-program-does" title="Link to this heading"></a></h2>
 <p>This example runs a short program to read two columns, “Student Name” and “Major”, from a spreadsheet in Google Sheets and writes them to the user’s terminal.</p>
 <p>You don’t need to open the sample data in Google Sheets to run the program, but if you’re curious, you can view it at <a class="reference external" href="https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit#gid=0">Example Spreadsheet</a>.</p>
 <a class="reference internal image-reference" href="../_images/example-spreadsheet.png"><img alt="example spreadsheet" src="../_images/example-spreadsheet.png" style="width: 60%;" /></a>
 <p>The python program is provided by Google and runs under Python 2 and Python 3.</p>
 </section>
 <section id="get-credentials-file">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Get credentials file</a><a class="headerlink" href="#get-credentials-file" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Get credentials file</a><a class="headerlink" href="#get-credentials-file" title="Link to this heading"></a></h2>
 <p>To get started, you will need a Google account. You will have one already if you use Gmail or Google Drive. If not, browse to <a class="reference external" href="https://drive.google.com/">drive.google.com</a> and follow the steps to create an account.</p>
 <p>Now that you have a Google account, browse to the <a class="reference external" href="https://developers.google.com/sheets/api/quickstart/python">Python Quickstart</a> page at Google and click <code class="docutils literal notranslate"><span class="pre">ENABLE</span> <span class="pre">THE</span> <span class="pre">GOOGLE</span> <span class="pre">SHEETS</span> <span class="pre">API</span></code>:</p>
 <a class="reference internal image-reference" href="../_images/enable-sheets-api.png"><img alt="enable sheets api" src="../_images/enable-sheets-api.png" style="width: 50%;" /></a>
@@ -140,7 +140,7 @@
 <a class="reference internal image-reference" href="../_images/download-config.png"><img alt="download config" src="../_images/download-config.png" style="width: 50%;" /></a>
 </section>
 <section id="upload-python-script-and-credentials-to-cocalc">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Upload Python script and credentials to CoCalc</a><a class="headerlink" href="#upload-python-script-and-credentials-to-cocalc" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Upload Python script and credentials to CoCalc</a><a class="headerlink" href="#upload-python-script-and-credentials-to-cocalc" title="Link to this heading"></a></h2>
 <p>Log into your CoCalc account. Make a new folder called <cite>Sheets API</cite> or such.</p>
 <p>You can create a folder by typing its name in the Files search box, appending a slash, and pressing Enter:</p>
 <a class="reference internal image-reference" href="../_images/create-folder.png"><img alt="create folder" src="../_images/create-folder.png" style="width: 50%;" /></a>
@@ -158,7 +158,7 @@ Note that the two panes can be scrolled separately.</p>
 <a class="reference internal image-reference" href="../_images/split-ls.png"><img alt="ls comment in the terminal pane" src="../_images/split-ls.png" style="width: 70%;" /></a>
 </section>
 <section id="first-run-oauth2-authentication">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">First run: OAuth2 authentication</a><a class="headerlink" href="#first-run-oauth2-authentication" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">First run: OAuth2 authentication</a><a class="headerlink" href="#first-run-oauth2-authentication" title="Link to this heading"></a></h2>
 <p>In the terminal file, run the following command. Note the command line option so that OAuth2 does not open a browser inside CoCalc.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">quickstart</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">noauth_local_webserver</span>
 </pre></div>
@@ -173,7 +173,7 @@ After a few seconds, you will see the selected columns of sample data:</p>
 <a class="reference internal image-reference" href="../_images/verify.png"><img alt="verify" src="../_images/verify.png" style="width: 40%;" /></a>
 </section>
 <section id="second-and-later-runs">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Second and later runs</a><a class="headerlink" href="#second-and-later-runs" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Second and later runs</a><a class="headerlink" href="#second-and-later-runs" title="Link to this heading"></a></h2>
 <p>In the terminal pane, again type <code class="docutils literal notranslate"><span class="pre">ls</span></code> and see that there is now a <cite>token.json</cite> file in your folder. That token saves your authorization. Subsequent runs of the program won’t need the OAuth2 detour through an external browser window. Run the Python script again. This time, you don’t need the added command line switch:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">quickstart</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
@@ -181,13 +181,13 @@ After a few seconds, you will see the selected columns of sample data:</p>
 <a class="reference internal image-reference" href="../_images/second-run.png"><img alt="second run" src="../_images/second-run.png" style="width: 50%;" /></a>
 </section>
 <section id="python-2-compatibility">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Python 2 compatibility</a><a class="headerlink" href="#python-2-compatibility" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Python 2 compatibility</a><a class="headerlink" href="#python-2-compatibility" title="Link to this heading"></a></h2>
 <p>The script provided is compatible with current versions of both Python 2 and Python 3.
 The default <code class="docutils literal notranslate"><span class="pre">python</span></code> command in the CoCalc terminal runs Python 3.
 Use <code class="docutils literal notranslate"><span class="pre">python2</span></code> at the command line to run quickstart.py with Python 2 compatible versions of the imported modules.</p>
 </section>
 <section id="for-further-study">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">For further study</a><a class="headerlink" href="#for-further-study" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">For further study</a><a class="headerlink" href="#for-further-study" title="Link to this heading"></a></h2>
 <p>The Google Sheets API can do much more than download selected columns of a spreadsheet. To learn more, see the documentation
 for <a class="reference external" href="https://developers.google.com/sheets/api/">Google Sheets API v4</a>.</p>
 </section>

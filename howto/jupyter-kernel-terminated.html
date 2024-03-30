@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jupyter Kernel Terminated &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -134,28 +134,28 @@
            <div itemprop="articleBody">
              
   <section id="jupyter-kernel-terminated">
-<span id="index-0"></span><span id="id1"></span><h1>Jupyter Kernel Terminated<a class="headerlink" href="#jupyter-kernel-terminated" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Jupyter Kernel Terminated<a class="headerlink" href="#jupyter-kernel-terminated" title="Link to this heading"></a></h1>
 <p>This page is may be helpful if you see the message:</p>
 <blockquote>
 <div><p>Kernel terminated – this might be caused by running out of memory or hitting a bug in some library (e.g., forking too many processes, trying to access invalid memory, etc.). Consider restarting or upgrading your project or running the relevant code directly in a terminal to track down the cause.</p>
 </div></blockquote>
 <section id="is-it-caused-by-using-up-too-much-memory">
-<h2>Is it caused by using up too much memory?<a class="headerlink" href="#is-it-caused-by-using-up-too-much-memory" title="Permalink to this heading"></a></h2>
+<h2>Is it caused by using up too much memory?<a class="headerlink" href="#is-it-caused-by-using-up-too-much-memory" title="Link to this heading"></a></h2>
 <p>Jupyter kernels terminating, and calculations failing that previously worked, can be a sign that your project is running low on memory.</p>
 <p>Currently in CoCalc, if you open several Jupyter notebooks, they just sit there using memory. You have to explicitly <a class="reference internal" href="../jupyter-tips-and-tricks.html#jupyter-halt"><span class="std std-ref">halt running notebooks</span></a>, or kill them with <code class="docutils literal notranslate"><span class="pre">top</span></code>, or restart your project in order for them to go away.  This can be a significant problem if you are grading a dozens of assignments.  You can see the cpu and memory usage of a Jupyter notebook in the upper right.</p>
 <p>See <a class="reference internal" href="low-memory.html#low-memory"><span class="std std-ref">Low Memory Problems</span></a> for more information on how to detect and deal with low-memory situations.</p>
 </section>
 <section id="is-it-caused-by-something-else">
-<h2>Is it caused by something else?<a class="headerlink" href="#is-it-caused-by-something-else" title="Permalink to this heading"></a></h2>
+<h2>Is it caused by something else?<a class="headerlink" href="#is-it-caused-by-something-else" title="Link to this heading"></a></h2>
 <p>It’s possible, though by far the main source of trouble is lack of memory. If you suspect another problem, here are some things to try:</p>
 <section id="try-to-eliminate-jupyter-if-possible">
-<h3>1. Try to eliminate Jupyter if possible<a class="headerlink" href="#try-to-eliminate-jupyter-if-possible" title="Permalink to this heading"></a></h3>
+<h3>1. Try to eliminate Jupyter if possible<a class="headerlink" href="#try-to-eliminate-jupyter-if-possible" title="Link to this heading"></a></h3>
 <p>Open a terminal, type e.g., <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code>, then copy and paste code in.</p>
 <p>Or put the code in a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file and import it.  CoCalc is also very good for editing <code class="docutils literal notranslate"><span class="pre">.py</span></code> files directly.</p>
 <p>Does it segmentation fault or otherwise crash in a way that is very difficult for Jupyter to report? Of course, if so, we want to know – <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
 </section>
 <section id="try-to-eliminate-the-cocalc-user-interface">
-<h3>2. Try to eliminate the CoCalc user interface<a class="headerlink" href="#try-to-eliminate-the-cocalc-user-interface" title="Permalink to this heading"></a></h3>
+<h3>2. Try to eliminate the CoCalc user interface<a class="headerlink" href="#try-to-eliminate-the-cocalc-user-interface" title="Link to this heading"></a></h3>
 <p>Another thing you might try is to eliminate the CoCalc user interface to see what happens.  First, <a class="reference internal" href="../jupyter-tips-and-tricks.html#jupyter-halt"><span class="std std-ref">close and halt</span></a> your notebook in the CoCalc interface. Then go to project settings and launch the <a class="reference internal" href="../project-settings.html#plain-jupyter-server"><span class="std std-ref">Plain Jupyter Server</span></a>.  You may have to refresh your browser after clicking.  Then navigate to your Jupyter notebook and open it.  If everything always works fine here, but not in CoCalc, there is some issue specifically with the CoCalc interface.  Let us know – <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
 </section>
 </section>

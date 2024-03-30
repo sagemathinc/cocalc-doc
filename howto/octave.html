@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Octave Images and Plots &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,16 +102,16 @@
            <div itemprop="articleBody">
              
   <section id="octave-images-and-plots">
-<span id="index-0"></span><h1>Octave Images and Plots<a class="headerlink" href="#octave-images-and-plots" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>Octave Images and Plots<a class="headerlink" href="#octave-images-and-plots" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://octave.org/">GNU Octave</a> is a scientific programming language that provides drop-in compatibility with many Matlab scripts.</p>
 <p>With CoCalc, you can display plots created by Octave. Here are two ways to do that:</p>
 <section id="octave-with-jupyter-kernel">
-<h2>Octave with Jupyter Kernel<a class="headerlink" href="#octave-with-jupyter-kernel" title="Permalink to this heading"></a></h2>
+<h2>Octave with Jupyter Kernel<a class="headerlink" href="#octave-with-jupyter-kernel" title="Link to this heading"></a></h2>
 <p>If you select the Octave Jupyter kernel, you will be able to view Octave plots in a Jupyter notebook. The first time <cite>plot</cite> is run in a cell, there is a warning about the gnuplot graphics toolkit. Just clear the cell output and run the cell again. Note that CoCalc support for Octave in Jupyter is limited at this time. Some dependent packages may fail to load.</p>
 <a class="reference internal image-reference" href="../_images/octave-jupyter.png"><img alt="octave in a jupyter notebook" class="align-center" src="../_images/octave-jupyter.png" style="width: 90%;" /></a>
 </section>
 <section id="octave-with-x11-desktop">
-<h2>Octave with X11 Desktop<a class="headerlink" href="#octave-with-x11-desktop" title="Permalink to this heading"></a></h2>
+<h2>Octave with X11 Desktop<a class="headerlink" href="#octave-with-x11-desktop" title="Link to this heading"></a></h2>
 <p>You can run Octave in the terminal in the <a class="reference internal" href="../x11.html"><span class="doc">X11 Graphical Desktop</span></a>. Do: +New –&gt; Graphical Desktop, then type “octave” in the terminal in the upper left or click the “Octave” button at lower left. It can take a few seconds for the X11 server to start the first time.</p>
 <p>Whe Octave opens at the right, select your file under the File browser and run it from there. Your plot should appear to the right in a new tab, e.g. “Figure “</p>
 <a class="reference internal image-reference" href="../_images/octave-x11.png"><img alt="octave with the CoCalc X11 server" class="align-center" src="../_images/octave-x11.png" style="width: 100%;" /></a>

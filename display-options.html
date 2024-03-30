@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Display Options &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -142,18 +142,18 @@
            <div itemprop="articleBody">
              
   <section id="display-options">
-<span id="index-0"></span><span id="id1"></span><h1>Display Options<a class="headerlink" href="#display-options" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Display Options<a class="headerlink" href="#display-options" title="Link to this heading"></a></h1>
 <p>The following options allow you to change how CoCalc appears in your browser, and what information it restores when you return to the site after leaving it.</p>
 <div class="toctree-wrapper compound">
 </div>
 <section id="fullscreen-options">
-<h2>Fullscreen Options<a class="headerlink" href="#fullscreen-options" title="Permalink to this heading"></a></h2>
+<h2>Fullscreen Options<a class="headerlink" href="#fullscreen-options" title="Link to this heading"></a></h2>
 <section id="kiosk">
-<h3>kiosk<a class="headerlink" href="#kiosk" title="Permalink to this heading"></a></h3>
+<h3>kiosk<a class="headerlink" href="#kiosk" title="Link to this heading"></a></h3>
 <p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=kiosk</cite> offers a limited user interface suitable for embedding in an iframe. The user won’t be able to use the UI to open files. The Project toolbar and Files toolbar are not displayed. The button for side chat while editing a file is not displayed.</p>
 </section>
 <section id="project">
-<h3>project<a class="headerlink" href="#project" title="Permalink to this heading"></a></h3>
+<h3>project<a class="headerlink" href="#project" title="Link to this heading"></a></h3>
 <p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=project</cite> hides the functionality for switching between projects, viewing
 account settings, etc., and focused on <em>one single project</em>.
 However, unlike fullscreen=kiosk, users can
@@ -162,14 +162,14 @@ and other useful tabs like Find and Log.</p>
 <p>You might use “fullscreen=project” in combination with the “session” query parameter (see below) as follows: <a class="reference external" href="https://cocalc.com/projects/project-id/files/main.ipynb?fullscreen=project&amp;session=">https://cocalc.com/projects/project-id/files/main.ipynb?fullscreen=project&amp;session=</a></p>
 </section>
 <section id="default">
-<h3>default<a class="headerlink" href="#default" title="Permalink to this heading"></a></h3>
+<h3>default<a class="headerlink" href="#default" title="Link to this heading"></a></h3>
 <p>Visiting a CoCalc file URL with a query string of <cite>?fullscreen=default</cite>  presents the full user interface. It is the same as using a query string of <cite>?fullscreen=</cite> and the same as not providing any “fullscreen” query parameter at all.</p>
 </section>
 </section>
 <section id="sessions">
-<h2>Sessions<a class="headerlink" href="#sessions" title="Permalink to this heading"></a></h2>
+<h2>Sessions<a class="headerlink" href="#sessions" title="Link to this heading"></a></h2>
 <section id="id2">
-<h3>default<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<h3>default<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
 <p>By default, CoCalc remembers your session with a specific browser, that is, if you have certain projects open, and certain file tabs displayed within those projects when you close your browser, they will normally be restored when you visit CoCalc again with that browser.</p>
 <p>Limitations:</p>
 <ul class="simple">
@@ -178,12 +178,12 @@ and other useful tabs like Find and Log.</p>
 </ul>
 </section>
 <section id="no-session">
-<h3>no session<a class="headerlink" href="#no-session" title="Permalink to this heading"></a></h3>
+<h3>no session<a class="headerlink" href="#no-session" title="Link to this heading"></a></h3>
 <p>If you visit CoCalc with a query string of <cite>session=</cite>, then the link is loaded and the “session=” parameter is removed from the displayed URL. In this case, there is no session at all. No project or files tabs will be remembered the next time you visit CoCalc with that browser.</p>
 </section>
 </section>
 <section id="desktop-application">
-<h2>Desktop Application<a class="headerlink" href="#desktop-application" title="Permalink to this heading"></a></h2>
+<h2>Desktop Application<a class="headerlink" href="#desktop-application" title="Link to this heading"></a></h2>
 <p>The CoCalc desktop application provides a lightweight wrapper around the latest version of the website. (So it’s always up to date from the point of view of CoCalc.) The main advantages of the desktop application are:</p>
 <ul class="simple">
 <li><p>You can use emacs/vim keyboard shortcuts without accidentally triggering browser actions.</p></li>

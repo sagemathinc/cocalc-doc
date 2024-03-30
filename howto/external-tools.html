@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>External Tools &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="external-tools">
-<h1>External Tools<a class="headerlink" href="#external-tools" title="Permalink to this heading"></a></h1>
+<h1>External Tools<a class="headerlink" href="#external-tools" title="Link to this heading"></a></h1>
 <p>Notes about external (or 3rd party) tools on CoCalc.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
@@ -114,17 +114,17 @@
 </ul>
 </nav>
 <section id="sync-with-dropbox-or-google-drive">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Sync with Dropbox or Google Drive?</a><a class="headerlink" href="#sync-with-dropbox-or-google-drive" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Sync with Dropbox or Google Drive?</a><a class="headerlink" href="#sync-with-dropbox-or-google-drive" title="Link to this heading"></a></h2>
 <p>We do not support Google Drive at present, but we plan to.</p>
 <p>Following the instructions at <a class="reference external" href="https://www.dropbox.com/install-linux">https://www.dropbox.com/install-linux</a> you can install it in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>.
 However, Dropbox recently made a very sad decision to not support Linux (except ext4 unencrypted, which is a nonstarter), so Dropbox is no longer possible with CoCalc.</p>
 </section>
 <section id="mount-remote-files-via-sshfs">
-<span id="index-0"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Mount remote files via SSHFS</a><a class="headerlink" href="#mount-remote-files-via-sshfs" title="Permalink to this heading"></a></h2>
+<span id="index-0"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Mount remote files via SSHFS</a><a class="headerlink" href="#mount-remote-files-via-sshfs" title="Link to this heading"></a></h2>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">sshfs</span></code> as explained at <a class="reference internal" href="../project-settings.html#ssh-remote-files"><span class="std std-ref">Remote files with SSH</span></a>. Note that using <code class="docutils literal notranslate"><span class="pre">sshfs</span></code> directly from the CoCalc terminal is not supported.</p>
 </section>
 <section id="use-emacs-in-a-terminal-chrome">
-<span id="index-1"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Use Emacs in a Terminal (Chrome)</a><a class="headerlink" href="#use-emacs-in-a-terminal-chrome" title="Permalink to this heading"></a></h2>
+<span id="index-1"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Use Emacs in a Terminal (Chrome)</a><a class="headerlink" href="#use-emacs-in-a-terminal-chrome" title="Link to this heading"></a></h2>
 <p>Chrome absolutely doesn’t allow normal web applications to intercept certain keystrokes,
 which makes Emacs-in-a-terminal painful on some operating systems (esp. Linux/Windows).
 E.g., Ctrl-N brings up a new window, instead of going to the next line!</p>
@@ -149,7 +149,7 @@ like C-x u and C-/. (Execute “M-x where-is undo”.)
 So there are other options available.</p>
 </section>
 <section id="customized-version-of-fricas">
-<span id="index-2"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Customized version of FriCAS</a><a class="headerlink" href="#customized-version-of-fricas" title="Permalink to this heading"></a></h2>
+<span id="index-2"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Customized version of FriCAS</a><a class="headerlink" href="#customized-version-of-fricas" title="Link to this heading"></a></h2>
 <p>The following Sage/Python command modifies the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable to include <code class="docutils literal notranslate"><span class="pre">$HOME/bin</span></code>.
 Sage looks for the <code class="docutils literal notranslate"><span class="pre">fricas</span></code> executable in this <code class="docutils literal notranslate"><span class="pre">PATH</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>os.environ[&#39;PATH&#39;] = &#39;%s/bin:%s&#39;%(os.environ[&#39;HOME&#39;],os.environ[&#39;PATH&#39;])
@@ -158,7 +158,7 @@ Sage looks for the <code class="docutils literal notranslate"><span class="pre">
 <p>Restart the Sage worksheet to make sure the new version of FriCAS is started.</p>
 </section>
 <section id="pentadactyl-plugin-isn-t-working">
-<span id="index-3"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Pentadactyl plugin isn’t working</a><a class="headerlink" href="#pentadactyl-plugin-isn-t-working" title="Permalink to this heading"></a></h2>
+<span id="index-3"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Pentadactyl plugin isn’t working</a><a class="headerlink" href="#pentadactyl-plugin-isn-t-working" title="Link to this heading"></a></h2>
 <p>The <a class="reference external" href="https://addons.mozilla.org/en-us/firefox/addon/pentadactyl/">Pentadactyl plugin</a> is not compatible with the <a class="reference external" href="http://codemirror.net/">Codemirror</a> editor in CoCalc.
 You can disable Pentadactyl for a particular page, perhaps by pressing Control+Z.
 CoCalc has it’s own Vim bindings for worksheets and editing files;

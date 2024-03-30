@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Run A Webserver &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,11 +102,11 @@
            <div itemprop="articleBody">
              
   <section id="run-a-webserver">
-<span id="webserver"></span><h1>Run A Webserver<a class="headerlink" href="#run-a-webserver" title="Permalink to this heading"></a></h1>
+<span id="webserver"></span><h1>Run A Webserver<a class="headerlink" href="#run-a-webserver" title="Link to this heading"></a></h1>
 <p>For testing and development, it is possible to run a small webserver inside a CoCalc project.
 Access to it is restricted to only the owner and all collaborators on the project, and nobody else.</p>
 <section id="webserver-proxy">
-<h2>Webserver proxy<a class="headerlink" href="#webserver-proxy" title="Permalink to this heading"></a></h2>
+<h2>Webserver proxy<a class="headerlink" href="#webserver-proxy" title="Link to this heading"></a></h2>
 <p>Given your project’s ID is [project_id] like <code class="docutils literal notranslate"><span class="pre">60f9ea81-5bd0-45ae-9965-76de986e101f</span></code>
 and the service is serving on [port],
 and it is serving to all ip addresses (<strong>not</strong> just localhost!), then use:</p>
@@ -136,7 +136,7 @@ Others won’t work without modification.</p>
 </div>
 </section>
 <section id="using-the-port-proxy">
-<h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Permalink to this heading"></a></h2>
+<h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Link to this heading"></a></h2>
 <p>This is similar to above (<code class="docutils literal notranslate"><span class="pre">port</span></code> instead of <code class="docutils literal notranslate"><span class="pre">server</span></code>)</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/port/[port]/
 </pre></div>
@@ -145,7 +145,7 @@ Others won’t work without modification.</p>
 Otherwise, everything is the same, including the warning above.</p>
 </section>
 <section id="what-about-security">
-<h2>What about security?<a class="headerlink" href="#what-about-security" title="Permalink to this heading"></a></h2>
+<h2>What about security?<a class="headerlink" href="#what-about-security" title="Link to this heading"></a></h2>
 <p>Only the owner and collaborators on the given project can access the webserver via an SSL encrypted connection.
 Our proxy server will reject all other requests.
 This means you don’t have to worry about setting up logins/passwords on whatever webserver you run in your project.
@@ -153,7 +153,7 @@ On the other hand, it means that CoCalc is not useful as a platform if you want 
 If you need that, use some other service.</p>
 </section>
 <section id="what-about-dynamically-generated-subdomains">
-<h2>What about dynamically generated subdomains?<a class="headerlink" href="#what-about-dynamically-generated-subdomains" title="Permalink to this heading"></a></h2>
+<h2>What about dynamically generated subdomains?<a class="headerlink" href="#what-about-dynamically-generated-subdomains" title="Link to this heading"></a></h2>
 <p>Obviously, it would be nice if we could map a project_id and port to a subdomain like</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://[project id].project.cocalc.com
 </pre></div>
@@ -161,7 +161,7 @@ If you need that, use some other service.</p>
 <p>We have not implemented this.</p>
 </section>
 <section id="example-code">
-<h2>Example Code<a class="headerlink" href="#example-code" title="Permalink to this heading"></a></h2>
+<h2>Example Code<a class="headerlink" href="#example-code" title="Link to this heading"></a></h2>
 <p>Here’s a simple example of an HTTP server written using the Python SimpleHTTPServer class.
 Open a project and click “+New” then paste in this link, then click the “From Web” button (or use wget or copy/paste into a file):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://gist.githubusercontent.com/DrXyzzy/91a70319d258e65dbd04a04f1e5e3b6d/raw/842875805c7876940937c6ab321f7498c203678d/py3server.py
@@ -173,7 +173,7 @@ Open a project and click “+New” then paste in this link, then click the “F
 </div>
 </section>
 <section id="raw-files-server">
-<h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Permalink to this heading"></a></h2>
+<h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Link to this heading"></a></h2>
 <p>If you just want an https view of your files, use the raw server, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[project_id]/raw/</span></code>. The point of the above is that you could modify it to provide all sorts of interesting functionality.</p>
 </section>
 </section>

@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project Initialization Scripts &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -134,7 +134,7 @@
            <div itemprop="articleBody">
              
   <section id="project-initialization-scripts">
-<span id="index-0"></span><h1>Project Initialization Scripts<a class="headerlink" href="#project-initialization-scripts" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>Project Initialization Scripts<a class="headerlink" href="#project-initialization-scripts" title="Link to this heading"></a></h1>
 <p>All about the <strong>project_init.sh</strong> file.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
@@ -146,7 +146,7 @@
 </nav>
 <p>While crontab-based management of periodic tasks is not available in CoCalc projects, we offer a flexible mechanism to use regular Bash, Python, or SageMath files for the same sort of capability.</p>
 <section id="project-initialization">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Project Initialization</a><a class="headerlink" href="#project-initialization" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Project Initialization</a><a class="headerlink" href="#project-initialization" title="Link to this heading"></a></h2>
 <p>When a CoCalc project starts this is run:</p>
 <ul class="simple">
 <li><p>an instance of <strong>“local hub”</strong>. It is used for managing the project, communication with the outside world, monitoring, etc.</p></li>
@@ -154,10 +154,10 @@
 <li><p><strong>initialization file</strong>: an <em>optional</em> bash script called <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>, located in the project’s home directory. It is only started <em>once</em>!</p></li>
 </ul>
 <section id="example-1-record-project-start-time">
-<h3>Example 1: record project start time<a class="headerlink" href="#example-1-record-project-start-time" title="Permalink to this heading"></a></h3>
+<h3>Example 1: record project start time<a class="headerlink" href="#example-1-record-project-start-time" title="Link to this heading"></a></h3>
 <p>A very simple example is to record the project’s start time.
 Go to your project’s home directory and create a file <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code> with that content:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>date &gt; project-start
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>date<span class="w"> </span>&gt;<span class="w"> </span>project-start
 </pre></div>
 </div>
 <p>This is a very simple bash script, which pipes the output of the <code class="docutils literal notranslate"><span class="pre">date</span></code> command into the file <code class="docutils literal notranslate"><span class="pre">project-start</span></code>.</p>
@@ -170,7 +170,7 @@ After that you should see this file and its content might look like:</p>
 </section>
 </section>
 <section id="other-languages-besides-bash">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Other languages besides Bash?</a><a class="headerlink" href="#other-languages-besides-bash" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Other languages besides Bash?</a><a class="headerlink" href="#other-languages-besides-bash" title="Link to this heading"></a></h2>
 <p>You can run any language via bash’s <code class="docutils literal notranslate"><span class="pre">exec</span></code>!
 For example, <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code> containing:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>exec python3 project_init.py
@@ -178,7 +178,7 @@ For example, <code class="docutils literal notranslate"><span class="pre">projec
 </div>
 <p>will run a Python 3 initialization file named <code class="docutils literal notranslate"><span class="pre">project_init.py</span></code>.</p>
 <section id="example-2-a-periodic-task-in-python">
-<span id="index-1"></span><h3>Example 2: a periodic task in Python<a class="headerlink" href="#example-2-a-periodic-task-in-python" title="Permalink to this heading"></a></h3>
+<span id="index-1"></span><h3>Example 2: a periodic task in Python<a class="headerlink" href="#example-2-a-periodic-task-in-python" title="Link to this heading"></a></h3>
 <p>Here we write a small Python script,
 which runs an infinite loop (make sure to use <code class="docutils literal notranslate"><span class="pre">time.sleep</span></code>!)
 and evaluates a function running a simple command every 10 minutes.
@@ -227,7 +227,7 @@ user          22  0.5  0.0  37836 14332 ?        S    09:18   0:00      \_ pytho
 <p>and the output file <code class="docutils literal notranslate"><span class="pre">task_output.log</span></code> contains entries for each run.</p>
 </section>
 <section id="example-3-periodic-task-in-sagemath">
-<h3>Example 3: Periodic task in SageMath<a class="headerlink" href="#example-3-periodic-task-in-sagemath" title="Permalink to this heading"></a></h3>
+<h3>Example 3: Periodic task in SageMath<a class="headerlink" href="#example-3-periodic-task-in-sagemath" title="Link to this heading"></a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">run.sage</span></code> is similar to the Python script above.</p>
 <ol class="arabic">
 <li><p><code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>: <code class="docutils literal notranslate"><span class="pre">exec</span> <span class="pre">sage</span> <span class="pre">run.sage</span></code></p></li>
@@ -254,7 +254,7 @@ user          22  0.5  0.0  37836 14332 ?        S    09:18   0:00      \_ pytho
 </section>
 </section>
 <section id="debugging">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Debugging</a><a class="headerlink" href="#debugging" title="Link to this heading"></a></h2>
 <p>To figure out why a script doesn’t work as it should, check the output of the script:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">project_init.log</span></code> contains the <code class="docutils literal notranslate"><span class="pre">stdout</span></code> output.</p></li>
@@ -263,7 +263,7 @@ user          22  0.5  0.0  37836 14332 ?        S    09:18   0:00      \_ pytho
 <p>And please don’t get confused, those files could contain stale information, because they aren’t automatically deleted.</p>
 </section>
 <section id="development">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Development</a><a class="headerlink" href="#development" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Development</a><a class="headerlink" href="#development" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>It’s highly recommended to start the bash script with <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">-e</span></code> to stop at any errors and <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">-ev</span></code> makes it more verbose as well.</p></li>
 <li><p>Run it directly in a terminal (create a <code class="docutils literal notranslate"><span class="pre">*.term</span></code> file) and run <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">project_init.sh</span></code> or <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">project_init.py</span></code>.</p></li>

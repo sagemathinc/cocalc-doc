@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PostgreSQL Server &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,10 +102,10 @@
            <div itemprop="articleBody">
              
   <section id="postgresql-server">
-<span id="index-0"></span><h1>PostgreSQL Server<a class="headerlink" href="#postgresql-server" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>PostgreSQL Server<a class="headerlink" href="#postgresql-server" title="Link to this heading"></a></h1>
 <p>You can easily run your own <a class="reference external" href="https://www.postgresql.org/">PostgreSQL</a> server inside any CoCalc project to manage data (or just learn about SQL and databases).</p>
 <section id="step-1-setup">
-<h2>Step 1: Setup<a class="headerlink" href="#step-1-setup" title="Permalink to this heading"></a></h2>
+<h2>Step 1: Setup<a class="headerlink" href="#step-1-setup" title="Link to this heading"></a></h2>
 <p>(only needed once)</p>
 <p>In a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> (Files tab → <code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Create</span></code> → <code class="docutils literal notranslate"><span class="pre">Terminal</span></code>), paste this:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd
@@ -121,7 +121,7 @@ This isn’t necessary because CoCalc uses a Docker container for each project,
 so there are no other users to worry about.</p>
 </section>
 <section id="step-2-start-server">
-<h2>Step 2: Start Server<a class="headerlink" href="#step-2-start-server" title="Permalink to this heading"></a></h2>
+<h2>Step 2: Start Server<a class="headerlink" href="#step-2-start-server" title="Link to this heading"></a></h2>
 <p>Again in the Terminal:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pg_ctl -D postgres_data -l logfile -o &quot;-h &#39;&#39;&quot; start
 </pre></div>
@@ -134,7 +134,7 @@ To check the status, either run <code class="docutils literal notranslate"><span
 <p><strong>Tip</strong>: you can add the ‘pg_ctl…start’ line at the bottom of your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> file.</p>
 </section>
 <section id="step-3-connect-to-the-database">
-<h2>Step 3: Connect to the database<a class="headerlink" href="#step-3-connect-to-the-database" title="Permalink to this heading"></a></h2>
+<h2>Step 3: Connect to the database<a class="headerlink" href="#step-3-connect-to-the-database" title="Link to this heading"></a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>export PGHOST=&quot;$HOME/postgres_data&quot;
 createdb test
 psql test
@@ -180,7 +180,7 @@ because the database is not accessible from outside your project.</p>
 </div>
 </section>
 <section id="step-4-shutting-down">
-<h2>Step 4: Shutting Down<a class="headerlink" href="#step-4-shutting-down" title="Permalink to this heading"></a></h2>
+<h2>Step 4: Shutting Down<a class="headerlink" href="#step-4-shutting-down" title="Link to this heading"></a></h2>
 <p>After you have finished working with PostgreSQL, the following step prevents data loss:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pg_ctl -D postgres_data stop
 </pre></div>

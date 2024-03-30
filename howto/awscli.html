@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Install AWS CLI &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,24 +102,24 @@
            <div itemprop="articleBody">
              
   <section id="install-aws-cli">
-<span id="install-awscli"></span><span id="index-0"></span><h1>Install AWS CLI<a class="headerlink" href="#install-aws-cli" title="Permalink to this heading"></a></h1>
+<span id="install-awscli"></span><span id="index-0"></span><h1>Install AWS CLI<a class="headerlink" href="#install-aws-cli" title="Link to this heading"></a></h1>
 <p>Here is how you can install AWS command-line utility in a CoCalc project.
 The main idea is to unpack the distribution in your project and tell the installation script to put it into your project.</p>
 <p>This works for any kind of utility, which comes pre-packaged and can be installed in your <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>-directory.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>                     <span class="c1"># make sure you&#39;re in your $HOME directory</span>
-mkdir awscli           <span class="c1"># where it will end up</span>
-<span class="nb">cd</span> awscli/
-curl <span class="s2">&quot;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&quot;</span> -o <span class="s2">&quot;awscliv2.zip&quot;</span>
-unzip awscliv2.zip
-./aws/install -i ~/awscli -b ~/bin            <span class="c1"># the installation</span>
-rm -rf aws awscliv2.zip                       <span class="c1"># remove temporary files</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w">                     </span><span class="c1"># make sure you&#39;re in your $HOME directory</span>
+mkdir<span class="w"> </span>awscli<span class="w">           </span><span class="c1"># where it will end up</span>
+<span class="nb">cd</span><span class="w"> </span>awscli/
+curl<span class="w"> </span><span class="s2">&quot;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&quot;</span><span class="w"> </span>-o<span class="w"> </span><span class="s2">&quot;awscliv2.zip&quot;</span>
+unzip<span class="w"> </span>awscliv2.zip
+./aws/install<span class="w"> </span>-i<span class="w"> </span>~/awscli<span class="w"> </span>-b<span class="w"> </span>~/bin<span class="w">            </span><span class="c1"># the installation</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>aws<span class="w"> </span>awscliv2.zip<span class="w">                       </span><span class="c1"># remove temporary files</span>
 </pre></div>
 </div>
 <p>What remains are installation artifacts in <code class="docutils literal notranslate"><span class="pre">~/awscli</span></code> and a symlink from your <code class="docutils literal notranslate"><span class="pre">~/bin</span></code> directory to the entry point where it has been installed. Confirm this by running <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">aws</span></code>.</p>
 <p>With that, you can run</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ aws --version gives
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>aws<span class="w"> </span>--version<span class="w"> </span>gives
 
-aws-cli/2.13.28 Python/3.11.6 Linux/5.15.0-1038-gcp exe/x86_64.ubuntu.22 prompt/off
+aws-cli/2.13.28<span class="w"> </span>Python/3.11.6<span class="w"> </span>Linux/5.15.0-1038-gcp<span class="w"> </span>exe/x86_64.ubuntu.22<span class="w"> </span>prompt/off
 </pre></div>
 </div>
 <p>Ref: <a class="reference external" href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html</a></p>

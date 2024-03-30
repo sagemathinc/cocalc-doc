@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Install Julia Packages &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="install-julia-packages">
-<span id="index-0"></span><span id="id1"></span><h1>Install Julia Packages<a class="headerlink" href="#install-julia-packages" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Install Julia Packages<a class="headerlink" href="#install-julia-packages" title="Link to this heading"></a></h1>
 <p>This page describes how to install an Julia package in a CoCalc project.</p>
 <p>CoCalc already includes <a class="reference external" href="https://cocalc.com/doc/software-julia.html">hundreds of Julia packages</a>, but you can install even more or update them inside your project.</p>
 <div class="admonition warning">
@@ -111,16 +111,16 @@
 The install command will not work unless you <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">upgrade your project</span></a> to have internet access.</p>
 </div>
 <section id="install-requests">
-<h2>Install requests<a class="headerlink" href="#install-requests" title="Permalink to this heading"></a></h2>
+<h2>Install requests<a class="headerlink" href="#install-requests" title="Link to this heading"></a></h2>
 <p>If a package may have general use but is not already installed in CoCalc,
 please open a support request to tell us to install it globally for everyone.
 Please include information about special dependencies or a specific example to test it.
 Please be aware, due to upgrade issues or general conflicts, not all packages can be installed.</p>
 </section>
 <section id="install-a-package">
-<h2>Install a package<a class="headerlink" href="#install-a-package" title="Permalink to this heading"></a></h2>
+<h2>Install a package<a class="headerlink" href="#install-a-package" title="Link to this heading"></a></h2>
 <section id="command-line-custom-depot-path">
-<h3>Command Line / Custom Depot Path<a class="headerlink" href="#command-line-custom-depot-path" title="Permalink to this heading"></a></h3>
+<h3>Command Line / Custom Depot Path<a class="headerlink" href="#command-line-custom-depot-path" title="Link to this heading"></a></h3>
 <p>To install custom Julia packages as a normal user, you have to type this in a terminal before starting Julia:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>export JULIA_DEPOT_PATH=$HOME/julia_depot
 </pre></div>
@@ -137,7 +137,7 @@ Please be aware, due to upgrade issues or general conflicts, not all packages ca
 </ol>
 </section>
 <section id="command-line-custom-environment">
-<h3>Command Line / Custom Environment<a class="headerlink" href="#command-line-custom-environment" title="Permalink to this heading"></a></h3>
+<h3>Command Line / Custom Environment<a class="headerlink" href="#command-line-custom-environment" title="Link to this heading"></a></h3>
 <p>Julia comes with a packaging mechanism to create
 <a class="reference external" href="https://pkgdocs.julialang.org/v1/environments/">custom environments</a>.
 This might be what you really need in order to make your code work
@@ -148,7 +148,7 @@ you will have to setup your own kernel in a CoCalc project.
 Follow <a class="reference internal" href="custom-jupyter-kernel.html#jupyter-custom-kernel"><span class="std std-ref">Custom Jupyter Kernel</span></a> for how to do this – you basically copy one of the global Julia kernels and tweak it’s <code class="docutils literal notranslate"><span class="pre">kernel.json</span></code> definition.</p>
 </section>
 <section id="in-a-jupyter-notebook">
-<h3>In a Jupyter Notebook<a class="headerlink" href="#in-a-jupyter-notebook" title="Permalink to this heading"></a></h3>
+<h3>In a Jupyter Notebook<a class="headerlink" href="#in-a-jupyter-notebook" title="Link to this heading"></a></h3>
 <p>No special environment setting is needed. Simply do the following in a code cell in a Jupyter notebook that has the default Julia kernel selected:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import Pkg; Pkg.add(&quot;package_name&quot;)
 </pre></div>

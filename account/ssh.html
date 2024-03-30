@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SSH keys &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,10 +102,10 @@
            <div itemprop="articleBody">
              
   <section id="ssh-keys">
-<span id="account-ssh"></span><span id="index-0"></span><h1>SSH keys<a class="headerlink" href="#ssh-keys" title="Permalink to this heading"></a></h1>
+<span id="account-ssh"></span><span id="index-0"></span><h1>SSH keys<a class="headerlink" href="#ssh-keys" title="Link to this heading"></a></h1>
 <p>This section assumes you have created an SSH key pair as described in <a class="reference internal" href="../project-settings.html#ssh-keys"><span class="std std-ref">SSH Keys</span></a>.</p>
 <section id="add-ssh-public-keys-for-your-account">
-<span id="add-account-ssh-keys"></span><h2>Add SSH public keys for your account<a class="headerlink" href="#add-ssh-public-keys-for-your-account" title="Permalink to this heading"></a></h2>
+<span id="add-account-ssh-keys"></span><h2>Add SSH public keys for your account<a class="headerlink" href="#add-ssh-public-keys-for-your-account" title="Link to this heading"></a></h2>
 <p>To add SSH public keys for your CoCalc account you can either browse to <a class="reference external" href="https://cocalc.com/settings/ssh-keys">https://cocalc.com/settings/ssh-keys</a>, or open the <a class="reference internal" href="../account-dropdown.html"><span class="doc">Account Dropdown Menu</span></a> and select “SSH keys”:</p>
 <a class="reference internal image-reference" href="../_images/ssh-keys-in-dropdown.png"><img alt="account dropdown menu with SSH keys circled" class="align-center" src="../_images/ssh-keys-in-dropdown.png" style="width: 100%;" /></a>
 <p>Enter a title for the key in the Title field. Specify a title that is meaningful to you for the key pair you are using, for example, “John’s CoCalc Key”.
@@ -123,16 +123,16 @@ Click “Add SSH Key”.</p>
 </div>
 </section>
 <section id="ssh-login-for-a-project">
-<h2>SSH login for a project<a class="headerlink" href="#ssh-login-for-a-project" title="Permalink to this heading"></a></h2>
+<h2>SSH login for a project<a class="headerlink" href="#ssh-login-for-a-project" title="Link to this heading"></a></h2>
 <p>To connect to a project from your local computer, use  the project id with hyphens removed for the user, followed by ‘ssh.cocalc.com’ as the hostname. This string can be found at under Project settings, as shown here: <a class="reference internal" href="../project-settings.html#ssh-user"><span class="std std-ref">ssh user</span></a>.</p>
 </section>
 <section id="view-account-ssh-keys">
-<h2>View account SSH keys<a class="headerlink" href="#view-account-ssh-keys" title="Permalink to this heading"></a></h2>
+<h2>View account SSH keys<a class="headerlink" href="#view-account-ssh-keys" title="Link to this heading"></a></h2>
 <p>To view SSH keys configured for your account, open the same screen that you would to add keys for your account: <a class="reference internal" href="#add-account-ssh-keys"><span class="std std-ref">Add SSH public keys for your account</span></a>.</p>
 <p>SSH keys configured for a single project are viewed under Project settings.</p>
 </section>
 <section id="display-local-public-key-fingerprints">
-<h2>Display local public key fingerprints<a class="headerlink" href="#display-local-public-key-fingerprints" title="Permalink to this heading"></a></h2>
+<h2>Display local public key fingerprints<a class="headerlink" href="#display-local-public-key-fingerprints" title="Link to this heading"></a></h2>
 <p>When you upload SSH public keys to your CoCalc account, CoCalc displays a fingerprint to identify the key. If you have a large number of public keys on your local computer, it may help to run a command to display the hexadecimal fingerprints locally, so that you can see which local public key file corresponds to a certain key fingerprint in your CoCalc account. Here is a command you can run if you have the OpenSSH tools installed, for example on Linux or macOS:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh-keygen -l -E md5 -f &lt;filename&gt;.pub
 </pre></div>

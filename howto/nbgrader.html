@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>nbgrader for R &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -128,7 +128,7 @@
            <div itemprop="articleBody">
              
   <section id="nbgrader-for-r">
-<span id="index-0"></span><h1>nbgrader for R<a class="headerlink" href="#nbgrader-for-r" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>nbgrader for R<a class="headerlink" href="#nbgrader-for-r" title="Link to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>There are two “nbgrader” systems:</p>
@@ -138,7 +138,7 @@
 </ul>
 </div>
 <section id="how-to-setup-nbgrader-for-cocalc-to-work-with-r">
-<h2>How to setup <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code> for CoCalc to work with <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-setup-nbgrader-for-cocalc-to-work-with-r" title="Permalink to this heading"></a></h2>
+<h2>How to setup <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code> for CoCalc to work with <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-setup-nbgrader-for-cocalc-to-work-with-r" title="Link to this heading"></a></h2>
 <p>There are plenty of examples of creating assignments for <code class="docutils literal notranslate"><span class="pre">Python</span></code>. For other languages, not so much.
 I couldn’t find any for <code class="docutils literal notranslate"><span class="pre">R</span></code>. To get <code class="docutils literal notranslate"><span class="pre">R</span></code> to work, you need to add one line to the default <code class="docutils literal notranslate"><span class="pre">nbgrader_config.py</span></code> file. Here is my file that I placed in <code class="docutils literal notranslate"><span class="pre">/etc/jupyter</span></code> (on my own computer - have not gotten this to work yet on CoCalc):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>from nbgrader.utils import get_username
@@ -171,7 +171,7 @@ c.Exchange.root = os.path.expanduser(&#39;~/nbgrader_exchange&#39;)
 </div>
 </section>
 <section id="how-to-prepare-an-assignment-in-cocalc-for-r">
-<h2>How to prepare an assignment in CoCalc for <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-prepare-an-assignment-in-cocalc-for-r" title="Permalink to this heading"></a></h2>
+<h2>How to prepare an assignment in CoCalc for <code class="docutils literal notranslate"><span class="pre">R</span></code><a class="headerlink" href="#how-to-prepare-an-assignment-in-cocalc-for-r" title="Link to this heading"></a></h2>
 <p>When you create an assignment for <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code>, you create the instructor version that includes the solution and a code cell that tests the solution.
 When you create this version, you use the <code class="docutils literal notranslate"><span class="pre">View/Cell</span> <span class="pre">Toolbar/Create</span> <span class="pre">Assignment</span></code> pull down menu to add the metadata to the solution code cell and the test code cell.
 The Create Assignment view is an extension added by <code class="docutils literal notranslate"><span class="pre">nbgrader</span></code>.

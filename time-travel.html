@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Time Travel &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -121,7 +121,7 @@
            <div itemprop="articleBody">
              
   <section id="time-travel">
-<span id="index-0"></span><h1>Time Travel<a class="headerlink" href="#time-travel" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>Time Travel<a class="headerlink" href="#time-travel" title="Link to this heading"></a></h1>
 <p>CoCalc calls “Time Travel” the historic recording of all changes in a file.
 This works for all text-based documents in a <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a> and also <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a>, <a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheets</span></a>, and <a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a>.</p>
 <nav class="contents local" id="contents">
@@ -133,7 +133,7 @@ This works for all text-based documents in a <a class="reference internal" href=
 </ul>
 </nav>
 <section id="using-time-travel">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Using Time Travel</a><a class="headerlink" href="#using-time-travel" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Using Time Travel</a><a class="headerlink" href="#using-time-travel" title="Link to this heading"></a></h2>
 <p>To open it, click on the light blue button with the reversed cirular arrow around a clock:</p>
 <img alt="time travel button" class="align-center" src="_images/time-travel-button.png" />
 <p>Then you can see the underlying history, e.g. here for exactly this <code class="docutils literal notranslate"><span class="pre">time-travel.rst</span></code> file of the documentation in front of you.</p>
@@ -149,20 +149,20 @@ This works for all text-based documents in a <a class="reference internal" href=
 <p>For more information, read this <a class="reference external" href="http://blog.sagemath.com/2016/09/08/timetravel-diffs.html">blog post about time travel</a>.</p>
 </section>
 <section id="export-history">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Export History</a><a class="headerlink" href="#export-history" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Export History</a><a class="headerlink" href="#export-history" title="Link to this heading"></a></h2>
 <p>Clicking the <code class="docutils literal notranslate"><span class="pre">Export</span></code> button generates a machine-readable representation of all changes, summarizing who made them and when exactly.
 This can be used to track the depth of contributions to a specific file,
 e.g. students in the context of a group project.</p>
 <p>Note that the <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;:</span> <span class="pre">&quot;Project:</span> <span class="pre">...&quot;</span></code> is the backend process modifying the file, i.e. that’s not a human person. (See the next section for more information.)</p>
 </section>
 <section id="who-changed-my-file">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Who Changed My File?</a><a class="headerlink" href="#who-changed-my-file" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Who Changed My File?</a><a class="headerlink" href="#who-changed-my-file" title="Link to this heading"></a></h2>
 <p>Time Travel shows who made changes to a file. This is helpful when two or more users have edited a file.</p>
 <p>In the case that Time Travel says “The Project” made the change, that means that some process other than the CoCalc editor modified the file, and that version was newer than the version used by the editor at the time. This can happen for many reasons. For example, if the file is stored in git, then switching to a different branch could change the contents of the file. Another cause could be running a notebook with JupyterLab or Jupyter classic at the same time as CoCalc Jupyter.</p>
 <p>Make sure you save your file to disk when you’re finished working with it. A file is saved to disk when the “Save” button turns from a bright green to a disabled dull green.</p>
 </section>
 <section id="clear-timetravel-history-for-a-file">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Clear TimeTravel History for a File</a><a class="headerlink" href="#clear-timetravel-history-for-a-file" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Clear TimeTravel History for a File</a><a class="headerlink" href="#clear-timetravel-history-for-a-file" title="Link to this heading"></a></h2>
 <p>While you can’t explicitly delete the TimeTravel history for a file, you can achieve a similar result. CoCalc, unlike other software (including Microsoft Office), does not store the TimeTravel history of a file in the file or even in any filesystem (e.g., it is not in a hidden file). It exists only in the CoCalc backend PostgreSQL database as a series of patches tracking the evolution of your notebook over time. It is the same data used for realtime collaboration. TimeTravel is associated to the specific project and path. If you copy your file to a new location (even in the same project), then click “TimeTravel”, you will see that it is a new history.</p>
 </section>
 </section>

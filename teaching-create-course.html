@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creating a New Course &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -134,7 +134,7 @@
            <div itemprop="articleBody">
              
   <section id="creating-a-new-course">
-<span id="create-a-new-course"></span><h1>Creating a New Course<a class="headerlink" href="#creating-a-new-course" title="Permalink to this heading"></a></h1>
+<span id="create-a-new-course"></span><h1>Creating a New Course<a class="headerlink" href="#creating-a-new-course" title="Link to this heading"></a></h1>
 <p>In this section we will learn how to create a course project,
 how to populate it with a course management file, and how to invite all of your students to join the course.</p>
 <nav class="contents local" id="contents">
@@ -150,13 +150,13 @@ how to populate it with a course management file, and how to invite all of your 
 </ul>
 </nav>
 <section id="create-the-course-project">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Create the Course Project</a><a class="headerlink" href="#create-the-course-project" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Create the Course Project</a><a class="headerlink" href="#create-the-course-project" title="Link to this heading"></a></h2>
 <p>The first step is to create a project to contain the course. (While it is technically possible to use the same project for multiple courses, in most cases a separate project for each course works better.)</p>
 <p>Sign into CoCalc and click on <strong>Projects</strong> at upper left. Click on <strong>Create New Project</strong>, fill in the <strong>Title</strong>, and click <strong>Create Project</strong>.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="_images/create_new_course_project.png"><img alt="Creating the Course Project" src="_images/create_new_course_project.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Creating the Course Project</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Creating the Course Project</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>The new project will be created. If the project does not automatically start, click the <strong>Start Project</strong> button to start it.</p>
@@ -172,21 +172,21 @@ how to populate it with a course management file, and how to invite all of your 
 </div>
 </section>
 <section id="add-teaching-assistants-to-the-course-project">
-<span id="teaching-add-ta"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Add Teaching Assistants to the Course Project</a><a class="headerlink" href="#add-teaching-assistants-to-the-course-project" title="Permalink to this heading"></a></h2>
+<span id="teaching-add-ta"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Add Teaching Assistants to the Course Project</a><a class="headerlink" href="#add-teaching-assistants-to-the-course-project" title="Link to this heading"></a></h2>
 <p>As soon as the course project is created, you can add teaching assistants or other teachers to it as <a class="reference internal" href="users.html"><span class="doc">collaborators/users</span></a> . They will also have access to <em>all associated student projects</em>. Do <strong>not</strong> add students in the course as project collaborators!</p>
 <p>If the email address you add as a collaborator is not associated with a CoCalc account, an email will be sent to that address with instructions how to join. Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.</p>
 </section>
 <section id="create-the-course-file">
-<span id="index-1"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Create the Course File</a><a class="headerlink" href="#create-the-course-file" title="Permalink to this heading"></a></h2>
+<span id="index-1"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Create the Course File</a><a class="headerlink" href="#create-the-course-file" title="Link to this heading"></a></h2>
 <p>Almost all aspects of your course, such as which students are enrolled and assignment management, are controlled by a <code class="docutils literal notranslate"><span class="pre">.course</span></code> file.</p>
 <p>Click <strong>New</strong>, enter the file name, then scroll to <strong>Manage a Course</strong> tile and click it to create the course management file:</p>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="_images/create_course_file.png"><img alt="Creating the Course File" src="_images/create_course_file.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Creating the Course File</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Creating the Course File</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<span class="target" id="index-2"></span><p id="index-3">You may have more than one course file in a single project, for example you can create different files for different sections. They will be completely independent of each other, allowing not only different groups of students, but also different due dates and different assignments.</p>
+<p id="index-3"><span id="index-2"></span>You may have more than one course file in a single project, for example you can create different files for different sections. They will be completely independent of each other, allowing not only different groups of students, but also different due dates and different assignments.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Be aware that any teaching assistant you add to the project will have access to <strong>all</strong> course files and <strong>all</strong> student work. It is often preferable to create a separate project for each section.</p>
@@ -197,7 +197,7 @@ how to populate it with a course management file, and how to invite all of your 
 </div>
 </section>
 <section id="add-students-to-the-course">
-<span id="adding-students"></span><span id="index-4"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Add Students to the Course</a><a class="headerlink" href="#add-students-to-the-course" title="Permalink to this heading"></a></h2>
+<span id="adding-students"></span><span id="index-4"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Add Students to the Course</a><a class="headerlink" href="#add-students-to-the-course" title="Link to this heading"></a></h2>
 <p>Open your new course by clicking on the course file. Select the <strong>Students</strong> tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc. It’s best to add students using their email addresses, because those are unique for CoCalc accounts. However, it is also possible to search for students by their first and last names.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -206,21 +206,21 @@ how to populate it with a course management file, and how to invite all of your 
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/add-students-3.png"><img alt="Put Students' Emails into Add Students Box" src="_images/add-students-3.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Put Students’ Emails into Add Students Box</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Put Students’ Emails into Add Students Box</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>After running the search by clicking <strong>Search</strong> or hitting Shift-Enter, you can select which students you want add from the search results (use Ctrl-click or Cmd-click for more than 1 student), or just click the <strong>Add all students</strong> button:</p>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/add-students-4.png"><img alt="Add All Students After Searching by Email Addresses" src="_images/add-students-4.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Add All Students After Searching by Email Addresses</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Add All Students After Searching by Email Addresses</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc. If the process appears stalled after creating some number of student projects, you can refresh your browser to check for updated results.</p>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="_images/add-students-5.png"><img alt="List of Students in the Course" src="_images/add-students-5.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">List of Students in the Course</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">List of Students in the Course</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>If your project (the one with the <code class="docutils literal notranslate"><span class="pre">.course</span></code> file) has network access (this is provided when any CoCalc license has been applied), any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course. For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.</p>
@@ -238,32 +238,32 @@ It is <strong>strongly</strong> recommended that you upgrade this to members-onl
 </div>
 </section>
 <section id="what-do-the-students-get">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">What do the Students Get?</a><a class="headerlink" href="#what-do-the-students-get" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">What do the Students Get?</a><a class="headerlink" href="#what-do-the-students-get" title="Link to this heading"></a></h2>
 <p>On being invited to a course, each student will have a project created for them in their CoCalc account that corresponds to the course. Each project will have you and the course teaching assistants set as collaborators. This allows you to access student’s work at any time and help them with their work.</p>
 <p>Each student’s course project will have its own resources according to the license configured in the course file. You can learn more about licenses in the <a class="reference internal" href="teaching-upgrade-course.html#course-upgrading-students"><span class="std std-ref">next chapter</span></a> or the <a class="reference internal" href="upgrade-guide.html"><span class="doc">Project Upgrades</span></a>.</p>
 </section>
 <section id="restrict-student-projects">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Restrict Student Projects</a><a class="headerlink" href="#restrict-student-projects" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Restrict Student Projects</a><a class="headerlink" href="#restrict-student-projects" title="Link to this heading"></a></h2>
 <p>See <a class="reference internal" href="restrict-student-projects.html#restrict-student-projects"><span class="std std-ref">Restrict Student Projects</span></a>.</p>
-<span class="target" id="index-5"></span></section>
+</section>
 <section id="reconfigure-student-projects">
-<span id="index-6"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">Reconfigure Student Projects</a><a class="headerlink" href="#reconfigure-student-projects" title="Permalink to this heading"></a></h2>
+<span id="index-6"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">Reconfigure Student Projects</a><a class="headerlink" href="#reconfigure-student-projects" title="Link to this heading"></a></h2>
 <p>In the course Configuration tab on the right, click <cite>Reconfigure all projects</cite> to ensure student projects have correct students and teaching assistants, titles and descriptions.
 Doing so will also resend email invitations to students who have not already signed up for CoCalc.</p>
 <figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="_images/course-reconfigure.png"><img alt="button to reconfigure all student projects in lower right of course Configuration tab" src="_images/course-reconfigure.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">“Reconfigure all projects” at lower right in course Configuration</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">“Reconfigure all projects” at lower right in course Configuration</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<span class="target" id="index-7"></span></section>
+</section>
 <section id="resend-outstanding-email-invites">
-<span id="index-8"></span><h2><a class="toc-backref" href="#id15" role="doc-backlink">Resend outstanding email invites</a><a class="headerlink" href="#resend-outstanding-email-invites" title="Permalink to this heading"></a></h2>
+<span id="index-8"></span><span id="index-7"></span><h2><a class="toc-backref" href="#id15" role="doc-backlink">Resend outstanding email invites</a><a class="headerlink" href="#resend-outstanding-email-invites" title="Link to this heading"></a></h2>
 <p>In the course Configuration tab on the right, click <cite>Reinvite students</cite> to send/resend an email invitation to all students who do not yet have an account on CoCalc. This will send at most one email per student per day.</p>
 <figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="_images/reinvite-students.png"><img alt="button to resend email invitations to students in lower right of course Configuration tab" src="_images/reinvite-students.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">“Reinvite students” at lower right in course Configuration</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">“Reinvite students” at lower right in course Configuration</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>

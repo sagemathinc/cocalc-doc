@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>API v1 &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -163,16 +163,16 @@
            <div itemprop="articleBody">
              
   <section id="api-v1">
-<span id="index-0"></span><h1>API v1<a class="headerlink" href="#api-v1" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>API v1<a class="headerlink" href="#api-v1" title="Link to this heading"></a></h1>
 <section id="purpose">
-<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this heading"></a></h2>
+<h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading"></a></h2>
 <p>The purpose of the CoCalc API (application programming interface) is to make
 essential operations within the CoCalc platform available to automated
 clients. This allows embedding of CoCalc services within other products
 and customizing the external look and feel of the application.</p>
 </section>
 <section id="protocol-and-data-format">
-<h2>Protocol and Data Format<a class="headerlink" href="#protocol-and-data-format" title="Permalink to this heading"></a></h2>
+<h2>Protocol and Data Format<a class="headerlink" href="#protocol-and-data-format" title="Link to this heading"></a></h2>
 <p>Each API command is invoked using an HTTPS POST request.
 All commands support request parameters in JSON format, with request header
 <code class="docutils literal notranslate"><span class="pre">Content-Type:</span> <span class="pre">application/json</span></code>. Many commands (those that do not
@@ -189,11 +189,11 @@ returned, and the response body may be a
 generic HTML message rather than a JSON string.</p>
 </section>
 <section id="authentication">
-<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading"></a></h2>
+<h2>Authentication<a class="headerlink" href="#authentication" title="Link to this heading"></a></h2>
 <p>A valid API key is required on all API requests. To learn how to create an API key, see <a class="reference internal" href="../apikeys.html"><span class="doc">API Keys</span></a>.</p>
 </section>
 <section id="additional-references">
-<h2>Additional References<a class="headerlink" href="#additional-references" title="Permalink to this heading"></a></h2>
+<h2>Additional References<a class="headerlink" href="#additional-references" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>The <a class="reference external" href="https://share.cocalc.com/share/6eec7a75ce704502e2d557f44c316bf75c5c6ce7/Public/?viewer=share">CoCalc API tutorial</a> illustrates API calls in Python.</p></li>
 <li><p>The CoCalc PostgreSQL schema definition <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/util/db-schema">src/packages/util/db-schema</a> has information on tables and fields used with the API <code class="docutils literal notranslate"><span class="pre">query</span></code> request.</p></li>
@@ -202,7 +202,7 @@ generic HTML message rather than a JSON string.</p>
 </ul>
 </section>
 <section id="api-message-reference">
-<h2>API Message Reference<a class="headerlink" href="#api-message-reference" title="Permalink to this heading"></a></h2>
+<h2>API Message Reference<a class="headerlink" href="#api-message-reference" title="Link to this heading"></a></h2>
 <p>The remainder of this guide explains the individual API endpoints.
 Each API request definition begins with the path of the
 URL used to invoke the request,
@@ -264,11 +264,11 @@ generated and returned in the response.</p></li>
 </div>
 <hr class="docutils" />
 <section id="api-examples-howto">
-<h3>API Examples &amp; Howto<a class="headerlink" href="#api-examples-howto" title="Permalink to this heading"></a></h3>
+<h3>API Examples &amp; Howto<a class="headerlink" href="#api-examples-howto" title="Link to this heading"></a></h3>
 </section>
 </section>
 <section id="copy-a-file-between-projects">
-<span id="index-1"></span><h2>Copy a file between projects<a class="headerlink" href="#copy-a-file-between-projects" title="Permalink to this heading"></a></h2>
+<span id="index-1"></span><h2>Copy a file between projects<a class="headerlink" href="#copy-a-file-between-projects" title="Link to this heading"></a></h2>
 <p>First, save your API key in a file <code class="docutils literal notranslate"><span class="pre">api.key</span></code>.
 Then, we use the <a class="reference external" href="https://requests.readthedocs.io/en/master/">requests</a> library to issue calls:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">key</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;api.key&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -330,7 +330,7 @@ Then, we use the <a class="reference external" href="https://requests.readthedoc
 <p>Note: <code class="docutils literal notranslate"><span class="pre">started</span></code> and <code class="docutils literal notranslate"><span class="pre">finished</span></code> being part of the response, signals it did work.</p>
 </section>
 <section id="embedding-in-an-iframe">
-<span id="index-2"></span><h2>Embedding in an IFrame<a class="headerlink" href="#embedding-in-an-iframe" title="Permalink to this heading"></a></h2>
+<span id="index-2"></span><h2>Embedding in an IFrame<a class="headerlink" href="#embedding-in-an-iframe" title="Link to this heading"></a></h2>
 <p>Here are notes on integrating CoCalc in an IFrame in a web application using the CoCalc API.
 You should be able to create a proof of concept using the API introduction above and these notes.</p>
 <ol class="arabic simple">
@@ -352,7 +352,7 @@ A full example might look like this
 </ol>
 </section>
 <section id="iframe-communication">
-<h2>IFrame communication<a class="headerlink" href="#iframe-communication" title="Permalink to this heading"></a></h2>
+<h2>IFrame communication<a class="headerlink" href="#iframe-communication" title="Link to this heading"></a></h2>
 <p>This is a communication channel to improve working with an embedded CoCalc instance.
 It gives the parent page the ability to send command-messages to CoCalc (e.g. opening a specific page, etc.) and receiving responses.</p>
 <div class="admonition warning">

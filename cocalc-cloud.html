@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CoCalc Cloud &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -122,8 +122,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="index-0"></span><section id="cocalc-cloud">
-<span id="index-1"></span><h1>CoCalc Cloud<a class="headerlink" href="#cocalc-cloud" title="Permalink to this heading"></a></h1>
+  <section id="cocalc-cloud">
+<span id="index-1"></span><span id="index-0"></span><h1>CoCalc Cloud<a class="headerlink" href="#cocalc-cloud" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#introduction" id="id1">Introduction</a></p></li>
@@ -131,13 +131,13 @@
 </ul>
 </nav>
 <section id="introduction">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
 <p><strong>CoCalc Cloud</strong> runs on a Kubernetes Cluster. The underlying services and their architecture are identical to those in online cocalc.com, with comparable performance, scalability, and reliability to the online site.</p>
 <p>This page provides a summary of CoCalc Cloud features. For detailed information, see <a class="reference external" href="https://doc-cloud.cocalc.com/">CoCalc Cloud documentation</a> and in particular the <a class="reference external" href="https://doc-cloud.cocalc.com/overview.html">Overview</a>.</p>
 <p>Our blog article <a class="reference external" href="https://about.cocalc.com/2022/11/18/cocalc-on-premise/">CoCalc On-Premise</a> has introductory information about CoCalc Cloud.</p>
 <p>Here’s a link to CoCalc feature announcement and discussion of the updated project documentation: <a class="reference external" href="https://github.com/sagemathinc/cocalc/discussions/6558">CoCalc-Cloud on Kubernetes (e.g., cocalc.com) – have you ever wondered how it works and what it is?</a>.</p>
 <section id="features">
-<h3>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h3>
+<h3>Features<a class="headerlink" href="#features" title="Link to this heading"></a></h3>
 <p>Jupyter Notebooks, a recent version of Sage, Python 3, R, Octave, and LaTeX. Editing code and text files, Linux terminal, compiling code, and virtual X11 desktop are also included.</p>
 <p>Beyond the standard set of included software, it’s also possible to define and build customized software environments.</p>
 <p>Support for single sign-on, in particular, includes SAML.</p>
@@ -145,14 +145,14 @@
 <p>You can deploy this solution on your bare-metal cluster or managed Kubernetes clusters, including Amazon’s AWS EKS and Google’s GCE GKE.</p>
 </section>
 <section id="prerequisites">
-<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading"></a></h3>
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h3>
 <p>CoCalc Cloud runs on the abstractions provided by a Kubernetes cluster. Since it is a web-service, you need to have everything regarding networking in place, to be able to run it as a website. You also need a storage solution, providing a shared file-system supporting <code class="docutils literal notranslate"><span class="pre">ReadWriteMany</span></code>.</p>
 <p>We will be happy to guide you through the setup and give you enough information to manage the service, react to issues, plan resource requirements, and know how to scale the various benefits to your expected usage.</p>
 <p>The <a class="reference external" href="https://doc-cloud.cocalc.com/setup.html">Setup Guide</a> has more details.</p>
 </section>
 </section>
 <section id="purchasing-cocalc-cloud">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Purchasing CoCalc Cloud</a><a class="headerlink" href="#purchasing-cocalc-cloud" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Purchasing CoCalc Cloud</a><a class="headerlink" href="#purchasing-cocalc-cloud" title="Link to this heading"></a></h2>
 <p>See <cite>CoCalc Cloud</cite> at <a class="reference external" href="https://cocalc.com/pricing/onprem">CoCalc - On Premises Offerings</a> or email <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a> for licensing and support.</p>
 </section>
 </section>

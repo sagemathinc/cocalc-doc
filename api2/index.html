@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>API v2 &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -128,7 +128,7 @@
            <div itemprop="articleBody">
              
   <section id="api-v2">
-<span id="index-0"></span><h1>API v2<a class="headerlink" href="#api-v2" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>API v2<a class="headerlink" href="#api-v2" title="Link to this heading"></a></h1>
 <p>With API Version 2, the CoCalc API is being improved and expanded.</p>
 <p>Source code for the API v2 implemention is in the <a class="reference external" href="https://github.com/sagemathinc/cocalc/tree/master/src/packages/next/pages/api/v2">CoCalc public GitHub repository under src/packages/next/pages/api/v2</a>. Each “.ts” file under the <code class="docutils literal notranslate"><span class="pre">v2</span></code> directory corresponds to an endpoint in the new API. For example, the “stop” endpoint, which allows you to stop a project, has source code at <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/src/packages/next/pages/api/v2/projects/stop.ts">https://github.com/sagemathinc/…/api/v2/projects/stop.ts</a> and is called with the URL <a class="reference external" href="https://cocalc.com/api/v2/projects/stop">https://cocalc.com/api/v2/projects/stop</a>.</p>
 <div class="admonition note">
@@ -136,11 +136,11 @@
 <p>For security reasons, <strong>API v2 calls must be made with the POST method</strong>. This policy supersedes any comments about the availability of GET that may appear in the source code.</p>
 </div>
 <section id="get-an-api-key">
-<span id="get-api-key"></span><h2>Get an API Key<a class="headerlink" href="#get-an-api-key" title="Permalink to this heading"></a></h2>
+<span id="get-api-key"></span><h2>Get an API Key<a class="headerlink" href="#get-an-api-key" title="Link to this heading"></a></h2>
 <p>To get started with API v2, you will need a CoCalc account and an API key for that account. To learn how to create an API key, see <a class="reference internal" href="../apikeys.html"><span class="doc">API Keys</span></a>.</p>
 </section>
 <section id="api-v2-endpoints">
-<h2>API v2 Endpoints<a class="headerlink" href="#api-v2-endpoints" title="Permalink to this heading"></a></h2>
+<h2>API v2 Endpoints<a class="headerlink" href="#api-v2-endpoints" title="Link to this heading"></a></h2>
 <p>The remainder of this guide describes individual API v2 endpoints.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">API v2 General-Purpose Endpoints</span></p>

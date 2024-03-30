@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Debugging connectivity issues &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -134,7 +134,7 @@
            <div itemprop="articleBody">
              
   <section id="debugging-connectivity-issues">
-<span id="connectivity-issues"></span><span id="index-0"></span><h1>Debugging connectivity issues<a class="headerlink" href="#debugging-connectivity-issues" title="Permalink to this heading"></a></h1>
+<span id="connectivity-issues"></span><span id="index-0"></span><h1>Debugging connectivity issues<a class="headerlink" href="#debugging-connectivity-issues" title="Link to this heading"></a></h1>
 <p>There are numerous reasons why you could experience a problematic connection when accessing <a class="reference external" href="https://cocalc.com">CoCalc</a>.</p>
 <p>This FAQ/Help page consists of</p>
 <nav class="contents local" id="contents">
@@ -158,21 +158,21 @@ Check for updates available to the browser you are using, or switch to the lates
 <p>If this doesn’t help, try additional diagnostic steps mentioned below.</p>
 </div>
 <section id="process-for-debugging-connectivity">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Process for Debugging Connectivity</a><a class="headerlink" href="#process-for-debugging-connectivity" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Process for Debugging Connectivity</a><a class="headerlink" href="#process-for-debugging-connectivity" title="Link to this heading"></a></h2>
 <p>The following multi-step process will help you identify the problem. If you still have a problem and are contacting CoCalc support, it saves time if you let us know what you found out from following these steps:</p>
 <section id="step-1-try-connecting-with-the-latest-version-of-google-chrome">
-<h3>Step 1: Try connecting with the latest version of Google Chrome.<a class="headerlink" href="#step-1-try-connecting-with-the-latest-version-of-google-chrome" title="Permalink to this heading"></a></h3>
+<h3>Step 1: Try connecting with the latest version of Google Chrome.<a class="headerlink" href="#step-1-try-connecting-with-the-latest-version-of-google-chrome" title="Link to this heading"></a></h3>
 <p>If you are not using Google Chrome, or are using an outdated version of it, install the latest Chrome and test your connection again.</p>
 </section>
 <section id="step-2-make-sure-you-are-running-a-very-recent-version-of-google-chrome-safari-firefox-or-edge">
-<h3>Step 2: Make sure you are running a very recent version of Google Chrome, Safari, Firefox, or Edge.<a class="headerlink" href="#step-2-make-sure-you-are-running-a-very-recent-version-of-google-chrome-safari-firefox-or-edge" title="Permalink to this heading"></a></h3>
+<h3>Step 2: Make sure you are running a very recent version of Google Chrome, Safari, Firefox, or Edge.<a class="headerlink" href="#step-2-make-sure-you-are-running-a-very-recent-version-of-google-chrome-safari-firefox-or-edge" title="Link to this heading"></a></h3>
 <p><strong>We do NOT support old versions of web browsers!!</strong>
 For example, there’s zero chance CoCalc will work at all with a web browser from e.g. 2016.</p>
 <p>When CoCalc starts, it checks your browser version and will report this to you.</p>
 <p>Overall, CoCalc works best with the most recent version of Google Chrome.</p>
 </section>
 <section id="step-3-double-check-if-are-you-connected-at-all">
-<h3>Step 3: Double check if are you connected at all.<a class="headerlink" href="#step-3-double-check-if-are-you-connected-at-all" title="Permalink to this heading"></a></h3>
+<h3>Step 3: Double check if are you connected at all.<a class="headerlink" href="#step-3-double-check-if-are-you-connected-at-all" title="Link to this heading"></a></h3>
 <p>Look in the upper-right hand corner of any CoCalc web page. You will see there the “wifi symbol” and to the right of it, a number of milliseconds (e.g. 43 ms). This means that you are connected to CoCalc, with a latency of 43 ms. (For those unfamiliar with the idea of latency, after your computer sends some data packet, it will take 43 ms to arrive at the CoCalc server.)</p>
 <p>Many times, it can happen that your internet connection is cut off. For example, in a cafe or coffee shop, the internet access may be shutdown during peak hours. Alternatively, in a residence, a roommate might have inadvertently unplugged the wireless router. When this happens, the WiFi symbol and the latency indicator will be replaced by a red rectangle with the word “disconnected.” If you restore your wireless connection, then you’ll see a yellow rectangle with the word “connecting…”</p>
 <p>Once a broken connection is reestablished, your files will be saved and everything returns to normal. During the period of disconnection, the green “Save” button will be replaced by a red warning that says “NOT saved!” As you can see, you will always know whether or not your changes have reached the server.</p>
@@ -183,7 +183,7 @@ If that doesn’t help, restart your computer.</p>
 </div>
 </section>
 <section id="step-4-network-congestion">
-<h3>Step 4: Network congestion?<a class="headerlink" href="#step-4-network-congestion" title="Permalink to this heading"></a></h3>
+<h3>Step 4: Network congestion?<a class="headerlink" href="#step-4-network-congestion" title="Link to this heading"></a></h3>
 <p>The internet connects billions of machines worldwide via a sophisticated network.
 All the data sent around is chopped into small pieces (packages)
 and labeled with source and destination addresses.
@@ -199,7 +199,7 @@ Besides a poor experience of using CoCalc,
 you could also see erratically high ping times or sporadic “disconnect” warnings.</p>
 </section>
 <section id="step-5-do-you-have-tons-of-tabs-open">
-<h3>Step 5: Do you have tons of tabs open?<a class="headerlink" href="#step-5-do-you-have-tons-of-tabs-open" title="Permalink to this heading"></a></h3>
+<h3>Step 5: Do you have tons of tabs open?<a class="headerlink" href="#step-5-do-you-have-tons-of-tabs-open" title="Link to this heading"></a></h3>
 <p>Some power users will have several browser tabs open simultaneously, which is fine.
 However, having too many open causes high memory usage by your web browser,
 which might make your browser stall. After closing a few tabs, reloading the tab that
@@ -210,13 +210,13 @@ and every tab in the <a class="reference external" href="https://www.google.com/
 or something else) and decide for yourself if you wish to close them.</p>
 </section>
 <section id="step-6-is-your-browser-or-an-intermediate-server-attempting-to-cache-too-much">
-<h3>Step 6: Is your browser (or an intermediate server) attempting to cache too much?<a class="headerlink" href="#step-6-is-your-browser-or-an-intermediate-server-attempting-to-cache-too-much" title="Permalink to this heading"></a></h3>
+<h3>Step 6: Is your browser (or an intermediate server) attempting to cache too much?<a class="headerlink" href="#step-6-is-your-browser-or-an-intermediate-server-attempting-to-cache-too-much" title="Link to this heading"></a></h3>
 <p>The symptom for this malady is if you can load the page but it keeps timing out, or if it doesn’t load up properly. If you are experiencing those symptoms, then either old copies of the page that you are working on are cached on some server, between yourself and the CoCalc server, or perhaps your browser is caching them locally.</p>
 <p>In this situation, the fix is easy. Just <strong>reload the website with the Shift-key held down</strong> (that tells the browser to ignore your local cache), or clean your browser’s cache directly via its interface.</p>
 <p>Browser caches are an important way of speeding up your internet connection. However, the methods and strategies that work for static web content and relatively straightforward websites do not always work well for sophisticated and complex systems like CoCalc. For example, hotels often have aggressive cache servers, because a large portion of their guests will access the same handful of websites (e.g. to check the weather, get navigation, or print boarding passes.)</p>
 </section>
 <section id="step-7-does-the-problem-relate-to-stale-cookies">
-<h3>Step 7: Does the problem relate to stale cookies?<a class="headerlink" href="#step-7-does-the-problem-relate-to-stale-cookies" title="Permalink to this heading"></a></h3>
+<h3>Step 7: Does the problem relate to stale cookies?<a class="headerlink" href="#step-7-does-the-problem-relate-to-stale-cookies" title="Link to this heading"></a></h3>
 <div class="admonition note" id="index-1">
 <p class="admonition-title">Note</p>
 <p>Getting the message, <code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">no</span> <span class="pre">valid</span> <span class="pre">remember_me</span> <span class="pre">token</span></code> when trying to sign into CoCalc is usually a sign of stale browser cookies.</p>
@@ -226,7 +226,7 @@ or something else) and decide for yourself if you wish to close them.</p>
 <p>The definitive solution is to clear all browser cookies related to cocalc.com, or use a different browser.</p>
 </section>
 <section id="step-8-have-you-installed-browser-extensions-add-on-s-or-enabled-blocking-software-on-your-computer">
-<h3>Step 8: Have you installed browser extensions (“add-on”s) or enabled blocking software on your computer?<a class="headerlink" href="#step-8-have-you-installed-browser-extensions-add-on-s-or-enabled-blocking-software-on-your-computer" title="Permalink to this heading"></a></h3>
+<h3>Step 8: Have you installed browser extensions (“add-on”s) or enabled blocking software on your computer?<a class="headerlink" href="#step-8-have-you-installed-browser-extensions-add-on-s-or-enabled-blocking-software-on-your-computer" title="Link to this heading"></a></h3>
 <p>Another source of problems is <strong>installed browser extensions</strong>. Extensions might inject JavaScript code into the website. In such a situation, it is likely that the injected code does not play along well with the JavaScript code of CoCalc.</p>
 <p>Some extensions, for example ad blockers, block certain external websites. It may be necessary to whitelist cocalc.com if you are running one of these. In addition, some libraries used by CoCalc are loaded via CDN (content delivery network) instead of Cocalc’s own servers. Blocking their access (or more general, blocking any 3rd party scripts from a website) could cause problems. The same can happen with other firewall or anti-virus software on your computer.</p>
 <p>The site-blocking extension <a class="reference external" href="https://github.com/andryou/scriptsafe">ScriptSafe</a> used with Chrome-based browsers, including <a class="reference external" href="https://iridiumbrowser.de/">Iridium</a>, has been reported to cause connection problems with CoCalc.</p>
@@ -245,7 +245,7 @@ or something else) and decide for yourself if you wish to close them.</p>
 </div>
 </section>
 <section id="step-9-are-the-cocalc-servers-down">
-<h3>Step 9: Are the CoCalc servers down?<a class="headerlink" href="#step-9-are-the-cocalc-servers-down" title="Permalink to this heading"></a></h3>
+<h3>Step 9: Are the CoCalc servers down?<a class="headerlink" href="#step-9-are-the-cocalc-servers-down" title="Link to this heading"></a></h3>
 <p>This is extremely unlikely. One of the advantages of cloud computing is that if a server goes down, then you can automatically be reconnected to some other server. You can also explicitly request to be connected to a different front-end server:</p>
 <ol class="arabic simple">
 <li><p>Click on the connection information in the top right corner, a dialog should pop up.</p></li>
@@ -261,23 +261,23 @@ or something else) and decide for yourself if you wish to close them.</p>
 </ul>
 </section>
 <section id="step-10-is-your-computer-infected-with-malware">
-<h3>Step 10: Is your computer infected with malware?<a class="headerlink" href="#step-10-is-your-computer-infected-with-malware" title="Permalink to this heading"></a></h3>
+<h3>Step 10: Is your computer infected with malware?<a class="headerlink" href="#step-10-is-your-computer-infected-with-malware" title="Link to this heading"></a></h3>
 <p>If you experience issues like frequent reloads, see strange advertising banners across the page, or additional odd banners around the page, then you might be a victim of some tool or virus injecting additional HTML code into webpages in your browser. Such malicious software can serve several purposes (e.g. tracking you, showing you ads, just disrupting your connectivity), and is almost always considered highly undesirable.</p>
 <p>For Google Chrome there is the <a class="reference external" href="https://www.google.com/chrome/cleanup-tool/">Chrome Cleanup Tool</a> which might help you fix this.</p>
 <p>For Firefox, you might want to check
 the <a class="reference external" href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">disable add-ons</a> screen, which might display for you an undesired add-on that might have been installed on your browser without your knowledge.</p>
 </section>
 <section id="step-11-is-the-problem-with-your-dns-domain-name-service-settings">
-<h3>Step 11: Is the problem with your DNS (Domain Name Service) settings?<a class="headerlink" href="#step-11-is-the-problem-with-your-dns-domain-name-service-settings" title="Permalink to this heading"></a></h3>
+<h3>Step 11: Is the problem with your DNS (Domain Name Service) settings?<a class="headerlink" href="#step-11-is-the-problem-with-your-dns-domain-name-service-settings" title="Link to this heading"></a></h3>
 <p>It is possible that you might be a victim of some malicious software changing your DNS server and re-routing you through a bad proxy server. This is not always the result of hacking. It can be a bad configuration on your computer, the result of an over-zealous employer, or hotel.</p>
 <p>Check your DNS settings and try setting <a class="reference external" href="https://developers.google.com/speed/public-dns/docs/using">8.8.8.8</a> as your only DNS server to see if this helps. That’s a free DNS service provided by Google. Alternatively (or additionally) you can setup <a class="reference external" href="https://1.1.1.1/">1.1.1.1</a> by Cloudflare.</p>
 </section>
 <section id="step-12-is-your-browser-out-of-date-or-otherwise-incompatible-with-cocalc">
-<h3>Step 12: Is your browser out of date or otherwise incompatible with CoCalc?<a class="headerlink" href="#step-12-is-your-browser-out-of-date-or-otherwise-incompatible-with-cocalc" title="Permalink to this heading"></a></h3>
+<h3>Step 12: Is your browser out of date or otherwise incompatible with CoCalc?<a class="headerlink" href="#step-12-is-your-browser-out-of-date-or-otherwise-incompatible-with-cocalc" title="Link to this heading"></a></h3>
 <p>The problem may be solved by using another browser, in particular Google Chrome, or by updating your browser to a recent version if it is outdated.</p>
 </section>
 <section id="step-13-do-websocket-connections-work">
-<span id="websocket-test"></span><h3>Step 13: Do WebSocket connections work?<a class="headerlink" href="#step-13-do-websocket-connections-work" title="Permalink to this heading"></a></h3>
+<span id="websocket-test"></span><h3>Step 13: Do WebSocket connections work?<a class="headerlink" href="#step-13-do-websocket-connections-work" title="Link to this heading"></a></h3>
 <p>The following test page checks if WebSockets do work for you.
 They’re necessary to “Connect” with CoCalc.</p>
 <ol class="arabic simple">
@@ -291,22 +291,22 @@ They’re necessary to “Connect” with CoCalc.</p>
 </section>
 </section>
 <section id="faq">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">FAQ</a><a class="headerlink" href="#faq" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">FAQ</a><a class="headerlink" href="#faq" title="Link to this heading"></a></h2>
 <section id="question-i-don-t-see-any-icons-but-everything-else-works">
-<h3>Question: I don’t see any icons, but everything else works.<a class="headerlink" href="#question-i-don-t-see-any-icons-but-everything-else-works" title="Permalink to this heading"></a></h3>
+<h3>Question: I don’t see any icons, but everything else works.<a class="headerlink" href="#question-i-don-t-see-any-icons-but-everything-else-works" title="Link to this heading"></a></h3>
 <p>You are most likely using a customized font or an extension to customize fonts via CSS (Cascading Style Sheets), in your web browser.
 This interferes with the font displaying the images for the icons.</p>
 <p>The best solution is to disable the extension, in your browser.</p>
 </section>
 <section id="question-i-can-access-some-of-my-files-projects-in-my-cocalc-account-but-not-others-in-that-same-account-what-s-wrong">
-<h3>Question: I can access some of my files/projects in my CoCalc account but not others in that same account. What’s wrong?<a class="headerlink" href="#question-i-can-access-some-of-my-files-projects-in-my-cocalc-account-but-not-others-in-that-same-account-what-s-wrong" title="Permalink to this heading"></a></h3>
+<h3>Question: I can access some of my files/projects in my CoCalc account but not others in that same account. What’s wrong?<a class="headerlink" href="#question-i-can-access-some-of-my-files-projects-in-my-cocalc-account-but-not-others-in-that-same-account-what-s-wrong" title="Link to this heading"></a></h3>
 <p>Sometimes this can happen if you are using multiple CoCalc accounts in the same browser.
 This can happen even if you are not using two different accounts simultaneously.</p>
 <p>We have a short help page, <a class="reference internal" href="multiple-accounts.html#multiple-accounts"><span class="std std-ref">Multiple CoCalc Accounts</span></a> which discusses this.
 The suggestions there will make it work very smoothly for you.</p>
-<span class="target" id="index-2"></span></section>
+</section>
 <section id="question-i-see-the-error-message-timeout-while-loading-cocalc-instead-of-the-cocalc-landing-page">
-<span id="timeout-loading-cocalc"></span><span id="index-3"></span><h3>Question: I see the error message “Timeout while loading CoCalc” instead of the CoCalc landing page.<a class="headerlink" href="#question-i-see-the-error-message-timeout-while-loading-cocalc-instead-of-the-cocalc-landing-page" title="Permalink to this heading"></a></h3>
+<span id="timeout-loading-cocalc"></span><span id="index-3"></span><span id="index-2"></span><h3>Question: I see the error message “Timeout while loading CoCalc” instead of the CoCalc landing page.<a class="headerlink" href="#question-i-see-the-error-message-timeout-while-loading-cocalc-instead-of-the-cocalc-landing-page" title="Link to this heading"></a></h3>
 <p>If you see the error message <strong>“Timeout while loading CoCalc.”</strong> when you try to connect to CoCalc, there are several things to try:</p>
 <ul class="simple">
 <li><p>Hold down the <code class="docutils literal notranslate"><span class="pre">Shift</span></code>-key and click your browser’s reload button to refresh the CoCalc tab.

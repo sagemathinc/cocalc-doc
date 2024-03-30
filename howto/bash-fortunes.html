@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bash Fortunes &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="bash-fortunes">
-<span id="index-0"></span><span id="id1"></span><h1>Bash Fortunes<a class="headerlink" href="#bash-fortunes" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Bash Fortunes<a class="headerlink" href="#bash-fortunes" title="Link to this heading"></a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This tutorial might be outdated!</p>
@@ -113,7 +113,7 @@
 </div>
 <p>One of the most entertaining games available on a Unix / Linux system is the <code class="docutils literal notranslate"><span class="pre">fortune</span></code> command which prints random fortune cookies, or short messages, to the terminal. Many system administrators prefer to setup the <code class="docutils literal notranslate"><span class="pre">fortune</span></code> utility to print a new fortune every time a new terminal is opened. The printed fortunes can be customized further with the <code class="docutils literal notranslate"><span class="pre">cowsay</span></code> command which provides an ascii art figure speaking the fortune. We provide instructions for installing this <code class="docutils literal notranslate"><span class="pre">fortune</span></code> setup both on CoCalc and on a local Linux box in the next section. We also document the usage of the new <code class="docutils literal notranslate"><span class="pre">math-fortune-mod</span></code> add-ons available for download <a class="reference external" href="https://github.com/maxieds/math-fortune-mod">here</a>.</p>
 <section id="examples-of-the-fortune-command">
-<h2>Examples of the Fortune Command<a class="headerlink" href="#examples-of-the-fortune-command" title="Permalink to this heading"></a></h2>
+<h2>Examples of the Fortune Command<a class="headerlink" href="#examples-of-the-fortune-command" title="Link to this heading"></a></h2>
 <p>The fortune command can be run by issuing the following at your terminal:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ /usr/games/fortune math.fortunes
 $ ls /usr/share/games/fortunes
@@ -168,9 +168,9 @@ $ /usr/games/fortune debian | /usr/games/cowsay -f tux
 </div>
 </section>
 <section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
 <section id="configuring-the-bashrc-file">
-<h3>Configuring the .bashrc File<a class="headerlink" href="#configuring-the-bashrc-file" title="Permalink to this heading"></a></h3>
+<h3>Configuring the .bashrc File<a class="headerlink" href="#configuring-the-bashrc-file" title="Link to this heading"></a></h3>
 <p>If we desire to have a friendly bit of “mathy” wisdom printed out each time we open a bash terminal, either on the CoCalc or on our local box, we can append a <code class="docutils literal notranslate"><span class="pre">fortune</span></code> line to the end of the configuration file <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ echo -e &quot;/usr/games/fortune math.fortunes | /usr/games/cowsay -f Sigma\n&quot; &gt;&gt; ~/.bashrc
 $ source ~/.bashrc
@@ -179,7 +179,7 @@ $ source ~/.bashrc
 <p>If all went well in the installation, you should now have a Sigma-symbol-spoken math quote printed to the command line every time you open a new terminal. This behavior can be reversed by removing the corresponding <code class="docutils literal notranslate"><span class="pre">fortune</span></code> line at the end of <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>.</p>
 </section>
 <section id="installing-packages-on-a-local-debian-ubuntu-box">
-<h3>Installing Packages on a Local Debian / Ubuntu Box<a class="headerlink" href="#installing-packages-on-a-local-debian-ubuntu-box" title="Permalink to this heading"></a></h3>
+<h3>Installing Packages on a Local Debian / Ubuntu Box<a class="headerlink" href="#installing-packages-on-a-local-debian-ubuntu-box" title="Link to this heading"></a></h3>
 <p>CoCalc has both the <code class="docutils literal notranslate"><span class="pre">fortune</span></code> command, <code class="docutils literal notranslate"><span class="pre">cowsay</span></code>, and the auxiliary math fortune packages installed for use in the CoCalc terminal applications. In order to get <code class="docutils literal notranslate"><span class="pre">fortune</span></code> and <code class="docutils literal notranslate"><span class="pre">cowsay</span></code> installed on your local Debian-based Linux box, we need to install a few packages with <code class="docutils literal notranslate"><span class="pre">apt</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install fortunes fortune-mod cowsay
 $ ls /usr/share/games/fortunes

@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Getting Started with Hub &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,10 +102,10 @@
            <div itemprop="articleBody">
              
   <section id="getting-started-with-hub">
-<span id="index-0"></span><h1>Getting Started with Hub<a class="headerlink" href="#getting-started-with-hub" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><h1>Getting Started with Hub<a class="headerlink" href="#getting-started-with-hub" title="Link to this heading"></a></h1>
 <img alt="hub logo" src="../_images/hub_logo.png" />
 <section id="what-is-hub">
-<h2>What is Hub?<a class="headerlink" href="#what-is-hub" title="Permalink to this heading"></a></h2>
+<h2>What is Hub?<a class="headerlink" href="#what-is-hub" title="Link to this heading"></a></h2>
 <p><strong>The fastest way to access and manage datasets for PyTorch and TensorFlow</strong></p>
 <p>Hub provides fast access to the state-of-the-art datasets for Deep Learning, enabling data scientists to manage them, build scalable data pipelines and connect to Pytorch and Tensorflow.</p>
 <div class="admonition warning">
@@ -120,7 +120,7 @@ Credits go to Activeloop!</p>
 </div>
 </section>
 <section id="quickstart">
-<h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this heading"></a></h2>
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Link to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Install Hub <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">hub</span></code></p></li>
 <li><p>Register and authenticate to upload datasets to <a class="reference external" href="https://app.activeloop.ai/">Activeloop</a> store.</p>
@@ -185,10 +185,10 @@ from/to Tensorflow or PyTorch.</p>
 </div></blockquote>
 </section>
 <section id="data-storage">
-<h2>Data Storage<a class="headerlink" href="#data-storage" title="Permalink to this heading"></a></h2>
+<h2>Data Storage<a class="headerlink" href="#data-storage" title="Link to this heading"></a></h2>
 <p>The first positional argument to declare a Hub dataset is <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p>
 <section id="hub">
-<h3>Hub<a class="headerlink" href="#hub" title="Permalink to this heading"></a></h3>
+<h3>Hub<a class="headerlink" href="#hub" title="Link to this heading"></a></h3>
 <p>If <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter has the form of <code class="docutils literal notranslate"><span class="pre">username/dataset</span></code>, the dataset
 will be stored in our cloud storage.</p>
 <blockquote>
@@ -204,7 +204,7 @@ argument during Dataset creation or loading. It can be a filepath to
 your credentials or a <code class="docutils literal notranslate"><span class="pre">dict</span></code>.</p>
 </section>
 <section id="local-storage">
-<h3>Local storage<a class="headerlink" href="#local-storage" title="Permalink to this heading"></a></h3>
+<h3>Local storage<a class="headerlink" href="#local-storage" title="Link to this heading"></a></h3>
 <p>To store datasets locally, let the <code class="docutils literal notranslate"><span class="pre">url</span></code> parameter be a local path.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;./datasets/&#39;</span>
@@ -214,7 +214,7 @@ your credentials or a <code class="docutils literal notranslate"><span class="pr
 </div></blockquote>
 </section>
 <section id="s3">
-<h3>S3<a class="headerlink" href="#s3" title="Permalink to this heading"></a></h3>
+<h3>S3<a class="headerlink" href="#s3" title="Link to this heading"></a></h3>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;s3://new_dataset&#39;</span>  <span class="c1"># your s3 path</span>
 <span class="n">ds</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1000</span><span class="p">,),</span> <span class="n">schema</span><span class="o">=</span><span class="n">my_schema</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;aws_access_key_id&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>                                                               <span class="s2">&quot;aws_secret_access_key&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>                                                               <span class="o">...</span><span class="p">})</span>
@@ -223,7 +223,7 @@ your credentials or a <code class="docutils literal notranslate"><span class="pr
 </div></blockquote>
 </section>
 <section id="minio">
-<h3>MinIO<a class="headerlink" href="#minio" title="Permalink to this heading"></a></h3>
+<h3>MinIO<a class="headerlink" href="#minio" title="Link to this heading"></a></h3>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;s3://new_dataset&#39;</span>  <span class="c1"># minio also uses *s3://* prefix</span>
 <span class="n">ds</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1000</span><span class="p">,),</span> <span class="n">schema</span><span class="o">=</span><span class="n">my_schema</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;aws_access_key_id&quot;</span><span class="p">:</span> <span class="s2">&quot;your_minio_access_key&quot;</span><span class="p">,</span>
@@ -235,7 +235,7 @@ your credentials or a <code class="docutils literal notranslate"><span class="pr
 </div></blockquote>
 </section>
 <section id="google-cloud-storage">
-<h3>Google Cloud Storage<a class="headerlink" href="#google-cloud-storage" title="Permalink to this heading"></a></h3>
+<h3>Google Cloud Storage<a class="headerlink" href="#google-cloud-storage" title="Link to this heading"></a></h3>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;gcs://new_dataset&#39;</span> <span class="c1"># your google storage (gs://) path</span>
 <span class="n">ds</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1000</span><span class="p">,),</span> <span class="n">schema</span><span class="o">=</span><span class="n">my_schema</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="s2">&quot;/path/to/credentials&quot;</span><span class="p">)</span>
@@ -244,7 +244,7 @@ your credentials or a <code class="docutils literal notranslate"><span class="pr
 </div></blockquote>
 </section>
 <section id="azure">
-<h3>Azure<a class="headerlink" href="#azure" title="Permalink to this heading"></a></h3>
+<h3>Azure<a class="headerlink" href="#azure" title="Link to this heading"></a></h3>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://activeloop.blob.core.windows.net/activeloop-hub/dataset&#39;</span> <span class="c1"># Azure link</span>
 <span class="n">ds</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1000</span><span class="p">,),</span> <span class="n">schema</span><span class="o">=</span><span class="n">my_schema</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="s2">&quot;/path/to/credentials&quot;</span><span class="p">)</span>
@@ -254,7 +254,7 @@ your credentials or a <code class="docutils literal notranslate"><span class="pr
 </section>
 </section>
 <section id="schema">
-<h2>Schema<a class="headerlink" href="#schema" title="Permalink to this heading"></a></h2>
+<h2>Schema<a class="headerlink" href="#schema" title="Link to this heading"></a></h2>
 <p>Schema is a required attribute that describes what
 a dataset consists of. This
 is how you can create a simple schema:</p>
@@ -272,13 +272,13 @@ is how you can create a simple schema:</p>
 </div></blockquote>
 </section>
 <section id="shape">
-<h2>Shape<a class="headerlink" href="#shape" title="Permalink to this heading"></a></h2>
+<h2>Shape<a class="headerlink" href="#shape" title="Link to this heading"></a></h2>
 <p>Shape is another required attribute of a dataset. It simply specifies
 how large a dataset is. The rules associated with shapes are derived
 from <code class="docutils literal notranslate"><span class="pre">numpy</span></code>.</p>
 </section>
 <section id="dataset-access-modification-and-deletion">
-<h2>Dataset Access, Modification and Deletion<a class="headerlink" href="#dataset-access-modification-and-deletion" title="Permalink to this heading"></a></h2>
+<h2>Dataset Access, Modification and Deletion<a class="headerlink" href="#dataset-access-modification-and-deletion" title="Link to this heading"></a></h2>
 <p>In order to access the data from the dataset, you should use
 <code class="docutils literal notranslate"><span class="pre">.compute()</span></code> on a portion of the dataset: <code class="docutils literal notranslate"><span class="pre">ds['key',</span> <span class="pre">:5].compute()</span></code>.</p>
 <p>You can modify the data to the dataset with a regular assignment
@@ -289,7 +289,7 @@ app on <a class="reference external" href="https://app.activeloop.ai/">app.activ
 overview tab.</p>
 </section>
 <section id="flush-commit-and-close">
-<h2>Flush, Commit and Close<a class="headerlink" href="#flush-commit-and-close" title="Permalink to this heading"></a></h2>
+<h2>Flush, Commit and Close<a class="headerlink" href="#flush-commit-and-close" title="Link to this heading"></a></h2>
 <p>Hub Datasets have three methods to push the final changes to the selected storage.</p>
 <p>The most fundamental method, <code class="docutils literal notranslate"><span class="pre">.flush()</span></code> saves changes from cache to
 the dataset final storage and does not invalidate dataset object. It
@@ -309,7 +309,7 @@ the dataset with the <code class="docutils literal notranslate"><span class="pre
 </div></blockquote>
 </section>
 <section id="other-information">
-<h2>Other information<a class="headerlink" href="#other-information" title="Permalink to this heading"></a></h2>
+<h2>Other information<a class="headerlink" href="#other-information" title="Link to this heading"></a></h2>
 <p>For more information see <a class="reference external" href="https://docs.activeloop.ai/en/latest/">Hub documentation</a> .</p>
 <p>Join our <a class="reference external" href="https://hubdb.slack.com/join/shared_invite/zt-ivhsj8sz-GWv9c5FLBDVw8vn~sxRKqQ#/">Slack community</a> for help from Activeloop team and other users as well as dataset management/preprocessing tips and tricks.</p>
 <p>For feature requests or bug reports, please open a new <a class="reference external" href="https://github.com/activeloopai/Hub/issues/new">GitHub issue</a>.</p>

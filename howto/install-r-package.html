@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Install R Packages &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -102,7 +102,7 @@
            <div itemprop="articleBody">
              
   <section id="install-r-packages">
-<span id="index-0"></span><span id="id1"></span><h1>Install R Packages<a class="headerlink" href="#install-r-packages" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1>Install R Packages<a class="headerlink" href="#install-r-packages" title="Link to this heading"></a></h1>
 <p>This page describes how to install an R package in a CoCalc project.</p>
 <p>CoCalc already includes <a class="reference external" href="https://cocalc.com/doc/software-r.html">hundreds of R packages</a>, but you can install even more or update them inside your project.</p>
 <div class="admonition warning">
@@ -117,15 +117,15 @@ Then, you can tell R to install the package directly from there as a local file.
 This means, almost everything you can do as a “normal” Linux user also works.
 In particular, you can install packages locally, such that R instances can pick them up.</p>
 <section id="install-requests">
-<h2>Install requests<a class="headerlink" href="#install-requests" title="Permalink to this heading"></a></h2>
+<h2>Install requests<a class="headerlink" href="#install-requests" title="Link to this heading"></a></h2>
 <p>If a package may have general use but is not already installed in CoCalc,
 please open a support request to tell us to install it globally for everyone.
 Please include information about special dependencies or a specific example to test it.</p>
 </section>
 <section id="install-a-package">
-<h2>Install a package<a class="headerlink" href="#install-a-package" title="Permalink to this heading"></a></h2>
+<h2>Install a package<a class="headerlink" href="#install-a-package" title="Link to this heading"></a></h2>
 <section id="command-line-recommended">
-<h3>Command line (recommended)<a class="headerlink" href="#command-line-recommended" title="Permalink to this heading"></a></h3>
+<h3>Command line (recommended)<a class="headerlink" href="#command-line-recommended" title="Link to this heading"></a></h3>
 <p>To install a package, create or open an existing <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> file.</p>
 <p>It may first be necessary to create the path where your locally-installed R packages will be stored. The first steps make sure that the needed directory is created and available to R instances. It’s necessary to exit R and restart it for the directory path to become available. This first part (steps 1-3) only needs to be done once per project.</p>
 <ol class="arabic simple">
@@ -172,7 +172,7 @@ Save workspace image? [y/n/c]: n
 </div>
 </section>
 <section id="jupyter-notebook">
-<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this heading"></a></h3>
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link to this heading"></a></h3>
 <p>It is also possible to install packages directly via a Jupyter Notebook.
 The drawback compared with the Terminal option above is the lack of interactivity.</p>
 <p>To be able to install into your local package library in your home directory,

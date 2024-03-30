@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>email-address-from-account-id &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
@@ -16,11 +16,11 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="https://cocalc.com/analytics.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -129,9 +129,9 @@
            <div itemprop="articleBody">
              
   <section id="email-address-from-account-id">
-<h1>email-address-from-account-id<a class="headerlink" href="#email-address-from-account-id" title="Permalink to this heading"></a></h1>
+<h1>email-address-from-account-id<a class="headerlink" href="#email-address-from-account-id" title="Link to this heading"></a></h1>
 <section id="using-the-cocalc-api-to-get-the-email-address-of-a-user-from-their-account-id">
-<h2>Using the CoCalc API to get the email address of a user from their account_id<a class="headerlink" href="#using-the-cocalc-api-to-get-the-email-address-of-a-user-from-their-account-id" title="Permalink to this heading"></a></h2>
+<h2>Using the CoCalc API to get the email address of a user from their account_id<a class="headerlink" href="#using-the-cocalc-api-to-get-the-email-address-of-a-user-from-their-account-id" title="Link to this heading"></a></h2>
 <p>We assume you can do a basic query as explained in
 <a class="reference internal" href="purchasing-licenses.html"><span class="doc">purchasing licenses</span></a>.</p>
 <p>If your API key is for an account with elevated privileges, i.e., an
@@ -144,16 +144,16 @@ information at all. As another example, if a user creates an account
 using single-sign on via GitHub or Twitter, then they also may not have
 an email address, since GitHub and Twitter don’t provide email.</p>
 <section id="email-address-of-a-user">
-<h3>Email address of a user<a class="headerlink" href="#email-address-of-a-user" title="Permalink to this heading"></a></h3>
+<h3>Email address of a user<a class="headerlink" href="#email-address-of-a-user" title="Link to this heading"></a></h3>
 <p>Put the account_id below of the user whose email address you want to
 look up:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl -sk -u <span class="nv">$key</span>: -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
-   -d <span class="s1">&#39;{&quot;account_id&quot;:&quot;a407dd35-c960-481c-123F-1238c868ff8b&quot;}&#39;</span> <span class="se">\</span>
-   <span class="nv">$url</span>/accounts/get-email-address
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-sk<span class="w"> </span>-u<span class="w"> </span><span class="nv">$key</span>:<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;account_id&quot;:&quot;a407dd35-c960-481c-123F-1238c868ff8b&quot;}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span><span class="nv">$url</span>/accounts/get-email-address
 </pre></div>
 </div>
 <p>Result:</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;email_address&quot;</span><span class="o">:</span><span class="s2">&quot;joe@example.com&quot;</span><span class="p">}</span><span class="w"></span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;email_address&quot;</span><span class="o">:</span><span class="s2">&quot;joe@example.com&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </section>
