@@ -153,6 +153,14 @@ A compute server is billed by the second and the price depends on its state:
 - **Off** - this is an analog of shutting down your laptop, you pay only for the disk space and local data is available to you when you start the server again
 - **Deprovisioned** - this is like writing down the model number of your laptop on paper, it costs nothing and when you start the server it will have the same characteristics, but all data that was not synced to your CoCalc project is gone.
 
+.. warning::
+
+    Please note that *there is* still a charge in the **Off** state! Namely the cost of the disk. Typically it is much less than the cost while **Running**, but it depends on your precise configuration.
+    
+.. hint::
+
+    If you do not store local data on your server and do not customize the software environment, use the **Deprovisioned** state. You can make it the default using **Ephemeral Disk** setting in the server configuration.
+
 In the example below the running cost is $0.30/hour while the disk cost is less than a penny! Notice the extra zero in $0.004 that appears when you hover over the **Stop** button (hovering over the cost per hour will also show the cost per month):
 
 .. figure:: img/compute_server_cost.png
