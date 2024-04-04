@@ -175,6 +175,21 @@ If you are using a split view with Markdown Code in one pane and Editable Text i
 
 See :doc:`rich-text`.
 
+
+******
+Quarto
+******
+
+You can work with `Quarto <https://quarto.org/>`_ documents by creating a file with ``.qmd`` extension. Use ``jupyter: sage-10.3`` or similar kernel selection if you want to use SageMath code blocks, which should be marked with ``{sagemath}``:
+
+.. figure:: img/quarto.png
+    :width: 90%
+    :align: center
+    :alt: Working with Quarto
+
+    Working with Quarto
+
+
 ***********************************
 Reference links
 ***********************************
