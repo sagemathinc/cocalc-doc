@@ -180,7 +180,14 @@ See :doc:`rich-text`.
 Quarto
 ******
 
-You can work with `Quarto <https://quarto.org/>`_ documents by creating a file with ``.qmd`` extension. Use ``jupyter: sage-10.3`` or similar kernel selection if you want to use SageMath code blocks, which should be marked with ``{sagemath}``:
+You can work with `Quarto <https://quarto.org/>`_ documents by creating a file with ``.qmd`` extension. Use ``jupyter: sage-10.3`` or similar kernel selection if you want to use SageMath code blocks, which should be marked with ``{sagemath}`` ::
+
+    ---
+    jupyter: sage-10.3
+    ---
+    ```{sagemath}
+    factor(2024)
+    ```
 
 .. figure:: img/quarto.png
     :width: 90%
