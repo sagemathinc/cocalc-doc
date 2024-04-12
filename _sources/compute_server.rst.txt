@@ -54,7 +54,13 @@ Start your compute server!
 Using a Compute Server
 ------------------------------
 
-Your freshly created compute server does *not* replace your CoCalc project, but rather complements it. This is why you have to explicitly indicate that you want to run your terminal or Jupyter notebook on a particular compute server, and you can have multiple ones running at the same time! Click the **Server** button and select the one you want to use:
+Your freshly created compute server does *not* replace your CoCalc project, but rather complements it. This is why you have to explicitly indicate that you want to run your terminal or Jupyter notebook on a particular compute server, and you can have multiple compute servers running at the same time!
+
+.. hint::
+
+    You can get close to a feeling of working "just on a compute server" if you switch to it in the file **Explorer** - you will be able to see its local files and all files that you open will run on the same compute server by default. See :ref:`compute-server-filesystem` below.
+
+To run a Jupyter notebook on a compute server, click the **Server** button and select the one you want to use:
 
 .. figure:: img/compute_server_notebook.png
     :width: 90%
@@ -170,6 +176,8 @@ In the example below the running cost is $0.30/hour while the disk cost is less 
 
     Compute Server Cost
 
+
+.. _compute-server-filesystem:
 
 Compute Server Filesystem
 -------------------------
