@@ -140,12 +140,6 @@ On being invited to a course, each student will have a project created for them 
 Each student's course project will have its own resources according to the license configured in the course file. You can learn more about licenses in the :ref:`next chapter <course-upgrading-students>` or the :doc:`upgrade-guide`.
 
 
-Restrict Student Projects
-###############################
-
-See :ref:`restrict-student-projects`.
-
-
 .. index:: Courses; reconfigure student projects
 .. index:: Reconfigure student projects
 
