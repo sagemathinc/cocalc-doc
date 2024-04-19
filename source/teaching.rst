@@ -8,5 +8,4 @@ Teaching
    teaching-instructors
    teaching-students
    gpt4-course
-   restrict-student-projects
 
