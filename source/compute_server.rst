@@ -37,7 +37,20 @@ There are multiple ways to create a compute server, one of them is to click the 
 
     Creating a Compute Server
 
-You will be prompted to select the desired software image and optionally one or more GPUs.
+The first settings allow you to give your server a name, pick a colour to easily distinguish where your are working, and choose the cloud provider used for your server:
+
+.. figure:: img/compute_server_create_dialog.png
+    :width: 90%
+    :align: center
+    :alt: Creating a Compute Server
+
+    Creating a Compute Server
+
+.. hint::
+
+    You can actually be your own "cloud provider" by picking **On prem** hosting! You can use not only your own physical hardware, but also virtual machines from providers we are not currently integrated with. This is one of the ways we support :ref:`on-premises`. 
+    
+**Configuration** parameters vary depending on your hosting choice, but typically you can select the desired software image and hardware configuration including GPU(s).
 
 If you are going to write code using CUDA libraries, choose the "Cuda Toolkit" image. If you want to accelerate PyTorch computations with a GPU, choose the "PyTorch" image. If you want to use SageMath, choose the "SageMath" image. Note that image selection does depend on the presence of a GPU.
 
