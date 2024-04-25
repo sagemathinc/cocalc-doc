@@ -138,7 +138,8 @@
 </nav>
 <p>A compute server in CoCalc is a remote computer, whose resources (GPUs, CPUs, RAM, disks) you can utilize via CoCalc’s collaborative interface in Jupyter notebooks and terminals. It is a way to open up possibilities for enhanced computing resources, extending far beyond the bounds of local machines.</p>
 <p>To create a compute server, you select the software image, hardware and (optional) GPU, and can then start running any Jupyter notebook or Linux terminal on this server for an on-demand fee, charged by the second when the server is in use.</p>
-<p>The GPU support is extensive, offering variants including A100 80GB, A100 40GB, L4, and T4 GPUs with finely configured software stacks. These stack images include SageMath, Google Colab, Julia, PyTorch, Tensorflow and CUDA Toolkit, accommodating a versatile range of uses. The compute servers come at highly competitive pricing, particularly for spot instances.</p>
+<p>The GPU support is extensive, <strong>from a single T4 to eight H100</strong>, with lots of options in between including L4 and L40, RTX-A4/5/6000, and A100 with 40GB and 80GB. The finely configured software stack images include SageMath, Google Colab, Julia, PyTorch, Tensorflow and CUDA Toolkit, accommodating a versatile range of uses.</p>
+<p>CoCalc compute servers come at <strong>highly competitive prices</strong> due to our intergration with multiple clouds, each with their own strengths!</p>
 <section id="examples-of-compute-server-uses">
 <h2><a class="toc-backref" href="#id20" role="doc-backlink">Examples of Compute Server Uses</a><a class="headerlink" href="#examples-of-compute-server-uses" title="Link to this heading"></a></h2>
 <p>You may find something useful, at least some inspiration, in our growing <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/README.md">collection of tutorials</a> that make use of compute servers. You can either read them or follow along video versions. Here William explains how to run Google Colab environment on compute servers and use either Tensorflow or PyTorch:</p>
@@ -153,7 +154,7 @@
 <p><span class="caption-text">Creating a Compute Server</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>The first settings allow you to give your server a name, pick a colour to easily distinguish where your are working, and choose the cloud provider used for your server:</p>
+<p>The first settings allow you to give your server a name, pick a colour to easily distinguish where your are working, and <strong>choose the cloud provider</strong> used for your server:</p>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="_images/compute_server_create_dialog.png"><img alt="Creating a Compute Server" src="_images/compute_server_create_dialog.png" style="width: 90%;" /></a>
 <figcaption>
