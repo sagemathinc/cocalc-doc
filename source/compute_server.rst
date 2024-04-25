@@ -12,7 +12,9 @@ A compute server in CoCalc is a remote computer, whose resources (GPUs, CPUs, RA
 
 To create a compute server, you select the software image, hardware and (optional) GPU, and can then start running any Jupyter notebook or Linux terminal on this server for an on-demand fee, charged by the second when the server is in use.
 
-The GPU support is extensive, offering variants including A100 80GB, A100 40GB, L4, and T4 GPUs with finely configured software stacks. These stack images include SageMath, Google Colab, Julia, PyTorch, Tensorflow and CUDA Toolkit, accommodating a versatile range of uses. The compute servers come at highly competitive pricing, particularly for spot instances.
+The GPU support is extensive, **from a single T4 to eight H100**, with lots of options in between including L4 and L40, RTX-A4/5/6000, and A100 with 40GB and 80GB. The finely configured software stack images include SageMath, Google Colab, Julia, PyTorch, Tensorflow and CUDA Toolkit, accommodating a versatile range of uses.
+
+CoCalc compute servers come at **highly competitive prices** due to our intergration with multiple clouds, each with their own strengths!
 
 
 Examples of Compute Server Uses
@@ -37,7 +39,7 @@ There are multiple ways to create a compute server, one of them is to click the 
 
     Creating a Compute Server
 
-The first settings allow you to give your server a name, pick a colour to easily distinguish where your are working, and choose the cloud provider used for your server:
+The first settings allow you to give your server a name, pick a colour to easily distinguish where your are working, and **choose the cloud provider** used for your server:
 
 .. figure:: img/compute_server_create_dialog.png
     :width: 90%
