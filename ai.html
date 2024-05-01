@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Assistant &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/ai.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Frame Editor" href="frame-editor.html" />
+    <link rel="prev" title="Working With" href="working_with.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/ai.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="working_with.html">Working With</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AI Assistant</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#llm-choice-and-billing">LLM Choice and Billing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-sent-to-llms-and-how-is-my-data-used">What Is Sent to LLMs and How Is My Data Used?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linux-terminal-and-shell-scripts">Linux Terminal and Shell Scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-python-r-and-other-files">Editing Python, R, and Other Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#typeset-scientific-content-with-latex">Typeset Scientific Content with LaTeX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chatgpt-in-chat-rooms-and-side-chat">ChatGPT in Chat Rooms and Side Chat</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chat.html">Chatrooms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chatgpt.html">ChatGPT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="x11.html">Graphical Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html">Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="csv-viewer.html">CSV Viewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html">Task Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timers.html">Stopwatches and Timers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html">Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippets.html">Snippets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="platform.html">Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_interface.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="service_options.html">Service Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching.html">Teaching</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="working_with.html">Working With</a></li>
+      <li class="breadcrumb-item active">AI Assistant</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ai-assistant">
+<span id="index-0"></span><h1>AI Assistant<a class="headerlink" href="#ai-assistant" title="Link to this heading"></a></h1>
+<p>AI Assistant with the help of Large Language Models (LLMs) can transform how you use CoCalc for learning, writing programs, and writing scientific documents. Below are some areas where CoCalc’s context-sensitive AI Assistant can save you time and effort.</p>
+<section id="llm-choice-and-billing">
+<span id="llm-choice"></span><h2>LLM Choice and Billing<a class="headerlink" href="#llm-choice-and-billing" title="Link to this heading"></a></h2>
+<p>CoCalc allows you to use a lot of different LLMs from different providers:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/LLM_choice.png"><img alt="Choosing LLM" src="_images/LLM_choice.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Choosing LLM</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Naturally, this choice may be overwhelming! Which one should you choose?.. The answer depends too much on what exactly you are doing as well as on your personal preferences. We do provide a short description for each model, but there is no replacement to personal experience, so try a few! It may be useful to ask different models to do exactly the same task and see which one you like most. You also can alter your choice at any time, so do not worry about making “the right one!”</p>
+<p>Apart from the quality of answers, the models differ by speed and price. CoCalc covers the cost of the least expensive ones, so they are free for our users, but more advanced LLMs are provided for a fee based on their cost to us. A typical interaction with a paid LLM costs from a fraction of a cent to a few cents - it is impossible to know the exact amount in advance since it depends on the length of both input and output. To see your exact charges go to <a class="reference external" href="https://cocalc.com/settings/purchases">https://cocalc.com/settings/purchases</a> and hover over any one to see a more precise amount than just cents:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/LLM_charge.png"><img alt="Charge for Using a Paid LLM" src="_images/LLM_charge.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Charge for Using a Paid LLM</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="what-is-sent-to-llms-and-how-is-my-data-used">
+<h2>What Is Sent to LLMs and How Is My Data Used?<a class="headerlink" href="#what-is-sent-to-llms-and-how-is-my-data-used" title="Link to this heading"></a></h2>
+<p>CoCalc does <strong>NOT</strong> have any automatic/background communication with LLMs. Your code, requests, and documents are sent to LLMs <strong>ONLY</strong> when you explicitly ask for it. Our AI Assistant tries to send the appropriate piece of your work to the chosen LLM, but you have full control over it and can preview what will be sent:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/AI_what_is_sent.png"><img alt="What Is Sent to an LLM" src="_images/AI_what_is_sent.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">What Is Sent to an LLM</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>CoCalc has commercial agreements with LLM providers, the data provided by our users are kept private and are not used for training models.</p>
+<p>You can also spin off a fully private LLM on your very own <a class="reference internal" href="compute_server.html#compute-servers"><span class="std std-ref">Compute Servers</span></a>! In this video William shows how to create a GPU-backed OpenWebUI (<a class="reference external" href="https://openwebui.com/">https://openwebui.com/</a>) server on <a class="reference external" href="https://CoCalc.com">https://CoCalc.com</a> in a few minutes:</p>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/OMN1af0LUcA?si=gRILBshmj2yE0xo2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br/></section>
+<section id="jupyter-notebooks">
+<h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Link to this heading"></a></h2>
+<p>There are a number of ways to call AI Assistant from a Jupyter notebook:</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/AI_Jupyter.png"><img alt="AI Assistant from a Jupyter Notebook" src="_images/AI_Jupyter.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">AI Assistant from a Jupyter Notebook</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>You can ask it to generate new code, perhaps based on what is already in your notebook, explain or modify existing code to make it better or at least running, even translate it into a different language!</p>
+<p>In most cases the response from AI Assistant appears in <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a> to avoid unwanted modifications of your document:</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/AI_response_in_chat.png"><img alt="AI Assistant Response in Chat" src="_images/AI_response_in_chat.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">AI Assistant Response in Chat</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>It is very easy to copy-paste generated code back to your notebook if you are happy with it, but you can also run it directly in the chat to test how it works. If you are not happy with the answer, you can regenerate the response, perhaps using a more advanced model, or you can continue the conversation in the chat:</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/AI_reply_to_response.png"><img alt="Continue Conversation with AI Assistant" src="_images/AI_reply_to_response.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Continue Conversation with AI Assistant</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Have you ever been using a Jupyter notebook and got an error message? You can now click a button and AI Assistant will try to figure out how to fix the error:</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/AI_help_me_fix.png"><img alt="Help Me Fix This" src="_images/AI_help_me_fix.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Help Me Fix This</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="linux-terminal-and-shell-scripts">
+<h2>Linux Terminal and Shell Scripts<a class="headerlink" href="#linux-terminal-and-shell-scripts" title="Link to this heading"></a></h2>
+<p><a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a> is extremely powerful in combination with AI Assistant, because it can help you write a script for <em>any command</em> that can be invoked from the command shell. For example:</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/AI_terminal.png"><img alt="AI Assistant in Linux Terminal" src="_images/AI_terminal.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">AI Assistant in Linux Terminal</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Some other requests to inspire you:</p>
+<ul class="simple">
+<li><p><em>replace ‘x’ by ‘y’ in all files</em></p></li>
+<li><p><em>how can I use pari/gp to compute the number of primes up to 2023</em></p></li>
+<li><p><em>I am using psql to query a table with a column called “time”. I would like to make a table showing the number of entries in my table for each of the last 7 days.</em></p></li>
+</ul>
+</section>
+<section id="editing-python-r-and-other-files">
+<h2>Editing Python, R, and Other Files<a class="headerlink" href="#editing-python-r-and-other-files" title="Link to this heading"></a></h2>
+<p>CoCalc <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a> includes AI Assistant button for programming language file types such as .py, .R, .pl, .c, and others, so you can use it in the same way as with Linux terminals!</p>
+</section>
+<section id="typeset-scientific-content-with-latex">
+<h2>Typeset Scientific Content with LaTeX<a class="headerlink" href="#typeset-scientific-content-with-latex" title="Link to this heading"></a></h2>
+<p>In addition to general help with LaTeX, including fixing errors, you can describe a formula and have AI Assistant turn it into LaTeX code. In a LaTeX editor use menu <strong>Insert &gt; AI Generated Formula</strong>:</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/AI_formula.png"><img alt="AI Generated Formula" src="_images/AI_formula.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">AI Generated Formula</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="chatgpt-in-chat-rooms-and-side-chat">
+<h2>ChatGPT in Chat Rooms and Side Chat<a class="headerlink" href="#chatgpt-in-chat-rooms-and-side-chat" title="Link to this heading"></a></h2>
+<p>Using AI Assistant buttons has the advantage of automatically linking appropriate context, but you can also directly call any LLM in a <a class="reference internal" href="chat.html"><span class="doc">chat room</span></a> or in the <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">side chat</span></a> next to an open file, you can do an <a class="reference internal" href="chat.html#chat-at-mentions"><span class="std std-ref">&#64;-mention</span></a> and enter your question there:</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/AI_at_mention.png"><img alt="&#64;-mention of LLMs" src="_images/AI_at_mention.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">&#64;-mention of LLMs</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>After getting a response, you can continue the conversation:</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/AI_at_mention_Haiku.png"><img alt="Claude's CoCalc Haiku" src="_images/AI_at_mention_Haiku.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Claude’s CoCalc Haiku</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="working_with.html" class="btn btn-neutral float-left" title="Working With" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="frame-editor.html" class="btn btn-neutral float-right" title="Frame Editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/ai.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

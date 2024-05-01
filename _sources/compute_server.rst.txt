@@ -2,7 +2,7 @@
 .. _compute-servers:
 
 Compute Servers
-==========================
+===============
 
 .. contents::
    :local:

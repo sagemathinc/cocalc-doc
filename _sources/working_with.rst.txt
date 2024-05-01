@@ -5,6 +5,7 @@ Working With
 .. toctree::
    :maxdepth: 1
 
+   ai
    frame-editor
    jupyter
    terminal
