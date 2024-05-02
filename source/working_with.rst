@@ -12,7 +12,6 @@ Working With
    latex
    vscode
    chat
-   chatgpt
    x11
    
    sagews

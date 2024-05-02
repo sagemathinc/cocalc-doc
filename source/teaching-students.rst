@@ -248,7 +248,3 @@ In that case, the dialog looks similar to the one below:
     it is not necessary to pay the fee.
     You can simply apply "Member Hosting" and "Internet Access" upgrades to your student project for the course in question.
 
-Charges for GPT-4 (and GPT-3.5-16k)
-=====================================
-
-See :doc:`gpt4-course`.

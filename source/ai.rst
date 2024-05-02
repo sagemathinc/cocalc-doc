@@ -45,7 +45,7 @@ CoCalc does **NOT** have any automatic/background communication with LLMs. Your 
       
 CoCalc has commercial agreements with LLM providers, the data provided by our users are kept private and are not used for training models.
 
-You can also spin off a fully private LLM on your very own :ref:`compute-servers`! In this video William shows how to create a GPU-backed OpenWebUI (https://openwebui.com/) server on https://CoCalc.com in a few minutes:
+You can also spin off a fully private LLM on your very own :ref:`compute-servers`! In this video William shows how to create a GPU-backed `OpenWebUI <https://openwebui.com/>`_ server in a few minutes:
 
 .. raw:: html
 

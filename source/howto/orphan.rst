@@ -60,4 +60,4 @@
    ../account/ssh
    ../account/support
    ../update-credit-card
-
+   ../chatgpt
