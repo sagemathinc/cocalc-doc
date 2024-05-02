@@ -135,8 +135,8 @@ In addition to general help with LaTeX, including fixing errors, you can describ
 
 
 
-ChatGPT in Chat Rooms and Side Chat
------------------------------------
+LLMs in Chat Rooms and Side Chat
+--------------------------------
 
 Using AI Assistant buttons has the advantage of automatically linking appropriate context, but you can also directly call any LLM in a :doc:`chat room <chat>` or in the :ref:`side chat <side-chat>` next to an open file, you can do an :ref:`@-mention <chat-at-mentions>` and enter your question there:
 
