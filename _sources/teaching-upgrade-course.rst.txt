@@ -209,5 +209,5 @@ If CoCalc projects are not sufficient for your needs, e.g. because you need GPUs
 Charges for Paid LLMs
 --------------------------------------------
 
-See :doc:`gpt4-course`.
+Just as other users, students are free to use CoCalc :doc:`ai`. If they want to use paid LLMs, they will have to put some money on their accounts. If *you* want your students to work with advanced LLMs and *you* want to pay for that, you can use :ref:`credit-vouchers` to distribute funds, similar to :ref:`teaching_with_compute_servers`. If, on the other hand, you want to discourage students from using AI, you can turn it off for their projects, see :doc:`restrict-student-projects`.
 

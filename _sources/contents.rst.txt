@@ -14,8 +14,10 @@ This explains in depth how you can work productively on `CoCalc`_.
    platform
    user_interface
    service_options
-   teaching
-
+   
+   teaching-instructors
+   teaching-students
+   
 Indices, references and tables
 ==============================
 
