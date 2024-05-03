@@ -66,6 +66,7 @@
 <li class="toctree-l2"><a class="reference internal" href="trial.html">Trial Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="licenses.html">Licenses</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Compute Servers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cocalc-s-unique-offering">CoCalc’s Unique Offering</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#examples-of-compute-server-uses">Examples of Compute Server Uses</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#creating-a-compute-server">Creating a Compute Server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#using-a-compute-server">Using a Compute Server</a></li>
@@ -128,26 +129,87 @@
 <span id="index-0"></span><span id="id1"></span><h1>Compute Servers<a class="headerlink" href="#compute-servers" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#examples-of-compute-server-uses" id="id20">Examples of Compute Server Uses</a></p></li>
-<li><p><a class="reference internal" href="#creating-a-compute-server" id="id21">Creating a Compute Server</a></p></li>
-<li><p><a class="reference internal" href="#using-a-compute-server" id="id22">Using a Compute Server</a></p></li>
-<li><p><a class="reference internal" href="#becoming-root-and-port-forwarding" id="id23">Becoming root and Port Forwarding</a></p></li>
-<li><p><a class="reference internal" href="#billing-for-a-compute-server" id="id24">Billing for a Compute Server</a></p></li>
-<li><p><a class="reference internal" href="#compute-server-filesystem" id="id25">Compute Server Filesystem</a></p></li>
-<li><p><a class="reference internal" href="#teaching-with-compute-servers" id="id26">Teaching with Compute Servers</a></p></li>
+<li><p><a class="reference internal" href="#cocalc-s-unique-offering" id="id20">CoCalc’s Unique Offering</a></p></li>
+<li><p><a class="reference internal" href="#examples-of-compute-server-uses" id="id21">Examples of Compute Server Uses</a></p></li>
+<li><p><a class="reference internal" href="#creating-a-compute-server" id="id22">Creating a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#using-a-compute-server" id="id23">Using a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#becoming-root-and-port-forwarding" id="id24">Becoming root and Port Forwarding</a></p></li>
+<li><p><a class="reference internal" href="#billing-for-a-compute-server" id="id25">Billing for a Compute Server</a></p></li>
+<li><p><a class="reference internal" href="#compute-server-filesystem" id="id26">Compute Server Filesystem</a></p></li>
+<li><p><a class="reference internal" href="#teaching-with-compute-servers" id="id27">Teaching with Compute Servers</a></p></li>
 </ul>
 </nav>
-<p>A compute server in CoCalc is a remote computer, whose resources (GPUs, CPUs, RAM, disks) you can utilize via CoCalc’s collaborative interface in Jupyter notebooks and terminals. It is a way to open up possibilities for enhanced computing resources, extending far beyond the bounds of local machines.</p>
-<p>To create a compute server, you select the software image, hardware and (optional) GPU, and can then start running any Jupyter notebook or Linux terminal on this server for an on-demand fee, charged by the second when the server is in use.</p>
-<p>The GPU support is extensive, <strong>from a single T4 to eight H100</strong>, with lots of options in between including L4 and L40, RTX-A4/5/6000, and A100 with 40GB and 80GB. The finely configured software stack images include SageMath, Google Colab, Julia, PyTorch, Tensorflow and CUDA Toolkit, accommodating a versatile range of uses.</p>
-<p>CoCalc compute servers come at <strong>highly competitive prices</strong> due to our intergration with multiple clouds, each with their own strengths!</p>
+<section id="cocalc-s-unique-offering">
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">CoCalc’s Unique Offering</a><a class="headerlink" href="#cocalc-s-unique-offering" title="Link to this heading"></a></h2>
+<p>A compute server in CoCalc brings you closer to your dreams using an extremely powerful and flexible combination of</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Reliable hardware resources - from tiny to HUGE!</strong></dt><dd><ul>
+<li><p>From 1/4 to over 400 CPU cores on a single node plus cluster support!</p></li>
+<li><p>From 1 to over 10,000 GB RAM!</p></li>
+<li><p>From 10 to over 1,000,000 GB disk!</p></li>
+<li><p>From a single T4 or no GPU at all <strong>to 8x H100</strong>, with lots of options in between including L4 and L40, RTX-A4/5/6000, and A100 with 40GB and 80GB!</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Access to multiple clouds - in a unified way that does not hide superpowers!</strong></dt><dd><ul>
+<li><p>Running out of disk space? Increase it live!</p></li>
+<li><p>Can deal with occasional interruptions? Benefit from Google discounts on spot instances!</p></li>
+<li><p>Need sustainable GPUs and free network? Pick Hyperstack!</p></li>
+<li><p>Have a powerful laptop or a cluster? Use On Prem!</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Finely configured software images - don’t waste your time!</strong></dt><dd><ul>
+<li><p>SageMath, Anaconda, Google Colab, Julia, PyTorch, Tensorflow, Open WebUI, etc.!</p></li>
+<li><p>Many things work right out of the box!</p></li>
+<li><p>Install anything as root, use Docker and Kubernetes!</p></li>
+<li><p>Launch JupyterLab or VS Code with one click!</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>CoCalc’s renowed interface - honed over the years!</strong></dt><dd><ul>
+<li><p>Your code files are synchronized with your CoCalc project!</p></li>
+<li><p>Real-Time Collaboration and AI Assistant with a plethora of LLMs!</p></li>
+<li><p>Time Travel version control without need to know git!</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>CoCalc’s dedicated team - support you can rely on!</strong></dt><dd><ul>
+<li><p>Benefit from many years of expertise, <strong>focus on YOUR work!</strong></p></li>
+<li><p>Enjoy personable approach, schedule a video call!</p></li>
+<li><p>Request custom images and features!</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Transparent billing - no surprises!</strong></dt><dd><ul>
+<li><p>See competitive prices while configuring your server!</p></li>
+<li><p>Pay by the second when resources are in use!</p></li>
+<li><p>Study detailed list of all transactions!</p></li>
+<li><p>Get daily statements by email!</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
 <section id="examples-of-compute-server-uses">
-<h2><a class="toc-backref" href="#id20" role="doc-backlink">Examples of Compute Server Uses</a><a class="headerlink" href="#examples-of-compute-server-uses" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">Examples of Compute Server Uses</a><a class="headerlink" href="#examples-of-compute-server-uses" title="Link to this heading"></a></h2>
 <p>You may find something useful, at least some inspiration, in our growing <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/README.md">collection of tutorials</a> that make use of compute servers. You can either read them or follow along video versions. Here William explains how to run Google Colab environment on compute servers and use either Tensorflow or PyTorch:</p>
 <center><iframe width="640" height="360" src="https://www.youtube.com/embed/kcxyShH3wYE?si=rGZEWZgs6XbOF38u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br/></section>
 <section id="creating-a-compute-server">
-<h2><a class="toc-backref" href="#id21" role="doc-backlink">Creating a Compute Server</a><a class="headerlink" href="#creating-a-compute-server" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Creating a Compute Server</a><a class="headerlink" href="#creating-a-compute-server" title="Link to this heading"></a></h2>
 <p>There are multiple ways to create a compute server, one of them is to click the <strong>Server</strong> button:</p>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/compute_server_creating_2.png"><img alt="Creating a Compute Server" src="_images/compute_server_creating_2.png" style="width: 90%;" /></a>
@@ -173,7 +235,7 @@
 <p>Start your compute server!</p>
 </section>
 <section id="using-a-compute-server">
-<h2><a class="toc-backref" href="#id22" role="doc-backlink">Using a Compute Server</a><a class="headerlink" href="#using-a-compute-server" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id23" role="doc-backlink">Using a Compute Server</a><a class="headerlink" href="#using-a-compute-server" title="Link to this heading"></a></h2>
 <p>Your freshly created compute server does <em>not</em> replace your CoCalc project, but rather complements it. This is why you have to explicitly indicate that you want to run your terminal or Jupyter notebook on a particular compute server, and you can have multiple compute servers running at the same time!</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -210,7 +272,7 @@
 <p>In order to use the Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and connect it to a compute server in the same way. If you chose the “CUDA Toolkit” image, then the <code class="docutils literal notranslate"><span class="pre">nvcc</span></code> command will be available for compiling <code class="docutils literal notranslate"><span class="pre">.cu</span></code> code. See <a class="reference external" href="https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md">this tutorial</a> for details.</p>
 </section>
 <section id="becoming-root-and-port-forwarding">
-<h2><a class="toc-backref" href="#id23" role="doc-backlink">Becoming root and Port Forwarding</a><a class="headerlink" href="#becoming-root-and-port-forwarding" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">Becoming root and Port Forwarding</a><a class="headerlink" href="#becoming-root-and-port-forwarding" title="Link to this heading"></a></h2>
 <p>You cannot become <code class="docutils literal notranslate"><span class="pre">root</span></code> or use <code class="docutils literal notranslate"><span class="pre">sudo</span></code> inside of a CoCalc project. If you try to, you will get a message like</p>
 <figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="_images/no_sudo.png"><img alt="Error Message Using sudo" src="_images/no_sudo.png" style="width: 90%;" /></a>
@@ -250,7 +312,7 @@
 <p>on your <em>local</em> computer and go to <code class="docutils literal notranslate"><span class="pre">http://localhost:8123</span></code> in your <em>local</em> browser.</p>
 </section>
 <section id="billing-for-a-compute-server">
-<h2><a class="toc-backref" href="#id24" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id25" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Link to this heading"></a></h2>
 <p>A compute server is billed by the second and the price depends on its state:</p>
 <ul class="simple">
 <li><p><strong>Running</strong> - the server is ready to perform your tasks, you pay for all of its resources and this is the price shown when creating a server</p></li>
@@ -275,7 +337,7 @@
 </figure>
 </section>
 <section id="compute-server-filesystem">
-<span id="id2"></span><h2><a class="toc-backref" href="#id25" role="doc-backlink">Compute Server Filesystem</a><a class="headerlink" href="#compute-server-filesystem" title="Link to this heading"></a></h2>
+<span id="id2"></span><h2><a class="toc-backref" href="#id26" role="doc-backlink">Compute Server Filesystem</a><a class="headerlink" href="#compute-server-filesystem" title="Link to this heading"></a></h2>
 <p>In order to smoothly and successfully use a compute server, it is essential to understand how its filesystem interacts with your CoCalc project.</p>
 <p>For the most part, all files in your CoCalc project conveniently appear in your home folder on the compute server and you can use them in a regular way. File changes inside of your CoCalc project and on your compute server can be synced both ways. This works great for Jupyter notebooks, for example. However, this convenience is still bound by laws of physics and because of network transfers involved it is much slower than modern local disks. You are also limited by your CoCalc disk quota.</p>
 <p>If you need to read or write massive amounts of data, e.g. for data science or machine learning, or the programs you are running operate with a lot of files, e.g. <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> with a large repository, you do need to use local fast directories on your compute server. These directories are configured in the compute server settings when you create or edit one:</p>
@@ -308,7 +370,7 @@
 </figure>
 </section>
 <section id="teaching-with-compute-servers">
-<span id="id3"></span><h2><a class="toc-backref" href="#id26" role="doc-backlink">Teaching with Compute Servers</a><a class="headerlink" href="#teaching-with-compute-servers" title="Link to this heading"></a></h2>
+<span id="id3"></span><h2><a class="toc-backref" href="#id27" role="doc-backlink">Teaching with Compute Servers</a><a class="headerlink" href="#teaching-with-compute-servers" title="Link to this heading"></a></h2>
 <p>Compute servers are a great option to let your students or workshop participants use GPUs or powerful compute resources! Some important points to consider ahead of the course start:</p>
 <ul>
 <li><p>What configuration do you need for your students?</p></li>
