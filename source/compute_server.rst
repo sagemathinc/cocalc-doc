@@ -14,10 +14,10 @@ CoCalc's Unique Offering
 A compute server in CoCalc brings you closer to your dreams using an extremely powerful and flexible combination of
 
 * **Reliable hardware resources - from tiny to HUGE!**
-   - From 1/4 to over 400 CPU cores on a single node plus cluster support!
-   - From 1 to over 10,000 GB RAM!
-   - From 10 to over 1,000,000 GB disk!
-   - From a single T4 or no GPU at all **to 8x H100**, with lots of options in between including L4 and L40, RTX-A4/5/6000, and A100 with 40GB and 80GB!
+   - From 1/4 to over 400 CPU cores on a single node plus cluster support
+   - From 1 to over 10,000 GB RAM
+   - From 10 to over 1,000,000 GB disk
+   - From a single T4 or no GPU at all **to 8x H100**, with lots of options in between including L4 and L40, RTX-A4/5/6000, and A100 with 40GB and 80GB
    
 * **Access to multiple clouds - in a unified way that does not hide superpowers!**
    - Running out of disk space? Increase it live!
@@ -26,26 +26,26 @@ A compute server in CoCalc brings you closer to your dreams using an extremely p
    - Have a powerful laptop or a cluster? Use On Prem!
    
 * **Finely configured software images - don't waste your time!**
-   - SageMath, Anaconda, Google Colab, Julia, PyTorch, Tensorflow, Open WebUI, etc.!
-   - Many things work right out of the box!
-   - Install anything as root, use Docker and Kubernetes!
-   - Launch JupyterLab or VS Code with one click! 
+   - SageMath, Anaconda, Google Colab, Julia, PyTorch, Tensorflow, Open WebUI, etc.
+   - Many things work right out of the box
+   - Install anything as root, use Docker and Kubernetes
+   - Launch JupyterLab or VS Code with one click
    
-* **CoCalc's renowed interface - honed over the years!**
-   - Your code files are synchronized with your CoCalc project!
-   - Real-Time Collaboration and AI Assistant with a plethora of LLMs!
-   - Time Travel version control without need to know git!
+* **CoCalc's renowned interface - honed over the years!**
+   - Your code files are synchronized with your CoCalc project
+   - Real-Time Collaboration and AI Assistant with a plethora of LLMs
+   - Time Travel version control without need to know git
 
 * **CoCalc's dedicated team - support you can rely on!**
-   - Benefit from many years of expertise, **focus on YOUR work!**
-   - Enjoy personable approach, schedule a video call!
-   - Request custom images and features!
+   - Benefit from many years of expertise, **focus on YOUR work**
+   - Enjoy personable approach, schedule a video call
+   - Request custom images and features
 
 * **Transparent billing - no surprises!**
-   - See competitive prices while configuring your server!
-   - Pay by the second when resources are in use!
-   - Study detailed list of all transactions!
-   - Get daily statements by email!
+   - See competitive prices while configuring your server
+   - Pay by the second when resources are in use
+   - Study detailed list of all transactions
+   - Get daily statements by email
    
 
 Examples of Compute Server Uses
