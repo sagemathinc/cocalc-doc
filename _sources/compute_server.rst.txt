@@ -8,50 +8,50 @@ Compute Servers
    :local:
    :depth: 2
    
-CoCalc's Unique Offering
-------------------------
+CoCalc's Most Unique Offering
+-----------------------------
 
 A compute server in CoCalc brings you closer to your dreams using an extremely powerful and flexible combination of
 
-* **Reliable hardware resources - from tiny to HUGE!**
+* **Reliable hardware resources - ranging from minimal to MASSIVE!**
    - From 1/4 to over 400 CPU cores on a single node plus cluster support
    - From 1 to over 10,000 GB RAM
    - From 10 to over 1,000,000 GB disk
-   - From a single T4 or no GPU at all **to 8x H100**, with lots of options in between including L4 and L40, RTX-A4/5/6000, and A100 with 40GB and 80GB
+   - From a single T4 (or no GPU at all) **to 8x H100**, with tons of options in between, including access to L4 and L40, RTX-A4/5/6000, and A100 with 40GB or 80GB of RAM
    
-* **Access to multiple clouds - in a unified way that does not hide superpowers!**
-   - Running out of disk space? Increase it live!
+* **Access to multiple clouds - in a unified way that does not hide their superpowers!**
+   - Running out of disk space? Increase it seamlessly on the fly!
    - Can deal with occasional interruptions? Benefit from Google discounts on spot instances!
    - Need sustainable GPUs and free network? Pick Hyperstack!
-   - Have a powerful laptop or a cluster? Use On Prem!
+   - Have a powerful laptop or a cluster? Turn it into a cloud!
    
-* **Finely configured software images - don't waste your time!**
+* **Finely pre-configured software images - don't waste your time!**
    - SageMath, Anaconda, Google Colab, Julia, PyTorch, Tensorflow, Open WebUI, etc.
-   - Many things work right out of the box
+   - Most things work right out of the box
    - Install anything as root, use Docker and Kubernetes
-   - Launch JupyterLab or VS Code with one click
+   - Launch JupyterLab or VS Code with just one click
    
-* **CoCalc's renowned interface - honed over the years!**
-   - Your code files are synchronized with your CoCalc project
+* **CoCalc's renowned interface - honed from years of experience and feedback!**
+   - Code files are synchronized with your CoCalc project's file system
    - Real-Time Collaboration and AI Assistant with a plethora of LLMs
-   - Time Travel version control without need to know git
+   - User friendly version control Time Travel (or your beloved git)
 
 * **CoCalc's dedicated team - support you can rely on!**
-   - Benefit from many years of expertise, **focus on YOUR work**
-   - Enjoy personable approach, schedule a video call
+   - Benefit from our expertise, **focus on YOUR work**
+   - Enjoy a personable approach, schedule a video chat with us anytime
    - Request custom images and features
 
 * **Transparent billing - no surprises!**
    - See competitive prices while configuring your server
    - Pay by the second when resources are in use
-   - Study detailed list of all transactions
+   - Study a detailed list of all transactions
    - Get daily statements by email
    
 
 Examples of Compute Server Uses
 -------------------------------
 
-You may find something useful, at least some inspiration, in our growing `collection of tutorials <https://github.com/sagemathinc/cocalc-howto/blob/main/README.md>`_ that make use of compute servers. You can either read them or follow along video versions. Here William explains how to run Google Colab environment on compute servers and use either Tensorflow or PyTorch:
+You may find something useful, at least some inspiration, in our growing `collection of tutorials <https://github.com/sagemathinc/cocalc-howto/blob/main/README.md>`_ that showcase compute servers. You can simply read them or follow along in video format. Here CoCalc's CEO and Founder William Stein explains how to run the Google Colab environment on compute servers and use either Tensorflow or PyTorch:
 
 .. raw:: html
 
@@ -81,7 +81,7 @@ The first settings allow you to give your server a name, pick a colour to easily
 
 .. hint::
 
-    You can actually be your own "cloud provider" by picking **On prem** hosting! You can use not only your own physical hardware, but also virtual machines from providers we are not currently integrated with. This is one of the ways we support :ref:`on-premises`. 
+    You can actually be your own "cloud provider" by picking **On Prem** hosting! You can use not only your own physical hardware, but also virtual machines from providers we are not currently integrated with. This is one of the ways we support :ref:`on-premises`. 
     
 **Configuration** parameters vary depending on your hosting choice, but typically you can select the desired software image and hardware configuration including GPU(s).
 
