@@ -7,7 +7,7 @@ Install Julia Packages
 
 .. warning::
 
-    This page describes how to install a Julia package as a user in a CoCalc project. If you are using :doc:`../compute_server`, there is no need to do anything CoCalc-specific, just follow standard instructions.
+    This page describes how to install a Julia package as a user in a CoCalc project. If you are using :doc:`../compute_server`, there is no need to do anything CoCalc-specific, just follow `standard instructions <https://pkgdocs.julialang.org/>`_.
     
 .. hint::
 
