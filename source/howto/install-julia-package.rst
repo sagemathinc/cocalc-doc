@@ -5,29 +5,38 @@
 Install Julia Packages
 ============================
 
-
-This page describes how to install an Julia package in a CoCalc project.
-
-CoCalc already includes `hundreds of Julia packages <https://cocalc.com/doc/software-julia.html>`_, but you can install even more or update them inside your project.
-
-
 .. warning::
 
-    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (i.e. the `General Julia package registry <https://github.com/JuliaRegistries/General>`_ to your project.
-    The install command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
+    This page describes how to install a Julia package as a user in a CoCalc project. If you are using :doc:`../compute_server`, there is no need to do anything special since you have full ``root`` access and can follow standard instructions.
+    
+.. hint::
+
+    You *should* consider using :doc:`../compute_server` for research or production work with Julia, since it quickly becomes resource-intensive. Here CoCalc's CEO and Founder William Stein explains how to use Julia on compute servers:
+
+.. raw:: html
+
+    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/OM7R3im9Vgg?si=HyLUtGhG3ORM_HYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    <br/>
 
 
-Install requests
+Install Requests
 ===================
 
+CoCalc already includes `hundreds of Julia packages <https://cocalc.com/doc/software-julia.html>`_.
 If a package may have general use but is not already installed in CoCalc,
 please open a support request to tell us to install it globally for everyone.
 Please include information about special dependencies or a specific example to test it.
 Please be aware, due to upgrade issues or general conflicts, not all packages can be installed.
 
 
-Install a package
-===================
+Install/Update a Package Yourself
+=================================
+
+.. note::
+
+    Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (i.e. the `General Julia package registry <https://github.com/JuliaRegistries/General>`_ to your project.
+    The install command will not work unless you :ref:`upgrade your project <project-upgrades>` to have internet access.
+
 
 Command Line / Custom Depot Path
 ----------------------------------------------
