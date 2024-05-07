@@ -104,22 +104,30 @@
              
   <section id="install-julia-packages">
 <span id="index-0"></span><span id="id1"></span><h1>Install Julia Packages<a class="headerlink" href="#install-julia-packages" title="Link to this heading"></a></h1>
-<p>This page describes how to install an Julia package in a CoCalc project.</p>
-<p>CoCalc already includes <a class="reference external" href="https://cocalc.com/doc/software-julia.html">hundreds of Julia packages</a>, but you can install even more or update them inside your project.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a> in order to download software from a remote repository (i.e. the <a class="reference external" href="https://github.com/JuliaRegistries/General">General Julia package registry</a> to your project.
-The install command will not work unless you <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">upgrade your project</span></a> to have internet access.</p>
+<p>This page describes how to install a Julia package as a user in a CoCalc project. If you are using <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>, there is no need to do anything special since you have full <code class="docutils literal notranslate"><span class="pre">root</span></code> access and can follow standard instructions.</p>
 </div>
-<section id="install-requests">
-<h2>Install requests<a class="headerlink" href="#install-requests" title="Link to this heading"></a></h2>
-<p>If a package may have general use but is not already installed in CoCalc,
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You <em>should</em> consider using <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a> for research or production work with Julia, since it quickly becomes resource-intensive. Here CoCalc’s CEO and Founder William Stein explains how to use Julia on compute servers:</p>
+</div>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/OM7R3im9Vgg?si=HyLUtGhG3ORM_HYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br/><section id="install-requests">
+<h2>Install Requests<a class="headerlink" href="#install-requests" title="Link to this heading"></a></h2>
+<p>CoCalc already includes <a class="reference external" href="https://cocalc.com/doc/software-julia.html">hundreds of Julia packages</a>.
+If a package may have general use but is not already installed in CoCalc,
 please open a support request to tell us to install it globally for everyone.
 Please include information about special dependencies or a specific example to test it.
 Please be aware, due to upgrade issues or general conflicts, not all packages can be installed.</p>
 </section>
-<section id="install-a-package">
-<h2>Install a package<a class="headerlink" href="#install-a-package" title="Link to this heading"></a></h2>
+<section id="install-update-a-package-yourself">
+<h2>Install/Update a Package Yourself<a class="headerlink" href="#install-update-a-package-yourself" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a> in order to download software from a remote repository (i.e. the <a class="reference external" href="https://github.com/JuliaRegistries/General">General Julia package registry</a> to your project.
+The install command will not work unless you <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">upgrade your project</span></a> to have internet access.</p>
+</div>
 <section id="command-line-custom-depot-path">
 <h3>Command Line / Custom Depot Path<a class="headerlink" href="#command-line-custom-depot-path" title="Link to this heading"></a></h3>
 <p>To install custom Julia packages as a normal user, you have to type this in a terminal before starting Julia:</p>
