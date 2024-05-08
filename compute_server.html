@@ -150,7 +150,7 @@
 <li><p>From 1/4 to over 400 CPU cores on a single node plus cluster support</p></li>
 <li><p>From 1 to over 10,000 GB RAM</p></li>
 <li><p>From 10 to over 1,000,000 GB disk</p></li>
-<li><p>From a single T4 (or no GPU at all) <strong>to 8x H100</strong>, with tons of options in between, including access to L4 and L40, RTX-A4/5/6000, and A100 with 40GB or 80GB of RAM</p></li>
+<li><p>From a single T4 (or no GPU at all) <strong>to 8x H100</strong>, with tons of options in between, including access to L4 and L40, RTX-A4/5/6000, and A100 with 40 GB or 80 GB of RAM</p></li>
 </ul>
 </dd>
 </dl>
@@ -212,7 +212,7 @@
 <br/></section>
 <section id="do-i-still-need-a-license">
 <h2><a class="toc-backref" href="#id22" role="doc-backlink">Do I Still Need a License?</a><a class="headerlink" href="#do-i-still-need-a-license" title="Link to this heading"></a></h2>
-<p>That is a great question! We do not force our users to get a regular license for working with compute servers, but since the CoCalc project is still used for <a class="reference internal" href="#compute-server-filesystem"><span class="std std-ref">file syncing</span></a> and tracking compute server status, you will have smoother experience if your project has member hosting and sufficient RAM. In most cases the <a class="reference external" href="https://cocalc.com/store/site-license?user=academic&amp;period=monthly&amp;run_limit=1&amp;cpu=1&amp;ram=2&amp;disk=3&amp;uptime=short&amp;member=true">basic license</a> with 2GB RAM, 1 vCPU core, and 3GB disk will work great!</p>
+<p>That is a great question! We do not force our users to get a regular license for working with compute servers, but since the CoCalc project is still used for <a class="reference internal" href="#compute-server-filesystem"><span class="std std-ref">file syncing</span></a> and tracking compute server status, you will have smoother experience if your project has member hosting and sufficient RAM. In most cases the <a class="reference external" href="https://cocalc.com/store/site-license?user=academic&amp;period=monthly&amp;run_limit=1&amp;cpu=1&amp;ram=2&amp;disk=3&amp;uptime=short&amp;member=true">basic license</a> with 2 GB RAM, 1 vCPU core, and 3 GB disk will work great!</p>
 </section>
 <section id="creating-a-compute-server">
 <h2><a class="toc-backref" href="#id23" role="doc-backlink">Creating a Compute Server</a><a class="headerlink" href="#creating-a-compute-server" title="Link to this heading"></a></h2>
@@ -236,8 +236,8 @@
 </div>
 <p><strong>Configuration</strong> parameters vary depending on your hosting choice, but typically you can select the desired software image and hardware configuration including GPU(s).</p>
 <p>If you are going to write code using CUDA libraries, choose the “Cuda Toolkit” image. If you want to accelerate PyTorch computations with a GPU, choose the “PyTorch” image. If you want to use SageMath, choose the “SageMath” image. Note that image selection does depend on the presence of a GPU.</p>
-<p>Adjust the hardware parameters according to your needs. Take some time to look over the options! You will be able to edit CPU and RAM when the machine is off (if it also has a GPU, currently it will have to be deprovisioned), so if you don’t quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. For example, in this video William uses a machine with 60 CPU cores and 240GB of RAM to build SageMath from source in under 18 minutes:</p>
-<center><iframe width="640" height="360" src="https://www.youtube.com/embed/b8e8qq-KWbA?si=Y9N6ZtcVKo3fD9Fn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><p>After the build is done, William changes the machine type to have only 2 CPU cores and 8GB of RAM - such a machine is very cheap to run even 24/7! The disk size can be increased even when the machine is running. Unfortunately, you currently can’t move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this will change in the future.</p>
+<p>Adjust the hardware parameters according to your needs. Take some time to look over the options! You will be able to edit CPU and RAM when the machine is off (if it also has a GPU, currently it will have to be deprovisioned), so if you don’t quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. For example, in this video William uses a machine with 60 CPU cores and 240 GB of RAM to build SageMath from source in under 18 minutes:</p>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/b8e8qq-KWbA?si=Y9N6ZtcVKo3fD9Fn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><p>After the build is done, William changes the machine type to have only 2 CPU cores and 8 GB of RAM - such a machine is very cheap to run even 24/7! The disk size can be increased even when the machine is running. Unfortunately, you currently can’t move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this will change in the future.</p>
 <p>Start your compute server!</p>
 </section>
 <section id="using-a-compute-server">
