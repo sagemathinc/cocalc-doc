@@ -306,7 +306,22 @@ Tips & Tricks
 RStudio with CoCalc
 --------------------------------------
 
-You can use RStudio in CoCalc by doing +New -> X11 Desktop, then clicking the "RStudio" button at the bottom left and waiting 20 seconds. If you need faster response time for R calculations, you might consider the following alternatives to RStudio:
+There are a number of ways to use RStudio in CoCalc. You can create X11 Desktop as explained above, then click the **RStudio** button at the bottom left and wait about 20 seconds. The advantage is real-time collaboration just as with any other X11 application, but the response time may be slow, so it may be better to launch RStudio from **Servers** tab:
+
+.. figure:: img/RStudio_in_Servers.png
+    :width: 90%
+    :align: center
+    :alt: Launching RStudio Server
+
+    Launching RStudio Server
+
+If you need more powerful compute resources, use :doc:`compute_server` with **R Statistics** image. Here CoCalc's CEO and Founder William Stein explains how to run it:
+
+.. raw:: html
+
+    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/Owq90O0vLJo?si=Im_EpK-uJwSkJSSW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    <br/>
+
 
 You can also use R in CoCalc via:
 
@@ -321,13 +336,18 @@ High-resolution HDPI displays
 
 If the visible buttons/controls are small, especially if you have a high-res display, and zooming alone doesn't really help much, enable **HDPI rendering**. That's available for some of the applications in their respective configuration dialogs.
 
-**Spyder**:  The "auto high DPI scaling" setting is in *Preferences*, accessible via the *Tools* menu or the wrench-icon. See screenshot below:
+In RStudio you can go to **Tools → Global Options → Appearance → Zoom → 200%**.
 
-.. image:: img/x11-spyder-hdpi.png
+In Spyder **Enable auto high DPI scaling** option is available via the **Tools > Preferences** menu or the wrench-icon:
+
+.. figure:: img/x11-spyder-hdpi.png
     :align: center
     :width: 75%
+    :alt: Enable auto high DPI scaling in Spyder
+    
+    Enable auto high DPI scaling in Spyder
 
-**RStudio**: On high resolution displays set *Tools* → *Global Options* → *Appearance* → **Zoom** → **200%**.
+
 
 
 
