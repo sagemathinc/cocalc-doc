@@ -17,7 +17,7 @@ A compute server in CoCalc brings you closer to your dreams using an extremely p
    - From 1/4 to over 400 CPU cores on a single node plus cluster support
    - From 1 to over 10,000 GB RAM
    - From 10 to over 1,000,000 GB disk
-   - From a single T4 (or no GPU at all) **to 8x H100**, with tons of options in between, including access to L4 and L40, RTX-A4/5/6000, and A100 with 40GB or 80GB of RAM
+   - From a single T4 (or no GPU at all) **to 8x H100**, with tons of options in between, including access to L4 and L40, RTX-A4/5/6000, and A100 with 40 GB or 80 GB of RAM
    
 * **Access to multiple clouds - in a unified way that does not hide their superpowers!**
    - Running out of disk space? Increase it seamlessly on the fly!
@@ -61,7 +61,7 @@ You may find something useful, at least some inspiration, in our growing `collec
 Do I Still Need a License?
 --------------------------
 
-That is a great question! We do not force our users to get a regular license for working with compute servers, but since the CoCalc project is still used for :ref:`file syncing <compute-server-filesystem>` and tracking compute server status, you will have smoother experience if your project has member hosting and sufficient RAM. In most cases the `basic license <https://cocalc.com/store/site-license?user=academic&period=monthly&run_limit=1&cpu=1&ram=2&disk=3&uptime=short&member=true>`_ with 2GB RAM, 1 vCPU core, and 3GB disk will work great!
+That is a great question! We do not force our users to get a regular license for working with compute servers, but since the CoCalc project is still used for :ref:`file syncing <compute-server-filesystem>` and tracking compute server status, you will have smoother experience if your project has member hosting and sufficient RAM. In most cases the `basic license <https://cocalc.com/store/site-license?user=academic&period=monthly&run_limit=1&cpu=1&ram=2&disk=3&uptime=short&member=true>`_ with 2 GB RAM, 1 vCPU core, and 3 GB disk will work great!
 
 
 Creating a Compute Server
@@ -93,13 +93,13 @@ The first settings allow you to give your server a name, pick a colour to easily
 
 If you are going to write code using CUDA libraries, choose the "Cuda Toolkit" image. If you want to accelerate PyTorch computations with a GPU, choose the "PyTorch" image. If you want to use SageMath, choose the "SageMath" image. Note that image selection does depend on the presence of a GPU.
 
-Adjust the hardware parameters according to your needs. Take some time to look over the options! You will be able to edit CPU and RAM when the machine is off (if it also has a GPU, currently it will have to be deprovisioned), so if you don't quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. For example, in this video William uses a machine with 60 CPU cores and 240GB of RAM to build SageMath from source in under 18 minutes:
+Adjust the hardware parameters according to your needs. Take some time to look over the options! You will be able to edit CPU and RAM when the machine is off (if it also has a GPU, currently it will have to be deprovisioned), so if you don't quite know what you need - make a guess! If it turns out that you need something more or less powerful, you can easily make an adjustment. For example, in this video William uses a machine with 60 CPU cores and 240 GB of RAM to build SageMath from source in under 18 minutes:
 
 .. raw:: html
 
     <center><iframe width="640" height="360" src="https://www.youtube.com/embed/b8e8qq-KWbA?si=Y9N6ZtcVKo3fD9Fn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
-After the build is done, William changes the machine type to have only 2 CPU cores and 8GB of RAM - such a machine is very cheap to run even 24/7! The disk size can be increased even when the machine is running. Unfortunately, you currently can't move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this will change in the future.
+After the build is done, William changes the machine type to have only 2 CPU cores and 8 GB of RAM - such a machine is very cheap to run even 24/7! The disk size can be increased even when the machine is running. Unfortunately, you currently can't move the machine from one region or zone to another unless it is deprovisioned, and the prices do depend on the region - this will change in the future.
 
 Start your compute server!
 

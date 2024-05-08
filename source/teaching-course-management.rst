@@ -108,7 +108,7 @@ Alternatively, click on the **Collect** icon in the top row to collect from all 
      :alt: collecting an assignment from all students
 
 You should make sure that your project has enough disk space to accommodate this.
-It may be necessary to purchase an upgrade if you need more than the free allowance (currently 3GB per project).
+It may be necessary to purchase an upgrade if you need more than the free allowance (currently 3 GB per project).
 
 Once the assignment has been collected, anything the student subsequently does in **their** copy will not be reflected in **your** copy.
 

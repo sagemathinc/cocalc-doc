@@ -78,7 +78,7 @@ See also: :ref:`Software development/idle timeout <idle-timeout>`.
 Disk space
 ==========
 
-Disk space is the number of GB total used by your project's files. Snapshots and file edit history are included at no additional charge. Each project receives at least 3G of storage space. The maximum for typical CoCalc projects is 15GB of disk space. For even larger disk storage requirements, `dedicated disks <https://cocalc.com/store/dedicated?type=disk>`_ are available
+Disk space is the total size of your project's files. Snapshots and file edit history are included at no additional charge. Each project receives at least 3 GB of storage space. The maximum for typical CoCalc projects is 15 GB of disk space. For even larger disk storage requirements, :doc:`compute_server` are available.
 
 .. _upg_ram:
 
@@ -87,7 +87,7 @@ RAM
 
 The RAM quota limits the total amount of memory a project can use. The amount of RAM used by a running project will be the sum of RAM used by each of the collaborators. Therefore, the RAM quota will be larger if multiple collaborators are expected to use the project at the same time.
 
-We recommend at least 2GB for general purposes. The maximum for typical CoCalc projects is 16GB of RAM. For even larger memory requirements, `dedicated VM's <https://cocalc.com/store/dedicated?type=vm>`_ are available.
+We recommend at least 2 GB for general purposes. The maximum for typical CoCalc projects is 16 GB of RAM. For even larger memory requirements, :doc:`compute_server` are available.
 
 .. _upg_cpu:
 
