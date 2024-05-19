@@ -295,12 +295,12 @@ This may be the most obvious criterion, but while we strive to be as transparent
 Availability
 ............
 
-This one may be less obvious than the cost, but it is even more important - the price of a computer server does not matter if you cannot start it! In most cases once you managed to start a compute server, you can continue using it until you explicitly turn it off. However, there is no guarantee that you will be able to start the same machine again in a few days - other users may utilize all resources.
+This one may be less obvious than the cost, but it is even more important - the price of a compute server does not matter if you cannot start it! In most cases once you managed to start a compute server, you can continue using it until you explicitly turn it off. However, there is no guarantee that you will be able to start the same machine again in a few days - other users may utilize all resources.
 
-Geographic location
+Geographic Location
 ...................
 
-Your organization may have particular restrictions on where your data are located. If you expect a lot of network traffic, it may be beneficial to choose a data centre close to your users. For interactive work you may want to start a compute server close to you to reduce latency.
+Your organization may have particular restrictions on where your data are stored and processed. If you expect a lot of network traffic, it may be beneficial to choose a data centre close to your users. For interactive work you may want to start a compute server close to you to reduce latency.
 
 Special Considerations
 ......................
