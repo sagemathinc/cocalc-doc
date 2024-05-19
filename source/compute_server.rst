@@ -76,7 +76,7 @@ There are multiple ways to create a compute server, one of them is to click the 
 
     Creating a Compute Server
 
-The first settings allow you to give your server a name, pick a colour to easily distinguish where your are working, and **choose the cloud provider** used for your server:
+The first settings allow you to give your server a name, pick a colour to easily distinguish where your are working, and :ref:`choose the cloud provider <choosing_a_cloud>` used for your server:
 
 .. figure:: img/compute_server_create_dialog.png
     :width: 90%
@@ -274,6 +274,59 @@ When you edit files via CoCalc graphical interface, they are usually synced betw
     :alt: Sync Files Button for a Compute Server
 
     Sync Files Button for a Compute Server
+
+
+.. _choosing_a_cloud:
+
+Choosing a Cloud
+------------------
+
+It is impossible to choose "the best cloud" for compute servers overall, that is why CoCalc integrates with many of them! For each particular use case one may be more or less preferable - sometimes it may be obvious, sometimes it requires experimentation, and sometimes the difference is inconsequential. The purpose of this section is to highlight some points to consider when choosing a cloud, hopefully it will make this task easier for you.
+
+Cost
+....
+
+This may be the most obvious criterion, but while we strive to be as transparent as possible with the cost of running a compute server, do keep in mind also that:
+
+- there is a cost for the disk space when the server is off;
+- there may be some charge for network traffic, typically it is small compared to compute resources, but it does depend on your use case;
+- it may be more cost effective to use a configuration that is more expensive *per hour* if it allows you to complete your computations faster, thus paying for fewer hours.
+
+Availability
+............
+
+This one may be less obvious than the cost, but it is even more important - the price of a computer server does not matter if you cannot start it! In most cases once you managed to start a compute server, you can continue using it until you explicitly turn it off. However, there is no guarantee that you will be able to start the same machine again in a few days - other users may utilize all resources.
+
+Geographic location
+...................
+
+Your organization may have particular restrictions on where your data are located. If you expect a lot of network traffic, it may be beneficial to choose a data centre close to your users. For interactive work you may want to start a compute server close to you to reduce latency.
+
+Special Considerations
+......................
+
+You may want to use a data centre satisfying particular requirements on sustainability, security, etc. We try to expose as much information about our cloud providers as possible to help our users to make an informed choice.
+
+Let's take a look now at some of the unique benefits of our cloud providers!
+
+Google
+......
+
+- Vast selection of varied configurations!
+- For computationally intensive tasks, do take a look at higher end machines. We had customers with very strict requirements on interconnect network between cluster nodes, but it turned out that Google had single nodes with enough vCPUs, eliminating the need for a cluster setup!
+- Spot instances offer up to 10x lower prices, if your work can deal with potential interruptions!
+
+Hyperstack
+..........
+
+- Apart from cost and speed, Hyperstack prioritizes sustainability of their data centres. They are 100% powered by hydro-electricity and are located in Canada and Norway to benefit from lower ambient temperature for air cooling.
+- You can see how many GPUs are available on Hyperstack at any given time and estimate your chances of being able to get what you need in the future.
+
+On Prem
+.......
+
+- You are in full control of the machine you are using.
+- At the moment On Prem compute servers are free, the intended cost when their development is finished is about 1/3 of a similar spot instance on Google. If you *already own* sufficient compute resources, this may be the most cost-effective option to benefit from the cloud and collaboration as well!
 
 
 .. _teaching_with_compute_servers:
