@@ -398,7 +398,7 @@
 </section>
 <section id="choosing-a-cloud">
 <span id="id3"></span><h2><a class="toc-backref" href="#id29" role="doc-backlink">Choosing a Cloud</a><a class="headerlink" href="#choosing-a-cloud" title="Link to this heading"></a></h2>
-<p>It is impossible to choose “the best cloud” for compute servers overall, that is why CoCalc integrates with many of them! For each particular use case one may be more or less preferable - sometimes it may be obvious, sometimes it requires experimentation, and sometimes the difference is inconsequential. The purpose of this section is to highlight some points to consider when choosing a cloud, hopefully it will make this task easier for you.</p>
+<p>It is impossible to choose “the best cloud” for compute servers overall, which is why CoCalc integrates with many of them! For each particular use case one may be more or less preferable - sometimes it may be obvious, sometimes it requires experimentation, and sometimes the difference is inconsequential. The purpose of this section is to highlight some points to consider when choosing a cloud, hopefully it will make this task easier for you.</p>
 <section id="cost">
 <h3><a class="toc-backref" href="#id30" role="doc-backlink">Cost</a><a class="headerlink" href="#cost" title="Link to this heading"></a></h3>
 <p>This may be the most obvious criterion, but while we strive to be as transparent as possible with the cost of running a compute server, do keep in mind also that:</p>
@@ -414,7 +414,12 @@
 </section>
 <section id="geographic-location">
 <h3><a class="toc-backref" href="#id32" role="doc-backlink">Geographic Location</a><a class="headerlink" href="#geographic-location" title="Link to this heading"></a></h3>
-<p>Your organization may have particular restrictions on where your data are stored and processed. If you expect a lot of network traffic, it may be beneficial to choose a data centre close to your users. For interactive work you may want to start a compute server close to you to reduce latency.</p>
+<p>Your organization may impose strict requirements on where your data are stored and processed. Other factors to consider:</p>
+<ul class="simple">
+<li><p>latency for interactive work: a server close to you may be best if you directly use web services started on it, while <code class="docutils literal notranslate"><span class="pre">us-east1-d</span></code> may be optimal to use CoCalc editors;</p></li>
+<li><p>some “remote” regions may have attractive cost and/or availability;</p></li>
+<li><p>network speed and cost, if you expect a lot of traffic.</p></li>
+</ul>
 </section>
 <section id="special-considerations">
 <h3><a class="toc-backref" href="#id33" role="doc-backlink">Special Considerations</a><a class="headerlink" href="#special-considerations" title="Link to this heading"></a></h3>

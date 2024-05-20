@@ -281,7 +281,7 @@ When you edit files via CoCalc graphical interface, they are usually synced betw
 Choosing a Cloud
 ------------------
 
-It is impossible to choose "the best cloud" for compute servers overall, that is why CoCalc integrates with many of them! For each particular use case one may be more or less preferable - sometimes it may be obvious, sometimes it requires experimentation, and sometimes the difference is inconsequential. The purpose of this section is to highlight some points to consider when choosing a cloud, hopefully it will make this task easier for you.
+It is impossible to choose "the best cloud" for compute servers overall, which is why CoCalc integrates with many of them! For each particular use case one may be more or less preferable - sometimes it may be obvious, sometimes it requires experimentation, and sometimes the difference is inconsequential. The purpose of this section is to highlight some points to consider when choosing a cloud, hopefully it will make this task easier for you.
 
 Cost
 ....
@@ -300,7 +300,11 @@ This one may be less obvious than the cost, but it is even more important - the 
 Geographic Location
 ...................
 
-Your organization may have particular restrictions on where your data are stored and processed. If you expect a lot of network traffic, it may be beneficial to choose a data centre close to your users. For interactive work you may want to start a compute server close to you to reduce latency.
+Your organization may impose strict requirements on where your data are stored and processed. Other factors to consider:
+
+- latency for interactive work: a server close to you may be best if you directly use web services started on it, while ``us-east1-d`` may be optimal to use CoCalc editors;
+- some "remote" regions may have attractive cost and/or availability;
+- network speed and cost, if you expect a lot of traffic.
 
 Special Considerations
 ......................
