@@ -333,17 +333,21 @@ Run Terminal command in all student projects
 ============================================
 
 If you are managing a course, there may be a time when you want to
-run a shell command in every student project. The following
-feature allows you to do that, if you are using a .course file
-for the course.
+run a shell command in every student project, say to install some package without waiting for the support to do it globally or to create some file.
 
 In the ``Configuration`` tab of the course there is a
 panel called ``Run Terminal command in all student projects``.  You
-can use it to run a command (e.g., to create a file or whatever) in
-*all* projects in a course...  It's a single arbitrary bash command.
+can use it to run a single arbitrary bash command in
+*all* projects in a course:
 
 .. image:: img/teaching/term_command_course.png
      :width: 60%
+
+.. hint::
+
+    "Single" command may contain multiple parts. For example, if you are installing a package, it may be useful to do it *only* if the package is not installed yet (otherwise there may be some issues collecting the output). We can achieve this by issuing a command like
+    
+    ``python -c "import cufflinks" || pip install --user cufflinks``
 
 
 .. index:: Courses; copying assignments to students

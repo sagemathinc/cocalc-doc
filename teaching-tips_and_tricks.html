@@ -363,14 +363,17 @@ Click on the <strong>New</strong> button and add/paste the link to your reposito
 <section id="run-terminal-command-in-all-student-projects">
 <span id="run-cmd-students"></span><span id="index-18"></span><h2><a class="toc-backref" href="#id22" role="doc-backlink">Run Terminal command in all student projects</a><a class="headerlink" href="#run-terminal-command-in-all-student-projects" title="Link to this heading"></a></h2>
 <p>If you are managing a course, there may be a time when you want to
-run a shell command in every student project. The following
-feature allows you to do that, if you are using a .course file
-for the course.</p>
+run a shell command in every student project, say to install some package without waiting for the support to do it globally or to create some file.</p>
 <p>In the <code class="docutils literal notranslate"><span class="pre">Configuration</span></code> tab of the course there is a
 panel called <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Terminal</span> <span class="pre">command</span> <span class="pre">in</span> <span class="pre">all</span> <span class="pre">student</span> <span class="pre">projects</span></code>.  You
-can use it to run a command (e.g., to create a file or whatever) in
-<em>all</em> projects in a course…  It’s a single arbitrary bash command.</p>
+can use it to run a single arbitrary bash command in
+<em>all</em> projects in a course:</p>
 <a class="reference internal image-reference" href="_images/term_command_course.png"><img alt="_images/term_command_course.png" src="_images/term_command_course.png" style="width: 60%;" /></a>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>“Single” command may contain multiple parts. For example, if you are installing a package, it may be useful to do it <em>only</em> if the package is not installed yet (otherwise there may be some issues collecting the output). We can achieve this by issuing a command like</p>
+<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-c</span> <span class="pre">&quot;import</span> <span class="pre">cufflinks&quot;</span> <span class="pre">||</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">cufflinks</span></code></p>
+</div>
 </section>
 <section id="how-exactly-are-assignments-copied-to-students">
 <span id="course-copy-assignments"></span><span id="index-19"></span><h2><a class="toc-backref" href="#id23" role="doc-backlink">How exactly are Assignments copied to students?</a><a class="headerlink" href="#how-exactly-are-assignments-copied-to-students" title="Link to this heading"></a></h2>
