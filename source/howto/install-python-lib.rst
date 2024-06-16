@@ -17,6 +17,8 @@ Related: :doc:`custom-jupyter-kernel`, :doc:`jupyter-extension` and :doc:`instal
    :local:
    :depth: 3
 
+.. _install-request:
+
 Install requests
 ===================
 

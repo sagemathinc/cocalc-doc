@@ -7,33 +7,29 @@ What is CoCalc?
 Welcome
 #######################
 
-Hello, and welcome to `CoCalc`_.
-CoCalc is a virtual online workspace for calculations, research, collaboration and authoring documents.
-Your web browser is all you need to escape the confined space of your desktop and move to the cloud.
-This guide explains the features of CoCalc in depth and shows how you can use them productively.
+Hello, and welcome to `CoCalc`_,
+a virtual online platform for calculations, research, collaboration and authoring documents!
 
-The main building blocks for working on CoCalc are :doc:`Projects <project>`.
-Create one or more projects in order to partition your work into separate *workspaces*.
-Each project consists of files, accessible only to you and your
+The main building blocks for working in CoCalc are :doc:`Projects <project>` - separate *workspaces*
+consisting of files accessible only to you and your
 :ref:`collaborators <add-collaborators>`.
-
 You and your collaborators can *edit these files at the same time*,
-which means your changes are synchronized among all of you in real-time!
-Depending on the type of the file, it allows you to accomplish a specific task.
-They open up in their associated online editor and you start to work interactively in CoCalc's environment.
+with changes synchronized among all of you in real-time!
+Different types of files open up in their associated online editors and you start to work interactively in CoCalc's environment.
 For example, files ending in ``*.sagews`` are for working with [SageMath]_ in :doc:`sagews`,
-an ``*.ipynb`` file starts CoCalc's implementations of the :doc:`Jupyter Notebook <jupyter>`,
-and a ``*.tex`` file opens an editor for :doc:`LaTeX documents <latex>`.
+``*.ipynb`` files start CoCalc's implementations of the :doc:`Jupyter Notebook <jupyter>`,
+and ``*.tex`` files open an editor for :doc:`LaTeX documents <latex>`.
 
 .. figure:: img/cocalc-screenshot-20200123.png
-     :width: 100%
+     :width: 90%
      :align: center
      :alt: jupyter notebook
 
-     *A SageMath Jupyter Notebook in a CoCalc project*
+     A SageMath Jupyter Notebook in a CoCalc project
+
 
 #######################
-Getting Started
+Try It Out
 #######################
 
 To try out CoCalc, you might do the following steps.
@@ -60,26 +56,16 @@ To try out CoCalc, you might do the following steps.
 First Steps Guide
 #######################
 
-As an alternative to the "Getting Started" steps above, you can use the **First Steps Guide**. Whenever a new project is created, a banner appears offering to create a set of files constituting Guide:
+As an alternative to the steps above, you can use the **First Steps Guide**. Whenever a new project is created, a banner appears offering to create a set of files constituting the Guide:
 
 .. figure:: img/first-steps-message.png
-     :width: 100%
+     :width: 90%
      :align: center
-     :alt: first steps banner
+     :alt: First Steps Guide Banner
+     
+     First Steps Guide Banner
 
-     ..
-
-Clicking on the banner puts copies of the Guide files into the project in a folder called "first-steps" and opens the file "first-steps.task"
-
-If you don't want the guide copied at the moment, you can dismiss the banner. And you can always bring the banner back later if you change your mind:
-
-.. figure:: img/first-steps-hide.png
-     :width: 100%
-     :align: center
-     :alt: dismiss first steps banner
-
-     ..
-
+Clicking on the banner puts copies of the Guide files into the project in a folder called ``first-steps`` and opens the file ``first-steps.task``.
 
 
 

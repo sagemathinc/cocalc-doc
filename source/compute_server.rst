@@ -48,6 +48,8 @@ A compute server in CoCalc brings you closer to your dreams using an extremely p
    - Get daily statements by email
    
 
+.. _colab_example:
+
 Examples of Compute Server Uses
 -------------------------------
 
