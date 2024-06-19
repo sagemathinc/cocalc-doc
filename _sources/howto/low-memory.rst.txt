@@ -2,7 +2,6 @@
 .. index:: Memory; low
 .. _low-memory:
 
-==================================================
 Low Memory Problems
 ==================================================
 
@@ -30,37 +29,37 @@ For example::
     l = [1, 1]
     for i in l:
         l.append(l[-2] + l[-1])
+        
+Below you will find some tips on how to deal with running our of memory. You can also watch CoCalc's CEO and Founder William Stein demonstrate those techniques in action:
 
+.. raw:: html
+
+    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/i5qGwXlo-2I?si=TB-tGSOOWKDfRTZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    <br/>
 
 
 Ways to clear up your project's memory
 ----------------------------------------------------------
 
-**Jupyter**:
+**Jupyter**: Restart the kernel. When you close it, click the :ref:`Halt button <jupyter-halt>`, which also terminates the kernel running your code behind the scenes. Just closing the tab does not stop it from running and it continues to be active in the background!
 
-    * **Restart** the kernel
-    * When you close it, click the :ref:`Halt button <jupyter-halt>`, which also terminates the kernel running your code behind the scenes. Just closing the tab does not stop it from running and it continues to be active in the background!
-
-**Sage Worksheet**:
-
-    * **Restart** the worksheet
+**Sage Worksheet**: Restart the worksheet.
 
 **Entire Project** – if the above doesn't help or doesn't apply:
 
-    * Make sure all your files are saved (disabled "Save" button resting idle)
-    * Close all editor tabs, and **Restart the Project** (in Project Settings → Project Control). This will clean up all running processes and cleans up all state – all your files will still be there, of course.
-    * Then only open up the file you want to work with!
+- Make sure all your files are saved (disabled "Save" button resting idle)
+- Close all editor tabs, and **Restart the Project** (in Project Settings → Project Control). This will clean up all running processes and cleans up all state – all your files will still be there, of course.
+- Then only open up the file you want to work with!
 
-    .. note::
+.. note::
 
-        If there are collaborators on your project, they might start up additional notebooks. Check the project log if someone else is active at the same time.
+    If there are collaborators on your project, they might start up additional notebooks. Check the project log if someone else is active at the same time.
 
-.. _dedicated-vm:
         
-Dedicated VM
--------------
+Compute Servers
+----------------
 
-    * A possible solution for out of memory problems is using a dedicated virtual machine (VM). Licenses for dedicated VMs are available in the `CoCalc Store <https://cocalc.com/store/dedicated?type=vm>`_ with memory ranging from 6 GB to 126 GB.
+A possible solution for out of memory problems is using a :doc:`compute server <../compute_server>` with (a lot) more memory!
 
 
 Inspect in detail why the project is running out of memory
