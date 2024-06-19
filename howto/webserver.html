@@ -25,6 +25,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Shiny Server" href="shiny-server.html" />
+    <link rel="prev" title="PostgreSQL Server" href="postgresql.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -55,13 +57,35 @@
 
 
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../working_with.html">Working With</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platform.html">Platform</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_interface.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../service_options.html">Service Options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Howto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#cocalc-platform">CoCalc platform</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#services">Services</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="bokeh-server.html">Bokeh / Holoview Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mongodb.html">MongoDB Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotly-dash.html">Plot.ly’s Dash Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="postgresql.html">PostgreSQL Server</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Run A Webserver</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#webserver-proxy">Webserver proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-port-proxy">Using the port proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-about-security">What about security?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-about-dynamically-generated-subdomains">What about dynamically generated subdomains?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raw-files-server">Raw Files Server</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="shiny-server.html">Shiny Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="streamlit.html">Streamlit</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#jupyter-notebook">Jupyter Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#programming-languages-and-tools">Programming Languages and Tools</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
@@ -87,6 +111,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Howto</a></li>
       <li class="breadcrumb-item active">Run A Webserver</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
@@ -108,12 +133,13 @@
 <span id="webserver"></span><h1>Run A Webserver<a class="headerlink" href="#run-a-webserver" title="Link to this heading"></a></h1>
 <p>For testing and development, it is possible to run a small webserver inside a CoCalc project.
 Access to it is restricted to only the owner and all collaborators on the project, and nobody else.</p>
+<p>If you want to run an exposed webserver, you can do it with <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
 <section id="webserver-proxy">
 <h2>Webserver proxy<a class="headerlink" href="#webserver-proxy" title="Link to this heading"></a></h2>
-<p>Given your project’s ID is [project_id] like <code class="docutils literal notranslate"><span class="pre">60f9ea81-5bd0-45ae-9965-76de986e101f</span></code>
-and the service is serving on [port],
-and it is serving to all ip addresses (<strong>not</strong> just localhost!), then use:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/server/[port]/
+<p>If your project’s ID is <code class="docutils literal notranslate"><span class="pre">PROJECT_ID</span></code> like <code class="docutils literal notranslate"><span class="pre">60f9ea81-5bd0-45ae-9965-76de986e101f</span></code>
+and the service is serving on <code class="docutils literal notranslate"><span class="pre">PORT</span></code>
+to <strong>all</strong> ip addresses (<strong>not</strong> just localhost!), you can use:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/PROJECT_ID/server/PORT/
 </pre></div>
 </div>
 <p>to access your HTTP web server.
@@ -130,7 +156,7 @@ For example, you might have to start the service using <code class="docutils lit
 </pre></div>
 </div>
 <p>instead of</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/server/[port]/index.html
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/PROJECT_ID/server/PORT/index.html
 </pre></div>
 </div>
 <p>Obviously, this can’t possibly work.</p>
@@ -141,10 +167,10 @@ Others won’t work without modification.</p>
 <section id="using-the-port-proxy">
 <h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Link to this heading"></a></h2>
 <p>This is similar to above (<code class="docutils literal notranslate"><span class="pre">port</span></code> instead of <code class="docutils literal notranslate"><span class="pre">server</span></code>)</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/[project_id]/port/[port]/
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/PROJECT_ID/port/PORT/
 </pre></div>
 </div>
-<p>When you visit that URL with your web browser, your web server will get a request for <code class="docutils literal notranslate"><span class="pre">/[project_id]/port/[port]/</span></code> rather than for <code class="docutils literal notranslate"><span class="pre">/</span></code> as it does with server.
+<p>When you visit that URL with your web browser, your web server will get a request for <code class="docutils literal notranslate"><span class="pre">/PROJECT_ID/port/PORT/</span></code> rather than for <code class="docutils literal notranslate"><span class="pre">/</span></code> as it does with server.
 Otherwise, everything is the same, including the warning above.</p>
 </section>
 <section id="what-about-security">
@@ -152,39 +178,25 @@ Otherwise, everything is the same, including the warning above.</p>
 <p>Only the owner and collaborators on the given project can access the webserver via an SSL encrypted connection.
 Our proxy server will reject all other requests.
 This means you don’t have to worry about setting up logins/passwords on whatever webserver you run in your project.
-On the other hand, it means that CoCalc is not useful as a platform if you want to run a webserver that is visible to anybody in the world.
-If you need that, use some other service.</p>
+If you want to run a webserver that is visible to anybody in the world, use <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
 </section>
 <section id="what-about-dynamically-generated-subdomains">
 <h2>What about dynamically generated subdomains?<a class="headerlink" href="#what-about-dynamically-generated-subdomains" title="Link to this heading"></a></h2>
-<p>Obviously, it would be nice if we could map a project_id and port to a subdomain like</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://[project id].project.cocalc.com
-</pre></div>
-</div>
-<p>We have not implemented this.</p>
-</section>
-<section id="example-code">
-<h2>Example Code<a class="headerlink" href="#example-code" title="Link to this heading"></a></h2>
-<p>Here’s a simple example of an HTTP server written using the Python SimpleHTTPServer class.
-Open a project and click “+New” then paste in this link, then click the “From Web” button (or use wget or copy/paste into a file):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://gist.githubusercontent.com/DrXyzzy/91a70319d258e65dbd04a04f1e5e3b6d/raw/842875805c7876940937c6ab321f7498c203678d/py3server.py
-</pre></div>
-</div>
-<p>Then in a terminal type:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python py3server.py
-</pre></div>
-</div>
+<p>Use <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
 </section>
 <section id="raw-files-server">
 <h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Link to this heading"></a></h2>
-<p>If you just want an https view of your files, use the raw server, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/[project_id]/raw/</span></code>. The point of the above is that you could modify it to provide all sorts of interesting functionality.</p>
+<p>If you just want an HTTPS view of your files, use the raw server, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/PROJECT_ID/raw/</span></code>.</p>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="postgresql.html" class="btn btn-neutral float-left" title="PostgreSQL Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="shiny-server.html" class="btn btn-neutral float-right" title="Shiny Server" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
