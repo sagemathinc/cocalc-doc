@@ -137,7 +137,14 @@
              
   <section id="jupyter-kernel-terminated">
 <span id="index-0"></span><span id="id1"></span><h1>Jupyter Kernel Terminated<a class="headerlink" href="#jupyter-kernel-terminated" title="Link to this heading"></a></h1>
-<p>This page is may be helpful if you see the message:</p>
+<p>There are multiple reasons why you may see a yellow banner like this one:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/kernel_SIGKILL.png"><img alt="Kernel last terminated by signal SIGKILL banner" src="../_images/kernel_SIGKILL.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Kernel last terminated by signal SIGKILL banner</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>One of them is just shutting down or restarting the kernel, i.e. doing something intentional. The message is there just to confirm that the desired action has happened. In other cases it may be unexpected, for example:</p>
 <blockquote>
 <div><p>Kernel terminated – this might be caused by running out of memory or hitting a bug in some library (e.g., forking too many processes, trying to access invalid memory, etc.). Consider restarting or upgrading your project or running the relevant code directly in a terminal to track down the cause.</p>
 </div></blockquote>

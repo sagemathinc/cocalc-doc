@@ -5,7 +5,16 @@
 Jupyter Kernel Terminated
 ==================================================
 
-This page is may be helpful if you see the message:
+There are multiple reasons why you may see a yellow banner like this one:
+
+.. figure:: img/kernel_SIGKILL.png
+    :width: 90%
+    :align: center
+    :alt: Kernel last terminated by signal SIGKILL banner
+
+    Kernel last terminated by signal SIGKILL banner
+    
+One of them is just shutting down or restarting the kernel, i.e. doing something intentional. The message is there just to confirm that the desired action has happened. In other cases it may be unexpected, for example:
 
    Kernel terminated -- this might be caused by running out of memory or hitting a bug in some library (e.g., forking too many processes, trying to access invalid memory, etc.). Consider restarting or upgrading your project or running the relevant code directly in a terminal to track down the cause.
 
