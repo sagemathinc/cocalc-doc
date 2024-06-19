@@ -7,59 +7,72 @@ How to accomplish a certain task or run a specific example on CoCalc.
 CoCalc platform
 ===============
 
-* :doc:`convert-html-to-pdf`
-* :doc:`software-development`
-* :doc:`disk-space-warning`
-* :doc:`export-timetravel`
-* :doc:`external-tools`
-* :doc:`firewall-info`
-* :doc:`install-julia-package`
-* :doc:`install-python-lib`
-* :doc:`install-r-package`
-* :doc:`running-processes`
-* :doc:`multiple-accounts`
-* :doc:`parallel`
-* :doc:`project-invitation-tokens`
-* :doc:`upload`
+.. toctree::
+    :maxdepth: 1
+    
+    convert-html-to-pdf
+    software-development
+    disk-space-warning
+    export-timetravel
+    external-tools
+    firewall-info
+    install-julia-package
+    install-python-lib
+    install-r-package
+    running-processes
+    multiple-accounts
+    parallel
+    project-invitation-tokens
+    upload
+
 
 Services
 ========
 
-* :doc:`bokeh-server`
-* :doc:`mongodb`
-* :doc:`plotly-dash`
-* :doc:`postgresql`
-* :doc:`webserver`
-* :doc:`shiny-server`
-* :doc:`streamlit`
+.. toctree::
+    :maxdepth: 1
+    
+    bokeh-server
+    mongodb
+    plotly-dash
+    postgresql
+    webserver
+    shiny-server
+    streamlit
 
 Jupyter Notebook
 ================
 
-* :doc:`custom-jupyter-kernel`
-* :doc:`fix-broken-jupyter-pdf`
-* :doc:`jupyter-kernel-selection`
-* :doc:`jupyterlab-extensions`
-* :doc:`run-r-step-by-step`
-* :doc:`jupyter-extension`
-* :doc:`jupyter-plot-png-svg`
+.. toctree::
+    :maxdepth: 1
+    
+    custom-jupyter-kernel
+    fix-broken-jupyter-pdf
+    jupyter-kernel-selection
+    jupyterlab-extensions
+    run-r-step-by-step
+    jupyter-extension
+    jupyter-plot-png-svg
 
 Programming Languages and Tools
 ===============================
 
-* :doc:`assembly-language`
-* :doc:`awscli`
-* :doc:`bash-fortunes`
-* :doc:`cplusplus`
-* :doc:`dask`
-* :doc:`fortran`
-* :doc:`activeloop-hub`
-* :doc:`git`
-* :doc:`google-api`
-* :doc:`gsl`
-* :doc:`neuron`
-* :doc:`octave`
-* :doc:`pluto`
-* :doc:`remarkjs-slideshow`
-* :doc:`ruby`
-* :doc:`turtle`
+.. toctree::
+    :maxdepth: 1
+    
+    assembly-language
+    awscli
+    bash-fortunes
+    cplusplus
+    dask
+    fortran
+    activeloop-hub
+    git
+    google-api
+    gsl
+    neuron
+    octave
+    pluto
+    remarkjs-slideshow
+    ruby
+    turtle
