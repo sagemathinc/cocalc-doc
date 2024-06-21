@@ -47,4 +47,4 @@ In most cases we do not provide support SLAs (contact us if you are interested i
 Next Steps
 ----------
 
-`Create an account <https://cocalc.com/auth/sign-up>`_, give CoCalc a spin, and get in touch with your questions and comments - we would love to connect!
+`Create an account <https://cocalc.com/auth/sign-up>`_, give CoCalc a spin, and `get in touch <https://cocalc.com/support/new?hideExtra=true&type=question&subject=Considering%20CoCalc&body=I%20want%20to%20explore%20using%20CoCalc%20for%20...&title=Let%27s%20Connect>`_ with your questions and comments - we would love to connect!
