@@ -159,7 +159,7 @@ The following information is displayed for each license:
 * License manager(s)
 * License description
 
-If the license set for automatic monthly or yearly renewal, you can cancel renewal by clicking the "End" button in the right of the license information box. This works the same way as :ref:`canceling a subscription <cancel-subscription>` under the Account / Purchases tab.
+If the license set for automatic monthly or yearly renewal, you can cancel renewal by clicking the "End" button in the right of the license information box.
 
 Add license managers by clicking the "+ New" button and entering the email address or name of a manager.
 
