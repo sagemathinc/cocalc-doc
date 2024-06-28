@@ -1,12 +1,12 @@
 =================================
-Information for Firewall Admins
+Configure Firewall
 =================================
 
 URLs and Port Numbers
 =================================
 
 
-Q: What URLs and ports should I whitelist on my organization's firewall to enable access to Cocalc.com services?
+Q: What URLs and ports should I whitelist on my organization's firewall to enable access to CoCalc.com services?
 
 A: Enable URLs to domain `cocalc.com` and its subdomains. Enable connections to TCP port 443 for HTTPS, and to port 22 to allow access via the SSH protocol. In the design of CoCalc.com, we have worked to ensure that all services are provided exclusively via port 443, plus SSH access when the user has properly configured encryption keys. Connections to CoCalc.com on port 80 are redirected to port 443, so you might want to enable that, too
 

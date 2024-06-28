@@ -3,7 +3,7 @@
 .. highlight:: r
 
 ============================
-Shiny Server
+Shiny
 ============================
 
 `Shiny`_ allows you to build interactive web apps from R.

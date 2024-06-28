@@ -1,7 +1,7 @@
 .. index:: PostgreSQL
 
 ===============================
-PostgreSQL Server
+PostgreSQL
 ===============================
 
 

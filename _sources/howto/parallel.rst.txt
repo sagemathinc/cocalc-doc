@@ -2,16 +2,14 @@
 .. index:: Multiple CPUs
 
 ======================
-Multiple CPUs
+Utilize Multiple CPUs
 ======================
 
-Making use of more than 1 CPU specialized code. A typical program will not run twice as fast with two CPUs than with one, for example.
+Making use of more than 1 CPU core requires specialized code. A typical program will not run twice as fast with two CPU cores than with one. You can, of course, run independent programs/notebooks in parallel and benefit automatically from having multiple cores, but if you want to speed up a single task, there are basically 3 approaches:
 
-There are basically 3 ways to make use of more than 1 CPU in a project:
+#. If you're processing data for a range of values, split them up into batches and process them in parallel. E.g. for 3 CPUs, instead of running a cycle from 1 to 100, run 3 cycles in parallel: one from 1 to 30, another one from 31 to 65, and the last one from 66 to 100. This will work, of course, only if later iterations do no depend on the result of prior iterations.
 
-#. If you're processing data or a range of values, split them up into partitions and process them in parallel. E.g. for 3 CPUs, instead of 1 to 100, do 1 to 30, 31 to 65 and 66 to 100. Those 3 partitions can still only use one core (same code), but in total they can use all 3 when run at the same time.
-
-#. Structure your code to run in parallel. This depends on what you are doing, the programming language, the type of problem, etc.
+#. Structure your code to run in parallel. Details depend on what you are doing and your programming language, among other factors.
 
 #. Use a library or code generator that supports parallel operations on a lower level.
 

@@ -5,7 +5,7 @@
 .. highlight:: python
 
 ============================
-Plot.ly's Dash Server
+Dash
 ============================
 
 .. _plotly-dash:

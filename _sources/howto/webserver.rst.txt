@@ -3,7 +3,7 @@
 .. _webserver:
 
 ==================================
-Run A Webserver
+Run a Webserver
 ==================================
 
 For testing and development, it is possible to run a small webserver inside a CoCalc project.

@@ -2,7 +2,7 @@
 .. index:: Software Development
 
 ======================================
-Developing Software
+Develop Software
 ======================================
 
 This page is all about programming your own software (C, Fortran, Java, Julia, Octave, R, etc.) from CoCalc.

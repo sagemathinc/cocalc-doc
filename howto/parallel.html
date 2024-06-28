@@ -5,7 +5,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multiple CPUs &mdash; CoCalc Manual  documentation</title>
+  <title>Utilize Multiple CPUs &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -25,8 +25,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Project Invitation Tokens" href="project-invitation-tokens.html" />
-    <link rel="prev" title="Multiple CoCalc Accounts" href="multiple-accounts.html" />
+    <link rel="next" title="Custom Jupyter Kernel" href="custom-jupyter-kernel.html" />
+    <link rel="prev" title="Use Multiple Accounts" href="multiple-accounts.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -63,7 +63,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../platform.html">Platform</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_interface.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../service_options.html">Service Options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">How-tos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trouble.html">Troubleshooting</a></li>
@@ -89,8 +89,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">Howto</a></li>
-      <li class="breadcrumb-item active">Multiple CPUs</li>
+          <li class="breadcrumb-item"><a href="index.html">How-tos</a></li>
+      <li class="breadcrumb-item active">Utilize Multiple CPUs</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -107,13 +107,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="multiple-cpus">
-<span id="index-1"></span><span id="index-0"></span><h1>Multiple CPUs<a class="headerlink" href="#multiple-cpus" title="Link to this heading"></a></h1>
-<p>Making use of more than 1 CPU specialized code. A typical program will not run twice as fast with two CPUs than with one, for example.</p>
-<p>There are basically 3 ways to make use of more than 1 CPU in a project:</p>
+  <section id="utilize-multiple-cpus">
+<span id="index-1"></span><span id="index-0"></span><h1>Utilize Multiple CPUs<a class="headerlink" href="#utilize-multiple-cpus" title="Link to this heading"></a></h1>
+<p>Making use of more than 1 CPU core requires specialized code. A typical program will not run twice as fast with two CPU cores than with one. You can, of course, run independent programs/notebooks in parallel and benefit automatically from having multiple cores, but if you want to speed up a single task, there are basically 3 approaches:</p>
 <ol class="arabic simple">
-<li><p>If you’re processing data or a range of values, split them up into partitions and process them in parallel. E.g. for 3 CPUs, instead of 1 to 100, do 1 to 30, 31 to 65 and 66 to 100. Those 3 partitions can still only use one core (same code), but in total they can use all 3 when run at the same time.</p></li>
-<li><p>Structure your code to run in parallel. This depends on what you are doing, the programming language, the type of problem, etc.</p></li>
+<li><p>If you’re processing data for a range of values, split them up into batches and process them in parallel. E.g. for 3 CPUs, instead of running a cycle from 1 to 100, run 3 cycles in parallel: one from 1 to 30, another one from 31 to 65, and the last one from 66 to 100. This will work, of course, only if later iterations do no depend on the result of prior iterations.</p></li>
+<li><p>Structure your code to run in parallel. Details depend on what you are doing and your programming language, among other factors.</p></li>
 <li><p>Use a library or code generator that supports parallel operations on a lower level.</p></li>
 </ol>
 <p>A good way to start with the theory is this article: <a class="reference external" href="https://en.wikipedia.org/wiki/Parallel_computing">Wikipedia: Parallel computing</a>.</p>
@@ -123,8 +122,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="multiple-accounts.html" class="btn btn-neutral float-left" title="Multiple CoCalc Accounts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="project-invitation-tokens.html" class="btn btn-neutral float-right" title="Project Invitation Tokens" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="multiple-accounts.html" class="btn btn-neutral float-left" title="Use Multiple Accounts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="custom-jupyter-kernel.html" class="btn btn-neutral float-right" title="Custom Jupyter Kernel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
