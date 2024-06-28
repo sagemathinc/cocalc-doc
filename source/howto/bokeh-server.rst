@@ -4,7 +4,7 @@
 .. highlight:: python
 
 ============================
-Bokeh / Holoview Server
+Bokeh / DASK / Holoview
 ============================
 
 .. note::

@@ -1,50 +1,36 @@
 ===============================
-Howto
+How-tos
 ===============================
 
-How to accomplish a certain task or run a specific example on CoCalc.
+These pages explain how to accomplish a certain task or run a specific example on CoCalc.
 
-CoCalc platform
+
+CoCalc Platform
 ===============
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
     
+    firewall-info
     convert-html-to-pdf
     software-development
-    disk-space-warning
     export-timetravel
-    external-tools
-    firewall-info
     install-julia-package
     install-python-lib
     install-r-package
+    project-invitation-tokens
     running-processes
+    upload
+    external-tools
     multiple-accounts
     parallel
-    project-invitation-tokens
-    upload
 
 
-Services
-========
+Jupyter Notebooks
+=================
 
 .. toctree::
-    :maxdepth: 1
-    
-    bokeh-server
-    mongodb
-    plotly-dash
-    postgresql
-    webserver
-    shiny-server
-    streamlit
-
-Jupyter Notebook
-================
-
-.. toctree::
-    :maxdepth: 1
+    :titlesonly:
     
     custom-jupyter-kernel
     fix-broken-jupyter-pdf
@@ -54,25 +40,49 @@ Jupyter Notebook
     jupyter-extension
     jupyter-plot-png-svg
 
-Programming Languages and Tools
-===============================
+
+Programming Languages
+=====================
 
 .. toctree::
-    :maxdepth: 1
+    :titlesonly:
     
-    assembly-language
+    Assembly <assembly-language>
+    C++ <cplusplus>
+    Fortran <fortran>
+    GSL Compilation <gsl>
+    Octave <octave>
+    Ruby <ruby>
+
+
+Servers
+=======
+
+.. toctree::
+    :titlesonly:
+    
+    Custom <webserver>
+    bokeh-server
+    mongodb
+    plotly-dash
+    postgresql
+    shiny-server
+    streamlit
+
+
+Tools
+=====
+
+.. toctree::
+    :titlesonly:
+    
     awscli
     bash-fortunes
-    cplusplus
     dask
-    fortran
     activeloop-hub
     git
     google-api
-    gsl
     neuron
-    octave
     pluto
     remarkjs-slideshow
-    ruby
     turtle

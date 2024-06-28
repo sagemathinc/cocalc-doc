@@ -2,7 +2,7 @@
 .. _multiple-accounts:
 
 ===============================
-Multiple CoCalc Accounts
+Use Multiple Accounts
 ===============================
 
 What Can go Wrong?

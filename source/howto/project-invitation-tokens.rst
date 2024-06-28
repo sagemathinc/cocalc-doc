@@ -2,7 +2,7 @@
 .. _project-invitation:
 
 =============================
-Project Invitation Tokens
+Invite via Tokens
 =============================
 
 Have you ever given a talk online and wanted to have everybody in

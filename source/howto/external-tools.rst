@@ -1,8 +1,8 @@
 =======================
-External Tools
+Use External Tools
 =======================
 
-Notes about external (or 3rd party) tools on CoCalc.
+Notes about using external (or 3rd party) tools on CoCalc.
 
 .. contents::
    :local:
