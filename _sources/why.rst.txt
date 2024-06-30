@@ -10,6 +10,8 @@ If you are wondering about some specific requirements, reach out to us at help@s
 We assume that you are aware of advantages (and some disadvantages) of working in the cloud rather than your own laptop, but there are quite a few cloud options out there. So, what makes CoCalc different from them?
 
 
+.. _open_world_approach:
+
 Open World Approach
 -------------------
 
@@ -19,6 +21,8 @@ We want to facilitate access to open source software. This should not come as a 
 
 CoCalc's flexibility sometimes may create a feeling of a more complicated/overloaded interface. If your goal is to have a single feature, say Linux terminals, and nothing else, then perhaps there are easier to learn alternatives for your use case. However, if your needs may grow over time, you may find more and more ways to make use of CoCalc. We are also trying to separate "essential" elements and configuration options from "advanced" ones, to keep it simple yet powerful.
 
+
+.. _no_vendor_lock_in:
 
 No Vendor Lock-In
 -----------------
