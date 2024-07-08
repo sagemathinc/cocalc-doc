@@ -240,14 +240,14 @@ In order to smoothly and successfully use a compute server, it is essential to u
 
 For the most part, all files in your CoCalc project conveniently appear in your home folder on the compute server and you can use them in a regular way. File changes inside of your CoCalc project and on your compute server can be synced both ways. This works great for Jupyter notebooks, for example. However, this convenience is still bound by laws of physics and because of network transfers involved it is much slower than modern local disks. You are also limited by your CoCalc disk quota.
 
-If you need to read or write massive amounts of data, e.g. for data science or machine learning, or the programs you are running operate with a lot of files, e.g. ``git status`` with a large repository, you do need to use local fast directories on your compute server. These directories are configured in the compute server settings when you create or edit one:
+If you need to read or write massive amounts of data, e.g. for data science or machine learning, or the programs you are running operate with a lot of files, e.g. ``git status`` with a large repository, you do need to use :doc:`cloud_file_system` or Fast Local Directories on your compute server. These directories are configured in the compute server settings when you create or edit one:
 
 .. figure:: img/compute_server_fast_data.png
     :width: 80%
     :align: center
-    :alt: Fast Data Directories
+    :alt: Fast Local Directories
 
-    Fast Data Directories
+    Fast Local Directories
     
 As intended, these directories are *NOT* visible in your CoCalc project:
 
@@ -258,7 +258,7 @@ As intended, these directories are *NOT* visible in your CoCalc project:
 
     File Explorer on Project
     
-In order to see them, to open files in them, or to open even synced files on the compute server without extra steps, connect your file explorer to the compute server in the same way as with notebooks and terminals, using the **Server** button. Now the fast data directories are visible (you can certainly have more than one):
+In order to see them, to open files in them, or to open even synced files on the compute server without extra steps, connect your file explorer to the compute server in the same way as with notebooks and terminals, using the **Server** button. Now the Fast Local Directories are visible (you can certainly have more than one):
 
 .. figure:: img/compute_server_files.png
     :width: 80%
