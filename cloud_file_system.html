@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud File System &mdash; CoCalc Manual  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
+    <link rel="canonical" href="https://doc.cocalc.com/cloud_file_system.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="https://cocalc.com/analytics.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Pay-As-You-Go Purchase" href="paygo.html" />
+    <link rel="prev" title="Compute Servers" href="compute_server.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+    <link rel="canonical" href="https://doc.cocalc.com/cloud_file_system.html"/>
+  
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+<a href="index.html" class="icon icon-home"> CoCalc Manual
+  <img src="_static/_static/cocalc-doc-logo.svg" class="logo" alt="Logo"/>
+</a>
+
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working_with.html">Working With</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform.html">Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_interface.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="service_options.html">Service Options</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="trial.html">Trial Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="licenses.html">Licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compute_server.html">Compute Servers</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cloud File System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#billing">Billing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#billing-estimate">Billing Estimate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#location-choice">Location Choice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#local-disk-size">Local Disk Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#number-of-files">Number of Files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paygo.html">Pay-As-You-Go Purchase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="on-premises.html">On-Premises CoCalc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cocalc-cloud.html">CoCalc Cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">How-tos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+  <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+  <a href="index.html">CoCalc Manual</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="service_options.html">Service Options</a></li>
+      <li class="breadcrumb-item active">Cloud File System</li>
+<li class="wy-breadcrumbs-aside" style="padding: 0;">
+  <a
+    class="fa fa-question-circle"
+    href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!"
+    style="background-color: #daeefb; color: black; border: 3px solid #2980b9; padding: 2px 5px; border-radius: 4px;"
+  >
+    Ask us a Question!
+  </a>
+</li>
+
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cloud-file-system">
+<span id="index-0"></span><span id="id1"></span><h1>Cloud File System<a class="headerlink" href="#cloud-file-system" title="Link to this heading"></a></h1>
+<p>A CoCalc Cloud File System is “the third way” to store and access your data on <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>, in addition to the home directory of your project and <a class="reference internal" href="compute_server.html#compute-server-filesystem"><span class="std std-ref">Fast Local Directories</span></a>. It combines a lot of advantages into a single package:</p>
+<ul class="simple">
+<li><p><strong>Fully POSIX Compliant:</strong>
+A Cloud File System is a fully POSIX compliant distributed file system built using <a class="reference external" href="https://juicefs.com/">JuiceFS</a>, <a class="reference external" href="https://docs.keydb.dev/">KeyDB</a> and <a class="reference external" href="https://cloud.google.com/storage">Google Cloud Storage</a>. If you don’t know what this means and aren’t interested in technical details, the bottom line is that it behaves as a “normal file system” and you can do anything you want with it. Store just one file, clone a big git repository, even compile software on it! This file system works and is reasonably fast <em>for a networked file system</em>.</p></li>
+<li><p><strong>Independent:</strong>
+A Cloud File System is independent of any compute server and can be moved from one project to another.</p></li>
+<li><p><strong>Shared:</strong>
+By default a Cloud File System is automounted to all compute servers in the project, no matter where they are located. You can both read and write to it from multiple locations (POSIX lock is supported, but behavior will be undefined if you write to the same file simultaneously without a lock).</p></li>
+<li><p><strong>Unlimited:</strong>
+There is no concept of overall size or free space for a Cloud File System. You can write to it as much as you want, and only the used size will change.</p></li>
+<li><p><strong>Resilient:</strong>
+You can even make a Multiregion Cloud File System to make it accessible if one of Google’s data centers goes down, and also increase speed across a continent.</p></li>
+<li><p><strong>Cost-efficient:</strong>
+Long-term archival cost for a Cloud File System is staggeringly low.</p></li>
+</ul>
+<p>This may sound too good to be true and make you wonder - what’s the catch?  Well, one is that the billing is… complicated.</p>
+<section id="billing">
+<span id="cloud-filesystem-billing"></span><h2>Billing<a class="headerlink" href="#billing" title="Link to this heading"></a></h2>
+<p>The cost of a Cloud File System is perfectly sensible and can be much lower than local disks on cloud VMs, including our <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>. However the cost structure may take a while to understand and it may be hard to predict the <em>exact</em> cost for your use case in advance, unlike the cost of a regular disk. Don’t worry - we are not trying to hide it and, in fact, we do provide a real time estimate! The exact charge is derived from the underlying <a class="reference external" href="https://cloud.google.com/storage">Google Cloud Storage</a> pricing. We will charge your account a few days <em>after usage</em> when exact billing data becomes available to us.</p>
+<p><strong>EXAMPLE: “Regular Local Disk”</strong> Suppose you have about 200 GB of data, you expect to generate about 100 GB of checkpoints and auxiliary files, and hope to end up with about 50 GB of output. The software disk image you are going to use is about 25 GB, so adding everything together and rounding up you estimate that a 400 GB disk should work. If the cost of the disk space is $0.10 per GB per month, you know that you need to budget $40/month for the duration of your project. If it is going to last 2 years, you need $960 to pay for the disk.</p>
+<p>Now suppose you want to use a Cloud File System in the same example, how much money do you need to allocate for it? Unfortunately, there is no easy formula. You need to cover</p>
+<ul class="simple">
+<li><p><strong>Storage:</strong> Let’s say you are considering a Cloud File System with $0.026/GB/month starting storage cost. Then once you have your data in the system, it will cost you $5.20/month, which is obviously much better than $40/month. You do NOT pay for the checkpoints that you have not created yet. This $5.20/month cost will also automatically decrease substantially over time if some data is not touched, if you use the default <em>Autoclass</em> bucket storage class.</p></li>
+<li><p><strong>Write operations:</strong> These depend on the number of files you have. If they are about 1 MB each and you have 200,000 of them, you can expect about $1.30 for the initial upload.</p></li>
+<li><p><strong>Read operations:</strong> These depend on the number of times you need to “re-read” your files. A Cloud File System is efficiently cached on a local disk. If you recreate your server every day (i.e. your cache is empty every morning) and have to access <em>all</em> data, the cost of reading 200,000 files may be about $0.13/day or $4/month if you don’t take weekends off.</p></li>
+<li><p><strong>Network transfer:</strong> This obviously depends on the amount of data you transfer and relative location of your Cloud File System and your Compute Server. If they are in the same region, there is no network transfer fee in either direction! Otherwise it can be as high as $0.30/GB, i.e. $60 to read the entire data set once!</p></li>
+<li><p><strong>Other fees:</strong> These depend on your particular access pattern and chosen parameters. For example, with <em>Autoclass</em> you’ll pay about $0.65/month for 200,000 files. If you choose a different bucket storage class, it may affect the cost of read operations and there may be early deletion charges.</p></li>
+</ul>
+<p>So, what is the bottom line here? If you avoid network transfer fees and read 200GB once per day, the monthly cost should be about $10. With checkpoints and the output it may end up close to $20/month. And do you still need a 400GB local disk on your Compute Server? Yes, to be able to cache all the files, assuming that you need to access them frequently. However, there is no need to keep the disk of your compute server when you are not actively using it.  You can also easily switch between different 400GB local cache disk types with different performance parameters.  Will it help you to save some money? Perhaps, but if you are actually working with these data frequently, the amount is likely to be insignificant compared to the cost of computational resources. The advantage of using a Cloud File System in this case is its convenience, not cost savings.</p>
+<p>If, on the other hand, you expect to store terabytes of data that you need accessible “when the need arises” and in day-to-day work you read only a fraction of the data, you are likely to be pleased with the cost as well as convenience!</p>
+<p><strong>EXAMPLE: Large Long-Term Archive</strong> Suppose you run a computationally expensive simulation every month based on data from public sources, i.e. you do NOT need to store input data yourself. However, the simulation results, about 1 TB each time, have to be archived because it takes a lot of time (and money) to recreate them. Most of these results are stored “just in case”, only a small portion is actually accessed. What will be an approximate cost here? Let’s assume that your files are big in which case they will be broken into 16MB chunks behind the scene. Then you need to cover about 65,000 write operations, $0.50, and each month there will be $0.20 charge for using Autoclass. The storage fee for the first month will be  $0.026 x 1000 = $26. If you don’t access these data after writing, however, the storage fee for the second and third months will be $13/month. Then $5.20/month for the rest of the year. After one year it drops to $1.56/month!</p>
+</section>
+<section id="billing-estimate">
+<h2>Billing Estimate<a class="headerlink" href="#billing-estimate" title="Link to this heading"></a></h2>
+<p>If you have concerns about potential Cloud File System cost for your use case, try it on a smaller sample if possible and keep an eye on our real time billing estimates. To access these, click the graph icon:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/cfs_access_estimates.png"><img alt="Access Billing Estimates" src="_images/cfs_access_estimates.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Access Billing Estimates</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/cfs_estimate_plots.png"><img alt="Billing Estimates" src="_images/cfs_estimate_plots.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Billing Estimates</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>You can also monitor Cloud File System activity in the terminal using <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">cloudfs</span> <span class="pre">stats</span></code> command:</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/cfs_terminal_stats.png"><img alt="Using ``cocalc cloudfs stats``" src="_images/cfs_terminal_stats.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Using <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">cloudfs</span> <span class="pre">stats</span></code></span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="location-choice">
+<h2>Location Choice<a class="headerlink" href="#location-choice" title="Link to this heading"></a></h2>
+<p>Creating a Cloud File System is very easy and most of its basic parameters you can change later on. However, it is impossible to change its location and this choice affects not only the storage cost (which you can see in the selector), but also the usage cost, i.e. the network transfer and read/write operations (which we cannot estimate in advance). Therefore, you need to pay attention to where your Cloud File Systems <strong>and</strong> Compute Servers are located:</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/cfs_location.png"><img alt="Choosing Location" src="_images/cfs_location.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Choosing Location</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="local-disk-size">
+<h2>Local Disk Size<a class="headerlink" href="#local-disk-size" title="Link to this heading"></a></h2>
+<p>A Cloud File System is efficiently cached using a local disk, which is essential for speed as well as cost: it helps to avoid excessive charges for read operation and network traffic. Try to have a disk big enough to fit all the data that you are likely to read in one session.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The price of a bigger disk may not be a big concern since you can deprovision it when not in use. This is especially the case if you need to process some new data on a weekly or monthly basis.  On Google Cloud, disk bandwidth and IOPS are also proportionate to the disk size, so you might want to use a larger disk to increase speed.</p>
+</div>
+</section>
+<section id="number-of-files">
+<h2>Number of Files<a class="headerlink" href="#number-of-files" title="Link to this heading"></a></h2>
+<p>Since there are per-operation charges for a Cloud File System, if you always use a lot of small files together you may consider storing them in an archive and only unpacking them locally. It may also increase downloading speed, although it is pretty efficient anyway. As an alternative, you can also use <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">warmup</span></code> command in a terminal:</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/cfs_terminal_warmup.png"><img alt="Using ``cocalc warmup``" src="_images/cfs_terminal_warmup.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Using <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">warmup</span></code></span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Under the hood, a Cloud File System keeps all file metadata in RAM for efficient syncing. This works great up to a few million files, but if you need to work with many millions, you have to pay attention to RAM usage (storing 3 million files uses about 1 GB RAM), consider using archives for grouping files together, or contact us to develop an alternative solution!</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="compute_server.html" class="btn btn-neutral float-left" title="Compute Servers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="paygo.html" class="btn btn-neutral float-right" title="Pay-As-You-Go Purchase" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Sagemath, Inc., CC BY-4.0 licensed.</p>
+  </div>
+
+  
+
+<div role="contentinfo">
+  <p>
+    Please contact us for <a href="https://cocalc.com/support/new?type=question&subject=A%20question%20about%20CoCalc%20...&body=&title=Ask%20us%20a%20Question!">Questions and Feedback</a>,
+    <a href="https://github.com/sagemathinc/cocalc-doc/">Documentation Repository</a>,
+    <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
+   </p>
+   <p>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/cloud_file_system.rst" class="fa fa-github"> Edit this page on GitHub</a>
+  </p>
+  <p>
+    <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
+  </p>
+</div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+   
+  <a class="github cocalcbanner" href="https://cocalc.com/app?anonymous=true">
+     <img alt="Start CoCalc"
+          class="github"
+          src="_static/start-cocalc.png"
+          style="position: fixed; top: 0; right: 0; border: 0; height: 75px; width: 75px">
+  </a>
+
+
+</body>
+</html>

@@ -5,13 +5,13 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>On-Premises CoCalc &mdash; CoCalc Manual  documentation</title>
+  <title>Cloud Filesystem &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/on-premises.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/cloud_filesystem.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -25,13 +25,13 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="CoCalc Cloud" href="cocalc-cloud.html" />
-    <link rel="prev" title="Vouchers" href="vouchers.html" />
+    <link rel="next" title="Pay-As-You-Go Purchase" href="paygo.html" />
+    <link rel="prev" title="Compute Servers" href="compute_server.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/on-premises.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/cloud_filesystem.html"/>
   
 
 </head>
@@ -66,14 +66,15 @@
 <li class="toctree-l2"><a class="reference internal" href="trial.html">Trial Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="licenses.html">Licenses</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compute_server.html">Compute Servers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cloud_file_system.html">Cloud File System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="paygo.html">Pay-As-You-Go Purchase</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">On-Premises CoCalc</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#cocalc-cloud">CoCalc Cloud</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#on-prem-compute-server">On Prem Compute Server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cloud Filesystem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#full-posix-compliance">Full POSIX Compliance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#independence">Independence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-access">Shared Access</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="paygo.html">Pay-As-You-Go Purchase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="on-premises.html">On-Premises CoCalc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cocalc-cloud.html">CoCalc Cloud</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
@@ -105,7 +106,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="service_options.html">Service Options</a></li>
-      <li class="breadcrumb-item active">On-Premises CoCalc</li>
+      <li class="breadcrumb-item active">Cloud Filesystem</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -122,20 +123,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="on-premises-cocalc">
-<span id="on-premises"></span><span id="index-0"></span><h1>On-Premises CoCalc<a class="headerlink" href="#on-premises-cocalc" title="Link to this heading"></a></h1>
-<p>There are various reasons why the Internet based <a class="reference external" href="https://cocalc.com">cocalc.com</a> service may not be sufficient for you. You may want to make use of hardware you already own or have some requirements regarding data storage and processing location.</p>
-<section id="cocalc-cloud">
-<h2>CoCalc Cloud<a class="headerlink" href="#cocalc-cloud" title="Link to this heading"></a></h2>
-<p>For a completely standalone instance of CoCalc we offer <a class="reference internal" href="cocalc-cloud.html"><span class="doc">CoCalc Cloud</span></a>.
-There is information about pricing in the <a class="reference external" href="https://cocalc.com/pricing/onprem">CoCalc on-premises price guide</a>
-and more information in our blog article <a class="reference external" href="https://about.cocalc.com/2022/11/18/cocalc-on-premise/">CoCalc On-Premise</a>.</p>
+  <section id="cloud-filesystem">
+<span id="index-0"></span><span id="id1"></span><h1>Cloud Filesystem<a class="headerlink" href="#cloud-filesystem" title="Link to this heading"></a></h1>
+<p>The CoCalc Cloud Filesystem is “the third way” to store and access your data on <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>, in addition to the home directory of your project and <a class="reference internal" href="compute_server.html#fast-local-directories"><span class="std std-ref">Compute Server Filesystem</span></a>. They combine a lot of advantages into a single package.</p>
+<section id="full-posix-compliance">
+<h2>Full POSIX Compliance<a class="headerlink" href="#full-posix-compliance" title="Link to this heading"></a></h2>
+<p>Cloud Filesystem is a fully POSIX compliant distributed file system built using <a class="reference external" href="https://juicefs.com/">JuiceFS</a>, <a class="reference external" href="https://docs.keydb.dev/">KeyDB</a> and <a class="reference external" href="https://cloud.google.com/storage">Google Cloud Storage</a>.</p>
 </section>
-<section id="on-prem-compute-server">
-<h2>On Prem Compute Server<a class="headerlink" href="#on-prem-compute-server" title="Link to this heading"></a></h2>
-<p>One of the hosting options when creating a <a class="reference internal" href="compute_server.html#compute-servers"><span class="std std-ref">compute server</span></a> is <strong>On prem</strong>. You can see how William uses his own laptop and a virtual machine running under his personal account on Lambda cloud in this video:</p>
-<center><iframe width="640" height="360" src="https://www.youtube.com/embed/NkNx6tx3nu0?si=liVjJb0Ujb5Hb5J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-<br/><p>This approach lets you use your regular CoCalc account, collaborate with other users of the platform, and at the same time benefit from external resources you have access to!</p>
+<section id="independence">
+<h2>Independence<a class="headerlink" href="#independence" title="Link to this heading"></a></h2>
+<p>A Cloud Filesystem is independent of any compute server and can be moved from one project to another (disable automount first, then used the triple dots menu).</p>
+</section>
+<section id="shared-access">
+<h2>Shared Access<a class="headerlink" href="#shared-access" title="Link to this heading"></a></h2>
+<p>By default a Cloud Filesystem is automounted to all compute servers in the project, no matter where they are located. You can both read and write to it from multiple locations (of course, you should not write to the same file simultaneously).</p>
+<ul class="simple">
+<li></li>
+</ul>
 </section>
 </section>
 
@@ -143,8 +147,8 @@ and more information in our blog article <a class="reference external" href="htt
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="vouchers.html" class="btn btn-neutral float-left" title="Vouchers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cocalc-cloud.html" class="btn btn-neutral float-right" title="CoCalc Cloud" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="compute_server.html" class="btn btn-neutral float-left" title="Compute Servers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="paygo.html" class="btn btn-neutral float-right" title="Pay-As-You-Go Purchase" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -162,7 +166,7 @@ and more information in our blog article <a class="reference external" href="htt
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/on-premises.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/cloud_filesystem.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!

@@ -1,0 +1,25 @@
+.. index:: Cloud Filesystem
+.. _cloud_filesystem:
+
+Cloud Filesystem
+================
+
+The CoCalc Cloud Filesystem is "the third way" to store and access your data on :doc:`compute_server`, in addition to the home directory of your project and :ref:`fast_local_directories`. They combine a lot of advantages into a single package.
+
+Full POSIX Compliance
+---------------------
+
+Cloud Filesystem is a fully POSIX compliant distributed file system built using `JuiceFS <https://juicefs.com/>`_, `KeyDB <https://docs.keydb.dev/>`_ and `Google Cloud Storage <https://cloud.google.com/storage>`_.
+
+
+Independence
+------------
+
+A Cloud Filesystem is independent of any compute server and can be moved from one project to another (disable automount first, then used the triple dots menu).
+
+Shared Access
+-------------
+
+By default a Cloud Filesystem is automounted to all compute servers in the project, no matter where they are located. You can both read and write to it from multiple locations (of course, you should not write to the same file simultaneously).
+
+* 
