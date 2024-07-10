@@ -170,6 +170,15 @@ You can easily start your own instance of JupyterLab or VS Code on your computer
     
 Since you will be able to use these applications via direct connection to your compute server, you may enjoy lower latency than through the regular CoCalc interface, which may be especially noticeable for :ref:`X11 Desktops <X11>`. Of course, for this you have to create your compute server in a region geographically close to you. You are also free to install any system software you wish, and this is actually necessary for most of the software pre-installed in your Home Base.
 
+Note that you can simultaneously use a direct connection to your server and the standard CoCalc interface, which may be convenient in some cases, e.g. copy-pasting in a terminal is easier. It may be handy to make use of ``DISPLAY`` variable:
+
+.. figure:: img/compute_server_DISPLAY.png
+    :width: 90%
+    :align: center
+    :alt: X11 Desktop on a Compute Server used from a Terminal in CoCalc
+
+    X11 Desktop on a Compute Server used from a Terminal in CoCalc
+    
 
 Becoming root and Port Forwarding
 ---------------------------------
