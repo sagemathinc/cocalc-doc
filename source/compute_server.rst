@@ -154,6 +154,23 @@ The server bar appearing above the notebook allows you to quickly see where the 
 In order to use the Linux command line, e.g., compilers, etc., create a terminal file (one ending in .term) and connect it to a compute server in the same way. If you chose the "CUDA Toolkit" image, then the ``nvcc`` command will be available for compiling ``.cu`` code. See `this tutorial <https://github.com/sagemathinc/cocalc-howto/blob/main/cuda.md>`_ for details.
 
 
+.. _compute_server_applications:
+
+JupyterLab, VS Code, X11 Desktop
+--------------------------------
+
+You can easily start your own instance of JupyterLab or VS Code on your computer server, as well as start using X11 Graphical Desktop. Simply click the dot menu in the compute server panel, make a choice, and follow instructions:
+
+.. figure:: img/compute_server_applications.png
+    :width: 90%
+    :align: center
+    :alt: Compute Server Applications
+
+    Compute Server Applications
+    
+Since you will be able to use these applications via direct connection to your compute server, you may enjoy lower latency than through the regular CoCalc interface, which may be especially noticeable for :ref:`X11 Desktops <X11>`. Of course, for this you have to create your compute server in a region geographically close to you. You are also free to install any system software you wish, and this is actually necessary for most of the software pre-installed in your Home Base.
+
+
 Becoming root and Port Forwarding
 ---------------------------------
 

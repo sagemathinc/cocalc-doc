@@ -2,13 +2,17 @@
 
 .. _X11:
 
-======================
-Graphical Applications
-======================
+==========================
+X11 Graphical Applications
+==========================
 
 .. contents::
    :local:
    :depth: 2
+   
+.. hint::
+
+    In addition to using X11 Desktops in your Project, you can also run :ref:`compute_server_applications` on :doc:`compute_server`.
 
 CoCalc is a modern web-application, but there are many already existing desktop applications.
 This aspect of CoCalc brings such applications to the web,
