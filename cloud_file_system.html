@@ -142,8 +142,10 @@ You can even make a Multiregion Cloud File System to make it accessible if one o
 <li><p><strong>Cost-efficient:</strong>
 Long-term archival cost for a Cloud File System is staggeringly low.</p></li>
 </ul>
-<p>This may sound too good to be true and make you wonder - what’s the catch?  Well, one is that the billing is… complicated.</p>
-<section id="billing">
+<p>This may sound too good to be true and make you wonder - what’s the catch?  Well, one is that the billing is… complicated.
+We shed some light on it below, but to get a sense of how Cloud File Systems work check out a real-time 5 minute demo by CoCalc’s CEO and Founder William Stein:</p>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/zYoldE2yS3I?si=byRMmPdvQ16uIjeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br/><section id="billing">
 <span id="cloud-filesystem-billing"></span><h2>Billing<a class="headerlink" href="#billing" title="Link to this heading"></a></h2>
 <p>The cost of a Cloud File System is perfectly sensible and can be much lower than local disks on cloud VMs, including our <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>. However the cost structure may take a while to understand and it may be hard to predict the <em>exact</em> cost for your use case in advance, unlike the cost of a regular disk. Don’t worry - we are not trying to hide it and, in fact, we do provide a real time estimate! The exact charge is derived from the underlying <a class="reference external" href="https://cloud.google.com/storage">Google Cloud Storage</a> pricing. We will charge your account a few days <em>after usage</em> when exact billing data becomes available to us.</p>
 <p><strong>EXAMPLE: “Regular Local Disk”</strong> Suppose you have about 200 GB of data, you expect to generate about 100 GB of checkpoints and auxiliary files, and hope to end up with about 50 GB of output. The software disk image you are going to use is about 25 GB, so adding everything together and rounding up you estimate that a 400 GB disk should work. If the cost of the disk space is $0.10 per GB per month, you know that you need to budget $40/month for the duration of your project. If it is going to last 2 years, you need $960 to pay for the disk.</p>

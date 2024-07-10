@@ -26,6 +26,12 @@ A CoCalc Cloud File System is "the third way" to store and access your data on :
   Long-term archival cost for a Cloud File System is staggeringly low.
 
 This may sound too good to be true and make you wonder - what's the catch?  Well, one is that the billing is... complicated.
+We shed some light on it below, but to get a sense of how Cloud File Systems work check out a real-time 5 minute demo by CoCalc's CEO and Founder William Stein:
+
+.. raw:: html
+
+    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/zYoldE2yS3I?si=byRMmPdvQ16uIjeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    <br/>
 
 
 .. _cloud_filesystem_billing:
