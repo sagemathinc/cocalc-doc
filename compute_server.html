@@ -351,6 +351,12 @@ div.cocalc-header a {
 <p><span class="caption-text">X11 Desktop on a Compute Server used from a Terminal in CoCalc</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<p>It may be handy also to install Google Chrome on your compute server and run it via X11 Desktop, since it will have <strong>access to all the local ports</strong> of the compute server where your applications may serve some data. To do this, run the following commands in a terminal:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+google-chrome --no-sandbox --disable-dev-shm-usage
+</pre></div>
+</div>
 </section>
 <section id="becoming-root-and-port-forwarding">
 <h2><a class="toc-backref" href="#id29" role="doc-backlink">Becoming root and Port Forwarding</a><a class="headerlink" href="#becoming-root-and-port-forwarding" title="Link to this heading"></a></h2>
@@ -390,7 +396,7 @@ div.cocalc-header a {
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ssh -L 8123:localhost:8123 root@[server address]
 </pre></div>
 </div>
-<p>on your <em>local</em> computer and go to <code class="docutils literal notranslate"><span class="pre">http://localhost:8123</span></code> in your <em>local</em> browser.</p>
+<p>on your <em>local</em> computer and go to <code class="docutils literal notranslate"><span class="pre">http://localhost:8123</span></code> in your <em>local</em> browser. An interesting option to access these ports is to use <a class="reference internal" href="#compute-server-applications"><span class="std std-ref">X11 Desktop</span></a> on your compute server.</p>
 </section>
 <section id="billing-for-a-compute-server">
 <h2><a class="toc-backref" href="#id30" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Link to this heading"></a></h2>

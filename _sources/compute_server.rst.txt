@@ -179,6 +179,12 @@ Note that you can simultaneously use a direct connection to your server and the 
 
     X11 Desktop on a Compute Server used from a Terminal in CoCalc
     
+It may be handy also to install Google Chrome on your compute server and run it via X11 Desktop, since it will have **access to all the local ports** of the compute server where your applications may serve some data. To do this, run the following commands in a terminal::
+
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo apt install ./google-chrome-stable_current_amd64.deb
+    google-chrome --no-sandbox --disable-dev-shm-usage
+
 
 Becoming root and Port Forwarding
 ---------------------------------
@@ -226,7 +232,7 @@ The same address can be used to gain access to services. If any software on your
 
     ssh -L 8123:localhost:8123 root@[server address]
 
-on your *local* computer and go to ``http://localhost:8123`` in your *local* browser.
+on your *local* computer and go to ``http://localhost:8123`` in your *local* browser. An interesting option to access these ports is to use :ref:`X11 Desktop <compute_server_applications>` on your compute server.
 
 
 Billing for a Compute Server
