@@ -10,5 +10,4 @@ Service Options
   paygo
   vouchers
   on-premises
-  cocalc-cloud
   cocalc-desktop

@@ -61,3 +61,4 @@
    ../account/support
    ../update-credit-card
    ../chatgpt
+   ../cocalc-cloud

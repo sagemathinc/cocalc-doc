@@ -5,7 +5,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>On-Premises CoCalc &mdash; CoCalc Manual  documentation</title>
+  <title>CoCalc OnPrem &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
@@ -25,7 +25,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="CoCalc Cloud" href="cocalc-cloud.html" />
+    <link rel="next" title="CoCalc Desktop" href="cocalc-desktop.html" />
     <link rel="prev" title="Vouchers" href="vouchers.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -91,12 +91,10 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="cloud_file_system.html">Cloud File System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paygo.html">Pay-As-You-Go Purchase</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">On-Premises CoCalc</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#cocalc-cloud">CoCalc Cloud</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#on-prem-compute-server">On Prem Compute Server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CoCalc OnPrem</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#onprem-compute-server">OnPrem Compute Server</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="cocalc-cloud.html">CoCalc Cloud</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
 </li>
@@ -128,7 +126,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="service_options.html">Service Options</a></li>
-      <li class="breadcrumb-item active">On-Premises CoCalc</li>
+      <li class="breadcrumb-item active">CoCalc OnPrem</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -145,18 +143,14 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="on-premises-cocalc">
-<span id="on-premises"></span><span id="index-0"></span><h1>On-Premises CoCalc<a class="headerlink" href="#on-premises-cocalc" title="Link to this heading"></a></h1>
+  <section id="cocalc-onprem">
+<span id="index-0"></span><span id="id1"></span><h1>CoCalc OnPrem<a class="headerlink" href="#cocalc-onprem" title="Link to this heading"></a></h1>
 <p>There are various reasons why the Internet based <a class="reference external" href="https://cocalc.com">cocalc.com</a> service may not be sufficient for you. You may want to make use of hardware you already own or have some requirements regarding data storage and processing location.</p>
-<section id="cocalc-cloud">
-<h2>CoCalc Cloud<a class="headerlink" href="#cocalc-cloud" title="Link to this heading"></a></h2>
-<p>For a completely standalone instance of CoCalc we offer <a class="reference internal" href="cocalc-cloud.html"><span class="doc">CoCalc Cloud</span></a>.
-There is information about pricing in the <a class="reference external" href="https://cocalc.com/pricing/onprem">CoCalc on-premises price guide</a>
-and more information in our blog article <a class="reference external" href="https://about.cocalc.com/2022/11/18/cocalc-on-premise/">CoCalc On-Premise</a>.</p>
-</section>
-<section id="on-prem-compute-server">
-<h2>On Prem Compute Server<a class="headerlink" href="#on-prem-compute-server" title="Link to this heading"></a></h2>
-<p>One of the hosting options when creating a <a class="reference internal" href="compute_server.html#compute-servers"><span class="std std-ref">compute server</span></a> is <strong>On prem</strong>. You can see how William uses his own laptop and a virtual machine running under his personal account on Lambda cloud in this video:</p>
+<p>It is possible to run a completely standalone instance of CoCalc on a Kubernetes cluster. The underlying services and their architecture are identical to those in online cocalc.com, with comparable performance, scalability, and reliability to the online site.
+See <a class="reference external" href="https://cocalc.com/pricing/onprem">our store</a> for an overview or <a class="reference external" href="https://onprem.cocalc.com/">CoCalc OnPrem documentation</a> for detailed information.</p>
+<section id="onprem-compute-server">
+<h2>OnPrem Compute Server<a class="headerlink" href="#onprem-compute-server" title="Link to this heading"></a></h2>
+<p>One of the hosting options when creating a <a class="reference internal" href="compute_server.html#compute-servers"><span class="std std-ref">compute server</span></a> is <strong>OnPrem</strong>. You can see how William uses his own laptop and a virtual machine running under his personal account on Lambda cloud in this video:</p>
 <center><iframe width="640" height="360" src="https://www.youtube.com/embed/NkNx6tx3nu0?si=liVjJb0Ujb5Hb5J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br/><p>This approach lets you use your regular CoCalc account, collaborate with other users of the platform, and at the same time benefit from external resources you have access to!</p>
 </section>
@@ -167,7 +161,7 @@ and more information in our blog article <a class="reference external" href="htt
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="vouchers.html" class="btn btn-neutral float-left" title="Vouchers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cocalc-cloud.html" class="btn btn-neutral float-right" title="CoCalc Cloud" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cocalc-desktop.html" class="btn btn-neutral float-right" title="CoCalc Desktop" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -105,7 +105,7 @@ div.cocalc-header a {
 <li class="toctree-l4"><a class="reference internal" href="#special-considerations">Special Considerations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#google">Google</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#hyperstack">Hyperstack</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#on-prem">On Prem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#onprem">OnPrem</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#teaching-with-compute-servers">Teaching with Compute Servers</a></li>
@@ -114,8 +114,7 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="cloud_file_system.html">Cloud File System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paygo.html">Pay-As-You-Go Purchase</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vouchers.html">Vouchers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="on-premises.html">On-Premises CoCalc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cocalc-cloud.html">CoCalc Cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="on-premises.html">CoCalc OnPrem</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cocalc-desktop.html">CoCalc Desktop</a></li>
 </ul>
 </li>
@@ -186,7 +185,7 @@ div.cocalc-header a {
 <li><p><a class="reference internal" href="#special-considerations" id="id37">Special Considerations</a></p></li>
 <li><p><a class="reference internal" href="#google" id="id38">Google</a></p></li>
 <li><p><a class="reference internal" href="#hyperstack" id="id39">Hyperstack</a></p></li>
-<li><p><a class="reference internal" href="#on-prem" id="id40">On Prem</a></p></li>
+<li><p><a class="reference internal" href="#onprem" id="id40">OnPrem</a></p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="#teaching-with-compute-servers" id="id41">Teaching with Compute Servers</a></p></li>
@@ -283,7 +282,7 @@ div.cocalc-header a {
 </figure>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>You can actually be your own “cloud provider” by picking <strong>On Prem</strong> hosting! You can use not only your own physical hardware, but also virtual machines from providers we are not currently integrated with. This is one of the ways we support <a class="reference internal" href="on-premises.html#on-premises"><span class="std std-ref">On-Premises CoCalc</span></a>.</p>
+<p>You can actually be your own “cloud provider” by picking <strong>OnPrem</strong> hosting! You can use not only your own physical hardware, but also virtual machines from providers we are not currently integrated with. This is one of the ways we support <a class="reference internal" href="on-premises.html#cocalc-onprem"><span class="std std-ref">CoCalc OnPrem</span></a>.</p>
 </div>
 <p><strong>Configuration</strong> parameters vary depending on your hosting choice, but typically you can select the desired software image and hardware configuration including GPU(s).</p>
 <p>If you are going to write code using CUDA libraries, choose the “Cuda Toolkit” image. If you want to accelerate PyTorch computations with a GPU, choose the “PyTorch” image. If you want to use SageMath, choose the “SageMath” image. Note that image selection does depend on the presence of a GPU.</p>
@@ -481,7 +480,7 @@ PING fire (10.11.211.165) 56(84) bytes of data.
 <p>Current limitations (that may be removed in the future):</p>
 <ul class="simple">
 <li><p>the CoCalc project itself is <em>not</em> on this VPN</p></li>
-<li><p>you can connect from any to any server, mixing different clouds and on prem, <em>except</em> two on prem servers</p></li>
+<li><p>you can connect from any to any server, mixing different clouds and OnPrem, <em>except</em> two OnPrem compute servers</p></li>
 <li><p>when you create a new server or configure a domain name for an existing one, you may need to <em>wait a few seconds</em> before the new name will become resolvable</p></li>
 </ul>
 </section>
@@ -530,11 +529,11 @@ PING fire (10.11.211.165) 56(84) bytes of data.
 <li><p>You can see how many GPUs are available on Hyperstack at any given time and estimate your chances of being able to get what you need in the future.</p></li>
 </ul>
 </section>
-<section id="on-prem">
-<h3><a class="toc-backref" href="#id40" role="doc-backlink">On Prem</a><a class="headerlink" href="#on-prem" title="Link to this heading"></a></h3>
+<section id="onprem">
+<h3><a class="toc-backref" href="#id40" role="doc-backlink">OnPrem</a><a class="headerlink" href="#onprem" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>You are in full control of the machine you are using.</p></li>
-<li><p>At the moment On Prem compute servers are free, the intended cost when their development is finished is about 1/3 of a similar spot instance on Google. If you <em>already own</em> sufficient compute resources, this may be the most cost-effective option to benefit from the cloud and collaboration as well!</p></li>
+<li><p>At the moment OnPrem compute servers are free, the intended cost when their development is finished is about 1/3 of a similar spot instance on Google. If you <em>already own</em> sufficient compute resources, this may be the most cost-effective option to benefit from the cloud and collaboration as well!</p></li>
 </ul>
 </section>
 </section>

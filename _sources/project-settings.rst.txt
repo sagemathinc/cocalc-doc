@@ -428,7 +428,7 @@ Features and Configuration
 
 This section displays the configuration of specific functionality for the compute image for the project. These settings are read-only. They cannot be altered for the present project.
 
-If a feature or formatter is disabled, that means the compute image does not support them. It may be that you are using a custom or outdated image (see :ref:`Software Environment <software-environment>` below), or that you are using an :doc:`on-premises` version that was built without that feature or formatter.
+If a feature or formatter is disabled, that means the compute image does not support them. It may be that you are using a custom or outdated image (see :ref:`Software Environment <software-environment>` below), or that you are using an :ref:`cocalc_onprem` version that was built without that feature or formatter.
 
 .. image:: img/project-settings/feat-config.png
     :width: 50%

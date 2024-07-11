@@ -89,7 +89,7 @@ The first settings allow you to give your server a name, pick a colour to easily
 
 .. hint::
 
-    You can actually be your own "cloud provider" by picking **On Prem** hosting! You can use not only your own physical hardware, but also virtual machines from providers we are not currently integrated with. This is one of the ways we support :ref:`on-premises`. 
+    You can actually be your own "cloud provider" by picking **OnPrem** hosting! You can use not only your own physical hardware, but also virtual machines from providers we are not currently integrated with. This is one of the ways we support :ref:`cocalc_onprem`. 
     
 **Configuration** parameters vary depending on your hosting choice, but typically you can select the desired software image and hardware configuration including GPU(s).
 
@@ -343,7 +343,7 @@ All traffic is fully encrypted and all ports are open, so you have complete free
 Current limitations (that may be removed in the future):
 
 - the CoCalc project itself is *not* on this VPN
-- you can connect from any to any server, mixing different clouds and on prem, *except* two on prem servers
+- you can connect from any to any server, mixing different clouds and OnPrem, *except* two OnPrem compute servers
 - when you create a new server or configure a domain name for an existing one, you may need to *wait a few seconds* before the new name will become resolvable
 
 .. _choosing_a_cloud:
@@ -396,11 +396,11 @@ Hyperstack
 - Apart from cost and speed, Hyperstack prioritizes sustainability of their data centres. They are 100% powered by hydro-electricity and are located in Canada and Norway to benefit from lower ambient temperature for air cooling.
 - You can see how many GPUs are available on Hyperstack at any given time and estimate your chances of being able to get what you need in the future.
 
-On Prem
-.......
+OnPrem
+......
 
 - You are in full control of the machine you are using.
-- At the moment On Prem compute servers are free, the intended cost when their development is finished is about 1/3 of a similar spot instance on Google. If you *already own* sufficient compute resources, this may be the most cost-effective option to benefit from the cloud and collaboration as well!
+- At the moment OnPrem compute servers are free, the intended cost when their development is finished is about 1/3 of a similar spot instance on Google. If you *already own* sufficient compute resources, this may be the most cost-effective option to benefit from the cloud and collaboration as well!
 
 
 .. _teaching_with_compute_servers:
