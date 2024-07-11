@@ -48,7 +48,7 @@ Vouchers can be useful for running a workshop on CoCalc, offering simpler setup 
 CoCalc Administrators
 ***************************
 
-An administrator of :doc:`on-premises` may wish to create and issue vouchers to potential users of their CoCalc installation.
+An administrator of :ref:`cocalc_onprem` may wish to create and issue vouchers to potential users of their CoCalc installation.
 
 *******************************
 CoCalc Resellers and Bookstores
