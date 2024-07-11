@@ -4,7 +4,7 @@
 Turtle Graphics with CoCalc
 ===========================
 
-There are three ways to use turtle graphics with CoCalc.
+There are several ways to use turtle graphics with CoCalc.
 
 .. contents::
    :local:
@@ -70,6 +70,20 @@ X11 terminal with Jupyter notebook
     os.environ['DISPLAY'] = ":581076966"
 
 3. Turtle graphics work in the Jupyter notebook, but appear in the X11 desktop. You may have to run the graphics cell twice to see the turtle graphics.
+
+
+X11 Desktop on a Compute Server
+===============================
+
+This is similar to the above, but you run :ref:`X11 Desktop <compute_server_applications>` on a :doc:`Compute Server </compute_server>`, where you have to install ``python3-tk``, for example by putting ``!sudo apt install -y python3-tk`` into a cell in your Jupyter notebook (which has to run on the same compute server, of course):
+
+.. figure:: img/compute_server_turtle.png
+     :width: 90%
+     :align: center
+     :alt: Turtle Graphics on a Compute Server
+
+     Turtle Graphics on a Compute Server
+
 
 X11 terminal with nteract
 ==================================
