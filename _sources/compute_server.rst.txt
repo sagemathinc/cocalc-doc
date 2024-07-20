@@ -33,8 +33,8 @@ A compute server in CoCalc brings you closer to your dreams using an extremely p
    
 * **CoCalc's renowned interface - honed from years of experience and feedback!**
    - Code files are synchronized with your CoCalc project's file system
-   - Real-Time Collaboration and AI Assistant with a plethora of LLMs
-   - User friendly version control Time Travel (or your beloved git)
+   - Real-Time Collaboration and :doc:`ai` with a plethora of LLMs
+   - User friendly version control :doc:`time-travel` (or your beloved git)
 
 * **CoCalc's dedicated team - support you can rely on!**
    - Benefit from our expertise, **focus on YOUR work**

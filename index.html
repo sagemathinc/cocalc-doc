@@ -82,9 +82,8 @@ div.cocalc-header a {
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Introduction</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">What is CoCalc?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#welcome">Welcome</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#try-it-out">Try It Out</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#first-steps-guide">First Steps Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test-it-out">Test It Out</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pick-a-subscription">Pick a Subscription</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="why.html">Why CoCalc?</a></li>
@@ -145,51 +144,47 @@ div.cocalc-header a {
              
   <section id="what-is-cocalc">
 <h1>What is CoCalc?<a class="headerlink" href="#what-is-cocalc" title="Link to this heading"></a></h1>
-<section id="welcome">
-<h2>Welcome<a class="headerlink" href="#welcome" title="Link to this heading"></a></h2>
 <p>Hello, and welcome to <a class="reference external" href="https://cocalc.com/">CoCalc</a>,
-a virtual online platform for calculations, research, collaboration and authoring documents!</p>
-<p>The main building blocks for working in CoCalc are <a class="reference internal" href="project.html"><span class="doc">Projects</span></a> - separate <em>workspaces</em>
-consisting of files accessible only to you and your
-<a class="reference internal" href="project-settings.html#add-collaborators"><span class="std std-ref">collaborators</span></a>.
-You and your collaborators can <em>edit these files at the same time</em>,
-with changes synchronized among all of you in real-time!
-Different types of files open up in their associated online editors and you start to work interactively in CoCalc’s environment.
-For example, files ending in <code class="docutils literal notranslate"><span class="pre">*.sagews</span></code> are for working with <a class="reference internal" href="references.html#sagemath" id="id1"><span>[SageMath]</span></a> in <a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheets</span></a>,
-<code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> files start CoCalc’s implementations of the <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebook</span></a>,
-and <code class="docutils literal notranslate"><span class="pre">*.tex</span></code> files open an editor for <a class="reference internal" href="latex.html"><span class="doc">LaTeX documents</span></a>.</p>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/cocalc-screenshot-20200123.png"><img alt="jupyter notebook" src="_images/cocalc-screenshot-20200123.png" style="width: 90%;" /></a>
+an online platform for learning, teaching, writing, research, development - anything where you need to calculate or collaborate!</p>
+<p>Work in CoCalc is organized in <a class="reference internal" href="project.html"><span class="doc">Projects</span></a> where you and your <a class="reference internal" href="project-settings.html#add-collaborators"><span class="std std-ref">collaborators</span></a>
+can</p>
+<ul class="simple">
+<li><p>code in <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a> as well as <a class="reference internal" href="howto/software-development.html"><span class="doc">in R, C, Julia, and other languages</span></a>;</p></li>
+<li><p>edit <a class="reference internal" href="latex.html"><span class="doc">LaTeX</span></a>, <a class="reference internal" href="markdown.html"><span class="doc">Markdown</span></a>, and many other documents;</p></li>
+<li><p>have changes synchronized among all of you in real-time;</p></li>
+<li><p>access collaborative <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a> and <a class="reference internal" href="x11.html"><span class="doc">X11 Graphical Applications</span></a>;</p></li>
+<li><p><a class="reference internal" href="chat.html"><span class="doc">chat with your colleagues</span></a> or <a class="reference internal" href="ai.html#llm-chat"><span class="std std-ref">LLMs</span></a>;</p></li>
+<li><p>use <a class="reference internal" href="ai.html"><span class="doc">AI Assistant</span></a> to help you fix errors, generate content, or suggest improvements;</p></li>
+<li><p>rely on <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a> to view the history of edits or to revert to a previous version;</p></li>
+<li><p><a class="reference internal" href="share.html"><span class="doc">publish</span></a> your work letting others to build on top of it easily;</p></li>
+<li><p>run familiar tools including JupyterLab, <a class="reference internal" href="vscode.html"><span class="doc">VS Code</span></a>, Pluto, and R IDE;</p></li>
+<li><p>spin up a <a class="reference internal" href="compute_server.html"><span class="doc">Compute Server</span></a> when you need dedicated resources including multiple GPUs;</p></li>
+<li><p>create a <a class="reference internal" href="cloud_file_system.html"><span class="doc">Cloud File System</span></a> to store unlimited amount of data;</p></li>
+<li><p><a class="reference internal" href="teaching-instructors.html"><span class="doc">teach a course</span></a> with <a class="reference internal" href="teaching-nbgrader.html"><span class="doc">auto grading</span></a> or run a workshop with <a class="reference internal" href="teaching-course-management.html#create-handout"><span class="std std-ref">handouts</span></a>;</p></li>
+<li><p>contact <a class="reference external" href="https://cocalc.com/about/team">our dedicated team</a> for support and feedback!</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/cocalc-screenshot-20200123.png"><img alt="A SageMath Jupyter Notebook in a CoCalc project" src="_images/cocalc-screenshot-20200123.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">A SageMath Jupyter Notebook in a CoCalc project</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">A SageMath Jupyter Notebook in a CoCalc project</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-</section>
-<section id="try-it-out">
-<h2>Try It Out<a class="headerlink" href="#try-it-out" title="Link to this heading"></a></h2>
-<p>To try out CoCalc, you might do the following steps.</p>
+<section id="test-it-out">
+<h2>Test It Out<a class="headerlink" href="#test-it-out" title="Link to this heading"></a></h2>
+<p>To immerse yourself into CoCalc, you should</p>
 <ul class="simple">
-<li><p>First, go through the <a class="reference internal" href="getting-started.html"><span class="doc">Getting Started</span></a> guide to create your account, your first project, and a worksheet.</p></li>
-<li><p>Check out specific guides for  <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a>, <a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheets</span></a>, and <a class="reference internal" href="latex.html"><span class="doc">LaTeX documents</span></a>.</p></li>
-<li><p>You can also work in a full <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a>, run <a class="reference internal" href="x11.html"><span class="doc">graphical applications</span></a> in a virtual desktop, or edit plain text files.</p></li>
-<li><p>Note how the <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a> helps when working with text files, and offers syntax highlighting if you <a class="reference internal" href="howto/software-development.html"><span class="doc">code in C, Python, or other languages</span></a>.</p></li>
-<li><p>You can also <a class="reference internal" href="howto/upload.html"><span class="doc">Upload Files</span></a> accompanying some existing notebooks, data files or <a class="reference internal" href="howto/overleaf.html"><span class="doc">LaTeX documents</span></a>.</p></li>
-<li><p>Being online and in the cloud opens opportunities to share files and collaborate. You can communicate with others in a chat room or on the side of a file. This is especially useful <a class="reference internal" href="teaching-interactions.html"><span class="doc">in the context of teaching</span></a> to help students.</p></li>
-<li><p>Check out our <a class="reference internal" href="teaching-instructors.html"><span class="doc">Instructor Guide</span></a> for more details about conducting a course on CoCalc.</p></li>
-<li><p>You can also <a class="reference internal" href="share.html"><span class="doc">share your work publicly on the internet</span></a>, access the entire <a class="reference internal" href="time-travel.html"><span class="doc">history of modifications for specific files</span></a>, <a class="reference internal" href="api/index.html"><span class="doc">and</span></a> <a class="reference internal" href="latex-faq.html#latex-knitr"><span class="std std-ref">much</span></a> <a class="reference internal" href="howto/gsl.html"><span class="doc">more</span></a>.</p></li>
-<li><p>Last but not least, the company “SageMath, Inc.” behind CoCalc <em>needs your support</em> to keep the service running and continuously improve it. Initially, you start with a <a class="reference internal" href="trial.html"><span class="doc">Trial Project</span></a> with certain restrictions – most notably your project runs with lower hosting quality and has no access to the internet to download data from other servers. You can <a class="reference internal" href="upgrade-guide.html#upgrade-guide"><span class="std std-ref">upgrade your projects</span></a> at any point later.</p></li>
+<li><p>go through the <a class="reference internal" href="getting-started.html"><span class="doc">Getting Started</span></a> guide to create your account, your first project, and a worksheet;</p></li>
+<li><p>check out <a class="reference internal" href="working_with.html"><span class="doc">specific guides</span></a> for features you are most interested in;</p></li>
+<li><p>see how the <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a> helps when working with different files;</p></li>
+<li><p>use it!!!</p></li>
 </ul>
 </section>
-<section id="first-steps-guide">
-<h2>First Steps Guide<a class="headerlink" href="#first-steps-guide" title="Link to this heading"></a></h2>
-<p>As an alternative to the steps above, you can use the <strong>First Steps Guide</strong>. Whenever a new project is created, a banner appears offering to create a set of files constituting the Guide:</p>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/first-steps-message.png"><img alt="First Steps Guide Banner" src="_images/first-steps-message.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">First Steps Guide Banner</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Clicking on the banner puts copies of the Guide files into the project in a folder called <code class="docutils literal notranslate"><span class="pre">first-steps</span></code> and opens the file <code class="docutils literal notranslate"><span class="pre">first-steps.task</span></code>.</p>
+<section id="pick-a-subscription">
+<h2>Pick a Subscription<a class="headerlink" href="#pick-a-subscription" title="Link to this heading"></a></h2>
+<p>Initially, you start with a <a class="reference internal" href="trial.html"><span class="doc">Trial Project</span></a> that has quite limited compute resources and no access to the Internet to download data from other servers or install extra packages. Its purpose is to give you a sense of the interface and software environment.</p>
+<p>To greatly improve your experience, subscribe to our <a class="reference external" href="https://cocalc.com/store/site-license">standard plan</a> or configure a custom one (you can adjust resources later at any time). If you need to test paid access as well and your organization has a complicated reimbursement process,
+<a class="reference external" href="https://cocalc.com/support/new?hideExtra=true&amp;type=question&amp;subject=Considering%20CoCalc&amp;body=I%20want%20to%20explore%20using%20CoCalc%20for%20...&amp;title=Let%27s%20Connect">contact us</a>
+to easily get a voucher!</p>
 </section>
 </section>
 

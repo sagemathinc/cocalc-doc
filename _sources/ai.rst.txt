@@ -134,6 +134,7 @@ In addition to general help with LaTeX, including fixing errors, you can describ
    AI Generated Formula
 
 
+.. _LLM_chat:
 
 LLMs in Chat Rooms and Side Chat
 --------------------------------

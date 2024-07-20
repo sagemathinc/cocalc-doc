@@ -1,10 +1,10 @@
 .. index:: TimeTravel
 
 ====================
-Time Travel
+TimeTravel
 ====================
 
-CoCalc calls "Time Travel" the historic recording of all changes in a file.
+CoCalc calls "TimeTravel" the historic recording of all changes in a file.
 This works for all text-based documents in a :doc:`frame-editor` and also :doc:`jupyter`, :doc:`sagews`, and :doc:`latex`.
 
 .. contents::
@@ -12,7 +12,7 @@ This works for all text-based documents in a :doc:`frame-editor` and also :doc:`
    :depth: 1
 
 ###################
-Using Time Travel
+Using TimeTravel
 ###################
 
 To open it, click on the light blue button with the reversed cirular arrow around a clock:
@@ -55,9 +55,9 @@ Note that the ``"user": "Project: ..."`` is the backend process modifying the fi
 Who Changed My File?
 #####################
 
-Time Travel shows who made changes to a file. This is helpful when two or more users have edited a file.
+TimeTravel shows who made changes to a file. This is helpful when two or more users have edited a file.
 
-In the case that Time Travel says "The Project" made the change, that means that some process other than the CoCalc editor modified the file, and that version was newer than the version used by the editor at the time. This can happen for many reasons. For example, if the file is stored in git, then switching to a different branch could change the contents of the file. Another cause could be running a notebook with JupyterLab or Jupyter classic at the same time as CoCalc Jupyter.
+In the case that TimeTravel says "The Project" made the change, that means that some process other than the CoCalc editor modified the file, and that version was newer than the version used by the editor at the time. This can happen for many reasons. For example, if the file is stored in git, then switching to a different branch could change the contents of the file. Another cause could be running a notebook with JupyterLab or Jupyter classic at the same time as CoCalc Jupyter.
 
 Make sure you save your file to disk when you're finished working with it. A file is saved to disk when the "Save" button turns from a bright green to a disabled dull green.
 

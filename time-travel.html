@@ -5,7 +5,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Time Travel &mdash; CoCalc Manual  documentation</title>
+  <title>TimeTravel &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
@@ -87,8 +87,8 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="share.html">Collaborate. Share! Publish!!!</a></li>
 <li class="toctree-l2"><a class="reference internal" href="software.html">Software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="backups.html">Backups</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Time Travel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#using-time-travel">Using Time Travel</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">TimeTravel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-timetravel">Using TimeTravel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#export-history">Export History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#who-changed-my-file">Who Changed My File?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#clear-timetravel-history-for-a-file">Clear TimeTravel History for a File</a></li>
@@ -129,7 +129,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="platform.html">Platform</a></li>
-      <li class="breadcrumb-item active">Time Travel</li>
+      <li class="breadcrumb-item active">TimeTravel</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -146,20 +146,20 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="time-travel">
-<span id="index-0"></span><h1>Time Travel<a class="headerlink" href="#time-travel" title="Link to this heading"></a></h1>
-<p>CoCalc calls “Time Travel” the historic recording of all changes in a file.
+  <section id="timetravel">
+<span id="index-0"></span><h1>TimeTravel<a class="headerlink" href="#timetravel" title="Link to this heading"></a></h1>
+<p>CoCalc calls “TimeTravel” the historic recording of all changes in a file.
 This works for all text-based documents in a <a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a> and also <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a>, <a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheets</span></a>, and <a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a>.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#using-time-travel" id="id1">Using Time Travel</a></p></li>
+<li><p><a class="reference internal" href="#using-timetravel" id="id1">Using TimeTravel</a></p></li>
 <li><p><a class="reference internal" href="#export-history" id="id2">Export History</a></p></li>
 <li><p><a class="reference internal" href="#who-changed-my-file" id="id3">Who Changed My File?</a></p></li>
 <li><p><a class="reference internal" href="#clear-timetravel-history-for-a-file" id="id4">Clear TimeTravel History for a File</a></p></li>
 </ul>
 </nav>
-<section id="using-time-travel">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Using Time Travel</a><a class="headerlink" href="#using-time-travel" title="Link to this heading"></a></h2>
+<section id="using-timetravel">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Using TimeTravel</a><a class="headerlink" href="#using-timetravel" title="Link to this heading"></a></h2>
 <p>To open it, click on the light blue button with the reversed cirular arrow around a clock:</p>
 <img alt="time travel button" class="align-center" src="_images/time-travel-button.png" />
 <p>Then you can see the underlying history, e.g. here for exactly this <code class="docutils literal notranslate"><span class="pre">time-travel.rst</span></code> file of the documentation in front of you.</p>
@@ -183,8 +183,8 @@ e.g. students in the context of a group project.</p>
 </section>
 <section id="who-changed-my-file">
 <h2><a class="toc-backref" href="#id3" role="doc-backlink">Who Changed My File?</a><a class="headerlink" href="#who-changed-my-file" title="Link to this heading"></a></h2>
-<p>Time Travel shows who made changes to a file. This is helpful when two or more users have edited a file.</p>
-<p>In the case that Time Travel says “The Project” made the change, that means that some process other than the CoCalc editor modified the file, and that version was newer than the version used by the editor at the time. This can happen for many reasons. For example, if the file is stored in git, then switching to a different branch could change the contents of the file. Another cause could be running a notebook with JupyterLab or Jupyter classic at the same time as CoCalc Jupyter.</p>
+<p>TimeTravel shows who made changes to a file. This is helpful when two or more users have edited a file.</p>
+<p>In the case that TimeTravel says “The Project” made the change, that means that some process other than the CoCalc editor modified the file, and that version was newer than the version used by the editor at the time. This can happen for many reasons. For example, if the file is stored in git, then switching to a different branch could change the contents of the file. Another cause could be running a notebook with JupyterLab or Jupyter classic at the same time as CoCalc Jupyter.</p>
 <p>Make sure you save your file to disk when you’re finished working with it. A file is saved to disk when the “Save” button turns from a bright green to a disabled dull green.</p>
 </section>
 <section id="clear-timetravel-history-for-a-file">
