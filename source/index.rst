@@ -63,4 +63,4 @@ Initially, you start with a :doc:`Trial Project <trial>` that has quite limited 
 
 To greatly improve your experience, subscribe to our `standard plan <https://cocalc.com/store/site-license>`_ or configure a custom one (you can adjust resources later at any time). If you need to test paid access as well and your organization has a complicated reimbursement process,
 `contact us <https://cocalc.com/support/new?hideExtra=true&type=question&subject=Considering%20CoCalc&body=I%20want%20to%20explore%20using%20CoCalc%20for%20...&title=Let%27s%20Connect>`_
-to easily get a voucher!
+to easily get a voucher! All we ask for in return is to provide us with a feedback on your testing, in particular any blocker issues, so that we can resolve them.
