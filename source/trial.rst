@@ -1,158 +1,49 @@
 .. index:: Trial Projects
 
-================================
 Trial Projects
-================================
+==============
 
-When you start using CoCalc, you will see a banner similar to
+Purpose and Limitations
+-----------------------
 
-    "Trial Project – buy upgrades or expect poor performance, [...] you can't install software packages [...]"
+When you start using CoCalc, you are either invited as a collaborator on an existing project, owned by someone else, or you are given access to a free trial project. The purpose of this project is to let you experience the platform and understand if it suits your needs well. We surely hope it does! If not - do `let us know <https://cocalc.com/support/new?hideExtra=true&type=question&subject=Deal%20Breaker&body=I%20cannot%20use%20CoCalc%20because%20...&title=Considering%20CoCalc>`_ where we fall short, we may be able to fix it!
 
-That's because a license granting network access has not yet been applied to the project.
+Your trial project has access to the :doc:`full software collection <software>` available on CoCalc and the same user interface. It should give you a very good sense of what is possible. However, there are some limitations that we had to put in place to avoid abuse of the service and to keep the cost of hardware under control. In particular:
 
-.. warning::
+- You do not have direct Internet access. You can upload files to CoCalc from your computer, but not from other sites. You cannot ``git clone`` repositories from GitHub and you cannot :doc:`install packages <howto/install-python-lib>` even as a regular user via ``pip``.
 
-    CoCalc costs us significant money to run.
-    CoCalc receives no funding from charitable foundations and
-    the site depends entirely on your financial support to continue operating.
-    Without your financial support this service will not survive long-term!
+- Your hardware resources are quite limited. They are enough to run a basic Jupyter notebook, but doing any serious computation or using several notebooks at once will likely run out of memory.
 
-Trial projects do not expire, but please be aware that without compensation for development and hosting,
-CoCalc itself will not be around indefinitely.
+- Idle timeout is small and overall session duration is limited.
 
-**To remove the warning message** from the top of your project, *at least one collaborator must upgrade the project to run on members-only hosting and have network access*.
+Once you evaluated enough, please `pick a subscription <https://cocalc.com/store/site-license>`_ to lift away these limits and get access to the full power of CoCalc!
 
-.. note::
 
-    **CoCalc will never charge you**, except after you explicitly purchase a subscription or course package.
+Can I Continue Using Trial Projects Only?
+-----------------------------------------
 
+Yes, you can - trial projects do not expire at the moment. If you only need to do some occasional quick computation, perhaps a trial project is all you need. But if CoCalc proves to be useful in your day to day life, you will do yourself a favour by `becoming a subscriber <https://cocalc.com/store/site-license>`_ and letting CoCalc fully shine for you.
 
-Ways to remove the banner
-===============================
 
+But Why CoCalc Isn't Just Free?
+-------------------------------
 
-Buy a license
---------------------------------------------
+Trial projects are completely free and they already offer features not available in free tiers of our competitors, for example, :doc:`terminal`. Full access with substantial resources has to be paid for a number of reasons:
 
-Starting with a \$3/month subscription,
-you get a license to upgrade your projects, enable network access, and add other computing resources. The `pricing page <https://cocalc.com/policies/pricing.html>`_ lists the current offerings.
+* CoCalc is a combination of sophisticated software (that is continuously developed, maintained, and supported by a dedicated team) and powerful computational hardware (that costs money to run).
 
-.. note::
+* We do not show third-party ads (we do try to spotlight our own functionality where appropriate).
 
-    You have to explicitly apply your license or upgrades to your projects.
-    Open up *Project Settings* and click *Adjust your upgrade contributions...*
-    in the *Project usage and quotas* panel.
-    For more information read the :doc:`upgrade guide <upgrade-guide>`.
+* We do not sell your data to other companies, nor do we use it for any other purposes except to allow you to use the platform, resolve issues, and improve its functionality. You can read more details about our commitments in our `Privacy Policy <https://cocalc.com/policies/privacy>`_.
 
+* We do not try to lock you into our platform - we facilitate using standard tools and formats. We just strive to make this usage better on CoCalc than anywhere else!
 
-Student in a course
---------------------------------------------
 
-Ask your teacher/instructor to buy a :ref:`course package and distribute the upgrades <course-upgrading-students>` to the student projects (which should include yours).
-If it is just for a short project or a small course, they might as well want to get a "personal" subscription,
-which can also be used to upgrade your student project!
+Doesn't CoCalc Use Free Software?
+---------------------------------
 
-Alternatively, if you're a student in a course, ask your instructor to enable the "Students pay" option in course settings,
-which makes available a special one-time fee to cover the entire course.
+The **purpose of CoCalc** is to make it easy to use SageMath and other open-source software like Python, R, Octave, Julia,  LaTeX, etc.,
+collaboratively and to generate a stable revenue source to hire full-time developers to develop CoCalc and ultimately SageMath. This software is indeed free, but we develop software that gives access to that software AND pair it with hardware to run it on.
 
-In both cases, we are available to talk to the teacher/instructor directly and explain CoCalc's course functionality.
-For inquiries, contact us at `help@sagemath.com <help@sagemath.com>`_.
-
-**For more details, read the** :ref:`course-upgrading-students` **section in the teaching guide.**
-
-
-Via a project collaborator
---------------------------------------------
-
-If one of your colleagues/friends has upgrades to share, add her/him to your the project as a collaborator.
-The can apply their upgrades to your project!
-
-All users of the project benefit fully of the upgrade applied by one collaborator.
-
-
-
-Disable banner (paying customers)
---------------------------------------------
-
-Alternatively,  once you are a paying customer, you'll find a new checkbox in Account Preferences that's lets you hide the warning banner for yourself when using a free trial project:
-
-    [x] Hide free warnings: do not show a warning banner when using a free trial project (thanks for being a customer)
-
-
-
-Can't afford to purchase upgrades
----------------------------------------
-
-**You may continue using your project for free, despite the warning message.** However, please keep in mind that (1) you can't pull in external data from the internet to the project, (2) the project will get randomly restarted and runs on servers with lower hosting quality, and (3) CoCalc itself **really needs your support in order to survive**.
-
-
-
-Reasons for purchasing a subscription
-==============================================
-
-
-
-The **Purpose of CoCalc** is to make it easy to use SageMath
-(and other open-source software like Python, R, Octave, Julia,  LaTeX, etc.),
-collaboratively and to generate a stable revenue source to hire full-time developers to develop CoCalc and ultimately SageMath.
-
-
-.. warning::
-
-    Subscription revenue is currently enough to pay for server infrastructure but **not** enough to cover employee costs.
-    This means the company behind CoCalc will eventually no longer be able to operate the service.
-    See http://wstein.org/talks/2016-06-sage-bp/bp.pdf for more info about the challenges of funding SageMath development.
-
-.. index:: pair: Trial Projects; Internet Access
-
-Internet Access
----------------------
-
-The Internet Access upgrade allows outgoing internet connections and outbound email from a project. See :ref:`Network access <upg_net>` for details.
-
-.. index:: pair: Trial Projects; Member Hosting
-
-Member Hosting
----------------------
-
-Servers hosting trial projects have fewer compute resources and a higher project load than members-only servers.
-See :ref:`Member Hosting <upg_mhost>` for details.
-
-Better support
----------------------
-
-Subscribers get higher priority on feature-requests and much more involved support responses.
-
-More resources
----------------------
-You can purchase additional compute, memory, and storage resources. (see :doc:`upgrade-guide`)
-
-
-Upgrades can be shared
--------------------------
-
-You can share your upgrades with friends, co-workers and family.
-
-
-Fund improvement of CoCalc
------------------------------
-
-Improvements are made daily!
-You can follow CoCalc's development at https://github.com/sagemathinc/cocalc/
-
-
-Support those who cannot afford to pay
-------------------------------------------
-
-When you get a paid subscription, or donate, you help fund the free-tier offering for those who can't afford a subscription. We all know of some countries (and plenty of individuals in every country) that are going through extremely difficult financial times.
-
-
-Funding SageMath development
-------------------------------
-
-A long-term goal is to generate enough revenue to fund development of SageMath.
-However, that goal is far away.
-Read about `directly funding SageMath <https://github.com/sagemathinc/cocalc/wiki/sagemath-funding>`_.
-
-
-
+A long-term goal to generate enough revenue to fund development of SageMath is still far away.
+Meanwhile, you can `fund SageMath directly <https://github.com/sponsors/sagemath>`_.
