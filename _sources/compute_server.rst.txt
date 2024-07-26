@@ -63,7 +63,7 @@ You may find something useful, at least some inspiration, in our growing `collec
 Do I Still Need a License?
 --------------------------
 
-That is a great question! We do not force our users to get a regular license for working with compute servers, but since the CoCalc project is still used for :ref:`file syncing <compute-server-filesystem>` and tracking compute server status, you will have smoother experience if your project has member hosting and sufficient RAM. In most cases the `basic license <https://cocalc.com/store/site-license?user=academic&period=monthly&run_limit=1&cpu=1&ram=2&disk=3&uptime=short&member=true>`_ with 2 GB RAM, 1 vCPU core, and 3 GB disk will work great!
+That is a great question! Your CoCalc project is still used for :ref:`file syncing <compute-server-filesystem>` and tracking compute server status, so you will have smoother experience if your project has adequate resources, in particular sufficient RAM. In most cases the `basic subscription <https://cocalc.com/store/site-license>`_ will work great!
 
 
 Creating a Compute Server
