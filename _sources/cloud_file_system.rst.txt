@@ -129,3 +129,30 @@ Since there are per-operation charges for a Cloud File System, if you always use
 .. note::
 
     Under the hood, a Cloud File System keeps all file metadata in RAM for efficient syncing. This works great up to a few million files, but if you need to work with many millions, you have to pay attention to RAM usage (storing 3 million files uses about 1 GB RAM), consider using archives for grouping files together, or contact us to develop an alternative solution!  
+    
+    
+Access
+------
+
+The intention behind CoCalc Cloud File System was to provide a very flexible storage solution for our :doc:`compute_server`. By default a Cloud File System is automatically read/write mounted in all compute servers of the same project. Therefore, you can access it via SSH if you connect to any of these servers. As of this writing, it is *not* accessible from the Home Base of the project. You can, however, easily move a Cloud File System from one project to another, just disable automount first:
+
+.. figure:: img/cfs_move.png
+    :width: 80%
+    :align: center
+    :alt: Moving to Another  Project
+
+    Moving to Another  Project
+
+
+Backups
+-------
+
+Being backed by Google Cloud Storage, CoCalc Cloud File Systems are extremely resilient against hardware failures. However, it is easy to lose your data due to a human or a script error - backups are important! **There are no automatic backups** configured for a Cloud File System, but you can make use of ``cocalc backup`` command in a terminal and make a backup copy either on the same Cloud File System, or on another one:
+
+.. figure:: img/cfs_backup_h.png
+    :width: 80%
+    :align: center
+    :alt: ``cocalc backup -h``
+
+    ``cocalc backup -h``
+
