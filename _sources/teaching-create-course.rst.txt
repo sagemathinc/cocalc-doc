@@ -83,6 +83,10 @@ You may have more than one course file in a single project, for example you can 
 Add Students to the Course
 #############################
 
+.. raw:: html
+
+    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/QTHzEgZAJSw?si=rpN-IB75VObHJH7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    
 Open your new course by clicking on the course file. Select the **Students** tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc. It's best to add students using their email addresses, because those are unique for CoCalc accounts. However, it is also possible to search for students by their first and last names.
 
 .. hint::
@@ -171,3 +175,4 @@ In the course Configuration tab on the right, click `Reinvite students` to send/
      :alt: button to resend email invitations to students in lower right of course Configuration tab
 
      "Reinvite students" at lower right in course Configuration
+
