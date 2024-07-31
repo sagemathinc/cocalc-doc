@@ -51,7 +51,6 @@
    plotly-dash
    disk-space-warning
    parallel
-   ../project-list
    ../platform-news
    ../account/licenses
    ../account/preferences
