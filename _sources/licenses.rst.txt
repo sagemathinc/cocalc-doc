@@ -5,7 +5,7 @@
 Licenses
 ===============
 
-CoCalc licenses allow you to flexibly acquire resources for your projects. Not sure what you need and how much? No problem! You can easily edit your license at any time and either pay the difference if you need more or get a prorated credit to your account if you need less. So make an educated guess and go ahead - there are no penalties for later adjustments!
+CoCalc licenses allow you to flexibly acquire resources for your projects. Not sure what you need and how much? No problem! You can easily :ref:`edit your license <manage-licenses>` at any time and either pay the difference if you need more or get a prorated credit to your account if you need less. So make an educated guess and go ahead - there are no penalties for later adjustments!
 
 
 Maximum Number of Simultaneously Upgraded Projects
@@ -26,15 +26,32 @@ Then you need to :ref:`add your license to a project <project-add-license>` or, 
 
 .. _manage-licenses:
 
-Manage Licenses
----------------------------------------------------
+Manage and Edit Licenses
+------------------------
 
 See https://cocalc.com/licenses for information about your licenses and licensed projects, including the following (note that each topic has its own dedicated URL):
 
-* `licenses you manage <https://cocalc.com/settings/licenses>`_ here you can click on any license to see all details and reveal the "Edit License..." button, please note that you can only edit licenses that *you* have purchased
-* `licensed projects you collaborate on <https://cocalc.com/licenses/projects>`_
-* `how a specific license is being used <https://cocalc.com/licenses/how-used>`_
-* `subscriptions <https://cocalc.com/settings/subscriptions>`_
+* `Licenses that you manage <https://cocalc.com/settings/licenses>`_ here you can click on any license to see all details and reveal the "Edit License..." button:
+
+    .. figure:: img/licenses.png
+        :width: 90%
+        :align: center
+        :alt: Licenses You Manage
+
+        Licenses You Manage
+    
+  Please note that you can only edit licenses that *you* have purchased, but you can assign other managers who will be easily able to add your license to their projects or course files:
+
+    .. figure:: img/license_expanded.png
+        :width: 90%
+        :align: center
+        :alt: License Details
+
+        License Details
+    
+* `Licensed projects you collaborate on <https://cocalc.com/licenses/projects>`_
+* `How a specific license is being used <https://cocalc.com/licenses/how-used>`_
+* `Subscriptions <https://cocalc.com/settings/subscriptions>`_
 
 
 .. _license-errors:

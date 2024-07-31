@@ -89,7 +89,7 @@ div.cocalc-header a {
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Licenses</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#maximum-number-of-simultaneously-upgraded-projects">Maximum Number of Simultaneously Upgraded Projects</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#buy-and-apply-a-license">Buy and Apply a License</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#manage-licenses">Manage Licenses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manage-and-edit-licenses">Manage and Edit Licenses</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#license-error-messages">License Error Messages</a></li>
 </ul>
 </li>
@@ -148,7 +148,7 @@ div.cocalc-header a {
              
   <section id="licenses">
 <span id="license-info"></span><span id="index-0"></span><h1>Licenses<a class="headerlink" href="#licenses" title="Link to this heading"></a></h1>
-<p>CoCalc licenses allow you to flexibly acquire resources for your projects. Not sure what you need and how much? No problem! You can easily edit your license at any time and either pay the difference if you need more or get a prorated credit to your account if you need less. So make an educated guess and go ahead - there are no penalties for later adjustments!</p>
+<p>CoCalc licenses allow you to flexibly acquire resources for your projects. Not sure what you need and how much? No problem! You can easily <a class="reference internal" href="#manage-licenses"><span class="std std-ref">edit your license</span></a> at any time and either pay the difference if you need more or get a prorated credit to your account if you need less. So make an educated guess and go ahead - there are no penalties for later adjustments!</p>
 <section id="maximum-number-of-simultaneously-upgraded-projects">
 <h2>Maximum Number of Simultaneously Upgraded Projects<a class="headerlink" href="#maximum-number-of-simultaneously-upgraded-projects" title="Link to this heading"></a></h2>
 <p>You can apply a license to any number of projects. These projects are upgraded as they start, until the maximum number of concurrent running projects for the license is reached. Any project with the same license that starts while the maximum concurrent number is running will be started without upgrades from that license. When a project using a license stops, its upgrades are released and can be used by the next  project to start that is configured for that license.</p>
@@ -159,14 +159,32 @@ div.cocalc-header a {
 <p>To buy a license, or to just get pricing information, <a class="reference external" href="https://cocalc.com/store/site-license">visit our store</a>.</p>
 <p>Then you need to <a class="reference internal" href="project-settings.html#project-add-license"><span class="std std-ref">add your license to a project</span></a> or, if you are running a course, <a class="reference internal" href="teaching-upgrade-course.html#install-course-license"><span class="std std-ref">install your license in the course file</span></a>.</p>
 </section>
-<section id="manage-licenses">
-<span id="id1"></span><h2>Manage Licenses<a class="headerlink" href="#manage-licenses" title="Link to this heading"></a></h2>
+<section id="manage-and-edit-licenses">
+<span id="manage-licenses"></span><h2>Manage and Edit Licenses<a class="headerlink" href="#manage-and-edit-licenses" title="Link to this heading"></a></h2>
 <p>See <a class="reference external" href="https://cocalc.com/licenses">https://cocalc.com/licenses</a> for information about your licenses and licensed projects, including the following (note that each topic has its own dedicated URL):</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://cocalc.com/settings/licenses">licenses you manage</a> here you can click on any license to see all details and reveal the “Edit License…” button, please note that you can only edit licenses that <em>you</em> have purchased</p></li>
-<li><p><a class="reference external" href="https://cocalc.com/licenses/projects">licensed projects you collaborate on</a></p></li>
-<li><p><a class="reference external" href="https://cocalc.com/licenses/how-used">how a specific license is being used</a></p></li>
-<li><p><a class="reference external" href="https://cocalc.com/settings/subscriptions">subscriptions</a></p></li>
+<ul>
+<li><p><a class="reference external" href="https://cocalc.com/settings/licenses">Licenses that you manage</a> here you can click on any license to see all details and reveal the “Edit License…” button:</p>
+<blockquote>
+<div><figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/licenses.png"><img alt="Licenses You Manage" src="_images/licenses.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Licenses You Manage</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<p>Please note that you can only edit licenses that <em>you</em> have purchased, but you can assign other managers who will be easily able to add your license to their projects or course files:</p>
+<blockquote>
+<div><figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/license_expanded.png"><img alt="License Details" src="_images/license_expanded.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">License Details</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://cocalc.com/licenses/projects">Licensed projects you collaborate on</a></p></li>
+<li><p><a class="reference external" href="https://cocalc.com/licenses/how-used">How a specific license is being used</a></p></li>
+<li><p><a class="reference external" href="https://cocalc.com/settings/subscriptions">Subscriptions</a></p></li>
 </ul>
 </section>
 <section id="license-error-messages">
@@ -179,10 +197,10 @@ div.cocalc-header a {
 <li><p>ineffective - there is another license active on this project that is not compatible with the license showing the error</p></li>
 </ul>
 <p>You can see an expanded explanation by putting your cursor over the license status:</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/incompat-licenses.png"><img alt="pop-up status explaining incompatible licenses" src="_images/incompat-licenses.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-text">example: if two licenses are incompatible, only one can be active</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">example: if two licenses are incompatible, only one can be active</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
