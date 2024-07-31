@@ -23,6 +23,5 @@ User Interface
    account-dropdown
    account-toolbar
    account/purchases
-   update-credit-card
    billing
    ipad
