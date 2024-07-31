@@ -65,16 +65,6 @@ You will need to sign in again if you
     * sign out
 
 
-Creating a Project
-------------------
-
-Now that you are signed in, you can create your first project. Click the Project button at upper left, and then enter a title for your project.
-
-.. image:: img/getting-started/create-project.png
-     :width: 90%
-     :alt: Create Project dialog
-
-
 Creating a File
 ---------------
 

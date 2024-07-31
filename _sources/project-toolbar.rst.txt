@@ -28,7 +28,7 @@ Going from left to right:
 CoCalc Logo
 ***************
 
-|cocalc-logo| Clicking on the CoCalc logo at extreme left will take you to the cocalc.com home page.
+|cocalc-logo| Clicking on the CoCalc logo at extreme left will take you to the https://cocalc.com home page.
 
 .. _project-list:
 
@@ -36,7 +36,8 @@ CoCalc Logo
 Project List
 ***************
 
-Visit the `Projects link <https://cocalc.com/projects>`_ or click the word `Projects` to the right of the CoCalc logo to create your first project or see a list of your existing projects. Learn more at :doc:`project-list`.
+Visit https://cocalc.com/projects or click the word `Projects` to the right of the CoCalc logo to see the list of your existing projects or to create a new one. Learn more at :doc:`project-list`.
+
 
 .. index:: Project Toolbar; open projects
 
@@ -54,7 +55,7 @@ To the right of the Projects button, tab buttons will appear for each project yo
 * To the right of the project title in each button, a red disconnect icon |disconnect-icon| will appear if the project is not connected. It is normal for the disconnect icon to appear if the project is not running.
 * At the far right in each button, there is a close-project icon |remove-icon| that allows you to close the project.
 
-A member-hosted project that is running will continue running after it is closed until its idle time has been reached. At that point it will be stopped.
+A running project will continue running after it is closed until its idle timeout has been reached. At that point it will be stopped.
 
 If you close your browser window or sign out, CoCalc will remember your open projects and files (this is your :ref:`CoCalc session <cocalc-session>`), and restore the project tabs the next time you sign in.
 
