@@ -50,6 +50,17 @@ If the email address you add as a collaborator is not associated with a CoCalc a
 Create the Course File
 ########################
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/CieZPy168Zc?si=yE_KZMzXJm5RLmUt"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
 Almost all aspects of your course, such as which students are enrolled and assignment management, are controlled by a ``.course`` file.
 
 Click **New**, enter the file name, then scroll to **Manage a Course** tile and click it to create the course management file:

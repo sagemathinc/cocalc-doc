@@ -8,12 +8,24 @@ Getting Started with Jupyter Notebooks
      :local:
      :depth: 2
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/Fhu-RWYvUh4?si=oKj9sLhGY7cS29wm"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
+
 ##########################
 What's a Jupyter Notebook?
 ##########################
 
 A Jupyter notebook is a specific filetype with the ending ``.ipynb``, which records an interactive session with a **Kernel**.
-It made up of *cells*, which can either store one or more lines of code or formatted text.
+It is made up of *cells*, which can either store one or more lines of code or formatted text.
 When you *run* a cell – which evaluates the piece of code in the cell via the active kernel session – you can see its output after the calculation is done.
 This combination of communicating back and forth with a kernel and adding descriptive text makes this form of document very attractive.
 

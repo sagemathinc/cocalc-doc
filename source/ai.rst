@@ -132,6 +132,19 @@ In addition to general help with LaTeX, including fixing errors, you can describ
    :alt: AI Generated Formula
 
    AI Generated Formula
+   
+Or you can ask AI Assistant to start writing the whole document for you:
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/zV-6R3fpiYE?si=V5gxjp4d4_Y_Lgrd"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
 
 
 .. _LLM_chat:

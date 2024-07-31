@@ -5,6 +5,18 @@
 Getting started with LaTeX
 ===========================
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/QLokIb2I78U?si=U_CNl1WKC2HzEyWI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
+
 To use the LaTeX editor, open or create a file whose name ends in ``.tex``. By default, you should see an editor similar to the one in the screenshot below:
 
 .. image:: img/latex-ui.png
