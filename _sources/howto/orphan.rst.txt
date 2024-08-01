@@ -10,7 +10,6 @@
    project-invitation-tokens
    export-timetravel
    external-tools
-   install-python-lib
    install-r-package
    install-julia-package
    running-processes
@@ -53,7 +52,6 @@
    parallel
    ../platform-news
    ../account/licenses
-   ../account/preferences
    ../account/public-files
    ../account/purchases
    ../account/ssh

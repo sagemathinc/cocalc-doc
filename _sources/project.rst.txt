@@ -18,7 +18,16 @@ To start being productive, you have to create a
 :doc:`terminal`,
 :doc:`LaTeX document <latex>`, or other files.
 
+.. raw:: html
 
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/elru3WgRAVM?si=AIXIP_7AAcApxONc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
 
 .. toctree::
    :maxdepth: 2

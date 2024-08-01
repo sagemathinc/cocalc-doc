@@ -22,6 +22,7 @@ User Interface
 
    account-dropdown
    account-toolbar
+   account/preferences
    account/purchases
    billing
    ipad

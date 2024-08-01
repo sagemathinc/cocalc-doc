@@ -8,11 +8,26 @@ Getting Started with Jupyter Notebooks
      :local:
      :depth: 2
 
+If you prefer to watch rather than read, this is how to create a Jupyter Notebook in CoCalc:
+
 .. raw:: html
 
     <center><iframe
         width="640" height="360"
         src="https://www.youtube.com/embed/Fhu-RWYvUh4?si=oKj9sLhGY7cS29wm"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
+You can even engage :doc:`ai` right away!
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/2YWhSWGFQM8?si=Oj5im4DT8AHNKfeD"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
