@@ -84,6 +84,17 @@ Or the enter name of an existing folder that hasn't been assigned yet:
 Start a Jupyter notebook for the assignment
 ===========================================
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/EfsAA9QvrlA?si=YIEXW-T3th2bEwhL"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 With the assignment folder created, open the folder for the assignment:
 
 .. figure:: img/nbgrader/nbg-open-assg-folder.png

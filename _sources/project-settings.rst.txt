@@ -154,10 +154,22 @@ Clicking `Save Changes` will apply the upgrade changes and restart the project i
 Add a License to a Project
 ###################################
 
+
 .. note::
 
     If you just bought a license and want to apply your license to a project that is showing a warning banner at the top that upgrades are needed, then this section is for you.
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/kQv26e27ksY?si=2KjmtTGECh8l9One"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 To apply a license to a project:
 
 1. Open the project.
