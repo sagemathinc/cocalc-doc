@@ -29,4 +29,15 @@ Here are the components of the Activity Bar:
 * :doc:`processes`
 * :doc:`project-settings`
 
-Here's the CoCalc feature announcement and discussion: `ANN: Non-file tabs moved to a column on the left <https://github.com/sagemathinc/cocalc/discussions/6404>`_.
+If you wish, you can easily hide it:
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/k3pUrlwW6u8?si=saz8Y2BaeMWKmiW5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>

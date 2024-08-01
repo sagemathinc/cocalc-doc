@@ -78,24 +78,19 @@ Other settings
 Dark mode
 ------------
 
-CoCalc allows you to specify dark mode for all windows in "Other settings". See the :ref:`News update on dark mode <overall-dark-mode>` for more information.
-Confirm
-------------
+CoCalc allows you to specify dark mode for all windows in "Other settings":
 
-Show
-------------
+.. raw:: html
 
-Allow
-------------
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/k-OQLfcuLqg?si=Ou4YyLvThpgILYf6"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
 
-Display
-------------
-
-Mask
-------------
-
-Hide
-------------
 
 Generated filenames
 ----------------------
@@ -104,12 +99,6 @@ Generated filenames
          :width: 80%
          :align: center
          :alt: generated filenames menu
-
-Default file sort
---------------------
-
-Number of files per page
-----------------------------
 
 
 .. index::
@@ -140,9 +129,6 @@ You can alter the standby timeout under Account / Preferences / Other / Standby 
 
   After a longer interval of inactivity, your project will be stopped. Increasing this setting requires a project upgrade. See: :ref:`idle-timeout`.
 
-
-Profile
-=================
 
 .. index:: Account Tab; Editor settings
 

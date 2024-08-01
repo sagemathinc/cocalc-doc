@@ -92,6 +92,17 @@ Hashtags can also be used in CoCalc in :ref:`markdown files <markdown-hashtags>`
 Side Chat
 ########################
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/XQYJrFbvhB4?si=TR-RWCiSJjtvzLV0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 At the top right in the Files toolbar for any open file, there is a chat icon: |comment-icon|.
 This opens up a chatroom which is *specific to that file*.
 This is commonly used to discuss the content of the given worksheet or notebook,

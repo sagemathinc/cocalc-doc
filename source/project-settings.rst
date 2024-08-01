@@ -185,7 +185,18 @@ To apply a license to a project:
 7. Click **Apply license**.
 8. Restart the project.
 
-You can repeat the above steps to add more licenses to the current project.
+You can repeat the above steps to add more licenses to the current project. Or you can remove a license!
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/kj3284Fkobo?si=pr0JQmsfU9anP2sJ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
 
 If the license is not successfully applied, see :ref:`license-errors`.
 
