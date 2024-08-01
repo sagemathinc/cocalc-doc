@@ -14,14 +14,21 @@ A related concept are :doc:`compute servers <compute_server>` that allow you to 
 
 You can choose different amounts of any resource the next time you run the project.
 
-Resources are completely editable at any time, for both new purchases and existing licenses. Existing licenses are now editable at any time by the user who bought the license (but by nobody else).
-
-Here's the CoCalc feature announcement and discussion: `ANN: CoCalc's New Purchasing System <https://github.com/sagemathinc/cocalc/discussions/6848>`_.
-
 #######################################
 How to Enable Pay-As-You-Go
 #######################################
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/NBppX4U0JRY?si=VI4PzhPJYleOtS3b"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 ***********************************
 1. Select Pay-As-You-Go
 ***********************************
