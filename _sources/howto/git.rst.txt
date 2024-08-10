@@ -10,13 +10,28 @@ Git Version Control
 
 .. note::
 
-    First, despite the fact that you are accessing CoCalc through the internet,
-    you are actually working in a highly restricted environment.
-    Processes running inside a *free* project are not allowed to directly access the internet.
-    (We do not allow such access for free users, since when we did,
+    :doc:`/trial` are not allowed to directly access the internet.
+    (We cannot allow such access for free users, since when we did,
     malicious users launched attacks on other computers from CoCalc.)
-    Enable internet access by adding the "internet access" quota.  See :doc:`../upgrade-guide`.
+    Enable internet access by purchasing a :doc:`license </licenses>`.
 
+
+Clone a Repository Using New
+============================
+
+The easiest way to clone a repository from GitHub is arguably via **New** panel:
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/2ngghTK0zuo?si=KG2xgKb7MzOXjjuN"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 
 .. index:: Git; in command-line terminal
 

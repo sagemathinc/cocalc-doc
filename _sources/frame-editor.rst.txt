@@ -12,6 +12,17 @@ Frame Editor
 
 This guide explains how to work with the **frame editor** for editing source code, :doc:`LaTeX documents <latex>`, :doc:`Command-line terminal <terminal>` etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is split horizontally. After that, the bottom right frame is changed to a :doc:`Terminal <terminal>`.
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/t8dZLodjav0?si=frKofQn4qfHu_bWw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 You can not only view the same Python source code in two places, but you can also work with e.g. IPython_ on the command-line in the same directory.
 
 .. _IPython: https://www.ipython.org
