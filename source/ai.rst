@@ -56,6 +56,17 @@ You can also spin off a fully private LLM on your very own :ref:`compute-servers
 Jupyter Notebooks
 -----------------
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/e8HQqrYTHro?si=fUxYhd_TLTHCAFPE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 There are a number of ways to call AI Assistant from a Jupyter notebook:
 
 .. figure:: img/AI_Jupyter.png

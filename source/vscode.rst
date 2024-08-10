@@ -5,6 +5,17 @@ Visual Studio Code Server
 
 Visual Studio Code is a source-code editor made by Microsoft. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. For more information about the server, see the home page: `Visual Studio Code Server <https://code.visualstudio.com/docs/remote/vscode-server>`_.
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/JbCuKboZeAw?si=MTzCi6CZ_O8C5_WH"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
 To start VS Code Server in a CoCalc project, select Servers in the :doc:`activity-bar` and click the "VS Code" button:
 
 .. figure:: img/vscode-server.png
