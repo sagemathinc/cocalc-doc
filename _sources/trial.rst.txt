@@ -25,7 +25,7 @@ Can I Continue Using Trial Projects Only?
 Yes, you can - trial projects do not expire at the moment. If you only need to do some occasional quick computation, perhaps a trial project is all you need. But if CoCalc proves to be useful in your day to day life, you will do yourself a favour by `becoming a subscriber <https://cocalc.com/store/site-license>`_ and letting CoCalc fully shine for you.
 
 
-But Why CoCalc Isn't Just Free?
+But Why Isn't CoCalc Just Free?
 -------------------------------
 
 Trial projects are completely free and they already offer features not available in free tiers of our competitors, for example, :doc:`terminal`. Full access with substantial resources has to be paid for a number of reasons:
@@ -37,13 +37,3 @@ Trial projects are completely free and they already offer features not available
 * We do not sell your data to other companies, nor do we use it for any other purposes except to allow you to use the platform, resolve issues, and improve its functionality. You can read more details about our commitments in our `Privacy Policy <https://cocalc.com/policies/privacy>`_.
 
 * We do not try to lock you into our platform - we facilitate using standard tools and formats. We just strive to make this usage better on CoCalc than anywhere else!
-
-
-Doesn't CoCalc Use Free Software?
----------------------------------
-
-The **purpose of CoCalc** is to make it easy to use SageMath and other open-source software like Python, R, Octave, Julia,  LaTeX, etc.,
-collaboratively and to generate a stable revenue source to hire full-time developers to develop CoCalc and ultimately SageMath. This software is indeed free, but we develop software that gives access to that software AND pair it with hardware to run it on.
-
-A long-term goal to generate enough revenue to fund development of SageMath is still far away.
-Meanwhile, you can `fund SageMath directly <https://github.com/sponsors/sagemath>`_.
