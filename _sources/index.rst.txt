@@ -6,7 +6,7 @@ an online platform for learning, teaching, writing, research, development - anyt
 
 .. admonition:: Mission
 
-    CoCalc's mission is to provide **the best real-time collaborative environment for Jupyter Notebooks, LaTeX documents, and SageMath**, from personal to group to large class scale. We empower you to focus on the task at hand rather than technical details.
+    CoCalc's goal is to provide **the best real-time collaborative environment for Jupyter Notebooks, LaTeX documents, and SageMath**, from personal to group to large class scale. We empower you to focus on the task at hand rather than technical details.
 
 
 Work in CoCalc is organized in :doc:`Projects <project>` where you and your :ref:`collaborators <add-collaborators>`
