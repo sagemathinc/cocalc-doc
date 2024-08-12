@@ -2,7 +2,7 @@
 .. index:: API
 
 ====================
-API v1
+API v1 (deprecated)
 ====================
 
 .. include:: index0.rst
