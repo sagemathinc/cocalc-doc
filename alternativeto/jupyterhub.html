@@ -25,6 +25,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Working With" href="../working_with.html" />
+    <link rel="prev" title="Alternatives" href="index.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -77,8 +79,18 @@ div.cocalc-header a {
 
 
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alternatives</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Alternative to JupyterHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#key-features-of-jupyterhub">Key Features of JupyterHub</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#portability">Portability</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flexibility">Flexibility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reliability">Reliability</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../working_with.html">Working With</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platform.html">Platform</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user_interface.html">User Interface</a></li>
@@ -110,6 +122,7 @@ div.cocalc-header a {
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Alternatives</a></li>
       <li class="breadcrumb-item active">Alternative to JupyterHub</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
@@ -135,7 +148,7 @@ div.cocalc-header a {
 <h2>Key Features of JupyterHub<a class="headerlink" href="#key-features-of-jupyterhub" title="Link to this heading"></a></h2>
 <p>These are copied from <a class="reference external" href="https://jupyter.org/hub">https://jupyter.org/hub</a></p>
 <ul class="simple">
-<li><p><strong>Customizable</strong> - JupyterHub can be used to serve a variety of environments. It supports dozens of kernels with the Jupyter server, and can be used to serve a variety of user interfaces including the Jupyter Notebook, Jupyter Lab, RStudio, nteract, and more.</p></li>
+<li><p><strong>Customizable</strong> - JupyterHub can be used to serve a variety of environments. It supports dozens of kernels with the Jupyter server, and can be used to serve a variety of user interfaces including the Jupyter Notebook, JupyterLab, RStudio, nteract, and more.</p></li>
 <li><p><strong>Flexible</strong> - JupyterHub can be configured with authentication in order to provide access to a subset of users. Authentication is pluggable, supporting a number of authentication protocols (such as OAuth and GitHub).</p></li>
 <li><p><strong>Scalable</strong> - JupyterHub is container-friendly, and can be deployed with modern-day container technology. It also runs on Kubernetes, and can run with up to tens of thousands of users.</p></li>
 <li><p><strong>Portable</strong> - JupyterHub is entirely open-source and designed to be run on a variety of infrastructure. This includes commercial cloud providers, virtual machines, or even your own laptop hardware.</p></li>
@@ -144,33 +157,36 @@ div.cocalc-header a {
 <section id="portability">
 <h2>Portability<a class="headerlink" href="#portability" title="Link to this heading"></a></h2>
 <p>Note that JupyterHub is “just a software project”, i.e. in order to make use of it and benefit from the above features, you do need to own appropriate hardware or setup a suitable environment with some cloud provider. You also need to have sufficient technical expertise and time to do this or hire someone else to do it for you. Exact time and money requirements depend a lot on the situation, but tend to be quite noticeable. There are companies that are happy to sell you their JupyterHub support services.</p>
-<p>CoCalc also can be deployed in a variety of ways as a standalone instance just for you or your organization. The main difference with JupyterHub is that CoCalc is NOT a fully open-source project, we use Microsoft Reference Source License. You can look at the source code, but you cannot run an instance yourself without getting a permission from us. Third party companies also cannot provide support without having a suitable arrangement with us. We are, however, happy to discuss your needs if an OnPrem installation works well your case, we do have a number of such customers!</p>
-<p>In many cases, however, it makes sense to directly use our hosted option - we already have a configured and actively managed cluster which you can use, easily increasing or decreasing the computational power available to you, including vast CPU and GPU resources.</p>
+<p>CoCalc also can be deployed in a variety of ways as a standalone instance just for you or your organization. The main difference with JupyterHub is that CoCalc is NOT a fully open-source project, we use <a class="reference external" href="https://github.com/sagemathinc/cocalc/blob/master/LICENSE.md">Microsoft Reference Source License</a>. You can look at the <a class="reference external" href="https://github.com/sagemathinc/cocalc">source code</a>, but you cannot run an instance yourself without getting permission from us. Third party companies also cannot provide support without having a suitable arrangement with us. We are happy to discuss your needs if an <a class="reference internal" href="../on-premises.html"><span class="doc">OnPrem</span></a> installation suits your case. We already have a number of customers using this setup!</p>
+<p>In many cases, however, it makes sense to directly use our hosted service - a fully configured and actively managed cluster which you can use, easily increasing or decreasing the computational power available to you, including <a class="reference internal" href="../compute_server.html"><span class="doc">vast CPU and GPU resources</span></a>.</p>
 </section>
 <section id="flexibility">
 <h2>Flexibility<a class="headerlink" href="#flexibility" title="Link to this heading"></a></h2>
-<p>Just as JupyterHub, CoCalc supports dozens of Jupyter kernels. Many of them are preconfigured and you can add more, both in the hosted and OnPrem installations. CoCalc allows you to easily run JupyterLab, VS Code, or R IDE on any of the servers in your project, so you can use the same familiar interfaces, if you choose so. However, CoCalc also gives you its own interface to work with Jupyter notebooks, and it does have a number of advantages:</p>
+<p>Similar to JupyterHub, CoCalc can work with multiple <a class="reference internal" href="../howto/jupyter-kernel-selection.html"><span class="doc">Jupyter kernels</span></a>. Many of them are preconfigured and you can add more, both in the hosted and OnPrem installations. CoCalc allows you to easily run <a class="reference internal" href="../servers.html"><span class="doc">JupyterLab</span></a>, <a class="reference internal" href="../vscode.html"><span class="doc">Visual Studio Code Server</span></a>, or R IDE on any of the servers in your project, so you can use the same familiar interfaces, if you choose so. However, CoCalc also gives you its own interface to work with Jupyter notebooks, and it does have a number of advantages:</p>
 <ul class="simple">
-<li><p>server-side notebook state - the output is preserved if you close your browser or switch to a different machine</p></li>
-<li><p>full real-time collaboration - simultaneous editing of the same file and chat</p></li>
-<li><p>the best and most complete support of IPyWidgets that we are aware off, including sharing widget state between collaborators</p></li>
-<li><p>AI Assistant to generate and fix code, transalate between programming languages, and more</p></li>
-<li><p>TimeTravel automatic version control and backup system to complement <code class="docutils literal notranslate"><span class="pre">git</span></code></p></li>
+<li><p><strong>Server-side notebook state</strong> - When you close your browser (or it crashes, or your laptop goes to sleep) new output is accumulated and saved, waiting for you to resume your work.</p></li>
+<li><p><strong>IPyWidgets support</strong> - Our support is the best and most complete one that we are aware off. Collaborators see the same state of all widgets, since it is synchronized with the server.</p></li>
+<li><p><strong>Full real-time collaboration</strong> - Edit the same file simultaneously with your collaborators, see their cursors, use the side chat, and video chat.</p></li>
+<li><p><strong>AI Assistant</strong>  - Choose your favourite LLM to help you generate, fix, and improve code, translate between programming languages, and <a class="reference internal" href="../ai.html"><span class="doc">more</span></a>.</p></li>
+<li><p><strong>TimeTravel</strong> - Our unique <a class="reference internal" href="../time-travel.html"><span class="doc">automatic version control</span></a> and backup system complements <code class="docutils literal notranslate"><span class="pre">git</span></code>.</p></li>
 </ul>
-<p>Of course, apart from Jupyter notebooks CoCalc supports many other document types, including LaTeX documents, Linux terminals, Markdown, chats, courses, etc.</p>
-<p>CoCalc does not have plugins that extend its functionality, rather everything available is included right away. In this sense you may consider JupyterHub to be more flexible/tunable, but it conveniently brings us to the next point.</p>
+<p>Of course, apart from <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebooks</span></a>, CoCalc supports many other document types, including <a class="reference internal" href="../latex.html"><span class="doc">LaTeX documents</span></a>, <a class="reference internal" href="../terminal.html"><span class="doc">Linux terminals</span></a>, <a class="reference internal" href="../markdown.html"><span class="doc">Markdown</span></a>, <a class="reference internal" href="../chat.html"><span class="doc">Chatrooms</span></a>, <a class="reference internal" href="../teaching-instructors.html"><span class="doc">Courses</span></a>, etc.</p>
+<p>CoCalc does not have plugins that extend its functionality, instead everything is included right away. In this sense you may consider JupyterHub to be more flexible/tunable, but it conveniently brings us to the next point.</p>
 </section>
 <section id="reliability">
 <h2>Reliability<a class="headerlink" href="#reliability" title="Link to this heading"></a></h2>
-<p>CoCalc functionality is continuously tested as a single unit in our production environment. Occasionally, there are bugs and regressions which we try to address as soon as possible. You may not even become aware of the problem because of our continuous monitoring of the service and other users reporting problems as well.</p>
-<p>With JupyterHub, on the other hand, our experience has shown that a user may attempt to install an innocuously looking plugin to discover that not only it does not work, but the whole environment becomes unusable and requires admin intervention to be fixed.</p>
+<p>CoCalc functionality is continuously tested as a single unit in our production environment. Occasionally, there are bugs and regressions which we try to address as soon as possible. You may not even become aware of the problem because of our <a class="reference external" href="https://status.cocalc.com/">continuous monitoring</a> of the service and other users reporting problems as well.</p>
+<p>With JupyterHub, on the other hand, our experience has shown that a user may attempt to install an innocuously looking plugin (<code class="docutils literal notranslate"><span class="pre">jupyterlab-git</span></code> to be specific) to discover that not only it does not work, but the whole environment becomes unusable and requires admin intervention to be fixed.</p>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Alternatives" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../working_with.html" class="btn btn-neutral float-right" title="Working With" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
