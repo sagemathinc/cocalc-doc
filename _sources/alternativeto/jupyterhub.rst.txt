@@ -51,4 +51,4 @@ Reliability
 
 CoCalc functionality is continuously tested as a single unit in our production environment. Occasionally, there are bugs and regressions which we try to address as soon as possible. You may not even become aware of the problem because of our continuous monitoring of the service and other users reporting problems as well.
 
-With JupyterHub, on the other hand, our experience has shown that a user may attempt to install an innocuously looking plugin to discover that non only it does not work, but the whole environment becomes unusable and requires admin intervention to be fixed. 
+With JupyterHub, on the other hand, our experience has shown that a user may attempt to install an innocuously looking plugin to discover that not only it does not work, but the whole environment becomes unusable and requires admin intervention to be fixed. 
