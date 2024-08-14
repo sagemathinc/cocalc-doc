@@ -185,7 +185,7 @@ Port forwarding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Some services need specific proxy forwarding to make them work on CoCalc.
-In particular, that's Shiny, the web-based RStudio client, and Jupyter servers without specific command line parameters.
+In particular, that's Shiny, the web-based R client, and Jupyter servers without specific command line parameters.
 This also means it is most likely not possible to run certain web-service extensions on top of Jupyter.
 
 

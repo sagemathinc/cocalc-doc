@@ -307,17 +307,17 @@ Installed Applications
 Tips & Tricks
 ======================
 
-RStudio with CoCalc
---------------------------------------
+Using R in CoCalc
+-----------------
 
-There are a number of ways to use RStudio in CoCalc. You can create X11 Desktop as explained above, then click the **RStudio** button at the bottom left and wait about 20 seconds. The advantage is real-time collaboration just as with any other X11 application, but the response time may be slow, so it may be better to launch RStudio from **Servers** tab:
+There are a number of ways to use R in CoCalc. You can create X11 Desktop as explained above, then click **R IDE** in the application list at the bottom left and wait about 20 seconds. The advantage is real-time collaboration just as with any other X11 application, but the response time may be slow, so it may be better to launch **R IDE** from **Servers** tab:
 
-.. figure:: img/RStudio_in_Servers.png
+.. figure:: img/R_IDE_server.png
     :width: 90%
     :align: center
-    :alt: Launching RStudio Server
+    :alt: Launching R IDE Server
 
-    Launching RStudio Server
+    Launching R IDE Server
 
 If you need more powerful compute resources, use :doc:`compute_server` with **R Statistics** image. Here CoCalc's CEO and Founder William Stein explains how to run it:
 
@@ -340,7 +340,7 @@ High-resolution HDPI displays
 
 If the visible buttons/controls are small, especially if you have a high-res display, and zooming alone doesn't really help much, enable **HDPI rendering**. That's available for some of the applications in their respective configuration dialogs.
 
-In RStudio you can go to **Tools → Global Options → Appearance → Zoom → 200%**.
+In R IDE you can go to **Tools → Global Options → Appearance → Zoom → 200%**.
 
 In Spyder **Enable auto high DPI scaling** option is available via the **Tools > Preferences** menu or the wrench-icon:
 
