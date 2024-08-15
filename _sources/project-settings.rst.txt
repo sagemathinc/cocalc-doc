@@ -272,6 +272,17 @@ Clicking `Unhide Project` instantly makes the project visible in the normal proj
 Deleting a project
 ******************
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/TjYOc1EMDmg?si=ttPVZHjOzRahI7b7"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
 When you delete a project,
 initially only the visibility of the project in the project list is changed.
 **You fully lose access to the project after 30 days.** We completely remove all users from the project, and there's no way for them to get their work back.
@@ -689,6 +700,17 @@ JupyterLab server
 .. note::
 
     As of May, 2022, CoCalc's JupyterLab server supports real-time collaboration. Although CoCalc's "Timetravel" feature is not available with JupyterLab, :ref:`filesystem snapshots <project-snapshot>` are still available if you need to recover a file.
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/9zLe-LNcCiE?si=0pQkDYbk52W6F-r5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
 
 Starting the `JupyterLab server <https://jupyterlab.readthedocs.io/en/stable/>`_ opens a new browser tab with the JupyterLab GUI.
 

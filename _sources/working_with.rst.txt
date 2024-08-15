@@ -11,6 +11,7 @@ Working With
    terminal
    latex
    vscode
+   R_IDE
    chat
    x11
    

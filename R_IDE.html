@@ -5,13 +5,13 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visual Studio Code Server &mdash; CoCalc Manual  documentation</title>
+  <title>R IDE &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/vscode.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/R_IDE.html" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -25,13 +25,13 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="R IDE" href="R_IDE.html" />
-    <link rel="prev" title="Import from Overleaf/Sharelatex" href="howto/overleaf.html" />
+    <link rel="next" title="Chatrooms" href="chat.html" />
+    <link rel="prev" title="Visual Studio Code Server" href="vscode.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/vscode.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/R_IDE.html"/>
   
 
 </head>
@@ -88,11 +88,14 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Visual Studio Code Server</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#plotting-from-python-scripts">Plotting from Python Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">R IDE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#collaborative-x11-application">Collaborative X11 Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notebook-server">Notebook Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compute-server">Compute Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-ways">Other Ways</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="R_IDE.html">R IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chat.html">Chatrooms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="x11.html">X11 Graphical Desktop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
@@ -137,7 +140,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="working_with.html">Working With</a></li>
-      <li class="breadcrumb-item active">Visual Studio Code Server</li>
+      <li class="breadcrumb-item active">R IDE</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -154,46 +157,49 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="visual-studio-code-server">
-<span id="index-0"></span><h1>Visual Studio Code Server<a class="headerlink" href="#visual-studio-code-server" title="Link to this heading"></a></h1>
-<p>Visual Studio Code is a source-code editor made by Microsoft. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. For more information about the server, see the home page: <a class="reference external" href="https://code.visualstudio.com/docs/remote/vscode-server">Visual Studio Code Server</a>.</p>
+  <section id="r-ide">
+<h1>R IDE<a class="headerlink" href="#r-ide" title="Link to this heading"></a></h1>
+<div class="admonition-disclaimer admonition">
+<p class="admonition-title">DISCLAIMER</p>
+<p>R IDE in CoCalc is the open source edition of RStudio. Posit Software, PBC is in no way associated with CoCalc.</p>
+</div>
+<p>There are a number of ways to use R in CoCalc.</p>
+<section id="collaborative-x11-application">
+<h2>Collaborative X11 Application<a class="headerlink" href="#collaborative-x11-application" title="Link to this heading"></a></h2>
+<p>You can create <a class="reference internal" href="x11.html"><span class="doc">X11 Graphical Desktop</span></a>, then click <strong>R IDE</strong> in the application list at the bottom left and wait about 20 seconds. The advantage is real-time collaboration just as with any other X11 application, but the response time may be slow.</p>
+</section>
+<section id="notebook-server">
+<h2>Notebook Server<a class="headerlink" href="#notebook-server" title="Link to this heading"></a></h2>
+<p>Click on the <strong>Servers / Notebook Servers</strong> tab and launch <strong>R IDE</strong> :</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/R_IDE_server.png"><img alt="Launching R IDE Server" src="_images/R_IDE_server.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Launching R IDE Server</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <center><iframe
     width="640" height="360"
-    src="https://www.youtube.com/embed/RqQW_n0Myyo?si=dNUNAzJNgIZHIeW1"
+    src="https://www.youtube.com/embed/Hl9MnHfuwCQ?si=JdM8eQb5T5pBKM1u"
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen>
-</iframe></center><p>To start VS Code Server in a CoCalc project, select Servers in the <a class="reference internal" href="activity-bar.html"><span class="doc">Activity Bar</span></a> and click the “VS Code” button:</p>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/vscode-server.png"><img alt="Starting VS Code Server from the Activity Bar" src="_images/vscode-server.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">Starting VS Code Server from the Activity Bar</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>When you click the link to start Visual Studio Code Server, a new browser tab opens with VS Code running as a browser application. All files are in the project, and therefore accessible from any browser.</p>
-<p>There’s no transparent support for multiple collaborative editing yet.</p>
-<section id="plotting-from-python-scripts">
-<h2>Plotting from Python Scripts<a class="headerlink" href="#plotting-from-python-scripts" title="Link to this heading"></a></h2>
-<p>You can use VS Code to work with Jupyter notebooks with inline plots. It is also possible to make use of CoCalc support for X11 to display plots from python scripts.</p>
-<ol class="arabic simple">
-<li><p>In the CoCalc browser tab open <a class="reference internal" href="x11.html#x11"><span class="std std-ref">X11 desktop</span></a>.</p></li>
-<li><p>In the terminal frame enter <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$DISPLAY</span></code> which will show something like <code class="docutils literal notranslate"><span class="pre">:1295981061</span></code></p></li>
-<li><p>Set <code class="docutils literal notranslate"><span class="pre">$DISPLAY</span></code> environment variable to this value (including the column) in your VS Code script/terminal.</p></li>
-<li><p>Run your code - plots should show up on the X11 desktop!</p></li>
-</ol>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/vsc_x11_plotting_cocalc.png"><img alt="CoCalc Tab with the Plot" src="_images/vsc_x11_plotting_cocalc.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">CoCalc Tab with the Plot</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/vsc_x11_plotting_vsc.png"><img alt="VS Code Tab with ``$DISPLAY`` Set" src="_images/vsc_x11_plotting_vsc.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">VS Code Tab with <code class="docutils literal notranslate"><span class="pre">$DISPLAY</span></code> Set</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+</iframe></center></section>
+<section id="compute-server">
+<h2>Compute Server<a class="headerlink" href="#compute-server" title="Link to this heading"></a></h2>
+<p>If you need more powerful compute resources, use <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a> with <strong>R Statistics</strong> image. Here CoCalc’s CEO and Founder William Stein explains how to run it:</p>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/Owq90O0vLJo?si=Im_EpK-uJwSkJSSW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+<br/></section>
+<section id="other-ways">
+<h2>Other Ways<a class="headerlink" href="#other-ways" title="Link to this heading"></a></h2>
+<p>You can also use R in CoCalc via:</p>
+<ul class="simple">
+<li><p>Jupyter notebooks with the R kernel. See <a class="reference internal" href="jupyter-start.html#jupyter-kernels"><span class="std std-ref">Jupyter Kernels</span></a>.</p></li>
+<li><p>Creating a file ending in .r and running it. You can keep your source file in one pane with a Linux terminal beside it to run the program. See <a class="reference internal" href="terminal.html#terminal-editor-panel"><span class="std std-ref">Terminal Environment in Split Frame with File Editor</span></a>.</p></li>
+<li><p><a class="reference internal" href="frame-editor.html#edit-rmd"><span class="std std-ref">R Markdown</span></a> (Rmd file).</p></li>
+<li><p><a class="reference internal" href="latex-faq.html#latex-knitr"><span class="std std-ref">Knitr</span></a> (rnw or Rtex file).</p></li>
+<li><p>Sage worksheet with R (sagews file and “%r” mode). See Custom “Mode Commands” in Sage Worksheets under <a class="reference internal" href="sagews.html#sagews-wiki"><span class="std std-ref">Sage Worksheets</span></a>.</p></li>
+</ul>
 </section>
 </section>
 
@@ -201,8 +207,8 @@ div.cocalc-header a {
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="howto/overleaf.html" class="btn btn-neutral float-left" title="Import from Overleaf/Sharelatex" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="R_IDE.html" class="btn btn-neutral float-right" title="R IDE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="vscode.html" class="btn btn-neutral float-left" title="Visual Studio Code Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="chat.html" class="btn btn-neutral float-right" title="Chatrooms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -220,7 +226,7 @@ div.cocalc-header a {
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/vscode.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/R_IDE.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!

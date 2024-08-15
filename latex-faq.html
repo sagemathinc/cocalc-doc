@@ -99,8 +99,9 @@ div.cocalc-header a {
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="R_IDE.html">R IDE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chat.html">Chatrooms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="x11.html">X11 Graphical Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="x11.html">X11 Graphical Desktop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="markdown.html">Markdown</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
@@ -415,7 +416,14 @@ In particular, you can insert small calculations and formulas (Sage, SymPy, …)
 This is frequently used as part of <a class="reference external" href="https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research">reproducible research</a>.</p>
 <section id="sagetex">
 <span id="latex-sagetex"></span><span id="index-17"></span><h4>SageTeX<a class="headerlink" href="#sagetex" title="Link to this heading"></a></h4>
-<p>Any <code class="docutils literal notranslate"><span class="pre">.tex</span></code> file loading the <code class="docutils literal notranslate"><span class="pre">sagetex</span></code> package is automatically processed via [[SageMath]].
+<center><iframe
+    width="640" height="360"
+    src="https://www.youtube.com/embed/K-5CqXwRHgA?si=lX5bNDCtcUEoESFF"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe></center><p>Any <code class="docutils literal notranslate"><span class="pre">.tex</span></code> file loading the <code class="docutils literal notranslate"><span class="pre">sagetex</span></code> package is automatically processed via [[SageMath]].
 First, Sage code is extracted into a <code class="docutils literal notranslate"><span class="pre">.sage</span></code> file, then <code class="docutils literal notranslate"><span class="pre">sage</span> <span class="pre">...</span></code> evaluates that file, and finally the LaTeX engine creates the PDF document by replacing all snippets of Sage code by their evaluated result.
 CoCalc handles all details for you!</p>
 <p>To get going, you just have to insert <code class="docutils literal notranslate"><span class="pre">\usepackage{sagetex}</span></code> into the <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Preamble">preamble</a> of your document.
@@ -426,7 +434,14 @@ Besides that, the <a class="reference external" href="http://doc.sagemath.org/ht
 </section>
 <section id="pythontex">
 <span id="latex-pythontex"></span><span id="index-18"></span><h4>PythonTeX<a class="headerlink" href="#pythontex" title="Link to this heading"></a></h4>
-<p><a class="reference external" href="https://ctan.org/pkg/pythontex">PythonTeX</a> follows the same spirit as SageTeX.
+<center><iframe
+    width="640" height="360"
+    src="https://www.youtube.com/embed/sN--nWPyFuk?si=4y13tJQvRJsPrn26"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe></center><p><a class="reference external" href="https://ctan.org/pkg/pythontex">PythonTeX</a> follows the same spirit as SageTeX.
 Embedded Python commands and blocks of code are extracted into a <code class="docutils literal notranslate"><span class="pre">.py</span></code> file,
 Python 3 evaluates them,
 and at the end the LaTeX engine merges the generated output snippets into the final document and renders the PDF file.
