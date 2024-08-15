@@ -3,7 +3,7 @@
 .. _X11:
 
 ==========================
-X11 Graphical Applications
+X11 Graphical Desktop
 ==========================
 
 .. contents::
@@ -306,34 +306,6 @@ Installed Applications
 
 Tips & Tricks
 ======================
-
-Using R in CoCalc
------------------
-
-There are a number of ways to use R in CoCalc. You can create X11 Desktop as explained above, then click **R IDE** in the application list at the bottom left and wait about 20 seconds. The advantage is real-time collaboration just as with any other X11 application, but the response time may be slow, so it may be better to launch **R IDE** from **Servers** tab:
-
-.. figure:: img/R_IDE_server.png
-    :width: 90%
-    :align: center
-    :alt: Launching R IDE Server
-
-    Launching R IDE Server
-
-If you need more powerful compute resources, use :doc:`compute_server` with **R Statistics** image. Here CoCalc's CEO and Founder William Stein explains how to run it:
-
-.. raw:: html
-
-    <center><iframe width="640" height="360" src="https://www.youtube.com/embed/Owq90O0vLJo?si=Im_EpK-uJwSkJSSW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-    <br/>
-
-
-You can also use R in CoCalc via:
-
-- Jupyter notebooks with the R kernel. See :ref:`jupyter-kernels`.
-- Creating a file ending in .r and running it. You can keep your source file in one pane with a Linux terminal beside it to run the program. See :ref:`terminal-editor-panel`.
-- :ref:`edit-rmd` (Rmd file).
-- :ref:`latex-knitr` (rnw or Rtex file).
-- Sage worksheet with R (sagews file and "%r" mode). See Custom “Mode Commands” in Sage Worksheets under :ref:`sagews-wiki`.
 
 High-resolution HDPI displays
 --------------------------------------
