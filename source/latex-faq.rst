@@ -326,6 +326,17 @@ This is frequently used as part of `reproducible research <https://en.wikipedia.
 SageTeX
 ^^^^^^^^^^
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/K-5CqXwRHgA?si=lX5bNDCtcUEoESFF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 Any ``.tex`` file loading the ``sagetex`` package is automatically processed via [[SageMath]].
 First, Sage code is extracted into a ``.sage`` file, then ``sage ...`` evaluates that file, and finally the LaTeX engine creates the PDF document by replacing all snippets of Sage code by their evaluated result.
 CoCalc handles all details for you!
@@ -348,6 +359,17 @@ Besides that, the `SageMath Documentation <http://doc.sagemath.org/html/en/>`_ c
 PythonTeX
 ^^^^^^^^^^^^^^
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/sN--nWPyFuk?si=4y13tJQvRJsPrn26"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 `PythonTeX <https://ctan.org/pkg/pythontex>`_ follows the same spirit as SageTeX.
 Embedded Python commands and blocks of code are extracted into a ``.py`` file,
 Python 3 evaluates them,

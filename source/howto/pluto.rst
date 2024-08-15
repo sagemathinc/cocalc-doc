@@ -14,6 +14,17 @@ Here are instructions for running a Pluto notebook on CoCalc.
 Launch a Pluto Notebook
 ***********************
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/WMu2cCT6XVI?si=2i0Jasz4iDmq_f3k"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 1. Click :doc:`../plus-new` to open the new file dialog.
 
 2. Click "Pluto server...".

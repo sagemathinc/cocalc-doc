@@ -15,6 +15,17 @@ Snapshots
 All files in every project are snapshotted every couple of minutes.
 You can browse your snapshots by clicking the **"Backups"** link at the upper right of the :doc:`explorer` file listing.
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/VPp-AleMUXg?si=65Q0vbU8K4A2AUF5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
 *Snapshot storage does not count against your disk space quota.* We provide all snapshot space for no additional charge.
 
 
