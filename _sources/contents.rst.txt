@@ -11,8 +11,8 @@ This explains in depth how you can work productively on `CoCalc`_.
 
    introduction
    alternativeto/index
+   main_features
    working_with
-   platform
    user_interface
    service_options
    howto/index

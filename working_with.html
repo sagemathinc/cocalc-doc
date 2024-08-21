@@ -25,8 +25,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="AI Assistant" href="ai.html" />
-    <link rel="prev" title="Alternative to JupyterHub" href="alternativeto/jupyterhub.html" />
+    <link rel="next" title="Software" href="software.html" />
+    <link rel="prev" title="Cloud File System" href="cloud_file_system.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -82,15 +82,11 @@ div.cocalc-header a {
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternativeto/index.html">Alternatives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main_features.html">Main Features</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Working With</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ai.html">AI Assistant</a></li>
-<li class="toctree-l2"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software.html">Software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="R_IDE.html">R IDE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chat.html">Chatrooms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="x11.html">X11 Graphical Desktop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="markdown.html">Markdown</a></li>
@@ -101,9 +97,12 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="timers.html">Stopwatches and Timers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slides.html">Slides</a></li>
 <li class="toctree-l2"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apikeys.html">API Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api2/index.html">API v2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html">API v1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-options.html">Display Options</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="platform.html">Platform</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_interface.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="service_options.html">Service Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">How-tos</a></li>
@@ -154,24 +153,161 @@ div.cocalc-header a {
 <h1>Working With<a class="headerlink" href="#working-with" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ai.html">AI Assistant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="frame-editor.html">Frame Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
-<li class="toctree-l1"><a class="reference internal" href="R_IDE.html">R IDE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chat.html">Chatrooms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="x11.html">X11 Graphical Desktop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="software.html#default-environment">Default environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software.html#custom-environments">Custom environments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vscode.html#plotting-from-python-scripts">Plotting from Python Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="R_IDE.html">R IDE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="R_IDE.html#collaborative-x11-application">Collaborative X11 Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="R_IDE.html#notebook-server">Notebook Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="R_IDE.html#compute-server">Compute Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="R_IDE.html#other-ways">Other Ways</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="x11.html">X11 Graphical Desktop</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="x11.html#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="x11.html#installed-applications">Installed Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="x11.html#tips-tricks">Tips &amp; Tricks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sagews.html">Sage Worksheets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#what-s-a-sage-worksheet">What’s a Sage Worksheet?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#how-to-revert-undo-changes-in-a-sage-worksheet">How to Revert/Undo Changes in a Sage Worksheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#help-for-programmers">Help for Programmers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#sage-worksheet-slow-when-plotting-disable-svg">Sage Worksheet Slow When Plotting? Disable svg.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#how-long-are-definitions-stored-in-a-sage-worksheet">How Long are Definitions Stored in a Sage Worksheet?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#wiki-resources">Wiki resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#help-about-sagemath">Help about SageMath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sagews.html#howto">Howto</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#where-markdown-can-be-used-in-cocalc">Where Markdown can be used in CoCalc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#enhanced-features-in-cocalc-markdown">Enhanced features in CoCalc Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#search-and-replace-within-the-file">Search and Replace Within the File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#about-the-cocalc-implementation-of-markdown">About the CoCalc Implementation of Markdown</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rich-text.html">Rich Text Editing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rich-text.html#where-rich-text-editing-is-available">Where Rich Text Editing is Available</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rich-text.html#real-time-collaboration">Real-time Collaboration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rich-text.html#latex-in-rich-text-editing">LaTeX in Rich Text Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rich-text.html#font-options">Font options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rich-text.html#insert-emoji">Insert emoji</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rich-text.html#limitations">Limitations</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="csv-viewer.html">CSV Viewer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a></li>
-<li class="toctree-l1"><a class="reference internal" href="timers.html">Stopwatches and Timers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="slides.html">Slides</a></li>
-<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#chat">Chat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#collaborative-editing">Collaborative Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#cut-or-copy-and-paste">Cut or Copy and Paste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#edges">Edges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#frames">Frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#hashtags">Hashtags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#icons">Icons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#insert-page">Insert Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#jupyter-cells">Jupyter Cells</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#latex-expressions">LaTeX Expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#navigate-with-arrow-keys">Navigate With Arrow Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#pages-view">Pages View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#overview-map">Overview Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#pens">Pens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#publish">Publish</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#search-view">Search View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#split-whiteboard-windows">Split Whiteboard Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#sticky-notes">Sticky Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#stopwatches-and-timers">Stopwatches and Timers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#text">Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#timetravel">TimeTravel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whiteboard.html#to-do-lists">To-do Lists</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tasks.html">Task Lists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#creating-a-task-list">Creating a Task List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#editing-the-description-markdown">Editing the Description (Markdown)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#completing-a-task">Completing a task</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#moving-tasks">Moving tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#due-date">Due date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#hashtags">Hashtags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#search">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#keyboard-shortcuts">Keyboard shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tasks.html#file-format">File format</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="timers.html">Stopwatches and Timers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="timers.html#creating-a-stopwatch-or-timer">Creating a Stopwatch or Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timers.html#when-a-timer-counts-down-to-zero">When a Timer Counts Down to Zero</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="slides.html">Slides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#chat">Chat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#collaborative-editing">Collaborative Editing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#cut-or-copy-and-paste">Cut or Copy and Paste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#edges">Edges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#frames">Frames</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#hashtags">Hashtags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#icons">Icons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#insert-slide">Insert Slide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#jupyter-cells">Jupyter Cells</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#latex-expressions">LaTeX Expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#navigate-with-arrow-keys">Navigate With Arrow Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#overview-map">Overview Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#pages-view">Pages View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#pens">Pens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#presentation-mode">Presentation Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#publish">Publish</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#search-view">Search View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#split-windows">Split Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#sticky-notes">Sticky Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#stopwatches-and-timers">Stopwatches and Timers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#text">Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#timetravel">TimeTravel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html#to-do-lists">To-do Lists</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="snippets.html#system-wide-snippets">System-wide Snippets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippets.html#custom-snippets">Custom Snippets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apikeys.html">API Keys</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apikeys.html#account-api-keys">Account API Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apikeys.html#project-api-keys">Project API Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apikeys.html#create-an-api-key-with-web-client">Create an API Key With Web Client</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api2/index.html">API v2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api2/index.html#get-an-api-key">Get an API Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api2/index.html#api-v2-examples">API v2 Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API v1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#protocol-and-data-format">Protocol and Data Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#authentication">Authentication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#additional-references">Additional References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#api-message-reference">API Message Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#copy-a-file-between-projects">Copy a file between projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#embedding-in-an-iframe">Embedding in an IFrame</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html#iframe-communication">IFrame communication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="display-options.html">Display Options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="display-options.html#fullscreen-options">Fullscreen Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-options.html#sessions">Sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-options.html#desktop-application">Desktop Application</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
@@ -180,8 +316,8 @@ div.cocalc-header a {
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="alternativeto/jupyterhub.html" class="btn btn-neutral float-left" title="Alternative to JupyterHub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="ai.html" class="btn btn-neutral float-right" title="AI Assistant" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cloud_file_system.html" class="btn btn-neutral float-left" title="Cloud File System" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="software.html" class="btn btn-neutral float-right" title="Software" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

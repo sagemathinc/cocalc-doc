@@ -5,7 +5,7 @@ User Interface
 .. toctree::
    :maxdepth: 2
 
-   display-options
+   project
    project-toolbar
    activity-bar
    project-home
