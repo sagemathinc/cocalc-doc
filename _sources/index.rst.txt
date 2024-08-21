@@ -54,7 +54,7 @@ To immerse yourself into CoCalc, you should
 
 * go through the :doc:`getting-started` guide to create your account, your first project, and a worksheet;
 
-* check out :doc:`specific guides <working_with>` for features you are most interested in;
+* check out our :doc:`main_features` and :doc:`specific guides <working_with>` for topics you are most interested in;
 
 * see how the :doc:`frame-editor` helps when working with different files;
 
