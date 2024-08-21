@@ -3,16 +3,11 @@ Working With
 ====================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   ai
-   frame-editor
-   jupyter
-   terminal
-   latex
+   software
    vscode
    R_IDE
-   chat
    x11
    
    sagews
@@ -25,3 +20,8 @@ Working With
    timers
    slides
    snippets
+   
+   apikeys
+   api2/index.rst
+   api/index.rst
+   display-options

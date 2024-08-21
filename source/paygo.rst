@@ -1,8 +1,8 @@
 .. index:: Pay as You Go Service
 
-======================
-Pay-As-You-Go Purchase
-======================
+=======================
+Pay-As-You-Go Purchases
+=======================
 
 .. contents::
    :local:
