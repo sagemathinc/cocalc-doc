@@ -5,6 +5,7 @@ Working With
 .. toctree::
    :maxdepth: 2
 
+   frame-editor
    software
    vscode
    R_IDE
