@@ -1,7 +1,7 @@
 .. index:: Software Stack
 
 ======================================
-Software
+Software Environment
 ======================================
 
 Each :doc:`Project <../project>` on CoCalc runs on top of a software environment.

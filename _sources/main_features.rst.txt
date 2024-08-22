@@ -5,7 +5,6 @@ Main Features
    :maxdepth: 2
 
    ai
-   frame-editor
    jupyter
    latex
    terminal
