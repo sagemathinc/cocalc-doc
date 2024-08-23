@@ -176,7 +176,7 @@ div.cocalc-header a {
              
   <section id="project-initialization-scripts">
 <span id="index-0"></span><h1>Project Initialization Scripts<a class="headerlink" href="#project-initialization-scripts" title="Link to this heading"></a></h1>
-<p>All about the <strong>project_init.sh</strong> file.</p>
+<p>All about the <code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code> file.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#project-initialization" id="id2">Project Initialization</a></p></li>
@@ -185,7 +185,11 @@ div.cocalc-header a {
 <li><p><a class="reference internal" href="#development" id="id5">Development</a></p></li>
 </ul>
 </nav>
-<p>While crontab-based management of periodic tasks is not available in CoCalc projects, we offer a flexible mechanism to use regular Bash, Python, or SageMath files for the same sort of capability.</p>
+<p>While <code class="docutils literal notranslate"><span class="pre">crontab</span></code>-based management of periodic tasks is not available in CoCalc projects, we offer a flexible mechanism to use regular Bash, Python, or SageMath files for the same sort of capability.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">crontab</span></code> does work inside of <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a></p>
+</div>
 <section id="project-initialization">
 <h2><a class="toc-backref" href="#id2" role="doc-backlink">Project Initialization</a><a class="headerlink" href="#project-initialization" title="Link to this heading"></a></h2>
 <p>When a CoCalc project starts this is run:</p>

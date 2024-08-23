@@ -186,17 +186,19 @@ It may be handy also to install Google Chrome on your compute server and run it 
     google-chrome --no-sandbox --disable-dev-shm-usage
 
 
-Becoming root and Port Forwarding
----------------------------------
+.. _become_root:
 
-You cannot become ``root`` or use ``sudo`` inside of a CoCalc project. If you try to, you will get a message like
+Becoming ``root`` and Port Forwarding
+-------------------------------------
+
+You cannot become ``root`` or use ``sudo`` inside of a CoCalc project's Home Base. If you try to, you will get a message like
 
 .. figure:: img/no_sudo.png
     :width: 90%
     :align: center
     :alt: Error Message Using sudo
 
-    Error Message Using sudo
+    Error Message Using ``sudo``
 
 On a compute server it is fully possible, just make sure that your terminal is running on a compute server as explained above:
 
@@ -205,7 +207,7 @@ On a compute server it is fully possible, just make sure that your terminal is r
     :align: center
     :alt: Using sudo on a Compute Server
 
-    Using sudo on a Compute Server
+    Using ``sudo`` on a Compute Server
 
 .. warning::
     Since you can do anything as ``root``, you may accidentally lose access to your compute server and your data. If this happens and you do need to regain access to data, contact support at help@cocalc.com
@@ -233,6 +235,16 @@ The same address can be used to gain access to services. If any software on your
     ssh -L 8123:localhost:8123 root@[server address]
 
 on your *local* computer and go to ``http://localhost:8123`` in your *local* browser. An interesting option to access these ports is to use :ref:`X11 Desktop <compute_server_applications>` on your compute server.
+
+
+.. _crontab:
+
+Services Control and ``crontab``
+--------------------------------
+
+CoCalc projects support :doc:`project-init` but if you want to use ``crontab``, you have to do so on a compute server.
+
+Inside of the compute server Docker container you can also use ``supervisord``, but no ``systemd`` or ``systemctl``. If you have to use the latter, use the container escape method described above in :ref:`become_root`.
 
 
 Billing for a Compute Server
