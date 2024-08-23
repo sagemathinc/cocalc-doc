@@ -4,13 +4,18 @@
 Project Initialization Scripts
 ================================
 
-All about the **project_init.sh** file.
+All about the ``project_init.sh`` file.
 
 .. contents::
    :local:
    :depth: 1
 
-While crontab-based management of periodic tasks is not available in CoCalc projects, we offer a flexible mechanism to use regular Bash, Python, or SageMath files for the same sort of capability.
+While ``crontab``-based management of periodic tasks is not available in CoCalc projects, we offer a flexible mechanism to use regular Bash, Python, or SageMath files for the same sort of capability.
+
+.. note::
+
+    ``crontab`` does work inside of :doc:`compute_server`
+    
 
 ************************
 Project Initialization
