@@ -246,6 +246,39 @@ CoCalc projects support :doc:`project-init` but if you want to use ``crontab``, 
 
 Inside of the compute server Docker container you can also use ``supervisord``, but no ``systemd`` or ``systemctl``. If you have to use the latter, use the container escape method described above in :ref:`become_root`.
 
+One of the reasons to use ``supervisord`` is to automatically start a service, by creating a script and putting it in ``/etc/supervisor/conf.d/``. You *cannot* rely on ``@reboot`` directive of ``cron`` inside of the Docker container. Check out the documentation at https://supervisord.readthedocs.io/en/latest/ and see a bunch of examples of ``supervisord`` scripts that are part of CoCalc here::
+
+    (compute-server-13) ~$ ls /cocalc/supervisor/conf.d/
+    code-server.conf  cron.conf        pluto.conf  xpra.conf
+    compute.conf      jupyterlab.conf  proxy.conf
+
+For example, here is the one that automatically starts ``cron``, so that ``crontab`` works::
+
+    (compute-server-13) ~$ more /cocalc/supervisor/conf.d/cron.conf
+    [program:cron]
+    command=sudo /usr/sbin/cron -f
+    autostart=true
+
+As you can see, the script is very simple - just three lines. This results in automatic restart
+if there is a crash, creation of proper logging in ``/var/log/supervisor``::
+
+    (compute-server-13) ~$ ls /var/log/supervisor/
+    cron-stderr---supervisor-y7enleoo.log         supervisord.log
+    cron-stdout---supervisor-pummauzv.log         xpra-stderr---supervisor-xy4rpbm2.log
+    ...
+
+and you can use ``supervisorctl`` to manage services::
+
+    (compute-server-13) ~$ supervisorctl
+    code-server                      STOPPED   Not started
+    compute                          RUNNING   pid 24, uptime 0:38:40
+    cron                             RUNNING   pid 25, uptime 0:38:40
+    jupyterlab                       STOPPED   Not started
+    pluto                            STOPPED   Not started
+    proxy                            RUNNING   pid 26, uptime 0:38:40
+    xpra                             STOPPED   Not started
+
+
 
 Billing for a Compute Server
 ----------------------------
