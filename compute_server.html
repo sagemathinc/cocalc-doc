@@ -400,6 +400,38 @@ google-chrome --no-sandbox --disable-dev-shm-usage
 <span id="crontab"></span><h2><a class="toc-backref" href="#id30" role="doc-backlink">Services Control and <code class="docutils literal notranslate"><span class="pre">crontab</span></code></a><a class="headerlink" href="#services-control-and-crontab" title="Link to this heading"></a></h2>
 <p>CoCalc projects support <a class="reference internal" href="project-init.html"><span class="doc">Project Initialization Scripts</span></a> but if you want to use <code class="docutils literal notranslate"><span class="pre">crontab</span></code>, you have to do so on a compute server.</p>
 <p>Inside of the compute server Docker container you can also use <code class="docutils literal notranslate"><span class="pre">supervisord</span></code>, but no <code class="docutils literal notranslate"><span class="pre">systemd</span></code> or <code class="docutils literal notranslate"><span class="pre">systemctl</span></code>. If you have to use the latter, use the container escape method described above in <a class="reference internal" href="#become-root"><span class="std std-ref">Becoming root and Port Forwarding</span></a>.</p>
+<p>One of the reasons to use <code class="docutils literal notranslate"><span class="pre">supervisord</span></code> is to automatically start a service, by creating a script and putting it in <code class="docutils literal notranslate"><span class="pre">/etc/supervisor/conf.d/</span></code>. You <em>cannot</em> rely on <code class="docutils literal notranslate"><span class="pre">&#64;reboot</span></code> directive of <code class="docutils literal notranslate"><span class="pre">cron</span></code> inside of the Docker container. Check out the documentation at <a class="reference external" href="https://supervisord.readthedocs.io/en/latest/">https://supervisord.readthedocs.io/en/latest/</a> and see a bunch of examples of <code class="docutils literal notranslate"><span class="pre">supervisord</span></code> scripts that are part of CoCalc here:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(compute-server-13) ~$ ls /cocalc/supervisor/conf.d/
+code-server.conf  cron.conf        pluto.conf  xpra.conf
+compute.conf      jupyterlab.conf  proxy.conf
+</pre></div>
+</div>
+<p>For example, here is the one that automatically starts <code class="docutils literal notranslate"><span class="pre">cron</span></code>, so that <code class="docutils literal notranslate"><span class="pre">crontab</span></code> works:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(compute-server-13) ~$ more /cocalc/supervisor/conf.d/cron.conf
+[program:cron]
+command=sudo /usr/sbin/cron -f
+autostart=true
+</pre></div>
+</div>
+<p>As you can see, the script is very simple - just three lines. This results in automatic restart
+if there is a crash, creation of proper logging in <code class="docutils literal notranslate"><span class="pre">/var/log/supervisor</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(compute-server-13) ~$ ls /var/log/supervisor/
+cron-stderr---supervisor-y7enleoo.log         supervisord.log
+cron-stdout---supervisor-pummauzv.log         xpra-stderr---supervisor-xy4rpbm2.log
+...
+</pre></div>
+</div>
+<p>and you can use <code class="docutils literal notranslate"><span class="pre">supervisorctl</span></code> to manage services:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(compute-server-13) ~$ supervisorctl
+code-server                      STOPPED   Not started
+compute                          RUNNING   pid 24, uptime 0:38:40
+cron                             RUNNING   pid 25, uptime 0:38:40
+jupyterlab                       STOPPED   Not started
+pluto                            STOPPED   Not started
+proxy                            RUNNING   pid 26, uptime 0:38:40
+xpra                             STOPPED   Not started
+</pre></div>
+</div>
 </section>
 <section id="billing-for-a-compute-server">
 <h2><a class="toc-backref" href="#id31" role="doc-backlink">Billing for a Compute Server</a><a class="headerlink" href="#billing-for-a-compute-server" title="Link to this heading"></a></h2>
