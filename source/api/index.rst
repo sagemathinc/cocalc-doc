@@ -5,6 +5,16 @@
 API v1 (deprecated)
 ====================
 
+
+Deprecation Notice
+------------------
+
+**This API has been deprecated and is no longer under active development.** Please use
+:doc:`our v2 API <../api2/index>`, which features better documentation, developer support,
+and features.
+
+Documentation for the deprecated API can be found below.
+
 .. include:: index0.rst
 
 .. toctree::
