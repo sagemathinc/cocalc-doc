@@ -21,7 +21,7 @@ Responses are formatted as JSON strings.
 Note that it is possible for a request to fail and return
 a response code of 200. In that case, the response
 string may contain helpful information on the nature of
-the failure. In other cases, if the request cannnot
+the failure. In other cases, if the request cannot
 be completed, a response code other than 200 may be
 returned, and the response body may be a
 generic HTML message rather than a JSON string.
