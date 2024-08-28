@@ -5,7 +5,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API v1 &mdash; CoCalc Manual  documentation</title>
+  <title>API v1 (deprecated) &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -100,7 +100,8 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="../snippets.html">Snippets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../apikeys.html">API Keys</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api2/index.html">API v2</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">API v1</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">API v1 (deprecated)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#deprecation-notice">Deprecation Notice</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#purpose">Purpose</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#protocol-and-data-format">Protocol and Data Format</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#authentication">Authentication</a></li>
@@ -182,7 +183,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../working_with.html">Working With</a></li>
-      <li class="breadcrumb-item active">API v1</li>
+      <li class="breadcrumb-item active">API v1 (deprecated)</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -199,8 +200,15 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="api-v1">
-<span id="index-0"></span><h1>API v1<a class="headerlink" href="#api-v1" title="Link to this heading"></a></h1>
+  <section id="api-v1-deprecated">
+<span id="index-0"></span><h1>API v1 (deprecated)<a class="headerlink" href="#api-v1-deprecated" title="Link to this heading"></a></h1>
+<section id="deprecation-notice">
+<h2>Deprecation Notice<a class="headerlink" href="#deprecation-notice" title="Link to this heading"></a></h2>
+<p><strong>This API has been deprecated and is no longer under active development.</strong> Please use
+<a class="reference internal" href="../api2/index.html"><span class="doc">our v2 API</span></a>, which features better documentation, developer support,
+and features.</p>
+<p>Documentation for the deprecated API can be found below.</p>
+</section>
 <section id="purpose">
 <h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading"></a></h2>
 <p>The purpose of the CoCalc API (application programming interface) is to make
@@ -220,7 +228,7 @@ also accept request parameters as key-value pairs, i.e.
 Note that it is possible for a request to fail and return
 a response code of 200. In that case, the response
 string may contain helpful information on the nature of
-the failure. In other cases, if the request cannnot
+the failure. In other cases, if the request cannot
 be completed, a response code other than 200 may be
 returned, and the response body may be a
 generic HTML message rather than a JSON string.</p>
