@@ -1,69 +1,106 @@
 .. index:: TimeTravel
 
-====================
 TimeTravel
 ====================
 
-CoCalc calls "TimeTravel" the historic recording of all changes in a file.
-This works for all text-based documents in a :doc:`frame-editor` and also :doc:`jupyter`, :doc:`sagews`, and :doc:`latex`.
+CoCalc's TimeTravel allows you to easily access all revisions of a file. You can use it to see what changes have been made by your collaborators or to recover previous versions after accidental damage.
+This works for all text-based documents in a :doc:`frame-editor`, in particular for :doc:`jupyter`, :doc:`latex`, and :doc:`sagews`.
 
-.. contents::
-   :local:
-   :depth: 1
+.. raw:: html
 
-###################
-Using TimeTravel
-###################
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/qAo7E0wpuhk?si=lPaev7eaEBDF3f4i"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
+To open the TimeTravel frame, click on the light blue button in the upper left:
 
-To open it, click on the light blue button with the reversed cirular arrow around a clock:
+.. figure:: img/TimeTravel_button.png
+  :width: 90%
+  :align: center
+  :alt: TimeTravel Button
 
-.. image:: img/time-travel-button.png
-    :align: center
-    :alt: time travel button
+  TimeTravel Button
+  
+Then you can use a slider to view previous revisions of the file:
 
-Then you can see the underlying history, e.g. here for exactly this ``time-travel.rst`` file of the documentation in front of you.
+.. figure:: img/TimeTravel_frame.png
+  :width: 90%
+  :align: center
+  :alt: TimeTravel Frame
 
-* **(1)** is the control knob of the slider
-* **(2)** to view changes between two revisions
-* **(3)** to revert the file back to the given revision. This doesn't undo the history, but adds a **new** entry at the end. No changes get lost.
+  TimeTravel Frame
+  
+Note that you can see changes made by all your collaborators: for each revision the author's name is shown next to the revision number.
 
-For very long histories, another button will show up to load the entire history.
+If you decide to **Revert** the file back to a given revision, it will not undo the history, but will add a *new* entry at the end. No changes are lost.
 
-.. image:: img/time-travel-ui.png
-    :width: 100%
-    :alt: long time travel history
+You can also view changes between any two revisions:
 
-With ``[x] Changes`` enabled, you get a two-ended slider to see the changes between these two revisions:
+.. figure:: img/TimeTravel_changes.png
+  :width: 90%
+  :align: center
+  :alt: Changes Between Two Revisions
 
-.. image:: img/time-travel-changes.png
-    :width: 100%
-    :alt: time travel changes
+  Changes Between Two Revisions
+  
 
-For more information, read this `blog post about time travel <http://blog.sagemath.com/2016/09/08/timetravel-diffs.html>`_.
+What Are Revisions?
+-------------------
 
-###################
+We have shown you how to look at different revisions, but what are they, and who is responsible for their creation?
+Unlike with traditional version control systems, such as the well-known Git, these checkpoints are created automatically on a regular basis. In most cases there is no particular "logic" behind their timing, rather it is based on your typing flow and that of your collaborators (or other processes changing files). Whenever the platform detects a change, a new revision is made, and the change is propagated to all currently opened copies of the file for all collaborators. For efficiency reasons, not every single character change is recorded, but you can expect several revisions per sentence.
+
+
+TimeTravel and Git
+------------------
+
+If you use TimeTravel to look at revisions of a file that happens to be in a Git repository, you can use Git commits for the file instead of the automatic checkpoints:
+
+.. figure:: img/TimeTravel_git.png
+  :width: 90%
+  :align: center
+  :alt: Viewing Git Revisions in TimeTravel
+
+  Viewing Git Revisions in TimeTravel
+  
+
 Export History
-###################
+--------------
 
-Clicking the ``Export`` button generates a machine-readable representation of all changes, summarizing who made them and when exactly.
+Clicking the **Export** button generates a machine-readable representation of all changes, summarizing who made them and when exactly.
 This can be used to track the depth of contributions to a specific file,
 e.g. students in the context of a group project.
 
 Note that the ``"user": "Project: ..."`` is the backend process modifying the file, i.e. that's not a human person. (See the next section for more information.)
 
-#####################
+
 Who Changed My File?
-#####################
+--------------------
 
-TimeTravel shows who made changes to a file. This is helpful when two or more users have edited a file.
+TimeTravel shows who made changes to a file. This is helpful when two or more collaborators have edited a file.
 
-In the case that TimeTravel says "The Project" made the change, that means that some process other than the CoCalc editor modified the file, and that version was newer than the version used by the editor at the time. This can happen for many reasons. For example, if the file is stored in git, then switching to a different branch could change the contents of the file. Another cause could be running a notebook with JupyterLab or Jupyter classic at the same time as CoCalc Jupyter.
+If TimeTravel indicates "The Project" made the change, it means some process other than the CoCalc editor modified the file, and that version was newer than the one used by the editor at that time. This can happen for many reasons. For example, if the file is stored in Git, switching to a different branch could change the contents. Another cause could be running a notebook with JupyterLab or Jupyter classic simultaneously with CoCalc Jupyter.
 
-Make sure you save your file to disk when you're finished working with it. A file is saved to disk when the "Save" button turns from a bright green to a disabled dull green.
 
-####################################
-Clear TimeTravel History for a File
-####################################
+Clear TimeTravel
+----------------
 
-While you can't explicitly delete the TimeTravel history for a file, you can achieve a similar result. CoCalc, unlike other software (including Microsoft Office), does not store the TimeTravel history of a file in the file or even in any filesystem (e.g., it is not in a hidden file). It exists only in the CoCalc backend PostgreSQL database as a series of patches tracking the evolution of your notebook over time. It is the same data used for realtime collaboration. TimeTravel is associated to the specific project and path. If you copy your file to a new location (even in the same project), then click "TimeTravel", you will see that it is a new history.
+Unlike other software (such as Microsoft Office), CoCalc does not store the TimeTravel history of a file in the file itself or within any file system (e.g., it is not in a hidden file). It exists only in the CoCalc backend PostgreSQL database as a series of patches tracking the evolution of your notebook over time.
+However, TimeTravel is associated to a specific path. If you copy your file to a new location, you will see that its TimeTravel history starts anew.
 
+If you need to completely delete some data including TimeTravel in CoCalc, contact us at help@sagemath.com and we will do it for you. The only copies of data that may remain after administrator deletion are encrypted external backups, not accessible by any CoCalc user.
+
+
+Privacy Concerns
+----------------
+
+As explained above, TimeTravel grants you access to a very fine-grained record of everything that each user types in a CoCalc editor. This record is a side effect of real-time collaboration - in order to combine edits from multiple users into a single file, we need to collect incremental changes from all users and then apply them in order. So this track record is directly due to CoCalc being a collaborative platform. We do not use that information for any other purpose and it is not passed to anybody else. You can read more details on our use of customer data including PII in our `Privacy Policy <https://cocalc.com/policies/privacy>`_.
+
+In a course setting, all instructors and TAs are collaborators on each student project, so they do have access to TimeTravel history. If students work on a group project, they will have access to each other history for that project (it is a single history with records of who made each change). One of the uses by instructors of this history is investigating suspected cheating - if a big chunk of code/text appears in a single TimeTravel record, it was copy-pasted from somewhere rather than actually typed.
+ 
+There is no way for anyone else to access this information, unless compliance with a legal order is required. This hasn't happened yet, but it is possible.
