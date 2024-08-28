@@ -48,7 +48,18 @@ See https://cocalc.com/licenses for information about your licenses and licensed
         :alt: License Details
 
         License Details
-    
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/LIUpMcjU1T8?si=2YVxCg4ORzXtwMDv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
 * `Licensed projects you collaborate on <https://cocalc.com/licenses/projects>`_
 * `How a specific license is being used <https://cocalc.com/licenses/how-used>`_
 * `Subscriptions <https://cocalc.com/settings/subscriptions>`_
