@@ -1,6 +1,6 @@
-====================
-Working With
-====================
+=====================
+Enhanced Capabilities
+=====================
 
 .. toctree::
    :maxdepth: 2
@@ -22,6 +22,7 @@ Working With
    slides
    snippets
    
+   backups
    apikeys
    api2/index.rst
    api/index.rst

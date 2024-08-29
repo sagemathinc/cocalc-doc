@@ -10,9 +10,9 @@ This explains in depth how you can work productively on `CoCalc`_.
    :maxdepth: 2
 
    introduction
-   alternativeto/index
-   main_features
-   working_with
+   core_applications
+   signature_features
+   enhanced_capabilities
    user_interface
    service_options
    howto/index

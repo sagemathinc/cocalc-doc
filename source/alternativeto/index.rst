@@ -1,5 +1,5 @@
-Alternatives
-============
+Comparing with Others
+=====================
 
 .. toctree::
    :maxdepth: 2
