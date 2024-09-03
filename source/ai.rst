@@ -10,6 +10,17 @@ AI Assistant with the help of Large Language Models (LLMs) can transform how you
 LLM Choice and Billing
 ----------------------
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/kpzNiFTUoJs?si=AAKFeBA_IBiKxivW"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
 CoCalc allows you to use a lot of different LLMs from different providers:
 
 .. figure:: img/LLM_choice.png
