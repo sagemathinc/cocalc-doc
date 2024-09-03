@@ -17,3 +17,16 @@ In the course **Configuration** tab, check any of the boxes under **Restrict Stu
      :alt: Restrict Student Projects
 
      Restrict Student Projects
+
+For example, this is how you can restrict :doc:`ai`:
+
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/FRJ2V1aLYO8?si=JWclulKeruOp7gL9"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
