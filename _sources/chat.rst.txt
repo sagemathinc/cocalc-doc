@@ -50,6 +50,17 @@ Features
 Creating a Chatroom
 ########################
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/kVISSsyiXIw?si=JxbFzvZHDGDxNK3c"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+ 
 To start a new chat:
 
 1. Open up the "Files" tab in a project;

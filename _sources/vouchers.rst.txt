@@ -72,6 +72,17 @@ Obtaining a Voucher
 Obtaining a Credit Voucher
 ********************************
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/4eyngZPNHQY?si=s1_kAwqKnVo0PShb"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 If your shopping card it empty, then to buy a CoCalc credit voucher simply go to https://cocalc.com/store/vouchers, enter the desired amount, and click "Add to Cart":
 
 .. figure:: img/obtain_credit_voucher.png

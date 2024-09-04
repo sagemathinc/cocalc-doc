@@ -11,9 +11,20 @@ No matter what you've added in the instructor's view of the course, the students
 .. index:: Courses; create handout
 .. _create-handout:
 
-Create a new Handout
+Create a New Handout
 ===============================
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/j8YUwPSm-1g?si=kAiizkvK_RW1DqU2"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+    
 A handout consists of a folder that contains one or more files to be distributed to your students.
 
 Create a folder called **Handouts** in the root directory of your course project. Within this folder create a subfolder called, say, **Handout1** and populate it with one or more files for the handout. These files can be anything - text, Markdown, code, pdf, and may contain subfolders.
@@ -37,7 +48,7 @@ The new handout will be added to the list of handouts available for the course.
 .. index:: Courses; create assignment
 .. _create-assignment:
 
-Create a new assignment
+Create a New Assignment
 ===============================
 
 
@@ -61,7 +72,7 @@ The new assignment will be added to the list of assignments available for this c
      :width: 75%
      :alt: first assignment has been added to assignment list
 
-Distributing an assignment to students
+Distribute an Assignment
 ======================================
 
 Click on the assignment in the assignment list.
@@ -82,6 +93,7 @@ Check "Student View"
 
 If you want to see what *exactly* your students will see and experience, the best way is to use your other email to create another CoCalc account (use incognito mode in your browser to prevent interference with your main account), add this "test student" to your course, and assign an assignment just to this test student before the whole class.
 
+
 Peer Grading
 ======================================
 
@@ -94,7 +106,7 @@ Within the assignment, click on the **Peer Grading** icon and follow the instruc
      :width: 100%
      :alt: enabling peer grading for an assignment
 
-Collecting assignments from students
+Collect an Assignment
 ======================================
 
 After an assignment has been made, a **Collect** icon appears next to each student.
@@ -144,7 +156,7 @@ Simply click on the **Open** icon corresponding to the student you are intereste
 
 .. _skip-entering-grades:
 
-Returning Assignments Without Grading
+Return an Assignment Without Grading
 =====================================
 
 You can provide comments to students by editing student files that you have collected, or by adding files to the "-course-collect" folder for the assignment and student in question.
@@ -187,7 +199,7 @@ Automatic Grading
 
 For automatic grading, see :doc:`teaching-nbgrader`.
 
-Exporting grades
+Export Grades
 ======================================
 
 It is possible to export grades for all assignments as either a .csv file or as executable Python code.
@@ -219,7 +231,7 @@ The corresponding Python code looks like this::
         {'name':'foo@sheffield.ac.uk', 'email':'foo@sheffield.ac.uk', 'grades':['70','']},
     ]
 
-Returning an assignment to students
+Return an Assignment
 ======================================
 
 Once an assignment has been graded, the *Return* to student button appears.
