@@ -88,9 +88,7 @@ To view your currently active subscriptions, go to https://cocalc.com/settings/s
 
 - You can edit your subscription (e.g., increase the RAM quota it provides) at any time, and you only pay the prorated difference.
 
-- We provide a prorated refund if the subscription is canceled, so you can use the remaining credit toward something else in CoCalc, rather than being locked in for the duration of the subscription.
-
-- If you cancel your subscription, you can resume it later, rather than having to create a new subscription.
+- If you cancel your subscription, you can resume it later, rather than having to create a new subscription. Subscriptions are resumed at the current rates.
 
 
 Subscriptions (legacy page)
