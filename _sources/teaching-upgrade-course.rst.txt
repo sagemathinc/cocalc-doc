@@ -84,6 +84,18 @@ Teacher or Institute Pays for Upgrades
 
 You can buy a license that will upgrade all student projects. The same license can be used to upgrade the main course project as well.
 
+.. raw:: html
+
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/h9crGN7PpBI?si=3-8cu-cCuhpqJSfU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
+
+
 1. Configure the payment option
 -----------------------------------------------
 
