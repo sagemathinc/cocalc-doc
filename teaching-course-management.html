@@ -96,11 +96,9 @@ div.cocalc-header a {
 <li class="toctree-l3"><a class="reference internal" href="#create-a-new-assignment">Create a New Assignment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#distribute-an-assignment">Distribute an Assignment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#check-student-view">Check “Student View”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#peer-grading">Peer Grading</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#collect-an-assignment">Collect an Assignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grade-an-assignment">Grade an Assignment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#return-an-assignment-without-grading">Return an Assignment Without Grading</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#manual-grading">Manual Grading</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#automatic-grading">Automatic Grading</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#export-grades">Export Grades</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#return-an-assignment">Return an Assignment</a></li>
 </ul>
@@ -108,6 +106,7 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-after-course.html">After the Course Ends</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-tips_and_tricks.html">FAQ, Tips and Tricks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-peer-grading.html">Peer Grading</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="howto/nbgrader.html">nbgrader for R</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
@@ -166,13 +165,11 @@ div.cocalc-header a {
 <li><p><a class="reference internal" href="#create-a-new-assignment" id="id2">Create a New Assignment</a></p></li>
 <li><p><a class="reference internal" href="#distribute-an-assignment" id="id3">Distribute an Assignment</a></p></li>
 <li><p><a class="reference internal" href="#check-student-view" id="id4">Check “Student View”</a></p></li>
-<li><p><a class="reference internal" href="#peer-grading" id="id5">Peer Grading</a></p></li>
-<li><p><a class="reference internal" href="#collect-an-assignment" id="id6">Collect an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#collect-an-assignment" id="id5">Collect an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#grade-an-assignment" id="id6">Grade an Assignment</a></p></li>
 <li><p><a class="reference internal" href="#return-an-assignment-without-grading" id="id7">Return an Assignment Without Grading</a></p></li>
-<li><p><a class="reference internal" href="#manual-grading" id="id8">Manual Grading</a></p></li>
-<li><p><a class="reference internal" href="#automatic-grading" id="id9">Automatic Grading</a></p></li>
-<li><p><a class="reference internal" href="#export-grades" id="id10">Export Grades</a></p></li>
-<li><p><a class="reference internal" href="#return-an-assignment" id="id11">Return an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#export-grades" id="id8">Export Grades</a></p></li>
+<li><p><a class="reference internal" href="#return-an-assignment" id="id9">Return an Assignment</a></p></li>
 </ul>
 </nav>
 <section id="create-a-new-handout">
@@ -218,15 +215,8 @@ When the assignment opens, set the <strong>Due</strong> date. You can do this in
 <h2><a class="toc-backref" href="#id4" role="doc-backlink">Check “Student View”</a><a class="headerlink" href="#check-student-view" title="Link to this heading"></a></h2>
 <p>If you want to see what <em>exactly</em> your students will see and experience, the best way is to use your other email to create another CoCalc account (use incognito mode in your browser to prevent interference with your main account), add this “test student” to your course, and assign an assignment just to this test student before the whole class.</p>
 </section>
-<section id="peer-grading">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Peer Grading</a><a class="headerlink" href="#peer-grading" title="Link to this heading"></a></h2>
-<p>A very useful function for formative assessment is <strong>peer grading</strong>.
-Use peer grading to randomly (and anonymously) redistribute collected homework to your students, so that they can grade it for you.</p>
-<p>Within the assignment, click on the <strong>Peer Grading</strong> icon and follow the instructions to activate this feature.</p>
-<a class="reference internal image-reference" href="_images/peer_grading_activation.png"><img alt="enabling peer grading for an assignment" src="_images/peer_grading_activation.png" style="width: 100%;" /></a>
-</section>
 <section id="collect-an-assignment">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Collect an Assignment</a><a class="headerlink" href="#collect-an-assignment" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Collect an Assignment</a><a class="headerlink" href="#collect-an-assignment" title="Link to this heading"></a></h2>
 <p>After an assignment has been made, a <strong>Collect</strong> icon appears next to each student.
 Clicking on one of these will make a copy of the student’s assignment folder to your account.
 The entire folder will be copied including any extra files the student may have created.</p>
@@ -249,14 +239,11 @@ Navigating inside this folder, you will see all collected files along with a tex
 Simply click on the <strong>Open</strong> icon corresponding to the student you are interested in and you’ll be taken to the folder described above.</p>
 <a class="reference internal image-reference" href="_images/open_assignment.png"><img alt="opening a collected assignment in the instructor project" src="_images/open_assignment.png" style="width: 100%;" /></a>
 </section>
-<section id="return-an-assignment-without-grading">
-<span id="skip-entering-grades"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Return an Assignment Without Grading</a><a class="headerlink" href="#return-an-assignment-without-grading" title="Link to this heading"></a></h2>
-<p>You can provide comments to students by editing student files that you have collected, or by adding files to the “-course-collect” folder for the assignment and student in question.</p>
-<p>If you click the “Skip entering grades” button before returning assignments, your notes and any added files will be sent to the student projects, but the GRADE.md file will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.</p>
-<a class="reference internal image-reference" href="_images/non-nbg-2.png"><img alt="Skip entering grades button in Assignments tab of course file" src="_images/non-nbg-2.png" style="width: 100%;" /></a>
-</section>
-<section id="manual-grading">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Manual Grading</a><a class="headerlink" href="#manual-grading" title="Link to this heading"></a></h2>
+<section id="grade-an-assignment">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Grade an Assignment</a><a class="headerlink" href="#grade-an-assignment" title="Link to this heading"></a></h2>
+<p>There is a number of ways to do (or avoid!) grading in CoCalc.
+A very useful function for formative assessment is <a class="reference internal" href="teaching-peer-grading.html"><span class="doc">Peer Grading</span></a>.
+For automatic grading, see <a class="reference internal" href="teaching-nbgrader.html"><span class="doc">Teaching with nbgrader</span></a>.</p>
 <p>You may annotate the student’s assignment by modifying the collected file(s) in any way you like. The student will get a copy of everything you do after you return it.</p>
 <p>When working with Jupyter notebooks, it can be useful to make annotations in markdown cells and set the color of the annotations to stand out.</p>
 <p>You can change the font color in a markdown cell in Text edit mode using the font options toolbar, as explained in the section on <a class="reference internal" href="rich-text.html#font-options"><span class="std std-ref">Font options</span></a>.</p>
@@ -270,12 +257,14 @@ Click on the <strong>Enter Grade</strong> button to open up the grade entry text
 This can be a number or any other string that makes sense for your course.</p>
 <a class="reference internal image-reference" href="_images/Enter_grade.png"><img alt="entering a grade for one student's assignment" src="_images/Enter_grade.png" style="width: 100%;" /></a>
 </section>
-<section id="automatic-grading">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Automatic Grading</a><a class="headerlink" href="#automatic-grading" title="Link to this heading"></a></h2>
-<p>For automatic grading, see <a class="reference internal" href="teaching-nbgrader.html"><span class="doc">Teaching with nbgrader</span></a>.</p>
+<section id="return-an-assignment-without-grading">
+<span id="skip-entering-grades"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Return an Assignment Without Grading</a><a class="headerlink" href="#return-an-assignment-without-grading" title="Link to this heading"></a></h2>
+<p>You can provide comments to students by editing student files that you have collected, or by adding files to the “-course-collect” folder for the assignment and student in question.</p>
+<p>If you click the “Skip entering grades” button before returning assignments, your notes and any added files will be sent to the student projects, but the GRADE.md file will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.</p>
+<a class="reference internal image-reference" href="_images/non-nbg-2.png"><img alt="Skip entering grades button in Assignments tab of course file" src="_images/non-nbg-2.png" style="width: 100%;" /></a>
 </section>
 <section id="export-grades">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Export Grades</a><a class="headerlink" href="#export-grades" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Export Grades</a><a class="headerlink" href="#export-grades" title="Link to this heading"></a></h2>
 <p>It is possible to export grades for all assignments as either a .csv file or as executable Python code.
 The <strong>Export grades</strong> function is available in the <strong>Configuration</strong> tab of the <strong>.course</strong> file.</p>
 <a class="reference internal image-reference" href="_images/Export_grades.png"><img alt="exporting grades for all assignments from the Configuration tab" src="_images/Export_grades.png" style="width: 66%;" /></a>
@@ -303,7 +292,7 @@ students = [
 </div>
 </section>
 <section id="return-an-assignment">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Return an Assignment</a><a class="headerlink" href="#return-an-assignment" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Return an Assignment</a><a class="headerlink" href="#return-an-assignment" title="Link to this heading"></a></h2>
 <p>Once an assignment has been graded, the <em>Return</em> to student button appears.</p>
 <a class="reference internal image-reference" href="_images/return_button.png"><img alt="return buttons appear as assignments are graded" src="_images/return_button.png" style="width: 100%;" /></a>
 <p>Clicking on this sends a copy of the graded assignment back to the student.
