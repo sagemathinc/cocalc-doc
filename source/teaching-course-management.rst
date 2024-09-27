@@ -94,18 +94,6 @@ Check "Student View"
 If you want to see what *exactly* your students will see and experience, the best way is to use your other email to create another CoCalc account (use incognito mode in your browser to prevent interference with your main account), add this "test student" to your course, and assign an assignment just to this test student before the whole class.
 
 
-Peer Grading
-======================================
-
-A very useful function for formative assessment is **peer grading**.
-Use peer grading to randomly (and anonymously) redistribute collected homework to your students, so that they can grade it for you.
-
-Within the assignment, click on the **Peer Grading** icon and follow the instructions to activate this feature.
-
-.. image:: img/teaching/peer_grading_activation.png
-     :width: 100%
-     :alt: enabling peer grading for an assignment
-
 Collect an Assignment
 ======================================
 
@@ -154,22 +142,13 @@ Simply click on the **Open** icon corresponding to the student you are intereste
      :width: 100%
      :alt: opening a collected assignment in the instructor project
 
-.. _skip-entering-grades:
 
-Return an Assignment Without Grading
-=====================================
+Grade an Assignment
+===================
 
-You can provide comments to students by editing student files that you have collected, or by adding files to the "-course-collect" folder for the assignment and student in question.
-
-If you click the "Skip entering grades" button before returning assignments, your notes and any added files will be sent to the student projects, but the GRADE.md file will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.
-
-.. image:: img/teaching/non-nbg-2.png
-     :width: 100%
-     :alt: Skip entering grades button in Assignments tab of course file
-
-
-Manual Grading
-=======================
+There is a number of ways to do (or avoid!) grading in CoCalc.
+A very useful function for formative assessment is :doc:`teaching-peer-grading`.
+For automatic grading, see :doc:`teaching-nbgrader`.
 
 You may annotate the student's assignment by modifying the collected file(s) in any way you like. The student will get a copy of everything you do after you return it.
 
@@ -194,10 +173,19 @@ This can be a number or any other string that makes sense for your course.
      :alt: entering a grade for one student's assignment
 
 
-Automatic Grading
-=======================
+.. _skip-entering-grades:
 
-For automatic grading, see :doc:`teaching-nbgrader`.
+Return an Assignment Without Grading
+=====================================
+
+You can provide comments to students by editing student files that you have collected, or by adding files to the "-course-collect" folder for the assignment and student in question.
+
+If you click the "Skip entering grades" button before returning assignments, your notes and any added files will be sent to the student projects, but the GRADE.md file will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.
+
+.. image:: img/teaching/non-nbg-2.png
+     :width: 100%
+     :alt: Skip entering grades button in Assignments tab of course file
+
 
 Export Grades
 ======================================
