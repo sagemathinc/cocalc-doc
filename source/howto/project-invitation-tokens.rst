@@ -2,7 +2,7 @@
 .. _project-invitation:
 
 =============================
-Invite via Tokens
+Invite via Links
 =============================
 
 Have you ever given a talk online and wanted to have everybody in
@@ -15,52 +15,21 @@ the project of your choice.
 Creating Project Invitation Token or Link
 =========================================
 
-In Project Settings, at the bottom of the section for "+ Add new collaborators", there is a link "Or invite people via a project invite token...". Click this and a dialog opens:
+On **Users** tab click **Invite collaborators by sending them an invite URL...** then **Create two weeks token** (or custom one):
 
-.. figure:: img/invite-token-0.png
-     :width: 60%
+.. figure:: img/invite_link.png
+     :width: 90%
      :align: center
-     :alt: invite people with a token
+     :alt: Creating a Project Invite Link
 
-     Creating a project invitation token
+     Creating a Project Invite Link
 
-Click "Create token..." and then "Yes, create token" in the confirmation dialog that opens. You see that a new token has been created, and added to the list of tokens already created, if any.
-Click the clipboard icon to copy the token.
+Then click the clipboard icon to copy the link.
+The link expires after 2 weeks. Click **Revoke** and accept the confirmation dialog to make the link expire immediately, so that it cannot be used anymore.
 
-.. figure:: img/invite-token-05.png
-     :width: 60%
-     :align: center
-     :alt: copy invitation token
-
-     Copying a project invitation token
-
-The link expires after 2 weeks. Click the "Expire" button and accept the confirmation dialog to make the token expire immediately, so that it cannot be used anymore.
-
-For a complete URL that includes the token, click the "+" to the left of the token and you will see a link. Click the clipboard icon to the right of the link to copy it.
-
-.. figure:: img/invite-token-1.png
-     :width: 60%
-     :align: center
-     :alt: create invitation link
-
-     Creating a project invitation link
 
 .. index:: Projects; invitation tokens
 .. _project-invitation-token:
-
-Using a Project Invitation Token
-==================================
-
-Your audience can use the invitation token by opening the Projects list in CoCalc and pasting the token into the upper right in the area for "Project invite token".
-They will be added as collaborators and the project will be opened for them.
-
-.. figure:: img/enter-token.png
-     :width: 30%
-     :align: center
-     :alt: add token in projects list
-
-     Enter an invitation token in the Projects list
-
 
 Using a Project Invitation Link
 ==================================
