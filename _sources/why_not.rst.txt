@@ -25,7 +25,7 @@ You Need Proprietary Software Maintenance
 You Require XXX Security Certification
 --------------------------------------
 
-We have been in business since 2015 and strive to follow industry's best practices for software development, system administration, and company management. We are actively working on our SOC 2 audit and should have the report available in Fall 2024. If you need some other framework, audit or certification, we are happy to discuss it, but the cost may be substantial.
+We have been in business since 2015 and strive to follow industry's best practices for software development, system administration, and company management. We are SOC 2 compliant as of Fall 2024. If you need some other framework, audit or certification, we are happy to discuss it, but the cost may be substantial and it may take longer than you can wait.
 
 
 You Need the Simplest Possible Interface
