@@ -96,7 +96,6 @@ div.cocalc-header a {
 <li class="toctree-l3"><a class="reference internal" href="project-library.html">Project Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project-init.html">Project Initialization Scripts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="project-faq.html">Projects FAQ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#projects-page-tour">Projects Page Tour</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="project-toolbar.html">Project Toolbar</a></li>
@@ -168,16 +167,18 @@ div.cocalc-header a {
            <div itemprop="articleBody">
              
   <section id="projects">
-<span id="index-0"></span><h1>Projects<a class="headerlink" href="#projects" title="Link to this heading"></a></h1>
-<p>The concept of a “Project” is the fundamental building block for running any calculations on CoCalc.
-It is an isolated, private working space, where you work with files organized in directories.</p>
-<p>Under the hood, this is a remote Linux environment, which runs inside a Docker container.
-All files reside in the <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> directory of a fictitious user or a subdirectory.</p>
-<p>To start being productive, you have to create a
-<a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheet</span></a>,
-<a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebook</span></a>,
-<a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a>,
-<a class="reference internal" href="latex.html"><span class="doc">LaTeX document</span></a>, or other files.</p>
+<span id="projects-tour"></span><span id="index-0"></span><h1>Projects<a class="headerlink" href="#projects" title="Link to this heading"></a></h1>
+<p>To get a short introduction to the <a class="reference external" href="https://cocalc.com/projects">CoCalc Projects page</a>, click the blue <strong>Tour</strong> button in its top right corner. This is one of several <a class="reference internal" href="tours.html"><span class="doc">Tours</span></a> of features in CoCalc.</p>
+<p>You can think of a CoCalc’s <strong>Project</strong> as a virtual computer. Its computational resources are determined by a <a class="reference internal" href="licenses.html"><span class="doc">license</span></a> applied to the project. You and your project collaborators have equal access to all the files in it, such as
+<a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a>,
+<a class="reference internal" href="terminal.html"><span class="doc">Linux Terminals</span></a>,
+<a class="reference internal" href="latex.html"><span class="doc">LaTeX documents</span></a>,
+and many others. You can edit (or just observe) these files simultaneously and discuss your work in various ways using <a class="reference internal" href="chat.html"><span class="doc">chats</span></a>.</p>
+<p>You can create multiple projects to work with different groups of collaborators or, well, to work on different projects. You can apply the same license to as many projects as you wish, but its run limit will determine how many of such virtual computers may be running <em>at the same time</em> with allocated resources. Depending on the nature of your work, you may find these resources insufficient. If this happens, you can consider <a class="reference internal" href="licenses.html#manage-licenses"><span class="std std-ref">upgrading your license</span></a> or spinning up some arbitrarily powerful <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Under the hood, a project is a <a class="reference external" href="https://kubernetes.io/docs/concepts/workloads/pods/">Kubernetes pod</a> and all your files reside in the <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> directory of a fictitious user or its subdirectory. All collaborators processes run as the same user, this is a consequence of real time collaboration. Different projects, however, are isolated from one another.</p>
+</div>
 <center><iframe
     width="640" height="360"
     src="https://www.youtube.com/embed/elru3WgRAVM?si=AIXIP_7AAcApxONc"
@@ -255,16 +256,6 @@ All files reside in the <code class="docutils literal notranslate"><span class="
 </li>
 </ul>
 </div>
-<section id="projects-page-tour">
-<span id="projects-tour"></span><h2>Projects Page Tour<a class="headerlink" href="#projects-page-tour" title="Link to this heading"></a></h2>
-<p>You can launch a short introduction to the CoCalc Projects page by clicking the blue <strong>Tour</strong> button. This is one of several <a class="reference internal" href="tours.html"><span class="doc">Tours</span></a> of features in CoCalc.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/projects-tour2.png"><img alt="projects tour" src="_images/projects-tour2.png" style="width: 100%;" /></a>
-<figcaption>
-<p><span class="caption-text">projects tour</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
 </section>
 
 
