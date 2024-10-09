@@ -154,7 +154,7 @@ After this, you will be able to use the python package from within Sage in any o
 * Jupyter notebook running the Sage kernel. The version of Sage in the Jupyter kernel selected must match the version of Sage used on the command line to install the package. Restart the Jupyter kernel to pick up the newly installed package.
 
 
-Encapsulated PIP w/ Jupyter Kernel
+Pipenv with a Jupyter Kernel
 ======================================
 
 Here, we explain how to setup your own encapsulated Python environment using `pipenv`_.
@@ -230,45 +230,31 @@ and your :ref:`own kernel <anaconda-jupyter>`.
 
 .. _anaconda-install-own-env:
 
-Install some software into my own Anaconda environment
+Install my own Anaconda environment
 ------------------------------------------------------------
 
-The task below is to create a custom Anaconda overlay environment called ``myconda`` and, just for the sake of explanation,
-
-1. install "Microsoft's Open R" (which is an enhanced version of R by Microsoft).
-2. Install the plotly library from PyPI
+This will create a custom Anaconda overlay environment called ``myenv`` in your project.
 
 To get it installed in Anaconda as a user, do this:
 
 1. Open a terminal.
 
-2. Type ``anaconda2020``
+2. Type ``anaconda2023`` (or just ``anaconda`` to launch the newest version)
 
-3. Type ``conda create -n myconda -c mro r`` This creates a new local environment called "myconda" (name it as you wish) with the package "r" as its source coming from the channel "mro" (Microsoft's Open R). Instead of that, you can add any other anaconda package in that spot. The example from the documentation is biopython, see http://conda.pydata.org/docs/using/envs.html#create-an-environment.
+3. Type ``mamba env create --prefix ~/myenv -c mro r`` This creates a new isolated local (hence ``--prefix ...``) environment in the directory ``~/myenv`` with the package "r" as its source coming from the channel "mro" (Microsoft's Open R). Instead of that, you can add any other anaconda package or use ``--file=environment.yml`` to reconstruct from a full environment definition. For more details, see http://conda.pydata.org/docs/using/envs.html#create-an-environment.
 
-4. When installing, it briefly shows you that it ends up in ``~/.conda/envs/myconda/....`` in your local files. Now that we have it installed, we can get out of this "root" environment via source deactivate or restart the session. In any case, you are back in the the normal Linux terminal environment.
+4. When installing, it will resolve the package dependencies, download packages, unpack and install them. Afterwards, run ``mamba clean --all --yes`` to save disk space.
 
-5. Now run this: ``source ~/.conda/envs/myconda/bin/activate myconda`` Note that myconda is the name specified above, and the prompt switches to ``(myconda) $``. Typing ``which R`` shows: ``/projects/xxx-xxx-xxx/.conda/envs/myconda/bin/R`` and of course, just running ``R`` gives::
+5. Now that we have it installed, we can get out of this "root" environment via ``source deactivate`` or restart the session. In any case, you are back in the the normal Linux terminal environment.
 
-    R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
-    Copyright (C) 2015 The R Foundation for Statistical Computing
-    Platform: x86_64-pc-linux-gnu (64-bit)
-    [...]
-    Microsoft R Open 3.2.3
-    Default CRAN mirror snapshot taken on 2016-01-01
-    The enhanced R distribution from Microsoft
+6. To activate it again, run ``source ~/myenv/bin/activate``. You can also add this line to your Terminal's :ref:`terminal-startup-files`.
 
-6. In the very same spirit, you can also run pip installations::
+7. In the very same spirit, you can also run pip installations::
 
-    (myconda)~$ pip install plotly
+    (myenv)~$ pip install plotly
     Downloading/unpacking plotly
     [...]
     Successfully installed plotly requests six pytz
-    (myconda)~$ python -c 'import plotly; print(plotly)'
-    <module 'plotly' from '/projects/20e4a191-73ea-4921-80e9-0a5d792fc511/.local/lib/python2.7/site-packages/plotly/__init__.pyc'>
-
-Note that since I'm still in my own "myconda" overlay environment, the ``--user`` switch in ``pip install`` wasn't necessary. (Otherwise, it would be necessary.)
-
 
 
 .. _anaconda-jupyter:
@@ -276,26 +262,7 @@ Note that since I'm still in my own "myconda" overlay environment, the ``--user`
 Configure a Jupyter kernel for my custom Anaconda environment
 --------------------------------------------------------------------
 
-
-With Anaconda's ``conda`` environment and software manager, you can `create custom environments <https://conda.io/docs/user-guide/tasks/manage-environments.html>`_ with specific versions of Python, R, and their packages. This is similar to capabilities provided by Python's environment manager, `Virtualenv`_.
-
-Suppose you want to create a custom Anaconda environment with the ``mdtraj`` package and be able to use this environment in a Jupyter notebook. Here's how:
-
-1. Follow these steps in `a .term file in CoCalc <../terminal>`_. In the last step, the display name of the new kernel is changed so that it does not duplicate the name of kernel installed by CoCalc::
-
-        ~$ mkdir -p ~/.local/share/jupyter/kernels
-        ~$ anaconda2020
-        (root) ~$ conda create --name mymdtraj mdtraj
-        (root) ~$ source activate mymdtraj
-        (mymdtraj) ~$ conda install ipykernel
-        (mymdtraj) ~$ source deactivate
-        ~$ mv ~/.conda/envs/mymdtraj/share/jupyter/kernels/python3 ~/.local/share/jupyter/kernels/mymdtraj
-        ~$ open ~/.local/share/jupyter/kernels/mymdtraj/kernel.json
-        ## change display_name from "Python 3" to "My mdtraj" and save the file
-
-2. Open a new Jupyter notebook in CoCalc.
-3. Click on the `Kernel` button and look for your new kernel, "My mdtraj", or whatever you used for ``display_name`` in ``kernel.json``. If you don't see your new kernel, scroll to the bottom of the Kernel menu and click `Refresh Kernel List`, and your new kernel should appear.
-4. Select the new kernel. You will now be running the environment you created with the ``conda create`` command.
+Make sure to install ``ipykernel`` in your custom environment. Then see :ref:`install-custom-python-env-kernel`.
 
 
 .. _Virtualenv: https://virtualenv.pypa.io/en/latest/user_guide.html
