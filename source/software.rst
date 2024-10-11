@@ -170,17 +170,6 @@ Optionally, you can ask to ``Reset...`` your files (in the "Files" bar).
 Read the revealed information text to learn more about that.
 
 
-Jupyter Classic/Lab vs. CoCalc's Jupyter
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. warning::
-
-    Do not open the same Jupyter Notebook file in a classical Jupyter server
-    and CoCalc's Jupyter editor.
-
-Please read about various pros/cons and warnings regarding :ref:`jupyter-classical-vs-cocalc` notebooks.
-
-
 Port forwarding
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 

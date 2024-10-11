@@ -8,7 +8,7 @@
 
 |plus-circle| Create new files
 
-This tab gives you numerous options for file creation. There are also buttons to launch :ref:`Jupyter Classic and JupyterLab servers <jupyter-server-alternatives>`, `VS Code`_ server, and :doc:`Pluto server <howto/pluto>`.
+This tab gives you numerous options for file creation. There are also buttons to launch :ref:`jupyterlab-server`, `VS Code`_ server, and :doc:`Pluto server <howto/pluto>`.
 
 .. figure:: img/plus-new.png
      :width: 100%

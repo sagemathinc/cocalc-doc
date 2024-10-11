@@ -12,7 +12,6 @@ CoCalc offers several options for hosting running `Jupyter Notebooks`_ online.
 
    jupyter-start.rst
    jupyter-enhancements.rst
-   jupyter-classical-vs-cocalc.rst
    jupyter-tips-and-tricks.rst
 
 
