@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Jupyter Kernel &mdash; CoCalc Manual  documentation</title>
@@ -135,8 +135,72 @@ div.cocalc-header a {
 <span id="jupyter-custom-kernel"></span><span id="index-0"></span><h1>Custom Jupyter Kernel<a class="headerlink" href="#custom-jupyter-kernel" title="Link to this heading"></a></h1>
 <p>This short howto explains how you can create and access your own custom Jupyter Kernel inside a CoCalc.
 In case you require a specific software package, there are related guides: <a class="reference internal" href="install-python-lib.html"><span class="doc">Install Python Packages</span></a> and  <a class="reference internal" href="install-r-package.html"><span class="doc">Install R Packages</span></a>.</p>
-<section id="adding-a-kernel-to-cocalc-jupyter">
-<h2>Adding a Kernel to CoCalc Jupyter<a class="headerlink" href="#adding-a-kernel-to-cocalc-jupyter" title="Link to this heading"></a></h2>
+<section id="adding-a-kernel-for-a-custom-python-environment">
+<span id="install-custom-python-env-kernel"></span><h2>Adding a kernel for a Custom Python Environment<a class="headerlink" href="#adding-a-kernel-for-a-custom-python-environment" title="Link to this heading"></a></h2>
+<p>These instructions are for the case in which you want to create a Jupyter kernel for Python environment inside your CoCalc project.</p>
+<ol class="arabic simple">
+<li><p>If you haven’t already, create your own Python environment:</p></li>
+</ol>
+<ul>
+<li><p>Python via <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a> (for demo purposes, we install an old version of NumPy):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ mkdir myenv
+~$ cd myenv/
+~/myenv$ python -m venv .
+~/myenv$ . bin/activate
+(myenv) ~/myenv$ pip install ipykernel &#39;numpy&lt;2&#39;
+
+# quick check:
+
+(myenv) ~/myenv$ python
+Python 3.10.12 (main, Jul 29 2024, 16:56:48) [GCC 11.4.0] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; np.__version__
+&#39;1.26.4&#39;
+</pre></div>
+</div>
+</li>
+<li><p>Anaconda (make sure to also install <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> via the environment.yml configuration):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ anaconda2023
+(base) ~$ mamba env create --prefix ~/myenv --file=environment.yml
+(base) ~$ conda activate ~/myenv
+(/home/user/myenv) ~$ python
+[...]
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can automatically activate your Python environment by configuring a <a class="reference internal" href="../terminal.html#terminal-startup-files"><span class="std std-ref">Startup file</span></a>
+in a <a class="reference internal" href="../terminal.html#terminal"><span class="std std-ref">Linux Terminal</span></a>, and calling the <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/myenv/bin/activate</span></code> command.</p>
+<p>Then test it by restarting the shell via Ctrl-d.</p>
+<p>You can also make this permanent to all terminals by adding this to the bottom of your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code></p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Install the Jupyter Kernel:</p></li>
+</ol>
+<ul>
+<li><p>Python via pip:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(myenv) ~/myenv$ pip install ipykernel
+(myenv) ~/myenv$ python -m ipykernel install --user --name=myenv --display-name &quot;My Python Environment&quot;
+
+# quick check:
+(myenv) ~/myenv$ jupyter kernelspec list | grep myenv
+  myenv               /home/user/.local/share/jupyter/kernels/myenv
+</pre></div>
+</div>
+</li>
+<li><p>Anaconda:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(/home/user/myenv) ~$ python -m ipykernel install --user --name myenv --display-name &quot;My Python Environment&quot;
+</pre></div>
+</div>
+</li>
+</ul>
+<p>After the above steps, when you open a Jupyter notebook, you may have to do “Refresh kernel list” at the bottom of the Kernel menu, or refresh the CoCalc tab. You will then see “My Python Environment” listed among the available kernels.</p>
+</section>
+<section id="manually-adding-a-jupyter-kernel">
+<h2>Manually adding a Jupyter Kernel<a class="headerlink" href="#manually-adding-a-jupyter-kernel" title="Link to this heading"></a></h2>
 <p>Suppose you have a kernel from another source and you would like to add it to the list of Jupyter kernels that can be selected from CoCalc Jupyter. You will need to know the command line arguments needed to start the kernel. Then follow the steps here.</p>
 <p>For your convenience, there is a link to these instructions at the bottom of both the <a class="reference internal" href="jupyter-kernel-selection.html#jupyter-kernel-menu"><span class="std std-ref">kernel selection menu</span></a> and the <a class="reference internal" href="jupyter-kernel-selection.html#jupyter-change-kernel-lg"><span class="std std-ref">kernel selection dialog</span></a>.</p>
 <p>To accomplish this, we’re working in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>.
@@ -199,58 +263,6 @@ Note, <code class="docutils literal notranslate"><span class="pre">$HOME</span><
 <ol class="arabic simple" start="6">
 <li><p>Once you have your kernel working in a terminal, test your kernel from a <a class="reference internal" href="../jupyter.html"><span class="doc">Jupyter Notebook</span></a>. To load an updated list of kernels, scroll down in the “Kernel” menu and select “Refresh kernel list”. Your kernel should show up with the given <code class="docutils literal notranslate"><span class="pre">display_name</span></code>!</p></li>
 </ol>
-</section>
-<section id="creating-a-new-kernel-for-a-custom-python-version">
-<h2>Creating a new kernel for a Custom Python Version<a class="headerlink" href="#creating-a-new-kernel-for-a-custom-python-version" title="Link to this heading"></a></h2>
-<p>These instructions are for the special case in which you want to create a Jupyter kernel for a version of Python that is not already in CoCalc.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The following approach may not succeed with a pre-release version of Python.</p>
-</div>
-<p>The example below uses Python version 3.10.0. This version may already be available in CoCalc when you are reading these instructions. Substitute the actual version of Python you want added to the list of available CoCalc Jupyter kernels.</p>
-<ol class="arabic">
-<li><p>Get pyenv running <a class="reference external" href="https://github.com/pyenv/pyenv/blob/master/README.md#basic-github-checkout">More details</a>:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>curl https://pyenv.run | bash
-</pre></div>
-</div>
-</li>
-</ol>
-<p>Add this to the bottom of your <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bash_aliases</span></code>:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>export PATH=&quot;$HOME/.pyenv/bin:$PATH&quot;
-eval &quot;$(pyenv init --path)&quot;
-eval &quot;$(pyenv virtualenv-init -)&quot;
-eval &quot;$(pyenv init -)&quot;
-</pre></div>
-</div>
-<p>Restart the terminal via Ctrl-d. “pyenv versions” should then show you what you can install.</p>
-<ol class="arabic" start="2">
-<li><p>Install the desired version of Python:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pyenv install 3.10.0
-pyenv virtualenv 3.10.0 py3.10
-pyenv virtualenvs # should include py3.10
-</pre></div>
-</div>
-</li>
-<li><p>Start the new virtual environment:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pyenv activate py3.10
-python -V # displays 3.10.0
-</pre></div>
-</div>
-</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You won’t have access to CoCalc’s more than 1,000 pre-installed Python packages from the virtual environment. You’ll need to <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> such packages as pandas and matplotlib. The <code class="docutils literal notranslate"><span class="pre">--user</span></code> flag is not needed with <code class="docutils literal notranslate"><span class="pre">pip</span></code> in the virtual environment.</p>
-</div>
-<ol class="arabic" start="4">
-<li><p>Install ipykernel for Jupyter:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pip install ipykernel
-python -m ipykernel install --user --name=py3.10 --display-name &quot;Python 3.10&quot;
-</pre></div>
-</div>
-</li>
-</ol>
-<p>After the above steps, when you open a Jupyter notebook, you may have to do “Refresh kernel list” at the bottom of the Kernel menu, or refresh the CoCalc tab. You will then see “Python 3.10” listed among the available kernels.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For a Python kernel, we suggest to add these parameters to the <code class="docutils literal notranslate"><span class="pre">argv</span></code> array:</p>

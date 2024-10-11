@@ -133,7 +133,7 @@ Terminals open up in a :doc:`frame-editor`. This means you can use buttons at up
 .. index:: Terminal; startup files
 .. _terminal-startup-files:
 
-Startup files
+Startup file
 --------------------
 
 When you click on the "rocket" icon (|rocket|),

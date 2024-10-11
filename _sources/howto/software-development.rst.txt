@@ -322,8 +322,7 @@ See :doc:`./webserver`.
 Run ``plotly`` in a Jupyter notebook
 --------------------------------------------
 
-You need to run `Plotly <https://plot.ly/>`_ plots in CoCalc under the **Plain Jupyter Server**.
-For more information, see the :ref:`Jupyter Classic / Modern page <jupyter-classical-vs-cocalc>`.
+You need to run `Plotly <https://plot.ly/>`_ plots in CoCalc under the :ref:`jupyterlab-server`.
 
 Another option is to use the Plotly `Dash framework <https://plot.ly/products/dash/>`_:
 here is a `working example running Dash from a CoCalc terminal <https://cocalc.com/share/public_paths/97f923d786291540fd2f98854303db410ba7f22a>`_. Here is a `CoCalc blog posting explaining it <https://blog.cocalc.com/cocalc/python/2021/05/03/dash-with-cocalc.html>`_.

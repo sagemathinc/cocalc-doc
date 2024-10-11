@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jupyter Tips and Tricks &mdash; CoCalc Manual  documentation</title>
@@ -26,7 +26,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="LaTeX Editor" href="latex.html" />
-    <link rel="prev" title="Classical Versus CoCalc Jupyter Notebooks" href="jupyter-classical-vs-cocalc.html" />
+    <link rel="prev" title="CoCalc Enhancements to Jupyter Notebooks" href="jupyter-enhancements.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -85,7 +85,6 @@ div.cocalc-header a {
 <li class="toctree-l2 current"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="jupyter-start.html">Getting Started with Jupyter Notebooks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="jupyter-enhancements.html">CoCalc Enhancements to Jupyter Notebooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="jupyter-classical-vs-cocalc.html">Classical Versus CoCalc Jupyter Notebooks</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Jupyter Tips and Tricks</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#run-jupyter-notebook-with-gpu-support">Run Jupyter notebook with GPU support</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#customize-jupyter-notebook-latex-export-settings">Customize Jupyter notebook LaTeX export settings</a></li>
@@ -197,7 +196,7 @@ cc-jupyter-no-output<span class="w"> </span>myfile.ipynb
 </div>
 <p>If your Jupyter notebook is creating an image file from a plot that exceeds the size limit, here are some things you can do:</p>
 <ol class="arabic">
-<li><p>If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with <a class="reference internal" href="jupyter-classical-vs-cocalc.html#jupyter-server-alternatives"><span class="std std-ref">the classical jupyter server or JupyterLab</span></a>. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.</p></li>
+<li><p>If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with <a class="reference internal" href="project-settings.html#jupyterlab-server"><span class="std std-ref">JupyterLab server</span></a>. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.</p></li>
 <li><p>Revert the notebook to an earlier version, before the large plot was created. Click the <a class="reference internal" href="project-files.html#project-snapshot"><span class="std std-ref">Backups button</span></a> in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.</p></li>
 <li><p>The default image file format for plots with the “R (R Project)” Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>options(jupyter.plot_mimetypes = c(&#39;text/plain&#39;, &#39;image/png&#39;))
@@ -258,7 +257,7 @@ This <strong>uses up memory</strong>, which could cause troubles running all you
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="jupyter-classical-vs-cocalc.html" class="btn btn-neutral float-left" title="Classical Versus CoCalc Jupyter Notebooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="jupyter-enhancements.html" class="btn btn-neutral float-left" title="CoCalc Enhancements to Jupyter Notebooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="latex.html" class="btn btn-neutral float-right" title="LaTeX Editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
