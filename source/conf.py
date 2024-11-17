@@ -142,7 +142,6 @@ elif html_theme == 'sphinx_rtd_theme':
         'canonical_url': 'https://doc.cocalc.com/',
         #'analytics_id': GA_TAG,  # this only works with the online version
         'logo_only': False,
-        'display_version': False,
         'prev_next_buttons_location': 'bottom',
         'style_external_links': False,
         # Toc options
