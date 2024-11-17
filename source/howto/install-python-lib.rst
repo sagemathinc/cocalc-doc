@@ -28,7 +28,6 @@ Uncomplicated install requests are typically handled within 1 business day for p
 Install will happen faster if you include as much as possible of the following information:
 
 * Which Python environment?
-* Which language version: 2 or 3?
 * A link to the package website
 * Special requirements and dependencies to build & install
 * A short but complete example, such that we can verify that we properly installed the software. This example might be included in internal tests, to make sure future updates do not break that library.
@@ -39,47 +38,36 @@ Install will happen faster if you include as much as possible of the following i
 Python "user" installs
 ===================================
 
+You can install additional packages yourself, but only at user-permission level.
+CoCalc accounts do not have superuser (root) privileges.
+Software must be installed into user-writeable parts of the filesystem, which are in ``/home/user`` (check the value of ``$HOME``).
 
 .. warning::
 
     Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
     Installing a Python package will require you to :ref:`add a license <project-add-license>` or :ref:`add upgrades <project-upgrades>` so that your project has internet access.
 
-A way to work around such a blocked internet access
-is to :doc:`upload the package files <./upload>` into your project.
 
-You can install additional packages yourself, but only at user-permission level.
-CoCalc accounts do not have superuser (root) privileges.
-Software must be installed into user-writeable parts of the filesystem, which are in ``/home/user`` (check the value of ``$HOME``).
-
-
-.. note::
-
-    **In a nutshell:** a CoCalc project is a Linux user account under the username ``user``.
-    Therefore, installing software and libraries should usually be done in ``~/.local`` (i.e. ``/home/user/.local``),
-    which is the canonical location for user installs.
-    Furthermore, in case the documentation mentions to specify a custom "prefix" path,
-    set this to ``~/.local``.
-    Executables will install into ``~/.local/bin`` and will work right away,
-    because projects already include that path in their ``$PATH`` variable.
+**In a nutshell:** a CoCalc project is a Linux user account under the username ``user``.
+Therefore, installing software and libraries should usually be done in ``~/.local`` (i.e. ``/home/user/.local``),
+which is the canonical location for user installs.
+Furthermore, in case the documentation mentions to specify a custom "prefix" path,
+set this to ``~/.local``.
+Executables will install into ``~/.local/bin`` and will work right away,
+because projects already include that path in their ``$PATH`` variable.
 
 
 Install location and ``sys.path``
 ------------------------------------
 
-.. note::
+The path that looks like ``~/.local/lib/python3.10/site-packages`` will contain the package you've installed.
+In some cases (like when you are using Sage) your Python environment may not be able to find the package and you might have to add that path dynamically during runtime like that::
 
-    In the case of Python 2, ``$HOME/.local/lib/python2.7/site-packages/`` will contain the package you've installed.
-    Similarly, this path will contain ``python3.8`` for a Python 3.8 executable.
+    import sys, os
+    sys.path.insert(0, os.path.expanduser('~/.local/lib/python3.10/site-packages'))
 
-    In case your Python environment can't find the package,
-    you might have to add your ``~/.local/...`` directory dynamically during runtime like that::
+Make sure that the path is correct, since it includes the version number.
 
-        import sys, os
-        sys.path.insert(0, os.path.expanduser('~/.local/lib/python2.7/site-packages'))
-
-    Make sure, the path is correct.
-    I.e. for Python 3 this could be one of ``python3.7``, ``python3.8``...
 
 pip
 ------------------------------------
