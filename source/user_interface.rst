@@ -5,6 +5,7 @@ User Interface
 .. toctree::
    :maxdepth: 2
 
+   fullscreen
    project
    project-toolbar
    activity-bar
