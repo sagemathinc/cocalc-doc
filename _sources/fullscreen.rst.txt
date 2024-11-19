@@ -28,8 +28,33 @@ into this
 
   Fullscreen Mode
   
-and click it again to go back!
+and click it again to go back! Alternatively, hit **Esc** (or another appropriate key for your browser) to exit the fullscreen mode of the browser, but keep CoCalc's minimized interface:
 
+.. figure:: img/fullscreen_partial.png
+  :width: 100%
+  :align: center
+  :alt: Fullscreen in a Window Mode
+
+  Fullscreen in a Window Mode
+  
+Another option to achive the same interface is to **Shift+Click** a file tab in a regular interface:
+
+.. figure:: img/file_shift_click.png
+  :width: 100%
+  :align: center
+  :alt: Shift+Click a File Tab
+
+  Shift+Click a File Tab
+  
+Last but not least: sometimes it is convenient to work with multiples frames, e.g. to have your table of content open, but you may want to temporarily maximize a single frame only. Click the "full frame" button:
+  
+.. figure:: img/frame_focus.png
+  :width: 100%
+  :align: center
+  :alt: Frame Focus Button
+
+  Frame Focus Button
+  
 .. raw:: html
 
     <center><iframe
