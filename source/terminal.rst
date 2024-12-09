@@ -112,7 +112,7 @@ Collaboration and Side Chat
 Like any other application in CoCalc, the terminal environment allows
 more than one user to enter commands and view results in the same session.
 The terminal size will adjust according to the available number of rows and columns of each particiant.
-It also allows users participating in the same session to share comments by opening a chat for the terminal session by clicking the Chat icon at upper right.
+It also allows users participating in the same session to share comments by opening a :ref:`side-chat` for the terminal session by clicking the Chat icon at upper right.
 
 Additionally, you can use the "open door" button to remove all other collaborators interfering with your current terminal session.
 
