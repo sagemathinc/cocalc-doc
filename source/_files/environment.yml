@@ -1,0 +1,11 @@
+name: myenv
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - ipykernel
+  - pandas
+  - matplotlib
+  - biopython
+  - samtools
