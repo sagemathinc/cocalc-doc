@@ -17,7 +17,7 @@ These instructions are for the case in which you want to create a Jupyter kernel
 
 1. If you haven't already, create your own Python environment:
 
-- Python via `venv`_ (for demo purposes, we install an old version of NumPy)::
+- Python via `venv`_ (for demo purposes, we install an old version of NumPy. Make sure to install ``ipykernel`` as well)::
 
     ~$ mkdir myenv
     ~$ cd myenv/
@@ -34,13 +34,20 @@ These instructions are for the case in which you want to create a Jupyter kernel
     >>> np.__version__
     '1.26.4'
 
-- Anaconda (make sure to also install ``ipykernel`` via the environment.yml configuration)::
+- Anaconda:
 
-    ~$ anaconda2023
-    (base) ~$ mamba env create --prefix ~/myenv --file=environment.yml
-    (base) ~$ conda activate ~/myenv
-    (/home/user/myenv) ~$ python
-    [...]
+  * First start the root anaconda environment using ``anaconda``.
+  * Then create a new environment **with a prefix** (important!).
+  * Install ``ipykernel`` along your other packages in the ``environment.yml`` configuration (:download:`example environment.yml <../_files/environment.yml>`).
+  * Later, you can do ``source ~/myenv/bin/activate`` directly.
+
+  ::
+
+      ~$ anaconda
+      (base) ~$ mamba env create --prefix ~/myenv --file=environment.yml
+      (base) ~$ conda activate ~/myenv
+      (/home/user/myenv) ~$ python
+      [...]
 
 .. note::
 

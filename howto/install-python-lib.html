@@ -354,8 +354,8 @@ and your <a class="reference internal" href="#anaconda-jupyter"><span class="std
 <p>To get it installed in Anaconda as a user, do this:</p>
 <ol class="arabic">
 <li><p>Open a terminal.</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">anaconda2023</span></code> (or just <code class="docutils literal notranslate"><span class="pre">anaconda</span></code> to launch the newest version)</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">mamba</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">--prefix</span> <span class="pre">~/myenv</span> <span class="pre">-c</span> <span class="pre">mro</span> <span class="pre">r</span></code> This creates a new isolated local (hence <code class="docutils literal notranslate"><span class="pre">--prefix</span> <span class="pre">...</span></code>) environment in the directory <code class="docutils literal notranslate"><span class="pre">~/myenv</span></code> with the package “r” as its source coming from the channel “mro” (Microsoft’s Open R). Instead of that, you can add any other anaconda package or use <code class="docutils literal notranslate"><span class="pre">--file=environment.yml</span></code> to reconstruct from a full environment definition. For more details, see <a class="reference external" href="http://conda.pydata.org/docs/using/envs.html#create-an-environment">http://conda.pydata.org/docs/using/envs.html#create-an-environment</a>.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">anaconda</span></code> to launch.</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">mamba</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">--prefix</span> <span class="pre">~/myenv</span> <span class="pre">--file=environment.yml</span></code> This creates a new isolated local (hence <code class="docutils literal notranslate"><span class="pre">--prefix</span> <span class="pre">...</span></code>) environment in the directory <code class="docutils literal notranslate"><span class="pre">~/myenv</span></code>. Use an <a class="reference download internal" download="" href="../_downloads/0444300746ad21e7ad7eaa3d6fb85332/environment.yml"><code class="xref download docutils literal notranslate"><span class="pre">environment.yml</span></code></a> to reconstruct from a full definition. For more details, see <a class="reference external" href="http://conda.pydata.org/docs/using/envs.html#create-an-environment">http://conda.pydata.org/docs/using/envs.html#create-an-environment</a>.</p></li>
 <li><p>When installing, it will resolve the package dependencies, download packages, unpack and install them. Afterwards, run <code class="docutils literal notranslate"><span class="pre">mamba</span> <span class="pre">clean</span> <span class="pre">--all</span> <span class="pre">--yes</span></code> to save disk space.</p></li>
 <li><p>Now that we have it installed, we can get out of this “root” environment via <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">deactivate</span></code> or restart the session. In any case, you are back in the the normal Linux terminal environment.</p></li>
 <li><p>To activate it again, run <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/myenv/bin/activate</span></code>. You can also add this line to your Terminal’s <a class="reference internal" href="../terminal.html#terminal-startup-files"><span class="std std-ref">Startup file</span></a>.</p></li>
@@ -387,7 +387,7 @@ Successfully installed plotly requests six pytz
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Sagemath, Inc., CC BY-4.0 licensed.</p>
+    <p>&#169; Copyright 2025, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
 
   

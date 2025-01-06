@@ -227,9 +227,9 @@ To get it installed in Anaconda as a user, do this:
 
 1. Open a terminal.
 
-2. Type ``anaconda2023`` (or just ``anaconda`` to launch the newest version)
+2. Type ``anaconda`` to launch.
 
-3. Type ``mamba env create --prefix ~/myenv -c mro r`` This creates a new isolated local (hence ``--prefix ...``) environment in the directory ``~/myenv`` with the package "r" as its source coming from the channel "mro" (Microsoft's Open R). Instead of that, you can add any other anaconda package or use ``--file=environment.yml`` to reconstruct from a full environment definition. For more details, see http://conda.pydata.org/docs/using/envs.html#create-an-environment.
+3. Type ``mamba env create --prefix ~/myenv --file=environment.yml`` This creates a new isolated local (hence ``--prefix ...``) environment in the directory ``~/myenv``. Use an :download:`environment.yml <../_files/environment.yml>` to reconstruct from a full definition. For more details, see http://conda.pydata.org/docs/using/envs.html#create-an-environment.
 
 4. When installing, it will resolve the package dependencies, download packages, unpack and install them. Afterwards, run ``mamba clean --all --yes`` to save disk space.
 

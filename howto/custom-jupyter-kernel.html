@@ -140,7 +140,7 @@ In case you require a specific software package, there are related guides: <a cl
 <li><p>If you haven’t already, create your own Python environment:</p></li>
 </ol>
 <ul>
-<li><p>Python via <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a> (for demo purposes, we install an old version of NumPy):</p>
+<li><p>Python via <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a> (for demo purposes, we install an old version of NumPy. Make sure to install <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> as well):</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ mkdir myenv
 ~$ cd myenv/
 ~/myenv$ python -m venv .
@@ -158,8 +158,14 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 </pre></div>
 </div>
 </li>
-<li><p>Anaconda (make sure to also install <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> via the environment.yml configuration):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ anaconda2023
+<li><p>Anaconda:</p>
+<ul class="simple">
+<li><p>First start the root anaconda environment using <code class="docutils literal notranslate"><span class="pre">anaconda</span></code>.</p></li>
+<li><p>Then create a new environment <strong>with a prefix</strong> (important!).</p></li>
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">ipykernel</span></code> along your other packages in the <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> configuration (<a class="reference download internal" download="" href="../_downloads/0444300746ad21e7ad7eaa3d6fb85332/environment.yml"><code class="xref download docutils literal notranslate"><span class="pre">example</span> <span class="pre">environment.yml</span></code></a>).</p></li>
+<li><p>Later, you can do <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/myenv/bin/activate</span></code> directly.</p></li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ anaconda
 (base) ~$ mamba env create --prefix ~/myenv --file=environment.yml
 (base) ~$ conda activate ~/myenv
 (/home/user/myenv) ~$ python
@@ -283,7 +289,7 @@ Note, <code class="docutils literal notranslate"><span class="pre">$HOME</span><
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, Sagemath, Inc., CC BY-4.0 licensed.</p>
+    <p>&#169; Copyright 2025, Sagemath, Inc., CC BY-4.0 licensed.</p>
   </div>
 
   
