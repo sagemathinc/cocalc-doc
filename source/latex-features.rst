@@ -109,7 +109,7 @@ You could also use GNU Makefiles and call ``make ...;`` from here.
 
 **Default build command**
 
-The selected build command is stored in a companion file in the project.
+The selected build command is stored in a companion file in the project, namely ``*.tex.syncdb``.
 You can also store the default engine or even hardcode the build command in the LaTeX document itself.
 There are two relevant directives, which are special comment lines at the beginning of your file.
 
