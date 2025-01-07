@@ -63,7 +63,6 @@ Servers
     
     Custom <webserver>
     bokeh-server
-    mongodb
     plotly-dash
     postgresql
     shiny-server
