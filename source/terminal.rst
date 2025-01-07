@@ -136,14 +136,13 @@ Terminals open up in a :doc:`frame-editor`. This means you can use buttons at up
 Startup file
 --------------------
 
-When you click on the "rocket" icon (|rocket|),
-a hidden file – which is tied to that specific terminal – is created.
-It contains further instructions about how to configure commands that are run when it starts.
+If you choose **Edit > Initialization Script** in a terminal frame menu,
+a hidden file is created which is tied to that specific terminal. This file contains commands that are run when this terminal starts.
+The starting template contains some ideas that may be useful. For example, it could be used to activate some virtual python environment like ::
 
-.. |rocket|
-    image:: https://raw.githubusercontent.com/encharm/Font-Awesome-SVG-PNG/master/black/png/128/rocket.png
-    :width: 16px
-    :alt: rocket icon
+    . <name-of-env>/bin/activate
+    echo "The <name-of-env> is now activated"
+
 
 .. index:: Anaconda Environment
 
