@@ -4,56 +4,15 @@
    :hidden:
 
    cant-save
-   firewall-info
-   multiple-accounts
-   software-development
-   project-invitation-tokens
-   export-timetravel
-   external-tools
-   install-r-package
-   install-julia-package
-   running-processes
-   upload
-   ../api-examples
-   convert-html-to-pdf
-   webserver
-   bokeh-server
-   shiny-server
-   streamlit
-   jupyter-kernel-selection
-   jupyter-extension
-   jupyter-plot-png-svg
-   jupyterlab-extensions
-   custom-jupyter-kernel
-   fix-broken-jupyter-pdf
-   run-r-step-by-step
-   assembly-language
-   bash-fortunes
-   cplusplus
-   dask
-   fortran
-   front-end-dev
-   activeloop-hub
-   git
-   google-api
-   gsl
-   nbgrader
-   neuron
-   awscli
-   octave
-   pluto
-   postgresql
-   remarkjs-slideshow
-   ruby
-   turtle
-   plotly-dash
    disk-space-warning
-   parallel
-   ../platform-news
+   front-end-dev
+   nbgrader
    ../account/licenses
    ../account/public-files
    ../account/purchases
    ../account/ssh
    ../account/support
+   ../api-examples
    ../chatgpt
    ../cocalc-cloud
+   ../platform-news
