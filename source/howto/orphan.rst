@@ -40,7 +40,6 @@
    nbgrader
    neuron
    awscli
-   mongodb
    octave
    pluto
    postgresql
