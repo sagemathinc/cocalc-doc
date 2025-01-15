@@ -364,6 +364,12 @@ When you edit files via CoCalc graphical interface, they are usually synced betw
     - all changes to a hidden file in the Home Base are ignored after the first change on or sync to the compute server
 
 
+Backups
+-------
+
+Apart from the synchronization with the Home Base described above and corresponding backups of the Home Base, there are **NO** automatic backups on compute servers. We do plan to support some options for it eventually, but it will be up to the user to determine what makes sense. It is always a very good idea to backup your important data to some external service completely outside of CoCalc. For example, we use https://www.backblaze.com/ for some of our own backups.
+
+
 Compute Server VPN
 ------------------
 
