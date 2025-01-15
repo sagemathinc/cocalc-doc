@@ -354,6 +354,15 @@ When you edit files via CoCalc graphical interface, they are usually synced betw
 
     Sync Files Button for a Compute Server
 
+.. note::
+
+    Hidden "dot" files in the home directory are treated in a special way since typically they serve some special function. In particular:
+    
+    - all dot files are visible on the compute server over the network mounted file system
+    - if you access any hidden file and click **Sync** or wait about ~30 seconds, that file is copied over to the compute server so subsequent access is faster
+    - these files are never synced back to the Home Base
+    - all changes to a hidden file in the Home Base are ignored after the first change on or sync to the compute server
+
 
 Compute Server VPN
 ------------------
