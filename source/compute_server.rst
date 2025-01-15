@@ -472,45 +472,21 @@ Compute servers are a great option to let your students or workshop participants
 
 - What configuration do you need for your students?
 
-- How will you communicate it to them so that they don't miss important settings? (We do plan to support sharing server configuration directly, but it is not implemented yet.)
+- Who will pay for running compute servers?
 
-- Who will pay for running compute servers? The cost will be deducted directly from student accounts, but you can provide them with :ref:`credit-vouchers` if you wish, paying for those yourself.
+- What are some sensible limits that you can configure to prevent accidental overspending?
 
-- If you do use vouchers, you will need to figure out a suitable amount and, perhaps, develop a policy for those who run out of credit. For example, students may forget to turn off their servers when they are done working. It is also theoretically possible for them to configure a much more powerful machine than needed/instructed.
+In CoCalc compute server usage for courses is configured via assignments and handouts - you can use the same compute server for several of them or different ones. You can also own the servers and pay for them from your own account, or transfer ownership to students and let them pay for it directly, perhaps after making them even more powerful.
 
-- Note that students can not spend more than they have in their account, so the worst case scenario is: they "burn" their allotment because of some mistake, put the same amount of money again, and hopefully behave in a more responsible manner the second time.
+The best way to get a sense of what is possible it to experiment yourself in tandem with this video tutorial by CoCalc's Founder, CEO, and Lead Developer William Stein:
 
-- For smaller courses it may be feasible for the instructor to create a server in each student project and allow collaborators (which includes students) to control it, i.e. they will be able to start and stop it:
+.. raw:: html
 
-  .. figure:: img/allow_collaborator_control.png
-        :width: 80%
-        :align: center
-        :alt: Allow Collaborator Control
-
-        Allow Collaborator Control
-
-  In this case usage bills to the instructor account without any need for vouchers. Since the students can't edit the configuration of such a server, the worst case for an improper use is leaving the server running all the time.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <center><iframe
+        width="640" height="360"
+        src="https://www.youtube.com/embed/ikktaiw14Tw?si=6TU6KtZvngRNabUj"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe></center>
