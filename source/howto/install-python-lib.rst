@@ -42,6 +42,11 @@ You can install additional packages yourself, but only at user-permission level.
 CoCalc accounts do not have superuser (root) privileges.
 Software must be installed into user-writeable parts of the filesystem, which are in ``/home/user`` (check the value of ``$HOME``).
 
+.. note::
+
+    After installing a package, you may need to restart your kernel **twice** before you can use it. It takes time to check if a module is available, so for performance reasons Python caches such checks and they could be performed by some libraries, not your code. This makes it necessary to restart the kernel once. In addition, CoCalc often keeps a fresh kernel ready for you to use, so that you don't have to wait for it to start. But this spare kernel may "remember" that your package is not installed, hence it has to be discarded as well.
+
+
 .. warning::
 
     Your project **must** have the :ref:`"Internet access" upgrade <project-upgrades>` in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
