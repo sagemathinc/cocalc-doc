@@ -203,6 +203,10 @@ Install will happen faster if you include as much as possible of the following i
 <p>You can install additional packages yourself, but only at user-permission level.
 CoCalc accounts do not have superuser (root) privileges.
 Software must be installed into user-writeable parts of the filesystem, which are in <code class="docutils literal notranslate"><span class="pre">/home/user</span></code> (check the value of <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After installing a package, you may need to restart your kernel <strong>twice</strong> before you can use it. It takes time to check if a module is available, so for performance reasons Python caches such checks and they could be performed by some libraries, not your code. This makes it necessary to restart the kernel once. In addition, CoCalc often keeps a fresh kernel ready for you to use, so that you don’t have to wait for it to start. But this spare kernel may “remember” that your package is not installed, hence it has to be discarded as well.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Your project <strong>must</strong> have the <a class="reference internal" href="../project-settings.html#project-upgrades"><span class="std std-ref">“Internet access” upgrade</span></a> in order to download software from a remote repository (e.g. PyPI or Anaconda) to your project.
