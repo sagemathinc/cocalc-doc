@@ -186,6 +186,32 @@ It may be handy also to install Google Chrome on your compute server and run it 
     google-chrome --no-sandbox --disable-dev-shm-usage
 
 
+Other Web Applications
+----------------------
+
+While it may be useful to access web applications running on your compute server via X11 Desktop as explained above, it may be way more convenient to do so from a browser on your local machine. You can do so via advanced proxy configuration in the compute server settings:
+
+.. figure:: img/compute_server_web_applications_advanced.png
+    :width: 90%
+    :align: center
+    :alt: Accessing Proxy Settings
+
+    Accessing Proxy Settings
+    
+Once you click on **Advanced** button, you will be able to add your own server to the standard ones:
+
+.. figure:: img/compute_server_proxy.png
+    :width: 90%
+    :align: center
+    :alt: Proxy Settings
+
+    Proxy Settings
+    
+You will likely get a security warning from your browser, unless you also configure a DNS record for your server.
+
+Yet another option is to use port forwarding explained below.
+ 
+    
 .. _become_root:
 
 Becoming ``root`` and Port Forwarding
@@ -490,3 +516,24 @@ The best way to get a sense of what is possible it to experiment yourself in tan
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
     </iframe></center>
+
+
+Troubleshooting
+---------------
+
+I Cannot Start My Compute Server
+................................
+
+If your compute server is not running, "it does not exist" in the sense of physical CPU cores, RAM, and GPU. When you try to start it, the first step is to allocate these resources to you which may not always be possible. Some of the options that you may (or may not) have:
+
+- pick a different region
+
+- pick a different configuration
+
+- switch from a spot instance to a standard one
+
+- contact us for advice
+
+.. hint::
+
+    If it is important to you that a particular machine, especially with a high end GPU, is available, consider leaving your server on even when not in use. You will have to pay for this idle time, but your chance of losing access to this machine is very low (probably less than 0.1%). Alternatively, consider storing your data not just on the compute server, e.g. use :doc:`cloud_file_system`.
