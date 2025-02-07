@@ -516,3 +516,24 @@ The best way to get a sense of what is possible it to experiment yourself in tan
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
     </iframe></center>
+
+
+Troubleshooting
+---------------
+
+I Cannot Start My Compute Server
+................................
+
+If your compute server is not running, "it does not exist" in the sense of physical CPU cores, RAM, and GPU. When you try to start it, the first step is to allocate these resources to you which may not always be possible. Some of the options that you may (or may not) have:
+
+- pick a different region
+
+- pick a different configuration
+
+- switch from a spot instance to a standard one
+
+- contact us for advice
+
+.. hint::
+
+    If it is important to you that a particular machine, especially with a high end GPU, is available, consider leaving your server on even when not in use. You will have to pay for this idle time, but your chance of losing access to this machine is very low (probably less than 0.1%). Alternatively, consider storing your data not just on the compute server, e.g. use :doc:`cloud_file_system`.
