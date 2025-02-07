@@ -186,6 +186,32 @@ It may be handy also to install Google Chrome on your compute server and run it 
     google-chrome --no-sandbox --disable-dev-shm-usage
 
 
+Other Web Applications
+----------------------
+
+While it may be useful to access web applications running on your compute server via X11 Desktop as explained above, it may be way more convenient to do so from a browser on your local machine. You can do so via advanced proxy configuration in the compute server settings:
+
+.. figure:: img/compute_server_web_applications_advanced.png
+    :width: 90%
+    :align: center
+    :alt: Accessing Proxy Settings
+
+    Accessing Proxy Settings
+    
+Once you click on **Advanced** button, you will be able to add your own server to the standard ones:
+
+.. figure:: img/compute_server_proxy.png
+    :width: 90%
+    :align: center
+    :alt: Proxy Settings
+
+    Proxy Settings
+    
+You will likely get a security warning from your browser, unless you also configure a DNS record for your server.
+
+Yet another option is to use port forwarding explained below.
+ 
+    
 .. _become_root:
 
 Becoming ``root`` and Port Forwarding
