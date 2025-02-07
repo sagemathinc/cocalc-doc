@@ -379,7 +379,12 @@ google-chrome --no-sandbox --disable-dev-shm-usage
 <p><span class="caption-text">Proxy Settings</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>You will likely get a security warning from your browser, unless you also configure a DNS record for your server.</p>
+<p>If all you care about is accessing your application running on port 8080, you can replace the configuration above with</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ { &quot;path&quot;: &quot;/&quot;, &quot;target&quot;: &quot;http://localhost:8080&quot;, options:{}, wsOptions:{}} ]
+</pre></div>
+</div>
+<p>then go to the IP address of your server (displayed on its tile while running).
+You will likely get a security warning from your browser, unless you also configure a DNS record for your server and use that insted of the IP address.</p>
 <p>Yet another option is to use port forwarding explained below.</p>
 </section>
 <section id="becoming-root-and-port-forwarding">

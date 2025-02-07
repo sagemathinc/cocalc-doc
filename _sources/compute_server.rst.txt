@@ -207,7 +207,12 @@ Once you click on **Advanced** button, you will be able to add your own server t
 
     Proxy Settings
     
-You will likely get a security warning from your browser, unless you also configure a DNS record for your server.
+If all you care about is accessing your application running on port 8080, you can replace the configuration above with ::
+
+    [ { "path": "/", "target": "http://localhost:8080", options:{}, wsOptions:{}} ]
+
+then go to the IP address of your server (displayed on its tile while running).
+You will likely get a security warning from your browser, unless you also configure a DNS record for your server and use that insted of the IP address.
 
 Yet another option is to use port forwarding explained below.
  
