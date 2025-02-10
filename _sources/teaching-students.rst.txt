@@ -8,243 +8,143 @@ Hello and welcome to CoCalc! You are part of a course ... now what?
    :local:
    :depth: 3
 
-What is CoCalc?
+
+Getting Started
 ===============
 
-CoCalc is a cloud service that provides support for courses based on interactive resources such as :ref:`Jupyter Notebooks <jupyter-notebook>`, :doc:`the Linux terminal <terminal>` , :ref:`LaTeX document editors <latex-editor>`, and :ref:`SageMath Worksheets <sage-worksheet>`.
-
-Why CoCalc?
-------------------------------------------
-
-As you are all aware technology is moving at an incredible speed, so it is only fair that education catches up!
-CoCalc is a platform that provides a high amount of versatility when it comes to course material handling and distribution.
-
-Also, being this a cloud service, you can access it from any computer you need to as long as you have internet access on it. Meaning that you do not need to install anything. Plus, it is an OpenSource project.
-
-* **Software is already installed:** Dozens of programming languages and thousands of libraries and packages are available. There is no need to install them on your computer!
-* **Unified place of work:** switch computers without pausing to install software or move your work to another system.
-* **Consistent coding environment:** Your teacher and you work on CoCalc with the very same software stack.
-* **Interactive notebooks:** Use :doc:`sagews` and :doc:`Jupyter Notebooks <jupyter>` to create an executable record of each study session. Make the most of your time when reviewing your work later.
-* **Your personal study archive:** Your work remains accessible and usable in CoCalc long after the course is over. (Except, when your teacher explicitly removes you)
-* **Extras:**
-   * :doc:`time-travel` (a detailed edit history)
-   * Backups: consistent snapshots of all your files in a project
-   * Real time collaboration & chat
-   * Online publishing (make selected files public)
+You are very welcome to take a look at our general :doc:`getting-started` section, but we highlight the most important features for you as a student here.
 
 
-What happens when I finish the course/my degree?
----------------------------------------------------------
+What is CoCalc?
+---------------
 
-Once you have finished your course you will still be able to access the material of past courses in your student projects (unless your instructor(s) explicitly delete your project or revoke your access).
-Regarding any applied upgrades for your course project, they will only be available for the duration of the course.
-
-In cases where your account on CoCalc is managed by the university, make sure you set your password in your account settings.
-This ensures that you'll have access later on.
-Additionally, consider changing your email address of your CoCalc account, once you're no longer associated with the university.
-
-What I am getting?
-------------------------------------------
-
-The basic CoCalc projects get a limited memory size, poor hosting quality and no internet access. It is more than likely that you have been upgraded for your course, if you need to see what resources you have, go to the **Settings** tab of your course.
-
-Working in your course project
-=======================================
-
-Access your course content
-------------------------------------------
-
-When you are first added to a course you will receive an email indicating the name of the course and inviting you to create a CoCalc account. Make sure to use the same email to that where you received the invitation. If you do not, you will not have access to the material and the upgrades available the course students.
-If there is a problem, contact your teaching instructor and ask to check for your email address in the student list of the course.
-
-If everything is setup correctly, you will see a panel as the one in the figure below when signing in to CoCalc.
-Click on the project of your course to open it.
-
-.. image:: img/student/projects.png
-    :width: 75%
-    :align: center
-    :alt: project list
-
-Once you open the project you will be redirected to your course-specific file directory.
-
-From there you can see all the files you lecturer has shared with you and the assignments.
-They're organized in several directories, or sub-directories, and can correspond to assignments or handouts (lecture notes, ...).
-
-.. image:: img/student/content.png
-    :width: 75%
-    :align: center
-    :alt: files list
-
-Your assignments
-------------------------------------------
-
-It is more than likely that you will be assigned assignments. When this happens you will have your own copy of the work you need to complete, so you can do all your changes/scripts in there.
-
-Also, note the assignments will have been collected at a **due** date, after which further changes won't be seen by the teacher.
-
-It is also possible that as part of the assignment you need to add scripts, a report, or additional files. Make sure that they are all self contained in the directory of the assignment. When your coursework is collected the lecturers will get a copy of the assignment directory, so if you misplaced the documents they will not have access to them, and your marks will suffer.
-
-In particular, **do not move or rename** any of the directories related to your assignments.
-Otherwise it is not possible to collect (i.e. "copy over") your files.
-
-Adding files
-----------------------------
-
-First, open up "Files" in your project and make sure you've navigated to the correct assignment directory (or sub-directory).
-
-There are multiple ways to do it:
-
-* **Upload**:  If you have the files in your local computer navigate to your assignment folder. Then click on the "Upload" button at the top right. It will ask you for your local file(s) and after confirming the dialog it shows you the upload progress.
-
-.. image:: img/student/upload.png
-    :width: 100%
-    :align: center
-    :alt: upload
-
-* **Drag and drop**: If you have the files in your local computer navigate to your assignment folder. Once there click on the **New** button on the upper banner. Drag and drop the files in the corresponding box.
-
-.. image:: img/student/drag.png
-    :width: 50%
-    :align: center
-    :alt: drag and drop
-
-* **Content in the internet**: If you have your files in a GitHub repository or hosted on a publicly accessible web-server, click on the **New** button. On the file name box paste/write the UTL to the resource and click on the **Download from the internet** button.
-
-.. image:: img/student/download.png
-    :width: 100%
-    :align: center
-    :alt: download from internet
-
-* **Terminal**: if you have your files in a GitHub repository you can create a so called :doc:`"Terminal file" <terminal>` and copy the contents using::
-
-        git clone 'git://the repository URL'
-
-  For downloading from a web-server, use ``wget`` like that::
-
-        wget 'http:// ... the URL ...'
-
-Version control
-------------------------------------------
-
-One of the best features of CoCalc is the time travel diff feature. You will notice that your Jupyter notebooks (and many more files) have a **Time Travel** (file history) button.
-
-.. image:: img/student/time_diff.png
-    :width: 25%
-    :align: center
-    :alt: timetravel
-
-If you click on this button you will see two sliders that you can move to see previous versions of the file:
-
-.. image:: img/student/control.png
-    :width: 100%
-    :align: center
-    :alt: timetravel sliders
-
-This is extremely handy if you want to see a previously saved version of the document or revert to it.
-
-Alternatively, you can also use git from the terminal if this is your preferred version control tool.
+CoCalc is a collaborative cloud environment that supports courses based on interactive resources such as :ref:`Jupyter Notebooks <jupyter-notebook>`, :doc:`the Linux terminal <terminal>` , :ref:`LaTeX document editors <latex-editor>`, etc.
+You can access it from your browser, meaning that you do not need to install anything.
 
 
-Restarting a project
-------------------------------------------
+Access Your Course Content
+--------------------------
 
-Every time you open a Jupyter notebook or a Sage Worksheet, its state is stored in memory. You might experience a slow navigation or sluggish kernel behaviour (e.g. cells not being evaluated).
+All work in CoCalc is done in :doc:`project` that work as virtual computers and give you computational resources, a file system for your work, and a preconfigured software environment. You will have a dedicated project automatically created for each course that you are enrolled into.
 
-To solve this you can stop and terminate your running Jupyter Notebook in the file menu under "Close and Halt".
+Student projects are named with the student name followed by the course title,
+like this: **Jane Doe - MATH 101**.
 
-Alternatively, you can restart the entire project, which will cleanup all running processes. You just need to go to your project settings and click and confirm on "Restart project".
+**If you do not have a CoCalc account yet** and you are enrolled into a course using CoCalc, you *should* receive an email indicating the name of the course and inviting you to create a CoCalc account. Make sure to use the same email address to which this invitation was sent, otherwise the system won't be able to link your new account to the course. It may happen for many reasons that you do not receive such an email at all, but don't panic! That email is only for convenience and all you need to do is to create an account *with the same email that your instructor has used.*
 
-.. image:: img/teaching/restart_project.png
-    :width: 50%
-    :align: center
-    :alt: restart project
+**If you already have a CoCalc account**, a new project will appear in your project list. There will be no email invitation to create an account.
 
-Contacting your lecturer or TA
-------------------------------------------
+.. hint::
 
-If you need assistance with a piece of coursework you can contact the using the real-time chat features.
+    *Contact your instructor* if you cannot see your course project and make sure that you both are using *exactly the same email*.
 
-.. image:: img/teaching/student_question.png
-    :width: 50%
-    :align: center
-    :alt: chat for asking questions
-
-Just click on the speech-bubble icon button located on the upper right hand corner of the piece of work you need help with and start typing straight away.
-
-Your lecturer will be notified when this happens.
+Once you see your course project, you can open and *start it to see the files* that your instructor shared with you, including assignments.
 
 
 .. _student-pay-for-course:
 
-Our teacher requires us students to pay. How?
-=====================================================
+Paying for the Course
+---------------------
 
-**Background:** as an instructor, :ref:`you can require students to pay <course-students-pay>` for the course.
+Your instructor has either applied a license to your project, in which case you do not need to pay anything, or configured a license that will provide you with necessary computational resources after you purchase it. In that case you will see a banner at the top after opening your project.
 
-.. index:: Member Hosting;students-pay course
+.. hint::
 
-As a student, you can/have to pay a one-time fee for the whole course
-to run your student project with improved "Member Hosting" quality and enable "Internet Access"
-(see :doc:`upgrade-guide`).
-This is shown in the screenshots below.
+    Until you pay the course fee your project has quite restricted computational resources corresponding to our :doc:`trial`. The sooner you purchase your required license, the sooner you will gain access to the intended hardware it provides.
 
-.. note::
-
-    To use the option for the one-time fee, you must open your student project for the course you are taking.
-
-Student projects are named with the student name followed by the course title,
-like this: ``Jane Doe - MATH 101``.
-
-If you don't see your course project listed under ``Projects`` (click the tab at the very top left) when you login to CoCalc,
-there might be a couple of reasons for that:
-
-* it's possible that the instructor created your project using a different login (i.e. different email or name) than you are using,
-* or that one of you misspelled your email address,
-* or that you have not been added to the student list yet.
-
-If the teacher sets a deadline for course payment by the student,
-the deadline visible below the top row when you open the project.
-
-In the warning you see below, **click on the "pay the course fee" link**.
-If you do NOT see this box, it is likely that your instructor has not checked the appropriate boxes in their course configuration file.
-Please let your instructor know that you're unable to see the student pay option.
+If the course has started and the payment deadline has already passed,
+you are required to pay the course fee before you can access files in your course project.
 
 
-.. image:: img/student/cocalc-student-pays-1.png
-     :width: 75%
-     :align: center
-     :alt: student pay 1
+Working in Your Course Project
+==============================
 
 
-Enter your credit card details:
+Assignments
+-----------
+
+When you get an assignment in CoCalc, a corresponding directory is created in your course project with your own copy of relevant files. You can modify them, e.g. by adding code and text cells to a Jupyter notebook, as well as upload or create new files - follow your instructions.
+
+.. warning::
+
+    **Do not move or rename** any of the directories related to your assignment!
+    Otherwise it will not be possible to collect it, i.e. to make a copy of your prepared files for grading.
+
+Note that you can work with your assignment files after the due date, but those changes won't be seen by the instructor. Once your assignment has been graded, you will get a separate copy of the graded work as well.
 
 
-.. image:: img/student/cocalc-student-pays-2.png
-     :width: 75%
-     :align: center
-     :alt: student pay 2
+Add Files
+---------
 
-Click the confirmation button to pay:
+First of all, make sure you have navigated to the correct assignment directory. Then :doc:`howto/upload` or :doc:`Create <plus-new>` new ones.
 
 
-.. image:: img/student/cocalc-student-pays-3.png
-     :width: 75%
-     :align: center
-     :alt: student pay 3
+Minimize User Interface
+-----------------------
 
-If the course already started and the deadline passed,
-you are required to pay before you can access files in the student project.
-In that case, the dialog looks similar to the one below:
-
-.. image:: img/student/cocalc-student-pays-too-late.png
-     :width: 75%
-     :align: center
-     :alt: student pay late
+CoCalc is a very flexible environment with support for many features and ways to use them. You many not need all of them and may prefer a bit simpler interface that takes less of the screen real estate. :doc:`fullscreen` is very likely to help you!
 
 
-.. note::
+Open Two Files Side-by-side
+---------------------------
 
-    If you already have a subscription to CoCalc and have available upgrades,
-    it is not necessary to pay the fee.
-    You can simply apply "Member Hosting" and "Internet Access" upgrades to your student project for the course in question.
+CoCalc does not allow you to open two different files in a single browser tab, but you can open as many tabs as you want. To open a particular file in a new browser tab, **Shift+Click** its CoCalc tab.
 
+
+Recover Lost Work
+-----------------
+
+It is almost impossible to lose a big chunk of your work in CoCalc thanks to :doc:`time-travel` and automatic :doc:`backups`. It may be prudent to familiarize yourself with these features in advance!
+
+
+Get Help from AI
+----------------
+
+CoCalc has a very powerful :doc:`ai`. Note, however, that your instructor may have disabled some or all of the AI features. Make sure to follow course rules regarding AI use and other help sources.
+
+
+Get Help from Your Instructor or Group Member
+---------------------------------------------
+
+If you need assistance with a piece of coursework you can contact your instructor, TAs, or other group members if you are working in a group. The best way to do so is to use :ref:`chat-at-mentions` in a :ref:`side-chat` of the document you are working on.
+
+
+Get Help from CoCalc Support
+----------------------------
+
+.. warning::
+
+    CoCalc support is there for you to resolve **technical issues** with the platform. We are not able to help you with the course material and you will only lose some time if you ask us about it instead of your instructor.
+    
+Use the :ref:`Help <help-button>` button at the top right to create a support request ticket. Make sure to include all relevant details to reproduce the problem you are experiencing.
+    
+
+Halt and Restart
+----------------
+
+Every time you open a Jupyter Notebook, its state is stored in memory. You might experience a slow navigation or sluggish behaviour (e.g. cells not being evaluated).
+To solve this you can try to **Close and Halt** your running Jupyter Notebook:
+
+.. figure:: img/close_and_halt.png
+    :width: 50%
+    :align: center
+    :alt: Close and Halt Jupyter Kernel
+    
+    Close and Halt Jupyter Kernel
+
+Alternatively, you can restart the entire project, which will cleanup all running processes:
+
+.. figure:: img/teaching/restart_project.png
+    :width: 80%
+    :align: center
+    :alt: Restart Project
+    
+    Restart Project
+
+
+After the Course End
+====================
+
+Once you have finished your course, you will still be able to access its project, unless your instructor explicitly deletes it or revokes your access. The license is typically valid for the duration of the course only, although your institution may have an ongoing subscription.
+
+If you enjoyed using CoCalc, you are more than welcome to keep using it for your own projects! Take a look at :doc:`licenses` and, perhaps, :doc:`compute_server` to understand what resources are available.
