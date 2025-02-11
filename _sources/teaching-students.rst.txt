@@ -97,14 +97,14 @@ Recover Lost Work
 It is almost impossible to lose a big chunk of your work in CoCalc thanks to :doc:`time-travel` and automatic :doc:`backups`. It may be prudent to familiarize yourself with these features in advance!
 
 
-Get Help from AI
-----------------
+Use AI
+------
 
-CoCalc has a very powerful :doc:`ai`. Note, however, that your instructor may have disabled some or all of the AI features. Make sure to follow course rules regarding AI use and other help sources.
+CoCalc has a very powerful :doc:`ai`. Note, however, that your instructor may have disabled some or all of the AI features. Make sure to follow course rules regarding AI use and other sources.
 
 
-Get Help from Your Instructor or Group Member
----------------------------------------------
+Contact Your Instructor or a Group Member
+-----------------------------------------
 
 If you need assistance with a piece of coursework you can contact your instructor, TAs, or other group members if you are working in a group. The best way to do so is to use :ref:`chat-at-mentions` in a :ref:`side-chat` of the document you are working on.
 
@@ -119,10 +119,12 @@ Get Help from CoCalc Support
 Use the :ref:`Help <help-button>` button at the top right to create a support request ticket. Make sure to include all relevant details to reproduce the problem you are experiencing.
     
 
-Halt and Restart
-----------------
+Troubleshoot
+------------
 
-Every time you open a Jupyter Notebook, its state is stored in memory. You might experience a slow navigation or sluggish behaviour (e.g. cells not being evaluated).
+:doc:`howto/trouble` is inevitable. In addition to that collection of specific advises, below are two tricks to keep in mind.
+
+Every time you open a Jupyter Notebook, its state is stored in memory. You might experience slow navigation or sluggish behaviour (e.g. cells not being evaluated).
 To solve this you can try to **Close and Halt** your running Jupyter Notebook:
 
 .. figure:: img/close_and_halt.png
@@ -140,6 +142,8 @@ Alternatively, you can restart the entire project, which will cleanup all runnin
     :alt: Restart Project
     
     Restart Project
+    
+If you experience "general instability" or get a message "CoCalc crashed", it may help to disable browser extensions, use an incognito mode, or a different browser/computer.
 
 
 After the Course End
