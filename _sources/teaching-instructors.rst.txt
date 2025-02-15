@@ -12,6 +12,11 @@ There are several reasons why you should consider conducting a course on CoCalc:
 * **Student work is isolated:** Each student does course work in a separate project.
 * **Control AI usage:** Turn off AI integration for students, enable it only for basic troubleshooting, or leave the full integration - you decide.
 
+.. hint::
+
+    While the intention of this Instructor Guide is to cover all course management functionality in detail, its complementary :doc:`teaching-students` is kept short and simple, emphasizing the most important points for students, e.g. to make sure they are using the right email address. *Please consider linking to it in your syllabus!*
+
+
 .. toctree::
    :maxdepth: 2
 
