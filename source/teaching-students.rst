@@ -12,7 +12,7 @@ Hello and welcome to CoCalc! You are part of a course ... now what?
 Getting Started
 ===============
 
-You are very welcome to take a look at our general :doc:`getting-started` section, but we highlight the most important features for you as a student here.
+You are very welcome to take a look at our general :doc:`getting-started` section or explore `▶ Quick CoCalc Tutorials <https://youtube.com/playlist?list=PL_eb0V_eeLiFPpX4gtywjA286JBggENnu&feature=shared>`_ and other `▶ YouTube videos <https://www.youtube.com/@cocalc-cloud/playlists>`_! Below we highlight the most important features for you as a student.
 
 
 What is CoCalc?
@@ -76,13 +76,17 @@ Note that you can work with your assignment files after the due date, but those 
 Add Files
 ---------
 
-First of all, make sure you have navigated to the correct assignment directory. Then :doc:`howto/upload` or :doc:`Create <plus-new>` new ones.
+First of all, make sure you have navigated to the correct assignment directory. Then :doc:`howto/upload` (`▶ YouTube <yt-upload_>`_) or :doc:`Create <plus-new>` new ones.
+
+.. _yt-upload: https://youtu.be/5baQ-p0DgB4?feature=shared
 
 
 Minimize User Interface
 -----------------------
 
-CoCalc is a very flexible environment with support for many features and ways to use them. You many not need all of them and may prefer a bit simpler interface that takes less of the screen real estate. :doc:`fullscreen` is very likely to help you!
+CoCalc is a very flexible environment with support for many features and ways to use them. You many not need all of them and may prefer a bit simpler interface that takes less of the screen real estate. :doc:`fullscreen` is very likely to help you! `▶ YouTube <yt-fullscreen_>`_
+
+.. _yt-fullscreen: https://youtu.be/quzKaEByL4Q?feature=shared
 
 
 Open Two Files Side-by-side
@@ -94,19 +98,26 @@ CoCalc does not allow you to open two different files in a single browser tab, b
 Recover Lost Work
 -----------------
 
-It is almost impossible to lose a big chunk of your work in CoCalc thanks to :doc:`time-travel` and automatic :doc:`backups`. It may be prudent to familiarize yourself with these features in advance!
+It is almost impossible to lose a big chunk of your work in CoCalc thanks to :doc:`time-travel` (`▶ YouTube <yt-timetravel_>`_) and automatic :doc:`backups` (`▶ YouTube <yt-backup_>`_). It may be prudent to familiarize yourself with these features in advance!
+
+.. _yt-timetravel: https://youtu.be/qAo7E0wpuhk?feature=shared
+.. _yt-backup: https://youtu.be/VPp-AleMUXg?feature=shared
 
 
 Use AI
 ------
 
-CoCalc has a very powerful :doc:`ai`. Note, however, that your instructor may have disabled some or all of the AI features. Make sure to follow course rules regarding AI use and other sources.
+CoCalc has a very powerful :doc:`ai`. Note, however, that your instructor may have disabled some or all of the AI features. Make sure to follow course rules regarding AI use and other sources. `▶ YouTube <yt-ai_>`_
+
+.. _yt-ai: https://youtu.be/piLqlxb84kQ?feature=shared
 
 
 Contact Your Instructor or a Group Member
 -----------------------------------------
 
-If you need assistance with a piece of coursework you can contact your instructor, TAs, or other group members if you are working in a group. The best way to do so is to use :ref:`chat-at-mentions` in a :ref:`side-chat` of the document you are working on.
+If you need assistance with a piece of coursework you can contact your instructor, TAs, or other group members if you are working in a group. The best way to do so is to use :ref:`chat-at-mentions` in a :ref:`side-chat` of the document you are working on. `▶ YouTube <yt-sidechat_>`_
+
+.. _yt-sidechat: https://youtu.be/XQYJrFbvhB4?feature=shared
 
 
 Get Help from CoCalc Support
@@ -116,8 +127,10 @@ Get Help from CoCalc Support
 
     CoCalc support is there for you to resolve **technical issues** with the platform. We are not able to help you with the course material and you will only lose some time if you ask us about it instead of your instructor.
     
-Use the :ref:`Help <help-button>` button at the top right to create a support request ticket. Make sure to include all relevant details to reproduce the problem you are experiencing.
-    
+Use the :ref:`Help <help-button>` button at the top right to create a support request ticket. Make sure to include all relevant details to reproduce the problem you are experiencing. `▶ YouTube <yt-help_>`_
+
+.. _yt-help: https://youtu.be/4Ef9sxX59XM?feature=shared
+
 
 Troubleshoot
 ------------
