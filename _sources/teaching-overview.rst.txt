@@ -9,10 +9,11 @@ Setting up a Course
 We recommend creating a separate project for each course, although in some cases different sections of the same course can share the same project. You upgrade it using the instructor license and add other instructors and TAs as collaborators for this project.
 
 Then you need to create a course file and configure it as necessary:
-    - set title and description
-    - determine license model for students
-    - disable some of the functionality for students, if desired
-    - enroll your students by copy-pasting a list of emails - a separate project will be automatically created for each one
+
+- set title and description
+- determine license model for students
+- disable some of the functionality for students, if desired
+- enroll your students by copy-pasting a list of emails - a separate project will be automatically created for each one
 
 If you need us to install some package/library that is not available on CoCalc yet, or to provide access to a particular dataset, create a support ticket in advance.
 
@@ -20,11 +21,12 @@ Assignments and Handouts
 ------------------------
 
 An "assignment" is just a folder in your project that contains arbitrary files. Typical steps include:
-    - **Create** - upload or copy existing files or create new ones in CoCalc, such as Jupyter notebooks, potentially with nbgrader cells.
-    - **Assign** - put a copy of your files into each student project.
-    - **Collect** - copy files (hopefully, with work) from each student back into your course project.
-    - **Grade** - manually or automatically using nbgrader, optionally incorporating peer grading.
-    - **Return** - make a copy of a graded assignment in the corresponding student project (under a different path than the original one).
+
+- **Create** - upload or copy existing files or create new ones in CoCalc, such as Jupyter notebooks, potentially with nbgrader cells.
+- **Assign** - put a copy of your files into each student project.
+- **Collect** - copy files (hopefully, with work) from each student back into your course project.
+- **Grade** - manually or automatically using nbgrader, optionally incorporating peer grading.
+- **Return** - make a copy of a graded assignment in the corresponding student project (under a different path than the original one).
 
 A "handout" is the same as an assignment, but without grading process. Perfect for distributing syllabus, class notes, etc.
 
@@ -34,19 +36,21 @@ Working on Assignments
 ----------------------
 
 While working on assignments, each student can:
-    - **stay in a separate dedicated project** without interfering with the work of others
-    - **create new files and terminals** in addition to editing files copied from you
-    - **invite other students** for collaboration or group work, *if you allow it*
-    - **use AI tools** to fix error or generate code, *if you allow it*
-    - **run nbgrader tests** to check the work, if you have provided them
-    - **ask you for help** using @-mentions in a side chat
-    - **recover "lost" work** through TimeTravel and automatic snapshots
-    - **use JupyterLab, VS Code, or R IDE** if desired
+
+- **stay in a separate dedicated project** without interfering with the work of others
+- **create new files and terminals** in addition to editing files copied from you
+- **invite other students** for collaboration or group work, *if you allow it*
+- **use AI tools** to fix error or generate code, *if you allow it*
+- **run nbgrader tests** to check the work, if you have provided them
+- **ask you for help** using @-mentions in a side chat
+- **recover "lost" work** through TimeTravel and automatic snapshots
+- **use JupyterLab, VS Code, or R IDE** if desired
 
 While your students are working on assignments, you can:
-    - **access student work at any time** without collecting it, to assess how students are doing or to help them
-    - **use the same state of Jupyter notebooks** that your students have, including widgets
-    - **see fine-grained writing history** to detect cheating and understand how students approach the problem
+
+- **access student work at any time** without collecting it, to assess how students are doing or to help them
+- **use the same state of Jupyter notebooks** that your students have, including widgets
+- **see fine-grained writing history** to detect cheating and understand how students approach the problem
 
 Extra Compute Resources
 -----------------------
@@ -62,10 +66,11 @@ CoCalc Roadmap
 --------------
 
 These are some of the course-related features that we are planning to add in the future:
-    - Streamlined support for group assignments: define groups, create a project for each group, add all of its members as collaborators. At the moment you can do these steps manually.
-    - Exam mode: create a dedicated project for the exam for each student, restrict access to other projects, automatically collect work at a set time.
-    - Analyze student engagement: see how much time students are actively editing files, determine outliers, see who needs help and who may be cheating. This may involve AI analysis based on your explicit request.
-    - LMS integration: automatically add and remove students, sync grades. At the moment you can copy students' emails from a CSV file for enrollment and you can export their grades into a CSV file.
+
+- Streamlined support for group assignments: define groups, create a project for each group, add all of its members as collaborators. At the moment you can do these steps manually.
+- Exam mode: create a dedicated project for the exam for each student, restrict access to other projects, automatically collect work at a set time.
+- Analyze student engagement: see how much time students are actively editing files, determine outliers, see who needs help and who may be cheating. This may involve AI analysis based on your explicit request.
+- LMS integration: automatically add and remove students, sync grades. At the moment you can copy students' emails from a CSV file for enrollment and you can export their grades into a CSV file.
 
 Budgeting and Billing
 ---------------------
