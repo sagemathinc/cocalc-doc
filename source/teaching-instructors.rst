@@ -12,7 +12,7 @@ There are several reasons why you should consider conducting a course on CoCalc:
 * **Focus on helping students:** Jump right into a student's file at any time, see editing history, attract attention from a side chat.
 * **Control AI usage:** Turn off AI integration for students, enable it only for basic troubleshooting, or leave the full integration - you decide.
 * **Access GPUs and other powerful machines:** Use compute servers when standard project resources are not sufficient.
-* **Flexible billing**: Pay for your students (with limits on compute servers) or let them pay for resources that you configure.
+* **Flexible billing**: Pay for your students (with individual limits on compute servers) or let them pay for resources that you configure.
 
 .. hint::
 
