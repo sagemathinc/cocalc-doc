@@ -56,9 +56,10 @@ Extra Compute Resources
 -----------------------
 
 Resources provided by each student project are sufficient for most classes, but if you want your students to go beyond basics, we got you covered! Compute servers allow you to:
-    - work with basic or advanced GPUs
-    - experiment with parallel computations on multiple (and numerous) CPU cores
-    - accommodate large data sets
+
+- work with basic or advanced GPUs
+- experiment with parallel computations on multiple (and numerous) CPU cores
+- accommodate large data sets
 
 You can easily create a compute server for each student with the same configuration or give them full flexibility.
 
