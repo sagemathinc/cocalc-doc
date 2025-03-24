@@ -7,10 +7,12 @@ Instructor Guide
 There are several reasons why you should consider conducting a course on CoCalc:
 
 * **Managed platform:** no time is wasted setting up, maintaining, backing up and securing a flaky platform. Instead, you can sleep while CoCalc ensures everything runs smoothly 24/7.
-* **Focus on helping students:** Jump right into a student's file and assist via a chat on the side.
 * **Proven track record:** CoCalc is used for teaching since 2013 in hundreds of courses by tens of thousands of students.
-* **Student work is isolated:** Each student does course work in a separate project.
+* **Student work is isolated:** Each student does course work in a separate project. Group work is also possible if desired.
+* **Focus on helping students:** Jump right into a student's file at any time, see editing history, attract attention from a side chat.
 * **Control AI usage:** Turn off AI integration for students, enable it only for basic troubleshooting, or leave the full integration - you decide.
+* **Access GPUs and other powerful machines:** Use compute servers when standard project resources are not sufficient.
+* **Flexible billing**: Pay for your students (with limits on compute servers) or let them pay for resources that you configure.
 
 .. hint::
 
@@ -20,6 +22,7 @@ There are several reasons why you should consider conducting a course on CoCalc:
 .. toctree::
    :maxdepth: 2
 
+   teaching-overview
    teaching-create-course
    teaching-upgrade-course
    restrict-student-projects
