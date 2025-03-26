@@ -21,10 +21,6 @@ Enrollments can change after initial course setup. CoCalc offers a convenient wa
 **To delete a student from a course**, open the course file and select the Students tab. Expand the entry for the student to be deleted.
 Click the "Delete" button at right and the confirmation button that appears next.
 
-.. note::
-
-    If you are using a shared project, you will have to remove a deleted student from the collaborators list for the shared project manually. This is a `known issue <https://github.com/sagemathinc/cocalc/issues/4495>`_ which we expect to resolve soon.
-
 .. figure:: img/teaching/delete-student.png
      :width: 90%
      :align: center
