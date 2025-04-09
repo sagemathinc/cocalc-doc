@@ -7,13 +7,13 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoCalc for Short Training Sessions &mdash; CoCalc Manual  documentation</title>
+  <title>Add Students to the Course &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
     <link rel="shortcut icon" href="_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/teaching-workshop.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-add-students.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="_static/documentation_options.js?v=5929fcd5"></script>
@@ -23,13 +23,13 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Student Guide" href="teaching-students.html" />
-    <link rel="prev" title="nbgrader for R" href="howto/nbgrader.html" />
+    <link rel="next" title="Assignments and Handouts" href="teaching-course-management.html" />
+    <link rel="prev" title="Restrict Student Projects" href="restrict-student-projects.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/teaching-workshop.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/teaching-add-students.html"/>
   
 
 </head>
@@ -90,8 +90,8 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="teaching-create-course.html">Creating a New Course</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Licensing Student Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="restrict-student-projects.html">Restrict Student Projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="teaching-add-students.html">Add Students to the Course</a></li>
-<li class="toctree-l2"><a class="reference internal" href="teaching-add-students.html#student-projects">Student Projects</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Add Students to the Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#student-projects">Student Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Assignments and Handouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-after-course.html">After the Course Ends</a></li>
@@ -99,11 +99,7 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="teaching-peer-grading.html">Peer Grading</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="howto/nbgrader.html">nbgrader for R</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">CoCalc for Short Training Sessions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#after-a-session-is-done">After a Session is Done</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#questions">Questions?</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
@@ -132,7 +128,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="teaching-instructors.html">Instructor Guide</a></li>
-      <li class="breadcrumb-item active">CoCalc for Short Training Sessions</li>
+      <li class="breadcrumb-item active">Add Students to the Course</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -149,32 +145,48 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="cocalc-for-short-training-sessions">
-<span id="index-0"></span><span id="teaching-workshop"></span><h1>CoCalc for Short Training Sessions<a class="headerlink" href="#cocalc-for-short-training-sessions" title="Link to this heading"></a></h1>
-<p>We’ve created this note
-in response to inquiries about using CoCalc for short training sessions.</p>
-<p>Regarding courses, upgrades and pricing, the model is flexible.
-In general, the instructor and each student have separate projects, and a license or licenses are applied to all projects.</p>
-<p>You can buy a license key for as short a time as one day. See <a class="reference internal" href="teaching-upgrade-course.html#inst-pays"><span class="std std-ref">site license course setup</span></a> for details on course configuration.</p>
-<section id="after-a-session-is-done">
-<h2>After a Session is Done<a class="headerlink" href="#after-a-session-is-done" title="Link to this heading"></a></h2>
-<p>You might want to remove the license from the course file for a session after it ends.
-Open the course file Configuration tab and remove the license key.
-This will prevent your license from being used up by projects for sessions that have ended.
-The participants of the session that has ended will not lose access to their projects, but they’ll run without upgrades, unless they provide their own.</p>
+  <section id="add-students-to-the-course">
+<span id="adding-students"></span><span id="index-0"></span><h1>Add Students to the Course<a class="headerlink" href="#add-students-to-the-course" title="Link to this heading"></a></h1>
+<p>Typically you will have a list of your students in a spreadsheet. Select the column of emails and copy-paste it to the right box on the <strong>Students</strong> tab of your course file: <a class="reference external" href="https://youtu.be/QTHzEgZAJSw?feature=shared">📺 video</a></p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/add_students.png"><img alt="Put Students' Emails into Add Students Box" src="_images/add_students.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Put Students’ Emails into Add Students Box</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Click <strong>Search by Email Address</strong>, verify that the list of students looks correct, and click <strong>Add all students</strong>:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/add_students_step2.png"><img alt="Add All Students After Searching by Email Addresses" src="_images/add_students_step2.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Add All Students After Searching by Email Addresses</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/added_students.png"><img alt="List of Students in the Course" src="_images/added_students.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">List of Students in the Course</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>In your list of added students email addresses that are followed by <strong>(invited)</strong> do not have an associated CoCalc account yet. This note will disappear as soon as these students sign up.</p>
 </section>
-<section id="questions">
-<h2>Questions?<a class="headerlink" href="#questions" title="Link to this heading"></a></h2>
-<p>If you have questions about any of the above, or would like a quote on a custom course duration or course size, contact us at <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com&quot;">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
-</section>
+<section id="student-projects">
+<h1>Student Projects<a class="headerlink" href="#student-projects" title="Link to this heading"></a></h1>
+<p>A separate and isolated project is created for each student. The owner of this project is you, i.e. the owner of the instructor project that contains the course file. The corresponding student is added to it as a collaborator, as well as all other instructors and TAs, that were added as collaborators on the instructor project. This allows you to check on students work at any time and help them whenever needed.</p>
+<p>Depending on your course configuration, it may be possible to add more collaborators, for example, you may want your students to work in groups.</p>
+<p>Any student who does not have an account on CoCalc yet will be sent an email invitation to create an account and join your course. For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some email services, notably Hotmail and Yahoo Mail, may silently block emails sent from CoCalc. In that case, an invitation will not appear in the inbox or even spam folder of the intended recipient. However, there are no secret or otherwise necessary links in that invitation. Just use another method to direct your students to create an account on CoCalc, <em>using exactly the same email address that you have used to add them to the course.</em></p>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="howto/nbgrader.html" class="btn btn-neutral float-left" title="nbgrader for R" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="teaching-students.html" class="btn btn-neutral float-right" title="Student Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="restrict-student-projects.html" class="btn btn-neutral float-left" title="Restrict Student Projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="teaching-course-management.html" class="btn btn-neutral float-right" title="Assignments and Handouts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -192,7 +204,7 @@ The participants of the session that has ended will not lose access to their pro
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/teaching-workshop.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/teaching-add-students.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!

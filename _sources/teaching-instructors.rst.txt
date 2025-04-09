@@ -26,6 +26,7 @@ There are several reasons why you should consider conducting a course on CoCalc:
    teaching-create-course
    teaching-upgrade-course
    restrict-student-projects
+   teaching-add-students
    teaching-course-management
    teaching-interactions
    teaching-after-course
@@ -34,4 +35,3 @@ There are several reasons why you should consider conducting a course on CoCalc:
    teaching-nbgrader
    howto/nbgrader
    teaching-workshop
-   teaching-upgrade-legacy

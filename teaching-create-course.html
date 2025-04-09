@@ -23,8 +23,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Upgrading Student Projects" href="teaching-upgrade-course.html" />
-    <link rel="prev" title="What to Expect as a Teacher" href="teaching-overview.html" />
+    <link rel="next" title="Licensing Student Projects" href="teaching-upgrade-course.html" />
+    <link rel="prev" title="Overview" href="teaching-overview.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -86,20 +86,19 @@ div.cocalc-header a {
 <li class="toctree-l1"><a class="reference internal" href="service_options.html">Service Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">How-tos</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="teaching-overview.html">What to Expect as a Teacher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-overview.html">Overview</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Creating a New Course</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#create-the-course-project">Create the Course Project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#add-teaching-assistants-to-the-course-project">Add Teaching Assistants to the Course Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-instructors-and-tas">Add Instructors and TAs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-the-course-file">Create the Course File</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#add-students-to-the-course">Add Students to the Course</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#what-do-the-students-get">What do the Students Get?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#reconfigure-student-projects">Reconfigure Student Projects</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#resend-outstanding-email-invites">Resend outstanding email invites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-sections">Multiple Sections</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Upgrading Student Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Licensing Student Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="restrict-student-projects.html">Restrict Student Projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Course Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-add-students.html">Add Students to the Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-add-students.html#student-projects">Student Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Assignments and Handouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-after-course.html">After the Course Ends</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-tips_and_tricks.html">FAQ, Tips and Tricks</a></li>
@@ -107,7 +106,6 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="howto/nbgrader.html">nbgrader for R</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-legacy.html">Upgrading Student Projects (legacy version)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
@@ -155,139 +153,61 @@ div.cocalc-header a {
              
   <section id="creating-a-new-course">
 <span id="create-a-new-course"></span><h1>Creating a New Course<a class="headerlink" href="#creating-a-new-course" title="Link to this heading"></a></h1>
-<p>In this section we will learn how to create a course project,
-how to populate it with a course management file, and how to invite all of your students to join the course.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#create-the-course-project" id="id8">Create the Course Project</a></p></li>
-<li><p><a class="reference internal" href="#add-teaching-assistants-to-the-course-project" id="id9">Add Teaching Assistants to the Course Project</a></p></li>
-<li><p><a class="reference internal" href="#create-the-course-file" id="id10">Create the Course File</a></p></li>
-<li><p><a class="reference internal" href="#add-students-to-the-course" id="id11">Add Students to the Course</a></p></li>
-<li><p><a class="reference internal" href="#what-do-the-students-get" id="id12">What do the Students Get?</a></p></li>
-<li><p><a class="reference internal" href="#reconfigure-student-projects" id="id13">Reconfigure Student Projects</a></p></li>
-<li><p><a class="reference internal" href="#resend-outstanding-email-invites" id="id14">Resend outstanding email invites</a></p></li>
+<li><p><a class="reference internal" href="#create-the-course-project" id="id4">Create the Course Project</a></p></li>
+<li><p><a class="reference internal" href="#add-instructors-and-tas" id="id5">Add Instructors and TAs</a></p></li>
+<li><p><a class="reference internal" href="#create-the-course-file" id="id6">Create the Course File</a></p></li>
+<li><p><a class="reference internal" href="#multiple-sections" id="id7">Multiple Sections</a></p></li>
 </ul>
 </nav>
 <section id="create-the-course-project">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Create the Course Project</a><a class="headerlink" href="#create-the-course-project" title="Link to this heading"></a></h2>
-<p>The first step is to create a project to contain the course. (While it is technically possible to use the same project for multiple courses, in most cases a separate project for each course works better.)</p>
-<p>Sign into CoCalc and click on <strong>Projects</strong> at upper left. Click on <strong>Create New Project</strong>, fill in the <strong>Title</strong>, and click <strong>Create Project</strong>.</p>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Create the Course Project</a><a class="headerlink" href="#create-the-course-project" title="Link to this heading"></a></h2>
+<p>Courses in CoCalc are mostly managed using special <code class="docutils literal notranslate"><span class="pre">.course</span></code> files. In principle, you can create these files in any project and you can have multiple course files in a single project. However, in most cases a dedicated project for each course works best and we recommend you to start with this approach.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>One of the most important reasons to have a separate project for each course is students privacy. Other instructors and TAs are added as collaborators and they will have access to ALL students enrolled into ALL course files in the project. It is your responsibility to ensure that they are allowed to have this access.</p>
+</div>
+<p>So let’s start by creating a new project! Sign into CoCalc and click on <strong>Projects</strong> at upper left or go to <a class="reference external" href="https://cocalc.com/projects">https://cocalc.com/projects</a> Click on <strong>Create Project…</strong>, fill in the <strong>Project Title</strong>, select your <em>Instructor License</em> from the drop down or enter its code, and click <strong>Create Project</strong>. If you don’t have a license yet, click <strong>Buy a License…</strong> to configure it and purchase it, then come back to create the project.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For instructors we recommend a monthly or annual subscription with the run limit equal to the number of courses that you (or your department) are going to teach using CoCalc, or just 1 if you are not sure. It is possible to use the same license for the instructor and for students, but it is often less convenient. When purchasing a license, you may want to give it a descriptive title to easily distinguish it from others:</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/create_new_course_project.png"><img alt="Creating the Course Project" src="_images/create_new_course_project.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/set_instructor_license_title.png"><img alt="Set the Title for the Instructor License" src="_images/set_instructor_license_title.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Creating the Course Project</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Set the Title for the Instructor License</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>The new project will be created. If the project does not automatically start, click the <strong>Start Project</strong> button to start it.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<dl class="simple">
-<dt>When a new project is first opened, you will see a “Free Trial” banner, warning that no license has been applied. You can add a license later (see the <a class="reference internal" href="teaching-upgrade-course.html#course-upgrading-students"><span class="std std-ref">next chapter</span></a>) in one of two ways:</dt><dd><ul class="simple">
-<li><p>there is an option in course configuration to use the same license for the course project that is used for all the students;</p></li>
-<li><p>you can explicitly specify a different license in project Settings, for example you may want more resources or a longer timeout for the course project.</p></li>
-</ul>
-</dd>
-</dl>
 </div>
 </section>
-<section id="add-teaching-assistants-to-the-course-project">
-<span id="teaching-add-ta"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Add Teaching Assistants to the Course Project</a><a class="headerlink" href="#add-teaching-assistants-to-the-course-project" title="Link to this heading"></a></h2>
-<p>As soon as the course project is created, you can add teaching assistants or other teachers to it as <a class="reference internal" href="users.html"><span class="doc">collaborators/users</span></a> . They will also have access to <em>all associated student projects</em>. Do <strong>not</strong> add students in the course as project collaborators!</p>
-<p>If the email address you add as a collaborator is not associated with a CoCalc account, an email will be sent to that address with instructions how to join. Once the account with exactly that email address is created, that new user will be added automatically to all projects with pending invitations.</p>
+<section id="add-instructors-and-tas">
+<span id="teaching-add-ta"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Add Instructors and TAs</a><a class="headerlink" href="#add-instructors-and-tas" title="Link to this heading"></a></h2>
+<p>As soon as the course project is created, you can add teaching assistants or other instructors to it as <a class="reference internal" href="users.html"><span class="doc">collaborators/users</span></a> . They will also have access to <em>all associated student projects</em>. Do <strong>not</strong> add students in the course as project collaborators!</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/add_tas.png"><img alt="Add TAs as Collaborators" src="_images/add_tas.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Add TAs as Collaborators</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>If the email address you use to add a collaborator is not associated with a CoCalc account, an email will be sent to that address with instructions on how to create an account. Once an account <em>with exactly that email address</em> is created, that new user will become your collaborator.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Email is inherently not reliable. It is possible that some messages from CoCalc get dropped even before your recipient’s spam filter. However, the emailed invitation has no secret links or other essential information. So you can use any mode of communication to invite your collaborators, just make sure that the same email address is used to add a collaborator and to create an account.</p>
+</div>
 </section>
 <section id="create-the-course-file">
-<span id="index-1"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Create the Course File</a><a class="headerlink" href="#create-the-course-file" title="Link to this heading"></a></h2>
-<center><iframe
-    width="640" height="360"
-    src="https://www.youtube.com/embed/CieZPy168Zc?si=yE_KZMzXJm5RLmUt"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-</iframe></center><p>Almost all aspects of your course, such as which students are enrolled and assignment management, are controlled by a <code class="docutils literal notranslate"><span class="pre">.course</span></code> file.</p>
-<p>Click <strong>New</strong>, enter the file name, then scroll to <strong>Manage a Course</strong> tile and click it to create the course management file:</p>
-<figure class="align-center" id="id2">
+<span id="index-1"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Create the Course File</a><a class="headerlink" href="#create-the-course-file" title="Link to this heading"></a></h2>
+<p>Almost all aspects of your course are controlled by a <code class="docutils literal notranslate"><span class="pre">.course</span></code> file. Click <strong>New</strong>, enter the file name, then either scroll to <strong>Manage a Course</strong> tile or pick <strong>Course (.course)</strong> from the <strong>More file types…</strong> dropdown to create the course management file. <a class="reference external" href="https://youtu.be/CieZPy168Zc?feature=shared">📺 video</a></p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/create_course_file.png"><img alt="Creating the Course File" src="_images/create_course_file.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Creating the Course File</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p id="index-3"><span id="index-2"></span>You may have more than one course file in a single project, for example you can create different files for different sections. They will be completely independent of each other, allowing not only different groups of students, but also different due dates and different assignments.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Be aware that any teaching assistant you add to the project will have access to <strong>all</strong> course files and <strong>all</strong> student work. It is often preferable to create a separate project for each section.</p>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>Now is a great time to apply the license to the course file as explained in the <a class="reference internal" href="teaching-upgrade-course.html#course-upgrading-students"><span class="std std-ref">next chapter</span></a>!</p>
-</div>
-</section>
-<section id="add-students-to-the-course">
-<span id="adding-students"></span><span id="index-4"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Add Students to the Course</a><a class="headerlink" href="#add-students-to-the-course" title="Link to this heading"></a></h2>
-<center><iframe width="640" height="360" src="https://www.youtube.com/embed/QTHzEgZAJSw?si=rpN-IB75VObHJH7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><p>Open your new course by clicking on the course file. Select the <strong>Students</strong> tab if it is not already shown. You will see a box at upper right where you can add students and search for them in CoCalc. It’s best to add students using their email addresses, because those are unique for CoCalc accounts. However, it is also possible to search for students by their first and last names.</p>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>To add multiple students, you can paste in a comma-separated list of email addresses or names. You can also copy-paste your students’ email addresses from a column of a spreadsheet.</p>
-</div>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/add-students-3.png"><img alt="Put Students' Emails into Add Students Box" src="_images/add-students-3.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">Put Students’ Emails into Add Students Box</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>After running the search by clicking <strong>Search</strong> or hitting Shift-Enter, you can select which students you want add from the search results (use Ctrl-click or Cmd-click for more than 1 student), or just click the <strong>Add all students</strong> button:</p>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/add-students-4.png"><img alt="Add All Students After Searching by Email Addresses" src="_images/add-students-4.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">Add All Students After Searching by Email Addresses</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>Next, the student projects will be created. Please be patient until all students are processed and do not close CoCalc. If the process appears stalled after creating some number of student projects, you can refresh your browser to check for updated results.</p>
-<figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/add-students-5.png"><img alt="List of Students in the Course" src="_images/add-students-5.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">List of Students in the Course</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>If your project (the one with the <code class="docutils literal notranslate"><span class="pre">.course</span></code> file) has network access (this is provided when any CoCalc license has been applied), any student who does not have an account on CoCalc will be sent an email invitation to create an account and join your course. For security reasons, CoCalc does not automatically send email invitations to students added if they already have a CoCalc account.</p>
-<p>Some important points:</p>
-<ul class="simple">
-<li><p>Email addresses that are followed by <strong>(invited)</strong> do not have a CoCalc account yet.
-This note will disappear as soon as they sign up.</p></li>
-<li><p>You can see when each student last used the course project. In this case – never!</p></li>
-<li><p>The <strong>! Free Trial</strong> warning next to each student shows that they are running this course on free servers.
-It is <strong>strongly</strong> recommended that you upgrade this to members-only servers for your students, see the <a class="reference internal" href="teaching-upgrade-course.html#course-upgrading-students"><span class="std std-ref">next chapter</span></a>.</p></li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Some email services, notably Hotmail and Yahoo Mail, may silently block emails sent from our service. In that case, an invitation to sign up will not appear in the inbox or spam folder of the intended recipient and another method must be used to communicate sign-up information to the student.</p>
-</div>
-</section>
-<section id="what-do-the-students-get">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">What do the Students Get?</a><a class="headerlink" href="#what-do-the-students-get" title="Link to this heading"></a></h2>
-<p>On being invited to a course, each student will have a project created for them in their CoCalc account that corresponds to the course. Each project will have you and the course teaching assistants set as collaborators. This allows you to access student’s work at any time and help them with their work.</p>
-<p>Each student’s course project will have its own resources according to the license configured in the course file. You can learn more about licenses in the <a class="reference internal" href="teaching-upgrade-course.html#course-upgrading-students"><span class="std std-ref">next chapter</span></a> or the <a class="reference internal" href="upgrade-guide.html"><span class="doc">Project Upgrades</span></a>.</p>
-</section>
-<section id="reconfigure-student-projects">
-<span id="index-6"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">Reconfigure Student Projects</a><a class="headerlink" href="#reconfigure-student-projects" title="Link to this heading"></a></h2>
-<p>In the course Configuration tab on the right, click <cite>Reconfigure all projects</cite> to ensure student projects have correct students and teaching assistants, titles and descriptions.
-Doing so will also resend email invitations to students who have not already signed up for CoCalc.</p>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="_images/course-reconfigure.png"><img alt="button to reconfigure all student projects in lower right of course Configuration tab" src="_images/course-reconfigure.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">“Reconfigure all projects” at lower right in course Configuration</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+<p><span class="caption-text">Creating the Course File</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="resend-outstanding-email-invites">
-<span id="index-8"></span><span id="index-7"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">Resend outstanding email invites</a><a class="headerlink" href="#resend-outstanding-email-invites" title="Link to this heading"></a></h2>
-<p>In the course Configuration tab on the right, click <cite>Reinvite students</cite> to send/resend an email invitation to all students who do not yet have an account on CoCalc. This will send at most one email per student per day.</p>
-<figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="_images/reinvite-students.png"><img alt="button to resend email invitations to students in lower right of course Configuration tab" src="_images/reinvite-students.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-text">“Reinvite students” at lower right in course Configuration</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
-</figcaption>
-</figure>
+<section id="multiple-sections">
+<span id="index-3"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Multiple Sections</a><a class="headerlink" href="#multiple-sections" title="Link to this heading"></a></h2>
+<p>As mentioned before, you may have more than one course file in a single project. For example you can create different files for different sections of the same course. They will be mostly independent of each other, allowing not only different groups of students, but also different due dates and different assignments. They will have the same TAs (all collaborators on the course project). <strong>Copy Course Configuration</strong> panel under <strong>Configuration</strong> tab may be useful to control what other aspects are common.</p>
 </section>
 </section>
 
@@ -295,8 +215,8 @@ Doing so will also resend email invitations to students who have not already sig
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="teaching-overview.html" class="btn btn-neutral float-left" title="What to Expect as a Teacher" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="teaching-upgrade-course.html" class="btn btn-neutral float-right" title="Upgrading Student Projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="teaching-overview.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="teaching-upgrade-course.html" class="btn btn-neutral float-right" title="Licensing Student Projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

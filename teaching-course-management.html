@@ -7,7 +7,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Course Management &mdash; CoCalc Manual  documentation</title>
+  <title>Assignments and Handouts &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Collaboration" href="teaching-interactions.html" />
-    <link rel="prev" title="Restrict Student Projects" href="restrict-student-projects.html" />
+    <link rel="prev" title="Add Students to the Course" href="teaching-add-students.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -86,20 +86,22 @@ div.cocalc-header a {
 <li class="toctree-l1"><a class="reference internal" href="service_options.html">Service Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">How-tos</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="teaching-overview.html">What to Expect as a Teacher</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-overview.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-create-course.html">Creating a New Course</a></li>
-<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Upgrading Student Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-course.html">Licensing Student Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="restrict-student-projects.html">Restrict Student Projects</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Course Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-a-new-handout">Create a New Handout</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-a-new-assignment">Create a New Assignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-add-students.html">Add Students to the Course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teaching-add-students.html#student-projects">Student Projects</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Assignments and Handouts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-a-handout">Create a Handout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#distribute-a-handout">Distribute a Handout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-an-assignment">Create an Assignment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#distribute-an-assignment">Distribute an Assignment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#check-student-view">Check “Student View”</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#collect-an-assignment">Collect an Assignment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#grade-an-assignment">Grade an Assignment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#return-an-assignment-without-grading">Return an Assignment Without Grading</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#export-grades">Export Grades</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#return-an-assignment">Return an Assignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-grades">Export Grades</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
@@ -109,7 +111,6 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="teaching-nbgrader.html">Teaching with nbgrader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="howto/nbgrader.html">nbgrader for R</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-workshop.html">CoCalc for Short Training Sessions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="teaching-upgrade-legacy.html">Upgrading Student Projects (legacy version)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
@@ -138,7 +139,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="teaching-instructors.html">Instructor Guide</a></li>
-      <li class="breadcrumb-item active">Course Management</li>
+      <li class="breadcrumb-item active">Assignments and Handouts</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -155,149 +156,170 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="course-management">
-<h1>Course Management<a class="headerlink" href="#course-management" title="Link to this heading"></a></h1>
-<p>No matter what you’ve added in the instructor’s view of the course, the students will not see any files until you explicitly assign them.</p>
+  <section id="assignments-and-handouts">
+<h1>Assignments and Handouts<a class="headerlink" href="#assignments-and-handouts" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#create-a-new-handout" id="id1">Create a New Handout</a></p></li>
-<li><p><a class="reference internal" href="#create-a-new-assignment" id="id2">Create a New Assignment</a></p></li>
-<li><p><a class="reference internal" href="#distribute-an-assignment" id="id3">Distribute an Assignment</a></p></li>
-<li><p><a class="reference internal" href="#check-student-view" id="id4">Check “Student View”</a></p></li>
-<li><p><a class="reference internal" href="#collect-an-assignment" id="id5">Collect an Assignment</a></p></li>
-<li><p><a class="reference internal" href="#grade-an-assignment" id="id6">Grade an Assignment</a></p></li>
-<li><p><a class="reference internal" href="#return-an-assignment-without-grading" id="id7">Return an Assignment Without Grading</a></p></li>
-<li><p><a class="reference internal" href="#export-grades" id="id8">Export Grades</a></p></li>
-<li><p><a class="reference internal" href="#return-an-assignment" id="id9">Return an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#create-a-handout" id="id16">Create a Handout</a></p></li>
+<li><p><a class="reference internal" href="#distribute-a-handout" id="id17">Distribute a Handout</a></p></li>
+<li><p><a class="reference internal" href="#create-an-assignment" id="id18">Create an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#distribute-an-assignment" id="id19">Distribute an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#check-student-view" id="id20">Check “Student View”</a></p></li>
+<li><p><a class="reference internal" href="#collect-an-assignment" id="id21">Collect an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#grade-an-assignment" id="id22">Grade an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#return-an-assignment" id="id23">Return an Assignment</a></p></li>
+<li><p><a class="reference internal" href="#export-grades" id="id24">Export Grades</a></p></li>
 </ul>
 </nav>
-<section id="create-a-new-handout">
-<span id="create-handout"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id1" role="doc-backlink">Create a New Handout</a><a class="headerlink" href="#create-a-new-handout" title="Link to this heading"></a></h2>
-<center><iframe
-    width="640" height="360"
-    src="https://www.youtube.com/embed/j8YUwPSm-1g?si=kAiizkvK_RW1DqU2"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-</iframe></center><p>A handout consists of a folder that contains one or more files to be distributed to your students.</p>
-<p>Create a folder called <strong>Handouts</strong> in the root directory of your course project. Within this folder create a subfolder called, say, <strong>Handout1</strong> and populate it with one or more files for the handout. These files can be anything - text, Markdown, code, pdf, and may contain subfolders.</p>
-<p>Open the <strong>.course</strong> file and click on the <strong>Handouts</strong> tab</p>
-<a class="reference internal image-reference" href="_images/handout-course.png"><img alt="selecting the Handouts tab" src="_images/handout-course.png" style="width: 100%;" /></a>
-<p>Type <strong>handout</strong> in the search box on the right hand of the screen and press enter. Note that search is case-insensitive.</p>
-<p>The system will look for any folders with <strong>Handout1</strong> in their path name and  return a set of options. Highlight the one you want and click on <strong>Add selected handout</strong>.</p>
-<a class="reference internal image-reference" href="_images/find-handout.png"><img alt="entering a partial handout folder path in the handout search panel at right" src="_images/find-handout.png" style="width: 100%;" /></a>
-<p>The new handout will be added to the list of handouts available for the course.</p>
+<p>An “assignment” in CoCalc is a folder/directory with arbitrary files. These files can be anything: Jupyter Notebooks, (small) data files, text, Markdown, code, PDF, or even subfolders. All these files are sent to students to work on, then collected, graded, and returned to students. A “handout” is the same, but with no actions after sending it to students. Let’s start with handouts since they are simpler and you may want to use them first, e.g. to distribute a syllabus or some sample/training files.</p>
+<section id="create-a-handout">
+<span id="create-handout"></span><span id="index-0"></span><h2><a class="toc-backref" href="#id16" role="doc-backlink">Create a Handout</a><a class="headerlink" href="#create-a-handout" title="Link to this heading"></a></h2>
+<p>As mentioned above, a handout is a folder that contains one or more files to be distributed to your students. For example, you may want to create a folder called <code class="docutils literal notranslate"><span class="pre">Handouts</span></code> in the root of your course project, then a subfolder <code class="docutils literal notranslate"><span class="pre">Syllabus</span></code> within it, and copy or upload <code class="docutils literal notranslate"><span class="pre">syllabus.pdf</span></code> there.</p>
+<p>To register this handout in your course, go to the <strong>Handouts</strong> tab of the <code class="docutils literal notranslate"><span class="pre">.course</span></code> file, click <strong>Add Handout…</strong>, navigate to <strong>Syllabus</strong> subfolder, select it, and click <strong>Add 1 handout</strong>: <a class="reference external" href="https://youtu.be/j8YUwPSm-1g?feature=shared">📺 video</a></p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/add_handout.png"><img alt="Add a Handout" src="_images/add_handout.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Add a Handout</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="create-a-new-assignment">
-<span id="create-assignment"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Create a New Assignment</a><a class="headerlink" href="#create-a-new-assignment" title="Link to this heading"></a></h2>
+<section id="distribute-a-handout">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Distribute a Handout</a><a class="headerlink" href="#distribute-a-handout" title="Link to this heading"></a></h2>
+<p>Next, you need to “distribute” your handout to students, i.e. create a copy of all of its files in each student project. Once done, students can do whatever they want with their copies, including editing them, discussing in side chats, or even deleting. On the <strong>Handouts</strong> tab you will see that it is not transfered to any of the students yet:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/handout_before_distributing.png"><img alt="A Handout Before Distributing" src="_images/handout_before_distributing.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">A Handout Before Distributing</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>You can either click <strong>Distribute</strong> to send it to all students, or expand the handout and be able to send it to selected students only:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/handout_expanded.png"><img alt="Expanded View of a Handout" src="_images/handout_expanded.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Expanded View of a Handout</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once a handout is distributed, you can use the course interface to access either your “master copy” OR the copy of any enrolled student. While it may not be needed very often for handouts, it is definitely a very useful feature for assignments!</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/handout_after_distributing.png"><img alt="A Handout After Distributing" src="_images/handout_after_distributing.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">A Handout After Distributing</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="create-an-assignment">
+<span id="create-assignment"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id18" role="doc-backlink">Create an Assignment</a><a class="headerlink" href="#create-an-assignment" title="Link to this heading"></a></h2>
 <p>An assignment is a folder that contains one or more files that can be distributed to your students and collected at some future time for grading.</p>
-<p>Create a folder called <strong>Assignments</strong> in the root directory of your course project.
-Within this folder create a subfolder called, say, <strong>Assignment1</strong> and populate it with files that contains questions or problems for your students to answer. For example, an assignment can contain a Jupyter notebook and data files, with instructions for a programming exercise.</p>
-<p>Open the <strong>.course</strong> file and click on the <strong>Assignments</strong> tab.
-Enter <strong>assignment1</strong> in the search box on the right hand of the screen and press enter.</p>
-<p>The system will return a list of folders with <strong>assignment1</strong> in their path name. Highlight the one you want and click on <strong>Add assignment</strong>.</p>
-<a class="reference internal image-reference" href="_images/find_assignment.png"><img alt="entering a partial assignment folder path in the assignment search panel at right" src="_images/find_assignment.png" style="width: 100%;" /></a>
-<p>The new assignment will be added to the list of assignments available for this course.</p>
-<a class="reference internal image-reference" href="_images/assignment_list.png"><img alt="first assignment has been added to assignment list" src="_images/assignment_list.png" style="width: 75%;" /></a>
+<p>The basic process of creating an assignment and registering it in your course is exactly the same as for a handout described above, you just work in the <strong>Assignments</strong> tab instead of <strong>Handouts</strong>.</p>
 </section>
 <section id="distribute-an-assignment">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Distribute an Assignment</a><a class="headerlink" href="#distribute-an-assignment" title="Link to this heading"></a></h2>
-<p>Click on the assignment in the assignment list.
-When the assignment opens, set the <strong>Due</strong> date. You can do this in the text area, or using the calendar and clock widgets to the right. Click on the <strong>Assign</strong> button to distribute to all students in the course.</p>
-<a class="reference internal image-reference" href="_images/send_assignment.png"><img alt="distributing an assignment to all students" src="_images/send_assignment.png" style="width: 100%;" /></a>
-<p>Alternatively, you can distribute just to individual students.</p>
-<p>When an assignment is distributed to a student, a <strong>copy</strong> of the assignment folder will appear in the student project.</p>
-<p>Advise the students that all work on the assignment should take place in this folder. Any work performed outside of this folder will not be collected.</p>
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Distribute an Assignment</a><a class="headerlink" href="#distribute-an-assignment" title="Link to this heading"></a></h2>
+<p>Distributing an assignment is also very similar to distributing a handout covered above, but because of multiple actions associated to an assignment, you have to expand its record:</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/assignment_list.png"><img alt="Assignments List" src="_images/assignment_list.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Assignments List</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>You can optionally set the <strong>Due Date</strong>. Please note that at the moment this field serves only informational purposes, it is necessary for an instructor or a TA to manually initiate collection process. It is also possible to associate an assignment with a particular compute server, if you are using them. Once ready, click <strong>Assign</strong>:</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/assign_assignment.png"><img alt="Assign an Assignment" src="_images/assign_assignment.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Assign an Assignment</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When an assignment is distributed students, a copy of the assignment folder will appear in each student project. These copied folders are the ones that will be collected later. Please advise your students to NOT rename or move such folders!</p>
+</div>
 </section>
 <section id="check-student-view">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Check “Student View”</a><a class="headerlink" href="#check-student-view" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">Check “Student View”</a><a class="headerlink" href="#check-student-view" title="Link to this heading"></a></h2>
 <p>If you want to see what <em>exactly</em> your students will see and experience, the best way is to use your other email to create another CoCalc account (use incognito mode in your browser to prevent interference with your main account), add this “test student” to your course, and assign an assignment just to this test student before the whole class.</p>
 </section>
 <section id="collect-an-assignment">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Collect an Assignment</a><a class="headerlink" href="#collect-an-assignment" title="Link to this heading"></a></h2>
-<p>After an assignment has been made, a <strong>Collect</strong> icon appears next to each student.
-Clicking on one of these will make a copy of the student’s assignment folder to your account.
-The entire folder will be copied including any extra files the student may have created.</p>
-<p>Alternatively, click on the <strong>Collect</strong> icon in the top row to collect from all students simultaneously.</p>
-<a class="reference internal image-reference" href="_images/collect_assignment.png"><img alt="collecting an assignment from all students" src="_images/collect_assignment.png" style="width: 100%;" /></a>
-<p>You should make sure that your project has enough disk space to accommodate this.
-It may be necessary to purchase an upgrade if you need more than the free allowance (currently 3 GB per project).</p>
-<p>Once the assignment has been collected, anything the student subsequently does in <strong>their</strong> copy will not be reflected in <strong>your</strong> copy.</p>
-<p>If you click on the <strong>Files</strong> icon and go to the root directory of the course project, you’ll see that a new folder will have been created with the name <strong>[your_course_name]-collect</strong></p>
-<a class="reference internal image-reference" href="_images/filelist_with_collect.png"><img alt="folder of collected assignment files appears in files list in instructor project" src="_images/filelist_with_collect.png" style="width: 100%;" /></a>
-<p>Navigating within this folder, you’ll find that it has a similar file structure to the original assignment.
-For example, for this demonstration we had the structure <cite>/assignments/Assignment1</cite> which appears in the collected folder as <cite>[your_course_name]-collect/assignments/Assignment1</cite>.
-Entering this folder will give a view of all students’ versions of this assignment</p>
-<a class="reference internal image-reference" href="_images/collected_assignments.png"><img alt="&quot;collect&quot; folder for each student" src="_images/collected_assignments.png" style="width: 100%;" /></a>
-<p>The folder corresponding to each collected assignment will have been given a unique random name.
-Navigating inside this folder, you will see all collected files along with a text file whose filename identifies the student.</p>
-<a class="reference internal image-reference" href="_images/Identify_student.png"><img alt="student name appears under the folder with the" src="_images/Identify_student.png" style="width: 100%;" /></a>
-<p>At this point, you can open and mark the student’s returned assignment.</p>
-<p>An easier interface for opening a student’s collected assignment is via the <strong>.course</strong> file.
-Simply click on the <strong>Open</strong> icon corresponding to the student you are interested in and you’ll be taken to the folder described above.</p>
-<a class="reference internal image-reference" href="_images/open_assignment.png"><img alt="opening a collected assignment in the instructor project" src="_images/open_assignment.png" style="width: 100%;" /></a>
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">Collect an Assignment</a><a class="headerlink" href="#collect-an-assignment" title="Link to this heading"></a></h2>
+<p>“Collect an assignment” means “copy all current files from the student project into the instructor project”. Students still have access to their own copies and can continue working on them if desired, but changes will not be reflected in the instructor project. (Unless the files are manually collected again.)</p>
+<p>After an assignment was assigned, <strong>Collect</strong> buttons appear:</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/collect_assignment.png"><img alt="Collect an Assignment" src="_images/collect_assignment.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Collect an Assignment</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once collection finishes, you can access both the collected copy in your project for grading and the copy that still remains in the student project (for example, if you want to take a look at the edit history):</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/access_collected_assignments.png"><img alt="Access Collected Assignments" src="_images/access_collected_assignments.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Access Collected Assignments</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>If you want to access collected files directly in the file system, they are easy to find in the File Explorer in the folder named <strong>[course_name]-collect</strong>:</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/collected_folder.png"><img alt="Folder With Collected Assignments" src="_images/collected_folder.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Folder With Collected Assignments</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The internal structure of this folder corresponds to the one you use for your assignments, but each student work is in a subfolder with a unique random name. It does have a file, however, identifying the student.</p>
 </section>
 <section id="grade-an-assignment">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Grade an Assignment</a><a class="headerlink" href="#grade-an-assignment" title="Link to this heading"></a></h2>
-<p>There is a number of ways to do (or avoid!) grading in CoCalc.
-A very useful function for formative assessment is <a class="reference internal" href="teaching-peer-grading.html"><span class="doc">Peer Grading</span></a>.
-For automatic grading, see <a class="reference internal" href="teaching-nbgrader.html"><span class="doc">Teaching with nbgrader</span></a>.</p>
-<p>You may annotate the student’s assignment by modifying the collected file(s) in any way you like. The student will get a copy of everything you do after you return it.</p>
-<p>When working with Jupyter notebooks, it can be useful to make annotations in markdown cells and set the color of the annotations to stand out.</p>
-<p>You can change the font color in a markdown cell in Text edit mode using the font options toolbar, as explained in the section on <a class="reference internal" href="rich-text.html#font-options"><span class="std std-ref">Font options</span></a>.</p>
-<p>Or you can edit the cell in Markdown edit mode and enter the HTML tags for desired color explicitly:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;span style=&#39;color:red&#39;&gt;Great work!&lt;/span&gt;
-</pre></div>
-</div>
-<a class="reference internal image-reference" href="_images/feedback.png"><img alt="highlighting instructor remark using html in a jupyter notebook markdown cell" src="_images/feedback.png" style="width: 50%;" /></a>
-<p>Once you’ve finished marking and commenting on the student’s notebook, you can enter a grade via the <strong>.course</strong> file.
-Click on the <strong>Enter Grade</strong> button to open up the grade entry text box and enter the grade.
-This can be a number or any other string that makes sense for your course.</p>
-<a class="reference internal image-reference" href="_images/Enter_grade.png"><img alt="entering a grade for one student's assignment" src="_images/Enter_grade.png" style="width: 100%;" /></a>
-</section>
-<section id="return-an-assignment-without-grading">
-<span id="skip-entering-grades"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Return an Assignment Without Grading</a><a class="headerlink" href="#return-an-assignment-without-grading" title="Link to this heading"></a></h2>
-<p>You can provide comments to students by editing student files that you have collected, or by adding files to the “-course-collect” folder for the assignment and student in question.</p>
-<p>If you click the “Skip entering grades” button before returning assignments, your notes and any added files will be sent to the student projects, but the GRADE.md file will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.</p>
-<a class="reference internal image-reference" href="_images/non-nbg-2.png"><img alt="Skip entering grades button in Assignments tab of course file" src="_images/non-nbg-2.png" style="width: 100%;" /></a>
-</section>
-<section id="export-grades">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Export Grades</a><a class="headerlink" href="#export-grades" title="Link to this heading"></a></h2>
-<p>It is possible to export grades for all assignments as either a .csv file or as executable Python code.
-The <strong>Export grades</strong> function is available in the <strong>Configuration</strong> tab of the <strong>.course</strong> file.</p>
-<a class="reference internal image-reference" href="_images/Export_grades.png"><img alt="exporting grades for all assignments from the Configuration tab" src="_images/Export_grades.png" style="width: 66%;" /></a>
-<p>The .csv file format looks like this:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Course &#39;Autumn_2016_PHY001&#39;
-# exported 2016-06-13T13:24:40.141Z
-Name,Email,&quot;assignments/Assignment1&quot;,&quot;Notes&quot;
-&quot;Mike Croucher&quot;,&quot;some.email@sheffield.ac.uk&quot;,&quot;80&quot;,&quot;&quot;
-&quot;Mike_test &quot;,&quot;some_other_email@sheffield.ac.uk&quot;,&quot;100&quot;,&quot;&quot;
-&quot;bar@sheffield.ac.uk&quot;,&quot;bar@sheffield.ac.uk&quot;,&quot;90&quot;,&quot;&quot;
-&quot;foo@sheffield.ac.uk&quot;,&quot;foo@sheffield.ac.uk&quot;,&quot;70&quot;,&quot;&quot;
-</pre></div>
-</div>
-<p>The corresponding Python code looks like this:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>course = &#39;Autumn_2016_PHY001&#39;
-exported = &#39;2016-06-13T13:26:19.407Z&#39;
-assignments = [&#39;assignments/Assignment1&#39;,&#39;Notes&#39;]
-students = [
-    {&#39;name&#39;:&#39;Mike Croucher&#39;, &#39;email&#39;:&#39;some.email@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;80&#39;,&#39;&#39;]},
-    {&#39;name&#39;:&#39;Mike_test &#39;, &#39;email&#39;:&#39;some_other_email@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;100&#39;,&#39;&#39;]},
-    {&#39;name&#39;:&#39;bar@sheffield.ac.uk&#39;, &#39;email&#39;:&#39;bar@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;90&#39;,&#39;&#39;]},
-    {&#39;name&#39;:&#39;foo@sheffield.ac.uk&#39;, &#39;email&#39;:&#39;foo@sheffield.ac.uk&#39;, &#39;grades&#39;:[&#39;70&#39;,&#39;&#39;]},
-]
-</pre></div>
-</div>
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Grade an Assignment</a><a class="headerlink" href="#grade-an-assignment" title="Link to this heading"></a></h2>
+<p>There is a number of ways to do (or avoid!) grading in CoCalc:</p>
+<ul class="simple">
+<li><p>A very useful function for formative assessment is <a class="reference internal" href="teaching-peer-grading.html"><span class="doc">Peer Grading</span></a>.</p></li>
+<li><p>For automatic grading see <a class="reference internal" href="teaching-nbgrader.html"><span class="doc">Teaching with nbgrader</span></a>.</p></li>
+<li><p>Open each collected folder one-by-one and annotate the files in any way you like.</p></li>
+</ul>
+<p>When working with Jupyter notebooks, it can be convenient to make annotations in markdown cells and set the color of the annotations to stand out. You can change the font color in a markdown cell in <strong>Text</strong> edit mode using the font options toolbar:</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/colored_feedback_text.png"><img alt="Leaving Feedback in Text Mode" src="_images/colored_feedback_text.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Leaving Feedback in Text Mode</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Alternatively, it may be more convenient, e.g. for copy-pasting comment templates, to use <strong>Markdown</strong> mode with explicit HTML tags:</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="_images/colored_feedback_markdown.png"><img alt="Leaving Feedback in Markdown Mode" src="_images/colored_feedback_markdown.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Leaving Feedback in Markdown Mode</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Once done, enter a grade in the course file. “A grade” is an arbitrary text, so you can use whatever system you prefer:</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="_images/graded_assignment.png"><img alt="List of Graded Assignments" src="_images/graded_assignment.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">List of Graded Assignments</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The grades and comments are stored in <code class="docutils literal notranslate"><span class="pre">GRADE.md</span></code> files inside each student folder.</p>
 </section>
 <section id="return-an-assignment">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Return an Assignment</a><a class="headerlink" href="#return-an-assignment" title="Link to this heading"></a></h2>
-<p>Once an assignment has been graded, the <em>Return</em> to student button appears.</p>
-<a class="reference internal image-reference" href="_images/return_button.png"><img alt="return buttons appear as assignments are graded" src="_images/return_button.png" style="width: 100%;" /></a>
-<p>Clicking on this sends a copy of the graded assignment back to the student.
-It appears in their assignments folder like this:</p>
-<a class="reference internal image-reference" href="_images/returned_assignment.png"><img alt="in the student project, a new folder appears for returned work from the instructor" src="_images/returned_assignment.png" style="width: 100%;" /></a>
-<p>Note that the student now has both their original assignment <strong>and</strong> a copy of the returned, graded assignment.</p>
+<span id="skip-entering-grades"></span><h2><a class="toc-backref" href="#id23" role="doc-backlink">Return an Assignment</a><a class="headerlink" href="#return-an-assignment" title="Link to this heading"></a></h2>
+<p>Once an assignment has been graded, <strong>Return</strong> buttons appear. Although you can click <strong>Skip entering grades</strong> and return just your notes and any added files to the students. In that case <code class="docutils literal notranslate"><span class="pre">GRADE.md</span></code> files will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.</p>
+<p>Returned assignments are copied to a folder separate from student’s work:</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="_images/returned_assignment.png"><img alt="Returned Graded Assignment in Student Project" src="_images/returned_assignment.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Returned Graded Assignment in Student Project</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="_images/returned_assignment_files.png"><img alt="Files of a Graded Assignment" src="_images/returned_assignment_files.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Files of a Graded Assignment</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="export-grades">
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">Export Grades</a><a class="headerlink" href="#export-grades" title="Link to this heading"></a></h2>
+<p>To export grades for all assignments as a CSV file (or JSON, or Python) go to <strong>Export grades</strong> panel on the <strong>Actions</strong> tab of your course file:</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="_images/export_grades.png"><img alt="Export Grades" src="_images/export_grades.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Export Grades</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 
@@ -305,7 +327,7 @@ It appears in their assignments folder like this:</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="restrict-student-projects.html" class="btn btn-neutral float-left" title="Restrict Student Projects" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="teaching-add-students.html" class="btn btn-neutral float-left" title="Add Students to the Course" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="teaching-interactions.html" class="btn btn-neutral float-right" title="Collaboration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
