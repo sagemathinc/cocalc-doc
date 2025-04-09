@@ -58,8 +58,7 @@ Click the "Undelete" button at right to restore the student to the course. There
 
 After a student is undeleted:
 
-- If you are using a CoCalc site license, upgrades to the student project will be restored the next time it is started.
-- If you are using a subscription or course plan, you will need to open the Configuration tab for the course and add back the upgrades to the student project. See :ref:`course-upgrading-students-legacy` for details.
+- If you are providing a license to your students, upgrades to the student project will be restored the next time it is started.
 - To add handouts and assignments that the student may have missed when their student record was deleted, see the documentation on how to :ref:`catch up a student <copy-missing-files>`.
 
 **To completely delete a student entry from a course** see :ref:`course-empty-trash` below.

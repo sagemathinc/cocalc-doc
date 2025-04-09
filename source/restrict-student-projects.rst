@@ -11,7 +11,7 @@ Some CoCalc features may not be compatible with course content created by an ins
 
 In the course **Configuration** tab, check any of the boxes under **Restrict Student Projects** to remove the corresponding functionality from student projects. Hover over any option to get a detailed description:
 
-.. figure:: img/restrict_students.png
+.. figure:: img/teaching/restrict_students.png
      :width: 90%
      :align: center
      :alt: Restrict Student Projects

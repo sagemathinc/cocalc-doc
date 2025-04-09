@@ -1,7 +1,7 @@
-What to Expect as a Teacher
-===========================
+Overview
+========
 
-The goal of this page is to give you a good idea of what will happen if you teach a course or run a workshop using CoCalc. :doc:`teaching-instructors` has details on individual aspects of the process, but may take a while to go through.
+The goal of this page is to give you a good idea of what will happen when you teach a course or run a workshop using CoCalc. Our :doc:`teaching-instructors` has details on individual aspects of the process, but may take a while to go through.
 
 Setting up a Course
 -------------------

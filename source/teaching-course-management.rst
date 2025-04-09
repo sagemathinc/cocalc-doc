@@ -1,92 +1,97 @@
-=====================
-Course Management
-=====================
-
-No matter what you've added in the instructor's view of the course, the students will not see any files until you explicitly assign them.
+Assignments and Handouts
+************************
 
 .. contents::
    :local:
    :depth: 2
 
+An "assignment" in CoCalc is a folder/directory with arbitrary files. These files can be anything: Jupyter Notebooks, (small) data files, text, Markdown, code, PDF, or even subfolders. All these files are sent to students to work on, then collected, graded, and returned to students. A "handout" is the same, but with no actions after sending it to students. Let's start with handouts since they are simpler and you may want to use them first, e.g. to distribute a syllabus or some sample/training files.
+
 .. index:: Courses; create handout
 .. _create-handout:
 
-Create a New Handout
-===============================
-
-.. raw:: html
-
-    <center><iframe
-        width="640" height="360"
-        src="https://www.youtube.com/embed/j8YUwPSm-1g?si=kAiizkvK_RW1DqU2"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe></center>
+Create a Handout
+================
     
-A handout consists of a folder that contains one or more files to be distributed to your students.
+As mentioned above, a handout is a folder that contains one or more files to be distributed to your students. For example, you may want to create a folder called ``Handouts`` in the root of your course project, then a subfolder ``Syllabus`` within it, and copy or upload ``syllabus.pdf`` there.
 
-Create a folder called **Handouts** in the root directory of your course project. Within this folder create a subfolder called, say, **Handout1** and populate it with one or more files for the handout. These files can be anything - text, Markdown, code, pdf, and may contain subfolders.
+To register this handout in your course, go to the **Handouts** tab of the ``.course`` file, click **Add Handout...**, navigate to **Syllabus** subfolder, select it, and click **Add 1 handout**: `📺 video <yt-fullscreen_>`_
 
-Open the **.course** file and click on the **Handouts** tab
+.. _yt-fullscreen: https://youtu.be/j8YUwPSm-1g?feature=shared
 
-.. image:: img/teaching/handout-course.png
-     :width: 100%
-     :alt: selecting the Handouts tab
+.. figure:: img/teaching/add_handout.png
+    :width: 90%
+    :align: center
+    :alt: Add a Handout
+    
+    Add a Handout
 
-Type **handout** in the search box on the right hand of the screen and press enter. Note that search is case-insensitive.
+Distribute a Handout
+====================
 
-The system will look for any folders with **Handout1** in their path name and  return a set of options. Highlight the one you want and click on **Add selected handout**.
+Next, you need to "distribute" your handout to students, i.e. create a copy of all of its files in each student project. Once done, students can do whatever they want with their copies, including editing them, discussing in side chats, or even deleting. On the **Handouts** tab you will see that it is not transfered to any of the students yet:
 
-.. image:: img/teaching/find-handout.png
-     :width: 100%
-     :alt: entering a partial handout folder path in the handout search panel at right
+.. figure:: img/teaching/handout_before_distributing.png
+    :width: 90%
+    :align: center
+    :alt: A Handout Before Distributing
+    
+    A Handout Before Distributing
 
-The new handout will be added to the list of handouts available for the course.
+You can either click **Distribute** to send it to all students, or expand the handout and be able to send it to selected students only:
+
+.. figure:: img/teaching/handout_expanded.png
+    :width: 90%
+    :align: center
+    :alt: Expanded View of a Handout
+    
+    Expanded View of a Handout
+
+Once a handout is distributed, you can use the course interface to access either your "master copy" OR the copy of any enrolled student. While it may not be needed very often for handouts, it is definitely a very useful feature for assignments!
+
+.. figure:: img/teaching/handout_after_distributing.png
+    :width: 90%
+    :align: center
+    :alt: A Handout After Distributing
+    
+    A Handout After Distributing
+
 
 .. index:: Courses; create assignment
 .. _create-assignment:
 
-Create a New Assignment
-===============================
-
+Create an Assignment
+====================
 
 An assignment is a folder that contains one or more files that can be distributed to your students and collected at some future time for grading.
 
-Create a folder called **Assignments** in the root directory of your course project.
-Within this folder create a subfolder called, say, **Assignment1** and populate it with files that contains questions or problems for your students to answer. For example, an assignment can contain a Jupyter notebook and data files, with instructions for a programming exercise.
+The basic process of creating an assignment and registering it in your course is exactly the same as for a handout described above, you just work in the **Assignments** tab instead of **Handouts**.
 
-Open the **.course** file and click on the **Assignments** tab.
-Enter **assignment1** in the search box on the right hand of the screen and press enter.
-
-The system will return a list of folders with **assignment1** in their path name. Highlight the one you want and click on **Add assignment**.
-
-.. image:: img/teaching/find_assignment.png
-     :width: 100%
-     :alt: entering a partial assignment folder path in the assignment search panel at right
-
-The new assignment will be added to the list of assignments available for this course.
-
-.. image:: img/teaching/assignment_list.png
-     :width: 75%
-     :alt: first assignment has been added to assignment list
 
 Distribute an Assignment
-======================================
+========================
 
-Click on the assignment in the assignment list.
-When the assignment opens, set the **Due** date. You can do this in the text area, or using the calendar and clock widgets to the right. Click on the **Assign** button to distribute to all students in the course.
+Distributing an assignment is also very similar to distributing a handout covered above, but because of multiple actions associated to an assignment, you have to expand its record:
 
-.. image:: img/teaching/send_assignment.png
-     :width: 100%
-     :alt: distributing an assignment to all students
+.. figure:: img/teaching/assignment_list.png
+    :width: 90%
+    :align: center
+    :alt: Assignments List
+    
+    Assignments List
 
-Alternatively, you can distribute just to individual students.
+You can optionally set the **Due Date**. Please note that at the moment this field serves only informational purposes, it is necessary for an instructor or a TA to manually initiate collection process. It is also possible to associate an assignment with a particular compute server, if you are using them. Once ready, click **Assign**:
 
-When an assignment is distributed to a student, a **copy** of the assignment folder will appear in the student project.
+.. figure:: img/teaching/assign_assignment.png
+    :width: 90%
+    :align: center
+    :alt: Assign an Assignment
+    
+    Assign an Assignment
 
-Advise the students that all work on the assignment should take place in this folder. Any work performed outside of this folder will not be collected.
+.. warning::
+
+    When an assignment is distributed students, a copy of the assignment folder will appear in each student project. These copied folders are the ones that will be collected later. Please advise your students to NOT rename or move such folders!
 
 Check "Student View"
 ====================
@@ -95,144 +100,113 @@ If you want to see what *exactly* your students will see and experience, the bes
 
 
 Collect an Assignment
-======================================
+=====================
 
-After an assignment has been made, a **Collect** icon appears next to each student.
-Clicking on one of these will make a copy of the student's assignment folder to your account.
-The entire folder will be copied including any extra files the student may have created.
+"Collect an assignment" means "copy all current files from the student project into the instructor project". Students still have access to their own copies and can continue working on them if desired, but changes will not be reflected in the instructor project. (Unless the files are manually collected again.)
 
-Alternatively, click on the **Collect** icon in the top row to collect from all students simultaneously.
+After an assignment was assigned, **Collect** buttons appear:
 
-.. image:: img/teaching/collect_assignment.png
-     :width: 100%
-     :alt: collecting an assignment from all students
 
-You should make sure that your project has enough disk space to accommodate this.
-It may be necessary to purchase an upgrade if you need more than the free allowance (currently 3 GB per project).
+.. figure:: img/teaching/collect_assignment.png
+    :width: 90%
+    :align: center
+    :alt: Collect an Assignment
+    
+    Collect an Assignment
 
-Once the assignment has been collected, anything the student subsequently does in **their** copy will not be reflected in **your** copy.
+Once collection finishes, you can access both the collected copy in your project for grading and the copy that still remains in the student project (for example, if you want to take a look at the edit history):
 
-If you click on the **Files** icon and go to the root directory of the course project, you'll see that a new folder will have been created with the name **[your_course_name]-collect**
+.. figure:: img/teaching/access_collected_assignments.png
+    :width: 90%
+    :align: center
+    :alt: Access Collected Assignments
+    
+    Access Collected Assignments
 
-.. image:: img/teaching/filelist_with_collect.png
-     :width: 100%
-     :alt: folder of collected assignment files appears in files list in instructor project
+If you want to access collected files directly in the file system, they are easy to find in the File Explorer in the folder named **[course_name]-collect**:
 
-Navigating within this folder, you'll find that it has a similar file structure to the original assignment.
-For example, for this demonstration we had the structure `/assignments/Assignment1` which appears in the collected folder as `[your_course_name]-collect/assignments/Assignment1`.
-Entering this folder will give a view of all students' versions of this assignment
+.. figure:: img/teaching/collected_folder.png
+    :width: 90%
+    :align: center
+    :alt: Folder With Collected Assignments
+    
+    Folder With Collected Assignments
 
-.. image:: img/teaching/collected_assignments.png
-     :width: 100%
-     :alt: "collect" folder for each student
-
-The folder corresponding to each collected assignment will have been given a unique random name.
-Navigating inside this folder, you will see all collected files along with a text file whose filename identifies the student.
-
-.. image:: img/teaching/Identify_student.png
-     :width: 100%
-     :alt: student name appears under the folder with the 
-
-At this point, you can open and mark the student's returned assignment.
-
-An easier interface for opening a student's collected assignment is via the **.course** file.
-Simply click on the **Open** icon corresponding to the student you are interested in and you'll be taken to the folder described above.
-
-.. image:: img/teaching/open_assignment.png
-     :width: 100%
-     :alt: opening a collected assignment in the instructor project
+The internal structure of this folder corresponds to the one you use for your assignments, but each student work is in a subfolder with a unique random name. It does have a file, however, identifying the student.
 
 
 Grade an Assignment
 ===================
 
-There is a number of ways to do (or avoid!) grading in CoCalc.
-A very useful function for formative assessment is :doc:`teaching-peer-grading`.
-For automatic grading, see :doc:`teaching-nbgrader`.
+There is a number of ways to do (or avoid!) grading in CoCalc:
 
-You may annotate the student's assignment by modifying the collected file(s) in any way you like. The student will get a copy of everything you do after you return it.
+- A very useful function for formative assessment is :doc:`teaching-peer-grading`.
+- For automatic grading see :doc:`teaching-nbgrader`.
+- Open each collected folder one-by-one and annotate the files in any way you like.
 
-When working with Jupyter notebooks, it can be useful to make annotations in markdown cells and set the color of the annotations to stand out.
+When working with Jupyter notebooks, it can be convenient to make annotations in markdown cells and set the color of the annotations to stand out. You can change the font color in a markdown cell in **Text** edit mode using the font options toolbar:
 
-You can change the font color in a markdown cell in Text edit mode using the font options toolbar, as explained in the section on :ref:`font-options`.
+.. figure:: img/teaching/colored_feedback_text.png
+    :width: 90%
+    :align: center
+    :alt: Leaving Feedback in Text Mode
+    
+    Leaving Feedback in Text Mode
 
-Or you can edit the cell in Markdown edit mode and enter the HTML tags for desired color explicitly::
+Alternatively, it may be more convenient, e.g. for copy-pasting comment templates, to use **Markdown** mode with explicit HTML tags:
 
-    <span style='color:red'>Great work!</span>
+.. figure:: img/teaching/colored_feedback_markdown.png
+    :width: 90%
+    :align: center
+    :alt: Leaving Feedback in Markdown Mode
+    
+    Leaving Feedback in Markdown Mode
 
-.. image:: img/teaching/feedback.png
-     :width: 50%
-     :alt: highlighting instructor remark using html in a jupyter notebook markdown cell
+Once done, enter a grade in the course file. "A grade" is an arbitrary text, so you can use whatever system you prefer:
 
-Once you've finished marking and commenting on the student's notebook, you can enter a grade via the **.course** file.
-Click on the **Enter Grade** button to open up the grade entry text box and enter the grade.
-This can be a number or any other string that makes sense for your course.
-
-.. image:: img/teaching/Enter_grade.png
-     :width: 100%
-     :alt: entering a grade for one student's assignment
+.. figure:: img/teaching/graded_assignment.png
+    :width: 90%
+    :align: center
+    :alt: List of Graded Assignments
+    
+    List of Graded Assignments
+    
+The grades and comments are stored in ``GRADE.md`` files inside each student folder.
 
 
 .. _skip-entering-grades:
 
-Return an Assignment Without Grading
-=====================================
-
-You can provide comments to students by editing student files that you have collected, or by adding files to the "-course-collect" folder for the assignment and student in question.
-
-If you click the "Skip entering grades" button before returning assignments, your notes and any added files will be sent to the student projects, but the GRADE.md file will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.
-
-.. image:: img/teaching/non-nbg-2.png
-     :width: 100%
-     :alt: Skip entering grades button in Assignments tab of course file
-
-
-Export Grades
-======================================
-
-It is possible to export grades for all assignments as either a .csv file or as executable Python code.
-The **Export grades** function is available in the **Configuration** tab of the **.course** file.
-
-.. image:: img/teaching/Export_grades.png
-     :width: 66%
-     :alt: exporting grades for all assignments from the Configuration tab
-
-The .csv file format looks like this::
-
-    # Course 'Autumn_2016_PHY001'
-    # exported 2016-06-13T13:24:40.141Z
-    Name,Email,"assignments/Assignment1","Notes"
-    "Mike Croucher","some.email@sheffield.ac.uk","80",""
-    "Mike_test ","some_other_email@sheffield.ac.uk","100",""
-    "bar@sheffield.ac.uk","bar@sheffield.ac.uk","90",""
-    "foo@sheffield.ac.uk","foo@sheffield.ac.uk","70",""
-
-The corresponding Python code looks like this::
-
-    course = 'Autumn_2016_PHY001'
-    exported = '2016-06-13T13:26:19.407Z'
-    assignments = ['assignments/Assignment1','Notes']
-    students = [
-        {'name':'Mike Croucher', 'email':'some.email@sheffield.ac.uk', 'grades':['80','']},
-        {'name':'Mike_test ', 'email':'some_other_email@sheffield.ac.uk', 'grades':['100','']},
-        {'name':'bar@sheffield.ac.uk', 'email':'bar@sheffield.ac.uk', 'grades':['90','']},
-        {'name':'foo@sheffield.ac.uk', 'email':'foo@sheffield.ac.uk', 'grades':['70','']},
-    ]
-
 Return an Assignment
-======================================
+====================
 
-Once an assignment has been graded, the *Return* to student button appears.
+Once an assignment has been graded, **Return** buttons appear. Although you can click **Skip entering grades** and return just your notes and any added files to the students. In that case ``GRADE.md`` files will contain a statement that either the assignment is ungraded, or a grade is assigned outside of CoCalc.
 
-.. image:: img/teaching/return_button.png
-     :width: 100%
-     :alt: return buttons appear as assignments are graded
+Returned assignments are copied to a folder separate from student's work:
 
-Clicking on this sends a copy of the graded assignment back to the student.
-It appears in their assignments folder like this:
+.. figure:: img/teaching/returned_assignment.png
+    :width: 90%
+    :align: center
+    :alt: Returned Graded Assignment in Student Project
+    
+    Returned Graded Assignment in Student Project
+    
+.. figure:: img/teaching/returned_assignment_files.png
+    :width: 90%
+    :align: center
+    :alt: Files of a Graded Assignment
+    
+    Files of a Graded Assignment
+    
+    
+Export Grades
+=============
 
-.. image:: img/teaching/returned_assignment.png
-     :width: 100%
-     :alt: in the student project, a new folder appears for returned work from the instructor
+To export grades for all assignments as a CSV file (or JSON, or Python) go to **Export grades** panel on the **Actions** tab of your course file:
 
-Note that the student now has both their original assignment **and** a copy of the returned, graded assignment.
+.. figure:: img/teaching/export_grades.png
+    :width: 90%
+    :align: center
+    :alt: Export Grades
+    
+    Export Grades
+    
