@@ -186,7 +186,7 @@ widgets in CoCalc
 ##########################
 
 `Jupyter Widgets`_ are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
-:ref:`real-time collaboration <multi-user-edit>`, :doc:`TimeTravel <time-travel>`, and :ref:`side chat <side-chat>`.
+real-time collaboration, :doc:`time-travel`, and :ref:`side-chat`.
 
 A good way to get started using Jupyter widgets is to go through the `Widget List`_ in the main widgets documentation.
 

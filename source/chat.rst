@@ -117,7 +117,7 @@ Side Chat
 At the top right in the Files toolbar for any open file, there is a chat icon: |comment-icon|.
 This opens up a chatroom which is *specific to that file*.
 This is commonly used to discuss the content of the given worksheet or notebook,
-e.g. :ref:`students asking teachers/TAs <teaching-chatrooms>`.
+e.g. students asking teachers/TAs.
 
 .. image:: img/sagews-side-chat-a.png
     :align: center
