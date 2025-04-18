@@ -95,13 +95,9 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Assignments and Handouts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-interactions.html">Collaboration</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">After the Course Ends</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#hide-or-delete-student-projects">Hide or Delete Student Projects</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remove-license-or-upgrades-from-student-projects">Remove License or Upgrades from Student Projects</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#licenses">Licenses</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#upgrades">Upgrades</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#student-access-after-course-ends">Student Access After Course Ends</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-license">Remove License</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delete-student-projects">Delete Student Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#student-account-access">Student Account Access</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-tips_and_tricks.html">FAQ, Tips and Tricks</a></li>
@@ -156,44 +152,18 @@ div.cocalc-header a {
              
   <section id="after-the-course-ends">
 <span id="index-0"></span><h1>After the Course Ends<a class="headerlink" href="#after-the-course-ends" title="Link to this heading"></a></h1>
-<p>Here are some suggestions on wrapping up after a course you managed with CoCalc comes to an end.</p>
-<nav class="contents local" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#hide-or-delete-student-projects" id="id1">Hide or Delete Student Projects</a></p></li>
-<li><p><a class="reference internal" href="#remove-license-or-upgrades-from-student-projects" id="id2">Remove License or Upgrades from Student Projects</a></p>
-<ul>
-<li><p><a class="reference internal" href="#licenses" id="id3">Licenses</a></p></li>
-<li><p><a class="reference internal" href="#upgrades" id="id4">Upgrades</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#student-access-after-course-ends" id="id5">Student Access After Course Ends</a></p></li>
-</ul>
-</nav>
-<section id="hide-or-delete-student-projects">
-<span id="hide-delete-student-projects"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id1" role="doc-backlink">Hide or Delete Student Projects</a><a class="headerlink" href="#hide-or-delete-student-projects" title="Link to this heading"></a></h2>
-<p>To keep the project list from becoming cluttered, an instructor may choose to hide or delete all student projects when a course ends. Student projects may be hidden using the <a class="reference internal" href="project-list.html#project-batch"><span class="std std-ref">“Hide” batch operation</span></a> in the project list. Student projects may be deleted - which marks them as deleted for all students as well as the instructor - in the course file <strong>Configuration</strong> tab with the “Delete all Student Projects…” button, or with the <a class="reference internal" href="project-list.html#project-batch"><span class="std std-ref">“Delete” batch operation</span></a> in the project list.</p>
-<p><em>NOTE: Upgrades to student projects may only be removed by the account that added them. If a course administrator initially upgraded student projects, then a
-teaching assistant with a different account deletes student projects, the upgrades will remain on the deleted projects. See the next section to recover upgrades in this case.</em></p>
+<p>By default, nothing happens with the course file or students projects once the course is over. In particular, instructors and students still have access to all projects and files. However, you may want to take some actions yourself.</p>
+<section id="remove-license">
+<h2>Remove License<a class="headerlink" href="#remove-license" title="Link to this heading"></a></h2>
+<p>If you purchased a dedicated course license that expires after the course ends, there is no harm in leaving it attached to the course. But if you are using an ongoing subscription or a license purchased for multiple terms, you may want to remove that license from completed courses. Otherwise former students may use some of the seats and not leave enough for incoming classes.</p>
 </section>
-<section id="remove-license-or-upgrades-from-student-projects">
-<span id="recover-upgrades"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Remove License or Upgrades from Student Projects</a><a class="headerlink" href="#remove-license-or-upgrades-from-student-projects" title="Link to this heading"></a></h2>
-<section id="licenses">
-<h3><a class="toc-backref" href="#id3" role="doc-backlink">Licenses</a><a class="headerlink" href="#licenses" title="Link to this heading"></a></h3>
-<p>If you applied a license to the course under Configuration, you will probably want to remove it after the course ends. Stopped projects do not use license resources, but a student project from a course that has ended could use license resources, for example if restarted by a student looking over work in the old course.</p>
+<section id="delete-student-projects">
+<h2>Delete Student Projects<a class="headerlink" href="#delete-student-projects" title="Link to this heading"></a></h2>
+<p>Student projects may be deleted in the course file <strong>Actions</strong> tab with the <strong>Delete all Student Projects…</strong> button. You may want to do it if your do NOT want them to have access to the course materials in the future.</p>
 </section>
-<section id="upgrades">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Upgrades</a><a class="headerlink" href="#upgrades" title="Link to this heading"></a></h3>
-<p>If you used one of the older course upgrade plans, note that upgrades applied to student projects may be re-used on other projects after the course ends. Upgrades remain valid until their expiration date.</p>
-<p>To recover upgrades from student projects, i.e. to remove them from student projects and return them to the pool of available upgrades, the owner of the account that originally applied the upgrades can do a <a class="reference internal" href="project-list.html#project-batch"><span class="std std-ref">“Remove Upgrades…” batch operation</span></a>, after selecting the desired projects with either search text or hashtag. Or, if student projects are to be deleted, the owner of the upgrades can open the course file <strong>Configuration</strong> tab and click “Delete all Student Projects…”.</p>
-</section>
-</section>
-<section id="student-access-after-course-ends">
-<span id="access-after-end"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Student Access After Course Ends</a><a class="headerlink" href="#student-access-after-course-ends" title="Link to this heading"></a></h2>
-<p><strong>Question:</strong> My students have been asking whether they can keep using their CoCalc account after this course ends. I assume that their account <strong>and projects</strong> will remain active, but revert to the settings associated with a free account and projects. Is that correct? If not, is there anything they need to do to use their accounts in the future?</p>
-<p><strong>Answer:</strong> Yes, they will have full access, though they may need to take an extra step to ensure they can easily login.</p>
-<p>The detail is how they are authenticated with CoCalc. For example, in case they exclusively use a Google account associated with your-college.edu, and the university revokes their account, they would be unable to access CoCalc without adding another access method.</p>
-<p>For cases like that, instruct your students to <strong>make sure they have a password set in their account settings</strong>. Then, they can always access their course projects by accessing their account via an email address and password. Later, they can change their email address, while keeping access to their projects. In account settings, students can also associate their account with Facebook (or Github or Twitter), and login using one of those providers.</p>
-<p>If the instructor has marked the student project Deleted, the student may still see the project in the project list by selecting the checkbox for Deleted projects.</p>
+<section id="student-account-access">
+<span id="access-after-end"></span><span id="index-1"></span><h2>Student Account Access<a class="headerlink" href="#student-account-access" title="Link to this heading"></a></h2>
+<p>If students were using dedicated SSO through your institution or Google login associated to their university accounts, they may not be able to log into their accounts after graduation, i.e. when their university logins are disabled. The most reliable solution in such a situation is to download files that students want to keep, and upload them to CoCalc using “personal accounts” linked to personal emails, if desired.</p>
 </section>
 </section>
 

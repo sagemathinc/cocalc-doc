@@ -75,7 +75,7 @@ Enhanced features in CoCalc Markdown
 @-mentions
 ***********************************
 
-See :ref:`@Mention collaborators in chat <at-mention-chat>`.
+See :ref:`@Mention collaborators in chat <chat-at-mentions>`.
 
 ***********************************
 Checkboxes

@@ -12,13 +12,6 @@ nav.wy-nav-top {
     background: #4375c1;
 }
 
-.wy-body-for-nav {
-  max-width: 2000px; /* Adjust this value as needed */
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 /* role: strike and :strike:`...` */
 span.strike {
     text-decoration: line-through;
@@ -38,10 +31,7 @@ div.sphinxsidebar h3 {
 }
 
 div.body {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+    max-width: 900px;
 }
 
 /* https://github.com/sagemathinc/cocalc-doc/issues/4 */
