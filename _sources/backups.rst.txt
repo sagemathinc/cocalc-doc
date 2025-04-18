@@ -8,6 +8,8 @@ Backups
    :local:
    :depth: 1
 
+.. _snapshots:
+
 ###################
 Snapshots
 ###################

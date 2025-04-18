@@ -1,114 +1,88 @@
 .. index:: Collaboration
 .. _collaboration:
 
-=========================================================
 Collaboration
-=========================================================
+=============
 
-There are multiple ways in which you can interact with your students or collaborators, in this section we will present some features that you might find useful when managing a course.
-
+In principle, collaboration for the instructor project and all student projects is "the same" as for all other CoCalc projects. Here we will highlight some features and ways of using them that you might find useful specifically when managing a course.
 
 .. contents::
    :local:
    :depth: 2
+   
+   
+Look at Students Work
+---------------------
 
-.. index:: Collaboration; chat rooms
-.. _teaching-chatrooms:
+As described in the handling of :ref:`assignments-and-handouts`, you can always open the files that each student is working on: before collecting them, during grading, or after. There can be several reasons for this:
 
-#####################
-Real-time chatrooms
-#####################
+- you may wonder how students are doing on a newly developed assignment that may need some tweaking to become more clear or more challenging
+- you may wonder if particular students need some extra help
+- unfortunately, sometimes you may wonder if some students are cheating...
 
-You can create general real-time chatrooms for your CoCalc projects.
-You can create a project chat room by clicking on the **New** button, this will create a file with `.sage-chat` extension.
-
-In addition, every file in CoCalc has a separate chat that can be found on the upper left corner of your screen.
-
-.. image:: img/teaching/chat_button.png
-     :width: 30%
-     :alt: button at upper right for side chat with any file
-
-Every time one of your students writes something into a chat on any one of their files,
-you will get a notification displayed on the top bar.
-
-.. image:: img/teaching/instructor_notification.png
-     :width: 66%
-     :alt: notification count shown inside bell icon
-
-Clicking on the notification button (bell icon on the top of the screen) displays a notification menu with the latest chats and modifications in the project or specific files.
-
-.. image:: img/teaching/notification_highlighted.png
-     :width: 100%
-     :alt: click notification bell for list of latest notifications
-
-The chat notifications are always presented at the top of the menu, followed by any updates you or your collaborators have done to the project. Clicking on a chat notification will take you to **the student's copy** of the file inside **his/her project**.
-From there, you can both reply to their questions and look at their work simultaneously.
-
-.. image:: img/teaching/student_question.png
-     :width: 66%
-     :alt: clicking on notification expands to show detail
-
-Once you have replied to the student's question (s)he will receive a notification.
+Not only you can open each file at its current state, but you can also use :doc:`time-travel` to get a sense of its evolution and see what approaches have students tried to solve a problem or deal with code errors. If you see big chunks of text/code appearing in a single revision, they were likely copy-pasted from somewhere else.
 
 
-.. index:: Collaboration; multi-user editing
-.. _multi-user-edit:
+Edit Students Files
+-------------------
 
-############################
-Live collaborative editing
-############################
+You do have write access to students projects and can make edits in their files and notebooks, even while students are actively editing these files as well. :doc:`time-travel` will keep track of who has done which change. If you are editing or looking at sections that are close to each other, you will see each other moving cursors with name tags:
 
-Multiple users can collaborate on a project.
-As soon as a collaborator is added to a a project (see :doc:`teaching-create-course`) they share both the project and the associated files.
+.. figure:: img/teaching/instructor_cursor.png
+    :width: 90%
+    :align: center
+    :alt: Instructor's Cursor in Student's View
+    
+    Instructor's Cursor in Student's View
+    
 
-Live collaborative editing is possible in CoCalc.
-If one of your collaborators updates a notebook, the rest can see the changes as they are being made (similar to Google Docs).
+Side Chats and Mentions
+-----------------------
 
-.. index:: @Mentions in chat
-.. index:: Mentions in chat
-.. index:: Chat; @mentions
+Of course, it may be difficult to notice if you edit a file of a student, and it may be unexpected. Instead of editing the file directly or in addition to it, you can leave comments in a :ref:`side-chat` of any file and attract student's attention using :ref:`chat-at-mentions`. The student will get a notification, can reply to you, and then you will get a notification as well:
 
-.. _at-mention-chat:
+.. figure:: img/teaching/mentioning_student.png
+    :width: 90%
+    :align: center
+    :alt: Mentioning Student in a Side Chat
+    
+    Mentioning Student in a Side Chat
+    
+.. figure:: img/teaching/student_got_mentioned.png
+    :width: 90%
+    :align: center
+    :alt: Student Sees a Mention Notification
+    
+    Student Sees a Mention Notification
+    
+.. figure:: img/teaching/student_replies.png
+    :width: 90%
+    :align: center
+    :alt: Student Replies to the Instructor
+    
+    Student Replies to the Instructor
+    
+This may be even more useful in the other direction - any student can ask an instructor or a TA for help! They may also ask our :doc:`ai` for help, if you have not :ref:`disabled this functionality <restrict-student-projects>`.
 
-################################
-@-Mention collaborators in chat
-################################
-
-Using ``@`` followed by a recipient's name in a chat message you send, you can cause an email notification to be sent. See :ref:`chat-at-mentions` for more information.
 
 .. index:: Shared project; in course
 .. index:: Collaboration; shared project
 
-################################
-Shared Project
-################################
+Shared Project and Chat Rooms
+-----------------------------
 
-You can create a common shared project for your course. Think of a shared project as your private course website for the students with automatic forum and code support. By default everybody (collaborators and students) will have **write** access to the project and its associated files.
+While regular student projects are isolated from each other, a shared project allows all students in a class to collaborate on a document or discuss some topics. For example, you can put an article into a shared project and all students can leave comments and ask/answer questions in a :ref:`side-chat`. Or you can create any number of standalone :ref:`chatroom`. To create or access your **Shared Project** use the corresponding tab in the course file.
 
-To create a shared project you need to go to your **.course** file and click on the **Shared Project** button.
+Note that all students have equal access to the shared project. In particular, they are capable of deleting files or corrupting code in them, but if that happens it should be possible to restore the documents using :doc:`time-travel` and :ref:`snapshots`. Also, as a safeguard against accidents, you can change permission of some files to read-only in a :ref:`terminal`. For example, you can use ``chmod a-w filename`` to make a file read-only and ``chmod a+w filename`` to make it writable again.
 
-.. image:: img/teaching/shared1.png
-     :width: 100%
-     :alt: creating a project that will be shared by all students
 
-If you create a **.sage-chat** file here, all students will receive automatic notifications when questions are posted on the chat.
-
-If you want to make a file or an assignment **read-only** so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type::
-
-    chmod a-w filename
-
-If you want to check the access permissions of all the files contained in a given directory, use the following::
-
-    ls -l
-
-In case you want to change a read only file into a read and write, type::
-
-    chmod a+w filename
-
-################################
 Group Projects
-################################
+--------------
 
-If you want students to work together in groups, you can assign a "leader" for each group, have them create a project, and add other members and you as collaborators. (Of course, you can also create all such projects yourself, although it can take some time.) Everybody will be able to collaborate on this project and modify files simultaneously.
+When individual and shared projects are too extreme, you can also create projects for smaller groups.
 
-If you want to use automatic distribution and collection of assignments with group projects, you can create a course file with only group "leaders" added as students and then manually add other group memebers as collaborators. We do plan to add a more direct support for groups in the future.
+At the moment we do not provide a completely hassle free way of creating projects for groups, but it is on our road map and a possible workaround meanwhile is to create another course file where only some of the students are "enrolled" - these are "group leaders" designated by you. Once their projects are created, you or these leaders may add other members of each group as collaborators.
+
+.. hint::
+
+    It is possible to edit student names in the course file. Such edits are local to that file, i.e. it does not affect student accounts. In the context of group projects you may change your leaders names to either group titles or names of all students in the group.

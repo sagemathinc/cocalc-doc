@@ -94,10 +94,10 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="teaching-add-students.html#student-projects">Student Projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="teaching-course-management.html">Assignments and Handouts</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Collaboration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#real-time-chatrooms">Real-time chatrooms</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#live-collaborative-editing">Live collaborative editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mention-collaborators-in-chat">&#64;-Mention collaborators in chat</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#shared-project">Shared Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#look-at-students-work">Look at Students Work</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-students-files">Edit Students Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#side-chats-and-mentions">Side Chats and Mentions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-project-and-chat-rooms">Shared Project and Chat Rooms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#group-projects">Group Projects</a></li>
 </ul>
 </li>
@@ -154,66 +154,72 @@ div.cocalc-header a {
              
   <section id="collaboration">
 <span id="index-0"></span><span id="id1"></span><h1>Collaboration<a class="headerlink" href="#collaboration" title="Link to this heading"></a></h1>
-<p>There are multiple ways in which you can interact with your students or collaborators, in this section we will present some features that you might find useful when managing a course.</p>
+<p>In principle, collaboration for the instructor project and all student projects is “the same” as for all other CoCalc projects. Here we will highlight some features and ways of using them that you might find useful specifically when managing a course.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#real-time-chatrooms" id="id2">Real-time chatrooms</a></p></li>
-<li><p><a class="reference internal" href="#live-collaborative-editing" id="id3">Live collaborative editing</a></p></li>
-<li><p><a class="reference internal" href="#mention-collaborators-in-chat" id="id4">&#64;-Mention collaborators in chat</a></p></li>
-<li><p><a class="reference internal" href="#shared-project" id="id5">Shared Project</a></p></li>
-<li><p><a class="reference internal" href="#group-projects" id="id6">Group Projects</a></p></li>
+<li><p><a class="reference internal" href="#look-at-students-work" id="id6">Look at Students Work</a></p></li>
+<li><p><a class="reference internal" href="#edit-students-files" id="id7">Edit Students Files</a></p></li>
+<li><p><a class="reference internal" href="#side-chats-and-mentions" id="id8">Side Chats and Mentions</a></p></li>
+<li><p><a class="reference internal" href="#shared-project-and-chat-rooms" id="id9">Shared Project and Chat Rooms</a></p></li>
+<li><p><a class="reference internal" href="#group-projects" id="id10">Group Projects</a></p></li>
 </ul>
 </nav>
-<section id="real-time-chatrooms">
-<span id="teaching-chatrooms"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Real-time chatrooms</a><a class="headerlink" href="#real-time-chatrooms" title="Link to this heading"></a></h2>
-<p>You can create general real-time chatrooms for your CoCalc projects.
-You can create a project chat room by clicking on the <strong>New</strong> button, this will create a file with <cite>.sage-chat</cite> extension.</p>
-<p>In addition, every file in CoCalc has a separate chat that can be found on the upper left corner of your screen.</p>
-<a class="reference internal image-reference" href="_images/chat_button.png"><img alt="button at upper right for side chat with any file" src="_images/chat_button.png" style="width: 30%;" /></a>
-<p>Every time one of your students writes something into a chat on any one of their files,
-you will get a notification displayed on the top bar.</p>
-<a class="reference internal image-reference" href="_images/instructor_notification.png"><img alt="notification count shown inside bell icon" src="_images/instructor_notification.png" style="width: 66%;" /></a>
-<p>Clicking on the notification button (bell icon on the top of the screen) displays a notification menu with the latest chats and modifications in the project or specific files.</p>
-<a class="reference internal image-reference" href="_images/notification_highlighted.png"><img alt="click notification bell for list of latest notifications" src="_images/notification_highlighted.png" style="width: 100%;" /></a>
-<p>The chat notifications are always presented at the top of the menu, followed by any updates you or your collaborators have done to the project. Clicking on a chat notification will take you to <strong>the student’s copy</strong> of the file inside <strong>his/her project</strong>.
-From there, you can both reply to their questions and look at their work simultaneously.</p>
-<a class="reference internal image-reference" href="_images/student_question.png"><img alt="clicking on notification expands to show detail" src="_images/student_question.png" style="width: 66%;" /></a>
-<p>Once you have replied to the student’s question (s)he will receive a notification.</p>
+<section id="look-at-students-work">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Look at Students Work</a><a class="headerlink" href="#look-at-students-work" title="Link to this heading"></a></h2>
+<p>As described in the handling of <a class="reference internal" href="teaching-course-management.html#assignments-and-handouts"><span class="std std-ref">Assignments and Handouts</span></a>, you can always open the files that each student is working on: before collecting them, during grading, or after. There can be several reasons for this:</p>
+<ul class="simple">
+<li><p>you may wonder how students are doing on a newly developed assignment that may need some tweaking to become more clear or more challenging</p></li>
+<li><p>you may wonder if particular students need some extra help</p></li>
+<li><p>unfortunately, sometimes you may wonder if some students are cheating…</p></li>
+</ul>
+<p>Not only you can open each file at its current state, but you can also use <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a> to get a sense of its evolution and see what approaches have students tried to solve a problem or deal with code errors. If you see big chunks of text/code appearing in a single revision, they were likely copy-pasted from somewhere else.</p>
 </section>
-<section id="live-collaborative-editing">
-<span id="multi-user-edit"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Live collaborative editing</a><a class="headerlink" href="#live-collaborative-editing" title="Link to this heading"></a></h2>
-<p>Multiple users can collaborate on a project.
-As soon as a collaborator is added to a a project (see <a class="reference internal" href="teaching-create-course.html"><span class="doc">Creating a New Course</span></a>) they share both the project and the associated files.</p>
-<p>Live collaborative editing is possible in CoCalc.
-If one of your collaborators updates a notebook, the rest can see the changes as they are being made (similar to Google Docs).</p>
+<section id="edit-students-files">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Edit Students Files</a><a class="headerlink" href="#edit-students-files" title="Link to this heading"></a></h2>
+<p>You do have write access to students projects and can make edits in their files and notebooks, even while students are actively editing these files as well. <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a> will keep track of who has done which change. If you are editing or looking at sections that are close to each other, you will see each other moving cursors with name tags:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/instructor_cursor.png"><img alt="Instructor's Cursor in Student's View" src="_images/instructor_cursor.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Instructor’s Cursor in Student’s View</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="mention-collaborators-in-chat">
-<span id="at-mention-chat"></span><span id="index-5"></span><span id="index-4"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">&#64;-Mention collaborators in chat</a><a class="headerlink" href="#mention-collaborators-in-chat" title="Link to this heading"></a></h2>
-<p>Using <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> followed by a recipient’s name in a chat message you send, you can cause an email notification to be sent. See <a class="reference internal" href="chat.html#chat-at-mentions"><span class="std std-ref">&#64;-mentions</span></a> for more information.</p>
+<section id="side-chats-and-mentions">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Side Chats and Mentions</a><a class="headerlink" href="#side-chats-and-mentions" title="Link to this heading"></a></h2>
+<p>Of course, it may be difficult to notice if you edit a file of a student, and it may be unexpected. Instead of editing the file directly or in addition to it, you can leave comments in a <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a> of any file and attract student’s attention using <a class="reference internal" href="chat.html#chat-at-mentions"><span class="std std-ref">&#64;-mentions</span></a>. The student will get a notification, can reply to you, and then you will get a notification as well:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/mentioning_student.png"><img alt="Mentioning Student in a Side Chat" src="_images/mentioning_student.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Mentioning Student in a Side Chat</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/student_got_mentioned.png"><img alt="Student Sees a Mention Notification" src="_images/student_got_mentioned.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Student Sees a Mention Notification</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/student_replies.png"><img alt="Student Replies to the Instructor" src="_images/student_replies.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Student Replies to the Instructor</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>This may be even more useful in the other direction - any student can ask an instructor or a TA for help! They may also ask our <a class="reference internal" href="ai.html"><span class="doc">AI Assistant</span></a> for help, if you have not <a class="reference internal" href="restrict-student-projects.html#restrict-student-projects"><span class="std std-ref">disabled this functionality</span></a>.</p>
 </section>
-<section id="shared-project">
-<span id="index-7"></span><span id="index-6"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Shared Project</a><a class="headerlink" href="#shared-project" title="Link to this heading"></a></h2>
-<p>You can create a common shared project for your course. Think of a shared project as your private course website for the students with automatic forum and code support. By default everybody (collaborators and students) will have <strong>write</strong> access to the project and its associated files.</p>
-<p>To create a shared project you need to go to your <strong>.course</strong> file and click on the <strong>Shared Project</strong> button.</p>
-<a class="reference internal image-reference" href="_images/shared1.png"><img alt="creating a project that will be shared by all students" src="_images/shared1.png" style="width: 100%;" /></a>
-<p>If you create a <strong>.sage-chat</strong> file here, all students will receive automatic notifications when questions are posted on the chat.</p>
-<p>If you want to make a file or an assignment <strong>read-only</strong> so that students cannot modify it, you need to modify the file permissions. Launch a terminal and type:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>chmod a-w filename
-</pre></div>
-</div>
-<p>If you want to check the access permissions of all the files contained in a given directory, use the following:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ls -l
-</pre></div>
-</div>
-<p>In case you want to change a read only file into a read and write, type:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>chmod a+w filename
-</pre></div>
-</div>
+<section id="shared-project-and-chat-rooms">
+<span id="index-2"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Shared Project and Chat Rooms</a><a class="headerlink" href="#shared-project-and-chat-rooms" title="Link to this heading"></a></h2>
+<p>While regular student projects are isolated from each other, a shared project allows all students in a class to collaborate on a document or discuss some topics. For example, you can put an article into a shared project and all students can leave comments and ask/answer questions in a <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a>. Or you can create any number of standalone <a class="reference internal" href="chat.html#chatroom"><span class="std std-ref">Chatrooms</span></a>. To create or access your <strong>Shared Project</strong> use the corresponding tab in the course file.</p>
+<p>Note that all students have equal access to the shared project. In particular, they are capable of deleting files or corrupting code in them, but if that happens it should be possible to restore the documents using <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a> and <a class="reference internal" href="backups.html#snapshots"><span class="std std-ref">Snapshots</span></a>. Also, as a safeguard against accidents, you can change permission of some files to read-only in a <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">Linux Terminal</span></a>. For example, you can use <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">a-w</span> <span class="pre">filename</span></code> to make a file read-only and <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">a+w</span> <span class="pre">filename</span></code> to make it writable again.</p>
 </section>
 <section id="group-projects">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Group Projects</a><a class="headerlink" href="#group-projects" title="Link to this heading"></a></h2>
-<p>If you want students to work together in groups, you can assign a “leader” for each group, have them create a project, and add other members and you as collaborators. (Of course, you can also create all such projects yourself, although it can take some time.) Everybody will be able to collaborate on this project and modify files simultaneously.</p>
-<p>If you want to use automatic distribution and collection of assignments with group projects, you can create a course file with only group “leaders” added as students and then manually add other group memebers as collaborators. We do plan to add a more direct support for groups in the future.</p>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Group Projects</a><a class="headerlink" href="#group-projects" title="Link to this heading"></a></h2>
+<p>When individual and shared projects are too extreme, you can also create projects for smaller groups.</p>
+<p>At the moment we do not provide a completely hassle free way of creating projects for groups, but it is on our road map and a possible workaround meanwhile is to create another course file where only some of the students are “enrolled” - these are “group leaders” designated by you. Once their projects are created, you or these leaders may add other members of each group as collaborators.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>It is possible to edit student names in the course file. Such edits are local to that file, i.e. it does not affect student accounts. In the context of group projects you may change your leaders names to either group titles or names of all students in the group.</p>
+</div>
 </section>
 </section>
 
