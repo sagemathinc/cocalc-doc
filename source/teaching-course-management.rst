@@ -1,3 +1,5 @@
+.. _assignments-and-handouts:
+
 Assignments and Handouts
 ************************
 
