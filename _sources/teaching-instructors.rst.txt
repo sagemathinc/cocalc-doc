@@ -30,8 +30,8 @@ There are several reasons why you should consider conducting a course on CoCalc:
    teaching-course-management
    teaching-interactions
    teaching-after-course
-   teaching-tips_and_tricks
-   teaching-peer-grading
    teaching-nbgrader
-   howto/nbgrader
+   teaching-peer-grading
    teaching-workshop
+   howto/nbgrader
+   teaching-tips_and_tricks
