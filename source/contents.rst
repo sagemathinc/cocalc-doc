@@ -17,6 +17,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    service_options
    howto/index
    
+   getting-started
    teaching-instructors
    teaching-students
 

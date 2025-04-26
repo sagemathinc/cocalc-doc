@@ -52,11 +52,9 @@ Test It Out
 
 To immerse yourself into CoCalc, you should
 
-* go through the :doc:`getting-started` guide to create your account, your first project, and a worksheet;
+* go through the :doc:`getting-started`;
 
 * check out our :doc:`core_applications` and :doc:`signature_features`;
-
-* see how the :doc:`frame-editor` helps when working with different files;
 
 * use it!!!
 
