@@ -57,7 +57,7 @@ To the right of the Projects button, tab buttons will appear for each project yo
 
 A running project will continue running after it is closed until its idle timeout has been reached. At that point it will be stopped.
 
-If you close your browser window or sign out, CoCalc will remember your open projects and files (this is your :ref:`CoCalc session <cocalc-session>`), and restore the project tabs the next time you sign in.
+If you close your browser window or sign out, CoCalc will remember your open projects and files (this is your CoCalc session), and restore the project tabs the next time you sign in.
 
 .. index::
    Support; create support request

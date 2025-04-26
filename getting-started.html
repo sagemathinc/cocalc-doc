@@ -7,7 +7,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Getting Started &mdash; CoCalc Manual  documentation</title>
+  <title>Essential Guide &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -23,8 +23,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Videos" href="videos.html" />
-    <link rel="prev" title="Alternative to JupyterHub" href="alternativeto/jupyterhub.html" />
+    <link rel="next" title="Instructor Guide" href="teaching-instructors.html" />
+    <link rel="prev" title="Turtle Graphics with CoCalc" href="howto/turtle.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -78,43 +78,25 @@ div.cocalc-header a {
 
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Introduction</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="index.html">What is CoCalc?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="why.html">Why CoCalc?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="why_not.html">Why NOT CoCalc?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alternativeto/index.html">Comparing with Others</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Getting Started</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#your-first-cocalc-session">Your First CoCalc Session</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#creating-an-account">Creating an Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#resuming-a-session">Resuming a Session</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#signing-in-again">Signing in Again</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#creating-a-file">Creating a File</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#running-a-jupyter-notebook">Running a Jupyter Notebook</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#toolbars">Toolbars</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#your-cocalc-session">Your CoCalc Session</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#signing-out">Signing Out</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#next-steps">Next Steps</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#additional-resources">Additional Resources</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#statements">Statements</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="videos.html">Videos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tours.html">Tours</a></li>
-<li class="toctree-l2"><a class="reference internal" href="news.html">CoCalc News</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="core_applications.html">Core Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="signature_features.html">Signature Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enhanced_capabilities.html">Enhanced Capabilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_interface.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="service_options.html">Service Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">How-tos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Essential Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#projects">Projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#licenses">Licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#main-ui">Main UI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-files">Supported Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-and-pin-menu-items">Search and Pin Menu Items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frames-and-terminals">Frames and Terminals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#timetravel-backups-logs">TimeTravel, Backups, Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collaboration-and-ai">Collaboration and AI</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-instructors.html">Instructor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="teaching-students.html">Student Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/trouble.html">Troubleshooting</a></li>
@@ -141,8 +123,7 @@ div.cocalc-header a {
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="contents.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="introduction.html">Introduction</a></li>
-      <li class="breadcrumb-item active">Getting Started</li>
+      <li class="breadcrumb-item active">Essential Guide</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -159,150 +140,105 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
-<nav class="contents local" id="contents">
+  <section id="essential-guide">
+<span id="id1"></span><h1>Essential Guide<a class="headerlink" href="#essential-guide" title="Link to this heading"></a></h1>
+<p>In this guide we highlight the most important concepts you should be aware of to work in CoCalc effectively. Some of them you may start using right away, others (like TimeTravel and Backups) may save the day later. Many have more detailed documentation pages should you wish to study them deeper.</p>
+<section id="projects">
+<h2>Projects<a class="headerlink" href="#projects" title="Link to this heading"></a></h2>
+<p>Once you create an account on CoCalc, you should have access to at least one project - either your personal one, or projects you were invited to collaborate on. You can think of “a project” as “a virtual computer”: it has your files and can run various software to interact with them. In CoCalc it is also “a collaboration unit”: you can look at and edit the same files as your collaborators. In particular, Jupyter Notebooks always have the same state for you and them, including variables in memory and widget settings.</p>
+<p>How many projects do you need? As many as collaboration groups you are a part of. In particular, if you are working by yourself, then there is not much benefit to having more than one, although you may prefer to use projects as an organizational tool. If you are enrolled into CoCalc courses, a dedicated project will be created for you automatically and your collaborators on it will be your instructors and TAs.</p>
+</section>
+<section id="licenses">
+<h2>Licenses<a class="headerlink" href="#licenses" title="Link to this heading"></a></h2>
+<p>You should have a license applied to every project you are working on. If you have collaborators, it is possible that they have already taken care of it. CoCalc licenses are applied to projects, not to users, they determine configuration of that “virtual computer”, regardless of how many people are using it (of course, if there are many heavy users, you may prefer to have a more powerful license).</p>
+<p>Without a license your project will work in trial mode with <em>very</em> limited resources. As soon as you confirm that CoCalc seems to be what you need, we strongly encourage you to get a subscription, i.e. an automatically renewing license. If you are not sure what variant to pick - pick the standard one!</p>
+</section>
+<section id="main-ui">
+<h2>Main UI<a class="headerlink" href="#main-ui" title="Link to this heading"></a></h2>
+<p>If you open an empty project, you will see a screen similar to this one, where some of the useful features are marked:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/annotated_empty_project.png"><img alt="Main UI Elements" src="_images/annotated_empty_project.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Main UI Elements</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Hopefully, most elements are intuitive, but some may be easy to miss. In particular:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#your-first-cocalc-session" id="id1">Your First CoCalc Session</a></p>
-<ul>
-<li><p><a class="reference internal" href="#creating-an-account" id="id2">Creating an Account</a></p></li>
-<li><p><a class="reference internal" href="#resuming-a-session" id="id3">Resuming a Session</a></p></li>
-<li><p><a class="reference internal" href="#signing-in-again" id="id4">Signing in Again</a></p></li>
-<li><p><a class="reference internal" href="#creating-a-file" id="id5">Creating a File</a></p></li>
-<li><p><a class="reference internal" href="#running-a-jupyter-notebook" id="id6">Running a Jupyter Notebook</a></p></li>
+<li><p>The Full Screen Button at the top right allows you to hide most of the user interface to save space.</p></li>
+<li><p>Counters to the left of it show new changes in files that you have edited and different types of messages from other users or from the system.</p></li>
+<li><p>Help button allows you to contact CoCalc support <strong>with context</strong> - not only it is easy for you to access, but it also makes it easier for us to understand where are you working!</p></li>
+<li><p>Two buttons on the bottom left allow you to configure the side panel buttons: you may prefer full screen pages, small flyout panels, or quick access to both.</p></li>
+<li><p>Tours highlight essential UI elements interactively.</p></li>
 </ul>
-</li>
-<li><p><a class="reference internal" href="#toolbars" id="id7">Toolbars</a></p></li>
-<li><p><a class="reference internal" href="#your-cocalc-session" id="id8">Your CoCalc Session</a></p>
-<ul>
-<li><p><a class="reference internal" href="#signing-out" id="id9">Signing Out</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#next-steps" id="id10">Next Steps</a></p>
-<ul>
-<li><p><a class="reference internal" href="#additional-resources" id="id11">Additional Resources</a></p></li>
-<li><p><a class="reference internal" href="#statements" id="id12">Statements</a></p></li>
-</ul>
-</li>
-</ul>
-</nav>
-<section id="your-first-cocalc-session">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Your First CoCalc Session</a><a class="headerlink" href="#your-first-cocalc-session" title="Link to this heading"></a></h2>
-<section id="creating-an-account">
-<h3><a class="toc-backref" href="#id2" role="doc-backlink">Creating an Account</a><a class="headerlink" href="#creating-an-account" title="Link to this heading"></a></h3>
-<p>On your first visit to CoCalc.com, you will see the welcome screen.
-Click either <strong>Sign Up</strong> button:</p>
-<a class="reference internal image-reference" href="_images/welcome-sign-up.png"><img alt="CoCalc welcome page with Sign Up buttons circled in red" src="_images/welcome-sign-up.png" style="width: 100%;" /></a>
-<p>At the next screen, check the box to agree to the Terms of Service.</p>
-<a class="reference internal image-reference" href="_images/sign-up-1.png"><img alt="checkbox and button for agreeing to terms of service" src="_images/sign-up-1.png" style="width: 100%;" /></a>
-<p>Choose a sign-in method. In addition to signing up with your email address, you have the option of signing up using your credentials for Facebook, Github, Google, or Twitter.</p>
-<a class="reference internal image-reference" href="_images/sign-up-2.png"><img alt="Sign up using email or linked account with Facebook, Github, Google, or Twitter." src="_images/sign-up-2.png" style="width: 100%;" /></a>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you don’t want to agree to terms of service at this time, you can click “Try CoCalc without creating an account”.</p>
-</div>
 </section>
-<section id="resuming-a-session">
-<h3><a class="toc-backref" href="#id3" role="doc-backlink">Resuming a Session</a><a class="headerlink" href="#resuming-a-session" title="Link to this heading"></a></h3>
-<p>If you closed your browser tab while signed in, you can probably resume your browser session without signing in again the next time you visit <a class="reference external" href="https://cocalc.com">https://cocalc.com</a>. Click your name at the top of the “Signed in as” screen or click “View your CoCalc Projects” at the bottom.</p>
-<a class="reference internal image-reference" href="_images/view-projects.png"><img alt="Resume a session by clicking name at top or view projects at bottom" src="_images/view-projects.png" style="width: 100%;" /></a>
-</section>
-<section id="signing-in-again">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Signing in Again</a><a class="headerlink" href="#signing-in-again" title="Link to this heading"></a></h3>
-<p>Once you have signed in for the first time,
-sign-in in will be automatic if you are using
-the same browser and computer.
-All you will
-generally need to do is point your browser
-to <a class="reference external" href="https://cocalc.com">https://cocalc.com</a> and click either “Sign In” button.</p>
-<a class="reference internal image-reference" href="_images/2021-11-welcome-sign-in.png"><img alt="CoCalc welcome page with Sign In buttons circled in red" src="_images/2021-11-welcome-sign-in.png" style="width: 100%;" /></a>
-<dl class="simple">
-<dt>You will need to sign in again if you</dt><dd><ul class="simple">
-<li><p>connect from a different browser or computer</p></li>
-<li><p>clear your browser cookies.</p></li>
-<li><p>sign out</p></li>
-</ul>
-</dd>
-</dl>
-</section>
-<section id="creating-a-file">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">Creating a File</a><a class="headerlink" href="#creating-a-file" title="Link to this heading"></a></h3>
-<p>Once you have opened a project, you are ready to create a file.</p>
-<p>If your project isn’t upgraded, you will get a red banner warning that your
-project is running on a trial server. Ignore the warning for now and keep going.</p>
-<p>Click <strong>(+) New</strong> and enter <strong>example</strong> where it says,
-<strong>Name your file…</strong>.
-Select <strong>Jupyter notebook</strong> to set the file type.
-Clicking a button for the type of file causes
-the file extension to be added automatically.</p>
-<a class="reference internal image-reference" href="_images/create-notebook.png"><img alt="new file, file name, Jupyter notebook file type" src="_images/create-notebook.png" style="width: 90%;" /></a>
-</section>
-<section id="running-a-jupyter-notebook">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Running a Jupyter Notebook</a><a class="headerlink" href="#running-a-jupyter-notebook" title="Link to this heading"></a></h3>
-<p>Select the “Python 3 (system-wide)” kernel.</p>
-<a class="reference internal image-reference" href="_images/select-kernel.png"><img alt="select python 3 system-wide kernel" src="_images/select-kernel.png" style="width: 90%;" /></a>
-<p>Now enter a line of python code in the first cell of the notebook:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(&quot;hello&quot;)
-</pre></div>
-</div>
-<p>And click Run or press Shift-Enter to run the code.</p>
-<a class="reference internal image-reference" href="_images/run-first-cell.png"><img alt="run a cell to print &quot;hello&quot;" src="_images/run-first-cell.png" style="width: 90%;" /></a>
-</section>
-</section>
-<section id="toolbars">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Toolbars</a><a class="headerlink" href="#toolbars" title="Link to this heading"></a></h2>
-<p>You have used CoCalc’s two main toolbars a bit during your first session. Learn more about them at these locations in this online guide:</p>
+<section id="supported-files">
+<h2>Supported Files<a class="headerlink" href="#supported-files" title="Link to this heading"></a></h2>
+<p>CoCalc allows you to create and upload arbitrary files. Some may have</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="project-toolbar.html"><span class="doc">Project Toolbar</span></a></p></li>
-<li><p><a class="reference internal" href="activity-bar.html"><span class="doc">Activity Bar</span></a></p></li>
+<li><p>extensive dedicated support, e.g. <code class="docutils literal notranslate"><span class="pre">*.ipynb</span></code> or <code class="docutils literal notranslate"><span class="pre">*.tex</span></code></p></li>
+<li><p>CoCalc-specific usage, e.g. <code class="docutils literal notranslate"><span class="pre">*.term</span></code> or <code class="docutils literal notranslate"><span class="pre">*.course</span></code></p></li>
+<li><p>built-in viewers, e.g. <code class="docutils literal notranslate"><span class="pre">*.pdf</span></code> or <code class="docutils literal notranslate"><span class="pre">*.png</span></code></p></li>
+<li><p>nothing special at all, e.g. <code class="docutils literal notranslate"><span class="pre">*.random_extension</span></code></p></li>
 </ul>
+<p>In the latter case you will be able to open the file with a code editor, but if it is a binary format, it may corrupt the content. You will get a warning, however, and there is a way to restore from a backup.</p>
+<p>The most important file types have corresponding tiles when you are trying to make one, and many supported ones are in the dropdown menu:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/annotated_new_file.png"><img alt="Creating a New File" src="_images/annotated_new_file.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Creating a New File</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="your-cocalc-session">
-<span id="cocalc-session"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Your CoCalc Session</a><a class="headerlink" href="#your-cocalc-session" title="Link to this heading"></a></h2>
-<p id="index-0">CoCalc will keep track of projects you have open and files that are open within those projects.
-When you return, you will see the same open projects and files.
-In addition, if you have a program running and disconnect, it will keep running, with a few
-exceptions: the program will stop if any of the following occurs:</p>
-<ul class="simple">
-<li><p>your project is on a trial server (i.e. does not have Member Hosting upgrade applied) and the server is restarted</p></li>
-<li><p>you do not edit a file for more than the idle time specified in <strong>Project Settings</strong></p></li>
-<li><p>the program crashes or runs out of memory</p></li>
-</ul>
-<section id="signing-out">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Signing Out</a><a class="headerlink" href="#signing-out" title="Link to this heading"></a></h3>
-<p>You <a class="reference internal" href="account-toolbar.html#sign-out"><span class="std std-ref">sign out</span></a> by using <strong>Account</strong> → <strong>Preferences</strong> → <strong>Sign Out…</strong></p>
+<section id="jupyter-notebooks">
+<h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Link to this heading"></a></h2>
+<p>Our most popular and widely used feature is our own implementation of Jupyter Notebook interface:</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/annotated_jupyter_notebook.png"><img alt="Jupyter Notebook" src="_images/annotated_jupyter_notebook.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Jupyter Notebook</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>While it strives to behave very close to familiar for many JupyterLab, it has a number of important advantages, such as full real-time collaboration and saving all output on the server side - nothing is lost if your connection is interrupted or you switch computers. When you do switch computers (or go for a coffee break), your projects and notebooks keep running, performing computations or keeping their state, until <em>idle timeout</em> is reached. For most users it is 30 minutes. If you need a longer timeout, more memory, or CPU, you may be able to upgrade to a more powerful license or spin up some compute servers, where the sky is the limit (and your budget).</p>
 </section>
+<section id="search-and-pin-menu-items">
+<h2>Search and Pin Menu Items<a class="headerlink" href="#search-and-pin-menu-items" title="Link to this heading"></a></h2>
+<p>Sometimes you may not remember where exactly some menu item is located or if it even exists. In such a case the menu search box may be useful. Or, perhaps you know exactly where something is, because you use it all the time, but you don’t want to click through the menu so often. You can pin menu items to the shortcuts toolbar:</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/annotated_search_pin_menu.png"><img alt="Search Menu Items and Add Shortcuts" src="_images/annotated_search_pin_menu.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Search Menu Items and Add Shortcuts</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="next-steps">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Next Steps</a><a class="headerlink" href="#next-steps" title="Link to this heading"></a></h2>
-<p>Continue your tour of CoCalc with these topics:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a></p></li>
-<li><p><a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a></p></li>
-<li><p><a class="reference internal" href="sagews.html"><span class="doc">Sage Worksheets</span></a></p></li>
-<li><p><a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a></p></li>
-<li><p><a class="reference internal" href="frame-editor.html"><span class="doc">Frame Editor</span></a></p></li>
-</ul>
-<p>Subscribe to CoCalc and upgrade your projects here:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="upgrade-guide.html"><span class="doc">Project Upgrades</span></a></p></li>
-</ul>
-<section id="additional-resources">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Additional Resources</a><a class="headerlink" href="#additional-resources" title="Link to this heading"></a></h3>
-<p id="index-1">In addition the <a class="reference internal" href="genindex.html"><span class="doc">Index</span></a> in this User Manual, if you have specific questions you can check the CoCalc Wiki. Most of the CoCalc Wiki content has been moved into this User Manual.</p>
-<ul class="simple">
-<li><p>CoCalc Wiki <a class="reference external" href="https://github.com/sagemathinc/cocalc/search?utf8=%E2%9C%93&amp;q=&amp;type=Wikis">search</a></p></li>
-<li><p>CoCalc Wiki <cite>index page &lt;https://github.com/sagemathinc/cocalc/wiki/Home&gt;</cite></p></li>
-</ul>
-<p id="index-3"><span id="index-2"></span>If you would like to chat with other CoCalc users, visit our Discord server: <a class="reference external" href="https://discord.gg/nEHs2GK">https://discord.gg/nEHs2GK</a></p>
-<p id="index-5"><span id="index-4"></span>There is also a Google discussion group for CoCalc. You can view it online or use it as a mailing list: <a class="reference external" href="https://groups.google.com/forum/#!forum/cocalc">https://groups.google.com/forum/#!forum/cocalc</a></p>
+<section id="frames-and-terminals">
+<h2>Frames and Terminals<a class="headerlink" href="#frames-and-terminals" title="Link to this heading"></a></h2>
+<p>CoCalc does not support opening two arbitrary files side-by-side - you have to open CoCalc itself in multiple browser windows to achieve that. But you can have several views for the same file or related file, in particular, terminals. Sometimes you get it automatically, but it can always be done manually too. Split the frame and pick the required frame type in the first menu item:</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/annotated_frame_editor.png"><img alt="Multiple Frames" src="_images/annotated_frame_editor.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Multiple Frames</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="statements">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Statements</a><a class="headerlink" href="#statements" title="Link to this heading"></a></h3>
-<p id="index-6">CoCalc GDPR Compliance Statement: <a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/GDPR">https://github.com/sagemathinc/cocalc/wiki/GDPR</a></p>
-<p id="index-7">CoCalc Accessibility Statement: <a class="reference external" href="https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement">https://github.com/sagemathinc/cocalc/wiki/AccessibilityStatement</a></p>
-<p id="index-8">CoCalc Voluntary Product Accessibility Template (VPAT): <a class="reference external" href="https://cocalc.com/policies/accessibility">https://cocalc.com/policies/accessibility</a></p>
+<section id="timetravel-backups-logs">
+<h2>TimeTravel, Backups, Logs<a class="headerlink" href="#timetravel-backups-logs" title="Link to this heading"></a></h2>
+<p>You have nothing to lose when you are just starting out, but sooner or later you will be in a situation where you wish you didn’t make a certain change or you manage to hit a bug. (Which we are trying to keep to a minimum!) In addition to you using <code class="docutils literal notranslate"><span class="pre">git</span></code> or doing manual backups, CoCalc offers automatic version history via TimeTravel and regular file system snapshots. These are the tools you can access on your own at any time. Should the unthinkable happen and you won’t be able to recover your work using either - file a support ticket, we also maintain backups accessible only to admins. (These are used <em>extremely</em> rarely, but we had a few cases over the years.)</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/annotated_timetravel.png"><img alt="TimeTravel" src="_images/annotated_timetravel.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">TimeTravel</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
+<section id="collaboration-and-ai">
+<h2>Collaboration and AI<a class="headerlink" href="#collaboration-and-ai" title="Link to this heading"></a></h2>
+<p>If you work in CoCalc with your colleagues, you can open the same files to view and edit them simultaneously. For not-quite-real-time collaboration you can use &#64;-mentions in a side chat of any document. And if you don’t have colleagues to ask for help, you can &#64;-mention various LLMs:</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/annotated_side_chat_AI.png"><img alt="Side Chat with AI" src="_images/annotated_side_chat_AI.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Side Chat with AI</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 
@@ -310,8 +246,8 @@ exceptions: the program will stop if any of the following occurs:</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="alternativeto/jupyterhub.html" class="btn btn-neutral float-left" title="Alternative to JupyterHub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="videos.html" class="btn btn-neutral float-right" title="Videos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="howto/turtle.html" class="btn btn-neutral float-left" title="Turtle Graphics with CoCalc" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="teaching-instructors.html" class="btn btn-neutral float-right" title="Instructor Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
