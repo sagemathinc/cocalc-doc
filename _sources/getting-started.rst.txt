@@ -102,17 +102,19 @@ CoCalc does not support opening two arbitrary files side-by-side - you have to o
     
     Multiple Frames
 
-TimeTravel, Backups, Logs
--------------------------
+TimeTravel and Backups
+----------------------
 
 You have nothing to lose when you are just starting out, but sooner or later you will be in a situation where you wish you didn't make a certain change or you manage to hit a bug. (Which we are trying to keep to a minimum!) In addition to you using ``git`` or doing manual backups, CoCalc offers automatic version history via TimeTravel and regular file system snapshots. These are the tools you can access on your own at any time. Should the unthinkable happen and you won't be able to recover your work using either - file a support ticket, we also maintain backups accessible only to admins. (These are used *extremely* rarely, but we had a few cases over the years.)
+
+File system snapshots are accessible via **Backups** button in the File Explorer, while TimeTravel can be opened while editing many types of files:
 
 .. figure:: img/annotated_timetravel.png
     :width: 100%
     :align: center
-    :alt: TimeTravel
+    :alt: TimeTravel for Jupyter Notebook
     
-    TimeTravel
+    TimeTravel for Jupyter Notebook
 
 
 Collaboration and AI
