@@ -22,7 +22,7 @@ Without a license your project will work in :doc:`trial mode <trial>` with *very
 Main UI
 -------
 
-If you open an empty project, you will see a screen similar to this one, where some of the most important features are marked:
+If you open an empty project, you will see a screen similar to this one, where some of the most important features are marked (click on the screenshot to expand it if labels are too small to read):
 
 .. figure:: img/annotated_empty_project.png
     :width: 100%
