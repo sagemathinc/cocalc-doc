@@ -10,185 +10,57 @@ Frame Editor
      :local:
      :depth: 2
 
-This guide explains how to work with the **frame editor** for editing source code, :doc:`LaTeX documents <latex>`, :doc:`Command-line terminal <terminal>` etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is split horizontally. After that, the bottom right frame is changed to a :doc:`Terminal <terminal>`.
+Frame Management
+----------------
 
-.. raw:: html
+When you open a file in CoCalc, you usually end up with one or more **Frames**. The default layout depends on the file type, but you are free to alter it to suit your needs. For example, you may want to open a terminal next to your source code in ``*.py`` or ``*.c`` files, or a Table of Contents next to your Jupyter Notebook, or just have two views for the same file, potentially with different zoom level. Some files may also have a source code view and a rendered one, e.g. CSV, HTML, or :doc:`markdown`.
 
-    <center><iframe
-        width="640" height="360"
-        src="https://www.youtube.com/embed/t8dZLodjav0?si=frKofQn4qfHu_bWw"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe></center>
+For example, you can create a layout like this:
+
+.. figure:: img/annotated_multiple_frames.png
+    :width: 100%
+    :align: center
+    :alt: Multiple Frames Management
     
-You can not only view the same Python source code in two places, but you can also work with e.g. IPython_ on the command-line in the same directory.
+    Multiple Frames Management
 
-.. _IPython: https://www.ipython.org
+When you split a frame into two, they are of the same type as the initial one, but you can change either of them to any type supported for the current file:
 
-.. image:: img/frame-editor-python.png
+.. figure:: img/annotated_frame_change.png
     :width: 100%
-    :alt: split screen with two views of source file plus terminal running ipython
-
-#####################
-Supported file types
-#####################
-
-
-.. index:: Markdown; frame editor
-.. index:: Frame Editor; markdown
-
-.. _frame-editor-markdown:
-
-********
-Markdown
-********
-
-If you open/create a file ending with ``*.md``, you're presented by default with a split view of `Markdown <https://www.markdowntutorial.com/>`_ code on the left and HTML rendered output on the right hand side.
-
-There's an entire page in this guide dedicated to :doc:`markdown`.
-
-
-.. index:: Source Code files
-.. index:: Frame Editor; source code
-
-************************************
-Text, Source Code, and Data Files
-************************************
-
-The frame editor lets you edit many types of text files. Here are some of the most common types, followed by the filename extension:
-
-* plain text: ``.txt``
-* Python code: ``.py``
-* Sage code: ``*.sage``
-* C source code: ``*.c``
-* C++ source code: ``*.c++``
-* Java source code:  ``*.java``
-* Comma-separated data: ``*.csv``
-* YAML data: ``*.yaml``
-* JSON data: ``.json``
-
-
-.. index:: HTML; frame editor
-.. index:: Frame Editor; HTML
-.. _edit-html:
-
-******
-HTML
-******
-
-Open/create a ``*.html`` file and you'll see the rendered output on the right hand side. You can switch the rendered view between "Preview" (which is faster) or "iframe" (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.
-
-.. index:: RMarkdown; frame editor
-.. index:: Frame Editor; RMarkdown
-.. _edit-rmd:
-
-***********
-R Markdown
-***********
-
-Open a ``*.Rmd`` or ``*.rmd`` file to work with `R Markdown`_.
-Depending on the configuration in the preamble, you either produce an HTML or PDF output.
-Do not forget to switch the panel for the rendered output accordingly. Here is an example of R markdown producing a pdf file:
-
-.. image:: img/rmd-pdf-example.png
-    :width: 100%
-    :alt: example of R markdown producing a pdf file
-
-If you produce PDF and HTML output, you can see both after splitting the panel.
-
-There is a brief tutorial on R Markdown in the :doc:`project-library`. To view the sample files, do the following:
-
-#. Open a project where you want the copied files to be placed.
-#. Open the Files tab.
-#. Click "Library" at upper right.
-#. Select "RMarkdown in CoCalc".
-#. Click "Get a copy".
-
-.. image:: img/r-markdown-library.png
-    :width: 100%
-    :alt: fetching R Markdown intro from the project library
-
-.. _R Markdown: https://rmarkdown.rstudio.com/
-
-********
-LaTeX
-********
-
-See :doc:`latex`.
+    :align: center
+    :alt: Changing Frame Type
+    
+    Changing Frame Type
+    
 
 .. index:: Frame Editor; multiple cursors
 .. index:: Text; frame editor
 .. index:: Frame Editor; text files
 
-################
 Multiple Cursors
-################
+----------------
 
-You can get multiple cursors while editing any file in the frame editor using the mouse and ctrl+click (cmd+click on Mac).
+Not only you can have multiple users editing the same file simultaneously, bu you can also get multiple cursors for yourself while editing any file in the frame editor. Use **Ctrl+Click** (**Cmd+Click** on Mac) to put multiple cursors in arbitrary places one at a time or **Alt+Drag** to get cursors on consecutive lines.
 
-If you switch to Sublime keybindings in "Account" > "Preferences" > "Editor settings", you can select text and then use ctrl-D (cmd-D on Mac) to multi-select the next occurrence of the same text.
+If you switch to Sublime keybindings in **Account > Preferences > Editor settings**, you can select text and then use **Ctrl+D** (**Cmd+D** on Mac) to multi-select the next occurrence of the same text.
 
-The frame editor also supports simultaneous editing by more than one user. In this case, separate cursors are displayed for each user.
-
-
-################
-Spell Checker
-################
-
-Here are two ways to spell-check your documents in CoCalc.
-
-**Use your browser's native spell checker.**
-
-The CoCalc frame editor supports the browser's native spell checker for varying file types, including ``.md``, ``.rmd``, and ``.html``. See the documentation for your specific browser for information on how to enable and configure spell checking. You may have to save your file before the spell checker is activated.
-
-
-.. _use-aspell:
-
-**Use the ``aspell`` Linux command.**
-
-The ``aspell`` utility will find possible misspellings and offer corrections. Here's how to use it:
-
-    1. Open a :doc:`./terminal`
-    2. ``aspell -t -c <filename.tex>``
-
-You can add words for ``aspell`` to ignore using `personal dictionaries <http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries>`_. These words won't be underlined red. To do this create the file ``~/.aspell.lang.pws``, where ``lang`` is the choice of langauge. The first line of this file should be ``personal_ws-1.1 lang 0``, where ``lang`` is the choice of language. Then add one word per line for ``aspell`` to ignore. For example, to ignore the words 'bijection' and 'surjection' in an English document, create the file ``~/.aspell.en.pws`` with the content::
-
-   personal_ws-1.1 en 0
-   bijection
-   surjection
-
-The changes will take place the next time ``aspell`` is run on the document. 
-
-################
-Side Chat
-################
-
-You can share comments on a CoCalc file using a side chat panel. For more information, see :ref:`side-chat`.
 
 .. _frame-editor-search:
 
-###################################
-Search and Replace Inside the File
-###################################
+Search and Replace
+------------------
 
-You can search for a string of text in your file while editing by hitting Ctrl-F (or Cmd-F on a Mac) and entering the string you want to search for in the blank that appears at the top. If you want to search for a regular expression rather than simple text, surround the regular expression with slashes. For example, to search for a pound sign and a space at the start of a line, enter ``/^# /`` for the search string.
-
-.. figure:: img/regex-search-ed.png
-    :width: 60%
-    :align: center
-    :alt: search for string inside file being edited
-
-    search in a .sage file; regular expression hint is outlined
+You can search for a string of text in your file by pressing **Ctrl+F** (or **Cmd+F** on a Mac) and entering the string you want to search for in the input box that appears at the top. If you want to search for a regular expression rather than simple text, surround the regular expression with slashes. For example, to search for a pound sign and a space at the start of a line, enter ``/^# /``.
 
 Other commands relating to search and replace:
 
-* **Ctrl-F / Cmd-F:** Start searching
-* **Ctrl-G / Cmd-G:** Find next
-* **Shift-Ctrl-G / Shift-Cmd-G:** Find previous
-* **Shift-Ctrl-F / Cmd-Option-F:** Replace
-* **Shift-Ctrl-R / Shift-Cmd-Option-F:** Replace all
-* **Alt-F:** Persistent search (dialog doesn't autoclose, enter to find next, Shift-Enter to find previous)
+* **Ctrl+F / Cmd+F** - Start searching
+* **Ctrl+G / Cmd+G** - Find next
+* **Shift+Ctrl+G / Shift+Cmd+G** - Find previous
+* **Shift+Ctrl+F / Cmd+Option+F** - Replace
+* **Shift+Ctrl+R / Shift+Cmd+Option+F** - Replace all
 
-Implementation note: CoCalc's frame editor search is implemented using the `CodeMirror search function <https://codemirror.net/demo/search.html#>`_.
+.. note::
+
+    CoCalc's frame editor search is implemented using the `CodeMirror search function <https://codemirror.net/demo/search.html#>`_.
