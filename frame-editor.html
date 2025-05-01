@@ -83,18 +83,9 @@ div.cocalc-header a {
 <li class="toctree-l1"><a class="reference internal" href="signature_features.html">Signature Features</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="enhanced_capabilities.html">Enhanced Capabilities</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Frame Editor</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#supported-file-types">Supported file types</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#markdown">Markdown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#text-source-code-and-data-files">Text, Source Code, and Data Files</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#html">HTML</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#r-markdown">R Markdown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#latex">LaTeX</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#frame-management">Frame Management</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#multiple-cursors">Multiple Cursors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#spell-checker">Spell Checker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#side-chat">Side Chat</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#search-and-replace-inside-the-file">Search and Replace Inside the File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-and-replace">Search and Replace</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="software.html">Software Environment</a></li>
@@ -169,129 +160,49 @@ div.cocalc-header a {
 <span id="index-0"></span><span id="id1"></span><h1>Frame Editor<a class="headerlink" href="#frame-editor" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#supported-file-types" id="id5">Supported file types</a></p>
-<ul>
-<li><p><a class="reference internal" href="#markdown" id="id6">Markdown</a></p></li>
-<li><p><a class="reference internal" href="#text-source-code-and-data-files" id="id7">Text, Source Code, and Data Files</a></p></li>
-<li><p><a class="reference internal" href="#html" id="id8">HTML</a></p></li>
-<li><p><a class="reference internal" href="#r-markdown" id="id9">R Markdown</a></p></li>
-<li><p><a class="reference internal" href="#latex" id="id10">LaTeX</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#multiple-cursors" id="id11">Multiple Cursors</a></p></li>
-<li><p><a class="reference internal" href="#spell-checker" id="id12">Spell Checker</a></p></li>
-<li><p><a class="reference internal" href="#side-chat" id="id13">Side Chat</a></p></li>
-<li><p><a class="reference internal" href="#search-and-replace-inside-the-file" id="id14">Search and Replace Inside the File</a></p></li>
+<li><p><a class="reference internal" href="#frame-management" id="id4">Frame Management</a></p></li>
+<li><p><a class="reference internal" href="#multiple-cursors" id="id5">Multiple Cursors</a></p></li>
+<li><p><a class="reference internal" href="#search-and-replace" id="id6">Search and Replace</a></p></li>
 </ul>
 </nav>
-<p>This guide explains how to work with the <strong>frame editor</strong> for editing source code, <a class="reference internal" href="latex.html"><span class="doc">LaTeX documents</span></a>, <a class="reference internal" href="terminal.html"><span class="doc">Command-line terminal</span></a> etc. The screenshot below shows a Python file and a Terminal. In order to get that view, the frame editor is split vertically first, and then the right frame is split horizontally. After that, the bottom right frame is changed to a <a class="reference internal" href="terminal.html"><span class="doc">Terminal</span></a>.</p>
-<center><iframe
-    width="640" height="360"
-    src="https://www.youtube.com/embed/t8dZLodjav0?si=frKofQn4qfHu_bWw"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-</iframe></center><p>You can not only view the same Python source code in two places, but you can also work with e.g. <a class="reference external" href="https://www.ipython.org">IPython</a> on the command-line in the same directory.</p>
-<a class="reference internal image-reference" href="_images/frame-editor-python.png"><img alt="split screen with two views of source file plus terminal running ipython" src="_images/frame-editor-python.png" style="width: 100%;" /></a>
-<section id="supported-file-types">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Supported file types</a><a class="headerlink" href="#supported-file-types" title="Link to this heading"></a></h2>
-<section id="markdown">
-<span id="frame-editor-markdown"></span><span id="index-2"></span><span id="index-1"></span><h3><a class="toc-backref" href="#id6" role="doc-backlink">Markdown</a><a class="headerlink" href="#markdown" title="Link to this heading"></a></h3>
-<p>If you open/create a file ending with <code class="docutils literal notranslate"><span class="pre">*.md</span></code>, you’re presented by default with a split view of <a class="reference external" href="https://www.markdowntutorial.com/">Markdown</a> code on the left and HTML rendered output on the right hand side.</p>
-<p>There’s an entire page in this guide dedicated to <a class="reference internal" href="markdown.html"><span class="doc">Markdown</span></a>.</p>
-</section>
-<section id="text-source-code-and-data-files">
-<span id="index-4"></span><span id="index-3"></span><h3><a class="toc-backref" href="#id7" role="doc-backlink">Text, Source Code, and Data Files</a><a class="headerlink" href="#text-source-code-and-data-files" title="Link to this heading"></a></h3>
-<p>The frame editor lets you edit many types of text files. Here are some of the most common types, followed by the filename extension:</p>
-<ul class="simple">
-<li><p>plain text: <code class="docutils literal notranslate"><span class="pre">.txt</span></code></p></li>
-<li><p>Python code: <code class="docutils literal notranslate"><span class="pre">.py</span></code></p></li>
-<li><p>Sage code: <code class="docutils literal notranslate"><span class="pre">*.sage</span></code></p></li>
-<li><p>C source code: <code class="docutils literal notranslate"><span class="pre">*.c</span></code></p></li>
-<li><p>C++ source code: <code class="docutils literal notranslate"><span class="pre">*.c++</span></code></p></li>
-<li><p>Java source code:  <code class="docutils literal notranslate"><span class="pre">*.java</span></code></p></li>
-<li><p>Comma-separated data: <code class="docutils literal notranslate"><span class="pre">*.csv</span></code></p></li>
-<li><p>YAML data: <code class="docutils literal notranslate"><span class="pre">*.yaml</span></code></p></li>
-<li><p>JSON data: <code class="docutils literal notranslate"><span class="pre">.json</span></code></p></li>
-</ul>
-</section>
-<section id="html">
-<span id="edit-html"></span><span id="index-6"></span><span id="index-5"></span><h3><a class="toc-backref" href="#id8" role="doc-backlink">HTML</a><a class="headerlink" href="#html" title="Link to this heading"></a></h3>
-<p>Open/create a <code class="docutils literal notranslate"><span class="pre">*.html</span></code> file and you’ll see the rendered output on the right hand side. You can switch the rendered view between “Preview” (which is faster) or “iframe” (which renderes the page as it is) depending on your needs. You can even close the editor pane, to just see the rendered HTML.</p>
-</section>
-<section id="r-markdown">
-<span id="edit-rmd"></span><span id="index-8"></span><span id="index-7"></span><h3><a class="toc-backref" href="#id9" role="doc-backlink">R Markdown</a><a class="headerlink" href="#r-markdown" title="Link to this heading"></a></h3>
-<p>Open a <code class="docutils literal notranslate"><span class="pre">*.Rmd</span></code> or <code class="docutils literal notranslate"><span class="pre">*.rmd</span></code> file to work with <a class="reference external" href="https://rmarkdown.rstudio.com/">R Markdown</a>.
-Depending on the configuration in the preamble, you either produce an HTML or PDF output.
-Do not forget to switch the panel for the rendered output accordingly. Here is an example of R markdown producing a pdf file:</p>
-<a class="reference internal image-reference" href="_images/rmd-pdf-example.png"><img alt="example of R markdown producing a pdf file" src="_images/rmd-pdf-example.png" style="width: 100%;" /></a>
-<p>If you produce PDF and HTML output, you can see both after splitting the panel.</p>
-<p>There is a brief tutorial on R Markdown in the <a class="reference internal" href="project-library.html"><span class="doc">Project Library</span></a>. To view the sample files, do the following:</p>
-<ol class="arabic simple">
-<li><p>Open a project where you want the copied files to be placed.</p></li>
-<li><p>Open the Files tab.</p></li>
-<li><p>Click “Library” at upper right.</p></li>
-<li><p>Select “RMarkdown in CoCalc”.</p></li>
-<li><p>Click “Get a copy”.</p></li>
-</ol>
-<a class="reference internal image-reference" href="_images/r-markdown-library.png"><img alt="fetching R Markdown intro from the project library" src="_images/r-markdown-library.png" style="width: 100%;" /></a>
-</section>
-<section id="latex">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink">LaTeX</a><a class="headerlink" href="#latex" title="Link to this heading"></a></h3>
-<p>See <a class="reference internal" href="latex.html"><span class="doc">LaTeX Editor</span></a>.</p>
-</section>
-</section>
-<section id="multiple-cursors">
-<span id="index-11"></span><span id="index-10"></span><span id="index-9"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Multiple Cursors</a><a class="headerlink" href="#multiple-cursors" title="Link to this heading"></a></h2>
-<p>You can get multiple cursors while editing any file in the frame editor using the mouse and ctrl+click (cmd+click on Mac).</p>
-<p>If you switch to Sublime keybindings in “Account” &gt; “Preferences” &gt; “Editor settings”, you can select text and then use ctrl-D (cmd-D on Mac) to multi-select the next occurrence of the same text.</p>
-<p>The frame editor also supports simultaneous editing by more than one user. In this case, separate cursors are displayed for each user.</p>
-</section>
-<section id="spell-checker">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">Spell Checker</a><a class="headerlink" href="#spell-checker" title="Link to this heading"></a></h2>
-<p>Here are two ways to spell-check your documents in CoCalc.</p>
-<p><strong>Use your browser’s native spell checker.</strong></p>
-<p>The CoCalc frame editor supports the browser’s native spell checker for varying file types, including <code class="docutils literal notranslate"><span class="pre">.md</span></code>, <code class="docutils literal notranslate"><span class="pre">.rmd</span></code>, and <code class="docutils literal notranslate"><span class="pre">.html</span></code>. See the documentation for your specific browser for information on how to enable and configure spell checking. You may have to save your file before the spell checker is activated.</p>
-<p id="use-aspell"><strong>Use the ``aspell`` Linux command.</strong></p>
-<p>The <code class="docutils literal notranslate"><span class="pre">aspell</span></code> utility will find possible misspellings and offer corrections. Here’s how to use it:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li><p>Open a <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">aspell</span> <span class="pre">-t</span> <span class="pre">-c</span> <span class="pre">&lt;filename.tex&gt;</span></code></p></li>
-</ol>
-</div></blockquote>
-<p>You can add words for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore using <a class="reference external" href="http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries">personal dictionaries</a>. These words won’t be underlined red. To do this create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.lang.pws</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of langauge. The first line of this file should be <code class="docutils literal notranslate"><span class="pre">personal_ws-1.1</span> <span class="pre">lang</span> <span class="pre">0</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of language. Then add one word per line for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore. For example, to ignore the words ‘bijection’ and ‘surjection’ in an English document, create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.en.pws</span></code> with the content:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>personal_ws-1.1 en 0
-bijection
-surjection
-</pre></div>
-</div>
-<p>The changes will take place the next time <code class="docutils literal notranslate"><span class="pre">aspell</span></code> is run on the document.</p>
-</section>
-<section id="side-chat">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Side Chat</a><a class="headerlink" href="#side-chat" title="Link to this heading"></a></h2>
-<p>You can share comments on a CoCalc file using a side chat panel. For more information, see <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a>.</p>
-</section>
-<section id="search-and-replace-inside-the-file">
-<span id="frame-editor-search"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">Search and Replace Inside the File</a><a class="headerlink" href="#search-and-replace-inside-the-file" title="Link to this heading"></a></h2>
-<p>You can search for a string of text in your file while editing by hitting Ctrl-F (or Cmd-F on a Mac) and entering the string you want to search for in the blank that appears at the top. If you want to search for a regular expression rather than simple text, surround the regular expression with slashes. For example, to search for a pound sign and a space at the start of a line, enter <code class="docutils literal notranslate"><span class="pre">/^#</span> <span class="pre">/</span></code> for the search string.</p>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/regex-search-ed.png"><img alt="search for string inside file being edited" src="_images/regex-search-ed.png" style="width: 60%;" /></a>
+<section id="frame-management">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Frame Management</a><a class="headerlink" href="#frame-management" title="Link to this heading"></a></h2>
+<p>When you open a file in CoCalc, you usually end up with one or more <strong>Frames</strong>. The default layout depends on the file type, but you are free to alter it to suit your needs. For example, you may want to open a terminal next to your source code in <code class="docutils literal notranslate"><span class="pre">*.py</span></code> or <code class="docutils literal notranslate"><span class="pre">*.c</span></code> files, or a Table of Contents next to your Jupyter Notebook, or just have two views for the same file, potentially with different zoom level. Some files may also have a source code view and a rendered one, e.g. CSV, HTML, or <a class="reference internal" href="markdown.html"><span class="doc">Markdown</span></a>.</p>
+<p>For example, you can create a layout like this:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/annotated_multiple_frames.png"><img alt="Multiple Frames Management" src="_images/annotated_multiple_frames.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">search in a .sage file; regular expression hint is outlined</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+<p><span class="caption-text">Multiple Frames Management</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
+<p>When you split a frame into two, they are of the same type as the initial one, but you can change either of them to any type supported for the current file:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/annotated_frame_change.png"><img alt="Changing Frame Type" src="_images/annotated_frame_change.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Changing Frame Type</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="multiple-cursors">
+<span id="index-3"></span><span id="index-2"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Multiple Cursors</a><a class="headerlink" href="#multiple-cursors" title="Link to this heading"></a></h2>
+<p>Not only you can have multiple users editing the same file simultaneously, bu you can also get multiple cursors for yourself while editing any file in the frame editor. Use <strong>Ctrl+Click</strong> (<strong>Cmd+Click</strong> on Mac) to put multiple cursors in arbitrary places one at a time or <strong>Alt+Drag</strong> to get cursors on consecutive lines.</p>
+<p>If you switch to Sublime keybindings in <strong>Account &gt; Preferences &gt; Editor settings</strong>, you can select text and then use <strong>Ctrl+D</strong> (<strong>Cmd+D</strong> on Mac) to multi-select the next occurrence of the same text.</p>
+</section>
+<section id="search-and-replace">
+<span id="frame-editor-search"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Search and Replace</a><a class="headerlink" href="#search-and-replace" title="Link to this heading"></a></h2>
+<p>You can search for a string of text in your file by pressing <strong>Ctrl+F</strong> (or <strong>Cmd+F</strong> on a Mac) and entering the string you want to search for in the input box that appears at the top. If you want to search for a regular expression rather than simple text, surround the regular expression with slashes. For example, to search for a pound sign and a space at the start of a line, enter <code class="docutils literal notranslate"><span class="pre">/^#</span> <span class="pre">/</span></code>.</p>
 <p>Other commands relating to search and replace:</p>
 <ul class="simple">
-<li><p><strong>Ctrl-F / Cmd-F:</strong> Start searching</p></li>
-<li><p><strong>Ctrl-G / Cmd-G:</strong> Find next</p></li>
-<li><p><strong>Shift-Ctrl-G / Shift-Cmd-G:</strong> Find previous</p></li>
-<li><p><strong>Shift-Ctrl-F / Cmd-Option-F:</strong> Replace</p></li>
-<li><p><strong>Shift-Ctrl-R / Shift-Cmd-Option-F:</strong> Replace all</p></li>
-<li><p><strong>Alt-F:</strong> Persistent search (dialog doesn’t autoclose, enter to find next, Shift-Enter to find previous)</p></li>
+<li><p><strong>Ctrl+F / Cmd+F</strong> - Start searching</p></li>
+<li><p><strong>Ctrl+G / Cmd+G</strong> - Find next</p></li>
+<li><p><strong>Shift+Ctrl+G / Shift+Cmd+G</strong> - Find previous</p></li>
+<li><p><strong>Shift+Ctrl+F / Cmd+Option+F</strong> - Replace</p></li>
+<li><p><strong>Shift+Ctrl+R / Shift+Cmd+Option+F</strong> - Replace all</p></li>
 </ul>
-<p>Implementation note: CoCalc’s frame editor search is implemented using the <a class="reference external" href="https://codemirror.net/demo/search.html#">CodeMirror search function</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>CoCalc’s frame editor search is implemented using the <a class="reference external" href="https://codemirror.net/demo/search.html#">CodeMirror search function</a>.</p>
+</div>
 </section>
 </section>
 

@@ -48,6 +48,35 @@ If you need more powerful compute resources, use :doc:`compute_server` with **R 
     <br/>
 
 
+.. _edit-rmd:
+
+R Markdown
+----------
+
+Open a ``*.Rmd`` or ``*.rmd`` file to work with `R Markdown`_.
+Depending on the configuration in the preamble, you either produce an HTML or PDF output.
+Do not forget to switch the panel for the rendered output accordingly. Here is an example of R markdown producing a pdf file:
+
+.. image:: img/rmd-pdf-example.png
+    :width: 100%
+    :alt: example of R markdown producing a pdf file
+
+If you produce PDF and HTML output, you can see both after splitting the panel.
+
+There is a brief tutorial on R Markdown in the :doc:`project-library`. To view the sample files, do the following:
+
+#. Open a project where you want the copied files to be placed.
+#. Open the Files tab.
+#. Click "Library" at upper right.
+#. Select "RMarkdown in CoCalc".
+#. Click "Get a copy".
+
+.. image:: img/r-markdown-library.png
+    :width: 100%
+    :alt: fetching R Markdown intro from the project library
+
+.. _R Markdown: https://rmarkdown.rstudio.com/
+
 Other Ways
 ----------
 
@@ -55,7 +84,6 @@ You can also use R in CoCalc via:
 
 - Jupyter notebooks with the R kernel. See :ref:`jupyter-kernels`.
 - Creating a file ending in .r and running it. You can keep your source file in one pane with a Linux terminal beside it to run the program. See :ref:`terminal-editor-panel`.
-- :ref:`edit-rmd` (Rmd file).
 - :ref:`latex-knitr` (rnw or Rtex file).
 - Sage worksheet with R (sagews file and "%r" mode). See Custom “Mode Commands” in Sage Worksheets under :ref:`sagews-wiki`.
 

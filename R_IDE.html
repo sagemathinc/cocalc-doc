@@ -89,6 +89,7 @@ div.cocalc-header a {
 <li class="toctree-l3"><a class="reference internal" href="#collaborative-x11-application">Collaborative X11 Application</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#notebook-server">Notebook Server</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#compute-server">Compute Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#r-markdown">R Markdown</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#other-ways">Other Ways</a></li>
 </ul>
 </li>
@@ -171,10 +172,10 @@ div.cocalc-header a {
 <section id="notebook-server">
 <h2>Notebook Server<a class="headerlink" href="#notebook-server" title="Link to this heading"></a></h2>
 <p>Click on the <strong>Servers / Notebook Servers</strong> tab and launch <strong>R IDE</strong> :</p>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="_images/R_IDE_server.png"><img alt="Launching R IDE Server" src="_images/R_IDE_server.png" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-text">Launching R IDE Server</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">Launching R IDE Server</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <center><iframe
@@ -190,13 +191,29 @@ div.cocalc-header a {
 <p>If you need more powerful compute resources, use <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a> with <strong>R Statistics</strong> image. Here CoCalc’s CEO and Founder William Stein explains how to run it:</p>
 <center><iframe width="640" height="360" src="https://www.youtube.com/embed/Owq90O0vLJo?si=Im_EpK-uJwSkJSSW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 <br/></section>
+<section id="r-markdown">
+<span id="edit-rmd"></span><h2>R Markdown<a class="headerlink" href="#r-markdown" title="Link to this heading"></a></h2>
+<p>Open a <code class="docutils literal notranslate"><span class="pre">*.Rmd</span></code> or <code class="docutils literal notranslate"><span class="pre">*.rmd</span></code> file to work with <a class="reference external" href="https://rmarkdown.rstudio.com/">R Markdown</a>.
+Depending on the configuration in the preamble, you either produce an HTML or PDF output.
+Do not forget to switch the panel for the rendered output accordingly. Here is an example of R markdown producing a pdf file:</p>
+<a class="reference internal image-reference" href="_images/rmd-pdf-example.png"><img alt="example of R markdown producing a pdf file" src="_images/rmd-pdf-example.png" style="width: 100%;" /></a>
+<p>If you produce PDF and HTML output, you can see both after splitting the panel.</p>
+<p>There is a brief tutorial on R Markdown in the <a class="reference internal" href="project-library.html"><span class="doc">Project Library</span></a>. To view the sample files, do the following:</p>
+<ol class="arabic simple">
+<li><p>Open a project where you want the copied files to be placed.</p></li>
+<li><p>Open the Files tab.</p></li>
+<li><p>Click “Library” at upper right.</p></li>
+<li><p>Select “RMarkdown in CoCalc”.</p></li>
+<li><p>Click “Get a copy”.</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/r-markdown-library.png"><img alt="fetching R Markdown intro from the project library" src="_images/r-markdown-library.png" style="width: 100%;" /></a>
+</section>
 <section id="other-ways">
 <h2>Other Ways<a class="headerlink" href="#other-ways" title="Link to this heading"></a></h2>
 <p>You can also use R in CoCalc via:</p>
 <ul class="simple">
 <li><p>Jupyter notebooks with the R kernel. See <a class="reference internal" href="jupyter-start.html#jupyter-kernels"><span class="std std-ref">Jupyter Kernels</span></a>.</p></li>
 <li><p>Creating a file ending in .r and running it. You can keep your source file in one pane with a Linux terminal beside it to run the program. See <a class="reference internal" href="terminal.html#terminal-editor-panel"><span class="std std-ref">Terminal Environment in Split Frame with File Editor</span></a>.</p></li>
-<li><p><a class="reference internal" href="frame-editor.html#edit-rmd"><span class="std std-ref">R Markdown</span></a> (Rmd file).</p></li>
 <li><p><a class="reference internal" href="latex-faq.html#latex-knitr"><span class="std std-ref">Knitr</span></a> (rnw or Rtex file).</p></li>
 <li><p>Sage worksheet with R (sagews file and “%r” mode). See Custom “Mode Commands” in Sage Worksheets under <a class="reference internal" href="sagews.html#sagews-wiki"><span class="std std-ref">Sage Worksheets</span></a>.</p></li>
 </ul>

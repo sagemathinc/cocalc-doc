@@ -366,7 +366,20 @@ You can click the home icon to jump into the home directory.
 <p>Whenever you save a LaTeX document, it will run a spell checker and underline the words that are not spelled correctly.  By default, it uses the language you’ve set in your web browser.</p>
 <p>You can change the autosave interval to be very short in account settings (under editor) if you need the spell checking to update frequently.</p>
 <p>Seeing a list of alternative words (correct spellings) isn’t supported directly in the editor yet <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/3461">Issue #3461</a>.
-For now, a workaround is to run LaTeX-aware <code class="docutils literal notranslate"><span class="pre">aspell</span></code>. See <a class="reference internal" href="frame-editor.html#use-aspell"><span class="std std-ref">Use the aspell Linux command</span></a> for details.</p>
+For now, a workaround is to run LaTeX-aware <code class="docutils literal notranslate"><span class="pre">aspell</span></code>. Here’s how to use it:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Open a <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">aspell</span> <span class="pre">-t</span> <span class="pre">-c</span> <span class="pre">&lt;filename.tex&gt;</span></code></p></li>
+</ol>
+</div></blockquote>
+<p>You can add words for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore using <a class="reference external" href="http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries">personal dictionaries</a>. These words won’t be underlined red. To do this create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.lang.pws</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of langauge. The first line of this file should be <code class="docutils literal notranslate"><span class="pre">personal_ws-1.1</span> <span class="pre">lang</span> <span class="pre">0</span></code>, where <code class="docutils literal notranslate"><span class="pre">lang</span></code> is the choice of language. Then add one word per line for <code class="docutils literal notranslate"><span class="pre">aspell</span></code> to ignore. For example, to ignore the words ‘bijection’ and ‘surjection’ in an English document, create the file <code class="docutils literal notranslate"><span class="pre">~/.aspell.en.pws</span></code> with the content:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>personal_ws-1.1 en 0
+bijection
+surjection
+</pre></div>
+</div>
+<p>The changes will take place the next time <code class="docutils literal notranslate"><span class="pre">aspell</span></code> is run on the document.</p>
 </section>
 <section id="turn-off-automatic-build-and-pdf-preview">
 <span id="index-13"></span><h3><a class="toc-backref" href="#id15" role="doc-backlink">Turn off automatic build and PDF preview</a><a class="headerlink" href="#turn-off-automatic-build-and-pdf-preview" title="Link to this heading"></a></h3>

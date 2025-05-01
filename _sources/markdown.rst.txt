@@ -55,7 +55,7 @@ You can find additional information about variations of markdown relevant to CoC
 Where Markdown can be used in CoCalc
 ####################################
 
-* Editing a ".md" file with the :ref:`frame editor <frame-editor-markdown>`
+* Editing a ".md" file with the :doc:`frame-editor`
 * :doc:`Chat rooms <chat>` (".sage-chat" files)
 * :ref:`Side chat <side-chat>` panel available with any file being edited
 * :ref:`Text cells in Jupyter notebooks <cocalc-jupyter-features>`

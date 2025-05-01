@@ -260,7 +260,18 @@ Whenever you save a LaTeX document, it will run a spell checker and underline th
 You can change the autosave interval to be very short in account settings (under editor) if you need the spell checking to update frequently.
 
 Seeing a list of alternative words (correct spellings) isn't supported directly in the editor yet `Issue #3461 <https://github.com/sagemathinc/cocalc/issues/3461>`_.
-For now, a workaround is to run LaTeX-aware ``aspell``. See :ref:`Use the aspell Linux command <use-aspell>` for details.
+For now, a workaround is to run LaTeX-aware ``aspell``. Here's how to use it:
+
+    1. Open a :doc:`./terminal`
+    2. ``aspell -t -c <filename.tex>``
+
+You can add words for ``aspell`` to ignore using `personal dictionaries <http://aspell.net/man-html/Format-of-the-Personal-and-Replacement-Dictionaries.html#Format-of-the-Personal-and-Replacement-Dictionaries>`_. These words won't be underlined red. To do this create the file ``~/.aspell.lang.pws``, where ``lang`` is the choice of langauge. The first line of this file should be ``personal_ws-1.1 lang 0``, where ``lang`` is the choice of language. Then add one word per line for ``aspell`` to ignore. For example, to ignore the words 'bijection' and 'surjection' in an English document, create the file ``~/.aspell.en.pws`` with the content::
+
+   personal_ws-1.1 en 0
+   bijection
+   surjection
+
+The changes will take place the next time ``aspell`` is run on the document. 
 
 
 
