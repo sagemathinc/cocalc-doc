@@ -23,7 +23,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting Started with Jupyter Notebooks" href="jupyter-start.html" />
+    <link rel="next" title="Jupyter Tips and Tricks" href="jupyter-tips-and-tricks.html" />
     <link rel="prev" title="Core Applications" href="core_applications.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -81,11 +81,15 @@ div.cocalc-header a {
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="core_applications.html">Core Applications</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Jupyter Notebooks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="jupyter-start.html">Getting Started with Jupyter Notebooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="jupyter-enhancements.html">CoCalc Enhancements to Jupyter Notebooks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="jupyter-tips-and-tricks.html">Jupyter Tips and Tricks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-it">What Is It?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter-kernels">Jupyter Kernels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#trusted-notebooks">Trusted Notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-code">Running Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editing-cells">Editing Cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help-in-notebooks">Help in Notebooks</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-tips-and-tricks.html">Jupyter Tips and Tricks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
 </ul>
@@ -142,14 +146,76 @@ div.cocalc-header a {
              
   <section id="jupyter-notebooks">
 <span id="jupyter-notebook"></span><span id="index-0"></span><h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Link to this heading"></a></h1>
-<p>CoCalc offers several options for hosting running <a class="reference external" href="https://www.jupyter.org">Jupyter Notebooks</a> online.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="jupyter-start.html">Getting Started with Jupyter Notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter-enhancements.html">CoCalc Enhancements to Jupyter Notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter-tips-and-tricks.html">Jupyter Tips and Tricks</a></li>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#what-is-it" id="id6">What Is It?</a></p></li>
+<li><p><a class="reference internal" href="#jupyter-kernels" id="id7">Jupyter Kernels</a></p></li>
+<li><p><a class="reference internal" href="#trusted-notebooks" id="id8">Trusted Notebooks</a></p></li>
+<li><p><a class="reference internal" href="#running-code" id="id9">Running Code</a></p></li>
+<li><p><a class="reference internal" href="#editing-cells" id="id10">Editing Cells</a></p></li>
+<li><p><a class="reference internal" href="#help-in-notebooks" id="id11">Help in Notebooks</a></p></li>
 </ul>
-</div>
+</nav>
+<section id="what-is-it">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">What Is It?</a><a class="headerlink" href="#what-is-it" title="Link to this heading"></a></h2>
+<p>As the <a class="reference external" href="https://docs.jupyter.org/en/latest/">official page of the Jupyter project</a> states:</p>
+<blockquote>
+<div><p>A notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls. A notebook, along with an editor (like JupyterLab), provides a fast interactive environment for prototyping and explaining code, exploring and visualizing data, and sharing ideas with others.</p>
+</div></blockquote>
+<p>Nowadays a Jupyter Notebook is a de facto standard document format, typically stored in <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files, which records interactive sessions with a <em>kernel</em>.
+It is made up of <em>cells</em>, which can either store one or more lines of code or formatted text.
+When you <em>run</em> a code cell, the active kernel session evaluates the piece of code in it and the resulting output is shown below.
+The combination of communicating back and forth with a kernel and adding descriptive text makes this form of document very attractive.</p>
+<p>CoCalc has its own implementation of the user interface to work with Jupyter Notebooks, which supports our unique features such as real-time collaboration, AI Assistant, and TimeTravel. However, the underlying format of <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files is exactly the same. You can bring your existing notebooks to CoCalc and resume working, or you can download your work from CoCalc to a local computer or another cloud platform, there is no vendor-lock-in!</p>
+</section>
+<section id="jupyter-kernels">
+<span id="id1"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Jupyter Kernels</a><a class="headerlink" href="#jupyter-kernels" title="Link to this heading"></a></h2>
+<p>Most of the time you don’t have to think much about the Jupyter kernel which you are using, because your notebook already has the right kernel selected or your default kernel is picked automatically for new notebooks. But when you want or need to, you can choose the programming language and environment by selecting a kernel explicitly. See <a class="reference internal" href="howto/jupyter-kernel-selection.html"><span class="doc">Jupyter Kernel Selection</span></a></p>
+</section>
+<section id="trusted-notebooks">
+<span id="cocalc-jupyter-features"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Trusted Notebooks</a><a class="headerlink" href="#trusted-notebooks" title="Link to this heading"></a></h2>
+<p>It is important to understand that Jupyter Notebooks are very flexible and can do pretty much anything in your account. Just as you should not click on links in random emails or install arbitrary apps on your phone, you should not open or run Jupyter Notebooks, unless you trust their source. When you do open a freshly uploaded notebook, you will see <strong>Not Trusted</strong> message which goes away if you start executing cells.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/jn_TOC_and_trust.png"><img alt="A Not-Yet-Trusted Notebook" src="_images/jn_TOC_and_trust.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">A Not-Yet-Trusted Notebook</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="running-code">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Running Code</a><a class="headerlink" href="#running-code" title="Link to this heading"></a></h2>
+<p>In order to execute code inside a cell (or multiple cells), you can use various menu items, toolbar buttons, buttons on the top of a cell itself, or press <strong>Shift + Enter</strong>.</p>
+<p>Once the cell is executed, it will get a marker like <strong>In [9]</strong> on the left, meaning that it was the 9th execution of a cell during this kernel session. You can execute cells out of order and you can execute the same cell multiple times. Each time this counter increases and allows you to get a sense of the order in which cells were executed. Once again: <em>this order does not have to match the order in which the cells are written/shown</em>.</p>
+<p>CoCalc does show a more stable cell number in the top right corner as well - it enumerates cells from top to bottom regardless of execution and includes text cells as well.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/jn_running_code.png"><img alt="Running Code in Cells" src="_images/jn_running_code.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Running Code in Cells</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Jupyter Notebooks can be in two modes: command one for operations on whole cells (and quickly navigating around using arrow keys) or editing mode. In CoCalc the current or selected cell in command mode has a blue border. You may select several cells at once to perform a group operation on them, e.g. delete. To select a range of cells, select the first one, then <strong>Shift - Click</strong> on the last one.</p>
+</section>
+<section id="editing-cells">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Editing Cells</a><a class="headerlink" href="#editing-cells" title="Link to this heading"></a></h2>
+<p>To enter editing mode, click on a code cell, double click on a rendered text cell, or press Enter while the desired cell is selected in command mode. Press <strong>Esc</strong> to go back to command mode. To switch the type of a cell from code to text or back you can press <strong>M</strong> and <strong>Y</strong> respectively while in command mode or use <strong>Edit &gt; Cell Type</strong> menu. To render a text cell, “run” it by pressing <strong>Shift + Enter</strong> or using menu.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/jn_editing_cells.png"><img alt="Editing Notebook" src="_images/jn_editing_cells.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Editing Notebook</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="help-in-notebooks">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Help in Notebooks</a><a class="headerlink" href="#help-in-notebooks" title="Link to this heading"></a></h2>
+<p>A lot can be done with Jupyter Notebooks and there are a lot of keyboard shortcuts if you like them. (If not, you still have to be careful in command mode, e.g. pressing <strong>D</strong> twice deletes the current cell!) Apart from browsing the menu items, two great sources when you are looking for some action are the search box in the <strong>Help</strong> menu and the list of all commands and their shortcuts accessible from the same menu or by pressing <strong>H</strong> while in command mode.</p>
+<p>We also have a growing collection of videos, linked from the <strong>Help</strong> menu as well. For example, you can watch how to <a class="reference external" href="https://youtu.be/Fhu-RWYvUh4?feature=shared">📺 create</a> a new Jupyter Notebook in CoCalc or <a class="reference external" href="https://youtu.be/2YWhSWGFQM8?feature=shared">📺 generate</a> one using <a class="reference internal" href="ai.html"><span class="doc">AI Assistant</span></a>.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/jn_help.png"><img alt="Help in Notebooks" src="_images/jn_help.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Help in Notebooks</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 
 
@@ -157,7 +223,7 @@ div.cocalc-header a {
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="core_applications.html" class="btn btn-neutral float-left" title="Core Applications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="jupyter-start.html" class="btn btn-neutral float-right" title="Getting Started with Jupyter Notebooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="jupyter-tips-and-tricks.html" class="btn btn-neutral float-right" title="Jupyter Tips and Tricks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

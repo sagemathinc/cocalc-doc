@@ -133,3 +133,89 @@ You can either *restart* the kernel to clean up its current memory (i.e. all var
     :width: 90%
     :alt: halt button
 
+############################
+protect cells from deletion
+############################
+
+You can protect markdown and code cells from deletion in a Jupyter notebook using "Delete protection -- toggle whether cells are deletable" in the "Edit" menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.
+
+.. figure:: img/jupyter/delete-protect.png
+     :width: 60%
+     :align: center
+     :alt: protecting cells from deletion
+     
+     protecting cells from being deleted
+
+############################
+protect cells from editing
+############################
+
+
+You can prevent editing of markdown and code cells in a Jupyter notebook using "Edit protect -- toggle whether cells are editable" in the "Edit" menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.
+
+.. figure:: img/jupyter/edit-protect.png
+     :width: 60%
+     :align: center
+     :alt: protecting cells from editing
+     
+     protecting cells from being edited
+
+
+.. index:: Jupyter Notebooks; slideshow
+
+#######################################
+slideshow
+#######################################
+
+CoCalc notebooks offer you a shortcut for making a slideshow. Select "View" > "Cell Toolbar..." > "Slideshow" to add a ``Slide`` button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the "Slideshow" in the "Notebook" menu at the top of a notebook, or select "File" > "Slideshow", or split the frame and change one of the resulting frames to "Slideshow". The latter allows you to view the original notebook side-by-side with the slides.
+
+.. figure:: img/jupyter/slideshow-1.png
+     :width: 80%
+     :align: center
+     :alt: slide button in cell toolbar
+
+     enabling "Slide" button in cell toolbar
+
+.. figure:: img/jupyter/slideshow-2.png
+     :width: 80%
+     :align: center
+     :alt: selecting slide type
+
+     selecting slide type for each cell
+
+When presenting, the next slide is to the right, while the next subslide is below. Fragments are revealed within the present slide. Click in the slideshow and then click "?" to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking in the toolbar above the show and clicking "Build", or by clicking "File" in the toolbar above the notebook and again selecting "Slideshow".
+
+.. figure:: img/jupyter/slideshow-3.png
+     :width: 80%
+     :align: center
+     :alt: notebook side-by-side with slideshow
+
+     original notebook side by side with slideshow
+
+
+.. index:: Jupyter Notebooks; interactive widgets
+.. _jupyter-interactive-widgets:
+
+##########################
+widgets in CoCalc
+##########################
+
+`Jupyter Widgets`_ are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
+real-time collaboration, :doc:`time-travel`, and :ref:`side-chat`.
+
+A good way to get started using Jupyter widgets is to go through the `Widget List`_ in the main widgets documentation.
+
+.. figure:: img/jupyter/cocalc-widgets-a.png
+     :width: 100%
+     :align: center
+     :alt: notebook with widgets
+
+     CoCalc Jupyter notebook with Jupyter Widgets
+
+For more information on the implementation of Jupyter Widgets in Cocalc, including support for real-time collaboration, see this video presentation: `Jupyter Widgets in CoCalc  <https://www.youtube.com/watch?v=t4h5QrBKjyY>`_.
+
+.. _Jupyter Widgets: https://ipywidgets.readthedocs.io/en/stable/index.html
+.. _Widget List: https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html
+
+
+
