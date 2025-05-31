@@ -5,5 +5,6 @@ Core Applications
    :maxdepth: 2
 
    jupyter
+   jupyter-tips-and-tricks
    latex
    terminal
