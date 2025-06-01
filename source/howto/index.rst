@@ -14,7 +14,6 @@ CoCalc Platform
     firewall-info
     convert-html-to-pdf
     software-development
-    export-timetravel
     install-julia-package
     install-python-lib
     install-r-package

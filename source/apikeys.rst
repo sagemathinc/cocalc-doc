@@ -2,7 +2,7 @@
 API Keys
 ========
 
-A valid API key is required on all API requests. Keys created using the following steps can be used with both `API v1 <https://doc.cocalc.com/api/index.html>`_ and `API v2 <https://doc.cocalc.com/api2/index.html>`_.
+A valid API key is required on all API requests.
 
 .. contents::
    :local:

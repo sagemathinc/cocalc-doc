@@ -12,7 +12,6 @@
    ../account/purchases
    ../account/ssh
    ../account/support
-   ../api-examples
    ../chatgpt
    ../cocalc-cloud
    ../platform-news

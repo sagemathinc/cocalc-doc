@@ -12,7 +12,7 @@ This explains in depth how you can work productively on `CoCalc`_.
    introduction
    core_applications
    signature_features
-   enhanced_capabilities
+   advanced_capabilities
    user_interface
    service_options
    howto/index

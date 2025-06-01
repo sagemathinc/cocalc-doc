@@ -1,11 +1,10 @@
 =====================
-Enhanced Capabilities
+Advanced Capabilities
 =====================
 
 .. toctree::
    :maxdepth: 2
 
-   frame-editor
    software
    vscode
    R_IDE
@@ -25,5 +24,4 @@ Enhanced Capabilities
    backups
    apikeys
    api2/index.rst
-   api/index.rst
    display-options
