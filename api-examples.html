@@ -79,7 +79,7 @@ div.cocalc-header a {
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="core_applications.html">Core Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="signature_features.html">Signature Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enhanced_capabilities.html">Enhanced Capabilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_capabilities.html">Advanced Capabilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_interface.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="service_options.html">Service Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">How-tos</a></li>
@@ -196,15 +196,15 @@ Then, we use the <a class="reference external" href="https://requests.readthedoc
 <p>Here are notes on integrating CoCalc in an IFrame in a web application using the CoCalc API.
 You should be able to create a proof of concept using the API introduction above and these notes.</p>
 <ol class="arabic simple">
-<li><p>You need an account with an API key. You can get an API key via the UI or here using the <a class="reference internal" href="api/create_account.html"><span class="doc">create_account</span></a> API call.</p></li>
+<li><p>You need an account with an API key. You can get an API key via the UI or here using the <span class="xref std std-doc">../api/create_account</span> API call.</p></li>
 <li><p>You can create several accounts. If you are running the CoCalc Docker image, you probably want one account <a class="reference external" href="https://github.com/sagemathinc/cocalc-docker#make-a-user-an-admin">to be an admin</a> and then have additional accounts for each actual user of your platform.</p></li>
 <li><p>You have to create at least one project.
 Note: <em>The production website runs each project in their own container.</em>
 <em>This means you might want to create several projects to get proper isolation.</em></p></li>
-<li><p>With the API, you can <a class="reference internal" href="api/copy_path_between_projects.html"><span class="doc">copy files between projects</span></a> or <a class="reference internal" href="api/write_text_file_to_project.html"><span class="doc">write to a file</span></a>. It’s also possible to <a class="reference internal" href="api/project_exec.html"><span class="doc">run arbitrary commands</span></a>.</p></li>
+<li><p>With the API, you can <span class="xref std std-doc">copy files between projects</span> or <span class="xref std std-doc">write to a file</span>. It’s also possible to <span class="xref std std-doc">run arbitrary commands</span>.</p></li>
 <li><p>To show a notebook to a user (and just the notebook) you need to do this:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="api/user_auth.html"><span class="doc">get a fresh auth token</span></a></p></li>
+<li><p><span class="xref std std-doc">get a fresh auth token</span></p></li>
 <li><p>make an IFrame in your website, which points to a project and file, and ends with <code class="docutils literal notranslate"><span class="pre">?auth_token=...&amp;fullscreen=kiosk</span></code>.
 The parameter <code class="docutils literal notranslate"><span class="pre">fullscreen=kiosk</span></code> removes the UI.
 A full example might look like this

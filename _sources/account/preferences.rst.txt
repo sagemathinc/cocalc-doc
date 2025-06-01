@@ -42,7 +42,7 @@ Most of the entries under ``Account settings`` are self-explanatory. Here are a 
 
 .. index:: Preferences; API key
 
-* Your password is needed to create or change the **API key** for your account. See :doc:`CoCalc API documentation <../api/index>` to learn about the API.
+* Your password is needed to create or change the **API key** for your account. See :doc:`CoCalc API documentation <../api2/index>` to learn about the API.
 
 .. index::
    Sign out of CoCalc; from preferences

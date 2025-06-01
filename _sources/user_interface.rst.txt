@@ -6,6 +6,7 @@ User Interface
    :maxdepth: 2
 
    fullscreen
+   frame-editor
    project
    project-toolbar
    activity-bar
