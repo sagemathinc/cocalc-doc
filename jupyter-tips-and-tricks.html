@@ -82,21 +82,12 @@ div.cocalc-header a {
 <li class="toctree-l1 current"><a class="reference internal" href="core_applications.html">Core Applications</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Jupyter Tips and Tricks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#run-jupyter-notebook-with-gpu-support">Run Jupyter notebook with GPU support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#customize-jupyter-notebook-latex-export-settings">Customize Jupyter notebook LaTeX export settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#embed-a-cocalc-project-in-your-website">Embed a CoCalc project in your website</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#notebook-too-large-remove-output">Notebook too large? Remove output.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#play-a-wav-file-in-a-jupyter-notebook">Play a .wav file in a Jupyter notebook</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#wav-file-on-disk">wav file on disk</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#wav-file-embedded-in-notebook">wav file embedded in notebook</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#remove-local-files-to-troubleshoot-a-notebook">Remove Local Files to Troubleshoot a Notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#use-the-halt-button-to-conserve-memory">Use the Halt Button to Conserve Memory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#protect-cells-from-deletion">protect cells from deletion</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#protect-cells-from-editing">protect cells from editing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#slideshow">slideshow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#widgets-in-cocalc">widgets in CoCalc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#run-jupyter-notebooks-with-gpu-support">Run Jupyter Notebooks with GPU Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#widgets">Widgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#protect-cells">Protect Cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#slideshow">Slideshow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#play-a-wav-file">Play a WAV File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#customize-latex-export-settings">Customize LaTeX Export Settings</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="latex.html">LaTeX Editor</a></li>
@@ -157,161 +148,79 @@ div.cocalc-header a {
 <span id="index-0"></span><h1>Jupyter Tips and Tricks<a class="headerlink" href="#jupyter-tips-and-tricks" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#run-jupyter-notebook-with-gpu-support" id="id9">Run Jupyter notebook with GPU support</a></p></li>
-<li><p><a class="reference internal" href="#customize-jupyter-notebook-latex-export-settings" id="id10">Customize Jupyter notebook LaTeX export settings</a></p></li>
-<li><p><a class="reference internal" href="#embed-a-cocalc-project-in-your-website" id="id11">Embed a CoCalc project in your website</a></p></li>
-<li><p><a class="reference internal" href="#notebook-too-large-remove-output" id="id12">Notebook too large? Remove output.</a></p></li>
-<li><p><a class="reference internal" href="#play-a-wav-file-in-a-jupyter-notebook" id="id13">Play a .wav file in a Jupyter notebook</a></p></li>
-<li><p><a class="reference internal" href="#remove-local-files-to-troubleshoot-a-notebook" id="id14">Remove Local Files to Troubleshoot a Notebook</a></p></li>
-<li><p><a class="reference internal" href="#use-the-halt-button-to-conserve-memory" id="id15">Use the Halt Button to Conserve Memory</a></p></li>
-<li><p><a class="reference internal" href="#protect-cells-from-deletion" id="id16">protect cells from deletion</a></p></li>
-<li><p><a class="reference internal" href="#protect-cells-from-editing" id="id17">protect cells from editing</a></p></li>
-<li><p><a class="reference internal" href="#slideshow" id="id18">slideshow</a></p></li>
-<li><p><a class="reference internal" href="#widgets-in-cocalc" id="id19">widgets in CoCalc</a></p></li>
+<li><p><a class="reference internal" href="#run-jupyter-notebooks-with-gpu-support" id="id5">Run Jupyter Notebooks with GPU Support</a></p></li>
+<li><p><a class="reference internal" href="#widgets" id="id6">Widgets</a></p></li>
+<li><p><a class="reference internal" href="#protect-cells" id="id7">Protect Cells</a></p></li>
+<li><p><a class="reference internal" href="#slideshow" id="id8">Slideshow</a></p></li>
+<li><p><a class="reference internal" href="#play-a-wav-file" id="id9">Play a WAV File</a></p></li>
+<li><p><a class="reference internal" href="#customize-latex-export-settings" id="id10">Customize LaTeX Export Settings</a></p></li>
 </ul>
 </nav>
-<section id="run-jupyter-notebook-with-gpu-support">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Run Jupyter notebook with GPU support</a><a class="headerlink" href="#run-jupyter-notebook-with-gpu-support" title="Link to this heading"></a></h2>
-<p>CoCalc allows you to use basic and advanced GPUs for a few pennies an hour! See <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a> for details.</p>
+<section id="run-jupyter-notebooks-with-gpu-support">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Run Jupyter Notebooks with GPU Support</a><a class="headerlink" href="#run-jupyter-notebooks-with-gpu-support" title="Link to this heading"></a></h2>
+<p>CoCalc allows you to easily use basic and advanced GPUs, as well as machines with a lot of CPU cores and RAM! See <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a> for details.</p>
 </section>
-<section id="customize-jupyter-notebook-latex-export-settings">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Customize Jupyter notebook LaTeX export settings</a><a class="headerlink" href="#customize-jupyter-notebook-latex-export-settings" title="Link to this heading"></a></h2>
-<p>See <a class="reference internal" href="latex-faq.html#nbconvert-exports"><span class="std std-ref">Customize Jupyter notebook LaTeX export settings</span></a>.</p>
-</section>
-<section id="embed-a-cocalc-project-in-your-website">
-<span id="jupyter-ipynb-too-large"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id11" role="doc-backlink">Embed a CoCalc project in your website</a><a class="headerlink" href="#embed-a-cocalc-project-in-your-website" title="Link to this heading"></a></h2>
-<p>Suppose you have an interactive application running in a CoCalc project and you would like to share it.
-You can share documents publicly and embed them, see <a class="reference internal" href="share.html"><span class="doc">Collaborate. Share! Publish!!!</span></a>.</p>
-<p>Embedding the CoCalc interactive website directly in any other website is restricted because it is a security risk (see <a class="reference external" href="https://owasp.org/www-community/attacks/Clickjacking">clickjacking</a>, etc.).
-Beyond that, users who are not collaborators won’t be able to see the project.</p>
-</section>
-<section id="notebook-too-large-remove-output">
-<h2><a class="toc-backref" href="#id12" role="doc-backlink">Notebook too large? Remove output.</a><a class="headerlink" href="#notebook-too-large-remove-output" title="Link to this heading"></a></h2>
+<section id="widgets">
+<span id="jupyter-interactive-widgets"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id6" role="doc-backlink">Widgets</a><a class="headerlink" href="#widgets" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/index.html">Jupyter Widgets</a> are Python objects that let you build interactive GUIs for your Jupyter notebooks. A good way to get started using Jupyter widgets is to go through the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html">Widget List</a>. In CoCalc widgets are fully collaborative, meaning that you and your collaborators share and see exactly the same state of them. This is different from most other platforms, where changes to controls made by one user are not visible to another.</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/ipynb-too-large-help.png"><img alt="file-too-large error" src="_images/ipynb-too-large-help.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/cocalc-widgets-a.png"><img alt="notebook with widgets" src="_images/cocalc-widgets-a.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-text">Jupyter notebook <em>file too large</em> error</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-text">CoCalc Jupyter notebook with Jupyter Widgets</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way; instead, you will see the error message shown above. Usually, the problem occurs when the notebook has created large amounts of output. In that case, there is a command you can run from the <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a> to remove output. If removing output results in a small enough notebook, you will be able to open the “-no-output” version of the notebook normally.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># run this from a CoCalc Linux terminal (.term file)</span>
-<span class="c1"># use the actual name of your notebook for &quot;myfile.ipynb&quot;</span>
-cc-jupyter-no-output<span class="w"> </span>myfile.ipynb
-<span class="c1"># the above command creates myfile-no-output.ipynb</span>
-</pre></div>
-</div>
-<p>If your Jupyter notebook is creating an image file from a plot that exceeds the size limit, here are some things you can do:</p>
-<ol class="arabic">
-<li><p>If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with <a class="reference internal" href="project-settings.html#jupyterlab-server"><span class="std std-ref">JupyterLab server</span></a>. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.</p></li>
-<li><p>Revert the notebook to an earlier version, before the large plot was created. Click the <a class="reference internal" href="project-files.html#project-snapshot"><span class="std std-ref">Backups button</span></a> in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.</p></li>
-<li><p>The default image file format for plots with the “R (R Project)” Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>options(jupyter.plot_mimetypes = c(&#39;text/plain&#39;, &#39;image/png&#39;))
-</pre></div>
-</div>
-</li>
-</ol>
+<p>For more information on the implementation watch <a class="reference external" href="https://www.youtube.com/watch?v=t4h5QrBKjyY">📺 Jupyter Widgets in CoCalc</a>.</p>
 </section>
-<section id="play-a-wav-file-in-a-jupyter-notebook">
-<span id="index-3"></span><span id="index-2"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">Play a .wav file in a Jupyter notebook</a><a class="headerlink" href="#play-a-wav-file-in-a-jupyter-notebook" title="Link to this heading"></a></h2>
-<p>CoCalc Jupyter notebooks now support embedding audio files. There are several ways you can embed an audio file so it plays nicely in a Jupyter notebook:</p>
-<section id="wav-file-on-disk">
-<h3>wav file on disk<a class="headerlink" href="#wav-file-on-disk" title="Link to this heading"></a></h3>
+<section id="protect-cells">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Protect Cells</a><a class="headerlink" href="#protect-cells" title="Link to this heading"></a></h2>
+<p>You can protect cells from being modified or deleted using <strong>Edit &gt; Protect</strong> menu. Note that this only prevents accidental edit and delete operations via regular interface. It is easy to bypass this protection using other means or turn it off via <strong>Edit &gt; Remove Protection</strong>.</p>
+</section>
+<section id="slideshow">
+<span id="index-2"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Slideshow</a><a class="headerlink" href="#slideshow" title="Link to this heading"></a></h2>
+<p>To make a slideshow from a Jupyter Notebook, select <strong>View &gt; Cell Toolbar &gt; Slideshow toolbar</strong> to add a selector at the top right of each cell and specify whether it is a slide, subslide, or fragment. To view the slideshow, select <strong>File  &gt; Slideshow</strong> or split the frame and change one of the resulting frames to <strong>Slideshow</strong>.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/slideshow-2.png"><img alt="Cell Type for Slides Selector" src="_images/slideshow-2.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Cell Type for Slides Selector</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>When presenting, the next <em>Slide</em> is to the right, while the next <em>Subslide</em> is below. Fragments are revealed within the present slide. Click in the slideshow and then click <strong>?</strong> to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking <strong>Build</strong> in the toolbar above or by selecting <strong>File &gt; Slideshow</strong> again.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/slideshow-3.png"><img alt="Slideshow Mode" src="_images/slideshow-3.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">Slideshow Mode</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="play-a-wav-file">
+<span id="index-4"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">Play a WAV File</a><a class="headerlink" href="#play-a-wav-file" title="Link to this heading"></a></h2>
+<p>CoCalc Jupyter Notebooks support embedding audio files.</p>
+<p><strong>WAV File on Disk</strong></p>
 <ol class="arabic">
-<li><p>Create a file on disk, e.g., <code class="docutils literal notranslate"><span class="pre">tuba.wav</span></code>. If you’re using <code class="docutils literal notranslate"><span class="pre">simpleaudio</span></code> or something else to create sound, make sure to figure out how to save that sound to a local file.</p></li>
-<li><p>Put this in the markdown cell and hit shift+enter:</p>
+<li><p>Create a file on disk, e.g. <code class="docutils literal notranslate"><span class="pre">tuba.wav</span></code>. If you’re using <code class="docutils literal notranslate"><span class="pre">simpleaudio</span></code> or something else to create sound, make sure to figure out how to save that sound to a local file.</p></li>
+<li><p>Put this in the markdown cell and hit <strong>Shift + Enter</strong>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;audio controls=true src=&quot;tuba.wav&quot;/&gt;
 </pre></div>
 </div>
 </li>
-<li><p>You’ll see an embedded audio controller appear and you can play your audio.</p></li>
+<li><p>You will see an embedded audio controller appear and you can play your audio.</p></li>
 </ol>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/jupyter-wav-2.png"><img alt="audio controls for wav playback" src="_images/jupyter-wav-2.png" style="width: 60%;" /></a>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/jupyter-wav-2.png"><img alt="Audio Controls to Play WAV File" src="_images/jupyter-wav-2.png" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-text">audio controls to play wav file</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Audio Controls to Play WAV File</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-</section>
-<section id="wav-file-embedded-in-notebook">
-<h3>wav file embedded in notebook<a class="headerlink" href="#wav-file-embedded-in-notebook" title="Link to this heading"></a></h3>
-<p>Alternatively, you might want the file to be embedded in the notebook itself. To do this, click the picture icon on the right of a markdown cell, or click “Edit –&gt; Insert images in …”, then drag and drop to copy the wav file as an attachment to that cell. Then replace the image attachment code that is generated by:</p>
+<p><strong>Embedded WAV File</strong></p>
+<p>Alternatively, you might want the file to be embedded in the notebook itself. To do this, click the picture icon on the right of a markdown cell or click <strong>Edit &gt; Insert images in …</strong>, then drag and drop to copy the WAV file as an attachment to that cell. Then replace the image attachment code that is generated by:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;audio controls=true src=&quot;attachment:tuba.wav&quot;/&gt;
 </pre></div>
 </div>
-<p>and again you’ll see a player and can play your file.</p>
+<p>You will see a player and can play your file.</p>
 </section>
-</section>
-<section id="remove-local-files-to-troubleshoot-a-notebook">
-<span id="index-4"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">Remove Local Files to Troubleshoot a Notebook</a><a class="headerlink" href="#remove-local-files-to-troubleshoot-a-notebook" title="Link to this heading"></a></h2>
-<p>If you have a Jupyter notebook that suddenly stops working, especially with extensions or widgets, you can try removing local files in a <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a>, then restarting and running the notebook:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd
-rm -rf .sage .ipython/ .config/ .local/ .jupyter .cache/
-</pre></div>
-</div>
-<p>You will need to reinstall packages you added locally after doing the above.</p>
-</section>
-<section id="use-the-halt-button-to-conserve-memory">
-<span id="jupyter-halt"></span><span id="index-5"></span><h2><a class="toc-backref" href="#id15" role="doc-backlink">Use the Halt Button to Conserve Memory</a><a class="headerlink" href="#use-the-halt-button-to-conserve-memory" title="Link to this heading"></a></h2>
-<p>Each running Jupyter Notebook spawns a session in your project.
-This <strong>uses up memory</strong>, which could cause troubles running all your processes in your project.</p>
-<p>You can either <em>restart</em> the kernel to clean up its current memory (i.e. all variables are deleted), or if you’ve finished working on that notebook, click the <code class="docutils literal notranslate"><span class="pre">Halt</span></code> button to stop the kernel and close the notebook.</p>
-<a class="reference internal image-reference" href="_images/jupyter-halt-button.png"><img alt="halt button" src="_images/jupyter-halt-button.png" style="width: 90%;" /></a>
-</section>
-<section id="protect-cells-from-deletion">
-<h2><a class="toc-backref" href="#id16" role="doc-backlink">protect cells from deletion</a><a class="headerlink" href="#protect-cells-from-deletion" title="Link to this heading"></a></h2>
-<p>You can protect markdown and code cells from deletion in a Jupyter notebook using “Delete protection – toggle whether cells are deletable” in the “Edit” menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.</p>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/delete-protect.png"><img alt="protecting cells from deletion" src="_images/delete-protect.png" style="width: 60%;" /></a>
-<figcaption>
-<p><span class="caption-text">protecting cells from being deleted</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="protect-cells-from-editing">
-<h2><a class="toc-backref" href="#id17" role="doc-backlink">protect cells from editing</a><a class="headerlink" href="#protect-cells-from-editing" title="Link to this heading"></a></h2>
-<p>You can prevent editing of markdown and code cells in a Jupyter notebook using “Edit protect – toggle whether cells are editable” in the “Edit” menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.</p>
-<figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/edit-protect.png"><img alt="protecting cells from editing" src="_images/edit-protect.png" style="width: 60%;" /></a>
-<figcaption>
-<p><span class="caption-text">protecting cells from being edited</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="slideshow">
-<span id="index-6"></span><h2><a class="toc-backref" href="#id18" role="doc-backlink">slideshow</a><a class="headerlink" href="#slideshow" title="Link to this heading"></a></h2>
-<p>CoCalc notebooks offer you a shortcut for making a slideshow. Select “View” &gt; “Cell Toolbar…” &gt; “Slideshow” to add a <code class="docutils literal notranslate"><span class="pre">Slide</span></code> button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the “Slideshow” in the “Notebook” menu at the top of a notebook, or select “File” &gt; “Slideshow”, or split the frame and change one of the resulting frames to “Slideshow”. The latter allows you to view the original notebook side-by-side with the slides.</p>
-<figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/slideshow-1.png"><img alt="slide button in cell toolbar" src="_images/slideshow-1.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-text">enabling “Slide” button in cell toolbar</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="_images/slideshow-2.png"><img alt="selecting slide type" src="_images/slideshow-2.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-text">selecting slide type for each cell</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>When presenting, the next slide is to the right, while the next subslide is below. Fragments are revealed within the present slide. Click in the slideshow and then click “?” to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking in the toolbar above the show and clicking “Build”, or by clicking “File” in the toolbar above the notebook and again selecting “Slideshow”.</p>
-<figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="_images/slideshow-3.png"><img alt="notebook side-by-side with slideshow" src="_images/slideshow-3.png" style="width: 80%;" /></a>
-<figcaption>
-<p><span class="caption-text">original notebook side by side with slideshow</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-</section>
-<section id="widgets-in-cocalc">
-<span id="jupyter-interactive-widgets"></span><span id="index-7"></span><h2><a class="toc-backref" href="#id19" role="doc-backlink">widgets in CoCalc</a><a class="headerlink" href="#widgets-in-cocalc" title="Link to this heading"></a></h2>
-<p><a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/index.html">Jupyter Widgets</a> are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
-real-time collaboration, <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a>, and <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a>.</p>
-<p>A good way to get started using Jupyter widgets is to go through the <a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html">Widget List</a> in the main widgets documentation.</p>
-<figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="_images/cocalc-widgets-a.png"><img alt="notebook with widgets" src="_images/cocalc-widgets-a.png" style="width: 100%;" /></a>
-<figcaption>
-<p><span class="caption-text">CoCalc Jupyter notebook with Jupyter Widgets</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
-</figcaption>
-</figure>
-<p>For more information on the implementation of Jupyter Widgets in Cocalc, including support for real-time collaboration, see this video presentation: <a class="reference external" href="https://www.youtube.com/watch?v=t4h5QrBKjyY">Jupyter Widgets in CoCalc</a>.</p>
+<section id="customize-latex-export-settings">
+<span id="nbconvert-exports"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Customize LaTeX Export Settings</a><a class="headerlink" href="#customize-latex-export-settings" title="Link to this heading"></a></h2>
+<p>Cocalc exports Jupyter notebooks to LaTeX using <code class="docutils literal notranslate"><span class="pre">nbconvert</span></code> when <strong>File &gt; PDF via LaTeX</strong> is clicked in the menu. If you want to customize the default LaTeX settings, you need to override system files found at <code class="docutils literal notranslate"><span class="pre">/ext/jupyter/nbconvert/templates/latex</span></code> Instructions for creating these overrides can be found in this gist file: <a class="reference external" href="https://cocalc.com/gist/binary10/20b632dc8c3f5a3c9a1b7266aa016128">custom nbconvert exports</a></p>
 </section>
 </section>
 

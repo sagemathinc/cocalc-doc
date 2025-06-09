@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="License Doesn’t Work" href="license-doesnt-work.html" />
+    <link rel="next" title="Jupyter Notebooks" href="jupyter-troubleshooting.html" />
     <link rel="prev" title="Install compiled software" href="sudo-make-install.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -105,6 +105,7 @@ div.cocalc-header a {
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-troubleshooting.html">Jupyter Notebooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="license-doesnt-work.html">License Doesn’t Work</a></li>
 <li class="toctree-l2"><a class="reference internal" href="low-memory.html">Low Memory Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slow-worksheet.html">Program Seems Slow or Stuck</a></li>
@@ -170,7 +171,7 @@ div.cocalc-header a {
 <section id="is-it-caused-by-using-up-too-much-memory">
 <h2>Is it caused by using up too much memory?<a class="headerlink" href="#is-it-caused-by-using-up-too-much-memory" title="Link to this heading"></a></h2>
 <p>Jupyter kernels terminating, and calculations failing that previously worked, can be a sign that your project is running low on memory.</p>
-<p>Currently in CoCalc, if you open several Jupyter notebooks, they just sit there using memory. You have to explicitly <a class="reference internal" href="../jupyter-tips-and-tricks.html#jupyter-halt"><span class="std std-ref">halt running notebooks</span></a>, or kill them with <code class="docutils literal notranslate"><span class="pre">top</span></code>, or restart your project in order for them to go away.  This can be a significant problem if you are grading a dozens of assignments.  You can see the cpu and memory usage of a Jupyter notebook in the upper right.</p>
+<p>Currently in CoCalc, if you open several Jupyter notebooks, they just sit there using memory. You have to explicitly <a class="reference internal" href="jupyter-troubleshooting.html#jupyter-halt"><span class="std std-ref">halt running notebooks</span></a>, or kill them with <code class="docutils literal notranslate"><span class="pre">top</span></code>, or restart your project in order for them to go away.  This can be a significant problem if you are grading a dozens of assignments.  You can see the cpu and memory usage of a Jupyter notebook in the upper right.</p>
 <p>See <a class="reference internal" href="low-memory.html#low-memory"><span class="std std-ref">Low Memory Problems</span></a> for more information on how to detect and deal with low-memory situations.</p>
 </section>
 <section id="is-it-caused-by-something-else">
@@ -184,7 +185,7 @@ div.cocalc-header a {
 </section>
 <section id="try-to-eliminate-the-cocalc-user-interface">
 <h3>2. Try to eliminate the CoCalc user interface<a class="headerlink" href="#try-to-eliminate-the-cocalc-user-interface" title="Link to this heading"></a></h3>
-<p>Another thing you might try is to eliminate the CoCalc user interface to see what happens.  First, <a class="reference internal" href="../jupyter-tips-and-tricks.html#jupyter-halt"><span class="std std-ref">close and halt</span></a> your notebook in the CoCalc interface. Then go to project settings and launch the <a class="reference internal" href="../project-settings.html#plain-jupyter-server"><span class="std std-ref">Plain Jupyter Server</span></a>.  You may have to refresh your browser after clicking.  Then navigate to your Jupyter notebook and open it.  If everything always works fine here, but not in CoCalc, there is some issue specifically with the CoCalc interface.  Let us know – <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
+<p>Another thing you might try is to eliminate the CoCalc user interface to see what happens.  First, <a class="reference internal" href="jupyter-troubleshooting.html#jupyter-halt"><span class="std std-ref">close and halt</span></a> your notebook in the CoCalc interface. Then go to project settings and launch the <a class="reference internal" href="../project-settings.html#plain-jupyter-server"><span class="std std-ref">Plain Jupyter Server</span></a>.  You may have to refresh your browser after clicking.  Then navigate to your Jupyter notebook and open it.  If everything always works fine here, but not in CoCalc, there is some issue specifically with the CoCalc interface.  Let us know – <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a>.</p>
 </section>
 </section>
 </section>
@@ -194,7 +195,7 @@ div.cocalc-header a {
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="sudo-make-install.html" class="btn btn-neutral float-left" title="Install compiled software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="license-doesnt-work.html" class="btn btn-neutral float-right" title="License Doesn’t Work" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="jupyter-troubleshooting.html" class="btn btn-neutral float-right" title="Jupyter Notebooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -7,13 +7,13 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GAP Jupyter kernel not available &mdash; CoCalc Manual  documentation</title>
+  <title>Jupyter Notebooks &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
     <link rel="shortcut icon" href="../_static/favicon-32x32.png"/>
-    <link rel="canonical" href="https://doc.cocalc.com/howto/gap-kernel-unavailable.html" />
+    <link rel="canonical" href="https://doc.cocalc.com/howto/jupyter-troubleshooting.html" />
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
@@ -23,13 +23,13 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Install compiled software" href="sudo-make-install.html" />
-    <link rel="prev" title="File Too Large" href="file-too-large.html" />
+    <link rel="next" title="License Doesn’t Work" href="license-doesnt-work.html" />
+    <link rel="prev" title="Jupyter Kernel Terminated" href="jupyter-kernel-terminated.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
   
-    <link rel="canonical" href="https://doc.cocalc.com/howto/gap-kernel-unavailable.html"/>
+    <link rel="canonical" href="https://doc.cocalc.com/howto/jupyter-troubleshooting.html"/>
   
 
 </head>
@@ -94,10 +94,15 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="connectivity-issues.html">Debugging connectivity issues</a></li>
 <li class="toctree-l2"><a class="reference internal" href="disk-space-warning.html">Disk Space Warning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file-too-large.html">File Too Large</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">GAP Jupyter kernel not available</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gap-kernel-unavailable.html">GAP Jupyter kernel not available</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sudo-make-install.html">Install compiled software</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyter-kernel-terminated.html">Jupyter Kernel Terminated</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter-troubleshooting.html">Jupyter Notebooks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Jupyter Notebooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#notebook-too-large-remove-output">Notebook Too Large - Remove Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-local-files">Remove Local Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shutdown-kernel">Shutdown Kernel</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="license-doesnt-work.html">License Doesn’t Work</a></li>
 <li class="toctree-l2"><a class="reference internal" href="low-memory.html">Low Memory Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="slow-worksheet.html">Program Seems Slow or Stuck</a></li>
@@ -130,7 +135,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="trouble.html">Troubleshooting</a></li>
-      <li class="breadcrumb-item active">GAP Jupyter kernel not available</li>
+      <li class="breadcrumb-item active">Jupyter Notebooks</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -147,23 +152,50 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="gap-jupyter-kernel-not-available">
-<span id="gap-kernel-unavailable"></span><span id="index-0"></span><h1>GAP Jupyter kernel not available<a class="headerlink" href="#gap-jupyter-kernel-not-available" title="Link to this heading"></a></h1>
-<p>For persons wanting to use <a class="reference external" href="https://www.gap-system.org/">GAP - Groups, Algorithms, Programming</a>, note that there is a <a class="reference external" href="https://github.com/sagemathinc/cocalc/issues/1706">long-standing bug</a>. For that reason, we removed the GAP Jupyter kernel from CoCalc.</p>
-<p>As a workaround, you can work with GAP in a <a class="reference internal" href="../sagews.html"><span class="doc">Sage worksheet</span></a> (file in CoCalc ending in .sagews). Start that file in a single block of code with:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>%auto
-%default_mode gap
+  <section id="jupyter-notebooks">
+<h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Link to this heading"></a></h1>
+<section id="notebook-too-large-remove-output">
+<span id="jupyter-ipynb-too-large"></span><span id="index-0"></span><h2>Notebook Too Large - Remove Output<a class="headerlink" href="#notebook-too-large-remove-output" title="Link to this heading"></a></h2>
+<p>If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way. Instead, you will see an error message. Usually, the problem occurs when the notebook has created large amounts of output. In that case, there is a command you can run from the <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a> to remove output. If removing output results in a small enough notebook, you will be able to open the <code class="docutils literal notranslate"><span class="pre">-no-output</span></code> version of the notebook normally.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># run this from a CoCalc Linux terminal (.term file)</span>
+<span class="c1"># use the actual name of your notebook for &quot;myfile.ipynb&quot;</span>
+cc-jupyter-no-output<span class="w"> </span>myfile.ipynb
+<span class="c1"># the above command creates myfile-no-output.ipynb</span>
 </pre></div>
 </div>
-<p>and then run it via shift-return. At this point, you are working with GAP in Sage.</p>
+<p>If your Jupyter notebook is creating an image file from a plot that exceeds the size limit, here are some things you can do:</p>
+<ol class="arabic">
+<li><p>If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with <a class="reference internal" href="../project-settings.html#jupyterlab-server"><span class="std std-ref">JupyterLab server</span></a>. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.</p></li>
+<li><p>Revert the notebook to an earlier version, before the large plot was created. Click the <a class="reference internal" href="../project-files.html#project-snapshot"><span class="std std-ref">Backups button</span></a> in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.</p></li>
+<li><p>The default image file format for plots with the “R (R Project)” Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>options(jupyter.plot_mimetypes = c(&#39;text/plain&#39;, &#39;image/png&#39;))
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="remove-local-files">
+<span id="index-1"></span><h2>Remove Local Files<a class="headerlink" href="#remove-local-files" title="Link to this heading"></a></h2>
+<p>If you have a Jupyter Notebook that suddenly stops working, especially with extensions or widgets, you can try removing local files in a <a class="reference internal" href="../terminal.html"><span class="doc">Linux Terminal</span></a>, then restarting and running the notebook:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd
+rm -rf .sage .ipython/ .config/ .local/ .jupyter .cache/
+</pre></div>
+</div>
+<p>You will need to reinstall packages you added locally after doing the above.</p>
+</section>
+<section id="shutdown-kernel">
+<span id="jupyter-halt"></span><span id="index-2"></span><h2>Shutdown Kernel<a class="headerlink" href="#shutdown-kernel" title="Link to this heading"></a></h2>
+<p>Each running Jupyter Notebook uses up memory, which could cause troubles if you run multiple notebooks during one session.
+If you have finished working on a particular notebook, you may click <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">&gt;</span> <span class="pre">Shutdown</span> <span class="pre">kernel...</span></code> in the menu to stop the kernel, free up memory, and close the notebook.</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="file-too-large.html" class="btn btn-neutral float-left" title="File Too Large" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="sudo-make-install.html" class="btn btn-neutral float-right" title="Install compiled software" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="jupyter-kernel-terminated.html" class="btn btn-neutral float-left" title="Jupyter Kernel Terminated" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license-doesnt-work.html" class="btn btn-neutral float-right" title="License Doesn’t Work" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -181,7 +213,7 @@ div.cocalc-header a {
     <a href="https://cocalc.com/policies/">Privacy Policy and ToS</a>.
    </p>
    <p>
-    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/gap-kernel-unavailable.rst" class="fa fa-github"> Edit this page on GitHub</a>
+    <a href="https://github.com/sagemathinc/cocalc-doc/edit/master/source/howto/jupyter-troubleshooting.rst" class="fa fa-github"> Edit this page on GitHub</a>
   </p>
   <p>
     <strong><a href="https://cocalc.com/app">Start CoCalc</a></strong> – start free, upgrade later!
