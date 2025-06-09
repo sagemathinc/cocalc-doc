@@ -1,209 +1,25 @@
 .. index:: Jupyter Notebooks; tips and tricks
 
-==========================================
 Jupyter Tips and Tricks
-==========================================
+=======================
 
 .. contents::
      :local:
      :depth: 1
 
-#################################################
-Run Jupyter notebook with GPU support
-#################################################
+Run Jupyter Notebooks with GPU Support
+--------------------------------------
 
-CoCalc allows you to use basic and advanced GPUs for a few pennies an hour! See :doc:`compute_server` for details.
-
-#################################################
-Customize Jupyter notebook LaTeX export settings
-#################################################
-
-See :ref:`nbconvert-exports`.
-
-.. index:: Jupyter Notebooks; notebook too large
-.. _jupyter-ipynb-too-large:
-
-#############################################
-Embed a CoCalc project in your website
-#############################################
-
-Suppose you have an interactive application running in a CoCalc project and you would like to share it.
-You can share documents publicly and embed them, see :doc:`share`.
-
-Embedding the CoCalc interactive website directly in any other website is restricted because it is a security risk (see `clickjacking <https://owasp.org/www-community/attacks/Clickjacking>`_, etc.).
-Beyond that, users who are not collaborators won't be able to see the project.
-
-
-#############################################
-Notebook too large? Remove output.
-#############################################
-
-.. figure:: img/ipynb-too-large-help.png
-     :width: 90%
-     :align: center
-     :alt: file-too-large error
-
-     Jupyter notebook *file too large* error
-
-
-If the size of your notebook exceeds 50 MB, you will not be able to open it in the usual way; instead, you will see the error message shown above. Usually, the problem occurs when the notebook has created large amounts of output. In that case, there is a command you can run from the :doc:`Linux Terminal <terminal>` to remove output. If removing output results in a small enough notebook, you will be able to open the "-no-output" version of the notebook normally.
-
-.. code-block:: bash
-
-    # run this from a CoCalc Linux terminal (.term file)
-    # use the actual name of your notebook for "myfile.ipynb"
-    cc-jupyter-no-output myfile.ipynb
-    # the above command creates myfile-no-output.ipynb
-
-
-If your Jupyter notebook is creating an image file from a plot that exceeds the size limit, here are some things you can do:
-
-1. If you are using a CoCalc Jupyter notebook (which we generally recommend), it may be possible to open the notebook with :ref:`jupyterlab-server`. Once you have the file open, you can modify the code to produce a smaller plot. Then you can go back to using the CoCalc notebook.
-
-2. Revert the notebook to an earlier version, before the large plot was created. Click the :ref:`Backups button <project-snapshot>` in the file listing and copy over an earlier version, then modify your code to produce a smaller plot.
-
-3. The default image file format for plots with the "R (R Project)" Jupyter kernel is SVG. For large plots, smaller files may be produced if the format is set to PNG, because SVG plots (the default) grow in size proportionally to the data they are supposed to show, wherease PNG plots are rasterized, so file size does not have the same proportionality relationship to amount of data. To set image output format in an R Jupyter notebook to PNG, run the following in a compute cell before creating the plot::
-
-    options(jupyter.plot_mimetypes = c('text/plain', 'image/png'))
-
-.. index:: Jupyter Notebooks; play wav file
-.. index:: wav file: play in Jupyter notebook
-
-#############################################
-Play a .wav file in a Jupyter notebook
-#############################################
-
-CoCalc Jupyter notebooks now support embedding audio files. There are several ways you can embed an audio file so it plays nicely in a Jupyter notebook:
-
-*****************
-wav file on disk
-*****************
-
-1. Create a file on disk, e.g., ``tuba.wav``. If you're using ``simpleaudio`` or something else to create sound, make sure to figure out how to save that sound to a local file.
-
-2. Put this in the markdown cell and hit shift+enter::
-
-    <audio controls=true src="tuba.wav"/>
-
-3. You'll see an embedded audio controller appear and you can play your audio.
-
-.. figure:: img/jupyter/jupyter-wav-2.png
-     :width: 60%
-     :align: center
-     :alt: audio controls for wav playback
-
-     audio controls to play wav file
-
-*****************************
-wav file embedded in notebook
-*****************************
-
-Alternatively, you might want the file to be embedded in the notebook itself. To do this, click the picture icon on the right of a markdown cell, or click "Edit --> Insert images in ...", then drag and drop to copy the wav file as an attachment to that cell. Then replace the image attachment code that is generated by::
-
-    <audio controls=true src="attachment:tuba.wav"/>
-
-and again you'll see a player and can play your file.
-
-.. index:: Jupyter Notebooks; remove local files
-
-#############################################
-Remove Local Files to Troubleshoot a Notebook
-#############################################
-
-If you have a Jupyter notebook that suddenly stops working, especially with extensions or widgets, you can try removing local files in a :doc:`Linux Terminal <terminal>`, then restarting and running the notebook::
-
-    cd
-    rm -rf .sage .ipython/ .config/ .local/ .jupyter .cache/
-
-You will need to reinstall packages you added locally after doing the above.
-
-.. index:: pair: Jupyter Notebooks; halt button
-.. _jupyter-halt:
-
-######################################
-Use the Halt Button to Conserve Memory
-######################################
-
-Each running Jupyter Notebook spawns a session in your project.
-This **uses up memory**, which could cause troubles running all your processes in your project.
-
-You can either *restart* the kernel to clean up its current memory (i.e. all variables are deleted), or if you've finished working on that notebook, click the ``Halt`` button to stop the kernel and close the notebook.
-
-.. image:: img/jupyter/jupyter-halt-button.png
-    :width: 90%
-    :alt: halt button
-
-############################
-protect cells from deletion
-############################
-
-You can protect markdown and code cells from deletion in a Jupyter notebook using "Delete protection -- toggle whether cells are deletable" in the "Edit" menu. Note that this only blocks deletion using the Jupyter user interface; it is possible using other means to circumvent this.
-
-.. figure:: img/jupyter/delete-protect.png
-     :width: 60%
-     :align: center
-     :alt: protecting cells from deletion
-     
-     protecting cells from being deleted
-
-############################
-protect cells from editing
-############################
-
-
-You can prevent editing of markdown and code cells in a Jupyter notebook using "Edit protect -- toggle whether cells are editable" in the "Edit" menu. Note that this only blocks editing using the Jupyter user interface; it is possible using other means to circumvent this.
-
-.. figure:: img/jupyter/edit-protect.png
-     :width: 60%
-     :align: center
-     :alt: protecting cells from editing
-     
-     protecting cells from being edited
-
-
-.. index:: Jupyter Notebooks; slideshow
-
-#######################################
-slideshow
-#######################################
-
-CoCalc notebooks offer you a shortcut for making a slideshow. Select "View" > "Cell Toolbar..." > "Slideshow" to add a ``Slide`` button above the right of each cell. For each cell, you can specify whether it is a slide, subslide, or fragment. To view the slideshow, click the "Slideshow" in the "Notebook" menu at the top of a notebook, or select "File" > "Slideshow", or split the frame and change one of the resulting frames to "Slideshow". The latter allows you to view the original notebook side-by-side with the slides.
-
-.. figure:: img/jupyter/slideshow-1.png
-     :width: 80%
-     :align: center
-     :alt: slide button in cell toolbar
-
-     enabling "Slide" button in cell toolbar
-
-.. figure:: img/jupyter/slideshow-2.png
-     :width: 80%
-     :align: center
-     :alt: selecting slide type
-
-     selecting slide type for each cell
-
-When presenting, the next slide is to the right, while the next subslide is below. Fragments are revealed within the present slide. Click in the slideshow and then click "?" to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking in the toolbar above the show and clicking "Build", or by clicking "File" in the toolbar above the notebook and again selecting "Slideshow".
-
-.. figure:: img/jupyter/slideshow-3.png
-     :width: 80%
-     :align: center
-     :alt: notebook side-by-side with slideshow
-
-     original notebook side by side with slideshow
+CoCalc allows you to easily use basic and advanced GPUs, as well as machines with a lot of CPU cores and RAM! See :doc:`compute_server` for details.
 
 
 .. index:: Jupyter Notebooks; interactive widgets
 .. _jupyter-interactive-widgets:
 
-##########################
-widgets in CoCalc
-##########################
+Widgets
+-------
 
-`Jupyter Widgets`_ are Python objects that let you build interactive GUIs for your Jupyter notebooks. CoCalc Jupyter notebooks combine the interactive capabilities of Jupyter widgets with the usual advanced features of the CoCalc platform, including
-real-time collaboration, :doc:`time-travel`, and :ref:`side-chat`.
-
-A good way to get started using Jupyter widgets is to go through the `Widget List`_ in the main widgets documentation.
+`Jupyter Widgets <https://ipywidgets.readthedocs.io/en/stable/index.html>`_ are Python objects that let you build interactive GUIs for your Jupyter notebooks. A good way to get started using Jupyter widgets is to go through the `Widget List <https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html>`_. In CoCalc widgets are fully collaborative, meaning that you and your collaborators share and see exactly the same state of them. This is different from most other platforms, where changes to controls made by one user are not visible to another.
 
 .. figure:: img/jupyter/cocalc-widgets-a.png
      :width: 100%
@@ -212,10 +28,78 @@ A good way to get started using Jupyter widgets is to go through the `Widget Lis
 
      CoCalc Jupyter notebook with Jupyter Widgets
 
-For more information on the implementation of Jupyter Widgets in Cocalc, including support for real-time collaboration, see this video presentation: `Jupyter Widgets in CoCalc  <https://www.youtube.com/watch?v=t4h5QrBKjyY>`_.
+For more information on the implementation watch `📺 Jupyter Widgets in CoCalc  <https://www.youtube.com/watch?v=t4h5QrBKjyY>`_.
 
-.. _Jupyter Widgets: https://ipywidgets.readthedocs.io/en/stable/index.html
-.. _Widget List: https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html
 
+Protect Cells
+-------------
+
+You can protect cells from being modified or deleted using **Edit > Protect** menu. Note that this only prevents accidental edit and delete operations via regular interface. It is easy to bypass this protection using other means or turn it off via **Edit > Remove Protection**.
+
+
+.. index:: Jupyter Notebooks; slideshow
+
+Slideshow
+---------
+
+To make a slideshow from a Jupyter Notebook, select **View > Cell Toolbar > Slideshow toolbar** to add a selector at the top right of each cell and specify whether it is a slide, subslide, or fragment. To view the slideshow, select **File  > Slideshow** or split the frame and change one of the resulting frames to **Slideshow**.
+
+.. figure:: img/jupyter/slideshow-2.png
+     :width: 80%
+     :align: center
+     :alt: Cell Type for Slides Selector
+
+     Cell Type for Slides Selector
+
+When presenting, the next *Slide* is to the right, while the next *Subslide* is below. Fragments are revealed within the present slide. Click in the slideshow and then click **?** to see a list of keyboard shortcuts. If you modify the notebook, you can update the slideshow by clicking **Build** in the toolbar above or by selecting **File > Slideshow** again.
+
+.. figure:: img/jupyter/slideshow-3.png
+     :width: 80%
+     :align: center
+     :alt: Slideshow Mode
+
+     Slideshow Mode
+
+
+.. index:: Jupyter Notebooks; play wav file
+.. index:: wav file: play in Jupyter notebook
+
+Play a WAV File
+---------------
+
+CoCalc Jupyter Notebooks support embedding audio files.
+
+**WAV File on Disk**
+
+1. Create a file on disk, e.g. ``tuba.wav``. If you're using ``simpleaudio`` or something else to create sound, make sure to figure out how to save that sound to a local file.
+
+2. Put this in the markdown cell and hit **Shift + Enter**::
+
+    <audio controls=true src="tuba.wav"/>
+
+3. You will see an embedded audio controller appear and you can play your audio.
+
+.. figure:: img/jupyter/jupyter-wav-2.png
+     :width: 60%
+     :align: center
+     :alt: Audio Controls to Play WAV File
+
+     Audio Controls to Play WAV File
+
+**Embedded WAV File**
+
+Alternatively, you might want the file to be embedded in the notebook itself. To do this, click the picture icon on the right of a markdown cell or click **Edit > Insert images in ...**, then drag and drop to copy the WAV file as an attachment to that cell. Then replace the image attachment code that is generated by::
+
+    <audio controls=true src="attachment:tuba.wav"/>
+
+You will see a player and can play your file.
+
+
+.. _nbconvert-exports:
+
+Customize LaTeX Export Settings
+-------------------------------
+
+Cocalc exports Jupyter notebooks to LaTeX using ``nbconvert`` when **File > PDF via LaTeX** is clicked in the menu. If you want to customize the default LaTeX settings, you need to override system files found at ``/ext/jupyter/nbconvert/templates/latex`` Instructions for creating these overrides can be found in this gist file: `custom nbconvert exports <https://cocalc.com/gist/binary10/20b632dc8c3f5a3c9a1b7266aa016128>`_
 
 

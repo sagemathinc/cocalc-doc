@@ -36,12 +36,6 @@ Here are suggestions for using LaTeX in Hebrew with CoCalc:
     \setmainlanguage{english}
     \setmainfont{Times New Roman}
 
-.. _nbconvert-exports:
-
-Customize Jupyter notebook LaTeX export settings
------------------------------------------------------
-
-Cocalc exports Jupyter notebooks to LaTeX using `nbconvert` when "File > PDF via LaTeX" is clicked in the menu. If you want to customize the default LaTeX settings, you need to override system files found at /ext/jupyter/nbconvert/templates/latex. Instructions for creating these overrides can be found in this gist file: `custom nbconvert exports`_.
 
 Deal with large documents across multiple source files
 ---------------------------------------------------------
@@ -492,5 +486,3 @@ Possible reasons:
 .. _subfiles: https://www.ctan.org/pkg/subfiles?lang=en
 .. _CTAN subfiles: https://ctan.org/pkg/subfiles
 .. _PSTricks: http://tug.org/PSTricks/main.cgi
-
-.. _custom nbconvert exports: https://cocalc.com/gist/binary10/20b632dc8c3f5a3c9a1b7266aa016128
