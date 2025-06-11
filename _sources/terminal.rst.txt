@@ -165,6 +165,12 @@ We recommend all new applications use ``anaconda2019``.
 Tips and tricks
 =================
 
+Copy-Paste
+----------
+
+To copy a portion of a CoCalc terminal to your clipboard, select a desired region and use menu **Edit > Copy**. Use **Edit > Paste** to paste at the current position of the terminal cursor. You should be able to use standard shortcuts **Ctrl + C** and **Ctrl + V** as well.
+
+
 .. _terminal-editor-panel:
 
 Terminal Environment in Split Frame with File Editor

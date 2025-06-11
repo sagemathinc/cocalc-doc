@@ -101,6 +101,7 @@ div.cocalc-header a {
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#tips-and-tricks">Tips and tricks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#copy-paste">Copy-Paste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#terminal-environment-in-split-frame-with-file-editor">Terminal Environment in Split Frame with File Editor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#customize-font">Customize font</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#broken-vim-key-bindings">Broken VIM key bindings</a></li>
@@ -191,11 +192,12 @@ and all your files are backed up.</p>
 </li>
 <li><p><a class="reference internal" href="#tips-and-tricks" id="id15">Tips and tricks</a></p>
 <ul>
-<li><p><a class="reference internal" href="#terminal-environment-in-split-frame-with-file-editor" id="id16">Terminal Environment in Split Frame with File Editor</a></p></li>
-<li><p><a class="reference internal" href="#customize-font" id="id17">Customize font</a></p></li>
-<li><p><a class="reference internal" href="#broken-vim-key-bindings" id="id18">Broken VIM key bindings</a></p></li>
-<li><p><a class="reference internal" href="#setup-fish-shell" id="id19">Setup fish shell</a></p></li>
-<li><p><a class="reference internal" href="#remove-history-from-a-terminal-file" id="id20">Remove history from a terminal file</a></p></li>
+<li><p><a class="reference internal" href="#copy-paste" id="id16">Copy-Paste</a></p></li>
+<li><p><a class="reference internal" href="#terminal-environment-in-split-frame-with-file-editor" id="id17">Terminal Environment in Split Frame with File Editor</a></p></li>
+<li><p><a class="reference internal" href="#customize-font" id="id18">Customize font</a></p></li>
+<li><p><a class="reference internal" href="#broken-vim-key-bindings" id="id19">Broken VIM key bindings</a></p></li>
+<li><p><a class="reference internal" href="#setup-fish-shell" id="id20">Setup fish shell</a></p></li>
+<li><p><a class="reference internal" href="#remove-history-from-a-terminal-file" id="id21">Remove history from a terminal file</a></p></li>
 </ul>
 </li>
 </ul>
@@ -314,13 +316,17 @@ We recommend all new applications use <code class="docutils literal notranslate"
 </section>
 <section id="tips-and-tricks">
 <h2><a class="toc-backref" href="#id15" role="doc-backlink">Tips and tricks</a><a class="headerlink" href="#tips-and-tricks" title="Link to this heading"></a></h2>
+<section id="copy-paste">
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Copy-Paste</a><a class="headerlink" href="#copy-paste" title="Link to this heading"></a></h3>
+<p>To copy a portion of a CoCalc terminal to your clipboard, select a desired region and use menu <strong>Edit &gt; Copy</strong>. Use <strong>Edit &gt; Paste</strong> to paste at the current position of the terminal cursor. You should be able to use standard shortcuts <strong>Ctrl + C</strong> and <strong>Ctrl + V</strong> as well.</p>
+</section>
 <section id="terminal-environment-in-split-frame-with-file-editor">
-<span id="terminal-editor-panel"></span><h3><a class="toc-backref" href="#id16" role="doc-backlink">Terminal Environment in Split Frame with File Editor</a><a class="headerlink" href="#terminal-environment-in-split-frame-with-file-editor" title="Link to this heading"></a></h3>
+<span id="terminal-editor-panel"></span><h3><a class="toc-backref" href="#id17" role="doc-backlink">Terminal Environment in Split Frame with File Editor</a><a class="headerlink" href="#terminal-environment-in-split-frame-with-file-editor" title="Link to this heading"></a></h3>
 <p>If you open a source code file in CoCalc for editing, for example an <code class="docutils literal notranslate"><span class="pre">.sh</span></code>, <code class="docutils literal notranslate"><span class="pre">.py</span></code>, <code class="docutils literal notranslate"><span class="pre">.R</span></code>, or <code class="docutils literal notranslate"><span class="pre">.rb</span></code> file, you can <a class="reference internal" href="frame-editor.html"><span class="doc">split the editor frame</span></a> and add a command session. That way, you can easily move between editing and running the code.</p>
 <a class="reference internal image-reference" href="_images/edit-terminal-split.png"><img alt="split screen, editor pane with .py file on left, terminal on right" class="align-center" src="_images/edit-terminal-split.png" style="width: 100%;" /></a>
 </section>
 <section id="customize-font">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">Customize font</a><a class="headerlink" href="#customize-font" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Customize font</a><a class="headerlink" href="#customize-font" title="Link to this heading"></a></h3>
 <p>To change the <strong>size</strong> of the font, click the plus and minus magnification glass icons at the top of a focused terminal frame.</p>
 <p>In order to change the appearance of the <strong>font family</strong> of the terminal, adjust the font settings of your web browser.
 For example, in <em>Google Chrome</em> this is done in <strong>Settings</strong> → <strong>Appearance</strong> → <strong>Customize Fonts</strong>:</p>
@@ -329,12 +335,12 @@ For example, in <em>Google Chrome</em> this is done in <strong>Settings</strong>
 <a class="reference internal image-reference" href="_images/chrome-fixed-width-font.png"><img alt="choose fixed-width font in your browser" class="align-center" src="_images/chrome-fixed-width-font.png" style="width: 75%;" /></a>
 </section>
 <section id="broken-vim-key-bindings">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink">Broken VIM key bindings</a><a class="headerlink" href="#broken-vim-key-bindings" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Broken VIM key bindings</a><a class="headerlink" href="#broken-vim-key-bindings" title="Link to this heading"></a></h3>
 <p>If you have a browser extension that uses the vim keys it may intercept the ‘Esc’ character, preventing you from switching to command mode in CoCalc.
 Either remap ‘Esc’ to a different key for the browser extension or disable the extension on the cocalc.com domain.</p>
 </section>
 <section id="setup-fish-shell">
-<span id="index-6"></span><h3><a class="toc-backref" href="#id19" role="doc-backlink">Setup fish shell</a><a class="headerlink" href="#setup-fish-shell" title="Link to this heading"></a></h3>
+<span id="index-6"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">Setup fish shell</a><a class="headerlink" href="#setup-fish-shell" title="Link to this heading"></a></h3>
 <p>You can automatically span a process replacing of the default bash shell while it starts
 via a <a class="reference internal" href="#terminal-startup-files"><span class="std std-ref">startup file</span></a>.
 In order to avoid having broken Home/End keys in the fish shell,
@@ -352,7 +358,7 @@ exec fish
 <p>Next time you launch this terminal, or restart it via typing in <code class="docutils literal notranslate"><span class="pre">exit</span></code> and pressing the return-key, this setup file will be evaluated and you’ll end up in the fish shell with the correct TERM environment variable set.</p>
 </section>
 <section id="remove-history-from-a-terminal-file">
-<span id="index-7"></span><h3><a class="toc-backref" href="#id20" role="doc-backlink">Remove history from a terminal file</a><a class="headerlink" href="#remove-history-from-a-terminal-file" title="Link to this heading"></a></h3>
+<span id="index-7"></span><h3><a class="toc-backref" href="#id21" role="doc-backlink">Remove history from a terminal file</a><a class="headerlink" href="#remove-history-from-a-terminal-file" title="Link to this heading"></a></h3>
 <p>Suppose you want to use a .term file, but want to remove previous history, comments, etc. In addition to deleting the contents of the .term file, you need to delete one or more hidden files. Click the little “hidden eye” icon in the upper right of the file listing to show hidden files. Then delete the hidden files that end in .term. They have the (recent) history of use of that terminal. If you delete them, then they are gone.</p>
 <a class="reference internal image-reference" href="_images/clean-terminal.png"><img alt="removing hidden history files for a terminal" class="align-center" src="_images/clean-terminal.png" style="width: 75%;" /></a>
 <p>One reason this situation might arise is if you are an instructor in  a course and want to distribute a .term file to your students using the Handouts or <a class="reference internal" href="teaching-course-management.html#create-assignment"><span class="std std-ref">Assignments</span></a> feature in CoCalc courses, but do not want to distribute command history that may have accumulated with the original terminal in the instructor’s project.</p>
