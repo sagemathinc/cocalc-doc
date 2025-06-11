@@ -12,11 +12,11 @@ CoCalc Platform
     :titlesonly:
     
     firewall-info
-    convert-html-to-pdf
     software-development
     install-julia-package
     install-python-lib
     install-r-package
+    sudo-make-install.rst
     project-invitation-tokens
     running-processes
     upload
@@ -32,7 +32,6 @@ Jupyter Notebooks
     :titlesonly:
     
     custom-jupyter-kernel
-    fix-broken-jupyter-pdf
     jupyter-kernel-selection
     jupyterlab-extensions
     run-r-step-by-step
@@ -75,7 +74,6 @@ Tools
     :titlesonly:
     
     awscli
-    bash-fortunes
     dask
     activeloop-hub
     git
