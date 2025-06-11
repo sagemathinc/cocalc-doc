@@ -14,12 +14,9 @@ understanding low memory warnings and how to triage situations where you can't f
    :maxdepth: 1
 
    cant-save.rst
-   clock-is-off.rst
    connectivity-issues.rst
    disk-space-warning.rst
    file-too-large.rst
-   gap-kernel-unavailable.rst
-   sudo-make-install.rst
    jupyter-kernel-terminated
    jupyter-troubleshooting
    license-doesnt-work.rst
