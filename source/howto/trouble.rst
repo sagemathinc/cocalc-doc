@@ -5,10 +5,12 @@
 Troubleshooting
 ========================
 
-This collection of guides summarizes ways to overcome certain problems.
-If you can't access CoCalc or end up stuck looking at "Loading ...", check out :doc:`connectivity-issues`.
-Furthermore, there are explanations about crashing worksheets,
-understanding low memory warnings and how to triage situations where you can't find your project.
+.. tip::
+
+    If you cannot resolve the problem yourself, email `help@cocalc.com <mailto:help@cocalc.com>`_ - we would love to hear from you!
+    
+    Please include a link (the URL address in your browser) to any relevant project or document.
+
 
 .. toctree::
    :maxdepth: 1
