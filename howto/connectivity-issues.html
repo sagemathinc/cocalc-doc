@@ -7,7 +7,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debugging connectivity issues &mdash; CoCalc Manual  documentation</title>
+  <title>Connectivity Issues &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -90,29 +90,19 @@ div.cocalc-header a {
 <li class="toctree-l1"><a class="reference internal" href="../teaching-students.html">Student Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="trouble.html">Troubleshooting</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="cant-save.html">Can’t Save File</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Debugging connectivity issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#process-for-debugging-connectivity">Process for Debugging Connectivity</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#step-1-try-connecting-with-the-latest-version-of-google-chrome">Step 1: Try connecting with the latest version of Google Chrome.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-2-make-sure-you-are-running-a-very-recent-version-of-google-chrome-safari-firefox-or-edge">Step 2: Make sure you are running a very recent version of Google Chrome, Safari, Firefox, or Edge.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-3-double-check-if-are-you-connected-at-all">Step 3: Double check if are you connected at all.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-4-network-congestion">Step 4: Network congestion?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-5-do-you-have-tons-of-tabs-open">Step 5: Do you have tons of tabs open?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-6-is-your-browser-or-an-intermediate-server-attempting-to-cache-too-much">Step 6: Is your browser (or an intermediate server) attempting to cache too much?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-7-does-the-problem-relate-to-stale-cookies">Step 7: Does the problem relate to stale cookies?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-8-have-you-installed-browser-extensions-add-on-s-or-enabled-blocking-software-on-your-computer">Step 8: Have you installed browser extensions (“add-on”s) or enabled blocking software on your computer?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-9-are-the-cocalc-servers-down">Step 9: Are the CoCalc servers down?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-10-is-your-computer-infected-with-malware">Step 10: Is your computer infected with malware?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-11-is-the-problem-with-your-dns-domain-name-service-settings">Step 11: Is the problem with your DNS (Domain Name Service) settings?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-12-is-your-browser-out-of-date-or-otherwise-incompatible-with-cocalc">Step 12: Is your browser out of date or otherwise incompatible with CoCalc?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#step-13-do-websocket-connections-work">Step 13: Do WebSocket connections work?</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#faq">FAQ</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#question-i-don-t-see-any-icons-but-everything-else-works">Question: I don’t see any icons, but everything else works.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#question-i-can-access-some-of-my-files-projects-in-my-cocalc-account-but-not-others-in-that-same-account-what-s-wrong">Question: I can access some of my files/projects in my CoCalc account but not others in that same account. What’s wrong?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#question-i-see-the-error-message-timeout-while-loading-cocalc-instead-of-the-cocalc-landing-page">Question: I see the error message “Timeout while loading CoCalc” instead of the CoCalc landing page.</a></li>
-</ul>
-</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Connectivity Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-check-your-connection">Step 1: Check Your Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-check-cocalc-status">Step 2: Check CoCalc Status</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-clear-cache">Step 3: Clear Cache</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-clear-cookies">Step 4: Clear Cookies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-5-update-your-browser">Step 5: Update Your Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-6-disable-extensions">Step 6: Disable Extensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-7-try-google-chrome">Step 7: Try Google Chrome</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-8-reduce-traffic">Step 8: Reduce Traffic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-9-free-memory-and-cpu">Step 9: Free Memory and CPU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-10-remove-malware">Step 10: Remove Malware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-11-check-dns-settings">Step 11: Check DNS Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-12-test-websockets">Step 12: Test WebSockets</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="disk-space-warning.html">Disk Space Warning</a></li>
@@ -151,7 +141,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="trouble.html">Troubleshooting</a></li>
-      <li class="breadcrumb-item active">Debugging connectivity issues</li>
+      <li class="breadcrumb-item active">Connectivity Issues</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -168,192 +158,112 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="debugging-connectivity-issues">
-<span id="connectivity-issues"></span><span id="index-0"></span><h1>Debugging connectivity issues<a class="headerlink" href="#debugging-connectivity-issues" title="Link to this heading"></a></h1>
-<p>There are numerous reasons why you could experience a problematic connection when accessing <a class="reference external" href="https://cocalc.com">CoCalc</a>.</p>
-<p>This FAQ/Help page consists of</p>
+  <section id="connectivity-issues">
+<span id="index-2"></span><span id="timeout-loading-cocalc"></span><span id="index-1"></span><span id="index-0"></span><span id="id1"></span><h1>Connectivity Issues<a class="headerlink" href="#connectivity-issues" title="Link to this heading"></a></h1>
+<p><strong>Quick Tips</strong></p>
+<ul class="simple">
+<li><p>Hold down <strong>Shift</strong> and click your browser’s <strong>Reload</strong> button to refresh the CoCalc tab.
+Sometimes this simple action resolves the problem.</p></li>
+<li><p>Restart your browser.</p></li>
+<li><p>Update your browser to the latest version or try a different browser.</p></li>
+<li><p>Restart your computer and/or Internet device, i.e. WiFi router or cable modem.</p></li>
+<li><p>Keep reading!</p></li>
+</ul>
+<p>If you follow the steps below, still have a problem, and contact CoCalc support, please let us know what you have tried already.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#process-for-debugging-connectivity" id="id3">Process for Debugging Connectivity</a></p></li>
-<li><p><a class="reference internal" href="#faq" id="id4">FAQ</a></p></li>
+<li><p><a class="reference internal" href="#step-1-check-your-connection" id="id4">Step 1: Check Your Connection</a></p></li>
+<li><p><a class="reference internal" href="#step-2-check-cocalc-status" id="id5">Step 2: Check CoCalc Status</a></p></li>
+<li><p><a class="reference internal" href="#step-3-clear-cache" id="id6">Step 3: Clear Cache</a></p></li>
+<li><p><a class="reference internal" href="#step-4-clear-cookies" id="id7">Step 4: Clear Cookies</a></p></li>
+<li><p><a class="reference internal" href="#step-5-update-your-browser" id="id8">Step 5: Update Your Browser</a></p></li>
+<li><p><a class="reference internal" href="#step-6-disable-extensions" id="id9">Step 6: Disable Extensions</a></p></li>
+<li><p><a class="reference internal" href="#step-7-try-google-chrome" id="id10">Step 7: Try Google Chrome</a></p></li>
+<li><p><a class="reference internal" href="#step-8-reduce-traffic" id="id11">Step 8: Reduce Traffic</a></p></li>
+<li><p><a class="reference internal" href="#step-9-free-memory-and-cpu" id="id12">Step 9: Free Memory and CPU</a></p></li>
+<li><p><a class="reference internal" href="#step-10-remove-malware" id="id13">Step 10: Remove Malware</a></p></li>
+<li><p><a class="reference internal" href="#step-11-check-dns-settings" id="id14">Step 11: Check DNS Settings</a></p></li>
+<li><p><a class="reference internal" href="#step-12-test-websockets" id="id15">Step 12: Test WebSockets</a></p></li>
 </ul>
 </nav>
-<p><strong>Remember:</strong> if you don’t find what you need, or if you’d like to ask a question, then email <a class="reference external" href="mailto:help&#37;&#52;&#48;cocalc&#46;com">help<span>&#64;</span>cocalc<span>&#46;</span>com</a> at any time. We’d love to hear from you! Please include a link (the URL address in your browser) to any relevant project or document, as part of your email.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>Quick Solution</strong></p>
-<ul class="simple">
-<li><p>Hold down the <code class="docutils literal notranslate"><span class="pre">Shift</span></code>-key and click your browser’s <strong>reload</strong> button to refresh the CoCalc tab.
-Sometimes this simple action resolves the problem.</p></li>
-<li><p><strong>Restart your browser.</strong></p></li>
-<li><p>Maybe you even have to <strong>restart your computer</strong> or internet device (<strong>WiFi router</strong>)!</p></li>
-<li><p>You might be using an old, unsupported browser.
-Check for updates available to the browser you are using, or switch to the latest version of a different browser.</p></li>
-</ul>
-<p>If this doesn’t help, try additional diagnostic steps mentioned below.</p>
-</div>
-<section id="process-for-debugging-connectivity">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Process for Debugging Connectivity</a><a class="headerlink" href="#process-for-debugging-connectivity" title="Link to this heading"></a></h2>
-<p>The following multi-step process will help you identify the problem. If you still have a problem and are contacting CoCalc support, it saves time if you let us know what you found out from following these steps:</p>
-<section id="step-1-try-connecting-with-the-latest-version-of-google-chrome">
-<h3>Step 1: Try connecting with the latest version of Google Chrome.<a class="headerlink" href="#step-1-try-connecting-with-the-latest-version-of-google-chrome" title="Link to this heading"></a></h3>
-<p>If you are not using Google Chrome, or are using an outdated version of it, install the latest Chrome and test your connection again.</p>
+<section id="step-1-check-your-connection">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Step 1: Check Your Connection</a><a class="headerlink" href="#step-1-check-your-connection" title="Link to this heading"></a></h2>
+<p>Check if the upper right corner of your CoCalc tab has a red “WiFi icon” or the message “Connecting…” or “Disconnected”. If that is the case, can you use other websites? If not, perhaps your Internet connection is cut off.</p>
+<p>Once a broken connection is reestablished, your files should be saved and everything should return to normal. During the period of disconnection, the green <strong>Save</strong> button will be replaced by a red “NOT saved!” warning.</p>
 </section>
-<section id="step-2-make-sure-you-are-running-a-very-recent-version-of-google-chrome-safari-firefox-or-edge">
-<h3>Step 2: Make sure you are running a very recent version of Google Chrome, Safari, Firefox, or Edge.<a class="headerlink" href="#step-2-make-sure-you-are-running-a-very-recent-version-of-google-chrome-safari-firefox-or-edge" title="Link to this heading"></a></h3>
-<p><strong>We do NOT support old versions of web browsers!!</strong>
-For example, there’s zero chance CoCalc will work at all with a web browser from e.g. 2016.</p>
-<p>When CoCalc starts, it checks your browser version and will report this to you.</p>
-<p>Overall, CoCalc works best with the most recent version of Google Chrome.</p>
+<section id="step-2-check-cocalc-status">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Step 2: Check CoCalc Status</a><a class="headerlink" href="#step-2-check-cocalc-status" title="Link to this heading"></a></h2>
+<p>Visit <a class="reference external" href="https://status.cocalc.com/">https://status.cocalc.com/</a> to see if there is an outage for the entire system.</p>
+<p>One of the advantages of cloud computing is that if a server you are connected to goes down, then you can automatically be reconnected to some other server. You can also explicitly request to be connected to a different front-end server. To do that click on the connection information in the top right corner and then on the <strong>Reconnect</strong> button.</p>
 </section>
-<section id="step-3-double-check-if-are-you-connected-at-all">
-<h3>Step 3: Double check if are you connected at all.<a class="headerlink" href="#step-3-double-check-if-are-you-connected-at-all" title="Link to this heading"></a></h3>
-<p>Look in the upper-right hand corner of any CoCalc web page. You will see there the “wifi symbol” and to the right of it, a number of milliseconds (e.g. 43 ms). This means that you are connected to CoCalc, with a latency of 43 ms. (For those unfamiliar with the idea of latency, after your computer sends some data packet, it will take 43 ms to arrive at the CoCalc server.)</p>
-<p>Many times, it can happen that your internet connection is cut off. For example, in a cafe or coffee shop, the internet access may be shutdown during peak hours. Alternatively, in a residence, a roommate might have inadvertently unplugged the wireless router. When this happens, the WiFi symbol and the latency indicator will be replaced by a red rectangle with the word “disconnected.” If you restore your wireless connection, then you’ll see a yellow rectangle with the word “connecting…”</p>
-<p>Once a broken connection is reestablished, your files will be saved and everything returns to normal. During the period of disconnection, the green “Save” button will be replaced by a red warning that says “NOT saved!” As you can see, you will always know whether or not your changes have reached the server.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Sometimes, it might be necessary to entirely close and restart your browser.
-If that doesn’t help, restart your computer.</p>
-</div>
+<section id="step-3-clear-cache">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Step 3: Clear Cache</a><a class="headerlink" href="#step-3-clear-cache" title="Link to this heading"></a></h2>
+<p>Your browser or an intermediate server may attempt to cache too much.
+The symptom for this malady is if you can load the page but it keeps timing out, or if it doesn’t load up properly.
+Reload the website with the <strong>Shift</strong>-key held down - that tells the browser to ignore your local cache. Alternatively, clean your browser’s cache directly via its interface.</p>
 </section>
-<section id="step-4-network-congestion">
-<h3>Step 4: Network congestion?<a class="headerlink" href="#step-4-network-congestion" title="Link to this heading"></a></h3>
-<p>The internet connects billions of machines worldwide via a sophisticated network.
-All the data sent around is chopped into small pieces (packages)
-and labeled with source and destination addresses.
-While you are working on CoCalc, a constant stream of such packages is sent back and forth
-between your computer and the servers in the cloud.</p>
-<p>There are situations where your computer or your router cannot handle all the ongoing traffic.
-For example, you are simultaneously watching a video or participate in a video chat.
-Or, in the case of a router sharing internet access, another device like a smart TV
-is streaming a new episode of your favourite series.</p>
-<p>Then, these packages sent back and forth with CoCalc
-are slowed down or even dropped entirely.
-Besides a poor experience of using CoCalc,
-you could also see erratically high ping times or sporadic “disconnect” warnings.</p>
-</section>
-<section id="step-5-do-you-have-tons-of-tabs-open">
-<h3>Step 5: Do you have tons of tabs open?<a class="headerlink" href="#step-5-do-you-have-tons-of-tabs-open" title="Link to this heading"></a></h3>
-<p>Some power users will have several browser tabs open simultaneously, which is fine.
-However, having too many open causes high memory usage by your web browser,
-which might make your browser stall. After closing a few tabs, reloading the tab that
-you are currently working on (just like you might reload any other web page)
-will clean that process and possibly free up some memory.</p>
-<p>If you are using Google Chrome, you can see cpu and memory usage for each
-and every tab in the <a class="reference external" href="https://www.google.com/search?q=chrome+task+manager">Chrome Task Manager</a>. This way, you can see which tabs are memory hogs (whether they are CoCalc
-or something else) and decide for yourself if you wish to close them.</p>
-</section>
-<section id="step-6-is-your-browser-or-an-intermediate-server-attempting-to-cache-too-much">
-<h3>Step 6: Is your browser (or an intermediate server) attempting to cache too much?<a class="headerlink" href="#step-6-is-your-browser-or-an-intermediate-server-attempting-to-cache-too-much" title="Link to this heading"></a></h3>
-<p>The symptom for this malady is if you can load the page but it keeps timing out, or if it doesn’t load up properly. If you are experiencing those symptoms, then either old copies of the page that you are working on are cached on some server, between yourself and the CoCalc server, or perhaps your browser is caching them locally.</p>
-<p>In this situation, the fix is easy. Just <strong>reload the website with the Shift-key held down</strong> (that tells the browser to ignore your local cache), or clean your browser’s cache directly via its interface.</p>
-<p>Browser caches are an important way of speeding up your internet connection. However, the methods and strategies that work for static web content and relatively straightforward websites do not always work well for sophisticated and complex systems like CoCalc. For example, hotels often have aggressive cache servers, because a large portion of their guests will access the same handful of websites (e.g. to check the weather, get navigation, or print boarding passes.)</p>
-</section>
-<section id="step-7-does-the-problem-relate-to-stale-cookies">
-<h3>Step 7: Does the problem relate to stale cookies?<a class="headerlink" href="#step-7-does-the-problem-relate-to-stale-cookies" title="Link to this heading"></a></h3>
-<div class="admonition note" id="index-1">
-<p class="admonition-title">Note</p>
-<p>Getting the message, <code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">no</span> <span class="pre">valid</span> <span class="pre">remember_me</span> <span class="pre">token</span></code> when trying to sign into CoCalc is usually a sign of stale browser cookies.</p>
-</div>
-<p>This situation can happen to users who are attempting to use two different CoCalc accounts, even if they are not attempting to do so simultaneously. We have an entire page devoted to strategies to make it easy to <a class="reference internal" href="multiple-accounts.html#multiple-accounts"><span class="std std-ref">painlessly operate with multiple CoCalc accounts</span></a>.</p>
-<p>For a quick workaround, try to connect to CoCalc by opening up a “new private browsing window” or “new incognito window.” While inside those special windows, your old cookies will not be active and any new cookies you are given will not affect the main browser.</p>
+<section id="step-4-clear-cookies">
+<span id="index-3"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Step 4: Clear Cookies</a><a class="headerlink" href="#step-4-clear-cookies" title="Link to this heading"></a></h2>
+<p>Getting the message <em>Error: no valid remember_me token</em> when trying to sign into CoCalc is usually a sign of stale browser cookies.</p>
+<p>This situation can happen to users who attempt to use multiple CoCalc accounts, even if they are not attempting to do so simultaneously. We have an entire page devoted to strategies to make it easy to <a class="reference internal" href="multiple-accounts.html#multiple-accounts"><span class="std std-ref">painlessly operate with multiple CoCalc accounts</span></a>.</p>
+<p>For a quick workaround, try to connect to CoCalc by opening up a new “private browsing window” or “incognito window.” While inside those special windows, your old cookies will not be active and any new cookies you are given will not affect the main browser.</p>
 <p>The definitive solution is to clear all browser cookies related to cocalc.com, or use a different browser.</p>
 </section>
-<section id="step-8-have-you-installed-browser-extensions-add-on-s-or-enabled-blocking-software-on-your-computer">
-<h3>Step 8: Have you installed browser extensions (“add-on”s) or enabled blocking software on your computer?<a class="headerlink" href="#step-8-have-you-installed-browser-extensions-add-on-s-or-enabled-blocking-software-on-your-computer" title="Link to this heading"></a></h3>
-<p>Another source of problems is <strong>installed browser extensions</strong>. Extensions might inject JavaScript code into the website. In such a situation, it is likely that the injected code does not play along well with the JavaScript code of CoCalc.</p>
-<p>Some extensions, for example ad blockers, block certain external websites. It may be necessary to whitelist cocalc.com if you are running one of these. In addition, some libraries used by CoCalc are loaded via CDN (content delivery network) instead of Cocalc’s own servers. Blocking their access (or more general, blocking any 3rd party scripts from a website) could cause problems. The same can happen with other firewall or anti-virus software on your computer.</p>
+<section id="step-5-update-your-browser">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Step 5: Update Your Browser</a><a class="headerlink" href="#step-5-update-your-browser" title="Link to this heading"></a></h2>
+<p>We do NOT support old versions of web browsers! As we add new features, fix bugs, and update dependencies, there is higher and higher chance that we require some functionality not supported by older versions.</p>
+</section>
+<section id="step-6-disable-extensions">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Step 6: Disable Extensions</a><a class="headerlink" href="#step-6-disable-extensions" title="Link to this heading"></a></h2>
+<p>Another common source of problems is <strong>installed browser extensions</strong> which might inject JavaScript code into any website. It is quite likely that the injected code may not play along well with the JavaScript code of CoCalc.</p>
+<p>Some extensions, for example ad blockers, block certain external websites. It may be necessary to whitelist cocalc.com if you are running one of these. In addition, some libraries used by CoCalc are loaded via CDN (content delivery network) instead of CoCalc’s own servers. Blocking their access (or more generally, blocking any 3rd party scripts from a website) could cause problems. The same can happen with other firewall or anti-virus software on your computer.</p>
 <p>The site-blocking extension <a class="reference external" href="https://github.com/andryou/scriptsafe">ScriptSafe</a> used with Chrome-based browsers, including <a class="reference external" href="https://iridiumbrowser.de/">Iridium</a>, has been reported to cause connection problems with CoCalc.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
 <p>With Google Chrome, extensions are disabled in “incognito mode”. You can also go to the Settings and disable extensions, or run Google Chrome with the command-line switch <cite>–disable-extensions</cite>.</p>
+<p>For Firefox, see <a class="reference external" href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">Firefox Disable or remove Add-ons</a>.</p>
 <p>If incognito mode works, then the problem is either:</p>
 <ul class="simple">
 <li><p>Cookies and other local data associated to cocalc.com are somehow bad (deleting them would fix it), or</p></li>
 <li><p>A browser extension is mangling/breaking cocalc.com – disabling that extension would fix it.</p></li>
 </ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>In Firefox, you can disable add-ons with this link: <a class="reference external" href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">Firefox Disable or remove Add-ons</a>.</p>
-</div>
 </section>
-<section id="step-9-are-the-cocalc-servers-down">
-<h3>Step 9: Are the CoCalc servers down?<a class="headerlink" href="#step-9-are-the-cocalc-servers-down" title="Link to this heading"></a></h3>
-<p>This is extremely unlikely. One of the advantages of cloud computing is that if a server goes down, then you can automatically be reconnected to some other server. You can also explicitly request to be connected to a different front-end server:</p>
-<ol class="arabic simple">
-<li><p>Click on the connection information in the top right corner, a dialog should pop up.</p></li>
-<li><p>In it, click the “Reconnect” button.</p></li>
-</ol>
-<p>The following webpage will show you a bit of technical information about the running servers:</p>
-<p><a class="reference external" href="https://cocalc.com/stats">https://cocalc.com/stats</a></p>
-<p>However, if that link were to time out, or if there is nothing to see, then there is a problem with either your internet connectivity or the CoCalc website. If your browser tells you about any issues while loading that link, then the problem is likely to be on your end.</p>
-<p>Maybe also check <strong>other</strong> websites:</p>
-<ul class="simple">
-<li><p>If a page like <a class="reference external" href="https://google.com">https://google.com</a> are also down, it is an indicator that your internet connection is broken.</p></li>
-<li><p>You can also check CoCalc’s status indirectly via services like <a class="reference external" href="https://down.com/">https://down.com/</a></p></li>
-</ul>
+<section id="step-7-try-google-chrome">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Step 7: Try Google Chrome</a><a class="headerlink" href="#step-7-try-google-chrome" title="Link to this heading"></a></h2>
+<p>Overall, CoCalc works best with the most recent version of Google Chrome. If you are not using it as your main browser, please install the latest version to check if CoCalc works with it.</p>
 </section>
-<section id="step-10-is-your-computer-infected-with-malware">
-<h3>Step 10: Is your computer infected with malware?<a class="headerlink" href="#step-10-is-your-computer-infected-with-malware" title="Link to this heading"></a></h3>
+<section id="step-8-reduce-traffic">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Step 8: Reduce Traffic</a><a class="headerlink" href="#step-8-reduce-traffic" title="Link to this heading"></a></h2>
+<p>There are situations where your computer or your router cannot handle all the ongoing traffic.
+For example, you are simultaneously watching a video or participate in a video chat.
+Or, in the case of a router sharing internet access, another device is used to watch videos or play games.
+Then messages sent to CoCalc and back may be slowed down or even dropped entirely.
+Besides a poor experience of using CoCalc,
+you could also see sporadic “disconnect” warnings.</p>
+<p>If possible, turn off other traffic-heavy applications or connect to a different network.</p>
+</section>
+<section id="step-9-free-memory-and-cpu">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Step 9: Free Memory and CPU</a><a class="headerlink" href="#step-9-free-memory-and-cpu" title="Link to this heading"></a></h2>
+<p>If you have multiple applications open on your computer or a lot of browser tabs, your browser may stall because of too high memory and/or CPU usage. Try closing some applications and tabs, then reload CoCalc tab.</p>
+<p>If you are using Google Chrome, you can see CPU and memory usage for each
+and every tab in the <a class="reference external" href="https://www.google.com/search?q=chrome+task+manager">Chrome Task Manager</a>. This way, you can see which tabs are memory hogs (whether they are CoCalc
+or something else) and decide for yourself if you wish to close them.</p>
+</section>
+<section id="step-10-remove-malware">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Step 10: Remove Malware</a><a class="headerlink" href="#step-10-remove-malware" title="Link to this heading"></a></h2>
 <p>If you experience issues like frequent reloads, see strange advertising banners across the page, or additional odd banners around the page, then you might be a victim of some tool or virus injecting additional HTML code into webpages in your browser. Such malicious software can serve several purposes (e.g. tracking you, showing you ads, just disrupting your connectivity), and is almost always considered highly undesirable.</p>
 <p>For Google Chrome there is the <a class="reference external" href="https://www.google.com/chrome/cleanup-tool/">Chrome Cleanup Tool</a> which might help you fix this.</p>
 <p>For Firefox, you might want to check
-the <a class="reference external" href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">disable add-ons</a> screen, which might display for you an undesired add-on that might have been installed on your browser without your knowledge.</p>
+the <a class="reference external" href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">disable add-ons</a> page, which might display for you an undesired add-on that might have been installed on your browser without your knowledge.</p>
 </section>
-<section id="step-11-is-the-problem-with-your-dns-domain-name-service-settings">
-<h3>Step 11: Is the problem with your DNS (Domain Name Service) settings?<a class="headerlink" href="#step-11-is-the-problem-with-your-dns-domain-name-service-settings" title="Link to this heading"></a></h3>
-<p>It is possible that you might be a victim of some malicious software changing your DNS server and re-routing you through a bad proxy server. This is not always the result of hacking. It can be a bad configuration on your computer, the result of an over-zealous employer, or hotel.</p>
-<p>Check your DNS settings and try setting <a class="reference external" href="https://developers.google.com/speed/public-dns/docs/using">8.8.8.8</a> as your only DNS server to see if this helps. That’s a free DNS service provided by Google. Alternatively (or additionally) you can setup <a class="reference external" href="https://1.1.1.1/">1.1.1.1</a> by Cloudflare.</p>
+<section id="step-11-check-dns-settings">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Step 11: Check DNS Settings</a><a class="headerlink" href="#step-11-check-dns-settings" title="Link to this heading"></a></h2>
+<p>It is possible that you might be a victim of some malicious software changing your DNS  (Domain Name Service) server and re-routing you through a bad proxy. It may also be the result of a bad configuration on your computer, an over-zealous employer, or hotel.</p>
+<p>Check your DNS settings and try setting <a class="reference external" href="https://developers.google.com/speed/public-dns/docs/using">8.8.8.8</a> as your only DNS server to see if this helps. That is a free DNS service provided by Google. Alternatively (or additionally) you can setup <a class="reference external" href="https://1.1.1.1/">1.1.1.1</a> by Cloudflare.</p>
 </section>
-<section id="step-12-is-your-browser-out-of-date-or-otherwise-incompatible-with-cocalc">
-<h3>Step 12: Is your browser out of date or otherwise incompatible with CoCalc?<a class="headerlink" href="#step-12-is-your-browser-out-of-date-or-otherwise-incompatible-with-cocalc" title="Link to this heading"></a></h3>
-<p>The problem may be solved by using another browser, in particular Google Chrome, or by updating your browser to a recent version if it is outdated.</p>
-</section>
-<section id="step-13-do-websocket-connections-work">
-<span id="websocket-test"></span><h3>Step 13: Do WebSocket connections work?<a class="headerlink" href="#step-13-do-websocket-connections-work" title="Link to this heading"></a></h3>
-<p>The following test page checks if WebSockets do work for you.
-They’re necessary to “Connect” with CoCalc.</p>
-<ol class="arabic simple">
-<li><p>Open this page: <a class="reference external" href="https://www.websocket.org/echo.html">https://www.websocket.org/echo.html</a></p></li>
-<li><p>Enable “secure websocket TLS”</p></li>
-<li><p>Then click “Connect” and finally,</p></li>
-<li><p>Send yourself a test message.</p></li>
-</ol>
-<p>On the right hand side in the output box, the same message should come back and hence confirm that encrypted websocket connections work for you.</p>
-<p>A broken router configuration (e.g. in a larger organization like a university) or some firewall software trying to inspect your traffic might cause troubles.</p>
-</section>
-</section>
-<section id="faq">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">FAQ</a><a class="headerlink" href="#faq" title="Link to this heading"></a></h2>
-<section id="question-i-don-t-see-any-icons-but-everything-else-works">
-<h3>Question: I don’t see any icons, but everything else works.<a class="headerlink" href="#question-i-don-t-see-any-icons-but-everything-else-works" title="Link to this heading"></a></h3>
-<p>You are most likely using a customized font or an extension to customize fonts via CSS (Cascading Style Sheets), in your web browser.
-This interferes with the font displaying the images for the icons.</p>
-<p>The best solution is to disable the extension, in your browser.</p>
-</section>
-<section id="question-i-can-access-some-of-my-files-projects-in-my-cocalc-account-but-not-others-in-that-same-account-what-s-wrong">
-<h3>Question: I can access some of my files/projects in my CoCalc account but not others in that same account. What’s wrong?<a class="headerlink" href="#question-i-can-access-some-of-my-files-projects-in-my-cocalc-account-but-not-others-in-that-same-account-what-s-wrong" title="Link to this heading"></a></h3>
-<p>Sometimes this can happen if you are using multiple CoCalc accounts in the same browser.
-This can happen even if you are not using two different accounts simultaneously.</p>
-<p>We have a short help page, <a class="reference internal" href="multiple-accounts.html#multiple-accounts"><span class="std std-ref">Use Multiple Accounts</span></a> which discusses this.
-The suggestions there will make it work very smoothly for you.</p>
-</section>
-<section id="question-i-see-the-error-message-timeout-while-loading-cocalc-instead-of-the-cocalc-landing-page">
-<span id="timeout-loading-cocalc"></span><span id="index-3"></span><span id="index-2"></span><h3>Question: I see the error message “Timeout while loading CoCalc” instead of the CoCalc landing page.<a class="headerlink" href="#question-i-see-the-error-message-timeout-while-loading-cocalc-instead-of-the-cocalc-landing-page" title="Link to this heading"></a></h3>
-<p>If you see the error message <strong>“Timeout while loading CoCalc.”</strong> when you try to connect to CoCalc, there are several things to try:</p>
-<ul class="simple">
-<li><p>Hold down the <code class="docutils literal notranslate"><span class="pre">Shift</span></code>-key and click your browser’s reload button to refresh the CoCalc tab.
-Sometimes this simple action resolves the problem.</p></li>
-<li><p>Close your browser and open it again. Maybe even restart your computer!</p></li>
-<li><p>You might be using an old, unsupported browser.
-Check for updates available to the browser you are using, or switch to the latest version of a different browser.</p></li>
-<li><p>If you are on a very slow network, loading may succeed, but take more than 60 seconds.
-Try waiting. Loading may succeed after the timeout warning is displayed.</p></li>
-</ul>
-<p>If this doesn’t help, try additional diagnostic steps mentioned above.</p>
-</section>
+<section id="step-12-test-websockets">
+<span id="websocket-test"></span><h2><a class="toc-backref" href="#id15" role="doc-backlink">Step 12: Test WebSockets</a><a class="headerlink" href="#step-12-test-websockets" title="Link to this heading"></a></h2>
+<p>WebSockets are necessary to connect to CoCalc.
+A broken router configuration (e.g. in a larger organization like a university) or some firewall software trying to inspect your traffic might cause troubles.
+You can check that WebSockets are working for you by visiting <a class="reference external" href="https://echo.websocket.org/.ws">https://echo.websocket.org/.ws</a> and sending yourself a test message.</p>
 </section>
 </section>
 
