@@ -6,26 +6,43 @@
 X11 Graphical Desktop
 ==========================
 
-.. contents::
-   :local:
-   :depth: 2
-   
-.. hint::
-
-    In addition to using X11 Desktops in your Project, you can also run :ref:`compute_server_applications` on :doc:`compute_server`.
-
 CoCalc is a modern web-application, but there are many already existing desktop applications.
 This aspect of CoCalc brings such applications to the web,
 by running them inside a minimal graphical environment and presenting them to you via the browser.
 It is even possible to collaboratively work on the same application
 – although be warned that this is quite confusing!
-
 See `this blog post <http://blog.sagemath.com/cocalc/2018/11/05/x11.html>`_ for more screenshot and further explanations.
 
-.. image:: img/x11-maxima.png
-    :alt: Maxima in CoCalc
-    :width: 100%
+.. hint::
 
+    In addition to using X11 Desktops in your Project, you can also run :ref:`compute_server_applications` on :doc:`compute_server`.
+
+.. contents::
+   :local:
+   :depth: 2
+   
+Jupyter Notebooks
+=================
+
+One of the most common uses of CoCalc X11 Graphical Desktop is running code in :doc:`jupyter` that displays graphics in external windows, if run locally. For example, if you try to use ``turtle`` module, you will get an error message ``TclError: no display name and no $DISPLAY environment variable`` The solution is to set ``$DISPLAY`` variable correctly:
+
+1. Create X11 desktop. (Details below.)
+2. In its terminal type ``echo $DISPLAY`` which will print something like ``:1343865922``.
+3. In your Jupyter Notebook add ::
+
+    import os
+    os.environ['DISPLAY'] = ":1343865922"
+
+4. Run the code in your notebook, its output will appear in X11 window.
+5. If you want to see both the code and the output at the same time, open either the notebook or X11 desktop in a new browser window by **Shift**-clicking the file tab. See :doc:`fullscreen` for other helpful tips.
+
+.. figure:: img/X11_DISPLAY.png
+    :width: 90%
+    :align: center
+    :alt: X11 Plotting from Jupyter Notebooks
+    
+    X11 Plotting from Jupyter Notebooks
+    
 
 Getting started
 ===============

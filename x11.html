@@ -86,6 +86,7 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="vscode.html">Visual Studio Code Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="R_IDE.html">R IDE</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">X11 Graphical Desktop</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting started</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#overlay-dialogs">Overlay Dialogs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#window-tabs">Window Tabs</a></li>
@@ -168,40 +169,62 @@ div.cocalc-header a {
              
   <section id="x11-graphical-desktop">
 <span id="x11"></span><span id="index-0"></span><h1>X11 Graphical Desktop<a class="headerlink" href="#x11-graphical-desktop" title="Link to this heading"></a></h1>
-<nav class="contents local" id="contents">
-<ul class="simple">
-<li><p><a class="reference internal" href="#getting-started" id="id3">Getting started</a></p>
-<ul>
-<li><p><a class="reference internal" href="#overlay-dialogs" id="id4">Overlay Dialogs</a></p></li>
-<li><p><a class="reference internal" href="#window-tabs" id="id5">Window Tabs</a></p></li>
-<li><p><a class="reference internal" href="#keyboard-layout" id="id6">Keyboard Layout</a></p></li>
-<li><p><a class="reference internal" href="#zoom" id="id7">Zoom</a></p></li>
-<li><p><a class="reference internal" href="#terminal" id="id8">Terminal</a></p></li>
-<li><p><a class="reference internal" href="#technical-status" id="id9">Technical Status</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#installed-applications" id="id10">Installed Applications</a></p></li>
-<li><p><a class="reference internal" href="#tips-tricks" id="id11">Tips &amp; Tricks</a></p>
-<ul>
-<li><p><a class="reference internal" href="#high-resolution-hdpi-displays" id="id12">High-resolution HDPI displays</a></p></li>
-<li><p><a class="reference internal" href="#is-scilab-broken" id="id13">Is Scilab broken?</a></p></li>
-</ul>
-</li>
-</ul>
-</nav>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p>In addition to using X11 Desktops in your Project, you can also run <a class="reference internal" href="compute_server.html#compute-server-applications"><span class="std std-ref">JupyterLab, VS Code, X11 Desktop</span></a> on <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>.</p>
-</div>
 <p>CoCalc is a modern web-application, but there are many already existing desktop applications.
 This aspect of CoCalc brings such applications to the web,
 by running them inside a minimal graphical environment and presenting them to you via the browser.
 It is even possible to collaboratively work on the same application
-– although be warned that this is quite confusing!</p>
-<p>See <a class="reference external" href="http://blog.sagemath.com/cocalc/2018/11/05/x11.html">this blog post</a> for more screenshot and further explanations.</p>
-<a class="reference internal image-reference" href="_images/x11-maxima.png"><img alt="Maxima in CoCalc" src="_images/x11-maxima.png" style="width: 100%;" /></a>
+– although be warned that this is quite confusing!
+See <a class="reference external" href="http://blog.sagemath.com/cocalc/2018/11/05/x11.html">this blog post</a> for more screenshot and further explanations.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In addition to using X11 Desktops in your Project, you can also run <a class="reference internal" href="compute_server.html#compute-server-applications"><span class="std std-ref">JupyterLab, VS Code, X11 Desktop</span></a> on <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>.</p>
+</div>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#jupyter-notebooks" id="id4">Jupyter Notebooks</a></p></li>
+<li><p><a class="reference internal" href="#getting-started" id="id5">Getting started</a></p>
+<ul>
+<li><p><a class="reference internal" href="#overlay-dialogs" id="id6">Overlay Dialogs</a></p></li>
+<li><p><a class="reference internal" href="#window-tabs" id="id7">Window Tabs</a></p></li>
+<li><p><a class="reference internal" href="#keyboard-layout" id="id8">Keyboard Layout</a></p></li>
+<li><p><a class="reference internal" href="#zoom" id="id9">Zoom</a></p></li>
+<li><p><a class="reference internal" href="#terminal" id="id10">Terminal</a></p></li>
+<li><p><a class="reference internal" href="#technical-status" id="id11">Technical Status</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#installed-applications" id="id12">Installed Applications</a></p></li>
+<li><p><a class="reference internal" href="#tips-tricks" id="id13">Tips &amp; Tricks</a></p>
+<ul>
+<li><p><a class="reference internal" href="#high-resolution-hdpi-displays" id="id14">High-resolution HDPI displays</a></p></li>
+<li><p><a class="reference internal" href="#is-scilab-broken" id="id15">Is Scilab broken?</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="jupyter-notebooks">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Jupyter Notebooks</a><a class="headerlink" href="#jupyter-notebooks" title="Link to this heading"></a></h2>
+<p>One of the most common uses of CoCalc X11 Graphical Desktop is running code in <a class="reference internal" href="jupyter.html"><span class="doc">Jupyter Notebooks</span></a> that displays graphics in external windows, if run locally. For example, if you try to use <code class="docutils literal notranslate"><span class="pre">turtle</span></code> module, you will get an error message <code class="docutils literal notranslate"><span class="pre">TclError:</span> <span class="pre">no</span> <span class="pre">display</span> <span class="pre">name</span> <span class="pre">and</span> <span class="pre">no</span> <span class="pre">$DISPLAY</span> <span class="pre">environment</span> <span class="pre">variable</span></code> The solution is to set <code class="docutils literal notranslate"><span class="pre">$DISPLAY</span></code> variable correctly:</p>
+<ol class="arabic">
+<li><p>Create X11 desktop. (Details below.)</p></li>
+<li><p>In its terminal type <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$DISPLAY</span></code> which will print something like <code class="docutils literal notranslate"><span class="pre">:1343865922</span></code>.</p></li>
+<li><p>In your Jupyter Notebook add</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import os
+os.environ[&#39;DISPLAY&#39;] = &quot;:1343865922&quot;
+</pre></div>
+</div>
+</li>
+<li><p>Run the code in your notebook, its output will appear in X11 window.</p></li>
+<li><p>If you want to see both the code and the output at the same time, open either the notebook or X11 desktop in a new browser window by <strong>Shift</strong>-clicking the file tab. See <a class="reference internal" href="fullscreen.html"><span class="doc">The Fullscreen Button</span></a> for other helpful tips.</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/X11_DISPLAY.png"><img alt="X11 Plotting from Jupyter Notebooks" src="_images/X11_DISPLAY.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">X11 Plotting from Jupyter Notebooks</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 <section id="getting-started">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Getting started</a><a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Getting started</a><a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
 <p>In your project, create an <strong>X11 Desktop</strong>-file (which has the ending <code class="docutils literal notranslate"><span class="pre">*.x11</span></code>),
 or use the corresponding button when creating a new file.
 You should see a <a class="reference internal" href="frame-editor.html"><span class="doc">split frame editor</span></a> with</p>
@@ -230,7 +253,7 @@ There, type in the filename and click “Save” at the bottom again.</p>
 <p>Afterwards, this did create a file named <code class="docutils literal notranslate"><span class="pre">file1.txt</span></code> in the current directory.
 Go ahead and open it up inside of CoCalc!</p>
 <section id="overlay-dialogs">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Overlay Dialogs</a><a class="headerlink" href="#overlay-dialogs" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Overlay Dialogs</a><a class="headerlink" href="#overlay-dialogs" title="Link to this heading"></a></h3>
 <p>Modal dialogs open up as almost-maximized windows on top of the current window of the application.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -240,7 +263,7 @@ by clicking on the application visible in the background; i.e. the surrounding a
 <a class="reference internal image-reference" href="_images/x11-inkscape-dialog.png"><img alt="_images/x11-inkscape-dialog.png" class="align-center" src="_images/x11-inkscape-dialog.png" style="width: 75%;" /></a>
 </section>
 <section id="window-tabs">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">Window Tabs</a><a class="headerlink" href="#window-tabs" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Window Tabs</a><a class="headerlink" href="#window-tabs" title="Link to this heading"></a></h3>
 <p>When you open up <em>multiple applications</em> (or a single application opens multiple windows),
 they appear as <em>tabs</em> at the top of the X11 view area.
 In the screenshot below, you can see that the text file was also opened up in <a class="reference external" href="https://www.libreoffice.org/discover/writer/">LibreOffice Writer</a>:</p>
@@ -255,7 +278,7 @@ you have to click on the appropriate tab to open it up and take appropriate acti
 </div>
 </section>
 <section id="keyboard-layout">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">Keyboard Layout</a><a class="headerlink" href="#keyboard-layout" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Keyboard Layout</a><a class="headerlink" href="#keyboard-layout" title="Link to this heading"></a></h3>
 <p>CoCalc will try (badly) to guess your keyboard layout based on your browser’s default
 language settings.  This does NOT work well.  Instead, you should explicitly select your
 keyboard layout in Account preferences:</p>
@@ -272,7 +295,7 @@ keyboard layout in Account preferences:</p>
 </div>
 </section>
 <section id="zoom">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">Zoom</a><a class="headerlink" href="#zoom" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Zoom</a><a class="headerlink" href="#zoom" title="Link to this heading"></a></h3>
 <p>CoCalc tries to match its virtual desktop size to the size of the frame inside your browser window.
 It will also calculate an appropriate zoom level based on the resolution of your screen.
 However, this might not always work.</p>
@@ -281,7 +304,7 @@ Sometimes, it might also be necessary to change some settings within the applica
 CoCalc dynamically resizes the desktop and the application will redraw accordingly.</p>
 </section>
 <section id="terminal">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Terminal</a><a class="headerlink" href="#terminal" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">Terminal</a><a class="headerlink" href="#terminal" title="Link to this heading"></a></h3>
 <p>Inside the small <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a> on the side, you can run programs or your own scripts.
 For example, this could be a Python script,
 or even a full application: try this <a class="reference external" href="https://matplotlib.org/gallery/user_interfaces/embedding_in_wx5_sgskip.html">matplotlib: Embedding In Wx5</a> example.</p>
@@ -302,7 +325,7 @@ plt.show()
 </div>
 </section>
 <section id="technical-status">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Technical Status</a><a class="headerlink" href="#technical-status" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Technical Status</a><a class="headerlink" href="#technical-status" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Desktop (works well):</strong></p>
 <ul>
@@ -321,7 +344,7 @@ plt.show()
 </section>
 </section>
 <section id="installed-applications">
-<span id="x11-installed-applications"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id10" role="doc-backlink">Installed Applications</a><a class="headerlink" href="#installed-applications" title="Link to this heading"></a></h2>
+<span id="x11-installed-applications"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Installed Applications</a><a class="headerlink" href="#installed-applications" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Unless otherwise noted, the application’s name is also the command to start the executable.
@@ -605,8 +628,8 @@ For most applications you can find a launcher button:</p>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Categories</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Categories</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 20.0%" />
 <col style="width: 80.0%" />
@@ -660,21 +683,21 @@ For most applications you can find a launcher button:</p>
 </table>
 </section>
 <section id="tips-tricks">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Tips &amp; Tricks</a><a class="headerlink" href="#tips-tricks" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Tips &amp; Tricks</a><a class="headerlink" href="#tips-tricks" title="Link to this heading"></a></h2>
 <section id="high-resolution-hdpi-displays">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">High-resolution HDPI displays</a><a class="headerlink" href="#high-resolution-hdpi-displays" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">High-resolution HDPI displays</a><a class="headerlink" href="#high-resolution-hdpi-displays" title="Link to this heading"></a></h3>
 <p>If the visible buttons/controls are small, especially if you have a high-res display, and zooming alone doesn’t really help much, enable <strong>HDPI rendering</strong>. That’s available for some of the applications in their respective configuration dialogs.</p>
 <p>In R IDE you can go to <strong>Tools → Global Options → Appearance → Zoom → 200%</strong>.</p>
 <p>In Spyder <strong>Enable auto high DPI scaling</strong> option is available via the <strong>Tools &gt; Preferences</strong> menu or the wrench-icon:</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/x11-spyder-hdpi.png"><img alt="Enable auto high DPI scaling in Spyder" src="_images/x11-spyder-hdpi.png" style="width: 75%;" /></a>
 <figcaption>
-<p><span class="caption-text">Enable auto high DPI scaling in Spyder</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+<p><span class="caption-text">Enable auto high DPI scaling in Spyder</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </section>
 <section id="is-scilab-broken">
-<span id="index-2"></span><h3><a class="toc-backref" href="#id13" role="doc-backlink">Is Scilab broken?</a><a class="headerlink" href="#is-scilab-broken" title="Link to this heading"></a></h3>
+<span id="index-2"></span><h3><a class="toc-backref" href="#id15" role="doc-backlink">Is Scilab broken?</a><a class="headerlink" href="#is-scilab-broken" title="Link to this heading"></a></h3>
 <p>In theory, Scilab should work in this <a class="reference internal" href="#"><span class="doc">X11 Graphical Desktop</span></a> editor,
 but there is a long standing <a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/scilab/+bug/1762999">issue in Ubuntu Linux</a> about this.</p>
 <p>As of May 2019, it works, but maybe it’s broken again <code class="docutils literal notranslate"><span class="pre">¯\_(ツ)_/¯</span></code> ?</p>
