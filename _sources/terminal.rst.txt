@@ -8,55 +8,27 @@ Linux Terminal
 ==============
 
 The **CoCalc Linux Terminal** lets you run programs online in a Linux environment.
-Everything runs remotely inside :doc:`a project <./project>`,
-the ongoing terminal session is synchronized with your collaborators,
-and all your files are backed up.
-
-.. image:: img/terminals4.png
-    :width: 100%
-    :alt: sample terminal screenshot
-
-
+The ongoing terminal session is synchronized with your collaborators, so you can see each other's commands and their output.
 
 .. contents::
    :local:
    :depth: 2
 
-.. _terminal-tour:
-
-Terminal Tour
-=================
-
-You can launch a short introduction to CoCalc's support for the Linux terminal by clicking the blue **Tour** button at upper right after opening a .term file. This is one of several :doc:`tours` of features in CoCalc.
-
-.. figure:: img/term-tour.png
-    :width: 100%
-    :align: center
-    :alt: terminal tour
-
-    terminul tour
-
 
 Quickstart
 =================
 
-.. note::
-
-    To get started, create a **"Terminal"** file in the "Files" listing or in "+ New".
-    Such files end in ``.term`` and open up in a :doc:`frame-editor`.
-    Inside of each panel a terminal session starts up and you can issue commands.
-
-
-New to Linux?
-----------------------
+To get started, create a **"Terminal"** file in the "Files" listing or in "+ New".
+Such files end in ``.term`` and open up in a :doc:`frame-editor`.
+Inside of each panel a terminal session starts up and you can issue commands.
 
 The terminal is a way to interactively communicate with the computer.
-You type in a so-called "``command``" and then hit the ``Return``-key to send your instruction.
+You type in a so-called "``command``" and then hit **Enter** to send your instruction.
 This causes `bash`_, the default interpreter, to process your command and most likely run a program.
 You then see the output of that program as the result.
 After it finished, you see the prompt again and you can type in the next command.
 
-You can interrupt a program being stuck by pressing ``Ctrl+c``:
+You can interrupt a program being stuck by pressing **Ctrl + C**:
 this sends an "interrupt" signal to the running process.
 
 Find out more about the Linux command line at the
@@ -66,8 +38,8 @@ is one of several introductory topics at `Ryan's Tutorials <http://ryanstutorial
 .. _bash: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
 
 
-Installing software packages
-----------------------------------
+Install Software Packages
+=========================
 
 You can use the terminal to install software packages in your project.
 
@@ -81,7 +53,7 @@ Features
 Extensive Command Set
 -------------------------
 
-In addition to the usual commands available at user level in `Ubuntu Linux <https://www.ubuntu.com/>`_, there are command line programming interfaces for ``sage``, ``python2`` / ``ipython2``, ``python3`` / ``ipython3``, ``R``, ``gap``, ``java``, ``julia``, ``octave`` and many more. There is an extensive list of added executables at the `CoCalc installed software list <https://cocalc.com/doc/software.html>`_.
+In addition to the usual commands available at user level in `Ubuntu Linux <https://www.ubuntu.com/>`_, there are command line programming interfaces for ``sage``, ``python3`` / ``ipython3``, ``R``, ``gap``, ``java``, ``julia``, ``octave`` and many more. There is an extensive list of added executables at the `CoCalc installed software list <https://cocalc.com/doc/software.html>`_.
 
 CoCalc Terminal Commands
 -------------------------
@@ -92,7 +64,7 @@ The Linux shell in CoCalc projects has access to commands specifically intended 
 .. _terminal-file-open:
 
 * ``open <filename>``
-    The "open" command from a terminal will cause the CoCalc UI to open a tab for the file requested. If a tab is already open, browser focus will switch to that file. You can open multiple files with a single command, e.g. ````open file1 file2 file3````. The file is opened in an environment that matches the file type. For example, ``.ipynb`` files are opened as Jupyter notebooks, ``.sagews`` files are opened as Sage worksheets, and ``.py``, ``.R``, and ``.c`` files are opened in the frame editor.
+    The "open" command from a terminal will cause the CoCalc UI to open a tab for the file requested. If a tab is already open, browser focus will switch to that file. You can open multiple files with a single command, e.g. ````open file1 file2 file3````. The file is opened in an environment that matches the file type. For example, ``.ipynb`` files are opened as Jupyter notebooks, ``.tex`` files are opened as LaTeX documents, and ``.py``, ``.R``, and ``.c`` files are opened in the frame editor.
 
 .. index:: Convert; Jupyter notebook to Sage worksheet
 
@@ -114,8 +86,6 @@ more than one user to enter commands and view results in the same session.
 The terminal size will adjust according to the available number of rows and columns of each particiant.
 It also allows users participating in the same session to share comments by opening a :ref:`side-chat` for the terminal session by clicking the Chat icon at upper right.
 
-Additionally, you can use the "open door" button to remove all other collaborators interfering with your current terminal session.
-
 
 Disconnect and Resume
 -------------------------
@@ -127,7 +97,7 @@ Next time you reconnect – even with a different browser or via another compute
 Multiple Terminals in a Single Browser Tab
 ---------------------------------------------
 
-Terminals open up in a :doc:`frame-editor`. This means you can use buttons at upper right to split the terminal frame vertically or horizontally. The split defaults to the middle of the frame, but the dividing line can be dragged to give more space to one of the new frames and less to the other. You can continue splitting to get even more frames in a single browser tab. Click the `x` icon at upper left to close a frame.
+Terminals open up in a :doc:`frame-editor`. This means you can split the terminal frame vertically or horizontally. The split defaults to the middle of the frame, but the dividing line can be dragged to give more space to one of the new frames and less to the other. You can continue splitting to get even more frames in a single browser tab. Click the `x` icon at upper left to close a frame.
 
 
 .. index:: Terminal; startup files
@@ -150,16 +120,13 @@ Anaconda Environment
 ------------------------
 
 To use the `Anaconda data science platform <https://www.anaconda.com/>`_,
-enter the command ``anacond2019`` in a terminal session.
+enter the command ``anaconda`` in a terminal session.
 The shell prompt will change to notify you
 that you're now working in the default ("base") anaconda environment.
 To exit the anaconda platform and continue your terminal session,
 use the command ``exit-anaconda``.
 
 Additionally, you can :ref:`setup your own Anaconda environment <anaconda-install>` inside your project, and even setup your own :ref:`customized Jupyter Kernel <anaconda-jupyter>` for it.
-
-**Note:** an older version of anaconda is temporarily available with the command ``anaconda5``.
-We recommend all new applications use ``anaconda2019``.
 
 
 Tips and tricks
@@ -183,20 +150,20 @@ If you open a source code file in CoCalc for editing, for example an ``.sh``, ``
     :align: center
     :alt: split screen, editor pane with .py file on left, terminal on right
 
-Customize font
+Customize Font
 -----------------
 
-To change the **size** of the font, click the plus and minus magnification glass icons at the top of a focused terminal frame.
+To change the *size* of the font, use menu **View > Zoom In/Out**.
 
-In order to change the appearance of the **font family** of the terminal, adjust the font settings of your web browser.
-For example, in *Google Chrome* this is done in **Settings** → **Appearance** → **Customize Fonts**:
+In order to change the appearance of the *font family* of the terminal, adjust the font settings of your web browser.
+For example, in Google Chrome this is done in **Settings > Appearance > Customize Fonts**:
 
 .. image:: img/terminal/chrome-customize-fonts.png
     :width: 75%
     :align: center
     :alt: customize fonts in your browser
 
-Then select a different **fixed-width** font:
+Then select a different *fixed-width* font:
 
 .. image:: img/terminal/chrome-fixed-width-font.png
     :width: 75%
@@ -204,16 +171,16 @@ Then select a different **fixed-width** font:
     :alt: choose fixed-width font in your browser
 
 
-Broken VIM key bindings
---------------------------------
+Broken VIM Key Bindings
+-----------------------
 
-If you have a browser extension that uses the vim keys it may intercept the 'Esc' character, preventing you from switching to command mode in CoCalc.
-Either remap 'Esc' to a different key for the browser extension or disable the extension on the cocalc.com domain.
+If you have a browser extension that uses the vim keys it may intercept the **Esc** character, preventing you from switching to command mode in CoCalc.
+Either remap **Esc** to a different key for the browser extension or disable the extension on the cocalc.com domain.
 
 
 .. index:: Fish shell
 
-Setup fish shell
+Setup fish Shell
 -----------------------------------------------------
 
 You can automatically span a process replacing of the default bash shell while it starts
@@ -233,8 +200,8 @@ Next time you launch this terminal, or restart it via typing in ``exit`` and pre
 
 .. index:: Terminal; remove history
 
-Remove history from a terminal file
------------------------------------
+Remove History
+--------------
 
 Suppose you want to use a .term file, but want to remove previous history, comments, etc. In addition to deleting the contents of the .term file, you need to delete one or more hidden files. Click the little "hidden eye" icon in the upper right of the file listing to show hidden files. Then delete the hidden files that end in .term. They have the (recent) history of use of that terminal. If you delete them, then they are gone.
 
