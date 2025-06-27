@@ -14,7 +14,6 @@ For a general introduction, read this `LaTeX wiki book`_ or any other resource.
    latex-start.rst
    latex-features.rst
    latex-faq.rst
-   howto/overleaf.rst
 
 
 .. _LaTeX wiki book: https://en.wikibooks.org/wiki/LaTeX

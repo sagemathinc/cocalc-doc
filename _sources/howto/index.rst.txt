@@ -13,6 +13,7 @@ CoCalc Platform
     
     firewall-info
     software-development
+    overleaf.rst
     install-julia-package
     install-python-lib
     install-r-package

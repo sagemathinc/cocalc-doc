@@ -14,20 +14,18 @@ Howto
 ######
 
 
-.. index:: LaTeX Editor; Hebrew
-.. _latex_with_hebrew:
+.. index:: LaTeX Editor; Languages
+.. _latex_languages:
 
-Create documents in Hebrew
----------------------------------
+Typeset in Different Languages
+------------------------------
 
-.. _polyglossia: https://ctan.org/pkg/polyglossia?lang=en
+Here are some suggestions to make it easier to typeset your documents in different languages using LaTeX with CoCalc:
 
-Here are suggestions for using LaTeX in Hebrew with CoCalc:
-
-* Change the :ref:`LaTeX build engine <latex-build-engine>` to XeLaTeX. In the "Build" pane, which appears by default at lower right when you are editing a .tex file, click the the "Engine" button and select "XeLaTeX".
-* Use the polyglossia_ LaTeX package, which is already installed in CoCalc, to allow using Hebrew other language(s) in the same file. This can be useful if you wish to enter Arabic numerals.
-* Use LaTeX `Noto fonts <https://www.google.com/get/noto/>`_ for Hebrew, they are already installed in CoCalc.
-* Here is an example of commands you could use in the prologue of your .tex document to combine Hebrew and English::
+* Change the :ref:`LaTeX build engine <latex-build-engine>` to XeLaTeX. In the **Build** pane, which appears by default at lower right when you are editing a ``.tex`` file, click **Engine** button and select **XeLaTeX**.
+* Use the `polyglossia <https://ctan.org/pkg/polyglossia?lang=en>`_ LaTeX package, which is already installed in CoCalc, to allow using different languages in the same file.
+* Use LaTeX `Noto fonts <https://www.google.com/get/noto/>`_, they are already installed in CoCalc.
+* Here is an example of commands you could use in the preamble of your ``.tex`` document to combine Hebrew and English::
 
     \usepackage{polyglossia}
     \setmainlanguage{hebrew}
@@ -37,49 +35,6 @@ Here are suggestions for using LaTeX in Hebrew with CoCalc:
     \setmainfont{Times New Roman}
 
 
-Deal with large documents across multiple source files
----------------------------------------------------------
-
-
-Built-in Support for Multi-File Documents (preferred)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Native CoCalc support for multi-file documents has recently been added. Learn more about it at :ref:`multi-file-support`.
-
-
-.. index:: LaTeX Editor; multi-file (legacy)
-
-The `subfiles`_ Package (legacy method)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Before direct support for multi-file documents was available, the best way was to use the `subfiles`_ package as `described here`_.
-There is an extended example demonstrating how this works in the CoCalc Library.
-Click "Files" and open the Library. Then select  ``Multiple source files in CoCalc`` in the ``LaTeX templates`` section.
-The same example is also available at `cloud-examples/latex/multiple-files`_.
-
-.. _described here: https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Subfiles
-.. _cloud-examples/latex/multiple-files: https://github.com/sagemath/cloud-examples/tree/master/latex/multiple-files
-
-To do this for your existing document,
-let's suppose your LaTeX project is composed of one ``master.tex`` file and several ``chapter-1.tex``, ``chapter-2.tex``, etc.
-CoCalc's LaTeX editor only knows about the currently opened file,
-and using ``\import{}`` doesn't work, because the ``chapter-*.tex`` parts are not proper documents.
-
-The subfiles package does not only collect the partial documents into one,
-but also extracts the preamble of the ``master.tex`` file for each ``chapter-*.tex`` in order to create valid subdocuments.
-
-Following the `subfiles documentation <http://tug.ctan.org/macros/latex/contrib/subfiles/subfiles.pdf>`_, do this:
-
-1. ``\usepackage{subfiles}`` in ``master.tex``
-2. ``\subfile{⟨subfile name ⟩}`` for each subfile in ``master.tex``'s ``document`` environment (i.e. instead of ``\include`` or ``\import``).
-3. For each ``chapter-*.tex`` subfile::
-
-     \documentclass[⟨master.tex file-name⟩]{subfiles}
-     \begin{document}
-     ⟨text, graphics, etc.⟩
-     \end{document}
-
-After that, all ``*.tex`` files can be compiled and all other features like forward/inverse search work, too.
 
 .. index:: LaTeX Editor; Asymptote
 .. index:: Asymptote
@@ -97,9 +52,9 @@ In order to tell `LatexMK`_
 – which CoCalc's LaTeX editor is using by default under the hood –
 to process the generated ``*.asy`` files,
 you need to setup your ``~/.latexmkrc`` file in your home directory.
-In order to do that, open up the ``Files`` tab in your project
+In order to do that, open up the File Explorer in your project
 and click on the home-icon to make sure you're in your home directory.
-Then, click on `Create` to create a new file and enter the filename ``.latexmkrc``.
+Then, click on **Create** to create a new file and enter the filename ``.latexmkrc``.
 Don't overlook that leading dot in the filename, which is used for hidden files in Linux.
 Then, enter these lines in the text editor and save the file::
 
@@ -110,7 +65,7 @@ Then, enter these lines in the text editor and save the file::
 
 These additional rules tell LatexMK to essentially run ``asy <basename>-*.asy``
 on each file during the build process.
-In case there are problems, you can run that command-line in a :doc:`terminal`
+In case there are problems, you can run that command in a :doc:`terminal`
 to see all details about any possible errors.
 
 More information: `Asymptote LaTeX Usage <http://asymptote.sourceforge.net/doc/LaTeX-usage.html>`_.
@@ -128,7 +83,7 @@ Enable ``shell-escape`` to plot using Gnuplot
 There are situations where the LaTeX document calls certain utilities to accomplish a task.
 One example is creating plots via `Gnuplot <http://www.gnuplot.info/>`_ right inside the document.
 
-For example, a snippet of tex code could look like this::
+For example, a snippet of LaTex code could look like this::
 
     \begin{figure}
       \begin{tikzpicture}
@@ -150,9 +105,9 @@ due to security concerns. You'll see an error like that::
 .. note::
 
     You have to select the **PdfLaTeX (shell-escape)** engine from the selector in the
-    :doc:`build panel <../frame-editor>` or modify the build command maually.
+    :doc:`build panel <../frame-editor>` or modify the build command manually.
 
-As a result, Gnuplot will be run, the error vanishes, it creates the necessary temporary files for the PGF plot, and the PDF will show the plot.
+As a result, Gnuplot will be run without errors. The necessary temporary files for the PGF plot will be created and the PDF will show the plot.
 You can download the example :download:`gnuplot.tex <files/gnuplot.tex>` and see it in a screenshot below:
 
 .. image:: img/latex-gnuplot-shell-escape.png
@@ -228,8 +183,6 @@ It should extract into the correct subdirectories, in particular ``./tex/latex``
 Setup ``texmf`` in a project
 ------------------------------------
 
-A CoCalc project is equivalent to a linux user account.
-Therefore, the texmf discovery mechanism works the same as on a local machine.
 By default, you should be able to put your own packages and styles into ``~/texmf``.
 
 In case you just want to add a styles-file with common commands
@@ -238,7 +191,7 @@ you have to put them into the ``~/texmf/tex/latex/local`` sub-directory.
 That way they're always found by the latex processor.
 (see `stackexchange discussion <https://tex.stackexchange.com/questions/1137/where-do-i-place-my-own-sty-or-cls-files-to-make-them-available-to-all-my-te>`_)
 
-Otherwise, you might have to run run ``texhash ~/texmf`` in a terminal or the little "Terminal command" textbox in "Files".
+Otherwise, you might have to run run ``texhash ~/texmf`` in a :doc:`terminal`.
 
 Note: the ``~`` stands for the ``HOME`` directory, which is the root directory you see in the "Files"-listing.
 You can click the home icon to jump into the home directory.
