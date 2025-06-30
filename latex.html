@@ -23,7 +23,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting started with LaTeX" href="latex-start.html" />
+    <link rel="next" title="LaTeX Tips and Tricks" href="latex-tips-and-tricks.html" />
     <link rel="prev" title="Jupyter Tips and Tricks" href="jupyter-tips-and-tricks.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -83,11 +83,16 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="jupyter.html">Jupyter Notebooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jupyter-tips-and-tricks.html">Jupyter Tips and Tricks</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">LaTeX Editor</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="latex-start.html">Getting started with LaTeX</a></li>
-<li class="toctree-l3"><a class="reference internal" href="latex-features.html">LaTeX editor features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="latex-faq.html">LaTeX Howto and FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building-your-document">Building Your Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forward-and-inverse-search">Forward and Inverse Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pythontex-sagetex-knitr">PythonTeX, SageTex, Knitr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#different-languages">Different Languages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multi-file-support">Multi-File Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pdf-preview-troubleshooting">PDF Preview Troubleshooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#future-plans">Future Plans</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="latex-tips-and-tricks.html">LaTeX Tips and Tricks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminal.html">Linux Terminal</a></li>
 </ul>
 </li>
@@ -103,7 +108,6 @@ div.cocalc-header a {
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 </ul>
 
@@ -143,15 +147,100 @@ div.cocalc-header a {
              
   <section id="latex-editor">
 <span id="index-0"></span><span id="id1"></span><h1>LaTeX Editor<a class="headerlink" href="#latex-editor" title="Link to this heading"></a></h1>
-<p><a class="reference internal" href="references.html#latex" id="id2"><span>[LaTeX]</span></a> is a sophisticated markup language and processor for typesetting documents.
-For a general introduction, read this <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX">LaTeX wiki book</a> or any other resource.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="latex-start.html">Getting started with LaTeX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="latex-features.html">LaTeX editor features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="latex-faq.html">LaTeX Howto and FAQ</a></li>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#building-your-document" id="id4">Building Your Document</a></p></li>
+<li><p><a class="reference internal" href="#forward-and-inverse-search" id="id5">Forward and Inverse Search</a></p></li>
+<li><p><a class="reference internal" href="#pythontex-sagetex-knitr" id="id6">PythonTeX, SageTex, Knitr</a></p></li>
+<li><p><a class="reference internal" href="#different-languages" id="id7">Different Languages</a></p></li>
+<li><p><a class="reference internal" href="#multi-file-support" id="id8">Multi-File Support</a></p></li>
+<li><p><a class="reference internal" href="#pdf-preview-troubleshooting" id="id9">PDF Preview Troubleshooting</a></p></li>
+<li><p><a class="reference internal" href="#future-plans" id="id10">Future Plans</a></p></li>
 </ul>
+</nav>
+<p><a class="reference external" href="https://www.latex-project.org/">LaTeX</a> is a sophisticated markup language and processor for typesetting documents.
+For a general introduction you may check <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX">LaTeX wiki book</a>, or one of many other resources.</p>
+<p>Open an existing <code class="docutils literal notranslate"><span class="pre">.tex</span></code> file, create a new LaTeX document starting with a simple template (<a class="reference external" href="https://youtu.be/QLokIb2I78U?feature=shared">📺 video</a>), or <a class="reference internal" href="howto/overleaf.html"><span class="doc">import your existing documents from Overleaf</span></a>. You will see several frames that you can resize, close, and split just like any other <a class="reference internal" href="frame-editor.html"><span class="doc">frame</span></a> in CoCalc:</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/latex-ui.png"><img alt="Default Frames for LaTeX Documents" src="_images/latex-ui.png" style="width: 90%;" /></a>
+<figcaption>
+<p><span class="caption-text">Default Frames for LaTeX Documents</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you close all the frames, the default layout is restored.</p>
 </div>
+<section id="building-your-document">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Building Your Document</a><a class="headerlink" href="#building-your-document" title="Link to this heading"></a></h2>
+<p>By default, your document is built whenever you save it or when it is saved automatically. Once the built is finished, the PDF preview will update. You can also use <strong>Go &gt; Build</strong> menu or press <strong>Shift + Enter</strong> or <strong>Alt + T</strong>. If you do not like this behaviour, for example because your documents takes a long time to build, you can disable it via <strong>Go &gt; Build on Save</strong>.</p>
+<p><strong>Build Control and Log</strong> frame allows you to see the full log of the build process and control the <a class="reference internal" href="latex-tips-and-tricks.html#latex-build-engine"><span class="std std-ref">build command</span></a>. You can edit it however you want, or select a different engine from the dropdown menu.
+By default, we compile using <a class="reference external" href="https://www.ctan.org/pkg/latexmk/">LatexMK</a>, which manages temporary files and BibTeX.</p>
+<p><strong>Errors and Warnings</strong> frame lists all build errors, warnings, and other issues in a more convenient way than the raw log.
+Click on the line number link to jump to the corresponding line in the source and the preview. You can also see error markers on the margin of the source code.</p>
+</section>
+<section id="forward-and-inverse-search">
+<span id="latex-forward-inverse"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Forward and Inverse Search</a><a class="headerlink" href="#forward-and-inverse-search" title="Link to this heading"></a></h2>
+<p>Forward and inverse search are extremely helpful for navigating in a larger document!</p>
+<p><strong>Forward</strong>: With a cursor in the source code editor press <strong>Alt + Enter</strong>, click <strong>Sync</strong> button on the menu toolbar, or use <strong>View &gt; Synchronize Views</strong> menu. The PDF preview will show the corresponding location in the middle. (This feature may not be active in rare cases where full positional information is not available.)</p>
+<p><strong>Inverse</strong>: Double-click on an area of interest in the PDF preview to scroll the source code to the corresponding location and put the cursor there. You can also use <strong>Sync</strong> button and <strong>View &gt; Synchronize Views</strong> menu.</p>
+</section>
+<section id="pythontex-sagetex-knitr">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">PythonTeX, SageTex, Knitr</a><a class="headerlink" href="#pythontex-sagetex-knitr" title="Link to this heading"></a></h2>
+<p>If you are using CoCalc, chances are you are doing some computations in Python, Sage, or R.
+CoCalc supports embedding relevant code directly within a LaTeX document using <a class="reference internal" href="latex-tips-and-tricks.html#latex-pythontex"><span class="std std-ref">PythonTeX</span></a>, <a class="reference internal" href="latex-tips-and-tricks.html#latex-sagetex"><span class="std std-ref">SageTeX</span></a>, or <a class="reference internal" href="latex-tips-and-tricks.html#latex-knitr"><span class="std std-ref">Knitr</span></a> respectively.
+Such code is automatically processed and evaluated during build
+and any output appears as part of the PDF output itself.
+You can insert small calculations and formulas, source code, plots, data tables, etc.
+This is frequently used as part of <a class="reference external" href="https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research">reproducible research</a>.</p>
+</section>
+<section id="different-languages">
+<span id="latex-languages"></span><span id="index-1"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">Different Languages</a><a class="headerlink" href="#different-languages" title="Link to this heading"></a></h2>
+<p>The best way to use a language other than English in LaTeX depends on the particular language, but in general you may need to:</p>
+<ul class="simple">
+<li><p>Use the <a class="reference external" href="https://ctan.org/pkg/polyglossia?lang=en">polyglossia</a> LaTeX package (installed in CoCalc), to allow using different languages in the same file.</p></li>
+<li><p>Use LaTeX <a class="reference external" href="https://www.google.com/get/noto/">Noto fonts</a> (installed in CoCalc).</p></li>
+<li><p>Change the <a class="reference internal" href="latex-tips-and-tricks.html#latex-build-engine"><span class="std std-ref">LaTeX build engine</span></a> to XeLaTeX.</p></li>
+</ul>
+<p>For example, to combine Hebrew and English you can use these commands in the preamble of your document:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\newfontfamily{\hebrewfont}{Noto Serif Hebrew}
+\setmainfont{Noto Serif Hebrew}
+\setmainlanguage{english}
+\setmainfont{Times New Roman}
+</pre></div>
+</div>
+</section>
+<section id="multi-file-support">
+<span id="index-2"></span><span id="id2"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Multi-File Support</a><a class="headerlink" href="#multi-file-support" title="Link to this heading"></a></h2>
+<p>CoCalc supports LaTeX documents split into several files:</p>
+<ul class="simple">
+<li><p>The user interface is initially identical to the single-file case.</p></li>
+<li><p>If you explicitly input other files and build, there is a new menu on the top of a text editor that lets you select from any of the subfiles.</p></li>
+<li><p>Inverse search for the PDF part generated by a subfile automatically opens that file.</p></li>
+<li><p>Errors and warnings have links that open appropriate subfiles as well.</p></li>
+<li><p>Saving a subfile saves all files and starts a build, if <strong>Go &gt; Build on Save</strong> is enabled.</p></li>
+</ul>
+<p>See the section <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Modular_Documents">LaTeX/Modular Documents</a> in the WikiBooks LaTeX book for a helpful introduction to working with multiple files in LaTeX.</p>
+<a class="reference internal image-reference" href="_images/latex-multifile.png"><img alt="latex with multiple files" class="align-center" src="_images/latex-multifile.png" style="width: 90%;" /></a>
+</section>
+<section id="pdf-preview-troubleshooting">
+<span id="index-4"></span><span id="index-3"></span><h2><a class="toc-backref" href="#id9" role="doc-backlink">PDF Preview Troubleshooting</a><a class="headerlink" href="#pdf-preview-troubleshooting" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Check if there are any build errors - if yes, LaTeX may fail to build the PDF, or do it only partially, or in a wrong way.</p></li>
+<li><p>If your document used to build well, but now it does not and you don’t understand the errors, you can use <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a> to go back to a working version. In the TimeTravel view you can use <strong>Changes</strong> to see exactly what changed between revisions. Of course, you can also use <code class="docutils literal notranslate"><span class="pre">git</span></code> in a <a class="reference internal" href="terminal.html"><span class="doc">Linux Terminal</span></a> to track your changes.</p></li>
+<li><p>Use <strong>Format &gt; Format Source Code</strong> menu to reformat your file according to command structure. Sometimes such formatting can give you a good sense of what you might have messed up.</p></li>
+<li><p>Long documents could take an extended period of time to complete and automatic build on save may become inconvenient for you. Try to turn off <strong>Go &gt; Build on Save</strong> and start build only manually.</p></li>
+<li><p>Similarly, computational-heavy SageTeX computations could lead to excessive compilation times. You can pre-compute results or split the document into smaller parts.</p></li>
+<li><p>If you need help, open your <code class="docutils literal notranslate"><span class="pre">.tex</span></code> file and make a support request by clicking the <code class="docutils literal notranslate"><span class="pre">Help</span></code> button at the top right.</p></li>
+</ul>
+</section>
+<section id="future-plans">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Future Plans</a><a class="headerlink" href="#future-plans" title="Link to this heading"></a></h2>
+<p><strong>Annotations</strong>: One of the most requested features that we hope to implement soon is being able to add comments to LaTeX (and other) documents that do not become a part of the source code. Meanwhile, you have to rely on other CoCalc tools for collaboration, including <a class="reference internal" href="time-travel.html"><span class="doc">TimeTravel</span></a> and <a class="reference internal" href="chat.html#side-chat"><span class="std std-ref">Side Chat</span></a>.</p>
+<p><strong>Nicely formatted diffs</strong>: While you can see prior versions of your document and the difference between any two of them, there is room for improvement in making it clear what has changed and where, perhaps with LaTeX rendering.</p>
+</section>
 </section>
 
 
@@ -159,7 +248,7 @@ For a general introduction, read this <a class="reference external" href="https:
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="jupyter-tips-and-tricks.html" class="btn btn-neutral float-left" title="Jupyter Tips and Tricks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="latex-start.html" class="btn btn-neutral float-right" title="Getting started with LaTeX" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="latex-tips-and-tricks.html" class="btn btn-neutral float-right" title="LaTeX Tips and Tricks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

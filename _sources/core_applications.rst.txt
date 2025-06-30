@@ -7,4 +7,5 @@ Core Applications
    jupyter
    jupyter-tips-and-tricks
    latex
+   latex-tips-and-tricks
    terminal

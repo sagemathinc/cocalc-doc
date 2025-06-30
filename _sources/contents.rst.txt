@@ -29,7 +29,6 @@ Indices, references and tables
 .. toctree::
     :caption: Appendix
 
-    references
     genindex
 
 
