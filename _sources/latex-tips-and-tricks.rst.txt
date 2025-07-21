@@ -210,13 +210,14 @@ due to security concerns. You'll see an error like that::
 As a result, Gnuplot will be run without errors. The necessary temporary files for the PGF plot will be created and the PDF will show the plot.
 You can download the example :download:`gnuplot.tex <files/gnuplot.tex>` and see it in a screenshot below:
 
-.. image:: img/latex-gnuplot-shell-escape.png
-    :width: 90%
-    :alt: latex with gnuplot
-
-
-
-
+.. figure:: img/latex_shell_escape.png
+  :width: 90%
+  :align: center
+  :alt: Shell Escape for gnuplot
+  
+  Shell Escape for gnuplot
+  
+ 
 .. index:: LaTeX Editor; texmf
 .. index:: texmf
 
