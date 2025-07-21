@@ -13,7 +13,7 @@ For a general introduction you may check `LaTeX wiki book <https://en.wikibooks.
 
 Open an existing ``.tex`` file, create a new LaTeX document starting with a simple template (`📺 video <https://youtu.be/QLokIb2I78U?feature=shared>`_), or :doc:`import your existing documents from Overleaf <howto/overleaf>`. You will see several frames that you can resize, close, and split just like any other :doc:`frame <frame-editor>` in CoCalc:
 
-.. figure:: img/latex-ui.png
+.. figure:: img/latex_frames.png
   :width: 90%
   :align: center
   :alt: Default Frames for LaTeX Documents
@@ -48,7 +48,7 @@ Forward and inverse search are extremely helpful for navigating in a larger docu
 **Inverse**: Double-click on an area of interest in the PDF preview to scroll the source code to the corresponding location and put the cursor there. You can also use **Sync** button and **View > Synchronize Views** menu.
 
 
-PythonTeX, SageTex, Knitr
+PythonTeX, SageTeX, Knitr
 -------------------------
 
 If you are using CoCalc, chances are you are doing some computations in Python, Sage, or R. 
@@ -98,10 +98,12 @@ CoCalc supports LaTeX documents split into several files:
 
 See the section `LaTeX/Modular Documents <https://en.wikibooks.org/wiki/LaTeX/Modular_Documents>`_ in the WikiBooks LaTeX book for a helpful introduction to working with multiple files in LaTeX.
 
-.. image:: img/latex-multifile.png
-    :width: 90%
-    :align: center
-    :alt: latex with multiple files
+.. figure:: img/latex_multifile.png
+  :width: 90%
+  :align: center
+  :alt: Multiple Files for LaTeX
+  
+  Multiple Files for LaTeX
 
 
 .. index:: LaTeX Editor; debug PDF build
