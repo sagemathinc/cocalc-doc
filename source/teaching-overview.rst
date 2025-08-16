@@ -78,9 +78,9 @@ Budgeting and Billing
 
 CoCalc is not subsidized as some of the alternatives, so teaching a course does require purchasing a suitable license. If you are considering a pilot project using CoCalc, we are happy to learn more about your plans and provide you with a suitable free credit. `Get in touch! <https://cocalc.com/support/new?hideExtra=true&type=question&subject=Considering%20CoCalc&body=I%20want%20to%20teach%20a%20course%20using%20CoCalc%20...&title=Pilot%20Project>`_
 
-For the instructor project we recommend an ongoing monthly subscription. That way instructors can work on the course material and prepare for teaching throughout the year. Your department or the whole institute may also consider a single subscription to cover all courses to make the process even smoother. Our recommended configuration for instructors is about $20 per month per course (the number of instructors and TAs for each course does not matter).
+For the instructor project we recommend an ongoing monthly or yearly subscription. That way instructors can work on the course material and prepare for teaching throughout the year. Your department or the whole institute may also consider a single subscription to cover all courses to make the process even smoother. Our recommended configuration for instructors is in the range of $20-$30 per month per course depending on the choice of billing term (the number of instructors and TAs for each course does not matter).
 
-For the students it is usually more convenient to get a license with specific start and end dates. The standard configuration costs about $7 per month per student.
+For students it is usually more convenient to get a license with specific start and end dates. The standard configuration costs about $10 per month per student.
 
 If you are going to use compute servers, you need to pick a suitable configuration and estimate the number of hours each of them will be used. If you need to preserve the disks of compute servers over several weeks or months, you need to factor it in as well.
 
