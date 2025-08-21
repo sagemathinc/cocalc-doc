@@ -72,22 +72,10 @@ Enhanced features in CoCalc Markdown
 ####################################
 
 ***********************************
-@-mentions
-***********************************
-
-See :ref:`@Mention collaborators in chat <chat-at-mentions>`.
-
-***********************************
 Checkboxes
 ***********************************
 
 Type " [ ] " to create an unchecked checkbox. Note the single space between the square brackets. Type " [x] " to create a checked box. In both unchecked and checked boxes, there is a space before the first bracket and a space after the closed bracket.
-
-***********************************
-Collaborative editing
-***********************************
-
-Multiple users can edit CoCalc Markdown at the same time. In fact, one user can have several browser windows open to the same Markdown content and edit from them all simultaneously (we sometimes use this feature to test collaboration while developing CoCalc).
 
 *********************
 Details element
@@ -131,14 +119,23 @@ View the list of supported emojis in the `markdown-it-emojis GitHub repository <
 ***********************************
 Export to HTML
 ***********************************
-* To create html from a markdown file, open a :doc:`Linux terminal <terminal>`. If your file is "filename.md", run the command::
+To create HTML from a Markdown file, open a :doc:`Linux terminal <terminal>` and run the command ::
 
     pandoc filename.md -o filename.html
+    
+where ``filename.md`` is the name of your file.
 
 ***********************************
 Export to PDF
 ***********************************
-* To export a markdown (".md") file as pdf, open the file, select "Locked" from the view pulldown menu and click the "Print" button.
+
+Similarly, to create PDF from a Markdown file, you can open a :doc:`Linux terminal <terminal>` and run the command ::
+
+    pandoc filename.md -o filename.pdf
+    
+where ``filename.md`` is the name of your file.
+
+Alternatively, open your Markdown file and change the :doc:`frame type <frame-editor>` to **Locked View**. Then use **File > Print** menu command.
 
 ***********************************
 Fenced Code Blocks
