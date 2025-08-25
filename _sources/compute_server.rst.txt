@@ -494,35 +494,6 @@ OnPrem
 - At the moment OnPrem compute servers are free, the intended cost when their development is finished is about 1/3 of a similar spot instance on Google. If you *already own* sufficient compute resources, this may be the most cost-effective option to benefit from the cloud and collaboration as well!
 
 
-.. _teaching_with_compute_servers:
-
-Teaching with Compute Servers
-----------------------------------
-
-Compute servers are a great option to let your students or workshop participants use GPUs or powerful compute resources! Some important points to consider ahead of the course start:
-
-- What configuration do you need for your students?
-
-- Who will pay for running compute servers?
-
-- What are some sensible limits that you can configure to prevent accidental overspending?
-
-In CoCalc compute server usage for courses is configured via assignments and handouts - you can use the same compute server for several of them or different ones. You can also own the servers and pay for them from your own account, or transfer ownership to students and let them pay for it directly, perhaps after making them even more powerful.
-
-The best way to get a sense of what is possible it to experiment yourself in tandem with this video tutorial by CoCalc's Founder, CEO, and Lead Developer William Stein:
-
-.. raw:: html
-
-    <center><iframe
-        width="640" height="360"
-        src="https://www.youtube.com/embed/ikktaiw14Tw?si=6TU6KtZvngRNabUj"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe></center>
-
-
 Troubleshooting
 ---------------
 
