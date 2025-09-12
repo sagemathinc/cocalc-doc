@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Compute Servers &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
@@ -184,7 +184,8 @@ div.cocalc-header a {
 <p>Typically, disk cost is a small portion of the overall cost of a compute server. However, if your course is running for several months while students are only using these resources a couple hours per week, the disk cost may become comparable to the cost of CPU, GPU, and RAM. Make sure to consider it in your budget. If it is highly desirable to reduce this cost, consider using slower (and cheaper) disks or deprovisioning compute servers between sessions. In the latter case you will need to install and configure all necessary packages and datasets every time, but it may be quick enough to be feasible.</p>
 <p>For example, as of this writing “Standard g2-standard-4 with 1 NVIDIA L4 GPU, 4 vCPUs, 16 GB RAM, and a 125 GB SSD disk in us-central1-b” costs $1.03/hour. Only $0.02/hour is due to the disk, but monthly cost of the disk is $17.50:</p>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/teaching_cs_disk_cost.png"><img alt="Disk Cost for a Compute Server" src="_images/teaching_cs_disk_cost.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/teaching_cs_disk_cost.png"><img alt="Disk Cost for a Compute Server" src="_images/teaching_cs_disk_cost.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Disk Cost for a Compute Server</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
@@ -200,14 +201,16 @@ div.cocalc-header a {
 <p>Creation of compute servers for students in CoCalc is associated with assignment (although we are considering changing it).</p>
 <p>First, create a compute server “as usual” and give it some sensible name - your students will use it as well. If you want to enable <strong>Automatic Shutdown &amp; Health Check</strong> other than Spend Limit, this is the time to do it - later changes will not propagate to students copies:</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="_images/teaching_cs_health_check.png"><img alt="Shutdown Options for a Compute Server" src="_images/teaching_cs_health_check.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/teaching_cs_health_check.png"><img alt="Shutdown Options for a Compute Server" src="_images/teaching_cs_health_check.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Shutdown Options for a Compute Server</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Then go to an assignment (or a handout) which will need to use a compute server and click on <strong>Compute Server…</strong>:</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/teaching_cs_compute_server_button.png"><img alt="Configuring Compute Server for an Assignment" src="_images/teaching_cs_compute_server_button.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/teaching_cs_compute_server_button.png"><img alt="Configuring Compute Server for an Assignment" src="_images/teaching_cs_compute_server_button.png" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Configuring Compute Server for an Assignment</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
@@ -220,7 +223,8 @@ div.cocalc-header a {
 </div>
 <p>If you need to perform some manual configuration in students servers, you have to either provide instructions on how to do it or write a non-interactive script and execute it on all servers using <strong>Terminal</strong> button:</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/teaching_cs_terminal.png"><img alt="Terminal Command on All Compute Servers" src="_images/teaching_cs_terminal.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/teaching_cs_terminal.png"><img alt="Terminal Command on All Compute Servers" src="_images/teaching_cs_terminal.png" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Terminal Command on All Compute Servers</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
@@ -242,7 +246,8 @@ div.cocalc-header a {
 </ul>
 <p>To adjust the spend limit, click on <strong>Spend Limit</strong> when some of the students servers are selected or when hovering over the current spend of a particular student. Then check <strong>Enabled</strong> and click <strong>Save</strong>:</p>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/teaching_cs_spend_limit.png"><img alt="Spending Limit for Compute Servers" src="_images/teaching_cs_spend_limit.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/teaching_cs_spend_limit.png"><img alt="Spending Limit for Compute Servers" src="_images/teaching_cs_spend_limit.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Spending Limit for Compute Servers</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
@@ -263,7 +268,8 @@ div.cocalc-header a {
 </div>
 <p>The transfer button is available in the list of compute servers for all that are deprovisioned:</p>
 <figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="_images/teaching_cs_transfer.png"><img alt="Transfer Compute Servers" src="_images/teaching_cs_transfer.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/teaching_cs_transfer.png"><img alt="Transfer Compute Servers" src="_images/teaching_cs_transfer.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Transfer Compute Servers</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>

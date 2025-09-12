@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Getting Started with Hub &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
@@ -193,7 +193,7 @@ activeloop login
 </li>
 <li><p>Load a dataset</p>
 <blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hub</span>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">hub</span>
 
 <span class="n">ds</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="s2">&quot;activeloop/cifar10_train&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ds</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">,</span> <span class="p">:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">compute</span><span class="p">())</span>
@@ -206,9 +206,9 @@ activeloop login
 </li>
 <li><p>Create a dataset</p>
 <blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
-<span class="kn">import</span> <span class="nn">hub</span> <span class="kn">from</span> <span class="nn">hub.schema</span> <span class="kn">import</span> <span class="n">ClassLabel</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">hub</span> <span class="kn">from</span><span class="w"> </span><span class="nn">hub.schema</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClassLabel</span><span class="p">,</span> <span class="n">Image</span>
 
 <span class="n">my_schema</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="n">Image</span><span class="p">((</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)),</span>
             <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="n">ClassLabel</span><span class="p">(</span><span class="n">num_classes</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span> <span class="p">}</span>
@@ -231,8 +231,8 @@ Once the dataset is ready, you may read, write and loop over it.</p>
 <p>You can also transfer a dataset from TFDS (as below) and convert it
 from/to Tensorflow or PyTorch.</p>
 <blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hub</span>
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">hub</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
 
 <span class="n">out_ds</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tfds</span><span class="p">(</span><span class="s1">&#39;mnist&#39;</span><span class="p">,</span> <span class="n">split</span><span class="o">=</span><span class="s1">&#39;test+train&#39;</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 <span class="n">res_ds</span> <span class="o">=</span> <span class="n">out_ds</span><span class="o">.</span><span class="n">store</span><span class="p">(</span><span class="s2">&quot;username/mnist&quot;</span><span class="p">)</span> <span class="c1"># res_ds is now a usable hub dataset</span>
@@ -315,7 +315,7 @@ your credentials or a <code class="docutils literal notranslate"><span class="pr
 a dataset consists of. This
 is how you can create a simple schema:</p>
 <blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hub.schema</span> <span class="kn">import</span> <span class="n">ClassLabel</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">BBox</span><span class="p">,</span> <span class="n">Text</span>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">hub.schema</span><span class="w"> </span><span class="kn">import</span> <span class="n">ClassLabel</span><span class="p">,</span> <span class="n">Image</span><span class="p">,</span> <span class="n">BBox</span><span class="p">,</span> <span class="n">Text</span>
 
 <span class="n">my_schema</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;kind&#39;</span><span class="p">:</span> <span class="n">ClassLabel</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;cows&quot;</span><span class="p">,</span> <span class="s2">&quot;horses&quot;</span><span class="p">]),</span>

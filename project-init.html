@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project Initialization Scripts &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
@@ -231,15 +231,15 @@ Feel free to choose any other solution.</p>
 <ol class="arabic">
 <li><p><code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>: contains <code class="docutils literal notranslate"><span class="pre">exec</span> <span class="pre">python3</span> <span class="pre">project_init.py</span></code></p></li>
 <li><p>The content of <cite>project_init.py</cite> is:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">schedule</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span><span class="p">,</span> <span class="n">PIPE</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">schedule</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">subprocess</span><span class="w"> </span><span class="kn">import</span> <span class="n">run</span><span class="p">,</span> <span class="n">PIPE</span>
 
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">CMD</span> <span class="o">=</span> <span class="s2">&quot;date&quot;</span>
 
-<span class="k">def</span> <span class="nf">task</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">task</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">i</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;task_output.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fout</span><span class="p">:</span>
         <span class="n">ts</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">())</span>
@@ -276,12 +276,12 @@ user          22  0.5  0.0  37836 14332 ?        S    09:18   0:00      \_ pytho
 <ol class="arabic">
 <li><p><code class="docutils literal notranslate"><span class="pre">project_init.sh</span></code>: <code class="docutils literal notranslate"><span class="pre">exec</span> <span class="pre">sage</span> <span class="pre">run.sage</span></code></p></li>
 <li><p>This results in Sage running a small task every two minutes and appends outputs to <code class="docutils literal notranslate"><span class="pre">sage_output.log</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">def</span> <span class="nf">task</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">task</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">i</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sage_output.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fout</span><span class="p">:</span>
         <span class="n">ts</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">())</span>

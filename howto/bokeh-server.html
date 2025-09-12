@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bokeh / DASK / Holoview &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
@@ -160,12 +160,12 @@ div.cocalc-header a {
 This example is deploying an interactive visualization of a <a class="reference external" href="https://dask.org/">DASK</a> dataframe via a <a class="reference external" href="http://holoviews.org/user_guide/Deploying_Bokeh_Apps.html">Holoview</a> application:</p>
 <ol class="arabic">
 <li><p>create a file named <code class="docutils literal notranslate"><span class="pre">server_app.py</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">dask.dataframe</span> <span class="k">as</span> <span class="nn">dd</span>
-<span class="kn">import</span> <span class="nn">holoviews</span> <span class="k">as</span> <span class="nn">hv</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">holoviews.operation.datashader</span> <span class="kn">import</span> <span class="n">datashade</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dask.dataframe</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">dd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">holoviews</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hv</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">holoviews.operation.datashader</span><span class="w"> </span><span class="kn">import</span> <span class="n">datashade</span>
 
 <span class="n">hv</span><span class="o">.</span><span class="n">extension</span><span class="p">(</span><span class="s1">&#39;bokeh&#39;</span><span class="p">)</span>
 
@@ -212,13 +212,13 @@ This example is deploying an interactive visualization of a <a class="reference 
 <p>For deploying an interactive plots based on <a class="reference external" href="https://docs.bokeh.org/">Bokeh</a>, <a class="reference external" href="https://panel.holoviz.org/reference/panes/Matplotlib.html">Panel</a>, <a class="reference external" href="https://holoviz.org/">Holoviz</a> or similar libraries we can use the <a class="reference internal" href="webserver.html#webserver"><span class="std std-ref">server feature of CoCalc</span></a>, like in the examples for the Tensorboard:</p>
 <ol class="arabic">
 <li><p>Create a python file <code class="docutils literal notranslate"><span class="pre">holo.py</span></code>. (If you are using a self hosted instance, replace <code class="docutils literal notranslate"><span class="pre">cocalc.com</span></code> with your domain):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">holoviews</span> <span class="k">as</span> <span class="nn">hv</span>
-<span class="kn">import</span> <span class="nn">panel</span> <span class="k">as</span> <span class="nn">pn</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">holoviews</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">hv</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">panel</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pn</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">hv</span><span class="o">.</span><span class="n">extension</span><span class="p">(</span><span class="s1">&#39;bokeh&#39;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">sine</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span> <span class="n">phase</span><span class="p">,</span> <span class="n">amplitude</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sine</span><span class="p">(</span><span class="n">frequency</span><span class="p">,</span> <span class="n">phase</span><span class="p">,</span> <span class="n">amplitude</span><span class="p">):</span>
     <span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">hv</span><span class="o">.</span><span class="n">Curve</span><span class="p">((</span><span class="n">xs</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">frequency</span><span class="o">*</span><span class="n">xs</span><span class="o">+</span><span class="n">phase</span><span class="p">)</span><span class="o">*</span><span class="n">amplitude</span><span class="p">))</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
 

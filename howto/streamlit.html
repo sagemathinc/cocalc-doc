@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Streamlit &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
@@ -205,7 +205,7 @@ div.cocalc-header a {
 <h2>Streamlit Python script<a class="headerlink" href="#streamlit-python-script" title="Link to this heading"></a></h2>
 <p>Create a Streamlit python script. Here is an example. Be sure you have <cite>baseUrlPath</cite> set using one of the methods above:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># file st-hello.py</span>
-<span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">streamlit</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">st</span>
 <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2"># My first app</span>
 <span class="s2">hello *world*!</span>
@@ -226,7 +226,8 @@ div.cocalc-header a {
 <section id="streamlit-example">
 <h2>Streamlit Example<a class="headerlink" href="#streamlit-example" title="Link to this heading"></a></h2>
 <p>Here is an example of a streamlit python script to display exoplanet counts:</p>
-<a class="reference internal image-reference" href="../_images/exoplanets-streamlit.png"><img alt="sample plot showing number of exoplanets discovered per year" src="../_images/exoplanets-streamlit.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/exoplanets-streamlit.png"><img alt="sample plot showing number of exoplanets discovered per year" src="../_images/exoplanets-streamlit.png" style="width: 100%;" />
+</a>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># file exoplanets-per-year.py</span>
 
 <span class="c1"># run this from a cocalc terminal with</span>
@@ -236,11 +237,11 @@ div.cocalc-header a {
 <span class="c1"># after launching streamlit, point your browser at</span>
 <span class="c1">#   https://cocalc.com/&lt;project-id&gt;/port/8501/</span>
 
-<span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">from</span> <span class="nn">matplotlib.figure</span> <span class="kn">import</span> <span class="n">Figure</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">streamlit</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">st</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.figure</span><span class="w"> </span><span class="kn">import</span> <span class="n">Figure</span>
 
 <span class="n">st</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="s1">&#39;# Exoplanets Found Each Year&#39;</span><span class="p">)</span>
 

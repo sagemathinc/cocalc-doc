@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cloud File System &mdash; CoCalc Manual  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
@@ -186,20 +186,23 @@ We shed some light on it below, but to get a sense of how Cloud File Systems wor
 <h2>Billing Estimate<a class="headerlink" href="#billing-estimate" title="Link to this heading"></a></h2>
 <p>If you have concerns about potential Cloud File System cost for your use case, try it on a smaller sample if possible and keep an eye on our real time billing estimates. To access these, click the graph icon:</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="_images/cfs_access_estimates.png"><img alt="Access Billing Estimates" src="_images/cfs_access_estimates.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/cfs_access_estimates.png"><img alt="Access Billing Estimates" src="_images/cfs_access_estimates.png" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Access Billing Estimates</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="_images/cfs_estimate_plots.png"><img alt="Billing Estimates" src="_images/cfs_estimate_plots.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/cfs_estimate_plots.png"><img alt="Billing Estimates" src="_images/cfs_estimate_plots.png" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Billing Estimates</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>You can also monitor Cloud File System activity in the terminal using <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">cloudfs</span> <span class="pre">stats</span></code> command:</p>
 <figure class="align-center" id="id5">
-<a class="reference internal image-reference" href="_images/cfs_terminal_stats.png"><img alt="Using ``cocalc cloudfs stats``" src="_images/cfs_terminal_stats.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/cfs_terminal_stats.png"><img alt="Using ``cocalc cloudfs stats``" src="_images/cfs_terminal_stats.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Using <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">cloudfs</span> <span class="pre">stats</span></code></span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
@@ -209,7 +212,8 @@ We shed some light on it below, but to get a sense of how Cloud File Systems wor
 <h2>Location Choice<a class="headerlink" href="#location-choice" title="Link to this heading"></a></h2>
 <p>Creating a Cloud File System is very easy and most of its basic parameters you can change later on. However, it is impossible to change its location and this choice affects not only the storage cost (which you can see in the selector), but also the usage cost, i.e. the network transfer and read/write operations (which we cannot estimate in advance). Therefore, you need to pay attention to where your Cloud File Systems <strong>and</strong> Compute Servers are located:</p>
 <figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="_images/cfs_location.png"><img alt="Choosing Location" src="_images/cfs_location.png" style="width: 90%;" /></a>
+<a class="reference internal image-reference" href="_images/cfs_location.png"><img alt="Choosing Location" src="_images/cfs_location.png" style="width: 90%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Choosing Location</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
@@ -227,7 +231,8 @@ We shed some light on it below, but to get a sense of how Cloud File Systems wor
 <h2>Number of Files<a class="headerlink" href="#number-of-files" title="Link to this heading"></a></h2>
 <p>Since there are per-operation charges for a Cloud File System, if you always use a lot of small files together you may consider storing them in an archive and only unpacking them locally. It may also increase downloading speed, although it is pretty efficient anyway. As an alternative, you can also use <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">warmup</span></code> command in a terminal:</p>
 <figure class="align-center" id="id7">
-<a class="reference internal image-reference" href="_images/cfs_terminal_warmup.png"><img alt="Using ``cocalc warmup``" src="_images/cfs_terminal_warmup.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/cfs_terminal_warmup.png"><img alt="Using ``cocalc warmup``" src="_images/cfs_terminal_warmup.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Using <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">warmup</span></code></span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
@@ -241,7 +246,8 @@ We shed some light on it below, but to get a sense of how Cloud File Systems wor
 <h2>Access<a class="headerlink" href="#access" title="Link to this heading"></a></h2>
 <p>The intention behind CoCalc Cloud File System was to provide a very flexible storage solution for our <a class="reference internal" href="compute_server.html"><span class="doc">Compute Servers</span></a>. By default a Cloud File System is automatically read/write mounted in all compute servers of the same project. Therefore, you can access it via SSH if you connect to any of these servers. As of this writing, it is <em>not</em> accessible from the Home Base of the project. You can, however, easily move a Cloud File System from one project to another, just disable automount first:</p>
 <figure class="align-center" id="id8">
-<a class="reference internal image-reference" href="_images/cfs_move.png"><img alt="Moving to Another  Project" src="_images/cfs_move.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/cfs_move.png"><img alt="Moving to Another  Project" src="_images/cfs_move.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Moving to Another  Project</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
 </figcaption>
@@ -251,7 +257,8 @@ We shed some light on it below, but to get a sense of how Cloud File Systems wor
 <h2>Backups<a class="headerlink" href="#backups" title="Link to this heading"></a></h2>
 <p>Being backed by Google Cloud Storage, CoCalc Cloud File Systems are extremely resilient against hardware failures. However, it is easy to lose your data due to a human or a script error - backups are important! <strong>There are no automatic backups</strong> configured for a Cloud File System, but you can make use of <code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">backup</span></code> command in a terminal and make a backup copy either on the same Cloud File System, or on another one:</p>
 <figure class="align-center" id="id9">
-<a class="reference internal image-reference" href="_images/cfs_backup_h.png"><img alt="``cocalc backup -h``" src="_images/cfs_backup_h.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="_images/cfs_backup_h.png"><img alt="``cocalc backup -h``" src="_images/cfs_backup_h.png" style="width: 80%;" />
+</a>
 <figcaption>
 <p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">cocalc</span> <span class="pre">backup</span> <span class="pre">-h</span></code></span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
 </figcaption>
