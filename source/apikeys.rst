@@ -14,7 +14,7 @@ Account API Keys
 ================
 
 To obtain an account-wide key manually, browse to
-`CoCalc accont settings <https://cocalc.com/settings/account>`_.
+`CoCalc account settings <https://cocalc.com/settings/account>`_.
 
 In the Account Preferences pane that opens, scroll down to the "API Keys" dialog at bottom left:
 
