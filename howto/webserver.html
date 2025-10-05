@@ -7,7 +7,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Run a Webserver &mdash; CoCalc Manual  documentation</title>
+  <title>Run a Web Server &mdash; CoCalc Manual  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
@@ -90,11 +90,11 @@ div.cocalc-header a {
 <li class="toctree-l2"><a class="reference internal" href="index.html#programming-languages">Programming Languages</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#servers">Servers</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Custom</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#webserver-proxy">Webserver proxy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#using-the-port-proxy">Using the port proxy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#what-about-security">What about security?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#what-about-dynamically-generated-subdomains">What about dynamically generated subdomains?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#raw-files-server">Raw Files Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#web-server-proxy">Web Server Proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#port-proxy">Port Proxy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#python-example">Python Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security">Security</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dynamically-generated-subdomains">Dynamically Generated Subdomains</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="bokeh-server.html">Bokeh / DASK / Holoview</a></li>
@@ -134,7 +134,7 @@ div.cocalc-header a {
   <ul class="wy-breadcrumbs">
       <li><a href="../contents.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">How-tos</a></li>
-      <li class="breadcrumb-item active">Run a Webserver</li>
+      <li class="breadcrumb-item active">Run a Web Server</li>
 <li class="wy-breadcrumbs-aside" style="padding: 0;">
   <a
     class="fa fa-question-circle"
@@ -151,29 +151,36 @@ div.cocalc-header a {
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="run-a-webserver">
-<span id="webserver"></span><h1>Run a Webserver<a class="headerlink" href="#run-a-webserver" title="Link to this heading"></a></h1>
-<p>For testing and development, it is possible to run a small webserver inside a CoCalc project.
-Access to it is restricted to only the owner and all collaborators on the project, and nobody else.</p>
-<p>If you want to run an exposed webserver, you can do it with <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
-<section id="webserver-proxy">
-<h2>Webserver proxy<a class="headerlink" href="#webserver-proxy" title="Link to this heading"></a></h2>
-<p>If your project’s ID is <code class="docutils literal notranslate"><span class="pre">PROJECT_ID</span></code> like <code class="docutils literal notranslate"><span class="pre">60f9ea81-5bd0-45ae-9965-76de986e101f</span></code>
-and the service is serving on <code class="docutils literal notranslate"><span class="pre">PORT</span></code>
-to <strong>all</strong> ip addresses (<strong>not</strong> just localhost!), you can use:</p>
+  <section id="run-a-web-server">
+<span id="webserver"></span><h1>Run a Web Server<a class="headerlink" href="#run-a-web-server" title="Link to this heading"></a></h1>
+<p>For testing and development, it is possible to run a web server inside a CoCalc project.
+Only project collaborators can access it.</p>
+<p>If you want to run an exposed web server, you can do it with <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
+<section id="web-server-proxy">
+<h2>Web Server Proxy<a class="headerlink" href="#web-server-proxy" title="Link to this heading"></a></h2>
+<p>If your HTTP web server is listening on <code class="docutils literal notranslate"><span class="pre">PORT</span></code>, you can access it at</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/PROJECT_ID/server/PORT/
 </pre></div>
 </div>
-<p>to access your HTTP web server.
-For example, you might have to start the service using <code class="docutils literal notranslate"><span class="pre">--ip=0.0.0.0</span></code> to serve all IPs
-(the exact flag depends on the service).</p>
+<p>where <code class="docutils literal notranslate"><span class="pre">PROJECT_ID</span></code> is your project ID like <code class="docutils literal notranslate"><span class="pre">60f9ea81-5bd0-45ae-9965-76de986e101f</span></code>, visible in the URL of your project itself and accessible via <code class="docutils literal notranslate"><span class="pre">COCALC_PROJECT_ID</span></code> environment variable.</p>
+<p>As a test, you can launch a simple server from your project as</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>python -m http.server 8000
+</pre></div>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If the webserver directs the client to make additional requests to the backend for absolute URL’s, e.g., the service serves a file index.html like this</p>
+<p>Your web server must serve <strong>all</strong> IP addresses, <strong>not</strong> just <code class="docutils literal notranslate"><span class="pre">localhost</span></code>!</p>
+</div>
+<p>For example, you might have to start the service using <code class="docutils literal notranslate"><span class="pre">--ip=0.0.0.0</span></code> (the exact flag depends on the service).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Your web server should not rely on absolute URLs.</p>
+</div>
+<p>For example, if it serves a file <code class="docutils literal notranslate"><span class="pre">index.html</span></code> like this</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;a href=&#39;/index.html&#39;&gt;HOME!&lt;/a&gt;
 </pre></div>
 </div>
-<p>then when you click on the link, your browser will try to grab</p>
+<p>then when you click this link your browser will try to grab</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/index.html
 </pre></div>
 </div>
@@ -182,33 +189,61 @@ For example, you might have to start the service using <code class="docutils lit
 </pre></div>
 </div>
 <p>Obviously, this can’t possibly work.</p>
-<p>Many webservers, e.g., tensorboard, work fine and do not do this.
-Others won’t work without modification.</p>
+<p>Many web servers, e.g., tensorboard, work fine and do not do this. Others won’t work without modification.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality is similar to VS Code proxy.</p>
 </div>
 </section>
-<section id="using-the-port-proxy">
-<h2>Using the port proxy<a class="headerlink" href="#using-the-port-proxy" title="Link to this heading"></a></h2>
-<p>This is similar to above (<code class="docutils literal notranslate"><span class="pre">port</span></code> instead of <code class="docutils literal notranslate"><span class="pre">server</span></code>)</p>
+<section id="port-proxy">
+<h2>Port Proxy<a class="headerlink" href="#port-proxy" title="Link to this heading"></a></h2>
+<p>If you use <code class="docutils literal notranslate"><span class="pre">port</span></code> instead of <code class="docutils literal notranslate"><span class="pre">server</span></code>, i.e. a URL like</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>https://cocalc.com/PROJECT_ID/port/PORT/
 </pre></div>
 </div>
-<p>When you visit that URL with your web browser, your web server will get a request for <code class="docutils literal notranslate"><span class="pre">/PROJECT_ID/port/PORT/</span></code> rather than for <code class="docutils literal notranslate"><span class="pre">/</span></code> as it does with server.
-Otherwise, everything is the same, including the warning above.</p>
+<p>your web server will get a request for <code class="docutils literal notranslate"><span class="pre">/PROJECT_ID/port/PORT/</span></code> rather than for <code class="docutils literal notranslate"><span class="pre">/</span></code> as it does with <code class="docutils literal notranslate"><span class="pre">server</span></code>. Otherwise, everything is the same, including the warnings.</p>
 </section>
-<section id="what-about-security">
-<h2>What about security?<a class="headerlink" href="#what-about-security" title="Link to this heading"></a></h2>
-<p>Only the owner and collaborators on the given project can access the webserver via an SSL encrypted connection.
+<section id="python-example">
+<h2>Python Example<a class="headerlink" href="#python-example" title="Link to this heading"></a></h2>
+<p>Let’s put the following code into <code class="docutils literal notranslate"><span class="pre">server.py</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>from http.server import HTTPServer, SimpleHTTPRequestHandler
+import os
+
+BASE_URL = &quot;/&quot; + os.environ[&#39;COCALC_PROJECT_ID&#39;] + &#39;/port/8000&#39;
+
+class BaseURLHandler(SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path.startswith(BASE_URL):
+            # Rewrite to strip the prefix before serving files
+            self.path = self.path[len(BASE_URL):] or &quot;/&quot;
+            return super().do_GET()
+        else:
+            self.send_error(404, &quot;Not Found&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    server = HTTPServer((&quot;0.0.0.0&quot;, 8000), BaseURLHandler)
+    print(f&quot;Serving on https://cocalc.com{BASE_URL}/&quot;)
+    server.serve_forever()
+</pre></div>
+</div>
+<p>Then you can start it in a terminal and get something like</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>~$ python -m server
+Serving on https://cocalc.com/35dd0d93-f702-4bd4-90dc-f5a3c2117ba2/port/8000/
+192.168.144.61 - - [05/Oct/2025 21:43:27] &quot;GET /35dd0d93-f702-4bd4-90dc-f5a3c2117ba2/port/8000/HW2/ HTTP/1.1&quot; 200 -
+...
+</pre></div>
+</div>
+</section>
+<section id="security">
+<h2>Security<a class="headerlink" href="#security" title="Link to this heading"></a></h2>
+<p>Only project collaborators can access the web server via an SSL encrypted connection.
 Our proxy server will reject all other requests.
-This means you don’t have to worry about setting up logins/passwords on whatever webserver you run in your project.
-If you want to run a webserver that is visible to anybody in the world, use <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
+This means you don’t have to worry about setting up logins/passwords on whatever web server you run in your project.
+If you want to run a web server that is visible to anybody in the world, use <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
 </section>
-<section id="what-about-dynamically-generated-subdomains">
-<h2>What about dynamically generated subdomains?<a class="headerlink" href="#what-about-dynamically-generated-subdomains" title="Link to this heading"></a></h2>
+<section id="dynamically-generated-subdomains">
+<h2>Dynamically Generated Subdomains<a class="headerlink" href="#dynamically-generated-subdomains" title="Link to this heading"></a></h2>
 <p>Use <a class="reference internal" href="../compute_server.html"><span class="doc">Compute Servers</span></a>!</p>
-</section>
-<section id="raw-files-server">
-<h2>Raw Files Server<a class="headerlink" href="#raw-files-server" title="Link to this heading"></a></h2>
-<p>If you just want an HTTPS view of your files, use the raw server, which is already available by default at <code class="docutils literal notranslate"><span class="pre">https://cocalc.com/PROJECT_ID/raw/</span></code>.</p>
 </section>
 </section>
 
