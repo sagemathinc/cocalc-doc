@@ -11,29 +11,42 @@ LaTeX Editor
 `LaTeX <https://www.latex-project.org/>`_ is a sophisticated markup language and processor for typesetting documents.
 For a general introduction you may check `LaTeX wiki book <https://en.wikibooks.org/wiki/LaTeX>`_, or one of many other resources.
 
-Open an existing ``.tex`` file, create a new LaTeX document starting with a simple template (`📺 video <https://youtu.be/QLokIb2I78U?feature=shared>`_), or :doc:`import your existing documents from Overleaf <howto/overleaf>`. You will see several frames that you can resize, close, and split just like any other :doc:`frame <frame-editor>` in CoCalc:
+Open an existing ``.tex`` file, create a new LaTeX document starting with a simple template (`📺 video <https://youtu.be/QLokIb2I78U?feature=shared>`_), or :doc:`import your existing documents from Overleaf <howto/overleaf>`. By default you will see two frames:
 
-.. figure:: img/latex_frames.png
+.. figure:: img/latex_editor.png
   :width: 90%
   :align: center
-  :alt: Default Frames for LaTeX Documents
+  :alt: LaTeX Editor
   
-  Default Frames for LaTeX Documents
+  LaTeX Editor
 
-.. tip::
+On the left there is the source code and on the right LaTeX output. You can resize, close, split these and create new :doc:`frames <frame-editor>` as usual. In addition, the Output frame can be switched between several tabs:
 
-    If you close all the frames, the default layout is restored.
+- **PDF** Preview
+- Table of **Contents**
+- List of **Files**
+- **Build** command and full log
+- Errors, Warnings, and Typesetting **Problems**
+- Text **Stats**
+
 
 Building Your Document
 ----------------------
 
-By default, your document is built whenever you save it or when it is saved automatically. Once the built is finished, the PDF preview will update. You can also use **Go > Build** menu or press **Shift + Enter** or **Alt + T**. If you do not like this behaviour, for example because your documents takes a long time to build, you can disable it via **Go > Build on Save**.
+By default, your document is built whenever you save it or when it is saved automatically. Once the built is finished, the PDF preview will update. You can also use **Go > Build** menu or press **Shift + Enter** or **Alt + T**. If you do not like this behaviour, for example because your document takes a long time to build, you can disable it via **Go > Build on Save**.
 
-**Build Control and Log** frame allows you to see the full log of the build process and control the :ref:`build command <latex-build-engine>`. You can edit it however you want, or select a different engine from the dropdown menu.
+**Build** tab of the output frame allows you to see the full log of the build process and control the :ref:`build command <latex-build-engine>`. You can edit it however you want, or select a different engine from the dropdown menu.
 By default, we compile using `LatexMK <https://www.ctan.org/pkg/latexmk/>`_, which manages temporary files and BibTeX.
 
-**Errors and Warnings** frame lists all build errors, warnings, and other issues in a more convenient way than the raw log.
-Click on the line number link to jump to the corresponding line in the source and the preview. You can also see error markers on the margin of the source code.
+**Problems** tab lists all build errors, warnings, and other issues in a more convenient way than the raw log.
+Click on the line number link to jump to the corresponding line in the source and the preview. You can also see error markers on the margin of the source code:
+
+.. figure:: img/latex_problems.png
+  :width: 90%
+  :align: center
+  :alt: LaTeX Problems
+  
+  LaTeX Problems
 
 
 .. _latex-forward-inverse:
@@ -41,11 +54,14 @@ Click on the line number link to jump to the corresponding line in the source an
 Forward and Inverse Search
 --------------------------
 
-Forward and inverse search are extremely helpful for navigating in a larger document!
+Forward and inverse search or "sync" are extremely helpful for navigating in a larger document! CoCalc gives you an option to use manual sync whenever you want or turn on automatic sync in either direction:
 
-**Forward**: With a cursor in the source code editor press **Alt + Enter**, click **Sync** button on the menu toolbar, or use **View > Synchronize Views** menu. The PDF preview will show the corresponding location in the middle. (This feature may not be active in rare cases where full positional information is not available.)
-
-**Inverse**: Double-click on an area of interest in the PDF preview to scroll the source code to the corresponding location and put the cursor there. You can also use **Sync** button and **View > Synchronize Views** menu.
+.. figure:: img/latex_sync.png
+  :width: 90%
+  :align: center
+  :alt: LaTeX Sync
+  
+  LaTeX Sync
 
 
 PythonTeX, SageTeX, Knitr
@@ -98,7 +114,7 @@ CoCalc supports LaTeX documents split into several files:
 
 See the section `LaTeX/Modular Documents <https://en.wikibooks.org/wiki/LaTeX/Modular_Documents>`_ in the WikiBooks LaTeX book for a helpful introduction to working with multiple files in LaTeX.
 
-.. figure:: img/latex_multifile.png
+.. figure:: img/latex_multiple_files.png
   :width: 90%
   :align: center
   :alt: Multiple Files for LaTeX
