@@ -69,6 +69,29 @@ table.indextable.genindextable td > ul > li {
     line-height: 20pt;
 }
 
+.wy-breadcrumbs-aside > a {
+    position: relative;
+    z-index: 3000;
+}
+
+a.cocalcbanner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    border: 0;
+    display: block;
+    z-index: 2000;
+}
+
+a.cocalcbanner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 @media screen and (max-width: 875px) {
     /* not for the RTD theme */
     /* body {
