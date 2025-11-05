@@ -12,6 +12,22 @@ nav.wy-nav-top {
     background: #4375c1;
 }
 
+/* Accessibility: deepen inline link color for WCAG contrast */
+.rst-content a {
+    color: #2977B9;
+}
+
+/* Distinguish visited links while preserving sufficient contrast */
+.rst-content a:visited {
+    color: #A86FBF;
+}
+
+/* Keep hover color stable and add underline for clarity */
+.rst-content a:hover,
+.rst-content a:focus {
+    text-decoration: underline;
+}
+
 /* role: strike and :strike:`...` */
 span.strike {
     text-decoration: line-through;
