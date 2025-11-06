@@ -81,6 +81,14 @@ footer span.commit tt {
     color: #595959;
 }
 
+.wy-menu-vertical li.current > a {
+    background-color: #e6eef7;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a {
+    background-color: #b0bed1;
+}
+
 /* role: strike and :strike:`...` */
 span.strike {
     text-decoration: line-through;
