@@ -12,6 +12,75 @@ nav.wy-nav-top {
     background: #4375c1;
 }
 
+/* Accessibility: deepen inline link color for WCAG contrast */
+.rst-content a {
+    color: #2468A6;
+}
+
+/* Distinguish visited links while preserving sufficient contrast */
+.rst-content a:visited {
+    color: #A86FBF;
+}
+
+/* Keep hover color stable and add underline for clarity */
+.rst-content a:hover,
+.rst-content a:focus {
+    text-decoration: underline;
+}
+
+/* Accessibility: darken inline code for WCAG contrast */
+.rst-content tt,
+.rst-content code,
+.rst-content tt.literal,
+.rst-content code.literal {
+    color: #C43734;
+}
+
+/* Accessibility: accentuate title bar gradient without changing body */
+.rst-content .danger .admonition-title,
+.rst-content .error .admonition-title,
+.rst-content .wy-alert-danger .admonition-title,
+.wy-alert.wy-alert-danger .wy-alert-title {
+    background-color: #E02D1C;
+    background-image: linear-gradient(to right, #E02D1C 0%, #E02D1C 10%, #F29F97 30%, #F29F97 100%);
+}
+
+.rst-content .warning .admonition-title,
+.rst-content .caution .admonition-title,
+.rst-content .attention .admonition-title,
+.rst-content .wy-alert-warning .admonition-title,
+.wy-alert.wy-alert-warning .wy-alert-title {
+    background-color: #B35F15;
+    background-image: linear-gradient(to right, #B35F15 0%, #B35F15 10%, #F0B37E 30%, #F0B37E 100%);
+}
+
+.rst-content .note .admonition-title,
+.rst-content .admonition-mission .admonition-title,
+.rst-content .seealso .admonition-title,
+.rst-content .wy-alert-info .admonition-title,
+.wy-alert.wy-alert-info .wy-alert-title {
+    background-color: #277BB2;
+    background-image: linear-gradient(to right, #277BB2 0%, #277BB2 10%, #6AB0DE 30%, #6AB0DE 100%);
+}
+
+.rst-content .hint .admonition-title,
+.rst-content .important .admonition-title,
+.rst-content .tip .admonition-title,
+.rst-content .wy-alert-success .admonition-title,
+.wy-alert.wy-alert-success .wy-alert-title {
+    background-color: #12846E;
+    background-image: linear-gradient(to right, #12846E 0%, #12846E 10%, #1ABC9C 30%, #1ABC9C 100%);
+}
+
+footer {
+    color: #595959;
+}
+
+footer span.commit code,
+footer span.commit tt {
+    color: #595959;
+}
+
 /* role: strike and :strike:`...` */
 span.strike {
     text-decoration: line-through;
