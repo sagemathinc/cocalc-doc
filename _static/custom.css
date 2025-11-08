@@ -5,11 +5,33 @@
 
 /* theme cocalc */
 div.wy-side-nav-search {
-    background-color: #4375c1;
+    background-color: #4474c0;
+    background-image: linear-gradient(
+        to bottom,
+        #4474c0 0%,
+        #4474c0 33%,
+        #343131 100%
+    );
 }
 
 nav.wy-nav-top {
     background: #4375c1;
+}
+
+/* Accessibility: improve masthead contrast */
+.wy-side-nav-search > a.icon-home {
+    color: #FFFFFF;
+}
+
+.wy-side-nav-search .cocalc-header {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    color: #FFFFFF;
+}
+
+.wy-side-nav-search .cocalc-header a {
+    color: #FCD180;
 }
 
 /* Accessibility: deepen inline link color for WCAG contrast */
@@ -24,7 +46,9 @@ nav.wy-nav-top {
 
 /* Keep hover color stable and add underline for clarity */
 .rst-content a:hover,
-.rst-content a:focus {
+.rst-content a:focus,
+.wy-side-nav-search .cocalc-header a:hover,
+.wy-side-nav-search .cocalc-header a:focus {
     text-decoration: underline;
 }
 
