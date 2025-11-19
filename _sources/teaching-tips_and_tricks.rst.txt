@@ -330,8 +330,8 @@ Run Terminal command in all student projects
 If you are managing a course, there may be a time when you want to
 run a shell command in every student project, say to install some package without waiting for the support to do it globally or to create some file.
 
-In the ``Configuration`` tab of the course there is a
-panel called ``Run Terminal command in all student projects``.  You
+In the **Actions** tab of the course there is a
+panel called **Run Terminal command in all student projects**.  You
 can use it to run a single arbitrary bash command in
 *all* projects in a course:
 
