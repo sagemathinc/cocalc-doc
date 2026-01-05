@@ -69,7 +69,7 @@ CoCalc Roadmap
 These are some of the course-related features that we are planning to add in the future:
 
 - Streamlined support for group assignments: define groups, create a project for each group, add all of its members as collaborators. At the moment you can do these steps manually.
-- Exam mode: create a dedicated project for the exam for each student, restrict access to other projects, automatically collect work at a set time.
+- Exam mode: create a dedicated project for the exam for each student, restrict access to other projects, automatically collect work at a set time. (At the moment we support ephemeral exam mode, where students get an empty project as a scratchpad for their work. Some instructors want exactly that. If you are interested in this or other approaches - contact us to discuss details!)
 - Analyze student engagement: see how much time students are actively editing files, determine outliers, see who needs help and who may be cheating. This may involve AI analysis based on your explicit request.
 - LMS integration: automatically add and remove students, sync grades. At the moment you can copy students' emails from a CSV file for enrollment and you can export their grades into a CSV file.
 
